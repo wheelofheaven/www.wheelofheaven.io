@@ -67,6 +67,30 @@
             margin-bottom: 40px;
         }
 
+        .main-navigation {
+            margin-top: 20px;
+            padding: 15px 0;
+            border-top: 1px solid #ddd;
+        }
+
+        .main-navigation a {
+            color: #2c3e50;
+            text-decoration: none;
+            margin-right: 30px;
+            padding: 8px 16px;
+            border-radius: 4px;
+            transition: background-color 0.2s ease;
+        }
+
+        .main-navigation a:hover {
+            background-color: #ecf0f1;
+        }
+
+        .main-navigation a.active {
+            background-color: #3498db;
+            color: white;
+        }
+
         footer {
             border-top: 1px solid #eee;
             padding-top: 20px;
@@ -95,6 +119,15 @@
     <header>
         <h1>{{ config.title }}</h1>
         <div class="subtitle">{{ config.description }}</div>
+
+        <nav class="main-navigation">
+            <a href="{{ get_url(path="", lang=lang) }}">Home</a>
+            <a href="{{ get_url(path="/essentials/", lang=lang) }}">Essentials</a>
+            <a href="{{ get_url(path="/explainers/", lang=lang) }}">Explainers</a>
+            <a href="{{ get_url(path="/timeline/", lang=lang) }}">Timeline</a>
+            <a href="{{ get_url(path="/revelations/", lang=lang) }}">Revelations</a>
+            <a href="{{ get_url(path="/wiki/", lang=lang) }}">Wiki</a>
+        </nav>
     </header>
 
     <main>

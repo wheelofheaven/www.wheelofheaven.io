@@ -1,0 +1,230 @@
+{% extends "base.html" %}
+
+{% block content %}
+<div class="page">
+    <header class="page-header">
+        <h1>{{ page.title }}</h1>
+        {% if page.description %}
+            <p class="page-description">{{ page.description }}</p>
+        {% endif %}
+
+        <div class="page-meta">
+            {% if page.date %}
+                <time class="page-date">{{ page.date | date(format="%B %d, %Y") }}</time>
+            {% endif %}
+            {% if page.updated %}
+                <span class="page-updated">Updated: {{ page.updated | date(format="%B %d, %Y") }}</span>
+            {% endif %}
+            {% if page.taxonomies.tags %}
+                <div class="page-tags">
+                    {% for tag in page.taxonomies.tags %}
+                        <span class="tag">{{ tag }}</span>
+                    {% endfor %}
+                </div>
+            {% endif %}
+        </div>
+    </header>
+
+    <main class="page-content">
+        {{ page.content | safe }}
+    </main>
+
+    {% if page.taxonomies.categories %}
+        <div class="page-categories">
+            <h3>Categories</h3>
+            {% for category in page.taxonomies.categories %}
+                <span class="category">{{ category }}</span>
+            {% endfor %}
+        </div>
+    {% endif %}
+
+    <footer class="page-footer">
+        <div class="page-navigation">
+            {% if page.earlier %}
+                <div class="nav-previous">
+                    <a href="{{ page.earlier.permalink }}">&larr; {{ page.earlier.title }}</a>
+                </div>
+            {% endif %}
+            {% if page.later %}
+                <div class="nav-next">
+                    <a href="{{ page.later.permalink }}">{{ page.later.title }} &rarr;</a>
+                </div>
+            {% endif %}
+        </div>
+    </footer>
+</div>
+
+<style>
+    .page-header {
+        margin-bottom: 40px;
+        padding-bottom: 20px;
+        border-bottom: 2px solid #eee;
+    }
+
+    .page-header h1 {
+        margin-bottom: 15px;
+        color: #2c3e50;
+        line-height: 1.2;
+    }
+
+    .page-description {
+        font-size: 1.2em;
+        color: #7f8c8d;
+        margin-bottom: 20px;
+    }
+
+    .page-meta {
+        display: flex;
+        flex-wrap: wrap;
+        gap: 20px;
+        align-items: center;
+        color: #6c757d;
+        font-size: 0.9em;
+    }
+
+    .page-date, .page-updated {
+        font-style: italic;
+    }
+
+    .page-tags {
+        display: flex;
+        gap: 8px;
+        flex-wrap: wrap;
+    }
+
+    .tag {
+        background: #e9ecef;
+        color: #495057;
+        padding: 4px 8px;
+        border-radius: 4px;
+        font-size: 0.8em;
+        text-decoration: none;
+    }
+
+    .page-content {
+        margin-bottom: 40px;
+        line-height: 1.7;
+    }
+
+    .page-content h2 {
+        margin-top: 40px;
+        margin-bottom: 20px;
+        color: #343a40;
+        border-bottom: 1px solid #dee2e6;
+        padding-bottom: 10px;
+    }
+
+    .page-content h3 {
+        margin-top: 30px;
+        margin-bottom: 15px;
+        color: #495057;
+    }
+
+    .page-content p {
+        margin-bottom: 20px;
+    }
+
+    .page-content blockquote {
+        margin: 30px 0;
+        padding: 20px;
+        background: #f8f9fa;
+        border-left: 4px solid #3498db;
+        font-style: italic;
+    }
+
+    .page-content code {
+        background: #f1f3f4;
+        padding: 2px 6px;
+        border-radius: 3px;
+        font-family: 'Monaco', 'Menlo', 'Ubuntu Mono', monospace;
+        font-size: 0.9em;
+    }
+
+    .page-content pre {
+        background: #f8f9fa;
+        padding: 20px;
+        border-radius: 8px;
+        overflow-x: auto;
+        margin: 20px 0;
+    }
+
+    .page-content pre code {
+        background: none;
+        padding: 0;
+    }
+
+    .page-categories {
+        margin-bottom: 30px;
+        padding: 20px;
+        background: #f8f9fa;
+        border-radius: 8px;
+    }
+
+    .page-categories h3 {
+        margin: 0 0 15px 0;
+        color: #495057;
+    }
+
+    .category {
+        background: #3498db;
+        color: white;
+        padding: 6px 12px;
+        border-radius: 6px;
+        margin-right: 10px;
+        font-size: 0.9em;
+    }
+
+    .page-footer {
+        border-top: 1px solid #dee2e6;
+        padding-top: 30px;
+        margin-top: 40px;
+    }
+
+    .page-navigation {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
+
+    .nav-previous, .nav-next {
+        flex: 1;
+    }
+
+    .nav-next {
+        text-align: right;
+    }
+
+    .nav-previous a, .nav-next a {
+        color: #3498db;
+        text-decoration: none;
+        padding: 10px 15px;
+        border: 1px solid #dee2e6;
+        border-radius: 6px;
+        display: inline-block;
+        transition: all 0.2s ease;
+    }
+
+    .nav-previous a:hover, .nav-next a:hover {
+        background: #3498db;
+        color: white;
+        border-color: #3498db;
+    }
+
+    @media (max-width: 768px) {
+        .page-meta {
+            flex-direction: column;
+            align-items: flex-start;
+            gap: 10px;
+        }
+
+        .page-navigation {
+            flex-direction: column;
+            gap: 15px;
+        }
+
+        .nav-next {
+            text-align: left;
+        }
+    }
+</style>
+{% endblock content %}
