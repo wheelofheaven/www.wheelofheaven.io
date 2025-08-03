@@ -5,10 +5,8 @@
 .footer {
     font-size: typo.$font-size-sd;
     border-top: vars.$hairline-width solid vars.$hairline-color;
-    background: inherit;
-    color: inherit;
+    background: colors.$gray-950;
     padding-inline: 1rem;
-    max-width: vars.$viewport-max-width;
     margin-inline: auto;
 
     &__content {
@@ -28,12 +26,12 @@
         gap: 0.5rem;
 
         h6 {
-            font-weight: 600;
+            font-family: typo.$font-family-lead;
+            font-weight: typo.$font-weight-lg;
             font-size: typo.$font-size-sm;
             text-transform: uppercase;
             letter-spacing: 0.05em;
             margin-bottom: 0.75rem;
-            color: colors.$gray-700;
         }
 
         ul {

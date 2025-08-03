@@ -1,0 +1,98 @@
+<footer class="footer">
+  <div class="footer__content">
+    <div class="footer__grid">
+
+      <div class="footer__col footer__col--brand">
+        <h3 class="footer__brand"><img src="{{ get_url(path="brand/wordmark.svg") }}" alt="Wheel of Heaven"></h3>
+        <p class="footer__muted">{{ trans(key="footerHead") | safe }}</p>
+      </div>
+
+      <div class="footer__col">
+        <h6>{{ trans(key="footerGetStarted") }}</h6>
+        <ul>
+          <li><a href="{{ trans(key="footerAbout_url") }}">{{ trans(key="footerAbout") }}</a></li>
+          <li><a href="{{ trans(key="footerHelloWorld_url") }}">{{ trans(key="footerHelloWorld") }}</a></li>
+          <li><a href="{{ trans(key="footerFAQ_url") }}">{{ trans(key="footerFAQ") }}</a></li>
+          <li><a href="https://github.com/wheelofheaven/.github/blob/main/profile/WHITEPAPER.md">White Paper</a></li>
+        </ul>
+
+        <h6>{{ trans(key="footerJumpRightIn") }}</h6>
+        <ul>
+          <li><a href="{{ trans(key="footerTheSetting_url") }}">{{ trans(key="footerTheSetting") }}</a></li>
+          <li><a href="{{ trans(key="footerTheFoundation_url") }}">{{ trans(key="footerTheFoundation") }}</a></li>
+          <li><a href="{{ trans(key="footerTheHypothesis_url") }}">{{ trans(key="footerTheHypothesis") }}</a></li>
+          <li><a href="{{ trans(key="footerPreamble_url") }}">{{ trans(key="footerPreamble") }}</a></li>
+        </ul>
+      </div>
+
+      <div class="footer__col">
+        <h6>{{ trans(key="footerSections") }}</h6>
+        <ul>
+          <li><a href="{{ trans(key="footerHome_url") }}">{{ trans(key="footerHome") }}</a></li>
+          <li><a href="{{ trans(key="footerIntro_url") }}">{{ trans(key="footerIntro") }}</a></li>
+          <li><a href="{{ trans(key="footerWiki_url") }}">{{ trans(key="footerWiki") }}</a></li>
+          <li><a href="{{ trans(key="footerArticles_url") }}">{{ trans(key="footerArticles") }}</a></li>
+          <li><a href="{{ trans(key="footerResources_url") }}">{{ trans(key="footerResources") }}</a></li>
+        </ul>
+
+        <h6>{{ trans(key="footerPlatform") }}</h6>
+        <ul>
+          <li><a href="{{ trans(key="footerTags_url") }}">{{ trans(key="footerTags") }}</a></li>
+          <li><a href="{{ trans(key="footerCategories_url") }}">{{ trans(key="footerCategories") }}</a></li>
+          <li><a href="{{ trans(key="footerContributors_url") }}">{{ trans(key="footerContributors") }}</a></li>
+          <li><a href="{{ trans(key="footerRssFeed_url") }}">{{ trans(key="footerRssFeed") }}</a></li>
+        </ul>
+      </div>
+
+      <div class="footer__col">
+        <h6>{{ trans(key="footerCommunity") }}</h6>
+        <ul>
+          <li><a href="{{ trans(key="footerCommunity_url") }}">{{ trans(key="footerCommunity") }}</a></li>
+          <li><a href="https://github.com/wheelofheaven/site/blob/main/CODE_OF_CONDUCT.md">{{ trans(key="footerCodeOfConduct") }}</a></li>
+          <li><a href="https://github.com/orgs/wheelofheaven/discussions">{{ trans(key="footerGithubDiscussion") }}</a></li>
+          <li><a href="https://opencollective.com/wheelofheaven">Open Collective</a></li>
+          <li><a href="https://github.com/wheelofheaven/site/blob/main/LICENSE">{{ trans(key="footerOpenSource") }}</a></li>
+        </ul>
+
+        <h6>{{ trans(key="footerSocialMedia") }}</h6>
+        <ul>
+          <li><a href="https://github.com/wheelofheaven/">GitHub</a></li>
+          <li><a href="https://opencollective.com/wheelofheaven">Telegram</a></li>
+          <li><a href="https://opencollective.com/wheelofheaven">𝕏</a></li>
+        </ul>
+      </div>
+
+      <div class="footer__col">
+        <h6>{{ trans(key="footerDevelopment") }}</h6>
+        <ul>
+          <li><a href="https://github.com/wheelofheaven/site/blob/main/CONTRIBUTE.md">{{ trans(key="footerContribute") }}</a></li>
+          <li><a href="https://github.com/wheelofheaven/site/blob/main/CHANGELOG.md">{{ trans(key="footerChangelog") }}</a></li>
+          <li><a href="https://github.com/wheelofheaven/site/graphs/commit-activity">{{ trans(key="footerCommitActivity") }}</a></li>
+          <li><a href="https://github.com/wheelofheaven/site/blob/main/README.md">{{ trans(key="footerReadme") }}</a></li>
+        </ul>
+
+        <h6>{{ trans(key="footerPrivacyTerms") }}</h6>
+        <ul>
+          <li><a href="{{ trans(key="footerPrivacyPolicy_url") }}">{{ trans(key="footerPrivacyPolicy") }}</a></li>
+          <li><a href="{{ trans(key="footerCookiePolicy_url") }}">{{ trans(key="footerCookiePolicy") }}</a></li>
+          <li><a href="https://github.com/wheelofheaven/site/blob/main/SECURITY.md">{{ trans(key="footerSecurityPolicy") }}</a></li>
+          <li><a href="{{ trans(key="footerContact_url") }}">{{ trans(key="footerContact") }}</a></li>
+        </ul>
+      </div>
+    </div>
+  </div>
+
+  <div class="footer__bottom">
+    <div class="footer__bottom-grid">
+      <div class="footer__closure">{{ trans(key="footerClosure") | safe }}</div>
+        <div class="footer__socials">
+            {% include "partials/social/x-twitter.html" %}
+            {% include "partials/social/telegram.html" %}
+            {% include "partials/social/youtube.html" %}
+            {% include "partials/social/github.html" %}
+            {% include "partials/social/open-collective.html" %}
+        </div>
+      </div>
+    </div>
+  </div>
+</footer>
