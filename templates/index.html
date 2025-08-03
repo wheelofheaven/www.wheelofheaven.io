@@ -1,0 +1,123 @@
+{% extends "base.html" %}
+
+{% block content %}
+<div class="homepage">
+    {% if page.content %}
+        {{ page.content | safe }}
+    {% else %}
+        <h2>Welcome to Wheel of Heaven</h2>
+        <p>{{ config.description }}</p>
+
+        <div class="intro-section">
+            <h3>Explore the Age of Aquarius</h3>
+            <p>Embark on a journey of discovery and democratization of cosmic knowledge. Our platform delves into the compelling hypothesis that life on Earth was intelligently designed by an advanced extraterrestrial civilization known as the Elohim.</p>
+        </div>
+
+        <div class="features">
+            <h3>What You'll Find Here</h3>
+            <ul>
+                <li><strong>Ancient Wisdom:</strong> Explore historical texts and interpretations</li>
+                <li><strong>Modern Science:</strong> Contemporary research and findings</li>
+                <li><strong>Visionary Insights:</strong> Forward-thinking perspectives on our origins</li>
+                <li><strong>Multilingual Content:</strong> Available in 7 languages</li>
+            </ul>
+        </div>
+
+        <div class="getting-started">
+            <h3>Getting Started</h3>
+            <p>This is the beginning of your Wheel of Heaven journey. Content will be migrated from the Hugo site to create a comprehensive knowledge base about the possibility of our celestial origins and the profound implications for our future.</p>
+        </div>
+    {% endif %}
+
+    <div class="language-info">
+        <h3>Available Languages</h3>
+        <div class="language-grid">
+            <div class="lang-item">
+                <strong>🇺🇸 English</strong><br>
+                <span>Default language</span>
+            </div>
+            <div class="lang-item">
+                <strong>🇩🇪 Deutsch</strong><br>
+                <span>German</span>
+            </div>
+            <div class="lang-item">
+                <strong>🇫🇷 Français</strong><br>
+                <span>French</span>
+            </div>
+            <div class="lang-item">
+                <strong>🇪🇸 Español</strong><br>
+                <span>Spanish</span>
+            </div>
+            <div class="lang-item">
+                <strong>🇷🇺 Русский</strong><br>
+                <span>Russian</span>
+            </div>
+            <div class="lang-item">
+                <strong>🇯🇵 日本語</strong><br>
+                <span>Japanese</span>
+            </div>
+            <div class="lang-item">
+                <strong>🇨🇳 中文</strong><br>
+                <span>Chinese (Simplified)</span>
+            </div>
+        </div>
+    </div>
+</div>
+
+<style>
+    .intro-section, .features, .getting-started {
+        margin: 30px 0;
+        padding: 20px;
+        background: #f9f9f9;
+        border-left: 4px solid #3498db;
+        border-radius: 5px;
+    }
+
+    .features ul {
+        list-style-type: none;
+        padding: 0;
+    }
+
+    .features li {
+        margin: 10px 0;
+        padding: 10px;
+        background: white;
+        border-radius: 3px;
+        box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+    }
+
+    .language-info {
+        margin-top: 40px;
+        padding: 20px;
+        background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+        color: white;
+        border-radius: 10px;
+    }
+
+    .language-grid {
+        display: grid;
+        grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+        gap: 15px;
+        margin-top: 20px;
+    }
+
+    .lang-item {
+        background: rgba(255, 255, 255, 0.1);
+        padding: 15px;
+        border-radius: 8px;
+        text-align: center;
+        backdrop-filter: blur(10px);
+    }
+
+    .lang-item strong {
+        display: block;
+        margin-bottom: 5px;
+        font-size: 1.1em;
+    }
+
+    .lang-item span {
+        opacity: 0.8;
+        font-size: 0.9em;
+    }
+</style>
+{% endblock content %}

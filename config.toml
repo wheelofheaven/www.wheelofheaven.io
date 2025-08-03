@@ -1,0 +1,50 @@
+base_url = "https://www.wheelofheaven.io"
+default_language = "en"
+title = "Wheel of Heaven"
+description = "The democratization of the Age of Aquarius starts here. Wheel of Heaven is a knowledge base exploring the working hypothesis that life on Earth was intelligently designed by an extraterrestrial civilization, the so-called Elohim."
+compile_sass = true
+build_search_index = true
+
+[markdown]
+highlight_code = false
+
+# Languages configuration
+
+[languages.de]
+# German
+title = "Wheel of Heaven"
+description = "Die Demokratisierung des Wassermannzeitalters ist hier. Wheel of Heaven ist eine sogenannte Knowledge Base, welche die Arbeitsthese vertritt, dass das Leben auf der Erde von einer außerirdischen Zivilisation, den sogenannten Elohim, geschaffen wurde."
+generate_feeds = true
+
+[languages.fr]
+# French
+title = "Wheel of Heaven"
+description = "La démocratisation de l'Âge du Verseau est là. Wheel of Heaven est une knowledge base autour de la théorie de travail selon laquelle la vie sur terre a été intelligemment conçue par une civilisation extraterrestre, les soi-disant Elohim."
+generate_feeds = true
+
+[languages.es]
+# Spanish
+title = "Wheel of Heaven"
+description = "La democratización de la Era de Acuario está aquí. Wheel of Heaven es una knowledge base alrededor de la teoría de trabajo de que la vida en la tierra fue diseñada de manera inteligente por una civilización extraterrestre, el llamado Elohim."
+generate_feeds = true
+
+[languages.ru]
+# Russian
+title = "Wheel of Heaven"
+description = "Демократизация Эры Водолея здесь. Wheel of Heaven - это база знаний о рабочей теории о том, что жизнь на Земле была разумно спроектирована внеземной цивилизацией, так называемыми Элохим."
+generate_feeds = true
+
+[languages.ja]
+# Japanese
+title = "Wheel of Heaven"
+description = "水瓶座の時代の民主化がここにあります。 Wheel of Heaven は、地球上の生命は地球外文明、いわゆるエロヒムによって知的に設計されたという作業理論に関する知識ベースです。"
+generate_feeds = true
+
+[languages.zh]
+# Chinese (Simplified)
+title = "Wheel of Heaven"
+description = "水瓶座时代的民主化就在这里。 天堂是围绕着工作理论的知识基础，即地球上的生命是由外星文明智能设计的，即所谓的埃洛因（Elohim）。"
+generate_feeds = true
+
+[extra]
+# Put all your custom variables here

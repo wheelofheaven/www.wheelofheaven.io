@@ -1,0 +1,27 @@
+# mise.toml
+
+min_version = "2025.8.3"
+
+[tools]
+zola = "0.21.0"
+
+[env]
+# add env vars here
+
+[tasks.build]
+description = "Compile site statically with Zola"
+run = "zola build"
+
+[tasks.dev]
+description = "Run dev server (live reload)"
+run = "zola serve --interface 0.0.0.0 --open"
+# Make "serve" exclusive, since it's interactive
+raw = true
+
+[tasks.check]
+description = "Run diagnostics without writing files"
+run = "zola check"
+
+[tasks.clean]
+description = "Wipe public directory"
+run = "rm -rf public || true"

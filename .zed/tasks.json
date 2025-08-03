@@ -1,0 +1,51 @@
+// .zed/tasks.json
+
+[
+  {
+    "label": "Zola: Serve (dev, live reload)",
+    "command": "mise",
+    "args": ["run", "dev"],
+    "env": {},
+    "use_new_terminal": false,
+    "allow_concurrent_runs": false,
+    "reveal": "always",
+    "hide": "never",
+    "shell": "system",
+    "tags": ["dev"]
+  },
+  {
+    "label": "Zola: Build (production)",
+    "command": "mise",
+    "args": ["run", "build"],
+    "env": {},
+    "use_new_terminal": false,
+    "allow_concurrent_runs": true,
+    "reveal": "always",
+    "hide": "on_success",
+    "shell": "system",
+    "tags": ["build"]
+  },
+  {
+    "label": "Zola: Check (link & diagnostic check)",
+    "command": "mise",
+    "args": ["run", "check"],
+    "env": {},
+    "use_new_terminal": false,
+    "allow_concurrent_runs": true,
+    "reveal": "always",
+    "hide": "on_success",
+    "shell": "system",
+    "tags": ["check"]
+  },
+  {
+    "label": "Zola: Clean public/",
+    "command": "mise",
+    "args": ["run", "clean"],
+    "env": {},
+    "use_new_terminal": false,
+    "allow_concurrent_runs": true,
+    "reveal": "always",
+    "hide": "on_success",
+    "shell": "system"
+  }
+]

@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="{{ lang }}">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>{% if page.title %}{{ page.title }} | {% endif %}{{ config.title }}</title>
+    <meta name="description" content="{% if page.description %}{{ page.description }}{% elif section.description %}{{ section.description }}{% else %}{{ config.description }}{% endif %}">
+
+    <!-- Language alternates -->
+    {% for lang_code, lang_config in config.languages %}
+        {% if lang_code != lang %}
+            <link rel="alternate" hreflang="{{ lang_code }}" href="{{ get_url(path="", lang=lang_code) }}">
+        {% endif %}
+    {% endfor %}
+
+    <style>
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+            line-height: 1.6;
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 20px;
+            color: #333;
+        }
+
+        .language-switcher {
+            background: #f5f5f5;
+            padding: 10px;
+            border-radius: 5px;
+            margin-bottom: 20px;
+        }
+
+        .language-switcher a {
+            margin-right: 10px;
+            text-decoration: none;
+            color: #0066cc;
+            padding: 5px 10px;
+            border-radius: 3px;
+        }
+
+        .language-switcher a:hover {
+            background: #e0e0e0;
+        }
+
+        .language-switcher a.current {
+            background: #0066cc;
+            color: white;
+        }
+
+        header {
+            border-bottom: 2px solid #eee;
+            margin-bottom: 30px;
+            padding-bottom: 20px;
+        }
+
+        h1 {
+            color: #2c3e50;
+            margin-bottom: 10px;
+        }
+
+        .subtitle {
+            color: #7f8c8d;
+            font-size: 1.1em;
+        }
+
+        main {
+            margin-bottom: 40px;
+        }
+
+        footer {
+            border-top: 1px solid #eee;
+            padding-top: 20px;
+            color: #777;
+            font-size: 0.9em;
+        }
+    </style>
+</head>
+<body>
+    <nav class="language-switcher">
+        <strong>Languages:</strong>
+        <a href="{{ get_url(path="") }}" {% if lang == "en" %}class="current"{% endif %}>English</a>
+        {% for lang_code, lang_config in config.languages %}
+            <a href="{{ get_url(path="", lang=lang_code) }}" {% if lang == lang_code %}class="current"{% endif %}>
+                {% if lang_code == "de" %}Deutsch
+                {% elif lang_code == "fr" %}Français
+                {% elif lang_code == "es" %}Español
+                {% elif lang_code == "ru" %}Русский
+                {% elif lang_code == "ja" %}日本語
+                {% elif lang_code == "zh" %}中文
+                {% endif %}
+            </a>
+        {% endfor %}
+    </nav>
+
+    <header>
+        <h1>{{ config.title }}</h1>
+        <div class="subtitle">{{ config.description }}</div>
+    </header>
+
+    <main>
+        {% block content %}{% endblock content %}
+    </main>
+
+    <footer>
+        <p></p>
+            Current language: <strong>{{ lang }}</strong> |
+            {% if lang == "en" %}English (Default)
+            {% elif lang == "de" %}German
+            {% elif lang == "fr" %}French
+            {% elif lang == "es" %}Spanish
+            {% elif lang == "ru" %}Russian
+            {% elif lang == "ja" %}Japanese
+            {% elif lang == "zh" %}Chinese (Simplified)
+            {% endif %}
+        </p>
+        <p>&copy; 2024 Wheel of Heaven - Multilingual site powered by Zola</p>
+    </footer>
+</body>
+</html>
