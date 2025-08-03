@@ -1,11 +1,10 @@
 <svg
-  viewBox="0 0 1920 200"
-  aria-label="Wheel of Heaven"
-  fill="currentColor"
-  stroke="currentColor"
-  version="1.1"
-  xmlns="http://www.w3.org/2000/svg"
-  xmlns:svg="http://www.w3.org/2000/svg"
+    xmlns="http://www.w3.org/2000/svg"
+    version="1.1"
+    aria-label="Wheel of Heaven"
+    fill="currentColor"
+    stroke="currentColor"
+    viewBox="0 0 1920 200"
 >
   <g>
     <path

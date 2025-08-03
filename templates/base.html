@@ -15,21 +15,7 @@
 
 </head>
 <body>
-    <nav class="language-switcher">
-        <strong>Languages:</strong>
-        <a href="{{ get_url(path="") }}" {% if lang == "en" %}class="current"{% endif %}>English</a>
-        {% for lang_code, lang_config in config.languages %}
-            <a href="{{ get_url(path="", lang=lang_code) }}" {% if lang == lang_code %}class="current"{% endif %}>
-                {% if lang_code == "de" %}Deutsch
-                {% elif lang_code == "fr" %}Français
-                {% elif lang_code == "es" %}Español
-                {% elif lang_code == "ru" %}Русский
-                {% elif lang_code == "ja" %}日本語
-                {% elif lang_code == "zh" %}中文
-                {% endif %}
-            </a>
-        {% endfor %}
-    </nav>
+    {% include "partials/navbar.html" %}
 
     <header>
         <h1>{{ config.title }}</h1>
