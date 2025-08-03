@@ -1,13 +1,14 @@
-@use "../base/variables" as *;
-@use "../abstracts/colors";
+@use "../abstracts/variables" as vars;
+@use "../abstracts/colors" as colors;
+@use "../base/typography" as typo;
 
 .footer {
-    font-size: $font-size-sd;
-    border-top: 1px solid $gray-200;
+    font-size: typo.$font-size-sd;
+    border-top: vars.$hairline-width solid vars.$hairline-color;
     background: inherit;
     color: inherit;
     padding-inline: 1rem;
-    max-width: 1400px;
+    max-width: vars.$viewport-max-width;
     margin-inline: auto;
 
     &__content {
@@ -28,11 +29,11 @@
 
         h6 {
             font-weight: 600;
-            font-size: $font-size-sm;
+            font-size: typo.$font-size-sm;
             text-transform: uppercase;
             letter-spacing: 0.05em;
             margin-bottom: 0.75rem;
-            color: $gray-700;
+            color: colors.$gray-700;
         }
 
         ul {
@@ -41,11 +42,11 @@
             margin: 0;
 
             li {
-                font-size: $font-size-sm;
+                font-size: typo.$font-size-sm;
                 margin-bottom: 0.25rem;
 
                 a {
-                    color: $black;
+                    color: colors.$black;
                     text-decoration: none;
 
                     &:hover {
@@ -67,12 +68,12 @@
         line-height: 1.6;
         margin-bottom: 1.5rem;
         color: #6c757d;
-        font-size: $font-size-sm;
+        font-size: typo.$font-size-sm;
     }
 
     &__bottom {
         padding-block: 1.125rem;
-        border-top: 1px solid $gray-200;
+        border-top: vars.$hairline-width solid vars.$hairline-color;
     }
 
     &__bottom-grid {
@@ -88,9 +89,9 @@
     }
 
     &__closure {
-        font-family: $font-family-monospace;
-        font-size: $font-size-sd;
-        color: $gray-600;
+        font-family: typo.$font-family-tech;
+        font-size: typo.$font-size-sd;
+        color: colors.$gray-600;
     }
 
     &__socials {

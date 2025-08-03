@@ -5,4 +5,10 @@
 @use "colors" as colors;
 
 $background-color: colors.$gray-900;
+
+$hairline-color: colors.$gray-200;
+$hairline-width: 1px;
+
 $text-color-body: colors.$black;
+
+$viewport-max-width: 1400px;

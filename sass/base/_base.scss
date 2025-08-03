@@ -3,7 +3,7 @@
 // This file contains the base styles for the website.
 
 @use "typography" as typo;
-@use "../abstract/variables" as vars;
+@use "../abstracts/variables" as vars;
 
 body {
     font-family: typo.$font-family-body;
