@@ -1,0 +1,37 @@
+// Typography
+//
+// Font, line-height, and color for body text, headings, and more.
+
+@use "fonts";
+
+$font-family-sans:
+    "Jost",
+    -apple-system,
+    blinkmacsystemfont,
+    "Segoe UI",
+    roboto,
+    "Helvetica Neue",
+    arial,
+    "Noto Sans",
+    sans-serif,
+    "Segoe UI Emoji",
+    "Segoe UI Symbol",
+    "Noto Color Emoji";
+$font-family-serif: "Space Grotesk", Georgia, Times, "Times New Roman", serif;
+$font-family-mono:
+    "IBMPlexMono", sfmono-regular, menlo, monaco, consolas, "Liberation Mono",
+    "Courier New", monospace;
+
+$font-family-body: $font-family-sans-serif;
+$font-family-lead: $font-family-serif;
+$font-family-tech: $font-family-mono;
+
+$font-size-base: 1rem;
+$font-size-xl: $font-size-base * 1.375;
+$font-size-lg: $font-size-base * 1.25;
+$font-size-md: $font-size-base * 1.125;
+$font-size-sd: $font-size-base * 1;
+$font-size-sm: $font-size-base * 0.875;
+
+$font-weight-lg: 700;
+$font-weight-sd: 400;

@@ -1,0 +1,26 @@
+// Functions
+//
+// Functions are reusable blocks of code that can accept arguments and return values.
+// They can be used to perform calculations, manipulate data, or perform other tasks.
+
+// Convert px to rem (unused)
+@function rem($px, $base: 16) {
+    @return ($px / $base) * 1rem;
+}
+
+// Lighten or darken color based on theme (unused)
+@function themed-color($color, $amount: 10%) {
+    @if $theme == "dark" {
+        @return lighten($color, $amount);
+    } @else {
+        @return darken($color, $amount);
+    }
+}
+
+// Strip units (unused)
+@function strip-unit($value) {
+    @if type-of($value) == "number" and unit($value) != "" {
+        @return $value / ($value * 0 + 1);
+    }
+    @return $value;
+}

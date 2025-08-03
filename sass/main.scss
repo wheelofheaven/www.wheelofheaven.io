@@ -1,0 +1,27 @@
+// main.scss
+//
+// This file is the main entry point for the Sass project.
+// It imports all the necessary files and modules to build the project.
+
+@use "abstracts/colors";
+@use "abstracts/variables";
+@use "abstracts/functions";
+@use "abstracts/mixins";
+
+@use "vendors/highlight";
+
+@use "base/reset";
+@use "base/typography";
+@use "base/base";
+
+@use "layout/header";
+@use "layout/footer";
+@use "layout/grid";
+
+@use "components/button";
+@use "components/card";
+@use "components/form";
+
+@use "pages/home";
+
+@use "themes/light";

@@ -1,0 +1,129 @@
+@use "../base/variables" as *;
+@use "../abstracts/colors";
+
+.footer {
+    font-size: $font-size-sd;
+    border-top: 1px solid $gray-200;
+    background: inherit;
+    color: inherit;
+    padding-inline: 1rem;
+    max-width: 1400px;
+    margin-inline: auto;
+
+    &__content {
+        padding-block: 1.125rem;
+    }
+
+    &__grid {
+        display: grid;
+        grid-template-columns: repeat(auto-fit, minmax(180px, 1fr));
+        gap: 2rem;
+        align-items: start;
+    }
+
+    &__col {
+        display: flex;
+        flex-direction: column;
+        gap: 0.5rem;
+
+        h6 {
+            font-weight: 600;
+            font-size: $font-size-sm;
+            text-transform: uppercase;
+            letter-spacing: 0.05em;
+            margin-bottom: 0.75rem;
+            color: $gray-700;
+        }
+
+        ul {
+            list-style: none;
+            padding: 0;
+            margin: 0;
+
+            li {
+                font-size: $font-size-sm;
+                margin-bottom: 0.25rem;
+
+                a {
+                    color: $black;
+                    text-decoration: none;
+
+                    &:hover {
+                        text-decoration: underline;
+                    }
+                }
+            }
+        }
+    }
+
+    // Modifier: wide branding column
+    &__col--brand {
+        grid-column: span 2;
+        max-width: 500px;
+        margin-right: 1rem;
+    }
+
+    &__muted {
+        line-height: 1.6;
+        margin-bottom: 1.5rem;
+        color: #6c757d;
+        font-size: $font-size-sm;
+    }
+
+    &__bottom {
+        padding-block: 1.125rem;
+        border-top: 1px solid $gray-200;
+    }
+
+    &__bottom-grid {
+        display: grid;
+        grid-template-columns: 1fr auto;
+        align-items: center;
+        gap: 1rem;
+
+        @media (max-width: 640px) {
+            grid-template-columns: 1fr;
+            text-align: center;
+        }
+    }
+
+    &__closure {
+        font-family: $font-family-monospace;
+        font-size: $font-size-sd;
+        color: $gray-600;
+    }
+
+    &__socials {
+        display: flex;
+        justify-content: flex-end;
+        gap: 0.75rem;
+    }
+
+    &__social-link {
+        display: inline-flex;
+        align-items: center;
+        justify-content: center;
+        width: 2rem;
+        height: 2rem;
+        border-radius: 50%;
+        transition: all 0.3s ease;
+        color: inherit;
+
+        &:hover {
+            background-color: rgba(0, 0, 0, 0.1);
+            transform: translateY(-2px);
+        }
+
+        svg {
+            width: 1.5rem;
+            height: 1.5rem;
+        }
+    }
+}
+
+// Mobile override: don't span multiple columns
+@media (max-width: 640px) {
+    .footer__col--brand {
+        grid-column: span 1;
+    }
+}

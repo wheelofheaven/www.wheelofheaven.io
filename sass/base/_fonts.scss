@@ -1,0 +1,67 @@
+// Fonts
+
+@font-face {
+    font-family: IBMPlexMono;
+    font-style: normal;
+    font-weight: 400;
+    font-display: swap;
+    src:
+        local("IBMPlexMono-Regular"),
+        url("fonts/vendor/ibm-plex-mono/ibm-plex-mono-v19-cyrillic_latin-regular.woff2")
+            format("woff2");
+}
+
+@font-face {
+    font-family: IBMPlexMono;
+    font-style: normal;
+    font-weight: 700;
+    font-display: swap;
+    src:
+        local("IBMPlexMono-Bold"),
+        url("fonts/vendor/ibm-plex-mono/ibm-plex-mono-v19-cyrillic_latin-700.woff2")
+            format("woff2");
+}
+
+@font-face {
+    font-family: Jost;
+    font-style: normal;
+    font-weight: 400;
+    font-display: swap;
+    src:
+        local("Jost-Regular"),
+        url("fonts/vendor/jost/jost-v19-cyrillic_latin-regular.woff2")
+            format("woff2");
+}
+
+@font-face {
+    font-family: Jost;
+    font-style: normal;
+    font-weight: 700;
+    font-display: swap;
+    src:
+        local("Jost-Bold"),
+        url("fonts/vendor/jost/jost-v19-cyrillic_latin-700.woff2")
+            format("woff2");
+}
+
+@font-face {
+    font-family: SpaceGrotesk;
+    font-style: normal;
+    font-weight: 400;
+    font-display: swap;
+    src:
+        local("SpaceGrotesk-Regular"),
+        url("fonts/vendor/space-grotesk/space-grotesk-v21-latin-regular.woff2")
+            format("woff2");
+}
+
+@font-face {
+    font-family: SpaceGrotesk;
+    font-style: normal;
+    font-weight: 700;
+    font-display: swap;
+    src:
+        local("SpaceGrotesk-Bold"),
+        url("fonts/vendor/space-grotesk/space-grotesk-v21-latin-700.woff2")
+            format("woff2");
+}
