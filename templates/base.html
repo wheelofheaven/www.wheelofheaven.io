@@ -12,29 +12,14 @@
             <link rel="alternate" hreflang="{{ lang_code }}" href="{{ get_url(path="", lang=lang_code) }}">
         {% endif %}
     {% endfor %}
-
 </head>
 <body>
-    {% include "partials/navbar.html" %}
-
-    <header>
-        <h1>{{ config.title }}</h1>
-        <div class="subtitle">{{ config.description }}</div>
-
-        <nav class="main-navigation">
-            <a href="{{ get_url(path="", lang=lang) }}">Home</a>
-            <a href="{{ get_url(path="/essentials/", lang=lang) }}">Essentials</a>
-            <a href="{{ get_url(path="/explainers/", lang=lang) }}">Explainers</a>
-            <a href="{{ get_url(path="/timeline/", lang=lang) }}">Timeline</a>
-            <a href="{{ get_url(path="/revelations/", lang=lang) }}">Revelations</a>
-            <a href="{{ get_url(path="/wiki/", lang=lang) }}">Wiki</a>
-        </nav>
-    </header>
-
+    {% include "partials/header.html" %}
     <main>
         {% block content %}{% endblock content %}
     </main>
-
+    {% include "partials/totop.html" %}
     {% include "partials/footer.html" %}
+    {% include "partials/scripts.html" %}
 </body>
 </html>

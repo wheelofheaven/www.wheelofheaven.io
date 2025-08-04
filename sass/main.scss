@@ -14,12 +14,14 @@
 @use "base/typography";
 @use "base/base";
 
-@use "layout/header";
 @use "layout/footer";
 @use "layout/grid";
+@use "layout/header";
+@use "layout/navbar";
 
 @use "components/button";
 @use "components/card";
+@use "components/totop";
 
 @use "pages/home";
 

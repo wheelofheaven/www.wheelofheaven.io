@@ -17,7 +17,9 @@ highlight_code = false
 # en, de, fr, es, ru, ja, zh
 
 [translations]
-footerHead = "Embark on a journey into the Age of Aquarius with Wheel of Heaven..."
+tagline = "Mapping our engineered origins with evidence."
+strapline = "Wheel of Heaven is an open, multilingual atlas that links ancient claims of extraterrestrial design to today’s peer-reviewed science."
+elevatorPitch = "Wheel of Heaven is a public knowledge hub that threads Raëlian scriptures, world myth, and modern genomics into a critical, citation-rich narrative about humanity’s potential engineered origin. Read concise primers, explore annotated source texts, and explore the lore all transparent, open-source, and free."
 footerWheelOfHeaven = "Wheel of Heaven"
 footerGetStarted = "Get Started"
 footerAbout = "About"
@@ -82,8 +84,9 @@ generate_feeds = true
 build_search_index = true
 
 [languages.de.translations]
-footerWheelOfHeaven = "Wheel of Heaven"
-footerHead = "Begeben Sie sich auf eine Reise ins Zeitalter des Wassermanns mit Wheel of Heaven, einem Portal der Entdeckung und Demokratisierung kosmischen Wissens. Unsere Plattform erforscht die faszinierende Hypothese, dass das Leben auf der Erde kein Zufall war, sondern ein beabsichtigter Akt der intelligenten Schöpfung durch eine fortgeschrittene außerirdische Zivilisation, bekannt als die Elohim. Wheel of Heaven bietet eine reiche Wissensbasis, die altes Wissen, moderne wissenschaftliche Forschung und visionäre Einsichten verbindet und Sie einlädt, die Möglichkeit unserer himmlischen Ursprünge und die tiefgreifenden Implikationen für unsere Zukunft zu erforschen."
+tagline = "Mapping our engineered origins with evidence."
+strapline = "Wheel of Heaven is an open, multilingual atlas that links ancient claims of extraterrestrial design to today’s peer-reviewed science."
+elevatorPitch = "Wheel of Heaven is a public knowledge hub that threads Raëlian scriptures, world myth, and modern genomics into a critical, citation-rich narrative about humanity’s potential engineered origin. Read concise primers, explore annotated source texts, and explore the lore all transparent, open-source, and free."
 footerAbout = "Über uns"
 footerAboutLink = "/de/intro/wheel-of-heaven/"
 footerHelloWorld = "Hallo Welt!"
@@ -145,8 +148,9 @@ generate_feeds = true
 build_search_index = true
 
 [languages.fr.translations]
-footerHead = "Embarquez pour un voyage dans l'Ère du Verseau avec Wheel of Heaven, un portail de découverte et de démocratisation du savoir cosmique. Notre plateforme se penche sur l'hypothèse captivante que la vie sur Terre n'est pas un simple hasard, mais le fruit d'une conception intelligente par une civilisation extraterrestre avancée, connue sous le nom d'Elohim. Wheel of Heaven offre une base de connaissances enrichissante qui entrelace sagesse ancienne, enquête scientifique moderne et perspectives visionnaires, vous invitant à explorer la possibilité de nos origines célestes et les implications profondes pour notre avenir."
-footerWheelOfHeaven = "Wheel of Heaven"
+tagline = "Mapping our engineered origins with evidence."
+strapline = "Wheel of Heaven is an open, multilingual atlas that links ancient claims of extraterrestrial design to today’s peer-reviewed science."
+elevatorPitch = "Wheel of Heaven is a public knowledge hub that threads Raëlian scriptures, world myth, and modern genomics into a critical, citation-rich narrative about humanity’s potential engineered origin. Read concise primers, explore annotated source texts, and explore the lore all transparent, open-source, and free."
 footerAbout = "À propos"
 footerAboutLink = "/fr/intro/wheel-of-heaven/"
 footerHelloWorld = "Bonjour le monde !"
@@ -209,8 +213,9 @@ generate_feeds = true
 build_search_index = true
 
 [languages.es.translations]
-footerHead = "Embárcate en un viaje hacia la Era de Acuario con Wheel of Heaven, un portal de descubrimiento y democratización del conocimiento cósmico. Nuestra plataforma profundiza en la hipótesis fascinante de que la vida en la Tierra no fue una mera casualidad, sino un acto de diseño inteligente por una civilización extraterrestre avanzada conocida como los Elohim. Wheel of Heaven ofrece una rica base de conocimientos que entrelaza la sabiduría antigua, la indagación científica moderna y percepciones visionarias, invitándote a explorar la posibilidad de nuestros orígenes celestiales y las profundas implicaciones para nuestro futuro."
-footerWheelOfHeaven = "Wheel of Heaven"
+tagline = "Mapping our engineered origins with evidence."
+strapline = "Wheel of Heaven is an open, multilingual atlas that links ancient claims of extraterrestrial design to today’s peer-reviewed science."
+elevatorPitch = "Wheel of Heaven is a public knowledge hub that threads Raëlian scriptures, world myth, and modern genomics into a critical, citation-rich narrative about humanity’s potential engineered origin. Read concise primers, explore annotated source texts, and explore the lore all transparent, open-source, and free."
 footerAbout = "Acerca de"
 footerAboutLink = "/es/intro/wheel-of-heaven/"
 footerHelloWorld = "¡Hola mundo!"
@@ -272,8 +277,9 @@ generate_feeds = true
 build_search_index = true
 
 [languages.ru.translations]
-footerHead = "Путешествие в Эру Водолея начинается здесь, на Wheel of Heaven - портале открытий и демократизации космических знаний. Наша платформа исследует увлекательную гипотезу о том, что жизнь на Земле не является случайностью, а является результатом интеллектуального дизайна развитой внеземной цивилизации, известной как Элохим. Wheel of Heaven предлагает богатую базу знаний, сочетающую древнюю мудрость, современные научные исследования и прогрессивные идеи, приглашая вас исследовать возможность нашего небесного происхождения и глубокие последствия для нашего будущего."
-footerWheelOfHeaven = "Wheel of Heaven"
+tagline = "Mapping our engineered origins with evidence."
+strapline = "Wheel of Heaven is an open, multilingual atlas that links ancient claims of extraterrestrial design to today’s peer-reviewed science."
+elevatorPitch = "Wheel of Heaven is a public knowledge hub that threads Raëlian scriptures, world myth, and modern genomics into a critical, citation-rich narrative about humanity’s potential engineered origin. Read concise primers, explore annotated source texts, and explore the lore all transparent, open-source, and free."
 footerAbout = "О проекте"
 footerAboutLink = "/ru/intro/wheel-of-heaven/"
 footerHelloWorld = "Привет, мир!"
@@ -336,8 +342,9 @@ footerClosure = "Made with ♥ в Швейцарии <a href=\"https://github.co
 # build_search_index = true
 
 [languages.ja.translations]
-footerHead = "Wheel of Heavenでは水瓶座の時代への旅が始まります。発見と宇宙知識の民主化のポータルです。私たちのプラットフォームは、地球上の生命が偶然ではなく、エロヒムとして知られる進んだ宇宙文明によるインテリジェントデザインの産物であるという魅力的な仮説を探求します。Wheel of Heavenは、古代の知恵、現代の科学的探求、そして先見の明を組み合わせた豊かな知識基盤を提供し、我々の天の起源と未来に対する深い意味を探求することをお誘いします。"
-footerWheelOfHeaven = "Wheel of Heaven"
+tagline = "Mapping our engineered origins with evidence."
+strapline = "Wheel of Heaven is an open, multilingual atlas that links ancient claims of extraterrestrial design to today’s peer-reviewed science."
+elevatorPitch = "Wheel of Heaven is a public knowledge hub that threads Raëlian scriptures, world myth, and modern genomics into a critical, citation-rich narrative about humanity’s potential engineered origin. Read concise primers, explore annotated source texts, and explore the lore all transparent, open-source, and free."
 footerAbout = "紹介"
 footerAboutLink = "/ja/intro/wheel-of-heaven/"
 footerHelloWorld = "こんにちは、世界！"
@@ -399,8 +406,9 @@ generate_feeds = true
 # build_search_index = true
 
 [languages.zh.translations]
-footerHead = "水瓶时代的民主化在这里开始。Wheel of Heaven是一个探索知识的基地，它探讨的核心假设是地球上的生命是由一种高级外星文明——所谓的Elohim——智能设计的。我们的平台深入探讨这一迷人的假设，将古代智慧、现代科学探索和前瞻性洞察交织在一起，邀请您探索我们的天体起源和对我们未来的深远影响。"
-footerWheelOfHeaven = "Wheel of Heaven"
+tagline = "Mapping our engineered origins with evidence."
+strapline = "Wheel of Heaven is an open, multilingual atlas that links ancient claims of extraterrestrial design to today’s peer-reviewed science."
+elevatorPitch = "Wheel of Heaven is a public knowledge hub that threads Raëlian scriptures, world myth, and modern genomics into a critical, citation-rich narrative about humanity’s potential engineered origin. Read concise primers, explore annotated source texts, and explore the lore all transparent, open-source, and free."
 footerAbout = "关于"
 footerAboutLink = "/zh/intro/wheel-of-heaven/"
 footerHelloWorld = "你好，世界！"

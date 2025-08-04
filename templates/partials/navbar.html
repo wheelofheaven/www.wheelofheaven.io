@@ -1,5 +1,70 @@
 <nav class="navbar" aria-label="Main navigation">
-    <a class="navbar-brand" href="/" aria-label="Wheel of Heaven">
-        <img src="{{ get_url(path="brand/logomark.svg") }}" alt="Wheel of Heaven">
+    <a href={`/`} aria-label="Wheel of Heaven" role="img" class="navbar__logo">
+        <a class="navbar-brand" href="/" aria-label="Wheel of Heaven">
+            <img src="{{ get_url(path="brand/logomark.svg") }}" alt="Wheel of Heaven">
+        </a>
     </a>
+    <div class="navbar__content">
+        <div class="navbar__links">
+            <a href="/essentials" class="navbar__link"
+                >Essentials</a
+            >
+            <a href="/explainers" class="navbar__link"
+                >Explainers</a
+            >
+            <a href="/timeline" class="navbar__link"
+                >Timeline</a
+            >
+            <a href={getLocalizedUrl("/revelations", lang)} class="navbar__link"
+                >Revelations</a
+            >
+            <a href="/wiki" class="navbar__link">Wiki</a>
+        </div>
+    </div>
+
+    <div class="navbar__controls">
+        <a href="/search" class="navbar__link navbar__link--icon">
+            <Icon name="lucide:search" size="16" />
+            Search
+        </a>
+
+        <div class="navbar__language-switcher" id="lang-switcher">
+            <Icon name="lucide:globe" size="16" />
+            <select
+                id="lang-select"
+                class="navbar__select"
+                aria-label="Select language"
+            >
+                <option value="en">English</option>
+                <option value="de">Deutsch</option>
+                <option value="fr">Français</option>
+                <option value="es">Español</option>
+                <option value="ru">Русский</option>
+                <option value="ja">日本語</option>
+                <option value="zh">中文</option>
+            </select>
+        </div>
+
+        <button
+            id="theme-toggle"
+            aria-label="Toggle dark/light mode"
+            class="navbar__theme-toggle"
+        >
+            <span id="theme-toggle-icon" class="navbar__theme-icon">
+                <svg
+                    xmlns="http://www.w3.org/2000/svg"
+                    width="20"
+                    height="20"
+                    viewBox="0 0 24 24"
+                    fill="none"
+                    stroke="currentColor"
+                    stroke-width="2"
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                >
+                    <path d="M12 3a6 6 0 0 0 9 9 9 9 0 1 1-9-9Z"></path>
+                </svg>
+            </span>
+        </button>
+    </div>
 </nav>

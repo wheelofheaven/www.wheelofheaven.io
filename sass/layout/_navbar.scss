@@ -1,0 +1,140 @@
+@use "../abstracts/variables" as vars;
+@use "../abstracts/colors" as colors;
+@use "../base/typography" as typo;
+
+.navbar {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0.75rem 1.5rem;
+    background-color: rgba(from var(--color-background) / 0.1);
+    backdrop-filter: blur(12px);
+    border-radius: 1rem;
+    position: fixed;
+    top: 0.5rem;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 90%;
+    max-width: 80rem;
+    z-index: 50;
+    color: var(--color-text);
+    font-family: typo.$font-family-body;
+    border: 1px solid rgba(var(--color-text), 0.01);
+
+    &__logo {
+        color: var(--color-text);
+        display: inline-block;
+        svg {
+            height: 2.5rem;
+            width: auto;
+            fill: currentColor;
+            stroke: currentColor;
+        }
+    }
+
+    &__content {
+        display: flex;
+        flex: 1;
+        justify-content: space-between;
+        align-items: center;
+        margin-left: 1rem;
+    }
+
+    &__links {
+        display: flex;
+        gap: 1rem;
+    }
+
+    &__link {
+        color: var(--color-text);
+        text-decoration: none;
+        padding: 0.25rem 0.75rem;
+        border-radius: 0.375rem;
+        font-weight: 500;
+        transition: color 0.3s ease;
+        font-family: typo.$font-family-body;
+
+        &:hover,
+        &:focus {
+            color: var(--color-accent-primary);
+            outline: none;
+        }
+
+        &--icon {
+            display: flex;
+            align-items: center;
+            gap: 0.375rem;
+
+            svg {
+                flex-shrink: 0;
+            }
+        }
+    }
+
+    &__controls {
+        display: flex;
+        align-items: center;
+        gap: 1rem;
+    }
+
+    &__language-switcher {
+        display: flex;
+        align-items: center;
+        gap: 0.25rem;
+
+        svg {
+            margin-right: 0.25rem;
+            color: var(--color-text);
+            flex-shrink: 0;
+        }
+
+        select.navbar__select {
+            background-color: var(--color-background);
+            color: var(--color-text);
+            padding: 0.25rem 0.5rem;
+            border-radius: 0.375rem;
+            border: 1px solid rgba(from var(--color-text) / 0.2);
+            font-size: typo.$font-size-sm;
+            cursor: pointer;
+            transition: all 0.3s ease;
+            font-family: typo.$font-family-body;
+
+            &:hover,
+            &:focus {
+                background-color: rgba(from var(--color-background) / 0.8);
+                border-color: var(--color-accent-primary);
+                outline: none;
+            }
+        }
+    }
+
+    &__theme-toggle {
+        background: none;
+        border: none;
+        color: var(--color-text);
+        cursor: pointer;
+        padding: 0.5rem;
+        border-radius: 0.375rem;
+        transition: all 0.3s ease;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+
+        &:hover,
+        &:focus {
+            background-color: rgba(from var(--color-text) / 0.1);
+            color: var(--color-accent-primary);
+            outline: none;
+        }
+    }
+
+    &__theme-icon {
+        width: 1.25rem;
+        height: 1.25rem;
+        transition: transform 0.3s ease;
+
+        &:hover {
+            transform: scale(1.1);
+        }
+    }
+}
