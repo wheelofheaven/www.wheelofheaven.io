@@ -1,8 +1,6 @@
 <nav class="navbar" aria-label="Main navigation">
-    <a href={`/`} aria-label="Wheel of Heaven" role="img" class="navbar__logo">
-        <a class="navbar-brand" href="/" aria-label="Wheel of Heaven">
-            <img src="{{ get_url(path="brand/logomark.svg") }}" alt="Wheel of Heaven">
-        </a>
+    <a class="navbar__logo" href="/" aria-label="Wheel of Heaven">
+        {% include "partials/brand/logomark.html" %}
     </a>
     <div class="navbar__content">
         <div class="navbar__links">
@@ -51,19 +49,8 @@
             class="navbar__theme-toggle"
         >
             <span id="theme-toggle-icon" class="navbar__theme-icon">
-                <svg
-                    xmlns="http://www.w3.org/2000/svg"
-                    width="20"
-                    height="20"
-                    viewBox="0 0 24 24"
-                    fill="none"
-                    stroke="currentColor"
-                    stroke-width="2"
-                    stroke-linecap="round"
-                    stroke-linejoin="round"
-                >
-                    <path d="M12 3a6 6 0 0 0 9 9 9 9 0 1 1-9-9Z"></path>
-                </svg>
+                {% include "partials/icons/feather-moon.html" %}
+                {% include "partials/icons/feather-sun.html" %}
             </span>
         </button>
     </div>

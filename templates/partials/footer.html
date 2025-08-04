@@ -3,7 +3,7 @@
     <div class="footer__grid">
 
       <div class="footer__col footer__col--brand">
-        <h3 class="footer__brand"><img src="{{ get_url(path="brand/wordmark.svg") }}" alt="Wheel of Heaven"></h3>
+        <h3 class="footer__brand">{% include "partials/brand/wordmark.html" %}</h3>
         <p class="footer__muted">{{ trans(key="elevatorPitch") | safe }}</p>
       </div>
 
