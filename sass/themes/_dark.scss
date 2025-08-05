@@ -1,0 +1,15 @@
+// Dark Theme Variables
+
+@use "../abstracts/colors" as colors;
+
+[data-theme="dark"] {
+    --color-text: #ffffff;
+    --color-background: #0a0a0a;
+    --color-accent-primary: #{colors.$mint};
+    --color-hairline: #2a2a2a;
+}
+
+[data-theme="dark"] .card {
+    background-color: var(--color-background);
+    color: var(--color-text);
+}

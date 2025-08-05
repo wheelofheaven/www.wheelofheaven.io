@@ -16,12 +16,12 @@
 
   <div class="navbar__controls">
     <div class="navbar__search desktop-only">
-    <input
-        type="search"
-        class="navbar__search-input"
-        placeholder="Search..."
-        aria-label="Search site"
-    />
+      <input
+          type="search"
+          class="navbar__search-input"
+          placeholder="Search..."
+          aria-label="Search site"
+      />
     </div>
 
     <div class="navbar__language-switcher" id="lang-switcher">
@@ -60,22 +60,14 @@
       </span>
     </button>
 
-    <div class="navbar__mobile__search mobile-only" id="mobileSearch">
-      <input
-        type="search"
-        class="navbar__search-input"
-        placeholder="Search..."
-        aria-label="Search"
-      />
-      <button
-        class="navbar__search-icon"
-        id="mobileSearchToggle"
-        aria-label="Toggle search"
-        type="button"
-      >
-          {% include "partials/icons/feather-search.html" %}
-      </button>
-    </div>
+    <button
+      class="navbar__mobile__search-toggle"
+      id="mobileSearchToggle"
+      aria-label="Toggle search"
+      type="button"
+    >
+      {% include "partials/icons/feather-search.html" %}
+    </button>
 
     <div class="navbar__mobile__links">
       <a href="/essentials" class="navbar__link">Essentials</a>
@@ -85,4 +77,13 @@
       <a href="/wiki" class="navbar__link">Wiki</a>
     </div>
   </div>
+
+  <!-- Search overlay field -->
+  <input
+    type="search"
+    class="navbar__mobile__search-field"
+    id="mobileSearchField"
+    placeholder="Search..."
+    aria-label="Search"
+  />
 </div>
