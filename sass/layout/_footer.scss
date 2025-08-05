@@ -20,9 +20,19 @@
 
     &__grid {
         display: grid;
-        grid-template-columns: repeat(auto-fit, minmax(180px, 1fr));
-        gap: 2rem;
+        grid-template-columns: 3fr 0.8fr 0.8fr 0.8fr 0.8fr;
+        gap: 4rem;
         align-items: start;
+
+        @media (max-width: 900px) {
+            grid-template-columns: 3fr 0.8fr 0.8fr 0.8fr 0.8fr;
+            gap: 2rem;
+        }
+
+        @media (max-width: 768px) {
+            grid-template-columns: 2fr 1fr 1fr 1fr 1fr;
+            gap: 1.5rem;
+        }
     }
 
     &__col {
@@ -36,7 +46,12 @@
             font-size: typo.$font-size-sm;
             text-transform: uppercase;
             letter-spacing: 0.05em;
-            margin-bottom: 0.75rem;
+            margin-bottom: 0.25rem;
+            margin-top: 1.5rem;
+
+            &:first-child {
+                margin-top: 0;
+            }
         }
 
         ul {
@@ -62,9 +77,13 @@
 
     // Modifier: wide branding column
     &__col--brand {
-        grid-column: span 2;
-        max-width: 500px;
-        margin-right: 1rem;
+        max-width: 400px;
+        margin-right: 3rem;
+
+        @media (max-width: 640px) {
+            margin-right: 0;
+            max-width: none;
+        }
     }
 
     &__muted {
@@ -100,6 +119,11 @@
         font-family: typo.$font-family-tech;
         font-size: typo.$font-size-sd;
         color: var(--color-text-muted);
+
+        small {
+            font-size: 0.6rem;
+            opacity: 0.7;
+        }
     }
 
     &__socials {
@@ -134,9 +158,15 @@
     }
 }
 
-// Mobile override: don't span multiple columns
+// Mobile override: stack columns
 @media (max-width: 640px) {
+    .footer__grid {
+        grid-template-columns: 1fr;
+        gap: 2rem;
+    }
+
     .footer__col--brand {
-        grid-column: span 1;
+        margin-right: 0;
+        max-width: none;
     }
 }

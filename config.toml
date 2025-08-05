@@ -76,7 +76,8 @@ footerCookiePolicy_url = "/privacy-policy/"
 footerSecurityPolicy = "Security Policy"
 footerContact = "Contact"
 footerContact_url = "/contact/"
-footerClosure = "Made with ♥ in Switzerland"
+footerAttribution = "This work is in the public domain"
+footerAttributionSubline = "Content available under a <a href=\"https://github.com/wheelofheaven/wheelofheaven.io/blob/main/LICENSE\" class=\"link\" target=\"_blank\">Creative Commons license</a>"
 
 
 [languages.de]
@@ -141,7 +142,8 @@ footerCookiePolicyLink = "/privacy-policy/"
 footerSecurityPolicy = "Sicherheitsrichtlinie"
 footerContact = "Kontakt"
 footerContactLink = "/contact/"
-footerClosure = "Made with ♥ in der Schweiz mithilfe von <a href=\"https://github.com/wheelofheaven/\" class=\"link\" target=\"_blank\">GitHub</a> und <a href=\"https://gohugo.io/\" class=\"link\" target=\"_blank\">Hugo</a>"
+footerAttribution = "Dieses Werk ist gemeinfrei"
+footerAttributionSubline = "Inhalte verfügbar unter einer <a href=\"https://github.com/wheelofheaven/wheelofheaven.io/blob/main/LICENSE\" class=\"link\" target=\"_blank\">Creative Commons Lizenz</a>"
 
 [languages.fr]
 generate_feeds = true
@@ -206,7 +208,8 @@ footerCookiePolicyLink = "/privacy-policy/"
 footerSecurityPolicy = "Politique de Sécurité"
 footerContact = "Contact"
 footerContactLink = "/contact/"
-footerClosure = "Made with ♥ en Suisse avec <a href=\"https://github.com/wheelofheaven/\" class=\"link\" target=\"_blank\">GitHub</a> et <a href=\"https://gohugo.io/\" class=\"link\" target=\"_blank\">Hugo</a>"
+footerAttribution = "Cette œuvre est dans le domaine public"
+footerAttributionSubline = "Contenu disponible sous licence <a href=\"https://github.com/wheelofheaven/wheelofheaven.io/blob/main/LICENSE\" class=\"link\" target=\"_blank\">Creative Commons</a>"
 
 [languages.es]
 generate_feeds = true
@@ -270,7 +273,8 @@ footerCookiePolicyLink = "/privacy-policy/"
 footerSecurityPolicy = "Política de Seguridad"
 footerContact = "Contacto"
 footerContactLink = "/contact/"
-footerClosure = "Made with ♥ en Suiza con <a href=\"https://github.com/wheelofheaven/\" class=\"link\" target=\"_blank\">GitHub</a> y <a href=\"https://gohugo.io/\" class=\"link\" target=\"_blank\">Hugo</a>"
+footerAttribution = "Esta obra es de dominio público"
+footerAttributionSubline = "Contenido disponible bajo licencia <a href=\"https://github.com/wheelofheaven/wheelofheaven.io/blob/main/LICENSE\" class=\"link\" target=\"_blank\">Creative Commons</a>"
 
 [languages.ru]
 generate_feeds = true
@@ -335,7 +339,8 @@ footerCookiePolicyLink = "/privacy-policy/"
 footerSecurityPolicy = "Политика Безопасности"
 footerContact = "Контакт"
 footerContactLink = "/contact/"
-footerClosure = "Made with ♥ в Швейцарии <a href=\"https://github.com/wheelofheaven/\" class=\"link\" target=\"_blank\">GitHub</a> и <a href=\"https://gohugo.io/\" class=\"link\" target=\"_blank\">Hugo</a>"
+footerAttribution = "Это произведение находится в общественном достоянии"
+footerAttributionSubline = "Контент доступен под лицензией <a href=\"https://github.com/wheelofheaven/wheelofheaven.io/blob/main/LICENSE\" class=\"link\" target=\"_blank\">Creative Commons</a>"
 
 [languages.ja]
 # generate_feeds = true
@@ -399,7 +404,8 @@ footerCookiePolicyLink = "/privacy-policy/"
 footerSecurityPolicy = "セキュリティポリシー"
 footerContact = "連絡先"
 footerContactLink = "/contact/"
-footerClosure = "<a href=\"https://github.com/wheelofheaven/\" class=\"link\" target=\"_blank\">GitHub</a>、<a href=\"https://gohugo.io/\" class=\"link\" target=\"_blank\">Hugo</a> を使用してスイスで ♥ で作成"
+footerAttribution = "この作品はパブリックドメインです"
+footerAttributionSubline = "コンテンツは<a href=\"https://github.com/wheelofheaven/wheelofheaven.io/blob/main/LICENSE\" class=\"link\" target=\"_blank\">Creative Commonsライセンス</a>の下で利用可能です"
 
 [languages.zh]
 generate_feeds = true
@@ -464,4 +470,5 @@ footerCookiePolicyLink = "/privacy-policy/"
 footerSecurityPolicy = "安全政策"
 footerContact = "联系方式"
 footerContactLink = "/contact/"
-footerClosure = "使用<a href=\"https://github.com/wheelofheaven/\" class=\"link\" target=\"_blank\">GitHub</a> 和 <a href=\"https://gohugo.io/\" class=\"link\" target=\"_blank\">Hugo</a> 在瑞士制造♥"
+footerAttribution = "本作品属于公共领域"
+footerAttributionSubline = "内容在<a href=\"https://github.com/wheelofheaven/wheelofheaven.io/blob/main/LICENSE\" class=\"link\" target=\"_blank\">知识共享许可证</a>下提供"

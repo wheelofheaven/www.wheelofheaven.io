@@ -38,7 +38,13 @@ Keep up with the latest developments in our project:
 
 - [Telegram | t.me/wheelofheaven](https://t.me/wheelofheaven)
 - [Twitter | @wheelofheaven](https://twitter.com/wheelofheaven)
+- [GitHub | wheelofheaven](https://github.com/wheelofheaven)
 
----
 
-_Made with ♥ in Switzerland, using [Zola](https://www.getzola.org/).
+## Attribution
+
+This website is powered by [Zola](https://www.getzola.org/), a static site generator written in Rust.
+
+## License
+
+This project is licensed under the MIT License - see the [LICENSE](LICENSE) file for details.
