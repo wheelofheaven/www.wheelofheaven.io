@@ -14,7 +14,7 @@
     border: 1px solid rgba(var(--color-text), 0.05);
     color: var(--color-text);
     cursor: pointer;
-    z-index: 40;
+    z-index: 110;
     opacity: 0;
     pointer-events: none;
     transition:
@@ -31,5 +31,11 @@
     &--visible {
         opacity: 1;
         pointer-events: auto;
+    }
+}
+
+@media (max-width: 768px) {
+    .to-top {
+        bottom: 5rem;
     }
 }

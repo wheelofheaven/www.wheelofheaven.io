@@ -15,10 +15,14 @@
   </div>
 
   <div class="navbar__controls">
-    <a href="/search" class="navbar__link navbar__link--icon">
-      <Icon name="lucide:search" size="16" />
-      Search
-    </a>
+    <div class="navbar__search desktop-only">
+    <input
+        type="search"
+        class="navbar__search-input"
+        placeholder="Search..."
+        aria-label="Search site"
+    />
+    </div>
 
     <div class="navbar__language-switcher" id="lang-switcher">
       <Icon name="lucide:globe" size="16" />
@@ -33,7 +37,7 @@
       </select>
     </div>
 
-    <button id="theme-toggle" aria-label="Toggle dark/light mode" class="navbar__theme-toggle">
+    <button id="mobile-theme-toggle" class="navbar__theme-toggle" aria-label="Toggle dark/light mode">
       <span id="theme-toggle-icon" class="navbar__theme-icon">
           <span class="icon icon--moon">{% include "partials/icons/feather-moon.html" %}</span>
           <span class="icon icon--sun">{% include "partials/icons/feather-sun.html" %}</span>
@@ -49,16 +53,29 @@
 <!-- Mobile overlay nav (expands horizontally from floating trigger) -->
 <div class="navbar__mobile" id="mobileNavbar">
   <div class="navbar__mobile__inner">
-    <button id="mobile-theme-toggle" class="navbar__theme-toggle" aria-label="Toggle theme">
+      <button id="mobile-theme-toggle" class="navbar__theme-toggle" aria-label="Toggle dark/light mode">
       <span class="navbar__theme-icon">
           <span class="icon icon--moon">{% include "partials/icons/feather-moon.html" %}</span>
           <span class="icon icon--sun">{% include "partials/icons/feather-sun.html" %}</span>
       </span>
     </button>
 
-    <a href="/search" class="navbar__link navbar__link--icon">
-      <Icon name="lucide:search" size="16" />
-    </a>
+    <div class="navbar__mobile__search mobile-only" id="mobileSearch">
+      <input
+        type="search"
+        class="navbar__search-input"
+        placeholder="Search..."
+        aria-label="Search"
+      />
+      <button
+        class="navbar__search-icon"
+        id="mobileSearchToggle"
+        aria-label="Toggle search"
+        type="button"
+      >
+          {% include "partials/icons/feather-search.html" %}
+      </button>
+    </div>
 
     <div class="navbar__mobile__links">
       <a href="/essentials" class="navbar__link">Essentials</a>
