@@ -5,12 +5,78 @@ document.addEventListener("DOMContentLoaded", () => {
   let isExpanded = false;
   let closeTimer = null;
   let isSearchActive = false;
+  let isLeftHanded = false;
 
   // 🔁 Function to update all theme icons (desktop + mobile)
   function updateThemeIcons(isLight) {
     document.querySelectorAll(".navbar__theme-icon").forEach((icon) => {
       icon.classList.toggle("navbar__theme-icon--light", isLight);
     });
+  }
+
+  // 🍪 Cookie utilities
+  function setCookie(name, value, days = 365) {
+    const expires = new Date();
+    expires.setTime(expires.getTime() + days * 24 * 60 * 60 * 1000);
+    document.cookie = `${name}=${value};expires=${expires.toUTCString()};path=/`;
+  }
+
+  function getCookie(name) {
+    const nameEQ = name + "=";
+    const ca = document.cookie.split(";");
+    for (let i = 0; i < ca.length; i++) {
+      let c = ca[i];
+      while (c.charAt(0) === " ") c = c.substring(1, c.length);
+      if (c.indexOf(nameEQ) === 0) return c.substring(nameEQ.length, c.length);
+    }
+    return null;
+  }
+
+  // 👐 Handedness functionality
+  function updateHandedness(leftHanded) {
+    isLeftHanded = leftHanded;
+    const toTopBtn = document.querySelector(".to-top");
+    const mobileToggleContainer = document.querySelector(
+      ".navbar__mobile-toggle-container",
+    );
+    const handednessToggle = document.querySelector(
+      ".navbar__handedness-toggle",
+    );
+    const handednessIcon = handednessToggle?.querySelector("svg");
+
+    // Update mobile navbar
+    if (mobileNavbar) {
+      mobileNavbar.classList.toggle("navbar__mobile--left", leftHanded);
+    }
+    if (mobileToggleContainer) {
+      mobileToggleContainer.classList.toggle(
+        "navbar__mobile-toggle-container--left",
+        leftHanded,
+      );
+    }
+
+    // Update to-top button
+    if (toTopBtn) {
+      toTopBtn.classList.toggle("to-top--left", leftHanded);
+    }
+
+    // Update handedness toggle icon direction
+    if (handednessIcon) {
+      if (leftHanded) {
+        handednessIcon.innerHTML = '<path d="m15 18-6-6 6-6"/>';
+      } else {
+        handednessIcon.innerHTML = '<path d="m9 18 6-6-6-6"/>';
+      }
+    }
+
+    // Save preference
+    setCookie("handedness", leftHanded ? "left" : "right");
+  }
+
+  // Initialize handedness from cookie
+  const savedHandedness = getCookie("handedness");
+  if (savedHandedness === "left") {
+    updateHandedness(true);
   }
 
   // 🌓 Theme toggle logic
@@ -130,6 +196,14 @@ document.addEventListener("DOMContentLoaded", () => {
           resetSearch(); // Also reset search when auto-closing
         }, 6000); // ⏱ Auto-close after 6 seconds
       }
+    });
+  }
+
+  // 👐 Handedness toggle
+  const handednessToggle = document.querySelector(".navbar__handedness-toggle");
+  if (handednessToggle) {
+    handednessToggle.addEventListener("click", () => {
+      updateHandedness(!isLeftHanded);
     });
   }
 });

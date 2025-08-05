@@ -36,6 +36,12 @@
     --color-overlay: rgba(255, 255, 255, 0.5);
     --color-glass-bg: rgba(255, 255, 255, 0.8);
     --color-glass-border: rgba(0, 0, 0, 0.01);
+
+    // Handedness toggle (grayish/subtle in light mode)
+    --color-handedness-bg: rgba(200, 200, 200, 0.3);
+    --color-handedness-border: rgba(150, 150, 150, 0.2);
+    --color-handedness-text: rgba(100, 100, 100, 0.8);
+    --color-handedness-hover: rgba(180, 180, 180, 0.4);
 }
 
 [data-theme="light"] .card {

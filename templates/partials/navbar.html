@@ -46,12 +46,19 @@
   </div>
 </nav>
 
-<button class="navbar__mobile-toggle" id="mobileNavbarToggle" aria-label="Open menu">
-  {% include "partials/brand/logomark.html" %}
-</button>
+<div class="navbar__mobile-toggle-container">
+  <button class="navbar__mobile-toggle" id="mobileNavbarToggle" aria-label="Open menu">
+    {% include "partials/brand/logomark.html" %}
+  </button>
+</div>
 
 <!-- Mobile overlay nav (expands horizontally from floating trigger) -->
 <div class="navbar__mobile" id="mobileNavbar">
+  <!-- Handedness toggle -->
+  <button class="navbar__handedness-toggle" aria-label="Switch to left-handed mode">
+      {% include "partials/icons/hand.html" %}
+  </button>
+
   <div class="navbar__mobile__inner">
       <button id="mobile-theme-toggle" class="navbar__theme-toggle" aria-label="Toggle dark/light mode">
       <span class="navbar__theme-icon">
