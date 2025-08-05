@@ -1,0 +1,113 @@
+// Theme Initialization
+//
+// This file sets up default theme values and ensures proper CSS custom property fallbacks
+
+@use "../abstracts/colors" as colors;
+
+// Default theme values (fallback to dark theme if no theme is set)
+:root {
+    // Core colors
+    --color-text: #{colors.$gray-100};
+    --color-text-muted: #{colors.$gray-400};
+    --color-text-subtle: #{colors.$gray-500};
+    --color-background: #{colors.$gray-950};
+    --color-background-secondary: #{colors.$gray-900};
+    --color-background-tertiary: #{colors.$gray-800};
+    --color-accent-primary: #{colors.$mint};
+    --color-accent-secondary: #{colors.$blue};
+    --color-hairline: #{colors.$gray-800};
+    --color-hairline-subtle: #{colors.$gray-900};
+
+    // Interactive states
+    --color-hover: rgba(255, 255, 255, 0.1);
+    --color-active: rgba(255, 255, 255, 0.2);
+    --color-focus: #{colors.$mint};
+
+    // Component-specific colors
+    --color-navbar-bg: rgba(27, 31, 34, 0.1);
+    --color-footer-bg: #{colors.$gray-950};
+    --color-card-bg: #{colors.$gray-900};
+    --color-border: rgba(255, 255, 255, 0.01);
+    --color-border-strong: rgba(255, 255, 255, 0.02);
+
+    // Input and form colors
+    --color-input-bg: rgba(27, 31, 34, 0.9);
+    --color-input-border: rgba(255, 255, 255, 0.15);
+    --color-placeholder: rgba(255, 255, 255, 0.6);
+
+    // Overlay and glass effects
+    --color-overlay: rgba(0, 0, 0, 0.5);
+    --color-glass-bg: rgba(27, 31, 34, 0.9);
+    --color-glass-border: rgba(255, 255, 255, 0.015);
+
+    // Status colors (theme-independent for consistency)
+    --color-success: #{colors.$green-500};
+    --color-warning: #{colors.$yellow-500};
+    --color-error: #{colors.$soft-pink-500};
+    --color-info: #{colors.$blue-400};
+}
+
+// Ensure smooth theme transitions
+* {
+    transition:
+        background-color 0.3s ease,
+        color 0.3s ease,
+        border-color 0.3s ease,
+        box-shadow 0.3s ease;
+}
+
+// Theme detection and automatic application
+@media (prefers-color-scheme: light) {
+    :root:not([data-theme]) {
+        // Core colors
+        --color-text: #{colors.$gray-900};
+        --color-text-muted: #{colors.$gray-600};
+        --color-text-subtle: #{colors.$gray-500};
+        --color-background: #{colors.$white};
+        --color-background-secondary: #{colors.$gray-100};
+        --color-background-tertiary: #{colors.$gray-200};
+        --color-accent-primary: #{colors.$mauve-600};
+        --color-accent-secondary: #{colors.$mauve-700};
+        --color-hairline: #{colors.$gray-300};
+        --color-hairline-subtle: #{colors.$gray-200};
+
+        // Interactive states
+        --color-hover: rgba(0, 0, 0, 0.1);
+        --color-active: rgba(0, 0, 0, 0.2);
+        --color-focus: #{colors.$mauve-600};
+
+        // Component-specific colors
+        --color-navbar-bg: rgba(255, 255, 255, 0.1);
+        --color-footer-bg: #{colors.$gray-100};
+        --color-card-bg: #{colors.$white};
+        --color-border: rgba(0, 0, 0, 0.01);
+        --color-border-strong: rgba(0, 0, 0, 0.02);
+
+        // Input and form colors
+        --color-input-bg: rgba(255, 255, 255, 0.8);
+        --color-input-border: rgba(0, 0, 0, 0.1);
+        --color-placeholder: rgba(0, 0, 0, 0.6);
+
+        // Overlay and glass effects
+        --color-overlay: rgba(255, 255, 255, 0.5);
+        --color-glass-bg: rgba(255, 255, 255, 0.8);
+        --color-glass-border: rgba(0, 0, 0, 0.01);
+    }
+}
+
+// High contrast mode support
+@media (prefers-contrast: high) {
+    :root {
+        --color-border: currentColor;
+        --color-border-strong: currentColor;
+        --color-hairline: currentColor;
+    }
+}
+
+// Reduced motion support
+@media (prefers-reduced-motion: reduce) {
+    * {
+        transition: none !important;
+        animation: none !important;
+    }
+}

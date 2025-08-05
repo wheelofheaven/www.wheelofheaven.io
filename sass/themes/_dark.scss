@@ -3,13 +3,43 @@
 @use "../abstracts/colors" as colors;
 
 [data-theme="dark"] {
-    --color-text: #ffffff;
-    --color-background: #0a0a0a;
+    // Core colors
+    --color-text: #{colors.$gray-100};
+    --color-text-muted: #{colors.$gray-400};
+    --color-text-subtle: #{colors.$gray-500};
+    --color-background: #{colors.$gray-950};
+    --color-background-secondary: #{colors.$gray-900};
+    --color-background-tertiary: #{colors.$gray-800};
     --color-accent-primary: #{colors.$mint};
-    --color-hairline: #2a2a2a;
+    --color-accent-secondary: #{colors.$blue};
+    --color-hairline: #{colors.$gray-800};
+    --color-hairline-subtle: #{colors.$gray-900};
+
+    // Interactive states
+    --color-hover: rgba(255, 255, 255, 0.1);
+    --color-active: rgba(255, 255, 255, 0.2);
+    --color-focus: #{colors.$mint};
+
+    // Component-specific colors
+    --color-navbar-bg: rgba(27, 31, 34, 0.1);
+    --color-footer-bg: #{colors.$gray-950};
+    --color-card-bg: #{colors.$gray-900};
+    --color-border: rgba(255, 255, 255, 0.01);
+    --color-border-strong: rgba(255, 255, 255, 0.02);
+
+    // Input and form colors
+    --color-input-bg: rgba(27, 31, 34, 0.9);
+    --color-input-border: rgba(255, 255, 255, 0.15);
+    --color-placeholder: rgba(255, 255, 255, 0.6);
+
+    // Overlay and glass effects
+    --color-overlay: rgba(0, 0, 0, 0.5);
+    --color-glass-bg: rgba(27, 31, 34, 0.9);
+    --color-glass-border: rgba(255, 255, 255, 0.015);
 }
 
 [data-theme="dark"] .card {
-    background-color: var(--color-background);
+    background-color: var(--color-card-bg);
     color: var(--color-text);
+    border: 1px solid var(--color-border);
 }
