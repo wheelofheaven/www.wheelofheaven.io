@@ -1,57 +1,71 @@
 <nav class="navbar" aria-label="Main navigation">
-    <a class="navbar__logo" href="/" aria-label="Wheel of Heaven">
-        {% include "partials/brand/logomark.html" %}
+  <!-- Desktop navbar -->
+  <a class="navbar__logo" href="/" aria-label="Wheel of Heaven">
+    {% include "partials/brand/logomark.html" %}
+  </a>
+
+  <div class="navbar__content">
+    <div class="navbar__links">
+      <a href="/essentials" class="navbar__link">Essentials</a>
+      <a href="/explainers" class="navbar__link">Explainers</a>
+      <a href="/timeline" class="navbar__link">Timeline</a>
+      <a href={getLocalizedUrl("/revelations", lang)} class="navbar__link">Revelations</a>
+      <a href="/wiki" class="navbar__link">Wiki</a>
+    </div>
+  </div>
+
+  <div class="navbar__controls">
+    <a href="/search" class="navbar__link navbar__link--icon">
+      <Icon name="lucide:search" size="16" />
+      Search
     </a>
-    <div class="navbar__content">
-        <div class="navbar__links">
-            <a href="/essentials" class="navbar__link"
-                >Essentials</a
-            >
-            <a href="/explainers" class="navbar__link"
-                >Explainers</a
-            >
-            <a href="/timeline" class="navbar__link"
-                >Timeline</a
-            >
-            <a href={getLocalizedUrl("/revelations", lang)} class="navbar__link"
-                >Revelations</a
-            >
-            <a href="/wiki" class="navbar__link">Wiki</a>
-        </div>
+
+    <div class="navbar__language-switcher" id="lang-switcher">
+      <Icon name="lucide:globe" size="16" />
+      <select id="lang-select" class="navbar__select" aria-label="Select language">
+        <option value="en">English</option>
+        <option value="de">Deutsch</option>
+        <option value="fr">Français</option>
+        <option value="es">Español</option>
+        <option value="ru">Русский</option>
+        <option value="ja">日本語</option>
+        <option value="zh">中文</option>
+      </select>
     </div>
 
-    <div class="navbar__controls">
-        <a href="/search" class="navbar__link navbar__link--icon">
-            <Icon name="lucide:search" size="16" />
-            Search
-        </a>
-
-        <div class="navbar__language-switcher" id="lang-switcher">
-            <Icon name="lucide:globe" size="16" />
-            <select
-                id="lang-select"
-                class="navbar__select"
-                aria-label="Select language"
-            >
-                <option value="en">English</option>
-                <option value="de">Deutsch</option>
-                <option value="fr">Français</option>
-                <option value="es">Español</option>
-                <option value="ru">Русский</option>
-                <option value="ja">日本語</option>
-                <option value="zh">中文</option>
-            </select>
-        </div>
-
-        <button
-            id="theme-toggle"
-            aria-label="Toggle dark/light mode"
-            class="navbar__theme-toggle"
-        >
-            <span id="theme-toggle-icon" class="navbar__theme-icon">
-                {% include "partials/icons/feather-moon.html" %}
-                {% include "partials/icons/feather-sun.html" %}
-            </span>
-        </button>
-    </div>
+    <button id="theme-toggle" aria-label="Toggle dark/light mode" class="navbar__theme-toggle">
+      <span id="theme-toggle-icon" class="navbar__theme-icon">
+          <span class="icon icon--moon">{% include "partials/icons/feather-moon.html" %}</span>
+          <span class="icon icon--sun">{% include "partials/icons/feather-sun.html" %}</span>
+      </span>
+    </button>
+  </div>
 </nav>
+
+<button class="navbar__mobile-toggle" id="mobileNavbarToggle" aria-label="Open menu">
+  {% include "partials/brand/logomark.html" %}
+</button>
+
+<!-- Mobile overlay nav (expands horizontally from floating trigger) -->
+<div class="navbar__mobile" id="mobileNavbar">
+  <div class="navbar__mobile__inner">
+    <button id="mobile-theme-toggle" class="navbar__theme-toggle" aria-label="Toggle theme">
+      <span class="navbar__theme-icon">
+          <span class="icon icon--moon">{% include "partials/icons/feather-moon.html" %}</span>
+          <span class="icon icon--sun">{% include "partials/icons/feather-sun.html" %}</span>
+      </span>
+    </button>
+
+    <a href="/search" class="navbar__link navbar__link--icon">
+      <Icon name="lucide:search" size="16" />
+    </a>
+
+    <div class="navbar__mobile__links">
+      <a href="/essentials" class="navbar__link">Essentials</a>
+      <a href="/explainers" class="navbar__link">Explainers</a>
+      <a href="/timeline" class="navbar__link">Timeline</a>
+      <a href={getLocalizedUrl("/revelations", lang)} class="navbar__link">Revelations</a>
+      <a href="/wiki" class="navbar__link">Wiki</a>
+    </div>
+  </div>
+</div>
