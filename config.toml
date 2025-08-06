@@ -8,6 +8,9 @@ build_search_index = true
 [markdown]
 highlight_code = false
 
+[search]
+index_format = "fuse_json"
+
 [extra]
 # Put all your custom variables here
 
