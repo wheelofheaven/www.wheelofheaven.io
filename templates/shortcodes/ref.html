@@ -1,0 +1,6 @@
+{% set ref_num = num | default(value="?") %}
+<sup class="wiki-ref">
+    <a href="#ref-{{ ref_num }}" class="wiki-ref__link" title="{{ title | default(value="Reference") }}">
+        [{{ ref_num }}]
+    </a>
+</sup>

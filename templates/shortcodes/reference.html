@@ -1,0 +1,20 @@
+{% set ref_key = key | default(value="") %}
+{% set ref_number = number | default(value="") %}
+{% set ref_text = text | default(value="") %}
+
+{% if ref_key %}
+    {% set ref_id = ref_key %}
+    {% set display_text = ref_text | default(value=ref_key) %}
+{% elif ref_number %}
+    {% set ref_id = ref_number %}
+    {% set display_text = ref_text | default(value=ref_number) %}
+{% else %}
+    {% set ref_id = "unknown" %}
+    {% set display_text = ref_text | default(value="?") %}
+{% endif %}
+
+<sup class="wiki-reference">
+    <a href="#ref-{{ ref_id }}" class="wiki-reference__link" title="View reference: {{ display_text }}">
+        [{{ display_text }}]
+    </a>
+</sup>

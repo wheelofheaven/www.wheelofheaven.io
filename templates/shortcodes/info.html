@@ -1,0 +1,21 @@
+{# Info Box Shortcode for Wiki Content #}
+{% set box_type = type | default(value="info") %}
+{% set box_title = title | default(value="") %}
+{% set box_icon = icon | default(value="") %}
+
+<div class="wiki-info-box wiki-info-box--{{ box_type }}">
+    {% if box_title or box_icon %}
+    <div class="wiki-info-box__header">
+        {% if box_icon %}
+        <span class="wiki-info-box__icon">{{ box_icon | safe }}</span>
+        {% endif %}
+        {% if box_title %}
+        <h4 class="wiki-info-box__title">{{ box_title }}</h4>
+        {% endif %}
+    </div>
+    {% endif %}
+
+    <div class="wiki-info-box__content">
+        {{ body | markdown | safe }}
+    </div>
+</div>

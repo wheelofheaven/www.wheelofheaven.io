@@ -24,9 +24,13 @@
 @use "components/button";
 @use "components/card";
 @use "components/totop";
+@use "components/wiki-cite";
+@use "components/wiki-shortcodes";
 
 @use "pages/home";
 @use "pages/revelations";
+@use "pages/wiki";
+@use "pages/wiki-section";
 
 @use "themes/init";
 @use "themes/light";

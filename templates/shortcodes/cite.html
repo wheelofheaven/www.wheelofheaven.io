@@ -1,0 +1,15 @@
+{% set ref_id = id | default(value="") %}
+{% set ref_text = text | default(value="") %}
+{% set ref_title = title | default(value="Reference") %}
+
+{% if ref_id %}
+<sup class="wiki-cite">
+    <a href="#ref-{{ ref_id }}" class="wiki-cite__link" title="{{ ref_title }}">
+        {% if ref_text %}{{ ref_text }}{% else %}[{{ ref_id }}]{% endif %}
+    </a>
+</sup>
+{% else %}
+<sup class="wiki-cite">
+    <span class="wiki-cite__text">{{ ref_text | default(value="[?]") }}</span>
+</sup>
+{% endif %}

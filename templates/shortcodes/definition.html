@@ -1,0 +1,13 @@
+{# Definition Box Shortcode for Wiki Terminology #}
+{% set def_term = term | default(value="") %}
+{% set def_type = type | default(value="standard") %}
+
+<div class="wiki-definition-box wiki-definition-box--{{ def_type }}">
+    {% if def_term %}
+    <div class="wiki-definition-box__term">{{ def_term }}</div>
+    {% endif %}
+
+    <div class="wiki-definition-box__content">
+        {{ body | markdown | safe }}
+    </div>
+</div>

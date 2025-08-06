@@ -1,7 +1,7 @@
 {% extends "base.html" %} {% block content %}
 <div class="homepage">
     {% if page.content %} {{ page.content | safe }} {% else %}
-    <h2>Welcome to Wheel of Heaven</h2>
+    <h2>{% include "partials/brand/wordmark.html" %}</h2>
     <p>{{ config.description }}</p>
 
     <div class="intro-section">
