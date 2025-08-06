@@ -10,15 +10,15 @@
     --color-background: #{colors.$white};
     --color-background-secondary: #{colors.$gray-100};
     --color-background-tertiary: #{colors.$gray-200};
-    --color-accent-primary: #{colors.$mauve-600};
-    --color-accent-secondary: #{colors.$mauve-700};
+    --color-accent-primary: #{colors.$mauve-500};
+    --color-accent-secondary: #{colors.$blue-500};
     --color-hairline: #{colors.$gray-300};
     --color-hairline-subtle: #{colors.$gray-200};
 
     // Interactive states
     --color-hover: rgba(0, 0, 0, 0.1);
     --color-active: rgba(0, 0, 0, 0.2);
-    --color-focus: #{colors.$mauve-600};
+    --color-focus: #{colors.$mauve-500};
 
     // Component-specific colors
     --color-navbar-bg: rgba(255, 255, 255, 0.1);
@@ -34,7 +34,7 @@
 
     // Overlay and glass effects
     --color-overlay: rgba(255, 255, 255, 0.5);
-    --color-glass-bg: rgba(255, 255, 255, 0.8);
+    --color-glass-bg: rgba(255, 255, 255, 0.6);
     --color-glass-border: rgba(0, 0, 0, 0.01);
 
     // Handedness toggle (grayish/subtle in light mode)
@@ -42,6 +42,16 @@
     --color-handedness-border: rgba(150, 150, 150, 0.2);
     --color-handedness-text: rgba(100, 100, 100, 0.8);
     --color-handedness-hover: rgba(180, 180, 180, 0.4);
+}
+
+// Light theme specific wiki header gradient enhancement
+[data-theme="light"] .wiki__header {
+    // More visible gradient overlay for light theme
+    &::before {
+        opacity: 0.4 !important; // Much more transparent to show gradient
+        backdrop-filter: blur(4px) !important; // Less blur for more color
+        -webkit-backdrop-filter: blur(4px) !important;
+    }
 }
 
 [data-theme="light"] .card {

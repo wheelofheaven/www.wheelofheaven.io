@@ -249,16 +249,16 @@
     background-origin: border-box;
     background-clip: padding-box, border-box;
     border-radius: 0.5rem;
-    padding: 2rem 2.5rem 1.5rem;
-    margin: 2rem 0;
-    font-family: typo.$font-family-lead;
-    font-size: 1.125rem;
-    line-height: 1.7;
+    padding: 1.5rem 2rem;
+    margin: 1.5rem 0;
+    font-family: "Spectral", typo.$font-family-serif;
+    font-size: 1rem;
+    line-height: 1.6;
     font-weight: 400;
     font-style: normal;
     color: var(--color-text);
-    letter-spacing: 0.015em;
-    word-spacing: 0.05em;
+    letter-spacing: 0.01em;
+    word-spacing: 0.02em;
 
     &::before {
         content: "\201C";
@@ -293,11 +293,6 @@
         margin: 0 0 1rem 0;
         position: relative;
         z-index: 1;
-        text-indent: 1em;
-
-        &:first-child {
-            text-indent: 0;
-        }
 
         &:last-child {
             margin-bottom: 0;

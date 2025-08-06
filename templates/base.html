@@ -6,6 +6,9 @@
     <title>{% if page.title %}{{ page.title }} | {% endif %}{{ config.title }}</title>
     <meta name="description" content="{% if page.description %}{{ page.description }}{% elif section.description %}{{ section.description }}{% else %}{{ config.description }}{% endif %}">
     {% include "partials/theme-init.html" %}
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Spectral:ital,wght@0,400;1,400&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="{{ get_url(path="main.css") }}">
     <!-- Language alternates -->
     {% for lang_code, lang_config in config.languages %}
