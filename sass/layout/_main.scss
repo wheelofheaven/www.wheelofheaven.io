@@ -1,0 +1,38 @@
+@use "../abstracts/variables" as vars;
+
+main {
+    // Add top padding to account for fixed navbar height
+    // Navbar is positioned at top: 0.5rem with internal padding and content
+    // Total estimated height: ~5rem + some breathing room
+    padding-top: 6rem;
+
+    // Add some horizontal padding for better content spacing
+    padding-left: 1rem;
+    padding-right: 1rem;
+
+    // Ensure main content area takes full width
+    width: 100%;
+
+    // Add some bottom padding for footer spacing
+    padding-bottom: 2rem;
+
+    // Center content with max-width constraint
+    max-width: 80rem;
+    margin: 0 auto;
+}
+
+// Mobile adjustments
+@media (max-width: 768px) {
+    main {
+        // On mobile, navbar is at bottom, so reduce top padding
+        // but keep some for better spacing
+        padding-top: 2rem;
+
+        // Add bottom padding to account for mobile navbar
+        padding-bottom: 6rem;
+
+        // Slightly less horizontal padding on mobile
+        padding-left: 0.75rem;
+        padding-right: 0.75rem;
+    }
+}

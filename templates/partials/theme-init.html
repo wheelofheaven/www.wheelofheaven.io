@@ -1,0 +1,26 @@
+<script>
+    // Theme initialization - runs immediately to prevent flash of incorrect theme
+    (function () {
+        const html = document.documentElement;
+        const savedTheme = localStorage.getItem("theme");
+        const prefersLight = window.matchMedia(
+            "(prefers-color-scheme: light)",
+        ).matches;
+
+        // Determine effective theme
+        let effectiveTheme;
+        if (savedTheme === "light" || savedTheme === "dark") {
+            effectiveTheme = savedTheme;
+        } else {
+            effectiveTheme = prefersLight ? "light" : "dark";
+        }
+
+        // Apply theme immediately
+        if (effectiveTheme === "light") {
+            html.setAttribute("data-theme", "light");
+        } else {
+            // Explicitly set dark theme to prevent fallback to media query
+            html.setAttribute("data-theme", "dark");
+        }
+    })();
+</script>

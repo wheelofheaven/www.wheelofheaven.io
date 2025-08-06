@@ -3,35 +3,32 @@ document.addEventListener("DOMContentLoaded", () => {
   const toggleBtn = document.getElementById("theme-toggle");
   const iconWrapper = document.getElementById("theme-toggle-icon");
 
-  const applyTheme = (theme) => {
+  const updateThemeUI = (theme) => {
     if (theme === "light") {
-      html.setAttribute("data-theme", "light");
       iconWrapper?.classList.add("navbar__theme-icon--light");
       toggleBtn?.setAttribute("aria-label", "Toggle dark theme");
     } else {
-      html.removeAttribute("data-theme");
       iconWrapper?.classList.remove("navbar__theme-icon--light");
       toggleBtn?.setAttribute("aria-label", "Toggle light theme");
     }
   };
 
-  // Check saved theme
-  const savedTheme = localStorage.getItem("theme");
-  const prefersLight = window.matchMedia(
-    "(prefers-color-scheme: light)",
-  ).matches;
-
-  if (savedTheme === "light" || savedTheme === "dark") {
-    applyTheme(savedTheme);
-  } else {
-    applyTheme(prefersLight ? "light" : "dark");
-  }
+  // Update UI based on current theme (already set by inline script)
+  const currentTheme = html.getAttribute("data-theme") || "dark";
+  updateThemeUI(currentTheme);
 
   // Handle toggle click
   toggleBtn?.addEventListener("click", () => {
-    const isLight = html.getAttribute("data-theme") === "light";
-    const newTheme = isLight ? "dark" : "light";
-    applyTheme(newTheme);
+    const currentTheme = html.getAttribute("data-theme");
+    const newTheme = currentTheme === "light" ? "dark" : "light";
+
+    // Apply theme to DOM
+    html.setAttribute("data-theme", newTheme);
+
+    // Update UI
+    updateThemeUI(newTheme);
+
+    // Save to localStorage
     localStorage.setItem("theme", newTheme);
   });
 });

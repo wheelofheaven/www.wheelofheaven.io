@@ -17,6 +17,7 @@
 @use "layout/footer";
 @use "layout/grid";
 @use "layout/header";
+@use "layout/main";
 @use "layout/navbar";
 @use "layout/search-modal";
 
@@ -25,6 +26,7 @@
 @use "components/totop";
 
 @use "pages/home";
+@use "pages/revelations";
 
 @use "themes/init";
 @use "themes/light";

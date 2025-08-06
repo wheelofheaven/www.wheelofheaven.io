@@ -5,6 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>{% if page.title %}{{ page.title }} | {% endif %}{{ config.title }}</title>
     <meta name="description" content="{% if page.description %}{{ page.description }}{% elif section.description %}{{ section.description }}{% else %}{{ config.description }}{% endif %}">
+    {% include "partials/theme-init.html" %}
     <link rel="stylesheet" href="{{ get_url(path="main.css") }}">
     <!-- Language alternates -->
     {% for lang_code, lang_config in config.languages %}

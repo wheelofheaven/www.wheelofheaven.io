@@ -94,12 +94,10 @@ document.addEventListener("DOMContentLoaded", () => {
     });
   });
 
-  // 🧠 Respect OS/browser preference
-  const prefersDark = window.matchMedia("(prefers-color-scheme: dark)").matches;
-  const savedTheme = localStorage.getItem("theme");
-  const effectiveTheme = savedTheme || (prefersDark ? "dark" : "light");
-  document.documentElement.setAttribute("data-theme", effectiveTheme);
-  updateThemeIcons(effectiveTheme === "light");
+  // 🧠 Update UI based on current theme (already set by inline script)
+  const currentTheme =
+    document.documentElement.getAttribute("data-theme") || "dark";
+  updateThemeIcons(currentTheme === "light");
 
   // 🔍 Desktop search keyboard shortcut (Ctrl+/)
   const desktopSearchInput = document.querySelector(".navbar__search-input");
