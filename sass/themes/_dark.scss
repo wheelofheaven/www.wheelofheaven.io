@@ -36,12 +36,6 @@
     --color-overlay: rgba(0, 0, 0, 0.5);
     --color-glass-bg: rgba(27, 31, 34, 0.9);
     --color-glass-border: rgba(255, 255, 255, 0.015);
-
-    // Handedness toggle (lighter/subtle in dark mode)
-    --color-handedness-bg: rgba(255, 255, 255, 0.15);
-    --color-handedness-border: rgba(255, 255, 255, 0.1);
-    --color-handedness-text: rgba(255, 255, 255, 0.7);
-    --color-handedness-hover: rgba(255, 255, 255, 0.2);
 }
 
 [data-theme="dark"] .card {

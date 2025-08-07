@@ -5,16 +5,22 @@
 // Search Modal Styles
 .search-modal {
     position: fixed;
-    top: 5rem; // Position below navbar (navbar height + gap)
+    top: 5.5rem; // Position below navbar with proper gap
     left: 50%;
     transform: translateX(-50%);
-    z-index: 40; // Below navbar which is z-index 50
+    z-index: 60; // Above navbar which is z-index 50
     width: 90%;
     max-width: 80rem; // Same as navbar max-width
     opacity: 0;
     visibility: hidden;
     transition: all 0.3s ease;
     pointer-events: none;
+
+    // Mobile positioning adjustments
+    @media (max-width: 768px) {
+        top: 4.5rem; // Closer spacing on mobile
+        width: 95%;
+    }
 
     &--active {
         opacity: 1;
@@ -107,6 +113,11 @@
             color: var(--color-text);
             box-shadow: 0 1px 2px rgba(0, 0, 0, 0.1);
         }
+
+        // Hide on mobile
+        @media (max-width: 768px) {
+            display: none;
+        }
     }
 
     &__close {
@@ -196,10 +207,22 @@
         border-bottom: none;
     }
 
+    // Mobile layout adjustments
+    @media (max-width: 768px) {
+        grid-template-columns: 1fr auto;
+        gap: 1rem;
+        padding: 0.75rem 1rem;
+    }
+
     &__left {
         display: flex;
         flex-direction: column;
         gap: 0.375rem;
+
+        // Mobile layout - arrange differently for section positioning
+        @media (max-width: 768px) {
+            flex: 1;
+        }
     }
 
     &__title {
@@ -221,6 +244,11 @@
         word-break: break-all;
         opacity: 0.7;
         margin-top: 0.125rem;
+
+        // Smaller font on mobile
+        @media (max-width: 768px) {
+            font-size: 0.65rem;
+        }
     }
 
     &__section {
@@ -238,6 +266,12 @@
         gap: 0.25rem;
         text-transform: uppercase;
         letter-spacing: 0.025em;
+
+        // Mobile positioning - move to right side
+        @media (max-width: 768px) {
+            margin-top: 0;
+            align-self: flex-start;
+        }
     }
 
     &__section-icon {

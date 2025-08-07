@@ -12,9 +12,56 @@
       <a href="{{ get_url(path="revelations", lang=lang) }}" class="navbar__link">Revelations</a>
       <a href="/wiki" class="navbar__link">Wiki</a>
     </div>
+
+    <!-- Mobile controls section -->
+    <div class="navbar__mobile-content">
+      <div class="navbar__mobile-controls">
+        <button id="mobile-theme-toggle" class="navbar__theme-toggle" aria-label="Toggle dark/light mode">
+          <span class="navbar__theme-icon">
+              <span class="icon icon--moon">{% include "partials/icons/feather-moon.html" %}</span>
+              <span class="icon icon--sun">{% include "partials/icons/feather-sun.html" %}</span>
+          </span>
+        </button>
+
+        <div class="navbar__language-switcher" id="mobile-lang-switcher">
+          <Icon name="lucide:globe" size="16" />
+          <select id="mobile-lang-select" class="navbar__select" aria-label="Select language">
+            <option value="en">English</option>
+            <option value="de">Deutsch</option>
+            <option value="fr">Français</option>
+            <option value="es">Español</option>
+            <option value="ru">Русский</option>
+            <option value="ja">日本語</option>
+            <option value="zh">中文</option>
+          </select>
+        </div>
+      </div>
+    </div>
   </div>
 
   <div class="navbar__controls">
+    <div class="navbar__mobile-search mobile-only">
+      <input
+          type="search"
+          class="navbar__mobile-search-input"
+          placeholder="Search..."
+          aria-label="Search site"
+          id="mobileSearchInput"
+      />
+    </div>
+
+    <button class="navbar__mobile-toggle mobile-only" id="mobileSearchToggle" aria-label="Toggle search">
+      {% include "partials/icons/feather-search.html" %}
+    </button>
+
+    <button class="navbar__mobile-toggle mobile-only" id="mobileNavToggle" aria-label="Toggle mobile navigation">
+      <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+        <line x1="3" y1="6" x2="21" y2="6"></line>
+        <line x1="3" y1="12" x2="21" y2="12"></line>
+        <line x1="3" y1="18" x2="21" y2="18"></line>
+      </svg>
+    </button>
+
     <div class="navbar__search desktop-only">
       <input
           type="search"
@@ -24,7 +71,7 @@
       />
     </div>
 
-    <div class="navbar__language-switcher" id="lang-switcher">
+    <div class="navbar__language-switcher desktop-only" id="lang-switcher">
       <Icon name="lucide:globe" size="16" />
       <select id="lang-select" class="navbar__select" aria-label="Select language">
         <option value="en">English</option>
@@ -37,60 +84,12 @@
       </select>
     </div>
 
-    <button id="mobile-theme-toggle" class="navbar__theme-toggle" aria-label="Toggle dark/light mode">
-      <span id="theme-toggle-icon" class="navbar__theme-icon">
-          <span class="icon icon--moon">{% include "partials/icons/feather-moon.html" %}</span>
-          <span class="icon icon--sun">{% include "partials/icons/feather-sun.html" %}</span>
-      </span>
-    </button>
-  </div>
-</nav>
-
-<div class="navbar__mobile-toggle-container">
-  <button class="navbar__mobile-toggle" id="mobileNavbarToggle" aria-label="Open menu">
-    {% include "partials/brand/logomark.html" %}
-  </button>
-</div>
-
-<!-- Mobile overlay nav (expands horizontally from floating trigger) -->
-<div class="navbar__mobile" id="mobileNavbar">
-  <!-- Handedness toggle -->
-  <button class="navbar__handedness-toggle" aria-label="Switch to left-handed mode">
-      {% include "partials/icons/hand.html" %}
-  </button>
-
-  <div class="navbar__mobile__inner">
-      <button id="mobile-theme-toggle" class="navbar__theme-toggle" aria-label="Toggle dark/light mode">
+    <button id="theme-toggle" class="navbar__theme-toggle desktop-only" aria-label="Toggle dark/light mode">
       <span class="navbar__theme-icon">
           <span class="icon icon--moon">{% include "partials/icons/feather-moon.html" %}</span>
           <span class="icon icon--sun">{% include "partials/icons/feather-sun.html" %}</span>
       </span>
     </button>
-
-    <button
-      class="navbar__mobile__search-toggle"
-      id="mobileSearchToggle"
-      aria-label="Toggle search"
-      type="button"
-    >
-      {% include "partials/icons/feather-search.html" %}
-    </button>
-
-    <div class="navbar__mobile__links">
-      <a href="/essentials" class="navbar__link">Essentials</a>
-      <a href="/explainers" class="navbar__link">Explainers</a>
-      <a href="/timeline" class="navbar__link">Timeline</a>
-      <a href="/revelations" class="navbar__link">Revelations</a>
-      <a href="/wiki" class="navbar__link">Wiki</a>
-    </div>
   </div>
 
-  <!-- Search overlay field -->
-  <input
-    type="search"
-    class="navbar__mobile__search-field"
-    id="mobileSearchField"
-    placeholder="Search..."
-    aria-label="Search"
-  />
-</div>
+</nav>

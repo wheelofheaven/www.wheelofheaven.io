@@ -1,18 +1,65 @@
 document.addEventListener("DOMContentLoaded", () => {
-  const toggleBtn = document.getElementById("mobileNavbarToggle");
-  const mobileNavbar = document.getElementById("mobileNavbar");
+  const navbar = document.querySelector(".navbar");
+  const mobileNavToggle = document.getElementById("mobileNavToggle");
+  const mobileSearchToggle = document.getElementById("mobileSearchToggle");
+  const navbarSearchInput = document.querySelector(".navbar__search-input");
 
-  let isExpanded = false;
-  let closeTimer = null;
-  let isSearchActive = false;
-  let isLeftHanded = false;
+  let isMobileNavExpanded = false;
+  let isMobileSearchActive = false;
+  let lastScrollY = window.scrollY;
+  let ticking = false;
 
-  // 🔁 Function to update all theme icons (desktop + mobile)
+  // 🔁 Function to update all theme icons
   function updateThemeIcons(isLight) {
     document.querySelectorAll(".navbar__theme-icon").forEach((icon) => {
       icon.classList.toggle("navbar__theme-icon--light", isLight);
     });
   }
+
+  // 📱 Mobile navbar scroll behavior with throttling
+  function updateNavbarVisibility() {
+    const currentScrollY = window.scrollY;
+    const isMobile = window.innerWidth <= 768;
+
+    if (isMobile && navbar) {
+      const scrollThreshold = 100;
+      const scrollDelta = Math.abs(currentScrollY - lastScrollY);
+
+      // Only react to significant scroll movements
+      if (scrollDelta > 5) {
+        if (currentScrollY > lastScrollY && currentScrollY > scrollThreshold) {
+          // Scrolling down - hide navbar
+          navbar.classList.add("navbar--hidden");
+          // Close any open mobile nav/search when hiding
+          if (isMobileNavExpanded) {
+            closeMobileNav();
+          }
+          if (isMobileSearchActive) {
+            closeMobileSearch();
+          }
+        } else if (currentScrollY < lastScrollY) {
+          // Scrolling up - show navbar
+          navbar.classList.remove("navbar--hidden");
+        }
+      }
+    } else if (!isMobile && navbar) {
+      // Always show navbar on desktop
+      navbar.classList.remove("navbar--hidden");
+    }
+
+    lastScrollY = currentScrollY;
+    ticking = false;
+  }
+
+  function requestScrollUpdate() {
+    if (!ticking) {
+      requestAnimationFrame(updateNavbarVisibility);
+      ticking = true;
+    }
+  }
+
+  // Add scroll listener with passive option for better performance
+  window.addEventListener("scroll", requestScrollUpdate, { passive: true });
 
   // 🍪 Cookie utilities
   function setCookie(name, value, days = 365) {
@@ -32,53 +79,6 @@ document.addEventListener("DOMContentLoaded", () => {
     return null;
   }
 
-  // 👐 Handedness functionality
-  function updateHandedness(leftHanded) {
-    isLeftHanded = leftHanded;
-    const toTopBtn = document.querySelector(".to-top");
-    const mobileToggleContainer = document.querySelector(
-      ".navbar__mobile-toggle-container",
-    );
-    const handednessToggle = document.querySelector(
-      ".navbar__handedness-toggle",
-    );
-    const handednessIcon = handednessToggle?.querySelector("svg");
-
-    // Update mobile navbar
-    if (mobileNavbar) {
-      mobileNavbar.classList.toggle("navbar__mobile--left", leftHanded);
-    }
-    if (mobileToggleContainer) {
-      mobileToggleContainer.classList.toggle(
-        "navbar__mobile-toggle-container--left",
-        leftHanded,
-      );
-    }
-
-    // Update to-top button
-    if (toTopBtn) {
-      toTopBtn.classList.toggle("to-top--left", leftHanded);
-    }
-
-    // Update handedness toggle icon direction
-    if (handednessIcon) {
-      if (leftHanded) {
-        handednessIcon.innerHTML = '<path d="m15 18-6-6 6-6"/>';
-      } else {
-        handednessIcon.innerHTML = '<path d="m9 18 6-6-6-6"/>';
-      }
-    }
-
-    // Save preference
-    setCookie("handedness", leftHanded ? "left" : "right");
-  }
-
-  // Initialize handedness from cookie
-  const savedHandedness = getCookie("handedness");
-  if (savedHandedness === "left") {
-    updateHandedness(true);
-  }
-
   // 🌓 Theme toggle logic
   const themeToggleButtons = document.querySelectorAll(
     "#theme-toggle, #mobile-theme-toggle",
@@ -91,6 +91,11 @@ document.addEventListener("DOMContentLoaded", () => {
       document.documentElement.setAttribute("data-theme", newTheme);
       localStorage.setItem("theme", newTheme);
       updateThemeIcons(newTheme === "light");
+
+      // Close mobile nav after theme change
+      if (isMobileNavExpanded) {
+        closeMobileNav();
+      }
     });
   });
 
@@ -99,109 +104,308 @@ document.addEventListener("DOMContentLoaded", () => {
     document.documentElement.getAttribute("data-theme") || "dark";
   updateThemeIcons(currentTheme === "light");
 
-  // 🔍 Desktop search keyboard shortcut (Ctrl+/)
-  const desktopSearchInput = document.querySelector(".navbar__search-input");
+  // 🔍 Search keyboard shortcut (Ctrl+/)
+  const searchInput = document.querySelector(".navbar__search-input");
 
-  if (desktopSearchInput) {
+  if (searchInput) {
     document.addEventListener("keydown", (e) => {
       if (e.ctrlKey && (e.key === "/" || e.key === "?")) {
         e.preventDefault();
-        desktopSearchInput.focus();
-        desktopSearchInput.select();
+        const isMobile = window.innerWidth <= 768;
+        if (isMobile) {
+          toggleMobileSearch(true);
+        } else {
+          searchInput.focus();
+          searchInput.select();
+        }
       }
     });
   }
 
-  // 🔍 Mobile search toggle functionality
-  const mobileSearchToggle = document.getElementById("mobileSearchToggle");
-  const mobileSearchField = document.getElementById("mobileSearchField");
+  // 🔍 Mobile search functionality with expandable input
+  const mobileSearchInput = document.getElementById("mobileSearchInput");
+  const mobileSearchOverlay = document.querySelector(".navbar__mobile-search");
 
-  function resetSearch() {
-    if (mobileNavbar && mobileSearchField) {
-      mobileNavbar.classList.remove("navbar__mobile--search-active");
-      mobileSearchField.value = "";
-      isSearchActive = false;
+  function toggleMobileSearch(show = !isMobileSearchActive) {
+    const isMobile = window.innerWidth <= 768;
+
+    if (!isMobile) return;
+
+    // Close mobile nav if it's open
+    if (show && isMobileNavExpanded) {
+      closeMobileNav();
+    }
+
+    isMobileSearchActive = show;
+    if (navbar) {
+      navbar.classList.toggle("navbar--search-active", show);
+    }
+    if (mobileSearchOverlay) {
+      mobileSearchOverlay.classList.toggle(
+        "navbar__mobile-search--active",
+        show,
+      );
+    }
+
+    if (show && mobileSearchInput) {
+      setTimeout(() => {
+        mobileSearchInput.focus();
+      }, 150);
     }
   }
 
-  if (mobileSearchToggle && mobileSearchField) {
-    mobileSearchToggle.addEventListener("click", () => {
-      isSearchActive = !isSearchActive;
-      mobileNavbar.classList.toggle(
-        "navbar__mobile--search-active",
-        isSearchActive,
-      );
+  function closeMobileSearch() {
+    isMobileSearchActive = false;
+    if (navbar) {
+      navbar.classList.remove("navbar--search-active");
+    }
+    if (mobileSearchOverlay) {
+      mobileSearchOverlay.classList.remove("navbar__mobile-search--active");
+    }
+    if (mobileSearchInput) {
+      mobileSearchInput.value = "";
+      mobileSearchInput.blur();
+    }
+    // Also hide search modal if it's open
+    if (typeof window.hideSearchModal === "function") {
+      window.hideSearchModal();
+    }
+  }
 
-      if (isSearchActive) {
-        // Focus the input field when search is activated
-        setTimeout(() => {
-          mobileSearchField.focus();
-        }, 100);
+  // Mobile search input handling
+  if (mobileSearchInput) {
+    mobileSearchInput.addEventListener("focus", () => {
+      if (typeof window.showSearchModal === "function") {
+        window.showSearchModal();
       }
     });
 
-    // Close search when clicking outside mobile navbar or pressing escape
-    document.addEventListener("click", (e) => {
-      if (isSearchActive && !mobileNavbar.contains(e.target)) {
-        resetSearch();
+    mobileSearchInput.addEventListener("input", (e) => {
+      const query = e.target.value;
+      // Update the main search input to sync with search modal
+      if (navbarSearchInput) {
+        navbarSearchInput.value = query;
+        // Trigger search
+        navbarSearchInput.dispatchEvent(new Event("input"));
       }
     });
 
-    mobileSearchField.addEventListener("keydown", (e) => {
+    mobileSearchInput.addEventListener("keydown", (e) => {
       if (e.key === "Escape") {
-        resetSearch();
+        closeMobileSearch();
       }
     });
 
-    // Prevent auto-close timer while user is actively typing
-    let typingTimer;
-    mobileSearchField.addEventListener("input", () => {
-      clearTimeout(closeTimer);
-      clearTimeout(typingTimer);
+    // Handle escape key in mobile search
+    mobileSearchInput.addEventListener("keydown", (e) => {
+      if (e.key === "Escape") {
+        e.preventDefault();
+        closeMobileSearch();
+      }
+    });
+  }
 
-      // Reset auto-close timer after user stops typing for 2 seconds
-      if (mobileSearchField.value.trim() === "") {
-        typingTimer = setTimeout(() => {
-          if (isExpanded) {
-            closeTimer = setTimeout(() => {
-              mobileNavbar.classList.remove("navbar__mobile--expanded");
-              toggleBtn.setAttribute("aria-expanded", "false");
-              isExpanded = false;
-              resetSearch();
-            }, 4000);
+  function closeMobileNav() {
+    isMobileNavExpanded = false;
+    if (navbar) {
+      navbar.classList.remove("navbar--mobile-expanded");
+    }
+    if (mobileNavToggle) {
+      mobileNavToggle.setAttribute("aria-expanded", false);
+    }
+  }
+
+  // Mobile search toggle button
+  if (mobileSearchToggle) {
+    mobileSearchToggle.addEventListener("click", (e) => {
+      e.preventDefault();
+      e.stopPropagation();
+
+      // Close mobile nav if it's open
+      if (isMobileNavExpanded) {
+        closeMobileNav();
+      }
+
+      toggleMobileSearch();
+    });
+  }
+
+  // Monitor search modal state changes
+  document.addEventListener("keydown", (e) => {
+    if (e.key === "Escape" && isMobileSearchActive) {
+      closeMobileSearch();
+    }
+  });
+
+  // Listen for search modal state changes via body class changes
+  const bodyObserver = new MutationObserver((mutations) => {
+    mutations.forEach((mutation) => {
+      if (
+        mutation.type === "attributes" &&
+        mutation.attributeName === "class"
+      ) {
+        const hasSearchModalOpen =
+          document.body.classList.contains("search-modal-open");
+        const isMobile = window.innerWidth <= 768;
+
+        if (isMobile && !hasSearchModalOpen && isMobileSearchActive) {
+          // Search modal was closed, sync mobile state and close mobile search
+          setTimeout(() => {
+            closeMobileSearch();
+          }, 100);
+        }
+      }
+    });
+  });
+
+  // Start observing body class changes
+  bodyObserver.observe(document.body, { attributes: true });
+
+  // Global escape key handler for mobile search
+  document.addEventListener("keydown", (e) => {
+    if (e.key === "Escape" && isMobileSearchActive) {
+      closeMobileSearch();
+    }
+  });
+
+  // Handle clicks outside navbar to close mobile search
+  document.addEventListener("click", (e) => {
+    const isMobile = window.innerWidth <= 768;
+
+    if (isMobile && isMobileSearchActive && !navbar.contains(e.target)) {
+      const searchModal = document.getElementById("search-modal");
+      // Only close if not clicking on the search modal
+      if (!searchModal || !searchModal.contains(e.target)) {
+        closeMobileSearch();
+      }
+    }
+  });
+
+  // 📱 Mobile navigation toggle
+  if (mobileNavToggle && navbar) {
+    mobileNavToggle.addEventListener("click", (e) => {
+      e.preventDefault();
+      e.stopPropagation();
+
+      isMobileNavExpanded = !isMobileNavExpanded;
+      navbar.classList.toggle("navbar--mobile-expanded", isMobileNavExpanded);
+      mobileNavToggle.setAttribute("aria-expanded", isMobileNavExpanded);
+
+      // Close search when toggling nav
+      if (isMobileSearchActive) {
+        closeMobileSearch();
+      }
+
+      // Auto-close after 10 seconds if expanded
+      if (isMobileNavExpanded) {
+        setTimeout(() => {
+          if (isMobileNavExpanded) {
+            closeMobileNav();
           }
-        }, 2000);
+        }, 10000);
+      }
+    });
+
+    // Close mobile nav when clicking outside
+    document.addEventListener("click", (e) => {
+      if (isMobileNavExpanded && !navbar.contains(e.target)) {
+        closeMobileNav();
+      }
+    });
+
+    // Close mobile nav when a link is clicked
+    const mobileNavLinks = navbar.querySelectorAll(
+      ".navbar__content .navbar__link",
+    );
+    mobileNavLinks.forEach((link) => {
+      link.addEventListener("click", () => {
+        closeMobileNav();
+      });
+    });
+  }
+
+  // 📱 Handle window resize to reset mobile states
+  window.addEventListener("resize", () => {
+    const isMobile = window.innerWidth <= 768;
+    if (!isMobile) {
+      // Reset mobile states when switching to desktop
+      if (navbar) {
+        navbar.classList.remove(
+          "navbar--hidden",
+          "navbar--mobile-expanded",
+          "navbar--search-active",
+        );
+        if (mobileSearchOverlay) {
+          mobileSearchOverlay.classList.remove("navbar__mobile-search--active");
+        }
+      }
+      isMobileNavExpanded = false;
+      isMobileSearchActive = false;
+      if (mobileNavToggle) {
+        mobileNavToggle.setAttribute("aria-expanded", false);
+      }
+      if (mobileSearchInput) {
+        mobileSearchInput.value = "";
+      }
+    }
+  });
+
+  // 🎯 Mobile logo animation for touch devices
+  const logoElement = document.querySelector(".navbar__logo");
+  if (logoElement) {
+    logoElement.addEventListener("touchstart", (e) => {
+      const logoImg = logoElement.querySelector("img, svg");
+      if (logoImg) {
+        logoImg.style.animation = "logo-spin 9s linear infinite";
+        setTimeout(() => {
+          logoImg.style.animation = "";
+        }, 9000);
       }
     });
   }
 
-  // 📱 Mobile navbar toggle
-  if (toggleBtn && mobileNavbar) {
-    toggleBtn.addEventListener("click", () => {
-      isExpanded = !isExpanded;
-      mobileNavbar.classList.toggle("navbar__mobile--expanded", isExpanded);
-      toggleBtn.setAttribute("aria-expanded", isExpanded);
+  // 🌐 Language selector synchronization
+  const desktopLangSelect = document.getElementById("lang-select");
+  const mobileLangSelect = document.getElementById("mobile-lang-select");
 
-      // Reset search when navbar is toggled
-      resetSearch();
+  function syncLanguageSelectors(sourceSelect, targetSelect) {
+    if (
+      sourceSelect &&
+      targetSelect &&
+      sourceSelect.value !== targetSelect.value
+    ) {
+      targetSelect.value = sourceSelect.value;
+    }
+  }
 
-      if (isExpanded) {
-        clearTimeout(closeTimer);
-        closeTimer = setTimeout(() => {
-          mobileNavbar.classList.remove("navbar__mobile--expanded");
-          toggleBtn.setAttribute("aria-expanded", "false");
-          isExpanded = false;
-          resetSearch(); // Also reset search when auto-closing
-        }, 6000); // ⏱ Auto-close after 6 seconds
+  if (desktopLangSelect && mobileLangSelect) {
+    desktopLangSelect.addEventListener("change", () => {
+      syncLanguageSelectors(desktopLangSelect, mobileLangSelect);
+    });
+
+    mobileLangSelect.addEventListener("change", () => {
+      syncLanguageSelectors(mobileLangSelect, desktopLangSelect);
+      // Close mobile nav after language change
+      if (isMobileNavExpanded) {
+        closeMobileNav();
       }
     });
   }
 
-  // 👐 Handedness toggle
-  const handednessToggle = document.querySelector(".navbar__handedness-toggle");
-  if (handednessToggle) {
-    handednessToggle.addEventListener("click", () => {
-      updateHandedness(!isLeftHanded);
+  // 🎯 Ensure mobile search button triggers search modal on first click
+  // This handles the case where the search modal might not be initialized yet
+  if (mobileSearchToggle) {
+    mobileSearchToggle.addEventListener("click", (e) => {
+      // Small delay to ensure search modal is properly triggered
+      setTimeout(() => {
+        const modal = document.getElementById("search-modal");
+        if (modal && !modal.classList.contains("search-modal--active")) {
+          // If modal wasn't triggered by input focus, manually show it
+          if (typeof window.showSearchModal === "function") {
+            window.showSearchModal();
+          }
+        }
+      }, 50);
     });
   }
 });
