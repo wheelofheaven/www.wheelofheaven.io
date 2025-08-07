@@ -1,0 +1,63 @@
+{# Author Profile Macros for Blockquote Citations #}
+
+{# Macro to render author profile in blockquote citation #}
+{% macro author_profile(author_key, custom_name="", custom_title="") %}
+    {% set authors = load_data(path="authors.toml") %}
+    {% set author = authors.authors[author_key] %}
+
+    {% if author %}
+        <div class="author-profile">
+            <img class="author-profile__avatar"
+                 src="{{ get_url(path=author.image) }}"
+                 alt="{{ author.name }}"
+                 onerror="this.style.display='none'; this.nextElementSibling.style.display='flex';">
+            <div class="author-profile__avatar author-profile__avatar--placeholder" style="display:none;">
+                {{ author.name | truncate(length=1, end="") | upper }}
+            </div>
+
+            <div class="author-profile__info">
+                <div class="author-profile__name">{{ author.name }}</div>
+                <div class="author-profile__title">{{ author.title }}</div>
+                {% if author.birth_year %}
+                <div class="author-profile__dates">
+                    {{ author.birth_year }}{% if author.death_year %} - {{ author.death_year }}{% endif %}
+                </div>
+                {% endif %}
+            </div>
+        </div>
+    {% elif custom_name %}
+        <div class="author-profile">
+            <div class="author-profile__avatar author-profile__avatar--placeholder">
+                {{ custom_name | truncate(length=1, end="") | upper }}
+            </div>
+            <div class="author-profile__info">
+                <div class="author-profile__name">{{ custom_name }}</div>
+                {% if custom_title %}
+                <div class="author-profile__title">{{ custom_title }}</div>
+                {% endif %}
+            </div>
+        </div>
+    {% else %}
+        <cite>{{ author_key }}</cite>
+    {% endif %}
+{% endmacro author_profile %}
+
+{# Macro to check if author exists in database #}
+{% macro has_author(author_key) %}
+    {% set authors = load_data(path="authors.toml") %}
+    {% if authors.authors[author_key] %}true{% else %}false{% endif %}
+{% endmacro has_author %}
+
+{# Macro to get author name by key #}
+{% macro author_name(author_key) %}
+    {% set authors = load_data(path="authors.toml") %}
+    {% if authors.authors[author_key] %}{{ authors.authors[author_key].name }}{% else %}{{ author_key }}{% endif %}
+{% endmacro author_name %}
+
+{# Macro to create author profile shortcode #}
+{% macro author_cite(author_key, quote_text, custom_name="", custom_title="") %}
+    <blockquote>
+        <p>{{ quote_text | markdown | safe }}</p>
+        {{ self::author_profile(author_key=author_key, custom_name=custom_name, custom_title=custom_title) }}
+    </blockquote>
+{% endmacro author_cite %}

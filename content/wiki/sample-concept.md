@@ -178,6 +178,32 @@ The CSS follows BEM methodology with:
 - **Responsive design** principles
 - **Accessibility** considerations
 
+## Quote Examples
+
+### Regular Blockquote with Author Profile
+
+{% author(author="einstein", work="The World As I See It", year="1949") %}
+Imagination is more important than knowledge. For knowledge is limited, whereas imagination embraces the entire world, stimulating progress, giving birth to evolution.
+{% end %}
+
+### Custom Author Quote
+
+{% author(name="Custom Author", title="Example Title", work="Important Work", year="2024", url="https://example.com") %}
+This demonstrates how to create a blockquote with a custom author who isn't in the authors database, including work reference with URL.
+{% end %}
+
+### Revelations Quote
+
+{% revelation(title="The Book Which Tells The Truth", path="revelations/the-book-which-tells-the-truth", book="The Book Which Tells The Truth", chapter="1") %}
+In the beginning, the Elohim created the heavens and the earth. This is not a supernatural creation story, but an account of scientific terraforming and biological engineering by an advanced extraterrestrial civilization.
+{% end %}
+
+### Standard Blockquote
+
+> This is a regular blockquote without author profile. It uses the enhanced Spectral font styling but maintains the traditional blockquote appearance.
+>
+> <cite>Traditional Citation</cite>
+
 [^1]: This is an example of a standard Markdown footnote. It will appear at the bottom of the page with a return link.
 
 [^2]: Footnotes are automatically numbered and include bidirectional linking for easy navigation between the reference and the citation.
