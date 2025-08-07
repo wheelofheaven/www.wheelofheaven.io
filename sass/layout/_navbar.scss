@@ -293,6 +293,20 @@
     }
 }
 
+// Mobile content - hidden by default, only shows in mobile expanded state
+.navbar__mobile-content {
+    display: none;
+
+    // Ensure it's completely hidden on desktop
+    @media (min-width: 769px) {
+        display: none !important;
+
+        .navbar__mobile-controls {
+            display: none !important;
+        }
+    }
+}
+
 // Responsive utility classes
 .mobile-only {
     @media (min-width: 769px) {
@@ -411,6 +425,12 @@
             display: flex;
             align-items: center;
 
+            // Hide desktop controls on mobile
+            .navbar__language-switcher,
+            .navbar__theme-toggle {
+                display: none;
+            }
+
             // Mobile controls ordering
             .navbar__mobile-search {
                 order: 1;
@@ -491,10 +511,15 @@
         // Mobile content that appears when expanded
         &__mobile-content {
             display: none;
+
+            // Ensure mobile controls are hidden on desktop
+            .navbar__mobile-controls {
+                display: none;
+            }
         }
 
         &__mobile-controls {
-            display: flex;
+            display: none; // Hidden by default
             flex-direction: row;
             align-items: center;
             justify-content: center;
@@ -502,6 +527,11 @@
             padding: 1rem;
             border-top: 1px solid rgba(255, 255, 255, 0.1);
             background: transparent;
+
+            // Only show when mobile nav is expanded
+            .navbar--mobile-expanded & {
+                display: flex;
+            }
 
             .navbar__theme-toggle {
                 background: none;
