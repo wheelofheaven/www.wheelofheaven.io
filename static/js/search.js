@@ -59,6 +59,103 @@ async function initSearch() {
   }
 }
 
+// Get navigation links based on current language
+function getNavigationLinks() {
+  const baseUrl = currentLanguage === "en" ? "" : `/${currentLanguage}`;
+
+  return [
+    {
+      title: "Home",
+      url: baseUrl || "/",
+      icon: `<svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+        <path d="m3 9 9-7 9 7v11a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2z"/>
+        <polyline points="9,22 9,12 15,12 15,22"/>
+      </svg>`,
+      section: "Home",
+    },
+    {
+      title: "Essentials",
+      url: `${baseUrl}/essentials/`,
+      icon: `<svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+        <circle cx="12" cy="12" r="10"/>
+        <path d="M8 12h8"/>
+        <path d="M12 8v8"/>
+      </svg>`,
+      section: "Essentials",
+    },
+    {
+      title: "Explainers",
+      url: `${baseUrl}/explainers/`,
+      icon: `<svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+        <circle cx="12" cy="12" r="10"/>
+        <path d="M9.09 9a3 3 0 0 1 5.83 1c0 2-3 3-3 3"/>
+        <path d="M12 17h.01"/>
+      </svg>`,
+      section: "Explainers",
+    },
+    {
+      title: "Timeline",
+      url: `${baseUrl}/timeline/`,
+      icon: `<svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+        <circle cx="12" cy="12" r="10"/>
+        <polyline points="12,6 12,12 16,14"/>
+      </svg>`,
+      section: "Timeline",
+    },
+    {
+      title: "Revelations",
+      url: `${baseUrl}/revelations/`,
+      icon: `<svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+        <path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z"/>
+        <polyline points="14,2 14,8 20,8"/>
+        <line x1="16" y1="13" x2="8" y2="13"/>
+        <line x1="16" y1="17" x2="8" y2="17"/>
+        <polyline points="10,9 9,9 8,9"/>
+      </svg>`,
+      section: "Revelations",
+    },
+    {
+      title: "Wiki",
+      url: `${baseUrl}/wiki/`,
+      icon: `<svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+        <path d="M4 19.5A2.5 2.5 0 0 1 6.5 17H20"/>
+        <path d="M6.5 2H20v20H6.5A2.5 2.5 0 0 1 4 19.5v-15A2.5 2.5 0 0 1 6.5 2z"/>
+        <path d="M8 7h8"/>
+        <path d="M8 11h8"/>
+        <path d="M8 15h6"/>
+      </svg>`,
+      section: "Wiki",
+    },
+  ];
+}
+
+// Create navigation links HTML
+function createNavigationLinks() {
+  const links = getNavigationLinks();
+
+  return `
+    <div class="search-modal__navigation">
+      <h4 class="search-modal__navigation-title">Navigate the site</h4>
+      ${links
+        .map(
+          (link) => `
+        <a href="${link.url}" class="search-result">
+          <div class="search-result__left">
+            <div class="search-result__title">${link.title}</div>
+            <div class="search-result__url">${link.url}</div>
+            <div class="search-result__section">${link.section}</div>
+          </div>
+          <div class="search-result__right">
+            <div class="search-result__icon">${link.icon}</div>
+          </div>
+        </a>
+      `,
+        )
+        .join("")}
+    </div>
+  `;
+}
+
 // Create modal HTML structure (without input field)
 function createSearchModal() {
   const modal = document.createElement("div");
@@ -78,9 +175,7 @@ function createSearchModal() {
         </button>
       </div>
       <div class="search-modal__results" id="search-results">
-        <div class="search-modal__empty">
-          <p>Start typing in the search bar above...</p>
-        </div>
+        ${createNavigationLinks()}
       </div>
     </div>
   `;
@@ -231,11 +326,7 @@ function renderSearchResults(results) {
   const container = document.getElementById("search-results");
 
   if (!results || results.length === 0) {
-    container.innerHTML = `
-      <div class="search-modal__empty">
-        <p>No results found.</p>
-      </div>
-    `;
+    container.innerHTML = createNavigationLinks();
     return;
   }
 
@@ -402,6 +493,15 @@ document.addEventListener("DOMContentLoaded", async () => {
   // Backdrop click
   backdrop.addEventListener("click", hideSearchModal);
 
+  // Handle navigation link clicks
+  modal.addEventListener("click", (e) => {
+    const navLink = e.target.closest(".search-navigation-link");
+    if (navLink) {
+      hideSearchModal();
+      // Let the default link behavior handle navigation
+    }
+  });
+
   // Keyboard shortcuts
   document.addEventListener("keydown", (e) => {
     // Ctrl/Cmd + / to focus search
@@ -421,7 +521,7 @@ document.addEventListener("DOMContentLoaded", async () => {
     }
   });
 
-  // Handle result clicks
+  // Handle search result clicks
   modal.addEventListener("click", (e) => {
     const resultLink = e.target.closest(".search-result");
     if (resultLink) {
@@ -431,29 +531,31 @@ document.addEventListener("DOMContentLoaded", async () => {
   });
 });
 
-// Handle keyboard navigation in results
+// Handle keyboard navigation in results and navigation links
 document.addEventListener("keydown", (e) => {
   const modal = document.getElementById("search-modal");
   if (!modal || !modal.classList.contains("search-modal--active")) return;
 
   const results = modal.querySelectorAll(".search-result");
+  const navLinks = modal.querySelectorAll(".search-navigation-link");
+  const allFocusable = [...results, ...navLinks];
   const currentFocus = document.activeElement;
   const navbarInput = document.querySelector(".navbar__search-input");
 
   if (e.key === "ArrowDown") {
     e.preventDefault();
     if (currentFocus === navbarInput) {
-      results[0]?.focus();
+      allFocusable[0]?.focus();
     } else {
-      const currentIndex = Array.from(results).indexOf(currentFocus);
-      const nextIndex = Math.min(currentIndex + 1, results.length - 1);
-      results[nextIndex]?.focus();
+      const currentIndex = Array.from(allFocusable).indexOf(currentFocus);
+      const nextIndex = Math.min(currentIndex + 1, allFocusable.length - 1);
+      allFocusable[nextIndex]?.focus();
     }
   } else if (e.key === "ArrowUp") {
     e.preventDefault();
-    const currentIndex = Array.from(results).indexOf(currentFocus);
+    const currentIndex = Array.from(allFocusable).indexOf(currentFocus);
     if (currentIndex > 0) {
-      results[currentIndex - 1]?.focus();
+      allFocusable[currentIndex - 1]?.focus();
     } else {
       navbarInput?.focus();
     }

@@ -1,0 +1,259 @@
+{# Explainer Macros - Reusable components for explainer pages #}
+
+{# Macro for rendering a reference entry #}
+{% macro reference_entry(ref, index) %}
+    <li class="explainer__reference-item" id="ref-{{ index }}">
+        {% if ref.url %}
+            <a href="{{ ref.url }}" class="explainer__reference-link" target="_blank" rel="noopener noreferrer">
+                {{ ref.title }}
+            </a>
+        {% else %}
+            <span class="explainer__reference-title">{{ ref.title }}</span>
+        {% endif %}
+
+        {% if ref.author %}
+            <span class="explainer__reference-author">by {{ ref.author }}</span>
+        {% endif %}
+
+        {% if ref.publication %}
+            <span class="explainer__reference-publication">{{ ref.publication }}</span>
+        {% endif %}
+
+        {% if ref.date %}
+            <span class="explainer__reference-date">({{ ref.date }})</span>
+        {% endif %}
+
+        {% if ref.description %}
+            <p class="explainer__reference-description">{{ ref.description }}</p>
+        {% endif %}
+    </li>
+{% endmacro reference_entry %}
+
+{# Macro for rendering a see also item #}
+{% macro see_also_item(item) %}
+    <li class="explainer__link-item">
+        {% if item.url %}
+            <a href="{{ item.url }}" class="explainer__link">{{ item.title }}</a>
+        {% else %}
+            <a href="{{ get_url(path=item.path) }}" class="explainer__link">{{ item.title }}</a>
+        {% endif %}
+
+        {% if item.description %}
+            <span class="explainer__link-description">{{ item.description }}</span>
+        {% endif %}
+    </li>
+{% endmacro see_also_item %}
+
+{# Macro for rendering an external link item #}
+{% macro external_link_item(link) %}
+    <li class="explainer__link-item">
+        <a href="{{ link.url }}"
+           class="explainer__link explainer__link--external"
+           target="_blank"
+           rel="noopener noreferrer">
+            {{ link.title }}
+            <svg class="explainer__external-icon" width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                <path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"></path>
+                <polyline points="15,3 21,3 21,9"></polyline>
+                <line x1="10" y1="14" x2="21" y2="3"></line>
+            </svg>
+        </a>
+
+        {% if link.description %}
+            <span class="explainer__link-description">{{ link.description }}</span>
+        {% endif %}
+    </li>
+{% endmacro external_link_item %}
+
+{# Macro for rendering explainer card #}
+{% macro explainer_card(page, show_alternatives=true) %}
+    <article class="explainer-card"
+             data-title="{{ page.title | lower }}"
+             data-category="{{ page.extra.category | default(value="") | lower }}"
+             data-date="{{ page.date | default(value="") }}"
+             data-letter="{{ page.title | truncate(length=1, end="") | upper }}">
+
+        <header class="explainer-card__header">
+            <h3 class="explainer-card__title">
+                <a href="{{ page.permalink }}" class="explainer-card__link">{{ page.title }}</a>
+            </h3>
+            {% if page.extra.category %}
+            <span class="explainer-card__category">{{ page.extra.category }}</span>
+            {% endif %}
+        </header>
+
+        {% if page.extra.summary or page.description %}
+        <p class="explainer-card__summary">
+            {{ page.extra.summary | default(value=page.description) }}
+        </p>
+        {% endif %}
+
+        {% if show_alternatives and page.extra.alternative_names %}
+        <div class="explainer-card__alternatives">
+            <span class="explainer-card__alternatives-label">Also:</span>
+            {% for name in page.extra.alternative_names | slice(end=3) %}
+            <span class="explainer-card__alternative-name">{{ name }}</span>{% if not loop.last %}, {% endif %}
+            {% endfor %}
+            {% if page.extra.alternative_names | length > 3 %}
+            <span class="explainer-card__alternatives-more">+{{ page.extra.alternative_names | length - 3 }} more</span>
+            {% endif %}
+        </div>
+        {% endif %}
+
+        <div class="explainer-card__meta">
+            {% if page.date %}
+            <time class="explainer-card__date">{{ page.date | date(format="%b %d, %Y") }}</time>
+            {% endif %}
+        </div>
+
+        <div class="explainer-card__read-more">
+            <a href="{{ page.permalink }}" class="explainer-card__read-link">
+                Read More
+                <svg class="explainer-card__arrow" width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                    <polyline points="9,18 15,12 9,6"></polyline>
+                </svg>
+            </a>
+        </div>
+    </article>
+{% endmacro explainer_card %}
+
+{# Macro for rendering featured explainer card #}
+{% macro featured_explainer_card(page) %}
+    <article class="explainer-featured-card">
+        <div class="explainer-featured-card__content">
+            <h3 class="explainer-featured-card__title">
+                <a href="{{ page.permalink }}">{{ page.title }}</a>
+            </h3>
+            {% if page.extra.summary %}
+            <p class="explainer-featured-card__summary">{{ page.extra.summary }}</p>
+            {% endif %}
+        </div>
+        {% if page.extra.category %}
+        <span class="explainer-featured-card__category">{{ page.extra.category }}</span>
+        {% endif %}
+    </article>
+{% endmacro featured_explainer_card %}
+
+{# Macro for rendering subsection card #}
+{% macro subsection_card(subsection) %}
+    <article class="explainer-subsection-card">
+        <h3 class="explainer-subsection-card__title">
+            <a href="{{ subsection.permalink }}" class="explainer-subsection-card__link">{{ subsection.title }}</a>
+        </h3>
+        {% if subsection.description %}
+        <p class="explainer-subsection-card__description">{{ subsection.description }}</p>
+        {% endif %}
+        <span class="explainer-subsection-card__count">{{ subsection.pages | length }} explainer{% if subsection.pages | length != 1 %}s{% endif %}</span>
+    </article>
+{% endmacro subsection_card %}
+
+{# Macro for rendering explainer statistics #}
+{% macro explainer_stats(section) %}
+    <div class="explainer-section__stats">
+        <div class="explainer-stat">
+            <span class="explainer-stat__number">{{ section.pages | length }}</span>
+            <span class="explainer-stat__label">Explainers</span>
+        </div>
+        {% set categories = section.pages | map(attribute="extra.category") | unique %}
+        {% if categories %}
+        <div class="explainer-stat">
+            <span class="explainer-stat__number">{{ categories | length }}</span>
+            <span class="explainer-stat__label">Categories</span>
+        </div>
+        {% endif %}
+    </div>
+{% endmacro explainer_stats %}
+
+{# Macro for rendering category filter dropdown #}
+{% macro category_filter(section, id="explainer-category-filter") %}
+    {% set all_categories = section.pages | map(attribute="extra.category") | unique | sort %}
+    {% if all_categories %}
+    <select class="explainer-filter" id="{{ id }}">
+        <option value="">All Categories</option>
+        {% for category in all_categories %}
+        {% if category %}
+        <option value="{{ category }}">{{ category }}</option>
+        {% endif %}
+        {% endfor %}
+    </select>
+    {% endif %}
+{% endmacro category_filter %}
+
+{# Macro for rendering alphabet navigation #}
+{% macro alphabet_nav(section, class_prefix="explainer-alphabet") %}
+    <div class="{{ class_prefix }}">
+        <span class="{{ class_prefix }}__label">Quick Jump:</span>
+        {% set alphabet = "ABCDEFGHIJKLMNOPQRSTUVWXYZ" | split(pat="") %}
+        {% set first_letters = [] %}
+        {% for page in section.pages %}
+            {% set first_letter = page.title | truncate(length=1, end="") | upper %}
+            {% set_global first_letters = first_letters | concat(with=first_letter) %}
+        {% endfor %}
+        {% set first_letters = first_letters | unique | sort %}
+        {% for letter in alphabet %}
+        {% if letter in first_letters %}
+        <a href="#letter-{{ letter }}" class="{{ class_prefix }}__link {{ class_prefix }}__link--active">{{ letter }}</a>
+        {% else %}
+        <span class="{{ class_prefix }}__link {{ class_prefix }}__link--inactive">{{ letter }}</span>
+        {% endif %}
+        {% endfor %}
+    </div>
+{% endmacro alphabet_nav %}
+
+{# Macro for rendering hero section with optional image #}
+{% macro hero_section(page) %}
+    {% if page.extra.header_image %}
+    <div class="explainer__hero">
+        <img src="{{ page.extra.header_image }}" alt="{{ page.title }}" class="explainer__hero-image">
+        <div class="explainer__hero-overlay">
+            <h1 class="explainer__hero-title">{{ page.title }}</h1>
+        </div>
+    </div>
+    {% else %}
+    <div class="explainer__hero explainer__hero--no-image" {% if page.extra.category %}data-category="{{ page.extra.category | lower }}"{% endif %}>
+        <div class="explainer__hero-overlay">
+            <h1 class="explainer__hero-title">{{ page.title }}</h1>
+        </div>
+    </div>
+    {% endif %}
+{% endmacro hero_section %}
+
+{# Macro for rendering alternative names #}
+{% macro alternative_names(names) %}
+    {% if names %}
+    <div class="explainer__alternative-names">
+        <span class="explainer__alternative-label">Also known as:</span>
+        <span class="explainer__alternative-list">
+            {% for name in names %}
+            <span class="explainer__alternative-name">{{ name }}</span>{% if not loop.last %}, {% endif %}
+            {% endfor %}
+        </span>
+    </div>
+    {% endif %}
+{% endmacro alternative_names %}
+
+{# Macro for rendering summary section #}
+{% macro summary_section(page) %}
+    {% if page.extra.summary or page.description %}
+    <div class="explainer__summary">
+        <div class="explainer__summary-label">Summary</div>
+        <div class="explainer__summary-content">
+            {{ page.extra.summary | default(value=page.description) | markdown | safe }}
+        </div>
+    </div>
+    {% endif %}
+{% endmacro summary_section %}
+
+{# Macro for rendering page metadata #}
+{% macro page_meta(page) %}
+    <div class="explainer__meta">
+        {% if page.date %}
+        <time class="explainer__date">
+            Last updated: {{ page.date | date(format="%B %d, %Y") }}
+        </time>
+        {% endif %}
+        {% if page.extra.category %}
+        <span class="explainer__category">Category: {{ page.extra.category }}</span>
+        {% endif %}
+    </div>
+{% endmacro page_meta %}

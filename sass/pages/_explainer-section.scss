@@ -1,0 +1,857 @@
+// Wiki Section Styles
+//
+// BEM-based styling for wiki section pages with card grid layout
+
+@use "../abstracts/variables" as vars;
+@use "../base/typography" as typo;
+
+.explainer-section {
+    min-height: 100vh;
+    background: var(--color-background);
+    padding: 2rem 1rem;
+
+    @media (max-width: 768px) {
+        padding: 1rem 0.5rem;
+    }
+
+    &__container {
+        max-width: vars.$viewport-max-width;
+        margin: 0 auto;
+    }
+
+    // Section Header
+    &__header {
+        text-align: center;
+        margin-bottom: 3rem;
+        padding: 3rem 0;
+        background: var(--color-background);
+        position: relative;
+
+        &::after {
+            content: "";
+            position: absolute;
+            bottom: 0;
+            left: 0;
+            right: 0;
+            height: 1px;
+            background: var(--color-hairline);
+        }
+
+        &::before {
+            content: "";
+            position: absolute;
+            bottom: 0;
+            left: 50%;
+            transform: translateX(-50%);
+            width: 120px;
+            height: 1px;
+            background: var(--color-accent-primary);
+            z-index: 1;
+        }
+
+        @media (max-width: 768px) {
+            padding: 2rem 0;
+            margin-bottom: 2rem;
+        }
+    }
+
+    &__title {
+        margin: 0 0 1rem 0;
+        font-family: typo.$font-family-lead;
+        font-size: 3rem;
+        font-weight: 700;
+        color: var(--color-text);
+        line-height: 1.2;
+
+        @media (max-width: 768px) {
+            font-size: 2.5rem;
+        }
+    }
+
+    &__description {
+        margin: 0;
+        font-size: 1.25rem;
+        line-height: 1.6;
+        color: var(--color-text-muted);
+        max-width: 600px;
+        margin: 0 auto;
+
+        @media (max-width: 768px) {
+            font-size: 1.125rem;
+        }
+    }
+
+    &__stats {
+        display: flex;
+        justify-content: center;
+        gap: 2rem;
+        margin-top: 2rem;
+        padding-top: 1.5rem;
+        border-top: 1px solid var(--color-hairline-subtle);
+
+        @media (max-width: 768px) {
+            gap: 1.5rem;
+            margin-top: 1.5rem;
+            padding-top: 1rem;
+        }
+    }
+
+    // Section Content
+    &__content {
+        margin-bottom: 3rem;
+        font-family: typo.$font-family-body;
+        line-height: 1.7;
+        color: var(--color-text);
+
+        h2,
+        h3,
+        h4 {
+            font-family: typo.$font-family-lead;
+            color: var(--color-text);
+            margin-top: 2rem;
+            margin-bottom: 1rem;
+        }
+
+        h2 {
+            font-size: 2rem;
+            font-weight: 700;
+            border-bottom: 2px solid var(--color-hairline);
+            padding-bottom: 0.5rem;
+        }
+
+        p {
+            margin-bottom: 1.25rem;
+        }
+
+        a {
+            color: var(--color-accent-primary);
+            text-decoration: none;
+            border-bottom: 1px solid transparent;
+            transition: border-bottom-color 0.2s ease;
+
+            &:hover {
+                border-bottom-color: var(--color-accent-primary);
+            }
+        }
+    }
+
+    // Pages Grid
+    &__pages {
+        margin-bottom: 3rem;
+    }
+
+    &__grid {
+        display: grid;
+        grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
+        gap: 1.5rem;
+
+        @media (max-width: 768px) {
+            grid-template-columns: 1fr;
+            gap: 1rem;
+        }
+    }
+
+    // Subsections
+    &__subsections {
+        margin-bottom: 2rem;
+    }
+
+    &__subsections-title {
+        font-family: typo.$font-family-lead;
+        font-size: 2rem;
+        font-weight: 700;
+        color: var(--color-text);
+        margin: 0 0 2rem 0;
+        text-align: center;
+    }
+
+    &__subsection-grid {
+        display: grid;
+        grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+        gap: 1.5rem;
+
+        @media (max-width: 768px) {
+            grid-template-columns: 1fr;
+            gap: 1rem;
+        }
+    }
+}
+
+// Wiki Card Component
+.explainer-card {
+    background: var(--color-background);
+    padding: 1.5rem 0;
+    transition: all 0.2s ease;
+    position: relative;
+
+    &::after {
+        content: "";
+        position: absolute;
+        bottom: 0;
+        left: 0;
+        right: 0;
+        height: 1px;
+        background: var(--color-hairline);
+        transition: background 0.2s ease;
+    }
+
+    &:hover {
+        padding-left: 0.5rem;
+
+        &::after {
+            background: var(--color-accent-primary);
+        }
+    }
+
+    &:last-child::after {
+        display: none;
+    }
+
+    &__header {
+        margin-bottom: 1rem;
+        display: flex;
+        justify-content: space-between;
+        align-items: flex-start;
+        gap: 1rem;
+    }
+
+    &__title {
+        margin: 0;
+        font-family: typo.$font-family-lead;
+        font-size: 1.25rem;
+        font-weight: 700;
+        line-height: 1.3;
+        flex: 1;
+    }
+
+    &__link {
+        color: var(--color-text);
+        text-decoration: none;
+        transition: color 0.2s ease;
+
+        &:hover {
+            color: var(--color-accent-primary);
+        }
+    }
+
+    &__category {
+        font-family: typo.$font-family-tech;
+        font-size: 0.75rem;
+        font-weight: 700;
+        color: var(--color-accent-primary);
+        background: var(--color-background-tertiary);
+        border: 1px solid var(--color-hairline);
+        padding: 0.25rem 0.5rem;
+        border-radius: 0.25rem;
+        text-transform: uppercase;
+        letter-spacing: 0.05em;
+        white-space: nowrap;
+    }
+
+    &__summary {
+        margin-bottom: 1.5rem;
+        font-size: 0.95rem;
+        line-height: 1.6;
+        color: var(--color-text-muted);
+    }
+
+    &__meta {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        gap: 1rem;
+        padding-top: 1rem;
+        margin-top: 1rem;
+        position: relative;
+
+        &::before {
+            content: "";
+            position: absolute;
+            top: 0;
+            left: 0;
+            right: 0;
+            height: 1px;
+            background: var(--color-hairline-subtle);
+        }
+
+        @media (max-width: 480px) {
+            flex-direction: column;
+            align-items: flex-start;
+            gap: 0.75rem;
+        }
+    }
+
+    &__date {
+        font-family: typo.$font-family-tech;
+        font-size: 0.8rem;
+        color: var(--color-text-subtle);
+    }
+
+    &__read-more {
+        display: flex;
+        align-items: center;
+    }
+
+    &__read-link {
+        color: var(--color-accent-primary);
+        text-decoration: none;
+        font-weight: 600;
+        font-size: 0.875rem;
+        display: flex;
+        align-items: center;
+        gap: 0.375rem;
+        padding: 0.25rem 0;
+        border-bottom: 1px solid transparent;
+        transition: all 0.2s ease;
+
+        &:hover {
+            border-bottom-color: var(--color-accent-primary);
+            transform: translateX(2px);
+        }
+    }
+
+    &__arrow {
+        transition: transform 0.2s ease;
+
+        .explainer-card__read-link:hover & {
+            transform: translateX(2px);
+        }
+    }
+}
+
+// Wiki Subsection Card Component
+.explainer-subsection-card {
+    background: var(--color-background);
+    padding: 1.5rem 0;
+    transition: all 0.2s ease;
+    text-align: center;
+    position: relative;
+
+    &::after {
+        content: "";
+        position: absolute;
+        bottom: 0;
+        left: 0;
+        right: 0;
+        height: 1px;
+        background: var(--color-hairline);
+        transition: background 0.2s ease;
+    }
+
+    &:hover {
+        padding-left: 0.5rem;
+
+        &::after {
+            background: var(--color-accent-secondary);
+        }
+    }
+
+    &:last-child::after {
+        display: none;
+    }
+
+    &__title {
+        margin: 0 0 1rem 0;
+        font-family: typo.$font-family-lead;
+        font-size: 1.5rem;
+        font-weight: 700;
+    }
+
+    &__link {
+        color: var(--color-text);
+        text-decoration: none;
+        transition: color 0.2s ease;
+
+        &:hover {
+            color: var(--color-accent-secondary);
+        }
+    }
+
+    &__description {
+        margin: 0 0 1rem 0;
+        font-size: 0.95rem;
+        line-height: 1.6;
+        color: var(--color-text-muted);
+    }
+
+    &__count {
+        font-family: typo.$font-family-tech;
+        font-size: 0.8rem;
+        font-weight: 700;
+        color: var(--color-accent-secondary);
+        background: var(--color-background-tertiary);
+        border: 1px solid var(--color-hairline);
+        padding: 0.25rem 0.75rem;
+        border-radius: 1rem;
+        display: inline-block;
+        text-transform: uppercase;
+        letter-spacing: 0.05em;
+    }
+}
+
+// Responsive Adjustments
+@media (max-width: 768px) {
+    .explainer-section {
+        &__header {
+            padding: 2rem 1rem;
+        }
+
+        &__title {
+            font-size: 2.5rem;
+        }
+    }
+
+    .explainer-card {
+        padding: 1.25rem 0;
+
+        &__header {
+            flex-direction: column;
+            align-items: flex-start;
+            gap: 0.75rem;
+        }
+    }
+
+    .explainer-subsection-card {
+        padding: 1.25rem 0;
+    }
+}
+
+// Wiki Discovery and Navigation Styles
+.explainer-discovery {
+    margin-bottom: 3rem;
+    background: var(--color-background);
+    border-top: 1px solid var(--color-hairline);
+    border-bottom: 1px solid var(--color-hairline);
+    padding: 2rem 0;
+
+    &__header {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        margin-bottom: 2rem;
+        gap: 2rem;
+
+        @media (max-width: 1024px) {
+            flex-direction: column;
+            align-items: stretch;
+            gap: 1.5rem;
+        }
+    }
+
+    &__title {
+        font-family: typo.$font-family-lead;
+        font-size: 1.5rem;
+        font-weight: 700;
+        color: var(--color-text);
+        margin: 0;
+    }
+
+    &__controls {
+        display: flex;
+        align-items: center;
+        gap: 1rem;
+        flex-wrap: wrap;
+
+        @media (max-width: 768px) {
+            gap: 0.75rem;
+        }
+    }
+}
+
+// Wiki Search Component
+.explainer-search {
+    position: relative;
+    display: flex;
+    align-items: center;
+
+    &__input {
+        width: 280px;
+        padding: 0.75rem 1rem 0.75rem 2.5rem;
+        border: 1px solid var(--color-hairline);
+        border-radius: 0.5rem;
+        background: var(--color-background-secondary);
+        color: var(--color-text);
+        font-family: typo.$font-family-body;
+        font-size: 0.875rem;
+        transition: all 0.2s ease;
+
+        &::placeholder {
+            color: var(--color-text-subtle);
+        }
+
+        &:focus {
+            outline: none;
+            border-color: var(--color-accent-primary);
+            background: var(--color-background);
+        }
+
+        @media (max-width: 768px) {
+            width: 100%;
+            min-width: 200px;
+        }
+    }
+
+    &__icon {
+        position: absolute;
+        left: 0.75rem;
+        top: 50%;
+        transform: translateY(-50%);
+        color: var(--color-text-subtle);
+        pointer-events: none;
+    }
+}
+
+// Wiki Filters and Sort
+.explainer-filter,
+.explainer-sort {
+    padding: 0.75rem 1rem;
+    border: 1px solid var(--color-hairline);
+    border-radius: 0.5rem;
+    background: var(--color-background-secondary);
+    color: var(--color-text);
+    font-family: typo.$font-family-tech;
+    font-size: 0.875rem;
+    cursor: pointer;
+    transition: all 0.2s ease;
+
+    &:focus {
+        outline: none;
+        border-color: var(--color-accent-primary);
+        background: var(--color-background);
+    }
+
+    &:hover {
+        background: var(--color-background);
+    }
+}
+
+// View Toggle Component
+.explainer-view-toggle {
+    display: flex;
+    border: 1px solid var(--color-hairline);
+    border-radius: 0.5rem;
+    overflow: hidden;
+
+    &__btn {
+        background: var(--color-background-secondary);
+        border: none;
+        padding: 0.75rem;
+        color: var(--color-text-muted);
+        cursor: pointer;
+        transition: all 0.2s ease;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+
+        &:hover {
+            background: var(--color-background-tertiary);
+            color: var(--color-text);
+        }
+
+        &--active {
+            background: var(--color-accent-primary);
+            color: var(--color-background);
+
+            &:hover {
+                background: var(--color-accent-secondary);
+            }
+        }
+
+        svg {
+            width: 16px;
+            height: 16px;
+        }
+    }
+}
+
+// Alphabetical Navigation
+.explainer-alphabet {
+    display: flex;
+    align-items: center;
+    gap: 0.25rem;
+    flex-wrap: wrap;
+    padding: 1rem 0;
+    border-top: 1px solid var(--color-hairline-subtle);
+
+    &__label {
+        font-family: typo.$font-family-tech;
+        font-size: 0.8rem;
+        font-weight: 700;
+        color: var(--color-text-muted);
+        text-transform: uppercase;
+        letter-spacing: 0.05em;
+        margin-right: 0.75rem;
+    }
+
+    &__link {
+        display: inline-flex;
+        align-items: center;
+        justify-content: center;
+        width: 1.5rem;
+        height: 1.5rem;
+        font-family: typo.$font-family-tech;
+        font-size: 0.75rem;
+        font-weight: 700;
+        text-decoration: none;
+        border-radius: 0.25rem;
+        transition: all 0.2s ease;
+
+        &--active {
+            background: var(--color-background-tertiary);
+            color: var(--color-accent-primary);
+            border: 1px solid var(--color-hairline);
+
+            &:hover {
+                background: var(--color-accent-primary);
+                color: var(--color-background);
+                transform: scale(1.1);
+            }
+        }
+
+        &--inactive {
+            color: var(--color-text-subtle);
+            opacity: 0.5;
+            cursor: default;
+        }
+    }
+}
+
+// Featured Articles Section
+.explainer-featured {
+    margin-bottom: 3rem;
+    padding: 2rem 0;
+    border-top: 1px solid var(--color-hairline);
+    border-bottom: 1px solid var(--color-hairline);
+    background: var(--color-background-secondary);
+
+    &__title {
+        font-family: typo.$font-family-lead;
+        font-size: 1.5rem;
+        font-weight: 700;
+        color: var(--color-text);
+        margin: 0 0 1.5rem 0;
+        text-align: center;
+    }
+
+    &__grid {
+        display: grid;
+        grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+        gap: 1rem;
+
+        @media (max-width: 768px) {
+            grid-template-columns: 1fr;
+        }
+    }
+}
+
+.explainer-featured-card {
+    background: var(--color-background);
+    border: 1px solid var(--color-hairline);
+    border-radius: 0.5rem;
+    padding: 1.25rem;
+    transition: all 0.2s ease;
+    position: relative;
+
+    &:hover {
+        border-color: var(--color-accent-primary);
+        transform: translateY(-2px);
+    }
+
+    &__content {
+        margin-bottom: 1rem;
+    }
+
+    &__title {
+        margin: 0 0 0.75rem 0;
+        font-family: typo.$font-family-lead;
+        font-size: 1.125rem;
+        font-weight: 700;
+
+        a {
+            color: var(--color-text);
+            text-decoration: none;
+
+            &:hover {
+                color: var(--color-accent-primary);
+            }
+        }
+    }
+
+    &__summary {
+        font-size: 0.875rem;
+        line-height: 1.5;
+        color: var(--color-text-muted);
+        margin: 0;
+    }
+
+    &__category {
+        position: absolute;
+        top: 0.75rem;
+        right: 0.75rem;
+        font-family: typo.$font-family-tech;
+        font-size: 0.7rem;
+        font-weight: 700;
+        color: var(--color-accent-primary);
+        background: var(--color-background-tertiary);
+        padding: 0.25rem 0.5rem;
+        border-radius: 0.25rem;
+        text-transform: uppercase;
+        letter-spacing: 0.05em;
+    }
+}
+
+// Enhanced Wiki Card with Discovery Features
+.explainer-card {
+    &__alternatives {
+        margin-bottom: 1rem;
+        font-size: 0.8rem;
+        color: var(--color-text-muted);
+        font-family: typo.$font-family-tech;
+    }
+
+    &__alternatives-label {
+        font-weight: 600;
+        margin-right: 0.5rem;
+    }
+
+    &__alternative-name {
+        color: var(--color-accent-primary);
+        font-weight: 500;
+    }
+
+    &__alternatives-more {
+        color: var(--color-text-subtle);
+        font-style: italic;
+    }
+}
+
+// Letter Anchors
+.explainer-letter-anchor {
+    position: relative;
+    margin-top: -6rem; // Account for sticky header
+    padding-top: 6rem;
+}
+
+// No Results State
+.explainer-no-results {
+    text-align: center;
+    padding: 3rem 2rem;
+    color: var(--color-text-muted);
+
+    &__content {
+        max-width: 400px;
+        margin: 0 auto;
+    }
+
+    &__icon {
+        margin-bottom: 1rem;
+        opacity: 0.5;
+    }
+
+    &__title {
+        font-family: typo.$font-family-lead;
+        font-size: 1.25rem;
+        font-weight: 600;
+        margin: 0 0 0.75rem 0;
+        color: var(--color-text);
+    }
+
+    &__message {
+        font-size: 0.95rem;
+        line-height: 1.5;
+        margin: 0;
+    }
+}
+
+// List View Styles
+.explainer-section__grid[data-view="list"] {
+    .explainer-card {
+        display: grid;
+        grid-template-columns: 1fr auto;
+        align-items: center;
+        padding: 1rem 0;
+
+        &__header {
+            margin-bottom: 0;
+        }
+
+        &__summary,
+        &__alternatives {
+            display: none;
+        }
+
+        &__meta {
+            margin-top: 0;
+            padding-top: 0;
+
+            &::before {
+                display: none;
+            }
+        }
+    }
+}
+
+// Responsive Discovery Controls
+@media (max-width: 768px) {
+    .explainer-discovery {
+        padding: 1.5rem 1rem;
+
+        &__controls {
+            flex-direction: column;
+            align-items: stretch;
+            gap: 1rem;
+        }
+    }
+
+    .explainer-search__input {
+        width: 100%;
+    }
+
+    .explainer-alphabet {
+        justify-content: center;
+        padding: 0.75rem 0;
+
+        &__label {
+            width: 100%;
+            text-align: center;
+            margin-bottom: 0.5rem;
+            margin-right: 0;
+        }
+    }
+
+    .explainer-featured {
+        padding: 1.5rem 1rem;
+
+        &__grid {
+            gap: 0.75rem;
+        }
+    }
+}
+
+// Wiki Statistics Component
+.explainer-stat {
+    text-align: center;
+    font-family: typo.$font-family-tech;
+
+    &__number {
+        display: block;
+        font-size: 2rem;
+        font-weight: 700;
+        color: var(--color-accent-primary);
+        line-height: 1;
+
+        @media (max-width: 768px) {
+            font-size: 1.75rem;
+        }
+    }
+
+    &__label {
+        display: block;
+        font-size: 0.8rem;
+        font-weight: 600;
+        color: var(--color-text-muted);
+        text-transform: uppercase;
+        letter-spacing: 0.1em;
+        margin-top: 0.25rem;
+    }
+}

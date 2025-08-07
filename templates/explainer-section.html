@@ -1,0 +1,323 @@
+{% extends "base.html" %} {% import "macros/explainer.html" as explainer_macros
+%} {% block content %}
+<div class="explainer-section">
+    <div class="explainer-section__container">
+        <header class="explainer-section__header">
+            <h1 class="explainer-section__title">{{ section.title }}</h1>
+            {% if section.description %}
+            <p class="explainer-section__description">
+                {{ section.description }}
+            </p>
+            {% endif %}
+
+            <!-- Explainer Statistics -->
+            {% if section.pages %} {{
+            explainer_macros::explainer_stats(section=section) }} {% endif %}
+        </header>
+
+        {% if section.content %}
+        <div class="explainer-section__content">
+            {{ section.content | safe }}
+        </div>
+        {% endif %} {% if section.pages %}
+        <!-- Discovery Controls -->
+        <div class="explainer-discovery">
+            <div class="explainer-discovery__header">
+                <h2 class="explainer-discovery__title">Explore Explainers</h2>
+                <div class="explainer-discovery__controls">
+                    <!-- Search Filter -->
+                    <div class="explainer-search">
+                        <input
+                            type="text"
+                            class="explainer-search__input"
+                            placeholder="Search explainers..."
+                            id="explainer-search"
+                            autocomplete="off"
+                        />
+                        <svg
+                            class="explainer-search__icon"
+                            width="16"
+                            height="16"
+                            viewBox="0 0 24 24"
+                            fill="none"
+                            stroke="currentColor"
+                            stroke-width="2"
+                        >
+                            <circle cx="11" cy="11" r="8"></circle>
+                            <path d="m21 21-4.35-4.35"></path>
+                        </svg>
+                    </div>
+
+                    <!-- Category Filter -->
+                    {{ explainer_macros::category_filter(section=section) }}
+
+                    <!-- Sort Options -->
+                    <select class="explainer-sort" id="explainer-sort">
+                        <option value="title">Sort by Title</option>
+                        <option value="date">Sort by Date</option>
+                        <option value="category">Sort by Category</option>
+                    </select>
+
+                    <!-- View Toggle -->
+                    <div class="explainer-view-toggle">
+                        <button
+                            class="explainer-view-toggle__btn explainer-view-toggle__btn--active"
+                            data-view="grid"
+                        >
+                            <svg
+                                width="16"
+                                height="16"
+                                viewBox="0 0 24 24"
+                                fill="none"
+                                stroke="currentColor"
+                                stroke-width="2"
+                            >
+                                <rect x="3" y="3" width="7" height="7"></rect>
+                                <rect x="14" y="3" width="7" height="7"></rect>
+                                <rect x="14" y="14" width="7" height="7"></rect>
+                                <rect x="3" y="14" width="7" height="7"></rect>
+                            </svg>
+                        </button>
+                        <button
+                            class="explainer-view-toggle__btn"
+                            data-view="list"
+                        >
+                            <svg
+                                width="16"
+                                height="16"
+                                viewBox="0 0 24 24"
+                                fill="none"
+                                stroke="currentColor"
+                                stroke-width="2"
+                            >
+                                <line x1="8" y1="6" x2="21" y2="6"></line>
+                                <line x1="8" y1="12" x2="21" y2="12"></line>
+                                <line x1="8" y1="18" x2="21" y2="18"></line>
+                                <line x1="3" y1="6" x2="3.01" y2="6"></line>
+                                <line x1="3" y1="12" x2="3.01" y2="12"></line>
+                                <line x1="3" y1="18" x2="3.01" y2="18"></line>
+                            </svg>
+                        </button>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Alphabetical Quick Navigation -->
+            {{ explainer_macros::alphabet_nav(section=section) }}
+        </div>
+
+        <!-- Featured Explainers (if any) -->
+        {% set featured_pages = section.pages |
+        filter(attribute="extra.featured", value=true) %} {% if featured_pages
+        %}
+        <div class="explainer-featured">
+            <h2 class="explainer-featured__title">Featured Explainers</h2>
+            <div class="explainer-featured__grid">
+                {% for page in featured_pages | slice(end=6) %} {{
+                explainer_macros::featured_explainer_card(page=page) }} {%
+                endfor %}
+            </div>
+        </div>
+        {% endif %}
+
+        <!-- Main Explainers Grid/List -->
+        <div class="explainer-section__pages">
+            <div
+                class="explainer-section__grid"
+                id="explainer-articles"
+                data-view="grid"
+            >
+                {% for page in section.pages %}
+                <!-- Letter anchor for alphabetical navigation -->
+                {% set current_letter = page.title | truncate(length=1, end="")
+                | upper %} {% set prev_page = loop.index0 - 1 %} {% if prev_page
+                >= 0 %} {% set prev_letter = section.pages[prev_page].title |
+                truncate(length=1, end="") | upper %} {% else %} {% set
+                prev_letter = "" %} {% endif %} {% if current_letter !=
+                prev_letter %}
+                <div
+                    class="explainer-letter-anchor"
+                    id="letter-{{ current_letter }}"
+                ></div>
+                {% endif %} {{ explainer_macros::explainer_card(page=page,
+                show_alternatives=true) }} {% endfor %}
+            </div>
+        </div>
+
+        <!-- Subsections (if any) -->
+        {% if section.subsections %}
+        <div class="explainer-section__subsections">
+            <h2 class="explainer-section__subsections-title">
+                Browse by Topic
+            </h2>
+            <div class="explainer-section__subsection-grid">
+                {% for subsection in section.subsections %} {{
+                explainer_macros::subsection_card(subsection=subsection) }} {%
+                endfor %}
+            </div>
+        </div>
+        {% endif %} {% endif %}
+    </div>
+</div>
+
+<!-- No Results Message (hidden by default) -->
+<div
+    class="explainer-no-results"
+    id="explainer-no-results"
+    style="display: none"
+>
+    <div class="explainer-no-results__content">
+        <svg
+            class="explainer-no-results__icon"
+            width="64"
+            height="64"
+            viewBox="0 0 24 24"
+            fill="none"
+            stroke="currentColor"
+            stroke-width="1"
+        >
+            <circle cx="11" cy="11" r="8"></circle>
+            <path d="m21 21-4.35-4.35"></path>
+        </svg>
+        <h3 class="explainer-no-results__title">No Explainers Found</h3>
+        <p class="explainer-no-results__message">
+            Try adjusting your search or filter criteria.
+        </p>
+    </div>
+</div>
+
+<script>
+    // Explainer Discovery JavaScript
+    document.addEventListener("DOMContentLoaded", function () {
+        const searchInput = document.getElementById("explainer-search");
+        const categoryFilter = document.getElementById(
+            "explainer-category-filter",
+        );
+        const sortSelect = document.getElementById("explainer-sort");
+        const articlesContainer = document.getElementById("explainer-articles");
+        const noResults = document.getElementById("explainer-no-results");
+        const viewToggle = document.querySelectorAll(
+            ".explainer-view-toggle__btn",
+        );
+
+        if (!articlesContainer) return;
+
+        const articles = Array.from(
+            articlesContainer.querySelectorAll(".explainer-card"),
+        );
+
+        // Filter functionality
+        function filterArticles() {
+            const searchTerm = searchInput
+                ? searchInput.value.toLowerCase()
+                : "";
+            const selectedCategory = categoryFilter
+                ? categoryFilter.value.toLowerCase()
+                : "";
+            let visibleCount = 0;
+
+            articles.forEach((article) => {
+                const title = article.dataset.title || "";
+                const category = article.dataset.category || "";
+
+                const matchesSearch = !searchTerm || title.includes(searchTerm);
+                const matchesCategory =
+                    !selectedCategory || category === selectedCategory;
+
+                const shouldShow = matchesSearch && matchesCategory;
+
+                article.style.display = shouldShow ? "block" : "none";
+                if (shouldShow) visibleCount++;
+            });
+
+            // Show/hide no results message
+            if (noResults) {
+                noResults.style.display = visibleCount === 0 ? "block" : "none";
+            }
+
+            // Re-sort visible articles
+            sortArticles();
+        }
+
+        // Sort functionality
+        function sortArticles() {
+            if (!sortSelect) return;
+
+            const sortBy = sortSelect.value;
+            const container = articlesContainer;
+
+            const sortedArticles = [...articles].sort((a, b) => {
+                switch (sortBy) {
+                    case "title":
+                        return (a.dataset.title || "").localeCompare(
+                            b.dataset.title || "",
+                        );
+                    case "date":
+                        const dateA = new Date(a.dataset.date || "1970-01-01");
+                        const dateB = new Date(b.dataset.date || "1970-01-01");
+                        return dateB - dateA; // Newest first
+                    case "category":
+                        const catA = a.dataset.category || "zzz";
+                        const catB = b.dataset.category || "zzz";
+                        return catA.localeCompare(catB);
+                    default:
+                        return 0;
+                }
+            });
+
+            // Re-append in sorted order
+            sortedArticles.forEach((article) => container.appendChild(article));
+        }
+
+        // View toggle functionality
+        function toggleView(view) {
+            if (!articlesContainer) return;
+
+            articlesContainer.dataset.view = view;
+
+            viewToggle.forEach((btn) => {
+                btn.classList.toggle(
+                    "explainer-view-toggle__btn--active",
+                    btn.dataset.view === view,
+                );
+            });
+        }
+
+        // Event listeners
+        if (searchInput) {
+            searchInput.addEventListener("input", filterArticles);
+        }
+
+        if (categoryFilter) {
+            categoryFilter.addEventListener("change", filterArticles);
+        }
+
+        if (sortSelect) {
+            sortSelect.addEventListener("change", sortArticles);
+        }
+
+        viewToggle.forEach((btn) => {
+            btn.addEventListener("click", () => toggleView(btn.dataset.view));
+        });
+
+        // Smooth scroll for alphabet navigation
+        document
+            .querySelectorAll(".explainer-alphabet__link--active")
+            .forEach((link) => {
+                link.addEventListener("click", function (e) {
+                    e.preventDefault();
+                    const target = document.querySelector(
+                        this.getAttribute("href"),
+                    );
+                    if (target) {
+                        target.scrollIntoView({
+                            behavior: "smooth",
+                            block: "start",
+                        });
+                    }
+                });
+            });
+    });
+</script>
+
+{% endblock content %}
