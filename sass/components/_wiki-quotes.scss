@@ -13,7 +13,7 @@
         rgba(var(--color-accent-secondary), 0.02) 100%
     );
     border: none;
-    border-left: 100px solid transparent;
+    border-left: 3px solid transparent;
     background-image:
         linear-gradient(var(--color-background), var(--color-background)),
         linear-gradient(
@@ -152,8 +152,8 @@
     border-top: 1px solid var(--color-hairline-subtle);
 
     &__avatar {
-        width: 2.5rem;
-        height: 2.5rem;
+        width: 2rem;
+        height: 2rem;
         border-radius: 50%;
         background: var(--color-background-tertiary);
         border: 2px solid var(--color-hairline);
@@ -179,13 +179,14 @@
             color: var(--color-background);
             font-family: typo.$font-family-lead;
             font-weight: 700;
-            font-size: 1rem;
+            font-size: 0.8rem;
         }
     }
 
     &__info {
         flex: 1;
         min-width: 0;
+        text-align: right;
     }
 
     &__container {
@@ -206,31 +207,34 @@
     &__author-section {
         display: flex;
         align-items: center;
-        gap: 0.75rem;
-        flex: 1;
+        gap: 0.5rem;
+        flex-shrink: 0;
+        order: 2;
+        flex-direction: row-reverse;
     }
 
     &__work-section {
-        text-align: right;
-        flex-shrink: 0;
+        text-align: left;
+        flex: 1;
+        order: 1;
 
         @media (max-width: 768px) {
-            text-align: left;
+            order: 2;
         }
     }
 
     &__name {
         font-family: typo.$font-family-lead;
         font-weight: 600;
-        font-size: 0.95rem;
+        font-size: 0.85rem;
         color: var(--color-text);
-        margin: 0 0 0.25rem 0;
+        margin: 0 0 0.2rem 0;
         line-height: 1.2;
     }
 
     &__title {
         font-family: typo.$font-family-tech;
-        font-size: 0.8rem;
+        font-size: 0.7rem;
         color: var(--color-text-muted);
         margin: 0;
         text-transform: uppercase;
@@ -239,14 +243,14 @@
 
     &__dates {
         font-family: typo.$font-family-tech;
-        font-size: 0.75rem;
+        font-size: 0.65rem;
         color: var(--color-text-subtle);
-        margin-top: 0.125rem;
+        margin-top: 0.1rem;
     }
 
     &__work {
         font-family: typo.$font-family-body;
-        font-size: 0.85rem;
+        font-size: 0.9rem;
         color: var(--color-text-muted);
         font-style: italic;
         line-height: 1.4;
@@ -283,21 +287,17 @@
         rgba(var(--color-accent-primary), 0.08) 0%,
         rgba(var(--color-accent-secondary), 0.05) 100%
     );
-    border: 2px solid transparent;
+    border: none;
+    border-left: 3px solid transparent;
     background-image:
         linear-gradient(var(--color-background), var(--color-background)),
         linear-gradient(
-            45deg,
+            135deg,
             var(--color-accent-primary),
-            var(--color-accent-secondary),
-            var(--color-accent-primary)
+            var(--color-accent-secondary)
         );
     background-origin: border-box;
     background-clip: padding-box, border-box;
-    background-size:
-        100% 100%,
-        200% 200%;
-    animation: revelation-glow 60s ease-in-out infinite;
     border-radius: 0.75rem;
     padding: 1.5rem 2rem;
     margin: 2rem 0;
@@ -320,6 +320,9 @@
     &__content {
         position: relative;
         z-index: 1;
+        padding-bottom: 1rem;
+        border-bottom: 1px solid var(--color-hairline-subtle);
+        margin-bottom: 1rem;
 
         p {
             margin: 0 0 1rem 0;
@@ -387,10 +390,10 @@
     }
 
     &__citation {
-        margin-top: 1.5rem;
+        margin-top: 0;
         margin-bottom: 2.5rem;
-        padding-top: 1rem;
-        border-top: 1px solid var(--color-hairline-subtle);
+        padding-top: 0;
+        border-top: none;
         font-style: italic;
         font-size: 0.9rem;
         color: var(--color-text-muted);
@@ -438,16 +441,16 @@
 
     .author-profile {
         &__avatar {
-            width: 2rem;
-            height: 2rem;
+            width: 1.75rem;
+            height: 1.75rem;
         }
 
         &__name {
-            font-size: 0.9rem;
+            font-size: 0.8rem;
         }
 
         &__title {
-            font-size: 0.75rem;
+            font-size: 0.65rem;
         }
     }
 

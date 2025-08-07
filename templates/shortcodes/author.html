@@ -10,7 +10,29 @@ author_data = authors.authors[author_key] %} {% endif %}
 
     {% if author_key and author_data %}
     <div class="author-profile__container">
-        <!-- Author Section (Left) -->
+        <!-- Work Section (Left) -->
+        {% if work or url or year %}
+        <div class="author-profile__work-section">
+            <div class="author-profile__work">
+                {% if url %}
+                <a
+                    href="{{ url }}"
+                    class="author-profile__work-link"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                >
+                    {{ work | default(value="Source") }}
+                </a>
+                {% else %}
+                <span class="author-profile__work-title">{{ work }}</span>
+                {% endif %} {% if year %}
+                <span class="author-profile__work-year">({{ year }})</span>
+                {% endif %}
+            </div>
+        </div>
+        {% endif %}
+
+        <!-- Author Section (Right) -->
         <div class="author-profile__author-section">
             {% if author_data.image %}
             <img
@@ -45,8 +67,11 @@ author_data = authors.authors[author_key] %} {% endif %}
                 {% endif %}
             </div>
         </div>
+    </div>
 
-        <!-- Work Section (Right) -->
+    {% elif name %}
+    <div class="author-profile__container">
+        <!-- Work Section (Left) -->
         {% if work or url or year %}
         <div class="author-profile__work-section">
             <div class="author-profile__work">
@@ -67,11 +92,8 @@ author_data = authors.authors[author_key] %} {% endif %}
             </div>
         </div>
         {% endif %}
-    </div>
 
-    {% elif name %}
-    <div class="author-profile__container">
-        <!-- Author Section (Left) -->
+        <!-- Author Section (Right) -->
         <div class="author-profile__author-section">
             <div
                 class="author-profile__avatar author-profile__avatar--placeholder"
@@ -85,28 +107,6 @@ author_data = authors.authors[author_key] %} {% endif %}
                 {% endif %}
             </div>
         </div>
-
-        <!-- Work Section (Right) -->
-        {% if work or url or year %}
-        <div class="author-profile__work-section">
-            <div class="author-profile__work">
-                {% if url %}
-                <a
-                    href="{{ url }}"
-                    class="author-profile__work-link"
-                    target="_blank"
-                    rel="noopener noreferrer"
-                >
-                    {{ work | default(value="Source") }}
-                </a>
-                {% else %}
-                <span class="author-profile__work-title">{{ work }}</span>
-                {% endif %} {% if year %}
-                <span class="author-profile__work-year">({{ year }})</span>
-                {% endif %}
-            </div>
-        </div>
-        {% endif %}
     </div>
 
     {% else %}
