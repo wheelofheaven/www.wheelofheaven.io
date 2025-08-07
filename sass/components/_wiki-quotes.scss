@@ -254,6 +254,11 @@
         color: var(--color-text-muted);
         font-style: italic;
         line-height: 1.4;
+
+        &::before {
+            content: "— ";
+            font-weight: 300;
+        }
     }
 
     &__work-link {
@@ -282,27 +287,15 @@
 // Revelations Quote Variant
 .revelation-quote {
     position: relative;
-    background: linear-gradient(
-        135deg,
-        rgba(var(--color-accent-primary), 0.08) 0%,
-        rgba(var(--color-accent-secondary), 0.05) 100%
-    );
     border: none;
     border-left: 3px solid transparent;
-    background-image:
-        linear-gradient(var(--color-background), var(--color-background)),
-        linear-gradient(
-            135deg,
-            var(--color-accent-primary),
-            var(--color-accent-secondary)
-        );
     background-origin: border-box;
     background-clip: padding-box, border-box;
     border-radius: 0.75rem;
     padding: 1.5rem 2rem;
     margin: 2rem 0;
     font-family: "Spectral", typo.$font-family-serif;
-    font-size: 1rem;
+    font-size: 10rem;
     line-height: 1.6;
     font-weight: 400;
     color: var(--color-text);
