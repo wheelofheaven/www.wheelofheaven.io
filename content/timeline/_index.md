@@ -1,7 +1,7 @@
 +++
 title = "Timeline"
 description = "Journey through the 26,000-year cosmic cycle of creation, from the Age of Capricorn to the Age of Aquarius. Discover how the Elohim shaped Earth's destiny across 12 precessional ages."
-template = "timeline-section.html"
+template = "wiki-section.html"
 +++
 
 # The Great Cosmic Timeline

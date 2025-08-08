@@ -1,7 +1,7 @@
 +++
 title = "Age of Sagittarius"
 description = "The second age of creation focused on atmospheric analysis and environmental study of Earth, preparing for life adaptation and marking the 2nd day of Creation in Genesis."
-template = "age-page.html"
+template = "wiki-page.html"
 
 [extra]
 symbol = "♐"

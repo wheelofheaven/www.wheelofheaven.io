@@ -1,7 +1,7 @@
 +++
 title = "Age of Capricorn"
 description = "The first age of creation where synthetic life engineering began on the Elohim home planet, Earth was discovered and explored, marking the beginning of the cosmic timeline and the 1st day of Creation in Genesis."
-template = "age-page.html"
+template = "wiki-page.html"
 
 [extra]
 symbol = "♑"
