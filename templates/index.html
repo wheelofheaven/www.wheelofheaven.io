@@ -1,83 +1,436 @@
 {% extends "base.html" %} {% block content %}
 <div class="homepage">
-    {% if page.content %} {{ page.content | safe }} {% else %}
-    <h2>{% include "partials/brand/wordmark.html" %}</h2>
-    <p>{{ config.description }}</p>
+    <!-- Hero Section -->
+    <section class="hero">
+        <div class="hero__background">
+            <div class="hero__stars"></div>
+            <div class="hero__nebula"></div>
+        </div>
 
-    <div class="intro-section">
-        <h3>Explore the Age of Aquarius</h3>
-        <p>
-            Embark on a journey of discovery and democratization of cosmic
-            knowledge. Our platform delves into the compelling hypothesis that
-            life on Earth was intelligently designed by an advanced
-            extraterrestrial civilization known as the Elohim.
-        </p>
-    </div>
+        <div class="hero__container">
+            <div class="hero__content">
+                <div class="hero__brand">
+                    {% include "partials/brand/wordmark.html" %}
+                </div>
 
-    <div class="features">
-        <h3>What You'll Find Here</h3>
-        <ul>
-            <li>
-                <strong>Ancient Wisdom:</strong> Explore historical texts and
-                interpretations
-            </li>
-            <li>
-                <strong>Modern Science:</strong> Contemporary research and
-                findings
-            </li>
-            <li>
-                <strong>Visionary Insights:</strong> Forward-thinking
-                perspectives on our origins
-            </li>
-            <li>
-                <strong>Multilingual Content:</strong> Available in 7 languages
-            </li>
-        </ul>
-    </div>
+                <h1 class="hero__title">
+                    Mapping the Ages: From the Arrival of the Elohim to the Dawn
+                    of Aquarius
+                </h1>
 
-    <div class="getting-started">
-        <h3>Getting Started</h3>
-        <p>
-            This is the beginning of your Wheel of Heaven journey. Content will
-            be migrated from the Hugo site to create a comprehensive knowledge
-            base about the possibility of our celestial origins and the profound
-            implications for our future.
-        </p>
-    </div>
-    {% endif %}
+                <p class="hero__subtitle">
+                    Exploring 12 cosmic ages of human genesis and the stories
+                    they left behind. A journey into the hypothesis that life on
+                    Earth was intelligently designed by an advanced
+                    extraterrestrial civilization.
+                </p>
 
-    <div class="language-info">
-        <h3>Available Languages</h3>
-        <div class="language-grid">
-            <div class="lang-item">
-                <strong>🇺🇸 English</strong><br />
-                <span>Default language</span>
+                <div class="hero__actions">
+                    <a href="/essentials" class="btn btn--primary btn--large">
+                        Begin Your Journey
+                        <svg
+                            class="btn__icon"
+                            width="20"
+                            height="20"
+                            viewBox="0 0 24 24"
+                            fill="none"
+                            stroke="currentColor"
+                            stroke-width="2"
+                        >
+                            <path d="M5 12h14m-7-7 7 7-7 7" />
+                        </svg>
+                    </a>
+                    <button
+                        class="btn btn--secondary btn--large"
+                        onclick="scrollToSection('timeline-preview')"
+                    >
+                        See the Timeline
+                        <svg
+                            class="btn__icon"
+                            width="20"
+                            height="20"
+                            viewBox="0 0 24 24"
+                            fill="none"
+                            stroke="currentColor"
+                            stroke-width="2"
+                        >
+                            <path d="M12 5v14m-7-7 7 7 7-7" />
+                        </svg>
+                    </button>
+                </div>
             </div>
-            <div class="lang-item">
-                <strong>🇩🇪 Deutsch</strong><br />
-                <span>German</span>
-            </div>
-            <div class="lang-item">
-                <strong>🇫🇷 Français</strong><br />
-                <span>French</span>
-            </div>
-            <div class="lang-item">
-                <strong>🇪🇸 Español</strong><br />
-                <span>Spanish</span>
-            </div>
-            <div class="lang-item">
-                <strong>🇷🇺 Русский</strong><br />
-                <span>Russian</span>
-            </div>
-            <div class="lang-item">
-                <strong>🇯🇵 日本語</strong><br />
-                <span>Japanese</span>
-            </div>
-            <div class="lang-item">
-                <strong>🇨🇳 中文</strong><br />
-                <span>Chinese (Simplified)</span>
+
+            <div class="hero__scroll-indicator">
+                <div class="scroll-arrow"></div>
             </div>
         </div>
-    </div>
+    </section>
+
+    <!-- Navigation Cards Section -->
+    <section class="nav-section">
+        <div class="nav-section__container">
+            <h2 class="nav-section__title">Explore the Knowledge</h2>
+            <p class="nav-section__subtitle">
+                Choose your path into the cosmic narrative
+            </p>
+
+            <div class="nav-cards">
+                <div class="nav-card nav-card--essentials">
+                    <div class="nav-card__icon">
+                        <svg
+                            width="32"
+                            height="32"
+                            viewBox="0 0 24 24"
+                            fill="none"
+                            stroke="currentColor"
+                            stroke-width="2"
+                        >
+                            <path
+                                d="M2 3h6a4 4 0 0 1 4 4v14a3 3 0 0 0-3-3H2z"
+                            />
+                            <path
+                                d="M22 3h-6a4 4 0 0 0-4 4v14a3 3 0 0 1 3-3h7z"
+                            />
+                        </svg>
+                    </div>
+                    <h3 class="nav-card__title">Essentials</h3>
+                    <p class="nav-card__description">
+                        Start here: the key ideas to understand the Wheel of
+                        Heaven
+                    </p>
+                    <a href="/essentials" class="nav-card__link"
+                        >Explore Essentials</a
+                    >
+                </div>
+
+                <div class="nav-card nav-card--explainers">
+                    <div class="nav-card__icon">
+                        <svg
+                            width="32"
+                            height="32"
+                            viewBox="0 0 24 24"
+                            fill="none"
+                            stroke="currentColor"
+                            stroke-width="2"
+                        >
+                            <circle cx="12" cy="12" r="10" />
+                            <path d="M9.09 9a3 3 0 0 1 5.83 1c0 2-3 3-3 3" />
+                            <path d="M12 17h.01" />
+                        </svg>
+                    </div>
+                    <h3 class="nav-card__title">Explainers</h3>
+                    <p class="nav-card__description">
+                        In-depth guides and analysis for the curious mind
+                    </p>
+                    <a href="/explainers" class="nav-card__link"
+                        >Explore Explainers</a
+                    >
+                </div>
+
+                <div class="nav-card nav-card--revelations">
+                    <div class="nav-card__icon">
+                        <svg
+                            width="32"
+                            height="32"
+                            viewBox="0 0 24 24"
+                            fill="none"
+                            stroke="currentColor"
+                            stroke-width="2"
+                        >
+                            <path
+                                d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z"
+                            />
+                            <polyline points="14,2 14,8 20,8" />
+                            <line x1="16" y1="13" x2="8" y2="13" />
+                            <line x1="16" y1="17" x2="8" y2="17" />
+                            <polyline points="10,9 9,9 8,9" />
+                        </svg>
+                    </div>
+                    <h3 class="nav-card__title">Revelations</h3>
+                    <p class="nav-card__description">
+                        Inspired texts and ancient wisdom from the cosmic
+                        library
+                    </p>
+                    <a href="/revelations" class="nav-card__link"
+                        >Explore Revelations</a
+                    >
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Timeline Preview Section -->
+    <section class="timeline-preview" id="timeline-preview">
+        <div class="timeline-preview__container">
+            <div class="timeline-preview__content">
+                <h2 class="timeline-preview__title">
+                    The Cosmic Wheel of Ages
+                </h2>
+                <p class="timeline-preview__description">
+                    Our creators began their work in the Age of Capricorn, over
+                    24,000 years ago. Journey through the twelve cosmic ages and
+                    discover how each era shaped humanity's development and
+                    understanding.
+                </p>
+
+                <div class="timeline-preview__wheel">
+                    <div class="cosmic-wheel">
+                        <div class="cosmic-wheel__center">
+                            <div class="cosmic-wheel__earth"></div>
+                        </div>
+                        <div class="cosmic-wheel__ring">
+                            <div
+                                class="cosmic-wheel__age cosmic-wheel__age--current"
+                                data-age="aquarius"
+                            >
+                                <span class="age-symbol">♒</span>
+                                <span class="age-name">Aquarius</span>
+                            </div>
+                            <div class="cosmic-wheel__age" data-age="capricorn">
+                                <span class="age-symbol">♑</span>
+                                <span class="age-name">Capricorn</span>
+                            </div>
+                            <div
+                                class="cosmic-wheel__age"
+                                data-age="sagittarius"
+                            >
+                                <span class="age-symbol">♐</span>
+                                <span class="age-name">Sagittarius</span>
+                            </div>
+                            <div class="cosmic-wheel__age" data-age="scorpio">
+                                <span class="age-symbol">♏</span>
+                                <span class="age-name">Scorpio</span>
+                            </div>
+                            <div class="cosmic-wheel__age" data-age="libra">
+                                <span class="age-symbol">♎</span>
+                                <span class="age-name">Libra</span>
+                            </div>
+                            <div class="cosmic-wheel__age" data-age="virgo">
+                                <span class="age-symbol">♍</span>
+                                <span class="age-name">Virgo</span>
+                            </div>
+                            <div class="cosmic-wheel__age" data-age="leo">
+                                <span class="age-symbol">♌</span>
+                                <span class="age-name">Leo</span>
+                            </div>
+                            <div class="cosmic-wheel__age" data-age="cancer">
+                                <span class="age-symbol">♋</span>
+                                <span class="age-name">Cancer</span>
+                            </div>
+                            <div class="cosmic-wheel__age" data-age="gemini">
+                                <span class="age-symbol">♊</span>
+                                <span class="age-name">Gemini</span>
+                            </div>
+                            <div class="cosmic-wheel__age" data-age="taurus">
+                                <span class="age-symbol">♉</span>
+                                <span class="age-name">Taurus</span>
+                            </div>
+                            <div class="cosmic-wheel__age" data-age="aries">
+                                <span class="age-symbol">♈</span>
+                                <span class="age-name">Aries</span>
+                            </div>
+                            <div class="cosmic-wheel__age" data-age="pisces">
+                                <span class="age-symbol">♓</span>
+                                <span class="age-name">Pisces</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <a href="/timeline" class="btn btn--accent btn--large">
+                    View the Full Timeline
+                    <svg
+                        class="btn__icon"
+                        width="20"
+                        height="20"
+                        viewBox="0 0 24 24"
+                        fill="none"
+                        stroke="currentColor"
+                        stroke-width="2"
+                    >
+                        <circle cx="12" cy="12" r="10" />
+                        <polyline points="12,6 12,12 16,14" />
+                    </svg>
+                </a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Featured Content Section -->
+    <section class="featured-content">
+        <div class="featured-content__container">
+            <h2 class="featured-content__title">Latest Insights</h2>
+            <p class="featured-content__subtitle">
+                Recent discoveries and perspectives from our cosmic exploration
+            </p>
+
+            <div class="featured-grid">
+                <!-- These would be dynamically populated in a real implementation -->
+                <article class="featured-card">
+                    <div class="featured-card__category">Essentials</div>
+                    <h3 class="featured-card__title">
+                        <a href="/essentials/elohim"
+                            >Understanding the Elohim</a
+                        >
+                    </h3>
+                    <p class="featured-card__excerpt">
+                        Explore the fundamental concept of our cosmic creators
+                        and their role in Earth's genesis.
+                    </p>
+                    <div class="featured-card__meta">
+                        <span class="reading-time">5 min read</span>
+                    </div>
+                </article>
+
+                <article class="featured-card">
+                    <div class="featured-card__category">Timeline</div>
+                    <h3 class="featured-card__title">
+                        <a href="/timeline/age-of-pisces">The Age of Pisces</a>
+                    </h3>
+                    <p class="featured-card__excerpt">
+                        Discover how the last 2,000 years prepared humanity for
+                        the dawning Age of Aquarius.
+                    </p>
+                    <div class="featured-card__meta">
+                        <span class="reading-time">8 min read</span>
+                    </div>
+                </article>
+
+                <article class="featured-card">
+                    <div class="featured-card__category">Explainers</div>
+                    <h3 class="featured-card__title">
+                        <a href="/explainers/scientific-evidence"
+                            >Scientific Perspectives</a
+                        >
+                    </h3>
+                    <p class="featured-card__excerpt">
+                        Modern science and ancient wisdom converge in our
+                        understanding of intelligent design.
+                    </p>
+                    <div class="featured-card__meta">
+                        <span class="reading-time">12 min read</span>
+                    </div>
+                </article>
+            </div>
+        </div>
+    </section>
+
+    <!-- Community Section -->
+    <section class="community">
+        <div class="community__container">
+            <div class="community__content">
+                <h2 class="community__title">Join the Journey</h2>
+                <p class="community__description">
+                    Become part of a global community exploring cosmic origins
+                    and the democratization of ancient wisdom. Contribute your
+                    insights, help translate content, and engage in meaningful
+                    discussions about our celestial heritage.
+                </p>
+
+                <div class="community__actions">
+                    <a
+                        href="https://github.com/wheelofheaven"
+                        class="community-link community-link--github"
+                        target="_blank"
+                        rel="noopener"
+                    >
+                        <div class="community-link__icon">
+                            <svg
+                                width="24"
+                                height="24"
+                                viewBox="0 0 24 24"
+                                fill="currentColor"
+                            >
+                                <path
+                                    d="M12 2C6.477 2 2 6.484 2 12.017c0 4.425 2.865 8.18 6.839 9.504.5.092.682-.217.682-.483 0-.237-.008-.868-.013-1.703-2.782.605-3.369-1.343-3.369-1.343-.454-1.158-1.11-1.466-1.11-1.466-.908-.62.069-.608.069-.608 1.003.07 1.531 1.032 1.531 1.032.892 1.53 2.341 1.088 2.91.832.092-.647.35-1.088.636-1.338-2.22-.253-4.555-1.113-4.555-4.951 0-1.093.39-1.988 1.029-2.688-.103-.253-.446-1.272.098-2.65 0 0 .84-.27 2.75 1.026A9.564 9.564 0 0112 6.844c.85.004 1.705.115 2.504.337 1.909-1.296 2.747-1.027 2.747-1.027.546 1.379.202 2.398.1 2.651.64.7 1.028 1.595 1.028 2.688 0 3.848-2.339 4.695-4.566 4.943.359.309.678.92.678 1.855 0 1.338-.012 2.419-.012 2.747 0 .268.18.58.688.482A10.019 10.019 0 0022 12.017C22 6.484 17.522 2 12 2z"
+                                />
+                            </svg>
+                        </div>
+                        <div class="community-link__content">
+                            <h3>Contribute on GitHub</h3>
+                            <p>Help improve the knowledge base</p>
+                        </div>
+                    </a>
+
+                    <a
+                        href="https://t.me/wheelofheaven"
+                        class="community-link community-link--telegram"
+                        target="_blank"
+                        rel="noopener"
+                    >
+                        <div class="community-link__icon">
+                            <svg
+                                width="24"
+                                height="24"
+                                viewBox="0 0 24 24"
+                                fill="currentColor"
+                            >
+                                <path
+                                    d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm4.64 6.8c-.15 1.58-.8 5.42-1.13 7.19-.14.75-.42 1-.68 1.03-.58.05-1.02-.38-1.58-.75-.88-.58-1.38-.94-2.23-1.5-.99-.65-.35-1.01.22-1.59.15-.15 2.71-2.48 2.76-2.69a.2.2 0 00-.05-.18c-.06-.05-.14-.03-.21-.02-.09.02-.38.02-1.39.84-.35.15-.83.37-1.21.52-.48.19-.86.31-1.25.25-.41-.06-.85-.18-1.25-.32-.47-.17-.85-.27-.81-.56.02-.15.11-.29.31-.42.2-.13.53-.25.91-.37l3.65-1.5c1.73-.72 3.48-1.45 3.59-1.49.17-.06.4-.14.52-.01.13.14.12.36.09.58z"
+                                />
+                            </svg>
+                        </div>
+                        <div class="community-link__content">
+                            <h3>Join Discussions</h3>
+                            <p>Connect with fellow explorers</p>
+                        </div>
+                    </a>
+
+                    <div class="community-link community-link--translate">
+                        <div class="community-link__icon">
+                            <svg
+                                width="24"
+                                height="24"
+                                viewBox="0 0 24 24"
+                                fill="none"
+                                stroke="currentColor"
+                                stroke-width="2"
+                            >
+                                <circle cx="12" cy="12" r="10" />
+                                <path d="M8 14s1.5 2 4 2 4-2 4-2" />
+                                <line x1="9" y1="9" x2="9.01" y2="9" />
+                                <line x1="15" y1="9" x2="15.01" y2="9" />
+                            </svg>
+                        </div>
+                        <div class="community-link__content">
+                            <h3>Help Translate</h3>
+                            <p>Make knowledge accessible worldwide</p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="community__languages">
+                    <h3 class="community__languages-title">
+                        Available in 7 Languages
+                    </h3>
+                    <div class="language-flags">
+                        <span class="language-flag" title="English">🇺🇸</span>
+                        <span class="language-flag" title="Deutsch">🇩🇪</span>
+                        <span class="language-flag" title="Français">🇫🇷</span>
+                        <span class="language-flag" title="Español">🇪🇸</span>
+                        <span class="language-flag" title="Русский">🇷🇺</span>
+                        <span class="language-flag" title="日本語">🇯🇵</span>
+                        <span class="language-flag" title="中文">🇨🇳</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
 </div>
+
+<script>
+    function scrollToSection(sectionId) {
+        document
+            .getElementById(sectionId)
+            .scrollIntoView({ behavior: "smooth" });
+    }
+
+    // Cosmic wheel rotation animation
+    document.addEventListener("DOMContentLoaded", function () {
+        const wheel = document.querySelector(".cosmic-wheel__ring");
+        if (wheel) {
+            wheel.style.animation = "rotate 120s linear infinite";
+        }
+    });
+</script>
 {% endblock content %}

@@ -1,0 +1,484 @@
+// Button Component
+//
+// Comprehensive button styles for various use cases throughout the site
+
+@use "../abstracts/variables" as vars;
+@use "../abstracts/colors" as colors;
+
+.btn {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    gap: vars.$spacing-xs;
+    padding: vars.$spacing-sm vars.$spacing-lg;
+    border: none;
+    border-radius: vars.$border-radius-md;
+    font-size: vars.$font-size-base;
+    font-weight: 500;
+    text-decoration: none;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    position: relative;
+    overflow: hidden;
+    line-height: 1.5;
+    white-space: nowrap;
+    user-select: none;
+
+    // Subtle shine effect
+    &::before {
+        content: "";
+        position: absolute;
+        top: 0;
+        left: -100%;
+        width: 100%;
+        height: 100%;
+        background: linear-gradient(
+            90deg,
+            transparent,
+            rgba(255, 255, 255, 0.2),
+            transparent
+        );
+        transition: left 0.5s ease;
+    }
+
+    &:hover::before {
+        left: 100%;
+    }
+
+    &:focus {
+        outline: 2px solid var(--color-focus);
+        outline-offset: 2px;
+    }
+
+    &:disabled {
+        opacity: 0.6;
+        cursor: not-allowed;
+        transform: none !important;
+    }
+
+    // Icon within button
+    &__icon {
+        transition: transform 0.3s ease;
+        flex-shrink: 0;
+    }
+
+    &:hover &__icon {
+        transform: translateX(2px);
+    }
+
+    // Button Variants
+
+    // Primary button - main actions
+    &--primary {
+        background: linear-gradient(
+            135deg,
+            var(--color-accent-primary),
+            var(--color-accent-secondary)
+        );
+        color: var(--color-background);
+        border: 2px solid transparent;
+
+        &:hover {
+            transform: translateY(-2px);
+            box-shadow:
+                0 8px 16px rgba(0, 0, 0, 0.2),
+                0 0 0 1px var(--color-accent-primary);
+        }
+
+        &:active {
+            transform: translateY(0);
+            box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+        }
+    }
+
+    // Secondary button - alternative actions
+    &--secondary {
+        background: transparent;
+        border: 2px solid var(--color-accent-primary);
+        color: var(--color-accent-primary);
+
+        &:hover {
+            background: var(--color-accent-primary);
+            color: var(--color-background);
+            transform: translateY(-2px);
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.15);
+        }
+
+        &:active {
+            transform: translateY(0);
+        }
+    }
+
+    // Accent button - special cosmic actions
+    &--accent {
+        background: linear-gradient(
+            135deg,
+            #{colors.$mauve-400},
+            #{colors.$blue-400}
+        );
+        color: var(--color-background);
+        border: 2px solid transparent;
+
+        &:hover {
+            transform: translateY(-2px);
+            box-shadow:
+                0 8px 16px rgba(0, 0, 0, 0.2),
+                0 0 20px rgba(157, 129, 217, 0.3);
+        }
+
+        &:active {
+            transform: translateY(0);
+        }
+    }
+
+    // Ghost button - minimal style
+    &--ghost {
+        background: transparent;
+        border: 1px solid var(--color-border);
+        color: var(--color-text);
+
+        &:hover {
+            background: var(--color-hover);
+            border-color: var(--color-border-strong);
+        }
+
+        &:active {
+            background: var(--color-active);
+        }
+    }
+
+    // Danger button - destructive actions
+    &--danger {
+        background: linear-gradient(
+            135deg,
+            #{colors.$soft-pink-500},
+            #{colors.$soft-pink-600}
+        );
+        color: var(--color-background);
+        border: 2px solid transparent;
+
+        &:hover {
+            transform: translateY(-2px);
+            box-shadow: 0 8px 16px rgba(255, 148, 157, 0.3);
+        }
+
+        &:active {
+            transform: translateY(0);
+        }
+    }
+
+    // Success button - positive actions
+    &--success {
+        background: linear-gradient(
+            135deg,
+            #{colors.$green-500},
+            #{colors.$mint-500}
+        );
+        color: var(--color-background);
+        border: 2px solid transparent;
+
+        &:hover {
+            transform: translateY(-2px);
+            box-shadow: 0 8px 16px rgba(109, 223, 122, 0.3);
+        }
+
+        &:active {
+            transform: translateY(0);
+        }
+    }
+
+    // Button Sizes
+
+    &--small {
+        padding: vars.$spacing-xs vars.$spacing-sm;
+        font-size: vars.$font-size-sm;
+        border-radius: vars.$border-radius-sm;
+    }
+
+    &--large {
+        padding: vars.$spacing-md vars.$spacing-xl;
+        font-size: vars.$font-size-lg;
+        border-radius: vars.$border-radius-lg;
+    }
+
+    &--xlarge {
+        padding: vars.$spacing-lg vars.$spacing-2xl;
+        font-size: vars.$font-size-xl;
+        border-radius: vars.$border-radius-xl;
+    }
+
+    // Button States
+
+    &--loading {
+        pointer-events: none;
+
+        &::after {
+            content: "";
+            width: 16px;
+            height: 16px;
+            border: 2px solid transparent;
+            border-top: 2px solid currentColor;
+            border-radius: 50%;
+            animation: button-spin 1s linear infinite;
+            margin-left: vars.$spacing-xs;
+        }
+    }
+
+    // Full width button
+    &--full-width {
+        width: 100%;
+        justify-content: center;
+    }
+
+    // Icon-only button
+    &--icon-only {
+        padding: vars.$spacing-sm;
+        width: auto;
+        aspect-ratio: 1;
+
+        .btn__icon {
+            margin: 0;
+        }
+
+        &.btn--small {
+            padding: vars.$spacing-xs;
+        }
+
+        &.btn--large {
+            padding: vars.$spacing-md;
+        }
+    }
+
+    // Floating action button
+    &--fab {
+        position: fixed;
+        bottom: vars.$spacing-lg;
+        right: vars.$spacing-lg;
+        border-radius: 50%;
+        width: 56px;
+        height: 56px;
+        padding: 0;
+        box-shadow:
+            0 6px 10px rgba(0, 0, 0, 0.14),
+            0 1px 18px rgba(0, 0, 0, 0.12),
+            0 3px 5px rgba(0, 0, 0, 0.2);
+        z-index: 1000;
+
+        &:hover {
+            transform: scale(1.1);
+            box-shadow:
+                0 8px 14px rgba(0, 0, 0, 0.18),
+                0 2px 22px rgba(0, 0, 0, 0.15),
+                0 4px 8px rgba(0, 0, 0, 0.25);
+        }
+    }
+}
+
+// Button Groups
+.btn-group {
+    display: inline-flex;
+    gap: 0;
+    border-radius: vars.$border-radius-md;
+    overflow: hidden;
+    box-shadow: 0 1px 3px rgba(0, 0, 0, 0.1);
+
+    .btn {
+        border-radius: 0;
+        border-right: 1px solid var(--color-border);
+
+        &:first-child {
+            border-top-left-radius: vars.$border-radius-md;
+            border-bottom-left-radius: vars.$border-radius-md;
+        }
+
+        &:last-child {
+            border-top-right-radius: vars.$border-radius-md;
+            border-bottom-right-radius: vars.$border-radius-md;
+            border-right: none;
+        }
+
+        &:hover {
+            transform: none;
+            z-index: 1;
+        }
+    }
+
+    &--vertical {
+        flex-direction: column;
+
+        .btn {
+            border-right: none;
+            border-bottom: 1px solid var(--color-border);
+
+            &:first-child {
+                border-radius: vars.$border-radius-md vars.$border-radius-md 0 0;
+            }
+
+            &:last-child {
+                border-radius: 0 0 vars.$border-radius-md vars.$border-radius-md;
+                border-bottom: none;
+            }
+        }
+    }
+}
+
+// Link styled as button
+.btn-link {
+    display: inline-flex;
+    align-items: center;
+    gap: vars.$spacing-xs;
+    color: var(--color-accent-primary);
+    text-decoration: none;
+    font-weight: 500;
+    transition: all 0.3s ease;
+    position: relative;
+
+    &::after {
+        content: "";
+        position: absolute;
+        bottom: -2px;
+        left: 0;
+        width: 0;
+        height: 2px;
+        background: var(--color-accent-primary);
+        transition: width 0.3s ease;
+    }
+
+    &:hover {
+        color: var(--color-accent-secondary);
+
+        &::after {
+            width: 100%;
+        }
+
+        .btn__icon {
+            transform: translateX(4px);
+        }
+    }
+
+    &:focus {
+        outline: 2px solid var(--color-focus);
+        outline-offset: 2px;
+        border-radius: 2px;
+    }
+}
+
+// Button animations
+@keyframes button-spin {
+    0% {
+        transform: rotate(0deg);
+    }
+    100% {
+        transform: rotate(360deg);
+    }
+}
+
+// Responsive behavior
+@media (max-width: 768px) {
+    .btn {
+        &--large {
+            padding: vars.$spacing-sm vars.$spacing-lg;
+            font-size: vars.$font-size-base;
+        }
+
+        &--xlarge {
+            padding: vars.$spacing-md vars.$spacing-xl;
+            font-size: vars.$font-size-lg;
+        }
+    }
+
+    .btn-group {
+        &--responsive {
+            flex-direction: column;
+
+            .btn {
+                border-right: none;
+                border-bottom: 1px solid var(--color-border);
+
+                &:first-child {
+                    border-radius: vars.$border-radius-md vars.$border-radius-md
+                        0 0;
+                }
+
+                &:last-child {
+                    border-radius: 0 0 vars.$border-radius-md
+                        vars.$border-radius-md;
+                    border-bottom: none;
+                }
+            }
+        }
+    }
+}
+
+@media (max-width: 480px) {
+    .btn {
+        &--responsive-full {
+            width: 100%;
+            justify-content: center;
+        }
+    }
+
+    .btn--fab {
+        bottom: vars.$spacing-md;
+        right: vars.$spacing-md;
+        width: 48px;
+        height: 48px;
+    }
+}
+
+// High contrast mode support
+@media (prefers-contrast: high) {
+    .btn {
+        border-width: 2px;
+
+        &--ghost {
+            border-width: 2px;
+        }
+    }
+}
+
+// Reduced motion support
+@media (prefers-reduced-motion: reduce) {
+    .btn {
+        transition: none;
+
+        &::before {
+            display: none;
+        }
+
+        &:hover {
+            transform: none;
+        }
+
+        .btn__icon {
+            transition: none;
+        }
+    }
+
+    @keyframes button-spin {
+        0%,
+        100% {
+            transform: rotate(0deg);
+        }
+    }
+}
+
+// Dark/Light theme specific adjustments
+[data-theme="light"] {
+    .btn--primary,
+    .btn--accent {
+        box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+
+        &:hover {
+            box-shadow: 0 8px 16px rgba(0, 0, 0, 0.15);
+        }
+    }
+}
+
+[data-theme="dark"] {
+    .btn--ghost {
+        &:hover {
+            background: rgba(255, 255, 255, 0.1);
+        }
+    }
+}
