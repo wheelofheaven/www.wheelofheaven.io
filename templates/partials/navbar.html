@@ -26,13 +26,31 @@
         <div class="navbar__language-switcher" id="mobile-lang-switcher">
           <Icon name="lucide:globe" size="16" />
           <select id="mobile-lang-select" class="navbar__select" aria-label="Select language">
-            <option value="en">English</option>
-            <option value="de">Deutsch</option>
-            <option value="fr">Français</option>
-            <option value="es">Español</option>
-            <option value="ru">Русский</option>
-            <option value="ja">日本語</option>
-            <option value="zh">中文</option>
+            <!-- Default language (English) -->
+            <option value="{{ config.default_language }}" {% if config.default_language == lang %}selected{% endif %}>
+              English
+            </option>
+            <!-- Sorted alphabetically by language code -->
+            {% set_global sorted_langs = [] %}
+            {% for lang_code, lang_config in config.languages %}
+              {% if lang_code != config.default_language %}
+                {% set_global sorted_langs = sorted_langs | concat(with=lang_code) %}
+              {% endif %}
+            {% endfor %}
+            {% for lang_code in ["de", "es", "fr", "ja", "ru", "zh"] %}
+              {% if lang_code in sorted_langs %}
+                <option value="{{ lang_code }}" {% if lang_code == lang %}selected{% endif %}>
+                  {% if lang_code == "de" %}Deutsch
+                  {% elif lang_code == "es" %}Español
+                  {% elif lang_code == "fr" %}Français
+                  {% elif lang_code == "ja" %}日本語
+                  {% elif lang_code == "ru" %}Русский
+                  {% elif lang_code == "zh" %}中文
+                  {% else %}{{ lang_code | upper }}
+                  {% endif %}
+                </option>
+              {% endif %}
+            {% endfor %}
           </select>
         </div>
       </div>
@@ -74,13 +92,25 @@
     <div class="navbar__language-switcher" id="lang-switcher">
       <Icon name="lucide:globe" size="16" />
       <select id="lang-select" class="navbar__select" aria-label="Select language">
-        <option value="en">English</option>
-        <option value="de">Deutsch</option>
-        <option value="fr">Français</option>
-        <option value="es">Español</option>
-        <option value="ru">Русский</option>
-        <option value="ja">日本語</option>
-        <option value="zh">中文</option>
+        <!-- Default language (English) -->
+        <option value="{{ config.default_language }}" {% if config.default_language == lang %}selected{% endif %}>
+          English
+        </option>
+        <!-- Sorted alphabetically by language code -->
+        {% for lang_code in ["de", "es", "fr", "ja", "ru", "zh"] %}
+          {% if config.languages[lang_code] %}
+            <option value="{{ lang_code }}" {% if lang_code == lang %}selected{% endif %}>
+              {% if lang_code == "de" %}Deutsch
+              {% elif lang_code == "es" %}Español
+              {% elif lang_code == "fr" %}Français
+              {% elif lang_code == "ja" %}日本語
+              {% elif lang_code == "ru" %}Русский
+              {% elif lang_code == "zh" %}中文
+              {% else %}{{ lang_code | upper }}
+              {% endif %}
+            </option>
+          {% endif %}
+        {% endfor %}
       </select>
     </div>
 
@@ -90,6 +120,69 @@
           <span class="icon icon--sun">{% include "partials/icons/feather-sun.html" %}</span>
       </span>
     </button>
+
+    <script>
+      document.addEventListener('DOMContentLoaded', function() {
+        function switchLanguage(targetLang) {
+          const currentPath = window.location.pathname;
+          const currentLang = '{{ lang }}';
+          const defaultLang = '{{ config.default_language }}';
+          const baseUrl = '{{ config.base_url | safe }}';
+
+          // Remove trailing slash from base URL for consistent handling
+          const cleanBaseUrl = baseUrl.replace(/\/$/, '');
+
+          let newPath = currentPath;
+
+          // If we're currently on a non-default language, remove the language prefix
+          if (currentLang !== defaultLang) {
+            // Remove /lang/ prefix or just /lang if at root
+            const langPrefix = '/' + currentLang;
+            if (newPath.startsWith(langPrefix + '/')) {
+              newPath = newPath.substring(langPrefix.length);
+            } else if (newPath === langPrefix) {
+              newPath = '/';
+            }
+          }
+
+          // Add the target language prefix if it's not the default language
+          if (targetLang !== defaultLang) {
+            newPath = '/' + targetLang + newPath;
+          }
+
+          // Ensure path starts with /
+          if (!newPath.startsWith('/')) {
+            newPath = '/' + newPath;
+          }
+
+          // Navigate to the new URL
+          const newUrl = cleanBaseUrl + newPath;
+          window.location.href = newUrl;
+        }
+
+        // Handle desktop language switcher
+        const langSelect = document.getElementById('lang-select');
+        if (langSelect) {
+          langSelect.addEventListener('change', function(e) {
+            const targetLang = e.target.value;
+            if (targetLang !== '{{ lang }}') {
+              switchLanguage(targetLang);
+            }
+          });
+        }
+
+        // Handle mobile language switcher
+        const mobileLangSelect = document.getElementById('mobile-lang-select');
+        if (mobileLangSelect) {
+          mobileLangSelect.addEventListener('change', function(e) {
+            const targetLang = e.target.value;
+            if (targetLang !== '{{ lang }}') {
+              switchLanguage(targetLang);
+            }
+          });
+        }
+      });
+    </script>
   </div>
 
 </nav>

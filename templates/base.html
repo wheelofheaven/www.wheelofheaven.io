@@ -1,48 +1,28 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="{{ lang }}">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>{% if page.title %}{{ page.title }} | {% endif %}{{ config.title }}</title>
-    <meta name="description" content="{% if page.description %}{{ page.description }}{% elif section.description %}{{ section.description }}{% else %}{{ config.description }}{% endif %}">
-
-    <!-- PWA and Favicon -->
-    <link rel="manifest" href="{{ get_url(path="site.webmanifest") }}">
-    <link rel="icon" type="image/svg+xml" href="{{ get_url(path="brand/favicon.svg") }}">
-    <link rel="icon" type="image/x-icon" href="{{ get_url(path="brand/favicon.ico") }}">
-    <link rel="icon" type="image/png" sizes="32x32" href="{{ get_url(path="brand/favicon-32x32.png") }}">
-    <link rel="icon" type="image/png" sizes="16x16" href="{{ get_url(path="brand/favicon-16x16.png") }}">
-    <link rel="apple-touch-icon" sizes="180x180" href="{{ get_url(path="brand/apple-touch-icon.png") }}">
-
-    <!-- PWA Meta Tags -->
-    <meta name="theme-color" content="#9d81d9">
-    <meta name="apple-mobile-web-app-capable" content="yes">
-    <meta name="apple-mobile-web-app-status-bar-style" content="default">
-    <meta name="apple-mobile-web-app-title" content="Wheel of Heaven">
-    <meta name="mobile-web-app-capable" content="yes">
-    <meta name="application-name" content="Wheel of Heaven">
-    <meta name="msapplication-TileColor" content="#1b1f22">
-    <meta name="msapplication-config" content="{{ get_url(path="browserconfig.xml") }}">
-
-    {% include "partials/theme-init.html" %}
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Spectral:ital,wght@0,400;1,400&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="{{ get_url(path="main.css") }}">
-    <!-- Language alternates -->
-    {% for lang_code, lang_config in config.languages %}
-        {% if lang_code != lang %}
-            <link rel="alternate" hreflang="{{ lang_code }}" href="{{ get_url(path="", lang=lang_code) }}">
-        {% endif %}
-    {% endfor %}
-</head>
-<body>
-    {% include "partials/header.html" %}
-    <main>
-        {% block content %}{% endblock content %}
-    </main>
-    {% include "partials/totop.html" %}
-    {% include "partials/footer.html" %}
-    {% include "partials/scripts.html" %}
-</body>
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>
+            {% if page.title %}{{ page.title }} | {% endif %}{{ config.title }}
+        </title>
+        <meta
+            name="description"
+            content="{% if page.description %}{{ page.description }}{% elif section.description %}{{ section.description }}{% else %}{{ config.description }}{% endif %}"
+        />
+        <!-- SEO Meta Tags -->
+        {% include "partials/seo.html" %}
+        <!-- PWA and Favicon -->
+        {% include "partials/pwa.html" %}
+        <!-- Fonts and CSS -->
+        {% include "partials/fonts-css.html" %}
+        <!-- Language Alternates -->
+        {% include "partials/language-alternates.html" %}
+    </head>
+    <body>
+        {% include "partials/header.html" %}
+        <main>{% block content %}{% endblock content %}</main>
+        {% include "partials/totop.html" %} {% include "partials/footer.html" %}
+        {% include "partials/scripts.html" %}
+    </body>
 </html>

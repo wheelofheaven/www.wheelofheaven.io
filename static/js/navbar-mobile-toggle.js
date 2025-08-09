@@ -80,24 +80,23 @@ document.addEventListener("DOMContentLoaded", () => {
   }
 
   // 🌓 Theme toggle logic
-  const themeToggleButtons = document.querySelectorAll(
-    "#theme-toggle, #mobile-theme-toggle",
-  );
+  // Add small delay to ensure DOM is fully ready, especially for elements placed after scripts
+  setTimeout(() => {
+    const themeToggleButtons = document.querySelectorAll(
+      "#theme-toggle, #mobile-theme-toggle",
+    );
 
-  themeToggleButtons.forEach((btn) => {
-    btn.addEventListener("click", () => {
-      const currentTheme = document.documentElement.getAttribute("data-theme");
-      const newTheme = currentTheme === "light" ? "dark" : "light";
-      document.documentElement.setAttribute("data-theme", newTheme);
-      localStorage.setItem("theme", newTheme);
-      updateThemeIcons(newTheme === "light");
-
-      // Close mobile nav after theme change
-      if (isMobileNavExpanded) {
-        closeMobileNav();
-      }
+    themeToggleButtons.forEach((btn) => {
+      btn.addEventListener("click", () => {
+        const currentTheme =
+          document.documentElement.getAttribute("data-theme");
+        const newTheme = currentTheme === "light" ? "dark" : "light";
+        document.documentElement.setAttribute("data-theme", newTheme);
+        localStorage.setItem("theme", newTheme);
+        updateThemeIcons(newTheme === "light");
+      });
     });
-  });
+  }, 10);
 
   // 🧠 Update UI based on current theme (already set by inline script)
   const currentTheme =

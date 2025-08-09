@@ -1,0 +1,6 @@
+<!-- Language Alternates -->
+{% for lang_code, lang_config in config.languages %}
+    {% if lang_code != lang %}
+        <link rel="alternate" hreflang="{{ lang_code }}" href="{{ get_url(path="", lang=lang_code) }}">
+    {% endif %}
+{% endfor %}
