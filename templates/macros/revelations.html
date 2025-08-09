@@ -19,36 +19,33 @@
 {% endmacro %}
 
 {# Macro to render a single paragraph with speaker and text #}
-{% macro render_paragraph(paragraph, lang, show_original=false, show_translation=false) %}
+{% macro render_paragraph(paragraph, lang, primary_lang) %}
     <div class="paragraph-container" id="para-{{ paragraph.n }}">
         <div class="paragraph-number">{{ paragraph.n }}</div>
         <div class="paragraph-content">
-            {% if show_original %}
-                <div class="original-text" data-speaker="{{ paragraph.speaker | default(value='') }}">
-                    {% if paragraph.speaker %}
-                        <span class="speaker">{{ paragraph.speaker }}:</span>
+            {% if paragraph.speaker %}
+                <div class="speaker-portrait" data-speaker="{{ paragraph.speaker }}">
+                    {% set speaker_parts = paragraph.speaker | split(pat=" ") %}
+                    {% if speaker_parts | length > 1 %}
+                        {{ speaker_parts[0] | truncate(length=1, end="") | upper }}{{ speaker_parts[1] | truncate(length=1, end="") | upper }}
+                    {% else %}
+                        {{ paragraph.speaker | truncate(length=2, end="") | upper }}
                     {% endif %}
-                    <span class="text">{{ paragraph.text }}</span>
                 </div>
             {% endif %}
 
-            {% if show_translation and paragraph.i18n %}
+            <button class="copy-button" onclick="copyParagraph({{ paragraph.n }})" title="Copy paragraph">
+                {% include "partials/icons/feather-copy.html" %}
+            </button>
+
+            <div class="original-text" data-speaker="{{ paragraph.speaker | default(value='') }}">
+                <span class="text">{{ paragraph.text }}</span>
+            </div>
+
+            {% if lang != primary_lang and paragraph.i18n and paragraph.i18n[lang] %}
                 <div class="translated-text" data-lang="{{ lang }}">
-                    {% if paragraph.speaker %}
-                        <span class="speaker">{{ paragraph.speaker }}:</span>
-                    {% endif %}
                     <span class="text">{{ self::get_paragraph_text(paragraph=paragraph, lang=lang) }}</span>
                 </div>
-            {% endif %}
-
-            {# Store all translations in data attributes for JavaScript #}
-            {% if paragraph.i18n %}
-                {% for trans_lang, trans_text in paragraph.i18n %}
-                    <div class="translation-data"
-                         data-lang="{{ trans_lang }}"
-                         data-text="{{ trans_text }}"
-                         style="display: none;"></div>
-                {% endfor %}
             {% endif %}
         </div>
     </div>
@@ -68,34 +65,49 @@
 
         <div class="chapter-content">
             {% for paragraph in chapter.paragraphs %}
-                {{ self::render_paragraph(paragraph=paragraph, lang=lang, show_original=true, show_translation=false) }}
+                {{ self::render_paragraph(paragraph=paragraph, lang=lang, primary_lang=primary_lang) }}
             {% endfor %}
         </div>
     </section>
 {% endmacro %}
 
-{# Macro to render the book navigation controls #}
+{# Macro to render chapter navigation #}
+{% macro render_chapter_navigation(book_data, current_chapter="", context="book") %}
+    <nav class="chapter-navigation">
+        <div class="chapter-navigation__header">
+            <h3 class="chapter-navigation__title">Chapters</h3>
+            {% if context == "book" %}
+                <button class="original-text-toggle" onclick="toggleOriginalText()" title="Toggle original text">
+                    <span class="toggle-icon">🇫🇷</span>
+                    <span class="toggle-text">Original</span>
+                </button>
+            {% endif %}
+        </div>
+        <div class="chapter-navigation__buttons">
+            {% for chapter in book_data.chapters %}
+                {% if context == "book" %}
+                    <a href="#chapter-{{ chapter.n }}"
+                       class="chapter-navigation__button {% if current_chapter and current_chapter == chapter.n %}chapter-navigation__button--current{% endif %}"
+                       onclick="scrollToChapter({{ chapter.n }})"
+                       style="--chapter-index: {{ chapter.n }}">
+                        {{ chapter.n }}
+                    </a>
+                {% else %}
+                    <a href="{{ get_url(path='revelations/' ~ book_data.slug) }}#chapter-{{ chapter.n }}"
+                       class="chapter-navigation__button"
+                       style="--chapter-index: {{ chapter.n }}">
+                        {{ chapter.n }}
+                    </a>
+                {% endif %}
+            {% endfor %}
+        </div>
+    </nav>
+{% endmacro %}
+
+{# Macro to render minimal book controls (removed translation controls) #}
 {% macro render_book_controls(book_data, current_lang) %}
     <div class="book-controls">
-        <div class="language-selector">
-            <label for="translation-lang">Translation:</label>
-            <select id="translation-lang" onchange="switchTranslation(this.value)">
-                <option value="">Show original only</option>
-                {% for lang_code, title in book_data.titles %}
-                    {% if lang_code != book_data.primaryLang %}
-                        <option value="{{ lang_code }}" {% if lang_code == current_lang %}selected{% endif %}>
-                            {{ lang_code | upper }} - {{ title }}
-                        </option>
-                    {% endif %}
-                {% endfor %}
-            </select>
-        </div>
-
-        <div class="view-controls">
-            <button id="toggle-side-by-side" onclick="toggleSideBySide()">
-                Side-by-side view
-            </button>
-        </div>
+        {{ self::render_chapter_navigation(book_data=book_data, context="book") }}
     </div>
 {% endmacro %}
 
@@ -146,6 +158,8 @@
             {% endfor %}
         </div>
 
+        {{ self::render_chapter_navigation(book_data=book_data, context="section") }}
+
         {% if book_data.chapters and book_data.chapters[0] and book_data.chapters[0].paragraphs and book_data.chapters[0].paragraphs[0] %}
             <div class="book-preview">
                 {% set first_paragraph = book_data.chapters[0].paragraphs[0] %}
@@ -172,3 +186,6 @@
 
     {{ books }}
 {% endmacro %}
+```
+
+Now let me update the SCSS to fix the positioning conflict between the copy button and speaker portraits:

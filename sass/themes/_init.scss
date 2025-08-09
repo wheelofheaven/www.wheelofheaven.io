@@ -3,9 +3,16 @@
 // This file sets up default theme values and ensures proper CSS custom property fallbacks
 
 @use "../abstracts/colors" as colors;
+@use "../base/typography" as typo;
 
 // Default theme values (fallback to dark theme if no theme is set)
 :root {
+    // Typography
+    --font-family-body: #{typo.$font-family-body};
+    --font-family-lead: #{typo.$font-family-lead};
+    --font-family-tech: #{typo.$font-family-tech};
+    --font-family-quote: #{typo.$font-family-quote};
+
     // Core colors
     --color-text: #{colors.$gray-100};
     --color-text-muted: #{colors.$gray-400};

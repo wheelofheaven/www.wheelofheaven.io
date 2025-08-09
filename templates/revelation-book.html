@@ -24,9 +24,10 @@
                 {% endif %}
             </div>
 
-            {{ revelations_macros::render_book_controls(book_data=book_data, current_lang=lang) }}
             {{ revelations_macros::render_book_meta(book_data=book_data) }}
         </header>
+
+        {{ revelations_macros::render_chapter_navigation(book_data=book_data, context="book") }}
 
         <main class="book-content" id="book-content" data-lang="{{ lang }}">
             {% for chapter in book_data.chapters %}
@@ -50,88 +51,202 @@
 </div>
 
 
-
 <script>
-function switchTranslation(langCode) {
-    const paragraphContainers = document.querySelectorAll('.paragraph-container');
+function toggleOriginalText() {
+    const originalTexts = document.querySelectorAll('.original-text');
+    const toggleButton = document.querySelector('.original-text-toggle');
+    const isShowing = toggleButton.classList.contains('active');
 
-    paragraphContainers.forEach(container => {
-        const originalText = container.querySelector('.original-text');
-        let translatedText = container.querySelector('.translated-text');
-        const translationData = container.querySelectorAll('.translation-data');
-
-        // Remove existing translated text if it exists
-        if (translatedText) {
-            translatedText.remove();
+    originalTexts.forEach(text => {
+        if (isShowing) {
+            text.classList.remove('show');
+        } else {
+            text.classList.add('show');
         }
+    });
 
-        if (!langCode) {
-            // Show only original text
-            return;
+    toggleButton.classList.toggle('active');
+}
+
+function selectParagraph(paragraphNumber) {
+    // Remove selection from all paragraphs
+    document.querySelectorAll('.paragraph-container').forEach(p => {
+        p.classList.remove('selected');
+    });
+
+    // Select the clicked paragraph
+    const paragraph = document.getElementById('para-' + paragraphNumber);
+    if (paragraph) {
+        paragraph.classList.add('selected');
+    }
+}
+
+function copyParagraph(paragraphNumber) {
+    const paragraph = document.getElementById('para-' + paragraphNumber);
+    if (!paragraph) {
+        console.error('Paragraph not found:', paragraphNumber);
+        return;
+    }
+
+    let textToCopy = '';
+    let speaker = '';
+    let mainText = '';
+
+    // Get speaker from portrait or original text data attribute
+    const speakerPortrait = paragraph.querySelector('.speaker-portrait');
+    const originalTextEl = paragraph.querySelector('.original-text');
+
+    if (speakerPortrait) {
+        speaker = speakerPortrait.getAttribute('data-speaker');
+    } else if (originalTextEl) {
+        speaker = originalTextEl.getAttribute('data-speaker');
+    }
+
+    // Add speaker if present
+    if (speaker && speaker.trim()) {
+        textToCopy += speaker + ': ';
+    }
+
+    // Get the main text - prefer translated, fall back to original
+    const translatedTextEl = paragraph.querySelector('.translated-text .text');
+    const originalTextSpan = paragraph.querySelector('.original-text .text');
+
+    if (translatedTextEl && translatedTextEl.textContent) {
+        mainText = translatedTextEl.textContent.trim();
+    } else if (originalTextSpan && originalTextSpan.textContent) {
+        mainText = originalTextSpan.textContent.trim();
+    }
+
+    if (!mainText) {
+        console.error('No text found in paragraph:', paragraphNumber);
+        alert('No text to copy');
+        return;
+    }
+
+    textToCopy += mainText;
+    textToCopy += ` (¶${paragraphNumber})`;
+
+    console.log('Copying text:', textToCopy);
+
+    navigator.clipboard.writeText(textToCopy).then(() => {
+        // Show copy feedback
+        const copyButton = paragraph.querySelector('.copy-button');
+        if (copyButton) {
+            const originalHTML = copyButton.innerHTML;
+            copyButton.innerHTML = '<span style="color: green; font-weight: bold;">✓</span>';
+            setTimeout(() => {
+                copyButton.innerHTML = originalHTML;
+            }, 1500);
         }
-
-        // Find the translation for the selected language
-        let translationFound = false;
-        translationData.forEach(data => {
-            if (data.dataset.lang === langCode) {
-                translationFound = true;
-
-                // Create new translated text element
-                const translatedDiv = document.createElement('div');
-                translatedDiv.className = 'translated-text';
-                translatedDiv.dataset.lang = langCode;
-
-                // Get speaker from original if it exists
-                const originalSpeaker = originalText.querySelector('.speaker');
-                if (originalSpeaker) {
-                    const speakerSpan = document.createElement('span');
-                    speakerSpan.className = 'speaker';
-                    speakerSpan.textContent = originalSpeaker.textContent;
-                    translatedDiv.appendChild(speakerSpan);
-                }
-
-                // Add the translated text
-                const textSpan = document.createElement('span');
-                textSpan.className = 'text';
-                textSpan.textContent = data.dataset.text;
-                translatedDiv.appendChild(textSpan);
-
-                // Insert the translated text after the original
-                const paragraphContent = container.querySelector('.paragraph-content');
-                paragraphContent.appendChild(translatedDiv);
-            }
-        });
+        console.log('Text copied successfully');
+    }).catch(err => {
+        console.error('Failed to copy text: ', err);
+        // Fallback for older browsers
+        const textArea = document.createElement('textarea');
+        textArea.value = textToCopy;
+        document.body.appendChild(textArea);
+        textArea.select();
+        try {
+            document.execCommand('copy');
+            document.body.removeChild(textArea);
+            console.log('Text copied using fallback method');
+        } catch (fallbackErr) {
+            document.body.removeChild(textArea);
+            console.error('Fallback copy failed:', fallbackErr);
+            alert('Failed to copy text to clipboard');
+        }
     });
 }
 
-function toggleSideBySide() {
-    const revelationBook = document.querySelector('.revelation-book');
-    const button = document.getElementById('toggle-side-by-side');
-    const translationSelect = document.getElementById('translation-lang');
+function scrollToChapter(chapterNumber) {
+    const chapter = document.getElementById('chapter-' + chapterNumber);
+    if (chapter) {
+        // Smooth scroll to chapter with offset for sticky navigation
+        const yOffset = -120;
+        const y = chapter.getBoundingClientRect().top + window.pageYOffset + yOffset;
+        window.scrollTo({top: y, behavior: 'smooth'});
 
-    if (revelationBook.classList.contains('side-by-side')) {
-        revelationBook.classList.remove('side-by-side');
-        button.textContent = 'Side-by-side view';
-        button.classList.remove('active');
-    } else {
-        revelationBook.classList.add('side-by-side');
-        button.textContent = 'Sequential view';
-        button.classList.add('active');
+        // Update active chapter button
+        updateActiveChapterButton(chapterNumber);
+    }
+}
 
-        // Automatically show translation if none is selected
-        if (!translationSelect.value && translationSelect.options.length > 1) {
-            translationSelect.selectedIndex = 1;
-            switchTranslation(translationSelect.value);
+function updateActiveChapterButton(activeChapter) {
+    document.querySelectorAll('.chapter-navigation__button').forEach(btn => {
+        btn.classList.remove('chapter-navigation__button--current');
+        const href = btn.getAttribute('href');
+        if (href && href.includes('chapter-' + activeChapter)) {
+            btn.classList.add('chapter-navigation__button--current');
         }
+    });
+}
+
+// Highlight current chapter in navigation as user scrolls
+function updateActiveChapter() {
+    const chapters = document.querySelectorAll('.chapter');
+    if (!chapters.length) return;
+
+    let currentChapter = null;
+    const scrollPosition = window.scrollY + 180; // offset for sticky nav
+
+    chapters.forEach(chapter => {
+        const chapterTop = chapter.offsetTop;
+        const chapterBottom = chapterTop + chapter.offsetHeight;
+
+        if (scrollPosition >= chapterTop && scrollPosition < chapterBottom) {
+            currentChapter = chapter.id.replace('chapter-', '');
+        }
+    });
+
+    if (currentChapter) {
+        updateActiveChapterButton(currentChapter);
     }
 }
 
 // Initialize the page
 document.addEventListener('DOMContentLoaded', function() {
-    const langSelect = document.getElementById('translation-lang');
-    if (langSelect && langSelect.value) {
-        switchTranslation(langSelect.value);
+    // Set up scroll listener for chapter highlighting
+    let ticking = false;
+
+    function handleScroll() {
+        if (!ticking) {
+            requestAnimationFrame(function() {
+                updateActiveChapter();
+                ticking = false;
+            });
+            ticking = true;
+        }
     }
+
+    window.addEventListener('scroll', handleScroll, { passive: true });
+
+    // Initial chapter highlight
+    setTimeout(updateActiveChapter, 100);
+
+    // Handle chapter navigation clicks
+    document.querySelectorAll('.chapter-navigation__button').forEach(btn => {
+        btn.addEventListener('click', function(e) {
+            e.preventDefault();
+            const href = this.getAttribute('href');
+            const chapterMatch = href.match(/chapter-(\d+)/);
+            if (chapterMatch) {
+                scrollToChapter(chapterMatch[1]);
+            }
+        });
+    });
+
+    // Handle paragraph selection
+    document.querySelectorAll('.paragraph-container').forEach(container => {
+        container.addEventListener('click', function(e) {
+            // Don't select if clicking on copy button
+            if (e.target.classList.contains('copy-button')) {
+                return;
+            }
+
+            const paragraphNumber = this.id.replace('para-', '');
+            selectParagraph(paragraphNumber);
+        });
+    });
 });
 </script>
 {% endblock content %}
