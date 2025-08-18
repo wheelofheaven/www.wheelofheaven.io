@@ -436,6 +436,11 @@ function showSearchModal() {
   const body = document.body;
 
   if (modal) {
+    // Close any open navbar dropdowns
+    if (window.navbarDropdown) {
+      window.navbarDropdown.closeAllDropdowns();
+    }
+
     modal.classList.add("search-modal--active");
     body.classList.add("search-modal-open");
 
@@ -443,6 +448,15 @@ function showSearchModal() {
     const elementsToBlur = document.querySelectorAll("main, footer, .totop");
     elementsToBlur.forEach((el) => {
       el.style.filter = "blur(4px)";
+      el.style.transition = "filter 0.3s ease";
+    });
+
+    // Blur navbar elements except search input
+    const navbarElementsToBlur = document.querySelectorAll(
+      ".navbar__logo, .navbar__links, .navbar__language-switcher, .navbar__theme-toggle, .navbar__mobile-toggle",
+    );
+    navbarElementsToBlur.forEach((el) => {
+      el.style.filter = "blur(2px)";
       el.style.transition = "filter 0.3s ease";
     });
   }
@@ -460,6 +474,14 @@ function hideSearchModal() {
     // Remove blur from all elements
     const elementsToBlur = document.querySelectorAll("main, footer, .totop");
     elementsToBlur.forEach((el) => {
+      el.style.filter = "none";
+    });
+
+    // Remove blur from navbar elements
+    const navbarElementsToBlur = document.querySelectorAll(
+      ".navbar__logo, .navbar__links, .navbar__language-switcher, .navbar__theme-toggle, .navbar__mobile-toggle",
+    );
+    navbarElementsToBlur.forEach((el) => {
       el.style.filter = "none";
     });
 

@@ -19,10 +19,12 @@
 @use "layout/header";
 @use "layout/main";
 @use "layout/navbar";
+@use "layout/navbar-dropdown";
 @use "layout/search-modal";
 
 @use "components/button";
 @use "components/card";
+@use "components/modal";
 @use "components/totop";
 @use "components/wiki-cite";
 @use "components/wiki-shortcodes";

@@ -19,6 +19,21 @@ logo = "brand/logo.png"
 # analytics_domain = "analytics.domain.com"
 social_links = ["https://x.com/wheelofheaven"]
 
+# Navbar dropdown icons configuration
+[extra.navbar_icons]
+knowledge = "icons/book-open.svg"
+explainers = "icons/help-circle.svg"
+revelations = "icons/file-text.svg"
+wiki = "icons/book.svg"
+org = "icons/users.svg"
+community = "icons/user-check.svg"
+about = "icons/info.svg"
+code_of_conduct = "icons/shield-check.svg"
+contributing = "icons/user-plus.svg"
+forums = "icons/message-square.svg"
+faq = "icons/help-circle.svg"
+social = "icons/twitter.svg"
+
 language_name_english = "English"
 language_name_german = "Deutsch"
 language_name_french = "Français"
@@ -53,6 +68,35 @@ footerTheHypothesis = "The Hypothesis"
 footerTheHypothesis_url = "/intro/the-hypothesis/"
 footerPreamble = "Preamble"
 footerPreamble_url = "/intro/preamble/"
+# Navbar translations
+navbarEssentials = "Essentials"
+navbarTimeline = "Timeline"
+navbarKnowledge = "Knowledge"
+navbarResources = "Resources"
+
+# Knowledge dropdown items
+navbarExplainers = "Explainers"
+navbarExplainersDesc = "Detailed explanations of key concepts and ideas"
+navbarRevelations = "Revelations"
+navbarRevelationsDesc = "Sacred texts and their modern interpretations"
+navbarWiki = "Wiki"
+navbarWikiDesc = "Comprehensive reference and documentation"
+
+# Resources dropdown items
+navbarResourcesOrg = "Org"
+navbarResourcesCommunity = "Community"
+navbarAbout = "About"
+navbarAboutDesc = "Learn about our mission and values"
+navbarCodeOfConduct = "Code of Conduct"
+navbarCodeOfConductDesc = "Community guidelines and standards"
+navbarContributing = "Contributing"
+navbarContributingDesc = "How to contribute to the project"
+navbarForums = "Forums & Discussions"
+navbarForumsDesc = "Join the conversation with our community"
+navbarFAQ = "FAQ"
+navbarFAQDesc = "Frequently asked questions and answers"
+navbarFollowX = "Follow us on X"
+
 footerSections = "Sections"
 footerHome = "Home"
 footerHome_url = "/"
@@ -134,6 +178,34 @@ footerTheHypothesis = "Die Hypothese"
 footerTheHypothesisLink = "/de/intro/die-hypothese/"
 footerPreamble = "Einleitung"
 footerPreambleLink = "/de/intro/einleitung/"
+# Navbar translations
+navbarEssentials = "Grundlagen"
+navbarTimeline = "Zeitleiste"
+navbarKnowledge = "Wissen"
+navbarResources = "Ressourcen"
+
+# Knowledge dropdown items
+navbarExplainers = "Erklärungen"
+navbarExplainersDesc = "Detaillierte Erklärungen wichtiger Konzepte und Ideen"
+navbarRevelations = "Offenbarungen"
+navbarRevelationsDesc = "Heilige Texte und ihre modernen Interpretationen"
+navbarWiki = "Wiki"
+navbarWikiDesc = "Umfassende Referenz und Dokumentation"
+
+# Resources dropdown items
+navbarResourcesOrg = "Organisation"
+navbarResourcesCommunity = "Community"
+navbarAbout = "Über uns"
+navbarAboutDesc = "Erfahren Sie mehr über unsere Mission und Werte"
+navbarCodeOfConduct = "Verhaltenskodex"
+navbarCodeOfConductDesc = "Community-Richtlinien und Standards"
+navbarContributing = "Beitragen"
+navbarContributingDesc = "Wie Sie zum Projekt beitragen können"
+navbarForums = "Foren & Diskussionen"
+navbarForumsDesc = "Treten Sie der Unterhaltung mit unserer Community bei"
+navbarFAQ = "FAQ"
+navbarFAQDesc = "Häufig gestellte Fragen und Antworten"
+navbarFollowX = "Folgen Sie uns auf X"
 footerCommunity = "Community"
 footerCommunityLink = "/de/intro/community/"
 footerCodeOfConduct = "Verhaltenskodex"
@@ -204,6 +276,34 @@ footerTheHypothesis = "L'Hypothèse"
 footerTheHypothesisLink = "/fr/intro/lhypothèse/"
 footerPreamble = "Préambule"
 footerPreambleLink = "/fr/intro/préambule/"
+# Navbar translations
+navbarEssentials = "Essentiels"
+navbarTimeline = "Chronologie"
+navbarKnowledge = "Connaissance"
+navbarResources = "Ressources"
+
+# Knowledge dropdown items
+navbarExplainers = "Explicateurs"
+navbarExplainersDesc = "Explications détaillées des concepts et idées clés"
+navbarRevelations = "Révélations"
+navbarRevelationsDesc = "Textes sacrés et leurs interprétations modernes"
+navbarWiki = "Wiki"
+navbarWikiDesc = "Référence et documentation complètes"
+
+# Resources dropdown items
+navbarResourcesOrg = "Organisation"
+navbarResourcesCommunity = "Communauté"
+navbarAbout = "À propos"
+navbarAboutDesc = "Découvrez notre mission et nos valeurs"
+navbarCodeOfConduct = "Code de Conduite"
+navbarCodeOfConductDesc = "Directives et normes de la communauté"
+navbarContributing = "Contribuer"
+navbarContributingDesc = "Comment contribuer au projet"
+navbarForums = "Forums et Discussions"
+navbarForumsDesc = "Rejoignez la conversation avec notre communauté"
+navbarFAQ = "FAQ"
+navbarFAQDesc = "Questions fréquemment posées et réponses"
+navbarFollowX = "Suivez-nous sur X"
 footerCommunity = "Communauté"
 footerCommunityLink = "/fr/intro/communaute/"
 footerCodeOfConduct = "Code de Conduite"
@@ -275,6 +375,34 @@ footerTheHypothesis = "La Hipótesis"
 footerTheHypothesisLink = "/es/intro/la-hipótesis/"
 footerPreamble = "Preámbulo"
 footerPreambleLink = "/es/intro/preámbulo/"
+# Navbar translations
+navbarEssentials = "Esenciales"
+navbarTimeline = "Cronología"
+navbarKnowledge = "Conocimiento"
+navbarResources = "Recursos"
+
+# Knowledge dropdown items
+navbarExplainers = "Explicadores"
+navbarExplainersDesc = "Explicaciones detalladas de conceptos e ideas clave"
+navbarRevelations = "Revelaciones"
+navbarRevelationsDesc = "Textos sagrados y sus interpretaciones modernas"
+navbarWiki = "Wiki"
+navbarWikiDesc = "Referencia y documentación completas"
+
+# Resources dropdown items
+navbarResourcesOrg = "Organización"
+navbarResourcesCommunity = "Comunidad"
+navbarAbout = "Acerca de"
+navbarAboutDesc = "Conozca nuestra misión y valores"
+navbarCodeOfConduct = "Código de Conducta"
+navbarCodeOfConductDesc = "Pautas y estándares de la comunidad"
+navbarContributing = "Contribuir"
+navbarContributingDesc = "Cómo contribuir al proyecto"
+navbarForums = "Foros y Discusiones"
+navbarForumsDesc = "Únase a la conversación con nuestra comunidad"
+navbarFAQ = "FAQ"
+navbarFAQDesc = "Preguntas frecuentes y respuestas"
+navbarFollowX = "Síguenos en X"
 footerCommunity = "Comunidad"
 footerCommunityLink = "/es/intro/comunidad/"
 footerCodeOfConduct = "Código de Conducta"
@@ -379,8 +507,8 @@ footerAttribution = "Это произведение находится в об�
 footerAttributionSubline = "Контент доступен под лицензией <a href=\"https://github.com/wheelofheaven/wheelofheaven.io/blob/main/LICENSE\" class=\"link\" target=\"_blank\">Creative Commons</a>"
 
 [languages.ja]
-# generate_feeds = true
-# build_search_index = true
+generate_feeds = true
+build_search_index = true
 
 [languages.ja.translations]
 tagline = "Mapping our engineered origins with evidence."
@@ -450,7 +578,7 @@ footerAttributionSubline = "コンテンツは<a href=\"https://github.com/wheel
 
 [languages.zh]
 generate_feeds = true
-# build_search_index = true
+build_search_index = true
 
 [languages.zh.translations]
 tagline = "Mapping our engineered origins with evidence."

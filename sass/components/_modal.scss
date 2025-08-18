@@ -1,0 +1,292 @@
+@use "../abstracts/variables" as vars;
+@use "../abstracts/colors" as colors;
+@use "../base/typography" as typo;
+
+// Shared Modal Mixins for Search and Navbar Dropdowns
+@mixin modal-base {
+    opacity: 0;
+    visibility: hidden;
+    transition: all 0.3s ease;
+    pointer-events: none;
+
+    &--active {
+        opacity: 1;
+        visibility: visible;
+        pointer-events: all;
+    }
+}
+
+@mixin modal-backdrop {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: var(--color-overlay);
+    backdrop-filter: blur(8px);
+    cursor: pointer;
+    z-index: -1;
+}
+
+@mixin modal-container {
+    position: relative;
+    width: 100%;
+    background: transparent;
+    border: 1px solid rgba(255, 255, 255, 0.2);
+    border-radius: 1rem;
+    backdrop-filter: blur(20px) saturate(180%);
+    box-shadow:
+        0 25px 50px rgba(0, 0, 0, 0.25),
+        0 0 0 1px rgba(255, 255, 255, 0.05),
+        inset 0 1px 0 rgba(255, 255, 255, 0.1);
+    overflow: hidden;
+    transform: translateY(-10px) scale(0.98);
+    transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+
+    &::before {
+        content: "";
+        position: absolute;
+        top: 0;
+        left: 0;
+        right: 0;
+        bottom: 0;
+        background: rgba(255, 255, 255, 0.15);
+        border-radius: inherit;
+        z-index: -1;
+    }
+}
+
+@mixin modal-container-active {
+    transform: translateY(0) scale(1);
+}
+
+@mixin modal-header {
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+    padding: 1rem 1.5rem;
+    border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+    background: rgba(255, 255, 255, 0.05);
+    backdrop-filter: blur(10px);
+}
+
+@mixin modal-title {
+    flex: 1;
+    margin: 0;
+    font-size: 1.1rem;
+    font-weight: 600;
+    color: var(--color-text);
+    font-family: typo.$font-family-body;
+}
+
+@mixin modal-close-button {
+    background: none;
+    border: none;
+    color: var(--color-text-muted);
+    cursor: pointer;
+    padding: 0.5rem;
+    border-radius: 0.5rem;
+    transition: all 0.2s ease;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    &:hover,
+    &:focus {
+        background-color: var(--color-hover);
+        color: var(--color-text);
+        outline: none;
+    }
+
+    svg {
+        width: 1.5rem;
+        height: 1.5rem;
+    }
+}
+
+@mixin modal-content {
+    padding: 1.5rem;
+    background: rgba(255, 255, 255, 0.02);
+}
+
+@mixin modal-section {
+    margin-bottom: 2rem;
+
+    &:last-child {
+        margin-bottom: 0;
+    }
+}
+
+@mixin modal-section-title {
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+    margin: 0 0 1rem 0;
+    font-size: 0.85rem;
+    font-weight: 600;
+    color: var(--color-text-muted);
+    text-transform: uppercase;
+    letter-spacing: 0.05em;
+    font-family: typo.$font-family-tech;
+}
+
+@mixin modal-section-icon {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    color: var(--color-accent-primary);
+
+    svg {
+        width: 1rem;
+        height: 1rem;
+    }
+}
+
+@mixin modal-links {
+    display: flex;
+    flex-direction: column;
+    gap: 0.5rem;
+}
+
+@mixin modal-link {
+    display: flex;
+    align-items: center;
+    gap: 0.75rem;
+    padding: 0.75rem 1rem;
+    color: var(--color-text);
+    text-decoration: none;
+    border-radius: 0.5rem;
+    transition: all 0.2s ease;
+    font-weight: 500;
+    font-family: typo.$font-family-body;
+
+    &:hover,
+    &:focus {
+        background-color: var(--color-hover);
+        color: var(--color-accent-primary);
+        outline: none;
+        transform: translateY(-1px);
+    }
+}
+
+@mixin modal-link-icon {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    color: var(--color-text-muted);
+    transition: color 0.2s ease;
+
+    svg {
+        width: 1.25rem;
+        height: 1.25rem;
+    }
+}
+
+@mixin modal-link-icon-hover {
+    color: var(--color-accent-primary);
+}
+
+// Two-column layout for complex modals
+@mixin modal-columns {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 2rem;
+
+    @media (max-width: 640px) {
+        grid-template-columns: 1fr;
+        gap: 1.5rem;
+    }
+}
+
+@mixin modal-bottom-section {
+    grid-column: 1 / -1;
+    margin-top: 1rem;
+    padding-top: 1.5rem;
+    border-top: 1px solid rgba(255, 255, 255, 0.1);
+}
+
+// Enhanced glassmorphism mixins for themes
+@mixin modal-dark-theme {
+    border: 1px solid rgba(255, 255, 255, 0.1);
+    box-shadow:
+        0 25px 50px rgba(0, 0, 0, 0.5),
+        0 0 0 1px rgba(255, 255, 255, 0.02),
+        inset 0 1px 0 rgba(255, 255, 255, 0.05);
+
+    &::before {
+        background: rgba(27, 31, 34, 0.4);
+    }
+}
+
+@mixin modal-light-theme {
+    border: 1px solid rgba(255, 255, 255, 0.3);
+    box-shadow:
+        0 25px 50px rgba(0, 0, 0, 0.15),
+        0 0 0 1px rgba(255, 255, 255, 0.1),
+        inset 0 1px 0 rgba(255, 255, 255, 0.2);
+
+    &::before {
+        background: rgba(255, 255, 255, 0.25);
+    }
+}
+
+@mixin modal-header-dark-theme {
+    background: rgba(255, 255, 255, 0.02);
+    border-bottom: 1px solid rgba(255, 255, 255, 0.05);
+}
+
+@mixin modal-header-light-theme {
+    background: rgba(255, 255, 255, 0.1);
+    border-bottom: 1px solid rgba(0, 0, 0, 0.05);
+}
+
+@mixin modal-content-dark-theme {
+    background: rgba(255, 255, 255, 0.01);
+}
+
+@mixin modal-content-light-theme {
+    background: rgba(255, 255, 255, 0.03);
+}
+
+// Body class mixin when any modal is open
+@mixin modal-open-body {
+    overflow: hidden;
+
+    .navbar {
+        filter: none !important;
+        backdrop-filter: blur(12px);
+    }
+}
+
+// Responsive adjustments mixins
+@mixin modal-mobile-small {
+    border-radius: 0.75rem;
+}
+
+@mixin modal-header-mobile-small {
+    padding: 0.75rem 1rem;
+}
+
+@mixin modal-title-mobile-small {
+    font-size: 1rem;
+}
+
+@mixin modal-content-mobile-small {
+    padding: 1rem;
+}
+
+@mixin modal-section-mobile-small {
+    margin-bottom: 1.5rem;
+}
+
+@mixin modal-link-mobile-small {
+    padding: 0.5rem 0.75rem;
+    font-size: 0.9rem;
+}
+
+@mixin modal-link-icon-mobile-small {
+    svg {
+        width: 1rem;
+        height: 1rem;
+    }
+}

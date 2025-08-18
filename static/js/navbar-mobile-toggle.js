@@ -8,6 +8,8 @@ document.addEventListener("DOMContentLoaded", () => {
   let isMobileSearchActive = false;
   let lastScrollY = window.scrollY;
   let ticking = false;
+  let isUserScrolling = false;
+  let scrollEndTimer = null;
 
   // 🔁 Function to update all theme icons
   function updateThemeIcons(isLight) {
@@ -30,12 +32,21 @@ document.addEventListener("DOMContentLoaded", () => {
         if (currentScrollY > lastScrollY && currentScrollY > scrollThreshold) {
           // Scrolling down - hide navbar
           navbar.classList.add("navbar--hidden");
-          // Close any open mobile nav/search when hiding
-          if (isMobileNavExpanded) {
-            closeMobileNav();
-          }
-          if (isMobileSearchActive) {
-            closeMobileSearch();
+          // Don't close mobile nav/search when scrolling within the content
+          // Only close if scrolling on the main page, not within mobile menu
+          if (isMobileNavExpanded || isMobileSearchActive) {
+            const mobileContent = document.querySelector(".navbar__content");
+            if (
+              !mobileContent ||
+              !mobileContent.contains(document.activeElement)
+            ) {
+              if (isMobileNavExpanded) {
+                closeMobileNav();
+              }
+              if (isMobileSearchActive) {
+                closeMobileSearch();
+              }
+            }
           }
         } else if (currentScrollY < lastScrollY) {
           // Scrolling up - show navbar
@@ -58,8 +69,30 @@ document.addEventListener("DOMContentLoaded", () => {
     }
   }
 
+  // Track when user is actively scrolling
+  function handleScrollStart() {
+    isUserScrolling = true;
+    if (scrollEndTimer) {
+      clearTimeout(scrollEndTimer);
+    }
+  }
+
+  function handleScrollEnd() {
+    scrollEndTimer = setTimeout(() => {
+      isUserScrolling = false;
+    }, 150);
+  }
+
   // Add scroll listener with passive option for better performance
-  window.addEventListener("scroll", requestScrollUpdate, { passive: true });
+  window.addEventListener(
+    "scroll",
+    () => {
+      handleScrollStart();
+      requestScrollUpdate();
+      handleScrollEnd();
+    },
+    { passive: true },
+  );
 
   // 🍪 Cookie utilities
   function setCookie(name, value, days = 365) {
@@ -212,6 +245,10 @@ document.addEventListener("DOMContentLoaded", () => {
     if (mobileNavToggle) {
       mobileNavToggle.setAttribute("aria-expanded", false);
     }
+    // Close any open dropdowns when closing mobile nav
+    if (window.navbarDropdown) {
+      window.navbarDropdown.closeAllDropdowns();
+    }
   }
 
   // Mobile search toggle button
@@ -271,7 +308,13 @@ document.addEventListener("DOMContentLoaded", () => {
   document.addEventListener("click", (e) => {
     const isMobile = window.innerWidth <= 768;
 
-    if (isMobile && isMobileSearchActive && !navbar.contains(e.target)) {
+    // Don't close during scroll or if touching mobile content
+    if (
+      isMobile &&
+      isMobileSearchActive &&
+      !navbar.contains(e.target) &&
+      !isUserScrolling
+    ) {
       const searchModal = document.getElementById("search-modal");
       // Only close if not clicking on the search modal
       if (!searchModal || !searchModal.contains(e.target)) {
@@ -294,31 +337,33 @@ document.addEventListener("DOMContentLoaded", () => {
       if (isMobileSearchActive) {
         closeMobileSearch();
       }
-
-      // Auto-close after 10 seconds if expanded
-      if (isMobileNavExpanded) {
-        setTimeout(() => {
-          if (isMobileNavExpanded) {
-            closeMobileNav();
-          }
-        }, 10000);
-      }
     });
 
-    // Close mobile nav when clicking outside
+    // Close mobile nav when clicking outside (but not during scroll)
     document.addEventListener("click", (e) => {
-      if (isMobileNavExpanded && !navbar.contains(e.target)) {
-        closeMobileNav();
+      if (
+        isMobileNavExpanded &&
+        !navbar.contains(e.target) &&
+        !isUserScrolling
+      ) {
+        // Additional check to prevent closing when touching mobile menu content
+        const mobileContent = document.querySelector(".navbar__content");
+        if (!mobileContent || !mobileContent.contains(e.target)) {
+          closeMobileNav();
+        }
       }
     });
 
     // Close mobile nav when a link is clicked
     const mobileNavLinks = navbar.querySelectorAll(
-      ".navbar__content .navbar__link",
+      ".navbar__content .navbar__link, .navbar__content .navbar-dropdown__link",
     );
     mobileNavLinks.forEach((link) => {
-      link.addEventListener("click", () => {
-        closeMobileNav();
+      link.addEventListener("click", (e) => {
+        // Only close if it's an actual navigation (not just a touch/scroll)
+        if (!isUserScrolling) {
+          closeMobileNav();
+        }
       });
     });
   }
@@ -334,6 +379,10 @@ document.addEventListener("DOMContentLoaded", () => {
           "navbar--mobile-expanded",
           "navbar--search-active",
         );
+        // Close any open dropdowns when switching to desktop
+        if (window.navbarDropdown) {
+          window.navbarDropdown.closeAllDropdowns();
+        }
         if (mobileSearchOverlay) {
           mobileSearchOverlay.classList.remove("navbar__mobile-search--active");
         }

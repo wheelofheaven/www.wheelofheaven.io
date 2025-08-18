@@ -1,0 +1,407 @@
+@use "../abstracts/variables" as vars;
+@use "../abstracts/colors" as colors;
+@use "../base/typography" as typo;
+
+// Navbar Dropdown Styles
+.navbar-dropdown {
+    position: absolute;
+    top: calc(100% + 0.5rem);
+    left: 50%;
+    transform: translateX(-50%);
+    z-index: 55; // Below search modal but above navbar
+    width: auto;
+    min-width: 300px;
+    opacity: 0;
+    visibility: hidden;
+    pointer-events: none;
+    transition: all 0.3s ease;
+
+    &--active {
+        opacity: 1;
+        visibility: visible;
+        pointer-events: all;
+    }
+
+    &__container {
+        position: relative;
+        width: 100%;
+        min-width: 300px;
+        max-width: 500px;
+        background: transparent;
+        border: 1px solid rgba(255, 255, 255, 0.2);
+        border-radius: 1rem;
+        backdrop-filter: blur(20px) saturate(180%);
+        box-shadow:
+            0 25px 50px rgba(0, 0, 0, 0.25),
+            0 0 0 1px rgba(255, 255, 255, 0.05),
+            inset 0 1px 0 rgba(255, 255, 255, 0.1);
+        overflow: hidden;
+        transform: translateY(-10px) scale(0.98);
+        transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+
+        &::before {
+            content: "";
+            position: absolute;
+            top: 0;
+            left: 0;
+            right: 0;
+            bottom: 0;
+            background: rgba(255, 255, 255, 0.15);
+            border-radius: inherit;
+            z-index: -1;
+        }
+
+        .navbar-dropdown--active & {
+            transform: translateY(0) scale(1);
+        }
+    }
+
+    &__content {
+        padding: 1rem;
+        background: rgba(255, 255, 255, 0.02);
+    }
+
+    &__section {
+        margin-bottom: 1.5rem;
+
+        &:last-child {
+            margin-bottom: 0;
+        }
+    }
+
+    &__section-title {
+        display: flex;
+        align-items: center;
+        gap: 0.5rem;
+        margin: 0 0 0.75rem 0;
+        font-size: 0.85rem;
+        font-weight: 600;
+        color: var(--color-text-muted);
+        text-transform: uppercase;
+        letter-spacing: 0.05em;
+        font-family: typo.$font-family-tech;
+    }
+
+    &__section-icon {
+        display: inline-flex;
+        align-items: center;
+        justify-content: center;
+        color: var(--color-accent-primary);
+
+        svg {
+            width: 1rem;
+            height: 1rem;
+        }
+    }
+
+    &__links {
+        display: flex;
+        flex-direction: column;
+        gap: 0.25rem;
+    }
+
+    &__link {
+        display: flex;
+        align-items: flex-start;
+        gap: 0.75rem;
+        padding: 0.75rem;
+        color: var(--color-text);
+        text-decoration: none;
+        border-radius: 0.5rem;
+        transition: all 0.2s ease;
+        font-weight: 500;
+        font-family: typo.$font-family-body;
+        font-size: 0.9rem;
+        min-height: 3rem;
+        position: relative;
+        overflow: visible;
+
+        &:hover,
+        &:focus {
+            background-color: var(--color-hover);
+            color: var(--color-accent-primary);
+            outline: none;
+
+            .navbar-dropdown__link-arrow {
+                opacity: 1;
+                transform: translateX(0);
+            }
+        }
+
+        &:active {
+            transform: translateY(1px);
+            transition: transform 0.1s ease;
+
+            .navbar-dropdown__link-arrow {
+                opacity: 1;
+                transform: translateX(-1px);
+            }
+        }
+
+        &-icon {
+            display: inline-flex;
+            align-items: center;
+            justify-content: center;
+            color: var(--color-text-muted);
+            transition: color 0.2s ease;
+            flex-shrink: 0;
+            margin-top: 0.125rem;
+
+            svg {
+                width: 1rem;
+                height: 1rem;
+            }
+        }
+
+        &-title {
+            display: flex;
+            align-items: center;
+            font-weight: 600;
+            font-size: 0.9rem;
+            line-height: 1.3;
+            color: var(--color-text);
+            margin-bottom: 0.25rem;
+            transition: color 0.2s ease;
+        }
+
+        &-description {
+            font-size: 0.75rem;
+            line-height: 1.4;
+            color: var(--color-text-muted);
+            opacity: 0.8;
+            transition: all 0.2s ease;
+        }
+
+        &:hover &-icon,
+        &:focus &-icon {
+            color: var(--color-accent-primary);
+        }
+
+        &:hover &-title,
+        &:focus &-title {
+            color: var(--color-accent-primary);
+        }
+
+        &:hover &-description,
+        &:focus &-description {
+            color: var(--color-text);
+            opacity: 1;
+        }
+
+        // Simple link style (for Resources section without descriptions)
+        &.navbar-dropdown__link--simple {
+            align-items: center;
+            min-height: auto;
+            padding: 0.5rem 0.75rem;
+
+            .navbar-dropdown__link-icon {
+                margin-top: 0;
+            }
+
+            .navbar-dropdown__link-arrow {
+                position: absolute;
+                right: 0.75rem;
+                top: 50%;
+                transform: translateY(-50%) translateX(15px);
+                margin-left: 0;
+            }
+
+            &:hover .navbar-dropdown__link-arrow,
+            &:focus .navbar-dropdown__link-arrow {
+                opacity: 1;
+                transform: translateY(-50%) translateX(0);
+            }
+
+            &:active .navbar-dropdown__link-arrow {
+                opacity: 1;
+                transform: translateY(-50%) translateX(-2px);
+            }
+        }
+    }
+
+    &__link-arrow {
+        display: inline-flex;
+        align-items: center;
+        margin-left: 0.5rem;
+        opacity: 0;
+        transform: translateX(10px);
+        transition: all 0.2s ease;
+        color: var(--color-accent-primary);
+        pointer-events: none;
+
+        svg {
+            width: 0.875rem;
+            height: 0.875rem;
+        }
+    }
+
+    // Two-column layout for Resources dropdown
+    &__columns {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        gap: 1.5rem;
+
+        @media (max-width: 640px) {
+            grid-template-columns: 1fr;
+            gap: 1rem;
+        }
+    }
+
+    &__bottom-section {
+        grid-column: 1 / -1;
+        margin-top: 0.75rem;
+        padding-top: 1rem;
+        border-top: 1px solid rgba(255, 255, 255, 0.1);
+    }
+
+    // Knowledge dropdown specific styling
+    &--knowledge {
+        .navbar-dropdown__container {
+            min-width: 250px;
+            max-width: 350px;
+        }
+    }
+
+    // Resources dropdown specific styling
+    &--resources {
+        .navbar-dropdown__container {
+            min-width: 400px;
+            max-width: 600px;
+        }
+
+        @media (max-width: 640px) {
+            .navbar-dropdown__container {
+                min-width: 300px;
+                max-width: 90vw;
+            }
+        }
+    }
+
+    // Positioning adjustments to prevent off-screen
+    &--align-right {
+        left: auto;
+        right: 0;
+        transform: none;
+    }
+
+    &--align-left {
+        left: 0;
+        transform: none;
+    }
+}
+
+// Enhanced glassmorphism for dark theme
+[data-theme="dark"] .navbar-dropdown {
+    &__container {
+        border: 1px solid rgba(255, 255, 255, 0.1);
+        box-shadow:
+            0 25px 50px rgba(0, 0, 0, 0.5),
+            0 0 0 1px rgba(255, 255, 255, 0.02),
+            inset 0 1px 0 rgba(255, 255, 255, 0.05);
+
+        &::before {
+            background: rgba(27, 31, 34, 0.4);
+        }
+    }
+
+    &__content {
+        background: rgba(255, 255, 255, 0.01);
+    }
+}
+
+// Enhanced glassmorphism for light theme
+[data-theme="light"] .navbar-dropdown {
+    &__container {
+        border: 1px solid rgba(255, 255, 255, 0.3);
+        box-shadow:
+            0 25px 50px rgba(0, 0, 0, 0.15),
+            0 0 0 1px rgba(255, 255, 255, 0.1),
+            inset 0 1px 0 rgba(255, 255, 255, 0.2);
+
+        &::before {
+            background: rgba(255, 255, 255, 0.25);
+        }
+    }
+
+    &__content {
+        background: rgba(255, 255, 255, 0.03);
+    }
+}
+
+// Mobile specific dropdown styles
+@media (max-width: 768px) {
+    .navbar-dropdown {
+        position: static;
+        transform: none;
+        margin-top: 0;
+        width: 100%;
+        min-width: auto;
+
+        &__container {
+            min-width: auto;
+            max-width: none;
+            width: 100%;
+            margin: 0.5rem 0;
+        }
+
+        &__content {
+            padding: 0.75rem;
+        }
+
+        &__section {
+            margin-bottom: 1rem;
+        }
+
+        &__link {
+            padding: 0.5rem;
+            font-size: 0.85rem;
+            min-height: auto;
+
+            &-title {
+                font-size: 0.85rem;
+                margin-bottom: 0.125rem;
+            }
+
+            &-description {
+                font-size: 0.7rem;
+            }
+        }
+
+        &__columns {
+            grid-template-columns: 1fr;
+            gap: 1rem;
+        }
+
+        &__bottom-section {
+            margin-top: 0.5rem;
+            padding-top: 0.75rem;
+        }
+
+        // Show dropdowns inline in mobile expanded state
+        &--knowledge,
+        &--resources {
+            .navbar-dropdown__container {
+                min-width: auto;
+                max-width: none;
+            }
+        }
+    }
+}
+
+// Body class when dropdown modal is open - simplified
+.navbar-dropdown-open {
+    .navbar {
+        filter: none !important;
+        backdrop-filter: blur(12px);
+        pointer-events: auto !important; // Force navbar interactions to work
+        z-index: 9999 !important; // Ensure navbar is above everything
+    }
+
+    // Ensure all navbar elements can receive hover events
+    .navbar__link,
+    .navbar__dropdown-trigger {
+        pointer-events: auto !important;
+        position: relative !important;
+        z-index: 99999 !important;
+    }
+}

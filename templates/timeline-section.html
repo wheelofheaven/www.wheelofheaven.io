@@ -1,0 +1,233 @@
+{% extends "base.html" %} {% block content %}
+<div class="timeline-section">
+    <header class="timeline-header">
+        <div class="container">
+            <h1 class="timeline-header__title">Timeline of Creation</h1>
+            <p class="timeline-header__subtitle">
+                The Twelve World Ages: From the Engineering of Life to the Age
+                of Revelation
+            </p>
+        </div>
+    </header>
+
+    <div class="timeline-container">
+        <div class="timeline-track"></div>
+
+        {% set ages_data = load_data(path="data/ages.json") %} {% for age in
+        ages_data %}
+        <div
+            class="timeline-item"
+            data-age-color="{{ age.color }}"
+            data-age-name="{{ age.name | slugify }}"
+            id="age-{{ age.name | slugify }}"
+        >
+            <div class="timeline-marker">
+                <div class="timeline-marker__symbol">{{ age.symbol }}</div>
+                <div class="timeline-marker__line"></div>
+            </div>
+
+            <div
+                class="timeline-content {% if loop.index is odd %}timeline-content--left{% else %}timeline-content--right{% endif %}"
+            >
+                <div class="timeline-age-label">
+                    <span class="timeline-age-label__text">{{ age.name }}</span>
+                </div>
+
+                <div class="timeline-card">
+                    <div class="timeline-card__header">
+                        <h2 class="timeline-card__title">{{ age.name }}</h2>
+                        <div class="timeline-card__timespan">
+                            <span class="timeline-card__start">
+                                {% if age.start is starting_with("−") %} {{
+                                age.start | replace(from="−", to="") }} BC {%
+                                else %} {{ age.start }} AD {% endif %}
+                            </span>
+                            <span class="timeline-card__separator">→</span>
+                            <span class="timeline-card__end">
+                                {% if age.end is starting_with("−") %} {{
+                                age.end | replace(from="−", to="") }} BC {% else
+                                %} {{ age.end }} AD {% endif %}
+                            </span>
+                        </div>
+                    </div>
+
+                    <div
+                        class="timeline-card__image-placeholder"
+                        data-age="{{ age.name | slugify }}"
+                        title="Curated landscape for {{ age.name }}"
+                    >
+                        <div class="timeline-card__image-placeholder-text">
+                            <div class="timeline-card__image-icon">
+                                {{ age.symbol }}
+                            </div>
+                            <div class="timeline-card__image-label">
+                                Curated Landscape
+                                <small>{{ age.name }}</small>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="timeline-card__content">
+                        <p class="timeline-card__event">{{ age.event }}</p>
+                    </div>
+
+                    <div class="timeline-card__footer">
+                        <div class="timeline-card__meta">
+                            <span class="timeline-card__duration">
+                                Duration: ~2,160 years
+                            </span>
+                        </div>
+                        <a href="{{ age.link }}" class="timeline-card__link">
+                            Explore {{ age.name }}
+                            <svg
+                                class="timeline-card__link-icon"
+                                width="16"
+                                height="16"
+                                viewBox="0 0 16 16"
+                                fill="none"
+                            >
+                                <path
+                                    d="M6 12L10 8L6 4"
+                                    stroke="currentColor"
+                                    stroke-width="2"
+                                    stroke-linecap="round"
+                                    stroke-linejoin="round"
+                                />
+                            </svg>
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+        {% endfor %}
+    </div>
+
+    <div class="timeline-footer">
+        <div class="container">
+            <div class="timeline-summary">
+                <h2 class="timeline-summary__title">The Grand Narrative</h2>
+                <p class="timeline-summary__text">
+                    Across 26,000 years of cosmic history, from the first
+                    engineered life to the revelation of our origins, this
+                    timeline chronicles humanity's journey from creation to
+                    enlightenment. Each age represents approximately 2,160 years
+                    of Earth's precession cycle, marking distinct phases in our
+                    cosmic development.
+                </p>
+            </div>
+        </div>
+    </div>
+
+    <!-- Parallax background elements -->
+    <div class="timeline-parallax">
+        <div
+            class="timeline-parallax__stars timeline-parallax__stars--layer-1"
+        ></div>
+        <div
+            class="timeline-parallax__stars timeline-parallax__stars--layer-2"
+        ></div>
+        <div
+            class="timeline-parallax__stars timeline-parallax__stars--layer-3"
+        ></div>
+    </div>
+
+    <script>
+        // Enhanced timeline interactions with scroll animations
+        document.addEventListener("DOMContentLoaded", function () {
+            const parallaxElements = document.querySelectorAll(
+                ".timeline-parallax__stars",
+            );
+            const timelineItems = document.querySelectorAll(".timeline-item");
+
+            // Parallax effect
+            function updateParallax() {
+                const scrolled = window.pageYOffset;
+
+                parallaxElements.forEach((element, index) => {
+                    const speed = (index + 1) * 0.1;
+                    const yPos = -(scrolled * speed);
+                    element.style.transform = `translateY(${yPos}px)`;
+                });
+            }
+
+            // Throttle scroll events
+            let ticking = false;
+            function requestTick() {
+                if (!ticking) {
+                    requestAnimationFrame(updateParallax);
+                    ticking = true;
+                    setTimeout(() => {
+                        ticking = false;
+                    }, 10);
+                }
+            }
+
+            window.addEventListener("scroll", requestTick);
+
+            // Intersection Observer for scroll-triggered animations
+            const observerOptions = {
+                threshold: 0.1,
+                rootMargin: "0px 0px -50px 0px",
+            };
+
+            const observer = new IntersectionObserver((entries) => {
+                entries.forEach((entry) => {
+                    if (entry.isIntersecting) {
+                        entry.target.classList.add("timeline-item--visible");
+
+                        // Add staggered animation delay
+                        const index = Array.from(timelineItems).indexOf(
+                            entry.target,
+                        );
+                        entry.target.style.animationDelay = `${index * 0.1}s`;
+                    }
+                });
+            }, observerOptions);
+
+            // Color age markers and observe for animations
+            timelineItems.forEach((item, index) => {
+                const color = item.dataset.ageColor;
+                if (color) {
+                    // Apply age-specific colors using CSS custom properties
+                    item.style.setProperty(
+                        "--age-color",
+                        `var(--color-${color})`,
+                    );
+
+                    // Add age symbol to marker if not already present
+                    const symbol = item.querySelector(
+                        ".timeline-marker__symbol",
+                    );
+                    if (symbol && !symbol.textContent.trim()) {
+                        // Fallback if symbol is missing
+                        symbol.textContent = "●";
+                    }
+                }
+
+                // Add to intersection observer
+                observer.observe(item);
+
+                // Add progressive loading animation delay
+                item.style.animationDelay = `${index * 0.1}s`;
+            });
+
+            // Smooth scroll enhancement for timeline navigation
+            const timelineLinks = document.querySelectorAll('a[href^="#age-"]');
+            timelineLinks.forEach((link) => {
+                link.addEventListener("click", (e) => {
+                    e.preventDefault();
+                    const targetId = link.getAttribute("href").substring(1);
+                    const targetElement = document.getElementById(targetId);
+
+                    if (targetElement) {
+                        targetElement.scrollIntoView({
+                            behavior: "smooth",
+                            block: "center",
+                        });
+                    }
+                });
+            });
+        });
+    </script>
+</div>
+{% endblock content %}

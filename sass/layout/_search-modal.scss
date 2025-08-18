@@ -332,7 +332,21 @@
     .navbar {
         filter: none !important; // Ensure navbar stays sharp
         backdrop-filter: blur(12px); // Maintain navbar's own blur
+        pointer-events: auto !important; // Force navbar interactions to work
+        z-index: 9999 !important; // Ensure navbar is above everything
     }
+
+    // Disable pointer events on everything else when search modal is open
+    /* TEMP DISABLED TO TEST HOVER
+    * {
+        pointer-events: none !important;
+    }
+
+    .search-modal,
+    .navbar {
+        pointer-events: auto !important;
+    }
+    */
 }
 
 // Enhanced glassmorphism for dark theme
