@@ -23,9 +23,9 @@ social_links = ["https://x.com/wheelofheaven"]
 [extra.navbar_icons]
 knowledge = "icons/book-open.svg"
 explainers = "icons/help-circle.svg"
-revelations = "icons/file-text.svg"
+revelations = "icons/ph:scroll-light.svg"
 wiki = "icons/book.svg"
-org = "icons/users.svg"
+org = "icons/fluent:building-bank-48-regular.svg"
 community = "icons/user-check.svg"
 about = "icons/info.svg"
 code_of_conduct = "icons/shield-check.svg"

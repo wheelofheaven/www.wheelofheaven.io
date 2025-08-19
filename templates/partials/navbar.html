@@ -3,11 +3,6 @@
   <a class="navbar__logo" href="/" aria-label="Wheel of Heaven">
     {% include "partials/brand/logomark.html" %}
   </a>
-
-
-
-
-
   <div class="navbar__content">
     <div class="navbar__links">
       <a href="{{ get_url(path='essentials', lang=lang) }}" class="navbar__link" data-navbar-key="essentials">
@@ -31,18 +26,16 @@
 
       <!-- Knowledge Dropdown -->
       <div class="navbar__dropdown" data-dropdown="knowledge">
-        <button class="navbar__dropdown-trigger" aria-expanded="false" aria-haspopup="true" data-navbar-key="knowledge">
-          {% if lang == "fr" %}Connaissance
+        <button class="navbar__dropdown-trigger" aria-expanded="false" aria-haspopup="true">
+          <span data-navbar-key="knowledge">{% if lang == "fr" %}Connaissance
           {% elif lang == "de" %}Wissen
           {% elif lang == "es" %}Conocimiento
           {% elif lang == "ja" %}知識
           {% elif lang == "ru" %}Знания
           {% elif lang == "zh" %}知识
-          {% else %}Knowledge{% endif %}
+          {% else %}Knowledge{% endif %}</span>
           <span class="navbar__dropdown-trigger__caret">
-            <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
-              <polyline points="6,9 12,15 18,9"></polyline>
-            </svg>
+              {% include "partials/icons/gen-knowledge.html" %}
           </span>
         </button>
         <div class="navbar-dropdown navbar-dropdown--knowledge" id="knowledge-dropdown">
@@ -115,9 +108,7 @@
                         {% elif lang == "zh" %}启示
                         {% else %}Revelations{% endif %}</span>
                         <span class="navbar-dropdown__link-arrow">
-                          <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
-                            <path d="M5 12h14M12 5l7 7-7 7"/>
-                          </svg>
+                            {% include "partials/icons/ph-scroll-light.html" %}
                         </span>
                       </div>
                       <div class="navbar-dropdown__link-description" data-navbar-key="revelationsDesc">{% if lang == "fr" %}Textes sacrés et leurs interprétations modernes
@@ -171,14 +162,14 @@
 
       <!-- Resources Dropdown -->
       <div class="navbar__dropdown" data-dropdown="resources">
-        <button class="navbar__dropdown-trigger" aria-expanded="false" aria-haspopup="true" data-navbar-key="resources">
-          {% if lang == "fr" %}Ressources
+        <button class="navbar__dropdown-trigger" aria-expanded="false" aria-haspopup="true">
+          <span data-navbar-key="resources">{% if lang == "fr" %}Ressources
           {% elif lang == "de" %}Ressourcen
           {% elif lang == "es" %}Recursos
           {% elif lang == "ja" %}リソース
           {% elif lang == "ru" %}Ресурсы
           {% elif lang == "zh" %}资源
-          {% else %}Resources{% endif %}
+          {% else %}Resources{% endif %}</span>
           <span class="navbar__dropdown-trigger__caret">
             <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
               <polyline points="6,9 12,15 18,9"></polyline>
@@ -192,12 +183,7 @@
                 <div class="navbar-dropdown__section">
                   <h3 class="navbar-dropdown__section-title">
                     <span class="navbar-dropdown__section-icon">
-                      <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
-                        <path d="M16 21v-2a4 4 0 0 0-4-4H6a4 4 0 0 0-4 4v2"/>
-                        <circle cx="9" cy="7" r="4"/>
-                        <path d="M22 21v-2a4 4 0 0 0-3-3.87"/>
-                        <path d="M16 3.13a4 4 0 0 1 0 7.75"/>
-                      </svg>
+                        {% include "partials/icons/fluent-building-bank.html" %}
                     </span>
                     <span data-navbar-key="org">{% if lang == "fr" %}Organisation
                     {% elif lang == "de" %}Organisation
@@ -210,11 +196,7 @@
                   <div class="navbar-dropdown__links">
                     <a href="{{ get_url(path='about', lang=lang) }}" class="navbar-dropdown__link navbar-dropdown__link--simple">
                       <span class="navbar-dropdown__link-icon">
-                        <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
-                          <circle cx="12" cy="12" r="10"/>
-                          <path d="M12 16v-4"/>
-                          <path d="M12 8h.01"/>
-                        </svg>
+                        {% include "partials/icons/famicons-telescope-outline.html" %}
                       </span>
                       <span data-navbar-key="about">{% if lang == "fr" %}À propos
                       {% elif lang == "de" %}Über uns
@@ -234,12 +216,7 @@
                 <div class="navbar-dropdown__section">
                   <h3 class="navbar-dropdown__section-title">
                     <span class="navbar-dropdown__section-icon">
-                      <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
-                        <path d="M17 21v-2a4 4 0 0 0-4-4H5a4 4 0 0 0-4 4v2"/>
-                        <circle cx="9" cy="7" r="4"/>
-                        <path d="M23 21v-2a4 4 0 0 0-3-3.87"/>
-                        <path d="M16 3.13a4 4 0 0 1 0 7.75"/>
-                      </svg>
+                        {% include "partials/icons/gen-community.html" %}
                     </span>
                     <span data-navbar-key="community">{% if lang == "fr" %}Communauté
                     {% elif lang == "de" %}Community
@@ -252,12 +229,7 @@
                   <div class="navbar-dropdown__links">
                     <a href="{{ get_url(path='code-of-conduct', lang=lang) }}" class="navbar-dropdown__link navbar-dropdown__link--simple">
                       <span class="navbar-dropdown__link-icon">
-                        <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
-                          <path d="M9 12l2 2 4-4"/>
-                          <path d="M21 12c-1 0-3-1-3-3s2-3 3-3 3 1 3 3-2 3-3 3"/>
-                          <path d="M3 12c1 0 3-1 3-3s-2-3-3-3-3 1-3 3 2 3 3 3"/>
-                          <path d="M3 12v6a2 2 0 0 0 2 2h14a2 2 0 0 0 2-2v-6"/>
-                        </svg>
+                        {% include "partials/icons/octicon-code-of-conduct.html" %}
                       </span>
                       <span data-navbar-key="codeOfConduct">{% if lang == "fr" %}Code de Conduite
                       {% elif lang == "de" %}Verhaltenskodex
@@ -315,11 +287,7 @@
                     </a>
                     <a href="{{ get_url(path='faq', lang=lang) }}" class="navbar-dropdown__link navbar-dropdown__link--simple">
                       <span class="navbar-dropdown__link-icon">
-                        <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
-                          <circle cx="12" cy="12" r="10"/>
-                          <path d="M9.09 9a3 3 0 0 1 5.83 1c0 2-3 3-3 3"/>
-                          <path d="M12 17h.01"/>
-                        </svg>
+                          {% include "partials/icons/tdesign-questionnaire-double.html" %}
                       </span>
                       <span data-navbar-key="faq">{% if lang == "fr" %}FAQ
                       {% elif lang == "de" %}FAQ

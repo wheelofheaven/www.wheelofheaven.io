@@ -1,0 +1,41 @@
+{% set href = url | default(value="") %}
+{% set link_text = text | default(value="") %}
+{% set title_attr = title | default(value="") %}
+{% set classes = class | default(value="") %}
+{% set target_attr = target | default(value="") %}
+
+{# Determine if this is an external link #}
+{% set is_external = false %}
+{% if href %}
+  {% if href is starting_with("http://") or href is starting_with("https://") %}
+    {% if not (href is containing(config.base_url)) %}
+      {% set_global is_external = true %}
+    {% endif %}
+  {% endif %}
+{% endif %}
+
+{# Handle internal links with proper i18n #}
+{% set final_url = href %}
+{% if not is_external and href %}
+  {# If we're on a non-default language page and the link is internal #}
+  {% if lang != config.default_language %}
+    {# Check if the link is relative (doesn't start with /) #}
+    {% if not (href is starting_with("/")) %}
+      {% set_global final_url = "/" ~ lang ~ "/" ~ href %}
+    {% else %}
+      {# For absolute internal links, add language prefix if not already there #}
+      {% if not (href is starting_with("/" ~ lang ~ "/")) and href != "/" %}
+        {% set_global final_url = "/" ~ lang ~ href %}
+      {% endif %}
+    {% endif %}
+  {% endif %}
+{% endif %}
+
+{# Build the link #}
+<a href="{{ final_url }}"
+   {% if title_attr %}title="{{ title_attr }}"{% endif %}
+   {% if classes %}class="{{ classes }}"{% endif %}
+   {% if is_external or target_attr %}target="{{ target_attr | default(value="_blank") }}"{% endif %}
+   {% if is_external %}rel="noopener noreferrer"{% endif %}>
+  {{ link_text }}{% if is_external %} ↗{% endif %}
+</a>

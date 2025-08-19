@@ -1,0 +1,45 @@
+{# Simple macro for creating links with external indicators #}
+{% macro smart_link(url, text, title="", class="", target="") %}
+  {% set is_external = false %}
+
+  {# Check if URL starts with http/https and doesn't contain our domain #}
+  {% if url is starting_with("http://") or url is starting_with("https://") %}
+    {% if not (url is containing("beta.wheelofheaven.io")) %}
+      {% set_global is_external = true %}
+    {% endif %}
+  {% endif %}
+
+  <a href="{{ url }}"
+     {% if title %}title="{{ title }}"{% endif %}
+     {% if class %}class="{{ class }}"{% endif %}
+     {% if is_external %}target="_blank" rel="noopener noreferrer"{% endif %}>
+    {{ text }}{% if is_external %} ↗{% endif %}
+  </a>
+{% endmacro smart_link %}
+
+{# Macro with i18n support for internal links #}
+{% macro footer_link(url, text, title="", class="", target="") %}
+  {% set is_external = false %}
+  {% set final_url = url %}
+
+  {# Check if URL is external #}
+  {% if url is starting_with("http://") or url is starting_with("https://") %}
+    {% if not (url is containing("beta.wheelofheaven.io")) %}
+      {% set_global is_external = true %}
+    {% endif %}
+  {% else %}
+    {# Handle internal links with i18n #}
+    {% if lang and lang != "en" %}
+      {% if url is starting_with("/") and not (url is starting_with("/" ~ lang ~ "/")) %}
+        {% set_global final_url = "/" ~ lang ~ url %}
+      {% endif %}
+    {% endif %}
+  {% endif %}
+
+  <a href="{{ final_url }}"
+     {% if title %}title="{{ title }}"{% endif %}
+     {% if class %}class="{{ class }}"{% endif %}
+     {% if is_external %}target="_blank" rel="noopener noreferrer"{% endif %}>
+    {{ text }}{% if is_external %} ↗{% endif %}
+  </a>
+{% endmacro footer_link %}

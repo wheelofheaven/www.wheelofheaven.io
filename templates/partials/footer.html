@@ -10,73 +10,73 @@
       <div class="footer__col">
         <h6>{{ trans(key="footerGetStarted") }}</h6>
         <ul>
-          <li><a href="{{ trans(key="footerAbout_url") }}">{{ trans(key="footerAbout") }}</a></li>
-          <li><a href="{{ trans(key="footerHelloWorld_url") }}">{{ trans(key="footerHelloWorld") }}</a></li>
-          <li><a href="{{ trans(key="footerFAQ_url") }}">{{ trans(key="footerFAQ") }}</a></li>
-          <li><a href="https://github.com/wheelofheaven/.github/blob/main/profile/WHITEPAPER.md">White Paper</a></li>
+          <li>{{ link_macros::smart_link(url=trans(key="footerAbout_url"), text=trans(key="footerAbout")) }}</li>
+          <li>{{ link_macros::smart_link(url=trans(key="footerHelloWorld_url"), text=trans(key="footerHelloWorld")) }}</li>
+          <li>{{ link_macros::smart_link(url=trans(key="footerFAQ_url"), text=trans(key="footerFAQ")) }}</li>
+          <li>{{ link_macros::smart_link(url="https://github.com/wheelofheaven/.github/blob/main/profile/WHITEPAPER.md", text="White Paper") }}</li>
         </ul>
 
         <h6>{{ trans(key="footerJumpRightIn") }}</h6>
         <ul>
-          <li><a href="{{ trans(key="footerTheSetting_url") }}">{{ trans(key="footerTheSetting") }}</a></li>
-          <li><a href="{{ trans(key="footerTheFoundation_url") }}">{{ trans(key="footerTheFoundation") }}</a></li>
-          <li><a href="{{ trans(key="footerTheHypothesis_url") }}">{{ trans(key="footerTheHypothesis") }}</a></li>
-          <li><a href="{{ trans(key="footerPreamble_url") }}">{{ trans(key="footerPreamble") }}</a></li>
+          <li>{{ link_macros::smart_link(url=trans(key="footerTheSetting_url"), text=trans(key="footerTheSetting")) }}</li>
+          <li>{{ link_macros::smart_link(url=trans(key="footerTheFoundation_url"), text=trans(key="footerTheFoundation")) }}</li>
+          <li>{{ link_macros::smart_link(url=trans(key="footerTheHypothesis_url"), text=trans(key="footerTheHypothesis")) }}</li>
+          <li>{{ link_macros::smart_link(url=trans(key="footerPreamble_url"), text=trans(key="footerPreamble")) }}</li>
         </ul>
       </div>
 
       <div class="footer__col">
         <h6>{{ trans(key="footerSections") }}</h6>
         <ul>
-          <li><a href="{{ trans(key="footerHome_url") }}">{{ trans(key="footerHome") }}</a></li>
-          <li><a href="{{ trans(key="footerIntro_url") }}">{{ trans(key="footerIntro") }}</a></li>
-          <li><a href="{{ trans(key="footerWiki_url") }}">{{ trans(key="footerWiki") }}</a></li>
-          <li><a href="{{ trans(key="footerArticles_url") }}">{{ trans(key="footerArticles") }}</a></li>
-          <li><a href="{{ trans(key="footerResources_url") }}">{{ trans(key="footerResources") }}</a></li>
+          <li>{{ link_macros::smart_link(url=trans(key="footerHome_url"), text=trans(key="footerHome")) }}</li>
+          <li>{{ link_macros::smart_link(url=trans(key="footerIntro_url"), text=trans(key="footerIntro")) }}</li>
+          <li>{{ link_macros::smart_link(url=trans(key="footerWiki_url"), text=trans(key="footerWiki")) }}</li>
+          <li>{{ link_macros::smart_link(url=trans(key="footerArticles_url"), text=trans(key="footerArticles")) }}</li>
+          <li>{{ link_macros::smart_link(url=trans(key="footerResources_url"), text=trans(key="footerResources")) }}</li>
         </ul>
 
         <h6>{{ trans(key="footerPlatform") }}</h6>
         <ul>
-          <li><a href="{{ trans(key="footerTags_url") }}">{{ trans(key="footerTags") }}</a></li>
-          <li><a href="{{ trans(key="footerCategories_url") }}">{{ trans(key="footerCategories") }}</a></li>
-          <li><a href="{{ trans(key="footerContributors_url") }}">{{ trans(key="footerContributors") }}</a></li>
-          <li><a href="{{ trans(key="footerRssFeed_url") }}">{{ trans(key="footerRssFeed") }}</a></li>
+          <li>{{ link_macros::smart_link(url=trans(key="footerTags_url"), text=trans(key="footerTags")) }}</li>
+          <li>{{ link_macros::smart_link(url=trans(key="footerCategories_url"), text=trans(key="footerCategories")) }}</li>
+          <li>{{ link_macros::smart_link(url=trans(key="footerContributors_url"), text=trans(key="footerContributors")) }}</li>
+          <li>{{ link_macros::smart_link(url=trans(key="footerRssFeed_url"), text=trans(key="footerRssFeed")) }}</li>
         </ul>
       </div>
 
       <div class="footer__col">
         <h6>{{ trans(key="footerCommunity") }}</h6>
         <ul>
-          <li><a href="{{ trans(key="footerCommunity_url") }}">{{ trans(key="footerCommunity") }}</a></li>
-          <li><a href="https://github.com/wheelofheaven/site/blob/main/CODE_OF_CONDUCT.md">{{ trans(key="footerCodeOfConduct") }}</a></li>
-          <li><a href="https://github.com/orgs/wheelofheaven/discussions">{{ trans(key="footerGithubDiscussion") }}</a></li>
-          <li><a href="https://opencollective.com/wheelofheaven">Open Collective</a></li>
-          <li><a href="https://github.com/wheelofheaven/site/blob/main/LICENSE">{{ trans(key="footerOpenSource") }}</a></li>
+          <li>{{ link_macros::smart_link(url=trans(key="footerCommunity_url"), text=trans(key="footerCommunity")) }}</li>
+          <li>{{ link_macros::smart_link(url="https://github.com/wheelofheaven/site/blob/main/CODE_OF_CONDUCT.md", text=trans(key="footerCodeOfConduct")) }}</li>
+          <li>{{ link_macros::smart_link(url="https://github.com/orgs/wheelofheaven/discussions", text=trans(key="footerGithubDiscussion")) }}</li>
+          <li>{{ link_macros::smart_link(url="https://opencollective.com/wheelofheaven", text="Open Collective") }}</li>
+          <li>{{ link_macros::smart_link(url="https://github.com/wheelofheaven/site/blob/main/LICENSE", text=trans(key="footerOpenSource")) }}</li>
         </ul>
 
         <h6>{{ trans(key="footerSocialMedia") }}</h6>
         <ul>
-          <li><a href="https://github.com/wheelofheaven/">GitHub</a></li>
-          <li><a href="https://opencollective.com/wheelofheaven">Telegram</a></li>
-          <li><a href="https://opencollective.com/wheelofheaven">𝕏</a></li>
+          <li>{{ link_macros::smart_link(url="https://github.com/wheelofheaven/", text="GitHub") }}</li>
+          <li>{{ link_macros::smart_link(url="https://opencollective.com/wheelofheaven", text="Telegram") }}</li>
+          <li>{{ link_macros::smart_link(url="https://opencollective.com/wheelofheaven", text="𝕏") }}</li>
         </ul>
       </div>
 
       <div class="footer__col">
         <h6>{{ trans(key="footerDevelopment") }}</h6>
         <ul>
-          <li><a href="https://github.com/wheelofheaven/site/blob/main/CONTRIBUTE.md">{{ trans(key="footerContribute") }}</a></li>
-          <li><a href="https://github.com/wheelofheaven/site/blob/main/CHANGELOG.md">{{ trans(key="footerChangelog") }}</a></li>
-          <li><a href="https://github.com/wheelofheaven/site/graphs/commit-activity">{{ trans(key="footerCommitActivity") }}</a></li>
-          <li><a href="https://github.com/wheelofheaven/site/blob/main/README.md">{{ trans(key="footerReadme") }}</a></li>
+          <li>{{ link_macros::smart_link(url="https://github.com/wheelofheaven/site/blob/main/CONTRIBUTE.md", text=trans(key="footerContribute")) }}</li>
+          <li>{{ link_macros::smart_link(url="https://github.com/wheelofheaven/site/blob/main/CHANGELOG.md", text=trans(key="footerChangelog")) }}</li>
+          <li>{{ link_macros::smart_link(url="https://github.com/wheelofheaven/site/graphs/commit-activity", text=trans(key="footerCommitActivity")) }}</li>
+          <li>{{ link_macros::smart_link(url="https://github.com/wheelofheaven/site/blob/main/README.md", text=trans(key="footerReadme")) }}</li>
         </ul>
 
         <h6>{{ trans(key="footerPrivacyTerms") }}</h6>
         <ul>
-          <li><a href="{{ trans(key="footerPrivacyPolicy_url") }}">{{ trans(key="footerPrivacyPolicy") }}</a></li>
-          <li><a href="{{ trans(key="footerCookiePolicy_url") }}">{{ trans(key="footerCookiePolicy") }}</a></li>
-          <li><a href="https://github.com/wheelofheaven/site/blob/main/SECURITY.md">{{ trans(key="footerSecurityPolicy") }}</a></li>
-          <li><a href="{{ trans(key="footerContact_url") }}">{{ trans(key="footerContact") }}</a></li>
+          <li>{{ link_macros::smart_link(url=trans(key="footerPrivacyPolicy_url"), text=trans(key="footerPrivacyPolicy")) }}</li>
+          <li>{{ link_macros::smart_link(url=trans(key="footerCookiePolicy_url"), text=trans(key="footerCookiePolicy")) }}</li>
+          <li>{{ link_macros::smart_link(url="https://github.com/wheelofheaven/site/blob/main/SECURITY.md", text=trans(key="footerSecurityPolicy")) }}</li>
+          <li>{{ link_macros::smart_link(url=trans(key="footerContact_url"), text=trans(key="footerContact")) }}</li>
         </ul>
       </div>
     </div>
