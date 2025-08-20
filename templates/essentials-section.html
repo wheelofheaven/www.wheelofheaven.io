@@ -1,0 +1,56 @@
+{% extends "base.html" %} {% import "macros/essentials.html" as
+essentials_macros %} {% block content %}
+<div class="essentials-section">
+    <div class="essentials-section__container">
+        <header class="essentials-section__header">
+            <h1 class="essentials-section__title">{{ section.title }}</h1>
+            {% if section.description %}
+            <p class="essentials-section__description">
+                {{ section.description }}
+            </p>
+            {% endif %}
+        </header>
+
+        {% if section.content %}
+        <div class="essentials-section__content">
+            {{ section.content | safe }}
+        </div>
+        {% endif %} {% if section.pages %}
+
+        <!-- Start Here Section -->
+        {% set first_page = section.pages[0] %} {% if first_page %}
+        <div class="essentials-start-here">
+            <h2 class="essentials-start-here__title">Start Here</h2>
+            <div class="essentials-start-here__card">
+                {{ essentials_macros::horizontal_essential_card(page=first_page,
+                highlight=true) }}
+            </div>
+        </div>
+        {% endif %}
+
+        <!-- Main Essentials List -->
+        <div class="essentials-section__pages">
+            <div class="essentials-section__list">
+                {% for page in section.pages %} {% if loop.index0 > 0 %} {{
+                essentials_macros::horizontal_essential_card(page=page) }} {%
+                endif %} {% endfor %}
+            </div>
+        </div>
+
+        <!-- Subsections (if any) -->
+        {% if section.subsections %}
+        <div class="essentials-section__subsections">
+            <h2 class="essentials-section__subsections-title">
+                Browse by Topic
+            </h2>
+            <div class="essentials-section__subsection-grid">
+                {% for subsection in section.subsections %} {{
+                essentials_macros::subsection_card(subsection=subsection) }} {%
+                endfor %}
+            </div>
+        </div>
+        {% endif %} {% endif %}
+    </div>
+</div>
+
+{% endblock content %}

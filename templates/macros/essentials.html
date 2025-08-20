@@ -1,0 +1,237 @@
+{# Essentials Statistics Macro #}
+{% macro essentials_stats(section) %}
+<div class="essentials-section__stats">
+    <div class="essentials-stats">
+        <div class="essentials-stats__item">
+            <span class="essentials-stats__number">{{ section.pages | length }}</span>
+            <span class="essentials-stats__label">Essential{% if section.pages | length != 1 %}s{% endif %}</span>
+        </div>
+
+        {% set categories = section.pages | map(attribute="extra.category") | unique | sort %}
+        {% if categories | length > 0 %}
+        <div class="essentials-stats__item">
+            <span class="essentials-stats__number">{{ categories | length }}</span>
+            <span class="essentials-stats__label">Categor{% if categories | length != 1 %}ies{% else %}y{% endif %}</span>
+        </div>
+        {% endif %}
+
+        {% set featured_count = section.pages | filter(attribute="extra.featured", value=true) | length %}
+        {% if featured_count > 0 %}
+        <div class="essentials-stats__item">
+            <span class="essentials-stats__number">{{ featured_count }}</span>
+            <span class="essentials-stats__label">Featured</span>
+        </div>
+        {% endif %}
+    </div>
+</div>
+{% endmacro essentials_stats %}
+
+{# Category Filter Macro #}
+{% macro category_filter(section) %}
+{% set categories = section.pages | map(attribute="extra.category") | unique | sort %}
+{% if categories | length > 1 %}
+<select class="essentials-category-filter" id="essentials-category-filter">
+    <option value="">All Categories</option>
+    {% for category in categories %}
+        {% if category %}
+        <option value="{{ category | lower }}">{{ category }}</option>
+        {% endif %}
+    {% endfor %}
+</select>
+{% endif %}
+{% endmacro category_filter %}
+
+{# Alphabetical Navigation Macro - Simplified #}
+{% macro alphabet_nav(section) %}
+{# Alphabet navigation disabled for now to avoid template complexity #}
+{% endmacro alphabet_nav %}
+
+{# Essential Card Macro #}
+{% macro essential_card(page) %}
+<article class="essentials-card"
+         data-title="{{ page.title | lower }}"
+         data-category="{{ page.extra.category | default(value="") | lower }}"
+         data-date="{{ page.date | default(value="1970-01-01") }}">
+
+    <a href="{{ page.permalink }}" class="essentials-card__link">
+        {% if page.extra.header_image %}
+        <div class="essentials-card__image">
+            <img src="{{ page.extra.header_image }}"
+                 alt="{{ page.title }}"
+                 class="essentials-card__img" />
+        </div>
+        {% else %}
+        <div class="essentials-card__image essentials-card__image--placeholder">
+            <div class="essentials-card__placeholder-content">
+                <svg class="essentials-card__placeholder-icon" width="48" height="48" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5">
+                    <circle cx="12" cy="12" r="3"></circle>
+                    <path d="m12 1 0 6m0 6 0 6"></path>
+                    <path d="m16.24 7.76-4.24 4.24"></path>
+                    <path d="m7.76 16.24 4.24-4.24"></path>
+                    <path d="m16.24 16.24-4.24-4.24"></path>
+                    <path d="m7.76 7.76 4.24 4.24"></path>
+                </svg>
+            </div>
+        </div>
+        {% endif %}
+
+        <div class="essentials-card__content">
+            <header class="essentials-card__header">
+                <h3 class="essentials-card__title">{{ page.title }}</h3>
+
+                <div class="essentials-card__meta">
+                    {% if page.extra.category %}
+                    <span class="essentials-card__category">{{ page.extra.category }}</span>
+                    {% endif %}
+
+                    {% if page.date %}
+                    <time class="essentials-card__date">{{ page.date | date(format="%B %Y") }}</time>
+                    {% endif %}
+                </div>
+            </header>
+
+            {% if page.description %}
+            <p class="essentials-card__description">{{ page.description }}</p>
+            {% endif %}
+
+            {% if highlight %}
+            <div class="essentials-horizontal-card__badge">
+                <svg class="essentials-horizontal-card__badge-icon" width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                    <path d="M3 9l9-7 9 7v11a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2z"></path>
+                    <polyline points="9,22 9,12 15,12 15,22"></polyline>
+                </svg>
+                Start Here
+            </div>
+            {% elif page.extra.featured %}
+            <div class="essentials-horizontal-card__badge">
+                <svg class="essentials-horizontal-card__badge-icon" width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                    <polygon points="12,2 15.09,8.26 22,9.27 17,14.14 18.18,21.02 12,17.77 5.82,21.02 7,14.14 2,9.27 8.91,8.26"></polygon>
+                </svg>
+                Featured
+            </div>
+            {% endif %}
+        </div>
+
+        <div class="essentials-card__footer">
+            <span class="essentials-card__read-more">
+                Read Essential
+                <svg class="essentials-card__arrow" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                    <polyline points="9,18 15,12 9,6"></polyline>
+                </svg>
+            </span>
+        </div>
+    </a>
+</article>
+{% endmacro essential_card %}
+
+
+
+{# Subsection Card Macro #}
+{% macro subsection_card(subsection) %}
+<div class="essentials-subsection-card">
+    <a href="{{ subsection.permalink }}" class="essentials-subsection-card__link">
+        <div class="essentials-subsection-card__content">
+            <h3 class="essentials-subsection-card__title">{{ subsection.title }}</h3>
+
+            {% if subsection.description %}
+            <p class="essentials-subsection-card__description">{{ subsection.description }}</p>
+            {% endif %}
+
+            <div class="essentials-subsection-card__meta">
+                {% if subsection.pages %}
+                <span class="essentials-subsection-card__count">
+                    {{ subsection.pages | length }} essential{% if subsection.pages | length != 1 %}s{% endif %}
+                </span>
+                {% endif %}
+            </div>
+        </div>
+
+        <div class="essentials-subsection-card__arrow">
+            <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                <polyline points="9,18 15,12 9,6"></polyline>
+            </svg>
+        </div>
+    </a>
+</div>
+{% endmacro subsection_card %}
+
+{# Horizontal Essential Card Macro for Section Page #}
+{% macro horizontal_essential_card(page, highlight=false) %}
+{% set card_class = "essentials-horizontal-card" %}
+{% if highlight %}
+    {% set card_class = card_class ~ " essentials-horizontal-card--highlight" %}
+{% endif %}
+<article class="{{ card_class }}">
+    <a href="{{ page.permalink }}" class="essentials-horizontal-card__link">
+        {% if page.extra.header_image %}
+        <div class="essentials-horizontal-card__image">
+            {% if page.extra.order %}
+            <div class="essentials-horizontal-card__step">
+                Step {% if page.extra.order < 10 %}0{% endif %}{{ page.extra.order }}
+            </div>
+            {% endif %}
+            <img src="{{ page.extra.header_image }}"
+                 alt="{{ page.title }}"
+                 class="essentials-horizontal-card__img" />
+        </div>
+        {% else %}
+        <div class="essentials-horizontal-card__image essentials-horizontal-card__image--placeholder">
+            {% if page.extra.order %}
+            <div class="essentials-horizontal-card__step">
+                Step {% if page.extra.order < 10 %}0{% endif %}{{ page.extra.order }}
+            </div>
+            {% endif %}
+            <div class="essentials-horizontal-card__placeholder-content">
+                <svg class="essentials-horizontal-card__placeholder-icon" width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5">
+                    <circle cx="12" cy="12" r="3"></circle>
+                    <path d="m12 1 0 6m0 6 0 6"></path>
+                    <path d="m16.24 7.76-4.24 4.24"></path>
+                    <path d="m7.76 16.24 4.24-4.24"></path>
+                    <path d="m16.24 16.24-4.24-4.24"></path>
+                    <path d="m7.76 7.76 4.24 4.24"></path>
+                </svg>
+            </div>
+        </div>
+        {% endif %}
+
+        <div class="essentials-horizontal-card__content">
+            <div class="essentials-horizontal-card__header">
+                <h3 class="essentials-horizontal-card__title">{{ page.title }}</h3>
+
+                {% if highlight %}
+                <div class="essentials-horizontal-card__badge essentials-horizontal-card__badge--start">
+                    <svg class="essentials-horizontal-card__badge-icon" width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                        <path d="M3 9l9-7 9 7v11a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2z"></path>
+                        <polyline points="9,22 9,12 15,12 15,22"></polyline>
+                    </svg>
+                    Start Here
+                </div>
+                {% elif page.extra.featured %}
+                <div class="essentials-horizontal-card__badge">
+                    <svg class="essentials-horizontal-card__badge-icon" width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                        <polygon points="12,2 15.09,8.26 22,9.27 17,14.14 18.18,21.02 12,17.77 5.82,21.02 7,14.14 2,9.27 8.91,8.26"></polygon>
+                    </svg>
+                    Featured
+                </div>
+                {% endif %}
+            </div>
+
+            {% if page.description %}
+            <p class="essentials-horizontal-card__description">{{ page.description }}</p>
+            {% endif %}
+
+            {% if page.extra.category %}
+            <div class="essentials-horizontal-card__meta">
+                <span class="essentials-horizontal-card__category">{{ page.extra.category }}</span>
+            </div>
+            {% endif %}
+        </div>
+
+        <div class="essentials-horizontal-card__arrow">
+            <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                <polyline points="9,18 15,12 9,6"></polyline>
+            </svg>
+        </div>
+    </a>
+</article>
+{% endmacro horizontal_essential_card %}

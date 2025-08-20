@@ -29,6 +29,7 @@
 @use "components/wiki-cite";
 @use "components/wiki-shortcodes";
 @use "components/wiki-quotes";
+@use "components/content-shared";
 
 @use "pages/home";
 @use "pages/revelations";
@@ -36,6 +37,8 @@
 @use "pages/wiki-section";
 @use "pages/explainer";
 @use "pages/explainer-section";
+@use "pages/essentials";
+@use "pages/essentials-section";
 @use "pages/timeline";
 
 @use "themes/init";
