@@ -19,20 +19,6 @@ logo = "brand/logo.png"
 # analytics_domain = "analytics.domain.com"
 social_links = ["https://x.com/wheelofheaven"]
 
-# Navbar dropdown icons configuration
-[extra.navbar_icons]
-knowledge = "icons/book-open.svg"
-explainers = "icons/help-circle.svg"
-revelations = "icons/ph:scroll-light.svg"
-wiki = "icons/book.svg"
-org = "icons/fluent:building-bank-48-regular.svg"
-community = "icons/user-check.svg"
-about = "icons/info.svg"
-code_of_conduct = "icons/shield-check.svg"
-contributing = "icons/user-plus.svg"
-forums = "icons/message-square.svg"
-faq = "icons/help-circle.svg"
-social = "icons/twitter.svg"
 
 language_name_english = "English"
 language_name_german = "Deutsch"
@@ -96,6 +82,18 @@ navbarForumsDesc = "Join the conversation with our community"
 navbarFAQ = "FAQ"
 navbarFAQDesc = "Frequently asked questions and answers"
 navbarFollowX = "Follow us on X"
+
+# Navbar URLs
+navbarEssentialsLink = "/essentials/"
+navbarTimelineLink = "/timeline/"
+navbarExplainersLink = "/explainers/"
+navbarRevelationsLink = "/revelations/"
+navbarWikiLink = "/wiki/"
+navbarAboutLink = "/about/"
+navbarCodeOfConductLink = "/code-of-conduct/"
+navbarContributingLink = "/contributing/"
+navbarForumsLink = "/forums/"
+navbarFAQLink = "/faq/"
 
 footerSections = "Sections"
 footerHome = "Home"
@@ -206,6 +204,19 @@ navbarForumsDesc = "Treten Sie der Unterhaltung mit unserer Community bei"
 navbarFAQ = "FAQ"
 navbarFAQDesc = "Häufig gestellte Fragen und Antworten"
 navbarFollowX = "Folgen Sie uns auf X"
+
+# Navbar URLs
+navbarEssentialsLink = "/de/essentials/"
+navbarTimelineLink = "/de/timeline/"
+navbarExplainersLink = "/de/explainers/"
+navbarRevelationsLink = "/de/revelations/"
+navbarWikiLink = "/de/wiki/"
+navbarAboutLink = "/de/about/"
+navbarCodeOfConductLink = "/de/code-of-conduct/"
+navbarContributingLink = "/de/contributing/"
+navbarForumsLink = "/de/forums/"
+navbarFAQLink = "/de/faq/"
+
 footerCommunity = "Community"
 footerCommunityLink = "/de/intro/community/"
 footerCodeOfConduct = "Verhaltenskodex"
@@ -304,6 +315,19 @@ navbarForumsDesc = "Rejoignez la conversation avec notre communauté"
 navbarFAQ = "FAQ"
 navbarFAQDesc = "Questions fréquemment posées et réponses"
 navbarFollowX = "Suivez-nous sur X"
+
+# Navbar URLs
+navbarEssentialsLink = "/fr/essentials/"
+navbarTimelineLink = "/fr/timeline/"
+navbarExplainersLink = "/fr/explainers/"
+navbarRevelationsLink = "/fr/revelations/"
+navbarWikiLink = "/fr/wiki/"
+navbarAboutLink = "/fr/about/"
+navbarCodeOfConductLink = "/fr/code-of-conduct/"
+navbarContributingLink = "/fr/contributing/"
+navbarForumsLink = "/fr/forums/"
+navbarFAQLink = "/fr/faq/"
+
 footerCommunity = "Communauté"
 footerCommunityLink = "/fr/intro/communaute/"
 footerCodeOfConduct = "Code de Conduite"
@@ -403,6 +427,19 @@ navbarForumsDesc = "Únase a la conversación con nuestra comunidad"
 navbarFAQ = "FAQ"
 navbarFAQDesc = "Preguntas frecuentes y respuestas"
 navbarFollowX = "Síguenos en X"
+
+# Navbar URLs
+navbarEssentialsLink = "/es/essentials/"
+navbarTimelineLink = "/es/timeline/"
+navbarExplainersLink = "/es/explainers/"
+navbarRevelationsLink = "/es/revelations/"
+navbarWikiLink = "/es/wiki/"
+navbarAboutLink = "/es/about/"
+navbarCodeOfConductLink = "/es/code-of-conduct/"
+navbarContributingLink = "/es/contributing/"
+navbarForumsLink = "/es/forums/"
+navbarFAQLink = "/es/faq/"
+
 footerCommunity = "Comunidad"
 footerCommunityLink = "/es/intro/comunidad/"
 footerCodeOfConduct = "Código de Conducta"
@@ -506,6 +543,47 @@ footerContactLink = "/contact/"
 footerAttribution = "Это произведение находится в общественном достоянии"
 footerAttributionSubline = "Контент доступен под лицензией <a href=\"https://github.com/wheelofheaven/wheelofheaven.io/blob/main/LICENSE\" class=\"link\" target=\"_blank\">Creative Commons</a>"
 
+# Navbar translations
+navbarEssentials = "Основы"
+navbarTimeline = "Хронология"
+navbarKnowledge = "Знания"
+navbarResources = "Ресурсы"
+
+# Knowledge dropdown items
+navbarExplainers = "Объяснения"
+navbarExplainersDesc = "Подробные объяснения ключевых концепций и идей"
+navbarRevelations = "Откровения"
+navbarRevelationsDesc = "Священные тексты и их современные интерпретации"
+navbarWiki = "Вики"
+navbarWikiDesc = "Исчерпывающий справочник и документация"
+
+# Resources dropdown items
+navbarResourcesOrg = "Организация"
+navbarResourcesCommunity = "Сообщество"
+navbarAbout = "О нас"
+navbarAboutDesc = "Узнайте о нашей миссии и ценностях"
+navbarCodeOfConduct = "Кодекс поведения"
+navbarCodeOfConductDesc = "Руководящие принципы и стандарты сообщества"
+navbarContributing = "Участие"
+navbarContributingDesc = "Как внести свой вклад в проект"
+navbarForums = "Форумы и обсуждения"
+navbarForumsDesc = "Присоединяйтесь к беседе с нашим сообществом"
+navbarFAQ = "Часто задаваемые вопросы"
+navbarFAQDesc = "Часто задаваемые вопросы и ответы"
+navbarFollowX = "Следите за нами в X"
+
+# Navbar URLs
+navbarEssentialsLink = "/ru/essentials/"
+navbarTimelineLink = "/ru/timeline/"
+navbarExplainersLink = "/ru/explainers/"
+navbarRevelationsLink = "/ru/revelations/"
+navbarWikiLink = "/ru/wiki/"
+navbarAboutLink = "/ru/about/"
+navbarCodeOfConductLink = "/ru/code-of-conduct/"
+navbarContributingLink = "/ru/contributing/"
+navbarForumsLink = "/ru/forums/"
+navbarFAQLink = "/ru/faq/"
+
 [languages.ja]
 generate_feeds = true
 build_search_index = true
@@ -575,6 +653,47 @@ footerContact = "連絡先"
 footerContactLink = "/contact/"
 footerAttribution = "この作品はパブリックドメインです"
 footerAttributionSubline = "コンテンツは<a href=\"https://github.com/wheelofheaven/wheelofheaven.io/blob/main/LICENSE\" class=\"link\" target=\"_blank\">Creative Commonsライセンス</a>の下で利用可能です"
+
+# Navbar translations
+navbarEssentials = "基本"
+navbarTimeline = "タイムライン"
+navbarKnowledge = "知識"
+navbarResources = "リソース"
+
+# Knowledge dropdown items
+navbarExplainers = "解説"
+navbarExplainersDesc = "重要な概念とアイデアの詳細な説明"
+navbarRevelations = "啓示"
+navbarRevelationsDesc = "聖典とその現代的解釈"
+navbarWiki = "ウィキ"
+navbarWikiDesc = "包括的なリファレンスとドキュメント"
+
+# Resources dropdown items
+navbarResourcesOrg = "組織"
+navbarResourcesCommunity = "コミュニティ"
+navbarAbout = "私たちについて"
+navbarAboutDesc = "私たちのミッションと価値観について学ぶ"
+navbarCodeOfConduct = "行動規範"
+navbarCodeOfConductDesc = "コミュニティのガイドラインと基準"
+navbarContributing = "貢献"
+navbarContributingDesc = "プロジェクトへの貢献方法"
+navbarForums = "フォーラム＆ディスカッション"
+navbarForumsDesc = "コミュニティとの会話に参加しましょう"
+navbarFAQ = "よくある質問"
+navbarFAQDesc = "よくある質問と回答"
+navbarFollowX = "Xでフォロー"
+
+# Navbar URLs
+navbarEssentialsLink = "/ja/essentials/"
+navbarTimelineLink = "/ja/timeline/"
+navbarExplainersLink = "/ja/explainers/"
+navbarRevelationsLink = "/ja/revelations/"
+navbarWikiLink = "/ja/wiki/"
+navbarAboutLink = "/ja/about/"
+navbarCodeOfConductLink = "/ja/code-of-conduct/"
+navbarContributingLink = "/ja/contributing/"
+navbarForumsLink = "/ja/forums/"
+navbarFAQLink = "/ja/faq/"
 
 [languages.zh]
 generate_feeds = true
@@ -646,3 +765,44 @@ footerContact = "联系方式"
 footerContactLink = "/contact/"
 footerAttribution = "本作品属于公共领域"
 footerAttributionSubline = "内容在<a href=\"https://github.com/wheelofheaven/wheelofheaven.io/blob/main/LICENSE\" class=\"link\" target=\"_blank\">知识共享许可证</a>下提供"
+
+# Navbar translations
+navbarEssentials = "基础"
+navbarTimeline = "时间线"
+navbarKnowledge = "知识"
+navbarResources = "资源"
+
+# Knowledge dropdown items
+navbarExplainers = "解释"
+navbarExplainersDesc = "关键概念和想法的详细解释"
+navbarRevelations = "启示"
+navbarRevelationsDesc = "神圣文本及其现代解释"
+navbarWiki = "百科"
+navbarWikiDesc = "全面的参考和文档"
+
+# Resources dropdown items
+navbarResourcesOrg = "组织"
+navbarResourcesCommunity = "社区"
+navbarAbout = "关于我们"
+navbarAboutDesc = "了解我们的使命和价值观"
+navbarCodeOfConduct = "行为准则"
+navbarCodeOfConductDesc = "社区指导原则和标准"
+navbarContributing = "贡献"
+navbarContributingDesc = "如何为项目做贡献"
+navbarForums = "论坛与讨论"
+navbarForumsDesc = "与我们的社区一起加入对话"
+navbarFAQ = "常见问题"
+navbarFAQDesc = "常见问题和答案"
+navbarFollowX = "在X上关注我们"
+
+# Navbar URLs
+navbarEssentialsLink = "/zh/essentials/"
+navbarTimelineLink = "/zh/timeline/"
+navbarExplainersLink = "/zh/explainers/"
+navbarRevelationsLink = "/zh/revelations/"
+navbarWikiLink = "/zh/wiki/"
+navbarAboutLink = "/zh/about/"
+navbarCodeOfConductLink = "/zh/code-of-conduct/"
+navbarContributingLink = "/zh/contributing/"
+navbarForumsLink = "/zh/forums/"
+navbarFAQLink = "/zh/faq/"

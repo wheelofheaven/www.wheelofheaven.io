@@ -1,682 +1,787 @@
 <nav class="navbar" aria-label="Main navigation">
-  <!-- Desktop navbar -->
-  <a class="navbar__logo" href="/" aria-label="Wheel of Heaven">
-    {% include "partials/brand/logomark.html" %}
-  </a>
-  <div class="navbar__content">
-    <div class="navbar__links">
-      <a href="{{ get_url(path='essentials', lang=lang) }}" class="navbar__link" data-navbar-key="essentials">
-        {% if lang == "fr" %}Essentiels
-        {% elif lang == "de" %}Grundlagen
-        {% elif lang == "es" %}Esenciales
-        {% elif lang == "ja" %}基本
-        {% elif lang == "ru" %}Основы
-        {% elif lang == "zh" %}基础
-        {% else %}Essentials{% endif %}
-      </a>
-      <a href="{{ get_url(path='timeline', lang=lang) }}" class="navbar__link" data-navbar-key="timeline">
-        {% if lang == "fr" %}Chronologie
-        {% elif lang == "de" %}Zeitleiste
-        {% elif lang == "es" %}Cronología
-        {% elif lang == "ja" %}タイムライン
-        {% elif lang == "ru" %}Хронология
-        {% elif lang == "zh" %}时间线
-        {% else %}Timeline{% endif %}
-      </a>
+    <!-- Desktop navbar -->
+    <a
+        class="navbar__logo"
+        href="{{ get_url(path='/', lang=lang) }}"
+        aria-label="Wheel of Heaven"
+    >
+        {% include "partials/brand/logomark.html" %}
+    </a>
+    <div class="navbar__content">
+        <div class="navbar__links">
+            <a
+                href="{{ trans(key='navbarEssentialsLink', lang=lang) }}"
+                class="navbar__link"
+                data-navbar-key="essentials"
+            >
+                {{ trans(key="navbarEssentials", lang=lang) }}
+            </a>
+            <a
+                href="{{ trans(key='navbarTimelineLink', lang=lang) }}"
+                class="navbar__link"
+                data-navbar-key="timeline"
+            >
+                {{ trans(key="navbarTimeline", lang=lang) }}
+            </a>
 
-      <!-- Knowledge Dropdown -->
-      <div class="navbar__dropdown" data-dropdown="knowledge">
-        <button class="navbar__dropdown-trigger" aria-expanded="false" aria-haspopup="true">
-          <span data-navbar-key="knowledge">{% if lang == "fr" %}Connaissance
-          {% elif lang == "de" %}Wissen
-          {% elif lang == "es" %}Conocimiento
-          {% elif lang == "ja" %}知識
-          {% elif lang == "ru" %}Знания
-          {% elif lang == "zh" %}知识
-          {% else %}Knowledge{% endif %}</span>
-          <span class="navbar__dropdown-trigger__caret">
-              {% include "partials/icons/gen-knowledge.html" %}
-          </span>
-        </button>
-        <div class="navbar-dropdown navbar-dropdown--knowledge" id="knowledge-dropdown">
-          <div class="navbar-dropdown__container">
-            <div class="navbar-dropdown__content">
-              <div class="navbar-dropdown__section">
-                <h3 class="navbar-dropdown__section-title">
-                  <span class="navbar-dropdown__section-icon">
-                    <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
-                      <path d="M2 3h6a4 4 0 0 1 4 4v14a3 3 0 0 0-3-3H2z"/>
-                      <path d="M22 3h-6a4 4 0 0 0-4 4v14a3 3 0 0 1 3-3h7z"/>
-                    </svg>
-                  </span>
-                  <span data-navbar-key="knowledge">{% if lang == "fr" %}Connaissance
-                  {% elif lang == "de" %}Wissen
-                  {% elif lang == "es" %}Conocimiento
-                  {% elif lang == "ja" %}知識
-                  {% elif lang == "ru" %}Знания
-                  {% elif lang == "zh" %}知识
-                  {% else %}Knowledge{% endif %}</span>
-                </h3>
-                <div class="navbar-dropdown__links">
-                  <a href="{{ get_url(path='explainers', lang=lang) }}" class="navbar-dropdown__link">
-                    <span class="navbar-dropdown__link-icon">
-                      <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
-                        <circle cx="12" cy="12" r="10"/>
-                        <path d="M9.09 9a3 3 0 0 1 5.83 1c0 2-3 3-3 3"/>
-                        <path d="M12 17h.01"/>
-                      </svg>
+            <!-- Knowledge Dropdown -->
+            <div class="navbar__dropdown" data-dropdown="knowledge">
+                <button
+                    class="navbar__dropdown-trigger"
+                    aria-expanded="false"
+                    aria-haspopup="true"
+                >
+                    <span data-navbar-key="knowledge"
+                        >{{ trans(key="navbarKnowledge", lang=lang) }}</span
+                    >
+                    <span class="navbar__dropdown-trigger__caret">
+                        {% include "partials/icons/chevron-down.html" %}
                     </span>
-                    <div>
-                      <div class="navbar-dropdown__link-title"><span data-navbar-key="explainers">{% if lang == "fr" %}Explicateurs
-                        {% elif lang == "de" %}Erklärungen
-                        {% elif lang == "es" %}Explicadores
-                        {% elif lang == "ja" %}解説
-                        {% elif lang == "ru" %}Объяснения
-                        {% elif lang == "zh" %}解释
-                        {% else %}Explainers{% endif %}</span>
-                        <span class="navbar-dropdown__link-arrow">
-                          <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
-                            <path d="M5 12h14M12 5l7 7-7 7"/>
-                          </svg>
-                        </span>
-                      </div>
-                      <div class="navbar-dropdown__link-description" data-navbar-key="explainersDesc">{% if lang == "fr" %}Explications détaillées des concepts et idées clés
-                        {% elif lang == "de" %}Detaillierte Erklärungen wichtiger Konzepte und Ideen
-                        {% elif lang == "es" %}Explicaciones detalladas de conceptos e ideas clave
-                        {% elif lang == "ja" %}重要な概念とアイデアの詳細な説明
-                        {% elif lang == "ru" %}Подробные объяснения ключевых концепций и идей
-                        {% elif lang == "zh" %}关键概念和想法的详细解释
-                        {% else %}Detailed explanations of key concepts and ideas{% endif %}</div>
+                </button>
+                <div
+                    class="navbar-dropdown navbar-dropdown--knowledge"
+                    id="knowledge-dropdown"
+                >
+                    <div class="navbar-dropdown__container">
+                        <div class="navbar-dropdown__content">
+                            <div class="navbar-dropdown__section">
+                                <h3 class="navbar-dropdown__section-title">
+                                    <span class="navbar-dropdown__section-icon">
+                                        {% include
+                                        "partials/icons/book-open.html" %}
+                                    </span>
+                                    <span data-navbar-key="knowledge"
+                                        >{{ trans(key="navbarKnowledge",
+                                        lang=lang) }}</span
+                                    >
+                                </h3>
+                                <div class="navbar-dropdown__links">
+                                    <a
+                                        href="{{ trans(key='navbarExplainersLink', lang=lang) }}"
+                                        class="navbar-dropdown__link"
+                                    >
+                                        <span
+                                            class="navbar-dropdown__link-icon"
+                                        >
+                                            {% include
+                                            "partials/icons/help-circle.html" %}
+                                        </span>
+                                        <div>
+                                            <div
+                                                class="navbar-dropdown__link-title"
+                                            >
+                                                <span
+                                                    data-navbar-key="explainers"
+                                                    >{{
+                                                    trans(key="navbarExplainers",
+                                                    lang=lang) }}</span
+                                                >
+                                                <span
+                                                    class="navbar-dropdown__link-arrow"
+                                                >
+                                                    {% include
+                                                    "partials/icons/arrow-right.html"
+                                                    %}
+                                                </span>
+                                            </div>
+                                            <div
+                                                class="navbar-dropdown__link-description"
+                                                data-navbar-key="explainersDesc"
+                                            >
+                                                {{
+                                                trans(key="navbarExplainersDesc",
+                                                lang=lang) }}
+                                            </div>
+                                        </div>
+                                    </a>
+                                    <a
+                                        href="{{ trans(key='navbarRevelationsLink', lang=lang) }}"
+                                        class="navbar-dropdown__link"
+                                    >
+                                        <span
+                                            class="navbar-dropdown__link-icon"
+                                        >
+                                            {% include
+                                            "partials/icons/ph-scroll-light.html"
+                                            %}
+                                        </span>
+                                        <div>
+                                            <div
+                                                class="navbar-dropdown__link-title"
+                                            >
+                                                <span
+                                                    data-navbar-key="revelations"
+                                                    >{{
+                                                    trans(key="navbarRevelations",
+                                                    lang=lang) }}</span
+                                                >
+                                                <span
+                                                    class="navbar-dropdown__link-arrow"
+                                                >
+                                                    {% include
+                                                    "partials/icons/arrow-right.html"
+                                                    %}
+                                                </span>
+                                            </div>
+                                            <div
+                                                class="navbar-dropdown__link-description"
+                                                data-navbar-key="revelationsDesc"
+                                            >
+                                                {{
+                                                trans(key="navbarRevelationsDesc",
+                                                lang=lang) }}
+                                            </div>
+                                        </div>
+                                    </a>
+                                    <a
+                                        href="{{ trans(key='navbarWikiLink', lang=lang) }}"
+                                        class="navbar-dropdown__link"
+                                    >
+                                        <span
+                                            class="navbar-dropdown__link-icon"
+                                        >
+                                            {% include
+                                            "partials/icons/book.html" %}
+                                        </span>
+                                        <div>
+                                            <div
+                                                class="navbar-dropdown__link-title"
+                                            >
+                                                <span data-navbar-key="wiki"
+                                                    >{{ trans(key="navbarWiki",
+                                                    lang=lang) }}</span
+                                                >
+                                                <span
+                                                    class="navbar-dropdown__link-arrow"
+                                                >
+                                                    {% include
+                                                    "partials/icons/arrow-right.html"
+                                                    %}
+                                                </span>
+                                            </div>
+                                            <div
+                                                class="navbar-dropdown__link-description"
+                                                data-navbar-key="wikiDesc"
+                                            >
+                                                {{ trans(key="navbarWikiDesc",
+                                                lang=lang) }}
+                                            </div>
+                                        </div>
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
                     </div>
-                  </a>
-                  <a href="{{ get_url(path="revelations", lang=lang) }}" class="navbar-dropdown__link">
-                    <span class="navbar-dropdown__link-icon">
-                      <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
-                        <path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z"/>
-                        <polyline points="14,2 14,8 20,8"/>
-                        <line x1="16" y1="13" x2="8" y2="13"/>
-                        <line x1="16" y1="17" x2="8" y2="17"/>
-                        <polyline points="10,9 9,9 8,9"/>
-                      </svg>
-                    </span>
-                    <div>
-                      <div class="navbar-dropdown__link-title"><span data-navbar-key="revelations">{% if lang == "fr" %}Révélations
-                        {% elif lang == "de" %}Offenbarungen
-                        {% elif lang == "es" %}Revelaciones
-                        {% elif lang == "ja" %}啓示
-                        {% elif lang == "ru" %}Откровения
-                        {% elif lang == "zh" %}启示
-                        {% else %}Revelations{% endif %}</span>
-                        <span class="navbar-dropdown__link-arrow">
-                            {% include "partials/icons/ph-scroll-light.html" %}
-                        </span>
-                      </div>
-                      <div class="navbar-dropdown__link-description" data-navbar-key="revelationsDesc">{% if lang == "fr" %}Textes sacrés et leurs interprétations modernes
-                        {% elif lang == "de" %}Heilige Texte und ihre modernen Interpretationen
-                        {% elif lang == "es" %}Textos sagrados y sus interpretaciones modernas
-                        {% elif lang == "ja" %}聖典とその現代的解釈
-                        {% elif lang == "ru" %}Священные тексты и их современные интерпретации
-                        {% elif lang == "zh" %}神圣文本及其现代解释
-                        {% else %}Sacred texts and their modern interpretations{% endif %}</div>
-                    </div>
-                  </a>
-                  <a href="{{ get_url(path='wiki', lang=lang) }}" class="navbar-dropdown__link">
-                    <span class="navbar-dropdown__link-icon">
-                      <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
-                        <path d="M4 19.5A2.5 2.5 0 0 1 6.5 17H20"/>
-                        <path d="M6.5 2H20v20H6.5A2.5 2.5 0 0 1 4 19.5v-15A2.5 2.5 0 0 1 6.5 2z"/>
-                        <path d="M8 7h8"/>
-                        <path d="M8 11h8"/>
-                        <path d="M8 15h6"/>
-                      </svg>
-                    </span>
-                    <div>
-                      <div class="navbar-dropdown__link-title"><span data-navbar-key="wiki">{% if lang == "fr" %}Wiki
-                        {% elif lang == "de" %}Wiki
-                        {% elif lang == "es" %}Wiki
-                        {% elif lang == "ja" %}ウィキ
-                        {% elif lang == "ru" %}Вики
-                        {% elif lang == "zh" %}百科
-                        {% else %}Wiki{% endif %}</span>
-                        <span class="navbar-dropdown__link-arrow">
-                          <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
-                            <path d="M5 12h14M12 5l7 7-7 7"/>
-                          </svg>
-                        </span>
-                      </div>
-                      <div class="navbar-dropdown__link-description" data-navbar-key="wikiDesc">{% if lang == "fr" %}Référence et documentation complètes
-                        {% elif lang == "de" %}Umfassende Referenz und Dokumentation
-                        {% elif lang == "es" %}Referencia y documentación integral
-                        {% elif lang == "ja" %}包括的なリファレンスとドキュメント
-                        {% elif lang == "ru" %}Исчерпывающий справочник и документация
-                        {% elif lang == "zh" %}全面的参考和文档
-                        {% else %}Comprehensive reference and documentation{% endif %}</div>
-                    </div>
-                  </a>
                 </div>
-              </div>
             </div>
-          </div>
-        </div>
-      </div>
 
-      <!-- Resources Dropdown -->
-      <div class="navbar__dropdown" data-dropdown="resources">
-        <button class="navbar__dropdown-trigger" aria-expanded="false" aria-haspopup="true">
-          <span data-navbar-key="resources">{% if lang == "fr" %}Ressources
-          {% elif lang == "de" %}Ressourcen
-          {% elif lang == "es" %}Recursos
-          {% elif lang == "ja" %}リソース
-          {% elif lang == "ru" %}Ресурсы
-          {% elif lang == "zh" %}资源
-          {% else %}Resources{% endif %}</span>
-          <span class="navbar__dropdown-trigger__caret">
-            <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
-              <polyline points="6,9 12,15 18,9"></polyline>
-            </svg>
-          </span>
-        </button>
-        <div class="navbar-dropdown navbar-dropdown--resources" id="resources-dropdown">
-          <div class="navbar-dropdown__container">
-            <div class="navbar-dropdown__content">
-              <div class="navbar-dropdown__columns">
-                <div class="navbar-dropdown__section">
-                  <h3 class="navbar-dropdown__section-title">
-                    <span class="navbar-dropdown__section-icon">
-                        {% include "partials/icons/fluent-building-bank.html" %}
+            <!-- Resources Dropdown -->
+            <div class="navbar__dropdown" data-dropdown="resources">
+                <button
+                    class="navbar__dropdown-trigger"
+                    aria-expanded="false"
+                    aria-haspopup="true"
+                >
+                    <span data-navbar-key="resources"
+                        >{{ trans(key="navbarResources", lang=lang) }}</span
+                    >
+                    <span class="navbar__dropdown-trigger__caret">
+                        {% include "partials/icons/chevron-down.html" %}
                     </span>
-                    <span data-navbar-key="org">{% if lang == "fr" %}Organisation
-                    {% elif lang == "de" %}Organisation
-                    {% elif lang == "es" %}Organización
-                    {% elif lang == "ja" %}組織
-                    {% elif lang == "ru" %}Организация
-                    {% elif lang == "zh" %}组织
-                    {% else %}Org{% endif %}</span>
-                  </h3>
-                  <div class="navbar-dropdown__links">
-                    <a href="{{ get_url(path='about', lang=lang) }}" class="navbar-dropdown__link navbar-dropdown__link--simple">
-                      <span class="navbar-dropdown__link-icon">
-                        {% include "partials/icons/famicons-telescope-outline.html" %}
-                      </span>
-                      <span data-navbar-key="about">{% if lang == "fr" %}À propos
-                      {% elif lang == "de" %}Über uns
-                      {% elif lang == "es" %}Acerca de
-                      {% elif lang == "ja" %}私たちについて
-                      {% elif lang == "ru" %}О нас
-                      {% elif lang == "zh" %}关于我们
-                      {% else %}About{% endif %}</span>
-                      <span class="navbar-dropdown__link-arrow">
-                        <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
-                          <path d="M5 12h14M12 5l7 7-7 7"/>
-                        </svg>
-                      </span>
-                    </a>
-                  </div>
+                </button>
+                <div
+                    class="navbar-dropdown navbar-dropdown--resources"
+                    id="resources-dropdown"
+                >
+                    <div class="navbar-dropdown__container">
+                        <div class="navbar-dropdown__content">
+                            <div class="navbar-dropdown__columns">
+                                <div class="navbar-dropdown__section">
+                                    <h3 class="navbar-dropdown__section-title">
+                                        <span
+                                            class="navbar-dropdown__section-icon"
+                                        >
+                                            {% include
+                                            "partials/icons/fluent-building-bank.html"
+                                            %}
+                                        </span>
+                                        <span data-navbar-key="org"
+                                            >{{ trans(key="navbarResourcesOrg",
+                                            lang=lang) }}</span
+                                        >
+                                    </h3>
+                                    <div class="navbar-dropdown__links">
+                                        <a
+                                            href="{{ trans(key='navbarAboutLink', lang=lang) }}"
+                                            class="navbar-dropdown__link navbar-dropdown__link--simple"
+                                        >
+                                            <span
+                                                class="navbar-dropdown__link-icon"
+                                            >
+                                                {% include
+                                                "partials/icons/famicons-telescope-outline.html"
+                                                %}
+                                            </span>
+                                            <span data-navbar-key="about"
+                                                >{{ trans(key="navbarAbout",
+                                                lang=lang) }}</span
+                                            >
+                                            <span
+                                                class="navbar-dropdown__link-arrow"
+                                            >
+                                                {% include
+                                                "partials/icons/arrow-right.html"
+                                                %}
+                                            </span>
+                                        </a>
+                                    </div>
+                                </div>
+                                <div class="navbar-dropdown__section">
+                                    <h3 class="navbar-dropdown__section-title">
+                                        <span
+                                            class="navbar-dropdown__section-icon"
+                                        >
+                                            {% include
+                                            "partials/icons/user-check.html" %}
+                                        </span>
+                                        <span data-navbar-key="community"
+                                            >{{
+                                            trans(key="navbarResourcesCommunity",
+                                            lang=lang) }}</span
+                                        >
+                                    </h3>
+                                    <div class="navbar-dropdown__links">
+                                        <a
+                                            href="{{ trans(key='navbarCodeOfConductLink', lang=lang) }}"
+                                            class="navbar-dropdown__link navbar-dropdown__link--simple"
+                                        >
+                                            <span
+                                                class="navbar-dropdown__link-icon"
+                                            >
+                                                {% include
+                                                "partials/icons/octicon-code-of-conduct.html"
+                                                %}
+                                            </span>
+                                            <span
+                                                data-navbar-key="codeOfConduct"
+                                                >{{
+                                                trans(key="navbarCodeOfConduct",
+                                                lang=lang) }}</span
+                                            >
+                                            <span
+                                                class="navbar-dropdown__link-arrow"
+                                            >
+                                                {% include
+                                                "partials/icons/arrow-right.html"
+                                                %}
+                                            </span>
+                                        </a>
+                                        <a
+                                            href="{{ trans(key='navbarContributingLink') }}"
+                                            class="navbar-dropdown__link navbar-dropdown__link--simple"
+                                        >
+                                            <span
+                                                class="navbar-dropdown__link-icon"
+                                            >
+                                                {% include
+                                                "partials/icons/user-plus.html"
+                                                %}
+                                            </span>
+                                            <span data-navbar-key="contributing"
+                                                >{{
+                                                trans(key="navbarContributing",
+                                                lang=lang) }}</span
+                                            >
+                                            <span
+                                                class="navbar-dropdown__link-arrow"
+                                            >
+                                                {% include
+                                                "partials/icons/arrow-right.html"
+                                                %}
+                                            </span>
+                                        </a>
+                                        <a
+                                            href="{{ trans(key='navbarForumsLink') }}"
+                                            class="navbar-dropdown__link navbar-dropdown__link--simple"
+                                        >
+                                            <span
+                                                class="navbar-dropdown__link-icon"
+                                            >
+                                                {% include
+                                                "partials/icons/message-square.html"
+                                                %}
+                                            </span>
+                                            <span data-navbar-key="forums"
+                                                >{{ trans(key="navbarForums",
+                                                lang=lang) }}</span
+                                            >
+                                            <span
+                                                class="navbar-dropdown__link-arrow"
+                                            >
+                                                {% include
+                                                "partials/icons/arrow-right.html"
+                                                %}
+                                            </span>
+                                        </a>
+                                        <a
+                                            href="{{ trans(key='navbarFAQLink') }}"
+                                            class="navbar-dropdown__link navbar-dropdown__link--simple"
+                                        >
+                                            <span
+                                                class="navbar-dropdown__link-icon"
+                                            >
+                                                {% include
+                                                "partials/icons/tdesign-questionnaire-double.html"
+                                                %}
+                                            </span>
+                                            <span data-navbar-key="faq"
+                                                >{{ trans(key="navbarFAQ",
+                                                lang=lang) }}</span
+                                            >
+                                            <span
+                                                class="navbar-dropdown__link-arrow"
+                                            >
+                                                {% include
+                                                "partials/icons/arrow-right.html"
+                                                %}
+                                            </span>
+                                        </a>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="navbar-dropdown__bottom-section">
+                                <div class="navbar-dropdown__section">
+                                    <div class="navbar-dropdown__links">
+                                        <a
+                                            href="https://x.com/wheelofheaven"
+                                            class="navbar-dropdown__link navbar-dropdown__link--simple"
+                                            target="_blank"
+                                            rel="noopener noreferrer"
+                                        >
+                                            <span
+                                                class="navbar-dropdown__link-icon"
+                                            >
+                                                {% include
+                                                "partials/icons/twitter.html" %}
+                                            </span>
+                                            <span data-navbar-key="followX"
+                                                >{{ trans(key="navbarFollowX",
+                                                lang=lang) }}</span
+                                            >
+                                            <span
+                                                class="navbar-dropdown__link-arrow"
+                                            >
+                                                {% include
+                                                "partials/icons/arrow-right.html"
+                                                %}
+                                            </span>
+                                        </a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
                 </div>
-                <div class="navbar-dropdown__section">
-                  <h3 class="navbar-dropdown__section-title">
-                    <span class="navbar-dropdown__section-icon">
-                        {% include "partials/icons/gen-community.html" %}
-                    </span>
-                    <span data-navbar-key="community">{% if lang == "fr" %}Communauté
-                    {% elif lang == "de" %}Community
-                    {% elif lang == "es" %}Comunidad
-                    {% elif lang == "ja" %}コミュニティ
-                    {% elif lang == "ru" %}Сообщество
-                    {% elif lang == "zh" %}社区
-                    {% else %}Community{% endif %}</span>
-                  </h3>
-                  <div class="navbar-dropdown__links">
-                    <a href="{{ get_url(path='code-of-conduct', lang=lang) }}" class="navbar-dropdown__link navbar-dropdown__link--simple">
-                      <span class="navbar-dropdown__link-icon">
-                        {% include "partials/icons/octicon-code-of-conduct.html" %}
-                      </span>
-                      <span data-navbar-key="codeOfConduct">{% if lang == "fr" %}Code de Conduite
-                      {% elif lang == "de" %}Verhaltenskodex
-                      {% elif lang == "es" %}Código de Conducta
-                      {% elif lang == "ja" %}行動規範
-                      {% elif lang == "ru" %}Кодекс поведения
-                      {% elif lang == "zh" %}行为准则
-                      {% else %}Code of Conduct{% endif %}</span>
-                      <span class="navbar-dropdown__link-arrow">
-                        <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
-                          <path d="M5 12h14M12 5l7 7-7 7"/>
-                        </svg>
-                      </span>
-                    </a>
-                    <a href="{{ get_url(path='contributing', lang=lang) }}" class="navbar-dropdown__link navbar-dropdown__link--simple">
-                      <span class="navbar-dropdown__link-icon">
-                        <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
-                          <path d="M16 21v-2a4 4 0 0 0-4-4H6a4 4 0 0 0-4 4v2"/>
-                          <circle cx="9" cy="7" r="4"/>
-                          <line x1="19" y1="8" x2="19" y2="14"/>
-                          <line x1="22" y1="11" x2="16" y2="11"/>
-                        </svg>
-                      </span>
-                      <span data-navbar-key="contributing">{% if lang == "fr" %}Contribuer
-                      {% elif lang == "de" %}Beitragen
-                      {% elif lang == "es" %}Contribuir
-                      {% elif lang == "ja" %}貢献
-                      {% elif lang == "ru" %}Участие
-                      {% elif lang == "zh" %}贡献
-                      {% else %}Contributing{% endif %}</span>
-                      <span class="navbar-dropdown__link-arrow">
-                        <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
-                          <path d="M5 12h14M12 5l7 7-7 7"/>
-                        </svg>
-                      </span>
-                    </a>
-                    <a href="{{ get_url(path='forums', lang=lang) }}" class="navbar-dropdown__link navbar-dropdown__link--simple">
-                      <span class="navbar-dropdown__link-icon">
-                        <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
-                          <path d="M21 15a2 2 0 0 1-2 2H7l-4 4V5a2 2 0 0 1 2-2h14a2 2 0 0 1 2 2z"/>
-                        </svg>
-                      </span>
-                      <span data-navbar-key="forums">{% if lang == "fr" %}Forums et Discussions
-                      {% elif lang == "de" %}Foren & Diskussionen
-                      {% elif lang == "es" %}Foros y Discusiones
-                      {% elif lang == "ja" %}フォーラム＆ディスカッション
-                      {% elif lang == "ru" %}Форумы и обсуждения
-                      {% elif lang == "zh" %}论坛与讨论
-                      {% else %}Forums & Discussions{% endif %}</span>
-                      <span class="navbar-dropdown__link-arrow">
-                        <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
-                          <path d="M5 12h14M12 5l7 7-7 7"/>
-                        </svg>
-                      </span>
-                    </a>
-                    <a href="{{ get_url(path='faq', lang=lang) }}" class="navbar-dropdown__link navbar-dropdown__link--simple">
-                      <span class="navbar-dropdown__link-icon">
-                          {% include "partials/icons/tdesign-questionnaire-double.html" %}
-                      </span>
-                      <span data-navbar-key="faq">{% if lang == "fr" %}FAQ
-                      {% elif lang == "de" %}FAQ
-                      {% elif lang == "es" %}FAQ
-                      {% elif lang == "ja" %}よくある質問
-                      {% elif lang == "ru" %}Часто задаваемые вопросы
-                      {% elif lang == "zh" %}常见问题
-                      {% else %}FAQ{% endif %}</span>
-                      <span class="navbar-dropdown__link-arrow">
-                        <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
-                          <path d="M5 12h14M12 5l7 7-7 7"/>
-                        </svg>
-                      </span>
-                    </a>
-                  </div>
-                </div>
-              </div>
-              <div class="navbar-dropdown__bottom-section">
-                <div class="navbar-dropdown__section">
-                  <div class="navbar-dropdown__links">
-                    <a href="https://x.com/wheelofheaven" class="navbar-dropdown__link navbar-dropdown__link--simple" target="_blank" rel="noopener noreferrer">
-                      <span class="navbar-dropdown__link-icon">
-                        <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
-                          <path d="M23 3a10.9 10.9 0 0 1-3.14 1.53 4.48 4.48 0 0 0-7.86 3v1A10.66 10.66 0 0 1 3 4s-4 9 5 13a11.64 11.64 0 0 1-7 2c9 5 20 0 20-11.5a4.5 4.5 0 0 0-.08-.83A7.72 7.72 0 0 0 23 3z"/>
-                        </svg>
-                      </span>
-                      <span data-navbar-key="followX">{% if lang == "fr" %}Suivez-nous sur X
-                      {% elif lang == "de" %}Folgen Sie uns auf X
-                      {% elif lang == "es" %}Síguenos en X
-                      {% elif lang == "ja" %}Xでフォロー
-                      {% elif lang == "ru" %}Следите за нами в X
-                      {% elif lang == "zh" %}在X上关注我们
-                      {% else %}Follow us on X{% endif %}</span>
-                      <span class="navbar-dropdown__link-arrow">
-                        <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
-                          <path d="M5 12h14M12 5l7 7-7 7"/>
-                        </svg>
-                      </span>
-                    </a>
-                  </div>
-                </div>
-              </div>
             </div>
-          </div>
         </div>
-      </div>
+
+        <!-- Mobile controls section -->
+        <div class="navbar__mobile-content">
+            <div class="navbar__mobile-controls">
+                <button
+                    id="mobile-theme-toggle"
+                    class="navbar__theme-toggle"
+                    aria-label="Toggle dark/light mode"
+                >
+                    <span class="navbar__theme-icon">
+                        <span class="icon icon--moon"
+                            >{% include "partials/icons/feather-moon.html"
+                            %}</span
+                        >
+                        <span class="icon icon--sun"
+                            >{% include "partials/icons/feather-sun.html"
+                            %}</span
+                        >
+                    </span>
+                </button>
+
+                <div
+                    class="navbar__language-switcher"
+                    id="mobile-lang-switcher"
+                >
+                    <Icon name="lucide:globe" size="16" />
+                    <select
+                        id="mobile-lang-select"
+                        class="navbar__select"
+                        aria-label="Select language"
+                    >
+                        <!-- Default language (English) -->
+                        <option value="en">English</option>
+                        <!-- Sorted alphabetically by language code -->
+                        <option value="de">Deutsch</option>
+                        <option value="es">Español</option>
+                        <option value="fr">Français</option>
+                        <option value="ja">日本語</option>
+                        <option value="ru">Русский</option>
+                        <option value="zh">中文</option>
+                    </select>
+                </div>
+            </div>
+        </div>
     </div>
 
-    <!-- Mobile controls section -->
-    <div class="navbar__mobile-content">
-      <div class="navbar__mobile-controls">
-        <button id="mobile-theme-toggle" class="navbar__theme-toggle" aria-label="Toggle dark/light mode">
-          <span class="navbar__theme-icon">
-              <span class="icon icon--moon">{% include "partials/icons/feather-moon.html" %}</span>
-              <span class="icon icon--sun">{% include "partials/icons/feather-sun.html" %}</span>
-          </span>
+    <div class="navbar__controls">
+        <div class="navbar__mobile-search mobile-only">
+            <input
+                type="search"
+                class="navbar__mobile-search-input"
+                placeholder="Search..."
+                aria-label="Search site"
+                id="mobileSearchInput"
+            />
+        </div>
+
+        <button
+            class="navbar__mobile-toggle mobile-only"
+            id="mobileSearchToggle"
+            aria-label="Toggle search"
+        >
+            {% include "partials/icons/feather-search.html" %}
         </button>
 
-        <div class="navbar__language-switcher" id="mobile-lang-switcher">
-          <Icon name="lucide:globe" size="16" />
-          <select id="mobile-lang-select" class="navbar__select" aria-label="Select language">
-            <!-- Default language (English) -->
-            <option value="en">English</option>
-            <!-- Sorted alphabetically by language code -->
-            <option value="de">Deutsch</option>
-            <option value="es">Español</option>
-            <option value="fr">Français</option>
-            <option value="ja">日本語</option>
-            <option value="ru">Русский</option>
-            <option value="zh">中文</option>
-          </select>
+        <button
+            class="navbar__mobile-toggle mobile-only"
+            id="mobileNavToggle"
+            aria-label="Toggle mobile navigation"
+        >
+            {% include "partials/icons/menu.html" %}
+        </button>
+
+        <div class="navbar__search desktop-only">
+            <input
+                type="search"
+                class="navbar__search-input"
+                placeholder="Search..."
+                aria-label="Search site"
+            />
         </div>
-      </div>
+
+        <div class="navbar__language-switcher" id="lang-switcher">
+            <Icon name="lucide:globe" size="16" />
+            <select
+                id="lang-select"
+                class="navbar__select"
+                aria-label="Select language"
+            >
+                <!-- Default language (English) -->
+                <option value="en">English</option>
+                <!-- Sorted alphabetically by language code -->
+                <option value="de">Deutsch</option>
+                <option value="es">Español</option>
+                <option value="fr">Français</option>
+                <option value="ja">日本語</option>
+                <option value="ru">Русский</option>
+                <option value="zh">中文</option>
+            </select>
+        </div>
+
+        <button
+            id="theme-toggle"
+            class="navbar__theme-toggle"
+            aria-label="Toggle dark/light mode"
+        >
+            <span class="navbar__theme-icon">
+                <span class="icon icon--moon"
+                    >{% include "partials/icons/feather-moon.html" %}</span
+                >
+                <span class="icon icon--sun"
+                    >{% include "partials/icons/feather-sun.html" %}</span
+                >
+            </span>
+        </button>
+
+        <script>
+            document.addEventListener("DOMContentLoaded", function () {
+                // Initialize navbar translations
+                updateNavbarTranslations();
+
+                // Detect current language from URL
+                function getCurrentLanguage() {
+                    const path = window.location.pathname;
+                    const defaultLang = "en";
+                    const supportedLangs = ["de", "es", "fr", "ja", "ru", "zh"];
+
+                    // Check if path starts with a language code
+                    const pathParts = path
+                        .split("/")
+                        .filter((part) => part.length > 0);
+                    if (
+                        pathParts.length > 0 &&
+                        supportedLangs.includes(pathParts[0])
+                    ) {
+                        return pathParts[0];
+                    }
+                    return defaultLang;
+                }
+
+                // Update language selector to show current language
+                function updateLanguageSelector() {
+                    const currentLang = getCurrentLanguage();
+                    const desktopSelect =
+                        document.getElementById("lang-select");
+                    const mobileSelect =
+                        document.getElementById("mobile-lang-select");
+
+                    if (desktopSelect) {
+                        desktopSelect.value = currentLang;
+                    }
+                    if (mobileSelect) {
+                        mobileSelect.value = currentLang;
+                    }
+                }
+
+                function switchLanguage(targetLang) {
+                    const currentPath = window.location.pathname;
+                    const currentLang = getCurrentLanguage();
+                    const defaultLang = "en";
+                    const baseUrl = "{{ config.base_url | safe }}";
+
+                    // Remove trailing slash from base URL for consistent handling
+                    const cleanBaseUrl = baseUrl.replace(/\/$/, "");
+
+                    let newPath = currentPath;
+
+                    // If we're currently on a non-default language, remove the language prefix
+                    if (currentLang !== defaultLang) {
+                        // Remove /lang/ prefix or just /lang if at root
+                        const langPrefix = "/" + currentLang;
+                        if (newPath.startsWith(langPrefix + "/")) {
+                            newPath = newPath.substring(langPrefix.length);
+                        } else if (
+                            newPath === langPrefix ||
+                            newPath === langPrefix + "/"
+                        ) {
+                            newPath = "/";
+                        }
+                    }
+
+                    // Add the target language prefix if it's not the default language
+                    if (targetLang !== defaultLang) {
+                        newPath = "/" + targetLang + newPath;
+                    }
+
+                    // Ensure path starts with /
+                    if (!newPath.startsWith("/")) {
+                        newPath = "/" + newPath;
+                    }
+
+                    // Navigate to the new URL
+                    const newUrl = cleanBaseUrl + newPath;
+                    window.location.href = newUrl;
+                }
+
+                // Update navbar translations based on current language
+                function updateNavbarTranslations() {
+                    const currentLang = getCurrentLanguage();
+
+                    const translations = {
+                        en: {
+                            essentials: "Essentials",
+                            timeline: "Timeline",
+                            knowledge: "Knowledge",
+                            resources: "Resources",
+                            explainers: "Explainers",
+                            explainersDesc:
+                                "Detailed explanations of key concepts and ideas",
+                            revelations: "Revelations",
+                            revelationsDesc:
+                                "Sacred texts and their modern interpretations",
+                            wiki: "Wiki",
+                            wikiDesc:
+                                "Comprehensive reference and documentation",
+                            org: "Org",
+                            community: "Community",
+                            about: "About",
+                            codeOfConduct: "Code of Conduct",
+                            contributing: "Contributing",
+                            forums: "Forums & Discussions",
+                            faq: "FAQ",
+                            followX: "Follow us on X",
+                        },
+                        fr: {
+                            essentials: "Essentiels",
+                            timeline: "Chronologie",
+                            knowledge: "Connaissance",
+                            resources: "Ressources",
+                            explainers: "Explicateurs",
+                            explainersDesc:
+                                "Explications détaillées des concepts et idées clés",
+                            revelations: "Révélations",
+                            revelationsDesc:
+                                "Textes sacrés et leurs interprétations modernes",
+                            wiki: "Wiki",
+                            wikiDesc: "Référence et documentation complètes",
+                            org: "Organisation",
+                            community: "Communauté",
+                            about: "À propos",
+                            codeOfConduct: "Code de Conduite",
+                            contributing: "Contribuer",
+                            forums: "Forums et Discussions",
+                            faq: "FAQ",
+                            followX: "Suivez-nous sur X",
+                        },
+                        de: {
+                            essentials: "Grundlagen",
+                            timeline: "Zeitleiste",
+                            knowledge: "Wissen",
+                            resources: "Ressourcen",
+                            explainers: "Erklärungen",
+                            explainersDesc:
+                                "Detaillierte Erklärungen wichtiger Konzepte und Ideen",
+                            revelations: "Offenbarungen",
+                            revelationsDesc:
+                                "Heilige Texte und ihre modernen Interpretationen",
+                            wiki: "Wiki",
+                            wikiDesc: "Umfassende Referenz und Dokumentation",
+                            org: "Organisation",
+                            community: "Community",
+                            about: "Über uns",
+                            codeOfConduct: "Verhaltenskodex",
+                            contributing: "Beitragen",
+                            forums: "Foren & Diskussionen",
+                            faq: "FAQ",
+                            followX: "Folgen Sie uns auf X",
+                        },
+                        es: {
+                            essentials: "Esenciales",
+                            timeline: "Cronología",
+                            knowledge: "Conocimiento",
+                            resources: "Recursos",
+                            explainers: "Explicadores",
+                            explainersDesc:
+                                "Explicaciones detalladas de conceptos e ideas clave",
+                            revelations: "Revelaciones",
+                            revelationsDesc:
+                                "Textos sagrados y sus interpretaciones modernas",
+                            wiki: "Wiki",
+                            wikiDesc: "Referencia y documentación integral",
+                            org: "Organización",
+                            community: "Comunidad",
+                            about: "Acerca de",
+                            codeOfConduct: "Código de Conducta",
+                            contributing: "Contribuir",
+                            forums: "Foros y Discusiones",
+                            faq: "FAQ",
+                            followX: "Síguenos en X",
+                        },
+                        ja: {
+                            essentials: "基本",
+                            timeline: "タイムライン",
+                            knowledge: "知識",
+                            resources: "リソース",
+                            explainers: "解説",
+                            explainersDesc: "重要な概念とアイデアの詳細な説明",
+                            revelations: "啓示",
+                            revelationsDesc: "聖典とその現代的解釈",
+                            wiki: "ウィキ",
+                            wikiDesc: "包括的なリファレンスとドキュメント",
+                            org: "組織",
+                            community: "コミュニティ",
+                            about: "私たちについて",
+                            codeOfConduct: "行動規範",
+                            contributing: "貢献",
+                            forums: "フォーラム＆ディスカッション",
+                            faq: "よくある質問",
+                            followX: "Xでフォロー",
+                        },
+                        ru: {
+                            essentials: "Основы",
+                            timeline: "Хронология",
+                            knowledge: "Знания",
+                            resources: "Ресурсы",
+                            explainers: "Объяснения",
+                            explainersDesc:
+                                "Подробные объяснения ключевых концепций и идей",
+                            revelations: "Откровения",
+                            revelationsDesc:
+                                "Священные тексты и их современные интерпретации",
+                            wiki: "Вики",
+                            wikiDesc: "Исчерпывающий справочник и документация",
+                            org: "Организация",
+                            community: "Сообщество",
+                            about: "О нас",
+                            codeOfConduct: "Кодекс поведения",
+                            contributing: "Участие",
+                            forums: "Форумы и обсуждения",
+                            faq: "Часто задаваемые вопросы",
+                            followX: "Следите за нами в X",
+                        },
+                        zh: {
+                            essentials: "基础",
+                            timeline: "时间线",
+                            knowledge: "知识",
+                            resources: "资源",
+                            explainers: "解释",
+                            explainersDesc: "关键概念和想法的详细解释",
+                            revelations: "启示",
+                            revelationsDesc: "神圣文本及其现代解释",
+                            wiki: "百科",
+                            wikiDesc: "全面的参考和文档",
+                            org: "组织",
+                            community: "社区",
+                            about: "关于我们",
+                            codeOfConduct: "行为准则",
+                            contributing: "贡献",
+                            forums: "论坛与讨论",
+                            faq: "常见问题",
+                            followX: "在X上关注我们",
+                        },
+                    };
+
+                    const t = translations[currentLang] || translations.en;
+
+                    // Update navbar links by data attributes
+                    document
+                        .querySelectorAll("[data-navbar-key]")
+                        .forEach((element) => {
+                            const key = element.getAttribute("data-navbar-key");
+                            if (t[key]) {
+                                element.textContent = t[key];
+                            }
+                        });
+                }
+
+                // Initialize language selector with a small delay to ensure DOM is ready
+                setTimeout(() => {
+                    updateLanguageSelector();
+                    updateNavbarTranslations();
+                }, 100);
+
+                // Handle desktop language switcher
+                const langSelect = document.getElementById("lang-select");
+                if (langSelect) {
+                    langSelect.addEventListener("change", function (e) {
+                        const targetLang = e.target.value;
+                        const currentLang = getCurrentLanguage();
+                        if (targetLang !== currentLang) {
+                            switchLanguage(targetLang);
+                        }
+                    });
+                }
+
+                // Handle mobile language switcher
+                const mobileLangSelect =
+                    document.getElementById("mobile-lang-select");
+                if (mobileLangSelect) {
+                    mobileLangSelect.addEventListener("change", function (e) {
+                        const targetLang = e.target.value;
+                        const currentLang = getCurrentLanguage();
+                        if (targetLang !== currentLang) {
+                            switchLanguage(targetLang);
+                        }
+                    });
+                }
+            });
+        </script>
     </div>
-  </div>
-
-  <div class="navbar__controls">
-    <div class="navbar__mobile-search mobile-only">
-      <input
-          type="search"
-          class="navbar__mobile-search-input"
-          placeholder="Search..."
-          aria-label="Search site"
-          id="mobileSearchInput"
-      />
-    </div>
-
-    <button class="navbar__mobile-toggle mobile-only" id="mobileSearchToggle" aria-label="Toggle search">
-      {% include "partials/icons/feather-search.html" %}
-    </button>
-
-    <button class="navbar__mobile-toggle mobile-only" id="mobileNavToggle" aria-label="Toggle mobile navigation">
-      <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
-        <line x1="3" y1="6" x2="21" y2="6"></line>
-        <line x1="3" y1="12" x2="21" y2="12"></line>
-        <line x1="3" y1="18" x2="21" y2="18"></line>
-      </svg>
-    </button>
-
-    <div class="navbar__search desktop-only">
-      <input
-          type="search"
-          class="navbar__search-input"
-          placeholder="Search..."
-          aria-label="Search site"
-      />
-    </div>
-
-    <div class="navbar__language-switcher" id="lang-switcher">
-      <Icon name="lucide:globe" size="16" />
-      <select id="lang-select" class="navbar__select" aria-label="Select language">
-        <!-- Default language (English) -->
-        <option value="en">English</option>
-        <!-- Sorted alphabetically by language code -->
-        <option value="de">Deutsch</option>
-        <option value="es">Español</option>
-        <option value="fr">Français</option>
-        <option value="ja">日本語</option>
-        <option value="ru">Русский</option>
-        <option value="zh">中文</option>
-      </select>
-    </div>
-
-    <button id="theme-toggle" class="navbar__theme-toggle" aria-label="Toggle dark/light mode">
-      <span class="navbar__theme-icon">
-          <span class="icon icon--moon">{% include "partials/icons/feather-moon.html" %}</span>
-          <span class="icon icon--sun">{% include "partials/icons/feather-sun.html" %}</span>
-      </span>
-    </button>
-
-    <script>
-      document.addEventListener('DOMContentLoaded', function() {
-        // Initialize navbar translations
-        updateNavbarTranslations();
-
-        // Detect current language from URL
-        function getCurrentLanguage() {
-          const path = window.location.pathname;
-          const defaultLang = 'en';
-          const supportedLangs = ['de', 'es', 'fr', 'ja', 'ru', 'zh'];
-
-          // Check if path starts with a language code
-          const pathParts = path.split('/').filter(part => part.length > 0);
-          if (pathParts.length > 0 && supportedLangs.includes(pathParts[0])) {
-            return pathParts[0];
-          }
-          return defaultLang;
-        }
-
-        // Update language selector to show current language
-        function updateLanguageSelector() {
-          const currentLang = getCurrentLanguage();
-          const desktopSelect = document.getElementById('lang-select');
-          const mobileSelect = document.getElementById('mobile-lang-select');
-
-          if (desktopSelect) {
-            desktopSelect.value = currentLang;
-          }
-          if (mobileSelect) {
-            mobileSelect.value = currentLang;
-          }
-        }
-
-        function switchLanguage(targetLang) {
-          const currentPath = window.location.pathname;
-          const currentLang = getCurrentLanguage();
-          const defaultLang = 'en';
-          const baseUrl = '{{ config.base_url | safe }}';
-
-          // Remove trailing slash from base URL for consistent handling
-          const cleanBaseUrl = baseUrl.replace(/\/$/, '');
-
-          let newPath = currentPath;
-
-          // If we're currently on a non-default language, remove the language prefix
-          if (currentLang !== defaultLang) {
-            // Remove /lang/ prefix or just /lang if at root
-            const langPrefix = '/' + currentLang;
-            if (newPath.startsWith(langPrefix + '/')) {
-              newPath = newPath.substring(langPrefix.length);
-            } else if (newPath === langPrefix || newPath === langPrefix + '/') {
-              newPath = '/';
-            }
-          }
-
-          // Add the target language prefix if it's not the default language
-          if (targetLang !== defaultLang) {
-            newPath = '/' + targetLang + newPath;
-          }
-
-          // Ensure path starts with /
-          if (!newPath.startsWith('/')) {
-            newPath = '/' + newPath;
-          }
-
-          // Navigate to the new URL
-          const newUrl = cleanBaseUrl + newPath;
-          window.location.href = newUrl;
-        }
-
-        // Update navbar translations based on current language
-        function updateNavbarTranslations() {
-          const currentLang = getCurrentLanguage();
-
-          const translations = {
-            en: {
-              essentials: "Essentials",
-              timeline: "Timeline",
-              knowledge: "Knowledge",
-              resources: "Resources",
-              explainers: "Explainers",
-              explainersDesc: "Detailed explanations of key concepts and ideas",
-              revelations: "Revelations",
-              revelationsDesc: "Sacred texts and their modern interpretations",
-              wiki: "Wiki",
-              wikiDesc: "Comprehensive reference and documentation",
-              org: "Org",
-              community: "Community",
-              about: "About",
-              codeOfConduct: "Code of Conduct",
-              contributing: "Contributing",
-              forums: "Forums & Discussions",
-              faq: "FAQ",
-              followX: "Follow us on X"
-            },
-            fr: {
-              essentials: "Essentiels",
-              timeline: "Chronologie",
-              knowledge: "Connaissance",
-              resources: "Ressources",
-              explainers: "Explicateurs",
-              explainersDesc: "Explications détaillées des concepts et idées clés",
-              revelations: "Révélations",
-              revelationsDesc: "Textes sacrés et leurs interprétations modernes",
-              wiki: "Wiki",
-              wikiDesc: "Référence et documentation complètes",
-              org: "Organisation",
-              community: "Communauté",
-              about: "À propos",
-              codeOfConduct: "Code de Conduite",
-              contributing: "Contribuer",
-              forums: "Forums et Discussions",
-              faq: "FAQ",
-              followX: "Suivez-nous sur X"
-            },
-            de: {
-              essentials: "Grundlagen",
-              timeline: "Zeitleiste",
-              knowledge: "Wissen",
-              resources: "Ressourcen",
-              explainers: "Erklärungen",
-              explainersDesc: "Detaillierte Erklärungen wichtiger Konzepte und Ideen",
-              revelations: "Offenbarungen",
-              revelationsDesc: "Heilige Texte und ihre modernen Interpretationen",
-              wiki: "Wiki",
-              wikiDesc: "Umfassende Referenz und Dokumentation",
-              org: "Organisation",
-              community: "Community",
-              about: "Über uns",
-              codeOfConduct: "Verhaltenskodex",
-              contributing: "Beitragen",
-              forums: "Foren & Diskussionen",
-              faq: "FAQ",
-              followX: "Folgen Sie uns auf X"
-            },
-            es: {
-              essentials: "Esenciales",
-              timeline: "Cronología",
-              knowledge: "Conocimiento",
-              resources: "Recursos",
-              explainers: "Explicadores",
-              explainersDesc: "Explicaciones detalladas de conceptos e ideas clave",
-              revelations: "Revelaciones",
-              revelationsDesc: "Textos sagrados y sus interpretaciones modernas",
-              wiki: "Wiki",
-              wikiDesc: "Referencia y documentación integral",
-              org: "Organización",
-              community: "Comunidad",
-              about: "Acerca de",
-              codeOfConduct: "Código de Conducta",
-              contributing: "Contribuir",
-              forums: "Foros y Discusiones",
-              faq: "FAQ",
-              followX: "Síguenos en X"
-            },
-            ja: {
-              essentials: "基本",
-              timeline: "タイムライン",
-              knowledge: "知識",
-              resources: "リソース",
-              explainers: "解説",
-              explainersDesc: "重要な概念とアイデアの詳細な説明",
-              revelations: "啓示",
-              revelationsDesc: "聖典とその現代的解釈",
-              wiki: "ウィキ",
-              wikiDesc: "包括的なリファレンスとドキュメント",
-              org: "組織",
-              community: "コミュニティ",
-              about: "私たちについて",
-              codeOfConduct: "行動規範",
-              contributing: "貢献",
-              forums: "フォーラム＆ディスカッション",
-              faq: "よくある質問",
-              followX: "Xでフォロー"
-            },
-            ru: {
-              essentials: "Основы",
-              timeline: "Хронология",
-              knowledge: "Знания",
-              resources: "Ресурсы",
-              explainers: "Объяснения",
-              explainersDesc: "Подробные объяснения ключевых концепций и идей",
-              revelations: "Откровения",
-              revelationsDesc: "Священные тексты и их современные интерпретации",
-              wiki: "Вики",
-              wikiDesc: "Исчерпывающий справочник и документация",
-              org: "Организация",
-              community: "Сообщество",
-              about: "О нас",
-              codeOfConduct: "Кодекс поведения",
-              contributing: "Участие",
-              forums: "Форумы и обсуждения",
-              faq: "Часто задаваемые вопросы",
-              followX: "Следите за нами в X"
-            },
-            zh: {
-              essentials: "基础",
-              timeline: "时间线",
-              knowledge: "知识",
-              resources: "资源",
-              explainers: "解释",
-              explainersDesc: "关键概念和想法的详细解释",
-              revelations: "启示",
-              revelationsDesc: "神圣文本及其现代解释",
-              wiki: "百科",
-              wikiDesc: "全面的参考和文档",
-              org: "组织",
-              community: "社区",
-              about: "关于我们",
-              codeOfConduct: "行为准则",
-              contributing: "贡献",
-              forums: "论坛与讨论",
-              faq: "常见问题",
-              followX: "在X上关注我们"
-            }
-          };
-
-          const t = translations[currentLang] || translations.en;
-
-          // Update navbar links by data attributes
-          document.querySelectorAll('[data-navbar-key]').forEach(element => {
-            const key = element.getAttribute('data-navbar-key');
-            if (t[key]) {
-              element.textContent = t[key];
-            }
-          });
-        }
-
-        // Initialize language selector with a small delay to ensure DOM is ready
-        setTimeout(() => {
-          updateLanguageSelector();
-          updateNavbarTranslations();
-        }, 100);
-
-        // Handle desktop language switcher
-        const langSelect = document.getElementById('lang-select');
-        if (langSelect) {
-          langSelect.addEventListener('change', function(e) {
-            const targetLang = e.target.value;
-            const currentLang = getCurrentLanguage();
-            if (targetLang !== currentLang) {
-              switchLanguage(targetLang);
-            }
-          });
-        }
-
-        // Handle mobile language switcher
-        const mobileLangSelect = document.getElementById('mobile-lang-select');
-        if (mobileLangSelect) {
-          mobileLangSelect.addEventListener('change', function(e) {
-            const targetLang = e.target.value;
-            const currentLang = getCurrentLanguage();
-            if (targetLang !== currentLang) {
-              switchLanguage(targetLang);
-            }
-          });
-        }
-      });
-    </script>
-  </div>
-
 </nav>
