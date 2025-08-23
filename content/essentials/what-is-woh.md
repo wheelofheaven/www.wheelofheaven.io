@@ -4,7 +4,6 @@ description = "A calm, first-look orientation to the Wheel of Heaven worldview: 
 date = 2025-08-20
 template = "essentials-page.html"
 slug = "what-is-woh"
-
 weight = 1
 
 [extra]

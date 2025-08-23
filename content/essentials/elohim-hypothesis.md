@@ -4,14 +4,13 @@ description = "A calm introduction to the idea that ancient 'gods' were a human-
 date = 2025-08-20
 template = "essentials-page.html"
 slug = "elohim-hypothesis"
-
 weight = 2
 
 [extra]
 category = "Origins"
 header_image = "/images/essentials/elohim-hypothesis.jpg"
 featured = false
-order = 3
+order = 2
 
 [extra.prev_page]
 title = "Precession 101: The Sky's Slow Clock"

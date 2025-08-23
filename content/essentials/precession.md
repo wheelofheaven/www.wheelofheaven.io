@@ -4,14 +4,13 @@ description = "A gentle primer on Earth’s slow axial wobble and why it gives u
 date = 2025-08-20
 template = "essentials-page.html"
 slug = "precession"
-
 weight = 3
 
 [extra]
 category = "Astronomy"
 header_image = "/images/essentials/precession.jpg"
 featured = false
-order = 2
+order = 3
 
 [extra.prev_page]
 title = "What Is Wheel of Heaven?"

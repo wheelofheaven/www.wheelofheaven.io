@@ -4,13 +4,13 @@ description = "A clear overview of long-cycle epochs keyed to precession, and ho
 date = 2025-08-20
 template = "essentials-page.html"
 slug = "world-ages"
-
 weight = 4
 
 [extra]
 category = "Astronomy"
 header_image = "/images/essentials/world-ages.jpg"
 featured = false
+order = 4
 
 [extra.prev_page]
 title = "The Elohim Hypothesis"
