@@ -1,0 +1,178 @@
+{
+  "name": "Wheel of Heaven",
+  "short_name": "WoH",
+  "description": "Wheel of Heaven is a public knowledge hub that threads Raëlian scriptures, world myth, and modern genomics into a critical, citation-rich narrative about humanity’s potential engineered origin. Read concise primers, explore annotated source texts, and explore the lore all transparent, open-source, and free.",
+  "start_url": "/",
+  "scope": "/",
+  "id": "/",
+  "display": "standalone",
+  "orientation": "portrait-primary",
+  "theme_color": "#9d81d9",
+  "background_color": "#1b1f22",
+  "lang": "en",
+  "dir": "ltr",
+  "categories": ["education", "reference", "books"],
+  "iarc_rating_id": "e84b072d-71b3-4d3e-86ae-31a8ce4e53b7",
+
+  "icons": [
+    {
+      "src": "/brand/favicon.svg",
+      "sizes": "any",
+      "type": "image/svg+xml",
+      "purpose": "any maskable"
+    },
+    {
+      "src": "/brand/icon-192.png",
+      "sizes": "192x192",
+      "type": "image/png",
+      "purpose": "any"
+    },
+    {
+      "src": "/brand/icon-512.png",
+      "sizes": "512x512",
+      "type": "image/png",
+      "purpose": "any"
+    },
+    {
+      "src": "/brand/apple-touch-icon.png",
+      "sizes": "180x180",
+      "type": "image/png",
+      "purpose": "any"
+    }
+  ],
+
+  "screenshots": [
+    {
+      "src": "/images/screenshot-wide.png",
+      "sizes": "1280x720",
+      "type": "image/png",
+      "form_factor": "wide",
+      "label": "Wheel of Heaven knowledge base homepage"
+    },
+    {
+      "src": "/images/screenshot-narrow.png",
+      "sizes": "640x1136",
+      "type": "image/png",
+      "form_factor": "narrow",
+      "label": "Wheel of Heaven mobile interface"
+    }
+  ],
+
+  "shortcuts": [
+    {
+      "name": "Wiki",
+      "short_name": "Wiki",
+      "description": "Browse the knowledge base wiki",
+      "url": "/wiki/",
+      "icons": [
+        {
+          "src": "/brand/favicon-32x32.png",
+          "sizes": "32x32",
+          "type": "image/png"
+        }
+      ]
+    },
+    {
+      "name": "Articles",
+      "short_name": "Articles",
+      "description": "Read latest articles and insights",
+      "url": "/articles/",
+      "icons": [
+        {
+          "src": "/brand/favicon-32x32.png",
+          "sizes": "32x32",
+          "type": "image/png"
+        }
+      ]
+    },
+    {
+      "name": "Search",
+      "short_name": "Search",
+      "description": "Search the knowledge base",
+      "url": "/search/",
+      "icons": [
+        {
+          "src": "/brand/favicon-32x32.png",
+          "sizes": "32x32",
+          "type": "image/png"
+        }
+      ]
+    },
+    {
+      "name": "Introduction",
+      "short_name": "Intro",
+      "description": "Get started with Wheel of Heaven",
+      "url": "/intro/",
+      "icons": [
+        {
+          "src": "/brand/favicon-32x32.png",
+          "sizes": "32x32",
+          "type": "image/png"
+        }
+      ]
+    }
+  ],
+
+  "share_target": {
+    "action": "/share/",
+    "method": "GET",
+    "enctype": "application/x-www-form-urlencoded",
+    "params": {
+      "title": "title",
+      "text": "text",
+      "url": "url"
+    }
+  },
+
+  "launch_handler": {
+    "client_mode": "focus-existing"
+  },
+
+  "handle_links": "preferred",
+
+  "edge_side_panel": {
+    "preferred_width": 400
+  },
+
+  "protocol_handlers": [
+    {
+      "protocol": "web+wheelofheaven",
+      "url": "/protocol/?url=%s"
+    }
+  ],
+
+  "file_handlers": [
+    {
+      "action": "/open-file/",
+      "accept": {
+        "text/markdown": [".md", ".markdown"],
+        "text/plain": [".txt"]
+      },
+      "icons": [
+        {
+          "src": "/brand/favicon-32x32.png",
+          "sizes": "32x32",
+          "type": "image/png"
+        }
+      ],
+      "launch_type": "single-client"
+    }
+  ],
+
+  "prefer_related_applications": false,
+
+  "related_applications": [
+    {
+      "platform": "webapp",
+      "url": "https://www.wheelofheaven.io/site.webmanifest"
+    }
+  ],
+
+  "scope_extensions": [
+    {
+      "origin": "https://www.wheelofheaven.io"
+    }
+  ],
+
+  "display_override": ["window-controls-overlay", "standalone", "minimal-ui", "browser"]
+}
