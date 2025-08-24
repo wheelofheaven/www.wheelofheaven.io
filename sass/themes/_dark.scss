@@ -20,6 +20,11 @@
     --color-active: rgba(255, 255, 255, 0.2);
     --color-focus: #{colors.$mint};
 
+    // Notification colors
+    --color-success: #{colors.$green-500};
+    --color-error: #{colors.$soft-pink-600};
+    --color-warning: #{colors.$yellow-500};
+
     // Component-specific colors
     --color-navbar-bg: rgba(27, 31, 34, 0.1);
     --color-footer-bg: #{colors.$gray-950};

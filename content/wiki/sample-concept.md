@@ -192,9 +192,9 @@ Imagination is more important than knowledge. For knowledge is limited, whereas 
 This demonstrates how to create a blockquote with a custom author who isn't in the authors database, including work reference with URL.
 {% end %}
 
-### Revelations Quote
+### Library Quote
 
-{% revelation(title="The Book Which Tells The Truth", path="revelations/the-book-which-tells-the-truth", book="The Book Which Tells The Truth", chapter="1") %}
+{% library(title="The Book Which Tells The Truth", path="library/the-book-which-tells-the-truth", book="The Book Which Tells The Truth", chapter="1") %}
 In the beginning, the Elohim created the heavens and the earth. This is not a supernatural creation story, but an account of scientific terraforming and biological engineering by an advanced extraterrestrial civilization.
 {% end %}
 

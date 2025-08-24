@@ -1,17 +1,17 @@
 #!/usr/bin/env python3
 """
-Generate Revelation Pages Script
+Generate Library Pages Script
 
-This script automatically generates markdown files for revelation books
-based on JSON data files in the data/revelations directory.
+This script automatically generates markdown files for library books
+based on JSON data files in the data/library directory.
 
 Usage:
-    python scripts/generate-revelation-pages.py
+    python scripts/generate-library-pages.py
 
 The script will:
-1. Scan the data/revelations directory for JSON files
+1. Scan the data/library directory for JSON files
 2. Parse each JSON file to extract book metadata
-3. Generate corresponding markdown files in content/revelations/
+3. Generate corresponding markdown files in content/library/
 4. Only create files that don't already exist (safe to run multiple times)
 """
 
@@ -78,7 +78,7 @@ def get_book_description(book_data, lang='en'):
     else:
         chapter_text = "chapters"
 
-    return f"A revelation book containing {chapter_count} {chapter_text} of sacred teachings and dialogues."
+    return f"A library book containing {chapter_count} {chapter_text} of sacred teachings and dialogues."
 
 
 def generate_markdown_content(book_data, lang='en'):
@@ -92,7 +92,7 @@ def generate_markdown_content(book_data, lang='en'):
 title = "{title}"
 slug = "{slug}"
 description = "{description}"
-template = "revelation-book.html"
+template = "library-book.html"
 """
 
     # Add additional metadata if available
@@ -133,14 +133,14 @@ The book contains {len(book_data.get('chapters', []))} chapters and is available
 
 
 def main():
-    """Main function to generate revelation pages."""
+    """Main function to generate library pages."""
     # Get the project root directory
     script_dir = Path(__file__).parent
     project_root = script_dir.parent
 
     # Define paths
-    data_dir = project_root / "data" / "revelations"
-    content_dir = project_root / "content" / "revelations"
+    data_dir = project_root / "data" / "library"
+    content_dir = project_root / "content" / "library"
 
     print(f"Scanning for JSON files in: {data_dir}")
     print(f"Generating markdown files in: {content_dir}")
@@ -211,13 +211,13 @@ def main():
         print(f"\nRun 'zola build' to rebuild the site with the new pages.")
 
 
-def update_revelations_index():
-    """Update the revelations section template to automatically include all books."""
-    print("\nUpdating revelations section template...")
+def update_library_index():
+    """Update the library section template to automatically include all books."""
+    print("\nUpdating library section template...")
 
     script_dir = Path(__file__).parent
     project_root = script_dir.parent
-    data_dir = project_root / "data" / "revelations"
+    data_dir = project_root / "data" / "library"
 
     # Get all JSON files
     json_files = list(data_dir.glob("*.json"))
@@ -229,16 +229,16 @@ def update_revelations_index():
     book_files_str = "[" + ", ".join(book_files_list) + "]"
 
     print(f"Book files array: {book_files_str}")
-    print("Manual update needed: Update the book_files variable in templates/revelations-section.html")
+    print("Manual update needed: Update the book_files variable in templates/library-section.html")
 
 
 if __name__ == "__main__":
-    print("Revelation Pages Generator")
+    print("Library Pages Generator")
     print("=" * 40)
 
     try:
         main()
-        update_revelations_index()
+        update_library_index()
     except KeyboardInterrupt:
         print("\nOperation cancelled by user.")
         sys.exit(1)

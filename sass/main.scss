@@ -30,9 +30,10 @@
 @use "components/wiki-shortcodes";
 @use "components/wiki-quotes";
 @use "components/content-shared";
+@use "components/snackbar";
 
 @use "pages/home";
-@use "pages/revelations";
+@use "pages/library";
 @use "pages/wiki";
 @use "pages/wiki-section";
 @use "pages/explainer";

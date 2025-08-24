@@ -1,0 +1,35 @@
+{# Library Blockquote Shortcode #}
+{% set book = book | default(value="") %}
+{% set chapter = chapter | default(value="") %}
+{% set verse = verse | default(value="") %}
+{% set path = path | default(value="") %}
+{% set title = title | default(value="Library") %}
+
+<blockquote class="library-quote">
+    <div class="library-quote__content">
+        {{ body | markdown | safe }}
+    </div>
+
+    {% if path %}
+    <div class="library-quote__link">
+        <a href="{{ get_url(path=path) }}" class="library-quote__button" title="Read full text in {{ title }}">
+            <svg class="library-quote__icon" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                <path d="M4 19.5v-15A2.5 2.5 0 0 1 6.5 2H20v20H6.5a2.5 2.5 0 0 1 0-5H20"></path>
+            </svg>
+            <span class="library-quote__button-text">Read in {{ title }}</span>
+            <svg class="library-quote__arrow" width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                <path d="M5 12h14"></path>
+                <path d="M12 5l7 7-7 7"></path>
+            </svg>
+        </a>
+    </div>
+    {% endif %}
+
+    {% if book or chapter or verse %}
+    <cite class="library-quote__citation">
+        {% if book %}{{ book }}{% endif %}
+        {% if chapter %}, Chapter {{ chapter }}{% endif %}
+        {% if verse %}, Verse {{ verse }}{% endif %}
+    </cite>
+    {% endif %}
+</blockquote>

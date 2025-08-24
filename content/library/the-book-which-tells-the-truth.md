@@ -2,7 +2,7 @@
 title = "The Book Which Tells the Truth"
 slug = "the-book-which-tells-the-truth"
 description = "A revelation book containing 7 chapters of sacred teachings and dialogues."
-template = "revelation-book.html"
+template = "library-book.html"
 date = "2025-08-10T06:03:56Z"
 +++
 This page displays "The Book Which Tells the Truth" with interactive features for viewing the original text alongside translations in multiple languages.

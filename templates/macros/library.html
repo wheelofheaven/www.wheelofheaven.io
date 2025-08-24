@@ -93,7 +93,7 @@
                         {{ chapter.n }}
                     </a>
                 {% else %}
-                    <a href="{{ get_url(path='revelations/' ~ book_data.slug) }}#chapter-{{ chapter.n }}"
+                    <a href="{{ get_url(path='library/' ~ book_data.slug) }}#chapter-{{ chapter.n }}"
                        class="chapter-navigation__button"
                        style="--chapter-index: {{ chapter.n }}">
                         {{ chapter.n }}
@@ -126,12 +126,12 @@
     </div>
 {% endmacro %}
 
-{# Macro to render a book card for the revelations index #}
+{# Macro to render a book card for the library index #}
 {% macro render_book_card(book_data, lang) %}
     <article class="book-card">
         <div class="book-header">
             <h3>
-                <a href="{{ get_url(path='revelations/' ~ book_data.slug) }}">
+                <a href="{{ get_url(path='library/' ~ book_data.slug) }}">
                     {{ self::get_book_title(book_data=book_data, lang=lang) }}
                 </a>
             </h3>
@@ -171,14 +171,14 @@
     </article>
 {% endmacro %}
 
-{# Macro to load and process all revelation books #}
+{# Macro to load and process all library books #}
 {% macro get_all_books() %}
     {%- set books = [] -%}
     {# For now, we'll manually add known books. In the future, this can be automated #}
     {%- set book_files = ["the-book-which-tells-the-truth.json"] -%}
 
     {%- for book_file in book_files -%}
-        {%- set book_data = load_data(path="data/revelations/" ~ book_file, required=false) -%}
+        {%- set book_data = load_data(path="data/library/" ~ book_file, required=false) -%}
         {%- if book_data -%}
             {%- set_global books = books | concat(with=book_data) -%}
         {%- endif -%}
@@ -186,6 +186,3 @@
 
     {{ books }}
 {% endmacro %}
-```
-
-Now let me update the SCSS to fix the positioning conflict between the copy button and speaker portraits:

@@ -1,6 +1,6 @@
-{% extends "base.html" %} {% import "macros/revelations.html" as
-revelations_macros %} {% block content %}
-<div class="revelations-section">
+{% extends "base.html" %} {% import "macros/library.html" as library_macros %}
+{% block content %}
+<div class="library-section">
     <header class="section-header">
         <h1>{{ section.title }}</h1>
         {% if section.description %}
@@ -17,11 +17,11 @@ revelations_macros %} {% block content %}
             {# Load all available books - for now we manually specify them #} {%
             set book_files = ["the-book-which-tells-the-truth.json"] %} {% set
             has_books = false %} {% for book_file in book_files %} {% set
-            book_data = load_data(path="data/revelations/" ~ book_file,
+            book_data = load_data(path="data/library/" ~ book_file,
             required=false) %} {% if book_data and book_data.slug and
             book_data.titles %} {% set_global has_books = true %} {{
-            revelations_macros::render_book_card(book_data=book_data, lang=lang)
-            }} {% endif %} {% endfor %} {% if not has_books %}
+            library_macros::render_book_card(book_data=book_data, lang=lang) }}
+            {% endif %} {% endfor %} {% if not has_books %}
             <div class="no-books-message">
                 <p>
                     No revelation books are currently available. Please check

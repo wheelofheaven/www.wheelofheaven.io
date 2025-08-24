@@ -1,0 +1,283 @@
+{% extends "base.html" %} {% import "macros/library.html" as library_macros %}
+{% block content %}
+<div class="library-book">
+    {% set book_slug = page.slug %} {% set book_data =
+    load_data(path="data/library/" ~ book_slug ~ ".json") %} {% if book_data %}
+    <header class="book-header">
+        <h1 class="book-title">
+            {{ library_macros::get_book_title(book_data=book_data, lang=lang) }}
+        </h1>
+
+        {% if book_data.primaryLang != lang and
+        book_data.titles[book_data.primaryLang] %}
+        <p class="book-subtitle">
+            Original: {{ book_data.titles[book_data.primaryLang] }}
+        </p>
+        {% endif %} {% if book_data.description %}
+        <p class="book-description">{{ book_data.description }}</p>
+        {% endif %}
+    </header>
+
+    <div class="view-controls">
+        <div class="language-selector">
+            <label for="language-select">Language:</label>
+            <select id="language-select" onchange="changeLanguage(this.value)">
+                {% for lang_code, title in book_data.titles %}
+                <option
+                    value="{{ lang_code }}"
+                    {%
+                    if
+                    lang_code=""
+                    ="lang"
+                    %}selected{%
+                    endif
+                    %}
+                >
+                    {{ lang_code | upper }} - {{ title }}
+                </option>
+                {% endfor %}
+            </select>
+        </div>
+
+        <div class="view-toggle">
+            <label>
+                <input
+                    type="checkbox"
+                    id="side-by-side-toggle"
+                    onchange="toggleSideBySide()"
+                />
+                Side-by-side view
+            </label>
+        </div>
+
+        <button onclick="toggleOriginalText()" id="original-toggle">
+            Show Original
+        </button>
+    </div>
+
+    <main class="chapter-content">
+        {% for chapter in book_data.chapters %}
+        <section class="chapter" id="chapter-{{ chapter.n }}">
+            <header class="chapter-header">
+                <h2 class="chapter-title">Chapter {{ chapter.n }}</h2>
+                {% if chapter.title %}
+                <p class="chapter-number">{{ chapter.title }}</p>
+                {% endif %}
+            </header>
+
+            <div class="text-content" id="text-content-{{ chapter.n }}">
+                {% for paragraph in chapter.paragraphs %}
+                <div
+                    class="paragraph"
+                    id="para-{{ paragraph.n }}"
+                    onclick="selectParagraph({{ paragraph.n }})"
+                >
+                    <div class="paragraph-number">{{ paragraph.n }}</div>
+
+                    <div class="original-text">{{ paragraph.text }}</div>
+
+                    {% if lang != book_data.primaryLang and paragraph.i18n and
+                    paragraph.i18n[lang] %}
+                    <div class="translation-text">
+                        {{ paragraph.i18n[lang] }}
+                    </div>
+                    {% endif %}
+                </div>
+                {% endfor %}
+            </div>
+        </section>
+        {% endfor %}
+    </main>
+
+    <nav class="chapter-navigation">
+        <button
+            class="nav-button prev"
+            onclick="previousChapter()"
+            id="prev-chapter"
+        >
+            <svg
+                viewBox="0 0 24 24"
+                fill="none"
+                stroke="currentColor"
+                stroke-width="2"
+            >
+                <path d="M15 18l-6-6 6-6"></path>
+            </svg>
+            Previous
+        </button>
+
+        <div class="chapter-info">
+            <div class="current-chapter" id="current-chapter-display">
+                Chapter 1 of {{ book_data.chapters | length }}
+            </div>
+            <div class="chapter-progress" id="chapter-progress">
+                Reading Chapter 1
+            </div>
+        </div>
+
+        <button
+            class="nav-button next"
+            onclick="nextChapter()"
+            id="next-chapter"
+        >
+            Next
+            <svg
+                viewBox="0 0 24 24"
+                fill="none"
+                stroke="currentColor"
+                stroke-width="2"
+            >
+                <path d="M9 18l6-6-6-6"></path>
+            </svg>
+        </button>
+    </nav>
+
+    <nav class="book-navigation">
+        <a href="{{ get_url(path='library') }}" class="back-to-library">
+            <svg
+                viewBox="0 0 24 24"
+                fill="none"
+                stroke="currentColor"
+                stroke-width="2"
+            >
+                <path d="M15 18l-6-6 6-6"></path>
+            </svg>
+            Back to Library
+        </a>
+    </nav>
+
+    {% else %}
+    <div class="book-not-found">
+        <h1>Book Not Found</h1>
+        <p>The requested book could not be found or failed to load.</p>
+        <a href="{{ get_url(path='library') }}">Return to Library</a>
+    </div>
+    {% endif %}
+</div>
+
+<script>
+    let currentChapter = 1;
+    const totalChapters = {{ book_data.chapters | length if book_data else 0 }};
+    let showingOriginal = false;
+    let sideBySide = false;
+
+    function toggleOriginalText() {
+        const originalTexts = document.querySelectorAll('.original-text');
+        const button = document.getElementById('original-toggle');
+        showingOriginal = !showingOriginal;
+
+        originalTexts.forEach(text => {
+            text.style.display = showingOriginal ? 'block' : 'none';
+        });
+
+        button.textContent = showingOriginal ? 'Hide Original' : 'Show Original';
+    }
+
+    function toggleSideBySide() {
+        const textContents = document.querySelectorAll('.text-content');
+        sideBySide = !sideBySide;
+
+        textContents.forEach(content => {
+            if (sideBySide) {
+                content.classList.add('side-by-side');
+            } else {
+                content.classList.remove('side-by-side');
+            }
+        });
+    }
+
+    function selectParagraph(paragraphNumber) {
+        // Remove selection from all paragraphs
+        document.querySelectorAll('.paragraph').forEach(p => {
+            p.classList.remove('selected');
+        });
+
+        // Select the clicked paragraph
+        const paragraph = document.getElementById('para-' + paragraphNumber);
+        if (paragraph) {
+            paragraph.classList.add('selected');
+        }
+    }
+
+    function updateChapterNavigation() {
+        const prevButton = document.getElementById('prev-chapter');
+        const nextButton = document.getElementById('next-chapter');
+        const currentDisplay = document.getElementById('current-chapter-display');
+        const progressDisplay = document.getElementById('chapter-progress');
+
+        if (prevButton) prevButton.classList.toggle('disabled', currentChapter <= 1);
+        if (nextButton) nextButton.classList.toggle('disabled', currentChapter >= totalChapters);
+
+        if (currentDisplay) {
+            currentDisplay.textContent = `Chapter ${currentChapter} of ${totalChapters}`;
+        }
+
+        if (progressDisplay) {
+            progressDisplay.textContent = `Reading Chapter ${currentChapter}`;
+        }
+    }
+
+    function previousChapter() {
+        if (currentChapter > 1) {
+            currentChapter--;
+            scrollToChapter(currentChapter);
+            updateChapterNavigation();
+        }
+    }
+
+    function nextChapter() {
+        if (currentChapter < totalChapters) {
+            currentChapter++;
+            scrollToChapter(currentChapter);
+            updateChapterNavigation();
+        }
+    }
+
+    function scrollToChapter(chapterNumber) {
+        const chapter = document.getElementById('chapter-' + chapterNumber);
+        if (chapter) {
+            chapter.scrollIntoView({
+                behavior: 'smooth',
+                block: 'start'
+            });
+        }
+    }
+
+    function changeLanguage(newLang) {
+        const currentPath = window.location.pathname;
+        const newPath = currentPath.replace(/^\/[a-z]{2}\//, '/' + newLang + '/');
+        window.location.href = newPath;
+    }
+
+    // Initialize on page load
+    document.addEventListener('DOMContentLoaded', function() {
+        // Hide original text by default
+        toggleOriginalText();
+
+        // Update navigation state
+        updateChapterNavigation();
+
+        // Set up intersection observer for chapter tracking
+        const observer = new IntersectionObserver((entries) => {
+            entries.forEach(entry => {
+                if (entry.isIntersecting) {
+                    const chapterMatch = entry.target.id.match(/chapter-(\d+)/);
+                    if (chapterMatch) {
+                        currentChapter = parseInt(chapterMatch[1]);
+                        updateChapterNavigation();
+                    }
+                }
+            });
+        }, {
+            threshold: 0.3,
+            rootMargin: '-20% 0px -20% 0px'
+        });
+
+        // Observe all chapters
+        document.querySelectorAll('.chapter').forEach(chapter => {
+            observer.observe(chapter);
+        });
+    });
+</script>
+
+{% endblock content %}
