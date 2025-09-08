@@ -1,9 +1,24 @@
 {% extends "base.html" %} {% block content %} {% set ages_data =
 load_data(path="data/ages.json") %}
-<div class="timeline-section">
+<div class="timeline-viewport">
+    <!-- Sun behind Earth -->
+    <div class="earth-sunrise">
+        <div class="sunrise-glow"></div>
+        <div class="sunrise-rays">
+            <div class="ray ray-1"></div>
+            <div class="ray ray-2"></div>
+            <div class="ray ray-3"></div>
+            <div class="ray ray-4"></div>
+            <div class="ray ray-5"></div>
+            <div class="ray ray-6"></div>
+            <div class="ray ray-7"></div>
+            <div class="ray ray-8"></div>
+        </div>
+    </div>
+
     <!-- Fixed Earth (SVG) -->
     <div class="earth-container">
-        <svg width="200" height="200">
+        <svg width="600" height="600">
             <defs>
                 <pattern
                     id="earthTexture"
@@ -11,35 +26,33 @@ load_data(path="data/ages.json") %}
                     width="1"
                     height="1"
                 >
-                    <image href="/earth.png" width="200" height="200" />
+                    <image href="/earth.png" width="600" height="600" />
                 </pattern>
             </defs>
-            <circle cx="100" cy="100" r="100" fill="url(#earthTexture)" />
+            <circle cx="300" cy="300" r="300" fill="url(#earthTexture)" />
         </svg>
-        <div class="earth-sunrise">
-            <div class="sunrise-glow"></div>
-            <div class="sunrise-rays">
-                <div class="ray ray-1"></div>
-                <div class="ray ray-2"></div>
-                <div class="ray ray-3"></div>
-                <div class="ray ray-4"></div>
-                <div class="ray ray-5"></div>
-                <div class="ray ray-6"></div>
-                <div class="ray ray-7"></div>
-                <div class="ray ray-8"></div>
-            </div>
-        </div>
     </div>
 
-    <!-- Scrolling Starmap Background -->
+    <!-- Scrolling Starmap Background - 3 repeating starmaps -->
     <div class="starmap-background">
-        <div class="starmap-container">
-            <!-- Single starmap that scrolls from left to right -->
+        <div class="starmap-container" id="starmap-container">
+            <!-- Left starmap (previous cycle) -->
             <img
                 src="/starmap.svg"
-                alt="Star Map"
-                class="starmap-layer"
-                id="starmap"
+                alt="Star Map Left"
+                class="starmap-layer starmap-layer--left"
+            />
+            <!-- Center starmap (current cycle) -->
+            <img
+                src="/starmap.svg"
+                alt="Star Map Center"
+                class="starmap-layer starmap-layer--center"
+            />
+            <!-- Right starmap (next cycle) -->
+            <img
+                src="/starmap.svg"
+                alt="Star Map Right"
+                class="starmap-layer starmap-layer--right"
             />
         </div>
     </div>
@@ -98,7 +111,7 @@ load_data(path="data/ages.json") %}
         <div class="age-progress__current" id="progress-current">1 of 12</div>
     </div>
 
-    <!-- Navigation Controls -->
+    <!-- Combined Timeline Navigation -->
     <div class="timeline-nav">
         <button
             class="timeline-nav__btn timeline-nav__btn--prev"
@@ -115,6 +128,34 @@ load_data(path="data/ages.json") %}
                 />
             </svg>
         </button>
+
+        <div class="age-selector">
+            <button class="age-selector__trigger" id="age-selector-trigger">
+                Jump to Age
+                <svg width="16" height="16" viewBox="0 0 16 16" fill="none">
+                    <path
+                        d="M4 6L8 10L12 6"
+                        stroke="currentColor"
+                        stroke-width="2"
+                        stroke-linecap="round"
+                        stroke-linejoin="round"
+                    />
+                </svg>
+            </button>
+            <div class="age-selector__dropdown" id="age-selector-dropdown">
+                {% for age in ages_data %}
+                <button
+                    class="age-selector__option"
+                    data-age-index="{{ loop.index0 }}"
+                    data-age-color="{{ age.color }}"
+                >
+                    <span class="age-selector__symbol">{{ age.symbol }}</span>
+                    <span class="age-selector__name">{{ age.name }}</span>
+                </button>
+                {% endfor %}
+            </div>
+        </div>
+
         <button
             class="timeline-nav__btn timeline-nav__btn--next"
             id="nav-next"
@@ -131,35 +172,16 @@ load_data(path="data/ages.json") %}
             </svg>
         </button>
     </div>
-
-    <!-- Age Selector Dropdown -->
-    <div class="age-selector">
-        <button class="age-selector__trigger" id="age-selector-trigger">
-            Jump to Age
-            <svg width="16" height="16" viewBox="0 0 16 16" fill="none">
-                <path
-                    d="M4 6L8 10L12 6"
-                    stroke="currentColor"
-                    stroke-width="2"
-                    stroke-linecap="round"
-                    stroke-linejoin="round"
-                />
-            </svg>
-        </button>
-        <div class="age-selector__dropdown" id="age-selector-dropdown">
-            {% for age in ages_data %}
-            <button
-                class="age-selector__option"
-                data-age-index="{{ loop.index0 }}"
-                data-age-color="{{ age.color }}"
-            >
-                <span class="age-selector__symbol">{{ age.symbol }}</span>
-                <span class="age-selector__name">{{ age.name }}</span>
-            </button>
-            {% endfor %}
-        </div>
-    </div>
-
-    <script src="/js/timeline.js"></script>
 </div>
+
+<!-- Horizontal Timeline Sections -->
+<div class="timeline-section" id="timeline-section">
+    {% for age in ages_data %}
+    <div class="timeline-age-section" data-age-index="{{ loop.index0 }}">
+        <!-- Each age section is 100vw wide -->
+    </div>
+    {% endfor %}
+</div>
+
+<script src="/js/timeline.js"></script>
 {% endblock content %}

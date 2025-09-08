@@ -157,15 +157,35 @@ document.addEventListener("DOMContentLoaded", function () {
     green: "#b9fbc0",
   };
 
-  // Update starmap position based on current age
+  // Update starmap position based on current age - align constellations with Earth
   function updateStarmapPosition() {
-    const starmap = document.getElementById("starmap");
-    if (starmap) {
-      // Simple calculation: shift from 0% to 100% across all 12 ages
-      const positionX = (currentAgeIndex / (agesData.length - 1)) * 100;
-      starmap.style.objectPosition = `${positionX}% center`;
+    const starmapContainer = document.getElementById("starmap-container");
+    const timelineSection = document.getElementById("timeline-section");
+
+    if (starmapContainer && timelineSection) {
+      // Timeline moves horizontally through ages (each age is 100vw)
+      const timelineTransform = -(currentAgeIndex * 100);
+
+      // Starmap positioning: Each age shows 1/12th of the single starmap
+      // The center starmap (middle of 3) should move so constellations align with Earth
+      // Age 0: Show leftmost constellation (0% of starmap)
+      // Age 11: Show rightmost constellation (100% of starmap)
+      const constellationProgress = currentAgeIndex / 11; // 0 to 1 across 12 ages
+
+      // Move the center starmap within its container
+      // Each age should move exactly 1/12th of the starmap width (150vw / 12 = 12.5vw)
+      // Earth is at 30% from left, so we need to offset starmap accordingly
+      const earthOffsetPercent = 30; // Earth's left position as percentage of viewport
+      const initialOffset = -150 + earthOffsetPercent; // Start position adjusted for wider starmap
+      const starmapStepSize = 150 / 12; // 12.5vw per age (1/12th of starmap width)
+      const starmapTransform =
+        initialOffset - currentAgeIndex * starmapStepSize;
+
+      timelineSection.style.transform = `translateX(${timelineTransform}vw)`;
+      starmapContainer.style.transform = `translateX(${starmapTransform}vw)`;
+
       console.log(
-        `Starmap position: ${positionX}% center (Age ${currentAgeIndex + 1}/${agesData.length})`,
+        `Age ${currentAgeIndex + 1}/${agesData.length}: Timeline at ${timelineTransform}vw, Starmap at ${starmapTransform}vw (constellation ${(constellationProgress * 100).toFixed(1)}%)`,
       );
     }
   }
@@ -180,21 +200,26 @@ document.addEventListener("DOMContentLoaded", function () {
 
     if (animated && currentAgeIndex !== index) {
       isTransitioning = true;
-      ageCard.style.opacity = "0.5";
+      ageCard.style.opacity = "0.7";
 
       setTimeout(() => {
         updateCardContent(age, color, index);
         ageCard.style.opacity = "1";
         setTimeout(() => {
           isTransitioning = false;
-        }, 200);
-      }, 200);
+        }, 150);
+      }, 100);
     } else {
       updateCardContent(age, color, index);
     }
 
     currentAgeIndex = index;
     updateStarmapPosition();
+
+    // Reposition elements after card content changes
+    setTimeout(() => {
+      positionElementsBelowCard();
+    }, 50);
   }
 
   // Update card content
@@ -291,85 +316,162 @@ document.addEventListener("DOMContentLoaded", function () {
     }
   });
 
-  // Keep Earth stationary
+  // Keep Earth stationary for constellation alignment
   if (earthContainer) {
     earthContainer.style.transform = `translate(-50%, -50%)`;
   }
 
-  // Scroll handling for timeline progression
+  // Timeline progression state
   let hasCompletedAllAges = false;
+  let isVerticalScrolling = false;
 
   function handleWheelScroll(event) {
-    if (!hasCompletedAllAges) {
+    if (isTransitioning) return;
+
+    if (!isVerticalScrolling) {
       event.preventDefault();
 
-      // Simple age progression on scroll
       if (event.deltaY > 0) {
-        // Scroll down - next age
+        // Scroll forward through ages
         if (currentAgeIndex < agesData.length - 1) {
           updateAge(currentAgeIndex + 1, true);
-        } else {
-          // Completed all ages
+        } else if (!hasCompletedAllAges) {
+          // Completed all ages - enable vertical scrolling
           hasCompletedAllAges = true;
-          console.log("All ages completed! Bidirectional scrolling enabled.");
+          isVerticalScrolling = true;
+          console.log(
+            "All ages completed! Enabling vertical scroll for footer.",
+          );
+
+          // Restore normal scrolling
+          document.body.style.overflow = "auto";
+
+          // Scroll down to show footer
+          window.scrollTo({
+            top: window.innerHeight,
+            behavior: "smooth",
+          });
         }
       } else {
-        // Scroll up - previous age
+        // Scroll backward through ages
         if (currentAgeIndex > 0) {
           updateAge(currentAgeIndex - 1, true);
-        }
-      }
-    } else {
-      // After completing all ages, allow bidirectional scrolling through ages
-      event.preventDefault();
-
-      if (event.deltaY > 0) {
-        // Scroll down - next age (wrap around to beginning)
-        if (currentAgeIndex < agesData.length - 1) {
-          updateAge(currentAgeIndex + 1, true);
-        } else {
-          updateAge(0, true); // Wrap to first age
-        }
-      } else if (event.deltaY < 0) {
-        // Scroll up - previous age (wrap around to end)
-        if (currentAgeIndex > 0) {
-          updateAge(currentAgeIndex - 1, true);
-        } else {
-          updateAge(agesData.length - 1, true); // Wrap to last age
         }
       }
     }
   }
 
-  // Handle regular scroll events for footer push-up
+  // Handle vertical scrolling after completing timeline
   function handleRegularScroll() {
-    if (hasCompletedAllAges) {
-      const timelineSection = document.querySelector(".timeline-section");
+    if (isVerticalScrolling) {
       const scrollY = window.scrollY;
-      const windowHeight = window.innerHeight;
+      const timelineViewport = document.querySelector(".timeline-viewport");
 
-      if (scrollY > windowHeight) {
-        // Footer push-up effect
-        const excessScroll = scrollY - windowHeight;
-        const maxPushUp = windowHeight;
-        const pushUpProgress = Math.min(excessScroll / maxPushUp, 1);
+      if (scrollY > 0 && timelineViewport) {
+        // Push timeline up to show footer
+        const pushUpProgress = Math.min(scrollY / window.innerHeight, 1);
         const translateY = pushUpProgress * -100;
-        timelineSection.style.transform = `translate3d(0, ${translateY}vh, 0)`;
-      } else {
-        timelineSection.style.transform = "translate3d(0, 0, 0)";
+        timelineViewport.style.transform = `translateY(${translateY}vh)`;
+      }
+
+      // Allow scrolling back into timeline
+      if (scrollY === 0 && currentAgeIndex === agesData.length - 1) {
+        isVerticalScrolling = false;
+        hasCompletedAllAges = false;
+        document.body.style.overflow = "hidden";
+        if (timelineViewport) {
+          timelineViewport.style.transform = "translateY(0)";
+        }
       }
     }
+  }
+
+  // Position elements below age-card dynamically
+  function positionElementsBelowCard() {
+    const ageCardContainer = document.querySelector(".age-card-container");
+    const ageProgress = document.querySelector(".age-progress");
+    const timelineNav = document.querySelector(".timeline-nav");
+
+    if (ageCardContainer && ageProgress && timelineNav) {
+      const cardRect = ageCardContainer.getBoundingClientRect();
+      const cardBottom = cardRect.bottom;
+      const cardRight = cardRect.right;
+      const viewportHeight = window.innerHeight;
+
+      // Position age-progress below the card
+      const progressTop = cardBottom + 20; // 20px gap
+      ageProgress.style.top = `${progressTop}px`;
+      ageProgress.style.right = `${window.innerWidth - cardRight}px`;
+
+      // Position timeline-nav below age-progress
+      const progressRect = ageProgress.getBoundingClientRect();
+      const navTop = progressRect.bottom + 15; // 15px gap
+      timelineNav.style.top = `${navTop}px`;
+      timelineNav.style.right = `${window.innerWidth - cardRight}px`;
+
+      // On mobile, center the elements
+      if (window.innerWidth <= 768) {
+        const cardLeft = cardRect.left;
+        const cardWidth = cardRect.width;
+        const cardCenter = cardLeft + cardWidth / 2;
+
+        ageProgress.style.left = `${cardCenter}px`;
+        ageProgress.style.right = "auto";
+        ageProgress.style.transform = "translateX(-50%)";
+
+        timelineNav.style.left = `${cardCenter}px`;
+        timelineNav.style.right = "auto";
+        timelineNav.style.transform = "translateX(-50%)";
+      }
+    }
+  }
+
+  // Initialize timeline
+  function initializeTimeline() {
+    // Prevent default scrolling initially
+    document.body.style.overflow = "hidden";
+
+    // Set up starmap container with proper structure for seamless continuity
+    const starmapContainer = document.getElementById("starmap-container");
+    if (starmapContainer) {
+      // Position container so center starmap is visible and ready to scroll
+      // Adjust initial position to align Age of Capricorn with Earth's horizontal position
+      const earthOffsetPercent = 30; // Match Earth's left position
+      const initialPosition = -150 + earthOffsetPercent; // Adjusted for wider starmap
+      starmapContainer.style.transform = `translateX(${initialPosition}vw)`;
+
+      // Ensure all starmap images are properly sized and positioned
+      const starmapLayers = starmapContainer.querySelectorAll(".starmap-layer");
+      starmapLayers.forEach((layer, index) => {
+        layer.style.objectFit = "cover";
+        layer.style.objectPosition = "center center";
+      });
+    }
+
+    // Initialize with first age
+    updateAge(0, false);
+
+    // Position elements below card initially
+    setTimeout(() => {
+      positionElementsBelowCard();
+    }, 100);
+
+    console.log(
+      "Timeline initialized with horizontal scrolling through 12 ages",
+    );
   }
 
   // Add event listeners
   window.addEventListener("wheel", handleWheelScroll, { passive: false });
   window.addEventListener("scroll", handleRegularScroll, { passive: true });
+  window.addEventListener("resize", positionElementsBelowCard, {
+    passive: true,
+  });
 
-  // Initialize with first age
-  console.log("Initializing with first age...");
-  updateAge(0, false);
+  // Initialize
+  initializeTimeline();
 
   console.log(
-    "=== TIMELINE COMPLETE: Simple starmap scroll with age progression ===",
+    "=== TIMELINE COMPLETE: Horizontal scroll through constellations with vertical transition ===",
   );
 });

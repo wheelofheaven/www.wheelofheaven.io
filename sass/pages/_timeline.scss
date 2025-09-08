@@ -7,43 +7,62 @@
 @use "../base/typography" as typo;
 
 // Timeline page main element override
-main:has(.timeline-section) {
+main:has(.timeline-viewport) {
     background: var(--color-background) !important;
     padding: 0 !important;
     max-width: none !important;
     position: relative;
     z-index: 1;
+    overflow: hidden;
+    height: 100vh;
 }
 
-// Timeline Section Container
+// Timeline viewport wrapper - fixed container
+.timeline-viewport {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100vw;
+    height: 100vh;
+    overflow: hidden;
+    z-index: 1;
+    background: transparent;
+}
+
+// Timeline Section Container - horizontal scroller
 .timeline-section {
-    position: relative;
-    height: 100vh; // Single viewport - starmap scrolls within this fixed frame
-    background: transparent; // No background - only starmap.svg
-    overflow-x: hidden;
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 1200vw; // 12 ages × 100vw each = 1200vw total width
+    height: 100vh;
+    background: transparent;
+    overflow: visible;
+    display: flex;
+    transition: transform 0.8s cubic-bezier(0.4, 0, 0.2, 1);
 }
 
-// Earth Animation Container
+// Earth Animation Container - Fixed position for constellation alignment
 .earth-container {
     position: fixed;
-    top: 50%;
+    top: 85%;
     left: 30%;
     transform: translate(-50%, -50%);
-    width: 400px;
-    height: 400px;
-    z-index: 5; // Above starmap (z-index: 1) but below UI elements (z-index: 10)
+    width: 600px;
+    height: 600px;
+    z-index: 6;
 
     @media (max-width: 1200px) {
         left: 25%;
-        width: 320px;
-        height: 320px;
+        width: 480px;
+        height: 480px;
     }
 
     @media (max-width: 768px) {
         left: 50%;
-        top: 30%;
-        width: 280px;
-        height: 280px;
+        top: 85%;
+        width: 420px;
+        height: 420px;
         opacity: 0.6;
     }
 }
@@ -59,79 +78,26 @@ main:has(.timeline-section) {
         inset -20px -20px 50px rgba(0, 0, 0, 0.5);
 }
 
-.earth-surface {
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
-    background: linear-gradient(
-        90deg,
-        var(--color-accent-secondary) 0%,
-        colors.$teal 10%,
-        colors.$blue 20%,
-        colors.$green 30%,
-        var(--color-accent-secondary) 40%,
-        colors.$teal 50%,
-        colors.$blue 60%,
-        colors.$green 70%,
-        var(--color-accent-secondary) 80%,
-        colors.$teal 90%,
-        colors.$blue 100%
-    );
-    border-radius: 50%;
-}
-
-.earth-atmosphere {
-    position: absolute;
-    top: -10px;
-    left: -10px;
-    right: -10px;
-    bottom: -10px;
-    background: radial-gradient(
-        circle at 30% 30%,
-        rgba(135, 206, 250, 0.3) 0%,
-        rgba(135, 206, 250, 0.1) 50%,
-        transparent 100%
-    );
-    border-radius: 50%;
-    pointer-events: none;
-}
-
-.earth-clouds {
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
-    background:
-        radial-gradient(
-            ellipse at 20% 30%,
-            var(--color-cloud-primary, rgba(255, 255, 255, 0.3)) 0%,
-            transparent 40%
-        ),
-        radial-gradient(
-            ellipse at 60% 70%,
-            var(--color-cloud-secondary, rgba(255, 255, 255, 0.2)) 0%,
-            transparent 30%
-        ),
-        radial-gradient(
-            ellipse at 80% 20%,
-            var(--color-cloud-tertiary, rgba(255, 255, 255, 0.25)) 0%,
-            transparent 35%
-        );
-    border-radius: 50%;
-}
-
 // Earth Sunrise
 .earth-sunrise {
-    position: absolute;
-    top: -60px;
-    left: 50%;
+    position: fixed;
+    top: calc(
+        85% - 300px
+    ); /* Earth position minus Earth radius minus sun offset */
+    left: 30%;
     transform: translateX(-50%);
     width: 120px;
     height: 120px;
     pointer-events: none;
+    z-index: 5;
+
+    @media (max-width: 1200px) {
+        left: 25%;
+    }
+
+    @media (max-width: 768px) {
+        left: 50%;
+    }
 }
 
 .sunrise-glow {
@@ -155,51 +121,6 @@ main:has(.timeline-section) {
         0 0 20px #ffd700,
         0 0 40px #ffa500,
         0 0 60px rgba(255, 165, 0, 0.3);
-}
-
-.sunrise-rays {
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-    width: 100%;
-    height: 100%;
-}
-
-.ray {
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    width: 3px;
-    height: 40px;
-    background: linear-gradient(to bottom, #ffd700, #ffa500, transparent);
-    transform-origin: bottom center;
-    border-radius: 2px;
-
-    &.ray-1 {
-        transform: translate(-50%, -100%) rotate(0deg);
-    }
-    &.ray-2 {
-        transform: translate(-50%, -100%) rotate(45deg);
-    }
-    &.ray-3 {
-        transform: translate(-50%, -100%) rotate(90deg);
-    }
-    &.ray-4 {
-        transform: translate(-50%, -100%) rotate(135deg);
-    }
-    &.ray-5 {
-        transform: translate(-50%, -100%) rotate(180deg);
-    }
-    &.ray-6 {
-        transform: translate(-50%, -100%) rotate(225deg);
-    }
-    &.ray-7 {
-        transform: translate(-50%, -100%) rotate(270deg);
-    }
-    &.ray-8 {
-        transform: translate(-50%, -100%) rotate(315deg);
-    }
 }
 
 // Age Card Container
@@ -236,7 +157,7 @@ main:has(.timeline-section) {
         0 20px 60px rgba(0, 0, 0, 0.3),
         0 0 40px var(--age-color, var(--color-accent-primary)),
         inset 0 1px 0 rgba(255, 255, 255, 0.2);
-    transition: all 0.6s cubic-bezier(0.4, 0, 0.2, 1);
+    transition: all 0.4s ease;
     position: relative;
     overflow: hidden;
 
@@ -442,17 +363,12 @@ main:has(.timeline-section) {
 // Age Progress Indicator
 .age-progress {
     position: fixed;
-    top: 20px;
-    left: 20px;
     z-index: 10;
     display: flex;
     flex-direction: column;
     gap: 0.5rem;
-
-    @media (max-width: 768px) {
-        top: 10px;
-        left: 10px;
-    }
+    width: 90%;
+    max-width: 350px;
 }
 
 .age-progress__track {
@@ -476,7 +392,7 @@ main:has(.timeline-section) {
         var(--color-accent-secondary)
     );
     border-radius: 2px;
-    transition: width 0.8s cubic-bezier(0.4, 0, 0.2, 1);
+    transition: width 0.5s ease-out;
     box-shadow: 0 0 10px var(--color-accent-primary);
 }
 
@@ -495,16 +411,20 @@ main:has(.timeline-section) {
 // Navigation Controls
 .timeline-nav {
     position: fixed;
-    right: 20px;
-    top: 50%;
-    transform: translateY(-50%);
     display: flex;
-    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
     gap: 1rem;
     z-index: 10;
+    width: 400px;
+
+    @media (max-width: 1200px) {
+        width: 350px;
+    }
 
     @media (max-width: 768px) {
-        right: 10px;
+        width: 90%;
+        max-width: 350px;
         gap: 0.5rem;
     }
 }
@@ -567,15 +487,11 @@ main:has(.timeline-section) {
 
 // Age Selector Dropdown
 .age-selector {
-    position: fixed;
-    bottom: 20px;
-    left: 50%;
-    transform: translateX(-50%);
+    position: relative;
+    flex: 1;
+    display: flex;
+    justify-content: center;
     z-index: 10;
-
-    @media (max-width: 768px) {
-        bottom: 10px;
-    }
 }
 
 .age-selector__trigger {
@@ -702,7 +618,7 @@ main:has(.timeline-section) {
     font-weight: 500;
 }
 
-// Scrolling Starmap Background
+// Scrolling Starmap Background - 3 repeating starmaps for continuity
 .starmap-background {
     position: fixed;
     top: 0;
@@ -716,30 +632,52 @@ main:has(.timeline-section) {
 
 .starmap-container {
     position: relative;
-    width: 100%; // Normal viewport width - starmap scrolls via object-position
+    width: 500vw; // Wider container to prevent cropping
     height: 100vh;
     display: flex;
     will-change: transform;
-    transform: translate3d(0, 0, 0);
+    transform: translate3d(-100vw, 0, 0); // Start with center starmap visible
+    transition: transform 0.8s cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .starmap-layer {
-    position: absolute;
-    top: 0;
-    width: 100vw; // Full viewport width
+    position: relative;
+    width: 150vw; // Wider to show full SVG
     height: 100vh;
-    object-fit: cover;
-    object-position: 0% center; // Start from left edge, will be animated
+    object-fit: contain;
+    object-position: center;
     opacity: 0.8;
     backface-visibility: hidden;
-    perspective: 1000px;
-    transform: translate3d(0, 0, 0);
+    flex-shrink: 0;
 }
 
-// Removed automatic starmap scroll animation
+// Left starmap (previous cycle)
+.starmap-layer--left {
+    transform: translateX(0);
+}
+
+// Center starmap (current cycle)
+.starmap-layer--center {
+    transform: translateX(0);
+}
+
+// Right starmap (next cycle)
+.starmap-layer--right {
+    transform: translateX(0);
+}
+
+// Timeline Age Sections - Each age takes 100vw
+.timeline-age-section {
+    width: 100vw;
+    height: 100vh;
+    position: relative;
+    flex-shrink: 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
 
 // Animations
-
 @keyframes cardGlow {
     0%,
     100% {
@@ -750,19 +688,15 @@ main:has(.timeline-section) {
     }
 }
 
-@keyframes starmapScrollOnScroll {
-    0% {
-        transform: translateX(0);
-    }
-    100% {
-        transform: translateX(-200%);
-    }
-}
-
 // Responsive Design
 @media (max-width: 768px) {
+    .timeline-viewport {
+        height: 100vh;
+    }
+
     .timeline-section {
-        height: 100vh; // Normal viewport height
+        height: 100vh;
+        width: 1200vw; // Keep full width on mobile
     }
 
     .earth-container {
@@ -798,6 +732,11 @@ main:has(.timeline-section) {
 
 // Accessibility
 @media (prefers-reduced-motion: reduce) {
+    .timeline-section,
+    .starmap-container {
+        transition: none !important;
+    }
+
     .age-card,
     .age-card__link,
     .timeline-nav__btn {
@@ -834,11 +773,11 @@ main:has(.timeline-section) {
     --color-cloud-secondary: rgba(255, 255, 255, 0.1);
     --color-cloud-tertiary: rgba(255, 255, 255, 0.12);
 
-    main:has(.timeline-section) {
+    main:has(.timeline-viewport) {
         background: #0a0a0a !important;
     }
 
-    .timeline-section {
+    .timeline-viewport {
         background: transparent !important;
     }
 
@@ -862,11 +801,11 @@ main:has(.timeline-section) {
     --color-cloud-secondary: rgba(255, 255, 255, 0.4);
     --color-cloud-tertiary: rgba(255, 255, 255, 0.45);
 
-    main:has(.timeline-section) {
+    main:has(.timeline-viewport) {
         background: #f8f9fa !important;
     }
 
-    .timeline-section {
+    .timeline-viewport {
         background: transparent !important;
     }
 
@@ -886,15 +825,19 @@ main:has(.timeline-section) {
 
 // Print Styles
 @media print {
+    .timeline-viewport,
     .timeline-section {
         height: auto;
         overflow: visible;
+        position: static;
+        width: 100%;
     }
 
     .earth-container,
     .timeline-parallax,
     .timeline-nav,
-    .age-selector {
+    .age-selector,
+    .starmap-background {
         display: none;
     }
 
