@@ -1,383 +1,242 @@
-// Timeline Section Styles
+// Timeline Section - Immersive Experience
 //
-// Vertical timeline layout with glassmorphism effects and parallax scrolling
+// Interactive storytelling timeline with Earth animation and smooth scroll transitions
 
 @use "../abstracts/colors" as colors;
 @use "../abstracts/variables" as vars;
 @use "../base/typography" as typo;
 
+// Timeline page main element override
+main:has(.timeline-section) {
+    background: var(--color-background) !important;
+    padding: 0 !important;
+    max-width: none !important;
+    position: relative;
+    z-index: 1;
+}
+
 // Timeline Section Container
 .timeline-section {
     position: relative;
-    min-height: 100vh;
-    background: var(--color-background);
+    height: 100vh; // Single viewport - starmap scrolls within this fixed frame
+    background: transparent; // No background - only starmap.svg
     overflow-x: hidden;
-    scroll-behavior: smooth;
 }
 
-// Timeline Header
-.timeline-header {
-    position: relative;
-    padding: 6rem 0 4rem 0;
-    text-align: center;
-    background: linear-gradient(
-        135deg,
-        var(--color-background),
-        var(--color-background-secondary)
-    );
-    border-bottom: 1px solid var(--color-hairline-subtle);
+// Earth Animation Container
+.earth-container {
+    position: fixed;
+    top: 50%;
+    left: 30%;
+    transform: translate(-50%, -50%);
+    width: 400px;
+    height: 400px;
+    z-index: 5; // Above starmap (z-index: 1) but below UI elements (z-index: 10)
+
+    @media (max-width: 1200px) {
+        left: 25%;
+        width: 320px;
+        height: 320px;
+    }
 
     @media (max-width: 768px) {
-        padding: 4rem 0 3rem 0;
-    }
-}
-
-.timeline-header__title {
-    font-family: typo.$font-family-lead;
-    font-size: 4rem;
-    font-weight: 700;
-    margin: 0 0 1rem 0;
-    background: linear-gradient(
-        45deg,
-        var(--color-text),
-        var(--color-accent-primary),
-        var(--color-accent-secondary)
-    );
-    -webkit-background-clip: text;
-    -webkit-text-fill-color: transparent;
-    background-clip: text;
-    background-size: 200% 200%;
-    animation: gradient-shift 8s ease-in-out infinite;
-    text-shadow: 0 4px 20px rgba(0, 0, 0, 0.3);
-
-    @media (max-width: 768px) {
-        font-size: 2.5rem;
-    }
-
-    @media (max-width: 480px) {
-        font-size: 2rem;
-    }
-}
-
-.timeline-header__subtitle {
-    font-size: 1.25rem;
-    color: var(--color-text-muted);
-    max-width: 600px;
-    margin: 0 auto;
-    line-height: 1.6;
-
-    @media (max-width: 768px) {
-        font-size: 1rem;
-        padding: 0 1rem;
-    }
-}
-
-// Timeline Container
-.timeline-container {
-    position: relative;
-    max-width: 1200px;
-    margin: 0 auto;
-    padding: 4rem 2rem 2rem 2rem;
-
-    @media (max-width: 768px) {
-        padding: 2rem 1rem;
-        padding-left: 4rem;
-    }
-}
-
-// Central Timeline Track
-.timeline-track {
-    position: absolute;
-    left: 50%;
-    top: 0;
-    bottom: 0;
-    width: 2px;
-    background: linear-gradient(
-        to bottom,
-        transparent,
-        var(--color-hairline),
-        var(--color-hairline),
-        transparent
-    );
-    transform: translateX(-50%);
-    z-index: 1;
-    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
-
-    @media (max-width: 768px) {
-        left: 2rem;
-        transform: none;
-    }
-
-    &::before {
-        content: "";
-        position: absolute;
-        top: 0;
         left: 50%;
-        width: 8px;
-        height: 8px;
-        background: var(--color-accent-primary);
-        border-radius: 50%;
-        transform: translateX(-50%);
-        box-shadow: 0 0 20px var(--color-accent-primary);
-    }
-
-    &::after {
-        content: "";
-        position: absolute;
-        bottom: 0;
-        left: 50%;
-        width: 8px;
-        height: 8px;
-        background: var(--color-accent-secondary);
-        border-radius: 50%;
-        transform: translateX(-50%);
-        box-shadow: 0 0 20px var(--color-accent-secondary);
+        top: 30%;
+        width: 280px;
+        height: 280px;
+        opacity: 0.6;
     }
 }
 
-// Timeline Items
-.timeline-item {
+.earth-sphere {
     position: relative;
-    margin-bottom: 6rem;
-    z-index: 10;
-
-    &:last-child {
-        margin-bottom: 0;
-    }
-
-    // Add subtle hover effect for entire timeline item
-    &:hover {
-        .timeline-age-label__text {
-            color: var(--age-color, var(--color-accent-primary));
-            text-shadow: 0 0 15px var(--age-color, var(--color-accent-primary));
-        }
-
-        .timeline-marker__symbol {
-            transform: scale(1.1);
-            border-width: 3px;
-        }
-    }
-
-    @media (max-width: 768px) {
-        margin-bottom: 4rem;
-        margin-left: 2rem;
-    }
-}
-
-// Timeline Markers
-.timeline-marker {
-    position: absolute;
-    left: 50%;
-    top: 2rem;
-    transform: translateX(-50%);
-    z-index: 15;
-
-    @media (max-width: 768px) {
-        left: -2rem;
-        transform: none;
-    }
-}
-
-.timeline-marker__symbol {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    width: 4rem;
-    height: 4rem;
-    background: var(--color-glass-bg);
-    border: 2px solid var(--age-color, var(--color-accent-primary));
+    width: 100%;
+    height: 100%;
     border-radius: 50%;
-    font-size: 1.5rem;
-    color: var(--age-color, var(--color-accent-primary));
-    backdrop-filter: blur(10px);
-    -webkit-backdrop-filter: blur(10px);
+    overflow: hidden;
     box-shadow:
-        0 0 30px rgba(0, 0, 0, 0.1),
-        0 0 20px var(--age-color, var(--color-accent-primary)),
-        inset 0 0 20px rgba(255, 255, 255, 0.1);
-    animation: symbolPulse 4s ease-in-out infinite;
-    transition: all 0.3s ease;
-    position: relative;
-
-    &::after {
-        content: "";
-        position: absolute;
-        inset: -2px;
-        border-radius: 50%;
-        padding: 2px;
-        background: linear-gradient(
-            45deg,
-            var(--age-color, var(--color-accent-primary)),
-            transparent,
-            var(--age-color, var(--color-accent-primary))
-        );
-        mask:
-            linear-gradient(#fff 0 0) content-box,
-            linear-gradient(#fff 0 0);
-        mask-composite: xor;
-        -webkit-mask:
-            linear-gradient(#fff 0 0) content-box,
-            linear-gradient(#fff 0 0);
-        -webkit-mask-composite: xor;
-        opacity: 0.3;
-        animation: borderRotate 8s linear infinite;
-    }
-
-    @media (max-width: 768px) {
-        width: 3rem;
-        height: 3rem;
-        font-size: 1.25rem;
-    }
-
-    // Add floating animation to odd timeline items
-    .timeline-item:nth-child(odd) & {
-        animation:
-            symbolPulse 4s ease-in-out infinite,
-            floatUpDown 6s ease-in-out infinite;
-    }
-
-    .timeline-item:nth-child(even) & {
-        animation:
-            symbolPulse 4s ease-in-out infinite,
-            floatUpDown 6s ease-in-out infinite 3s;
-    }
+        0 0 50px rgba(0, 0, 0, 0.3),
+        inset -20px -20px 50px rgba(0, 0, 0, 0.5);
 }
 
-.timeline-marker__line {
+.earth-surface {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: linear-gradient(
+        90deg,
+        var(--color-accent-secondary) 0%,
+        colors.$teal 10%,
+        colors.$blue 20%,
+        colors.$green 30%,
+        var(--color-accent-secondary) 40%,
+        colors.$teal 50%,
+        colors.$blue 60%,
+        colors.$green 70%,
+        var(--color-accent-secondary) 80%,
+        colors.$teal 90%,
+        colors.$blue 100%
+    );
+    border-radius: 50%;
+}
+
+.earth-atmosphere {
+    position: absolute;
+    top: -10px;
+    left: -10px;
+    right: -10px;
+    bottom: -10px;
+    background: radial-gradient(
+        circle at 30% 30%,
+        rgba(135, 206, 250, 0.3) 0%,
+        rgba(135, 206, 250, 0.1) 50%,
+        transparent 100%
+    );
+    border-radius: 50%;
+    pointer-events: none;
+}
+
+.earth-clouds {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background:
+        radial-gradient(
+            ellipse at 20% 30%,
+            var(--color-cloud-primary, rgba(255, 255, 255, 0.3)) 0%,
+            transparent 40%
+        ),
+        radial-gradient(
+            ellipse at 60% 70%,
+            var(--color-cloud-secondary, rgba(255, 255, 255, 0.2)) 0%,
+            transparent 30%
+        ),
+        radial-gradient(
+            ellipse at 80% 20%,
+            var(--color-cloud-tertiary, rgba(255, 255, 255, 0.25)) 0%,
+            transparent 35%
+        );
+    border-radius: 50%;
+}
+
+// Earth Sunrise
+.earth-sunrise {
+    position: absolute;
+    top: -60px;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 120px;
+    height: 120px;
+    pointer-events: none;
+}
+
+.sunrise-glow {
     position: absolute;
     top: 50%;
     left: 50%;
-    width: 60px;
-    height: 1px;
-    background: var(--age-color, var(--color-hairline));
-    transform: translateY(-50%);
-    z-index: -1;
-
-    @media (max-width: 768px) {
-        width: 40px;
-        left: 100%;
-        transform: translateY(-50%);
-    }
-
-    .timeline-content--left & {
-        right: 100%;
-        left: auto;
-        transform: translateY(-50%);
-
-        @media (max-width: 768px) {
-            right: auto;
-            left: 100%;
-        }
-    }
+    transform: translate(-50%, -50%);
+    width: 100px;
+    height: 100px;
+    background: radial-gradient(
+        circle,
+        #ffd700 0%,
+        #ffa500 20%,
+        #ff8c00 40%,
+        #ff6347 60%,
+        rgba(255, 99, 71, 0.6) 80%,
+        transparent 100%
+    );
+    border-radius: 50%;
+    box-shadow:
+        0 0 20px #ffd700,
+        0 0 40px #ffa500,
+        0 0 60px rgba(255, 165, 0, 0.3);
 }
 
-// Timeline Content
-.timeline-content {
-    width: 45%;
-    position: relative;
-
-    &--left {
-        margin-left: 0;
-        text-align: right;
-
-        .timeline-age-label {
-            right: -8rem;
-            left: auto;
-            transform: rotate(-90deg);
-            transform-origin: right center;
-        }
-
-        .timeline-card {
-            margin-right: 4rem;
-        }
-
-        @media (max-width: 1024px) {
-            .timeline-card {
-                margin-right: 2rem;
-            }
-        }
-    }
-
-    &--right {
-        margin-left: 55%;
-
-        .timeline-age-label {
-            left: -8rem;
-            transform: rotate(90deg);
-            transform-origin: left center;
-        }
-
-        .timeline-card {
-            margin-left: 4rem;
-        }
-
-        @media (max-width: 1024px) {
-            .timeline-card {
-                margin-left: 2rem;
-            }
-        }
-    }
-
-    @media (max-width: 768px) {
-        width: calc(100% - 4rem);
-        margin-left: 0 !important;
-        text-align: left !important;
-
-        .timeline-age-label {
-            display: none;
-        }
-
-        .timeline-card {
-            margin: 0 !important;
-        }
-    }
-
-    @media (max-width: 480px) {
-        width: calc(100% - 3rem);
-
-        .timeline-card {
-            padding: 1rem;
-        }
-    }
-}
-
-// Age Labels (Vertical Text)
-.timeline-age-label {
+.sunrise-rays {
     position: absolute;
-    top: 2rem;
-    writing-mode: vertical-rl;
-    text-orientation: mixed;
-    white-space: nowrap;
-    z-index: 5;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 100%;
+    height: 100%;
+}
 
-    @media (max-width: 768px) {
-        display: none;
+.ray {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    width: 3px;
+    height: 40px;
+    background: linear-gradient(to bottom, #ffd700, #ffa500, transparent);
+    transform-origin: bottom center;
+    border-radius: 2px;
+
+    &.ray-1 {
+        transform: translate(-50%, -100%) rotate(0deg);
+    }
+    &.ray-2 {
+        transform: translate(-50%, -100%) rotate(45deg);
+    }
+    &.ray-3 {
+        transform: translate(-50%, -100%) rotate(90deg);
+    }
+    &.ray-4 {
+        transform: translate(-50%, -100%) rotate(135deg);
+    }
+    &.ray-5 {
+        transform: translate(-50%, -100%) rotate(180deg);
+    }
+    &.ray-6 {
+        transform: translate(-50%, -100%) rotate(225deg);
+    }
+    &.ray-7 {
+        transform: translate(-50%, -100%) rotate(270deg);
+    }
+    &.ray-8 {
+        transform: translate(-50%, -100%) rotate(315deg);
     }
 }
 
-.timeline-age-label__text {
-    font-family: typo.$font-family-lead;
-    font-size: 1.5rem;
-    font-weight: 600;
-    color: var(--age-color, var(--color-text-muted));
-    text-shadow: 0 2px 10px rgba(0, 0, 0, 0.3);
-    letter-spacing: 0.1em;
-    transition: all 0.3s ease;
+// Age Card Container
+.age-card-container {
+    position: fixed;
+    top: 10%;
+    right: 5%;
+    width: 400px;
+    z-index: 10;
+
+    @media (max-width: 1200px) {
+        width: 350px;
+        right: 3%;
+    }
+
+    @media (max-width: 768px) {
+        top: 50%;
+        left: 50%;
+        right: auto;
+        transform: translate(-50%, -50%);
+        width: 90%;
+        max-width: 350px;
+    }
 }
 
-// Timeline Cards
-.timeline-card {
+.age-card {
     background: var(--color-glass-bg);
-    border: 1px solid var(--color-glass-border);
+    border: 2px solid var(--age-color, var(--color-accent-primary));
     border-radius: vars.$border-radius-xl;
     padding: 2rem;
-    backdrop-filter: blur(10px);
-    -webkit-backdrop-filter: blur(10px);
+    backdrop-filter: blur(20px);
+    -webkit-backdrop-filter: blur(20px);
     box-shadow:
-        0 8px 32px rgba(0, 0, 0, 0.1),
-        0 0 1px var(--age-color, var(--color-accent-primary)),
-        inset 0 1px 0 rgba(255, 255, 255, 0.1);
-    transition: all 0.3s ease;
+        0 20px 60px rgba(0, 0, 0, 0.3),
+        0 0 40px var(--age-color, var(--color-accent-primary)),
+        inset 0 1px 0 rgba(255, 255, 255, 0.2);
+    transition: all 0.6s cubic-bezier(0.4, 0, 0.2, 1);
     position: relative;
     overflow: hidden;
 
@@ -387,186 +246,121 @@
         top: 0;
         left: 0;
         right: 0;
-        height: 3px;
+        height: 4px;
         background: linear-gradient(
             90deg,
             transparent,
             var(--age-color, var(--color-accent-primary)),
             transparent
         );
-        opacity: 0.6;
+        animation: cardGlow 3s ease-in-out infinite;
     }
 
-    &:hover {
-        transform: translateY(-8px) scale(1.02);
-        box-shadow:
-            0 20px 80px rgba(0, 0, 0, 0.2),
-            0 0 40px var(--age-color, var(--color-accent-primary)),
-            inset 0 1px 0 rgba(255, 255, 255, 0.2);
-        border-color: var(--age-color, var(--color-accent-primary));
-
-        &::before {
-            opacity: 0.8;
-        }
-
-        .timeline-card__image-placeholder {
-            transform: scale(1.05);
-        }
-
-        .timeline-card__image-icon {
-            animation-play-state: paused;
-            transform: scale(1.2);
-        }
-    }
-
-    @media (max-width: 768px) {
-        padding: 1.5rem;
-        margin: 0;
-        border-radius: vars.$border-radius-lg;
-    }
-}
-
-.timeline-card__header {
-    margin-bottom: 1.5rem;
-    text-align: center;
-
-    @media (max-width: 768px) {
-        text-align: left;
-    }
-}
-
-.timeline-card__title {
-    font-family: typo.$font-family-lead;
-    font-size: 1.5rem;
-    font-weight: 600;
-    color: var(--color-text);
-    margin: 0 0 0.5rem 0;
-
-    @media (max-width: 768px) {
-        font-size: 1.25rem;
-        margin-bottom: 0.75rem;
-    }
-}
-
-.timeline-card__timespan {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    gap: 0.5rem;
-    font-family: typo.$font-family-tech;
-    font-size: 0.875rem;
-    color: var(--color-text-muted);
-    opacity: 0.8;
-
-    @media (max-width: 768px) {
-        justify-content: flex-start;
-        flex-wrap: wrap;
-        gap: 0.25rem;
-        font-size: 0.75rem;
-    }
-}
-
-.timeline-card__separator {
-    color: var(--age-color, var(--color-accent-primary));
-    font-weight: 600;
-}
-
-// Image Placeholder
-.timeline-card__image-placeholder {
-    position: relative;
-    width: 100%;
-    height: 200px;
-    background: linear-gradient(
-        135deg,
-        var(--age-color, var(--color-accent-primary)),
-        var(--color-background-tertiary)
-    );
-    border-radius: vars.$border-radius-md;
-    margin-bottom: 1.5rem;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    overflow: hidden;
-    opacity: 0.7;
-    transition: transform 0.3s ease;
-    cursor: pointer;
-
-    &::before {
+    &::after {
         content: "";
         position: absolute;
         top: 0;
-        left: 0;
-        right: 0;
-        bottom: 0;
+        left: -100%;
+        width: 100%;
+        height: 100%;
         background: linear-gradient(
-            45deg,
-            transparent 30%,
-            rgba(255, 255, 255, 0.1) 50%,
-            transparent 70%
+            90deg,
+            transparent,
+            rgba(255, 255, 255, 0.1),
+            transparent
         );
-        animation: shimmer 3s ease-in-out infinite;
+        transition: left 0.8s ease;
     }
+
+    &:hover::after {
+        left: 100%;
+    }
+}
+
+.age-card__symbol {
+    position: absolute;
+    top: -20px;
+    right: -20px;
+    width: 80px;
+    height: 80px;
+    background: var(--age-color, var(--color-accent-primary));
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 2rem;
+    color: var(--color-background);
+    box-shadow:
+        0 10px 30px rgba(0, 0, 0, 0.3),
+        0 0 30px var(--age-color, var(--color-accent-primary));
 
     @media (max-width: 768px) {
-        height: 120px;
+        width: 60px;
+        height: 60px;
+        font-size: 1.5rem;
+        top: -15px;
+        right: -15px;
     }
 }
 
-.timeline-card__image-placeholder-text {
-    text-align: center;
-    color: var(--color-background);
-    font-weight: 600;
-    text-shadow: 0 2px 8px rgba(0, 0, 0, 0.5);
-    z-index: 1;
-    position: relative;
+.age-card__content {
+    margin-top: 1rem;
+}
+
+.age-card__title {
+    font-family: typo.$font-family-lead;
+    font-size: 1.75rem;
+    font-weight: 700;
+    color: var(--color-text);
+    margin: 0 0 1rem 0;
+    line-height: 1.2;
+
+    @media (max-width: 768px) {
+        font-size: 1.5rem;
+    }
+}
+
+.age-card__timespan {
     display: flex;
-    flex-direction: column;
     align-items: center;
-    gap: 0.5rem;
-    user-select: none;
-
-    small {
-        font-size: 0.75rem;
-        opacity: 0.8;
-    }
-}
-
-.timeline-card__image-icon {
-    font-size: 2.5rem;
-    margin-bottom: 0.5rem;
-    opacity: 0.9;
-    filter: drop-shadow(0 2px 4px rgba(0, 0, 0, 0.3));
-    animation: iconFloat 3s ease-in-out infinite;
-    color: var(--color-background);
-    text-shadow: 0 0 20px currentColor;
-}
-
-.timeline-card__image-label {
-    display: flex;
-    flex-direction: column;
-    gap: 0.25rem;
-
-    small {
-        font-size: 0.75rem;
-        opacity: 0.8;
-    }
-}
-
-// Timeline Card Content
-.timeline-card__content {
+    justify-content: center;
+    gap: 0.75rem;
+    font-family: typo.$font-family-tech;
+    font-size: 0.875rem;
+    color: var(--color-text-muted);
     margin-bottom: 1.5rem;
+    padding: 0.5rem;
+    background: var(--color-background-tertiary);
+    border-radius: vars.$border-radius-md;
+    border: 1px solid var(--color-hairline);
+
+    @media (max-width: 768px) {
+        font-size: 0.75rem;
+        gap: 0.5rem;
+        flex-wrap: wrap;
+    }
 }
 
-.timeline-card__event {
+.age-card__separator {
+    color: var(--age-color, var(--color-accent-primary));
+    font-weight: 600;
+    font-size: 1.2em;
+}
+
+.age-card__description {
     font-size: 1rem;
     line-height: 1.6;
     color: var(--color-text);
-    margin: 0;
+    margin-bottom: 2rem;
     text-align: left;
+
+    @media (max-width: 768px) {
+        font-size: 0.9rem;
+        margin-bottom: 1.5rem;
+    }
 }
 
-// Timeline Card Footer
-.timeline-card__footer {
+.age-card__footer {
     display: flex;
     flex-direction: column;
     gap: 1rem;
@@ -574,43 +368,35 @@
     border-top: 1px solid var(--color-hairline-subtle);
 }
 
-.timeline-card__meta {
-    text-align: center;
-}
-
-.timeline-card__duration {
+.age-card__duration {
     font-family: typo.$font-family-tech;
     font-size: 0.75rem;
     color: var(--color-text-subtle);
-    background: var(--color-background-tertiary);
+    background: var(--color-background-secondary);
     padding: 0.25rem 0.75rem;
-    border-radius: vars.$border-radius-sm;
+    border-radius: vars.$border-radius-full;
+    text-align: center;
     border: 1px solid var(--color-hairline);
 }
 
-.timeline-card__link {
+.age-card__link {
     display: inline-flex;
     align-items: center;
     justify-content: center;
     gap: 0.5rem;
-    padding: 0.75rem 1.5rem;
-    background: linear-gradient(
-        135deg,
-        var(--age-color, var(--color-accent-primary)),
-        var(--age-color-dark, var(--color-accent-secondary))
-    );
+    padding: 1rem 2rem;
+    background: var(--age-color, var(--color-accent-primary));
     color: var(--color-background);
     text-decoration: none;
     border-radius: vars.$border-radius-full;
-    font-weight: 500;
+    font-weight: 600;
     font-size: 0.875rem;
     transition: all 0.3s ease;
     box-shadow:
-        0 4px 16px rgba(0, 0, 0, 0.1),
+        0 8px 24px rgba(0, 0, 0, 0.2),
         0 0 20px var(--age-color, var(--color-accent-primary));
     position: relative;
     overflow: hidden;
-    align-self: center;
 
     &::before {
         content: "";
@@ -622,649 +408,508 @@
         background: linear-gradient(
             90deg,
             transparent,
-            rgba(255, 255, 255, 0.2),
+            rgba(255, 255, 255, 0.3),
             transparent
         );
-        transition: left 0.5s ease;
+        transition: left 0.6s ease;
     }
 
     &:hover {
         transform: translateY(-2px);
         box-shadow:
-            0 8px 24px rgba(0, 0, 0, 0.15),
-            0 0 30px var(--age-color, var(--color-accent-primary));
+            0 12px 36px rgba(0, 0, 0, 0.3),
+            0 0 40px var(--age-color, var(--color-accent-primary));
         filter: brightness(1.1);
 
         &::before {
             left: 100%;
+        }
+
+        .age-card__link-icon {
+            transform: translateX(4px);
         }
     }
 
     &:active {
         transform: translateY(0);
     }
+}
 
-    &:focus {
-        outline: 2px solid var(--age-color, var(--color-accent-primary));
-        outline-offset: 2px;
+.age-card__link-icon {
+    transition: transform 0.3s ease;
+}
+
+// Age Progress Indicator
+.age-progress {
+    position: fixed;
+    top: 20px;
+    left: 20px;
+    z-index: 10;
+    display: flex;
+    flex-direction: column;
+    gap: 0.5rem;
+
+    @media (max-width: 768px) {
+        top: 10px;
+        left: 10px;
     }
 }
 
-.timeline-card__link-icon {
+.age-progress__track {
+    width: 200px;
+    height: 4px;
+    background: var(--color-background-tertiary);
+    border-radius: 2px;
+    overflow: hidden;
+    box-shadow: inset 0 1px 3px rgba(0, 0, 0, 0.2);
+
+    @media (max-width: 768px) {
+        width: 150px;
+    }
+}
+
+.age-progress__fill {
+    height: 100%;
+    background: linear-gradient(
+        90deg,
+        var(--color-accent-primary),
+        var(--color-accent-secondary)
+    );
+    border-radius: 2px;
+    transition: width 0.8s cubic-bezier(0.4, 0, 0.2, 1);
+    box-shadow: 0 0 10px var(--color-accent-primary);
+}
+
+.age-progress__current {
+    font-family: typo.$font-family-tech;
+    font-size: 0.75rem;
+    color: var(--color-text-muted);
+    text-align: center;
+    background: var(--color-glass-bg);
+    padding: 0.25rem 0.5rem;
+    border-radius: vars.$border-radius-sm;
+    backdrop-filter: blur(10px);
+    border: 1px solid var(--color-hairline);
+}
+
+// Navigation Controls
+.timeline-nav {
+    position: fixed;
+    right: 20px;
+    top: 50%;
+    transform: translateY(-50%);
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+    z-index: 10;
+
+    @media (max-width: 768px) {
+        right: 10px;
+        gap: 0.5rem;
+    }
+}
+
+.timeline-nav__btn {
+    width: 50px;
+    height: 50px;
+    background: var(--color-glass-bg);
+    border: 2px solid var(--color-accent-primary);
+    border-radius: 50%;
+    color: var(--color-accent-primary);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    backdrop-filter: blur(10px);
+    box-shadow:
+        0 4px 16px rgba(0, 0, 0, 0.2),
+        0 0 20px var(--color-accent-primary);
+
+    &:hover {
+        transform: scale(1.1);
+        background: var(--color-accent-primary);
+        color: var(--color-background);
+        box-shadow:
+            0 8px 24px rgba(0, 0, 0, 0.3),
+            0 0 30px var(--color-accent-primary);
+    }
+
+    &:active {
+        transform: scale(1.05);
+    }
+
+    &:disabled {
+        opacity: 0.3;
+        cursor: not-allowed;
+        transform: none;
+
+        &:hover {
+            transform: none;
+            background: var(--color-glass-bg);
+            color: var(--color-accent-primary);
+            box-shadow:
+                0 4px 16px rgba(0, 0, 0, 0.2),
+                0 0 20px var(--color-accent-primary);
+        }
+    }
+
+    @media (max-width: 768px) {
+        width: 40px;
+        height: 40px;
+
+        svg {
+            width: 16px;
+            height: 16px;
+        }
+    }
+}
+
+// Age Selector Dropdown
+.age-selector {
+    position: fixed;
+    bottom: 20px;
+    left: 50%;
+    transform: translateX(-50%);
+    z-index: 10;
+
+    @media (max-width: 768px) {
+        bottom: 10px;
+    }
+}
+
+.age-selector__trigger {
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+    padding: 0.75rem 1.5rem;
+    background: var(--color-glass-bg);
+    border: 2px solid var(--color-accent-primary);
+    border-radius: vars.$border-radius-full;
+    color: var(--color-text);
+    font-family: typo.$font-family-tech;
+    font-size: 0.875rem;
+    font-weight: 500;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    backdrop-filter: blur(10px);
+    box-shadow:
+        0 4px 16px rgba(0, 0, 0, 0.2),
+        0 0 20px var(--color-accent-primary);
+
+    &:hover {
+        background: var(--color-accent-primary);
+        color: var(--color-background);
+        transform: translateY(-2px);
+        box-shadow:
+            0 8px 24px rgba(0, 0, 0, 0.3),
+            0 0 30px var(--color-accent-primary);
+    }
+
+    @media (max-width: 768px) {
+        padding: 0.5rem 1rem;
+        font-size: 0.75rem;
+    }
+}
+
+.age-selector__dropdown {
+    position: absolute;
+    bottom: calc(100% + 10px);
+    left: 50%;
+    transform: translateX(-50%);
+    width: 300px;
+    max-height: 400px;
+    background: var(--color-glass-bg);
+    border: 2px solid var(--color-accent-primary);
+    border-radius: vars.$border-radius-lg;
+    backdrop-filter: blur(20px);
+    box-shadow:
+        0 20px 60px rgba(0, 0, 0, 0.3),
+        0 0 40px var(--color-accent-primary);
+    opacity: 0;
+    visibility: hidden;
+    transform: translateX(-50%) translateY(20px);
+    transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+    overflow-y: auto;
+
+    &--open {
+        opacity: 1;
+        visibility: visible;
+        transform: translateX(-50%) translateY(0);
+    }
+
+    @media (max-width: 768px) {
+        width: 280px;
+        max-height: 300px;
+    }
+}
+
+.age-selector__option {
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+    padding: 1rem;
+    background: transparent;
+    border: none;
+    color: var(--color-text);
+    font-family: typo.$font-family-tech;
+    font-size: 0.875rem;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    width: 100%;
+    text-align: left;
+    border-bottom: 1px solid var(--color-hairline-subtle);
+
+    &:last-child {
+        border-bottom: none;
+    }
+
+    &:hover {
+        background: var(--color-background-secondary);
+        color: var(--color-accent-primary);
+
+        .age-selector__symbol {
+            transform: scale(1.2);
+        }
+    }
+
+    @media (max-width: 768px) {
+        padding: 0.75rem;
+        font-size: 0.75rem;
+        gap: 0.75rem;
+    }
+}
+
+.age-selector__symbol {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 30px;
+    height: 30px;
+    background: var(--color-background-tertiary);
+    border-radius: 50%;
+    font-size: 1rem;
     transition: transform 0.3s ease;
 
-    .timeline-card__link:hover & {
-        transform: translateX(2px);
-    }
-}
-
-// Timeline Footer Summary
-.timeline-footer {
-    padding: 6rem 0;
-    background: var(--color-background-secondary);
-    border-top: 1px solid var(--color-hairline-subtle);
-
     @media (max-width: 768px) {
-        padding: 4rem 0;
+        width: 25px;
+        height: 25px;
+        font-size: 0.875rem;
     }
 }
 
-.timeline-summary {
-    text-align: center;
-    max-width: 800px;
-    margin: 0 auto;
-    padding: 0 2rem;
-
-    @media (max-width: 768px) {
-        padding: 0 1rem;
-    }
+.age-selector__name {
+    font-weight: 500;
 }
 
-.timeline-summary__title {
-    font-family: typo.$font-family-lead;
-    font-size: 2.5rem;
-    font-weight: 600;
-    color: var(--color-text);
-    margin: 0 0 2rem 0;
-
-    @media (max-width: 768px) {
-        font-size: 2rem;
-    }
-}
-
-.timeline-summary__text {
-    font-size: 1.125rem;
-    line-height: 1.7;
-    color: var(--color-text-muted);
-    margin: 0;
-}
-
-// Parallax Background
-.timeline-parallax {
+// Scrolling Starmap Background
+.starmap-background {
     position: fixed;
     top: 0;
     left: 0;
-    width: 100%;
-    height: 100%;
-    pointer-events: none;
-    z-index: 0;
+    width: 100vw;
+    height: 100vh;
+    z-index: 1;
     overflow: hidden;
+    pointer-events: none;
 }
 
-.timeline-parallax__stars {
+.starmap-container {
+    position: relative;
+    width: 100%; // Normal viewport width - starmap scrolls via object-position
+    height: 100vh;
+    display: flex;
+    will-change: transform;
+    transform: translate3d(0, 0, 0);
+}
+
+.starmap-layer {
     position: absolute;
-    width: 120%;
-    height: 120%;
-    background-image:
-        radial-gradient(
-            1px 1px at 20px 30px,
-            rgba(255, 255, 255, 0.15),
-            transparent
-        ),
-        radial-gradient(
-            1px 1px at 40px 70px,
-            rgba(255, 255, 255, 0.1),
-            transparent
-        ),
-        radial-gradient(
-            1px 1px at 90px 40px,
-            rgba(255, 255, 255, 0.2),
-            transparent
-        ),
-        radial-gradient(
-            1px 1px at 130px 20px,
-            rgba(255, 255, 255, 0.08),
-            transparent
-        ),
-        radial-gradient(
-            1px 1px at 160px 90px,
-            rgba(255, 255, 255, 0.12),
-            transparent
-        );
-    background-repeat: repeat;
-
-    &--layer-1 {
-        background-size: 200px 200px;
-        animation: starsTwinkle 20s linear infinite;
-    }
-
-    &--layer-2 {
-        background-size: 300px 300px;
-        animation: starsTwinkle 30s linear infinite reverse;
-        opacity: 0.6;
-    }
-
-    &--layer-3 {
-        background-size: 400px 400px;
-        animation: starsTwinkle 40s linear infinite;
-        opacity: 0.3;
-    }
+    top: 0;
+    width: 100vw; // Full viewport width
+    height: 100vh;
+    object-fit: cover;
+    object-position: 0% center; // Start from left edge, will be animated
+    opacity: 0.8;
+    backface-visibility: hidden;
+    perspective: 1000px;
+    transform: translate3d(0, 0, 0);
 }
 
-// Color-specific styling for each age
-.timeline-item {
-    // Age-specific color variables will be set via JavaScript
-    --age-color: var(--color-accent-primary);
-
-    // Add subtle entrance animations
-    opacity: 0;
-    transform: translateY(50px);
-    animation: timelineItemFadeIn 0.8s ease-out forwards;
-
-    // Enhanced visibility animation
-    &--visible {
-        animation: timelineItemSlideIn 0.8s ease-out forwards;
-
-        .timeline-card {
-            animation: cardSlideIn 0.6s ease-out 0.2s both;
-        }
-
-        .timeline-age-label__text {
-            animation: labelFadeIn 0.6s ease-out 0.4s both;
-        }
-
-        .timeline-card__image-placeholder {
-            animation: imagePlaceholderFadeIn 0.8s ease-out 0.5s both;
-        }
-
-        .timeline-marker__symbol {
-            animation:
-                symbolPulse 4s ease-in-out infinite,
-                markerPop 0.5s ease-out 0.3s both;
-        }
-    }
-
-    // Yellow (Age of Cancer)
-    &[data-age-color="yellow"] {
-        --age-color: #{colors.$yellow};
-        --age-color-dark: #{colors.$yellow-600};
-        animation-delay: 0.1s;
-    }
-
-    // Pink (Age of Gemini)
-    &[data-age-color="pink"] {
-        --age-color: #{colors.$pink};
-        --age-color-dark: #{colors.$pink-600};
-        animation-delay: 0.2s;
-    }
-
-    // Soft Pink (Age of Taurus)
-    &[data-age-color="soft-pink"] {
-        --age-color: #{colors.$soft-pink};
-        --age-color-dark: #{colors.$soft-pink-600};
-        animation-delay: 0.3s;
-    }
-
-    // Lavender (Age of Aries)
-    &[data-age-color="lavender"] {
-        --age-color: #{colors.$lavender};
-        --age-color-dark: #{colors.$lavender-600};
-        animation-delay: 0.4s;
-    }
-
-    // Mauve (Age of Pisces & Capricorn)
-    &[data-age-color="mauve"] {
-        --age-color: #{colors.$mauve};
-        --age-color-dark: #{colors.$mauve-600};
-        animation-delay: 0.5s;
-    }
-
-    // Blue (Age of Sagittarius & Aquarius)
-    &[data-age-color="blue"] {
-        --age-color: #{colors.$blue};
-        --age-color-dark: #{colors.$blue-600};
-        animation-delay: 0.6s;
-    }
-
-    // Cyan (Age of Scorpio)
-    &[data-age-color="cyan"] {
-        --age-color: #{colors.$cyan};
-        --age-color-dark: #{colors.$cyan-600};
-        animation-delay: 0.7s;
-    }
-
-    // Teal (Age of Libra)
-    &[data-age-color="teal"] {
-        --age-color: #{colors.$teal};
-        --age-color-dark: #{colors.$teal-600};
-        animation-delay: 0.8s;
-    }
-
-    // Mint (Age of Virgo)
-    &[data-age-color="mint"] {
-        --age-color: #{colors.$mint};
-        --age-color-dark: #{colors.$mint-600};
-        animation-delay: 0.9s;
-    }
-
-    // Green (Age of Leo)
-    &[data-age-color="green"] {
-        --age-color: #{colors.$green};
-        --age-color-dark: #{colors.$green-600};
-        animation-delay: 1s;
-    }
-}
-
-// Container utility
-.container {
-    max-width: vars.$viewport-max-width;
-    margin: 0 auto;
-    padding: 0 2rem;
-
-    @media (max-width: 768px) {
-        padding: 0 1rem;
-    }
-}
+// Removed automatic starmap scroll animation
 
 // Animations
-@keyframes gradient-shift {
-    0%,
-    100% {
-        background-position: 0% 50%;
-    }
-    50% {
-        background-position: 100% 50%;
-    }
-}
 
-@keyframes starsTwinkle {
+@keyframes cardGlow {
     0%,
     100% {
-        opacity: 0.3;
-    }
-    25% {
         opacity: 0.6;
     }
     50% {
-        opacity: 0.4;
-    }
-    75% {
-        opacity: 0.8;
-    }
-}
-
-@keyframes symbolPulse {
-    0%,
-    100% {
-        box-shadow:
-            0 0 30px rgba(0, 0, 0, 0.1),
-            0 0 20px var(--age-color, var(--color-accent-primary));
-        transform: scale(1);
-    }
-    50% {
-        box-shadow:
-            0 0 40px rgba(0, 0, 0, 0.15),
-            0 0 40px var(--age-color, var(--color-accent-primary));
-        transform: scale(1.05);
-    }
-}
-
-@keyframes shimmer {
-    0% {
-        transform: translateX(-100%);
-    }
-    100% {
-        transform: translateX(100%);
-    }
-}
-
-@keyframes timelineItemFadeIn {
-    0% {
-        opacity: 0;
-        transform: translateY(50px);
-    }
-    100% {
-        opacity: 1;
-        transform: translateY(0);
-    }
-}
-
-@keyframes borderRotate {
-    0% {
-        transform: rotate(0deg);
-    }
-    100% {
-        transform: rotate(360deg);
-    }
-}
-
-@keyframes floatUpDown {
-    0%,
-    100% {
-        transform: translateY(0);
-    }
-    50% {
-        transform: translateY(-10px);
-    }
-}
-
-@keyframes iconFloat {
-    0%,
-    100% {
-        transform: translateY(0) scale(1);
-    }
-    50% {
-        transform: translateY(-5px) scale(1.05);
-    }
-}
-
-@keyframes timelineItemSlideIn {
-    0% {
-        opacity: 0;
-        transform: translateY(50px) scale(0.95);
-    }
-    100% {
-        opacity: 1;
-        transform: translateY(0) scale(1);
-    }
-}
-
-@keyframes cardSlideIn {
-    0% {
-        opacity: 0;
-        transform: translateX(-30px) scale(0.95);
-    }
-    100% {
-        opacity: 1;
-        transform: translateX(0) scale(1);
-    }
-}
-
-@keyframes labelFadeIn {
-    0% {
-        opacity: 0;
-        filter: blur(4px);
-    }
-    100% {
-        opacity: 1;
-        filter: blur(0);
-    }
-}
-
-@keyframes markerPop {
-    0% {
-        transform: scale(0);
-        opacity: 0;
-    }
-    50% {
-        transform: scale(1.2);
-    }
-    100% {
-        transform: scale(1);
         opacity: 1;
     }
 }
 
-@keyframes borderRotate {
+@keyframes starmapScrollOnScroll {
     0% {
-        transform: rotate(0deg);
+        transform: translateX(0);
     }
     100% {
-        transform: rotate(360deg);
+        transform: translateX(-200%);
     }
 }
 
-@keyframes imagePlaceholderFadeIn {
-    0% {
-        opacity: 0;
-        transform: scale(0.9);
-    }
-    100% {
-        opacity: 0.7;
-        transform: scale(1);
-    }
-}
-
-@keyframes timelineItemSlideIn {
-    0% {
-        opacity: 0;
-        transform: translateY(50px) scale(0.95);
-    }
-    100% {
-        opacity: 1;
-        transform: translateY(0) scale(1);
-    }
-}
-
-@keyframes cardSlideIn {
-    0% {
-        opacity: 0;
-        transform: translateX(-30px) scale(0.95);
-    }
-    100% {
-        opacity: 1;
-        transform: translateX(0) scale(1);
-    }
-}
-
-@keyframes labelFadeIn {
-    0% {
-        opacity: 0;
-        filter: blur(4px);
-    }
-    100% {
-        opacity: 1;
-        filter: blur(0);
-    }
-}
-
-@keyframes markerPop {
-    0% {
-        transform: scale(0);
-        opacity: 0;
-    }
-    50% {
-        transform: scale(1.2);
-    }
-    100% {
-        transform: scale(1);
-        opacity: 1;
-    }
-}
-
-// Mobile optimizations
+// Responsive Design
 @media (max-width: 768px) {
-    .timeline-track {
-        left: 2rem;
+    .timeline-section {
+        height: 100vh; // Normal viewport height
+    }
+
+    .earth-container {
+        opacity: 0.4;
+        top: 25%;
+    }
+
+    .age-card-container {
+        top: 50%;
+        left: 50%;
+        right: auto;
+        width: 95%;
+        max-width: 350px;
+    }
+
+    .age-card {
+        padding: 1.5rem;
+    }
+
+    .timeline-nav {
+        bottom: 80px;
+        right: 10px;
+        top: auto;
         transform: none;
+        flex-direction: row;
+        justify-content: center;
     }
 
-    .timeline-content {
-        width: calc(100% - 2rem);
-        margin-left: 0 !important;
-        text-align: left !important;
-    }
-
-    .timeline-card {
-        margin: 0 !important;
-    }
-
-    .timeline-marker {
-        left: -2rem;
-        transform: none;
-    }
-
-    .timeline-marker__line {
-        left: 100%;
-        transform: translateY(-50%);
-    }
-
-    .timeline-card__footer {
-        flex-direction: column;
-        gap: 0.75rem;
-    }
-
-    .timeline-card__meta {
-        order: -1;
+    .age-selector {
+        bottom: 20px;
     }
 }
 
 // Accessibility
 @media (prefers-reduced-motion: reduce) {
-    .timeline-header__title,
-    .timeline-parallax__stars,
-    .timeline-marker__symbol,
-    .timeline-item,
-    .timeline-card__image-icon {
-        animation: none;
-    }
-
-    .timeline-card {
-        transition: none;
-
-        &:hover {
-            transform: none;
-        }
-    }
-
-    .timeline-card__link {
-        transition: none;
-
-        &:hover {
-            transform: none;
-        }
-
-        &::before {
-            display: none;
-        }
+    .age-card,
+    .age-card__link,
+    .timeline-nav__btn {
+        transition: none !important;
     }
 }
 
-// High contrast mode
+// High Contrast Mode
 @media (prefers-contrast: high) {
-    .timeline-track {
-        background: var(--color-text);
-        width: 3px;
-    }
-
-    .timeline-marker__symbol {
-        border-width: 3px;
-        box-shadow: none;
-    }
-
-    .timeline-card {
-        border-width: 2px;
-        box-shadow: none;
-        backdrop-filter: none;
+    .age-card {
         background: var(--color-background);
+        border-width: 3px;
+        backdrop-filter: none;
+        box-shadow: none;
     }
 
-    .timeline-header__title {
-        -webkit-text-fill-color: unset;
-        background: unset;
-        color: var(--color-text);
+    .timeline-nav__btn,
+    .age-selector__trigger,
+    .age-selector__dropdown {
+        background: var(--color-background);
+        border-width: 3px;
+        backdrop-filter: none;
+        box-shadow: none;
+    }
+
+    .earth-sphere {
+        box-shadow: 0 0 0 3px var(--color-text);
     }
 }
 
-// Print styles
-@media print {
-    .timeline-parallax {
-        display: none;
+// Dark Theme Adjustments
+[data-theme="dark"] {
+    --color-cloud-primary: rgba(255, 255, 255, 0.15);
+    --color-cloud-secondary: rgba(255, 255, 255, 0.1);
+    --color-cloud-tertiary: rgba(255, 255, 255, 0.12);
+
+    main:has(.timeline-section) {
+        background: #0a0a0a !important;
     }
 
     .timeline-section {
-        background: white;
-        color: black;
+        background: transparent !important;
     }
 
-    .timeline-card {
-        break-inside: avoid;
+    .starmap-layer {
+        opacity: 0.9; // Slightly more visible for dark theme
+        filter: brightness(0.8);
+    }
+
+    .earth-surface {
+        filter: brightness(0.8);
+    }
+
+    .sunrise-glow {
+        filter: brightness(0.9);
+    }
+}
+
+// Light Theme Adjustments
+[data-theme="light"] {
+    --color-cloud-primary: rgba(255, 255, 255, 0.5);
+    --color-cloud-secondary: rgba(255, 255, 255, 0.4);
+    --color-cloud-tertiary: rgba(255, 255, 255, 0.45);
+
+    main:has(.timeline-section) {
+        background: #f8f9fa !important;
+    }
+
+    .timeline-section {
+        background: transparent !important;
+    }
+
+    .starmap-layer {
+        opacity: 0.7; // More visible for light theme
+        filter: brightness(1.1);
+    }
+
+    .earth-surface {
+        filter: brightness(1.2);
+    }
+
+    .sunrise-glow {
+        filter: brightness(1.1);
+    }
+}
+
+// Print Styles
+@media print {
+    .timeline-section {
+        height: auto;
+        overflow: visible;
+    }
+
+    .earth-container,
+    .timeline-parallax,
+    .timeline-nav,
+    .age-selector {
+        display: none;
+    }
+
+    .age-card-container {
+        position: static;
+        transform: none;
+        width: 100%;
         page-break-inside: avoid;
+    }
+
+    .age-card {
         background: white;
-        border: 1px solid #ccc;
+        color: black;
+        border: 2px solid #333;
         box-shadow: none;
         backdrop-filter: none;
-    }
-
-    .timeline-header__title {
-        -webkit-text-fill-color: unset;
-        background: unset;
-        color: black;
-    }
-
-    .timeline-marker__symbol {
-        animation: none;
-        box-shadow: none;
-    }
-}
-
-// Dark theme specific adjustments
-[data-theme="dark"] {
-    .timeline-card__image-placeholder {
-        opacity: 0.8;
-    }
-
-    .timeline-parallax__stars {
-        opacity: 0.8;
-    }
-}
-
-// Light theme specific adjustments
-[data-theme="light"] {
-    .timeline-card__image-placeholder {
-        opacity: 0.6;
-    }
-
-    .timeline-parallax__stars {
-        opacity: 0.4;
-        background-image:
-            radial-gradient(
-                1px 1px at 20px 30px,
-                rgba(0, 0, 0, 0.08),
-                transparent
-            ),
-            radial-gradient(
-                1px 1px at 40px 70px,
-                rgba(0, 0, 0, 0.05),
-                transparent
-            ),
-            radial-gradient(
-                1px 1px at 90px 40px,
-                rgba(0, 0, 0, 0.1),
-                transparent
-            ),
-            radial-gradient(
-                1px 1px at 130px 20px,
-                rgba(0, 0, 0, 0.04),
-                transparent
-            ),
-            radial-gradient(
-                1px 1px at 160px 90px,
-                rgba(0, 0, 0, 0.06),
-                transparent
-            );
-    }
-
-    .timeline-header__title {
-        color: var(--color-text);
-        background: linear-gradient(
-            45deg,
-            var(--color-text),
-            var(--color-accent-primary),
-            var(--color-accent-secondary)
-        );
-        -webkit-background-clip: text;
-        -webkit-text-fill-color: transparent;
-        background-clip: text;
     }
 }

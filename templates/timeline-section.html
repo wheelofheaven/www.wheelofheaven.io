@@ -1,233 +1,165 @@
-{% extends "base.html" %} {% block content %}
+{% extends "base.html" %} {% block content %} {% set ages_data =
+load_data(path="data/ages.json") %}
 <div class="timeline-section">
-    <header class="timeline-header">
-        <div class="container">
-            <h1 class="timeline-header__title">Timeline of Creation</h1>
-            <p class="timeline-header__subtitle">
-                The Twelve World Ages: From the Engineering of Life to the Age
-                of Revelation
-            </p>
-        </div>
-    </header>
-
-    <div class="timeline-container">
-        <div class="timeline-track"></div>
-
-        {% set ages_data = load_data(path="data/ages.json") %} {% for age in
-        ages_data %}
-        <div
-            class="timeline-item"
-            data-age-color="{{ age.color }}"
-            data-age-name="{{ age.name | slugify }}"
-            id="age-{{ age.name | slugify }}"
-        >
-            <div class="timeline-marker">
-                <div class="timeline-marker__symbol">{{ age.symbol }}</div>
-                <div class="timeline-marker__line"></div>
+    <!-- Fixed Earth (SVG) -->
+    <div class="earth-container">
+        <svg width="200" height="200">
+            <defs>
+                <pattern
+                    id="earthTexture"
+                    patternUnits="objectBoundingBox"
+                    width="1"
+                    height="1"
+                >
+                    <image href="/earth.png" width="200" height="200" />
+                </pattern>
+            </defs>
+            <circle cx="100" cy="100" r="100" fill="url(#earthTexture)" />
+        </svg>
+        <div class="earth-sunrise">
+            <div class="sunrise-glow"></div>
+            <div class="sunrise-rays">
+                <div class="ray ray-1"></div>
+                <div class="ray ray-2"></div>
+                <div class="ray ray-3"></div>
+                <div class="ray ray-4"></div>
+                <div class="ray ray-5"></div>
+                <div class="ray ray-6"></div>
+                <div class="ray ray-7"></div>
+                <div class="ray ray-8"></div>
             </div>
+        </div>
+    </div>
 
-            <div
-                class="timeline-content {% if loop.index is odd %}timeline-content--left{% else %}timeline-content--right{% endif %}"
-            >
-                <div class="timeline-age-label">
-                    <span class="timeline-age-label__text">{{ age.name }}</span>
+    <!-- Scrolling Starmap Background -->
+    <div class="starmap-background">
+        <div class="starmap-container">
+            <!-- Single starmap that scrolls from left to right -->
+            <img
+                src="/starmap.svg"
+                alt="Star Map"
+                class="starmap-layer"
+                id="starmap"
+            />
+        </div>
+    </div>
+
+    <!-- Fixed Age Card Container -->
+    <div class="age-card-container">
+        <div class="age-card" id="age-card">
+            <div class="age-card__symbol" id="age-symbol">♑</div>
+            <div class="age-card__content">
+                <h2 class="age-card__title" id="age-title">Age of Capricorn</h2>
+                <div class="age-card__timespan" id="age-timespan">
+                    <span class="age-card__start">21810 BC</span>
+                    <span class="age-card__separator">→</span>
+                    <span class="age-card__end">19650 BC</span>
                 </div>
-
-                <div class="timeline-card">
-                    <div class="timeline-card__header">
-                        <h2 class="timeline-card__title">{{ age.name }}</h2>
-                        <div class="timeline-card__timespan">
-                            <span class="timeline-card__start">
-                                {% if age.start is starting_with("−") %} {{
-                                age.start | replace(from="−", to="") }} BC {%
-                                else %} {{ age.start }} AD {% endif %}
-                            </span>
-                            <span class="timeline-card__separator">→</span>
-                            <span class="timeline-card__end">
-                                {% if age.end is starting_with("−") %} {{
-                                age.end | replace(from="−", to="") }} BC {% else
-                                %} {{ age.end }} AD {% endif %}
-                            </span>
-                        </div>
-                    </div>
-
-                    <div
-                        class="timeline-card__image-placeholder"
-                        data-age="{{ age.name | slugify }}"
-                        title="Curated landscape for {{ age.name }}"
+                <div class="age-card__description" id="age-description">
+                    Synthetic life engineering on the Elohim home planet with
+                    the inevitable escape of synthetic 'monster' lifeforms.
+                    Earth discovered, exploration. Known as the 1st day of
+                    Creation (Genesis)
+                </div>
+                <div class="age-card__footer">
+                    <div class="age-card__duration">Duration: ~2,160 years</div>
+                    <a
+                        href="/timeline/age-of-capricorn"
+                        class="age-card__link"
+                        id="age-link"
                     >
-                        <div class="timeline-card__image-placeholder-text">
-                            <div class="timeline-card__image-icon">
-                                {{ age.symbol }}
-                            </div>
-                            <div class="timeline-card__image-label">
-                                Curated Landscape
-                                <small>{{ age.name }}</small>
-                            </div>
-                        </div>
-                    </div>
-
-                    <div class="timeline-card__content">
-                        <p class="timeline-card__event">{{ age.event }}</p>
-                    </div>
-
-                    <div class="timeline-card__footer">
-                        <div class="timeline-card__meta">
-                            <span class="timeline-card__duration">
-                                Duration: ~2,160 years
-                            </span>
-                        </div>
-                        <a href="{{ age.link }}" class="timeline-card__link">
-                            Explore {{ age.name }}
-                            <svg
-                                class="timeline-card__link-icon"
-                                width="16"
-                                height="16"
-                                viewBox="0 0 16 16"
-                                fill="none"
-                            >
-                                <path
-                                    d="M6 12L10 8L6 4"
-                                    stroke="currentColor"
-                                    stroke-width="2"
-                                    stroke-linecap="round"
-                                    stroke-linejoin="round"
-                                />
-                            </svg>
-                        </a>
-                    </div>
+                        Explore This Age
+                        <svg
+                            class="age-card__link-icon"
+                            width="16"
+                            height="16"
+                            viewBox="0 0 16 16"
+                            fill="none"
+                        >
+                            <path
+                                d="M6 12L10 8L6 4"
+                                stroke="currentColor"
+                                stroke-width="2"
+                                stroke-linecap="round"
+                                stroke-linejoin="round"
+                            />
+                        </svg>
+                    </a>
                 </div>
             </div>
         </div>
-        {% endfor %}
     </div>
 
-    <div class="timeline-footer">
-        <div class="container">
-            <div class="timeline-summary">
-                <h2 class="timeline-summary__title">The Grand Narrative</h2>
-                <p class="timeline-summary__text">
-                    Across 26,000 years of cosmic history, from the first
-                    engineered life to the revelation of our origins, this
-                    timeline chronicles humanity's journey from creation to
-                    enlightenment. Each age represents approximately 2,160 years
-                    of Earth's precession cycle, marking distinct phases in our
-                    cosmic development.
-                </p>
-            </div>
+    <!-- Age Progress Indicator -->
+    <div class="age-progress">
+        <div class="age-progress__track">
+            <div class="age-progress__fill" id="progress-fill"></div>
+        </div>
+        <div class="age-progress__current" id="progress-current">1 of 12</div>
+    </div>
+
+    <!-- Navigation Controls -->
+    <div class="timeline-nav">
+        <button
+            class="timeline-nav__btn timeline-nav__btn--prev"
+            id="nav-prev"
+            aria-label="Previous Age"
+        >
+            <svg width="20" height="20" viewBox="0 0 20 20" fill="none">
+                <path
+                    d="M12 16L6 10L12 4"
+                    stroke="currentColor"
+                    stroke-width="2"
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                />
+            </svg>
+        </button>
+        <button
+            class="timeline-nav__btn timeline-nav__btn--next"
+            id="nav-next"
+            aria-label="Next Age"
+        >
+            <svg width="20" height="20" viewBox="0 0 20 20" fill="none">
+                <path
+                    d="M8 4L14 10L8 16"
+                    stroke="currentColor"
+                    stroke-width="2"
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                />
+            </svg>
+        </button>
+    </div>
+
+    <!-- Age Selector Dropdown -->
+    <div class="age-selector">
+        <button class="age-selector__trigger" id="age-selector-trigger">
+            Jump to Age
+            <svg width="16" height="16" viewBox="0 0 16 16" fill="none">
+                <path
+                    d="M4 6L8 10L12 6"
+                    stroke="currentColor"
+                    stroke-width="2"
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                />
+            </svg>
+        </button>
+        <div class="age-selector__dropdown" id="age-selector-dropdown">
+            {% for age in ages_data %}
+            <button
+                class="age-selector__option"
+                data-age-index="{{ loop.index0 }}"
+                data-age-color="{{ age.color }}"
+            >
+                <span class="age-selector__symbol">{{ age.symbol }}</span>
+                <span class="age-selector__name">{{ age.name }}</span>
+            </button>
+            {% endfor %}
         </div>
     </div>
 
-    <!-- Parallax background elements -->
-    <div class="timeline-parallax">
-        <div
-            class="timeline-parallax__stars timeline-parallax__stars--layer-1"
-        ></div>
-        <div
-            class="timeline-parallax__stars timeline-parallax__stars--layer-2"
-        ></div>
-        <div
-            class="timeline-parallax__stars timeline-parallax__stars--layer-3"
-        ></div>
-    </div>
-
-    <script>
-        // Enhanced timeline interactions with scroll animations
-        document.addEventListener("DOMContentLoaded", function () {
-            const parallaxElements = document.querySelectorAll(
-                ".timeline-parallax__stars",
-            );
-            const timelineItems = document.querySelectorAll(".timeline-item");
-
-            // Parallax effect
-            function updateParallax() {
-                const scrolled = window.pageYOffset;
-
-                parallaxElements.forEach((element, index) => {
-                    const speed = (index + 1) * 0.1;
-                    const yPos = -(scrolled * speed);
-                    element.style.transform = `translateY(${yPos}px)`;
-                });
-            }
-
-            // Throttle scroll events
-            let ticking = false;
-            function requestTick() {
-                if (!ticking) {
-                    requestAnimationFrame(updateParallax);
-                    ticking = true;
-                    setTimeout(() => {
-                        ticking = false;
-                    }, 10);
-                }
-            }
-
-            window.addEventListener("scroll", requestTick);
-
-            // Intersection Observer for scroll-triggered animations
-            const observerOptions = {
-                threshold: 0.1,
-                rootMargin: "0px 0px -50px 0px",
-            };
-
-            const observer = new IntersectionObserver((entries) => {
-                entries.forEach((entry) => {
-                    if (entry.isIntersecting) {
-                        entry.target.classList.add("timeline-item--visible");
-
-                        // Add staggered animation delay
-                        const index = Array.from(timelineItems).indexOf(
-                            entry.target,
-                        );
-                        entry.target.style.animationDelay = `${index * 0.1}s`;
-                    }
-                });
-            }, observerOptions);
-
-            // Color age markers and observe for animations
-            timelineItems.forEach((item, index) => {
-                const color = item.dataset.ageColor;
-                if (color) {
-                    // Apply age-specific colors using CSS custom properties
-                    item.style.setProperty(
-                        "--age-color",
-                        `var(--color-${color})`,
-                    );
-
-                    // Add age symbol to marker if not already present
-                    const symbol = item.querySelector(
-                        ".timeline-marker__symbol",
-                    );
-                    if (symbol && !symbol.textContent.trim()) {
-                        // Fallback if symbol is missing
-                        symbol.textContent = "●";
-                    }
-                }
-
-                // Add to intersection observer
-                observer.observe(item);
-
-                // Add progressive loading animation delay
-                item.style.animationDelay = `${index * 0.1}s`;
-            });
-
-            // Smooth scroll enhancement for timeline navigation
-            const timelineLinks = document.querySelectorAll('a[href^="#age-"]');
-            timelineLinks.forEach((link) => {
-                link.addEventListener("click", (e) => {
-                    e.preventDefault();
-                    const targetId = link.getAttribute("href").substring(1);
-                    const targetElement = document.getElementById(targetId);
-
-                    if (targetElement) {
-                        targetElement.scrollIntoView({
-                            behavior: "smooth",
-                            block: "center",
-                        });
-                    }
-                });
-            });
-        });
-    </script>
+    <script src="/js/timeline.js"></script>
 </div>
 {% endblock content %}
