@@ -1,6 +1,6 @@
 {% extends "base.html" %} {% block content %} {% set ages_data =
 load_data(path="data/ages.json") %}
-<div class="timeline-viewport">
+<div class="timeline-section">
     <!-- Sun behind Earth -->
     <div class="earth-sunrise">
         <div class="sunrise-glow"></div>
@@ -108,7 +108,7 @@ load_data(path="data/ages.json") %}
         <div class="age-progress__track">
             <div class="age-progress__fill" id="progress-fill"></div>
         </div>
-        <div class="age-progress__current" id="progress-current">1 of 12</div>
+        <div class="age-progress__current" id="progress-current">0 of 12</div>
     </div>
 
     <!-- Combined Timeline Navigation -->
@@ -174,8 +174,8 @@ load_data(path="data/ages.json") %}
     </div>
 </div>
 
-<!-- Horizontal Timeline Sections -->
-<div class="timeline-section" id="timeline-section">
+<!-- Horizontal Timeline Content -->
+<div class="timeline-content" id="timeline-content">
     {% for age in ages_data %}
     <div class="timeline-age-section" data-age-index="{{ loop.index0 }}">
         <!-- Each age section is 100vw wide -->
@@ -184,4 +184,68 @@ load_data(path="data/ages.json") %}
 </div>
 
 <script src="/js/timeline.js"></script>
+
+<!-- World Ages Cards Section -->
+<section class="world-ages-section">
+    <div class="world-ages-section__container">
+        <header class="world-ages-section__header">
+            <h2 class="world-ages-section__title">Explore the World Ages</h2>
+            <p class="world-ages-section__description">
+                Dive deeper into each cosmic age and discover the events that
+                shaped our world's history.
+            </p>
+        </header>
+
+        <div class="world-ages-section__grid">
+            {% for age in ages_data %}
+            <article class="world-age-card" data-age-color="{{ age.color }}">
+                <a href="{{ age.link }}" class="world-age-card__link">
+                    <div class="world-age-card__header">
+                        <div class="world-age-card__symbol">
+                            {{ age.symbol }}
+                        </div>
+                        <h3 class="world-age-card__title">{{ age.name }}</h3>
+                    </div>
+
+                    <div class="world-age-card__timespan">
+                        <span class="world-age-card__start">
+                            {% set start_year = age.start | replace(from="−",
+                            to="") | int %} {% if age.start is
+                            starting_with("−") %} {{ start_year }} BC {% else %}
+                            {{ start_year }} AD {% endif %}
+                        </span>
+                        <span class="world-age-card__separator">→</span>
+                        <span class="world-age-card__end">
+                            {% set end_year = age.end | replace(from="−", to="")
+                            | int %} {% if age.end is starting_with("−") %} {{
+                            end_year }} BC {% else %} {{ end_year }} AD {% endif
+                            %}
+                        </span>
+                    </div>
+
+                    <p class="world-age-card__description">{{ age.event }}</p>
+
+                    <div class="world-age-card__footer">
+                        <span class="world-age-card__read-more">
+                            Explore Age
+                            <svg
+                                class="world-age-card__arrow"
+                                width="16"
+                                height="16"
+                                viewBox="0 0 24 24"
+                                fill="none"
+                                stroke="currentColor"
+                                stroke-width="2"
+                            >
+                                <polyline points="9,18 15,12 9,6"></polyline>
+                            </svg>
+                        </span>
+                    </div>
+                </a>
+            </article>
+            {% endfor %}
+        </div>
+    </div>
+</section>
+
 {% endblock content %}

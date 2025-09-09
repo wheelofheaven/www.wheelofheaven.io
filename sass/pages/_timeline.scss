@@ -7,34 +7,33 @@
 @use "../base/typography" as typo;
 
 // Timeline page main element override
-main:has(.timeline-viewport) {
+main:has(.timeline-section) {
     background: var(--color-background) !important;
     padding: 0 !important;
     max-width: none !important;
     position: relative;
     z-index: 1;
-    overflow: hidden;
-    height: 100vh;
+    overflow: visible;
+    min-height: 100vh;
 }
 
-// Timeline viewport wrapper - fixed container
-.timeline-viewport {
-    position: fixed;
-    top: 0;
-    left: 0;
+// Timeline section - proper page section with opaque background
+.timeline-section {
+    position: relative;
     width: 100vw;
     height: 100vh;
     overflow: hidden;
+    background: var(--color-background);
     z-index: 1;
-    background: transparent;
+    transition: transform 0.8s cubic-bezier(0.4, 0, 0.2, 1);
 }
 
-// Timeline Section Container - horizontal scroller
-.timeline-section {
+// Timeline content container - horizontal scroller
+.timeline-content {
     position: absolute;
     top: 0;
     left: 0;
-    width: 1200vw; // 12 ages × 100vw each = 1200vw total width
+    width: 1300vw; // 13 ages × 100vw each = 1300vw total width
     height: 100vh;
     background: transparent;
     overflow: visible;
@@ -82,7 +81,7 @@ main:has(.timeline-viewport) {
 .earth-sunrise {
     position: fixed;
     top: calc(
-        85% - 300px
+        85% - 290px
     ); /* Earth position minus Earth radius minus sun offset */
     left: 30%;
     transform: translateX(-50%);
@@ -646,7 +645,7 @@ main:has(.timeline-viewport) {
     height: 100vh;
     object-fit: contain;
     object-position: center;
-    opacity: 0.8;
+    opacity: 1;
     backface-visibility: hidden;
     flex-shrink: 0;
 }
@@ -690,13 +689,13 @@ main:has(.timeline-viewport) {
 
 // Responsive Design
 @media (max-width: 768px) {
-    .timeline-viewport {
+    .timeline-section {
         height: 100vh;
     }
 
-    .timeline-section {
+    .timeline-content {
         height: 100vh;
-        width: 1200vw; // Keep full width on mobile
+        width: 1300vw; // Keep full width on mobile
     }
 
     .earth-container {
@@ -773,16 +772,16 @@ main:has(.timeline-viewport) {
     --color-cloud-secondary: rgba(255, 255, 255, 0.1);
     --color-cloud-tertiary: rgba(255, 255, 255, 0.12);
 
-    main:has(.timeline-viewport) {
+    main:has(.timeline-section) {
         background: #0a0a0a !important;
     }
 
-    .timeline-viewport {
-        background: transparent !important;
+    .timeline-section {
+        background: #0a0a0a !important;
     }
 
     .starmap-layer {
-        opacity: 0.9; // Slightly more visible for dark theme
+        opacity: 1;
         filter: brightness(0.8);
     }
 
@@ -801,16 +800,16 @@ main:has(.timeline-viewport) {
     --color-cloud-secondary: rgba(255, 255, 255, 0.4);
     --color-cloud-tertiary: rgba(255, 255, 255, 0.45);
 
-    main:has(.timeline-viewport) {
+    main:has(.timeline-section) {
         background: #f8f9fa !important;
     }
 
-    .timeline-viewport {
-        background: transparent !important;
+    .timeline-section {
+        background: #f8f9fa !important;
     }
 
     .starmap-layer {
-        opacity: 0.7; // More visible for light theme
+        opacity: 1;
         filter: brightness(1.1);
     }
 
@@ -823,10 +822,264 @@ main:has(.timeline-viewport) {
     }
 }
 
+// World Ages Cards Section
+.world-ages-section {
+    background: var(--color-background);
+    min-height: 100vh;
+    padding: 4rem 0;
+    position: relative;
+    z-index: 2;
+    transform: translateY(0); // Remove gap by positioning directly adjacent
+    transition: transform 0.8s cubic-bezier(0.4, 0, 0.2, 1);
+    margin-top: 0;
+
+    &__container {
+        max-width: 1400px;
+        margin: 0 auto;
+        padding: 0 2rem;
+
+        @media (max-width: 768px) {
+            padding: 0 1rem;
+        }
+    }
+
+    &__header {
+        text-align: center;
+        margin-bottom: 4rem;
+
+        @media (max-width: 768px) {
+            margin-bottom: 3rem;
+        }
+    }
+
+    &__title {
+        font-family: typo.$font-family-lead;
+        font-size: clamp(2.5rem, 5vw, 4rem);
+        font-weight: 700;
+        color: var(--color-text);
+        margin: 0 0 1.5rem;
+        line-height: 1.2;
+    }
+
+    &__description {
+        font-size: 1.25rem;
+        color: var(--color-text-muted);
+        max-width: 700px;
+        margin: 0 auto;
+        line-height: 1.6;
+
+        @media (max-width: 768px) {
+            font-size: 1.125rem;
+        }
+    }
+
+    &__grid {
+        display: grid;
+        grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
+        gap: 2rem;
+        margin-top: 2rem;
+
+        @media (max-width: 768px) {
+            grid-template-columns: 1fr;
+            gap: 1.5rem;
+        }
+    }
+}
+
+// World Age Card Component
+.world-age-card {
+    background: var(--color-glass-bg);
+    border: 2px solid var(--age-color, var(--color-accent-primary));
+    border-radius: vars.$border-radius-xl;
+    backdrop-filter: blur(20px);
+    -webkit-backdrop-filter: blur(20px);
+    box-shadow:
+        0 10px 40px rgba(0, 0, 0, 0.2),
+        0 0 20px var(--age-color, var(--color-accent-primary)),
+        inset 0 1px 0 rgba(255, 255, 255, 0.1);
+    transition: all 0.4s cubic-bezier(0.4, 0, 0.2, 1);
+    position: relative;
+    overflow: hidden;
+
+    &::before {
+        content: "";
+        position: absolute;
+        top: 0;
+        left: 0;
+        right: 0;
+        height: 3px;
+        background: linear-gradient(
+            90deg,
+            transparent,
+            var(--age-color, var(--color-accent-primary)),
+            transparent
+        );
+    }
+
+    &:hover {
+        transform: translateY(-8px);
+        box-shadow:
+            0 20px 60px rgba(0, 0, 0, 0.3),
+            0 0 40px var(--age-color, var(--color-accent-primary)),
+            inset 0 1px 0 rgba(255, 255, 255, 0.2);
+    }
+
+    // Color mapping
+    &[data-age-color="yellow"] {
+        --age-color: #fbf8cc;
+    }
+    &[data-age-color="pink"] {
+        --age-color: #fde4cf;
+    }
+    &[data-age-color="soft-pink"] {
+        --age-color: #ffcfd2;
+    }
+    &[data-age-color="lavender"] {
+        --age-color: #f1c0e8;
+    }
+    &[data-age-color="mauve"] {
+        --age-color: #cfbaf0;
+    }
+    &[data-age-color="blue"] {
+        --age-color: #a3c4f3;
+    }
+    &[data-age-color="cyan"] {
+        --age-color: #90dbf4;
+    }
+    &[data-age-color="teal"] {
+        --age-color: #8eecf5;
+    }
+    &[data-age-color="mint"] {
+        --age-color: #98f5e1;
+    }
+    &[data-age-color="green"] {
+        --age-color: #b9fbc0;
+    }
+
+    &__link {
+        display: block;
+        padding: 2rem;
+        text-decoration: none;
+        color: inherit;
+        height: 100%;
+
+        @media (max-width: 768px) {
+            padding: 1.5rem;
+        }
+    }
+
+    &__header {
+        display: flex;
+        align-items: center;
+        gap: 1rem;
+        margin-bottom: 1.5rem;
+    }
+
+    &__symbol {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        width: 60px;
+        height: 60px;
+        background: var(--age-color, var(--color-accent-primary));
+        border-radius: 50%;
+        font-size: 1.75rem;
+        color: var(--color-background);
+        font-weight: 600;
+        box-shadow: 0 4px 16px rgba(0, 0, 0, 0.2);
+        flex-shrink: 0;
+
+        @media (max-width: 768px) {
+            width: 50px;
+            height: 50px;
+            font-size: 1.5rem;
+        }
+    }
+
+    &__title {
+        font-family: typo.$font-family-lead;
+        font-size: 1.5rem;
+        font-weight: 700;
+        color: var(--color-text);
+        margin: 0;
+        line-height: 1.3;
+
+        @media (max-width: 768px) {
+            font-size: 1.25rem;
+        }
+    }
+
+    &__timespan {
+        display: flex;
+        align-items: center;
+        gap: 0.75rem;
+        font-family: typo.$font-family-tech;
+        font-size: 0.875rem;
+        color: var(--color-text-muted);
+        margin-bottom: 1.5rem;
+        padding: 0.75rem;
+        background: var(--color-background-tertiary);
+        border-radius: vars.$border-radius-md;
+        border: 1px solid var(--color-hairline);
+
+        @media (max-width: 768px) {
+            font-size: 0.8rem;
+            flex-wrap: wrap;
+            gap: 0.5rem;
+        }
+    }
+
+    &__separator {
+        color: var(--age-color, var(--color-accent-primary));
+        font-weight: 600;
+        font-size: 1.1em;
+    }
+
+    &__description {
+        font-size: 1rem;
+        line-height: 1.6;
+        color: var(--color-text);
+        margin: 0 0 2rem;
+
+        @media (max-width: 768px) {
+            font-size: 0.9rem;
+            margin-bottom: 1.5rem;
+        }
+    }
+
+    &__footer {
+        margin-top: auto;
+        padding-top: 1rem;
+        border-top: 1px solid var(--color-hairline-subtle);
+    }
+
+    &__read-more {
+        display: inline-flex;
+        align-items: center;
+        gap: 0.5rem;
+        font-size: 0.875rem;
+        font-weight: 600;
+        color: var(--age-color, var(--color-accent-primary));
+        transition: all 0.3s ease;
+    }
+
+    &__arrow {
+        transition: transform 0.3s ease;
+    }
+
+    &:hover &__read-more {
+        gap: 0.75rem;
+    }
+
+    &:hover &__arrow {
+        transform: translateX(4px);
+    }
+}
+
 // Print Styles
 @media print {
-    .timeline-viewport,
-    .timeline-section {
+    .timeline-section,
+    .timeline-content {
         height: auto;
         overflow: visible;
         position: static;
@@ -854,5 +1107,19 @@ main:has(.timeline-viewport) {
         border: 2px solid #333;
         box-shadow: none;
         backdrop-filter: none;
+    }
+
+    .world-ages-section {
+        page-break-before: always;
+    }
+
+    .world-age-card {
+        background: white;
+        color: black;
+        border: 2px solid #333;
+        box-shadow: none;
+        backdrop-filter: none;
+        break-inside: avoid;
+        margin-bottom: 2rem;
     }
 }
