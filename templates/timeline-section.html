@@ -3,17 +3,7 @@ load_data(path="data/ages.json") %}
 <div class="timeline-section">
     <!-- Sun behind Earth -->
     <div class="earth-sunrise">
-        <div class="sunrise-glow"></div>
-        <div class="sunrise-rays">
-            <div class="ray ray-1"></div>
-            <div class="ray ray-2"></div>
-            <div class="ray ray-3"></div>
-            <div class="ray ray-4"></div>
-            <div class="ray ray-5"></div>
-            <div class="ray ray-6"></div>
-            <div class="ray ray-7"></div>
-            <div class="ray ray-8"></div>
-        </div>
+        <img src="/images/sunrise.png" alt="Sun" class="sunrise-image" />
     </div>
 
     <!-- Fixed Earth (SVG) -->
@@ -26,7 +16,11 @@ load_data(path="data/ages.json") %}
                     width="1"
                     height="1"
                 >
-                    <image href="/earth.png" width="600" height="600" />
+                    <image
+                        href="/images/earth/earth-ocean-mist.png"
+                        width="600"
+                        height="600"
+                    />
                 </pattern>
             </defs>
             <circle cx="300" cy="300" r="300" fill="url(#earthTexture)" />
@@ -57,16 +51,48 @@ load_data(path="data/ages.json") %}
         </div>
     </div>
 
-    <!-- Fixed Age Card Container -->
+    <!-- Integrated Age Card Container -->
     <div class="age-card-container">
+        <!-- Navigation buttons positioned on sides of container -->
+        <button
+            class="timeline-nav__btn timeline-nav__btn--prev"
+            id="nav-prev"
+            aria-label="Previous Age"
+        >
+            <svg width="24" height="24" viewBox="0 0 24 24" fill="none">
+                <path
+                    d="M15 18L9 12L15 6"
+                    stroke="currentColor"
+                    stroke-width="2"
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                />
+            </svg>
+        </button>
+
+        <button
+            class="timeline-nav__btn timeline-nav__btn--next"
+            id="nav-next"
+            aria-label="Next Age"
+        >
+            <svg width="24" height="24" viewBox="0 0 24 24" fill="none">
+                <path
+                    d="M9 6L15 12L9 18"
+                    stroke="currentColor"
+                    stroke-width="2"
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                />
+            </svg>
+        </button>
+
         <div class="age-card" id="age-card">
             <div class="age-card__symbol" id="age-symbol">♑</div>
+
             <div class="age-card__content">
                 <h2 class="age-card__title" id="age-title">Age of Capricorn</h2>
                 <div class="age-card__timespan" id="age-timespan">
-                    <span class="age-card__start">21810 BC</span>
-                    <span class="age-card__separator">→</span>
-                    <span class="age-card__end">19650 BC</span>
+                    21810 BC → 19650 BC
                 </div>
                 <div class="age-card__description" id="age-description">
                     Synthetic life engineering on the Elohim home planet with
@@ -74,8 +100,13 @@ load_data(path="data/ages.json") %}
                     Earth discovered, exploration. Known as the 1st day of
                     Creation (Genesis)
                 </div>
+
+                <!-- Images section -->
+                <div class="age-card__images" id="age-card-images">
+                    <!-- Up to 3 landscape images will be inserted here dynamically -->
+                </div>
+
                 <div class="age-card__footer">
-                    <div class="age-card__duration">Duration: ~2,160 years</div>
                     <a
                         href="/timeline/age-of-capricorn"
                         class="age-card__link"
@@ -100,84 +131,68 @@ load_data(path="data/ages.json") %}
                     </a>
                 </div>
             </div>
-        </div>
-    </div>
 
-    <!-- Age Progress Indicator -->
-    <div class="age-progress">
-        <div class="age-progress__track">
-            <div class="age-progress__fill" id="progress-fill"></div>
-        </div>
-        <div class="age-progress__current" id="progress-current">0 of 12</div>
-    </div>
+            <!-- Age Progress with 12 segments - positioned at bottom of card -->
+            <div class="age-progress">
+                <div class="age-progress__segments" id="age-progress-segments">
+                    <div class="age-progress__segment" data-segment="0">✦</div>
+                    <div class="age-progress__segment" data-segment="1">♑</div>
+                    <div class="age-progress__segment" data-segment="2">♐</div>
+                    <div class="age-progress__segment" data-segment="3">♏</div>
+                    <div class="age-progress__segment" data-segment="4">♎</div>
+                    <div class="age-progress__segment" data-segment="5">♍</div>
+                    <div class="age-progress__segment" data-segment="6">♌</div>
+                    <div class="age-progress__segment" data-segment="7">♋</div>
+                    <div class="age-progress__segment" data-segment="8">♊</div>
+                    <div class="age-progress__segment" data-segment="9">♉</div>
+                    <div class="age-progress__segment" data-segment="10">
+                        ♈
+                    </div>
+                    <div class="age-progress__segment" data-segment="11">
+                        ♓
+                    </div>
+                    <div class="age-progress__segment" data-segment="12">
+                        ♒
+                    </div>
+                </div>
 
-    <!-- Combined Timeline Navigation -->
-    <div class="timeline-nav">
-        <button
-            class="timeline-nav__btn timeline-nav__btn--prev"
-            id="nav-prev"
-            aria-label="Previous Age"
-        >
-            <svg width="20" height="20" viewBox="0 0 20 20" fill="none">
-                <path
-                    d="M12 16L6 10L12 4"
-                    stroke="currentColor"
-                    stroke-width="2"
-                    stroke-linecap="round"
-                    stroke-linejoin="round"
-                />
-            </svg>
-        </button>
-
-        <div class="age-selector">
-            <button class="age-selector__trigger" id="age-selector-trigger">
-                Jump to Age
-                <svg width="16" height="16" viewBox="0 0 16 16" fill="none">
-                    <path
-                        d="M4 6L8 10L12 6"
-                        stroke="currentColor"
-                        stroke-width="2"
-                        stroke-linecap="round"
-                        stroke-linejoin="round"
-                    />
-                </svg>
-            </button>
-            <div class="age-selector__dropdown" id="age-selector-dropdown">
-                {% for age in ages_data %}
-                <button
-                    class="age-selector__option"
-                    data-age-index="{{ loop.index0 }}"
-                    data-age-color="{{ age.color }}"
-                >
-                    <span class="age-selector__symbol">{{ age.symbol }}</span>
-                    <span class="age-selector__name">{{ age.name }}</span>
-                </button>
-                {% endfor %}
+                <!-- Age Selector Dropdown -->
+                <div class="age-selector__dropdown" id="age-selector-dropdown">
+                    <!-- In the beginning entry -->
+                    <button
+                        class="age-selector__option"
+                        data-age-index="0"
+                        data-age-color="yellow"
+                    >
+                        <span class="age-selector__option-symbol">✦</span>
+                        <span>In the beginning...</span>
+                    </button>
+                    {% for age in ages_data %}
+                    <button
+                        class="age-selector__option"
+                        data-age-index="{{ loop.index }}"
+                        data-age-color="{{ age.color }}"
+                    >
+                        <span class="age-selector__option-symbol"
+                            >{{ age.symbol }}</span
+                        >
+                        <span>{{ age.name }}</span>
+                    </button>
+                    {% endfor %}
+                </div>
             </div>
         </div>
-
-        <button
-            class="timeline-nav__btn timeline-nav__btn--next"
-            id="nav-next"
-            aria-label="Next Age"
-        >
-            <svg width="20" height="20" viewBox="0 0 20 20" fill="none">
-                <path
-                    d="M8 4L14 10L8 16"
-                    stroke="currentColor"
-                    stroke-width="2"
-                    stroke-linecap="round"
-                    stroke-linejoin="round"
-                />
-            </svg>
-        </button>
     </div>
 </div>
 
 <!-- Horizontal Timeline Content -->
 <div class="timeline-content" id="timeline-content">
+    <!-- In the beginning section -->
+    <div class="timeline-age-section" data-age-index="0">
+        <!-- Each age section is 100vw wide -->
+    </div>
     {% for age in ages_data %}
-    <div class="timeline-age-section" data-age-index="{{ loop.index0 }}">
+    <div class="timeline-age-section" data-age-index="{{ loop.index }}">
         <!-- Each age section is 100vw wide -->
     </div>
     {% endfor %}
@@ -197,49 +212,119 @@ load_data(path="data/ages.json") %}
         </header>
 
         <div class="world-ages-section__grid">
+            <!-- In the beginning card -->
+            <article class="world-age-card" data-age-color="yellow">
+                <a
+                    href="/timeline/in-the-beginning"
+                    class="world-age-card__link"
+                >
+                    <div class="world-age-card__content">
+                        <div class="world-age-card__header">
+                            <div class="world-age-card__symbol">✦</div>
+                            <h3 class="world-age-card__title">
+                                In the beginning...
+                            </h3>
+                        </div>
+
+                        <div class="world-age-card__timespan">
+                            23970 BC
+                            <span class="world-age-card__separator"> → </span>
+                            21810 BC
+                        </div>
+
+                        <p class="world-age-card__description">
+                            Before time began, in the vast expanse of the
+                            cosmos, the Elohim civilization flourished. Advanced
+                            beings who mastered science and creation, they would
+                            soon discover our world and begin the greatest
+                            experiment in galactic history.
+                        </p>
+
+                        <div class="world-age-card__footer">
+                            <span class="world-age-card__read-more">
+                                Explore Age
+                                <svg
+                                    class="world-age-card__arrow"
+                                    width="16"
+                                    height="16"
+                                    viewBox="0 0 24 24"
+                                    fill="none"
+                                    stroke="currentColor"
+                                    stroke-width="2"
+                                >
+                                    <polyline
+                                        points="9,18 15,12 9,6"
+                                    ></polyline>
+                                </svg>
+                            </span>
+                        </div>
+                    </div>
+
+                    <!-- Images displayed side by side -->
+                    <div
+                        class="world-age-card__images"
+                        id="world-age-images-beginning"
+                    >
+                        <!-- Images will be populated by JavaScript -->
+                    </div>
+                </a>
+            </article>
+
             {% for age in ages_data %}
             <article class="world-age-card" data-age-color="{{ age.color }}">
                 <a href="{{ age.link }}" class="world-age-card__link">
-                    <div class="world-age-card__header">
-                        <div class="world-age-card__symbol">
-                            {{ age.symbol }}
+                    <div class="world-age-card__content">
+                        <div class="world-age-card__header">
+                            <div class="world-age-card__symbol">
+                                {{ age.symbol }}
+                            </div>
+                            <h3 class="world-age-card__title">
+                                {{ age.name }}
+                            </h3>
                         </div>
-                        <h3 class="world-age-card__title">{{ age.name }}</h3>
-                    </div>
 
-                    <div class="world-age-card__timespan">
-                        <span class="world-age-card__start">
+                        <div class="world-age-card__timespan">
                             {% set start_year = age.start | replace(from="−",
                             to="") | int %} {% if age.start is
                             starting_with("−") %} {{ start_year }} BC {% else %}
                             {{ start_year }} AD {% endif %}
-                        </span>
-                        <span class="world-age-card__separator">→</span>
-                        <span class="world-age-card__end">
+                            <span class="world-age-card__separator"> → </span>
                             {% set end_year = age.end | replace(from="−", to="")
                             | int %} {% if age.end is starting_with("−") %} {{
                             end_year }} BC {% else %} {{ end_year }} AD {% endif
                             %}
-                        </span>
+                        </div>
+
+                        <p class="world-age-card__description">
+                            {{ age.event }}
+                        </p>
+
+                        <div class="world-age-card__footer">
+                            <span class="world-age-card__read-more">
+                                Explore Age
+                                <svg
+                                    class="world-age-card__arrow"
+                                    width="16"
+                                    height="16"
+                                    viewBox="0 0 24 24"
+                                    fill="none"
+                                    stroke="currentColor"
+                                    stroke-width="2"
+                                >
+                                    <polyline
+                                        points="9,18 15,12 9,6"
+                                    ></polyline>
+                                </svg>
+                            </span>
+                        </div>
                     </div>
 
-                    <p class="world-age-card__description">{{ age.event }}</p>
-
-                    <div class="world-age-card__footer">
-                        <span class="world-age-card__read-more">
-                            Explore Age
-                            <svg
-                                class="world-age-card__arrow"
-                                width="16"
-                                height="16"
-                                viewBox="0 0 24 24"
-                                fill="none"
-                                stroke="currentColor"
-                                stroke-width="2"
-                            >
-                                <polyline points="9,18 15,12 9,6"></polyline>
-                            </svg>
-                        </span>
+                    <!-- Images displayed side by side -->
+                    <div
+                        class="world-age-card__images"
+                        id="world-age-images-{{ loop.index }}"
+                    >
+                        <!-- Images will be populated by JavaScript -->
                     </div>
                 </a>
             </article>

@@ -9,12 +9,12 @@ document.addEventListener("DOMContentLoaded", function () {
   const ageTimespan = document.getElementById("age-timespan");
   const ageDescription = document.getElementById("age-description");
   const ageLink = document.getElementById("age-link");
-  const progressFill = document.getElementById("progress-fill");
-  const progressCurrent = document.getElementById("progress-current");
+  const ageImages = document.getElementById("age-card-images");
+  const progressSegments = document.getElementById("age-progress-segments");
   const earthContainer = document.querySelector(".earth-container");
   const navPrev = document.getElementById("nav-prev");
   const navNext = document.getElementById("nav-next");
-  const selectorTrigger = document.getElementById("age-selector-trigger");
+  // Removed selectorTrigger - now using progressSegments for dropdown
   const selectorDropdown = document.getElementById("age-selector-dropdown");
 
   let currentAgeIndex = 0;
@@ -26,11 +26,16 @@ document.addEventListener("DOMContentLoaded", function () {
       name: "In the beginning...",
       symbol: "✦",
       color: "yellow",
-      start: "−∞",
+      start: "−23970",
       end: "−21810",
       event:
         "Before time began, in the vast expanse of the cosmos, the Elohim civilization flourished. Advanced beings who mastered science and creation, they would soon discover our world and begin the greatest experiment in galactic history.",
       link: "/timeline/in-the-beginning",
+      images: [
+        "/images/ages/modern-urban-landscape.avif",
+        "/images/ages/saurian-experiments.avif",
+      ],
+      earth_texture: "/images/earth/earth-ocean-mist.png",
     },
     {
       name: "Age of Capricorn",
@@ -41,6 +46,8 @@ document.addEventListener("DOMContentLoaded", function () {
       event:
         "Synthetic life engineering on the Elohim home planet with the inevitable escape of synthetic 'monster' lifeforms. Earth discovered, exploration. Known as the 1st day of Creation (Genesis)",
       link: "/timeline/age-of-capricorn",
+      images: ["/images/ages/spacecraft-in-orbit.avif"],
+      earth_texture: "/images/earth/earth-ocean-mist.png",
     },
     {
       name: "Age of Sagittarius",
@@ -51,6 +58,8 @@ document.addEventListener("DOMContentLoaded", function () {
       event:
         "Study and analysis of Earth's atmosphere and its constitution and the harmfulness of the sun light. Known as the 2nd day of Creation (Genesis)",
       link: "/timeline/age-of-sagittarius",
+      images: ["/images/ages/orbital-outpost.avif"],
+      earth_texture: "/images/earth/earth-ocean-blue.png",
     },
     {
       name: "Age of Scorpio",
@@ -61,6 +70,8 @@ document.addEventListener("DOMContentLoaded", function () {
       event:
         "Terraforming and first synthetic life engineering adapted to the new planet (Earth); creation of prokaryotes, fungi, plant life and most likely insects. Known as the 3rd day of Creation (Genesis)",
       link: "/timeline/age-of-scorpio",
+      images: ["/images/ages/genetic-research-lab.avif"],
+      earth_texture: "/images/earth/earth-pangeae-arid.png",
     },
     {
       name: "Age of Libra",
@@ -71,6 +82,8 @@ document.addEventListener("DOMContentLoaded", function () {
       event:
         "Astronomy, measure of time, adaptation of life to Earth environment. Engineering of fish and bird life, as well as dragons, known to us as dinosaurs. Known as the 4th day of Creation (Genesis)",
       link: "/timeline/age-of-libra",
+      images: ["/images/ages/fauna-and-flora.avif"],
+      earth_texture: "/images/earth/earth-pangeae-green.png",
     },
     {
       name: "Age of Virgo",
@@ -81,6 +94,8 @@ document.addEventListener("DOMContentLoaded", function () {
       event:
         "Engineering of all types of land animals, mammals, reptiles. Everything was done to keep things in balance/ecology. Known as the 5th day of Creation (Genesis)",
       link: "/timeline/age-of-virgo",
+      images: ["/images/ages/dinosaurs-on-plain.avif"],
+      earth_texture: "/images/earth/earth-pangeae-green.png",
     },
     {
       name: "Age of Leo",
@@ -91,6 +106,11 @@ document.addEventListener("DOMContentLoaded", function () {
       event:
         "First Earthly humans engineered. Lived as primitive among the Elohim. Weren't allowed to learn about their cosmic origins. Known as the 6th day of Creation (Genesis)",
       link: "/timeline/age-of-leo",
+      images: [
+        "/images/ages/genetic-research-lab.avif",
+        "/images/ages/saurian-experiments.avif",
+      ],
+      earth_texture: "/images/earth/earth-pangeae-green.png",
     },
     {
       name: "Age of Cancer",
@@ -101,6 +121,8 @@ document.addEventListener("DOMContentLoaded", function () {
       event:
         "The Elohim rebel group known as the Serpent/Dragon was banished to remain on Earth after they taught the Earthlings about their cosmic origins. They conceived offsprings with the humans, creating the first hybrids. Known as the 7th day of Creation (Genesis) of Rest.",
       link: "/timeline/age-of-cancer",
+      images: ["/images/ages/blue-planet-surface.avif"],
+      earth_texture: "/images/earth/earth-pangeae-green.png",
     },
     {
       name: "Age of Gemini",
@@ -111,6 +133,11 @@ document.addEventListener("DOMContentLoaded", function () {
       event:
         "The Elohim government didn't like the events on Earth, so they were planning to destroy life on Earth. The banished faction among with Noah build a spaceship to escape the planet, known as Noah's Ark. When the flood-inducing weaponry hit Earth, life was preserved on the Ark in orbit around the planet. After the flood, Noah's Ark landed on Earth and reseeded Earth with the help of the Elohim survivors. Creation of a huge space rocket, the Tower of Babel. War in Heaven among the Elohim factions.",
       link: "/timeline/age-of-gemini",
+      images: [
+        "/images/ages/above-the-clouds-structure.avif",
+        "/images/ages/orbital-outpost.avif",
+      ],
+      earth_texture: "/images/earth/earth-ocean-blue.png",
     },
     {
       name: "Age of Taurus",
@@ -121,6 +148,8 @@ document.addEventListener("DOMContentLoaded", function () {
       event:
         "Destruction of the center of progress such as Sodom and Gomorrah. The Serpentine Elohim faction lost and was pardoned, so they returned back to their home planet. The public opinion about life on Earth got favorable. Events of Abraham.",
       link: "/timeline/age-of-taurus",
+      images: [],
+      earth_texture: "/images/earth/earth-ocean-blue.png",
     },
     {
       name: "Age of Aries",
@@ -129,7 +158,9 @@ document.addEventListener("DOMContentLoaded", function () {
       start: "−2370",
       end: "−210",
       event: "Events of Moses and Exodus",
+      earth_texture: "/images/earth/earth-ocean-blue.png",
       link: "/timeline/age-of-aries",
+      images: [],
     },
     {
       name: "Age of Pisces",
@@ -140,6 +171,8 @@ document.addEventListener("DOMContentLoaded", function () {
       event:
         "Jesus and his fishermen, multiplication of people, increase of demographics, independent development.",
       link: "/timeline/age-of-pisces",
+      images: [],
+      earth_texture: "/images/earth/earth-ocean-blue.png",
     },
     {
       name: "Age of Aquarius",
@@ -150,10 +183,30 @@ document.addEventListener("DOMContentLoaded", function () {
       event:
         "Revelation of our cosmic origins, the last prophet, the avoiding of the nuclear holocaust/destroying our civilization, Golden Age is awaiting, the return of our father in Heaven, our creators, the Elohim",
       link: "/timeline/age-of-aquarius",
+      images: [],
+      earth_texture: "/images/earth/earth-ocean-blue.png",
     },
   ];
 
   // Color mapping
+  // Earth texture management
+  let currentEarthTexture = null;
+
+  function updateEarthTexture(newTexturePath) {
+    const earthPattern = document.querySelector("#earthTexture image");
+
+    if (
+      earthPattern &&
+      newTexturePath &&
+      newTexturePath !== currentEarthTexture
+    ) {
+      // Instant texture change
+      earthPattern.setAttribute("href", newTexturePath);
+      currentEarthTexture = newTexturePath;
+      console.log("Earth texture updated to:", newTexturePath);
+    }
+  }
+
   const colorMap = {
     yellow: "#fbf8cc",
     pink: "#fde4cf",
@@ -195,8 +248,21 @@ document.addEventListener("DOMContentLoaded", function () {
       const starmapStepSize = 150 / 13; // ~11.54vw per age (1/13th of starmap width)
       const starmapTransform = initialOffset - position * starmapStepSize;
 
-      timelineContent.style.transform = `translateX(${timelineTransform}vw)`;
-      starmapContainer.style.transform = `translateX(${starmapTransform}vw)`;
+      const isMobile = window.innerWidth <= 768;
+
+      if (!isMobile) {
+        timelineContent.style.transform = `translateX(${timelineTransform}vw)`;
+
+        // Responsive starmap transforms based on viewport size
+        const isTablet = window.innerWidth <= 1200 && window.innerWidth > 768;
+
+        let verticalOffset = "-10vh";
+        if (isTablet) {
+          verticalOffset = "-5vh";
+        }
+
+        starmapContainer.style.transform = `translate3d(${starmapTransform}vw, ${verticalOffset}, 0)`;
+      }
 
       if (customPosition === null) {
         console.log(
@@ -246,6 +312,11 @@ document.addEventListener("DOMContentLoaded", function () {
 
   // Update card content
   function updateCardContent(age, color, index) {
+    // Update earth texture
+    if (age.earth_texture) {
+      updateEarthTexture(age.earth_texture);
+    }
+
     // Update text content
     ageSymbol.textContent = age.symbol;
     ageTitle.textContent = age.name;
@@ -258,26 +329,61 @@ document.addEventListener("DOMContentLoaded", function () {
     const startSuffix = age.start.startsWith("−") ? " BC" : " AD";
     const endSuffix = age.end.startsWith("−") ? " BC" : " AD";
 
-    ageTimespan.innerHTML = `
-      <span class="age-card__start">${startYear.toLocaleString()}${startSuffix}</span>
-      <span class="age-card__separator">→</span>
-      <span class="age-card__end">${endYear.toLocaleString()}${endSuffix}</span>
-    `;
+    ageTimespan.textContent = `${startYear.toLocaleString()}${startSuffix} → ${endYear.toLocaleString()}${endSuffix}`;
 
     // Update colors
     ageCard.style.setProperty("--age-color", color);
-    ageCard.style.borderColor = color;
 
     const linkElement = ageCard.querySelector(".age-card__link");
     if (linkElement) {
       linkElement.style.background = `linear-gradient(135deg, ${color}, ${color}99)`;
     }
 
-    // Update progress
-    const progress = ((index + 1) / agesData.length) * 100;
-    progressFill.style.width = progress + "%";
-    progressFill.style.background = `linear-gradient(90deg, ${color}, ${color}cc)`;
-    progressCurrent.textContent = `${index} of 12`;
+    // Update progress segments
+    if (progressSegments) {
+      const segments = progressSegments.querySelectorAll(
+        ".age-progress__segment",
+      );
+      segments.forEach((segment, segmentIndex) => {
+        if (segmentIndex === index) {
+          segment.classList.add("age-progress__segment--active");
+          segment.style.setProperty("--age-color", color);
+          segment.style.background = color;
+          segment.style.boxShadow = `0 0 16px ${color}, inset 0 1px 0 rgba(255, 255, 255, 0.3)`;
+        } else {
+          segment.classList.remove("age-progress__segment--active");
+          segment.style.background = "";
+          segment.style.boxShadow = "";
+        }
+      });
+
+      console.log(
+        `Progress bar updated: ${segments.length} segments, active: ${index}`,
+      );
+    } else {
+      console.log("Progress segments element not found");
+    }
+
+    // Update images
+    if (ageImages && age.images && age.images.length > 0) {
+      ageImages.innerHTML = "";
+      age.images.forEach((imageSrc) => {
+        const img = document.createElement("img");
+        img.src = imageSrc;
+        img.alt = `${age.name} illustration`;
+        img.className = "age-card__image";
+
+        // Handle image load errors gracefully
+        img.onerror = function () {
+          this.style.display = "none";
+        };
+
+        ageImages.appendChild(img);
+      });
+    } else if (ageImages) {
+      // Clear images if none are available
+      ageImages.innerHTML = "";
+    }
 
     // Update navigation buttons
     navPrev.disabled = index === 0;
@@ -303,15 +409,28 @@ document.addEventListener("DOMContentLoaded", function () {
     });
   }
 
-  // Age selector dropdown
-  if (selectorTrigger && selectorDropdown) {
-    selectorTrigger.addEventListener("click", () => {
-      selectorDropdown.classList.toggle("age-selector__dropdown--open");
+  // Age selector dropdown (triggered by progress bar clicks)
+  const ageProgressContainer = document.querySelector(".age-progress");
+  if (ageProgressContainer && progressSegments && selectorDropdown) {
+    // Smart click handler for progress bar area
+    ageProgressContainer.addEventListener("click", (e) => {
+      // Check if we clicked on a specific segment
+      if (e.target.classList.contains("age-progress__segment")) {
+        // Get the segment index and go directly to that age
+        const segmentIndex = parseInt(e.target.dataset.segment);
+        if (!isNaN(segmentIndex) && segmentIndex < agesData.length) {
+          updateAge(segmentIndex, true);
+          selectorDropdown.classList.remove("age-selector__dropdown--open");
+        }
+      } else {
+        // Clicked on the background/container - open dropdown
+        selectorDropdown.classList.toggle("age-selector__dropdown--open");
+      }
     });
 
     // Close dropdown when clicking outside
     document.addEventListener("click", (e) => {
-      if (!e.target.closest(".age-selector")) {
+      if (!e.target.closest(".age-progress")) {
         selectorDropdown.classList.remove("age-selector__dropdown--open");
       }
     });
@@ -356,6 +475,12 @@ document.addEventListener("DOMContentLoaded", function () {
   const SCROLL_THROTTLE_MS = 200; // Minimum time between scroll counts (ms)
 
   function handleWheelScroll(event) {
+    // Skip all wheel handling on mobile
+    const isMobile = window.innerWidth <= 768;
+    if (isMobile) {
+      return; // Let mobile use normal scrolling
+    }
+
     if (isTransitioning) return;
 
     if (!isVerticalScrolling) {
@@ -458,50 +583,44 @@ document.addEventListener("DOMContentLoaded", function () {
     }
   }
 
-  // Position elements below age-card dynamically
-  function positionElementsBelowCard() {
-    const ageCardContainer = document.querySelector(".age-card-container");
-    const ageProgress = document.querySelector(".age-progress");
-    const timelineNav = document.querySelector(".timeline-nav");
-
-    if (ageCardContainer && ageProgress && timelineNav) {
-      const cardRect = ageCardContainer.getBoundingClientRect();
-      const cardBottom = cardRect.bottom;
-      const cardRight = cardRect.right;
-      const viewportHeight = window.innerHeight;
-
-      // Position age-progress below the card
-      const progressTop = cardBottom + 20; // 20px gap
-      ageProgress.style.top = `${progressTop}px`;
-      ageProgress.style.right = `${window.innerWidth - cardRight}px`;
-
-      // Position timeline-nav below age-progress
-      const progressRect = ageProgress.getBoundingClientRect();
-      const navTop = progressRect.bottom + 15; // 15px gap
-      timelineNav.style.top = `${navTop}px`;
-      timelineNav.style.right = `${window.innerWidth - cardRight}px`;
-
-      // On mobile, center the elements
-      if (window.innerWidth <= 768) {
-        const cardLeft = cardRect.left;
-        const cardWidth = cardRect.width;
-        const cardCenter = cardLeft + cardWidth / 2;
-
-        ageProgress.style.left = `${cardCenter}px`;
-        ageProgress.style.right = "auto";
-        ageProgress.style.transform = "translateX(-50%)";
-
-        timelineNav.style.left = `${cardCenter}px`;
-        timelineNav.style.right = "auto";
-        timelineNav.style.transform = "translateX(-50%)";
+  // Populate world age cards with images
+  function populateWorldAgeCards() {
+    agesData.forEach((age, index) => {
+      // Handle special case for "In the beginning" entry
+      let containerId;
+      if (index === 0) {
+        containerId = "world-age-images-beginning";
+      } else {
+        containerId = `world-age-images-${index}`;
       }
-    }
+
+      const imagesContainer = document.getElementById(containerId);
+      if (imagesContainer && age.images && age.images.length > 0) {
+        imagesContainer.innerHTML = "";
+        age.images.forEach((imageSrc) => {
+          const img = document.createElement("img");
+          img.src = imageSrc;
+          img.alt = `${age.name} illustration`;
+          img.className = "world-age-card__image";
+
+          // Handle image load errors gracefully
+          img.onerror = function () {
+            this.style.display = "none";
+          };
+
+          imagesContainer.appendChild(img);
+        });
+      }
+    });
   }
 
   // Initialize timeline
   function initializeTimeline() {
-    // Prevent default scrolling initially
-    document.body.style.overflow = "hidden";
+    // Only prevent scrolling on desktop
+    const isMobile = window.innerWidth <= 768;
+    if (!isMobile) {
+      document.body.style.overflow = "hidden";
+    }
 
     // World Ages section is positioned naturally after timeline section
     // No initial transform needed - it's part of normal document flow
@@ -509,37 +628,184 @@ document.addEventListener("DOMContentLoaded", function () {
     // Set up starmap container with proper structure for seamless continuity
     const starmapContainer = document.getElementById("starmap-container");
     if (starmapContainer) {
-      // Position container so center starmap is visible and ready to scroll
-      // Start with center starmap positioned to show its leftmost constellation
-      starmapContainer.style.transform = "translateX(-120vw)";
+      const isMobile = window.innerWidth <= 768;
 
-      // Ensure all starmap images are properly sized and positioned
-      const starmapLayers = starmapContainer.querySelectorAll(".starmap-layer");
-      starmapLayers.forEach((layer, index) => {
-        layer.style.objectFit = "cover";
-        layer.style.objectPosition = "center center";
-      });
+      if (isMobile) {
+        // Mobile: Simple static positioning
+        starmapContainer.style.transform = "none";
+        starmapContainer.style.position = "static";
+
+        // Show only center starmap on mobile
+        const starmapLayers =
+          starmapContainer.querySelectorAll(".starmap-layer");
+        starmapLayers.forEach((layer, index) => {
+          if (
+            layer.classList.contains("starmap-layer--left") ||
+            layer.classList.contains("starmap-layer--right")
+          ) {
+            layer.style.display = "none";
+          } else {
+            layer.style.display = "block";
+            layer.style.objectFit = "cover";
+            layer.style.objectPosition = "center center";
+            layer.style.position = "absolute";
+            layer.style.top = "0";
+            layer.style.left = "0";
+            layer.style.width = "100%";
+            layer.style.height = "100%";
+          }
+        });
+      } else {
+        // Desktop/Tablet: Complex positioning
+        const isTablet = window.innerWidth <= 1200;
+        let verticalOffset = isTablet ? "-5vh" : "-10vh";
+
+        starmapContainer.style.transform = `translate3d(-120vw, ${verticalOffset}, 0)`;
+
+        const starmapLayers =
+          starmapContainer.querySelectorAll(".starmap-layer");
+        starmapLayers.forEach((layer) => {
+          layer.style.display = "block";
+          if (isTablet) {
+            layer.style.objectFit = "contain";
+            layer.style.objectPosition = "center center";
+          } else {
+            layer.style.objectFit = "cover";
+            layer.style.objectPosition = "center 20%";
+          }
+        });
+      }
     }
 
     // Initialize with first age
     updateAge(0, false);
 
-    // Position elements below card initially
-    setTimeout(() => {
-      positionElementsBelowCard();
-    }, 100);
+    // Populate world age cards with images
+    populateWorldAgeCards();
 
     console.log(
       "Timeline section initialized: horizontal scroll through 13 ages (including 'In the beginning...'), then reveal World Ages section",
     );
   }
 
-  // Add event listeners
-  window.addEventListener("wheel", handleWheelScroll, { passive: false });
-  window.addEventListener("scroll", handleRegularScroll, { passive: true });
-  window.addEventListener("resize", positionElementsBelowCard, {
-    passive: true,
-  });
+  // Handle mobile touch navigation
+  let touchStartX = 0;
+
+  function handleTouchStart(event) {
+    const isMobile = window.innerWidth <= 768;
+    if (!isMobile) return;
+
+    touchStartX = event.touches[0].clientX;
+  }
+
+  function handleTouchEnd(event) {
+    const isMobile = window.innerWidth <= 768;
+    if (!isMobile) return;
+
+    const touchEndX = event.changedTouches[0].clientX;
+    const swipeDistance = touchStartX - touchEndX;
+    const minSwipeDistance = 50;
+
+    if (Math.abs(swipeDistance) > minSwipeDistance) {
+      if (swipeDistance > 0 && currentAgeIndex < agesData.length - 1) {
+        // Swipe left - next age
+        updateAge(currentAgeIndex + 1, true);
+      } else if (swipeDistance < 0 && currentAgeIndex > 0) {
+        // Swipe right - previous age
+        updateAge(currentAgeIndex - 1, true);
+      }
+    }
+  }
+
+  // Handle window resize to update starmap positioning
+  function handleWindowResize() {
+    const starmapContainer = document.getElementById("starmap-container");
+    const isMobile = window.innerWidth <= 768;
+
+    // Update body scrolling based on viewport
+    if (isMobile) {
+      document.body.style.overflow = "auto";
+      document.body.style.height = "auto";
+      isVerticalScrolling = false;
+      hasCompletedAllAges = false;
+    } else {
+      document.body.style.overflow = "hidden";
+      document.body.style.height = "100vh";
+    }
+
+    if (starmapContainer) {
+      if (isMobile) {
+        // Mobile setup
+        starmapContainer.style.transform = "none";
+        const starmapLayers =
+          starmapContainer.querySelectorAll(".starmap-layer");
+        starmapLayers.forEach((layer, index) => {
+          if (
+            layer.classList.contains("starmap-layer--left") ||
+            layer.classList.contains("starmap-layer--right")
+          ) {
+            layer.style.display = "none";
+          } else {
+            layer.style.display = "block";
+            layer.style.objectFit = "cover";
+            layer.style.objectPosition = "center center";
+          }
+        });
+      } else {
+        // Desktop setup
+        updateStarmapPosition();
+        const starmapLayers =
+          starmapContainer.querySelectorAll(".starmap-layer");
+        const isTablet = window.innerWidth <= 1200;
+
+        starmapLayers.forEach((layer) => {
+          layer.style.display = "block";
+          if (isTablet) {
+            layer.style.objectFit = "contain";
+            layer.style.objectPosition = "center center";
+          } else {
+            layer.style.objectFit = "cover";
+            layer.style.objectPosition = "center 20%";
+          }
+        });
+      }
+    }
+
+    // Remove existing event listeners
+    window.removeEventListener("wheel", handleWheelScroll);
+    window.removeEventListener("scroll", handleRegularScroll);
+    document.removeEventListener("touchstart", handleTouchStart);
+    document.removeEventListener("touchend", handleTouchEnd);
+
+    // Re-add appropriate event listeners
+    if (!isMobile) {
+      window.addEventListener("wheel", handleWheelScroll, { passive: false });
+      window.addEventListener("scroll", handleRegularScroll, { passive: true });
+    } else {
+      document.addEventListener("touchstart", handleTouchStart, {
+        passive: true,
+      });
+      document.addEventListener("touchend", handleTouchEnd, { passive: true });
+    }
+  }
+
+  // Add event listeners based on device type
+  const isMobile = window.innerWidth <= 768;
+
+  if (!isMobile) {
+    window.addEventListener("wheel", handleWheelScroll, { passive: false });
+    window.addEventListener("scroll", handleRegularScroll, { passive: true });
+  }
+
+  window.addEventListener("resize", handleWindowResize, { passive: true });
+
+  // Mobile touch events
+  if (isMobile) {
+    document.addEventListener("touchstart", handleTouchStart, {
+      passive: true,
+    });
+    document.addEventListener("touchend", handleTouchEnd, { passive: true });
+  }
 
   // Initialize
   initializeTimeline();
