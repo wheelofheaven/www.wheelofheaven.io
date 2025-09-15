@@ -122,7 +122,55 @@
 
         small {
             font-size: 0.6rem;
-            opacity: 0.7;
+            opacity: 0.8;
+            color: var(--color-text-subtle);
+        }
+
+        // Enhanced link styling for theme awareness
+        a,
+        .link {
+            color: var(--color-accent-primary);
+            text-decoration: none;
+            transition: all 0.3s ease;
+            border-bottom: 1px solid transparent;
+
+            &:hover {
+                color: var(--color-accent-secondary);
+                text-decoration: none;
+                border-bottom-color: currentColor;
+            }
+
+            &:focus {
+                outline: 2px solid var(--color-focus);
+                outline-offset: 2px;
+                border-radius: 2px;
+            }
+        }
+
+        // Light theme specific link styling
+        [data-theme="light"] & {
+            a,
+            .link {
+                color: #{colors.$mauve-600};
+
+                &:hover {
+                    color: #{colors.$blue-600};
+                    text-shadow: 0 0 8px rgba(163, 196, 243, 0.3);
+                }
+            }
+        }
+
+        // Dark theme specific link styling
+        [data-theme="dark"] & {
+            a,
+            .link {
+                color: #{colors.$mint};
+
+                &:hover {
+                    color: #{colors.$blue};
+                    text-shadow: 0 0 12px rgba(152, 245, 225, 0.4);
+                }
+            }
         }
     }
 
