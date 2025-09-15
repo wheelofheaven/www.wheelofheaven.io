@@ -3,39 +3,10 @@ title = "Elohim"
 slug = "elohim"
 description = "Elohim (אֱלֹהִים), the plural of Eloha (אֱלוֹהַּ), literally meaning the Powerful Ones or more figuratively, the Ones from Above, the Celestials. The name given to the Biblical Gods who in turn are a scientifically highly advanced civlization capable of interstellar travel, terraforming planets and life synthetization."
 template = "wiki-page.html"
+toc = true
 
 [extra]
-summary = "Elohim is the Hebrew plural term for the advanced extraterrestrial civilization referenced in Biblical texts as 'God.' Rather than supernatural deities, they represent a scientifically advanced species capable of interstellar travel, planetary terraforming, and synthetic biology - the actual creators of life on Earth."
-category = "Core Concepts"
-featured = true
-alternative_names = [
-    "אֱלֹהִים (Hebrew)",
-    "Eloha (singular)",
-    "The Powerful Ones",
-    "The Ones from Above",
-    "The Celestials",
-    "Sky People",
-    "Anunnaki",
-    "Theosites"
-]
-see_also = [
-    { title = "Elohimian home planet", path = "wiki/elohimian-home-planet/" },
-    { title = "Genesis", path = "wiki/genesis/" },
-    { title = "Lucifer", path = "wiki/lucifer/" },
-    { title = "Plurality of Gods", path = "wiki/plurality-of-gods/" },
-    { title = "Satan", path = "wiki/satan/" },
-    { title = "Yahweh", path = "wiki/yahweh/" }
-]
-external_links = [
-    { title = "Elohim | Wikipedia", url = "https://en.wikipedia.org/wiki/Elohim", description = "General encyclopedia entry on the Hebrew term" },
-    { title = "Elohim (Hebrew God) | Britannica", url = "https://www.britannica.com/topic/Elohim", description = "Academic perspective on the theological concept" },
-    { title = "Elohim | Jewish Encyclopedia", url = "https://www.jewishencyclopedia.com/articles/5704-elohim", description = "Traditional Jewish interpretation and etymology" },
-    { title = "Names of God | Jewish Encyclopedia", url = "https://www.jewishencyclopedia.com/articles/11305-names-of-god", description = "Comprehensive overview of divine names in Hebrew scripture" }
-]
-references = [
-    { title = "The Hebrew Bible: A Translation with Commentary", author = "Robert Alter", publication = "W. W. Norton & Company", date = "2019", description = "Modern scholarly translation examining original Hebrew terminology" },
-    { title = "The Unseen Realm", author = "Michael S. Heiser", publication = "Lexham Press", date = "2015", description = "Academic analysis of supernatural worldview in Biblical texts" }
-]
+alternative_names = ["Annunaki", "Celestials", "Creators", "Dei", "El", "Gods", "The Powerful Ones", "The Ones from the Skies", "Theosites"]
 +++
 
 The term Elohim (Hebrew: אֱלֹהִים, 'ēlohîm) is a Hebrew word used in the Old Testament of the Bible and is typically translated as God. It is a plural noun, and its use has led to much debate among biblical scholars regarding its significance.
@@ -167,7 +138,7 @@ Basically, Wallis re-interprets the Biblical scriptures with a plural Elohim, wh
 
 ## In Raëlism 🔯
 
-In the first book [The Book Which Tells The Truth]({{< relref "resources/the-book-which-tells-the-truth/index.md" >}}), Yahweh says the following about the very meaning of Elohim, the alleged name of God in the Biblical scriptures:
+In the first book [The Book Which Tells The Truth](../library/the-book-which-tells-the-truth/index.md/), Yahweh says the following about the very meaning of Elohim, the alleged name of God in the Biblical scriptures:
 
 > I am sure you can appreciate that, thanks to the law, which said that the Bible had always to be re-copied without changing even the smallest detail, the deepest meaning has remained intact throughout the ages, even if the text has been larded with mystical and futile sentences. So let us start with the first chapter of the Book of Genesis:
 >
@@ -210,7 +181,21 @@ As we've seen, Elohim seems to refer to an extraterrestrial civilization collect
 
 The term Elohim is the plural form of Eloha, which means "Celestials" or "ones from the sky." It is the name given to the Biblical gods who are believed to be a highly advanced civilization capable of interstellar travel, terraforming planets, and synthesizing life. The Hebrew word Elohim is a cognate of the older Akkadian term ilum, which is written with the Sumerogram 𒀭, meaning "sky." The argument that the term Elohim in the Hebrew Bible refers to a group of beings that were not strictly divine but rather a class of powerful, advanced beings from the celestial sky who interacted with humanity is not so unsound anymore once one starts reading the Bible as _Schliemann read Homer_.
 
+## See also
 
+- [Wiki › Elohimian home planet](../elohimian-home-planet/)
+- [Wiki › Genesis](../genesis/)
+- [Wiki › Lucifer](../lucifer/)
+- [Wiki › Plurality of Gods](../plurality-of-gods/)
+- [Wiki › Satan](../satan/)
+- [Wiki › Yahweh](../yahweh/)
+
+## External links
+
+- [Elohim | Wikipedia](https://en.wikipedia.org/wiki/Elohim)
+- [Elohim (Hebrew God) | Britannica](https://www.britannica.com/topic/Elohim)
+- [Elohim | Jewish Encyclopedia](https://www.jewishencyclopedia.com/articles/5704-elohim)
+- [Names of God | Jewish Encyclopedia](https://www.jewishencyclopedia.com/articles/11305-names-of-god)
 
 [^1]: From Hebrew אֱלֹהִים/אֱלוֹהִים (ʾélôhím, “heavenly power”), plural of אֱלוֹהַּ (ʾélôah), often taken to be an expanded form of אֵל (ʾēl) See more: [Elohim | Wiktionary](https://en.wiktionary.org/wiki/Elohim)
 [^2]: The Semitic root ʾlh (Arabic ʾilāh, Aramaic ʾAlāh, ʾElāh, Hebrew ʾelōah) may be ʾl with a parasitic h, and ʾl may be an abbreviated form of ʾlh. In Ugaritic the plural form meaning of ʾlh is ʾilhm, equivalent to Hebrew ʾelōhîm. See more: [El (deity | Wikipedia)](https://en.wikipedia.org/wiki/El_(deity))
