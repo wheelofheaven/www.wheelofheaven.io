@@ -43,11 +43,13 @@ async function initSearch() {
           weight: 0.6,
         },
       ],
-      threshold: 0.3,
+      threshold: 0.1,
       includeMatches: true,
       includeScore: true,
-      minMatchCharLength: 2,
-      findAllMatches: true,
+      minMatchCharLength: 4,
+      findAllMatches: false,
+      ignoreLocation: true,
+      useExtendedSearch: true,
     };
 
     // Initialize Fuse instance
@@ -219,32 +221,38 @@ function createSearchModal() {
 }
 
 // Highlight matching text
-function highlightText(text, matches) {
-  if (!matches || matches.length === 0) return text;
+function highlightText(text, query) {
+  if (!query || query.trim().length < 4) return text;
+
+  // Split query into words and filter out short ones
+  const searchTerms = query
+    .toLowerCase()
+    .split(/\s+/)
+    .filter((term) => term.length >= 4);
+
+  if (searchTerms.length === 0) return text;
 
   let result = text;
-  const highlights = [];
 
-  // Collect all match indices
-  matches.forEach((match) => {
-    if (match.indices) {
-      match.indices.forEach(([start, end]) => {
-        highlights.push({ start, end });
-      });
-    }
+  // Use regex-based whole word highlighting
+  searchTerms.forEach((term) => {
+    // Escape special regex characters
+    const escapedTerm = term.replace(/[.*+?^${}()|[\]\\]/g, "\\$&");
+
+    // Create regex for whole word matching (case insensitive)
+    const regex = new RegExp(`\\b${escapedTerm}\\b`, "gi");
+
+    result = result.replace(regex, (match) => {
+      return `<mark class="search-highlight">${match.trim()}</mark>`;
+    });
   });
 
-  // Sort by start position (descending to avoid index shifting)
-  highlights.sort((a, b) => b.start - a.start);
-
-  // Apply highlights
-  highlights.forEach(({ start, end }) => {
-    const before = result.slice(0, start);
-    const highlighted = result.slice(start, end + 1);
-    const after = result.slice(end + 1);
-    result =
-      before + `<mark class="search-highlight">${highlighted}</mark>` + after;
-  });
+  // Clean up any extra whitespace around mark tags
+  result = result.replace(
+    /\s*<mark class="search-highlight">/g,
+    '<mark class="search-highlight">',
+  );
+  result = result.replace(/<\/mark>\s*/g, "</mark>");
 
   return result;
 }
@@ -306,19 +314,17 @@ function filterByLanguage(results) {
   });
 }
 
-// Create truncated text with highlights
+// Create truncated text (highlighting will be applied later)
 function createTruncatedText(text, matches, maxLength = 150) {
   if (!text) return "";
 
-  let highlightedText = highlightText(text, matches);
-
   // If text is short enough, return as is
   if (text.length <= maxLength) {
-    return highlightedText;
+    return text;
   }
 
   // Find the first match to center the truncation around
-  let centerPoint = 0;
+  let centerPoint = Math.floor(text.length / 2);
   if (
     matches &&
     matches.length > 0 &&
@@ -332,21 +338,8 @@ function createTruncatedText(text, matches, maxLength = 150) {
   const start = Math.max(0, centerPoint - Math.floor(maxLength / 2));
   const end = Math.min(text.length, start + maxLength);
 
-  // Extract the relevant portion and re-apply highlighting
-  const truncated = text.slice(start, end);
-  const adjustedMatches = matches
-    ?.map((match) => ({
-      ...match,
-      indices: match.indices
-        ?.map(([matchStart, matchEnd]) => [
-          Math.max(0, matchStart - start),
-          Math.min(truncated.length - 1, matchEnd - start),
-        ])
-        .filter(([s, e]) => s <= truncated.length && e >= 0),
-    }))
-    .filter((match) => match.indices && match.indices.length > 0);
-
-  let result = highlightText(truncated, adjustedMatches);
+  // Extract the relevant portion
+  let result = text.slice(start, end);
 
   // Add ellipsis
   if (start > 0) result = "..." + result;
@@ -356,7 +349,7 @@ function createTruncatedText(text, matches, maxLength = 150) {
 }
 
 // Render search results
-function renderSearchResults(results) {
+function renderSearchResults(results, query = "") {
   const container = document.getElementById("search-results");
 
   if (!results || results.length === 0) {
@@ -369,15 +362,16 @@ function renderSearchResults(results) {
     .map((result) => {
       const { item, matches } = result;
 
-      // Get matches for title and body
-      const titleMatches = matches?.filter((m) => m.key === "title") || [];
-      const bodyMatches = matches?.filter((m) => m.key === "body") || [];
+      // Highlight title and body using query
+      const highlightedTitle = highlightText(item.title, query);
 
-      // Highlight title
-      const highlightedTitle = highlightText(item.title, titleMatches);
-
-      // Create truncated and highlighted body
-      const highlightedBody = createTruncatedText(item.body, bodyMatches, 140);
+      // Create truncated text first, then highlight
+      const truncatedBody = createTruncatedText(
+        item.body,
+        matches?.filter((m) => m.key === "body") || [],
+        140,
+      );
+      const highlightedBody = highlightText(truncatedBody, query);
       const uri = extractUri(item.url);
       const section = extractSection(item.url);
 
@@ -424,7 +418,7 @@ function performSearch(query) {
 
   const results = fuse.search(query);
   const filteredResults = filterByLanguage(results);
-  renderSearchResults(filteredResults);
+  renderSearchResults(filteredResults, query);
 }
 
 // Debounced search

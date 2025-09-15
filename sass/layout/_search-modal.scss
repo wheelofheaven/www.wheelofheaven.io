@@ -34,7 +34,7 @@
         left: 0;
         right: 0;
         bottom: 0;
-        background-color: var(--color-overlay);
+        background-color: transparent;
         backdrop-filter: blur(8px);
         cursor: pointer;
         z-index: -1;
@@ -58,18 +58,6 @@
         display: flex;
         flex-direction: column;
 
-        &::before {
-            content: "";
-            position: absolute;
-            top: 0;
-            left: 0;
-            right: 0;
-            bottom: 0;
-            background: rgba(255, 255, 255, 0.15);
-            border-radius: inherit;
-            z-index: -1;
-        }
-
         .search-modal--active & {
             transform: translateY(0) scale(1);
         }
@@ -81,7 +69,7 @@
         gap: 1rem;
         padding: 1rem 1.5rem;
         border-bottom: 1px solid rgba(255, 255, 255, 0.1);
-        background: rgba(255, 255, 255, 0.05);
+        background: transparent;
         backdrop-filter: blur(10px);
     }
 
@@ -150,7 +138,7 @@
         overflow-y: auto;
         padding: 0;
         max-height: calc(70vh - 80px); // Account for header
-        background: rgba(255, 255, 255, 0.02);
+        background: transparent;
     }
 
     &__empty {
@@ -176,7 +164,7 @@
         font-family: typo.$font-family-tech;
         padding: 1rem 1.5rem;
         border-bottom: 1px solid var(--color-hairline-subtle);
-        background: rgba(255, 255, 255, 0.02);
+        background: transparent;
     }
 }
 
@@ -289,15 +277,16 @@
     &__right {
         display: flex;
         align-items: flex-start;
+        width: 100%;
     }
 
     &__body {
         color: var(--color-text-muted);
         line-height: 1.5;
         font-size: 0.85rem;
-        display: flex;
-        flex-direction: column;
-        gap: 0.5rem;
+        display: block;
+        width: 100%;
+        flex: 1;
     }
 
     &__description {
@@ -323,6 +312,11 @@
     border-radius: 0.15em;
     font-weight: 500;
     box-decoration-break: clone;
+    display: inline !important;
+    vertical-align: baseline;
+    white-space: normal;
+    word-break: keep-all;
+    line-height: normal;
 }
 
 // Body class when modal is open - prevent background scroll but don't blur navbar
@@ -364,12 +358,12 @@
     }
 
     &__header {
-        background: rgba(255, 255, 255, 0.02);
+        background: transparent;
         border-bottom: 1px solid rgba(255, 255, 255, 0.05);
     }
 
     &__results {
-        background: rgba(255, 255, 255, 0.01);
+        background: transparent;
     }
 }
 
@@ -388,12 +382,12 @@
     }
 
     &__header {
-        background: rgba(255, 255, 255, 0.1);
+        background: transparent;
         border-bottom: 1px solid rgba(0, 0, 0, 0.05);
     }
 
     &__results {
-        background: rgba(255, 255, 255, 0.03);
+        background: transparent;
     }
 }
 
