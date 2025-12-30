@@ -13,7 +13,7 @@
      {% if title %}title="{{ title }}"{% endif %}
      {% if class %}class="{{ class }}"{% endif %}
      {% if is_external %}target="_blank" rel="noopener noreferrer"{% endif %}>
-    {{ text }}{% if is_external %} ↗{% endif %}
+    {{ text }}{% if is_external %}<span class="external-indicator">↗</span>{% endif %}
   </a>
 {% endmacro smart_link %}
 
@@ -40,6 +40,6 @@
      {% if title %}title="{{ title }}"{% endif %}
      {% if class %}class="{{ class }}"{% endif %}
      {% if is_external %}target="_blank" rel="noopener noreferrer"{% endif %}>
-    {{ text }}{% if is_external %} ↗{% endif %}
+    {{ text }}{% if is_external %}<span class="external-indicator">↗</span>{% endif %}
   </a>
 {% endmacro footer_link %}

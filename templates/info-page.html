@@ -1,0 +1,342 @@
+{% extends "base.html" %}
+
+{% block content %}
+<div class="info-page">
+    <!-- Hero Section -->
+    <header class="info-page__hero">
+        <div class="info-page__hero-bg"></div>
+        <div class="info-page__hero-content">
+            {% if page.slug == "code-of-conduct" %}
+            <div class="info-page__icon">
+                <svg width="40" height="40" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5">
+                    <path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"></path>
+                    <path d="M9 12l2 2 4-4"></path>
+                </svg>
+            </div>
+            {% elif page.slug == "contributing" %}
+            <div class="info-page__icon">
+                <svg width="40" height="40" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5">
+                    <circle cx="12" cy="12" r="10"></circle>
+                    <path d="M8 14s1.5 2 4 2 4-2 4-2"></path>
+                    <line x1="9" y1="9" x2="9.01" y2="9"></line>
+                    <line x1="15" y1="9" x2="15.01" y2="9"></line>
+                </svg>
+            </div>
+            {% elif page.slug == "forums" %}
+            <div class="info-page__icon">
+                <svg width="40" height="40" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5">
+                    <path d="M21 15a2 2 0 0 1-2 2H7l-4 4V5a2 2 0 0 1 2-2h14a2 2 0 0 1 2 2z"></path>
+                </svg>
+            </div>
+            {% elif page.slug == "faq" %}
+            <div class="info-page__icon">
+                <svg width="40" height="40" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5">
+                    <circle cx="12" cy="12" r="10"></circle>
+                    <path d="M9.09 9a3 3 0 0 1 5.83 1c0 2-3 3-3 3"></path>
+                    <line x1="12" y1="17" x2="12.01" y2="17"></line>
+                </svg>
+            </div>
+            {% endif %}
+            <h1 class="info-page__title">{{ page.title }}</h1>
+            {% if page.description %}
+            <p class="info-page__description">{{ page.description }}</p>
+            {% endif %}
+        </div>
+    </header>
+
+    <div class="info-page__container">
+        {% if page.slug == "code-of-conduct" %}
+        <!-- Code of Conduct Content -->
+        <section class="info-page__section">
+            <h2 class="info-page__section-title">Our Pledge</h2>
+            <p class="info-page__text">
+                We as members, contributors, and leaders pledge to make participation in our community a harassment-free experience for everyone, regardless of age, body size, visible or invisible disability, ethnicity, sex characteristics, gender identity and expression, level of experience, education, socio-economic status, nationality, personal appearance, race, religion, or sexual identity and orientation.
+            </p>
+            <p class="info-page__text">
+                We pledge to act and interact in ways that contribute to an open, welcoming, diverse, inclusive, and healthy community.
+            </p>
+        </section>
+
+        <section class="info-page__section">
+            <h2 class="info-page__section-title">Our Standards</h2>
+            <div class="info-page__card-grid">
+                <div class="info-page__card info-page__card--positive">
+                    <h3 class="info-page__card-title">
+                        <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                            <path d="M22 11.08V12a10 10 0 1 1-5.93-9.14"></path>
+                            <polyline points="22 4 12 14.01 9 11.01"></polyline>
+                        </svg>
+                        Encouraged Behaviors
+                    </h3>
+                    <ul class="info-page__list">
+                        <li>Demonstrating empathy and kindness toward other people</li>
+                        <li>Being respectful of differing opinions, viewpoints, and experiences</li>
+                        <li>Giving and gracefully accepting constructive feedback</li>
+                        <li>Accepting responsibility and apologizing to those affected by our mistakes</li>
+                        <li>Focusing on what is best for the overall community</li>
+                    </ul>
+                </div>
+                <div class="info-page__card info-page__card--negative">
+                    <h3 class="info-page__card-title">
+                        <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                            <circle cx="12" cy="12" r="10"></circle>
+                            <line x1="15" y1="9" x2="9" y2="15"></line>
+                            <line x1="9" y1="9" x2="15" y2="15"></line>
+                        </svg>
+                        Unacceptable Behaviors
+                    </h3>
+                    <ul class="info-page__list">
+                        <li>Trolling, insulting or derogatory comments, and personal attacks</li>
+                        <li>Public or private harassment</li>
+                        <li>Publishing others' private information without permission</li>
+                        <li>Other conduct inappropriate in a professional setting</li>
+                    </ul>
+                </div>
+            </div>
+        </section>
+
+        <section class="info-page__cta">
+            <div class="info-page__cta-icon">
+                <svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                    <path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z"></path>
+                    <polyline points="14 2 14 8 20 8"></polyline>
+                    <line x1="16" y1="13" x2="8" y2="13"></line>
+                    <line x1="16" y1="17" x2="8" y2="17"></line>
+                </svg>
+            </div>
+            <h2 class="info-page__cta-title">Full Code of Conduct</h2>
+            <p class="info-page__cta-text">Read the complete Code of Conduct including enforcement guidelines on GitHub.</p>
+            <a href="https://github.com/wheelofheaven/site/blob/main/CODE_OF_CONDUCT.md" class="info-page__cta-button" target="_blank" rel="noopener">
+                <span>View on GitHub</span>
+                <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                    <path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"></path>
+                    <polyline points="15 3 21 3 21 9"></polyline>
+                    <line x1="10" y1="14" x2="21" y2="3"></line>
+                </svg>
+            </a>
+        </section>
+
+        {% elif page.slug == "contributing" %}
+        <!-- Contributing Content -->
+        <section class="info-page__section">
+            <h2 class="info-page__section-title">Ways to Contribute</h2>
+            <p class="info-page__text">
+                Wheel of Heaven is an open-source project, and we welcome contributions from everyone. Whether you're a researcher, developer, writer, or simply curious about humanity's cosmic heritage, there are many ways to get involved.
+            </p>
+            <div class="info-page__card-grid">
+                <div class="info-page__card">
+                    <div class="info-page__card-icon">
+                        <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                            <path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z"></path>
+                            <polyline points="14 2 14 8 20 8"></polyline>
+                            <line x1="16" y1="13" x2="8" y2="13"></line>
+                            <line x1="16" y1="17" x2="8" y2="17"></line>
+                        </svg>
+                    </div>
+                    <h3 class="info-page__card-title">Content & Research</h3>
+                    <p class="info-page__card-text">Write wiki articles, add translations, or help research and document ancient texts and their interpretations.</p>
+                </div>
+                <div class="info-page__card">
+                    <div class="info-page__card-icon">
+                        <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                            <polyline points="16 18 22 12 16 6"></polyline>
+                            <polyline points="8 6 2 12 8 18"></polyline>
+                        </svg>
+                    </div>
+                    <h3 class="info-page__card-title">Code & Development</h3>
+                    <p class="info-page__card-text">Help improve the website, fix bugs, add features, or enhance the user experience.</p>
+                </div>
+                <div class="info-page__card">
+                    <div class="info-page__card-icon">
+                        <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                            <circle cx="12" cy="12" r="10"></circle>
+                            <line x1="2" y1="12" x2="22" y2="12"></line>
+                            <path d="M12 2a15.3 15.3 0 0 1 4 10 15.3 15.3 0 0 1-4 10 15.3 15.3 0 0 1-4-10 15.3 15.3 0 0 1 4-10z"></path>
+                        </svg>
+                    </div>
+                    <h3 class="info-page__card-title">Translations</h3>
+                    <p class="info-page__card-text">Help make our content accessible to a global audience by translating articles and interface elements.</p>
+                </div>
+                <div class="info-page__card">
+                    <div class="info-page__card-icon">
+                        <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                            <path d="M21 15a2 2 0 0 1-2 2H7l-4 4V5a2 2 0 0 1 2-2h14a2 2 0 0 1 2 2z"></path>
+                        </svg>
+                    </div>
+                    <h3 class="info-page__card-title">Community Support</h3>
+                    <p class="info-page__card-text">Answer questions, welcome newcomers, and help foster a supportive research community.</p>
+                </div>
+            </div>
+        </section>
+
+        <section class="info-page__cta">
+            <div class="info-page__cta-icon">
+                <svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                    <path d="M9 19c-5 1.5-5-2.5-7-3m14 6v-3.87a3.37 3.37 0 0 0-.94-2.61c3.14-.35 6.44-1.54 6.44-7A5.44 5.44 0 0 0 20 4.77 5.07 5.07 0 0 0 19.91 1S18.73.65 16 2.48a13.38 13.38 0 0 0-7 0C6.27.65 5.09 1 5.09 1A5.07 5.07 0 0 0 5 4.77a5.44 5.44 0 0 0-1.5 3.78c0 5.42 3.3 6.61 6.44 7A3.37 3.37 0 0 0 9 18.13V22"></path>
+                </svg>
+            </div>
+            <h2 class="info-page__cta-title">Start Contributing</h2>
+            <p class="info-page__cta-text">Read our contribution guidelines to learn how to submit your first contribution.</p>
+            <a href="https://github.com/wheelofheaven/site/blob/main/CONTRIBUTE.md" class="info-page__cta-button" target="_blank" rel="noopener">
+                <span>Contribution Guide</span>
+                <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                    <path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"></path>
+                    <polyline points="15 3 21 3 21 9"></polyline>
+                    <line x1="10" y1="14" x2="21" y2="3"></line>
+                </svg>
+            </a>
+        </section>
+
+        {% elif page.slug == "forums" %}
+        <!-- Forums Content -->
+        <section class="info-page__section">
+            <h2 class="info-page__section-title">Join the Discussion</h2>
+            <p class="info-page__text">
+                Our community forums are the heart of collaborative research at Wheel of Heaven. Connect with fellow researchers, share discoveries, ask questions, and engage in thoughtful discussions about humanity's cosmic heritage.
+            </p>
+        </section>
+
+        <section class="info-page__section">
+            <h2 class="info-page__section-title">Discussion Categories</h2>
+            <div class="info-page__card-grid">
+                <div class="info-page__card">
+                    <div class="info-page__card-icon">
+                        <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                            <circle cx="12" cy="12" r="10"></circle>
+                            <path d="M9.09 9a3 3 0 0 1 5.83 1c0 2-3 3-3 3"></path>
+                            <line x1="12" y1="17" x2="12.01" y2="17"></line>
+                        </svg>
+                    </div>
+                    <h3 class="info-page__card-title">Q&A</h3>
+                    <p class="info-page__card-text">Ask questions and get answers from the community about any topic related to our research.</p>
+                </div>
+                <div class="info-page__card">
+                    <div class="info-page__card-icon">
+                        <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                            <polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"></polygon>
+                        </svg>
+                    </div>
+                    <h3 class="info-page__card-title">Ideas</h3>
+                    <p class="info-page__card-text">Share your ideas for new features, content, or research directions.</p>
+                </div>
+                <div class="info-page__card">
+                    <div class="info-page__card-icon">
+                        <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                            <path d="M4 19.5A2.5 2.5 0 0 1 6.5 17H20"></path>
+                            <path d="M6.5 2H20v20H6.5A2.5 2.5 0 0 1 4 19.5v-15A2.5 2.5 0 0 1 6.5 2z"></path>
+                        </svg>
+                    </div>
+                    <h3 class="info-page__card-title">Research</h3>
+                    <p class="info-page__card-text">Discuss ancient texts, scientific findings, and cross-cultural connections.</p>
+                </div>
+                <div class="info-page__card">
+                    <div class="info-page__card-icon">
+                        <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                            <path d="M17 21v-2a4 4 0 0 0-4-4H5a4 4 0 0 0-4 4v2"></path>
+                            <circle cx="9" cy="7" r="4"></circle>
+                            <path d="M23 21v-2a4 4 0 0 0-3-3.87"></path>
+                            <path d="M16 3.13a4 4 0 0 1 0 7.75"></path>
+                        </svg>
+                    </div>
+                    <h3 class="info-page__card-title">Introductions</h3>
+                    <p class="info-page__card-text">Introduce yourself to the community and share what brought you here.</p>
+                </div>
+            </div>
+        </section>
+
+        <section class="info-page__cta">
+            <div class="info-page__cta-icon">
+                <svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                    <path d="M21 11.5a8.38 8.38 0 0 1-.9 3.8 8.5 8.5 0 0 1-7.6 4.7 8.38 8.38 0 0 1-3.8-.9L3 21l1.9-5.7a8.38 8.38 0 0 1-.9-3.8 8.5 8.5 0 0 1 4.7-7.6 8.38 8.38 0 0 1 3.8-.9h.5a8.48 8.48 0 0 1 8 8v.5z"></path>
+                </svg>
+            </div>
+            <h2 class="info-page__cta-title">Visit Our Forums</h2>
+            <p class="info-page__cta-text">Join the conversation on GitHub Discussions and become part of our research community.</p>
+            <a href="https://github.com/orgs/wheelofheaven/discussions" class="info-page__cta-button" target="_blank" rel="noopener">
+                <span>Open Discussions</span>
+                <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                    <path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"></path>
+                    <polyline points="15 3 21 3 21 9"></polyline>
+                    <line x1="10" y1="14" x2="21" y2="3"></line>
+                </svg>
+            </a>
+        </section>
+
+        {% elif page.slug == "faq" %}
+        <!-- FAQ Content -->
+        <section class="info-page__section">
+            <div class="info-page__faq-list">
+                <details class="info-page__faq-item">
+                    <summary class="info-page__faq-question">What is Wheel of Heaven?</summary>
+                    <div class="info-page__faq-answer">
+                        <p>Wheel of Heaven is a knowledge base exploring the hypothesis that life on Earth was intelligently designed by an extraterrestrial civilization known as the Elohim. We synthesize ancient texts, modern scientific discoveries, and cross-cultural mythologies to understand humanity's cosmic origins.</p>
+                    </div>
+                </details>
+
+                <details class="info-page__faq-item">
+                    <summary class="info-page__faq-question">Is this a religious organization?</summary>
+                    <div class="info-page__faq-answer">
+                        <p>No, Wheel of Heaven is not a religious organization. We are a research community focused on exploring alternative interpretations of ancient texts and their possible connections to extraterrestrial contact. We encourage critical thinking and open dialogue.</p>
+                    </div>
+                </details>
+
+                <details class="info-page__faq-item">
+                    <summary class="info-page__faq-question">How can I contribute?</summary>
+                    <div class="info-page__faq-answer">
+                        <p>There are many ways to contribute! You can write or translate content, help with development, participate in discussions, or simply share our work. Visit our <a href="/contributing/">Contributing page</a> for detailed guidelines.</p>
+                    </div>
+                </details>
+
+                <details class="info-page__faq-item">
+                    <summary class="info-page__faq-question">Is the content free to use?</summary>
+                    <div class="info-page__faq-answer">
+                        <p>Yes! All our content is open source and freely available. We believe knowledge that could reshape our understanding of human civilization should be accessible to everyone. Check our license for specific terms.</p>
+                    </div>
+                </details>
+
+                <details class="info-page__faq-item">
+                    <summary class="info-page__faq-question">How do I join the community?</summary>
+                    <div class="info-page__faq-answer">
+                        <p>The easiest way to join is through our <a href="/forums/">Community Forums</a> on GitHub Discussions. You can ask questions, share ideas, and connect with other researchers interested in humanity's cosmic heritage.</p>
+                    </div>
+                </details>
+
+                <details class="info-page__faq-item">
+                    <summary class="info-page__faq-question">What sources do you use?</summary>
+                    <div class="info-page__faq-answer">
+                        <p>We reference a wide range of sources including ancient religious texts, archaeological findings, astronomical data, and the writings of researchers who have explored the ancient astronaut hypothesis. We always strive to cite primary sources and encourage readers to verify information independently.</p>
+                    </div>
+                </details>
+
+                <details class="info-page__faq-item">
+                    <summary class="info-page__faq-question">Can I use the content for my own research?</summary>
+                    <div class="info-page__faq-answer">
+                        <p>Absolutely! Our content is open source specifically so it can be used, shared, and built upon. We only ask that you provide appropriate attribution and share your own findings with the community when possible.</p>
+                    </div>
+                </details>
+            </div>
+        </section>
+
+        <section class="info-page__cta">
+            <div class="info-page__cta-icon">
+                <svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                    <circle cx="12" cy="12" r="10"></circle>
+                    <path d="M9.09 9a3 3 0 0 1 5.83 1c0 2-3 3-3 3"></path>
+                    <line x1="12" y1="17" x2="12.01" y2="17"></line>
+                </svg>
+            </div>
+            <h2 class="info-page__cta-title">Still Have Questions?</h2>
+            <p class="info-page__cta-text">Can't find what you're looking for? Ask in our community forums and we'll be happy to help.</p>
+            <a href="https://github.com/orgs/wheelofheaven/discussions" class="info-page__cta-button" target="_blank" rel="noopener">
+                <span>Ask a Question</span>
+                <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                    <path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"></path>
+                    <polyline points="15 3 21 3 21 9"></polyline>
+                    <line x1="10" y1="14" x2="21" y2="3"></line>
+                </svg>
+            </a>
+        </section>
+        {% endif %}
+    </div>
+</div>
+{% endblock content %}

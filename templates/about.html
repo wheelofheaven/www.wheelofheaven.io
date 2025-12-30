@@ -1,0 +1,131 @@
+{% extends "base.html" %}
+
+{% block content %}
+<div class="about-page">
+    <!-- Hero Section with Gradient -->
+    <header class="about-hero">
+        <div class="about-hero__bg"></div>
+        <div class="about-hero__content">
+            <div class="about-hero__icon">
+                <svg width="48" height="48" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round">
+                    <circle cx="12" cy="12" r="10"></circle>
+                    <path d="M12 2a14.5 14.5 0 0 0 0 20 14.5 14.5 0 0 0 0-20"></path>
+                    <path d="M2 12h20"></path>
+                </svg>
+            </div>
+            <h1 class="about-hero__title">{{ page.title }}</h1>
+            {% if page.description %}
+            <p class="about-hero__description">{{ page.description }}</p>
+            {% endif %}
+        </div>
+    </header>
+
+    <div class="about-container">
+        <!-- Mission Statement -->
+        <section class="about-mission">
+            <div class="about-mission__content">
+                <p class="about-mission__text">
+                    Wheel of Heaven isn't our first exploration into these mysteries. It's the culmination of decades of research, analysis, and synthesis of ancient texts, modern scientific discoveries, and cross-cultural mythologies.
+                </p>
+                <p class="about-mission__text">
+                    We've dedicated ourselves to understanding the profound questions of human origin, the nature of consciousness, and our place in the cosmic order. Building platforms for truth and understanding is in our DNA.
+                </p>
+                <p class="about-mission__highlight">
+                    Now, we're building something new again with that same drive and a fresh perspective.
+                </p>
+            </div>
+        </section>
+
+        <!-- Values Section -->
+        <section class="about-values">
+            <div class="about-values__intro">
+                <h2 class="about-values__title">Our Principles</h2>
+                <p class="about-values__subtitle">We think there's a better way to explore humanity's cosmic heritage, and it starts with the following assumptions.</p>
+            </div>
+
+            <div class="about-values__grid">
+                <article class="about-value-card">
+                    <div class="about-value-card__icon">
+                        <svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                            <path d="M2 3h6a4 4 0 0 1 4 4v14a3 3 0 0 0-3-3H2z"></path>
+                            <path d="M22 3h-6a4 4 0 0 0-4 4v14a3 3 0 0 1 3-3h7z"></path>
+                        </svg>
+                    </div>
+                    <h3 class="about-value-card__title">Knowledge should be freely accessible to all</h3>
+                    <p class="about-value-card__description">
+                        When you seek truth about humanity's origins, you shouldn't encounter paywalls or gatekeepers. Information that could reshape our understanding of human civilization should be available to every curious mind, regardless of their economic circumstances or institutional affiliations.
+                    </p>
+                </article>
+
+                <article class="about-value-card">
+                    <div class="about-value-card__icon">
+                        <svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                            <path d="M17 21v-2a4 4 0 0 0-4-4H5a4 4 0 0 0-4 4v2"></path>
+                            <circle cx="9" cy="7" r="4"></circle>
+                            <path d="M23 21v-2a4 4 0 0 0-3-3.87"></path>
+                            <path d="M16 3.13a4 4 0 0 1 0 7.75"></path>
+                        </svg>
+                    </div>
+                    <h3 class="about-value-card__title">Open dialogue produces better understanding</h3>
+                    <p class="about-value-card__description">
+                        Academic papers have their place, but sometimes you just want to explore ideas together. It's more engaging than peer review, builds trust between researchers, and it's one of the best ways to distribute knowledge through a community. But it has to be welcoming.
+                    </p>
+                </article>
+
+                <article class="about-value-card">
+                    <div class="about-value-card__icon">
+                        <svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                            <path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z"></path>
+                            <polyline points="14 2 14 8 20 8"></polyline>
+                            <line x1="16" y1="13" x2="8" y2="13"></line>
+                            <line x1="16" y1="17" x2="8" y2="17"></line>
+                            <polyline points="10 9 9 9 8 9"></polyline>
+                        </svg>
+                    </div>
+                    <h3 class="about-value-card__title">Research should happen close to sources</h3>
+                    <p class="about-value-card__description">
+                        If you want to discuss ancient texts, you should be able to reference the original sources directly, not just summaries or interpretations. By treating primary sources as the fundamental unit of evidence and integrating discussion around specific passages, we can make it easy to have conversations about any line of text.
+                    </p>
+                </article>
+
+                <article class="about-value-card">
+                    <div class="about-value-card__icon">
+                        <svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                            <circle cx="12" cy="12" r="10"></circle>
+                            <line x1="12" y1="16" x2="12" y2="12"></line>
+                            <line x1="12" y1="8" x2="12.01" y2="8"></line>
+                        </svg>
+                    </div>
+                    <h3 class="about-value-card__title">Truth should emerge organically</h3>
+                    <p class="about-value-card__description">
+                        If you're exploring questions that could reshape our understanding of human civilization, every piece of evidence must be carefully considered. The content you're investigating should always be the focus. Our goal is to find the most effective way to present each piece of evidence and make it accessible.
+                    </p>
+                </article>
+            </div>
+        </section>
+
+        <!-- CTA Section -->
+        <section class="about-cta">
+            <div class="about-cta__content">
+                <div class="about-cta__icon">
+                    <svg width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                        <path d="M21 15a2 2 0 0 1-2 2H7l-4 4V5a2 2 0 0 1 2-2h14a2 2 0 0 1 2 2z"></path>
+                    </svg>
+                </div>
+                <h2 class="about-cta__title">Join the Exploration</h2>
+                <p class="about-cta__description">
+                    We believe the most important discoveries come from open collaboration and rigorous inquiry. We believe humanity's story is far more extraordinary than conventionally taught.
+                </p>
+                <a href="https://github.com/orgs/wheelofheaven/discussions" class="about-cta__button" target="_blank" rel="noopener">
+                    <span>Visit Our Community</span>
+                    <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                        <path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"></path>
+                        <polyline points="15 3 21 3 21 9"></polyline>
+                        <line x1="10" y1="14" x2="21" y2="3"></line>
+                    </svg>
+                </a>
+            </div>
+        </section>
+    </div>
+</div>
+{% endblock content %}

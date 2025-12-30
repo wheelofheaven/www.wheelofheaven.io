@@ -9,7 +9,7 @@
     gap: 2rem;
     padding: 1.5rem 0;
     margin-bottom: 1rem;
-    border-bottom: 1px solid var(--color-border);
+    border-bottom: 1px solid var(--color-hairline);
 
     @media (max-width: 768px) {
         flex-direction: column;
@@ -60,28 +60,29 @@
         left: 1rem;
         top: 50%;
         transform: translateY(-50%);
-        color: var(--color-text-tertiary);
+        color: var(--color-text-subtle);
         pointer-events: none;
     }
 
     &__search-input {
         width: 100%;
         padding: 0.75rem 1rem 0.75rem 2.75rem;
-        border: 1px solid var(--color-border);
+        border: 1px solid var(--color-hairline);
         border-radius: 0.5rem;
-        background: var(--color-background);
-        color: var(--color-text-primary);
-        font-family: var(--font-family-body);
+        background: var(--color-background-secondary);
+        color: var(--color-text);
+        font-family: typo.$font-family-body;
         font-size: 0.9rem;
         transition: all 0.2s ease;
 
         &::placeholder {
-            color: var(--color-text-tertiary);
+            color: var(--color-text-subtle);
         }
 
         &:focus {
             outline: none;
             border-color: var(--color-accent-primary);
+            background: var(--color-background);
             box-shadow: 0 0 0 3px rgba(102, 126, 234, 0.1);
         }
     }
@@ -109,11 +110,11 @@
 
     &__select {
         padding: 0.5rem 2rem 0.5rem 0.75rem;
-        border: 1px solid var(--color-border);
-        border-radius: 0.375rem;
-        background: var(--color-background);
-        color: var(--color-text-primary);
-        font-family: var(--font-family-tech);
+        border: 1px solid var(--color-hairline);
+        border-radius: 0.5rem;
+        background: var(--color-background-secondary);
+        color: var(--color-text);
+        font-family: typo.$font-family-tech;
         font-size: 0.8rem;
         cursor: pointer;
         transition: all 0.2s ease;
@@ -125,10 +126,12 @@
         &:focus {
             outline: none;
             border-color: var(--color-accent-primary);
+            box-shadow: 0 0 0 3px rgba(102, 126, 234, 0.1);
         }
 
         &:hover {
             border-color: var(--color-accent-primary);
+            background: var(--color-background);
         }
     }
 
@@ -165,15 +168,16 @@
 // View Toggle
 .essentials-view-toggle {
     display: flex;
-    border: 1px solid var(--color-border);
-    border-radius: 0.375rem;
+    border: 1px solid var(--color-hairline);
+    border-radius: 0.5rem;
     overflow: hidden;
+    background: var(--color-background-secondary);
 
     &__btn {
-        background: var(--color-background);
+        background: transparent;
         border: none;
-        padding: 0.5rem;
-        color: var(--color-text-tertiary);
+        padding: 0.625rem;
+        color: var(--color-text-muted);
         cursor: pointer;
         transition: all 0.2s ease;
         display: flex;
@@ -181,7 +185,8 @@
         justify-content: center;
 
         &:hover {
-            color: var(--color-text-primary);
+            color: var(--color-text);
+            background: var(--color-background);
         }
 
         &--active {
@@ -204,9 +209,9 @@
 .essentials-footer {
     margin-top: 4rem;
     padding: 3rem 2rem;
-    background: var(--color-background);
+    background: var(--color-background-secondary);
     border-radius: 1rem;
-    border: 1px solid var(--color-border);
+    border: 1px solid var(--color-hairline);
     text-align: center;
 
     @media (max-width: 768px) {
@@ -292,7 +297,7 @@
 
     &__recent {
         padding-top: 2rem;
-        border-top: 1px solid var(--color-border);
+        border-top: 1px solid var(--color-hairline);
     }
 
     &__recent-title {
@@ -318,7 +323,7 @@
         gap: 0.5rem;
         padding: 0.5rem 1rem;
         background: var(--color-background);
-        border: 1px solid var(--color-border);
+        border: 1px solid var(--color-hairline);
         border-radius: 2rem;
         color: var(--color-text-primary);
         font-size: 0.875rem;
@@ -377,7 +382,7 @@
 .essentials-section {
     // Main container
     &__container {
-        max-width: 1200px;
+        max-width: vars.$viewport-max-width;
         margin: 0 auto;
         padding: 2rem 1.5rem;
 
@@ -391,7 +396,7 @@
         text-align: center;
         margin-bottom: 3rem;
         padding-bottom: 2rem;
-        border-bottom: 1px solid var(--color-border);
+        border-bottom: 1px solid var(--color-hairline);
 
         @media (max-width: 768px) {
             margin-bottom: 2rem;
@@ -478,7 +483,7 @@
     &__subsections {
         margin-top: 4rem;
         padding-top: 3rem;
-        border-top: 1px solid var(--color-border);
+        border-top: 1px solid var(--color-hairline);
     }
 
     &__subsections-title {
@@ -581,16 +586,37 @@
 
 // Horizontal essential card for main listing
 .essentials-horizontal-card {
-    background: var(--color-background);
-    border: 1px solid var(--color-border);
-    border-radius: 8px;
-    transition: all 0.2s ease;
+    background: var(--color-card-bg);
+    border: 1px solid var(--color-hairline);
+    border-radius: 1rem;
+    transition: all 0.3s ease;
     overflow: hidden;
+    position: relative;
+
+    &::before {
+        content: "";
+        position: absolute;
+        top: 0;
+        left: 0;
+        right: 0;
+        height: 3px;
+        background: linear-gradient(
+            90deg,
+            var(--color-accent-primary),
+            var(--color-accent-secondary)
+        );
+        opacity: 0;
+        transition: opacity 0.3s ease;
+    }
 
     &:hover {
         border-color: var(--color-accent-primary);
-        transform: translateY(-1px);
-        box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+        transform: translateY(-3px);
+        box-shadow: 0 8px 24px rgba(102, 126, 234, 0.15);
+
+        &::before {
+            opacity: 1;
+        }
     }
 
     &__link {
@@ -806,15 +832,15 @@
 
 // Subsection card
 .essentials-subsection-card {
-    background: var(--color-background);
-    border: 1px solid var(--color-border);
-    border-radius: 8px;
-    transition: all 0.2s ease;
+    background: var(--color-card-bg);
+    border: 1px solid var(--color-hairline);
+    border-radius: 1rem;
+    transition: all 0.3s ease;
 
     &:hover {
         border-color: var(--color-accent-primary);
-        transform: translateY(-1px);
-        box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+        transform: translateY(-2px);
+        box-shadow: 0 6px 20px rgba(102, 126, 234, 0.12);
     }
 
     &__link {
