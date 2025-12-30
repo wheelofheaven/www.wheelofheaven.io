@@ -150,6 +150,48 @@
         font-size: 1.1rem;
     }
 
+    &__empty-state {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        padding: 2rem 1.5rem;
+        text-align: center;
+        border-bottom: 1px solid var(--color-hairline-subtle);
+    }
+
+    &__empty-icon {
+        color: var(--color-text-muted);
+        opacity: 0.5;
+        margin-bottom: 1rem;
+
+        svg {
+            width: 48px;
+            height: 48px;
+        }
+    }
+
+    &__empty-title {
+        margin: 0 0 0.5rem 0;
+        font-size: 1.1rem;
+        font-weight: 600;
+        color: var(--color-text);
+        font-family: typo.$font-family-body;
+    }
+
+    &__empty-text {
+        margin: 0;
+        font-size: 0.9rem;
+        color: var(--color-text-muted);
+        line-height: 1.5;
+        max-width: 300px;
+
+        strong {
+            color: var(--color-accent-primary);
+            font-weight: 600;
+        }
+    }
+
     &__navigation {
         padding: 0;
     }

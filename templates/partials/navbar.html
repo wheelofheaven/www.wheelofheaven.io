@@ -11,14 +11,14 @@
         <div class="navbar__links">
             <a
                 href="{{ trans(key='navbarEssentialsLink', lang=lang) }}"
-                class="navbar__link"
+                class="navbar__link{% if current_path and current_path is starting_with('/essentials') %} navbar__link--active{% endif %}"
                 data-navbar-key="essentials"
             >
                 {{ trans(key="navbarEssentials", lang=lang) }}
             </a>
             <a
                 href="{{ trans(key='navbarTimelineLink', lang=lang) }}"
-                class="navbar__link"
+                class="navbar__link{% if current_path and current_path is starting_with('/timeline') %} navbar__link--active{% endif %}"
                 data-navbar-key="timeline"
             >
                 {{ trans(key="navbarTimeline", lang=lang) }}
@@ -27,7 +27,7 @@
             <!-- Knowledge Dropdown -->
             <div class="navbar__dropdown" data-dropdown="knowledge">
                 <button
-                    class="navbar__dropdown-trigger"
+                    class="navbar__dropdown-trigger{% if current_path and (current_path is starting_with('/wiki') or current_path is starting_with('/explainers')) %} navbar__dropdown-trigger--active{% endif %}"
                     aria-expanded="false"
                     aria-haspopup="true"
                 >
@@ -177,7 +177,7 @@
             <!-- Resources Dropdown -->
             <div class="navbar__dropdown" data-dropdown="resources">
                 <button
-                    class="navbar__dropdown-trigger"
+                    class="navbar__dropdown-trigger{% if current_path and (current_path is starting_with('/about') or current_path is starting_with('/faq') or current_path is starting_with('/contributing')) %} navbar__dropdown-trigger--active{% endif %}"
                     aria-expanded="false"
                     aria-haspopup="true"
                 >

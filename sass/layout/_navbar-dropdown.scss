@@ -3,10 +3,9 @@
 @use "../base/typography" as typo;
 
 // Navbar Dropdown Styles
-// Uses position: fixed (like search modal) so backdrop-filter works
 .navbar-dropdown {
-    position: fixed;
-    top: 4.5rem; // Same gap as search modal (navbar height + gap)
+    position: absolute;
+    top: calc(100% + 0.5rem); // Gap below the trigger
     left: 50%;
     transform: translateX(-50%);
     z-index: 55;
@@ -28,15 +27,15 @@
         width: 100%;
         min-width: 300px;
         max-width: 500px;
-        background: transparent;
-        border: 1px solid rgba(255, 255, 255, 0.2);
+        // Use semi-transparent background since backdrop-filter doesn't work
+        // when nested inside navbar (which already has backdrop-filter)
+        background: rgba(25, 28, 32, 0.92);
+        border: 1px solid rgba(255, 255, 255, 0.12);
         border-radius: 1rem;
-        backdrop-filter: blur(20px) saturate(180%);
-        -webkit-backdrop-filter: blur(20px) saturate(180%);
         box-shadow:
-            0 25px 50px rgba(0, 0, 0, 0.25),
+            0 25px 50px rgba(0, 0, 0, 0.4),
             0 0 0 1px rgba(255, 255, 255, 0.05),
-            inset 0 1px 0 rgba(255, 255, 255, 0.1);
+            inset 0 1px 0 rgba(255, 255, 255, 0.08);
         transform: translateY(-10px) scale(0.98);
         transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
 
@@ -282,11 +281,12 @@
 // Light theme styles
 [data-theme="light"] .navbar-dropdown {
     &__container {
-        border: 1px solid rgba(0, 0, 0, 0.1);
+        background: rgba(255, 255, 255, 0.95);
+        border: 1px solid rgba(0, 0, 0, 0.08);
         box-shadow:
-            0 25px 50px rgba(0, 0, 0, 0.15),
-            0 0 0 1px rgba(255, 255, 255, 0.5),
-            inset 0 1px 0 rgba(255, 255, 255, 0.3);
+            0 25px 50px rgba(0, 0, 0, 0.12),
+            0 0 0 1px rgba(0, 0, 0, 0.03),
+            inset 0 1px 0 rgba(255, 255, 255, 0.5);
     }
 }
 

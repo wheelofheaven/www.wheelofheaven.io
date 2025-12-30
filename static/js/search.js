@@ -348,12 +348,37 @@ function createTruncatedText(text, matches, maxLength = 150) {
   return result;
 }
 
+// Create empty state HTML when no results found for a query
+function createEmptyState(query) {
+  return `
+    <div class="search-modal__empty-state">
+      <div class="search-modal__empty-icon">
+        <svg width="48" height="48" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round">
+          <circle cx="11" cy="11" r="8"></circle>
+          <line x1="21" y1="21" x2="16.65" y2="16.65"></line>
+          <line x1="8" y1="11" x2="14" y2="11"></line>
+        </svg>
+      </div>
+      <h4 class="search-modal__empty-title">No results found</h4>
+      <p class="search-modal__empty-text">
+        No matches for "<strong>${query}</strong>". Try different keywords or browse the site sections below.
+      </p>
+    </div>
+    ${createNavigationLinks()}
+  `;
+}
+
 // Render search results
 function renderSearchResults(results, query = "") {
   const container = document.getElementById("search-results");
 
   if (!results || results.length === 0) {
-    container.innerHTML = createNavigationLinks();
+    // If there's a query but no results, show empty state
+    if (query && query.trim().length >= 4) {
+      container.innerHTML = createEmptyState(query);
+    } else {
+      container.innerHTML = createNavigationLinks();
+    }
     return;
   }
 

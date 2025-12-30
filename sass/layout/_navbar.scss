@@ -102,6 +102,11 @@
             outline: none;
         }
 
+        &--active {
+            color: var(--color-accent-primary);
+            background-color: var(--color-hover);
+        }
+
         &--icon {
             display: flex;
             align-items: center;

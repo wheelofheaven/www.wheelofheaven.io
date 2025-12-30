@@ -54,6 +54,28 @@ textarea {
         border-color 0.3s ease;
 }
 
+// Skip link for keyboard navigation
+.skip-link {
+    position: absolute;
+    top: -100%;
+    left: 50%;
+    transform: translateX(-50%);
+    z-index: 9999;
+    padding: 1rem 2rem;
+    background: var(--color-accent-primary);
+    color: white;
+    text-decoration: none;
+    border-radius: 0 0 0.5rem 0.5rem;
+    font-weight: 600;
+    transition: top 0.3s ease;
+
+    &:focus {
+        top: 0;
+        outline: 2px solid var(--color-accent-secondary);
+        outline-offset: 2px;
+    }
+}
+
 // Utility classes
 
 // Hide element completely
