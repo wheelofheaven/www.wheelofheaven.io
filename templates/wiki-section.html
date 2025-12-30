@@ -77,8 +77,9 @@ block content %}
 
         {% if section.pages %}
         <!-- Recently Updated Articles -->
-        {% set recent_pages = section.pages | sort(attribute="date") | reverse | slice(end=4) %}
-        {% if recent_pages | length > 0 %}
+        {% set pages_with_dates = section.pages | filter(attribute="date") %}
+        {% if pages_with_dates | length > 0 %}
+        {% set recent_pages = pages_with_dates | sort(attribute="date") | reverse | slice(end=4) %}
         <div class="wiki-recent">
             <h2 class="wiki-recent__title">
                 <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
