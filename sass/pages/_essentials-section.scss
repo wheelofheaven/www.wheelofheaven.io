@@ -414,9 +414,10 @@
         }
     }
 
-    // Highlighted card styling
+    // Highlighted card styling (used in Start Here section)
     &--highlight {
         border: 2px solid var(--color-accent-primary);
+        border-radius: 12px; // Match the parent wrapper's border-radius
         background: linear-gradient(
             135deg,
             rgba(102, 126, 234, 0.02) 0%,
