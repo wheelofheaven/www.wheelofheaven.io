@@ -1,35 +1,247 @@
 {% extends "base.html" %} {% import "macros/library.html" as library_macros %}
 {% block content %}
 <div class="library-section">
-    <header class="section-header">
-        <h1>{{ section.title }}</h1>
-        {% if section.description %}
-        <p class="section-description">{{ section.description }}</p>
-        {% endif %}
-    </header>
-
-    {% if section.content %}
-    <div class="section-content">{{ section.content | safe }}</div>
-    {% endif %}
-
-    <div class="revelations-books">
-        <div class="books-grid">
-            {# Load all available books - for now we manually specify them #} {%
-            set book_files = ["the-book-which-tells-the-truth.json"] %} {% set
-            has_books = false %} {% for book_file in book_files %} {% set
-            book_data = load_data(path="data/library/" ~ book_file,
-            required=false) %} {% if book_data and book_data.slug and
-            book_data.titles %} {% set_global has_books = true %} {{
-            library_macros::render_book_card(book_data=book_data, lang=lang) }}
-            {% endif %} {% endfor %} {% if not has_books %}
-            <div class="no-books-message">
-                <p>
-                    No revelation books are currently available. Please check
-                    back later.
-                </p>
+    <div class="library-section__container">
+        <!-- Minimal Header with Search -->
+        <header class="library-header">
+            <div class="library-header__left">
+                <h1 class="library-header__title">{{ section.title }}</h1>
+                <span class="library-header__count">Sacred Texts</span>
             </div>
-            {% endif %}
+            <div class="library-header__search">
+                <svg class="library-header__search-icon" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                    <circle cx="11" cy="11" r="8"></circle>
+                    <path d="m21 21-4.35-4.35"></path>
+                </svg>
+                <input type="text"
+                       class="library-header__search-input"
+                       placeholder="Search library..."
+                       id="library-search"
+                       autocomplete="off">
+            </div>
+        </header>
+
+        <!-- Quick Actions Bar -->
+        <div class="library-filters">
+            <div class="library-filters__left">
+                <span class="library-filters__label">Interactive reader with original text and translations</span>
+            </div>
+            <div class="library-filters__right">
+                <!-- Random Book -->
+                <button class="library-filters__random" id="random-book-btn" title="Random book">
+                    <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                        <path d="M16 3h5v5"></path>
+                        <path d="M4 20L21 3"></path>
+                        <path d="M21 16v5h-5"></path>
+                        <path d="M15 15l6 6"></path>
+                        <path d="M4 4l5 5"></path>
+                    </svg>
+                    <span class="library-filters__random-text">Random</span>
+                </button>
+            </div>
         </div>
+
+        <!-- Books Grid -->
+        <div class="library-section__books">
+            <div class="books-grid" id="library-books">
+                {% set book_files = ["the-book-which-tells-the-truth.json"] %}
+                {% set has_books = false %}
+                {% set book_count = 0 %}
+                {% for book_file in book_files %}
+                    {% set book_data = load_data(path="data/library/" ~ book_file, required=false) %}
+                    {% if book_data and book_data.slug and book_data.titles %}
+                        {% set_global has_books = true %}
+                        {% set_global book_count = book_count + 1 %}
+                        <article class="book-card" data-title="{{ library_macros::get_book_title(book_data=book_data, lang=lang) | lower }}">
+                            <div class="book-card__content">
+                                <h3 class="book-card__title">
+                                    <a href="{{ get_url(path='library/' ~ book_data.slug) }}" class="book-card__link">
+                                        {{ library_macros::get_book_title(book_data=book_data, lang=lang) }}
+                                    </a>
+                                </h3>
+                                {% if book_data.primaryLang != lang and book_data.titles[book_data.primaryLang] %}
+                                <p class="book-card__original-title">
+                                    Original: {{ book_data.titles[book_data.primaryLang] }}
+                                </p>
+                                {% endif %}
+
+                                <div class="book-card__meta">
+                                    {% if book_data.chapters %}
+                                    <span class="book-card__chapters">{{ book_data.chapters | length }} chapters</span>
+                                    {% endif %}
+                                    {% if book_data.updated %}
+                                    <span class="book-card__updated">Updated: {{ book_data.updated | date(format="%B %d, %Y") }}</span>
+                                    {% endif %}
+                                </div>
+
+                                <div class="book-card__languages">
+                                    <span class="book-card__languages-label">Available in:</span>
+                                    <div class="book-card__language-tags">
+                                        {% for lang_code, title in book_data.titles %}
+                                        <span class="book-card__language-tag">{{ lang_code | upper }}</span>
+                                        {% endfor %}
+                                    </div>
+                                </div>
+
+                                {% if book_data.chapters and book_data.chapters[0] and book_data.chapters[0].paragraphs and book_data.chapters[0].paragraphs[0] %}
+                                <div class="book-card__preview">
+                                    {% set first_paragraph = book_data.chapters[0].paragraphs[0] %}
+                                    <p class="book-card__preview-text">
+                                        {{ library_macros::get_paragraph_text(paragraph=first_paragraph, lang=lang) | truncate(length=200) }}
+                                    </p>
+                                </div>
+                                {% endif %}
+                            </div>
+
+                            <div class="book-card__actions">
+                                <a href="{{ get_url(path='library/' ~ book_data.slug) }}" class="book-card__read-btn">
+                                    Read Now
+                                    <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                        <path d="M5 12h14"></path>
+                                        <path d="M12 5l7 7-7 7"></path>
+                                    </svg>
+                                </a>
+                            </div>
+                        </article>
+                    {% endif %}
+                {% endfor %}
+
+                {% if not has_books %}
+                <div class="library-no-results">
+                    <div class="library-no-results__content">
+                        <svg class="library-no-results__icon" width="48" height="48" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5">
+                            <path d="M4 19.5A2.5 2.5 0 0 1 6.5 17H20"></path>
+                            <path d="M6.5 2H20v20H6.5A2.5 2.5 0 0 1 4 19.5v-15A2.5 2.5 0 0 1 6.5 2z"></path>
+                        </svg>
+                        <h3 class="library-no-results__title">No books available</h3>
+                        <p class="library-no-results__message">Please check back later for new additions to the library.</p>
+                    </div>
+                </div>
+                {% endif %}
+            </div>
+
+            <!-- No Search Results Message -->
+            <div class="library-no-results hidden" id="library-no-results">
+                <div class="library-no-results__content">
+                    <svg class="library-no-results__icon" width="48" height="48" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5">
+                        <circle cx="11" cy="11" r="8"></circle>
+                        <path d="m21 21-4.35-4.35"></path>
+                    </svg>
+                    <h3 class="library-no-results__title">No books found</h3>
+                    <p class="library-no-results__message">Try adjusting your search terms.</p>
+                </div>
+            </div>
+        </div>
+
+        <!-- Discovery Footer (About Library) -->
+        <footer class="library-footer">
+            <div class="library-footer__icon">
+                <svg width="48" height="48" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round">
+                    <path d="M4 19.5A2.5 2.5 0 0 1 6.5 17H20"></path>
+                    <path d="M6.5 2H20v20H6.5A2.5 2.5 0 0 1 4 19.5v-15A2.5 2.5 0 0 1 6.5 2z"></path>
+                    <path d="M8 7h8"></path>
+                    <path d="M8 11h8"></path>
+                    <path d="M8 15h6"></path>
+                </svg>
+            </div>
+            <h2 class="library-footer__title">About the Library</h2>
+            {% if section.description %}
+            <p class="library-footer__description">{{ section.description }}</p>
+            {% endif %}
+
+            <!-- Features -->
+            <div class="library-footer__features">
+                <div class="library-footer__feature">
+                    <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                        <path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"></path>
+                    </svg>
+                    <span>Original Language</span>
+                </div>
+                <div class="library-footer__feature">
+                    <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                        <circle cx="12" cy="12" r="10"></circle>
+                        <line x1="2" y1="12" x2="22" y2="12"></line>
+                        <path d="M12 2a15.3 15.3 0 0 1 4 10 15.3 15.3 0 0 1-4 10 15.3 15.3 0 0 1-4-10 15.3 15.3 0 0 1 4-10z"></path>
+                    </svg>
+                    <span>Multiple Translations</span>
+                </div>
+                <div class="library-footer__feature">
+                    <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                        <rect x="3" y="3" width="18" height="18" rx="2" ry="2"></rect>
+                        <line x1="3" y1="9" x2="21" y2="9"></line>
+                        <line x1="9" y1="21" x2="9" y2="9"></line>
+                    </svg>
+                    <span>Side-by-Side View</span>
+                </div>
+            </div>
+
+            <!-- Stats -->
+            <div class="library-footer__stats">
+                <div class="library-footer__stat">
+                    <span class="library-footer__stat-number">1</span>
+                    <span class="library-footer__stat-label">Book</span>
+                </div>
+                <div class="library-footer__stat">
+                    <span class="library-footer__stat-number">4+</span>
+                    <span class="library-footer__stat-label">Languages</span>
+                </div>
+                <div class="library-footer__stat">
+                    <span class="library-footer__stat-number">40+</span>
+                    <span class="library-footer__stat-label">Chapters</span>
+                </div>
+            </div>
+        </footer>
     </div>
 </div>
+
+<script>
+// Library Discovery JavaScript
+document.addEventListener('DOMContentLoaded', function() {
+    const searchInput = document.getElementById('library-search');
+    const booksContainer = document.getElementById('library-books');
+    const noResults = document.getElementById('library-no-results');
+    const books = Array.from(document.querySelectorAll('.book-card'));
+    const randomBtn = document.getElementById('random-book-btn');
+
+    // Random book functionality
+    if (randomBtn && books.length > 0) {
+        randomBtn.addEventListener('click', function() {
+            const randomIndex = Math.floor(Math.random() * books.length);
+            const randomBook = books[randomIndex];
+            const link = randomBook.querySelector('.book-card__link');
+            if (link) {
+                window.location.href = link.href;
+            }
+        });
+    }
+
+    // Search functionality
+    function filterBooks() {
+        const searchTerm = searchInput?.value.toLowerCase() || '';
+        let visibleCount = 0;
+
+        books.forEach(book => {
+            const title = book.dataset.title || '';
+            const matchesSearch = title.includes(searchTerm);
+
+            if (matchesSearch) {
+                book.style.display = '';
+                visibleCount++;
+            } else {
+                book.style.display = 'none';
+            }
+        });
+
+        if (noResults) {
+            noResults.style.display = visibleCount === 0 && searchTerm ? 'block' : 'none';
+        }
+    }
+
+    // Event listeners
+    if (searchInput) {
+        searchInput.addEventListener('input', filterBooks);
+    }
+});
+</script>
+
 {% endblock content %}
