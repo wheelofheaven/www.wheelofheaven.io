@@ -2,211 +2,106 @@
 block content %}
 <div class="wiki-section">
     <div class="wiki-section__container">
-        <!-- Enhanced Hero Section -->
-        <header class="wiki-hero">
-            <div class="wiki-hero__icon">
-                <svg width="64" height="64" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round">
-                    <path d="M4 19.5A2.5 2.5 0 0 1 6.5 17H20"></path>
-                    <path d="M6.5 2H20v20H6.5A2.5 2.5 0 0 1 4 19.5v-15A2.5 2.5 0 0 1 6.5 2z"></path>
-                    <path d="M8 7h8"></path>
-                    <path d="M8 11h8"></path>
-                    <path d="M8 15h6"></path>
-                </svg>
+        <!-- Minimal Header with Search -->
+        <header class="wiki-header">
+            <div class="wiki-header__left">
+                <h1 class="wiki-header__title">{{ section.title }}</h1>
+                {% if section.pages %}
+                <span class="wiki-header__count">{{ section.pages | length }} articles</span>
+                {% endif %}
             </div>
-            <h1 class="wiki-hero__title">{{ section.title }}</h1>
-            {% if section.description %}
-            <p class="wiki-hero__description">{{ section.description }}</p>
-            {% endif %}
+            <div class="wiki-header__search">
+                <svg class="wiki-header__search-icon" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                    <circle cx="11" cy="11" r="8"></circle>
+                    <path d="m21 21-4.35-4.35"></path>
+                </svg>
+                <input type="text"
+                       class="wiki-header__search-input"
+                       placeholder="Search articles..."
+                       id="wiki-search"
+                       autocomplete="off">
+            </div>
+        </header>
 
-            <!-- Quick Actions -->
-            <div class="wiki-hero__actions">
-                <button class="wiki-hero__action wiki-hero__action--random" id="random-article-btn" title="Discover a random article">
-                    <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+        {% if section.pages %}
+        <!-- Quick Filters Bar -->
+        <div class="wiki-filters">
+            <div class="wiki-filters__left">
+                <!-- Category Filter -->
+                {% set all_categories = section.pages | map(attribute="extra.category") | unique | sort %}
+                {% if all_categories %}
+                <select class="wiki-filters__select" id="wiki-category-filter">
+                    <option value="">All Topics</option>
+                    {% for category in all_categories %}
+                    {% if category %}
+                    <option value="{{ category }}">{{ category }}</option>
+                    {% endif %}
+                    {% endfor %}
+                </select>
+                {% endif %}
+
+                <!-- Sort Options -->
+                <select class="wiki-filters__select" id="wiki-sort">
+                    <option value="title">A-Z</option>
+                    <option value="date">Recent</option>
+                    <option value="category">Topic</option>
+                </select>
+            </div>
+
+            <div class="wiki-filters__right">
+                <!-- Random Article -->
+                <button class="wiki-filters__random" id="random-article-btn" title="Random article">
+                    <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
                         <path d="M16 3h5v5"></path>
                         <path d="M4 20L21 3"></path>
                         <path d="M21 16v5h-5"></path>
                         <path d="M15 15l6 6"></path>
                         <path d="M4 4l5 5"></path>
                     </svg>
-                    <span>Random Article</span>
+                    <span class="wiki-filters__random-text">Random</span>
                 </button>
-                <a href="#wiki-articles" class="wiki-hero__action wiki-hero__action--browse">
-                    <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
-                        <rect x="3" y="3" width="7" height="7"></rect>
-                        <rect x="14" y="3" width="7" height="7"></rect>
-                        <rect x="14" y="14" width="7" height="7"></rect>
-                        <rect x="3" y="14" width="7" height="7"></rect>
-                    </svg>
-                    <span>Browse All</span>
-                </a>
-            </div>
 
-            <!-- Wiki Statistics -->
-            {% if section.pages %}
-            <div class="wiki-hero__stats">
-                <div class="wiki-hero__stat">
-                    <span class="wiki-hero__stat-number">{{ section.pages | length }}</span>
-                    <span class="wiki-hero__stat-label">Articles</span>
-                </div>
-                {% set categories = section.pages | map(attribute="extra.category") | unique %}
-                {% set category_count = 0 %}
-                {% for cat in categories %}{% if cat %}{% set_global category_count = category_count + 1 %}{% endif %}{% endfor %}
-                {% if category_count > 0 %}
-                <div class="wiki-hero__stat-divider"></div>
-                <div class="wiki-hero__stat">
-                    <span class="wiki-hero__stat-number">{{ category_count }}</span>
-                    <span class="wiki-hero__stat-label">Topics</span>
-                </div>
-                {% endif %}
-                {% set total_words = 0 %}
-                {% for page in section.pages %}
-                    {% set_global total_words = total_words + page.word_count %}
-                {% endfor %}
-                <div class="wiki-hero__stat-divider"></div>
-                <div class="wiki-hero__stat">
-                    <span class="wiki-hero__stat-number">{{ (total_words / 1000) | round }}k</span>
-                    <span class="wiki-hero__stat-label">Words</span>
-                </div>
-            </div>
-            {% endif %}
-        </header>
-
-        {% if section.content %}
-        <div class="wiki-section__content">{{ section.content | safe }}</div>
-        {% endif %}
-
-        {% if section.pages %}
-        <!-- Recently Updated Articles -->
-        {% set pages_with_dates = section.pages | filter(attribute="date") %}
-        {% if pages_with_dates | length > 0 %}
-        {% set recent_pages = pages_with_dates | sort(attribute="date") | reverse | slice(end=4) %}
-        <div class="wiki-recent">
-            <h2 class="wiki-recent__title">
-                <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
-                    <circle cx="12" cy="12" r="10"></circle>
-                    <polyline points="12 6 12 12 16 14"></polyline>
-                </svg>
-                Recently Updated
-            </h2>
-            <div class="wiki-recent__grid">
-                {% for page in recent_pages %}
-                <a href="{{ page.permalink }}" class="wiki-recent__card">
-                    <span class="wiki-recent__card-title">{{ page.title }}</span>
-                    {% if page.date %}
-                    <span class="wiki-recent__card-date">{{ page.date | date(format="%b %d") }}</span>
-                    {% endif %}
-                </a>
-                {% endfor %}
-            </div>
-        </div>
-        {% endif %}
-
-        <!-- Discovery Controls -->
-        <div class="wiki-discovery">
-            <div class="wiki-discovery__header">
-                <h2 class="wiki-discovery__title">Explore Articles</h2>
-                <div class="wiki-discovery__controls">
-                    <!-- Search Filter -->
-                    <div class="wiki-search">
-                        <input type="text"
-                               class="wiki-search__input"
-                               placeholder="Search articles..."
-                               id="wiki-search"
-                               autocomplete="off">
-                        <svg class="wiki-search__icon" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
-                            <circle cx="11" cy="11" r="8"></circle>
-                            <path d="m21 21-4.35-4.35"></path>
+                <!-- View Toggle -->
+                <div class="wiki-view-toggle">
+                    <button class="wiki-view-toggle__btn wiki-view-toggle__btn--active" data-view="grid" title="Grid view">
+                        <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                            <rect x="3" y="3" width="7" height="7"></rect>
+                            <rect x="14" y="3" width="7" height="7"></rect>
+                            <rect x="14" y="14" width="7" height="7"></rect>
+                            <rect x="3" y="14" width="7" height="7"></rect>
                         </svg>
-                    </div>
-
-                    <!-- Category Filter -->
-                    {% set all_categories = section.pages | map(attribute="extra.category") | unique | sort %}
-                    {% if all_categories %}
-                    <select class="wiki-filter" id="wiki-category-filter">
-                        <option value="">All Categories</option>
-                        {% for category in all_categories %}
-                        {% if category %}
-                        <option value="{{ category }}">{{ category }}</option>
-                        {% endif %}
-                        {% endfor %}
-                    </select>
-                    {% endif %}
-
-                    <!-- Sort Options -->
-                    <select class="wiki-sort" id="wiki-sort">
-                        <option value="title">Sort by Title</option>
-                        <option value="date">Sort by Date</option>
-                        <option value="category">Sort by Category</option>
-                    </select>
-
-                    <!-- View Toggle -->
-                    <div class="wiki-view-toggle">
-                        <button class="wiki-view-toggle__btn wiki-view-toggle__btn--active" data-view="grid">
-                            <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
-                                <rect x="3" y="3" width="7" height="7"></rect>
-                                <rect x="14" y="3" width="7" height="7"></rect>
-                                <rect x="14" y="14" width="7" height="7"></rect>
-                                <rect x="3" y="14" width="7" height="7"></rect>
-                            </svg>
-                        </button>
-                        <button class="wiki-view-toggle__btn" data-view="list">
-                            <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
-                                <line x1="8" y1="6" x2="21" y2="6"></line>
-                                <line x1="8" y1="12" x2="21" y2="12"></line>
-                                <line x1="8" y1="18" x2="21" y2="18"></line>
-                                <line x1="3" y1="6" x2="3.01" y2="6"></line>
-                                <line x1="3" y1="12" x2="3.01" y2="12"></line>
-                                <line x1="3" y1="18" x2="3.01" y2="18"></line>
-                            </svg>
-                        </button>
-                    </div>
+                    </button>
+                    <button class="wiki-view-toggle__btn" data-view="list" title="List view">
+                        <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                            <line x1="8" y1="6" x2="21" y2="6"></line>
+                            <line x1="8" y1="12" x2="21" y2="12"></line>
+                            <line x1="8" y1="18" x2="21" y2="18"></line>
+                            <line x1="3" y1="6" x2="3.01" y2="6"></line>
+                            <line x1="3" y1="12" x2="3.01" y2="12"></line>
+                            <line x1="3" y1="18" x2="3.01" y2="18"></line>
+                        </svg>
+                    </button>
                 </div>
             </div>
-
-            <!-- Alphabetical Quick Navigation -->
-            <div class="wiki-alphabet">
-                <span class="wiki-alphabet__label">Quick Jump:</span>
-                {% set alphabet = "ABCDEFGHIJKLMNOPQRSTUVWXYZ" | split(pat="") %}
-                {% set first_letters = [] %}
-                {% for page in section.pages %}
-                    {% set first_letter = page.title | truncate(length=1, end="") | upper %}
-                    {% set_global first_letters = first_letters | concat(with=first_letter) %}
-                {% endfor %}
-                {% set first_letters = first_letters | unique | sort %}
-                {% for letter in alphabet %}
-                {% if letter in first_letters %}
-                <a href="#letter-{{ letter }}" class="wiki-alphabet__link wiki-alphabet__link--active">{{ letter }}</a>
-                {% else %}
-                <span class="wiki-alphabet__link wiki-alphabet__link--inactive">{{ letter }}</span>
-                {% endif %}
-                {% endfor %}
-            </div>
         </div>
 
-        <!-- Featured Articles (if any) -->
-        {% set featured_pages = section.pages | filter(attribute="extra.featured", value=true) %}
-        {% if featured_pages %}
-        <div class="wiki-featured">
-            <h2 class="wiki-featured__title">Featured Articles</h2>
-            <div class="wiki-featured__grid">
-                {% for page in featured_pages | slice(end=6) %}
-                <article class="wiki-featured-card">
-                    <div class="wiki-featured-card__content">
-                        <h3 class="wiki-featured-card__title">
-                            <a href="{{ page.permalink }}">{{ page.title }}</a>
-                        </h3>
-                        {% if page.extra.summary %}
-                        <p class="wiki-featured-card__summary">{{ page.extra.summary }}</p>
-                        {% endif %}
-                    </div>
-                    {% if page.extra.category %}
-                    <span class="wiki-featured-card__category">{{ page.extra.category }}</span>
-                    {% endif %}
-                </article>
-                {% endfor %}
-            </div>
+        <!-- Alphabetical Quick Navigation -->
+        <div class="wiki-alphabet">
+            {% set alphabet = "ABCDEFGHIJKLMNOPQRSTUVWXYZ" | split(pat="") %}
+            {% set first_letters = [] %}
+            {% for page in section.pages %}
+                {% set first_letter = page.title | truncate(length=1, end="") | upper %}
+                {% set_global first_letters = first_letters | concat(with=first_letter) %}
+            {% endfor %}
+            {% set first_letters = first_letters | unique | sort %}
+            {% for letter in alphabet %}
+            {% if letter in first_letters %}
+            <a href="#letter-{{ letter }}" class="wiki-alphabet__link wiki-alphabet__link--active">{{ letter }}</a>
+            {% else %}
+            <span class="wiki-alphabet__link wiki-alphabet__link--inactive">{{ letter }}</span>
+            {% endif %}
+            {% endfor %}
         </div>
-        {% endif %}
 
         <!-- Main Articles Grid/List -->
         <div class="wiki-section__pages">
@@ -286,7 +181,7 @@ block content %}
                         <path d="m21 21-4.35-4.35"></path>
                     </svg>
                     <h3 class="wiki-no-results__title">No articles found</h3>
-                    <p class="wiki-no-results__message">Try adjusting your search terms or category filter.</p>
+                    <p class="wiki-no-results__message">Try adjusting your search terms or topic filter.</p>
                 </div>
             </div>
         </div>
@@ -321,6 +216,69 @@ block content %}
                 {% endfor %}
             </div>
         </div>
+        {% endif %}
+
+        <!-- Discovery Footer (About the Wiki) -->
+        {% if section.pages %}
+        <footer class="wiki-footer">
+            <div class="wiki-footer__icon">
+                <svg width="48" height="48" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round">
+                    <path d="M4 19.5A2.5 2.5 0 0 1 6.5 17H20"></path>
+                    <path d="M6.5 2H20v20H6.5A2.5 2.5 0 0 1 4 19.5v-15A2.5 2.5 0 0 1 6.5 2z"></path>
+                    <path d="M8 7h8"></path>
+                    <path d="M8 11h8"></path>
+                    <path d="M8 15h6"></path>
+                </svg>
+            </div>
+            <h2 class="wiki-footer__title">About This Encyclopedia</h2>
+            {% if section.description %}
+            <p class="wiki-footer__description">{{ section.description }}</p>
+            {% endif %}
+
+            <!-- Statistics -->
+            <div class="wiki-footer__stats">
+                <div class="wiki-footer__stat">
+                    <span class="wiki-footer__stat-number">{{ section.pages | length }}</span>
+                    <span class="wiki-footer__stat-label">Articles</span>
+                </div>
+                {% set categories = section.pages | map(attribute="extra.category") | unique %}
+                {% set category_count = 0 %}
+                {% for cat in categories %}{% if cat %}{% set_global category_count = category_count + 1 %}{% endif %}{% endfor %}
+                {% if category_count > 0 %}
+                <div class="wiki-footer__stat">
+                    <span class="wiki-footer__stat-number">{{ category_count }}</span>
+                    <span class="wiki-footer__stat-label">Topics</span>
+                </div>
+                {% endif %}
+                {% set total_words = 0 %}
+                {% for page in section.pages %}
+                    {% set_global total_words = total_words + page.word_count %}
+                {% endfor %}
+                <div class="wiki-footer__stat">
+                    <span class="wiki-footer__stat-number">{{ (total_words / 1000) | round }}k</span>
+                    <span class="wiki-footer__stat-label">Words</span>
+                </div>
+            </div>
+
+            <!-- Recently Updated -->
+            {% set pages_with_dates = section.pages | filter(attribute="date") %}
+            {% if pages_with_dates | length > 0 %}
+            {% set recent_pages = pages_with_dates | sort(attribute="date") | reverse | slice(end=4) %}
+            <div class="wiki-footer__recent">
+                <h3 class="wiki-footer__recent-title">Recently Updated</h3>
+                <div class="wiki-footer__recent-grid">
+                    {% for page in recent_pages %}
+                    <a href="{{ page.permalink }}" class="wiki-footer__recent-link">
+                        {{ page.title }}
+                        {% if page.date %}
+                        <span class="wiki-footer__recent-date">{{ page.date | date(format="%b %d") }}</span>
+                        {% endif %}
+                    </a>
+                    {% endfor %}
+                </div>
+            </div>
+            {% endif %}
+        </footer>
         {% endif %}
     </div>
 </div>
