@@ -35,7 +35,7 @@
         {% if item.url %}
             <a href="{{ item.url }}" class="explainer__link">{{ item.title }}</a>
         {% else %}
-            <a href="{{ get_url(path=item.path, lang=lang) }}" class="explainer__link">{{ item.title }}</a>
+            <a href="{{ get_url(path=item.path, lang=detected_lang) }}" class="explainer__link">{{ item.title }}</a>
         {% endif %}
 
         {% if item.description %}

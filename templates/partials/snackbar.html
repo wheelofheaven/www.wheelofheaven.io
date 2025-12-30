@@ -18,12 +18,12 @@ showSnackbar(message, type, duration) from JavaScript to display notifications.
         // Global snackbar functionality
         window.snackbarTranslations = {
             copiedToClipboard:
-                "{{ trans(key='snackbarCopiedToClipboard', lang=lang) }}",
-            copyFailed: "{{ trans(key='snackbarCopyFailed', lang=lang) }}",
-            success: "{{ trans(key='snackbarSuccess', lang=lang) }}",
-            error: "{{ trans(key='snackbarError', lang=lang) }}",
-            info: "{{ trans(key='snackbarInfo', lang=lang) }}",
-            warning: "{{ trans(key='snackbarWarning', lang=lang) }}",
+                "{{ trans(key='snackbarCopiedToClipboard', lang=detected_lang) }}",
+            copyFailed: "{{ trans(key='snackbarCopyFailed', lang=detected_lang) }}",
+            success: "{{ trans(key='snackbarSuccess', lang=detected_lang) }}",
+            error: "{{ trans(key='snackbarError', lang=detected_lang) }}",
+            info: "{{ trans(key='snackbarInfo', lang=detected_lang) }}",
+            warning: "{{ trans(key='snackbarWarning', lang=detected_lang) }}",
         };
 
         let snackbarCounter = 0;

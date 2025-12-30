@@ -52,7 +52,7 @@
                     {% if book_data and book_data.slug and book_data.titles %}
                         {% set_global has_books = true %}
                         {% set_global book_count = book_count + 1 %}
-                        <article class="book-card" data-title="{{ library_macros::get_book_title(book_data=book_data, lang=lang) | lower }}">
+                        <article class="book-card" data-title="{{ library_macros::get_book_title(book_data=book_data, lang=detected_lang) | lower }}">
                             <!-- Accent stripe -->
                             <div class="book-card__accent"></div>
 
@@ -75,8 +75,8 @@
                                 </div>
 
                                 <h3 class="book-card__title">
-                                    <a href="{{ get_url(path='library/' ~ book_data.slug, lang=lang) }}" class="book-card__link">
-                                        {{ library_macros::get_book_title(book_data=book_data, lang=lang) }}
+                                    <a href="{{ get_url(path='library/' ~ book_data.slug, lang=detected_lang) }}" class="book-card__link">
+                                        {{ library_macros::get_book_title(book_data=book_data, lang=detected_lang) }}
                                     </a>
                                 </h3>
 
@@ -91,7 +91,7 @@
                                 <div class="book-card__preview">
                                     {% set first_paragraph = book_data.chapters[0].paragraphs[0] %}
                                     <p class="book-card__preview-text">
-                                        {{ library_macros::get_paragraph_text(paragraph=first_paragraph, lang=lang) | truncate(length=180) }}
+                                        {{ library_macros::get_paragraph_text(paragraph=first_paragraph, lang=detected_lang) | truncate(length=180) }}
                                     </p>
                                 </div>
                                 {% endif %}
@@ -121,7 +121,7 @@
                             </div>
 
                             <div class="book-card__footer">
-                                <a href="{{ get_url(path='library/' ~ book_data.slug, lang=lang) }}" class="book-card__read-btn">
+                                <a href="{{ get_url(path='library/' ~ book_data.slug, lang=detected_lang) }}" class="book-card__read-btn">
                                     <span>Start Reading</span>
                                     <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
                                         <path d="M5 12h14"></path>

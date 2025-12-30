@@ -44,7 +44,7 @@
 
             {% if lang != primary_lang and paragraph.i18n and paragraph.i18n[lang] %}
                 <div class="translated-text" data-lang="{{ lang }}">
-                    <span class="text">{{ self::get_paragraph_text(paragraph=paragraph, lang=lang) }}</span>
+                    <span class="text">{{ self::get_paragraph_text(paragraph=paragraph, lang=detected_lang) }}</span>
                 </div>
             {% endif %}
         </div>
@@ -65,7 +65,7 @@
 
         <div class="chapter-content">
             {% for paragraph in chapter.paragraphs %}
-                {{ self::render_paragraph(paragraph=paragraph, lang=lang, primary_lang=primary_lang) }}
+                {{ self::render_paragraph(paragraph=paragraph, lang=detected_lang, primary_lang=primary_lang) }}
             {% endfor %}
         </div>
     </section>
@@ -93,7 +93,7 @@
                         {{ chapter.n }}
                     </a>
                 {% else %}
-                    <a href="{{ get_url(path='library/' ~ book_data.slug, lang=lang) }}#chapter-{{ chapter.n }}"
+                    <a href="{{ get_url(path='library/' ~ book_data.slug, lang=detected_lang) }}#chapter-{{ chapter.n }}"
                        class="chapter-navigation__button"
                        style="--chapter-index: {{ chapter.n }}">
                         {{ chapter.n }}
@@ -131,8 +131,8 @@
     <article class="book-card">
         <div class="book-header">
             <h3>
-                <a href="{{ get_url(path='library/' ~ book_data.slug, lang=lang) }}">
-                    {{ self::get_book_title(book_data=book_data, lang=lang) }}
+                <a href="{{ get_url(path='library/' ~ book_data.slug, lang=detected_lang) }}">
+                    {{ self::get_book_title(book_data=book_data, lang=detected_lang) }}
                 </a>
             </h3>
             {% if book_data.primaryLang != lang and book_data.titles[book_data.primaryLang] %}
@@ -158,13 +158,13 @@
             {% endfor %}
         </div>
 
-        {{ self::render_chapter_navigation(book_data=book_data, context="section", lang=lang) }}
+        {{ self::render_chapter_navigation(book_data=book_data, context="section", lang=detected_lang) }}
 
         {% if book_data.chapters and book_data.chapters[0] and book_data.chapters[0].paragraphs and book_data.chapters[0].paragraphs[0] %}
             <div class="book-preview">
                 {% set first_paragraph = book_data.chapters[0].paragraphs[0] %}
                 <p class="preview-text">
-                    {{ self::get_paragraph_text(paragraph=first_paragraph, lang=lang) | truncate(length=200) }}
+                    {{ self::get_paragraph_text(paragraph=first_paragraph, lang=detected_lang) | truncate(length=200) }}
                 </p>
             </div>
         {% endif %}

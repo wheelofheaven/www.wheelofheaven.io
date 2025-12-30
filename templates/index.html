@@ -15,13 +15,13 @@
                 </p>
 
                 <div class="hero__actions">
-                    <a href="{{ get_url(path='essentials', lang=lang) }}" class="btn btn--primary btn--large">
+                    <a href="{{ get_url(path='essentials', lang=detected_lang) }}" class="btn btn--primary btn--large">
                         Start with Essentials
                         <svg class="btn__icon" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
                             <path d="M5 12h14m-7-7 7 7-7 7" />
                         </svg>
                     </a>
-                    <a href="{{ get_url(path='wiki', lang=lang) }}" class="btn btn--secondary btn--large">
+                    <a href="{{ get_url(path='wiki', lang=detected_lang) }}" class="btn btn--secondary btn--large">
                         Browse Wiki
                     </a>
                 </div>
@@ -34,7 +34,7 @@
         <div class="nav-section__container">
             <div class="nav-cards">
                 <!-- Essentials -->
-                <a href="{{ get_url(path='essentials', lang=lang) }}" class="nav-card nav-card--essentials">
+                <a href="{{ get_url(path='essentials', lang=detected_lang) }}" class="nav-card nav-card--essentials">
                     <div class="nav-card__icon">
                         <svg width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5">
                             <path d="M12 2L2 7l10 5 10-5-10-5z"/>
@@ -49,7 +49,7 @@
                 </a>
 
                 <!-- Timeline -->
-                <a href="{{ get_url(path='timeline', lang=lang) }}" class="nav-card nav-card--timeline">
+                <a href="{{ get_url(path='timeline', lang=detected_lang) }}" class="nav-card nav-card--timeline">
                     <div class="nav-card__icon">
                         <svg width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5">
                             <circle cx="12" cy="12" r="10"/>
@@ -63,7 +63,7 @@
                 </a>
 
                 <!-- Wiki -->
-                <a href="{{ get_url(path='wiki', lang=lang) }}" class="nav-card nav-card--wiki">
+                <a href="{{ get_url(path='wiki', lang=detected_lang) }}" class="nav-card nav-card--wiki">
                     <div class="nav-card__icon">
                         <svg width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5">
                             <path d="M2 3h6a4 4 0 0 1 4 4v14a3 3 0 0 0-3-3H2z"/>
@@ -77,7 +77,7 @@
                 </a>
 
                 <!-- Library -->
-                <a href="{{ get_url(path='library', lang=lang) }}" class="nav-card nav-card--library">
+                <a href="{{ get_url(path='library', lang=detected_lang) }}" class="nav-card nav-card--library">
                     <div class="nav-card__icon">
                         <svg width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5">
                             <path d="M4 19.5A2.5 2.5 0 0 1 6.5 17H20"/>
@@ -104,59 +104,59 @@
                 </p>
 
                 <div class="timeline-preview__ages">
-                    <a href="{{ get_url(path='timeline/age-of-capricorn', lang=lang) }}" class="age-chip" data-age="capricorn">
+                    <a href="{{ get_url(path='timeline/age-of-capricorn', lang=detected_lang) }}" class="age-chip" data-age="capricorn">
                         <span class="age-chip__symbol">♑</span>
                         <span class="age-chip__name">Capricorn</span>
                         <span class="age-chip__period">21810 BC</span>
                     </a>
-                    <a href="{{ get_url(path='timeline/age-of-sagittarius', lang=lang) }}" class="age-chip" data-age="sagittarius">
+                    <a href="{{ get_url(path='timeline/age-of-sagittarius', lang=detected_lang) }}" class="age-chip" data-age="sagittarius">
                         <span class="age-chip__symbol">♐</span>
                         <span class="age-chip__name">Sagittarius</span>
                     </a>
-                    <a href="{{ get_url(path='timeline/age-of-scorpio', lang=lang) }}" class="age-chip" data-age="scorpio">
+                    <a href="{{ get_url(path='timeline/age-of-scorpio', lang=detected_lang) }}" class="age-chip" data-age="scorpio">
                         <span class="age-chip__symbol">♏</span>
                         <span class="age-chip__name">Scorpio</span>
                     </a>
-                    <a href="{{ get_url(path='timeline/age-of-libra', lang=lang) }}" class="age-chip" data-age="libra">
+                    <a href="{{ get_url(path='timeline/age-of-libra', lang=detected_lang) }}" class="age-chip" data-age="libra">
                         <span class="age-chip__symbol">♎</span>
                         <span class="age-chip__name">Libra</span>
                     </a>
-                    <a href="{{ get_url(path='timeline/age-of-virgo', lang=lang) }}" class="age-chip" data-age="virgo">
+                    <a href="{{ get_url(path='timeline/age-of-virgo', lang=detected_lang) }}" class="age-chip" data-age="virgo">
                         <span class="age-chip__symbol">♍</span>
                         <span class="age-chip__name">Virgo</span>
                     </a>
-                    <a href="{{ get_url(path='timeline/age-of-leo', lang=lang) }}" class="age-chip" data-age="leo">
+                    <a href="{{ get_url(path='timeline/age-of-leo', lang=detected_lang) }}" class="age-chip" data-age="leo">
                         <span class="age-chip__symbol">♌</span>
                         <span class="age-chip__name">Leo</span>
                     </a>
-                    <a href="{{ get_url(path='timeline/age-of-cancer', lang=lang) }}" class="age-chip" data-age="cancer">
+                    <a href="{{ get_url(path='timeline/age-of-cancer', lang=detected_lang) }}" class="age-chip" data-age="cancer">
                         <span class="age-chip__symbol">♋</span>
                         <span class="age-chip__name">Cancer</span>
                     </a>
-                    <a href="{{ get_url(path='timeline/age-of-gemini', lang=lang) }}" class="age-chip" data-age="gemini">
+                    <a href="{{ get_url(path='timeline/age-of-gemini', lang=detected_lang) }}" class="age-chip" data-age="gemini">
                         <span class="age-chip__symbol">♊</span>
                         <span class="age-chip__name">Gemini</span>
                     </a>
-                    <a href="{{ get_url(path='timeline/age-of-taurus', lang=lang) }}" class="age-chip" data-age="taurus">
+                    <a href="{{ get_url(path='timeline/age-of-taurus', lang=detected_lang) }}" class="age-chip" data-age="taurus">
                         <span class="age-chip__symbol">♉</span>
                         <span class="age-chip__name">Taurus</span>
                     </a>
-                    <a href="{{ get_url(path='timeline/age-of-aries', lang=lang) }}" class="age-chip" data-age="aries">
+                    <a href="{{ get_url(path='timeline/age-of-aries', lang=detected_lang) }}" class="age-chip" data-age="aries">
                         <span class="age-chip__symbol">♈</span>
                         <span class="age-chip__name">Aries</span>
                     </a>
-                    <a href="{{ get_url(path='timeline/age-of-pisces', lang=lang) }}" class="age-chip" data-age="pisces">
+                    <a href="{{ get_url(path='timeline/age-of-pisces', lang=detected_lang) }}" class="age-chip" data-age="pisces">
                         <span class="age-chip__symbol">♓</span>
                         <span class="age-chip__name">Pisces</span>
                     </a>
-                    <a href="{{ get_url(path='timeline/age-of-aquarius', lang=lang) }}" class="age-chip age-chip--current" data-age="aquarius">
+                    <a href="{{ get_url(path='timeline/age-of-aquarius', lang=detected_lang) }}" class="age-chip age-chip--current" data-age="aquarius">
                         <span class="age-chip__symbol">♒</span>
                         <span class="age-chip__name">Aquarius</span>
                         <span class="age-chip__period">Now</span>
                     </a>
                 </div>
 
-                <a href="{{ get_url(path='timeline', lang=lang) }}" class="btn btn--accent">
+                <a href="{{ get_url(path='timeline', lang=detected_lang) }}" class="btn btn--accent">
                     Explore Full Timeline
                 </a>
             </div>
@@ -179,7 +179,7 @@
                         </svg>
                         View on GitHub
                     </a>
-                    <a href="{{ get_url(path='about', lang=lang) }}" class="btn btn--ghost">
+                    <a href="{{ get_url(path='about', lang=detected_lang) }}" class="btn btn--ghost">
                         About the Project
                     </a>
                 </div>

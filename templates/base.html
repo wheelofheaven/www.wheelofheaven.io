@@ -1,6 +1,14 @@
 {% import "macros/link.html" as link_macros %}
+{% set detected_lang = "en" %}
+{% if current_path is starting_with("/de/") %}{% set_global detected_lang = "de" %}
+{% elif current_path is starting_with("/fr/") %}{% set_global detected_lang = "fr" %}
+{% elif current_path is starting_with("/es/") %}{% set_global detected_lang = "es" %}
+{% elif current_path is starting_with("/ru/") %}{% set_global detected_lang = "ru" %}
+{% elif current_path is starting_with("/ja/") %}{% set_global detected_lang = "ja" %}
+{% elif current_path is starting_with("/zh/") %}{% set_global detected_lang = "zh" %}
+{% endif %}
 <!doctype html>
-<html lang="{{ lang }}">
+<html lang="{{ detected_lang }}">
     <head>
         <meta charset="UTF-8" />
         <meta name="viewport" content="width=device-width, initial-scale=1.0" />

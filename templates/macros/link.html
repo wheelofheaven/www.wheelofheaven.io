@@ -29,9 +29,9 @@
     {% endif %}
   {% else %}
     {# Handle internal links with i18n #}
-    {% if lang and lang != "en" %}
-      {% if url is starting_with("/") and not (url is starting_with("/" ~ lang ~ "/")) %}
-        {% set_global final_url = "/" ~ lang ~ url %}
+    {% if detected_lang and detected_lang != "en" %}
+      {% if url is starting_with("/") and not (url is starting_with("/" ~ detected_lang ~ "/")) %}
+        {% set_global final_url = "/" ~ detected_lang ~ url %}
       {% endif %}
     {% endif %}
   {% endif %}

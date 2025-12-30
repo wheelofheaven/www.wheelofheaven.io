@@ -49,7 +49,7 @@
         {% if item.url %}
             <a href="{{ item.url }}" class="wiki__link">{{ item.title }}</a>
         {% else %}
-            <a href="{{ get_url(path=item.path, lang=lang) }}" class="wiki__link">{{ item.title }}</a>
+            <a href="{{ get_url(path=item.path, lang=detected_lang) }}" class="wiki__link">{{ item.title }}</a>
         {% endif %}
         {% if item.description %}
             <span class="wiki__link-description">{{ item.description }}</span>
@@ -116,10 +116,10 @@
     <nav class="wiki__breadcrumbs" aria-label="Breadcrumb">
         <ol class="wiki__breadcrumb-list">
             <li class="wiki__breadcrumb-item">
-                <a href="{{ get_url(path="/", lang=lang) }}" class="wiki__breadcrumb-link">Home</a>
+                <a href="{{ get_url(path="/", lang=detected_lang) }}" class="wiki__breadcrumb-link">Home</a>
             </li>
             <li class="wiki__breadcrumb-item">
-                <a href="{{ get_url(path="/wiki/", lang=lang) }}" class="wiki__breadcrumb-link">Wiki</a>
+                <a href="{{ get_url(path="/wiki/", lang=detected_lang) }}" class="wiki__breadcrumb-link">Wiki</a>
             </li>
             {% if page.extra.category %}
             <li class="wiki__breadcrumb-item">

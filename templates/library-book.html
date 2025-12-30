@@ -37,7 +37,7 @@
                             <a href="{{ get_url(path='library') }}" class="library-book__breadcrumb-link">Library</a>
                         </li>
                         <li class="library-book__breadcrumb-item">
-                            <span class="library-book__breadcrumb-current">{{ library_macros::get_book_title(book_data=book_data, lang=lang) }}</span>
+                            <span class="library-book__breadcrumb-current">{{ library_macros::get_book_title(book_data=book_data, lang=detected_lang) }}</span>
                         </li>
                     </ol>
                 </nav>
@@ -45,7 +45,7 @@
                 <!-- Book Header -->
                 <header class="library-book__header">
                     <h1 class="library-book__title">
-                        {{ library_macros::get_book_title(book_data=book_data, lang=lang) }}
+                        {{ library_macros::get_book_title(book_data=book_data, lang=detected_lang) }}
                     </h1>
 
                     {% if book_data.primaryLang != lang and book_data.titles[book_data.primaryLang] %}
@@ -221,7 +221,7 @@
 <script>
 let currentChapter = 1;
 const totalChapters = {% if book_data and book_data.chapters %}{{ book_data.chapters | length }}{% else %}0{% endif %};
-const bookTitle = "{{ library_macros::get_book_title(book_data=book_data, lang=lang) }}";
+const bookTitle = "{{ library_macros::get_book_title(book_data=book_data, lang=detected_lang) }}";
 let showingOriginal = false;
 let sideBySide = false;
 let selectedParagraph = null;

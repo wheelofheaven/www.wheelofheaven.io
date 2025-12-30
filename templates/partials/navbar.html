@@ -2,7 +2,7 @@
     <!-- Desktop navbar -->
     <a
         class="navbar__logo"
-        href="{{ get_url(path='/', lang=lang) }}"
+        href="{{ get_url(path='/', lang=detected_lang) }}"
         aria-label="Wheel of Heaven"
     >
         {% include "partials/brand/logomark.html" %}
@@ -10,18 +10,18 @@
     <div class="navbar__content">
         <div class="navbar__links">
             <a
-                href="{{ trans(key='navbarEssentialsLink', lang=lang) }}"
+                href="{{ get_url(path='essentials', lang=detected_lang) }}"
                 class="navbar__link{% if current_path and current_path is starting_with('/essentials') %} navbar__link--active{% endif %}"
                 data-navbar-key="essentials"
             >
-                {{ trans(key="navbarEssentials", lang=lang) }}
+                {{ trans(key="navbarEssentials", lang=detected_lang) }}
             </a>
             <a
-                href="{{ trans(key='navbarTimelineLink', lang=lang) }}"
+                href="{{ get_url(path='timeline', lang=detected_lang) }}"
                 class="navbar__link{% if current_path and current_path is starting_with('/timeline') %} navbar__link--active{% endif %}"
                 data-navbar-key="timeline"
             >
-                {{ trans(key="navbarTimeline", lang=lang) }}
+                {{ trans(key="navbarTimeline", lang=detected_lang) }}
             </a>
 
             <!-- Knowledge Dropdown -->
@@ -32,7 +32,7 @@
                     aria-haspopup="true"
                 >
                     <span data-navbar-key="knowledge"
-                        >{{ trans(key="navbarKnowledge", lang=lang) }}</span
+                        >{{ trans(key="navbarKnowledge", lang=detected_lang) }}</span
                     >
                     <span class="navbar__dropdown-trigger__caret">
                         {% include "partials/icons/chevron-down.html" %}
@@ -52,12 +52,12 @@
                                     </span>
                                     <span data-navbar-key="knowledge"
                                         >{{ trans(key="navbarKnowledge",
-                                        lang=lang) }}</span
+                                        lang=detected_lang) }}</span
                                     >
                                 </h3>
                                 <div class="navbar-dropdown__links">
                                     <a
-                                        href="{{ trans(key='navbarExplainersLink', lang=lang) }}"
+                                        href="{{ get_url(path='explainers', lang=detected_lang) }}"
                                         class="navbar-dropdown__link"
                                     >
                                         <span
@@ -74,7 +74,7 @@
                                                     data-navbar-key="explainers"
                                                     >{{
                                                     trans(key="navbarExplainers",
-                                                    lang=lang) }}</span
+                                                    lang=detected_lang) }}</span
                                                 >
                                                 <span
                                                     class="navbar-dropdown__link-arrow"
@@ -90,12 +90,12 @@
                                             >
                                                 {{
                                                 trans(key="navbarExplainersDesc",
-                                                lang=lang) }}
+                                                lang=detected_lang) }}
                                             </div>
                                         </div>
                                     </a>
                                     <a
-                                        href="{{ trans(key='navbarLibraryLink', lang=lang) }}"
+                                        href="{{ get_url(path='library', lang=detected_lang) }}"
                                         class="navbar-dropdown__link"
                                     >
                                         <span
@@ -112,7 +112,7 @@
                                                 <span data-navbar-key="library"
                                                     >{{
                                                     trans(key="navbarLibrary",
-                                                    lang=lang) }}</span
+                                                    lang=detected_lang) }}</span
                                                 >
                                                 <span
                                                     class="navbar-dropdown__link-arrow"
@@ -128,12 +128,12 @@
                                             >
                                                 {{
                                                 trans(key="navbarLibraryDesc",
-                                                lang=lang) }}
+                                                lang=detected_lang) }}
                                             </div>
                                         </div>
                                     </a>
                                     <a
-                                        href="{{ trans(key='navbarWikiLink', lang=lang) }}"
+                                        href="{{ get_url(path='wiki', lang=detected_lang) }}"
                                         class="navbar-dropdown__link"
                                     >
                                         <span
@@ -148,7 +148,7 @@
                                             >
                                                 <span data-navbar-key="wiki"
                                                     >{{ trans(key="navbarWiki",
-                                                    lang=lang) }}</span
+                                                    lang=detected_lang) }}</span
                                                 >
                                                 <span
                                                     class="navbar-dropdown__link-arrow"
@@ -163,7 +163,7 @@
                                                 data-navbar-key="wikiDesc"
                                             >
                                                 {{ trans(key="navbarWikiDesc",
-                                                lang=lang) }}
+                                                lang=detected_lang) }}
                                             </div>
                                         </div>
                                     </a>
@@ -182,7 +182,7 @@
                     aria-haspopup="true"
                 >
                     <span data-navbar-key="resources"
-                        >{{ trans(key="navbarResources", lang=lang) }}</span
+                        >{{ trans(key="navbarResources", lang=detected_lang) }}</span
                     >
                     <span class="navbar__dropdown-trigger__caret">
                         {% include "partials/icons/chevron-down.html" %}
@@ -206,12 +206,12 @@
                                         </span>
                                         <span data-navbar-key="org"
                                             >{{ trans(key="navbarResourcesOrg",
-                                            lang=lang) }}</span
+                                            lang=detected_lang) }}</span
                                         >
                                     </h3>
                                     <div class="navbar-dropdown__links">
                                         <a
-                                            href="{{ trans(key='navbarAboutLink', lang=lang) }}"
+                                            href="{{ get_url(path='about', lang=detected_lang) }}"
                                             class="navbar-dropdown__link navbar-dropdown__link--simple"
                                         >
                                             <span
@@ -223,7 +223,7 @@
                                             </span>
                                             <span data-navbar-key="about"
                                                 >{{ trans(key="navbarAbout",
-                                                lang=lang) }}</span
+                                                lang=detected_lang) }}</span
                                             >
                                             <span
                                                 class="navbar-dropdown__link-arrow"
@@ -246,12 +246,12 @@
                                         <span data-navbar-key="community"
                                             >{{
                                             trans(key="navbarResourcesCommunity",
-                                            lang=lang) }}</span
+                                            lang=detected_lang) }}</span
                                         >
                                     </h3>
                                     <div class="navbar-dropdown__links">
                                         <a
-                                            href="{{ trans(key='navbarCodeOfConductLink', lang=lang) }}"
+                                            href="{{ get_url(path='code-of-conduct', lang=detected_lang) }}"
                                             class="navbar-dropdown__link navbar-dropdown__link--simple"
                                         >
                                             <span
@@ -265,7 +265,7 @@
                                                 data-navbar-key="codeOfConduct"
                                                 >{{
                                                 trans(key="navbarCodeOfConduct",
-                                                lang=lang) }}</span
+                                                lang=detected_lang) }}</span
                                             >
                                             <span
                                                 class="navbar-dropdown__link-arrow"
@@ -276,7 +276,7 @@
                                             </span>
                                         </a>
                                         <a
-                                            href="{{ trans(key='navbarContributingLink', lang=lang) }}"
+                                            href="{{ get_url(path='contributing', lang=detected_lang) }}"
                                             class="navbar-dropdown__link navbar-dropdown__link--simple"
                                         >
                                             <span
@@ -289,7 +289,7 @@
                                             <span data-navbar-key="contributing"
                                                 >{{
                                                 trans(key="navbarContributing",
-                                                lang=lang) }}</span
+                                                lang=detected_lang) }}</span
                                             >
                                             <span
                                                 class="navbar-dropdown__link-arrow"
@@ -300,7 +300,7 @@
                                             </span>
                                         </a>
                                         <a
-                                            href="{{ trans(key='navbarForumsLink', lang=lang) }}"
+                                            href="{{ get_url(path='forums', lang=detected_lang) }}"
                                             class="navbar-dropdown__link navbar-dropdown__link--simple"
                                         >
                                             <span
@@ -312,7 +312,7 @@
                                             </span>
                                             <span data-navbar-key="forums"
                                                 >{{ trans(key="navbarForums",
-                                                lang=lang) }}</span
+                                                lang=detected_lang) }}</span
                                             >
                                             <span
                                                 class="navbar-dropdown__link-arrow"
@@ -323,7 +323,7 @@
                                             </span>
                                         </a>
                                         <a
-                                            href="{{ trans(key='navbarFAQLink', lang=lang) }}"
+                                            href="{{ get_url(path='faq', lang=detected_lang) }}"
                                             class="navbar-dropdown__link navbar-dropdown__link--simple"
                                         >
                                             <span
@@ -335,7 +335,7 @@
                                             </span>
                                             <span data-navbar-key="faq"
                                                 >{{ trans(key="navbarFAQ",
-                                                lang=lang) }}</span
+                                                lang=detected_lang) }}</span
                                             >
                                             <span
                                                 class="navbar-dropdown__link-arrow"
@@ -365,7 +365,7 @@
                                             </span>
                                             <span data-navbar-key="followX"
                                                 >{{ trans(key="navbarFollowX",
-                                                lang=lang) }}</span
+                                                lang=detected_lang) }}</span
                                             >
                                             <span
                                                 class="navbar-dropdown__link-arrow"
