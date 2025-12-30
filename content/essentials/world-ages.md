@@ -5,6 +5,7 @@ date = 2025-08-20
 template = "essentials-page.html"
 slug = "world-ages"
 weight = 4
+aliases = ["/intro/the-great-awakening/"]
 
 [extra]
 category = "Astronomy"

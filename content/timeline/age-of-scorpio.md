@@ -2,6 +2,7 @@
 title = "Age of Scorpio"
 description = "The Age of Scorpio, lasting from 17,490 to 15,330 BC, represents the \"Third Day of Creation\" in the Wheel of Heaven narrative. Following the terraforming achievements of the Age of Sagittarius, this epoch is characterized by the Elohim scientists' efforts in synthetic biology on the newly formed supercontinent. They focused on creating vegetation, including various types of plants capable of reproduction, thereby initiating the first steps towards a diverse ecosystem on Earth. Their work, combining scientific prowess with artistic influence, sought to create a harmonious and aesthetically pleasing natural world. This period is crucial in the narrative for laying the foundations of life as we know it, marking a significant transition from terraforming to life creation​​."
 weight = 215
+aliases = ["/intro/age-of-scorpio/"]
 
 [extra]
 symbol = "♏"

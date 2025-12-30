@@ -2,6 +2,7 @@
 title = "Age of Leo"
 description = "The Age of Leo, spanning from 11,010 to 8,850 BC, follows the Age of Virgo in the Wheel of Heaven narrative. This age is marked by the creation of land animals, following the establishment of marine life and birds. The planet, now rich with vegetation, provided ample resources for these new herbivores, and carnivores were later introduced to maintain ecological balance. A significant development during this age was the creation of artificial human beings, resembling the extraterrestrial scientists themselves. This led to controversy on their home planet due to fears that these new beings might surpass their creators in capabilities. Consequently, the newly created humans were left to live primitively, without scientific knowledge, and each human race is said to correspond to a team of creators​​​​."
 weight = 230
+aliases = ["/intro/age-of-leo/"]
 
 [extra]
 symbol = "♌"

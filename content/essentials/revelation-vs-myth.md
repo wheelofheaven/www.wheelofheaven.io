@@ -5,6 +5,7 @@ date = 2025-08-21
 template = "essentials-page.html"
 slug = "revelation-vs-myth"
 weight = 6
+aliases = ["/intro/the-setting/"]
 
 [extra]
 category = "Method"

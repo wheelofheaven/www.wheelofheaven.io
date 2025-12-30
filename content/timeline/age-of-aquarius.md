@@ -3,6 +3,7 @@ title = "Age of Aquarius"
 description = "The Age of Aquarius, spanning from 1950 CE to 4110 CE, marks the current era in the Wheel of Heaven narrative, succeeding the Age of Pisces. This age, referred to as the New Age, signifies a major transition in world paradigms. It represents the end of the world of the Church, reflecting a completion of its role in preparing humanity for the return of extraterrestrial creators. The Age of Pisces, identified with Christ and his apostles, transitions into the Age of Aquarius, symbolizing a period of significant change, including the reestablishment of the state of Israel in 1946. This era is characterized by a shift in global consciousness and understanding, aligning with prophecies and symbolizing transformative changes in human society and knowledge."
 weight = 260
 template = "wiki-page.html"
+aliases = ["/intro/age-of-aquarius/"]
 
 [extra]
 period = "1945—..."

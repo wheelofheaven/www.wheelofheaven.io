@@ -4,6 +4,7 @@ slug = "elohim"
 description = "Elohim (אֱלֹהִים), the plural of Eloha (אֱלוֹהַּ), literally meaning the Powerful Ones or more figuratively, the Ones from Above, the Celestials. The name given to the Biblical Gods who in turn are a scientifically highly advanced civlization capable of interstellar travel, terraforming planets and life synthetization."
 template = "wiki-page.html"
 toc = true
+aliases = ["/intro/extraterrestrial-civilization/"]
 
 [extra]
 alternative_names = ["Annunaki", "Celestials", "Creators", "Dei", "El", "Gods", "The Powerful Ones", "The Ones from the Skies", "Theosites"]

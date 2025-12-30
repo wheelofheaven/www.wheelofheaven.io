@@ -1,3 +1,10 @@
+// Initialize global namespace for Wheel of Heaven
+window.WheelOfHeaven = window.WheelOfHeaven || {
+  navbar: {},
+  search: {},
+  ui: {},
+};
+
 // Navbar dropdown functionality
 class NavbarDropdown {
   constructor() {
@@ -344,8 +351,13 @@ class DropdownIcons {
 
 // Initialize navbar dropdown functionality when DOM is ready
 document.addEventListener("DOMContentLoaded", () => {
-  window.navbarDropdown = new NavbarDropdown();
-  window.dropdownIcons = new DropdownIcons();
+  // Use namespace for organization
+  window.WheelOfHeaven.navbar.dropdown = new NavbarDropdown();
+  window.WheelOfHeaven.navbar.icons = new DropdownIcons();
+
+  // Keep legacy references for backwards compatibility
+  window.navbarDropdown = window.WheelOfHeaven.navbar.dropdown;
+  window.dropdownIcons = window.WheelOfHeaven.navbar.icons;
 });
 
 // Export for potential use in other modules

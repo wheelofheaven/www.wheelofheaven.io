@@ -10,8 +10,8 @@
             <img class="author-profile__avatar"
                  src="{{ get_url(path=author.image) }}"
                  alt="{{ author.name }}"
-                 onerror="this.style.display='none'; this.nextElementSibling.style.display='flex';">
-            <div class="author-profile__avatar author-profile__avatar--placeholder" style="display:none;">
+                 onerror="this.classList.add('hidden'); this.nextElementSibling.classList.remove('hidden');">
+            <div class="author-profile__avatar author-profile__avatar--placeholder hidden">
                 {{ author.name | truncate(length=1, end="") | upper }}
             </div>
 

@@ -99,10 +99,10 @@
       ]
     },
     {
-      "name": "Introduction",
-      "short_name": "Intro",
+      "name": "Essentials",
+      "short_name": "Essentials",
       "description": "Get started with Wheel of Heaven",
-      "url": "/intro/",
+      "url": "/essentials/",
       "icons": [
         {
           "src": "/brand/favicon-32x32.png",

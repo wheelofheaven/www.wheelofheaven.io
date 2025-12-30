@@ -4,6 +4,7 @@ slug = "intelligent-design"
 description = "Intelligent Design, a competing scientific paradigm on how life on Earth originated. It would be the single most accurate representation of what happened if the Elohim did synthetically engineer life on Earth through the means of ex-nihilo genetic engineering."
 template = "wiki-page.html"
 toc = true
+aliases = ["/intro/intelligent-design/"]
 +++
 
 Intelligent Design (ID) is a theory that suggests that certain features of the natural world, particularly in biology and biochemistry, are best explained by an intelligent cause rather than by natural selection or other purely naturalistic processes. Proponents of Intelligent Design argue that the complexity and apparent design found in the natural world provide evidence of a supernatural designer, often referred to as a "intelligent agent," that is responsible for the creation and development of life.

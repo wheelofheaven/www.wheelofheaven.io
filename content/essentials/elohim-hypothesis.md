@@ -5,6 +5,7 @@ date = 2025-08-20
 template = "essentials-page.html"
 slug = "elohim-hypothesis"
 weight = 2
+aliases = ["/intro/the-hypothesis/", "/intro/the-foundation/", "/intro/take-aways/"]
 
 [extra]
 category = "Origins"

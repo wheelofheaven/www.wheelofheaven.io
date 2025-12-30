@@ -1,10 +1,11 @@
 +++
 title = "What Is Wheel of Heaven?"
-description = "A calm, first-look orientation to the Wheel of Heaven worldview: ancient texts read through a tech-forward lens, anchored in the sky’s precessional clock."
+description = "A calm, first-look orientation to the Wheel of Heaven worldview: ancient texts read through a tech-forward lens, anchored in the sky's precessional clock."
 date = 2025-08-20
 template = "essentials-page.html"
 slug = "what-is-woh"
 weight = 1
+aliases = ["/intro/wheel-of-heaven/"]
 
 [extra]
 category = "Origins"

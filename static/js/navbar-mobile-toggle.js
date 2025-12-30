@@ -1,3 +1,17 @@
+// Configuration constants
+const CONFIG = {
+  MOBILE_BREAKPOINT: 768,
+  SCROLL_THRESHOLD: 100,
+  SCROLL_DELTA_MIN: 5,
+  SCROLL_END_DELAY: 150,
+  ANIMATION_DELAY: 150,
+  DEBOUNCE_DELAY: 100,
+  COOKIE_DAYS: 365,
+};
+
+// Helper function for mobile detection
+const isMobile = () => window.innerWidth <= CONFIG.MOBILE_BREAKPOINT;
+
 document.addEventListener("DOMContentLoaded", () => {
   const navbar = document.querySelector(".navbar");
   const mobileNavToggle = document.getElementById("mobileNavToggle");
@@ -21,15 +35,13 @@ document.addEventListener("DOMContentLoaded", () => {
   // 📱 Mobile navbar scroll behavior with throttling
   function updateNavbarVisibility() {
     const currentScrollY = window.scrollY;
-    const isMobile = window.innerWidth <= 768;
 
-    if (isMobile && navbar) {
-      const scrollThreshold = 100;
+    if (isMobile() && navbar) {
       const scrollDelta = Math.abs(currentScrollY - lastScrollY);
 
       // Only react to significant scroll movements
-      if (scrollDelta > 5) {
-        if (currentScrollY > lastScrollY && currentScrollY > scrollThreshold) {
+      if (scrollDelta > CONFIG.SCROLL_DELTA_MIN) {
+        if (currentScrollY > lastScrollY && currentScrollY > CONFIG.SCROLL_THRESHOLD) {
           // Scrolling down - hide navbar
           navbar.classList.add("navbar--hidden");
           // Don't close mobile nav/search when scrolling within the content
@@ -80,7 +92,7 @@ document.addEventListener("DOMContentLoaded", () => {
   function handleScrollEnd() {
     scrollEndTimer = setTimeout(() => {
       isUserScrolling = false;
-    }, 150);
+    }, CONFIG.SCROLL_END_DELAY);
   }
 
   // Add scroll listener with passive option for better performance
@@ -143,8 +155,8 @@ document.addEventListener("DOMContentLoaded", () => {
     document.addEventListener("keydown", (e) => {
       if (e.ctrlKey && (e.key === "/" || e.key === "?")) {
         e.preventDefault();
-        const isMobile = window.innerWidth <= 768;
-        if (isMobile) {
+        const isMobileView = isMobile();
+        if (isMobileView) {
           toggleMobileSearch(true);
         } else {
           searchInput.focus();
@@ -159,7 +171,7 @@ document.addEventListener("DOMContentLoaded", () => {
   const mobileSearchOverlay = document.querySelector(".navbar__mobile-search");
 
   function toggleMobileSearch(show = !isMobileSearchActive) {
-    const isMobile = window.innerWidth <= 768;
+    const isMobileView = isMobile();
 
     if (!isMobile) return;
 
@@ -182,7 +194,7 @@ document.addEventListener("DOMContentLoaded", () => {
     if (show && mobileSearchInput) {
       setTimeout(() => {
         mobileSearchInput.focus();
-      }, 150);
+      }, CONFIG.ANIMATION_DELAY);
     }
   }
 
@@ -219,12 +231,6 @@ document.addEventListener("DOMContentLoaded", () => {
         navbarSearchInput.value = query;
         // Trigger search
         navbarSearchInput.dispatchEvent(new Event("input"));
-      }
-    });
-
-    mobileSearchInput.addEventListener("keydown", (e) => {
-      if (e.key === "Escape") {
-        closeMobileSearch();
       }
     });
 
@@ -266,13 +272,6 @@ document.addEventListener("DOMContentLoaded", () => {
     });
   }
 
-  // Monitor search modal state changes
-  document.addEventListener("keydown", (e) => {
-    if (e.key === "Escape" && isMobileSearchActive) {
-      closeMobileSearch();
-    }
-  });
-
   // Listen for search modal state changes via body class changes
   const bodyObserver = new MutationObserver((mutations) => {
     mutations.forEach((mutation) => {
@@ -282,13 +281,13 @@ document.addEventListener("DOMContentLoaded", () => {
       ) {
         const hasSearchModalOpen =
           document.body.classList.contains("search-modal-open");
-        const isMobile = window.innerWidth <= 768;
+        const isMobileView = isMobile();
 
-        if (isMobile && !hasSearchModalOpen && isMobileSearchActive) {
+        if (isMobileView && !hasSearchModalOpen && isMobileSearchActive) {
           // Search modal was closed, sync mobile state and close mobile search
           setTimeout(() => {
             closeMobileSearch();
-          }, 100);
+          }, CONFIG.DEBOUNCE_DELAY);
         }
       }
     });
@@ -306,11 +305,11 @@ document.addEventListener("DOMContentLoaded", () => {
 
   // Handle clicks outside navbar to close mobile search
   document.addEventListener("click", (e) => {
-    const isMobile = window.innerWidth <= 768;
+    const isMobileView = isMobile();
 
     // Don't close during scroll or if touching mobile content
     if (
-      isMobile &&
+      isMobileView &&
       isMobileSearchActive &&
       !navbar.contains(e.target) &&
       !isUserScrolling
@@ -370,7 +369,7 @@ document.addEventListener("DOMContentLoaded", () => {
 
   // 📱 Handle window resize to reset mobile states
   window.addEventListener("resize", () => {
-    const isMobile = window.innerWidth <= 768;
+    const isMobileView = isMobile();
     if (!isMobile) {
       // Reset mobile states when switching to desktop
       if (navbar) {

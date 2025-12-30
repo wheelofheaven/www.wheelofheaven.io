@@ -3,12 +3,13 @@
 @use "../base/typography" as typo;
 
 // Navbar Dropdown Styles
+// Uses position: fixed (like search modal) so backdrop-filter works
 .navbar-dropdown {
-    position: absolute;
-    top: calc(100% + 0.5rem);
+    position: fixed;
+    top: 4.5rem; // Same gap as search modal (navbar height + gap)
     left: 50%;
     transform: translateX(-50%);
-    z-index: 55; // Below search modal but above navbar
+    z-index: 55;
     width: auto;
     min-width: 300px;
     opacity: 0;
@@ -31,25 +32,13 @@
         border: 1px solid rgba(255, 255, 255, 0.2);
         border-radius: 1rem;
         backdrop-filter: blur(20px) saturate(180%);
+        -webkit-backdrop-filter: blur(20px) saturate(180%);
         box-shadow:
             0 25px 50px rgba(0, 0, 0, 0.25),
             0 0 0 1px rgba(255, 255, 255, 0.05),
             inset 0 1px 0 rgba(255, 255, 255, 0.1);
-        overflow: hidden;
         transform: translateY(-10px) scale(0.98);
         transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
-
-        &::before {
-            content: "";
-            position: absolute;
-            top: 0;
-            left: 0;
-            right: 0;
-            bottom: 0;
-            background: rgba(255, 255, 255, 0.15);
-            border-radius: inherit;
-            z-index: -1;
-        }
 
         .navbar-dropdown--active & {
             transform: translateY(0) scale(1);
@@ -290,41 +279,14 @@
     }
 }
 
-// Enhanced glassmorphism for dark theme
-[data-theme="dark"] .navbar-dropdown {
-    &__container {
-        border: 1px solid rgba(255, 255, 255, 0.1);
-        box-shadow:
-            0 25px 50px rgba(0, 0, 0, 0.5),
-            0 0 0 1px rgba(255, 255, 255, 0.02),
-            inset 0 1px 0 rgba(255, 255, 255, 0.05);
-
-        &::before {
-            background: rgba(27, 31, 34, 0.4);
-        }
-    }
-
-    &__content {
-        background: rgba(255, 255, 255, 0.01);
-    }
-}
-
-// Enhanced glassmorphism for light theme
+// Light theme styles
 [data-theme="light"] .navbar-dropdown {
     &__container {
-        border: 1px solid rgba(255, 255, 255, 0.3);
+        border: 1px solid rgba(0, 0, 0, 0.1);
         box-shadow:
             0 25px 50px rgba(0, 0, 0, 0.15),
-            0 0 0 1px rgba(255, 255, 255, 0.1),
-            inset 0 1px 0 rgba(255, 255, 255, 0.2);
-
-        &::before {
-            background: rgba(255, 255, 255, 0.25);
-        }
-    }
-
-    &__content {
-        background: rgba(255, 255, 255, 0.03);
+            0 0 0 1px rgba(255, 255, 255, 0.5),
+            inset 0 1px 0 rgba(255, 255, 255, 0.3);
     }
 }
 

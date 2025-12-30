@@ -39,18 +39,11 @@ author_data = authors.authors[author_key] %} {% endif %}
                 class="author-profile__avatar"
                 src="{{ get_url(path=author_data.image) }}"
                 alt="{{ author_data.name }}"
-                onerror="this.style.display='none'; this.nextElementSibling.style.display='flex';"
+                onerror="this.classList.add('hidden'); this.nextElementSibling.classList.remove('hidden');"
             />
             {% endif %}
             <div
-                class="author-profile__avatar author-profile__avatar--placeholder"
-                {%
-                if
-                author_data.image
-                %}style="display:none;"
-                {%
-                endif
-                %}
+                class="author-profile__avatar author-profile__avatar--placeholder{% if author_data.image %} hidden{% endif %}"
             >
                 {{ author_data.name | truncate(length=1, end="") | upper }}
             </div>
