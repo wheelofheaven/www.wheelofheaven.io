@@ -2,26 +2,71 @@
 block content %}
 <div class="wiki-section">
     <div class="wiki-section__container">
-        <header class="wiki-section__header">
-            <h1 class="wiki-section__title">{{ section.title }}</h1>
+        <!-- Enhanced Hero Section -->
+        <header class="wiki-hero">
+            <div class="wiki-hero__icon">
+                <svg width="64" height="64" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round">
+                    <path d="M4 19.5A2.5 2.5 0 0 1 6.5 17H20"></path>
+                    <path d="M6.5 2H20v20H6.5A2.5 2.5 0 0 1 4 19.5v-15A2.5 2.5 0 0 1 6.5 2z"></path>
+                    <path d="M8 7h8"></path>
+                    <path d="M8 11h8"></path>
+                    <path d="M8 15h6"></path>
+                </svg>
+            </div>
+            <h1 class="wiki-hero__title">{{ section.title }}</h1>
             {% if section.description %}
-            <p class="wiki-section__description">{{ section.description }}</p>
+            <p class="wiki-hero__description">{{ section.description }}</p>
             {% endif %}
+
+            <!-- Quick Actions -->
+            <div class="wiki-hero__actions">
+                <button class="wiki-hero__action wiki-hero__action--random" id="random-article-btn" title="Discover a random article">
+                    <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                        <path d="M16 3h5v5"></path>
+                        <path d="M4 20L21 3"></path>
+                        <path d="M21 16v5h-5"></path>
+                        <path d="M15 15l6 6"></path>
+                        <path d="M4 4l5 5"></path>
+                    </svg>
+                    <span>Random Article</span>
+                </button>
+                <a href="#wiki-articles" class="wiki-hero__action wiki-hero__action--browse">
+                    <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                        <rect x="3" y="3" width="7" height="7"></rect>
+                        <rect x="14" y="3" width="7" height="7"></rect>
+                        <rect x="14" y="14" width="7" height="7"></rect>
+                        <rect x="3" y="14" width="7" height="7"></rect>
+                    </svg>
+                    <span>Browse All</span>
+                </a>
+            </div>
 
             <!-- Wiki Statistics -->
             {% if section.pages %}
-            <div class="wiki-section__stats">
-                <div class="wiki-stat">
-                    <span class="wiki-stat__number">{{ section.pages | length }}</span>
-                    <span class="wiki-stat__label">Articles</span>
+            <div class="wiki-hero__stats">
+                <div class="wiki-hero__stat">
+                    <span class="wiki-hero__stat-number">{{ section.pages | length }}</span>
+                    <span class="wiki-hero__stat-label">Articles</span>
                 </div>
                 {% set categories = section.pages | map(attribute="extra.category") | unique %}
-                {% if categories %}
-                <div class="wiki-stat">
-                    <span class="wiki-stat__number">{{ categories | length }}</span>
-                    <span class="wiki-stat__label">Categories</span>
+                {% set category_count = 0 %}
+                {% for cat in categories %}{% if cat %}{% set_global category_count = category_count + 1 %}{% endif %}{% endfor %}
+                {% if category_count > 0 %}
+                <div class="wiki-hero__stat-divider"></div>
+                <div class="wiki-hero__stat">
+                    <span class="wiki-hero__stat-number">{{ category_count }}</span>
+                    <span class="wiki-hero__stat-label">Topics</span>
                 </div>
                 {% endif %}
+                {% set total_words = 0 %}
+                {% for page in section.pages %}
+                    {% set_global total_words = total_words + page.word_count %}
+                {% endfor %}
+                <div class="wiki-hero__stat-divider"></div>
+                <div class="wiki-hero__stat">
+                    <span class="wiki-hero__stat-number">{{ (total_words / 1000) | round }}k</span>
+                    <span class="wiki-hero__stat-label">Words</span>
+                </div>
             </div>
             {% endif %}
         </header>
@@ -31,6 +76,30 @@ block content %}
         {% endif %}
 
         {% if section.pages %}
+        <!-- Recently Updated Articles -->
+        {% set recent_pages = section.pages | sort(attribute="date") | reverse | slice(end=4) %}
+        {% if recent_pages | length > 0 %}
+        <div class="wiki-recent">
+            <h2 class="wiki-recent__title">
+                <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                    <circle cx="12" cy="12" r="10"></circle>
+                    <polyline points="12 6 12 12 16 14"></polyline>
+                </svg>
+                Recently Updated
+            </h2>
+            <div class="wiki-recent__grid">
+                {% for page in recent_pages %}
+                <a href="{{ page.permalink }}" class="wiki-recent__card">
+                    <span class="wiki-recent__card-title">{{ page.title }}</span>
+                    {% if page.date %}
+                    <span class="wiki-recent__card-date">{{ page.date | date(format="%b %d") }}</span>
+                    {% endif %}
+                </a>
+                {% endfor %}
+            </div>
+        </div>
+        {% endif %}
+
         <!-- Discovery Controls -->
         <div class="wiki-discovery">
             <div class="wiki-discovery__header">
@@ -265,6 +334,19 @@ document.addEventListener('DOMContentLoaded', function() {
     const articlesContainer = document.getElementById('wiki-articles');
     const noResults = document.getElementById('wiki-no-results');
     const articles = Array.from(document.querySelectorAll('.wiki-card'));
+    const randomBtn = document.getElementById('random-article-btn');
+
+    // Random article functionality
+    if (randomBtn && articles.length > 0) {
+        randomBtn.addEventListener('click', function() {
+            const randomIndex = Math.floor(Math.random() * articles.length);
+            const randomArticle = articles[randomIndex];
+            const link = randomArticle.querySelector('.wiki-card__link');
+            if (link) {
+                window.location.href = link.href;
+            }
+        });
+    }
 
     // Search functionality
     function filterArticles() {
