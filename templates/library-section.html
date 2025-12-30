@@ -53,49 +53,76 @@
                         {% set_global has_books = true %}
                         {% set_global book_count = book_count + 1 %}
                         <article class="book-card" data-title="{{ library_macros::get_book_title(book_data=book_data, lang=lang) | lower }}">
+                            <!-- Accent stripe -->
+                            <div class="book-card__accent"></div>
+
+                            <!-- Book icon -->
+                            <div class="book-card__icon">
+                                <svg width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round">
+                                    <path d="M4 19.5A2.5 2.5 0 0 1 6.5 17H20"></path>
+                                    <path d="M6.5 2H20v20H6.5A2.5 2.5 0 0 1 4 19.5v-15A2.5 2.5 0 0 1 6.5 2z"></path>
+                                    <path d="M8 7h8"></path>
+                                    <path d="M8 11h6"></path>
+                                </svg>
+                            </div>
+
                             <div class="book-card__content">
+                                <!-- Languages as badges at top -->
+                                <div class="book-card__languages">
+                                    {% for lang_code, title in book_data.titles %}
+                                    <span class="book-card__language-tag">{{ lang_code | upper }}</span>
+                                    {% endfor %}
+                                </div>
+
                                 <h3 class="book-card__title">
-                                    <a href="{{ get_url(path='library/' ~ book_data.slug) }}" class="book-card__link">
+                                    <a href="{{ get_url(path='library/' ~ book_data.slug, lang=lang) }}" class="book-card__link">
                                         {{ library_macros::get_book_title(book_data=book_data, lang=lang) }}
                                     </a>
                                 </h3>
+
                                 {% if book_data.primaryLang != lang and book_data.titles[book_data.primaryLang] %}
                                 <p class="book-card__original-title">
-                                    Original: {{ book_data.titles[book_data.primaryLang] }}
+                                    <span class="book-card__original-label">Original:</span>
+                                    {{ book_data.titles[book_data.primaryLang] }}
                                 </p>
                                 {% endif %}
-
-                                <div class="book-card__meta">
-                                    {% if book_data.chapters %}
-                                    <span class="book-card__chapters">{{ book_data.chapters | length }} chapters</span>
-                                    {% endif %}
-                                    {% if book_data.updated %}
-                                    <span class="book-card__updated">Updated: {{ book_data.updated | date(format="%B %d, %Y") }}</span>
-                                    {% endif %}
-                                </div>
-
-                                <div class="book-card__languages">
-                                    <span class="book-card__languages-label">Available in:</span>
-                                    <div class="book-card__language-tags">
-                                        {% for lang_code, title in book_data.titles %}
-                                        <span class="book-card__language-tag">{{ lang_code | upper }}</span>
-                                        {% endfor %}
-                                    </div>
-                                </div>
 
                                 {% if book_data.chapters and book_data.chapters[0] and book_data.chapters[0].paragraphs and book_data.chapters[0].paragraphs[0] %}
                                 <div class="book-card__preview">
                                     {% set first_paragraph = book_data.chapters[0].paragraphs[0] %}
                                     <p class="book-card__preview-text">
-                                        {{ library_macros::get_paragraph_text(paragraph=first_paragraph, lang=lang) | truncate(length=200) }}
+                                        {{ library_macros::get_paragraph_text(paragraph=first_paragraph, lang=lang) | truncate(length=180) }}
                                     </p>
                                 </div>
                                 {% endif %}
+
+                                <div class="book-card__meta">
+                                    {% if book_data.chapters %}
+                                    <span class="book-card__meta-item">
+                                        <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                            <path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z"></path>
+                                            <polyline points="14 2 14 8 20 8"></polyline>
+                                            <line x1="16" y1="13" x2="8" y2="13"></line>
+                                            <line x1="16" y1="17" x2="8" y2="17"></line>
+                                        </svg>
+                                        {{ book_data.chapters | length }} chapters
+                                    </span>
+                                    {% endif %}
+                                    {% if book_data.updated %}
+                                    <span class="book-card__meta-item">
+                                        <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                            <circle cx="12" cy="12" r="10"></circle>
+                                            <polyline points="12 6 12 12 16 14"></polyline>
+                                        </svg>
+                                        {{ book_data.updated | date(format="%b %Y") }}
+                                    </span>
+                                    {% endif %}
+                                </div>
                             </div>
 
-                            <div class="book-card__actions">
-                                <a href="{{ get_url(path='library/' ~ book_data.slug) }}" class="book-card__read-btn">
-                                    Read Now
+                            <div class="book-card__footer">
+                                <a href="{{ get_url(path='library/' ~ book_data.slug, lang=lang) }}" class="book-card__read-btn">
+                                    <span>Start Reading</span>
                                     <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
                                         <path d="M5 12h14"></path>
                                         <path d="M12 5l7 7-7 7"></path>

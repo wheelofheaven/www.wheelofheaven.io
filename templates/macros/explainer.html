@@ -30,12 +30,12 @@
 {% endmacro reference_entry %}
 
 {# Macro for rendering a see also item #}
-{% macro see_also_item(item) %}
+{% macro see_also_item(item, lang="en") %}
     <li class="explainer__link-item">
         {% if item.url %}
             <a href="{{ item.url }}" class="explainer__link">{{ item.title }}</a>
         {% else %}
-            <a href="{{ get_url(path=item.path) }}" class="explainer__link">{{ item.title }}</a>
+            <a href="{{ get_url(path=item.path, lang=lang) }}" class="explainer__link">{{ item.title }}</a>
         {% endif %}
 
         {% if item.description %}

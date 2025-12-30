@@ -72,7 +72,7 @@
 {% endmacro %}
 
 {# Macro to render chapter navigation #}
-{% macro render_chapter_navigation(book_data, current_chapter="", context="book") %}
+{% macro render_chapter_navigation(book_data, current_chapter="", context="book", lang="en") %}
     <nav class="chapter-navigation">
         <div class="chapter-navigation__header">
             <h3 class="chapter-navigation__title">Chapters</h3>
@@ -93,7 +93,7 @@
                         {{ chapter.n }}
                     </a>
                 {% else %}
-                    <a href="{{ get_url(path='library/' ~ book_data.slug) }}#chapter-{{ chapter.n }}"
+                    <a href="{{ get_url(path='library/' ~ book_data.slug, lang=lang) }}#chapter-{{ chapter.n }}"
                        class="chapter-navigation__button"
                        style="--chapter-index: {{ chapter.n }}">
                         {{ chapter.n }}
@@ -131,7 +131,7 @@
     <article class="book-card">
         <div class="book-header">
             <h3>
-                <a href="{{ get_url(path='library/' ~ book_data.slug) }}">
+                <a href="{{ get_url(path='library/' ~ book_data.slug, lang=lang) }}">
                     {{ self::get_book_title(book_data=book_data, lang=lang) }}
                 </a>
             </h3>
@@ -158,7 +158,7 @@
             {% endfor %}
         </div>
 
-        {{ self::render_chapter_navigation(book_data=book_data, context="section") }}
+        {{ self::render_chapter_navigation(book_data=book_data, context="section", lang=lang) }}
 
         {% if book_data.chapters and book_data.chapters[0] and book_data.chapters[0].paragraphs and book_data.chapters[0].paragraphs[0] %}
             <div class="book-preview">
