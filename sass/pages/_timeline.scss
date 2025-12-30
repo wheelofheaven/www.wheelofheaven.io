@@ -50,6 +50,7 @@ main:has(.timeline-section) {
     width: 600px;
     height: 600px;
     z-index: 6;
+    transition: opacity 0.3s ease;
 
     @media (max-width: 1200px) {
         left: 25%;
@@ -82,30 +83,30 @@ main:has(.timeline-section) {
     height: 100%;
 }
 
-// Earth Sunrise
+// Earth Sunrise - positioned at upper-right zenith of Earth
 .earth-sunrise {
     position: fixed;
-    top: calc(
-        85% - 400px
-    ); /* Earth position minus Earth radius minus sun offset */
-    left: calc(30% - 150px);
-    transform: translateX(-50%);
+    top: calc(85% - 450px); /* Above Earth's center */
+    left: calc(30% + 150px); /* To the right of Earth's center */
+    transform: translate(-50%, -50%);
     width: 200px;
     height: 200px;
     pointer-events: none;
     z-index: 5;
+    transition: opacity 0.3s ease;
 
     @media (max-width: 1200px) {
-        left: calc(25% - 120px);
+        top: calc(85% - 380px);
+        left: calc(25% + 120px);
         width: 160px;
         height: 160px;
     }
 
     @media (max-width: 768px) {
-        left: calc(50% - 80px);
+        top: calc(60% - 180px);
+        left: calc(50% + 80px);
         width: 120px;
         height: 120px;
-        top: calc(75% - 200px);
     }
 }
 
@@ -127,6 +128,7 @@ main:has(.timeline-section) {
     right: 5%;
     width: 450px;
     z-index: 10;
+    transition: opacity 0.3s ease, transform 0.3s ease;
 
     @media (max-width: 1200px) {
         width: 400px;
@@ -570,6 +572,7 @@ main:has(.timeline-section) {
     z-index: 1;
     overflow: hidden;
     pointer-events: none;
+    transition: opacity 0.3s ease, transform 0.3s ease;
 }
 
 .starmap-container {

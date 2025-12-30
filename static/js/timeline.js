@@ -502,6 +502,29 @@ document.addEventListener("DOMContentLoaded", function () {
           console.log("Enabling vertical scroll from Age of Aquarius!");
           document.body.style.overflow = "auto";
           document.body.style.height = "200vh";
+
+          // Immediately hide the fixed elements before scrolling
+          const starmapBg = document.querySelector(".starmap-background");
+          const earthEl = document.querySelector(".earth-container");
+          const sunriseEl = document.querySelector(".earth-sunrise");
+          const ageCardEl = document.querySelector(".age-card-container");
+          const timelineSec = document.querySelector(".timeline-section");
+
+          if (starmapBg) {
+            starmapBg.style.opacity = "0";
+            starmapBg.style.transform = "translateY(-50vh)";
+          }
+          if (earthEl) earthEl.style.opacity = "0";
+          if (sunriseEl) sunriseEl.style.opacity = "0";
+          if (ageCardEl) {
+            ageCardEl.style.opacity = "0";
+            ageCardEl.style.transform = "translateY(-50vh)";
+          }
+          if (timelineSec) {
+            timelineSec.style.transform = "translateY(-100vh)";
+          }
+
+          // Scroll to the world ages section
           window.scrollTo({
             top: window.innerHeight,
             behavior: "smooth",
@@ -554,12 +577,38 @@ document.addEventListener("DOMContentLoaded", function () {
       const scrollY = window.scrollY;
       const timelineSection = document.querySelector(".timeline-section");
       const worldAgesSection = document.querySelector(".world-ages-section");
+      const starmapBackground = document.querySelector(".starmap-background");
+      const earthContainerEl = document.querySelector(".earth-container");
+      const earthSunrise = document.querySelector(".earth-sunrise");
+      const ageCardContainer = document.querySelector(".age-card-container");
 
-      if (scrollY > 0 && timelineSection && worldAgesSection) {
-        // Push timeline section up as World Ages section comes into view
+      // Only update styles when scrolling back UP (towards timeline)
+      // The initial transition to world-ages is handled when enabling vertical scroll
+      if (scrollY > 0 && scrollY < window.innerHeight && timelineSection && worldAgesSection) {
+        // User is scrolling back towards the timeline
         const pushUpProgress = Math.min(scrollY / window.innerHeight, 1);
         const timelineTransform = pushUpProgress * -100;
         timelineSection.style.transform = `translateY(${timelineTransform}vh)`;
+
+        // Also transition the fixed elements to avoid black gap
+        // Fade out and move up the fixed elements in sync with timeline section
+        const fixedOpacity = 1 - pushUpProgress;
+        const fixedTransform = pushUpProgress * -50; // Move up slower than timeline
+
+        if (starmapBackground) {
+          starmapBackground.style.opacity = fixedOpacity;
+          starmapBackground.style.transform = `translateY(${fixedTransform}vh)`;
+        }
+        if (earthContainerEl) {
+          earthContainerEl.style.opacity = fixedOpacity;
+        }
+        if (earthSunrise) {
+          earthSunrise.style.opacity = fixedOpacity;
+        }
+        if (ageCardContainer) {
+          ageCardContainer.style.opacity = fixedOpacity;
+          ageCardContainer.style.transform = `translateY(${fixedTransform}vh)`;
+        }
       }
 
       // Allow scrolling back into timeline
@@ -575,6 +624,22 @@ document.addEventListener("DOMContentLoaded", function () {
 
         if (timelineSection) {
           timelineSection.style.transform = "translateY(0)";
+        }
+
+        // Reset fixed elements
+        if (starmapBackground) {
+          starmapBackground.style.opacity = "1";
+          starmapBackground.style.transform = "";
+        }
+        if (earthContainerEl) {
+          earthContainerEl.style.opacity = "1";
+        }
+        if (earthSunrise) {
+          earthSunrise.style.opacity = "1";
+        }
+        if (ageCardContainer) {
+          ageCardContainer.style.opacity = "1";
+          ageCardContainer.style.transform = "";
         }
 
         console.log("Returned to timeline - horizontal scrolling re-enabled");
