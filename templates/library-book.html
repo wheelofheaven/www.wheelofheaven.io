@@ -1,4 +1,7 @@
-{% extends "base.html" %} {% import "macros/library.html" as library_macros %}
+{% extends "base.html" %}
+{% import "macros/library.html" as library_macros %}
+{% import "macros/breadcrumbs.html" as breadcrumbs %}
+
 {% block content %}
 {% set book_slug = page.slug %}
 {% set book_data = load_data(path="data/library/" ~ book_slug ~ ".json") %}
@@ -8,6 +11,9 @@
 {% include "partials/schema/book.html" %}
 
 <div class="library-book">
+    <!-- Breadcrumb Navigation -->
+    {{ breadcrumbs::library(book_title=library_macros::get_book_title(book_data=book_data, lang=detected_lang), lang=detected_lang) }}
+
     <div class="library-book__container">
         <!-- Table of Contents Sidebar -->
         <aside class="library-book__toc" role="complementary" aria-label="Book table of contents">
@@ -33,17 +39,6 @@
         <!-- Main Content Area -->
         <main class="library-book__main">
             <article class="library-book__article" role="article" aria-labelledby="book-title">
-                <!-- Breadcrumb Navigation -->
-                <nav class="library-book__breadcrumbs" aria-label="Breadcrumb navigation">
-                    <ol class="library-book__breadcrumb-list">
-                        <li class="library-book__breadcrumb-item">
-                            <a href="{{ get_url(path='library') }}" class="library-book__breadcrumb-link">Library</a>
-                        </li>
-                        <li class="library-book__breadcrumb-item">
-                            <span class="library-book__breadcrumb-current">{{ library_macros::get_book_title(book_data=book_data, lang=detected_lang) }}</span>
-                        </li>
-                    </ol>
-                </nav>
 
                 <!-- Book Header -->
                 <header class="library-book__header">

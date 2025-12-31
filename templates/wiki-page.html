@@ -1,8 +1,14 @@
-{% extends "base.html" %} {% block content %}
+{% extends "base.html" %}
+{% import "macros/breadcrumbs.html" as breadcrumbs %}
+
+{% block content %}
 <!-- DefinedTerm Schema for Wiki Pages -->
 {% include "partials/schema/defined-term.html" %}
 
 <div class="wiki">
+    <!-- Breadcrumb Navigation -->
+    {{ breadcrumbs::wiki(page=page, lang=detected_lang) }}
+
     <div class="wiki__container">
         <!-- Table of Contents Sidebar -->
         <aside class="wiki__toc" role="complementary" aria-label="Table of contents">

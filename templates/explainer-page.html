@@ -1,8 +1,14 @@
-{% extends "base.html" %} {% block content %}
+{% extends "base.html" %}
+{% import "macros/breadcrumbs.html" as breadcrumbs %}
+
+{% block content %}
 <!-- ScholarlyArticle Schema for Explainer Pages -->
 {% include "partials/schema/scholarly-article.html" %}
 
 <div class="explainer">
+    <!-- Breadcrumb Navigation -->
+    {{ breadcrumbs::explainer(page=page, lang=detected_lang) }}
+
     <div class="explainer__container">
         <!-- Main Content -->
         <main class="explainer__main">

@@ -1,5 +1,11 @@
-{% extends "base.html" %} {% block content %}
+{% extends "base.html" %}
+{% import "macros/breadcrumbs.html" as breadcrumbs %}
+
+{% block content %}
 <div class="essentials">
+    <!-- Breadcrumb Navigation -->
+    {{ breadcrumbs::essentials(page=page, lang=detected_lang) }}
+
     <div class="essentials__container">
         <!-- Main Content -->
         <main class="essentials__main">
