@@ -34,6 +34,12 @@ document.addEventListener("DOMContentLoaded", () => {
 
   // 📱 Mobile navbar scroll behavior with throttling
   function updateNavbarVisibility() {
+    // Don't process scroll events when mobile menu is open (body is locked)
+    if (isMobileNavExpanded) {
+      ticking = false;
+      return;
+    }
+
     const currentScrollY = window.scrollY;
 
     if (isMobile() && navbar) {
@@ -44,21 +50,9 @@ document.addEventListener("DOMContentLoaded", () => {
         if (currentScrollY > lastScrollY && currentScrollY > CONFIG.SCROLL_THRESHOLD) {
           // Scrolling down - hide navbar
           navbar.classList.add("navbar--hidden");
-          // Don't close mobile nav/search when scrolling within the content
-          // Only close if scrolling on the main page, not within mobile menu
-          if (isMobileNavExpanded || isMobileSearchActive) {
-            const mobileContent = document.querySelector(".navbar__content");
-            if (
-              !mobileContent ||
-              !mobileContent.contains(document.activeElement)
-            ) {
-              if (isMobileNavExpanded) {
-                closeMobileNav();
-              }
-              if (isMobileSearchActive) {
-                closeMobileSearch();
-              }
-            }
+          // Close mobile search if open
+          if (isMobileSearchActive) {
+            closeMobileSearch();
           }
         } else if (currentScrollY < lastScrollY) {
           // Scrolling up - show navbar
@@ -243,6 +237,38 @@ document.addEventListener("DOMContentLoaded", () => {
     });
   }
 
+  // Touch event handler to prevent body scroll but allow mobile content scroll
+  let mobileContentEl = null;
+
+  function preventBodyScroll(e) {
+    if (!mobileContentEl) return;
+
+    // Allow scrolling if touch is inside mobile content
+    if (mobileContentEl.contains(e.target)) {
+      return; // Don't prevent - allow normal scrolling inside content
+    }
+    // Prevent scroll on body/outside elements
+    e.preventDefault();
+  }
+
+  function openMobileNav() {
+    isMobileNavExpanded = true;
+
+    // Get mobile content element BEFORE adding class
+    mobileContentEl = navbar.querySelector(".navbar__content");
+
+    if (navbar) {
+      navbar.classList.add("navbar--mobile-expanded");
+    }
+    if (mobileNavToggle) {
+      mobileNavToggle.setAttribute("aria-expanded", true);
+    }
+
+    // Enable scroll lock
+    document.body.classList.add("mobile-nav-open");
+    document.addEventListener("touchmove", preventBodyScroll, { passive: false });
+  }
+
   function closeMobileNav() {
     isMobileNavExpanded = false;
     if (navbar) {
@@ -251,6 +277,12 @@ document.addEventListener("DOMContentLoaded", () => {
     if (mobileNavToggle) {
       mobileNavToggle.setAttribute("aria-expanded", false);
     }
+
+    // Remove scroll lock
+    document.body.classList.remove("mobile-nav-open");
+    document.removeEventListener("touchmove", preventBodyScroll);
+    mobileContentEl = null;
+
     // Close any open dropdowns when closing mobile nav
     if (window.navbarDropdown) {
       window.navbarDropdown.closeAllDropdowns();
@@ -328,13 +360,15 @@ document.addEventListener("DOMContentLoaded", () => {
       e.preventDefault();
       e.stopPropagation();
 
-      isMobileNavExpanded = !isMobileNavExpanded;
-      navbar.classList.toggle("navbar--mobile-expanded", isMobileNavExpanded);
-      mobileNavToggle.setAttribute("aria-expanded", isMobileNavExpanded);
-
       // Close search when toggling nav
       if (isMobileSearchActive) {
         closeMobileSearch();
+      }
+
+      if (isMobileNavExpanded) {
+        closeMobileNav();
+      } else {
+        openMobileNav();
       }
     });
 

@@ -28,7 +28,7 @@
         min-width: 300px;
         max-width: 500px;
         // Glassmorphism effect matching navbar and other UI elements
-        background: rgba(25, 28, 32, 0.75);
+        background: rgba(25, 28, 32, 0.65);
         backdrop-filter: blur(20px) saturate(180%);
         -webkit-backdrop-filter: blur(20px) saturate(180%);
         border: 1px solid rgba(255, 255, 255, 0.12);
@@ -353,20 +353,19 @@
     }
 }
 
-// Body class when dropdown modal is open - simplified
+// Body class when dropdown modal is open - completely disable navbar blur
+// so the dropdown's backdrop-filter can blur the actual page content
 .navbar-dropdown-open {
     .navbar {
-        filter: none !important;
-        backdrop-filter: blur(12px);
-        pointer-events: auto !important; // Force navbar interactions to work
-        z-index: 9999 !important; // Ensure navbar is above everything
+        // CRITICAL: Remove navbar backdrop-filter entirely so dropdown blur works
+        backdrop-filter: none !important;
+        -webkit-backdrop-filter: none !important;
+        // Use solid background instead when dropdown is open
+        background-color: rgba(25, 28, 32, 0.95) !important;
     }
 
-    // Ensure all navbar elements can receive hover events
-    .navbar__link,
-    .navbar__dropdown-trigger {
-        pointer-events: auto !important;
-        position: relative !important;
-        z-index: 99999 !important;
+    [data-theme="light"] & .navbar,
+    &[data-theme="light"] .navbar {
+        background-color: rgba(255, 255, 255, 0.95) !important;
     }
 }
