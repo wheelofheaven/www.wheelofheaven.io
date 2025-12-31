@@ -423,16 +423,17 @@
                     </select>
                 </div>
 
-                <button
-                    id="mobile-theme-toggle"
-                    class="navbar__theme-toggle"
-                    aria-label="Toggle dark/light mode"
-                >
-                    <span class="navbar__theme-icon">
-                        <span class="icon icon--moon">{% include "partials/icons/feather-moon.html" %}</span>
-                        <span class="icon icon--sun">{% include "partials/icons/feather-sun.html" %}</span>
-                    </span>
-                </button>
+                <div class="navbar__theme-switcher" id="mobile-theme-switcher">
+                    <select
+                        id="mobile-theme-select"
+                        class="navbar__select"
+                        aria-label="Select theme"
+                    >
+                        <option value="system">Auto</option>
+                        <option value="dark">Dark</option>
+                        <option value="light">Light</option>
+                    </select>
+                </div>
             </div>
         </div>
     </div>
@@ -498,16 +499,17 @@
             </select>
         </div>
 
-        <button
-            id="theme-toggle"
-            class="navbar__theme-toggle"
-            aria-label="Toggle dark/light mode"
-        >
-            <span class="navbar__theme-icon">
-                <span class="icon icon--moon">{% include "partials/icons/feather-moon.html" %}</span>
-                <span class="icon icon--sun">{% include "partials/icons/feather-sun.html" %}</span>
-            </span>
-        </button>
+        <div class="navbar__theme-switcher" id="theme-switcher">
+            <select
+                id="theme-select"
+                class="navbar__select"
+                aria-label="Select theme"
+            >
+                <option value="system">Auto</option>
+                <option value="dark">Dark</option>
+                <option value="light">Light</option>
+            </select>
+        </div>
 
         <script>
             document.addEventListener("DOMContentLoaded", function () {
@@ -846,26 +848,63 @@
                     });
                 }
 
-                // Theme toggle functionality
-                function toggleTheme() {
+                // Theme switcher functionality
+                function getCurrentThemeSetting() {
+                    const saved = localStorage.getItem("theme");
+                    if (saved === "light" || saved === "dark") {
+                        return saved;
+                    }
+                    return "system";
+                }
+
+                function applyTheme(theme) {
                     const html = document.documentElement;
-                    const currentTheme = html.getAttribute("data-theme");
-                    const newTheme = currentTheme === "dark" ? "light" : "dark";
-                    html.setAttribute("data-theme", newTheme);
-                    localStorage.setItem("theme", newTheme);
+                    if (theme === "system") {
+                        localStorage.removeItem("theme");
+                        const prefersLight = window.matchMedia("(prefers-color-scheme: light)").matches;
+                        html.setAttribute("data-theme", prefersLight ? "light" : "dark");
+                    } else {
+                        localStorage.setItem("theme", theme);
+                        html.setAttribute("data-theme", theme);
+                    }
                 }
 
-                // Handle desktop theme toggle
-                const themeToggle = document.getElementById("theme-toggle");
-                if (themeToggle) {
-                    themeToggle.addEventListener("click", toggleTheme);
+                function updateThemeSelectors() {
+                    const currentTheme = getCurrentThemeSetting();
+                    const desktopSelect = document.getElementById("theme-select");
+                    const mobileSelect = document.getElementById("mobile-theme-select");
+
+                    if (desktopSelect) desktopSelect.value = currentTheme;
+                    if (mobileSelect) mobileSelect.value = currentTheme;
                 }
 
-                // Handle mobile theme toggle
-                const mobileThemeToggle = document.getElementById("mobile-theme-toggle");
-                if (mobileThemeToggle) {
-                    mobileThemeToggle.addEventListener("click", toggleTheme);
+                // Initialize theme selectors
+                updateThemeSelectors();
+
+                // Handle desktop theme switcher
+                const themeSelect = document.getElementById("theme-select");
+                if (themeSelect) {
+                    themeSelect.addEventListener("change", function (e) {
+                        applyTheme(e.target.value);
+                        updateThemeSelectors();
+                    });
                 }
+
+                // Handle mobile theme switcher
+                const mobileThemeSelect = document.getElementById("mobile-theme-select");
+                if (mobileThemeSelect) {
+                    mobileThemeSelect.addEventListener("change", function (e) {
+                        applyTheme(e.target.value);
+                        updateThemeSelectors();
+                    });
+                }
+
+                // Listen for system theme changes when in "system" mode
+                window.matchMedia("(prefers-color-scheme: light)").addEventListener("change", function () {
+                    if (getCurrentThemeSetting() === "system") {
+                        applyTheme("system");
+                    }
+                });
             });
         </script>
     </div>
