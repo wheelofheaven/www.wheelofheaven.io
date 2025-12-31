@@ -617,13 +617,53 @@ body.mobile-nav-open {
             }
         }
 
-        // X icon animation - rotates when menu is expanded
-        #mobileNavToggle svg {
-            transition: transform 0.3s ease;
+        // Menu icon animation - hamburger to X transition
+        .navbar__menu-icon {
+            position: relative;
+            width: 1.5rem;
+            height: 1.5rem;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+
+            &--menu,
+            &--close {
+                position: absolute;
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                transition: opacity 0.3s ease, transform 0.3s ease;
+
+                svg {
+                    width: 1.5rem;
+                    height: 1.5rem;
+                }
+            }
+
+            // Default: show hamburger menu
+            &--menu {
+                opacity: 1;
+                transform: rotate(0deg);
+            }
+
+            // Default: hide X
+            &--close {
+                opacity: 0;
+                transform: rotate(-90deg);
+            }
         }
 
-        &.navbar--mobile-expanded #mobileNavToggle svg {
-            transform: rotate(90deg);
+        // Expanded state: show X, hide hamburger
+        &.navbar--mobile-expanded .navbar__menu-icon {
+            &--menu {
+                opacity: 0;
+                transform: rotate(90deg);
+            }
+
+            &--close {
+                opacity: 1;
+                transform: rotate(0deg);
+            }
         }
 
         // Mobile expanded state - show navigation menu with controls

@@ -458,7 +458,10 @@
             id="mobileNavToggle"
             aria-label="Toggle mobile navigation"
         >
-            {% include "partials/icons/feather-x.html" %}
+            <span class="navbar__menu-icon">
+                <span class="navbar__menu-icon--menu">{% include "partials/icons/feather-menu.html" %}</span>
+                <span class="navbar__menu-icon--close">{% include "partials/icons/feather-x.html" %}</span>
+            </span>
         </button>
 
         <div class="navbar__search desktop-only">
