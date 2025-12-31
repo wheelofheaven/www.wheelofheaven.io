@@ -17,7 +17,7 @@
     pointer-events: none;
 
     // Mobile positioning adjustments
-    @media (max-width: 768px) {
+    @media (max-width: 999px) {
         top: 4.5rem; // Closer spacing on mobile
         width: 95%;
     }
@@ -34,17 +34,12 @@
         left: 0;
         right: 0;
         bottom: 0;
-        background-color: transparent;
-        backdrop-filter: blur(8px);
+        // No blur - keep navbar sharp, just use semi-transparent overlay
+        background-color: rgba(0, 0, 0, 0.3);
+        backdrop-filter: none;
+        -webkit-backdrop-filter: none;
         cursor: pointer;
         z-index: -1;
-
-        // On mobile, no blur - just a semi-transparent overlay
-        @media (max-width: 768px) {
-            backdrop-filter: none;
-            -webkit-backdrop-filter: none;
-            background-color: rgba(0, 0, 0, 0.3);
-        }
     }
 
     &__container {
@@ -110,7 +105,7 @@
         }
 
         // Hide on mobile
-        @media (max-width: 768px) {
+        @media (max-width: 999px) {
             display: none;
         }
     }
@@ -245,7 +240,7 @@
     }
 
     // Mobile layout adjustments
-    @media (max-width: 768px) {
+    @media (max-width: 999px) {
         grid-template-columns: 1fr auto;
         gap: 1rem;
         padding: 0.75rem 1rem;
@@ -257,7 +252,7 @@
         gap: 0.375rem;
 
         // Mobile layout - arrange differently for section positioning
-        @media (max-width: 768px) {
+        @media (max-width: 999px) {
             flex: 1;
         }
     }
@@ -283,7 +278,7 @@
         margin-top: 0.125rem;
 
         // Smaller font on mobile
-        @media (max-width: 768px) {
+        @media (max-width: 999px) {
             font-size: 0.65rem;
         }
     }
@@ -305,7 +300,7 @@
         letter-spacing: 0.025em;
 
         // Mobile positioning - move to right side
-        @media (max-width: 768px) {
+        @media (max-width: 999px) {
             margin-top: 0;
             align-self: flex-start;
         }

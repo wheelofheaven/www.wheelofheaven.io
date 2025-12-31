@@ -196,23 +196,28 @@ body.mobile-nav-open {
     }
 
     &__search {
-        position: relative;
+        position: absolute;
+        right: 12rem; // Position to left of language switcher and theme toggle
+        top: 50%;
+        transform: translateY(-50%);
+        display: flex;
+        align-items: center;
+        justify-content: flex-end;
 
         .navbar__search-input {
-            width: 16rem;
+            width: 14rem;
             padding: 0.5rem 4rem 0.5rem 1rem;
             border-radius: 0.75rem;
             border: 1px solid var(--color-input-border);
             color: var(--color-text);
             font-size: 1rem;
             font-family: inherit;
-            transition: all 0.3s ease;
-            backdrop-filter: blur(12px);
+            transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
 
-            background-color: var(--color-input-bg);
-            border-color: var(--color-input-border);
-            min-width: 12rem; // Prevent input from shrinking too much
-            flex-shrink: 0;
+            // Glassmorphism effect
+            background-color: rgba(25, 28, 32, 0.85);
+            backdrop-filter: blur(20px) saturate(180%);
+            -webkit-backdrop-filter: blur(20px) saturate(180%);
 
             // Subtle glow effect
             box-shadow:
@@ -227,15 +232,22 @@ body.mobile-nav-open {
                 outline: none;
                 border: 2px solid var(--color-accent-primary);
                 box-shadow:
-                    0 0 0 6px rgba(var(--color-accent-primary), 0.5),
-                    0 8px 32px rgba(var(--color-accent-primary), 0.4),
-                    0 16px 64px rgba(var(--color-accent-primary), 0.3);
+                    0 0 0 4px rgba(var(--color-accent-primary), 0.3),
+                    0 8px 32px rgba(var(--color-accent-primary), 0.2);
             }
+        }
 
-            // Ensure search input stays clear when modal is open
-            .search-modal-open & {
-                filter: none !important;
-                backdrop-filter: blur(12px);
+        // Light theme
+        [data-theme="light"] & .navbar__search-input {
+            background-color: rgba(255, 255, 255, 0.85);
+        }
+
+        // Expand search input when modal is open
+        .search-modal-open & {
+            left: 5rem; // Extend toward logo
+
+            .navbar__search-input {
+                width: 100%;
             }
         }
 
@@ -256,13 +268,11 @@ body.mobile-nav-open {
             font-weight: 500;
             transition: all 0.3s ease;
             opacity: 1;
-            transform: translateY(-50%) scale(1);
         }
 
-        &:focus-within::after {
-            opacity: 0.7;
-            transform: translateY(-50%) scale(0.95);
-            color: rgba(var(--color-accent-primary), 0.6);
+        &:focus-within::after,
+        .search-modal-open &::after {
+            opacity: 0;
         }
     }
 
@@ -403,7 +413,7 @@ body.mobile-nav-open {
     flex-shrink: 0;
 
     // Ensure it's completely hidden on desktop
-    @media (min-width: 769px) {
+    @media (min-width: 1000px) {
         display: none !important;
 
         .navbar__mobile-controls {
@@ -414,13 +424,13 @@ body.mobile-nav-open {
 
 // Responsive utility classes
 .mobile-only {
-    @media (min-width: 769px) {
+    @media (min-width: 1000px) {
         display: none !important;
     }
 }
 
 .desktop-only {
-    @media (max-width: 768px) {
+    @media (max-width: 999px) {
         display: none !important;
     }
 }
@@ -449,7 +459,7 @@ body.mobile-nav-open {
     }
 }
 
-@media (max-width: 768px) {
+@media (max-width: 999px) {
     .navbar {
         width: 95%;
         padding: 0.5rem 1rem;
@@ -842,7 +852,7 @@ body.mobile-nav-open {
 }
 
 // Light theme mobile expanded state
-@media (max-width: 768px) {
+@media (max-width: 999px) {
     [data-theme="light"] .navbar--mobile-expanded {
         background-color: rgba(255, 255, 255, 0.95) !important;
 
