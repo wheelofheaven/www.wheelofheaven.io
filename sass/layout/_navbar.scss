@@ -315,15 +315,8 @@ body.mobile-nav-open {
         }
     }
 
-    &__lang-icon {
-        flex-shrink: 0;
-        color: var(--color-text-muted);
-    }
-
     &__lang-current {
         font-weight: 500;
-        text-transform: uppercase;
-        letter-spacing: 0.025em;
     }
 
     &__lang-chevron {
