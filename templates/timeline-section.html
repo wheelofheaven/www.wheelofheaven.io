@@ -199,6 +199,36 @@ load_data(path="data/ages.json") %}
 </div>
 
 <script src="/js/timeline.js"></script>
+<script>
+// Space overlay detection for light theme readability
+(function() {
+    const worldAgesSection = document.querySelector('.world-ages-section');
+    if (!worldAgesSection) return;
+
+    function updateSpaceOverlay() {
+        const isLightTheme = document.documentElement.getAttribute('data-theme') === 'light';
+        const rect = worldAgesSection.getBoundingClientRect();
+        // User is in space section if world-ages-section hasn't reached the top of viewport yet
+        const inSpaceSection = rect.top > 100;
+
+        if (isLightTheme && inSpaceSection) {
+            document.body.classList.add('timeline-space-overlay');
+        } else {
+            document.body.classList.remove('timeline-space-overlay');
+        }
+    }
+
+    // Run on scroll
+    window.addEventListener('scroll', updateSpaceOverlay, { passive: true });
+
+    // Run on theme change
+    const observer = new MutationObserver(updateSpaceOverlay);
+    observer.observe(document.documentElement, { attributes: true, attributeFilter: ['data-theme'] });
+
+    // Initial check
+    updateSpaceOverlay();
+})();
+</script>
 
 <!-- World Ages Cards Section -->
 <section class="world-ages-section" aria-labelledby="world-ages-heading">

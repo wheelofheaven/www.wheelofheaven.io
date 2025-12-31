@@ -954,3 +954,132 @@ body.mobile-nav-open {
         }
     }
 }
+
+// Timeline space overlay - use dark-like styling when in light theme over dark space background
+body.timeline-space-overlay {
+    .navbar {
+        background-color: rgba(27, 31, 34, 0.6);
+        border-color: rgba(255, 255, 255, 0.15);
+        color: rgba(255, 255, 255, 0.95);
+
+        // Logo
+        &__logo {
+            color: rgba(255, 255, 255, 0.95);
+
+            svg {
+                fill: rgba(255, 255, 255, 0.95);
+            }
+        }
+
+        // Navigation links
+        &__link {
+            color: rgba(255, 255, 255, 0.9);
+
+            &:hover {
+                background-color: rgba(255, 255, 255, 0.1);
+                color: var(--color-accent-primary);
+            }
+
+            &--active {
+                color: var(--color-accent-primary);
+            }
+        }
+
+        // Dropdown triggers
+        &__dropdown-trigger {
+            color: rgba(255, 255, 255, 0.9);
+
+            &:hover {
+                background-color: rgba(255, 255, 255, 0.1);
+                color: var(--color-accent-primary);
+            }
+        }
+
+        // Language dropdown
+        &__lang-trigger {
+            color: rgba(255, 255, 255, 0.9);
+            border-color: rgba(255, 255, 255, 0.2);
+
+            &:hover {
+                border-color: var(--color-accent-primary);
+                color: var(--color-accent-primary);
+            }
+        }
+
+        &__lang-menu {
+            background-color: rgba(27, 31, 34, 0.95);
+            border-color: rgba(255, 255, 255, 0.15);
+        }
+
+        &__lang-option {
+            color: rgba(255, 255, 255, 0.9);
+
+            &:hover {
+                background-color: rgba(255, 255, 255, 0.1);
+            }
+
+            &--active {
+                color: var(--color-accent-primary);
+            }
+        }
+
+        // Theme toggle
+        &__theme-toggle {
+            color: rgba(255, 255, 255, 0.9);
+
+            &:hover {
+                background-color: rgba(255, 255, 255, 0.1);
+                color: var(--color-accent-primary);
+            }
+        }
+
+        // Search input
+        &__search-input {
+            background-color: rgba(255, 255, 255, 0.1);
+            border-color: rgba(255, 255, 255, 0.2);
+            color: rgba(255, 255, 255, 0.95);
+
+            &::placeholder {
+                color: rgba(255, 255, 255, 0.5);
+            }
+
+            &:focus {
+                border-color: var(--color-accent-primary);
+            }
+        }
+
+        // Mobile toggles
+        &__mobile-toggle {
+            color: rgba(255, 255, 255, 0.9);
+
+            &:hover {
+                background-color: rgba(255, 255, 255, 0.1);
+            }
+        }
+    }
+
+    // Dropdown menus
+    .navbar-dropdown {
+        &__container {
+            background-color: rgba(27, 31, 34, 0.95);
+            border-color: rgba(255, 255, 255, 0.15);
+            box-shadow: 0 8px 32px rgba(0, 0, 0, 0.4);
+        }
+
+        &__section-title {
+            color: rgba(255, 255, 255, 0.7);
+        }
+
+        &__link {
+            color: rgba(255, 255, 255, 0.9);
+
+            &:hover {
+                background-color: rgba(255, 255, 255, 0.08);
+            }
+        }
+
+        &__link-description {
+            color: rgba(255, 255, 255, 0.6);
+        }
+    }
+}
