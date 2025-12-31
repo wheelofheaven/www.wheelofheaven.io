@@ -674,10 +674,14 @@ main:has(.timeline-section) {
 // Responsive Design
 @media (max-width: 768px) {
     .timeline-section {
-        height: auto;
+        height: 100vh;
+        height: 100dvh; // Use dynamic viewport height on mobile
         min-height: 100vh;
         position: relative;
-        overflow: visible;
+        overflow: hidden;
+        display: flex;
+        align-items: center;
+        justify-content: center;
     }
 
     .timeline-content {
@@ -685,111 +689,175 @@ main:has(.timeline-section) {
     }
 
     .starmap-background {
-        position: fixed;
+        position: absolute;
         top: 0;
         left: 0;
         width: 100%;
-        height: 100vh;
+        height: 100%;
         z-index: 1;
     }
 
     .earth-container {
-        position: fixed;
-        top: 60%;
+        position: absolute;
+        bottom: -150px;
         left: 50%;
-        transform: translate(-50%, -50%);
-        width: 200px;
-        height: 200px;
-        z-index: 6;
+        transform: translateX(-50%);
+        width: 300px;
+        height: 300px;
+        z-index: 2;
+        opacity: 0.5;
     }
 
     .earth-sunrise {
-        position: fixed;
-        top: 40%;
-        left: 30%;
-        transform: translate(-50%, -50%);
-        width: 60px;
-        height: 60px;
-        z-index: 5;
+        position: absolute;
+        bottom: 100px;
+        left: calc(50% + 100px);
+        transform: translateX(-50%);
+        width: 80px;
+        height: 80px;
+        z-index: 2;
+        opacity: 0.6;
     }
 
     .age-card-container {
         position: relative;
-        width: 100%;
-        max-width: none;
+        width: calc(100% - 2rem);
+        max-width: 400px;
         top: auto;
         right: auto;
+        left: auto;
         z-index: 10;
-        background: var(--color-background);
-        margin-top: 100vh;
-        padding: 2rem 1rem;
+        background: transparent;
+        margin: 0;
+        padding: 0;
+        transform: none;
+
+        // Navigation buttons on mobile - inside the viewport
+        .timeline-nav__btn {
+            position: absolute;
+            top: 50%;
+            transform: translateY(-50%);
+            width: 44px;
+            height: 80px;
+            border-radius: 0.75rem;
+            background: rgba(0, 0, 0, 0.3);
+            border: 1px solid rgba(255, 255, 255, 0.2);
+            backdrop-filter: blur(10px);
+
+            &--prev {
+                left: -52px;
+            }
+
+            &--next {
+                right: -52px;
+            }
+
+            svg {
+                width: 20px;
+                height: 20px;
+            }
+        }
     }
 
     .age-card {
-        background: var(--color-card-bg);
-        border: 1px solid var(--color-border);
-        box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+        background: rgba(0, 0, 0, 0.6);
+        border: 1px solid rgba(255, 255, 255, 0.2);
+        box-shadow: 0 8px 32px rgba(0, 0, 0, 0.4);
+        backdrop-filter: blur(20px) saturate(180%);
+        -webkit-backdrop-filter: blur(20px) saturate(180%);
         padding: 1.5rem;
-        border-radius: 16px;
+        padding-bottom: 4.5rem;
+        border-radius: 1rem;
         margin: 0 auto;
         max-width: 100%;
+
+        &::before {
+            background: rgba(255, 255, 255, 0.1);
+        }
+    }
+
+    .age-card__symbol {
+        width: 44px;
+        height: 44px;
+        font-size: 1.25rem;
     }
 
     .age-card__title {
-        color: var(--color-text);
-        font-size: 1.4rem;
+        color: rgba(255, 255, 255, 0.95);
+        font-size: 1.25rem;
         margin-bottom: 0.5rem;
+        padding-right: 50px;
     }
 
     .age-card__timespan {
-        color: var(--color-text-muted);
-        font-size: 0.9rem;
-        margin-bottom: 0.5rem;
+        color: rgba(255, 255, 255, 0.7);
+        font-size: 0.8rem;
+        margin-bottom: 0.75rem;
     }
 
     .age-card__description {
-        color: var(--color-text);
-        font-size: 0.9rem;
+        color: rgba(255, 255, 255, 0.85);
+        font-size: 0.875rem;
         line-height: 1.5;
         margin-bottom: 1rem;
+        max-height: 120px;
+        overflow-y: auto;
     }
 
-    .timeline-nav {
-        position: fixed;
-        bottom: 2rem;
-        left: 1rem;
-        right: 1rem;
-        display: flex;
-        justify-content: space-between;
-        z-index: 15;
+    .age-card__footer {
+        border-top-color: rgba(255, 255, 255, 0.15);
+        padding-top: 0.75rem;
     }
 
-    .timeline-nav__btn {
-        background: var(--color-card-bg);
-        border: 2px solid var(--color-border);
-        padding: 0.75rem;
-        border-radius: 50%;
-        color: var(--color-text);
-        min-width: 48px;
-        min-height: 48px;
-        display: flex;
-        align-items: center;
-        justify-content: center;
-        box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+    .age-card__link {
+        padding: 0.75rem 1.5rem;
+        font-size: 0.8rem;
+    }
+
+    .age-card__images {
+        margin: 0.75rem -1.5rem 0;
+    }
+
+    .age-card__image {
+        height: 80px;
     }
 
     .age-progress {
-        position: fixed;
-        bottom: 6rem;
-        left: 50%;
-        transform: translateX(-50%);
-        width: auto;
-        max-width: 90%;
-        z-index: 15;
+        position: absolute;
+        bottom: 0;
+        left: 0;
+        right: 0;
+        border-radius: 0 0 1rem 1rem;
+        padding: 0.75rem;
     }
 
-    .age-selector {
-        display: none;
+    .age-progress__segments {
+        height: 16px;
+    }
+
+    .age-progress__segment {
+        font-size: 0.4rem;
+    }
+
+    .age-selector__dropdown {
+        bottom: calc(100% + 10px);
+        left: 0.75rem;
+        right: 0.75rem;
+        max-height: 250px;
+    }
+
+    // Swipe hint
+    .timeline-section::after {
+        content: "";
+        position: absolute;
+        bottom: 1.5rem;
+        left: 50%;
+        transform: translateX(-50%);
+        width: 40px;
+        height: 4px;
+        background: rgba(255, 255, 255, 0.3);
+        border-radius: 2px;
+        z-index: 20;
     }
 }
 
