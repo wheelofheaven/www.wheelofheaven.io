@@ -3,7 +3,7 @@ title = "Élohim"
 description = "Elohim (אֱלֹהִים), le pluriel de Eloha (אֱלוֹהַּ), signifie littéralement les Puissants ou plus figurativement, ceux d'en haut, les Célestes. Le nom donné aux dieux bibliques qui sont eux-mêmes une civilisation scientifiquement très avancée, capable de voyager entre les étoiles, de terraformer des planètes et de synthétiser la vie."
 +++
 
-Le terme Elohim (hébreu : אֱלֹהִים, 'ēlohîm) est un mot hébreu utilisé dans l'Ancien Testament de la Bible et est généralement traduit par Dieu. C'est un nom pluriel, et son utilisation a suscité de nombreux débats parmi les chercheurs bibliques quant à sa signification.
+Le terme Elohim (hébreu : <span class="hebrew">אֱלֹהִים</span>, 'ēlohîm) est un mot hébreu utilisé dans l'Ancien Testament de la Bible et est généralement traduit par Dieu. C'est un nom pluriel, et son utilisation a suscité de nombreux débats parmi les chercheurs bibliques quant à sa signification.
 
 Dans le judaïsme traditionnel et le christianisme, l'utilisation d'un nom pluriel pour décrire Dieu est interprétée comme un pluriel de majesté, de manière similaire à la façon dont un roi peut se référer à lui-même en utilisant le "nous" royal. Cependant, certains chercheurs bibliques et traditions religieuses adoptent une approche différente de l'utilisation du nom pluriel "Elohim". Certains soutiennent qu'il est la preuve d'une croyance polythéiste dans l'ancien Proche-Orient, où le terme désignait un conseil de dieux responsables de différents aspects du monde. Selon cette interprétation, le concept de monothéisme, la croyance en un seul Dieu, a évolué progressivement au fil du temps dans l'ancien Israël.
 
@@ -13,9 +13,9 @@ La pluralité d'Elohim, si elle est acceptée, remettrait en question la compré
 
 ## Étymologie
 
-Le mot Elohim provient de l'hébreu biblique ʾélôhím (אֱלֹהִים / אֱלוֹהִים), qui est la forme plurielle de ʾélôah (אֱלוֹהַּ). Ce terme est une forme étendue de ʾēl (אֵל), dont la racine sémitique est ʾlh ou ʾl.[^1] Dans sa forme plurielle ʾilhm, il désigne les "puissances" ou, lorsqu'il est appliqué à un sujet, les "puissants".[^2]
+Le mot Elohim provient de l'hébreu biblique ʾélôhím (<span class="hebrew">אֱלֹהִים / אֱלוֹהִים</span>), qui est la forme plurielle de ʾélôah (<span class="hebrew">אֱלוֹהַּ</span>). Ce terme est une forme étendue de ʾēl (<span class="hebrew">אֵל</span>), dont la racine sémitique est ʾlh ou ʾl.[^1] Dans sa forme plurielle ʾilhm, il désigne les "puissances" ou, lorsqu'il est appliqué à un sujet, les "puissants".[^2]
 
-La plus ancienne langue sémitique connue est l'akkadien, et son équivalent de ʾēl (אֵל) est ilum. Ilum, à son tour, est dérivé du proto-sémitique *ʔil-.[^3] L'écriture cunéiforme sumérienne était utilisée pour écrire l'akkadien, et ilum peut être représenté en cunéiforme sous forme de logogramme (𒀭), de syllabes (𒄿𒈝) ou d'une combinaison des deux (𒀭𒈝).[^4]
+La plus ancienne langue sémitique connue est l'akkadien, et son équivalent de ʾēl (<span class="hebrew">אֵל</span>) est ilum. Ilum, à son tour, est dérivé du proto-sémitique *ʔil-.[^3] L'écriture cunéiforme sumérienne était utilisée pour écrire l'akkadien, et ilum peut être représenté en cunéiforme sous forme de logogramme (𒀭), de syllabes (𒄿𒈝) ou d'une combinaison des deux (𒀭𒈝).[^4]
 
 Le logogramme 𒀭 (DINGIR) représente un dieu individuel,[^5] tandis que sous forme d'idéogramme, il représente "ciel" ou "paradis".[^6] Le mot sumérien 𒀭𒀀𒉣𒈾 (prononcé Annunaki) contient 𒀭 comme ān, ce qui signifie "ciel".[^7]
 
@@ -69,7 +69,7 @@ Plus tard dans le même livre, il traduit avec diligence les premiers passages d
 >
 >> Et les Elohìm créèrent l'homme à leur image. À l'image des Elohìm, ils le créèrent. Il les créa mâle et femelle.
 >
-> En bref, l'auteur veut nous dire que les Elohìm (terme sémitique au pluriel pour les "seigneurs d'en haut") ont créé l'homme en utilisant leur "tselèm" (צֶלֶם). Mais qu'est-ce que le tselèm (צֶלֶם) ? Et pourquoi est-ce si important que cela soit souligné deux fois ?
+> En bref, l'auteur veut nous dire que les Elohìm (terme sémitique au pluriel pour les "seigneurs d'en haut") ont créé l'homme en utilisant leur "tselèm" (<span class="hebrew">צֶלֶם</span>). Mais qu'est-ce que le tselèm (<span class="hebrew">צֶלֶם</span>) ? Et pourquoi est-ce si important que cela soit souligné deux fois ?
 >
 > Avant d'approfondir le sens de cette racine sémitique, nous constatons que la Bible nous dit comment les Elohìms ont pris cette décision et ont dit "faisons", en utilisant une forme verbale hébraïque appelée "mode cohortatif" : une forme qui contient la valeur d'une exhortation, d'une invitation à agir, d'une sollicitation.
 >
@@ -165,7 +165,7 @@ As we've seen, Elohim seems to refer to an extraterrestrial civilization collect
 | Anaqiti                   | Those who from heaven to Earth came | Mauro Biglino                   |
 | Anunnaki (Sumerian: 𒀭𒀀𒉣𒈾) | Sky People                          | tbd                             |
 | Celestials                | People from the Sky                 | Jean Sendy                      |
-| Elohim (Hebrew: אֱלֹהִים)    | Powerful Ones, Sky People           | tbd                             |
+| Elohim (Hebrew: <span class="hebrew">אֱלֹהִים</span>)    | Powerful Ones, Sky People           | tbd                             |
 | Sky People                | People from the Sky                 | Jean Sendy, Paul Anthony Wallis |
 | Theosites                 | Inhabitants from Theos              | Jean Sendy                      |
 
@@ -189,9 +189,9 @@ The term Elohim is the plural form of Eloha, which means "Celestials" or "ones f
 - [Elohim | Jewish Encyclopedia](https://www.jewishencyclopedia.com/articles/5704-elohim)
 - [Names of God | Jewish Encyclopedia](https://www.jewishencyclopedia.com/articles/11305-names-of-god)
 
-[^1]: From Hebrew אֱלֹהִים/אֱלוֹהִים (ʾélôhím, “heavenly power”), plural of אֱלוֹהַּ (ʾélôah), often taken to be an expanded form of אֵל (ʾēl) See more: [Elohim | Wiktionary](https://en.wiktionary.org/wiki/Elohim)
+[^1]: From Hebrew <span class="hebrew">אֱלֹהִים/אֱלוֹהִים</span> (ʾélôhím, “heavenly power”), plural of <span class="hebrew">אֱלוֹהַּ</span> (ʾélôah), often taken to be an expanded form of <span class="hebrew">אֵל</span> (ʾēl) See more: [Elohim | Wiktionary](https://en.wiktionary.org/wiki/Elohim)
 [^2]: The Semitic root ʾlh (Arabic ʾilāh, Aramaic ʾAlāh, ʾElāh, Hebrew ʾelōah) may be ʾl with a parasitic h, and ʾl may be an abbreviated form of ʾlh. In Ugaritic the plural form meaning of ʾlh is ʾilhm, equivalent to Hebrew ʾelōhîm. See more: [El (deity | Wikipedia)](https://en.wikipedia.org/wiki/El_(deity))
-[^3]: From Proto-Semitic *ʔil-. Cognate with Arabic إِلٰه (ʔilāh) and Biblical Hebrew אֵל (ʔel). See more: [ilum | Wiktionary](https://en.m.wiktionary.org/wiki/ilum#Akkadian)
+[^3]: From Proto-Semitic *ʔil-. Cognate with Arabic إِلٰه (ʔilāh) and Biblical Hebrew <span class="hebrew">אֵל</span> (ʔel). See more: [ilum | Wiktionary](https://en.m.wiktionary.org/wiki/ilum#Akkadian)
 [^4]: Cuneiform spellings as a Logogram is 𒀭 (DINGIR). The cuneiform spelling can also be represented in its phonetic form 𒄿𒈝 (i-lum) or its mixed form 𒀭𒈝 (DINGIR-lum). See more: [ilum | Wiktionary](https://en.m.wiktionary.org/wiki/ilum#Akkadian)
 [^5]: The cuneiform sign by itself was originally a star-shaped ideogram for the Sumerian word an ("sky" or "heaven"). Tts use was then extended to a logogram for the word diĝir ("god" or "goddess"). See more: [Dingir | Wikipedia](https://en.wikipedia.org/wiki/Dingir)
 [^6]: The ideogram (glyph) represents a drawing of a star. The Sumerogram therefore stands for "sky" or "heaven", the star-lid sky so to speak. See more: [Dingir | Wiktionary](https://en.wiktionary.org/wiki/%F0%92%80%AD)

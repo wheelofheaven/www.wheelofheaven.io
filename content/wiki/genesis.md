@@ -36,7 +36,7 @@ The idea that the "days" mentioned in the Biblical creation narrative of Genesis
 
 According to this interpretation, each "day" in the creation story would represent one of the 12 astrological ages in the precession cycle, with each age lasting approximately 2'160 years. Proponents of this interpretation argue that the seven days of creation correspond to the seven main astrological ages: Aries, Taurus, Gemini, Cancer, Leo, Virgo, and Libra.
 
-In the Hebrew language and in the Bible, the word "yom" (Hebrew: יום) is typically translated as "day" and is understood to refer to a 24-hour period. The idea that "yom" could mean a much longer period of time, such as a precessional month, is not a widely accepted interpretation within the scholarly community. However, the term can also be interpreted as meaning a general period of time, rather than a literal day.
+In the Hebrew language and in the Bible, the word "yom" (Hebrew: <span class="hebrew">יום</span>) is typically translated as "day" and is understood to refer to a 24-hour period. The idea that "yom" could mean a much longer period of time, such as a precessional month, is not a widely accepted interpretation within the scholarly community. However, the term can also be interpreted as meaning a general period of time, rather than a literal day.
 
 There are a few reasons for this. First, the word "yom" is used in different ways throughout the Bible. In some cases, it refers to a literal day, as in the day and night cycle. But in other contexts, it can refer to a longer period of time, such as an epoch or era. Also, the interpretation of "yom" as a longer period of time is supported by the use of the phrase "evening and morning" in the Book of Genesis. Some scholars suggest that this phrase may be used to signify the beginning and end of a creative period, rather than a literal day.
 
@@ -228,4 +228,4 @@ It is during the Age of Cancer that the well-known story of Adam and Eve in the 
 - [Genesis (Old Testament | Britannica)](https://www.britannica.com/topic/Genesis-Old-Testament)
 - [Genesis, the Book of. | Jewish Encyclopedia](https://www.jewishencyclopedia.com/articles/6580-genesis-the-book-of)
 
-[^1]: Yom (יוֹם) is translated as day (1115 times), days (635), today (172), time (45), chronicles (38), daily (22), always (14), years (13), life (12), long (11) age (8), yearly (5) and other meanings in the NASB Bible translation. See more: [Strong\'s Hebrew Lexicon, yom, #3117.](https://biblehub.com/hebrew/3117.htm)
+[^1]: Yom (<span class="hebrew">יוֹם</span>) is translated as day (1115 times), days (635), today (172), time (45), chronicles (38), daily (22), always (14), years (13), life (12), long (11) age (8), yearly (5) and other meanings in the NASB Bible translation. See more: [Strong\'s Hebrew Lexicon, yom, #3117.](https://biblehub.com/hebrew/3117.htm)

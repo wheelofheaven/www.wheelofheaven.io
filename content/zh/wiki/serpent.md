@@ -7,7 +7,7 @@ The Biblical Serpent refers to a serpent mentioned in the book of Genesis in the
 
 ## In the Bible
 
-In the [Bible](../../wiki/bible/), the serpent is mentioned in the Book of Genesis, specifically in Genesis 3. In the Hebrew source text, the serpent is written נָחָשׁ (nakhásh)[^lion] and plays a significant role in the account of [Adam and Eve](../../wiki/adam-and-eve/) in the [Garden of Eden](../../wiki/eden/). According to the biblical narrative, the serpent is depicted as cunning and deceptive.
+In the [Bible](../../wiki/bible/), the serpent is mentioned in the Book of Genesis, specifically in Genesis 3. In the Hebrew source text, the serpent is written <span class="hebrew">נָחָשׁ</span> (nakhásh)[^lion] and plays a significant role in the account of [Adam and Eve](../../wiki/adam-and-eve/) in the [Garden of Eden](../../wiki/eden/). According to the biblical narrative, the serpent is depicted as cunning and deceptive.
 
 In Genesis 3:1, the serpent is introduced: "Now the serpent was more crafty than any other beast of the field that the Elohim had made." The serpent approaches Eve and engages her in a conversation, questioning the command given by the [Elohim](../../wiki/elohim/) regarding eating from the [tree of the knowledge of good and evil](../../wiki/tree-of-the-knowledge-of-good-and-evil/).
 

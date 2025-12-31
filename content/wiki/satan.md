@@ -15,7 +15,7 @@ In the Bible, Satan is first mentioned in the book of Job as a member of God's c
 
 ## Etymology
 
-The word Satan comes from the Hebrew word הַשָּׂטָן (ha-Satan), which means _the accuser_ or _the adversary_. In the [Hebrew Bible](../bible.md/), the term Satan was used to refer to a divine being who acted as a prosecuting attorney in God's court, accusing individuals of wrongdoing and testing their faithfulness. This understanding of Satan was adopted by early Christians and later became central to the development of the Christian idea of Satan as a tempter and the enemy of God.
+The word Satan comes from the Hebrew word <span class="hebrew">הַשָּׂטָן</span> (ha-Satan), which means _the accuser_ or _the adversary_. In the [Hebrew Bible](../bible.md/), the term Satan was used to refer to a divine being who acted as a prosecuting attorney in God's court, accusing individuals of wrongdoing and testing their faithfulness. This understanding of Satan was adopted by early Christians and later became central to the development of the Christian idea of Satan as a tempter and the enemy of God.
 
 ## In Raëlism 🔯
 

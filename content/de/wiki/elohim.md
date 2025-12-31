@@ -3,7 +3,7 @@ title = "Elohim"
 description = "Elohim (אֱלֹהִים), die Mehrzahl von Eloha (אֱלוֹהַּ), bedeutet wörtlich die Mächtigen oder figurativ diejenigen von oben, die Himmlischen. Der Name, der den biblischen Göttern gegeben wurde, die wiederum eine wissenschaftlich hochentwickelte Zivilisation sind, fähig zu interstellarem Reisen, Planeten-Terraforming und Synthetisierung von Leben."
 +++
 
-Der Begriff Elohim (Hebräisch: אֱלֹהִים, 'ēlohîm) ist ein hebräisches Wort, das im Alten Testament der Bibel verwendet wird und normalerweise als Gott übersetzt wird. Es handelt sich um ein Pluralnomen, und seine Verwendung hat zu vielen Debatten unter biblischen Gelehrten über seine Bedeutung geführt.
+Der Begriff Elohim (Hebräisch: <span class="hebrew">אֱלֹהִים</span>, 'ēlohîm) ist ein hebräisches Wort, das im Alten Testament der Bibel verwendet wird und normalerweise als Gott übersetzt wird. Es handelt sich um ein Pluralnomen, und seine Verwendung hat zu vielen Debatten unter biblischen Gelehrten über seine Bedeutung geführt.
 
 In der traditionellen jüdischen und christlichen Lehre wird die Verwendung eines Pluralnomens zur Beschreibung Gottes als Plural der Majestät verstanden, ähnlich wie ein König von sich selbst im königlichen "Wir" sprechen würde. Einige biblische Gelehrte und religiöse Traditionen haben jedoch einen anderen Ansatz für die Verwendung des Pluralnomens "Elohim" gewählt. Einige argumentieren, dass dies ein Beweis für einen polytheistischen Glauben im antiken Nahen Osten ist, in dem der Begriff einen Rat von Göttern bezeichnete, die für verschiedene Aspekte der Welt verantwortlich waren. In dieser Interpretation entwickelte sich das Konzept des Monotheismus, der Glaube an einen einzigen Gott, allmählich im antiken Israel.
 
@@ -13,9 +13,9 @@ Die Mehrzahl von Elohim, falls akzeptiert, würde das traditionelle Verständnis
 
 ## Etymologie
 
-Das Wort Elohim stammt aus dem biblischen Hebräisch ʾélôhím (אֱלֹהִים / אֱלוֹהִים), das die Mehrzahlform von ʾélôah (אֱלוֹהַּ) ist. Dieser Begriff ist eine erweiterte Form von ʾēl (אֵל), dessen semitische Wurzel ʾlh oder ʾl ist.[^1] In seiner Mehrzahlform ʾilhm bedeutet es "Mächte" oder, wenn auf ein Subjekt angewendet, "Mächtige".[^2]
+Das Wort Elohim stammt aus dem biblischen Hebräisch ʾélôhím (<span class="hebrew">אֱלֹהִים / אֱלוֹהִים</span>), das die Mehrzahlform von ʾélôah (<span class="hebrew">אֱלוֹהַּ</span>) ist. Dieser Begriff ist eine erweiterte Form von ʾēl (<span class="hebrew">אֵל</span>), dessen semitische Wurzel ʾlh oder ʾl ist.[^1] In seiner Mehrzahlform ʾilhm bedeutet es "Mächte" oder, wenn auf ein Subjekt angewendet, "Mächtige".[^2]
 
-Die älteste bekannte semitische Sprache ist Akkadisch, und das äquivalente Wort zu ʾēl (אֵל) ist ilum. Ilum wiederum leitet sich vom protosemitischen *ʔil- ab.[^3] Die sumerische Keilschrift wurde verwendet, um Akkadisch zu schreiben, und ilum kann als Logogramm (𒀭), Silben (𒄿𒈝) oder eine Kombination von beidem (𒀭𒈝) dargestellt werden.[^4]
+Die älteste bekannte semitische Sprache ist Akkadisch, und das äquivalente Wort zu ʾēl (<span class="hebrew">אֵל</span>) ist ilum. Ilum wiederum leitet sich vom protosemitischen *ʔil- ab.[^3] Die sumerische Keilschrift wurde verwendet, um Akkadisch zu schreiben, und ilum kann als Logogramm (𒀭), Silben (𒄿𒈝) oder eine Kombination von beidem (𒀭𒈝) dargestellt werden.[^4]
 
 Das Logogramm 𒀭 (DINGIR) repräsentiert einen individuellen Gott,[^5] während es als Ideogramm "Himmel" oder "Himmelreich" repräsentiert.[^6] Das sumerische Wort 𒀭𒀀𒉣𒈾 (ausgesprochen Annunaki) enthält 𒀭 als ān, was "Himmel" bedeutet.[^7]
 
@@ -69,7 +69,7 @@ Später im selben Buch übersetzt er die frühen Genesis-Passagen gewissenhaft w
 >
 >> Und die Elohìm machten den Menschen nach ihrem Ebenbild. Nach dem Ebenbild der Elohìm machten sie [ihn]. Männlich und weiblich machten sie [sie].
 >
-> Kurz gesagt, der Autor möchte uns mitteilen, dass die Elohìm (semitischer Pluralbegriff für die „Herrscher von oben“) den Menschen durch Verwendung ihres „tselèm“ (צֶלֶם) gemacht haben. Aber was ist tselèm (צֶלֶם)? Und warum war dies so wichtig, dass es zweimal betont wird?
+> Kurz gesagt, der Autor möchte uns mitteilen, dass die Elohìm (semitischer Pluralbegriff für die „Herrscher von oben“) den Menschen durch Verwendung ihres „tselèm“ (<span class="hebrew">צֶלֶם</span>) gemacht haben. Aber was ist tselèm (<span class="hebrew">צֶלֶם</span>)? Und warum war dies so wichtig, dass es zweimal betont wird?
 >
 > Bevor wir die tiefere Bedeutung dieser semitischen Wurzel sehen, stellen wir fest, dass uns die Bibel zeigt, wie die Elohìms diese Entscheidung getroffen haben und sagten „lasst uns machen“, indem sie eine hebräische Verbform verwenden, die als „Kohortativ“ bezeichnet wird: eine Form, die den Wert einer Aufforderung, einer Einladung zum Handeln, einer Ermunterung enthält.
 >
@@ -165,7 +165,7 @@ Wie wir gesehen haben, scheint Elohim auf eine außerirdische Zivilisation zu ve
 | Anaqiti                   | Diejenigen, die vom Himmel zur Erde kamen | Mauro Biglino               |
 | Anunnaki (Sumerisch: 𒀭𒀀𒉣𒈾) | Himmelsvolk                          | tbd                             |
 | Himmlische                | Menschen vom Himmel                   | Jean Sendy                      |
-| Elohim (Hebräisch: אֱלֹהִים)    | Mächtige, Himmelsvolk              | tbd                             |
+| Elohim (Hebräisch: <span class="hebrew">אֱלֹהִים</span>)    | Mächtige, Himmelsvolk              | tbd                             |
 | Himmelsvolk               | Menschen vom Himmel                   | Jean Sendy, Paul Anthony Wallis |
 | Theositen                 | Bewohner von Theos                    | Jean Sendy                      |
 
@@ -189,9 +189,9 @@ Der Begriff Elohim ist die Pluralform von Eloha, was "Himmlische" oder "diejenig
 - [Elohim | Jewish Encyclopedia](https://www.jewishencyclopedia.com/articles/5704-elohim)
 - [Namen Gottes | Jewish Encyclopedia](https://www.jewishencyclopedia.com/articles/11305-names-of-god)
 
-[^1]: Vom Hebräischen אֱלֹהִים/אֱלוֹהִים (ʾélôhím, „himmlische Kraft“), Plural von אֱלוֹהַּ (ʾélôah), oft als erweiterte Form von אֵל (ʾēl) aufgefasst. Weitere Informationen: [Elohim | Wiktionary](https://de.wiktionary.org/wiki/Elohim)
+[^1]: Vom Hebräischen <span class="hebrew">אֱלֹהִים/אֱלוֹהִים</span> (ʾélôhím, „himmlische Kraft“), Plural von <span class="hebrew">אֱלוֹהַּ</span> (ʾélôah), oft als erweiterte Form von <span class="hebrew">אֵל</span> (ʾēl) aufgefasst. Weitere Informationen: [Elohim | Wiktionary](https://de.wiktionary.org/wiki/Elohim)
 [^2]: Die semitische Wurzel ʾlh (Arabisch ʾilāh, Aramäisch ʾAlāh, ʾElāh, Hebräisch ʾelōah) kann ʾl mit einem parasitären h sein, und ʾl kann eine abgekürzte Form von ʾlh sein. Im Ugaritischen lautet die Pluralform von ʾlh ʾilhm, gleichbedeutend mit dem Hebräischen ʾelōhîm. Weitere Informationen: [El (Gottheit) | Wikipedia](https://de.wikipedia.org/wiki/El_(Gottheit))
-[^3]: Vom Protosemitischen *ʔil-. Verwandt mit Arabisch إِلٰه (ʔilāh) und Biblischem Hebräisch אֵל (ʔel). Weitere Informationen: [ilum | Wiktionary](https://en.m.wiktionary.org/wiki/ilum#Akkadian)
+[^3]: Vom Protosemitischen *ʔil-. Verwandt mit Arabisch إِلٰه (ʔilāh) und Biblischem Hebräisch <span class="hebrew">אֵל</span> (ʔel). Weitere Informationen: [ilum | Wiktionary](https://en.m.wiktionary.org/wiki/ilum#Akkadian)
 [^4]: Die Keilschriftschreibweise als Logogramm ist 𒀭 (DINGIR). Die keilschriftliche Schreibweise kann auch in ihrer phonetischen Form 𒄿𒈝 (i-lum) oder ihrer gemischten Form 𒀭𒈝 (DINGIR-lum) dargestellt werden. Weitere Informationen: [ilum | Wiktionary](https://en.m.wiktionary.org/wiki/ilum#Akkadian)
 [^5]: Das Keilschriftzeichen an sich war ursprünglich ein sternenförmiges Ideogramm für das sumerische Wort an ("Himmel"). Sein Gebrauch wurde dann auf ein Logogramm für das Wort diĝir ("Gott" oder "Göttin") erweitert. Weitere Informationen: [Dingir | Wikipedia](https://de.wikipedia.org/wiki/Dingir)
 [^6]: Das Ideogramm (Glyph) stellt eine Zeichnung eines Sterns dar. Das Sumerogramm steht daher für "Himmel" oder "Himmel", den sterndeckel Himmel sozusagen. Weitere Informationen: [Dingir | Wiktionary](https://en.wiktionary.org/wiki/%F0%92%80%AD)

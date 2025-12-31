@@ -17,9 +17,9 @@ In popular culture, the Leviathan has been depicted in many different ways, ofte
 
 ## Etymology
 
-The term Leviathan originates from the Hebrew word לִוְיָתָן (livyāthān), which appears in the Hebrew Bible (Old Testament) in several books, including Job, Psalms, and Isaiah. This term is often used to denote a large sea creature or monster.
+The term Leviathan originates from the Hebrew word <span class="hebrew">לִוְיָתָן</span> (livyāthān), which appears in the Hebrew Bible (Old Testament) in several books, including Job, Psalms, and Isaiah. This term is often used to denote a large sea creature or monster.
 
-The root of the word לִוְיָתָן (livyāthān) is believed to be derived from the Hebrew verb לוה (lāvāh), which means "to twist" or "to coil", which could be a reference to the creature's serpentine or coiling nature.[^twist]
+The root of the word <span class="hebrew">לִוְיָתָן</span> (livyāthān) is believed to be derived from the Hebrew verb <span class="hebrew">לוה</span> (lāvāh), which means "to twist" or "to coil", which could be a reference to the creature's serpentine or coiling nature.[^twist]
 
 [^twist]: Compound of לִוְיָה (livyá, "garland, wreath") and -תָּן (-tan, agentive suffix), meaning "the tortuous one" or the "twisting one". See here for more: [לויתן | Wiktionary](https://en.wiktionary.org/wiki/%D7%9C%D7%95%D7%99%D7%AA%D7%9F)
 
@@ -68,7 +68,7 @@ This motif appears in the battles between Thor and Jörmungandr in Norse mytholo
 
 ## Chaoskampf, or the war in space
 
-The term Chaoskampf is derived from the German words "chaos" and "kampf", meaning struggle or battle. Chaos on the other hand originates from the Greek word χάος (kháos). Similarly to the Ancient Hebrew term תֹהוּ וָבֹהוּ (ṯōhū wā-ḇōhū)[^tohu], kháos referres not so much to disorder or entropy as it does in the contemporary understanding, but rather to the vast, empty space that existed _before the creation of the universe._[^chaos]
+The term Chaoskampf is derived from the German words "chaos" and "kampf", meaning struggle or battle. Chaos on the other hand originates from the Greek word χάος (kháos). Similarly to the Ancient Hebrew term <span class="hebrew">תֹהוּ</span> <span class="hebrew">וָבֹהוּ</span> (ṯōhū wā-ḇōhū)[^tohu], kháos referres not so much to disorder or entropy as it does in the contemporary understanding, but rather to the vast, empty space that existed _before the creation of the universe._[^chaos]
 
 In ancient Greek cosmogony, Khaos was the primeval state of existence from which the first gods emerged. It represented the gap between heaven and earth, or more accurately, the gap that existed before heaven and earth were separated. This chasm, void, or limitless space is what was embodied by the term "Khaos".
 

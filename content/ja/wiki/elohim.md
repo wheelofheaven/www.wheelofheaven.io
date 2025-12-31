@@ -3,7 +3,7 @@ title = "エロヒム"
 description = "エロヒム（ヘブライ語: אֱלֹהִים, 'ēlohîm）は、エロハ（ヘブライ語: אֱלוֹהַּ）の複数形であり、文字通り「強大な存在」または比喩的には「上からの者」「天上の者」という意味です。これは聖書の神々に与えられた名前であり、彼ら自身が星間旅行、惑星のテラフォーミング、生命合成が可能な科学的に高度に発達した文明です。"
 +++
 
-「エロヒム」という語（ヘブライ語: אֱלֹהִים, 'ēlohîm）は、聖書の旧約で使用されるヘブライ語の単語であり、一般的に神と翻訳されます。これは複数形の名詞であり、その使用は聖書学者の間でその重要性について多くの議論を引き起こしています。
+「エロヒム」という語（ヘブライ語: <span class="hebrew">אֱלֹהִים</span>, 'ēlohîm）は、聖書の旧約で使用されるヘブライ語の単語であり、一般的に神と翻訳されます。これは複数形の名詞であり、その使用は聖書学者の間でその重要性について多くの議論を引き起こしています。
 
 従来のユダヤ教やキリスト教では、神を表す複数形の名詞の使用は、王が王族の「私たち」という形で自己を指すのと同様に、威厳の複数形として理解されています。しかし、一部の聖書学者や宗教的伝統は、複数形の名詞「エロヒム」の使用に対して異なるアプローチを取っています。古代近東における多神教的な信仰を示す証拠と主張する者もいます。この解釈では、一神教、すなわち一神への信仰は、古代イスラエルで徐々に時間をかけて発展したとされています。
 
@@ -13,9 +13,9 @@ description = "エロヒム（ヘブライ語: אֱלֹהִים, 'ēlohîm）は
 
 ## 語源
 
-Elohimという言葉は、聖書のヘブライ語であるʾélôhím (אֱלֹהִים / אֱלוֹהִים)から来ています。これはʾélôah (אֱלוֹהַּ)の複数形であり、ʾēl (אֵל)の拡張形です。この語はʾlhまたはʾlというセム系のルートを持っています。[^1] ʾilhmという複数形では、「力」を意味する「力強い者」として解釈されます。[^2]
+Elohimという言葉は、聖書のヘブライ語であるʾélôhím (<span class="hebrew">אֱלֹהִים / אֱלוֹהִים</span>)から来ています。これはʾélôah (<span class="hebrew">אֱלוֹהַּ</span>)の複数形であり、ʾēl (<span class="hebrew">אֵל</span>)の拡張形です。この語はʾlhまたはʾlというセム系のルートを持っています。[^1] ʾilhmという複数形では、「力」を意味する「力強い者」として解釈されます。[^2]
 
-最古の知られているセム語はアッカド語であり、ʾēl (אֵル)の相当する語はilumです。ilumはプロトセム語の*ʔil-から派生しています。[^3] アッカド語の表記には、シュメール語の楔形文字が使用されており、ilumはロググラム（𒀭）、音節（𒄿𒈝）、またはその組み合わせ（𒀭𒈝）で表されることがあります。[^4]
+最古の知られているセム語はアッカド語であり、ʾēl (<span class="hebrew">אֵ</span>ル)の相当する語はilumです。ilumはプロトセム語の*ʔil-から派生しています。[^3] アッカド語の表記には、シュメール語の楔形文字が使用されており、ilumはロググラム（𒀭）、音節（𒄿𒈝）、またはその組み合わせ（𒀭𒈝）で表されることがあります。[^4]
 
 ロググラム𒀭 (DINGIR)は個々の神を表し、イデオグラムとしては「空」または「天国」を表します。[^5][^6] シュメール語の𒀭𒀀𒉣𒈾（アンヌナキと発音）は、𒀭を含むānという言葉で「空」を意味します。[^7]
 
@@ -69,7 +69,7 @@ Elohimという言葉は、聖書のヘブライ語であるʾélôhím (אֱל�
 >
 >> エロヒムは自分たちのかたちに人を造った。エロヒムのかたちにした。男と女を造った。
 >
-> 要するに、著者は、エロヒム（「上からの主」というセム語の複数形）が「ツェレム」（צֶלֶם）を使って人間を作ったことを私たちに伝えたいのです。しかし、「ツェレム」（צֶלֶם）とは何であり、なぜそれが2回も強調されるほど重要なのでしょうか？
+> 要するに、著者は、エロヒム（「上からの主」というセム語の複数形）が「ツェレム」（<span class="hebrew">צֶלֶם</span>）を使って人間を作ったことを私たちに伝えたいのです。しかし、「ツェレム」（<span class="hebrew">צֶלֶם</span>）とは何であり、なぜそれが2回も強調されるほど重要なのでしょうか？
 >
 > 以前の章で挙げた問題の解決策を見つけるために、エンキが彼のチームに与えたであろう複数の議論、仮説、提案の要約のようなものが、「命令法のムード」というヘブライ語の動詞形で使用されていることにも注目しています。
 >
@@ -102,7 +102,7 @@ Later on, in the same book, he diligently translates the early Genesis passages 
 >
 >> And the Elohìm made man with his image. With image of Elohìm he made. [He] made them male and female
 >
-> In short, the author wants to tell us that the Elohìm (Semitic plural term for the “lords from above”) made man by using their “tselèm” ( צֶלֶם). But what is tselèm (צֶלֶם)? And was this particular so important to point it out twice?
+> In short, the author wants to tell us that the Elohìm (Semitic plural term for the “lords from above”) made man by using their “tselèm” ( <span class="hebrew">צֶלֶם</span>). But what is tselèm (<span class="hebrew">צֶלֶם</span>)? And was this particular so important to point it out twice?
 >
 > Before seeing the deeper meaning of this Semitic root, we note that the Bible tells us how the Elohìms took this decision and said “let's do”, using a Hebrew verbal form that is called “cohortative mood”: a form that contains the value of an exhortation, an invitation to do, a solicitation.
 >
@@ -200,7 +200,7 @@ As we've seen, Elohim seems to refer to an extraterrestrial civilization collect
 | Anaqiti                   | Those who from heaven to Earth came | Mauro Biglino                   |
 | Anunnaki (Sumerian: 𒀭𒀀𒉣𒈾) | Sky People                          | tbd                             |
 | Celestials                | People from the Sky                 | Jean Sendy                      |
-| Elohim (Hebrew: אֱלֹהִים)    | Powerful Ones, Sky People           | tbd                             |
+| Elohim (Hebrew: <span class="hebrew">אֱלֹהִים</span>)    | Powerful Ones, Sky People           | tbd                             |
 | Sky People                | People from the Sky                 | Jean Sendy, Paul Anthony Wallis |
 | Theosites                 | Inhabitants from Theos              | Jean Sendy                      |
 
@@ -224,9 +224,9 @@ The term Elohim is the plural form of Eloha, which means "Celestials" or "ones f
 - [Elohim | Jewish Encyclopedia](https://www.jewishencyclopedia.com/articles/5704-elohim)
 - [Names of God | Jewish Encyclopedia](https://www.jewishencyclopedia.com/articles/11305-names-of-god)
 
-[^1]: From Hebrew אֱלֹהִים/אֱלוֹהִים (ʾélôhím, “heavenly power”), plural of אֱלוֹהַּ (ʾélôah), often taken to be an expanded form of אֵל (ʾēl) See more: [Elohim | Wiktionary](https://en.wiktionary.org/wiki/Elohim)
+[^1]: From Hebrew <span class="hebrew">אֱלֹהִים/אֱלוֹהִים</span> (ʾélôhím, “heavenly power”), plural of <span class="hebrew">אֱלוֹהַּ</span> (ʾélôah), often taken to be an expanded form of <span class="hebrew">אֵל</span> (ʾēl) See more: [Elohim | Wiktionary](https://en.wiktionary.org/wiki/Elohim)
 [^2]: The Semitic root ʾlh (Arabic ʾilāh, Aramaic ʾAlāh, ʾElāh, Hebrew ʾelōah) may be ʾl with a parasitic h, and ʾl may be an abbreviated form of ʾlh. In Ugaritic the plural form meaning of ʾlh is ʾilhm, equivalent to Hebrew ʾelōhîm. See more: [El (deity | Wikipedia)](https://en.wikipedia.org/wiki/El_(deity))
-[^3]: From Proto-Semitic *ʔil-. Cognate with Arabic إِلٰه (ʔilāh) and Biblical Hebrew אֵל (ʔel). See more: [ilum | Wiktionary](https://en.m.wiktionary.org/wiki/ilum#Akkadian)
+[^3]: From Proto-Semitic *ʔil-. Cognate with Arabic إِلٰه (ʔilāh) and Biblical Hebrew <span class="hebrew">אֵל</span> (ʔel). See more: [ilum | Wiktionary](https://en.m.wiktionary.org/wiki/ilum#Akkadian)
 [^4]: Cuneiform spellings as a Logogram is 𒀭 (DINGIR). The cuneiform spelling can also be represented in its phonetic form 𒄿𒈝 (i-lum) or its mixed form 𒀭𒈝 (DINGIR-lum). See more: [ilum | Wiktionary](https://en.m.wiktionary.org/wiki/ilum#Akkadian)
 [^5]: The cuneiform sign by itself was originally a star-shaped ideogram for the Sumerian word an ("sky" or "heaven"). Tts use was then extended to a logogram for the word diĝir ("god" or "goddess"). See more: [Dingir | Wikipedia](https://en.wikipedia.org/wiki/Dingir)
 [^6]: The ideogram (glyph) represents a drawing of a star. The Sumerogram therefore stands for "sky" or "heaven", the star-lid sky so to speak. See more: [Dingir | Wiktionary](https://en.wiktionary.org/wiki/%F0%92%80%AD)

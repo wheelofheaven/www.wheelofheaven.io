@@ -7,7 +7,7 @@ The Menorah has long been a central symbol in Jewish tradition, representing enl
 
 ## Etymology
 
-The word Menorah is of Hebrew origin, deriving from the word מְנוֹרָה (m'norá), pronounced 'men·ō·rä'. The term literally translates to lampstand in English. It is a compound of two root words: me'ir, meaning shining or giving light, and nor, meaning lamp or light. Hence, the Menorah symbolically represents a source of light. This is fitting given its historical use as a seven-branched lampstand, designed to hold seven lamps, in the temple of Jerusalem.
+The word Menorah is of Hebrew origin, deriving from the word <span class="hebrew">מְנוֹרָה</span> (m'norá), pronounced 'men·ō·rä'. The term literally translates to lampstand in English. It is a compound of two root words: me'ir, meaning shining or giving light, and nor, meaning lamp or light. Hence, the Menorah symbolically represents a source of light. This is fitting given its historical use as a seven-branched lampstand, designed to hold seven lamps, in the temple of Jerusalem.
 
 ## In Raëlism 🔯
 

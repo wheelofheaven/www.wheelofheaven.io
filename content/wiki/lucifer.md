@@ -17,7 +17,7 @@ In the [Bible](../bible.md/), the name Lucifer is first mentioned in the book of
 
 In Latin, the term Lucifer translates to light-bringer or morning star, originating from the Latin words "lux" meaning light and "ferre" meaning "to bring or carry". The term was originally used to refer to the planet Venus, which is the brightest object in the sky after the Sun and Moon and often appears just before dawn.
 
-The Hebrew term הֵילֵל בֶּן-שָׁחַר (Hêlêl ben Šāḥar) is found in the Hebrew Bible in the Book of Isaiah. It is typically translated as "son of the morning" or "son of the dawn". Helel means "shining one" or "bright one", while ben Shachar translates to "son of dawn" or "son of morning light". Much like Lucifer, this name was associated with the planet Venus, due to its brightness and appearance in the early morning sky. These names have often been connected with mythological and religious figures associated with light, pride, or rebellion.
+The Hebrew term <span class="hebrew">הֵילֵל</span> <span class="hebrew">בֶּן</span>-<span class="hebrew">שָׁחַר</span> (Hêlêl ben Šāḥar) is found in the Hebrew Bible in the Book of Isaiah. It is typically translated as "son of the morning" or "son of the dawn". Helel means "shining one" or "bright one", while ben Shachar translates to "son of dawn" or "son of morning light". Much like Lucifer, this name was associated with the planet Venus, due to its brightness and appearance in the early morning sky. These names have often been connected with mythological and religious figures associated with light, pride, or rebellion.
 
 ## In Raëlism 🔯
 

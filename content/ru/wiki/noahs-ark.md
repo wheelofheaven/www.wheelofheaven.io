@@ -15,7 +15,7 @@ The story of Noah's Ark is considered by many as a reminder of God's power and m
 
 ## Etymology
 
-In the Biblical source text, the word which is being used to describe Noah's Ark is תיבת נח (tevát noaḥ). The word for Ark, תיבת (tevát or tevá) signifies box or chest.
+In the Biblical source text, the word which is being used to describe Noah's Ark is <span class="hebrew">תיבת</span> <span class="hebrew">נח</span> (tevát noaḥ). The word for Ark, <span class="hebrew">תיבת</span> (tevát or tevá) signifies box or chest.
 
 ## In Raëlism 🔯
 

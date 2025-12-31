@@ -3,7 +3,7 @@ title = "以利沙"
 description = "以利沙（希伯来语：אֱלֹהִים，'ēlohîm'）是希伯来圣经中使用的希伯来语词汇，通常被翻译为神。它是一个复数名词，其使用在圣经学者之间引起了很多争议，涉及其意义。"
 +++
 
-以利沙（希伯来语：אֱלֹהִים，'ēlohîm'）是希伯来圣经中使用的一个词，通常被翻译为神。这是一个复数名词，其使用在圣经学者之间引发了许多关于其重要性的辩论。
+以利沙（希伯来语：<span class="hebrew">אֱלֹהִים</span>，'ēlohîm'）是希伯来圣经中使用的一个词，通常被翻译为神。这是一个复数名词，其使用在圣经学者之间引发了许多关于其重要性的辩论。
 
 在传统的犹太教和基督教中，使用复数名词来描述神被理解为一种尊贵的复数形式，类似于国王可能用皇家的“我们”来称呼自己的方式。然而，一些圣经学者和宗教传统对于“以利沙”这个复数名词的使用持有不同的观点。有人认为这是古代近东多神论信仰的证据，该术语指的是负责世界不同方面的众神委员会。根据这种解释，一神论的概念，即只信仰一个神，逐渐在古代以色列逐渐发展起来。
 
@@ -13,9 +13,9 @@ description = "以利沙（希伯来语：אֱלֹהִים，'ēlohîm'）是希
 
 ## 词源学
 
-Elohim一词源自圣经希伯来文ʾélôhím（אֱלֹהִים / אֱלוֹהִים），它是ʾélôah（אֱלוֹהַּ）的复数形式。这个词是ʾēl（אֵל）的扩展形式，它的闪族根源是ʾlh或ʾl。[^1] 在它的复数形式ʾilhm中，它表示"力量"，或者如果应用于一个主体，则表示"强大者"。[^2]
+Elohim一词源自圣经希伯来文ʾélôhím（<span class="hebrew">אֱלֹהִים / אֱלוֹהִים</span>），它是ʾélôah（<span class="hebrew">אֱלוֹהַּ</span>）的复数形式。这个词是ʾēl（<span class="hebrew">אֵל</span>）的扩展形式，它的闪族根源是ʾlh或ʾl。[^1] 在它的复数形式ʾilhm中，它表示"力量"，或者如果应用于一个主体，则表示"强大者"。[^2]
 
-已知的最古老的闪族语言是阿卡德语，ʾēl（אֵל）在阿卡德语中的对应词是ilum。而ilum又源自原始闪族语的*ʔil-。[^3] 用于书写阿卡德语的是苏美尔楔形文字，ilum可以用作一个表意符号（𒀭），音节符号（𒄿𒈝），或者两者的结合（𒀭𒈝）[^4]。
+已知的最古老的闪族语言是阿卡德语，ʾēl（<span class="hebrew">אֵל</span>）在阿卡德语中的对应词是ilum。而ilum又源自原始闪族语的*ʔil-。[^3] 用于书写阿卡德语的是苏美尔楔形文字，ilum可以用作一个表意符号（𒀭），音节符号（𒄿𒈝），或者两者的结合（𒀭𒈝）[^4]。
 
 表意符号𒀭（DINGIR）代表一个单独的神，而作为一个指示符号，它代表"天空"或"天堂"。[^5][^6]苏美尔语中的𒀭𒀀𒉣𒈾（发音为Annunaki）包含了𒀭作为ān，意思是"天空"。[^7]
 
@@ -69,7 +69,7 @@ Elohim一词源自圣经希伯来文ʾélôhím（אֱלֹהִים / אֱלוֹ�
 >
 >> 上帝造了人，乃是照着自己的形象，照着上帝的样式造的。他们是男的和女的。
 >
-> 简而言之，作者想要告诉我们，Elohìm（来自上方的主的塞米特复数形式）通过使用他们的“tselèm”（צֶלֶם）创造了人。但是，什么是tselèm（צֶלֶם）？为什么这么重要以至于要强调两次呢？
+> 简而言之，作者想要告诉我们，Elohìm（来自上方的主的塞米特复数形式）通过使用他们的“tselèm”（<span class="hebrew">צֶלֶם</span>）创造了人。但是，什么是tselèm（<span class="hebrew">צֶלֶם</span>）？为什么这么重要以至于要强调两次呢？
 >
 > 在看到这个塞米特语根的更深层含义之前，我们注意到圣经告诉我们，Elohìms做出了这个决定，并说“让我们来”，使用了一种希伯来语的动词形式，称为“命令式语气”：一种包含着鼓励、邀请、促请意义的形式。
 >
@@ -166,7 +166,7 @@ As we've seen, Elohim seems to refer to an extraterrestrial civilization collect
 | Anaqiti                   | Those who from heaven to Earth came | Mauro Biglino                   |
 | Anunnaki (Sumerian: 𒀭𒀀𒉣𒈾) | Sky People                          | tbd                             |
 | Celestials                | People from the Sky                 | Jean Sendy                      |
-| Elohim (Hebrew: אֱלֹהִים)    | Powerful Ones, Sky People           | tbd                             |
+| Elohim (Hebrew: <span class="hebrew">אֱלֹהִים</span>)    | Powerful Ones, Sky People           | tbd                             |
 | Sky People                | People from the Sky                 | Jean Sendy, Paul Anthony Wallis |
 | Theosites                 | Inhabitants from Theos              | Jean Sendy                      |
 
@@ -190,9 +190,9 @@ The term Elohim is the plural form of Eloha, which means "Celestials" or "ones f
 - [Elohim | Jewish Encyclopedia](https://www.jewishencyclopedia.com/articles/5704-elohim)
 - [Names of God | Jewish Encyclopedia](https://www.jewishencyclopedia.com/articles/11305-names-of-god)
 
-[^1]: From Hebrew אֱלֹהִים/אֱלוֹהִים (ʾélôhím, “heavenly power”), plural of אֱלוֹהַּ (ʾélôah), often taken to be an expanded form of אֵל (ʾēl) See more: [Elohim | Wiktionary](https://en.wiktionary.org/wiki/Elohim)
+[^1]: From Hebrew <span class="hebrew">אֱלֹהִים/אֱלוֹהִים</span> (ʾélôhím, “heavenly power”), plural of <span class="hebrew">אֱלוֹהַּ</span> (ʾélôah), often taken to be an expanded form of <span class="hebrew">אֵל</span> (ʾēl) See more: [Elohim | Wiktionary](https://en.wiktionary.org/wiki/Elohim)
 [^2]: The Semitic root ʾlh (Arabic ʾilāh, Aramaic ʾAlāh, ʾElāh, Hebrew ʾelōah) may be ʾl with a parasitic h, and ʾl may be an abbreviated form of ʾlh. In Ugaritic the plural form meaning of ʾlh is ʾilhm, equivalent to Hebrew ʾelōhîm. See more: [El (deity | Wikipedia)](https://en.wikipedia.org/wiki/El_(deity))
-[^3]: From Proto-Semitic *ʔil-. Cognate with Arabic إِلٰه (ʔilāh) and Biblical Hebrew אֵל (ʔel). See more: [ilum | Wiktionary](https://en.m.wiktionary.org/wiki/ilum#Akkadian)
+[^3]: From Proto-Semitic *ʔil-. Cognate with Arabic إِلٰه (ʔilāh) and Biblical Hebrew <span class="hebrew">אֵל</span> (ʔel). See more: [ilum | Wiktionary](https://en.m.wiktionary.org/wiki/ilum#Akkadian)
 [^4]: Cuneiform spellings as a Logogram is 𒀭 (DINGIR). The cuneiform spelling can also be represented in its phonetic form 𒄿𒈝 (i-lum) or its mixed form 𒀭𒈝 (DINGIR-lum). See more: [ilum | Wiktionary](https://en.m.wiktionary.org/wiki/ilum#Akkadian)
 [^5]: The cuneiform sign by itself was originally a star-shaped ideogram for the Sumerian word an ("sky" or "heaven"). Tts use was then extended to a logogram for the word diĝir ("god" or "goddess"). See more: [Dingir | Wikipedia](https://en.wikipedia.org/wiki/Dingir)
 [^6]: The ideogram (glyph) represents a drawing of a star. The Sumerogram therefore stands for "sky" or "heaven", the star-lid sky so to speak. See more: [Dingir | Wiktionary](https://en.wiktionary.org/wiki/%F0%92%80%AD)

@@ -26,7 +26,7 @@ If Kolob can be understood as Sirius and Kolob is the "heavenly body nearest to 
 
 [^1]: John Tvedtnes has done significant research into the Book of Abraham, which is a work of Latter-day Saints (Mormonism) scripture that the church's founder, Joseph Smith, claimed to have translated from Egyptian papyri. His work "Authentic Ancient Names and Words in the Book of Abraham and Related Kirtland Egyptian Papers" discusses the various names and words used in the Book of Abraham. The word Kolob appears in said text and refers to Sirius. [See here to read the book for yourself.](https://www.fairlatterdaysaints.org/wp-content/uploads/2011/11/2005-John-Tvedtnes.pdf)
 
-[^2]: In Hebrew, כלב or כֶּלֶב (pronounced kélev) means a dog, in particular a male dog. It derives from the Proto-Semitic *kalb-. Cognate with Akkadian 𒌨𒂠 (kalbum) and Arabic كَلْب (kalb).
+[^2]: In Hebrew, <span class="hebrew">כלב</span> or <span class="hebrew">כֶּלֶב</span> (pronounced kélev) means a dog, in particular a male dog. It derives from the Proto-Semitic *kalb-. Cognate with Akkadian 𒌨𒂠 (kalbum) and Arabic كَلْب (kalb).
 
 ## See also
 

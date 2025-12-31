@@ -9,11 +9,11 @@ The Garden of Eden is often equated with paradise on earth based on its depictio
 
 ## Etymology
 
-In [Hebrew](../../wiki/hebrew/), the term for the Garden of Eden is גַּן־עֵדֶן (gan-ʿĒḏen)[^garden], where גַּן (gan) means garden, and עֵדֶן ('éden) is a term that is a cognate of the Akkadian word 𒂊𒁲𒉡 (edinu or idīnum), which translates to desert or steppe. The Akkadian 𒂊𒁲𒉡 (idīnum) in turn was originally borrowed from the Sumerian term 𒂔 (eden), meaning plain, steppe or even open country.
+In [Hebrew](../../wiki/hebrew/), the term for the Garden of Eden is <span class="hebrew">גַּן־עֵדֶן</span> (gan-ʿĒḏen)[^garden], where <span class="hebrew">גַּן</span> (gan) means garden, and <span class="hebrew">עֵדֶן</span> ('éden) is a term that is a cognate of the Akkadian word 𒂊𒁲𒉡 (edinu or idīnum), which translates to desert or steppe. The Akkadian 𒂊𒁲𒉡 (idīnum) in turn was originally borrowed from the Sumerian term 𒂔 (eden), meaning plain, steppe or even open country.
 
 These linguistic links suggest that the original concept of Eden might have been the name of a specific, delimited region located in a wide, open space - potentially a highly fertile plain or steppe.
 
-[^garden]: The Garden of Eden is also referred to as Garden of God (גַּן־יְהֹוֶה, gan-YHWH and גַן־אֱלֹהִים, gan-Elohim).
+[^garden]: The Garden of Eden is also referred to as Garden of God (<span class="hebrew">גַּן־יְהֹוֶה</span>, gan-YHWH and <span class="hebrew">גַן־אֱלֹהִים</span>, gan-Elohim).
 
 ## According to Mauro Biglino
 

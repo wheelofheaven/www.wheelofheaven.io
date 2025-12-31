@@ -216,7 +216,7 @@ Include alternative names when:
 Example:
 ```toml
 alternative_names = [
-    "אֱלֹהִים (Hebrew)",
+    "<span class="hebrew">אֱלֹהִים</span> (Hebrew)",
     "Eloha (singular)",
     "The Powerful Ones",
     "Sky People"

@@ -21,7 +21,7 @@ After 40 years of wandering in the wilderness, Moses died at the age of 120 and 
 
 ## Moshe
 
-The origin of the name Moses is uncertain. In the Hebrew Bible, his name is given as "Moshe" (מֹשֶׁה) and is derived from the Egyptian word "mose" meaning "child" or "son." Some scholars believe that the name may have been given to him by Pharaoh's daughter, who rescued him as a baby, while others believe that it may have been a name commonly given to boys in ancient Egypt.
+The origin of the name Moses is uncertain. In the Hebrew Bible, his name is given as "Moshe" (<span class="hebrew">מֹשֶׁה</span>) and is derived from the Egyptian word "mose" meaning "child" or "son." Some scholars believe that the name may have been given to him by Pharaoh's daughter, who rescued him as a baby, while others believe that it may have been a name commonly given to boys in ancient Egypt.
 
 In the Septuagint, an ancient Greek translation of the Hebrew Bible, Moses' name is given as "Mouses" (Μωυσῆς), which is the source of the English name "Moses." Other versions of the name in different languages include Moïse in French, Mosè in Italian, and Moisés in Spanish. Regardless of its origin, the name Moses has become synonymous with the prophet, lawgiver, and leader who is revered as one of the greatest figures in the history of Judaism and a central figure in the Abrahamic tradition.
 

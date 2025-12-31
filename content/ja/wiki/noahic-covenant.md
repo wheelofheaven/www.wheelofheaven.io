@@ -7,7 +7,7 @@ description = "ノアヒの契約は、地球上のほぼすべての生命を�
 
 Covenant is not a common term in the English language. The word "covenant" came into Middle English as covenaunt from the Old French covenant, meaning agreement. This Old French term itself came from the Latin conveniens, which was the present participle of the verb convenio. The Latin verb convenio is made up of two parts: con- meaning together and -venio meaning to come. So, convenio means to come together or to agree. Its present participle form conveniens means agreeing, agreeable or convenient.
 
-In the Biblical source text, the word employed is בְּרִית (brit) which is best translated as covenant or even alliance.
+In the Biblical source text, the word employed is <span class="hebrew">בְּרִית</span> (brit) which is best translated as covenant or even alliance.
 
 ## In the Bible
 

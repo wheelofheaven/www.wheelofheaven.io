@@ -130,7 +130,7 @@ The parallels between the story in the Book of Enoch and the passage in Genesis 
 
 [^1]: The phrase "Sons of Man" is a metaphorical or figurative expression. The word "of Man" refers to humanity as a whole, and "sons" emphasizes the shared human experience and identity. In contemporary usage, the phrase "Sons of Man" is not commonly used in everyday language. Instead, people tend to use terms such as "humanity," "people," or "humankind." In the same vein, the "Sons of God" refers to the entirety of the God-kind. If we use the original Hebrew term Elohim instead of God, we would refer the entirety of the Elohim-kind in these archaic terms as the "Sons of Elohim".
 
-[^2]: The original Hebrew term is Nephilim, a term borrowed from Hebrew נְפִילִים ("nefilim, fallen ones"), plural of נָפִיל ("nafíl, fallen one"). See here for more: [Nephilim | Wiktionary](https://en.wiktionary.org/wiki/Nephilim)
+[^2]: The original Hebrew term is Nephilim, a term borrowed from Hebrew <span class="hebrew">נְפִילִים</span> ("nefilim, fallen ones"), plural of <span class="hebrew">נָפִיל</span> ("nafíl, fallen one"). See here for more: [Nephilim | Wiktionary](https://en.wiktionary.org/wiki/Nephilim)
 
 ## Exceptional children
 
