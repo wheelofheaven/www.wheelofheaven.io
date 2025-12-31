@@ -38,6 +38,13 @@
         backdrop-filter: blur(8px);
         cursor: pointer;
         z-index: -1;
+
+        // On mobile, no blur - just a semi-transparent overlay
+        @media (max-width: 768px) {
+            backdrop-filter: none;
+            -webkit-backdrop-filter: none;
+            background-color: rgba(0, 0, 0, 0.3);
+        }
     }
 
     &__container {

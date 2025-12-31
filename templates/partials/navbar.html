@@ -434,16 +434,17 @@
     </div>
 
     <div class="navbar__controls">
+        <!-- Mobile search input - expands from search icon to logo -->
         <div class="navbar__mobile-search mobile-only">
             <input
                 type="search"
-                class="navbar__mobile-search-input"
                 placeholder="Search..."
                 aria-label="Search site"
                 id="mobileSearchInput"
             />
         </div>
 
+        <!-- Search toggle - stays in fixed position -->
         <button
             class="navbar__mobile-toggle mobile-only"
             id="mobileSearchToggle"
@@ -457,7 +458,7 @@
             id="mobileNavToggle"
             aria-label="Toggle mobile navigation"
         >
-            {% include "partials/icons/menu.html" %}
+            {% include "partials/icons/panel-top-open.html" %}
         </button>
 
         <div class="navbar__search desktop-only">

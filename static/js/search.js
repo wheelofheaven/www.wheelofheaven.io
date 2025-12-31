@@ -470,14 +470,17 @@ function showSearchModal() {
       el.style.transition = "filter 0.3s ease";
     });
 
-    // Blur navbar elements except search input
-    const navbarElementsToBlur = document.querySelectorAll(
-      ".navbar__logo, .navbar__links, .navbar__language-switcher, .navbar__theme-toggle, .navbar__mobile-toggle",
-    );
-    navbarElementsToBlur.forEach((el) => {
-      el.style.filter = "blur(2px)";
-      el.style.transition = "filter 0.3s ease";
-    });
+    // Only blur navbar elements on desktop, not mobile
+    const isMobile = window.innerWidth <= 768;
+    if (!isMobile) {
+      const navbarElementsToBlur = document.querySelectorAll(
+        ".navbar__logo, .navbar__links, .navbar__language-switcher, .navbar__theme-toggle, .navbar__mobile-toggle",
+      );
+      navbarElementsToBlur.forEach((el) => {
+        el.style.filter = "blur(2px)";
+        el.style.transition = "filter 0.3s ease";
+      });
+    }
   }
 }
 
