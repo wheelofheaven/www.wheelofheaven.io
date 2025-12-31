@@ -13,6 +13,7 @@
                 href="{{ get_url(path='essentials', lang=detected_lang) }}"
                 class="navbar__link{% if current_path and current_path is starting_with('/essentials') %} navbar__link--active{% endif %}"
                 data-navbar-key="essentials"
+                {% if current_path and current_path is starting_with('/essentials') %}aria-current="true"{% endif %}
             >
                 {{ trans(key="navbarEssentials", lang=detected_lang) }}
             </a>
@@ -20,16 +21,18 @@
                 href="{{ get_url(path='timeline', lang=detected_lang) }}"
                 class="navbar__link{% if current_path and current_path is starting_with('/timeline') %} navbar__link--active{% endif %}"
                 data-navbar-key="timeline"
+                {% if current_path and current_path is starting_with('/timeline') %}aria-current="true"{% endif %}
             >
                 {{ trans(key="navbarTimeline", lang=detected_lang) }}
             </a>
 
             <!-- Knowledge Dropdown -->
-            <div class="navbar__dropdown" data-dropdown="knowledge">
+            <div class="navbar__dropdown" data-dropdown="knowledge" role="navigation" aria-label="Knowledge section">
                 <button
                     class="navbar__dropdown-trigger{% if current_path and (current_path is starting_with('/wiki') or current_path is starting_with('/explainers')) %} navbar__dropdown-trigger--active{% endif %}"
                     aria-expanded="false"
                     aria-haspopup="true"
+                    aria-controls="knowledge-dropdown"
                 >
                     <span data-navbar-key="knowledge"
                         >{{ trans(key="navbarKnowledge", lang=detected_lang) }}</span
@@ -175,11 +178,12 @@
             </div>
 
             <!-- Resources Dropdown -->
-            <div class="navbar__dropdown" data-dropdown="resources">
+            <div class="navbar__dropdown" data-dropdown="resources" role="navigation" aria-label="Resources section">
                 <button
                     class="navbar__dropdown-trigger{% if current_path and (current_path is starting_with('/about') or current_path is starting_with('/faq') or current_path is starting_with('/contributing')) %} navbar__dropdown-trigger--active{% endif %}"
                     aria-expanded="false"
                     aria-haspopup="true"
+                    aria-controls="resources-dropdown"
                 >
                     <span data-navbar-key="resources"
                         >{{ trans(key="navbarResources", lang=detected_lang) }}</span

@@ -1,12 +1,15 @@
 {% extends "base.html" %} {% block content %}
+<!-- DefinedTerm Schema for Wiki Pages -->
+{% include "partials/schema/defined-term.html" %}
+
 <div class="wiki">
     <div class="wiki__container">
         <!-- Table of Contents Sidebar -->
-        <aside class="wiki__toc">
+        <aside class="wiki__toc" role="complementary" aria-label="Table of contents">
             <div class="wiki__toc-header">
-                <h3 class="wiki__toc-title">Contents</h3>
+                <h3 class="wiki__toc-title" id="toc-heading">Contents</h3>
             </div>
-            <nav class="wiki__toc-nav">
+            <nav class="wiki__toc-nav" aria-labelledby="toc-heading">
                 {% if page.toc %}
                 <ul class="wiki__toc-list">
                     {% for h1 in page.toc %}
@@ -49,10 +52,10 @@
 
         <!-- Main Content -->
         <main class="wiki__main">
-            <article class="wiki__article">
+            <article class="wiki__article" role="article" aria-labelledby="wiki-title">
                 <!-- Page Header -->
                 <header class="wiki__header">
-                    <h1 class="wiki__title">{{ page.title }}</h1>
+                    <h1 class="wiki__title" id="wiki-title">{{ page.title }}</h1>
 
                     <!-- Alternative Names/Spellings -->
                     {% if page.extra.alternative_names %}
@@ -69,11 +72,11 @@
                     </div>
                     {% endif %}
 
-                    <!-- Management Summary/TLDR -->
+                    <!-- Management Summary/TLDR - Optimized for AI extraction -->
                     {% if page.extra.summary or page.description %}
-                    <div class="wiki__summary">
+                    <div class="wiki__summary" data-ai-summary="true" aria-label="Quick summary">
                         <div class="wiki__summary-label">Summary</div>
-                        <div class="wiki__summary-content">
+                        <div class="wiki__summary-content wiki__tldr">
                             {{ page.extra.summary |
                             default(value=page.description) | markdown | safe }}
                         </div>
@@ -111,8 +114,8 @@
 
                 <!-- See Also Section -->
                 {% if page.extra.see_also %}
-                <section class="wiki__see-also">
-                    <h2 class="wiki__section-title">See also</h2>
+                <section class="wiki__see-also" role="complementary" aria-label="Related topics">
+                    <h2 class="wiki__section-title" id="see-also-heading">See also</h2>
                     <ul class="wiki__link-list">
                         {% for item in page.extra.see_also %}
                         <li class="wiki__link-item">
@@ -182,8 +185,8 @@
 
                 <!-- References Section -->
                 {% if page.extra.references %}
-                <section class="wiki__references">
-                    <h2 class="wiki__section-title">References</h2>
+                <section class="wiki__references" role="doc-endnotes" aria-label="References and citations">
+                    <h2 class="wiki__section-title" id="references-heading">References</h2>
                     <ol class="wiki__reference-list">
                         {% for ref in page.extra.references %}
                         <li

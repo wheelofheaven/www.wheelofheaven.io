@@ -1,9 +1,12 @@
 {% extends "base.html" %} {% block content %}
+<!-- ScholarlyArticle Schema for Explainer Pages -->
+{% include "partials/schema/scholarly-article.html" %}
+
 <div class="explainer">
     <div class="explainer__container">
         <!-- Main Content -->
         <main class="explainer__main">
-            <article class="explainer__article">
+            <article class="explainer__article" role="article" aria-labelledby="explainer-title">
                 <!-- Hero Image Section -->
                 {% if page.extra.header_image %}
                 <div class="explainer__hero">
@@ -13,13 +16,13 @@
                         class="explainer__hero-image"
                     />
                     <div class="explainer__hero-overlay">
-                        <h1 class="explainer__hero-title">{{ page.title }}</h1>
+                        <h1 class="explainer__hero-title" id="explainer-title">{{ page.title }}</h1>
                     </div>
                 </div>
                 {% else %}
                 <div class="explainer__hero explainer__hero--no-image">
                     <div class="explainer__hero-overlay">
-                        <h1 class="explainer__hero-title">{{ page.title }}</h1>
+                        <h1 class="explainer__hero-title" id="explainer-title">{{ page.title }}</h1>
                     </div>
                 </div>
                 {% endif %}
@@ -27,7 +30,7 @@
                 <!-- Page Header -->
                 <header class="explainer__header">
                     <!-- Metadata -->
-                    <div class="explainer__meta">
+                    <div class="explainer__meta" aria-label="Article metadata">
                         {% if page.reading_time %}
                         <span class="explainer__reading-time">
                             <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
@@ -50,6 +53,15 @@
                     </div>
                 </header>
 
+                <!-- Quick Summary for AI extraction -->
+                {% if page.extra.tldr or page.description %}
+                <div class="explainer__summary" data-ai-summary="true" aria-label="Quick summary">
+                    <p class="explainer__tldr explainer__content">
+                        {{ page.extra.tldr | default(value=page.description) }}
+                    </p>
+                </div>
+                {% endif %}
+
                 <!-- Page Content -->
                 {% if page.content %}
                 <div class="explainer__content">{{ page.content | safe }}</div>
@@ -57,7 +69,7 @@
 
                 <!-- See Also Section -->
                 {% if page.extra.see_also %}
-                <section class="explainer__see-also">
+                <section class="explainer__see-also" role="complementary" aria-label="Related articles">
                     <h2 class="explainer__section-title">See also</h2>
                     <ul class="explainer__link-list">
                         {% for item in page.extra.see_also %}
@@ -128,7 +140,7 @@
 
                 <!-- References Section -->
                 {% if page.extra.references %}
-                <section class="explainer__references">
+                <section class="explainer__references" role="doc-bibliography" aria-label="References and citations">
                     <h2 class="explainer__section-title">References</h2>
                     <ol class="explainer__reference-list">
                         {% for ref in page.extra.references %}

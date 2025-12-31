@@ -3,7 +3,7 @@
     <div class="essentials__container">
         <!-- Main Content -->
         <main class="essentials__main">
-            <article class="essentials__article">
+            <article class="essentials__article" role="article" aria-labelledby="essentials-title">
                 <!-- Hero Image Section -->
                 {% if page.extra.header_image %}
                 <div class="essentials__hero">
@@ -13,23 +13,23 @@
                         class="essentials__hero-image"
                     />
                     {% if page.extra.order %}
-                    <div class="essentials__step-indicator">
+                    <div class="essentials__step-indicator" aria-label="Step {{ page.extra.order }} of the essentials guide">
                         Step {% if page.extra.order < 10 %}0{% endif %}{{ page.extra.order }}
                     </div>
                     {% endif %}
                     <div class="essentials__hero-overlay">
-                        <h1 class="essentials__hero-title">{{ page.title }}</h1>
+                        <h1 class="essentials__hero-title" id="essentials-title">{{ page.title }}</h1>
                     </div>
                 </div>
                 {% else %}
                 <div class="essentials__hero essentials__hero--no-image">
                     {% if page.extra.order %}
-                    <div class="essentials__step-indicator">
+                    <div class="essentials__step-indicator" aria-label="Step {{ page.extra.order }} of the essentials guide">
                         Step {% if page.extra.order < 10 %}0{% endif %}{{ page.extra.order }}
                     </div>
                     {% endif %}
                     <div class="essentials__hero-overlay">
-                        <h1 class="essentials__hero-title">{{ page.title }}</h1>
+                        <h1 class="essentials__hero-title" id="essentials-title">{{ page.title }}</h1>
                     </div>
                 </div>
                 {% endif %}
@@ -45,7 +45,7 @@
                 {% endif %}
 
                 <!-- Navigation Section -->
-                <nav class="essentials__navigation">
+                <nav class="essentials__navigation" role="navigation" aria-label="Essentials page navigation">
                     <!-- Previous/Next Navigation -->
                     {% if page.extra.prev_page and page.extra.next_page %}
                     <div class="essentials__prev-next">
@@ -61,6 +61,7 @@
                         <a
                             href="{{ page.extra.prev_page.url }}"
                             class="essentials__nav-btn essentials__nav-btn--prev"
+                            aria-label="Previous: {{ page.extra.prev_page.title }}"
                         >
                             <svg
                                 class="essentials__nav-icon"
@@ -89,6 +90,7 @@
                         <a
                             href="{{ page.extra.next_page.url }}"
                             class="essentials__nav-btn essentials__nav-btn--next"
+                            aria-label="Next: {{ page.extra.next_page.title }}"
                         >
                             <div class="essentials__nav-content">
                                 <span class="essentials__nav-label">Next</span>

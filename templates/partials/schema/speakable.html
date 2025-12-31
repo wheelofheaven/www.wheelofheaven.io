@@ -1,0 +1,21 @@
+<!-- Schema.org Speakable - For voice assistant optimization -->
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "WebPage",
+  "@id": "{{ current_url | safe }}",
+  "name": "{{ page.title | default(value=section.title) | default(value=config.title) }}",
+  "speakable": {
+    "@type": "SpeakableSpecification",
+    "cssSelector": [
+      ".wiki__summary",
+      ".wiki__tldr",
+      ".essentials__content > p:first-of-type",
+      ".explainer__content > p:first-of-type",
+      "[data-ai-summary]",
+      ".quick-answer"
+    ]
+  },
+  "url": "{{ current_url | safe }}"
+}
+</script>

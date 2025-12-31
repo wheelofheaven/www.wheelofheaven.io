@@ -1,0 +1,57 @@
+# Wheel of Heaven - robots.txt
+# Post-AI optimized for search engines and AI crawlers
+
+User-agent: *
+Allow: /
+
+# AI Crawlers - Explicitly Allowed
+User-agent: GPTBot
+Allow: /
+
+User-agent: ChatGPT-User
+Allow: /
+
+User-agent: Claude-Web
+Allow: /
+
+User-agent: ClaudeBot
+Allow: /
+
+User-agent: anthropic-ai
+Allow: /
+
+User-agent: Google-Extended
+Allow: /
+
+User-agent: Googlebot
+Allow: /
+
+User-agent: PerplexityBot
+Allow: /
+
+User-agent: Amazonbot
+Allow: /
+
+User-agent: YouBot
+Allow: /
+
+User-agent: CCBot
+Allow: /
+
+User-agent: Meta-ExternalAgent
+Allow: /
+
+User-agent: cohere-ai
+Allow: /
+
+# Sitemaps
+Sitemap: https://wheelofheaven.io/sitemap.xml
+Sitemap: https://wheelofheaven.io/de/sitemap.xml
+Sitemap: https://wheelofheaven.io/fr/sitemap.xml
+Sitemap: https://wheelofheaven.io/es/sitemap.xml
+Sitemap: https://wheelofheaven.io/ru/sitemap.xml
+Sitemap: https://wheelofheaven.io/ja/sitemap.xml
+Sitemap: https://wheelofheaven.io/zh/sitemap.xml
+
+# Crawl-delay for courtesy (optional, not all bots respect this)
+Crawl-delay: 1

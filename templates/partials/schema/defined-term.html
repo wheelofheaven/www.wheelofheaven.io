@@ -1,0 +1,47 @@
+<!-- Schema.org DefinedTerm - For Wiki entries -->
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "DefinedTerm",
+  "@id": "{{ current_url | safe }}",
+  "name": "{{ page.title }}",
+  "description": "{{ page.description | default(value='') | escape }}",
+  "url": "{{ current_url | safe }}",
+  {% if page.extra.alternative_names %}
+  "alternateName": [
+    {% for name in page.extra.alternative_names %}
+    "{{ name }}"{% if not loop.last %},{% endif %}
+    {% endfor %}
+  ],
+  {% endif %}
+  "inDefinedTermSet": {
+    "@type": "DefinedTermSet",
+    "@id": "{{ config.base_url }}/wiki/#term-set",
+    "name": "Wheel of Heaven Wiki",
+    "description": "Encyclopedia of concepts, figures, and themes related to the hypothesis that life on Earth was created by an extraterrestrial civilization"
+  },
+  {% if page.extra.timeline %}
+  "isPartOf": [
+    {% for age in page.extra.timeline %}
+    {
+      "@type": "CreativeWork",
+      "name": "Age of {{ age | capitalize }}",
+      "url": "{{ get_url(path='timeline/age-of-' ~ age, lang=detected_lang) }}"
+    }{% if not loop.last %},{% endif %}
+    {% endfor %}
+  ],
+  {% endif %}
+  {% if page.extra.see_also %}
+  "relatedLink": [
+    {% for item in page.extra.see_also %}
+    "{% if item.url %}{{ item.url }}{% else %}{{ get_url(path=item.path, lang=detected_lang) }}{% endif %}"{% if not loop.last %},{% endif %}
+    {% endfor %}
+  ],
+  {% endif %}
+  "datePublished": "{% if page.date %}{{ page.date | date(format='%Y-%m-%d') }}{% endif %}",
+  {% if page.updated %}
+  "dateModified": "{{ page.updated | date(format='%Y-%m-%d') }}",
+  {% endif %}
+  "inLanguage": "{{ detected_lang }}"
+}
+</script>

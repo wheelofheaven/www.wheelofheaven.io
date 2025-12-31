@@ -1,0 +1,46 @@
+<!-- Schema.org Organization - Enhanced for AI/LLM consumption -->
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "Organization",
+  "@id": "{{ config.extra.organization_id | default(value=config.base_url ~ '/#organization') }}",
+  "name": "{{ config.title }}",
+  "alternateName": ["WoH", "Wheel of Heaven Project"],
+  "url": "{{ config.base_url }}",
+  "description": "{{ config.description }}",
+  {% if config.extra.logo %}
+  "logo": {
+    "@type": "ImageObject",
+    "url": "{{ get_url(path=config.extra.logo) }}",
+    "width": 512,
+    "height": 512
+  },
+  {% endif %}
+  {% if config.extra.founding_date %}
+  "foundingDate": "{{ config.extra.founding_date }}",
+  {% endif %}
+  "sameAs": [
+    {% if config.extra.social_links %}
+      {% for link in config.extra.social_links %}
+    "{{ link }}"{% if not loop.last %},{% endif %}
+      {% endfor %}
+    {% endif %}
+  ],
+  {% if config.extra.knows_about %}
+  "knowsAbout": [
+    {% for topic in config.extra.knows_about %}
+    "{{ topic }}"{% if not loop.last %},{% endif %}
+    {% endfor %}
+  ],
+  {% endif %}
+  "areaServed": "Worldwide",
+  "slogan": "{{ trans(key='tagline', lang=detected_lang) | default(value='Mapping our engineered origins with evidence.') }}",
+  "knowsLanguage": ["en", "de", "fr", "es", "ru", "ja", "zh"],
+  "email": "contact@wheelofheaven.io",
+  "contactPoint": {
+    "@type": "ContactPoint",
+    "contactType": "customer support",
+    "availableLanguage": ["English", "German", "French", "Spanish", "Russian", "Japanese", "Chinese"]
+  }
+}
+</script>

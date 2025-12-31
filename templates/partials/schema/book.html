@@ -1,0 +1,47 @@
+<!-- Schema.org Book - For Library book entries -->
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "Book",
+  "@id": "{{ current_url | safe }}",
+  "name": "{{ page.title }}",
+  "description": "{{ page.description | default(value='') | escape }}",
+  "url": "{{ current_url | safe }}",
+  {% if page.extra.author %}
+  "author": {
+    "@type": "Person",
+    "name": "{{ page.extra.author }}"
+  },
+  {% endif %}
+  "publisher": {
+    "@type": "Organization",
+    "@id": "{{ config.extra.organization_id | default(value=config.base_url ~ '/#organization') }}",
+    "name": "{{ config.title }}"
+  },
+  {% if page.date %}
+  "datePublished": "{{ page.date | date(format='%Y-%m-%d') }}",
+  {% endif %}
+  "inLanguage": ["en", "de", "fr", "es", "ru", "ja", "zh"],
+  "bookFormat": "https://schema.org/EBook",
+  "isAccessibleForFree": true,
+  "license": "https://creativecommons.org/licenses/by-sa/4.0/",
+  "genre": ["Religious Text", "Ancient Literature", "Commentary"],
+  "about": [
+    {
+      "@type": "Thing",
+      "name": "Elohim",
+      "url": "{{ get_url(path='wiki/elohim', lang=detected_lang) }}"
+    },
+    {
+      "@type": "Thing",
+      "name": "Ancient Astronaut Theory"
+    }
+  ],
+  "workExample": {
+    "@type": "Book",
+    "bookFormat": "https://schema.org/EBook",
+    "inLanguage": "{{ detected_lang }}",
+    "url": "{{ current_url | safe }}"
+  }
+}
+</script>

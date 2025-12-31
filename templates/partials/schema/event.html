@@ -1,0 +1,54 @@
+<!-- Schema.org Event - For Timeline age entries -->
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "Event",
+  "@id": "{{ current_url | safe }}",
+  "name": "{{ page.title }}",
+  "description": "{{ page.description | default(value='') | escape }}",
+  "url": "{{ current_url | safe }}",
+  {% if page.extra.start_year %}
+  "startDate": "{{ page.extra.start_year }}",
+  {% endif %}
+  {% if page.extra.end_year %}
+  "endDate": "{{ page.extra.end_year }}",
+  {% endif %}
+  {% if page.extra.period %}
+  "duration": "{{ page.extra.period }}",
+  {% endif %}
+  "location": {
+    "@type": "Place",
+    "name": "Earth",
+    "address": {
+      "@type": "PostalAddress",
+      "addressCountry": "Global"
+    }
+  },
+  {% if page.extra.symbol %}
+  "additionalType": "HistoricalEvent",
+  {% endif %}
+  {% if page.extra.genesis_interpretation %}
+  "about": {
+    "@type": "Thing",
+    "name": "{{ page.title }} - Genesis Interpretation",
+    "description": "{{ page.extra.genesis_interpretation | truncate(length=300) | escape }}"
+  },
+  {% endif %}
+  {% if page.extra.genesis_day %}
+  "identifier": {
+    "@type": "PropertyValue",
+    "propertyID": "genesis_day",
+    "value": "{{ page.extra.genesis_day }}"
+  },
+  {% endif %}
+  "organizer": {
+    "@type": "Organization",
+    "@id": "{{ config.extra.organization_id | default(value=config.base_url ~ '/#organization') }}",
+    "name": "{{ config.title }}"
+  },
+  "eventStatus": "https://schema.org/EventScheduled",
+  "eventAttendanceMode": "https://schema.org/OnlineEventAttendanceMode",
+  "inLanguage": "{{ detected_lang }}",
+  "isAccessibleForFree": true
+}
+</script>

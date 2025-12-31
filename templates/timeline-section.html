@@ -1,6 +1,6 @@
 {% extends "base.html" %} {% block content %} {% set ages_data =
 load_data(path="data/ages.json") %}
-<div class="timeline-section">
+<div class="timeline-section" role="region" aria-label="Timeline of World Ages">
     <!-- Sun behind Earth -->
     <div class="earth-sunrise">
         <img src="/images/sunrise.png" alt="Sun" class="sunrise-image" />
@@ -52,14 +52,14 @@ load_data(path="data/ages.json") %}
     </div>
 
     <!-- Integrated Age Card Container -->
-    <div class="age-card-container">
+    <div class="age-card-container" role="region" aria-label="Current age display">
         <!-- Navigation buttons positioned on sides of container -->
         <button
             class="timeline-nav__btn timeline-nav__btn--prev"
             id="nav-prev"
-            aria-label="Previous Age"
+            aria-label="Navigate to previous age"
         >
-            <svg width="24" height="24" viewBox="0 0 24 24" fill="none">
+            <svg width="24" height="24" viewBox="0 0 24 24" fill="none" aria-hidden="true">
                 <path
                     d="M15 18L9 12L15 6"
                     stroke="currentColor"
@@ -73,9 +73,9 @@ load_data(path="data/ages.json") %}
         <button
             class="timeline-nav__btn timeline-nav__btn--next"
             id="nav-next"
-            aria-label="Next Age"
+            aria-label="Navigate to next age"
         >
-            <svg width="24" height="24" viewBox="0 0 24 24" fill="none">
+            <svg width="24" height="24" viewBox="0 0 24 24" fill="none" aria-hidden="true">
                 <path
                     d="M9 6L15 12L9 18"
                     stroke="currentColor"
@@ -86,15 +86,15 @@ load_data(path="data/ages.json") %}
             </svg>
         </button>
 
-        <div class="age-card" id="age-card">
-            <div class="age-card__symbol" id="age-symbol">♑</div>
+        <div class="age-card" id="age-card" aria-live="polite" aria-atomic="true">
+            <div class="age-card__symbol" id="age-symbol" aria-hidden="true">♑</div>
 
             <div class="age-card__content">
                 <h2 class="age-card__title" id="age-title">Age of Capricorn</h2>
-                <div class="age-card__timespan" id="age-timespan">
+                <div class="age-card__timespan" id="age-timespan" aria-label="Time period">
                     21810 BC → 19650 BC
                 </div>
-                <div class="age-card__description" id="age-description">
+                <div class="age-card__description" id="age-description" data-ai-summary="true">
                     Synthetic life engineering on the Elohim home planet with
                     the inevitable escape of synthetic 'monster' lifeforms.
                     Earth discovered, exploration. Known as the 1st day of
@@ -133,8 +133,8 @@ load_data(path="data/ages.json") %}
             </div>
 
             <!-- Age Progress with 12 segments - positioned at bottom of card -->
-            <div class="age-progress">
-                <div class="age-progress__segments" id="age-progress-segments">
+            <div class="age-progress" role="navigation" aria-label="Age selection">
+                <div class="age-progress__segments" id="age-progress-segments" role="group" aria-label="Age indicators">
                     <div class="age-progress__segment" data-segment="0">✦</div>
                     <div class="age-progress__segment" data-segment="1">♑</div>
                     <div class="age-progress__segment" data-segment="2">♐</div>
@@ -201,19 +201,19 @@ load_data(path="data/ages.json") %}
 <script src="/js/timeline.js"></script>
 
 <!-- World Ages Cards Section -->
-<section class="world-ages-section">
+<section class="world-ages-section" aria-labelledby="world-ages-heading">
     <div class="world-ages-section__container">
         <header class="world-ages-section__header">
-            <h2 class="world-ages-section__title">Explore the World Ages</h2>
+            <h2 class="world-ages-section__title" id="world-ages-heading">Explore the World Ages</h2>
             <p class="world-ages-section__description">
                 Dive deeper into each cosmic age and discover the events that
                 shaped our world's history.
             </p>
         </header>
 
-        <div class="world-ages-section__grid">
+        <div class="world-ages-section__grid" role="list" aria-label="World ages">
             <!-- In the beginning card -->
-            <article class="world-age-card" data-age-color="yellow">
+            <article class="world-age-card" data-age-color="yellow" role="listitem">
                 <a
                     href="/timeline/in-the-beginning"
                     class="world-age-card__link"
@@ -271,7 +271,7 @@ load_data(path="data/ages.json") %}
             </article>
 
             {% for age in ages_data %}
-            <article class="world-age-card" data-age-color="{{ age.color }}">
+            <article class="world-age-card" data-age-color="{{ age.color }}" role="listitem">
                 <a href="{{ age.link }}" class="world-age-card__link">
                     <div class="world-age-card__content">
                         <div class="world-age-card__header">

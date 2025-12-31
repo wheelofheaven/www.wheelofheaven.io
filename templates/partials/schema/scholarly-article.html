@@ -1,0 +1,79 @@
+<!-- Schema.org ScholarlyArticle - For Explainer pages with references -->
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "ScholarlyArticle",
+  "@id": "{{ current_url | safe }}",
+  "headline": "{{ page.title }}",
+  "description": "{{ page.description | default(value='') | escape }}",
+  "abstract": "{{ page.description | default(value='') | escape }}",
+  "url": "{{ current_url | safe }}",
+  {% if page.extra.header_image %}
+  "image": {
+    "@type": "ImageObject",
+    "url": "{{ get_url(path=page.extra.header_image) }}",
+    "width": 1200,
+    "height": 630
+  },
+  {% endif %}
+  {% if page.extra.category %}
+  "articleSection": "{{ page.extra.category }}",
+  "keywords": ["{{ page.extra.category }}", "Wheel of Heaven", "Ancient Astronaut Theory"],
+  {% endif %}
+  "author": {
+    "@type": "{{ config.extra.author_type | default(value='Organization') }}",
+    "name": "{{ page.extra.author | default(value=config.extra.author) | default(value=config.title) }}",
+    "url": "{{ config.base_url }}/about/"
+  },
+  "publisher": {
+    "@type": "Organization",
+    "@id": "{{ config.extra.organization_id | default(value=config.base_url ~ '/#organization') }}",
+    "name": "{{ config.title }}",
+    {% if config.extra.logo %}
+    "logo": {
+      "@type": "ImageObject",
+      "url": "{{ get_url(path=config.extra.logo) }}"
+    }
+    {% endif %}
+  },
+  {% if page.date %}
+  "datePublished": "{{ page.date | date(format='%Y-%m-%d') }}",
+  {% endif %}
+  {% if page.updated %}
+  "dateModified": "{{ page.updated | date(format='%Y-%m-%d') }}",
+  {% endif %}
+  {% if page.reading_time %}
+  "timeRequired": "PT{{ page.reading_time }}M",
+  {% endif %}
+  {% if page.extra.references %}
+  "citation": [
+    {% for ref in page.extra.references %}
+    {
+      "@type": "CreativeWork",
+      "name": "{{ ref.title | escape }}",
+      {% if ref.author %}
+      "author": {
+        "@type": "Person",
+        "name": "{{ ref.author }}"
+      },
+      {% endif %}
+      {% if ref.publication %}
+      "publisher": "{{ ref.publication }}",
+      {% endif %}
+      {% if ref.date %}
+      "datePublished": "{{ ref.date }}",
+      {% endif %}
+      {% if ref.url %}
+      "url": "{{ ref.url }}"
+      {% else %}
+      "name": "{{ ref.title | escape }}"
+      {% endif %}
+    }{% if not loop.last %},{% endif %}
+    {% endfor %}
+  ],
+  {% endif %}
+  "inLanguage": "{{ detected_lang }}",
+  "isAccessibleForFree": true,
+  "license": "https://creativecommons.org/licenses/by-sa/4.0/"
+}
+</script>

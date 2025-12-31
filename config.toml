@@ -17,7 +17,24 @@ author_type = "Organization"
 twitter_username = "wheelofheaven"
 logo = "brand/logo.png"
 # analytics_domain = "analytics.domain.com"
-social_links = ["https://x.com/wheelofheaven"]
+social_links = ["https://x.com/wheelofheaven", "https://github.com/wheelofheaven", "https://t.me/wheelofheaven"]
+
+# Organization metadata for enhanced SEO/AEO
+organization_id = "https://wheelofheaven.io/#organization"
+github_url = "https://github.com/wheelofheaven"
+telegram_url = "https://t.me/wheelofheaven"
+founding_date = "2023"
+knows_about = [
+    "Ancient Astronaut Theory",
+    "Raelism",
+    "Biblical Exegesis",
+    "Precession of the Equinoxes",
+    "Elohim",
+    "Extraterrestrial Hypothesis",
+    "Genesis Interpretation",
+    "World Ages",
+    "Cosmic Origins"
+]
 
 
 language_name_english = "English"

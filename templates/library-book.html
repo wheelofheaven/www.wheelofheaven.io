@@ -4,14 +4,17 @@
 {% set book_data = load_data(path="data/library/" ~ book_slug ~ ".json") %}
 
 {% if book_data %}
+<!-- Book Schema for Library Pages -->
+{% include "partials/schema/book.html" %}
+
 <div class="library-book">
     <div class="library-book__container">
         <!-- Table of Contents Sidebar -->
-        <aside class="library-book__toc">
+        <aside class="library-book__toc" role="complementary" aria-label="Book table of contents">
             <div class="library-book__toc-header">
-                <h3 class="library-book__toc-title">Contents</h3>
+                <h3 class="library-book__toc-title" id="book-toc-heading">Contents</h3>
             </div>
-            <nav class="library-book__toc-nav">
+            <nav class="library-book__toc-nav" aria-labelledby="book-toc-heading">
                 <ul class="library-book__toc-list">
                     {% for chapter in book_data.chapters %}
                     <li class="library-book__toc-item" data-chapter="{{ chapter.n }}">
@@ -29,9 +32,9 @@
 
         <!-- Main Content Area -->
         <main class="library-book__main">
-            <article class="library-book__article">
+            <article class="library-book__article" role="article" aria-labelledby="book-title">
                 <!-- Breadcrumb Navigation -->
-                <nav class="library-book__breadcrumbs">
+                <nav class="library-book__breadcrumbs" aria-label="Breadcrumb navigation">
                     <ol class="library-book__breadcrumb-list">
                         <li class="library-book__breadcrumb-item">
                             <a href="{{ get_url(path='library') }}" class="library-book__breadcrumb-link">Library</a>
@@ -44,7 +47,7 @@
 
                 <!-- Book Header -->
                 <header class="library-book__header">
-                    <h1 class="library-book__title">
+                    <h1 class="library-book__title" id="book-title">
                         {{ library_macros::get_book_title(book_data=book_data, lang=detected_lang) }}
                     </h1>
 
@@ -56,7 +59,7 @@
                     {% endif %}
 
                     {% if book_data.description %}
-                    <div class="library-book__summary">
+                    <div class="library-book__summary" data-ai-summary="true" aria-label="Book summary">
                         <div class="library-book__summary-label">About this book</div>
                         <div class="library-book__summary-content">{{ book_data.description }}</div>
                     </div>
@@ -101,9 +104,9 @@
                         <span id="paragraph-progress">1</span>
                     </div>
 
-                    <div class="library-book__actions">
-                        <button onclick="toggleToc()" id="toc-toggle" class="library-book__btn library-book__btn--secondary desktop-only" title="Toggle Contents">
-                            <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                    <div class="library-book__actions" role="group" aria-label="View controls">
+                        <button onclick="toggleToc()" id="toc-toggle" class="library-book__btn library-book__btn--secondary desktop-only" title="Toggle Contents" aria-pressed="true" aria-label="Toggle table of contents visibility">
+                            <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true">
                                 <line x1="8" y1="6" x2="21" y2="6"></line>
                                 <line x1="8" y1="12" x2="21" y2="12"></line>
                                 <line x1="8" y1="18" x2="21" y2="18"></line>
@@ -114,8 +117,8 @@
                             <span>Contents</span>
                         </button>
 
-                        <button onclick="toggleOriginalText()" id="original-toggle" class="library-book__btn library-book__btn--secondary" title="Show/Hide Original Text">
-                            <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                        <button onclick="toggleOriginalText()" id="original-toggle" class="library-book__btn library-book__btn--secondary" title="Show/Hide Original Text" aria-pressed="false" aria-label="Toggle original language text">
+                            <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true">
                                 <path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z"></path>
                                 <polyline points="14,2 14,8 20,8"></polyline>
                                 <line x1="16" y1="13" x2="8" y2="13"></line>
@@ -124,8 +127,8 @@
                             <span>Original</span>
                         </button>
 
-                        <button onclick="toggleSideBySide()" id="side-by-side-toggle" class="library-book__btn library-book__btn--secondary hidden" title="Toggle Side-by-Side">
-                            <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                        <button onclick="toggleSideBySide()" id="side-by-side-toggle" class="library-book__btn library-book__btn--secondary hidden" title="Toggle Side-by-Side" aria-pressed="false" aria-label="Toggle side-by-side view">
+                            <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true">
                                 <rect x="3" y="3" width="18" height="18" rx="2" ry="2"></rect>
                                 <line x1="12" y1="3" x2="12" y2="21"></line>
                             </svg>
@@ -170,21 +173,21 @@
                 </div>
 
                 <!-- Chapter Navigation -->
-                <nav class="library-book__nav">
-                    <button class="library-book__nav-btn library-book__nav-btn--prev" onclick="previousChapter()" id="prev-chapter">
-                        <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                <nav class="library-book__nav" role="navigation" aria-label="Chapter navigation">
+                    <button class="library-book__nav-btn library-book__nav-btn--prev" onclick="previousChapter()" id="prev-chapter" aria-label="Go to previous chapter">
+                        <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true">
                             <path d="M15 18l-6-6 6-6"></path>
                         </svg>
                         <span>Previous Chapter</span>
                     </button>
 
-                    <div class="library-book__nav-info">
+                    <div class="library-book__nav-info" aria-live="polite">
                         <span id="current-chapter-display">Chapter 1 of {{ book_data.chapters | length }}</span>
                     </div>
 
-                    <button class="library-book__nav-btn library-book__nav-btn--next" onclick="nextChapter()" id="next-chapter">
+                    <button class="library-book__nav-btn library-book__nav-btn--next" onclick="nextChapter()" id="next-chapter" aria-label="Go to next chapter">
                         <span>Next Chapter</span>
-                        <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                        <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true">
                             <path d="M9 18l6-6-6-6"></path>
                         </svg>
                     </button>

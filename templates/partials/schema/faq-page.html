@@ -1,0 +1,27 @@
+<!-- Schema.org FAQPage - For pages with FAQ sections -->
+{% if page.extra.faq %}
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "FAQPage",
+  "@id": "{{ current_url | safe }}#faq",
+  "mainEntity": [
+    {% for item in page.extra.faq %}
+    {
+      "@type": "Question",
+      "name": "{{ item.question | escape }}",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "{{ item.answer | escape }}"
+      }
+    }{% if not loop.last %},{% endif %}
+    {% endfor %}
+  ],
+  "isPartOf": {
+    "@type": "WebPage",
+    "@id": "{{ current_url | safe }}",
+    "name": "{{ page.title }}"
+  }
+}
+</script>
+{% endif %}
