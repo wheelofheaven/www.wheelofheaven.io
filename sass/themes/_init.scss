@@ -52,6 +52,11 @@
     --color-warning: #{colors.$yellow-500};
     --color-error: #{colors.$soft-pink-500};
     --color-info: #{colors.$blue-400};
+
+    // Scrollbar colors (dark theme default)
+    --color-scrollbar-track: transparent;
+    --color-scrollbar-thumb: rgba(255, 255, 255, 0.15);
+    --color-scrollbar-thumb-hover: rgba(255, 255, 255, 0.25);
 }
 
 // Ensure smooth theme transitions
@@ -99,6 +104,11 @@
         --color-overlay: rgba(255, 255, 255, 0.5);
         --color-glass-bg: rgba(255, 255, 255, 0.8);
         --color-glass-border: rgba(0, 0, 0, 0.01);
+
+        // Scrollbar colors (light theme)
+        --color-scrollbar-track: transparent;
+        --color-scrollbar-thumb: rgba(0, 0, 0, 0.15);
+        --color-scrollbar-thumb-hover: rgba(0, 0, 0, 0.25);
     }
 }
 

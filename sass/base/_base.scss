@@ -114,3 +114,36 @@ textarea {
         display: none;
     }
 }
+
+// Custom scrollbar styles - subtle and theme-aware
+// Firefox
+* {
+    scrollbar-width: thin;
+    scrollbar-color: var(--color-scrollbar-thumb) var(--color-scrollbar-track);
+}
+
+// Webkit (Chrome, Safari, Edge)
+::-webkit-scrollbar {
+    width: 8px;
+    height: 8px;
+}
+
+::-webkit-scrollbar-track {
+    background: var(--color-scrollbar-track);
+    border-radius: 4px;
+}
+
+::-webkit-scrollbar-thumb {
+    background: var(--color-scrollbar-thumb);
+    border-radius: 4px;
+    border: 2px solid var(--color-scrollbar-track);
+
+    &:hover {
+        background: var(--color-scrollbar-thumb-hover);
+    }
+}
+
+// Hide scrollbar corner (where horizontal and vertical meet)
+::-webkit-scrollbar-corner {
+    background: transparent;
+}

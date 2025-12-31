@@ -41,6 +41,11 @@
     --color-overlay: rgba(255, 255, 255, 0.5);
     --color-glass-bg: rgba(255, 255, 255, 0.6);
     --color-glass-border: rgba(0, 0, 0, 0.01);
+
+    // Scrollbar colors
+    --color-scrollbar-track: transparent;
+    --color-scrollbar-thumb: rgba(0, 0, 0, 0.15);
+    --color-scrollbar-thumb-hover: rgba(0, 0, 0, 0.25);
 }
 
 // Light theme specific wiki header gradient enhancement
