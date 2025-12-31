@@ -617,17 +617,13 @@ body.mobile-nav-open {
             }
         }
 
-        // Burger menu animation states
-        #mobileNavToggle {
-            svg {
-                transition: transform 0.3s ease;
-            }
+        // X icon animation - rotates when menu is expanded
+        #mobileNavToggle svg {
+            transition: transform 0.3s ease;
+        }
 
-            .navbar--mobile-expanded & {
-                svg {
-                    transform: rotate(180deg);
-                }
-            }
+        &.navbar--mobile-expanded #mobileNavToggle svg {
+            transform: rotate(90deg);
         }
 
         // Mobile expanded state - show navigation menu with controls
