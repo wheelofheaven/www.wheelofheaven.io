@@ -1,0 +1,68 @@
+{% extends "base.html" %}
+{% import "macros/breadcrumbs.html" as breadcrumbs %}
+
+{% block content %}
+<div class="map-page">
+    <!-- Breadcrumb Navigation -->
+    {{ breadcrumbs::community(page=page, lang=detected_lang) }}
+
+    <!-- Hero Section -->
+    <header class="map-hero">
+        <div class="map-hero__bg"></div>
+        <div class="map-hero__content">
+            <div class="map-hero__icon">
+                <svg width="48" height="48" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round">
+                    <polygon points="1 6 1 22 8 18 16 22 23 18 23 2 16 6 8 2 1 6"></polygon>
+                    <line x1="8" y1="2" x2="8" y2="18"></line>
+                    <line x1="16" y1="6" x2="16" y2="22"></line>
+                </svg>
+            </div>
+            <h1 class="map-hero__title">{{ page.title }}</h1>
+            {% if page.description %}
+            <p class="map-hero__description">{{ page.description }}</p>
+            {% endif %}
+        </div>
+    </header>
+
+    <!-- Map Container -->
+    <div class="map-container">
+        <div class="map-wrapper">
+            <div class="map-svg-container">
+                <object
+                    type="image/svg+xml"
+                    data="{{ get_url(path='map/narrative-map.svg') }}"
+                    class="map-svg"
+                    aria-label="Wheel of Heaven Narrative Map - A visual guide through the cosmic narrative"
+                >
+                    <img
+                        src="{{ get_url(path='map/narrative-map.svg') }}"
+                        alt="Wheel of Heaven Narrative Map"
+                        class="map-svg-fallback"
+                    />
+                </object>
+            </div>
+        </div>
+
+        <!-- Legend/Info Section -->
+        <section class="map-info">
+            <div class="map-info__content">
+                <h2 class="map-info__title">About This Map</h2>
+                <p class="map-info__text">
+                    This narrative map traces the transmission of cosmic knowledge through human history,
+                    from the original contact with the Elohim to the present Age of Aquarius.
+                    It illustrates how ancient wisdom has been preserved, distorted, and rediscovered
+                    across millennia.
+                </p>
+                <div class="map-info__note">
+                    <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                        <circle cx="12" cy="12" r="10"></circle>
+                        <line x1="12" y1="16" x2="12" y2="12"></line>
+                        <line x1="12" y1="8" x2="12.01" y2="8"></line>
+                    </svg>
+                    <span>Scroll vertically to explore the full timeline. Use pinch-to-zoom on touch devices.</span>
+                </div>
+            </div>
+        </section>
+    </div>
+</div>
+{% endblock content %}

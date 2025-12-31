@@ -1,0 +1,296 @@
+// Map Page Styles
+@use "../base/typography" as typo;
+
+.map-page {
+    min-height: 100vh;
+    background: var(--color-background);
+}
+
+// Hero Section
+.map-hero {
+    position: relative;
+    padding: 4rem 2rem 3rem;
+    text-align: center;
+    overflow: hidden;
+
+    @media (max-width: 768px) {
+        padding: 3rem 1rem 2rem;
+    }
+
+    &__bg {
+        position: absolute;
+        inset: 0;
+        background: linear-gradient(
+            135deg,
+            var(--color-accent-primary) 0%,
+            var(--color-accent-secondary) 50%,
+            var(--color-accent-primary) 100%
+        );
+        background-size: 400% 400%;
+        animation: map-gradient-shift 20s ease-in-out infinite;
+        opacity: 0.1;
+    }
+
+    &__content {
+        position: relative;
+        z-index: 1;
+        max-width: 800px;
+        margin: 0 auto;
+    }
+
+    &__icon {
+        display: inline-flex;
+        align-items: center;
+        justify-content: center;
+        width: 80px;
+        height: 80px;
+        margin-bottom: 1.5rem;
+        border-radius: 1rem;
+        background: linear-gradient(
+            135deg,
+            var(--color-accent-primary),
+            var(--color-accent-secondary)
+        );
+        color: white;
+        box-shadow: 0 8px 32px rgba(102, 126, 234, 0.3);
+
+        @media (max-width: 768px) {
+            width: 64px;
+            height: 64px;
+
+            svg {
+                width: 36px;
+                height: 36px;
+            }
+        }
+    }
+
+    &__title {
+        margin: 0 0 1rem 0;
+        font-family: typo.$font-family-lead;
+        font-size: 3rem;
+        font-weight: 700;
+        color: var(--color-text);
+        line-height: 1.1;
+
+        @media (max-width: 768px) {
+            font-size: 2.25rem;
+        }
+    }
+
+    &__description {
+        margin: 0;
+        font-size: 1.25rem;
+        line-height: 1.6;
+        color: var(--color-text-muted);
+        max-width: 650px;
+        margin: 0 auto;
+
+        @media (max-width: 768px) {
+            font-size: 1.1rem;
+        }
+    }
+}
+
+// Map Container
+.map-container {
+    max-width: 1400px;
+    margin: 0 auto;
+    padding: 0 2rem 4rem;
+
+    @media (max-width: 768px) {
+        padding: 0 1rem 3rem;
+    }
+}
+
+// Map Wrapper with subtle frame
+.map-wrapper {
+    position: relative;
+    background: var(--color-card-bg);
+    border: 1px solid var(--color-hairline);
+    border-radius: 1rem;
+    overflow: hidden;
+    box-shadow: 0 4px 24px rgba(0, 0, 0, 0.08);
+
+    // Subtle gradient overlay at edges
+    &::before {
+        content: "";
+        position: absolute;
+        top: 0;
+        left: 0;
+        right: 0;
+        height: 40px;
+        background: linear-gradient(
+            to bottom,
+            var(--color-card-bg) 0%,
+            transparent 100%
+        );
+        z-index: 2;
+        pointer-events: none;
+        opacity: 0.8;
+    }
+
+    &::after {
+        content: "";
+        position: absolute;
+        bottom: 0;
+        left: 0;
+        right: 0;
+        height: 40px;
+        background: linear-gradient(
+            to top,
+            var(--color-card-bg) 0%,
+            transparent 100%
+        );
+        z-index: 2;
+        pointer-events: none;
+        opacity: 0.8;
+    }
+}
+
+// SVG Container
+.map-svg-container {
+    max-height: 80vh;
+    overflow-y: auto;
+    overflow-x: auto;
+    -webkit-overflow-scrolling: touch;
+    scrollbar-width: thin;
+    scrollbar-color: var(--color-text-muted) transparent;
+
+    &::-webkit-scrollbar {
+        width: 8px;
+        height: 8px;
+    }
+
+    &::-webkit-scrollbar-track {
+        background: transparent;
+    }
+
+    &::-webkit-scrollbar-thumb {
+        background-color: var(--color-text-muted);
+        border-radius: 4px;
+        opacity: 0.5;
+    }
+}
+
+// The SVG itself
+.map-svg,
+.map-svg-fallback {
+    display: block;
+    width: 100%;
+    height: auto;
+    min-height: 600px;
+    // Provide Avenir Next fallbacks for the SVG text
+    font-family:
+        "Avenir Next LT Pro",
+        "Avenir Next",
+        "Avenir",
+        "Helvetica Neue",
+        helvetica,
+        arial,
+        sans-serif;
+}
+
+// Info Section
+.map-info {
+    margin-top: 2rem;
+    padding: 2rem;
+    background: var(--color-background-secondary);
+    border: 1px solid var(--color-hairline);
+    border-radius: 1rem;
+
+    @media (max-width: 768px) {
+        padding: 1.5rem;
+        margin-top: 1.5rem;
+    }
+
+    &__content {
+        max-width: 800px;
+        margin: 0 auto;
+    }
+
+    &__title {
+        margin: 0 0 1rem 0;
+        font-family: typo.$font-family-lead;
+        font-size: 1.5rem;
+        font-weight: 700;
+        color: var(--color-text);
+
+        @media (max-width: 768px) {
+            font-size: 1.25rem;
+        }
+    }
+
+    &__text {
+        margin: 0 0 1.5rem 0;
+        font-size: 1rem;
+        line-height: 1.7;
+        color: var(--color-text-muted);
+    }
+
+    &__note {
+        display: flex;
+        align-items: flex-start;
+        gap: 0.75rem;
+        padding: 1rem 1.25rem;
+        background: var(--color-card-bg);
+        border: 1px solid var(--color-hairline);
+        border-radius: 0.5rem;
+        font-size: 0.9rem;
+        line-height: 1.5;
+        color: var(--color-text-muted);
+
+        svg {
+            flex-shrink: 0;
+            margin-top: 0.1rem;
+            color: var(--color-accent-primary);
+        }
+    }
+}
+
+// Animation
+@keyframes map-gradient-shift {
+    0% {
+        background-position: 0% 50%;
+    }
+    50% {
+        background-position: 100% 50%;
+    }
+    100% {
+        background-position: 0% 50%;
+    }
+}
+
+// Dark theme - invert the SVG colors
+[data-theme="dark"] {
+    .map-hero__bg {
+        opacity: 0.15;
+    }
+
+    .map-wrapper {
+        box-shadow: 0 4px 24px rgba(0, 0, 0, 0.3);
+    }
+
+    .map-svg,
+    .map-svg-fallback {
+        // Invert black/white colors for dark theme
+        filter: invert(1) hue-rotate(180deg);
+    }
+
+    .map-info {
+        background: rgba(0, 0, 0, 0.2);
+    }
+}
+
+// Light theme adjustments
+[data-theme="light"] {
+    .map-hero__bg {
+        opacity: 0.08;
+    }
+
+    .map-svg,
+    .map-svg-fallback {
+        // No filter needed for light theme
+        filter: none;
+    }
+}
