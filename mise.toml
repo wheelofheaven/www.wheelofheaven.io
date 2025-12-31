@@ -14,7 +14,7 @@ run = "zola build"
 
 [tasks.serve]
 description = "Run dev server (live reload)"
-run = "zola serve --interface 0.0.0.0 --base-url http://localhost:1199 --no-port-append --open"
+run = "zola serve --port 1199 --interface 0.0.0.0 --base-url http://localhost:1199 --no-port-append --open"
 # Make "serve" exclusive, since it's interactive
 raw = true
 
