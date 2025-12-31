@@ -25,6 +25,14 @@
             >
                 {{ trans(key="navbarTimeline", lang=detected_lang) }}
             </a>
+            <a
+                href="{{ get_url(path='map') }}"
+                class="navbar__link{% if current_path and current_path is starting_with('/map') %} navbar__link--active{% endif %}"
+                data-navbar-key="map"
+                {% if current_path and current_path is starting_with('/map') %}aria-current="true"{% endif %}
+            >
+                Map
+            </a>
 
             <!-- Knowledge Dropdown -->
             <div class="navbar__dropdown" data-dropdown="knowledge" role="navigation" aria-label="Knowledge section">
@@ -597,6 +605,7 @@
                         en: {
                             essentials: "Essentials",
                             timeline: "Timeline",
+                            map: "Map",
                             knowledge: "Knowledge",
                             resources: "Resources",
                             explainers: "Explainers",
@@ -620,6 +629,7 @@
                         fr: {
                             essentials: "Essentiels",
                             timeline: "Chronologie",
+                            map: "Carte",
                             knowledge: "Connaissance",
                             resources: "Ressources",
                             explainers: "Explicateurs",
@@ -642,6 +652,7 @@
                         de: {
                             essentials: "Grundlagen",
                             timeline: "Zeitleiste",
+                            map: "Karte",
                             knowledge: "Wissen",
                             resources: "Ressourcen",
                             explainers: "Erklärungen",
@@ -664,6 +675,7 @@
                         es: {
                             essentials: "Esenciales",
                             timeline: "Cronología",
+                            map: "Mapa",
                             knowledge: "Conocimiento",
                             resources: "Recursos",
                             explainers: "Explicadores",
@@ -686,6 +698,7 @@
                         ja: {
                             essentials: "基本",
                             timeline: "タイムライン",
+                            map: "マップ",
                             knowledge: "知識",
                             resources: "リソース",
                             explainers: "解説",
@@ -706,6 +719,7 @@
                         ru: {
                             essentials: "Основы",
                             timeline: "Хронология",
+                            map: "Карта",
                             knowledge: "Знания",
                             resources: "Ресурсы",
                             explainers: "Объяснения",
@@ -728,6 +742,7 @@
                         zh: {
                             essentials: "基础",
                             timeline: "时间线",
+                            map: "地图",
                             knowledge: "知识",
                             resources: "资源",
                             explainers: "解释",
@@ -748,6 +763,7 @@
                         "zh-Hant": {
                             essentials: "基礎",
                             timeline: "時間線",
+                            map: "地圖",
                             knowledge: "知識",
                             resources: "資源",
                             explainers: "解釋",
@@ -768,6 +784,7 @@
                         ko: {
                             essentials: "기본",
                             timeline: "타임라인",
+                            map: "지도",
                             knowledge: "지식",
                             resources: "리소스",
                             explainers: "설명",
