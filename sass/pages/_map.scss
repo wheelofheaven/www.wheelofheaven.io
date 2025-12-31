@@ -6,104 +6,72 @@
     background: var(--color-background);
 }
 
-// Hero Section
-.map-hero {
-    position: relative;
-    padding: 4rem 2rem 3rem;
-    text-align: center;
-    overflow: hidden;
-
-    @media (max-width: 768px) {
-        padding: 3rem 1rem 2rem;
-    }
-
-    &__bg {
-        position: absolute;
-        inset: 0;
-        background: linear-gradient(
-            135deg,
-            var(--color-accent-primary) 0%,
-            var(--color-accent-secondary) 50%,
-            var(--color-accent-primary) 100%
-        );
-        background-size: 400% 400%;
-        animation: map-gradient-shift 20s ease-in-out infinite;
-        opacity: 0.1;
-    }
-
-    &__content {
-        position: relative;
-        z-index: 1;
-        max-width: 800px;
-        margin: 0 auto;
-    }
-
-    &__icon {
-        display: inline-flex;
-        align-items: center;
-        justify-content: center;
-        width: 80px;
-        height: 80px;
-        margin-bottom: 1.5rem;
-        border-radius: 1rem;
-        background: linear-gradient(
-            135deg,
-            var(--color-accent-primary),
-            var(--color-accent-secondary)
-        );
-        color: white;
-        box-shadow: 0 8px 32px rgba(102, 126, 234, 0.3);
-
-        @media (max-width: 768px) {
-            width: 64px;
-            height: 64px;
-
-            svg {
-                width: 36px;
-                height: 36px;
-            }
-        }
-    }
-
-    &__title {
-        margin: 0 0 1rem 0;
-        font-family: typo.$font-family-lead;
-        font-size: 3rem;
-        font-weight: 700;
-        color: var(--color-text);
-        line-height: 1.1;
-
-        @media (max-width: 768px) {
-            font-size: 2.25rem;
-        }
-    }
-
-    &__description {
-        margin: 0;
-        font-size: 1.25rem;
-        line-height: 1.6;
-        color: var(--color-text-muted);
-        max-width: 650px;
-        margin: 0 auto;
-
-        @media (max-width: 768px) {
-            font-size: 1.1rem;
-        }
-    }
-}
-
 // Map Container
 .map-container {
     max-width: 1400px;
     margin: 0 auto;
-    padding: 0 2rem 4rem;
+    padding: 1rem 2rem 4rem;
 
     @media (max-width: 768px) {
-        padding: 0 1rem 3rem;
+        padding: 1rem 1rem 3rem;
     }
 }
 
-// Map Wrapper with subtle frame
+// Toolbar
+.map-toolbar {
+    display: flex;
+    justify-content: flex-end;
+    gap: 0.5rem;
+    margin-bottom: 1rem;
+
+    &__btn {
+        display: inline-flex;
+        align-items: center;
+        gap: 0.5rem;
+        padding: 0.5rem 1rem;
+        background: var(--color-card-bg);
+        border: 1px solid var(--color-hairline);
+        border-radius: 0.5rem;
+        color: var(--color-text);
+        font-family: typo.$font-family-body;
+        font-size: 0.875rem;
+        cursor: pointer;
+        transition: all 0.2s ease;
+
+        &:hover {
+            background: var(--color-background-secondary);
+            border-color: var(--color-accent-primary);
+            color: var(--color-accent-primary);
+        }
+
+        svg {
+            flex-shrink: 0;
+        }
+
+        // Hide collapse icon by default, show expand
+        .icon-collapse {
+            display: none;
+        }
+
+        .icon-expand {
+            display: block;
+        }
+    }
+}
+
+// Fullscreen state - swap icons
+.map-page.is-fullscreen {
+    .map-toolbar__btn {
+        .icon-collapse {
+            display: block;
+        }
+        .icon-expand {
+            display: none;
+        }
+    }
+}
+
+// Map Wrapper
 .map-wrapper {
     position: relative;
     background: var(--color-card-bg);
@@ -112,45 +80,21 @@
     overflow: hidden;
     box-shadow: 0 4px 24px rgba(0, 0, 0, 0.08);
 
-    // Subtle gradient overlay at edges
-    &::before {
-        content: "";
-        position: absolute;
-        top: 0;
-        left: 0;
-        right: 0;
-        height: 40px;
-        background: linear-gradient(
-            to bottom,
-            var(--color-card-bg) 0%,
-            transparent 100%
-        );
-        z-index: 2;
-        pointer-events: none;
-        opacity: 0.8;
-    }
+    // Fullscreen mode
+    &:fullscreen {
+        border-radius: 0;
+        background: var(--color-background);
 
-    &::after {
-        content: "";
-        position: absolute;
-        bottom: 0;
-        left: 0;
-        right: 0;
-        height: 40px;
-        background: linear-gradient(
-            to top,
-            var(--color-card-bg) 0%,
-            transparent 100%
-        );
-        z-index: 2;
-        pointer-events: none;
-        opacity: 0.8;
+        .map-svg-container {
+            max-height: 100vh;
+            height: 100vh;
+        }
     }
 }
 
 // SVG Container
 .map-svg-container {
-    max-height: 80vh;
+    max-height: 85vh;
     overflow-y: auto;
     overflow-x: auto;
     -webkit-overflow-scrolling: touch;
@@ -248,25 +192,8 @@
     }
 }
 
-// Animation
-@keyframes map-gradient-shift {
-    0% {
-        background-position: 0% 50%;
-    }
-    50% {
-        background-position: 100% 50%;
-    }
-    100% {
-        background-position: 0% 50%;
-    }
-}
-
 // Dark theme - invert the SVG colors
 [data-theme="dark"] {
-    .map-hero__bg {
-        opacity: 0.15;
-    }
-
     .map-wrapper {
         box-shadow: 0 4px 24px rgba(0, 0, 0, 0.3);
     }
@@ -276,21 +203,64 @@
         // Invert black/white colors for dark theme
         filter: invert(1) hue-rotate(180deg);
     }
-
-    .map-info {
-        background: rgba(0, 0, 0, 0.2);
-    }
 }
 
 // Light theme adjustments
 [data-theme="light"] {
-    .map-hero__bg {
-        opacity: 0.08;
-    }
-
     .map-svg,
     .map-svg-fallback {
         // No filter needed for light theme
         filter: none;
+    }
+}
+
+// Print styles
+@media print {
+    // Hide everything except the map
+    body > *:not(main),
+    .skip-link,
+    .breadcrumbs,
+    .map-toolbar,
+    .map-info,
+    .to-top,
+    footer {
+        display: none !important;
+    }
+
+    .map-page {
+        min-height: auto;
+        background: white;
+    }
+
+    .map-container {
+        max-width: none;
+        padding: 0;
+        margin: 0;
+    }
+
+    .map-wrapper {
+        border: none;
+        border-radius: 0;
+        box-shadow: none;
+        background: white;
+    }
+
+    .map-svg-container {
+        max-height: none;
+        overflow: visible;
+    }
+
+    .map-svg,
+    .map-svg-fallback {
+        width: 100%;
+        height: auto;
+        min-height: auto;
+        // Ensure black on white for print
+        filter: none !important;
+    }
+
+    // Force page break handling
+    .map-wrapper {
+        page-break-inside: avoid;
     }
 }
