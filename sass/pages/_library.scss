@@ -817,7 +817,7 @@
     &__controls {
         position: sticky;
         top: 5rem;
-        z-index: 100;
+        z-index: 40; // Below navbar (z-index: 50)
         display: flex;
         align-items: center;
         justify-content: space-between;
@@ -1355,7 +1355,7 @@
     .view-controls {
         position: sticky;
         top: 5rem; // Reduced gap from navbar
-        z-index: 100;
+        z-index: 40; // Below navbar (z-index: 50)
         display: flex;
         align-items: center;
         justify-content: space-between;
