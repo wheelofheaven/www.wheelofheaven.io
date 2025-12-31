@@ -51,16 +51,15 @@
             color: var(--color-text);
         }
 
-        // Home icon
+        // Home icon (Wheel of Heaven logomark)
         &--home {
             display: flex;
             align-items: center;
-            gap: 0.25rem;
 
             svg {
-                width: 14px;
-                height: 14px;
-                opacity: 0.7;
+                width: 18px;
+                height: 18px;
+                opacity: 0.8;
             }
         }
     }
