@@ -367,20 +367,25 @@ body.mobile-nav-open {
             opacity: 1;
             transform: scale(1);
         }
+    }
+}
 
-        &--light {
-            .icon--sun {
-                opacity: 1;
-                transform: scale(1);
-            }
+// Light theme: swap moon/sun icons
+[data-theme="light"] {
+    .navbar__theme-toggle {
+        .icon--sun {
+            opacity: 1;
+            transform: scale(1);
+        }
 
-            .icon--moon {
-                opacity: 0;
-                transform: scale(0.8);
-            }
+        .icon--moon {
+            opacity: 0;
+            transform: scale(0.8);
         }
     }
+}
 
+.navbar {
     // Mobile navbar toggle (hamburger menu)
     &__mobile-toggle {
         display: none;
