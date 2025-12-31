@@ -36,20 +36,49 @@
         </div>
 
         <div class="map-wrapper" id="map-wrapper">
-            <div class="map-svg-container">
-                <object
-                    type="image/svg+xml"
-                    data="{{ get_url(path='map/narrative-map.svg') }}"
-                    class="map-svg"
-                    id="map-svg"
-                    aria-label="Wheel of Heaven Narrative Map - A visual guide through the cosmic narrative"
-                >
-                    <img
-                        src="{{ get_url(path='map/narrative-map.svg') }}"
-                        alt="Wheel of Heaven Narrative Map"
-                        class="map-svg-fallback"
-                    />
-                </object>
+            <!-- Floating controls (visible in fullscreen and on mobile) -->
+            <div class="map-controls" id="map-controls">
+                <button class="map-controls__btn" id="map-zoom-in" aria-label="Zoom in">
+                    <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                        <line x1="12" y1="5" x2="12" y2="19"></line>
+                        <line x1="5" y1="12" x2="19" y2="12"></line>
+                    </svg>
+                </button>
+                <button class="map-controls__btn" id="map-zoom-out" aria-label="Zoom out">
+                    <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                        <line x1="5" y1="12" x2="19" y2="12"></line>
+                    </svg>
+                </button>
+                <button class="map-controls__btn" id="map-zoom-reset" aria-label="Reset zoom">
+                    <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                        <path d="M3 12a9 9 0 1 0 9-9 9.75 9.75 0 0 0-6.74 2.74L3 8"></path>
+                        <path d="M3 3v5h5"></path>
+                    </svg>
+                </button>
+                <button class="map-controls__btn map-controls__btn--exit" id="map-exit-fullscreen" aria-label="Exit fullscreen">
+                    <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                        <line x1="18" y1="6" x2="6" y2="18"></line>
+                        <line x1="6" y1="6" x2="18" y2="18"></line>
+                    </svg>
+                </button>
+            </div>
+
+            <div class="map-svg-container" id="map-svg-container">
+                <div class="map-svg-wrapper" id="map-svg-wrapper">
+                    <object
+                        type="image/svg+xml"
+                        data="{{ get_url(path='map/narrative-map.svg') }}"
+                        class="map-svg"
+                        id="map-svg"
+                        aria-label="Wheel of Heaven Narrative Map - A visual guide through the cosmic narrative"
+                    >
+                        <img
+                            src="{{ get_url(path='map/narrative-map.svg') }}"
+                            alt="Wheel of Heaven Narrative Map"
+                            class="map-svg-fallback"
+                        />
+                    </object>
+                </div>
             </div>
         </div>
 
@@ -69,7 +98,7 @@
                         <line x1="12" y1="16" x2="12" y2="12"></line>
                         <line x1="12" y1="8" x2="12.01" y2="8"></line>
                     </svg>
-                    <span>Scroll vertically to explore the full timeline. Use pinch-to-zoom on touch devices.</span>
+                    <span>Use the controls to zoom and pan. Pinch-to-zoom works on touch devices.</span>
                 </div>
             </div>
         </section>
@@ -80,29 +109,180 @@
 (function() {
     const mapPage = document.getElementById('map-page');
     const mapWrapper = document.getElementById('map-wrapper');
+    const mapSvgContainer = document.getElementById('map-svg-container');
+    const mapSvgWrapper = document.getElementById('map-svg-wrapper');
     const fullscreenBtn = document.getElementById('map-fullscreen-btn');
     const printBtn = document.getElementById('map-print-btn');
+    const zoomInBtn = document.getElementById('map-zoom-in');
+    const zoomOutBtn = document.getElementById('map-zoom-out');
+    const zoomResetBtn = document.getElementById('map-zoom-reset');
+    const exitFullscreenBtn = document.getElementById('map-exit-fullscreen');
 
-    // Fullscreen toggle
-    fullscreenBtn.addEventListener('click', function() {
-        if (!document.fullscreenElement) {
-            mapWrapper.requestFullscreen().catch(err => {
-                console.log('Fullscreen not supported:', err);
-            });
-        } else {
-            document.exitFullscreen();
+    // Zoom state
+    let currentScale = 1;
+    const minScale = 0.5;
+    const maxScale = 4;
+    const scaleStep = 0.25;
+
+    // Pan state
+    let isPanning = false;
+    let startX = 0;
+    let startY = 0;
+    let scrollLeft = 0;
+    let scrollTop = 0;
+
+    // Apply zoom
+    function setZoom(scale) {
+        currentScale = Math.max(minScale, Math.min(maxScale, scale));
+        mapSvgWrapper.style.transform = `scale(${currentScale})`;
+        mapSvgWrapper.style.transformOrigin = 'top left';
+    }
+
+    // Zoom controls
+    zoomInBtn.addEventListener('click', function() {
+        setZoom(currentScale + scaleStep);
+    });
+
+    zoomOutBtn.addEventListener('click', function() {
+        setZoom(currentScale - scaleStep);
+    });
+
+    zoomResetBtn.addEventListener('click', function() {
+        setZoom(1);
+        mapSvgContainer.scrollLeft = 0;
+        mapSvgContainer.scrollTop = 0;
+    });
+
+    // Mouse wheel zoom
+    mapSvgContainer.addEventListener('wheel', function(e) {
+        if (e.ctrlKey || e.metaKey) {
+            e.preventDefault();
+            const delta = e.deltaY > 0 ? -scaleStep : scaleStep;
+            setZoom(currentScale + delta);
+        }
+    }, { passive: false });
+
+    // Touch pinch zoom
+    let initialDistance = 0;
+    let initialScale = 1;
+
+    mapSvgContainer.addEventListener('touchstart', function(e) {
+        if (e.touches.length === 2) {
+            initialDistance = Math.hypot(
+                e.touches[0].clientX - e.touches[1].clientX,
+                e.touches[0].clientY - e.touches[1].clientY
+            );
+            initialScale = currentScale;
+        } else if (e.touches.length === 1) {
+            // Start panning
+            isPanning = true;
+            startX = e.touches[0].clientX;
+            startY = e.touches[0].clientY;
+            scrollLeft = mapSvgContainer.scrollLeft;
+            scrollTop = mapSvgContainer.scrollTop;
+        }
+    }, { passive: true });
+
+    mapSvgContainer.addEventListener('touchmove', function(e) {
+        if (e.touches.length === 2) {
+            e.preventDefault();
+            const currentDistance = Math.hypot(
+                e.touches[0].clientX - e.touches[1].clientX,
+                e.touches[0].clientY - e.touches[1].clientY
+            );
+            const scale = initialScale * (currentDistance / initialDistance);
+            setZoom(scale);
+        } else if (e.touches.length === 1 && isPanning && currentScale > 1) {
+            const deltaX = startX - e.touches[0].clientX;
+            const deltaY = startY - e.touches[0].clientY;
+            mapSvgContainer.scrollLeft = scrollLeft + deltaX;
+            mapSvgContainer.scrollTop = scrollTop + deltaY;
+        }
+    }, { passive: false });
+
+    mapSvgContainer.addEventListener('touchend', function() {
+        isPanning = false;
+        initialDistance = 0;
+    });
+
+    // Mouse drag to pan
+    mapSvgContainer.addEventListener('mousedown', function(e) {
+        if (currentScale > 1) {
+            isPanning = true;
+            startX = e.clientX;
+            startY = e.clientY;
+            scrollLeft = mapSvgContainer.scrollLeft;
+            scrollTop = mapSvgContainer.scrollTop;
+            mapSvgContainer.style.cursor = 'grabbing';
         }
     });
 
-    // Update button state on fullscreen change
-    document.addEventListener('fullscreenchange', function() {
-        mapPage.classList.toggle('is-fullscreen', !!document.fullscreenElement);
+    mapSvgContainer.addEventListener('mousemove', function(e) {
+        if (isPanning) {
+            const deltaX = startX - e.clientX;
+            const deltaY = startY - e.clientY;
+            mapSvgContainer.scrollLeft = scrollLeft + deltaX;
+            mapSvgContainer.scrollTop = scrollTop + deltaY;
+        }
     });
+
+    mapSvgContainer.addEventListener('mouseup', function() {
+        isPanning = false;
+        mapSvgContainer.style.cursor = currentScale > 1 ? 'grab' : 'default';
+    });
+
+    mapSvgContainer.addEventListener('mouseleave', function() {
+        isPanning = false;
+        mapSvgContainer.style.cursor = currentScale > 1 ? 'grab' : 'default';
+    });
+
+    // Fullscreen toggle
+    function enterFullscreen() {
+        if (mapWrapper.requestFullscreen) {
+            mapWrapper.requestFullscreen();
+        } else if (mapWrapper.webkitRequestFullscreen) {
+            mapWrapper.webkitRequestFullscreen();
+        }
+    }
+
+    function exitFullscreen() {
+        if (document.exitFullscreen) {
+            document.exitFullscreen();
+        } else if (document.webkitExitFullscreen) {
+            document.webkitExitFullscreen();
+        }
+    }
+
+    fullscreenBtn.addEventListener('click', function() {
+        if (!document.fullscreenElement && !document.webkitFullscreenElement) {
+            enterFullscreen();
+        } else {
+            exitFullscreen();
+        }
+    });
+
+    exitFullscreenBtn.addEventListener('click', function() {
+        exitFullscreen();
+    });
+
+    // Update button state on fullscreen change
+    function handleFullscreenChange() {
+        const isFullscreen = !!(document.fullscreenElement || document.webkitFullscreenElement);
+        mapPage.classList.toggle('is-fullscreen', isFullscreen);
+    }
+
+    document.addEventListener('fullscreenchange', handleFullscreenChange);
+    document.addEventListener('webkitfullscreenchange', handleFullscreenChange);
 
     // Print mode
     printBtn.addEventListener('click', function() {
         window.print();
     });
+
+    // Update cursor based on zoom level
+    function updateCursor() {
+        mapSvgContainer.style.cursor = currentScale > 1 ? 'grab' : 'default';
+    }
 })();
 </script>
 {% endblock content %}
