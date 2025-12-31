@@ -301,6 +301,12 @@
 
 // Print styles
 @media print {
+    // Suggest landscape for wider maps
+    @page {
+        size: landscape;
+        margin: 0.5cm;
+    }
+
     // Hide everything except the map
     body > *:not(main),
     .skip-link,
@@ -309,17 +315,39 @@
     .map-controls,
     .map-info,
     .to-top,
-    footer {
+    footer,
+    header,
+    nav,
+    .navbar {
         display: none !important;
+    }
+
+    // Reset body/html for full page
+    html, body {
+        width: 100% !important;
+        height: 100% !important;
+        margin: 0 !important;
+        padding: 0 !important;
+        background: white !important;
+    }
+
+    main {
+        padding: 0 !important;
+        margin: 0 !important;
     }
 
     .map-page {
         min-height: auto;
+        height: 100%;
         background: white;
+        padding: 0;
+        margin: 0;
     }
 
     .map-container {
         max-width: none;
+        width: 100%;
+        height: 100%;
         padding: 0;
         margin: 0;
     }
@@ -329,18 +357,31 @@
         border-radius: 0;
         box-shadow: none;
         background: white;
+        width: 100%;
+        height: 100%;
     }
 
     .map-svg-container {
         max-height: none;
         overflow: visible;
+        width: 100%;
+        height: 100%;
+    }
+
+    .map-svg-wrapper {
+        width: 100%;
+        height: 100%;
+        transform: none !important; // Reset any zoom transforms
     }
 
     .map-svg,
     .map-svg-fallback {
         width: 100%;
-        height: auto;
+        height: 100%;
         min-height: auto;
+        max-width: 100vw;
+        max-height: 100vh;
+        object-fit: contain;
         // Ensure black on white for print
         filter: none !important;
     }
