@@ -25,15 +25,6 @@
             >
                 {{ trans(key="navbarTimeline", lang=detected_lang) }}
             </a>
-            <a
-                href="{{ get_url(path='map') }}"
-                class="navbar__link{% if current_path and current_path is starting_with('/map') %} navbar__link--active{% endif %}"
-                data-navbar-key="map"
-                {% if current_path and current_path is starting_with('/map') %}aria-current="true"{% endif %}
-            >
-                Map
-            </a>
-
             <!-- Knowledge Dropdown -->
             <div class="navbar__dropdown" data-dropdown="knowledge" role="navigation" aria-label="Knowledge section">
                 <button
