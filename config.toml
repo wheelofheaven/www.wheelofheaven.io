@@ -43,12 +43,14 @@ language_name_french = "Français"
 language_name_spanish = "Español"
 language_name_russian = "Русский"
 language_name_japanese = "日本語"
-language_name_chinese = "中文"
+language_name_chinese = "简体中文"
+language_name_chinese_traditional = "繁體中文"
+language_name_korean = "한국어"
 
 # Languages configuration
 #
-# Supported languages (for now):
-# en, de, fr, es, ru, ja, zh
+# Supported languages:
+# en, de, fr, es, ru, ja, zh, zh-Hant, ko
 
 [translations]
 tagline = "Mapping our engineered origins with evidence."
@@ -879,3 +881,185 @@ navbarCodeOfConductLink = "/zh/code-of-conduct/"
 navbarContributingLink = "/zh/contributing/"
 navbarForumsLink = "/zh/forums/"
 navbarFAQLink = "/zh/faq/"
+
+[languages.zh-Hant]
+generate_feeds = true
+build_search_index = true
+
+[languages.zh-Hant.translations]
+tagline = "以證據繪製我們被設計的起源。"
+strapline = "Wheel of Heaven 是一個開放的多語言地圖集，將古代關於外星設計的主張與當今經同行評審的科學聯繫起來。"
+elevatorPitch = "Wheel of Heaven 是一個公共知識中心，將雷爾經典、世界神話和現代基因組學編織成一個關於人類可能被設計起源的批判性、引文豐富的敘述。閱讀簡明入門、探索註釋原始文本、了解傳說——一切透明、開源、免費。"
+footerAbout = "關於"
+footerAbout_url = "/about/"
+footerFAQ = "常見問題"
+footerSections = "版塊"
+footerHome = "首頁"
+footerIntro = "簡介"
+footerWiki = "維基"
+footerArticles = "文章"
+footerResources = "資源"
+footerJumpRightIn = "直接深入"
+footerCommunity = "社群"
+footerCodeOfConduct = "行為守則"
+footerGithubDiscussion = "GitHub 討論"
+footerOpenSource = "開源"
+footerSocialMedia = "社群媒體"
+footerPlatform = "平台"
+footerTags = "標籤"
+footerCategories = "分類"
+footerContributors = "貢獻者"
+footerContribute = "如何貢獻"
+footerChangelog = "變更日誌"
+footerCommitActivity = "提交活動"
+footerReadme = "自述文件"
+footerRssFeed = "RSS 訂閱"
+footerPrivacyTerms = "隱私與條款"
+footerPrivacyPolicy = "隱私政策"
+footerPrivacyPolicy_url = "/privacy-policy/"
+footerCookiePolicy = "Cookie 政策"
+footerCookiePolicy_url = "/cookie-policy/"
+footerSecurityPolicy = "安全政策"
+footerContact = "聯絡方式"
+footerAttribution = "此作品屬於公共領域"
+footerAttributionSubline = "內容可在<a href=\"https://github.com/wheelofheaven/wheelofheaven.io/blob/main/LICENSE\" class=\"link\" target=\"_blank\">知識共享授權</a>下獲取"
+
+# Snackbar notifications
+snackbarCopiedToClipboard = "已複製到剪貼簿"
+snackbarCopyFailed = "複製失敗"
+snackbarSuccess = "成功"
+snackbarError = "錯誤"
+snackbarInfo = "資訊"
+snackbarWarning = "警告"
+
+# Navbar translations
+navbarEssentials = "基礎"
+navbarTimeline = "時間線"
+navbarKnowledge = "知識"
+navbarResources = "資源"
+
+# Knowledge dropdown items
+navbarExplainers = "解釋"
+navbarExplainersDesc = "關鍵概念和想法的詳細解釋"
+navbarLibrary = "圖書館"
+navbarLibraryDesc = "神聖文本及其現代解釋"
+navbarWiki = "百科"
+navbarWikiDesc = "全面的參考和文檔"
+
+# Resources dropdown items
+navbarResourcesOrg = "組織"
+navbarResourcesCommunity = "社群"
+navbarAbout = "關於我們"
+navbarAboutDesc = "了解我們的使命和價值觀"
+navbarCodeOfConduct = "行為準則"
+navbarCodeOfConductDesc = "社群指導原則和標準"
+navbarContributing = "貢獻"
+navbarContributingDesc = "如何為專案做貢獻"
+navbarForums = "論壇與討論"
+navbarForumsDesc = "與我們的社群一起加入對話"
+navbarFAQ = "常見問題"
+navbarFAQDesc = "常見問題和答案"
+navbarFollowX = "在X上關注我們"
+
+# Navbar URLs
+navbarEssentialsLink = "/zh-Hant/essentials/"
+navbarTimelineLink = "/zh-Hant/timeline/"
+navbarExplainersLink = "/zh-Hant/explainers/"
+navbarLibraryLink = "/zh-Hant/library/"
+navbarWikiLink = "/zh-Hant/wiki/"
+navbarAboutLink = "/zh-Hant/about/"
+navbarCodeOfConductLink = "/zh-Hant/code-of-conduct/"
+navbarContributingLink = "/zh-Hant/contributing/"
+navbarForumsLink = "/zh-Hant/forums/"
+navbarFAQLink = "/zh-Hant/faq/"
+
+[languages.ko]
+generate_feeds = true
+build_search_index = true
+
+[languages.ko.translations]
+tagline = "증거로 우리의 설계된 기원을 매핑합니다."
+strapline = "Wheel of Heaven은 외계 설계에 대한 고대의 주장을 오늘날의 동료 심사 과학과 연결하는 개방적이고 다국어 지원 아틀라스입니다."
+elevatorPitch = "Wheel of Heaven은 라엘리안 경전, 세계 신화, 현대 유전체학을 인류의 잠재적인 설계 기원에 대한 비판적이고 인용이 풍부한 서사로 엮는 공개 지식 허브입니다. 간결한 입문서를 읽고, 주석이 달린 원문을 탐색하고, 모든 것이 투명하고 오픈 소스이며 무료인 전승을 탐구하세요."
+footerAbout = "소개"
+footerAbout_url = "/about/"
+footerFAQ = "자주 묻는 질문"
+footerSections = "섹션"
+footerHome = "홈"
+footerIntro = "소개"
+footerWiki = "위키"
+footerArticles = "기사"
+footerResources = "리소스"
+footerJumpRightIn = "바로 시작하기"
+footerCommunity = "커뮤니티"
+footerCodeOfConduct = "행동 강령"
+footerGithubDiscussion = "GitHub 토론"
+footerOpenSource = "오픈 소스"
+footerSocialMedia = "소셜 미디어"
+footerPlatform = "플랫폼"
+footerTags = "태그"
+footerCategories = "카테고리"
+footerContributors = "기여자"
+footerContribute = "기여 방법"
+footerChangelog = "변경 로그"
+footerCommitActivity = "커밋 활동"
+footerReadme = "리드미"
+footerRssFeed = "RSS 피드"
+footerPrivacyTerms = "개인정보 및 약관"
+footerPrivacyPolicy = "개인정보 처리방침"
+footerPrivacyPolicy_url = "/privacy-policy/"
+footerCookiePolicy = "쿠키 정책"
+footerCookiePolicy_url = "/cookie-policy/"
+footerSecurityPolicy = "보안 정책"
+footerContact = "연락처"
+footerAttribution = "이 작품은 퍼블릭 도메인입니다"
+footerAttributionSubline = "콘텐츠는 <a href=\"https://github.com/wheelofheaven/wheelofheaven.io/blob/main/LICENSE\" class=\"link\" target=\"_blank\">크리에이티브 커먼즈 라이선스</a>하에 이용 가능합니다"
+
+# Snackbar notifications
+snackbarCopiedToClipboard = "클립보드에 복사됨"
+snackbarCopyFailed = "복사 실패"
+snackbarSuccess = "성공"
+snackbarError = "오류"
+snackbarInfo = "정보"
+snackbarWarning = "경고"
+
+# Navbar translations
+navbarEssentials = "필수"
+navbarTimeline = "타임라인"
+navbarKnowledge = "지식"
+navbarResources = "리소스"
+
+# Knowledge dropdown items
+navbarExplainers = "설명"
+navbarExplainersDesc = "핵심 개념과 아이디어에 대한 상세한 설명"
+navbarLibrary = "도서관"
+navbarLibraryDesc = "신성한 텍스트와 현대적 해석"
+navbarWiki = "위키"
+navbarWikiDesc = "포괄적인 참조 및 문서"
+
+# Resources dropdown items
+navbarResourcesOrg = "조직"
+navbarResourcesCommunity = "커뮤니티"
+navbarAbout = "소개"
+navbarAboutDesc = "우리의 미션과 가치관에 대해 알아보기"
+navbarCodeOfConduct = "행동 강령"
+navbarCodeOfConductDesc = "커뮤니티 가이드라인 및 표준"
+navbarContributing = "기여"
+navbarContributingDesc = "프로젝트에 기여하는 방법"
+navbarForums = "포럼 및 토론"
+navbarForumsDesc = "커뮤니티와 대화에 참여하세요"
+navbarFAQ = "FAQ"
+navbarFAQDesc = "자주 묻는 질문과 답변"
+navbarFollowX = "X에서 팔로우"
+
+# Navbar URLs
+navbarEssentialsLink = "/ko/essentials/"
+navbarTimelineLink = "/ko/timeline/"
+navbarExplainersLink = "/ko/explainers/"
+navbarLibraryLink = "/ko/library/"
+navbarWikiLink = "/ko/wiki/"
+navbarAboutLink = "/ko/about/"
+navbarCodeOfConductLink = "/ko/code-of-conduct/"
+navbarContributingLink = "/ko/contributing/"
+navbarForumsLink = "/ko/forums/"
+navbarFAQLink = "/ko/faq/"

@@ -206,6 +206,19 @@ textarea {
     letter-spacing: 0.01em;
 }
 
+// Korean
+:lang(ko) {
+    font-family:
+        "Jost",
+        "Apple SD Gothic Neo",
+        "Malgun Gothic",
+        "Nanum Gothic",
+        "Noto Sans KR",
+        sans-serif;
+    line-height: 1.8;
+    word-break: keep-all; // Prevent breaking within words
+}
+
 // Hebrew text styling (for inline Hebrew words throughout the site)
 [lang="he"],
 :lang(he) {
