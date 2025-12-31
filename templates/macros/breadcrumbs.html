@@ -129,3 +129,22 @@
     </ol>
 </nav>
 {% endmacro library %}
+
+{# Convenience macro for Community/Info pages (FAQ, Code of Conduct, etc.) #}
+{% macro community(page, lang="en") %}
+<nav class="breadcrumbs" aria-label="Breadcrumb" itemscope itemtype="https://schema.org/BreadcrumbList">
+    <ol class="breadcrumbs__list">
+        <li class="breadcrumbs__item" itemprop="itemListElement" itemscope itemtype="https://schema.org/ListItem">
+            <a href="{{ get_url(path='/', lang=lang) }}" class="breadcrumbs__link breadcrumbs__link--home" itemprop="item">
+                {% include "partials/brand/logomark.html" %}
+                <span class="visually-hidden" itemprop="name">Home</span>
+            </a>
+            <meta itemprop="position" content="1" />
+        </li>
+        <li class="breadcrumbs__item" itemprop="itemListElement" itemscope itemtype="https://schema.org/ListItem">
+            <span class="breadcrumbs__current" itemprop="name">{{ page.title }}</span>
+            <meta itemprop="position" content="2" />
+        </li>
+    </ol>
+</nav>
+{% endmacro community %}

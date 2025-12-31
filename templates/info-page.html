@@ -1,7 +1,10 @@
 {% extends "base.html" %}
+{% import "macros/breadcrumbs.html" as breadcrumbs %}
 
 {% block content %}
 <div class="info-page">
+    <!-- Breadcrumb Navigation -->
+    {{ breadcrumbs::community(page=page, lang=detected_lang) }}
     <!-- Hero Section -->
     <header class="info-page__hero">
         <div class="info-page__hero-bg"></div>
