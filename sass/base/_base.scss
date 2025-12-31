@@ -147,3 +147,88 @@ textarea {
 ::-webkit-scrollbar-corner {
     background: transparent;
 }
+
+// =============================================================================
+// Language-specific typography optimizations
+// =============================================================================
+
+// Japanese - optimized font stack and slightly increased line-height for readability
+:lang(ja) {
+    font-family:
+        "Jost",
+        "Hiragino Kaku Gothic ProN",
+        "Hiragino Sans",
+        "Yu Gothic UI",
+        "Yu Gothic",
+        "Meiryo",
+        "Noto Sans JP",
+        sans-serif;
+    line-height: 1.8;
+    word-break: normal;
+    overflow-wrap: anywhere;
+}
+
+// Chinese Simplified
+:lang(zh),
+:lang(zh-Hans),
+:lang(zh-CN) {
+    font-family:
+        "Jost",
+        "PingFang SC",
+        "Hiragino Sans GB",
+        "Microsoft YaHei",
+        "Noto Sans SC",
+        sans-serif;
+    line-height: 1.8;
+}
+
+// Chinese Traditional
+:lang(zh-Hant),
+:lang(zh-TW) {
+    font-family:
+        "Jost",
+        "PingFang TC",
+        "Microsoft JhengHei",
+        "Noto Sans TC",
+        sans-serif;
+    line-height: 1.8;
+}
+
+// Russian/Cyrillic - Jost already supports Cyrillic, just ensure proper rendering
+:lang(ru) {
+    font-family:
+        "Jost",
+        "Segoe UI",
+        "Roboto",
+        "Noto Sans",
+        sans-serif;
+    // Cyrillic often benefits from slightly more spacing
+    letter-spacing: 0.01em;
+}
+
+// Hebrew text styling (for inline Hebrew words throughout the site)
+[lang="he"],
+:lang(he) {
+    font-family:
+        "Arial Hebrew",
+        "Noto Sans Hebrew",
+        "Segoe UI",
+        "Tahoma",
+        sans-serif;
+    direction: rtl;
+    unicode-bidi: isolate;
+}
+
+// For inline Hebrew within LTR content (e.g., Hebrew words in English text)
+.hebrew,
+.text-hebrew {
+    font-family:
+        "Arial Hebrew",
+        "Noto Sans Hebrew",
+        "Segoe UI",
+        "Tahoma",
+        sans-serif;
+    direction: rtl;
+    unicode-bidi: isolate;
+    display: inline-block;
+}

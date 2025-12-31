@@ -4,8 +4,43 @@
 
 @use "fonts";
 
+// CJK font stacks (Chinese, Japanese, Korean)
+$font-family-cjk-ja:
+    "Hiragino Kaku Gothic ProN",
+    "Hiragino Sans",
+    "Yu Gothic UI",
+    "Yu Gothic",
+    "Meiryo",
+    "Noto Sans JP";
+$font-family-cjk-zh:
+    "PingFang SC",
+    "Hiragino Sans GB",
+    "Microsoft YaHei",
+    "Noto Sans SC";
+$font-family-cjk-zh-hant:
+    "PingFang TC",
+    "Microsoft JhengHei",
+    "Noto Sans TC";
+
+// Hebrew font stack
+$font-family-hebrew:
+    "Arial Hebrew",
+    "Noto Sans Hebrew",
+    "Segoe UI",
+    "Tahoma";
+
+// Main font stacks with comprehensive fallbacks
 $font-family-sans:
     "Jost",
+    // CJK fallbacks (order: Japanese, Simplified Chinese)
+    "Hiragino Kaku Gothic ProN",
+    "Hiragino Sans",
+    "Yu Gothic UI",
+    "PingFang SC",
+    "Microsoft YaHei",
+    // Hebrew fallback
+    "Arial Hebrew",
+    // System defaults
     -apple-system,
     blinkmacsystemfont,
     "Segoe UI",
@@ -17,11 +52,49 @@ $font-family-sans:
     "Segoe UI Emoji",
     "Segoe UI Symbol",
     "Noto Color Emoji";
-$font-family-serif: "SpaceGrotesk", Georgia, Times, "Times New Roman", serif;
+
+$font-family-serif:
+    "SpaceGrotesk",
+    // CJK serif/display fallbacks
+    "Hiragino Mincho ProN",
+    "Yu Mincho",
+    "Noto Serif JP",
+    "PingFang SC",
+    "Noto Serif SC",
+    // Hebrew
+    "Arial Hebrew",
+    "Noto Serif Hebrew",
+    // Standard serif
+    Georgia, Times, "Times New Roman", serif;
+
 $font-family-mono:
-    "iAWriterQuattroS", sfmono-regular, menlo, monaco, consolas, "Liberation Mono",
+    "iAWriterQuattroS",
+    // CJK monospace fallbacks (use gothic/sans for code - more readable)
+    "Hiragino Kaku Gothic ProN",
+    "Yu Gothic",
+    "Noto Sans JP",
+    "PingFang SC",
+    "Microsoft YaHei",
+    "Noto Sans SC",
+    // Hebrew
+    "Arial Hebrew",
+    // Standard monospace
+    sfmono-regular, menlo, monaco, consolas, "Liberation Mono",
     "Courier New", monospace;
-$font-family-quote: "SpaceGrotesk", Georgia, Times, "Times New Roman", serif;
+
+$font-family-quote:
+    "SpaceGrotesk",
+    // CJK - use mincho/serif for quotes (more literary feel)
+    "Hiragino Mincho ProN",
+    "Yu Mincho",
+    "Noto Serif JP",
+    "Songti SC",
+    "Noto Serif SC",
+    // Hebrew
+    "Arial Hebrew",
+    "Noto Serif Hebrew",
+    // Standard serif
+    Georgia, Times, "Times New Roman", serif;
 
 $font-family-body: $font-family-sans;
 $font-family-lead: $font-family-serif;
