@@ -6,11 +6,12 @@
 @use "../base/typography" as typo;
 
 .breadcrumbs {
-    padding: 1rem 2rem 0;
-    margin-bottom: 0;
+    padding: 1rem 2rem;
+    margin-bottom: 1rem;
 
     @media (max-width: 999px) {
-        padding: 0.75rem 1rem 0;
+        padding: 0.75rem 1rem;
+        margin-bottom: 0.75rem;
     }
 
     &__list {
