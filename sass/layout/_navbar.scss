@@ -276,7 +276,8 @@ body.mobile-nav-open {
         }
     }
 
-    &__language-switcher {
+    &__language-switcher,
+    &__theme-switcher {
         display: flex;
         align-items: center;
         gap: 0.25rem;
@@ -587,6 +588,7 @@ body.mobile-nav-open {
 
             // Hide desktop controls on mobile
             .navbar__language-switcher,
+            .navbar__theme-switcher,
             .navbar__theme-toggle {
                 display: none;
             }
@@ -838,7 +840,8 @@ body.mobile-nav-open {
                 }
             }
 
-            .navbar__language-switcher {
+            .navbar__language-switcher,
+            .navbar__theme-switcher {
                 display: flex;
                 align-items: center;
                 gap: 0.5rem;

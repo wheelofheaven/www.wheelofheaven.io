@@ -391,23 +391,6 @@
         <!-- Mobile controls section -->
         <div class="navbar__mobile-content">
             <div class="navbar__mobile-controls">
-                <button
-                    id="mobile-theme-toggle"
-                    class="navbar__theme-toggle"
-                    aria-label="Toggle dark/light mode"
-                >
-                    <span class="navbar__theme-icon">
-                        <span class="icon icon--moon"
-                            >{% include "partials/icons/feather-moon.html"
-                            %}</span
-                        >
-                        <span class="icon icon--sun"
-                            >{% include "partials/icons/feather-sun.html"
-                            %}</span
-                        >
-                    </span>
-                </button>
-
                 <div
                     class="navbar__language-switcher"
                     id="mobile-lang-switcher"
@@ -425,8 +408,22 @@
                         <option value="es">Español</option>
                         <option value="fr">Français</option>
                         <option value="ja">日本語</option>
+                        <option value="ko">한국어</option>
                         <option value="ru">Русский</option>
-                        <option value="zh">中文</option>
+                        <option value="zh">简体中文</option>
+                        <option value="zh-Hant">繁體中文</option>
+                    </select>
+                </div>
+
+                <div class="navbar__theme-switcher" id="mobile-theme-switcher">
+                    <select
+                        id="mobile-theme-select"
+                        class="navbar__select"
+                        aria-label="Select theme"
+                    >
+                        <option value="system">Auto</option>
+                        <option value="dark">Dark</option>
+                        <option value="light">Light</option>
                     </select>
                 </div>
             </div>
@@ -487,25 +484,24 @@
                 <option value="es">Español</option>
                 <option value="fr">Français</option>
                 <option value="ja">日本語</option>
+                <option value="ko">한국어</option>
                 <option value="ru">Русский</option>
-                <option value="zh">中文</option>
+                <option value="zh">简体中文</option>
+                <option value="zh-Hant">繁體中文</option>
             </select>
         </div>
 
-        <button
-            id="theme-toggle"
-            class="navbar__theme-toggle"
-            aria-label="Toggle dark/light mode"
-        >
-            <span class="navbar__theme-icon">
-                <span class="icon icon--moon"
-                    >{% include "partials/icons/feather-moon.html" %}</span
-                >
-                <span class="icon icon--sun"
-                    >{% include "partials/icons/feather-sun.html" %}</span
-                >
-            </span>
-        </button>
+        <div class="navbar__theme-switcher" id="theme-switcher">
+            <select
+                id="theme-select"
+                class="navbar__select"
+                aria-label="Select theme"
+            >
+                <option value="system">Auto</option>
+                <option value="dark">Dark</option>
+                <option value="light">Light</option>
+            </select>
+        </div>
 
         <script>
             document.addEventListener("DOMContentLoaded", function () {
@@ -516,12 +512,18 @@
                 function getCurrentLanguage() {
                     const path = window.location.pathname;
                     const defaultLang = "en";
-                    const supportedLangs = ["de", "es", "fr", "ja", "ru", "zh"];
+                    const supportedLangs = ["de", "es", "fr", "ja", "ko", "ru", "zh", "zh-Hant"];
 
-                    // Check if path starts with a language code
+                    // Check if path starts with a language code (handle zh-Hant first)
                     const pathParts = path
                         .split("/")
                         .filter((part) => part.length > 0);
+
+                    // Check for zh-Hant first (two-part code)
+                    if (pathParts.length > 0 && pathParts[0] === "zh-Hant") {
+                        return "zh-Hant";
+                    }
+
                     if (
                         pathParts.length > 0 &&
                         supportedLangs.includes(pathParts[0])
@@ -743,6 +745,46 @@
                             faq: "常见问题",
                             followX: "在X上关注我们",
                         },
+                        "zh-Hant": {
+                            essentials: "基礎",
+                            timeline: "時間線",
+                            knowledge: "知識",
+                            resources: "資源",
+                            explainers: "解釋",
+                            explainersDesc: "核心概念和想法的詳細解釋",
+                            revelations: "啟示",
+                            revelationsDesc: "神聖文本及其現代解釋",
+                            wiki: "百科",
+                            wikiDesc: "全面的參考和文檔",
+                            org: "組織",
+                            community: "社群",
+                            about: "關於我們",
+                            codeOfConduct: "行為準則",
+                            contributing: "貢獻",
+                            forums: "論壇與討論",
+                            faq: "常見問題",
+                            followX: "在X上關注我們",
+                        },
+                        ko: {
+                            essentials: "기본",
+                            timeline: "타임라인",
+                            knowledge: "지식",
+                            resources: "리소스",
+                            explainers: "설명",
+                            explainersDesc: "핵심 개념과 아이디어에 대한 상세 설명",
+                            revelations: "계시",
+                            revelationsDesc: "신성한 문헌과 현대적 해석",
+                            wiki: "위키",
+                            wikiDesc: "종합적인 레퍼런스 및 문서",
+                            org: "조직",
+                            community: "커뮤니티",
+                            about: "소개",
+                            codeOfConduct: "행동 강령",
+                            contributing: "기여하기",
+                            forums: "포럼 및 토론",
+                            faq: "자주 묻는 질문",
+                            followX: "X에서 팔로우",
+                        },
                     };
 
                     const t = translations[currentLang] || translations.en;
@@ -788,6 +830,64 @@
                         }
                     });
                 }
+
+                // Theme switcher functionality
+                function getCurrentThemeSetting() {
+                    const saved = localStorage.getItem("theme");
+                    if (saved === "light" || saved === "dark") {
+                        return saved;
+                    }
+                    return "system";
+                }
+
+                function applyTheme(theme) {
+                    const html = document.documentElement;
+                    if (theme === "system") {
+                        localStorage.removeItem("theme");
+                        const prefersLight = window.matchMedia("(prefers-color-scheme: light)").matches;
+                        html.setAttribute("data-theme", prefersLight ? "light" : "dark");
+                    } else {
+                        localStorage.setItem("theme", theme);
+                        html.setAttribute("data-theme", theme);
+                    }
+                }
+
+                function updateThemeSelectors() {
+                    const currentTheme = getCurrentThemeSetting();
+                    const desktopSelect = document.getElementById("theme-select");
+                    const mobileSelect = document.getElementById("mobile-theme-select");
+
+                    if (desktopSelect) desktopSelect.value = currentTheme;
+                    if (mobileSelect) mobileSelect.value = currentTheme;
+                }
+
+                // Initialize theme selectors
+                updateThemeSelectors();
+
+                // Handle desktop theme switcher
+                const themeSelect = document.getElementById("theme-select");
+                if (themeSelect) {
+                    themeSelect.addEventListener("change", function (e) {
+                        applyTheme(e.target.value);
+                        updateThemeSelectors();
+                    });
+                }
+
+                // Handle mobile theme switcher
+                const mobileThemeSelect = document.getElementById("mobile-theme-select");
+                if (mobileThemeSelect) {
+                    mobileThemeSelect.addEventListener("change", function (e) {
+                        applyTheme(e.target.value);
+                        updateThemeSelectors();
+                    });
+                }
+
+                // Listen for system theme changes when in "system" mode
+                window.matchMedia("(prefers-color-scheme: light)").addEventListener("change", function () {
+                    if (getCurrentThemeSetting() === "system") {
+                        applyTheme("system");
+                    }
+                });
             });
         </script>
     </div>
