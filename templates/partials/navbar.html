@@ -399,28 +399,35 @@
         <!-- Mobile controls section -->
         <div class="navbar__mobile-content">
             <div class="navbar__mobile-controls">
-                <div
-                    class="navbar__language-switcher"
-                    id="mobile-lang-switcher"
-                >
-                    <Icon name="lucide:globe" size="16" />
-                    <select
-                        id="mobile-lang-select"
-                        class="navbar__select"
+                <div class="navbar__lang-dropdown" id="mobile-lang-switcher">
+                    <button
+                        class="navbar__lang-trigger"
+                        id="mobile-lang-trigger"
+                        aria-expanded="false"
+                        aria-haspopup="listbox"
                         aria-label="Select language"
                     >
-                        <!-- Default language (English) -->
-                        <option value="en">English</option>
-                        <!-- Sorted alphabetically by language code -->
-                        <option value="de">Deutsch</option>
-                        <option value="es">Español</option>
-                        <option value="fr">Français</option>
-                        <option value="ja">日本語</option>
-                        <option value="ko">한국어</option>
-                        <option value="ru">Русский</option>
-                        <option value="zh">简体中文</option>
-                        <option value="zh-Hant">繁體中文</option>
-                    </select>
+                        <svg class="navbar__lang-icon" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                            <circle cx="12" cy="12" r="10"></circle>
+                            <line x1="2" y1="12" x2="22" y2="12"></line>
+                            <path d="M12 2a15.3 15.3 0 0 1 4 10 15.3 15.3 0 0 1-4 10 15.3 15.3 0 0 1-4-10 15.3 15.3 0 0 1 4-10z"></path>
+                        </svg>
+                        <span class="navbar__lang-current" id="mobile-lang-current">EN</span>
+                        <svg class="navbar__lang-chevron" width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                            <polyline points="6 9 12 15 18 9"></polyline>
+                        </svg>
+                    </button>
+                    <ul class="navbar__lang-menu" id="mobile-lang-menu" role="listbox" aria-label="Available languages">
+                        <li class="navbar__lang-option" data-lang="en" role="option">English</li>
+                        <li class="navbar__lang-option" data-lang="de" role="option">Deutsch</li>
+                        <li class="navbar__lang-option" data-lang="es" role="option">Español</li>
+                        <li class="navbar__lang-option" data-lang="fr" role="option">Français</li>
+                        <li class="navbar__lang-option" data-lang="ja" role="option">日本語</li>
+                        <li class="navbar__lang-option" data-lang="ko" role="option">한국어</li>
+                        <li class="navbar__lang-option" data-lang="ru" role="option">Русский</li>
+                        <li class="navbar__lang-option" data-lang="zh" role="option">简体中文</li>
+                        <li class="navbar__lang-option" data-lang="zh-Hant" role="option">繁體中文</li>
+                    </ul>
                 </div>
 
                 <button
@@ -477,25 +484,35 @@
             />
         </div>
 
-        <div class="navbar__language-switcher" id="lang-switcher">
-            <Icon name="lucide:globe" size="16" />
-            <select
-                id="lang-select"
-                class="navbar__select"
+        <div class="navbar__lang-dropdown" id="lang-switcher">
+            <button
+                class="navbar__lang-trigger"
+                id="lang-trigger"
+                aria-expanded="false"
+                aria-haspopup="listbox"
                 aria-label="Select language"
             >
-                <!-- Default language (English) -->
-                <option value="en">English</option>
-                <!-- Sorted alphabetically by language code -->
-                <option value="de">Deutsch</option>
-                <option value="es">Español</option>
-                <option value="fr">Français</option>
-                <option value="ja">日本語</option>
-                <option value="ko">한국어</option>
-                <option value="ru">Русский</option>
-                <option value="zh">简体中文</option>
-                <option value="zh-Hant">繁體中文</option>
-            </select>
+                <svg class="navbar__lang-icon" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                    <circle cx="12" cy="12" r="10"></circle>
+                    <line x1="2" y1="12" x2="22" y2="12"></line>
+                    <path d="M12 2a15.3 15.3 0 0 1 4 10 15.3 15.3 0 0 1-4 10 15.3 15.3 0 0 1-4-10 15.3 15.3 0 0 1 4-10z"></path>
+                </svg>
+                <span class="navbar__lang-current" id="lang-current">EN</span>
+                <svg class="navbar__lang-chevron" width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                    <polyline points="6 9 12 15 18 9"></polyline>
+                </svg>
+            </button>
+            <ul class="navbar__lang-menu" id="lang-menu" role="listbox" aria-label="Available languages">
+                <li class="navbar__lang-option" data-lang="en" role="option">English</li>
+                <li class="navbar__lang-option" data-lang="de" role="option">Deutsch</li>
+                <li class="navbar__lang-option" data-lang="es" role="option">Español</li>
+                <li class="navbar__lang-option" data-lang="fr" role="option">Français</li>
+                <li class="navbar__lang-option" data-lang="ja" role="option">日本語</li>
+                <li class="navbar__lang-option" data-lang="ko" role="option">한국어</li>
+                <li class="navbar__lang-option" data-lang="ru" role="option">Русский</li>
+                <li class="navbar__lang-option" data-lang="zh" role="option">简体中文</li>
+                <li class="navbar__lang-option" data-lang="zh-Hant" role="option">繁體中文</li>
+            </ul>
         </div>
 
         <button
@@ -539,20 +556,121 @@
                     return defaultLang;
                 }
 
-                // Update language selector to show current language
+                // Language code to display name mapping
+                const langDisplayNames = {
+                    en: "EN",
+                    de: "DE",
+                    es: "ES",
+                    fr: "FR",
+                    ja: "JA",
+                    ko: "KO",
+                    ru: "RU",
+                    zh: "ZH",
+                    "zh-Hant": "繁"
+                };
+
+                // Update language dropdown to show current language
                 function updateLanguageSelector() {
                     const currentLang = getCurrentLanguage();
-                    const desktopSelect =
-                        document.getElementById("lang-select");
-                    const mobileSelect =
-                        document.getElementById("mobile-lang-select");
+                    const displayName = langDisplayNames[currentLang] || "EN";
 
-                    if (desktopSelect) {
-                        desktopSelect.value = currentLang;
+                    // Update display text
+                    document.querySelectorAll(".navbar__lang-current").forEach(el => {
+                        el.textContent = displayName;
+                    });
+
+                    // Update active state on options
+                    document.querySelectorAll(".navbar__lang-option").forEach(option => {
+                        const isActive = option.dataset.lang === currentLang;
+                        option.classList.toggle("navbar__lang-option--active", isActive);
+                        option.setAttribute("aria-selected", isActive);
+                    });
+                }
+
+                // Toggle dropdown open/close
+                function toggleLangDropdown(trigger, menu, open) {
+                    const isOpen = open !== undefined ? open : !menu.classList.contains("navbar__lang-menu--open");
+                    menu.classList.toggle("navbar__lang-menu--open", isOpen);
+                    trigger.setAttribute("aria-expanded", isOpen);
+                }
+
+                // Close all language dropdowns
+                function closeAllLangDropdowns() {
+                    document.querySelectorAll(".navbar__lang-menu").forEach(menu => {
+                        menu.classList.remove("navbar__lang-menu--open");
+                    });
+                    document.querySelectorAll(".navbar__lang-trigger").forEach(trigger => {
+                        trigger.setAttribute("aria-expanded", "false");
+                    });
+                }
+
+                // Initialize language dropdown handlers
+                function initLangDropdowns() {
+                    // Desktop dropdown
+                    const desktopTrigger = document.getElementById("lang-trigger");
+                    const desktopMenu = document.getElementById("lang-menu");
+
+                    if (desktopTrigger && desktopMenu) {
+                        desktopTrigger.addEventListener("click", (e) => {
+                            e.stopPropagation();
+                            const isCurrentlyOpen = desktopMenu.classList.contains("navbar__lang-menu--open");
+                            closeAllLangDropdowns();
+                            if (!isCurrentlyOpen) {
+                                toggleLangDropdown(desktopTrigger, desktopMenu, true);
+                            }
+                        });
+
+                        desktopMenu.querySelectorAll(".navbar__lang-option").forEach(option => {
+                            option.addEventListener("click", () => {
+                                const targetLang = option.dataset.lang;
+                                const currentLang = getCurrentLanguage();
+                                closeAllLangDropdowns();
+                                if (targetLang !== currentLang) {
+                                    switchLanguage(targetLang);
+                                }
+                            });
+                        });
                     }
-                    if (mobileSelect) {
-                        mobileSelect.value = currentLang;
+
+                    // Mobile dropdown
+                    const mobileTrigger = document.getElementById("mobile-lang-trigger");
+                    const mobileMenu = document.getElementById("mobile-lang-menu");
+
+                    if (mobileTrigger && mobileMenu) {
+                        mobileTrigger.addEventListener("click", (e) => {
+                            e.stopPropagation();
+                            const isCurrentlyOpen = mobileMenu.classList.contains("navbar__lang-menu--open");
+                            closeAllLangDropdowns();
+                            if (!isCurrentlyOpen) {
+                                toggleLangDropdown(mobileTrigger, mobileMenu, true);
+                            }
+                        });
+
+                        mobileMenu.querySelectorAll(".navbar__lang-option").forEach(option => {
+                            option.addEventListener("click", () => {
+                                const targetLang = option.dataset.lang;
+                                const currentLang = getCurrentLanguage();
+                                closeAllLangDropdowns();
+                                if (targetLang !== currentLang) {
+                                    switchLanguage(targetLang);
+                                }
+                            });
+                        });
                     }
+
+                    // Close dropdowns when clicking outside
+                    document.addEventListener("click", (e) => {
+                        if (!e.target.closest(".navbar__lang-dropdown")) {
+                            closeAllLangDropdowns();
+                        }
+                    });
+
+                    // Close dropdowns on Escape key
+                    document.addEventListener("keydown", (e) => {
+                        if (e.key === "Escape") {
+                            closeAllLangDropdowns();
+                        }
+                    });
                 }
 
                 function switchLanguage(targetLang) {
@@ -815,36 +933,12 @@
                         });
                 }
 
-                // Initialize language selector with a small delay to ensure DOM is ready
+                // Initialize language selector and dropdowns
                 setTimeout(() => {
                     updateLanguageSelector();
                     updateNavbarTranslations();
+                    initLangDropdowns();
                 }, 100);
-
-                // Handle desktop language switcher
-                const langSelect = document.getElementById("lang-select");
-                if (langSelect) {
-                    langSelect.addEventListener("change", function (e) {
-                        const targetLang = e.target.value;
-                        const currentLang = getCurrentLanguage();
-                        if (targetLang !== currentLang) {
-                            switchLanguage(targetLang);
-                        }
-                    });
-                }
-
-                // Handle mobile language switcher
-                const mobileLangSelect =
-                    document.getElementById("mobile-lang-select");
-                if (mobileLangSelect) {
-                    mobileLangSelect.addEventListener("change", function (e) {
-                        const targetLang = e.target.value;
-                        const currentLang = getCurrentLanguage();
-                        if (targetLang !== currentLang) {
-                            switchLanguage(targetLang);
-                        }
-                    });
-                }
 
             });
         </script>
