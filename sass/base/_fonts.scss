@@ -1,24 +1,24 @@
 // Fonts
 
 @font-face {
-    font-family: IBMPlexMono;
+    font-family: iAWriterQuattroS;
     font-style: normal;
     font-weight: 400;
     font-display: swap;
     src:
-        local("IBMPlexMono-Regular"),
-        url("fonts/vendor/ibm-plex-mono/ibm-plex-mono-v19-cyrillic_latin-regular.woff2")
+        local("iAWriterQuattroS-Regular"),
+        url("fonts/vendor/ia-writer-quattro/iAWriterQuattroS-Regular.woff2")
             format("woff2");
 }
 
 @font-face {
-    font-family: IBMPlexMono;
+    font-family: iAWriterQuattroS;
     font-style: normal;
     font-weight: 700;
     font-display: swap;
     src:
-        local("IBMPlexMono-Bold"),
-        url("fonts/vendor/ibm-plex-mono/ibm-plex-mono-v19-cyrillic_latin-700.woff2")
+        local("iAWriterQuattroS-Bold"),
+        url("fonts/vendor/ia-writer-quattro/iAWriterQuattroS-Bold.woff2")
             format("woff2");
 }
 

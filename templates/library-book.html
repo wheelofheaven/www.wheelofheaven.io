@@ -153,10 +153,9 @@
                             <div class="library-book__paragraph" id="c{{ chapter.n }}p{{ paragraph.n }}" onclick="selectParagraph('c{{ chapter.n }}p{{ paragraph.n }}')">
                                 <div class="library-book__para-num">{{ paragraph.n }}</div>
                                 <div class="library-book__para-content">
+                                    {% set has_translation = paragraph.i18n and paragraph.i18n[lang] %}
                                     <div class="library-book__para-original">{{ paragraph.text }}</div>
-                                    {% if lang != book_data.primaryLang and paragraph.i18n and paragraph.i18n[lang] %}
-                                    <div class="library-book__para-translation">{{ paragraph.i18n[lang] }}</div>
-                                    {% endif %}
+                                    <div class="library-book__para-translation">{% if has_translation %}{{ paragraph.i18n[lang] }}{% else %}{{ paragraph.text }}{% endif %}</div>
                                 </div>
                                 <button class="library-book__share-btn" onclick="event.stopPropagation(); shareParagraph('c{{ chapter.n }}p{{ paragraph.n }}')" title="Share this paragraph">
                                     <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
@@ -247,7 +246,7 @@ function toggleOriginalText() {
     }
 
     if (sideBySideToggle) {
-        sideBySideToggle.style.display = showingOriginal ? 'inline-flex' : 'none';
+        sideBySideToggle.classList.toggle('hidden', !showingOriginal);
     }
 
     if (!showingOriginal && sideBySide) {

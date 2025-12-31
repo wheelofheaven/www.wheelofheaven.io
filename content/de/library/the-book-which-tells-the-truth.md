@@ -1,8 +1,7 @@
 +++
-title = "The Book Which Tells the Truth"
+title = "Das Buch, das die Wahrheit verkündet"
 slug = "the-book-which-tells-the-truth"
-description = "The first book of the library, containing the initial encounter and foundational teachings."
+description = "Ein Offenbarungsbuch mit 7 Kapiteln heiliger Lehren und Dialoge."
 template = "library-book.html"
+date = "2025-08-10T06:03:56Z"
 +++
-
-This page displays "The Book Which Tells the Truth" with interactive features for viewing original text alongside translations in multiple languages.
