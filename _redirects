@@ -1,0 +1,57 @@
+# Wheel of Heaven Redirects
+# Old /intro/* URLs to new structure
+
+# Main intro section
+/intro/                              /essentials/                         301
+/intro/at-a-glance/                  /essentials/                         301
+
+# At-a-glance subsections
+/intro/wheel-of-heaven/              /essentials/what-is-woh/             301
+/intro/the-setting/                  /essentials/revelation-vs-myth/      301
+/intro/the-foundation/               /essentials/elohim-hypothesis/       301
+/intro/the-hypothesis/               /essentials/elohim-hypothesis/       301
+
+# Timeline section
+/intro/timeline/                     /timeline/                           301
+/intro/preamble/                     /timeline/preamble/                  301
+/intro/age-of-aquarius/              /timeline/age-of-aquarius/           301
+/intro/age-of-pisces/                /timeline/age-of-pisces/             301
+/intro/age-of-aries/                 /timeline/age-of-aries/              301
+/intro/age-of-taurus/                /timeline/age-of-taurus/             301
+/intro/age-of-gemini/                /timeline/age-of-gemini/             301
+/intro/age-of-cancer/                /timeline/age-of-cancer/             301
+/intro/age-of-leo/                   /timeline/age-of-leo/                301
+/intro/age-of-virgo/                 /timeline/age-of-virgo/              301
+/intro/age-of-libra/                 /timeline/age-of-libra/              301
+/intro/age-of-scorpio/               /timeline/age-of-scorpio/            301
+/intro/age-of-sagittarius/           /timeline/age-of-sagittarius/        301
+/intro/age-of-capricorn/             /timeline/age-of-capricorn/          301
+
+# Take-aways subsections
+/intro/take-aways/                   /essentials/elohim-hypothesis/       301
+/intro/extraterrestrial-civilization/ /wiki/elohim/                       301
+/intro/intelligent-design/           /wiki/intelligent-design/            301
+/intro/religious-syncretism/         /wiki/comparative-mythology/         301
+/intro/the-great-awakening/          /essentials/world-ages/              301
+
+# See-more subsections
+/intro/see-more/                     /wiki/                               301
+/intro/faq/                          /wiki/                               301
+/intro/see-more/faq/                 /wiki/                               301
+/intro/knowledge-base/               /wiki/                               301
+/intro/see-more/knowledge-base/      /wiki/                               301
+/intro/community/                    /about/                              301
+/intro/see-more/community/           /about/                              301
+
+# Contact page
+/contact/                            /about/                              301
+
+# Old articles (skipped migration - redirect to home)
+/articles/*                          /                                    301
+
+# Old resources (skipped migration - redirect to wiki)
+/resources/*                         /wiki/                               301
+
+# Contributors
+/contributors/                       /about/                              301
+/contributors/*                      /about/                              301
