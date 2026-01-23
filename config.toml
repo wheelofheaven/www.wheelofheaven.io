@@ -6,7 +6,7 @@ compile_sass = true
 build_search_index = true
 
 [markdown]
-highlight_code = false
+highlighting = { enabled = false }
 
 [search]
 index_format = "fuse_json"
