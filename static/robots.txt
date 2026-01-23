@@ -44,14 +44,8 @@ Allow: /
 User-agent: cohere-ai
 Allow: /
 
-# Sitemaps
-Sitemap: https://wheelofheaven.io/sitemap.xml
-Sitemap: https://wheelofheaven.io/de/sitemap.xml
-Sitemap: https://wheelofheaven.io/fr/sitemap.xml
-Sitemap: https://wheelofheaven.io/es/sitemap.xml
-Sitemap: https://wheelofheaven.io/ru/sitemap.xml
-Sitemap: https://wheelofheaven.io/ja/sitemap.xml
-Sitemap: https://wheelofheaven.io/zh/sitemap.xml
+# Sitemap (Zola generates a single sitemap with all language URLs)
+Sitemap: https://www.wheelofheaven.io/sitemap.xml
 
 # Crawl-delay for courtesy (optional, not all bots respect this)
 Crawl-delay: 1

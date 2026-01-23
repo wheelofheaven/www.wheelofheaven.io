@@ -46,11 +46,21 @@
 # Contact page
 /contact/                            /about/                              301
 
-# Old articles (skipped migration - redirect to home)
-/articles/*                          /                                    301
+# Old articles (skipped migration - redirect to articles section)
+/articles/*                          /articles/                           301
 
 # Old resources (skipped migration - redirect to wiki)
 /resources/*                         /wiki/                               301
+
+# Old taxonomies (associated with articles/resources)
+/tags/                               /articles/                           301
+/tags/*                              /articles/                           301
+/categories/                         /wiki/                               301
+/categories/*                        /wiki/                               301
+/topics/                             /wiki/                               301
+/topics/*                            /wiki/                               301
+/medium/                             /wiki/                               301
+/medium/*                            /wiki/                               301
 
 # Contributors
 /contributors/                       /about/                              301
