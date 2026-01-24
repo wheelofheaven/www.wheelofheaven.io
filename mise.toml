@@ -4,6 +4,8 @@ min_version = "2025.8.3"
 
 [tools]
 zola = "0.21.0"
+python = "3.12"
+uv = "latest"
 
 [env]
 # add env vars here

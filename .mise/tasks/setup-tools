@@ -1,0 +1,29 @@
+#!/usr/bin/env bash
+#MISE description="Set up Python tools environment"
+set -e
+
+echo "🔧 Setting up Python environment..."
+
+# Create virtual environment if it doesn't exist
+if [ ! -d ".venv" ]; then
+    uv venv
+    echo "✓ Created virtual environment"
+else
+    echo "✓ Virtual environment already exists"
+fi
+
+# Install package in development mode
+uv pip install -e .
+echo "✓ Installed woh-tools package"
+
+# Verify installation
+echo ""
+echo "📦 Installed tools:"
+uv run woh --version
+
+echo ""
+echo "✅ Setup complete! Available commands:"
+echo "   mise run translate status    - Show translation status"
+echo "   mise run translate edit      - Edit translations"
+echo "   mise run catalog list        - List books"
+echo "   mise run catalog validate    - Validate data"

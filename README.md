@@ -8,12 +8,13 @@ This repository contains the source code for the Wheel of Heaven website, a comp
 
 The Wheel of Heaven website is structured as follows:
 
-- `content/`: Contains all the markdown files which make up the content of the site. This includes articles, blog posts, and other written materials.
-- `static/`: This directory hosts all static content like images, CSS files, and JavaScript files.
-- `layouts/`: Holds the HTML templates that define the structure of different types of pages on the site.
-- `data/`: Stores configuration files and other data files used by the site.
-- `themes/`: Contains the Hugo theme used for the site. Customizations to the theme are also located here.
-- `config.toml`: The main configuration file for the Hugo site. This file contains global settings for the website.
+- `content/`: Contains all the markdown files which make up the content of the site. This includes articles, wiki entries, and other written materials.
+- `static/`: Hosts all static content like images, CSS files, and JavaScript files.
+- `templates/`: Holds the Tera templates that define the structure of different page types.
+- `sass/`: SCSS stylesheets organized using the 7-1 pattern.
+- `data/`: Stores JSON data files including the library catalog and book content.
+- `tools/`: Python CLI utilities for managing translations and catalog.
+- `config.toml`: The main configuration file for Zola with global settings and translations.
 
 ## Contributing
 
@@ -23,10 +24,87 @@ We welcome contributions to the Wheel of Heaven project! Whether it's adding con
 
 To build this site locally:
 
-1. Install [mise](https://github.com/mitsuhiko/mise) on your machine.
+1. Install [mise](https://mise.jdx.dev/) on your machine.
 2. Clone this repository.
-3. Navigate to the repository directory and run `mise build`.
-4. Open your browser and go to `http://localhost:1313` to see the site.
+3. Navigate to the repository directory and run `mise run build`.
+4. To start the dev server: `mise run serve` (opens at `http://localhost:1199`).
+
+## Translation Tools
+
+The project includes a CLI utility for managing translations of library texts.
+
+### Setup
+
+```bash
+# Install Python dependencies (requires Python 3.12+ and uv)
+mise run setup-tools
+```
+
+### Basic Commands
+
+```bash
+# Show translation status for all books
+mise run translate status
+
+# Show detailed status for a specific book
+mise run translate status the-book-which-tells-the-truth -l de
+
+# Show paragraphs missing translation
+mise run translate missing the-book-which-tells-the-truth de
+
+# Edit a specific paragraph translation
+mise run translate edit the-book-which-tells-the-truth 1:5 -l de
+
+# Export translations for external editing
+mise run translate export the-book-which-tells-the-truth de -f json
+
+# Import translations from export file
+mise run translate import translations.json
+```
+
+### LLM-Assisted Translation
+
+The CLI supports automatic translation using multiple LLM providers:
+
+| Provider | API Key Environment Variable | Notes |
+|----------|------------------------------|-------|
+| Claude | `ANTHROPIC_API_KEY` | Default provider, excellent for nuanced religious texts |
+| OpenAI | `OPENAI_API_KEY` | GPT-4o default model |
+| Ollama | N/A | Local models, no API key needed |
+| DeepL | `DEEPL_API_KEY` | Fast, no context support |
+
+```bash
+# Check available providers
+mise run translate providers
+
+# Translate a single paragraph
+mise run translate auto the-book-which-tells-the-truth -l de --ref 1:5
+
+# Translate an entire chapter
+mise run translate auto the-book-which-tells-the-truth -l de --chapter 3
+
+# Batch translate missing paragraphs with review
+mise run translate auto the-book-which-tells-the-truth -l de --batch --review
+
+# Use a specific provider and model
+mise run translate auto the-book-which-tells-the-truth -l de -p openai -m gpt-4-turbo
+
+# Dry run (preview without saving)
+mise run translate auto the-book-which-tells-the-truth -l de --batch --dry-run
+```
+
+### Installing Provider Dependencies
+
+```bash
+# Install all LLM providers
+uv pip install -e ".[all-llm]"
+
+# Or install specific providers
+uv pip install -e ".[claude]"
+uv pip install -e ".[openai]"
+uv pip install -e ".[ollama]"
+uv pip install -e ".[deepl]"
+```
 
 ## Reporting Issues
 

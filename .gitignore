@@ -1,3 +1,13 @@
 .agents/
 .ropeproject/
 public/
+
+# Python
+__pycache__/
+*.py[cod]
+*.egg-info/
+.venv/
+.eggs/
+
+# OS
+.DS_Store

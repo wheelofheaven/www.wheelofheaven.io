@@ -1,0 +1,186 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://wheelofheaven.io/schemas/study-data.schema.json",
+  "title": "User Study Data",
+  "description": "Exported user study data (bookmarks, highlights, notes)",
+  "type": "object",
+  "required": ["version", "exported"],
+  "properties": {
+    "version": {
+      "type": "string",
+      "const": "1.0",
+      "description": "Export format version"
+    },
+    "exported": {
+      "type": "string",
+      "format": "date-time",
+      "description": "Export timestamp"
+    },
+    "userId": {
+      "type": "string",
+      "description": "Optional user identifier for cloud sync"
+    },
+    "preferences": {
+      "type": "object",
+      "description": "User reading preferences",
+      "properties": {
+        "fontSize": {
+          "type": "string",
+          "enum": ["small", "medium", "large", "x-large"]
+        },
+        "theme": {
+          "type": "string",
+          "enum": ["light", "sepia", "dark", "auto"]
+        }
+      }
+    },
+    "progress": {
+      "type": "object",
+      "description": "Reading progress by book slug",
+      "additionalProperties": {
+        "$ref": "#/$defs/bookProgress"
+      }
+    },
+    "bookmarks": {
+      "type": "array",
+      "description": "All bookmarks",
+      "items": {
+        "$ref": "#/$defs/bookmark"
+      }
+    },
+    "highlights": {
+      "type": "array",
+      "description": "All text highlights",
+      "items": {
+        "$ref": "#/$defs/highlight"
+      }
+    },
+    "notes": {
+      "type": "array",
+      "description": "All user notes",
+      "items": {
+        "$ref": "#/$defs/note"
+      }
+    }
+  },
+  "$defs": {
+    "bookProgress": {
+      "type": "object",
+      "required": ["lastRead"],
+      "properties": {
+        "lastRead": {
+          "type": "string",
+          "format": "date-time"
+        },
+        "currentChapter": {
+          "type": "integer",
+          "minimum": 1
+        },
+        "currentParagraph": {
+          "type": "string",
+          "description": "Paragraph refId or DOM ID"
+        },
+        "percentComplete": {
+          "type": "number",
+          "minimum": 0,
+          "maximum": 100
+        }
+      }
+    },
+    "bookmark": {
+      "type": "object",
+      "required": ["refId", "bookSlug", "created"],
+      "properties": {
+        "refId": {
+          "type": "string",
+          "description": "Canonical reference (e.g., TBWTT-1:5)"
+        },
+        "bookSlug": {
+          "type": "string"
+        },
+        "chapter": {
+          "type": "integer"
+        },
+        "paragraph": {
+          "type": "integer"
+        },
+        "note": {
+          "type": "string",
+          "description": "Optional bookmark note"
+        },
+        "created": {
+          "type": "string",
+          "format": "date-time"
+        }
+      }
+    },
+    "highlight": {
+      "type": "object",
+      "required": ["refId", "bookSlug", "text", "color", "created"],
+      "properties": {
+        "refId": {
+          "type": "string"
+        },
+        "bookSlug": {
+          "type": "string"
+        },
+        "chapter": {
+          "type": "integer"
+        },
+        "paragraph": {
+          "type": "integer"
+        },
+        "text": {
+          "type": "string",
+          "description": "Highlighted text content"
+        },
+        "color": {
+          "type": "string",
+          "enum": ["yellow", "green", "blue", "pink"]
+        },
+        "startOffset": {
+          "type": "integer",
+          "description": "Character offset start"
+        },
+        "endOffset": {
+          "type": "integer",
+          "description": "Character offset end"
+        },
+        "created": {
+          "type": "string",
+          "format": "date-time"
+        }
+      }
+    },
+    "note": {
+      "type": "object",
+      "required": ["refId", "bookSlug", "content", "created"],
+      "properties": {
+        "refId": {
+          "type": "string"
+        },
+        "bookSlug": {
+          "type": "string"
+        },
+        "chapter": {
+          "type": "integer"
+        },
+        "paragraph": {
+          "type": "integer"
+        },
+        "content": {
+          "type": "string",
+          "description": "Note content (plain text or markdown)"
+        },
+        "created": {
+          "type": "string",
+          "format": "date-time"
+        },
+        "updated": {
+          "type": "string",
+          "format": "date-time"
+        }
+      }
+    }
+  }
+}

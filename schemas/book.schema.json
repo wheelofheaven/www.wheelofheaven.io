@@ -1,0 +1,160 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://wheelofheaven.io/schemas/book.schema.json",
+  "title": "Library Book",
+  "description": "A complete book with all chapters and paragraphs",
+  "type": "object",
+  "required": ["slug", "titles", "primaryLang", "chapters"],
+  "properties": {
+    "slug": {
+      "type": "string",
+      "pattern": "^[a-z][a-z0-9-]*$",
+      "description": "URL-safe book identifier"
+    },
+    "code": {
+      "type": "string",
+      "pattern": "^[A-Z0-9]{1,10}$",
+      "description": "Short reference code for citations"
+    },
+    "refId": {
+      "type": "string",
+      "description": "Canonical book reference ID"
+    },
+    "titles": {
+      "type": "object",
+      "description": "Localized book titles",
+      "additionalProperties": { "type": "string" },
+      "minProperties": 1
+    },
+    "publicationYear": {
+      "type": ["integer", "null"],
+      "description": "Year of original publication"
+    },
+    "primaryLang": {
+      "type": "string",
+      "pattern": "^[a-z]{2,3}(-[A-Za-z]{2,4})?$",
+      "description": "Original language code (ISO 639)"
+    },
+    "schema": {
+      "type": "array",
+      "items": { "type": "string" },
+      "description": "Document structure hierarchy"
+    },
+    "revision": {
+      "type": "integer",
+      "minimum": 1,
+      "description": "Content revision number"
+    },
+    "updated": {
+      "type": "string",
+      "format": "date-time",
+      "description": "Last update timestamp"
+    },
+    "chapters": {
+      "type": "array",
+      "description": "Book chapters",
+      "items": {
+        "$ref": "#/$defs/chapter"
+      },
+      "minItems": 1
+    }
+  },
+  "$defs": {
+    "chapter": {
+      "type": "object",
+      "required": ["n", "paragraphs"],
+      "properties": {
+        "n": {
+          "type": "integer",
+          "minimum": 1,
+          "description": "Chapter number"
+        },
+        "refId": {
+          "type": "string",
+          "pattern": "^[A-Z0-9]+-\\d+$",
+          "description": "Canonical chapter reference (e.g., TBWTT-1)"
+        },
+        "title": {
+          "type": "string",
+          "description": "Chapter title in primary language"
+        },
+        "i18n": {
+          "type": "object",
+          "description": "Localized chapter titles",
+          "additionalProperties": { "type": "string" }
+        },
+        "paragraphs": {
+          "type": "array",
+          "items": {
+            "$ref": "#/$defs/paragraph"
+          },
+          "minItems": 1
+        }
+      }
+    },
+    "paragraph": {
+      "type": "object",
+      "required": ["n", "text"],
+      "properties": {
+        "n": {
+          "type": "integer",
+          "minimum": 1,
+          "description": "Paragraph number within chapter"
+        },
+        "refId": {
+          "type": "string",
+          "pattern": "^[A-Z0-9]+-\\d+:\\d+$",
+          "description": "Canonical paragraph reference (e.g., TBWTT-1:5)"
+        },
+        "speaker": {
+          "type": "string",
+          "description": "Speaker attribution (Narrator, Yahweh, etc.)"
+        },
+        "text": {
+          "type": "string",
+          "description": "Paragraph text in primary language",
+          "minLength": 1
+        },
+        "i18n": {
+          "type": "object",
+          "description": "Localized translations",
+          "additionalProperties": { "type": "string" }
+        },
+        "notes": {
+          "type": "array",
+          "description": "Editorial/scholarly notes",
+          "items": {
+            "$ref": "#/$defs/note"
+          }
+        },
+        "crossRefs": {
+          "type": "array",
+          "description": "Cross-references to other passages",
+          "items": {
+            "type": "string"
+          }
+        }
+      }
+    },
+    "note": {
+      "type": "object",
+      "required": ["type", "text"],
+      "properties": {
+        "type": {
+          "type": "string",
+          "enum": ["editorial", "translation", "commentary", "variant"],
+          "description": "Note category"
+        },
+        "text": {
+          "type": "string"
+        },
+        "lang": {
+          "type": "string"
+        },
+        "source": {
+          "type": "string"
+        }
+      }
+    }
+  }
+}

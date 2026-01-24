@@ -143,6 +143,12 @@ class NavbarDropdown {
       "navbar-dropdown--align-right",
     );
 
+    // Reset inline positioning styles
+    dropdownData.dropdown.style.top = '';
+    dropdownData.dropdown.style.left = '';
+    dropdownData.dropdown.style.right = '';
+    dropdownData.dropdown.style.transform = '';
+
     // Remove modal open class if no dropdowns are open
     if (!this.hasOpenDropdowns()) {
       document.body.classList.remove("navbar-dropdown-open");
@@ -166,6 +172,7 @@ class NavbarDropdown {
   positionDropdown(dropdownData) {
     const dropdown = dropdownData.dropdown;
     const trigger = dropdownData.trigger;
+    const navbar = document.querySelector('.navbar');
 
     // Reset positioning classes
     dropdown.classList.remove(
@@ -175,18 +182,37 @@ class NavbarDropdown {
 
     // Wait for next frame to get accurate measurements
     requestAnimationFrame(() => {
-      const dropdownRect = dropdown.getBoundingClientRect();
+      const navbarRect = navbar.getBoundingClientRect();
       const triggerRect = trigger.getBoundingClientRect();
       const viewportWidth = window.innerWidth;
 
-      // Check if dropdown goes off the right edge
-      if (dropdownRect.right > viewportWidth - 20) {
-        dropdown.classList.add("navbar-dropdown--align-right");
-      }
-      // Check if dropdown goes off the left edge
-      else if (dropdownRect.left < 20) {
-        dropdown.classList.add("navbar-dropdown--align-left");
-      }
+      // Position dropdown below navbar with 1px gap
+      const topPosition = navbarRect.bottom + 1;
+      dropdown.style.top = `${topPosition}px`;
+
+      // Center dropdown under trigger
+      const triggerCenter = triggerRect.left + (triggerRect.width / 2);
+      dropdown.style.left = `${triggerCenter}px`;
+      dropdown.style.transform = 'translateX(-50%)';
+
+      // Check bounds after positioning
+      requestAnimationFrame(() => {
+        const dropdownRect = dropdown.getBoundingClientRect();
+
+        // Check if dropdown goes off the right edge
+        if (dropdownRect.right > viewportWidth - 20) {
+          dropdown.classList.add("navbar-dropdown--align-right");
+          dropdown.style.left = 'auto';
+          dropdown.style.right = '20px';
+          dropdown.style.transform = 'none';
+        }
+        // Check if dropdown goes off the left edge
+        else if (dropdownRect.left < 20) {
+          dropdown.classList.add("navbar-dropdown--align-left");
+          dropdown.style.left = '20px';
+          dropdown.style.transform = 'none';
+        }
+      });
     });
   }
 

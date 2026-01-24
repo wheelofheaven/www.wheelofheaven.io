@@ -1,0 +1,15 @@
+#!/usr/bin/env bash
+#MISE description="Run translation CLI commands"
+#MISE alias="tr"
+#MISE raw=true
+set -e
+
+# Ensure dependencies are installed
+if [ ! -d ".venv" ]; then
+    echo "Setting up Python environment..."
+    uv venv
+    uv pip install -e ".[all-llm]"
+fi
+
+# Run the CLI with all passed arguments
+uv run woh translate "$@"

@@ -140,8 +140,17 @@
                 <div class="books-grid">
                     {% for book_entry in catalog.books %}
                     {% if book_entry.tradition == tradition.id and (book_entry.status == "complete" or book_entry.status == "partial") %}
-                        {% set book_file = "data/library/" ~ book_entry.slug ~ ".json" %}
-                        {% set book_data = load_data(path=book_file, required=false) %}
+                        {# Try split format first, fall back to single file #}
+                        {% set book_meta = load_data(path="data/library/" ~ book_entry.slug ~ "/_meta.json", required=false) %}
+                        {% if book_meta %}
+                            {% set_global book_data = book_meta %}
+                            {% set_global first_chapter = load_data(path="data/library/" ~ book_entry.slug ~ "/chapter-1.json", required=false) %}
+                        {% else %}
+                            {% set_global book_data = load_data(path="data/library/" ~ book_entry.slug ~ ".json", required=false) %}
+                            {% if book_data and book_data.chapters %}
+                                {% set_global first_chapter = book_data.chapters | first %}
+                            {% endif %}
+                        {% endif %}
                         {% if book_data %}
                         <article class="book-card"
                                  data-title="{{ library_macros::get_book_title(book_data=book_data, lang=detected_lang) | lower }}"
@@ -189,9 +198,9 @@
                                 </p>
                                 {% endif %}
 
-                                {% if book_data.chapters and book_data.chapters[0] and book_data.chapters[0].paragraphs and book_data.chapters[0].paragraphs[0] %}
+                                {% if first_chapter and first_chapter.paragraphs and first_chapter.paragraphs[0] %}
                                 <div class="book-card__preview">
-                                    {% set first_paragraph = book_data.chapters[0].paragraphs[0] %}
+                                    {% set first_paragraph = first_chapter.paragraphs[0] %}
                                     <p class="book-card__preview-text">
                                         {{ library_macros::get_paragraph_text(paragraph=first_paragraph, lang=detected_lang) | truncate(length=180) }}
                                     </p>

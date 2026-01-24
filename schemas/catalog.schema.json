@@ -1,0 +1,203 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://wheelofheaven.io/schemas/catalog.schema.json",
+  "title": "Library Catalog",
+  "description": "Central catalog for auto-discovery of library books",
+  "type": "object",
+  "required": ["version", "traditions", "collections", "books"],
+  "properties": {
+    "version": {
+      "type": "string",
+      "description": "Schema version"
+    },
+    "updated": {
+      "type": "string",
+      "format": "date",
+      "description": "Last update date"
+    },
+    "traditions": {
+      "type": "array",
+      "description": "Religious/philosophical traditions",
+      "items": {
+        "$ref": "#/$defs/tradition"
+      }
+    },
+    "collections": {
+      "type": "array",
+      "description": "Book collections within traditions",
+      "items": {
+        "$ref": "#/$defs/collection"
+      }
+    },
+    "books": {
+      "type": "array",
+      "description": "All books in the library",
+      "items": {
+        "$ref": "#/$defs/bookEntry"
+      }
+    },
+    "referenceFormats": {
+      "type": "object",
+      "description": "Canonical reference format templates"
+    },
+    "languageCodes": {
+      "type": "object",
+      "description": "Supported language codes and names"
+    },
+    "statusCodes": {
+      "type": "object",
+      "description": "Book status definitions"
+    }
+  },
+  "$defs": {
+    "tradition": {
+      "type": "object",
+      "required": ["id", "code", "name", "order"],
+      "properties": {
+        "id": {
+          "type": "string",
+          "pattern": "^[a-z][a-z0-9-]*$",
+          "description": "URL-safe identifier"
+        },
+        "code": {
+          "type": "string",
+          "pattern": "^[A-Z]{2,5}$",
+          "description": "Short uppercase code"
+        },
+        "name": {
+          "type": "object",
+          "description": "Localized names",
+          "additionalProperties": { "type": "string" }
+        },
+        "description": {
+          "type": "object",
+          "description": "Localized descriptions",
+          "additionalProperties": { "type": "string" }
+        },
+        "order": {
+          "type": "integer",
+          "minimum": 1,
+          "description": "Display order"
+        },
+        "icon": {
+          "type": "string",
+          "description": "Icon identifier"
+        }
+      }
+    },
+    "collection": {
+      "type": "object",
+      "required": ["id", "tradition", "code", "name", "order"],
+      "properties": {
+        "id": {
+          "type": "string",
+          "pattern": "^[a-z][a-z0-9-]*$"
+        },
+        "tradition": {
+          "type": "string",
+          "description": "Parent tradition ID"
+        },
+        "code": {
+          "type": "string",
+          "pattern": "^[A-Z]{2,5}$"
+        },
+        "name": {
+          "type": "object",
+          "additionalProperties": { "type": "string" }
+        },
+        "description": {
+          "type": "object",
+          "additionalProperties": { "type": "string" }
+        },
+        "order": {
+          "type": "integer",
+          "minimum": 1
+        },
+        "books": {
+          "type": "array",
+          "items": { "type": "string" },
+          "description": "Book slugs in this collection"
+        }
+      }
+    },
+    "bookEntry": {
+      "type": "object",
+      "required": ["slug", "code", "tradition", "collection", "status"],
+      "properties": {
+        "slug": {
+          "type": "string",
+          "pattern": "^[a-z][a-z0-9-]*$",
+          "description": "URL-safe book identifier"
+        },
+        "code": {
+          "type": "string",
+          "pattern": "^[A-Z0-9]{1,10}$",
+          "description": "Short reference code (e.g., TBWTT, GEN)"
+        },
+        "tradition": {
+          "type": "string"
+        },
+        "collection": {
+          "type": "string"
+        },
+        "order": {
+          "type": "integer",
+          "minimum": 1
+        },
+        "author": {
+          "type": "string"
+        },
+        "publicationYear": {
+          "type": ["integer", "null"]
+        },
+        "originalTitle": {
+          "type": "string"
+        },
+        "primaryLang": {
+          "type": "string",
+          "pattern": "^[a-z]{2,3}(-[A-Za-z]{2,4})?$"
+        },
+        "availableLangs": {
+          "type": "array",
+          "items": { "type": "string" }
+        },
+        "completeLangs": {
+          "type": "array",
+          "items": { "type": "string" }
+        },
+        "chapters": {
+          "type": "integer",
+          "minimum": 0
+        },
+        "paragraphs": {
+          "type": "integer",
+          "minimum": 0
+        },
+        "tags": {
+          "type": "array",
+          "items": { "type": "string" }
+        },
+        "topics": {
+          "type": "array",
+          "items": { "type": "string" }
+        },
+        "status": {
+          "type": "string",
+          "enum": ["complete", "partial", "planned", "draft"]
+        },
+        "format": {
+          "type": "string",
+          "enum": ["single", "split"],
+          "default": "single",
+          "description": "Whether book is single JSON or split by chapter"
+        },
+        "hasAudio": {
+          "type": "boolean"
+        },
+        "hasVideo": {
+          "type": "boolean"
+        }
+      }
+    }
+  }
+}

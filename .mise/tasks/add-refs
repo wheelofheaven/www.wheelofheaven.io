@@ -1,0 +1,12 @@
+#!/usr/bin/env bash
+#MISE description="Add canonical reference IDs to book paragraphs"
+#MISE usage="add-refs [BOOK_SLUG]"
+set -e
+
+if [ ! -d ".venv" ]; then
+    echo "Setting up Python environment..."
+    uv venv
+    uv pip install -e .
+fi
+
+uv run python scripts/add-canonical-refs.py "$@"

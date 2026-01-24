@@ -4,10 +4,8 @@
 
 // Navbar Dropdown Styles
 .navbar-dropdown {
-    position: absolute;
-    top: calc(100% + 0.5rem); // Gap below the trigger
-    left: 50%;
-    transform: translateX(-50%);
+    position: fixed;
+    // top, left, transform set by JavaScript in positionDropdown()
     z-index: 55;
     width: auto;
     min-width: 300px;
@@ -27,17 +25,17 @@
         width: 100%;
         min-width: 300px;
         max-width: 500px;
-        // Glassmorphism effect matching navbar and other UI elements
-        background: rgba(25, 28, 32, 0.65);
-        backdrop-filter: blur(20px) saturate(180%);
-        -webkit-backdrop-filter: blur(20px) saturate(180%);
+        // Glassmorphism effect
+        background: rgba(25, 28, 32, 0.65) !important;
+        backdrop-filter: blur(20px) saturate(180%) !important;
+        -webkit-backdrop-filter: blur(20px) saturate(180%) !important;
         border: 1px solid rgba(255, 255, 255, 0.12);
         border-radius: 1rem;
         box-shadow:
             0 25px 50px rgba(0, 0, 0, 0.4),
             0 0 0 1px rgba(255, 255, 255, 0.05),
             inset 0 1px 0 rgba(255, 255, 255, 0.08);
-        transform: translateY(-10px) scale(0.98);
+        transform: translateY(-8px) scale(0.98);
         transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
 
         .navbar-dropdown--active & {
@@ -266,25 +264,19 @@
         }
     }
 
-    // Positioning adjustments to prevent off-screen
-    &--align-right {
-        left: auto;
-        right: 0;
-        transform: none;
-    }
-
+    // Positioning adjustments handled by JavaScript
+    &--align-right,
     &--align-left {
-        left: 0;
-        transform: none;
+        // Styles set inline by JavaScript
     }
 }
 
 // Light theme styles
 [data-theme="light"] .navbar-dropdown {
     &__container {
-        background: rgba(255, 255, 255, 0.75);
-        backdrop-filter: blur(20px) saturate(180%);
-        -webkit-backdrop-filter: blur(20px) saturate(180%);
+        background: rgba(255, 255, 255, 0.65) !important;
+        backdrop-filter: blur(20px) saturate(180%) !important;
+        -webkit-backdrop-filter: blur(20px) saturate(180%) !important;
         border: 1px solid rgba(0, 0, 0, 0.08);
         box-shadow:
             0 25px 50px rgba(0, 0, 0, 0.12),
@@ -353,19 +345,5 @@
     }
 }
 
-// Body class when dropdown modal is open - completely disable navbar blur
-// so the dropdown's backdrop-filter can blur the actual page content
-.navbar-dropdown-open {
-    .navbar {
-        // CRITICAL: Remove navbar backdrop-filter entirely so dropdown blur works
-        backdrop-filter: none !important;
-        -webkit-backdrop-filter: none !important;
-        // Use solid background instead when dropdown is open
-        background-color: rgba(25, 28, 32, 0.95) !important;
-    }
-
-    [data-theme="light"] & .navbar,
-    &[data-theme="light"] .navbar {
-        background-color: rgba(255, 255, 255, 0.95) !important;
-    }
-}
+// Note: With 1px gap and downward animation, navbar and dropdown
+// no longer overlap, so we don't need to disable navbar backdrop-filter

@@ -4,8 +4,27 @@
 
 {% block content %}
 {% set book_slug = page.slug %}
-{% set book_data = load_data(path="data/library/" ~ book_slug ~ ".json") %}
 {% set catalog = load_data(path="data/library/catalog.json") %}
+
+{# Try split format first (directory with _meta.json), fall back to single file #}
+{% set book_meta = load_data(path="data/library/" ~ book_slug ~ "/_meta.json", required=false) %}
+{% if book_meta %}
+    {# Split format: load chapters from separate files #}
+    {% set_global book_data = book_meta %}
+    {% set_global book_chapters = [] %}
+    {% for ch_info in book_meta.chapterFiles %}
+        {% set chapter_data = load_data(path="data/library/" ~ book_slug ~ "/" ~ ch_info.file, required=false) %}
+        {% if chapter_data %}
+            {% set_global book_chapters = book_chapters | concat(with=[chapter_data]) %}
+        {% endif %}
+    {% endfor %}
+{% else %}
+    {# Single file format #}
+    {% set_global book_data = load_data(path="data/library/" ~ book_slug ~ ".json", required=false) %}
+    {% if book_data %}
+        {% set_global book_chapters = book_data.chapters %}
+    {% endif %}
+{% endif %}
 
 {% if book_data %}
 <!-- Book Schema for Library Pages -->
@@ -23,7 +42,7 @@
             </div>
             <nav class="library-book__toc-nav" aria-labelledby="book-toc-heading">
                 <ul class="library-book__toc-list">
-                    {% for chapter in book_data.chapters %}
+                    {% for chapter in book_chapters %}
                     <li class="library-book__toc-item" data-chapter="{{ chapter.n }}">
                         <a href="#chapter-{{ chapter.n }}" class="library-book__toc-link" onclick="scrollToChapter({{ chapter.n }})">
                             <span class="library-book__toc-chapter-number">{{ chapter.n }}</span>
@@ -63,13 +82,13 @@
 
                     <!-- Book Metadata -->
                     <div class="library-book__meta">
-                        {% if book_data.chapters %}
+                        {% if book_chapters %}
                         <span class="library-book__meta-item">
                             <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
                                 <path d="M4 19.5A2.5 2.5 0 0 1 6.5 17H20"></path>
                                 <path d="M6.5 2H20v20H6.5A2.5 2.5 0 0 1 4 19.5v-15A2.5 2.5 0 0 1 6.5 2z"></path>
                             </svg>
-                            {{ book_data.chapters | length }} chapters
+                            {{ book_chapters | length }} chapters
                         </span>
                         {% endif %}
                         <span class="library-book__meta-item">
@@ -169,7 +188,7 @@
 
                 <!-- Book Content -->
                 <div class="library-book__content">
-                    {% for chapter in book_data.chapters %}
+                    {% for chapter in book_chapters %}
                     <section class="library-book__chapter" id="chapter-{{ chapter.n }}">
                         <header class="library-book__chapter-header">
                             <span class="library-book__chapter-number">Chapter {{ chapter.n }}</span>
@@ -211,7 +230,7 @@
                     </button>
 
                     <div class="library-book__nav-info" aria-live="polite">
-                        <span id="current-chapter-display">Chapter 1 of {{ book_data.chapters | length }}</span>
+                        <span id="current-chapter-display">Chapter 1 of {{ book_chapters | length }}</span>
                     </div>
 
                     <button class="library-book__nav-btn library-book__nav-btn--next" onclick="nextChapter()" id="next-chapter" aria-label="Go to next chapter">
@@ -319,7 +338,7 @@
 
 <script>
 let currentChapter = 1;
-const totalChapters = {% if book_data and book_data.chapters %}{{ book_data.chapters | length }}{% else %}0{% endif %};
+const totalChapters = {% if book_chapters %}{{ book_chapters | length }}{% else %}0{% endif %};
 const bookTitle = "{{ library_macros::get_book_title(book_data=book_data, lang=detected_lang) }}";
 let showingOriginal = false;
 let sideBySide = false;

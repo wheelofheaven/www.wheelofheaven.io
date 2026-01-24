@@ -1,0 +1,46 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://wheelofheaven.io/schemas/chapter.schema.json",
+  "title": "Book Chapter",
+  "description": "A single chapter file for split-chapter book format",
+  "type": "object",
+  "required": ["n", "bookSlug", "paragraphs"],
+  "properties": {
+    "n": {
+      "type": "integer",
+      "minimum": 1,
+      "description": "Chapter number"
+    },
+    "bookSlug": {
+      "type": "string",
+      "pattern": "^[a-z][a-z0-9-]*$",
+      "description": "Parent book slug"
+    },
+    "bookCode": {
+      "type": "string",
+      "pattern": "^[A-Z0-9]{1,10}$",
+      "description": "Parent book reference code"
+    },
+    "refId": {
+      "type": "string",
+      "pattern": "^[A-Z0-9]+-\\d+$",
+      "description": "Canonical chapter reference"
+    },
+    "title": {
+      "type": "string",
+      "description": "Chapter title in primary language"
+    },
+    "i18n": {
+      "type": "object",
+      "description": "Localized chapter titles",
+      "additionalProperties": { "type": "string" }
+    },
+    "paragraphs": {
+      "type": "array",
+      "items": {
+        "$ref": "book.schema.json#/$defs/paragraph"
+      },
+      "minItems": 1
+    }
+  }
+}

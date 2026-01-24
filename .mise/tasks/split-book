@@ -1,0 +1,12 @@
+#!/usr/bin/env bash
+#MISE description="Split a large book into chapter files"
+#MISE usage="split-book [BOOK_SLUG]"
+set -e
+
+if [ ! -d ".venv" ]; then
+    echo "Setting up Python environment..."
+    uv venv
+    uv pip install -e .
+fi
+
+uv run python scripts/split-book-chapters.py "$@"

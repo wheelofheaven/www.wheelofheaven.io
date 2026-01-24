@@ -1,0 +1,15 @@
+#!/usr/bin/env bash
+#MISE description="Run catalog management commands"
+#MISE alias="cat"
+#MISE raw=true
+set -e
+
+# Ensure dependencies are installed
+if [ ! -d ".venv" ]; then
+    echo "Setting up Python environment..."
+    uv venv
+    uv pip install -e .
+fi
+
+# Run the CLI with all passed arguments
+uv run woh catalog "$@"
