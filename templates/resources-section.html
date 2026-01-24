@@ -1,0 +1,425 @@
+{% extends "base.html" %}
+{% block content %}
+<div class="resources-section">
+    <div class="resources-section__container">
+        <!-- Minimal Header with Search -->
+        <header class="resources-header">
+            <div class="resources-header__left">
+                <h1 class="resources-header__title">{{ section.title }}</h1>
+                {% if section.pages %}
+                <span class="resources-header__count">{{ section.pages | length }} resources</span>
+                {% endif %}
+            </div>
+            <div class="resources-header__search">
+                <svg class="resources-header__search-icon" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                    <circle cx="11" cy="11" r="8"></circle>
+                    <path d="m21 21-4.35-4.35"></path>
+                </svg>
+                <input type="text"
+                       class="resources-header__search-input"
+                       placeholder="Search resources..."
+                       id="resources-search"
+                       autocomplete="off">
+            </div>
+        </header>
+
+        {% if section.pages %}
+        <!-- Quick Filters Bar -->
+        <div class="resources-filters">
+            <div class="resources-filters__left">
+                <!-- Medium Filter -->
+                {% set all_mediums = section.pages | map(attribute="extra.medium") | unique | sort %}
+                {% if all_mediums %}
+                <select class="resources-filters__select" id="resources-medium-filter">
+                    <option value="">All Media Types</option>
+                    {% for medium in all_mediums %}
+                    {% if medium %}
+                    <option value="{{ medium }}">{{ medium | replace(from="-", to=" ") | title }}</option>
+                    {% endif %}
+                    {% endfor %}
+                </select>
+                {% endif %}
+
+                <!-- Sort Options -->
+                <select class="resources-filters__select" id="resources-sort">
+                    <option value="title">A-Z</option>
+                    <option value="date">Recent</option>
+                    <option value="medium">Medium</option>
+                </select>
+            </div>
+
+            <div class="resources-filters__right">
+                <!-- Random Resource -->
+                <button class="resources-filters__random" id="random-resource-btn" title="Random resource">
+                    <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                        <path d="M16 3h5v5"></path>
+                        <path d="M4 20L21 3"></path>
+                        <path d="M21 16v5h-5"></path>
+                        <path d="M15 15l6 6"></path>
+                        <path d="M4 4l5 5"></path>
+                    </svg>
+                    <span class="resources-filters__random-text">Random</span>
+                </button>
+
+                <!-- View Toggle -->
+                <div class="resources-view-toggle">
+                    <button class="resources-view-toggle__btn resources-view-toggle__btn--active" data-view="grid" title="Grid view">
+                        <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                            <rect x="3" y="3" width="7" height="7"></rect>
+                            <rect x="14" y="3" width="7" height="7"></rect>
+                            <rect x="14" y="14" width="7" height="7"></rect>
+                            <rect x="3" y="14" width="7" height="7"></rect>
+                        </svg>
+                    </button>
+                    <button class="resources-view-toggle__btn" data-view="list" title="List view">
+                        <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                            <line x1="8" y1="6" x2="21" y2="6"></line>
+                            <line x1="8" y1="12" x2="21" y2="12"></line>
+                            <line x1="8" y1="18" x2="21" y2="18"></line>
+                            <line x1="3" y1="6" x2="3.01" y2="6"></line>
+                            <line x1="3" y1="12" x2="3.01" y2="12"></line>
+                            <line x1="3" y1="18" x2="3.01" y2="18"></line>
+                        </svg>
+                    </button>
+                </div>
+            </div>
+        </div>
+
+        <!-- Alphabetical Quick Navigation -->
+        <div class="resources-alphabet">
+            {% set alphabet = "ABCDEFGHIJKLMNOPQRSTUVWXYZ" | split(pat="") %}
+            {% set first_letters = [] %}
+            {% for page in section.pages %}
+                {% set first_letter = page.title | truncate(length=1, end="") | upper %}
+                {% set_global first_letters = first_letters | concat(with=first_letter) %}
+            {% endfor %}
+            {% set first_letters = first_letters | unique | sort %}
+            {% for letter in alphabet %}
+            {% if letter in first_letters %}
+            <a href="#letter-{{ letter }}" class="resources-alphabet__link resources-alphabet__link--active">{{ letter }}</a>
+            {% else %}
+            <span class="resources-alphabet__link resources-alphabet__link--inactive">{{ letter }}</span>
+            {% endif %}
+            {% endfor %}
+        </div>
+
+        <!-- Main Resources Grid/List -->
+        <div class="resources-section__pages">
+            <div class="resources-section__grid" id="resources-articles" data-view="grid">
+                {% for page in section.pages | sort(attribute="title") %}
+                <article class="resources-card"
+                         data-title="{{ page.title | lower }}"
+                         data-medium="{{ page.extra.medium | default(value="") | lower }}"
+                         data-date="{{ page.extra.publish_date | default(value="") }}"
+                         data-letter="{{ page.title | truncate(length=1, end="") | upper }}">
+
+                    <!-- Letter anchor for alphabetical navigation -->
+                    {% set current_letter = page.title | truncate(length=1, end="") | upper %}
+                    {% if loop.first %}
+                    <div id="letter-{{ current_letter }}" class="resources-letter-anchor"></div>
+                    {% else %}
+                        {% set prev_page = section.pages | sort(attribute="title") | nth(n=loop.index0 - 1) %}
+                        {% if prev_page %}
+                            {% set prev_letter = prev_page.title | truncate(length=1, end="") | upper %}
+                            {% if prev_letter != current_letter %}
+                            <div id="letter-{{ current_letter }}" class="resources-letter-anchor"></div>
+                            {% endif %}
+                        {% endif %}
+                    {% endif %}
+
+                    <!-- Accent stripe -->
+                    <div class="resources-card__accent"></div>
+
+                    <!-- Resource icon based on medium -->
+                    <div class="resources-card__icon">
+                        {% if page.extra.medium == "nonfiction-book" or page.extra.medium == "novel" %}
+                        <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                            <path d="M4 19.5A2.5 2.5 0 0 1 6.5 17H20"></path>
+                            <path d="M6.5 2H20v20H6.5A2.5 2.5 0 0 1 4 19.5v-15A2.5 2.5 0 0 1 6.5 2z"></path>
+                        </svg>
+                        {% elif page.extra.medium == "documentary-film" or page.extra.medium == "cinematographic-film" %}
+                        <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                            <rect x="2" y="2" width="20" height="20" rx="2.18" ry="2.18"></rect>
+                            <line x1="7" y1="2" x2="7" y2="22"></line>
+                            <line x1="17" y1="2" x2="17" y2="22"></line>
+                            <line x1="2" y1="12" x2="22" y2="12"></line>
+                            <line x1="2" y1="7" x2="7" y2="7"></line>
+                            <line x1="2" y1="17" x2="7" y2="17"></line>
+                            <line x1="17" y1="17" x2="22" y2="17"></line>
+                            <line x1="17" y1="7" x2="22" y2="7"></line>
+                        </svg>
+                        {% elif page.extra.medium == "web-resource" or page.extra.medium == "web-project" or page.extra.medium == "web-presence" %}
+                        <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                            <circle cx="12" cy="12" r="10"></circle>
+                            <line x1="2" y1="12" x2="22" y2="12"></line>
+                            <path d="M12 2a15.3 15.3 0 0 1 4 10 15.3 15.3 0 0 1-4 10 15.3 15.3 0 0 1-4-10 15.3 15.3 0 0 1 4-10z"></path>
+                        </svg>
+                        {% elif page.extra.medium == "religious-text" or page.extra.medium == "canonical-text" %}
+                        <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                            <path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"></path>
+                        </svg>
+                        {% elif page.extra.medium == "remote-antiquity" or page.extra.medium == "ancient-text" or page.extra.medium == "historical-text" %}
+                        <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                            <path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z"></path>
+                            <polyline points="14 2 14 8 20 8"></polyline>
+                        </svg>
+                        {% elif page.extra.medium == "podcast" %}
+                        <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                            <path d="M12 1a3 3 0 0 0-3 3v8a3 3 0 0 0 6 0V4a3 3 0 0 0-3-3z"></path>
+                            <path d="M19 10v2a7 7 0 0 1-14 0v-2"></path>
+                            <line x1="12" y1="19" x2="12" y2="23"></line>
+                            <line x1="8" y1="23" x2="16" y2="23"></line>
+                        </svg>
+                        {% elif page.extra.medium == "video-game" %}
+                        <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                            <line x1="6" y1="12" x2="10" y2="12"></line>
+                            <line x1="8" y1="10" x2="8" y2="14"></line>
+                            <line x1="15" y1="13" x2="15.01" y2="13"></line>
+                            <line x1="18" y1="11" x2="18.01" y2="11"></line>
+                            <rect x="2" y="6" width="20" height="12" rx="2"></rect>
+                        </svg>
+                        {% elif page.extra.medium == "research-paper" %}
+                        <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                            <path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z"></path>
+                            <polyline points="14 2 14 8 20 8"></polyline>
+                            <line x1="16" y1="13" x2="8" y2="13"></line>
+                            <line x1="16" y1="17" x2="8" y2="17"></line>
+                            <polyline points="10 9 9 9 8 9"></polyline>
+                        </svg>
+                        {% elif page.extra.medium == "television-production" %}
+                        <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                            <rect x="2" y="7" width="20" height="15" rx="2" ry="2"></rect>
+                            <polyline points="17 2 12 7 7 2"></polyline>
+                        </svg>
+                        {% else %}
+                        <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                            <path d="M21 16V8a2 2 0 0 0-1-1.73l-7-4a2 2 0 0 0-2 0l-7 4A2 2 0 0 0 3 8v8a2 2 0 0 0 1 1.73l7 4a2 2 0 0 0 2 0l7-4A2 2 0 0 0 21 16z"></path>
+                        </svg>
+                        {% endif %}
+                    </div>
+
+                    <div class="resources-card__content">
+                        {% if page.extra.medium %}
+                        <span class="resources-card__medium">{{ page.extra.medium | replace(from="-", to=" ") | title }}</span>
+                        {% endif %}
+
+                        <h3 class="resources-card__title">
+                            <a href="{{ page.permalink }}" class="resources-card__link">{{ page.title }}</a>
+                        </h3>
+
+                        {% if page.extra.original_title %}
+                        <p class="resources-card__original-title">{{ page.extra.original_title }}</p>
+                        {% endif %}
+
+                        {% if page.description %}
+                        <p class="resources-card__summary">
+                            {{ page.description | truncate(length=150) }}
+                        </p>
+                        {% endif %}
+
+                        <div class="resources-card__meta">
+                            {% if page.extra.authored_by %}
+                            <span class="resources-card__meta-item">
+                                <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                    <path d="M20 21v-2a4 4 0 0 0-4-4H8a4 4 0 0 0-4 4v2"></path>
+                                    <circle cx="12" cy="7" r="4"></circle>
+                                </svg>
+                                {{ page.extra.authored_by | join(sep=", ") }}
+                            </span>
+                            {% endif %}
+                            {% if page.extra.publish_date %}
+                            <span class="resources-card__meta-item">
+                                <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                    <rect x="3" y="4" width="18" height="18" rx="2" ry="2"></rect>
+                                    <line x1="16" y1="2" x2="16" y2="6"></line>
+                                    <line x1="8" y1="2" x2="8" y2="6"></line>
+                                    <line x1="3" y1="10" x2="21" y2="10"></line>
+                                </svg>
+                                {{ page.extra.publish_date }}
+                            </span>
+                            {% endif %}
+                        </div>
+                    </div>
+
+                    <div class="resources-card__footer">
+                        <a href="{{ page.permalink }}" class="resources-card__read-btn">
+                            <span>View Details</span>
+                            <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                <path d="M5 12h14"></path>
+                                <path d="M12 5l7 7-7 7"></path>
+                            </svg>
+                        </a>
+                    </div>
+                </article>
+                {% endfor %}
+            </div>
+
+            <!-- No Results Message -->
+            <div class="resources-no-results hidden" id="resources-no-results">
+                <div class="resources-no-results__content">
+                    <svg class="resources-no-results__icon" width="48" height="48" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5">
+                        <circle cx="11" cy="11" r="8"></circle>
+                        <path d="m21 21-4.35-4.35"></path>
+                    </svg>
+                    <h3 class="resources-no-results__title">No resources found</h3>
+                    <p class="resources-no-results__message">Try adjusting your search terms or media type filter.</p>
+                </div>
+            </div>
+        </div>
+        {% endif %}
+
+        <!-- Discovery Footer (About Resources) -->
+        {% if section.pages %}
+        <footer class="resources-footer">
+            <div class="resources-footer__icon">
+                <svg width="48" height="48" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round">
+                    <path d="M21 16V8a2 2 0 0 0-1-1.73l-7-4a2 2 0 0 0-2 0l-7 4A2 2 0 0 0 3 8v8a2 2 0 0 0 1 1.73l7 4a2 2 0 0 0 2 0l7-4A2 2 0 0 0 21 16z"></path>
+                    <polyline points="3.27 6.96 12 12.01 20.73 6.96"></polyline>
+                    <line x1="12" y1="22.08" x2="12" y2="12"></line>
+                </svg>
+            </div>
+            <h2 class="resources-footer__title">About Our Resources</h2>
+            {% if section.description %}
+            <p class="resources-footer__description">{{ section.description }}</p>
+            {% endif %}
+
+            <!-- Statistics -->
+            <div class="resources-footer__stats">
+                <div class="resources-footer__stat">
+                    <span class="resources-footer__stat-number">{{ section.pages | length }}</span>
+                    <span class="resources-footer__stat-label">Resources</span>
+                </div>
+                {% set mediums = section.pages | map(attribute="extra.medium") | unique %}
+                {% set medium_count = 0 %}
+                {% for med in mediums %}{% if med %}{% set_global medium_count = medium_count + 1 %}{% endif %}{% endfor %}
+                {% if medium_count > 0 %}
+                <div class="resources-footer__stat">
+                    <span class="resources-footer__stat-number">{{ medium_count }}</span>
+                    <span class="resources-footer__stat-label">Media Types</span>
+                </div>
+                {% endif %}
+            </div>
+        </footer>
+        {% endif %}
+    </div>
+</div>
+
+<script>
+// Resources Discovery JavaScript
+document.addEventListener('DOMContentLoaded', function() {
+    const searchInput = document.getElementById('resources-search');
+    const mediumFilter = document.getElementById('resources-medium-filter');
+    const sortSelect = document.getElementById('resources-sort');
+    const viewToggle = document.querySelectorAll('.resources-view-toggle__btn');
+    const articlesContainer = document.getElementById('resources-articles');
+    const noResults = document.getElementById('resources-no-results');
+    const articles = Array.from(document.querySelectorAll('.resources-card'));
+    const randomBtn = document.getElementById('random-resource-btn');
+
+    // Random resource functionality
+    if (randomBtn && articles.length > 0) {
+        randomBtn.addEventListener('click', function() {
+            const randomIndex = Math.floor(Math.random() * articles.length);
+            const randomArticle = articles[randomIndex];
+            const link = randomArticle.querySelector('.resources-card__link');
+            if (link) {
+                window.location.href = link.href;
+            }
+        });
+    }
+
+    // Search functionality
+    function filterArticles() {
+        const searchTerm = searchInput?.value.toLowerCase() || '';
+        const selectedMedium = mediumFilter?.value || '';
+        let visibleCount = 0;
+
+        articles.forEach(article => {
+            const title = article.dataset.title || '';
+            const medium = article.dataset.medium || '';
+
+            const matchesSearch = title.includes(searchTerm);
+            const matchesMedium = !selectedMedium || medium === selectedMedium.toLowerCase();
+
+            if (matchesSearch && matchesMedium) {
+                article.style.display = '';
+                visibleCount++;
+            } else {
+                article.style.display = 'none';
+            }
+        });
+
+        if (noResults) {
+            noResults.style.display = visibleCount === 0 ? 'block' : 'none';
+        }
+    }
+
+    // Sort functionality
+    function sortArticles() {
+        if (!sortSelect) return;
+
+        const sortBy = sortSelect.value;
+        const container = articlesContainer;
+
+        const sortedArticles = [...articles].sort((a, b) => {
+            switch (sortBy) {
+                case 'title':
+                    return (a.dataset.title || '').localeCompare(b.dataset.title || '');
+                case 'date':
+                    const dateA = a.dataset.date || '';
+                    const dateB = b.dataset.date || '';
+                    return dateB.localeCompare(dateA);
+                case 'medium':
+                    const medA = a.dataset.medium || 'zzz';
+                    const medB = b.dataset.medium || 'zzz';
+                    return medA.localeCompare(medB);
+                default:
+                    return 0;
+            }
+        });
+
+        sortedArticles.forEach(article => container.appendChild(article));
+    }
+
+    // View toggle functionality
+    function toggleView(view) {
+        if (!articlesContainer) return;
+
+        articlesContainer.dataset.view = view;
+
+        viewToggle.forEach(btn => {
+            btn.classList.toggle('resources-view-toggle__btn--active', btn.dataset.view === view);
+        });
+    }
+
+    // Event listeners
+    if (searchInput) {
+        searchInput.addEventListener('input', filterArticles);
+    }
+
+    if (mediumFilter) {
+        mediumFilter.addEventListener('change', filterArticles);
+    }
+
+    if (sortSelect) {
+        sortSelect.addEventListener('change', sortArticles);
+    }
+
+    viewToggle.forEach(btn => {
+        btn.addEventListener('click', () => toggleView(btn.dataset.view));
+    });
+
+    // Smooth scroll for alphabet navigation
+    document.querySelectorAll('.resources-alphabet__link--active').forEach(link => {
+        link.addEventListener('click', function(e) {
+            e.preventDefault();
+            const target = document.querySelector(this.getAttribute('href'));
+            if (target) {
+                target.scrollIntoView({ behavior: 'smooth', block: 'start' });
+            }
+        });
+    });
+});
+</script>
+
+{% endblock content %}

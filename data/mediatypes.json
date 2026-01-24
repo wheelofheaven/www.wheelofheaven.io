@@ -1,0 +1,289 @@
+{
+  "mediatypes": {
+    "nonfiction-book": {
+      "id": "nonfiction-book",
+      "icon": "book",
+      "titles": {
+        "en": "Non-Fiction Book",
+        "de": "Sachbuch",
+        "fr": "Livre documentaire",
+        "es": "Libro de no ficción",
+        "ru": "Научно-популярная книга",
+        "ja": "ノンフィクション本",
+        "zh": "非虚构类书籍",
+        "zh-Hant": "非虛構類書籍",
+        "ko": "논픽션 도서"
+      }
+    },
+    "novel": {
+      "id": "novel",
+      "icon": "book",
+      "titles": {
+        "en": "Novel",
+        "de": "Roman",
+        "fr": "Roman",
+        "es": "Novela",
+        "ru": "Роман",
+        "ja": "小説",
+        "zh": "小说",
+        "zh-Hant": "小說",
+        "ko": "소설"
+      }
+    },
+    "religious-text": {
+      "id": "religious-text",
+      "icon": "shield",
+      "titles": {
+        "en": "Religious Text",
+        "de": "Religiöser Text",
+        "fr": "Texte religieux",
+        "es": "Texto religioso",
+        "ru": "Религиозный текст",
+        "ja": "宗教的テキスト",
+        "zh": "宗教文本",
+        "zh-Hant": "宗教文本",
+        "ko": "종교 텍스트"
+      }
+    },
+    "canonical-text": {
+      "id": "canonical-text",
+      "icon": "shield",
+      "titles": {
+        "en": "Canonical Text",
+        "de": "Kanonischer Text",
+        "fr": "Texte canonique",
+        "es": "Texto canónico",
+        "ru": "Канонический текст",
+        "ja": "正典テキスト",
+        "zh": "经典文本",
+        "zh-Hant": "經典文本",
+        "ko": "정경 텍스트"
+      }
+    },
+    "web-resource": {
+      "id": "web-resource",
+      "icon": "globe",
+      "titles": {
+        "en": "Web Resource",
+        "de": "Web-Ressource",
+        "fr": "Ressource web",
+        "es": "Recurso web",
+        "ru": "Веб-ресурс",
+        "ja": "ウェブリソース",
+        "zh": "网络资源",
+        "zh-Hant": "網路資源",
+        "ko": "웹 리소스"
+      }
+    },
+    "web-project": {
+      "id": "web-project",
+      "icon": "globe",
+      "titles": {
+        "en": "Web Project",
+        "de": "Web-Projekt",
+        "fr": "Projet web",
+        "es": "Proyecto web",
+        "ru": "Веб-проект",
+        "ja": "ウェブプロジェクト",
+        "zh": "网络项目",
+        "zh-Hant": "網路專案",
+        "ko": "웹 프로젝트"
+      }
+    },
+    "web-presence": {
+      "id": "web-presence",
+      "icon": "globe",
+      "titles": {
+        "en": "Web Presence",
+        "de": "Web-Präsenz",
+        "fr": "Présence web",
+        "es": "Presencia web",
+        "ru": "Веб-присутствие",
+        "ja": "ウェブプレゼンス",
+        "zh": "网络存在",
+        "zh-Hant": "網路存在",
+        "ko": "웹 프레즌스"
+      }
+    },
+    "remote-antiquity": {
+      "id": "remote-antiquity",
+      "icon": "file-text",
+      "titles": {
+        "en": "Remote Antiquity",
+        "de": "Ferne Antike",
+        "fr": "Antiquité lointaine",
+        "es": "Antigüedad remota",
+        "ru": "Далёкая древность",
+        "ja": "遠い古代",
+        "zh": "远古",
+        "zh-Hant": "遠古",
+        "ko": "원시 고대"
+      }
+    },
+    "ancient-text": {
+      "id": "ancient-text",
+      "icon": "file-text",
+      "titles": {
+        "en": "Ancient Text",
+        "de": "Antiker Text",
+        "fr": "Texte ancien",
+        "es": "Texto antiguo",
+        "ru": "Древний текст",
+        "ja": "古代テキスト",
+        "zh": "古代文本",
+        "zh-Hant": "古代文本",
+        "ko": "고대 텍스트"
+      }
+    },
+    "historical-text": {
+      "id": "historical-text",
+      "icon": "file-text",
+      "titles": {
+        "en": "Historical Text",
+        "de": "Historischer Text",
+        "fr": "Texte historique",
+        "es": "Texto histórico",
+        "ru": "Исторический текст",
+        "ja": "歴史的テキスト",
+        "zh": "历史文本",
+        "zh-Hant": "歷史文本",
+        "ko": "역사적 텍스트"
+      }
+    },
+    "hermeneutic-work": {
+      "id": "hermeneutic-work",
+      "icon": "package",
+      "titles": {
+        "en": "Hermeneutic Work",
+        "de": "Hermeneutisches Werk",
+        "fr": "Œuvre herméneutique",
+        "es": "Obra hermenéutica",
+        "ru": "Герменевтическая работа",
+        "ja": "解釈学的著作",
+        "zh": "诠释学作品",
+        "zh-Hant": "詮釋學作品",
+        "ko": "해석학적 저작"
+      }
+    },
+    "documentary-film": {
+      "id": "documentary-film",
+      "icon": "film",
+      "titles": {
+        "en": "Documentary Film",
+        "de": "Dokumentarfilm",
+        "fr": "Film documentaire",
+        "es": "Película documental",
+        "ru": "Документальный фильм",
+        "ja": "ドキュメンタリー映画",
+        "zh": "纪录片",
+        "zh-Hant": "紀錄片",
+        "ko": "다큐멘터리 영화"
+      }
+    },
+    "cinematographic-film": {
+      "id": "cinematographic-film",
+      "icon": "film",
+      "titles": {
+        "en": "Cinematographic Film",
+        "de": "Kinofilm",
+        "fr": "Film cinématographique",
+        "es": "Película cinematográfica",
+        "ru": "Кинофильм",
+        "ja": "映画",
+        "zh": "电影",
+        "zh-Hant": "電影",
+        "ko": "영화"
+      }
+    },
+    "television-production": {
+      "id": "television-production",
+      "icon": "tv",
+      "titles": {
+        "en": "Television Production",
+        "de": "Fernsehproduktion",
+        "fr": "Production télévisée",
+        "es": "Producción televisiva",
+        "ru": "Телевизионная продукция",
+        "ja": "テレビ番組",
+        "zh": "电视节目",
+        "zh-Hant": "電視節目",
+        "ko": "TV 프로그램"
+      }
+    },
+    "independent-digital-video": {
+      "id": "independent-digital-video",
+      "icon": "film",
+      "titles": {
+        "en": "Independent Digital Video",
+        "de": "Unabhängiges Digitalvideo",
+        "fr": "Vidéo numérique indépendante",
+        "es": "Video digital independiente",
+        "ru": "Независимое цифровое видео",
+        "ja": "独立系デジタルビデオ",
+        "zh": "独立数字视频",
+        "zh-Hant": "獨立數位影片",
+        "ko": "독립 디지털 비디오"
+      }
+    },
+    "manifesto": {
+      "id": "manifesto",
+      "icon": "package",
+      "titles": {
+        "en": "Manifesto",
+        "de": "Manifest",
+        "fr": "Manifeste",
+        "es": "Manifiesto",
+        "ru": "Манифест",
+        "ja": "マニフェスト",
+        "zh": "宣言",
+        "zh-Hant": "宣言",
+        "ko": "선언문"
+      }
+    },
+    "podcast": {
+      "id": "podcast",
+      "icon": "mic",
+      "titles": {
+        "en": "Podcast",
+        "de": "Podcast",
+        "fr": "Podcast",
+        "es": "Podcast",
+        "ru": "Подкаст",
+        "ja": "ポッドキャスト",
+        "zh": "播客",
+        "zh-Hant": "播客",
+        "ko": "팟캐스트"
+      }
+    },
+    "video-game": {
+      "id": "video-game",
+      "icon": "gamepad",
+      "titles": {
+        "en": "Video Game",
+        "de": "Videospiel",
+        "fr": "Jeu vidéo",
+        "es": "Videojuego",
+        "ru": "Видеоигра",
+        "ja": "ビデオゲーム",
+        "zh": "电子游戏",
+        "zh-Hant": "電子遊戲",
+        "ko": "비디오 게임"
+      }
+    },
+    "research-paper": {
+      "id": "research-paper",
+      "icon": "file-text",
+      "titles": {
+        "en": "Research Paper",
+        "de": "Forschungsarbeit",
+        "fr": "Article de recherche",
+        "es": "Artículo de investigación",
+        "ru": "Научная статья",
+        "ja": "研究論文",
+        "zh": "研究论文",
+        "zh-Hant": "研究論文",
+        "ko": "연구 논문"
+      }
+    }
+  }
+}

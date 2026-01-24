@@ -1,0 +1,260 @@
+{% extends "base.html" %}
+{% import "macros/breadcrumbs.html" as breadcrumbs %}
+
+{% block content %}
+<div class="resources">
+    <!-- Breadcrumb Navigation -->
+    {{ breadcrumbs::resources(page=page, lang=detected_lang) }}
+
+    <div class="resources__container">
+        <!-- Table of Contents Sidebar -->
+        <aside class="resources__toc" role="complementary" aria-label="Table of contents">
+            <div class="resources__toc-header">
+                <h3 class="resources__toc-title" id="toc-heading">Contents</h3>
+            </div>
+            <nav class="resources__toc-nav" aria-labelledby="toc-heading">
+                {% if page.toc %}
+                <ul class="resources__toc-list">
+                    {% for h1 in page.toc %}
+                    <li class="resources__toc-item resources__toc-item--level-1">
+                        <a href="#{{ h1.id }}" class="resources__toc-link">{{ h1.title }}</a>
+                        {% if h1.children %}
+                        <ul class="resources__toc-sublist">
+                            {% for h2 in h1.children %}
+                            <li class="resources__toc-item resources__toc-item--level-2">
+                                <a href="#{{ h2.id }}" class="resources__toc-link">{{ h2.title }}</a>
+                                {% if h2.children %}
+                                <ul class="resources__toc-sublist">
+                                    {% for h3 in h2.children %}
+                                    <li class="resources__toc-item resources__toc-item--level-3">
+                                        <a href="#{{ h3.id }}" class="resources__toc-link">{{ h3.title }}</a>
+                                    </li>
+                                    {% endfor %}
+                                </ul>
+                                {% endif %}
+                            </li>
+                            {% endfor %}
+                        </ul>
+                        {% endif %}
+                    </li>
+                    {% endfor %}
+                </ul>
+                {% endif %}
+
+                <!-- Quick Links -->
+                <div class="resources__toc-quicklinks">
+                    {% if page.extra.follow_url %}
+                    <a href="{{ page.extra.follow_url }}" class="resources__toc-external" target="_blank" rel="noopener noreferrer">
+                        <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                            <path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"></path>
+                            <polyline points="15 3 21 3 21 9"></polyline>
+                            <line x1="10" y1="14" x2="21" y2="3"></line>
+                        </svg>
+                        Visit Source
+                    </a>
+                    {% endif %}
+                </div>
+            </nav>
+        </aside>
+
+        <!-- Main Content -->
+        <main class="resources__main">
+            <article class="resources__article" role="article" aria-labelledby="resources-title">
+                <!-- Page Header -->
+                <header class="resources__header">
+                    {% if page.extra.medium %}
+                    <span class="resources__medium-badge">{{ page.extra.medium | replace(from="-", to=" ") | title }}</span>
+                    {% endif %}
+
+                    <h1 class="resources__title" id="resources-title">{{ page.title }}</h1>
+
+                    {% if page.extra.original_title %}
+                    <p class="resources__original-title">
+                        <span class="resources__label">Original title:</span>
+                        {{ page.extra.original_title }}
+                    </p>
+                    {% endif %}
+
+                    <!-- Summary -->
+                    {% if page.description %}
+                    <div class="resources__summary" data-ai-summary="true" aria-label="Quick summary">
+                        <div class="resources__summary-label">Summary</div>
+                        <div class="resources__summary-content">
+                            {{ page.description | markdown | safe }}
+                        </div>
+                    </div>
+                    {% endif %}
+
+                    <!-- Metadata Grid -->
+                    <div class="resources__meta-grid">
+                        {% if page.extra.authored_by %}
+                        <div class="resources__meta-item">
+                            <div class="resources__meta-label">
+                                <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                    <path d="M20 21v-2a4 4 0 0 0-4-4H8a4 4 0 0 0-4 4v2"></path>
+                                    <circle cx="12" cy="7" r="4"></circle>
+                                </svg>
+                                Authored by
+                            </div>
+                            <div class="resources__meta-value">
+                                {% for author in page.extra.authored_by %}
+                                <span class="resources__author">{{ author }}</span>{% if not loop.last %}, {% endif %}
+                                {% endfor %}
+                            </div>
+                        </div>
+                        {% endif %}
+
+                        {% if page.extra.publish_date %}
+                        <div class="resources__meta-item">
+                            <div class="resources__meta-label">
+                                <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                    <rect x="3" y="4" width="18" height="18" rx="2" ry="2"></rect>
+                                    <line x1="16" y1="2" x2="16" y2="6"></line>
+                                    <line x1="8" y1="2" x2="8" y2="6"></line>
+                                    <line x1="3" y1="10" x2="21" y2="10"></line>
+                                </svg>
+                                Published
+                            </div>
+                            <div class="resources__meta-value">{{ page.extra.publish_date }}</div>
+                        </div>
+                        {% endif %}
+
+                        {% if page.extra.medium %}
+                        <div class="resources__meta-item">
+                            <div class="resources__meta-label">
+                                <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                    <path d="M21 16V8a2 2 0 0 0-1-1.73l-7-4a2 2 0 0 0-2 0l-7 4A2 2 0 0 0 3 8v8a2 2 0 0 0 1 1.73l7 4a2 2 0 0 0 2 0l7-4A2 2 0 0 0 21 16z"></path>
+                                </svg>
+                                Medium
+                            </div>
+                            <div class="resources__meta-value">{{ page.extra.medium | replace(from="-", to=" ") | title }}</div>
+                        </div>
+                        {% endif %}
+
+                        {% if page.reading_time %}
+                        <div class="resources__meta-item">
+                            <div class="resources__meta-label">
+                                <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                    <circle cx="12" cy="12" r="10"></circle>
+                                    <polyline points="12 6 12 12 16 14"></polyline>
+                                </svg>
+                                Reading time
+                            </div>
+                            <div class="resources__meta-value">{{ page.reading_time }} min</div>
+                        </div>
+                        {% endif %}
+                    </div>
+
+                    <!-- Topics -->
+                    {% if page.extra.topics %}
+                    <div class="resources__topics">
+                        <span class="resources__topics-label">Topics:</span>
+                        <div class="resources__topics-list">
+                            {% for topic in page.extra.topics %}
+                            <span class="resources__topic-tag">{{ topic }}</span>
+                            {% endfor %}
+                        </div>
+                    </div>
+                    {% endif %}
+
+                    <!-- External Link Button -->
+                    {% if page.extra.follow_url %}
+                    <div class="resources__external-cta">
+                        <a href="{{ page.extra.follow_url }}" class="resources__external-btn" target="_blank" rel="noopener noreferrer">
+                            <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                <path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"></path>
+                                <polyline points="15 3 21 3 21 9"></polyline>
+                                <line x1="10" y1="14" x2="21" y2="3"></line>
+                            </svg>
+                            Visit External Resource
+                        </a>
+                    </div>
+                    {% endif %}
+                </header>
+
+                <!-- Page Content -->
+                {% if page.content %}
+                <div class="resources__content">{{ page.content | safe }}</div>
+                {% endif %}
+
+                <!-- See Also Section -->
+                {% if page.extra.see_also %}
+                <section class="resources__see-also" role="complementary" aria-label="Related topics">
+                    <h2 class="resources__section-title" id="see-also-heading">See also</h2>
+                    <ul class="resources__link-list">
+                        {% for item in page.extra.see_also %}
+                        <li class="resources__link-item">
+                            {% if item.url %}
+                            <a href="{{ item.url }}" class="resources__link">{{ item.title }}</a>
+                            {% else %}
+                            <a href="{{ get_url(path=item.path, lang=detected_lang) }}" class="resources__link">{{ item.title }}</a>
+                            {% endif %}
+                            {% if item.description %}
+                            <span class="resources__link-description">{{ item.description }}</span>
+                            {% endif %}
+                        </li>
+                        {% endfor %}
+                    </ul>
+                </section>
+                {% endif %}
+
+                <!-- External Links Section -->
+                {% if page.extra.external_links %}
+                <section class="resources__external-links">
+                    <h2 class="resources__section-title">External links</h2>
+                    <ul class="resources__link-list">
+                        {% for link in page.extra.external_links %}
+                        <li class="resources__link-item">
+                            <a href="{{ link.url }}" class="resources__link resources__link--external" target="_blank" rel="noopener noreferrer">
+                                {{ link.title }}
+                                <svg class="resources__external-icon" width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                    <path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"></path>
+                                    <polyline points="15,3 21,3 21,9"></polyline>
+                                    <line x1="10" y1="14" x2="21" y2="3"></line>
+                                </svg>
+                            </a>
+                            {% if link.description %}
+                            <span class="resources__link-description">{{ link.description }}</span>
+                            {% endif %}
+                        </li>
+                        {% endfor %}
+                    </ul>
+                </section>
+                {% endif %}
+
+                <!-- References Section -->
+                {% if page.extra.references %}
+                <section class="resources__references" role="doc-endnotes" aria-label="References and citations">
+                    <h2 class="resources__section-title" id="references-heading">References</h2>
+                    <ol class="resources__reference-list">
+                        {% for ref in page.extra.references %}
+                        <li class="resources__reference-item" id="ref-{{ loop.index }}">
+                            {% if ref.url %}
+                            <a href="{{ ref.url }}" class="resources__reference-link" target="_blank" rel="noopener noreferrer">
+                                {{ ref.title }}
+                            </a>
+                            {% else %}
+                            <span class="resources__reference-title">{{ ref.title }}</span>
+                            {% endif %}
+                            {% if ref.author %}
+                            <span class="resources__reference-author">by {{ ref.author }}</span>
+                            {% endif %}
+                            {% if ref.publication %}
+                            <span class="resources__reference-publication">{{ ref.publication }}</span>
+                            {% endif %}
+                            {% if ref.date %}
+                            <span class="resources__reference-date">({{ ref.date }})</span>
+                            {% endif %}
+                            {% if ref.description %}
+                            <p class="resources__reference-description">{{ ref.description }}</p>
+                            {% endif %}
+                        </li>
+                        {% endfor %}
+                    </ol>
+                </section>
+                {% endif %}
+            </article>
+        </main>
+    </div>
+</div>
+{% endblock content %}
