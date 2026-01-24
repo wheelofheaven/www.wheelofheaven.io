@@ -189,6 +189,18 @@
             </span>
         </button>
 
+        <!-- Reading List Toggle -->
+        <button
+            class="reading-list-toggle"
+            data-toggle-reading-list
+            aria-label="{{ trans(key='openReadingList', default='Open reading list') }}"
+        >
+            <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+                <path d="M19 21l-7-5-7 5V5a2 2 0 0 1 2-2h10a2 2 0 0 1 2 2z"/>
+            </svg>
+            <span class="reading-list-toggle__badge">0</span>
+        </button>
+
         <!-- Ask AI Button -->
         <div class="navbar__ask-ai" id="askAiWidget">
             <button

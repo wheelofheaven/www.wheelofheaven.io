@@ -1,0 +1,384 @@
+// Reading List / Bookmarks
+// Styles for bookmark buttons, toggle, and reading list panel
+
+@use "../abstracts/variables" as v;
+@use "../abstracts/colors" as c;
+
+// Bookmark button (inline with content)
+.bookmark-btn {
+    display: inline-flex;
+    align-items: center;
+    gap: 0.5rem;
+    padding: 0.5rem 0.75rem;
+    border: 1px solid var(--color-border);
+    border-radius: v.$border-radius-md;
+    background-color: var(--color-surface);
+    color: var(--color-text-muted);
+    font-size: v.$font-size-sm;
+    cursor: pointer;
+    transition: all v.$transition-base ease;
+
+    &:hover {
+        border-color: var(--color-accent-primary);
+        color: var(--color-accent-primary);
+        background-color: var(--color-hover);
+    }
+
+    &:focus-visible {
+        outline: 2px solid var(--color-focus);
+        outline-offset: 2px;
+    }
+
+    &.is-bookmarked {
+        border-color: var(--color-accent-primary);
+        background-color: rgba(c.$yellow, 0.1);
+        color: var(--color-accent-primary);
+
+        .bookmark-icon-outline {
+            display: none;
+        }
+
+        .bookmark-icon-filled {
+            display: block;
+        }
+    }
+
+    .bookmark-icon-filled {
+        display: none;
+    }
+
+    svg {
+        flex-shrink: 0;
+    }
+}
+
+// Reading list toggle button (navbar)
+.reading-list-toggle {
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 40px;
+    height: 40px;
+    padding: 0;
+    border: none;
+    border-radius: v.$border-radius-md;
+    background-color: transparent;
+    color: var(--color-text-muted);
+    cursor: pointer;
+    transition: all v.$transition-base ease;
+
+    &:hover {
+        background-color: var(--color-hover);
+        color: var(--color-text);
+    }
+
+    &:focus-visible {
+        outline: 2px solid var(--color-focus);
+        outline-offset: 2px;
+    }
+
+    &__badge {
+        position: absolute;
+        top: 4px;
+        right: 4px;
+        display: none;
+        align-items: center;
+        justify-content: center;
+        min-width: 16px;
+        height: 16px;
+        padding: 0 4px;
+        font-size: 0.625rem;
+        font-weight: 600;
+        color: white;
+        background-color: c.$pink;
+        border-radius: 8px;
+    }
+}
+
+// Reading List Panel (slide-out)
+.reading-list-panel {
+    position: fixed;
+    inset: 0;
+    z-index: 200;
+    display: flex;
+    justify-content: flex-end;
+    opacity: 0;
+    visibility: hidden;
+    transition: opacity v.$transition-base ease, visibility v.$transition-base ease;
+
+    &--open {
+        opacity: 1;
+        visibility: visible;
+
+        .reading-list-panel__content {
+            transform: translateX(0);
+        }
+    }
+
+    &__backdrop {
+        position: absolute;
+        inset: 0;
+        background-color: rgba(0, 0, 0, 0.5);
+        backdrop-filter: blur(4px);
+        -webkit-backdrop-filter: blur(4px);
+    }
+
+    &__content {
+        position: relative;
+        display: flex;
+        flex-direction: column;
+        width: 100%;
+        max-width: 400px;
+        height: 100%;
+        background-color: var(--color-navbar-bg);
+        backdrop-filter: blur(20px) saturate(180%);
+        -webkit-backdrop-filter: blur(20px) saturate(180%);
+        border-left: 1px solid var(--color-hairline);
+        box-shadow: -8px 0 32px rgba(0, 0, 0, 0.2);
+        transform: translateX(100%);
+        transition: transform v.$transition-slow cubic-bezier(0.4, 0, 0.2, 1);
+
+        @media (max-width: 480px) {
+            max-width: 100%;
+        }
+    }
+
+    &__header {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        padding: 1rem 1.25rem;
+        border-bottom: 1px solid var(--color-hairline);
+    }
+
+    &__title {
+        display: flex;
+        align-items: center;
+        gap: 0.5rem;
+        margin: 0;
+        font-size: 1rem;
+        font-weight: 600;
+        color: var(--color-text);
+
+        svg {
+            color: var(--color-accent-primary);
+        }
+    }
+
+    &__close {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        width: 32px;
+        height: 32px;
+        padding: 0;
+        border: none;
+        border-radius: v.$border-radius-sm;
+        background-color: transparent;
+        color: var(--color-text-muted);
+        cursor: pointer;
+        transition: background-color v.$transition-fast ease, color v.$transition-fast ease;
+
+        &:hover {
+            background-color: var(--color-hover);
+            color: var(--color-text);
+        }
+
+        &:focus-visible {
+            outline: 2px solid var(--color-focus);
+            outline-offset: 2px;
+        }
+    }
+
+    &__body {
+        flex: 1;
+        overflow-y: auto;
+        padding: 1rem;
+    }
+
+    &__empty {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        padding: 3rem 1rem;
+        text-align: center;
+        color: var(--color-text-muted);
+
+        svg {
+            margin-bottom: 1rem;
+            opacity: 0.5;
+        }
+
+        p {
+            margin: 0;
+            font-size: v.$font-size-sm;
+        }
+
+        &-hint {
+            margin-top: 0.5rem !important;
+            font-size: 0.75rem !important;
+            opacity: 0.7;
+        }
+    }
+
+    &__list {
+        list-style: none;
+        margin: 0;
+        padding: 0;
+        display: flex;
+        flex-direction: column;
+        gap: 0.5rem;
+    }
+
+    &__item {
+        display: flex;
+        align-items: flex-start;
+        gap: 0.5rem;
+        padding: 0.75rem;
+        background-color: var(--color-surface);
+        border: 1px solid var(--color-hairline);
+        border-radius: v.$border-radius-md;
+        transition: border-color v.$transition-base ease, box-shadow v.$transition-base ease;
+
+        &:hover {
+            border-color: var(--color-border);
+            box-shadow: 0 2px 8px rgba(0, 0, 0, 0.08);
+
+            .reading-list-panel__remove {
+                opacity: 1;
+            }
+        }
+    }
+
+    &__link {
+        flex: 1;
+        display: flex;
+        flex-direction: column;
+        gap: 0.25rem;
+        text-decoration: none;
+        color: inherit;
+
+        &:hover .reading-list-panel__item-title {
+            color: var(--color-accent-primary);
+        }
+
+        &:focus-visible {
+            outline: 2px solid var(--color-focus);
+            outline-offset: 2px;
+            border-radius: v.$border-radius-xs;
+        }
+    }
+
+    &__section {
+        font-size: 0.625rem;
+        font-weight: 600;
+        text-transform: uppercase;
+        letter-spacing: 0.05em;
+        color: var(--color-accent-primary);
+    }
+
+    &__item-title {
+        font-size: v.$font-size-sm;
+        font-weight: 500;
+        color: var(--color-text);
+        line-height: 1.4;
+        transition: color v.$transition-base ease;
+    }
+
+    &__item-desc {
+        font-size: 0.75rem;
+        color: var(--color-text-muted);
+        line-height: 1.4;
+    }
+
+    &__remove {
+        flex-shrink: 0;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        width: 28px;
+        height: 28px;
+        padding: 0;
+        border: none;
+        border-radius: v.$border-radius-sm;
+        background-color: transparent;
+        color: var(--color-text-muted);
+        cursor: pointer;
+        opacity: 0.5;
+        transition: all v.$transition-base ease;
+
+        &:hover {
+            background-color: rgba(c.$pink, 0.1);
+            color: c.$pink;
+        }
+
+        &:focus-visible {
+            outline: 2px solid var(--color-focus);
+            outline-offset: 2px;
+            opacity: 1;
+        }
+    }
+
+    &__footer {
+        display: none;
+        align-items: center;
+        justify-content: center;
+        padding: 0.75rem 1rem;
+        border-top: 1px solid var(--color-hairline);
+    }
+
+    &__clear {
+        display: flex;
+        align-items: center;
+        gap: 0.5rem;
+        padding: 0.5rem 1rem;
+        border: none;
+        border-radius: v.$border-radius-sm;
+        background-color: transparent;
+        color: var(--color-text-muted);
+        font-size: v.$font-size-sm;
+        cursor: pointer;
+        transition: all v.$transition-base ease;
+
+        &:hover {
+            background-color: rgba(c.$pink, 0.1);
+            color: c.$pink;
+        }
+
+        &:focus-visible {
+            outline: 2px solid var(--color-focus);
+            outline-offset: 2px;
+        }
+    }
+}
+
+// Social share bookmark button variant
+.social-share__btn--bookmark {
+    &.is-bookmarked {
+        color: var(--color-accent-primary);
+
+        .bookmark-icon-outline {
+            display: none;
+        }
+
+        .bookmark-icon-filled {
+            display: block;
+            fill: currentColor;
+        }
+    }
+
+    .bookmark-icon-filled {
+        display: none;
+    }
+}
+
+// Hide on print
+@media print {
+    .reading-list-panel,
+    .reading-list-toggle,
+    .bookmark-btn {
+        display: none !important;
+    }
+}

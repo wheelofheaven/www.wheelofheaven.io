@@ -105,10 +105,16 @@ A roadmap of potential improvements to make wheelofheaven.io more modern, access
 - Or: Hypothesis-style web annotations
 - Moderation considerations
 
-### [ ] Reading Lists / Bookmarks
-- Let users save articles to read later
-- localStorage-based (no account needed)
-- Or account-based for cross-device sync
+### [x] Reading Lists / Bookmarks ✓
+- **Implemented:** localStorage-based reading list (no account needed)
+- **Implemented:** Bookmark button in social share component
+- **Implemented:** Reading list toggle button in navbar
+- **Implemented:** Slide-out panel showing saved articles
+- **Implemented:** Service worker caches bookmarked pages for offline
+- **Implemented:** Keyboard shortcuts (b to bookmark, B to open list)
+- **Implemented:** Translations for all 9 languages
+- JavaScript in `static/js/reading-list.js`
+- Styles in `sass/components/_reading-list.scss`
 
 ---
 
@@ -232,4 +238,4 @@ A roadmap of potential improvements to make wheelofheaven.io more modern, access
 
 ---
 
-*Last updated: 2026-01-24 (Focus Indicators added)*
+*Last updated: 2026-01-24 (Reading Lists / Bookmarks added)*

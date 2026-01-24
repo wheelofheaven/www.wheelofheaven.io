@@ -1,0 +1,19 @@
+<!-- Bookmark Button -->
+<button
+    class="bookmark-btn"
+    data-bookmark
+    data-url="{{ current_url | safe }}"
+    data-title="{{ page.title | default(value='') | escape }}"
+    data-description="{{ page.description | default(value='') | escape }}"
+    data-section="{{ section.title | default(value='') | escape }}"
+    aria-pressed="false"
+    aria-label="{{ trans(key='bookmarkThis', default='Bookmark this page') }}"
+>
+    <svg class="bookmark-icon-outline" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+        <path d="M19 21l-7-5-7 5V5a2 2 0 0 1 2-2h10a2 2 0 0 1 2 2z"/>
+    </svg>
+    <svg class="bookmark-icon-filled" width="18" height="18" viewBox="0 0 24 24" fill="currentColor" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+        <path d="M19 21l-7-5-7 5V5a2 2 0 0 1 2-2h10a2 2 0 0 1 2 2z"/>
+    </svg>
+    <span class="bookmark-btn__label">{{ trans(key="bookmark", default="Bookmark") }}</span>
+</button>
