@@ -6,11 +6,12 @@ A roadmap of potential improvements to make wheelofheaven.io more modern, access
 
 ## AI/LLM Optimization (AEO - Answer Engine Optimization)
 
-### [ ] llms.txt
+### [x] llms.txt ✓
 - New standard (like robots.txt) that tells AI crawlers how to understand your site
 - Describes site purpose, content structure, and how to cite
 - Quick win for AI discoverability
 - Reference: https://llmstxt.org/
+- **Implemented:** `/static/llms.txt` - includes content sections, key concepts, API access, languages, citation info
 
 ### [ ] Enhanced Schema.org Markup
 - Add FAQPage schema for FAQ sections
