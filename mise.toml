@@ -22,12 +22,12 @@ run = "zola build"
 
 [tasks.purgecss]
 description = "Remove unused CSS from built files"
+depends = ["build"]
 run = "cd themes/bifrost && npm run purgecss"
 
 [tasks.build-prod]
 description = "Production build with CSS purging"
-depends = ["build", "purgecss"]
-run = "echo 'Production build complete'"
+run = "mise run build && mise run purgecss"
 
 [tasks.serve]
 description = "Run dev server (live reload)"
