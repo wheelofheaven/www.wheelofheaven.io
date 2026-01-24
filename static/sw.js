@@ -1,10 +1,13 @@
 // Service Worker for Wheel of Heaven
 // Provides offline support and caching
 
-const CACHE_VERSION = 'v1';
+const CACHE_VERSION = 'v2';
 const STATIC_CACHE = `woh-static-${CACHE_VERSION}`;
 const PAGES_CACHE = `woh-pages-${CACHE_VERSION}`;
 const IMAGES_CACHE = `woh-images-${CACHE_VERSION}`;
+
+// CDN origin for images
+const CDN_ORIGIN = 'https://assets.wheelofheaven.io';
 
 // Core assets to cache immediately
 const STATIC_ASSETS = [
@@ -12,7 +15,22 @@ const STATIC_ASSETS = [
     '/offline/',
     '/site.webmanifest',
     '/brand/favicon.svg',
-    '/brand/icon-192.png'
+    '/brand/icon-192.png',
+    '/brand/icon-512.png',
+    // Critical CSS/JS
+    '/critical.css',
+    '/main.css',
+    '/js/dist/core.bundle.js',
+    // Fonts (most important)
+    '/fonts/vendor/jost/jost-v19-cyrillic_latin-regular.woff2',
+    '/fonts/vendor/space-grotesk/space-grotesk-v21-latin-regular.woff2'
+];
+
+// Critical CDN images to precache (for offline homepage)
+const CDN_PRECACHE = [
+    `${CDN_ORIGIN}/images/hero/hero-genesis.webp`,
+    `${CDN_ORIGIN}/images/hero/hero-genesis.avif`,
+    `${CDN_ORIGIN}/images/hero/sunrise.webp`
 ];
 
 // Cache strategies
@@ -22,16 +40,33 @@ const CACHE_STRATEGIES = {
     images: 'cache-first'
 };
 
-// Install event - cache static assets
+// Install event - cache static assets and critical CDN images
 self.addEventListener('install', event => {
     event.waitUntil(
-        caches.open(STATIC_CACHE)
-            .then(cache => {
+        Promise.all([
+            // Cache static assets
+            caches.open(STATIC_CACHE).then(cache => {
                 console.log('[SW] Caching static assets');
                 return cache.addAll(STATIC_ASSETS);
+            }),
+            // Cache critical CDN images
+            caches.open(IMAGES_CACHE).then(cache => {
+                console.log('[SW] Caching critical CDN images');
+                return Promise.all(
+                    CDN_PRECACHE.map(url =>
+                        fetch(url, { mode: 'cors' })
+                            .then(response => {
+                                if (response.ok) {
+                                    return cache.put(url, response);
+                                }
+                            })
+                            .catch(err => console.warn('[SW] Failed to cache:', url, err))
+                    )
+                );
             })
-            .then(() => self.skipWaiting())
-            .catch(err => console.error('[SW] Install failed:', err))
+        ])
+        .then(() => self.skipWaiting())
+        .catch(err => console.error('[SW] Install failed:', err))
     );
 });
 
@@ -62,13 +97,19 @@ self.addEventListener('fetch', event => {
     const request = event.request;
     const url = new URL(request.url);
 
-    // Only handle same-origin requests
-    if (url.origin !== location.origin) {
+    // Skip non-GET requests
+    if (request.method !== 'GET') {
         return;
     }
 
-    // Skip non-GET requests
-    if (request.method !== 'GET') {
+    // Handle CDN requests (cross-origin images)
+    if (url.origin === CDN_ORIGIN) {
+        event.respondWith(cacheFirst(request, IMAGES_CACHE));
+        return;
+    }
+
+    // Only handle same-origin requests for everything else
+    if (url.origin !== location.origin) {
         return;
     }
 
