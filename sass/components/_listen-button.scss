@@ -1,0 +1,165 @@
+// Listen Button - Text-to-Speech control
+// Allows users to listen to page content using Web Speech API
+
+@use "../abstracts/variables" as vars;
+
+.listen-button {
+    display: inline-flex;
+    align-items: center;
+    gap: 0.25rem;
+
+    &__trigger {
+        display: inline-flex;
+        align-items: center;
+        gap: 0.5rem;
+        padding: 0.5rem 1rem;
+        background-color: var(--color-hover);
+        color: var(--color-text);
+        border: 1px solid var(--color-border);
+        border-radius: 2rem;
+        cursor: pointer;
+        font-size: 0.875rem;
+        font-weight: 500;
+        transition: all 0.2s ease;
+
+        &:hover {
+            background-color: var(--color-active);
+            border-color: var(--color-accent-primary);
+            color: var(--color-accent-primary);
+        }
+
+        &:active {
+            transform: scale(0.98);
+        }
+    }
+
+    &__icon {
+        display: none;
+        width: 18px;
+        height: 18px;
+
+        svg {
+            width: 100%;
+            height: 100%;
+        }
+
+        &--play {
+            display: block;
+        }
+    }
+
+    &__label {
+        line-height: 1;
+    }
+
+    &__stop {
+        display: none;
+        align-items: center;
+        justify-content: center;
+        width: 2rem;
+        height: 2rem;
+        padding: 0;
+        background-color: var(--color-hover);
+        color: var(--color-text-muted);
+        border: 1px solid var(--color-border);
+        border-radius: 50%;
+        cursor: pointer;
+        transition: all 0.2s ease;
+
+        svg {
+            width: 14px;
+            height: 14px;
+        }
+
+        &:hover {
+            background-color: var(--color-error);
+            border-color: var(--color-error);
+            color: white;
+        }
+    }
+
+    // Playing state
+    &--playing {
+        .listen-button__icon--play {
+            display: none;
+        }
+
+        .listen-button__icon--pause {
+            display: block;
+        }
+
+        .listen-button__stop {
+            display: flex;
+        }
+
+        .listen-button__trigger {
+            background-color: var(--color-accent-primary);
+            border-color: var(--color-accent-primary);
+            color: var(--color-background);
+
+            &:hover {
+                opacity: 0.9;
+                color: var(--color-background);
+            }
+        }
+    }
+
+    // Paused state
+    &--paused {
+        .listen-button__icon--play {
+            display: block;
+        }
+
+        .listen-button__icon--pause {
+            display: none;
+        }
+
+        .listen-button__stop {
+            display: flex;
+        }
+
+        .listen-button__trigger {
+            background-color: var(--color-warning);
+            border-color: var(--color-warning);
+            color: var(--color-background);
+
+            &:hover {
+                opacity: 0.9;
+                color: var(--color-background);
+            }
+        }
+    }
+
+    // Loading state
+    &--loading {
+        .listen-button__icon--play {
+            display: none;
+        }
+
+        .listen-button__icon--loading {
+            display: block;
+            animation: spin 1s linear infinite;
+        }
+
+        .listen-button__trigger {
+            opacity: 0.7;
+            pointer-events: none;
+        }
+    }
+}
+
+@keyframes spin {
+    from {
+        transform: rotate(0deg);
+    }
+    to {
+        transform: rotate(360deg);
+    }
+}
+
+// Hide on print
+@media print {
+    .listen-button {
+        display: none;
+    }
+}

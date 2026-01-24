@@ -46,6 +46,7 @@
                             {{ page.reading_time }} min read
                         </span>
                         {% endif %}
+                        {% include "partials/listen-button.html" %}
                         {% if page.date %}
                         <time class="explainer__date">
                             Last updated: {{ page.date | date(format="%B %d,

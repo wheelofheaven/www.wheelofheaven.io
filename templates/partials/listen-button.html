@@ -1,0 +1,202 @@
+<!-- Listen Button - Text-to-Speech using Web Speech API -->
+<div class="listen-button" id="listenButton">
+    <button
+        class="listen-button__trigger"
+        id="listenTrigger"
+        aria-label="Listen to this page"
+        title="Listen to this page"
+    >
+        <span class="listen-button__icon listen-button__icon--play">
+            <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                <polygon points="5 3 19 12 5 21 5 3"/>
+            </svg>
+        </span>
+        <span class="listen-button__icon listen-button__icon--pause">
+            <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                <rect x="6" y="4" width="4" height="16"/>
+                <rect x="14" y="4" width="4" height="16"/>
+            </svg>
+        </span>
+        <span class="listen-button__icon listen-button__icon--loading">
+            <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                <path d="M12 2v4M12 18v4M4.93 4.93l2.83 2.83M16.24 16.24l2.83 2.83M2 12h4M18 12h4M4.93 19.07l2.83-2.83M16.24 7.76l2.83-2.83"/>
+            </svg>
+        </span>
+        <span class="listen-button__label">Listen</span>
+    </button>
+    <button
+        class="listen-button__stop"
+        id="listenStop"
+        aria-label="Stop listening"
+        title="Stop"
+    >
+        <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+            <rect x="3" y="3" width="18" height="18" rx="2" ry="2"/>
+        </svg>
+    </button>
+</div>
+
+<script>
+(function() {
+    // Check for Speech Synthesis support
+    if (!('speechSynthesis' in window)) {
+        const btn = document.getElementById('listenButton');
+        if (btn) btn.style.display = 'none';
+        return;
+    }
+
+    const button = document.getElementById('listenButton');
+    const trigger = document.getElementById('listenTrigger');
+    const stopBtn = document.getElementById('listenStop');
+
+    let utterance = null;
+    let isPlaying = false;
+    let isPaused = false;
+
+    // Get the main content text
+    function getContentText() {
+        // Try different content selectors based on page type
+        const selectors = [
+            '.wiki__content',
+            '.explainer__content',
+            '.essentials__content',
+            '.resources__content',
+            '.library__content',
+            'article .content',
+            'article'
+        ];
+
+        for (const selector of selectors) {
+            const el = document.querySelector(selector);
+            if (el) {
+                // Clone to avoid modifying the DOM
+                const clone = el.cloneNode(true);
+
+                // Remove elements that shouldn't be read
+                clone.querySelectorAll('script, style, nav, .toc, .breadcrumbs, .listen-button, sup, .wiki-cite').forEach(el => el.remove());
+
+                // Get text content
+                let text = clone.textContent || clone.innerText;
+
+                // Clean up whitespace
+                text = text.replace(/\s+/g, ' ').trim();
+
+                return text;
+            }
+        }
+
+        return '';
+    }
+
+    // Update button state
+    function updateState(state) {
+        button.className = 'listen-button';
+
+        if (state === 'playing') {
+            button.classList.add('listen-button--playing');
+            trigger.querySelector('.listen-button__label').textContent = 'Pause';
+            trigger.setAttribute('aria-label', 'Pause listening');
+        } else if (state === 'paused') {
+            button.classList.add('listen-button--paused');
+            trigger.querySelector('.listen-button__label').textContent = 'Resume';
+            trigger.setAttribute('aria-label', 'Resume listening');
+        } else if (state === 'loading') {
+            button.classList.add('listen-button--loading');
+            trigger.querySelector('.listen-button__label').textContent = 'Loading...';
+        } else {
+            trigger.querySelector('.listen-button__label').textContent = 'Listen';
+            trigger.setAttribute('aria-label', 'Listen to this page');
+        }
+    }
+
+    // Start speaking
+    function speak() {
+        const text = getContentText();
+
+        if (!text) {
+            console.warn('No content found to read');
+            return;
+        }
+
+        // Cancel any existing speech
+        window.speechSynthesis.cancel();
+
+        utterance = new SpeechSynthesisUtterance(text);
+
+        // Try to get a good voice
+        const voices = window.speechSynthesis.getVoices();
+        const preferredVoices = voices.filter(v =>
+            v.lang.startsWith('en') && (v.name.includes('Google') || v.name.includes('Microsoft') || v.name.includes('Samantha'))
+        );
+        if (preferredVoices.length > 0) {
+            utterance.voice = preferredVoices[0];
+        }
+
+        utterance.rate = 1.0;
+        utterance.pitch = 1.0;
+
+        utterance.onstart = () => {
+            isPlaying = true;
+            isPaused = false;
+            updateState('playing');
+        };
+
+        utterance.onpause = () => {
+            isPaused = true;
+            updateState('paused');
+        };
+
+        utterance.onresume = () => {
+            isPaused = false;
+            updateState('playing');
+        };
+
+        utterance.onend = () => {
+            isPlaying = false;
+            isPaused = false;
+            updateState('idle');
+        };
+
+        utterance.onerror = (e) => {
+            console.error('Speech synthesis error:', e);
+            isPlaying = false;
+            isPaused = false;
+            updateState('idle');
+        };
+
+        updateState('loading');
+        window.speechSynthesis.speak(utterance);
+    }
+
+    // Toggle play/pause
+    function togglePlayPause() {
+        if (!isPlaying && !isPaused) {
+            speak();
+        } else if (isPlaying && !isPaused) {
+            window.speechSynthesis.pause();
+        } else if (isPaused) {
+            window.speechSynthesis.resume();
+        }
+    }
+
+    // Stop speaking
+    function stop() {
+        window.speechSynthesis.cancel();
+        isPlaying = false;
+        isPaused = false;
+        updateState('idle');
+    }
+
+    // Event listeners
+    trigger.addEventListener('click', togglePlayPause);
+    stopBtn.addEventListener('click', stop);
+
+    // Load voices (some browsers load async)
+    if (speechSynthesis.onvoiceschanged !== undefined) {
+        speechSynthesis.onvoiceschanged = () => {};
+    }
+
+    // Stop on page unload
+    window.addEventListener('beforeunload', stop);
+})();
+</script>
