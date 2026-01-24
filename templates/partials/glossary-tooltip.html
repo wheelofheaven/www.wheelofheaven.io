@@ -1,0 +1,212 @@
+<!-- Glossary Tooltip - Shows wiki definitions on hover -->
+<div class="glossary-tooltip" id="glossaryTooltip" role="tooltip" aria-hidden="true">
+    <div class="glossary-tooltip__content">
+        <div class="glossary-tooltip__header">
+            <span class="glossary-tooltip__term" id="glossaryTerm"></span>
+            <span class="glossary-tooltip__badge">Wiki</span>
+        </div>
+        <p class="glossary-tooltip__definition" id="glossaryDefinition"></p>
+        <span class="glossary-tooltip__hint">Click to read more</span>
+    </div>
+    <div class="glossary-tooltip__arrow"></div>
+</div>
+
+<script>
+(function() {
+    const tooltip = document.getElementById('glossaryTooltip');
+    const termEl = document.getElementById('glossaryTerm');
+    const defEl = document.getElementById('glossaryDefinition');
+
+    if (!tooltip) return;
+
+    // Cache for fetched definitions
+    const definitionCache = new Map();
+
+    // Find all wiki links in content areas
+    const contentSelectors = '.wiki__content, .explainer__content, .essentials__content, .resources__content, .library__content, .info-page__content, article';
+    const contentAreas = document.querySelectorAll(contentSelectors);
+
+    contentAreas.forEach(area => {
+        const wikiLinks = area.querySelectorAll('a[href*="/wiki/"]');
+        wikiLinks.forEach(link => {
+            // Skip if it's the current page
+            if (link.href === window.location.href) return;
+            // Skip external wiki links
+            if (!link.href.includes(window.location.hostname) && !link.href.startsWith('/')) return;
+
+            link.classList.add('glossary-term');
+            link.setAttribute('data-glossary', 'true');
+
+            link.addEventListener('mouseenter', handleMouseEnter);
+            link.addEventListener('mouseleave', handleMouseLeave);
+            link.addEventListener('focus', handleMouseEnter);
+            link.addEventListener('blur', handleMouseLeave);
+        });
+    });
+
+    let hideTimeout;
+    let currentLink = null;
+
+    async function handleMouseEnter(e) {
+        clearTimeout(hideTimeout);
+        const link = e.currentTarget;
+        currentLink = link;
+
+        const href = link.getAttribute('href');
+        const term = link.textContent.trim();
+
+        // Show loading state
+        termEl.textContent = term;
+        defEl.textContent = 'Loading...';
+        positionTooltip(link);
+        showTooltip();
+
+        // Get definition
+        const definition = await getDefinition(href);
+
+        // Only update if still hovering same link
+        if (currentLink === link) {
+            defEl.textContent = definition || 'No definition available.';
+        }
+    }
+
+    function handleMouseLeave() {
+        hideTimeout = setTimeout(() => {
+            hideTooltip();
+            currentLink = null;
+        }, 150);
+    }
+
+    // Keep tooltip visible when hovering over it
+    tooltip.addEventListener('mouseenter', () => {
+        clearTimeout(hideTimeout);
+    });
+
+    tooltip.addEventListener('mouseleave', () => {
+        hideTimeout = setTimeout(() => {
+            hideTooltip();
+            currentLink = null;
+        }, 150);
+    });
+
+    async function getDefinition(href) {
+        // Normalize href
+        const url = new URL(href, window.location.origin);
+        const path = url.pathname;
+
+        // Check cache
+        if (definitionCache.has(path)) {
+            return definitionCache.get(path);
+        }
+
+        try {
+            const response = await fetch(path);
+            if (!response.ok) throw new Error('Failed to fetch');
+
+            const html = await response.text();
+            const parser = new DOMParser();
+            const doc = parser.parseFromString(html, 'text/html');
+
+            // Try to get definition from various sources
+            let definition = '';
+
+            // 1. Try meta description
+            const metaDesc = doc.querySelector('meta[name="description"]');
+            if (metaDesc) {
+                definition = metaDesc.getAttribute('content');
+            }
+
+            // 2. Try ai.summary meta tag
+            if (!definition) {
+                const aiSummary = doc.querySelector('meta[name="ai.summary"]');
+                if (aiSummary) {
+                    definition = aiSummary.getAttribute('content');
+                }
+            }
+
+            // 3. Try the wiki summary element
+            if (!definition) {
+                const summary = doc.querySelector('.wiki__summary-content, .wiki__tldr, [data-ai-summary]');
+                if (summary) {
+                    definition = summary.textContent.trim();
+                }
+            }
+
+            // Truncate if too long
+            if (definition && definition.length > 200) {
+                definition = definition.substring(0, 197) + '...';
+            }
+
+            // Cache the result
+            definitionCache.set(path, definition);
+            return definition;
+
+        } catch (err) {
+            console.warn('Failed to fetch definition:', err);
+            definitionCache.set(path, null);
+            return null;
+        }
+    }
+
+    function positionTooltip(link) {
+        const linkRect = link.getBoundingClientRect();
+        const tooltipRect = tooltip.getBoundingClientRect();
+        const padding = 10;
+
+        // Position above the link by default
+        let top = linkRect.top - padding;
+        let left = linkRect.left + (linkRect.width / 2);
+
+        // Adjust if too close to top
+        if (top - tooltipRect.height < padding) {
+            // Position below instead
+            top = linkRect.bottom + padding;
+            tooltip.classList.add('glossary-tooltip--bottom');
+        } else {
+            tooltip.classList.remove('glossary-tooltip--bottom');
+        }
+
+        // Adjust horizontal position to stay in viewport
+        const tooltipWidth = 300; // max-width from CSS
+        if (left - tooltipWidth / 2 < padding) {
+            left = tooltipWidth / 2 + padding;
+        } else if (left + tooltipWidth / 2 > window.innerWidth - padding) {
+            left = window.innerWidth - tooltipWidth / 2 - padding;
+        }
+
+        tooltip.style.top = `${top + window.scrollY}px`;
+        tooltip.style.left = `${left}px`;
+    }
+
+    function showTooltip() {
+        tooltip.classList.add('glossary-tooltip--visible');
+        tooltip.setAttribute('aria-hidden', 'false');
+    }
+
+    function hideTooltip() {
+        tooltip.classList.remove('glossary-tooltip--visible');
+        tooltip.setAttribute('aria-hidden', 'true');
+    }
+
+    // Hide on scroll (optional, can be removed for sticky behavior)
+    let scrollTimeout;
+    window.addEventListener('scroll', () => {
+        if (tooltip.classList.contains('glossary-tooltip--visible')) {
+            clearTimeout(scrollTimeout);
+            scrollTimeout = setTimeout(() => {
+                if (currentLink) {
+                    positionTooltip(currentLink);
+                }
+            }, 50);
+        }
+    }, { passive: true });
+
+    // Hide on escape
+    document.addEventListener('keydown', (e) => {
+        if (e.key === 'Escape' && tooltip.classList.contains('glossary-tooltip--visible')) {
+            hideTooltip();
+            currentLink = null;
+        }
+    });
+})();
+</script>

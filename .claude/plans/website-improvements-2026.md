@@ -49,11 +49,14 @@ A roadmap of potential improvements to make wheelofheaven.io more modern, access
 - Share to social media with selected text
 - Save highlights (localStorage or account-based)
 
-### [ ] Glossary Tooltips
-- Hover over wiki terms to see definitions inline
-- Auto-link recognized terms in content
-- Non-intrusive tooltip or popover
-- Links to full wiki entry
+### [x] Glossary Tooltips ✓
+- Hover over wiki links to see definitions inline
+- **Implemented:** `partials/glossary-tooltip.html` included in base.html
+- Fetches definition from linked wiki page (meta description or summary)
+- Caches fetched definitions for performance
+- Glassmorphism tooltip with "Wiki" badge
+- Dotted underline styling for wiki links
+- Hidden on touch devices (no hover)
 
 ### [ ] Related Content Suggestions
 - "Read next" sections at end of articles
