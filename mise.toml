@@ -6,12 +6,18 @@ min_version = "2025.8.3"
 zola = "0.21.0"
 python = "3.12"
 uv = "latest"
+node = "22"
 
 [env]
 # add env vars here
 
+[tasks.bundle]
+description = "Bundle JS files with esbuild"
+run = "cd themes/bifrost && npm install --silent && npm run bundle"
+
 [tasks.build]
 description = "Compile site statically with Zola"
+depends = ["bundle"]
 run = "zola build"
 
 [tasks.serve]
