@@ -120,17 +120,20 @@ A roadmap of potential improvements to make wheelofheaven.io more modern, access
 - Responsive images with srcset
 - Image CDN consideration
 
-### [ ] Enhanced PWA / Offline Mode
-- Cache articles for offline reading
-- Background sync for reading progress
-- Install prompts on mobile
-- Offline indicator
+### [x] Enhanced PWA / Offline Mode ✓
+- **Implemented:** Service worker (sw.js) caches pages and static assets
+- **Implemented:** Offline fallback page with list of cached pages
+- **Implemented:** Install prompt banner on mobile/desktop
+- **Implemented:** Offline indicator when connection lost
+- **Implemented:** Save for offline button in social share component
+- Background sync for reading progress (foundation in place)
 
-### [ ] Search Improvements
-- Better fuzzy matching in Fuse.js
-- Search filters (by section, date, topic)
-- Search suggestions/autocomplete
-- Recent searches
+### [x] Search Improvements ✓
+- **Implemented:** Better fuzzy matching (threshold 0.3, distance 100, minMatchCharLength 2)
+- **Implemented:** Section filter chips (Wiki, Essentials, Explainers, Timeline, Resources, Articles, Library)
+- **Implemented:** Popular search suggestions with section badges
+- **Implemented:** Recent searches (localStorage, max 5, clearable)
+- **Implemented:** Results count display
 
 ### [ ] Performance Audit
 - Core Web Vitals optimization
@@ -203,7 +206,7 @@ A roadmap of potential improvements to make wheelofheaven.io more modern, access
 6. ~~Glossary tooltips - Requires term detection~~ ✓
 
 ### Larger Projects
-7. Offline PWA mode - Service worker complexity
+7. ~~Offline PWA mode - Service worker complexity~~ ✓
 8. Comments system - Moderation overhead
 9. Interactive timeline - Custom development
 
@@ -219,4 +222,4 @@ A roadmap of potential improvements to make wheelofheaven.io more modern, access
 
 ---
 
-*Last updated: 2026-01-24 (TOC Improvements added)*
+*Last updated: 2026-01-24 (Search Improvements added)*
