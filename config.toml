@@ -199,6 +199,8 @@ snackbarSuccess = "Success"
 snackbarError = "Error"
 snackbarInfo = "Info"
 snackbarWarning = "Warning"
+# Social share
+shareThis = "Share"
 
 
 [languages.de]
@@ -353,6 +355,7 @@ snackbarSuccess = "Erfolgreich"
 snackbarError = "Fehler"
 snackbarInfo = "Info"
 snackbarWarning = "Warnung"
+shareThis = "Teilen"
 
 [languages.fr]
 generate_feeds = true
@@ -507,6 +510,7 @@ snackbarSuccess = "Succès"
 snackbarError = "Erreur"
 snackbarInfo = "Info"
 snackbarWarning = "Avertissement"
+shareThis = "Partager"
 
 [languages.es]
 generate_feeds = true
@@ -660,6 +664,7 @@ snackbarSuccess = "Éxito"
 snackbarError = "Error"
 snackbarInfo = "Información"
 snackbarWarning = "Advertencia"
+shareThis = "Compartir"
 
 [languages.ru]
 generate_feeds = true
@@ -740,6 +745,7 @@ snackbarSuccess = "Успех"
 snackbarError = "Ошибка"
 snackbarInfo = "Информация"
 snackbarWarning = "Предупреждение"
+shareThis = "Поделиться"
 
 # Navbar translations
 navbarEssentials = "Основы"
@@ -893,6 +899,7 @@ snackbarSuccess = "成功"
 snackbarError = "エラー"
 snackbarInfo = "情報"
 snackbarWarning = "警告"
+shareThis = "共有"
 
 # Navbar translations
 navbarEssentials = "基本"
@@ -1047,6 +1054,7 @@ snackbarSuccess = "成功"
 snackbarError = "错误"
 snackbarInfo = "信息"
 snackbarWarning = "警告"
+shareThis = "分享"
 
 # Navbar translations
 navbarEssentials = "基础"
@@ -1172,6 +1180,7 @@ snackbarSuccess = "成功"
 snackbarError = "錯誤"
 snackbarInfo = "資訊"
 snackbarWarning = "警告"
+shareThis = "分享"
 
 # Navbar translations
 navbarEssentials = "基礎"
@@ -1297,6 +1306,7 @@ snackbarSuccess = "성공"
 snackbarError = "오류"
 snackbarInfo = "정보"
 snackbarWarning = "경고"
+shareThis = "공유"
 
 # Navbar translations
 navbarEssentials = "필수"

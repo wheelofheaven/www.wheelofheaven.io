@@ -72,11 +72,12 @@ A roadmap of potential improvements to make wheelofheaven.io more modern, access
 
 ## Engagement & Social
 
-### [ ] Social Share Buttons
-- Share to X/Twitter, Reddit, Facebook, LinkedIn
-- Copy link button
-- Native Web Share API on mobile
-- Floating or inline placement options
+### [x] Social Share Buttons ✓
+- **Implemented:** Share to X/Twitter and Reddit
+- **Implemented:** Copy link button with visual feedback
+- **Implemented:** Native Web Share API on mobile (auto-detected)
+- **Implemented:** Added to wiki, resources, explainers, and essentials pages
+- Translations for all 9 languages
 
 ### [x] RSS/Atom Feeds ✓
 - **Implemented:** Main site feeds at `/atom.xml` and `/rss.xml`
@@ -180,9 +181,9 @@ A roadmap of potential improvements to make wheelofheaven.io more modern, access
 ## Priority Recommendations
 
 ### Quick Wins (Low effort, high impact)
-1. llms.txt - Single file, immediate AI visibility
-2. Reading progress indicator - Simple CSS/JS
-3. Social share buttons - Standard component
+1. ~~llms.txt - Single file, immediate AI visibility~~ ✓
+2. ~~Reading progress indicator - Simple CSS/JS~~ ✓
+3. ~~Social share buttons - Standard component~~ ✓
 
 ### Medium Effort
 4. ~~RSS/Atom feeds - Zola supports this~~ ✓
@@ -206,4 +207,4 @@ A roadmap of potential improvements to make wheelofheaven.io more modern, access
 
 ---
 
-*Last updated: 2026-01-24 (RSS/Atom feeds added)*
+*Last updated: 2026-01-24 (Social share buttons added)*
