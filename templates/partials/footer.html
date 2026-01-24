@@ -11,16 +11,14 @@
         <h6>{{ trans(key="footerGetStarted") }}</h6>
         <ul>
           <li><a href="{{ get_url(path='about', lang=detected_lang) }}">{{ trans(key="footerAbout") }}</a></li>
-          <li><a href="{{ get_url(path='essentials/hello-world', lang=detected_lang) }}">{{ trans(key="footerHelloWorld") }}</a></li>
+          <li><a href="{{ get_url(path='essentials/what-is-woh', lang=detected_lang) }}">What is WoH?</a></li>
           <li><a href="{{ get_url(path='faq', lang=detected_lang) }}">{{ trans(key="footerFAQ") }}</a></li>
-          <li>{{ link_macros::smart_link(url="https://github.com/wheelofheaven/.github/blob/main/profile/WHITEPAPER.md", text="White Paper") }}</li>
         </ul>
 
         <h6>{{ trans(key="footerJumpRightIn") }}</h6>
         <ul>
-          <li><a href="{{ get_url(path='essentials/the-setting', lang=detected_lang) }}">{{ trans(key="footerTheSetting") }}</a></li>
-          <li><a href="{{ get_url(path='essentials/the-foundation', lang=detected_lang) }}">{{ trans(key="footerTheFoundation") }}</a></li>
-          <li><a href="{{ get_url(path='essentials/the-hypothesis', lang=detected_lang) }}">{{ trans(key="footerTheHypothesis") }}</a></li>
+          <li><a href="{{ get_url(path='essentials/elohim-hypothesis', lang=detected_lang) }}">The Hypothesis</a></li>
+          <li><a href="{{ get_url(path='essentials/precession', lang=detected_lang) }}">Precession</a></li>
           <li><a href="{{ get_url(path='timeline/preamble', lang=detected_lang) }}">{{ trans(key="footerPreamble") }}</a></li>
         </ul>
       </div>
@@ -29,19 +27,12 @@
         <h6>{{ trans(key="footerSections") }}</h6>
         <ul>
           <li><a href="{{ get_url(path='/', lang=detected_lang) }}">{{ trans(key="footerHome") }}</a></li>
-          <li><a href="{{ get_url(path='essentials', lang=detected_lang) }}">{{ trans(key="footerIntro") }}</a></li>
+          <li><a href="{{ get_url(path='essentials', lang=detected_lang) }}">Essentials</a></li>
+          <li><a href="{{ get_url(path='timeline', lang=detected_lang) }}">Timeline</a></li>
           <li><a href="{{ get_url(path='wiki', lang=detected_lang) }}">{{ trans(key="footerWiki") }}</a></li>
-          <li><a href="{{ get_url(path='explainers', lang=detected_lang) }}">{{ trans(key="footerArticles") }}</a></li>
-          <li><a href="{{ get_url(path='library', lang=detected_lang) }}">{{ trans(key="footerResources") }}</a></li>
-          <li><a href="{{ get_url(path='map') }}">{{ trans(key="footerMap") }}</a></li>
-        </ul>
-
-        <h6>{{ trans(key="footerPlatform") }}</h6>
-        <ul>
-          <li><a href="{{ get_url(path='tags', lang=detected_lang) }}">{{ trans(key="footerTags") }}</a></li>
-          <li><a href="{{ get_url(path='categories', lang=detected_lang) }}">{{ trans(key="footerCategories") }}</a></li>
-          <li><a href="{{ get_url(path='contributors', lang=detected_lang) }}">{{ trans(key="footerContributors") }}</a></li>
-          <li><a href="{{ get_url(path='atom.xml', lang=detected_lang) }}">{{ trans(key="footerRssFeed") }}</a></li>
+          <li><a href="{{ get_url(path='library', lang=detected_lang) }}">Library</a></li>
+          <li><a href="{{ get_url(path='resources', lang=detected_lang) }}">Resources</a></li>
+          <li><a href="{{ get_url(path='explainers', lang=detected_lang) }}">Explainers</a></li>
         </ul>
       </div>
 
@@ -49,35 +40,31 @@
         <h6>{{ trans(key="footerCommunity") }}</h6>
         <ul>
           <li><a href="{{ get_url(path='forums', lang=detected_lang) }}">{{ trans(key="footerCommunity") }}</a></li>
-          <li>{{ link_macros::smart_link(url="https://github.com/wheelofheaven/site/blob/main/CODE_OF_CONDUCT.md", text=trans(key="footerCodeOfConduct")) }}</li>
+          <li><a href="{{ get_url(path='contributing', lang=detected_lang) }}">Contributing</a></li>
+          <li><a href="{{ get_url(path='code-of-conduct', lang=detected_lang) }}">Code of Conduct</a></li>
           <li>{{ link_macros::smart_link(url="https://github.com/orgs/wheelofheaven/discussions", text=trans(key="footerGithubDiscussion")) }}</li>
-          <li>{{ link_macros::smart_link(url="https://opencollective.com/wheelofheaven", text="Open Collective") }}</li>
-          <li>{{ link_macros::smart_link(url="https://github.com/wheelofheaven/site/blob/main/LICENSE", text=trans(key="footerOpenSource")) }}</li>
         </ul>
 
         <h6>{{ trans(key="footerSocialMedia") }}</h6>
         <ul>
           <li>{{ link_macros::smart_link(url="https://github.com/wheelofheaven/", text="GitHub") }}</li>
-          <li>{{ link_macros::smart_link(url="https://opencollective.com/wheelofheaven", text="Telegram") }}</li>
-          <li>{{ link_macros::smart_link(url="https://opencollective.com/wheelofheaven", text="X") }}</li>
+          <li>{{ link_macros::smart_link(url="https://t.me/wheelofheaven", text="Telegram") }}</li>
+          <li>{{ link_macros::smart_link(url="https://x.com/wheelofheaven", text="X (Twitter)") }}</li>
         </ul>
       </div>
 
       <div class="footer__col">
         <h6>{{ trans(key="footerDevelopment") }}</h6>
         <ul>
-          <li>{{ link_macros::smart_link(url="https://github.com/wheelofheaven/site/blob/main/CONTRIBUTE.md", text=trans(key="footerContribute")) }}</li>
-          <li>{{ link_macros::smart_link(url="https://github.com/wheelofheaven/site/blob/main/CHANGELOG.md", text=trans(key="footerChangelog")) }}</li>
-          <li>{{ link_macros::smart_link(url="https://github.com/wheelofheaven/site/graphs/commit-activity", text=trans(key="footerCommitActivity")) }}</li>
-          <li>{{ link_macros::smart_link(url="https://github.com/wheelofheaven/site/blob/main/README.md", text=trans(key="footerReadme")) }}</li>
+          <li>{{ link_macros::smart_link(url="https://github.com/wheelofheaven/www.wheelofheaven.io", text="Source Code") }}</li>
+          <li>{{ link_macros::smart_link(url="https://github.com/wheelofheaven/www.wheelofheaven.io/issues", text="Report Issue") }}</li>
+          <li><a href="{{ get_url(path='atom.xml', lang=detected_lang) }}">{{ trans(key="footerRssFeed") }}</a></li>
         </ul>
 
         <h6>{{ trans(key="footerPrivacyTerms") }}</h6>
         <ul>
-          <li><a href="{{ get_url(path='privacy', lang=detected_lang) }}">{{ trans(key="footerPrivacyPolicy") }}</a></li>
-          <li><a href="{{ get_url(path='cookies', lang=detected_lang) }}">{{ trans(key="footerCookiePolicy") }}</a></li>
-          <li>{{ link_macros::smart_link(url="https://github.com/wheelofheaven/site/blob/main/SECURITY.md", text=trans(key="footerSecurityPolicy")) }}</li>
-          <li><a href="{{ get_url(path='contact', lang=detected_lang) }}">{{ trans(key="footerContact") }}</a></li>
+          <li><a href="{{ get_url(path='privacy-policy', lang=detected_lang) }}">{{ trans(key="footerPrivacyPolicy") }}</a></li>
+          <li><a href="{{ get_url(path='cookie-policy', lang=detected_lang) }}">{{ trans(key="footerCookiePolicy") }}</a></li>
         </ul>
       </div>
     </div>

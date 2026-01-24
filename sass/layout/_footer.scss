@@ -6,16 +6,18 @@
     font-size: typo.$font-size-sd;
     border-top: vars.$hairline-width solid var(--color-hairline);
     background: var(--color-footer-bg);
-    padding-inline: 1rem;
-    margin-inline: auto;
 
     &__content {
-        padding-block: 3rem;
-        margin-inline: 4rem;
+        max-width: 1200px;
+        margin-inline: auto;
+        padding: 3rem vars.$spacing-xl;
 
         @media (max-width: 768px) {
-            margin-inline: 1rem;
-            padding-block: 2.5rem;
+            padding: 2.5rem vars.$spacing-lg;
+        }
+
+        @media (max-width: 600px) {
+            padding: 2.5rem vars.$spacing-md;
         }
     }
 
@@ -97,17 +99,17 @@
     }
 
     &__bottom {
-        padding-block: 1.5rem;
         border-top: vars.$hairline-width solid var(--color-hairline);
-        margin-inline: 6rem;
+        max-width: 1200px;
+        margin-inline: auto;
+        padding: 1.5rem vars.$spacing-xl;
 
         @media (max-width: 768px) {
-            margin-inline: 2rem;
-            padding-block: 1.25rem;
+            padding: 1.25rem vars.$spacing-lg;
         }
 
-        @media (max-width: 480px) {
-            margin-inline: 1rem;
+        @media (max-width: 600px) {
+            padding: 1.25rem vars.$spacing-md;
         }
     }
 
@@ -230,13 +232,13 @@
 // External link indicator - subtle styling
 .external-indicator {
     display: inline-block;
-    margin-left: 0.25em;
-    font-size: 0.7em;
-    opacity: 0.4;
+    margin-left: 0.35em;
+    font-size: 0.55em;
+    opacity: 0.3;
     vertical-align: super;
     transition: opacity 0.2s ease;
 
     a:hover & {
-        opacity: 0.7;
+        opacity: 0.5;
     }
 }
