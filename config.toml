@@ -227,6 +227,11 @@ backOnline = "You're back online"
 installApp = "Install App"
 newVersionAvailable = "A new version is available"
 refresh = "Refresh"
+# Skip Links
+skipToContent = "Skip to content"
+skipToTOC = "Skip to table of contents"
+skipToSearch = "Skip to search"
+skipToFooter = "Skip to footer"
 
 
 [languages.de]
@@ -404,6 +409,10 @@ backOnline = "Sie sind wieder online"
 installApp = "App installieren"
 newVersionAvailable = "Eine neue Version ist verfügbar"
 refresh = "Aktualisieren"
+skipToContent = "Zum Inhalt springen"
+skipToTOC = "Zum Inhaltsverzeichnis springen"
+skipToSearch = "Zur Suche springen"
+skipToFooter = "Zur Fußzeile springen"
 
 [languages.fr]
 generate_feeds = true
@@ -581,6 +590,10 @@ backOnline = "Vous êtes de nouveau en ligne"
 installApp = "Installer l'application"
 newVersionAvailable = "Une nouvelle version est disponible"
 refresh = "Actualiser"
+skipToContent = "Aller au contenu"
+skipToTOC = "Aller à la table des matières"
+skipToSearch = "Aller à la recherche"
+skipToFooter = "Aller au pied de page"
 
 [languages.es]
 generate_feeds = true
@@ -757,6 +770,10 @@ backOnline = "Estás de nuevo en línea"
 installApp = "Instalar aplicación"
 newVersionAvailable = "Hay una nueva versión disponible"
 refresh = "Actualizar"
+skipToContent = "Ir al contenido"
+skipToTOC = "Ir a la tabla de contenidos"
+skipToSearch = "Ir a la búsqueda"
+skipToFooter = "Ir al pie de página"
 
 [languages.ru]
 generate_feeds = true
@@ -860,6 +877,10 @@ backOnline = "Вы снова в сети"
 installApp = "Установить приложение"
 newVersionAvailable = "Доступна новая версия"
 refresh = "Обновить"
+skipToContent = "Перейти к содержимому"
+skipToTOC = "Перейти к оглавлению"
+skipToSearch = "Перейти к поиску"
+skipToFooter = "Перейти к подвалу"
 
 # Navbar translations
 navbarEssentials = "Основы"
@@ -1036,6 +1057,10 @@ backOnline = "オンラインに戻りました"
 installApp = "アプリをインストール"
 newVersionAvailable = "新しいバージョンがあります"
 refresh = "更新"
+skipToContent = "コンテンツへスキップ"
+skipToTOC = "目次へスキップ"
+skipToSearch = "検索へスキップ"
+skipToFooter = "フッターへスキップ"
 
 # Navbar translations
 navbarEssentials = "基本"
@@ -1213,6 +1238,10 @@ backOnline = "您已重新上线"
 installApp = "安装应用"
 newVersionAvailable = "有新版本可用"
 refresh = "刷新"
+skipToContent = "跳转到内容"
+skipToTOC = "跳转到目录"
+skipToSearch = "跳转到搜索"
+skipToFooter = "跳转到页脚"
 
 # Navbar translations
 navbarEssentials = "基础"
@@ -1361,6 +1390,10 @@ backOnline = "您已重新上線"
 installApp = "安裝應用程式"
 newVersionAvailable = "有新版本可用"
 refresh = "重新整理"
+skipToContent = "跳轉到內容"
+skipToTOC = "跳轉到目錄"
+skipToSearch = "跳轉到搜尋"
+skipToFooter = "跳轉到頁尾"
 
 # Navbar translations
 navbarEssentials = "基礎"
@@ -1509,6 +1542,10 @@ backOnline = "다시 온라인입니다"
 installApp = "앱 설치"
 newVersionAvailable = "새 버전을 사용할 수 있습니다"
 refresh = "새로고침"
+skipToContent = "콘텐츠로 건너뛰기"
+skipToTOC = "목차로 건너뛰기"
+skipToSearch = "검색으로 건너뛰기"
+skipToFooter = "바닥글로 건너뛰기"
 
 # Navbar translations
 navbarEssentials = "필수"

@@ -30,7 +30,7 @@
     </head>
     <body>
         {% include "partials/reading-progress.html" %}
-        <a href="#main-content" class="skip-link">Skip to main content</a>
+        {% include "partials/skip-links.html" %}
         {% include "partials/header.html" %}
         <main id="main-content" role="main" aria-label="{% if page.title %}{{ page.title }}{% elif section.title %}{{ section.title }}{% else %}Main content{% endif %}">{% block content %}{% endblock content %}</main>
         {% include "partials/totop.html" %} {% include "partials/footer.html" %}

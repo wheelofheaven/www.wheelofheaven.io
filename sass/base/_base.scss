@@ -54,7 +54,7 @@ textarea {
         border-color 0.3s ease;
 }
 
-// Skip link for keyboard navigation
+// Legacy skip link (kept for backwards compatibility)
 .skip-link {
     position: absolute;
     top: -100%;
@@ -73,6 +73,89 @@ textarea {
         top: 0;
         outline: 2px solid var(--color-accent-secondary);
         outline-offset: 2px;
+    }
+}
+
+// Enhanced Skip Links Navigation
+.skip-links {
+    position: fixed;
+    top: 0;
+    left: 50%;
+    transform: translateX(-50%);
+    z-index: 10000;
+    display: flex;
+    gap: 0.25rem;
+    padding: 0.25rem;
+    background: var(--color-navbar-bg);
+    backdrop-filter: blur(20px) saturate(180%);
+    -webkit-backdrop-filter: blur(20px) saturate(180%);
+    border: 1px solid var(--color-hairline);
+    border-top: none;
+    border-radius: 0 0 0.75rem 0.75rem;
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.15);
+    opacity: 0;
+    visibility: hidden;
+    pointer-events: none;
+    transition: opacity 0.2s ease, visibility 0.2s ease;
+
+    // Show when any child link is focused
+    &:focus-within {
+        opacity: 1;
+        visibility: visible;
+        pointer-events: auto;
+    }
+
+    &__link {
+        display: flex;
+        align-items: center;
+        gap: 0.5rem;
+        padding: 0.625rem 1rem;
+        background: transparent;
+        color: var(--color-text);
+        text-decoration: none;
+        font-size: 0.875rem;
+        font-weight: 500;
+        border-radius: 0.5rem;
+        white-space: nowrap;
+        transition: all 0.15s ease;
+
+        &:hover {
+            background: var(--color-hover);
+        }
+
+        &:focus {
+            outline: none;
+            background: var(--color-accent-primary);
+            color: white;
+            box-shadow: 0 0 0 2px var(--color-accent-secondary);
+        }
+
+        // Hidden links that may be shown by JS
+        &[hidden] {
+            display: none;
+        }
+    }
+
+    &__icon {
+        flex-shrink: 0;
+        opacity: 0.7;
+
+        .skip-links__link:focus & {
+            opacity: 1;
+        }
+    }
+
+    // Mobile: Stack vertically
+    @media (max-width: 768px) {
+        flex-direction: column;
+        left: 1rem;
+        right: 1rem;
+        transform: none;
+        max-width: calc(100% - 2rem);
+
+        &__link {
+            justify-content: flex-start;
+        }
     }
 }
 

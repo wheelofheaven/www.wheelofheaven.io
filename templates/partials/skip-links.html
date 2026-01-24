@@ -1,0 +1,77 @@
+<!-- Enhanced Skip Links for Accessibility -->
+<nav class="skip-links" aria-label="Skip navigation">
+    <!-- Always show: Skip to main content -->
+    <a href="#main-content" class="skip-links__link">
+        <svg class="skip-links__icon" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+            <path d="M12 5v14"/>
+            <path d="m19 12-7 7-7-7"/>
+        </svg>
+        {{ trans(key="skipToContent", default="Skip to content") }}
+    </a>
+
+    <!-- Skip to TOC (shown via JS if TOC exists) -->
+    <a href="#toc-heading" class="skip-links__link skip-links__link--toc" data-skip-target="toc" hidden>
+        <svg class="skip-links__icon" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+            <line x1="8" y1="6" x2="21" y2="6"/>
+            <line x1="8" y1="12" x2="21" y2="12"/>
+            <line x1="8" y1="18" x2="21" y2="18"/>
+            <line x1="3" y1="6" x2="3.01" y2="6"/>
+            <line x1="3" y1="12" x2="3.01" y2="12"/>
+            <line x1="3" y1="18" x2="3.01" y2="18"/>
+        </svg>
+        {{ trans(key="skipToTOC", default="Skip to table of contents") }}
+    </a>
+
+    <!-- Skip to search -->
+    <a href="#" class="skip-links__link skip-links__link--search" data-skip-action="search">
+        <svg class="skip-links__icon" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+            <circle cx="11" cy="11" r="8"/>
+            <path d="m21 21-4.3-4.3"/>
+        </svg>
+        {{ trans(key="skipToSearch", default="Skip to search") }}
+    </a>
+
+    <!-- Skip to footer/contact -->
+    <a href="#footer" class="skip-links__link skip-links__link--footer">
+        <svg class="skip-links__icon" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+            <rect x="2" y="7" width="20" height="14" rx="2" ry="2"/>
+            <path d="m22 7-8.97 5.7a1.94 1.94 0 0 1-2.06 0L2 7"/>
+        </svg>
+        {{ trans(key="skipToFooter", default="Skip to footer") }}
+    </a>
+</nav>
+
+<script>
+(function() {
+    // Show/hide skip links based on page content
+    const tocLink = document.querySelector('[data-skip-target="toc"]');
+    const searchLink = document.querySelector('[data-skip-action="search"]');
+
+    // Check if TOC exists on this page
+    if (tocLink) {
+        const tocHeading = document.getElementById('toc-heading') ||
+                          document.getElementById('book-toc-heading') ||
+                          document.querySelector('.wiki__toc-title, .resources__toc-title, .explainer__toc-title, .library-book__toc-title');
+
+        if (tocHeading) {
+            tocLink.hidden = false;
+            // Update href to correct ID
+            if (tocHeading.id) {
+                tocLink.href = '#' + tocHeading.id;
+            }
+        }
+    }
+
+    // Handle search skip link - focus search input instead of navigating
+    if (searchLink) {
+        searchLink.addEventListener('click', (e) => {
+            e.preventDefault();
+            const searchInput = document.querySelector('.navbar__search-input');
+            if (searchInput) {
+                searchInput.focus();
+                searchInput.click();
+            }
+        });
+    }
+})();
+</script>
