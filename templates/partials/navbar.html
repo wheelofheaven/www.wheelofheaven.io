@@ -99,6 +99,19 @@
                         <span class="icon icon--sun">{% include "partials/icons/feather-sun.html" %}</span>
                     </span>
                 </button>
+
+                <!-- Mobile Ask AI Button -->
+                <button
+                    class="navbar__ask-ai-trigger navbar__ask-ai-trigger--mobile"
+                    id="mobileAskAiTrigger"
+                    aria-label="Discuss this page with AI"
+                >
+                    <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                        <path d="M12 2a2 2 0 0 1 2 2c0 .74-.4 1.39-1 1.73V7h1a7 7 0 0 1 7 7h1a1 1 0 0 1 1 1v3a1 1 0 0 1-1 1h-1v1a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-1H2a1 1 0 0 1-1-1v-3a1 1 0 0 1 1-1h1a7 7 0 0 1 7-7h1V5.73c-.6-.34-1-.99-1-1.73a2 2 0 0 1 2-2z"/>
+                        <circle cx="8" cy="14" r="1.5" fill="currentColor"/>
+                        <circle cx="16" cy="14" r="1.5" fill="currentColor"/>
+                    </svg>
+                </button>
             </div>
         </div>
     </div>
@@ -179,6 +192,22 @@
                 <span class="icon icon--sun">{% include "partials/icons/feather-sun.html" %}</span>
             </span>
         </button>
+
+        <!-- Ask AI Button -->
+        <div class="navbar__ask-ai" id="askAiWidget">
+            <button
+                class="navbar__ask-ai-trigger"
+                id="askAiTrigger"
+                aria-label="Discuss this page with AI"
+                aria-expanded="false"
+            >
+                <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                    <path d="M12 2a2 2 0 0 1 2 2c0 .74-.4 1.39-1 1.73V7h1a7 7 0 0 1 7 7h1a1 1 0 0 1 1 1v3a1 1 0 0 1-1 1h-1v1a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-1H2a1 1 0 0 1-1-1v-3a1 1 0 0 1 1-1h1a7 7 0 0 1 7-7h1V5.73c-.6-.34-1-.99-1-1.73a2 2 0 0 1 2-2z"/>
+                    <circle cx="8" cy="14" r="1.5" fill="currentColor"/>
+                    <circle cx="16" cy="14" r="1.5" fill="currentColor"/>
+                </svg>
+            </button>
+        </div>
 
         <script>
             document.addEventListener("DOMContentLoaded", function () {
@@ -755,3 +784,6 @@
         </div>
     </div>
 </div>
+
+<!-- Ask AI Panel -->
+{% include "partials/ask-ai.html" %}

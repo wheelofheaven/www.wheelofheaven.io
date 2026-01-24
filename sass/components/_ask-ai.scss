@@ -1,0 +1,200 @@
+// Ask AI Widget Styles
+// Navbar button and dropdown panel for discussing page content with AI
+
+@use "../abstracts/variables" as vars;
+
+// Navbar trigger button styling (matches theme toggle)
+.navbar__ask-ai {
+    display: flex;
+    align-items: center;
+}
+
+.navbar__ask-ai-trigger {
+    background: none;
+    border: none;
+    color: var(--color-text);
+    cursor: pointer;
+    padding: 0.5rem;
+    border-radius: 0.375rem;
+    transition: all 0.3s ease;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    svg {
+        width: 1.25rem;
+        height: 1.25rem;
+    }
+
+    &:hover,
+    &:focus {
+        background-color: var(--color-hover);
+        color: var(--color-accent-primary);
+        outline: none;
+    }
+
+    &:active {
+        transform: translateY(1px);
+        transition: transform 0.1s ease;
+    }
+
+    // Mobile trigger in navbar__mobile-controls
+    &--mobile {
+        @media (min-width: 769px) {
+            display: none;
+        }
+    }
+}
+
+// Hide desktop Ask AI wrapper on mobile
+.navbar__ask-ai {
+    @media (max-width: 768px) {
+        display: none;
+    }
+}
+
+// Ask AI Panel - Dropdown panel for AI services
+.ask-ai-panel {
+    position: fixed;
+    z-index: 55;
+    width: 320px;
+    background-color: var(--color-navbar-bg);
+    backdrop-filter: blur(12px);
+    -webkit-backdrop-filter: blur(12px);
+    border: 1px solid var(--color-hairline);
+    border-radius: 1rem;
+    box-shadow: 0 8px 32px rgba(0, 0, 0, 0.2);
+    opacity: 0;
+    visibility: hidden;
+    pointer-events: none;
+    transition: opacity 0.2s ease, visibility 0.2s ease;
+    overflow: hidden;
+
+    &--open {
+        opacity: 1;
+        visibility: visible;
+        pointer-events: all;
+    }
+
+    @media (max-width: 640px) {
+        width: calc(100vw - 2rem);
+        right: 1rem;
+        left: auto;
+    }
+
+    &__container {
+        transform: translateY(-8px);
+        transition: transform 0.2s ease-out;
+
+        .ask-ai-panel--open & {
+            transform: translateY(0);
+        }
+    }
+
+    &__header {
+        padding: 1rem 1rem 0.75rem;
+        border-bottom: 1px solid var(--color-hairline);
+    }
+
+    &__title {
+        font-size: 1rem;
+        font-weight: 600;
+        color: var(--color-text);
+        margin: 0 0 0.25rem;
+    }
+
+    &__subtitle {
+        font-size: 0.75rem;
+        color: var(--color-text-muted);
+        margin: 0;
+    }
+
+    &__services {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        gap: 0.5rem;
+        padding: 0.75rem;
+    }
+
+    &__service {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        gap: 0.5rem;
+        padding: 0.75rem;
+        background-color: var(--color-hover);
+        border: 1px solid transparent;
+        border-radius: 0.75rem;
+        cursor: pointer;
+        transition: all 0.2s ease;
+
+        &:hover {
+            background-color: var(--color-active);
+            border-color: var(--color-accent-primary);
+        }
+
+        &:active {
+            transform: scale(0.98);
+        }
+    }
+
+    &__service-icon {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        width: 2.5rem;
+        height: 2.5rem;
+        background-color: var(--color-background);
+        border-radius: 0.5rem;
+        color: var(--color-text);
+
+        svg {
+            width: 1.25rem;
+            height: 1.25rem;
+        }
+    }
+
+    &__service-name {
+        font-size: 0.75rem;
+        font-weight: 500;
+        color: var(--color-text);
+    }
+
+    &__status {
+        padding: 0 1rem;
+        font-size: 0.75rem;
+        text-align: center;
+        min-height: 1.25rem;
+
+        &--success {
+            color: var(--color-success);
+        }
+
+        &--error {
+            color: var(--color-error);
+        }
+    }
+
+    &__footer {
+        display: none;
+        padding: 0.75rem 1rem;
+        background-color: var(--color-hover);
+        border-top: 1px solid var(--color-hairline);
+    }
+
+    &__hint {
+        font-size: 0.7rem;
+        color: var(--color-text-muted);
+        text-align: center;
+        margin: 0;
+    }
+}
+
+// Hide on print
+@media print {
+    .ask-ai-panel,
+    .navbar__ask-ai,
+    .navbar__ask-ai-trigger {
+        display: none;
+    }
+}
