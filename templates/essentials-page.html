@@ -2,6 +2,9 @@
 {% import "macros/breadcrumbs.html" as breadcrumbs %}
 
 {% block content %}
+<!-- HowTo Schema for step-by-step guides -->
+{% include "partials/schema/how-to.html" %}
+
 <div class="essentials">
     <!-- Breadcrumb Navigation -->
     {{ breadcrumbs::essentials(page=page, lang=detected_lang) }}

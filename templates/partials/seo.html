@@ -91,6 +91,19 @@
 <meta name="ai.license" content="CC0-1.0">
 <meta name="ai.crawlable" content="true">
 <meta name="ai.indexable" content="{% if page.extra.noindex %}false{% else %}true{% endif %}">
+{% if page %}
+{% if page.extra.questions_answered %}
+<meta name="ai.questions_answered" content="{{ page.extra.questions_answered | join(sep='; ') }}">
+{% elif current_path is containing('/wiki/') %}
+<meta name="ai.questions_answered" content="What is {{ page.title }}?; What does {{ page.title }} mean?">
+{% endif %}
+{% if page.extra.keywords %}
+<meta name="ai.key_concepts" content="{{ page.extra.keywords | join(sep=', ') }}">
+{% elif page.extra.alternative_names %}
+<meta name="ai.key_concepts" content="{{ page.title }}, {{ page.extra.alternative_names | join(sep=', ') }}">
+{% endif %}
+{% endif %}
+<meta name="ai.reading_level" content="{% if current_path is containing('/essentials/') %}beginner{% elif current_path is containing('/wiki/') %}intermediate{% elif current_path is containing('/explainers/') %}advanced{% else %}general{% endif %}">
 
 <!-- Canonical URL -->
 <link rel="canonical" href="{{ current_url | safe }}">

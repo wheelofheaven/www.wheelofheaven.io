@@ -13,22 +13,24 @@ A roadmap of potential improvements to make wheelofheaven.io more modern, access
 - Reference: https://llmstxt.org/
 - **Implemented:** `/static/llms.txt` - includes content sections, key concepts, API access, languages, citation info
 
-### [ ] Enhanced Schema.org Markup
-- Add FAQPage schema for FAQ sections
-- Add QAPage schema for wiki Q&A-style entries
-- Add HowTo schema for step-by-step guides
-- Add Course schema for learning paths
+### [x] Enhanced Schema.org Markup ✓
+- FAQPage schema for FAQ sections - **Implemented:** included in info-page.html
+- HowTo schema for step-by-step guides - **Implemented:** included in essentials-page.html
+- DefinedTerm, ScholarlyArticle, Book, Event schemas already in use
+- [ ] QAPage schema for wiki Q&A-style entries (future)
+- [ ] Course schema for learning paths (future)
 
-### [ ] Speakable Markup
-- Mark content sections optimized for voice assistants
-- Already have some `data-speakable` attributes
-- Expand to more content types
+### [x] Speakable Markup ✓
+- **Already implemented:** `partials/schema/speakable.html` included in seo.html
+- Uses `data-speakable` attributes on content sections
+- Targets `.wiki__summary`, `.explainer__content`, etc.
 
-### [ ] AI Meta Tags Expansion
-- Add `ai.summary` for each page (TLDR)
-- Add `ai.questions_answered` listing questions the page answers
-- Add `ai.key_concepts` listing main topics
-- Add `ai.reading_level` for content difficulty
+### [x] AI Meta Tags Expansion ✓
+- `ai.summary` - from page.extra.tldr (already existed)
+- `ai.questions_answered` - auto-generated for wiki pages, or from page.extra.questions_answered
+- `ai.key_concepts` - from page.extra.keywords or alternative_names
+- `ai.reading_level` - beginner/intermediate/advanced based on section
+- Plus existing: ai.content_type, ai.topic, ai.entity_type, ai.related_topics, ai.citations, etc.
 
 ---
 

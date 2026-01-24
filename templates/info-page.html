@@ -2,6 +2,9 @@
 {% import "macros/breadcrumbs.html" as breadcrumbs %}
 
 {% block content %}
+<!-- FAQPage Schema for FAQ content -->
+{% include "partials/schema/faq-page.html" %}
+
 <div class="info-page">
     <!-- Breadcrumb Navigation -->
     {{ breadcrumbs::community(page=page, lang=detected_lang) }}
