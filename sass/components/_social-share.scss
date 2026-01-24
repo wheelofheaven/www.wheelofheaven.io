@@ -97,6 +97,28 @@
                 display: flex;
             }
         }
+
+        // Offline save button
+        &--offline {
+            position: relative;
+
+            &:hover {
+                border-color: var(--color-accent-secondary);
+                color: var(--color-accent-secondary);
+            }
+
+            // Saved state (applied by pwa.js)
+            &.is-saved {
+                border-color: var(--color-success, #10b981);
+                color: var(--color-success, #10b981);
+                cursor: default;
+
+                &:hover {
+                    border-color: var(--color-success, #10b981);
+                    color: var(--color-success, #10b981);
+                }
+            }
+        }
     }
 }
 

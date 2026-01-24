@@ -1,0 +1,200 @@
+// Service Worker for Wheel of Heaven
+// Provides offline support and caching
+
+const CACHE_VERSION = 'v1';
+const STATIC_CACHE = `woh-static-${CACHE_VERSION}`;
+const PAGES_CACHE = `woh-pages-${CACHE_VERSION}`;
+const IMAGES_CACHE = `woh-images-${CACHE_VERSION}`;
+
+// Core assets to cache immediately
+const STATIC_ASSETS = [
+    '/',
+    '/offline/',
+    '/site.webmanifest',
+    '/brand/favicon.svg',
+    '/brand/icon-192.png'
+];
+
+// Cache strategies
+const CACHE_STRATEGIES = {
+    static: 'cache-first',
+    pages: 'network-first',
+    images: 'cache-first'
+};
+
+// Install event - cache static assets
+self.addEventListener('install', event => {
+    event.waitUntil(
+        caches.open(STATIC_CACHE)
+            .then(cache => {
+                console.log('[SW] Caching static assets');
+                return cache.addAll(STATIC_ASSETS);
+            })
+            .then(() => self.skipWaiting())
+            .catch(err => console.error('[SW] Install failed:', err))
+    );
+});
+
+// Activate event - clean up old caches
+self.addEventListener('activate', event => {
+    event.waitUntil(
+        caches.keys()
+            .then(cacheNames => {
+                return Promise.all(
+                    cacheNames
+                        .filter(name => {
+                            // Delete old version caches
+                            return name.startsWith('woh-') &&
+                                   !name.endsWith(CACHE_VERSION);
+                        })
+                        .map(name => {
+                            console.log('[SW] Deleting old cache:', name);
+                            return caches.delete(name);
+                        })
+                );
+            })
+            .then(() => self.clients.claim())
+    );
+});
+
+// Fetch event - serve from cache or network
+self.addEventListener('fetch', event => {
+    const request = event.request;
+    const url = new URL(request.url);
+
+    // Only handle same-origin requests
+    if (url.origin !== location.origin) {
+        return;
+    }
+
+    // Skip non-GET requests
+    if (request.method !== 'GET') {
+        return;
+    }
+
+    // Determine cache strategy based on request type
+    if (isStaticAsset(url.pathname)) {
+        event.respondWith(cacheFirst(request, STATIC_CACHE));
+    } else if (isImage(url.pathname)) {
+        event.respondWith(cacheFirst(request, IMAGES_CACHE));
+    } else if (isPage(url.pathname)) {
+        event.respondWith(networkFirst(request, PAGES_CACHE));
+    }
+});
+
+// Cache-first strategy (for static assets and images)
+async function cacheFirst(request, cacheName) {
+    const cached = await caches.match(request);
+    if (cached) {
+        return cached;
+    }
+
+    try {
+        const response = await fetch(request);
+        if (response.ok) {
+            const cache = await caches.open(cacheName);
+            cache.put(request, response.clone());
+        }
+        return response;
+    } catch (error) {
+        console.error('[SW] Cache-first fetch failed:', error);
+        return new Response('Offline', { status: 503 });
+    }
+}
+
+// Network-first strategy (for HTML pages)
+async function networkFirst(request, cacheName) {
+    try {
+        const response = await fetch(request);
+        if (response.ok) {
+            const cache = await caches.open(cacheName);
+            cache.put(request, response.clone());
+        }
+        return response;
+    } catch (error) {
+        console.log('[SW] Network failed, trying cache:', request.url);
+        const cached = await caches.match(request);
+        if (cached) {
+            return cached;
+        }
+
+        // Return offline page for navigation requests
+        if (request.mode === 'navigate') {
+            const offlinePage = await caches.match('/offline/');
+            if (offlinePage) {
+                return offlinePage;
+            }
+        }
+
+        return new Response('Offline', {
+            status: 503,
+            headers: { 'Content-Type': 'text/plain' }
+        });
+    }
+}
+
+// Helper functions to determine request type
+function isStaticAsset(pathname) {
+    return /\.(css|js|woff2?|ttf|eot)$/i.test(pathname) ||
+           pathname.startsWith('/fonts/');
+}
+
+function isImage(pathname) {
+    return /\.(png|jpg|jpeg|gif|svg|webp|avif|ico)$/i.test(pathname) ||
+           pathname.startsWith('/images/') ||
+           pathname.startsWith('/brand/');
+}
+
+function isPage(pathname) {
+    // HTML pages typically end with / or have no extension
+    return pathname.endsWith('/') ||
+           pathname.endsWith('.html') ||
+           !pathname.includes('.');
+}
+
+// Listen for messages from the client
+self.addEventListener('message', event => {
+    if (event.data.type === 'SKIP_WAITING') {
+        self.skipWaiting();
+    }
+
+    if (event.data.type === 'CACHE_URLS') {
+        const urls = event.data.urls;
+        event.waitUntil(
+            caches.open(PAGES_CACHE)
+                .then(cache => cache.addAll(urls))
+                .then(() => {
+                    // Notify clients that caching is complete
+                    self.clients.matchAll().then(clients => {
+                        clients.forEach(client => {
+                            client.postMessage({ type: 'CACHE_COMPLETE', urls });
+                        });
+                    });
+                })
+        );
+    }
+
+    if (event.data.type === 'GET_CACHED_URLS') {
+        event.waitUntil(
+            caches.open(PAGES_CACHE)
+                .then(cache => cache.keys())
+                .then(requests => {
+                    const urls = requests.map(req => new URL(req.url).pathname);
+                    event.source.postMessage({ type: 'CACHED_URLS', urls });
+                })
+        );
+    }
+});
+
+// Background sync for reading progress (if supported)
+self.addEventListener('sync', event => {
+    if (event.tag === 'sync-reading-progress') {
+        event.waitUntil(syncReadingProgress());
+    }
+});
+
+async function syncReadingProgress() {
+    // Get pending reading progress updates from IndexedDB
+    // and sync them when back online
+    console.log('[SW] Syncing reading progress...');
+}

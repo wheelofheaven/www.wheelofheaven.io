@@ -1,0 +1,107 @@
+{% extends "base.html" %}
+
+{% block content %}
+<div class="offline-page">
+    <div class="offline-page__container">
+        <div class="offline-page__icon">
+            <svg width="80" height="80" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+                <line x1="1" y1="1" x2="23" y2="23"></line>
+                <path d="M16.72 11.06A10.94 10.94 0 0 1 19 12.55"></path>
+                <path d="M5 12.55a10.94 10.94 0 0 1 5.17-2.39"></path>
+                <path d="M10.71 5.05A16 16 0 0 1 22.58 9"></path>
+                <path d="M1.42 9a15.91 15.91 0 0 1 4.7-2.88"></path>
+                <path d="M8.53 16.11a6 6 0 0 1 6.95 0"></path>
+                <line x1="12" y1="20" x2="12.01" y2="20"></line>
+            </svg>
+        </div>
+
+        <h1 class="offline-page__title">You're Offline</h1>
+
+        <p class="offline-page__description">
+            It looks like you've lost your internet connection. Don't worry, you can still access pages you've previously visited.
+        </p>
+
+        <div class="offline-page__actions">
+            <button class="offline-page__btn offline-page__btn--primary" onclick="window.location.reload()">
+                <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+                    <polyline points="23 4 23 10 17 10"></polyline>
+                    <polyline points="1 20 1 14 7 14"></polyline>
+                    <path d="M3.51 9a9 9 0 0 1 14.85-3.36L23 10M1 14l4.64 4.36A9 9 0 0 0 20.49 15"></path>
+                </svg>
+                Try Again
+            </button>
+
+            <button class="offline-page__btn offline-page__btn--secondary" id="view-cached-btn">
+                <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+                    <path d="M21 16V8a2 2 0 0 0-1-1.73l-7-4a2 2 0 0 0-2 0l-7 4A2 2 0 0 0 3 8v8a2 2 0 0 0 1 1.73l7 4a2 2 0 0 0 2 0l7-4A2 2 0 0 0 21 16z"></path>
+                    <polyline points="3.27 6.96 12 12.01 20.73 6.96"></polyline>
+                    <line x1="12" y1="22.08" x2="12" y2="12"></line>
+                </svg>
+                View Cached Pages
+            </button>
+        </div>
+
+        <div class="offline-page__cached" id="cached-pages" style="display: none;">
+            <h2 class="offline-page__cached-title">Available Offline</h2>
+            <ul class="offline-page__cached-list" id="cached-list">
+                <!-- Populated by JavaScript -->
+            </ul>
+        </div>
+
+        <div class="offline-page__tips">
+            <h3 class="offline-page__tips-title">Tips for Offline Reading</h3>
+            <ul class="offline-page__tips-list">
+                <li>Visit pages while online to cache them automatically</li>
+                <li>Use the "Save for Offline" button on articles</li>
+                <li>Cached pages remain available until you clear browser data</li>
+            </ul>
+        </div>
+    </div>
+</div>
+
+<script>
+(function() {
+    const viewBtn = document.getElementById('view-cached-btn');
+    const cachedSection = document.getElementById('cached-pages');
+    const cachedList = document.getElementById('cached-list');
+
+    if (viewBtn && 'serviceWorker' in navigator && navigator.serviceWorker.controller) {
+        viewBtn.addEventListener('click', () => {
+            navigator.serviceWorker.controller.postMessage({ type: 'GET_CACHED_URLS' });
+            cachedSection.style.display = 'block';
+            viewBtn.style.display = 'none';
+        });
+
+        navigator.serviceWorker.addEventListener('message', event => {
+            if (event.data.type === 'CACHED_URLS') {
+                const urls = event.data.urls.filter(url =>
+                    url !== '/offline/' &&
+                    url !== '/' &&
+                    !url.includes('.') // Skip asset URLs
+                );
+
+                if (urls.length === 0) {
+                    cachedList.innerHTML = '<li class="offline-page__cached-empty">No pages cached yet. Visit some pages while online!</li>';
+                } else {
+                    cachedList.innerHTML = urls.map(url =>
+                        `<li><a href="${url}">${formatUrl(url)}</a></li>`
+                    ).join('');
+                }
+            }
+        });
+    } else {
+        viewBtn.style.display = 'none';
+    }
+
+    function formatUrl(url) {
+        // Convert URL to readable title
+        return url
+            .replace(/\/$/, '')
+            .split('/')
+            .pop()
+            .replace(/-/g, ' ')
+            .replace(/\b\w/g, c => c.toUpperCase()) || 'Home';
+    }
+})();
+</script>
+{% endblock content %}
