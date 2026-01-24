@@ -28,7 +28,7 @@
             <!-- Knowledge Dropdown -->
             <div class="navbar__dropdown" data-dropdown="knowledge" role="navigation" aria-label="Knowledge section">
                 <button
-                    class="navbar__dropdown-trigger{% if current_path and (current_path is starting_with('/wiki') or current_path is starting_with('/explainers')) %} navbar__dropdown-trigger--active{% endif %}"
+                    class="navbar__dropdown-trigger{% if current_path and (current_path is starting_with('/wiki') or current_path is starting_with('/explainers') or current_path is starting_with('/resources') or current_path is starting_with('/library')) %} navbar__dropdown-trigger--active{% endif %}"
                     aria-expanded="false"
                     aria-haspopup="true"
                     aria-controls="knowledge-dropdown"
@@ -169,6 +169,41 @@
                                             </div>
                                         </div>
                                     </a>
+                                    <a
+                                        href="{{ get_url(path='resources', lang=detected_lang) }}"
+                                        class="navbar-dropdown__link"
+                                    >
+                                        <span
+                                            class="navbar-dropdown__link-icon"
+                                        >
+                                            {% include
+                                            "partials/icons/feather-archive.html" %}
+                                        </span>
+                                        <div>
+                                            <div
+                                                class="navbar-dropdown__link-title"
+                                            >
+                                                <span data-navbar-key="resourcesNav"
+                                                    >{{ trans(key="navbarResourcesNav",
+                                                    lang=detected_lang) }}</span
+                                                >
+                                                <span
+                                                    class="navbar-dropdown__link-arrow"
+                                                >
+                                                    {% include
+                                                    "partials/icons/arrow-right.html"
+                                                    %}
+                                                </span>
+                                            </div>
+                                            <div
+                                                class="navbar-dropdown__link-description"
+                                                data-navbar-key="resourcesNavDesc"
+                                            >
+                                                {{ trans(key="navbarResourcesNavDesc",
+                                                lang=detected_lang) }}
+                                            </div>
+                                        </div>
+                                    </a>
                                 </div>
                             </div>
                         </div>
@@ -176,24 +211,24 @@
                 </div>
             </div>
 
-            <!-- Resources Dropdown -->
-            <div class="navbar__dropdown" data-dropdown="resources" role="navigation" aria-label="Resources section">
+            <!-- Community Dropdown -->
+            <div class="navbar__dropdown" data-dropdown="community" role="navigation" aria-label="Community section">
                 <button
                     class="navbar__dropdown-trigger{% if current_path and (current_path is starting_with('/about') or current_path is starting_with('/faq') or current_path is starting_with('/contributing')) %} navbar__dropdown-trigger--active{% endif %}"
                     aria-expanded="false"
                     aria-haspopup="true"
-                    aria-controls="resources-dropdown"
+                    aria-controls="community-dropdown"
                 >
-                    <span data-navbar-key="resources"
-                        >{{ trans(key="navbarResources", lang=detected_lang) }}</span
+                    <span data-navbar-key="community"
+                        >{{ trans(key="navbarCommunity", lang=detected_lang) }}</span
                     >
                     <span class="navbar__dropdown-trigger__caret">
                         {% include "partials/icons/chevron-down.html" %}
                     </span>
                 </button>
                 <div
-                    class="navbar-dropdown navbar-dropdown--resources"
-                    id="resources-dropdown"
+                    class="navbar-dropdown navbar-dropdown--community"
+                    id="community-dropdown"
                 >
                     <div class="navbar-dropdown__container">
                         <div class="navbar-dropdown__content">
@@ -704,7 +739,7 @@
                             timeline: "Timeline",
                             map: "Map",
                             knowledge: "Knowledge",
-                            resources: "Resources",
+                            community: "Community",
                             explainers: "Explainers",
                             explainersDesc:
                                 "Detailed explanations of key concepts and ideas",
@@ -714,8 +749,10 @@
                             wiki: "Wiki",
                             wikiDesc:
                                 "Comprehensive reference and documentation",
+                            resourcesNav: "Resources",
+                            resourcesNavDesc:
+                                "Curated external books, films, and references",
                             org: "Org",
-                            community: "Community",
                             about: "About",
                             codeOfConduct: "Code of Conduct",
                             contributing: "Contributing",
@@ -728,7 +765,7 @@
                             timeline: "Chronologie",
                             map: "Carte",
                             knowledge: "Connaissance",
-                            resources: "Ressources",
+                            community: "Communauté",
                             explainers: "Explicateurs",
                             explainersDesc:
                                 "Explications détaillées des concepts et idées clés",
@@ -737,8 +774,10 @@
                                 "Textes sacrés et leurs interprétations modernes",
                             wiki: "Wiki",
                             wikiDesc: "Référence et documentation complètes",
+                            resourcesNav: "Ressources",
+                            resourcesNavDesc:
+                                "Livres, films et références externes sélectionnés",
                             org: "Organisation",
-                            community: "Communauté",
                             about: "À propos",
                             codeOfConduct: "Code de Conduite",
                             contributing: "Contribuer",
@@ -751,7 +790,7 @@
                             timeline: "Zeitleiste",
                             map: "Karte",
                             knowledge: "Wissen",
-                            resources: "Ressourcen",
+                            community: "Community",
                             explainers: "Erklärungen",
                             explainersDesc:
                                 "Detaillierte Erklärungen wichtiger Konzepte und Ideen",
@@ -760,8 +799,10 @@
                                 "Heilige Texte und ihre modernen Interpretationen",
                             wiki: "Wiki",
                             wikiDesc: "Umfassende Referenz und Dokumentation",
+                            resourcesNav: "Ressourcen",
+                            resourcesNavDesc:
+                                "Kuratierte externe Bücher, Filme und Referenzen",
                             org: "Organisation",
-                            community: "Community",
                             about: "Über uns",
                             codeOfConduct: "Verhaltenskodex",
                             contributing: "Beitragen",
@@ -774,7 +815,7 @@
                             timeline: "Cronología",
                             map: "Mapa",
                             knowledge: "Conocimiento",
-                            resources: "Recursos",
+                            community: "Comunidad",
                             explainers: "Explicadores",
                             explainersDesc:
                                 "Explicaciones detalladas de conceptos e ideas clave",
@@ -783,8 +824,10 @@
                                 "Textos sagrados y sus interpretaciones modernas",
                             wiki: "Wiki",
                             wikiDesc: "Referencia y documentación integral",
+                            resourcesNav: "Recursos",
+                            resourcesNavDesc:
+                                "Libros, películas y referencias externas seleccionados",
                             org: "Organización",
-                            community: "Comunidad",
                             about: "Acerca de",
                             codeOfConduct: "Código de Conducta",
                             contributing: "Contribuir",
@@ -797,15 +840,16 @@
                             timeline: "タイムライン",
                             map: "マップ",
                             knowledge: "知識",
-                            resources: "リソース",
+                            community: "コミュニティ",
                             explainers: "解説",
                             explainersDesc: "重要な概念とアイデアの詳細な説明",
                             revelations: "啓示",
                             revelationsDesc: "聖典とその現代的解釈",
                             wiki: "ウィキ",
                             wikiDesc: "包括的なリファレンスとドキュメント",
+                            resourcesNav: "リソース",
+                            resourcesNavDesc: "厳選された外部の書籍、映画、参考資料",
                             org: "組織",
-                            community: "コミュニティ",
                             about: "私たちについて",
                             codeOfConduct: "行動規範",
                             contributing: "貢献",
@@ -818,7 +862,7 @@
                             timeline: "Хронология",
                             map: "Карта",
                             knowledge: "Знания",
-                            resources: "Ресурсы",
+                            community: "Сообщество",
                             explainers: "Объяснения",
                             explainersDesc:
                                 "Подробные объяснения ключевых концепций и идей",
@@ -827,8 +871,10 @@
                                 "Священные тексты и их современные интерпретации",
                             wiki: "Вики",
                             wikiDesc: "Исчерпывающий справочник и документация",
+                            resourcesNav: "Ресурсы",
+                            resourcesNavDesc:
+                                "Подобранные внешние книги, фильмы и справочники",
                             org: "Организация",
-                            community: "Сообщество",
                             about: "О нас",
                             codeOfConduct: "Кодекс поведения",
                             contributing: "Участие",
@@ -841,15 +887,16 @@
                             timeline: "时间线",
                             map: "地图",
                             knowledge: "知识",
-                            resources: "资源",
+                            community: "社区",
                             explainers: "解释",
                             explainersDesc: "关键概念和想法的详细解释",
                             revelations: "启示",
                             revelationsDesc: "神圣文本及其现代解释",
                             wiki: "百科",
                             wikiDesc: "全面的参考和文档",
+                            resourcesNav: "资源",
+                            resourcesNavDesc: "精选的外部书籍、电影和参考资料",
                             org: "组织",
-                            community: "社区",
                             about: "关于我们",
                             codeOfConduct: "行为准则",
                             contributing: "贡献",
@@ -862,15 +909,16 @@
                             timeline: "時間線",
                             map: "地圖",
                             knowledge: "知識",
-                            resources: "資源",
+                            community: "社群",
                             explainers: "解釋",
                             explainersDesc: "核心概念和想法的詳細解釋",
                             revelations: "啟示",
                             revelationsDesc: "神聖文本及其現代解釋",
                             wiki: "百科",
                             wikiDesc: "全面的參考和文檔",
+                            resourcesNav: "資源",
+                            resourcesNavDesc: "精選的外部書籍、電影和參考資料",
                             org: "組織",
-                            community: "社群",
                             about: "關於我們",
                             codeOfConduct: "行為準則",
                             contributing: "貢獻",
@@ -883,15 +931,16 @@
                             timeline: "타임라인",
                             map: "지도",
                             knowledge: "지식",
-                            resources: "리소스",
+                            community: "커뮤니티",
                             explainers: "설명",
                             explainersDesc: "핵심 개념과 아이디어에 대한 상세 설명",
                             revelations: "계시",
                             revelationsDesc: "신성한 문헌과 현대적 해석",
                             wiki: "위키",
                             wikiDesc: "종합적인 레퍼런스 및 문서",
+                            resourcesNav: "리소스",
+                            resourcesNavDesc: "엄선된 외부 도서, 영화 및 참고 자료",
                             org: "조직",
-                            community: "커뮤니티",
                             about: "소개",
                             codeOfConduct: "행동 강령",
                             contributing: "기여하기",

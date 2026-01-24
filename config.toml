@@ -76,7 +76,7 @@ footerPreamble_url = "/timeline/preamble/"
 navbarEssentials = "Essentials"
 navbarTimeline = "Timeline"
 navbarKnowledge = "Knowledge"
-navbarResources = "Resources"
+navbarCommunity = "Community"
 
 # Knowledge dropdown items
 navbarExplainers = "Explainers"
@@ -85,8 +85,10 @@ navbarLibrary = "Library"
 navbarLibraryDesc = "Sacred texts and their modern interpretations"
 navbarWiki = "Wiki"
 navbarWikiDesc = "Comprehensive reference and documentation"
+navbarResourcesNav = "Resources"
+navbarResourcesNavDesc = "Curated external books, films, and references"
 
-# Resources dropdown items
+# Community dropdown items
 navbarResourcesOrg = "Org"
 navbarResourcesCommunity = "Community"
 navbarAbout = "About"
@@ -239,7 +241,7 @@ footerPreambleLink = "/de/intro/einleitung/"
 navbarEssentials = "Grundlagen"
 navbarTimeline = "Zeitleiste"
 navbarKnowledge = "Wissen"
-navbarResources = "Ressourcen"
+navbarCommunity = "Community"
 
 # Knowledge dropdown items
 navbarExplainers = "Erklärungen"
@@ -248,8 +250,10 @@ navbarLibrary = "Bibliothek"
 navbarLibraryDesc = "Heilige Texte und ihre modernen Interpretationen"
 navbarWiki = "Wiki"
 navbarWikiDesc = "Umfassende Referenz und Dokumentation"
+navbarResourcesNav = "Ressourcen"
+navbarResourcesNavDesc = "Kuratierte externe Bücher, Filme und Referenzen"
 
-# Resources dropdown items
+# Community dropdown items
 navbarResourcesOrg = "Organisation"
 navbarResourcesCommunity = "Community"
 navbarAbout = "Über uns"
@@ -390,7 +394,7 @@ footerPreambleLink = "/fr/intro/préambule/"
 navbarEssentials = "Essentiels"
 navbarTimeline = "Chronologie"
 navbarKnowledge = "Connaissance"
-navbarResources = "Ressources"
+navbarCommunity = "Communauté"
 
 # Knowledge dropdown items
 navbarExplainers = "Explicateurs"
@@ -399,8 +403,10 @@ navbarLibrary = "Bibliothèque"
 navbarLibraryDesc = "Textes sacrés et leurs interprétations modernes"
 navbarWiki = "Wiki"
 navbarWikiDesc = "Référence et documentation complètes"
+navbarResourcesNav = "Ressources"
+navbarResourcesNavDesc = "Livres, films et références externes sélectionnés"
 
-# Resources dropdown items
+# Community dropdown items
 navbarResourcesOrg = "Organisation"
 navbarResourcesCommunity = "Communauté"
 navbarAbout = "À propos"
@@ -542,7 +548,7 @@ footerPreambleLink = "/es/intro/preámbulo/"
 navbarEssentials = "Esenciales"
 navbarTimeline = "Cronología"
 navbarKnowledge = "Conocimiento"
-navbarResources = "Recursos"
+navbarCommunity = "Comunidad"
 
 # Knowledge dropdown items
 navbarExplainers = "Explicadores"
@@ -551,8 +557,10 @@ navbarLibrary = "Biblioteca"
 navbarLibraryDesc = "Textos sagrados y sus interpretaciones modernas"
 navbarWiki = "Wiki"
 navbarWikiDesc = "Referencia y documentación completas"
+navbarResourcesNav = "Recursos"
+navbarResourcesNavDesc = "Libros, películas y referencias externas seleccionados"
 
-# Resources dropdown items
+# Community dropdown items
 navbarResourcesOrg = "Organización"
 navbarResourcesCommunity = "Comunidad"
 navbarAbout = "Acerca de"
@@ -734,7 +742,7 @@ snackbarWarning = "Предупреждение"
 navbarEssentials = "Основы"
 navbarTimeline = "Хронология"
 navbarKnowledge = "Знания"
-navbarResources = "Ресурсы"
+navbarCommunity = "Сообщество"
 
 # Knowledge dropdown items
 navbarExplainers = "Объяснения"
@@ -743,8 +751,10 @@ navbarLibrary = "Библиотека"
 navbarLibraryDesc = "Священные тексты и их современные интерпретации"
 navbarWiki = "Вики"
 navbarWikiDesc = "Исчерпывающий справочник и документация"
+navbarResourcesNav = "Ресурсы"
+navbarResourcesNavDesc = "Подобранные внешние книги, фильмы и справочники"
 
-# Resources dropdown items
+# Community dropdown items
 navbarResourcesOrg = "Организация"
 navbarResourcesCommunity = "Сообщество"
 navbarAbout = "О нас"
@@ -885,7 +895,7 @@ snackbarWarning = "警告"
 navbarEssentials = "基本"
 navbarTimeline = "タイムライン"
 navbarKnowledge = "知識"
-navbarResources = "リソース"
+navbarCommunity = "コミュニティ"
 
 # Knowledge dropdown items
 navbarExplainers = "解説"
@@ -894,8 +904,10 @@ navbarLibrary = "図書館"
 navbarLibraryDesc = "聖典とその現代的解釈"
 navbarWiki = "ウィキ"
 navbarWikiDesc = "包括的なリファレンスとドキュメント"
+navbarResourcesNav = "リソース"
+navbarResourcesNavDesc = "厳選された外部の書籍、映画、参考資料"
 
-# Resources dropdown items
+# Community dropdown items
 navbarResourcesOrg = "組織"
 navbarResourcesCommunity = "コミュニティ"
 navbarAbout = "私たちについて"
@@ -1037,7 +1049,7 @@ snackbarWarning = "警告"
 navbarEssentials = "基础"
 navbarTimeline = "时间线"
 navbarKnowledge = "知识"
-navbarResources = "资源"
+navbarCommunity = "社区"
 
 # Knowledge dropdown items
 navbarExplainers = "解释"
@@ -1046,8 +1058,10 @@ navbarLibrary = "图书馆"
 navbarLibraryDesc = "神圣文本及其现代解释"
 navbarWiki = "百科"
 navbarWikiDesc = "全面的参考和文档"
+navbarResourcesNav = "资源"
+navbarResourcesNavDesc = "精选的外部书籍、电影和参考资料"
 
-# Resources dropdown items
+# Community dropdown items
 navbarResourcesOrg = "组织"
 navbarResourcesCommunity = "社区"
 navbarAbout = "关于我们"
@@ -1160,7 +1174,7 @@ snackbarWarning = "警告"
 navbarEssentials = "基礎"
 navbarTimeline = "時間線"
 navbarKnowledge = "知識"
-navbarResources = "資源"
+navbarCommunity = "社群"
 
 # Knowledge dropdown items
 navbarExplainers = "解釋"
@@ -1169,8 +1183,10 @@ navbarLibrary = "圖書館"
 navbarLibraryDesc = "神聖文本及其現代解釋"
 navbarWiki = "百科"
 navbarWikiDesc = "全面的參考和文檔"
+navbarResourcesNav = "資源"
+navbarResourcesNavDesc = "精選的外部書籍、電影和參考資料"
 
-# Resources dropdown items
+# Community dropdown items
 navbarResourcesOrg = "組織"
 navbarResourcesCommunity = "社群"
 navbarAbout = "關於我們"
@@ -1283,7 +1299,7 @@ snackbarWarning = "경고"
 navbarEssentials = "필수"
 navbarTimeline = "타임라인"
 navbarKnowledge = "지식"
-navbarResources = "리소스"
+navbarCommunity = "커뮤니티"
 
 # Knowledge dropdown items
 navbarExplainers = "설명"
@@ -1292,8 +1308,10 @@ navbarLibrary = "도서관"
 navbarLibraryDesc = "신성한 텍스트와 현대적 해석"
 navbarWiki = "위키"
 navbarWikiDesc = "포괄적인 참조 및 문서"
+navbarResourcesNav = "리소스"
+navbarResourcesNavDesc = "엄선된 외부 도서, 영화 및 참고 자료"
 
-# Resources dropdown items
+# Community dropdown items
 navbarResourcesOrg = "조직"
 navbarResourcesCommunity = "커뮤니티"
 navbarAbout = "소개"
