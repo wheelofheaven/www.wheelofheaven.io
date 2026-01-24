@@ -212,6 +212,13 @@ shortcutsSearch = "Open search"
 shortcutsClose = "Close modal / panel"
 shortcutsHelp = "Show this help"
 shortcutsHint = "Press any key to close"
+# Highlight & Share
+highlightCopy = "Copy quote"
+highlightShareX = "Share on X"
+highlightShareReddit = "Share on Reddit"
+# Related content
+readNext = "Read Next"
+readMore = "Read more"
 
 
 [languages.de]
@@ -377,6 +384,11 @@ shortcutsSearch = "Suche öffnen"
 shortcutsClose = "Modal schließen"
 shortcutsHelp = "Diese Hilfe anzeigen"
 shortcutsHint = "Beliebige Taste zum Schließen"
+highlightCopy = "Zitat kopieren"
+highlightShareX = "Auf X teilen"
+highlightShareReddit = "Auf Reddit teilen"
+readNext = "Weiterlesen"
+readMore = "Mehr lesen"
 
 [languages.fr]
 generate_feeds = true
@@ -542,6 +554,11 @@ shortcutsSearch = "Ouvrir la recherche"
 shortcutsClose = "Fermer"
 shortcutsHelp = "Afficher cette aide"
 shortcutsHint = "Appuyez sur une touche pour fermer"
+highlightCopy = "Copier la citation"
+highlightShareX = "Partager sur X"
+highlightShareReddit = "Partager sur Reddit"
+readNext = "À lire ensuite"
+readMore = "Lire la suite"
 
 [languages.es]
 generate_feeds = true
@@ -706,6 +723,11 @@ shortcutsSearch = "Abrir búsqueda"
 shortcutsClose = "Cerrar"
 shortcutsHelp = "Mostrar esta ayuda"
 shortcutsHint = "Presiona cualquier tecla para cerrar"
+highlightCopy = "Copiar cita"
+highlightShareX = "Compartir en X"
+highlightShareReddit = "Compartir en Reddit"
+readNext = "Leer a continuación"
+readMore = "Leer más"
 
 [languages.ru]
 generate_feeds = true
@@ -797,6 +819,11 @@ shortcutsSearch = "Открыть поиск"
 shortcutsClose = "Закрыть"
 shortcutsHelp = "Показать справку"
 shortcutsHint = "Нажмите любую клавишу для закрытия"
+highlightCopy = "Копировать цитату"
+highlightShareX = "Поделиться в X"
+highlightShareReddit = "Поделиться в Reddit"
+readNext = "Читать далее"
+readMore = "Подробнее"
 
 # Navbar translations
 navbarEssentials = "Основы"
@@ -961,6 +988,11 @@ shortcutsSearch = "検索を開く"
 shortcutsClose = "閉じる"
 shortcutsHelp = "ヘルプを表示"
 shortcutsHint = "任意のキーを押して閉じる"
+highlightCopy = "引用をコピー"
+highlightShareX = "Xで共有"
+highlightShareReddit = "Redditで共有"
+readNext = "次を読む"
+readMore = "続きを読む"
 
 # Navbar translations
 navbarEssentials = "基本"
@@ -1126,6 +1158,11 @@ shortcutsSearch = "打开搜索"
 shortcutsClose = "关闭"
 shortcutsHelp = "显示帮助"
 shortcutsHint = "按任意键关闭"
+highlightCopy = "复制引用"
+highlightShareX = "分享到X"
+highlightShareReddit = "分享到Reddit"
+readNext = "继续阅读"
+readMore = "阅读更多"
 
 # Navbar translations
 navbarEssentials = "基础"
@@ -1262,6 +1299,11 @@ shortcutsSearch = "開啟搜尋"
 shortcutsClose = "關閉"
 shortcutsHelp = "顯示說明"
 shortcutsHint = "按任意鍵關閉"
+highlightCopy = "複製引用"
+highlightShareX = "分享到X"
+highlightShareReddit = "分享到Reddit"
+readNext = "繼續閱讀"
+readMore = "閱讀更多"
 
 # Navbar translations
 navbarEssentials = "基礎"
@@ -1398,6 +1440,11 @@ shortcutsSearch = "검색 열기"
 shortcutsClose = "닫기"
 shortcutsHelp = "도움말 표시"
 shortcutsHint = "아무 키나 눌러 닫기"
+highlightCopy = "인용 복사"
+highlightShareX = "X에 공유"
+highlightShareReddit = "Reddit에 공유"
+readNext = "다음 읽기"
+readMore = "더 읽기"
 
 # Navbar translations
 navbarEssentials = "필수"

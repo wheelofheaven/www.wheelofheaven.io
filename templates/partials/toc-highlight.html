@@ -1,0 +1,110 @@
+<!-- TOC Highlight - Highlights current section in table of contents -->
+<script>
+(function() {
+    // Find TOC container - works with wiki, resources, explainers
+    const tocNav = document.querySelector('.wiki__toc-nav, .resources__toc-nav, .explainer__toc-nav');
+    if (!tocNav) return;
+
+    const tocLinks = tocNav.querySelectorAll('a[href^="#"]');
+    if (tocLinks.length === 0) return;
+
+    // Get all section headings that match TOC links
+    const headings = [];
+    tocLinks.forEach(link => {
+        const id = link.getAttribute('href').slice(1);
+        const heading = document.getElementById(id);
+        if (heading) {
+            headings.push({ id, heading, link });
+        }
+    });
+
+    if (headings.length === 0) return;
+
+    // Determine the active class based on which TOC we have
+    let activeClass = 'wiki__toc-link--active';
+    if (tocNav.classList.contains('resources__toc-nav')) {
+        activeClass = 'resources__toc-link--active';
+    } else if (tocNav.classList.contains('explainer__toc-nav')) {
+        activeClass = 'explainer__toc-link--active';
+    }
+
+    let currentActive = null;
+    let ticking = false;
+
+    function updateActiveLink() {
+        // Calculate offset (account for fixed navbar)
+        const offset = 100;
+        const scrollPos = window.scrollY + offset;
+
+        // Find the current section
+        let current = null;
+
+        for (let i = headings.length - 1; i >= 0; i--) {
+            const { heading } = headings[i];
+            if (heading.offsetTop <= scrollPos) {
+                current = headings[i];
+                break;
+            }
+        }
+
+        // If near top and no section found, use first
+        if (!current && window.scrollY < 200) {
+            current = headings[0];
+        }
+
+        // Update active state
+        if (current && current !== currentActive) {
+            // Remove previous active
+            if (currentActive) {
+                currentActive.link.classList.remove(activeClass);
+                // Also remove from parent items if nested
+                const parentItem = currentActive.link.closest('.wiki__toc-item, .resources__toc-item, .explainer__toc-item');
+                if (parentItem) {
+                    parentItem.classList.remove('is-active');
+                }
+            }
+
+            // Add new active
+            current.link.classList.add(activeClass);
+            const parentItem = current.link.closest('.wiki__toc-item, .resources__toc-item, .explainer__toc-item');
+            if (parentItem) {
+                parentItem.classList.add('is-active');
+            }
+
+            // Scroll TOC to keep active link visible
+            const tocContainer = tocNav.closest('.wiki__toc, .resources__toc, .explainer__toc');
+            if (tocContainer) {
+                const linkRect = current.link.getBoundingClientRect();
+                const containerRect = tocContainer.getBoundingClientRect();
+
+                if (linkRect.top < containerRect.top + 50 || linkRect.bottom > containerRect.bottom - 50) {
+                    current.link.scrollIntoView({ behavior: 'smooth', block: 'center' });
+                }
+            }
+
+            currentActive = current;
+        }
+
+        ticking = false;
+    }
+
+    // Throttled scroll handler
+    function onScroll() {
+        if (!ticking) {
+            requestAnimationFrame(updateActiveLink);
+            ticking = true;
+        }
+    }
+
+    // Initialize
+    window.addEventListener('scroll', onScroll, { passive: true });
+
+    // Run once on load
+    updateActiveLink();
+
+    // Also update on hash change
+    window.addEventListener('hashchange', () => {
+        setTimeout(updateActiveLink, 100);
+    });
+})();
+</script>

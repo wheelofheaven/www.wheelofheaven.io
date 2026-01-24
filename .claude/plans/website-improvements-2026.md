@@ -43,11 +43,14 @@ A roadmap of potential improvements to make wheelofheaven.io more modern, access
 - Shows gradient accent color bar, fades in after 100px scroll
 - Only visible on content pages (wiki, explainer, essentials, resources, etc.)
 
-### [ ] Highlight & Share
-- Select text to get sharing options
-- Copy quote with attribution
-- Share to social media with selected text
-- Save highlights (localStorage or account-based)
+### [x] Highlight & Share ✓
+- **Implemented:** Select text to show popup with sharing options
+- **Implemented:** Copy quote with attribution (title + URL)
+- **Implemented:** Share to X/Twitter with selected text
+- **Implemented:** Share to Reddit with selected text
+- Works in all content areas (wiki, resources, explainers, essentials)
+- Hidden on touch devices
+- Translations for all 9 languages
 
 ### [x] Glossary Tooltips ✓
 - Hover over wiki links to see definitions inline
@@ -58,15 +61,21 @@ A roadmap of potential improvements to make wheelofheaven.io more modern, access
 - Dotted underline styling for wiki links
 - Hidden on touch devices (no hover)
 
-### [ ] Related Content Suggestions
-- "Read next" sections at end of articles
-- Based on topics, tags, or content similarity
-- Could use simple keyword matching or more advanced methods
+### [x] Related Content Suggestions ✓
+- **Implemented:** "Read Next" sections at end of articles
+- **Implemented:** Shows up to 3 related pages from the same section
+- **Implemented:** Prioritizes pages with matching category/topics
+- Added to wiki, resources, explainers, and essentials pages
+- Responsive grid layout (1-3 columns)
+- Translations for all 9 languages
 
-### [ ] Table of Contents Improvements
-- Sticky TOC that highlights current section
-- Collapsible on mobile
-- Progress indication within TOC
+### [x] Table of Contents Improvements ✓
+- **Already had:** Sticky TOC sidebar on desktop
+- **Implemented:** Highlights current section as user scrolls
+- **Implemented:** Auto-scrolls TOC to keep active link visible
+- Works on wiki, resources, and explainer pages
+- Uses IntersectionObserver-like scroll detection
+- Smooth transitions with accent color highlight
 
 ---
 
@@ -210,4 +219,4 @@ A roadmap of potential improvements to make wheelofheaven.io more modern, access
 
 ---
 
-*Last updated: 2026-01-24 (Keyboard shortcuts added)*
+*Last updated: 2026-01-24 (TOC Improvements added)*

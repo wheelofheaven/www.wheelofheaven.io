@@ -1,0 +1,78 @@
+<!-- Related Content Suggestions -->
+{% if page and page.ancestors %}
+{% set section_path = page.ancestors | last %}
+{% if section_path %}
+{% set current_section = get_section(path=section_path) %}
+{% if current_section.pages and current_section.pages | length > 1 %}
+
+{% set related_pages = [] %}
+{% set max_items = 3 %}
+
+{# Find related pages from the same section #}
+{% for sibling in current_section.pages %}
+    {% if sibling.permalink != page.permalink and related_pages | length < max_items %}
+        {# Prioritize pages with matching category or topics #}
+        {% set dominated = false %}
+        {% if page.extra.category and sibling.extra.category and page.extra.category == sibling.extra.category %}
+            {% set_global related_pages = related_pages | concat(with=[sibling]) %}
+        {% elif page.extra.topics and sibling.extra.topics %}
+            {% for topic in page.extra.topics %}
+                {% if topic in sibling.extra.topics and related_pages | length < max_items %}
+                    {% set match_found = true %}
+                {% endif %}
+            {% endfor %}
+            {% if match_found is defined and match_found %}
+                {% set_global related_pages = related_pages | concat(with=[sibling]) %}
+            {% endif %}
+        {% endif %}
+    {% endif %}
+{% endfor %}
+
+{# Fill remaining slots with other siblings #}
+{% for sibling in current_section.pages %}
+    {% if sibling.permalink != page.permalink and related_pages | length < max_items %}
+        {% set already_added = false %}
+        {% for existing in related_pages %}
+            {% if existing.permalink == sibling.permalink %}
+                {% set_global already_added = true %}
+            {% endif %}
+        {% endfor %}
+        {% if not already_added %}
+            {% set_global related_pages = related_pages | concat(with=[sibling]) %}
+        {% endif %}
+    {% endif %}
+{% endfor %}
+
+{# Render the related content section if we have items #}
+{% if related_pages | length > 0 %}
+<aside class="related-content" role="complementary" aria-labelledby="related-content-title">
+    <h2 class="related-content__title" id="related-content-title">
+        <svg class="related-content__icon" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+            <polyline points="13 17 18 12 13 7"></polyline>
+            <polyline points="6 17 11 12 6 7"></polyline>
+        </svg>
+        {{ trans(key="readNext", default="Read Next") }}
+    </h2>
+    <div class="related-content__grid">
+        {% for related in related_pages %}
+        <a href="{{ related.permalink }}" class="related-content__card">
+            <h3 class="related-content__card-title">{{ related.title }}</h3>
+            {% if related.description %}
+            <p class="related-content__card-desc">{{ related.description | truncate(length=120) }}</p>
+            {% endif %}
+            <span class="related-content__card-link">
+                {{ trans(key="readMore", default="Read more") }}
+                <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+                    <line x1="5" y1="12" x2="19" y2="12"></line>
+                    <polyline points="12 5 19 12 12 19"></polyline>
+                </svg>
+            </span>
+        </a>
+        {% endfor %}
+    </div>
+</aside>
+{% endif %}
+
+{% endif %}
+{% endif %}
+{% endif %}
