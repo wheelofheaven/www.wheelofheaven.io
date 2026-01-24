@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
+        xmlns:xhtml="http://www.w3.org/1999/xhtml"
+        xmlns:image="http://www.google.com/schemas/sitemap-image/1.1">
+{# Zola sitemap template - entries is provided by Zola with all pages and sections #}
+{% for sitemap_entry in entries %}
+    <url>
+        <loc>{{ sitemap_entry.permalink | safe }}</loc>
+        {% if sitemap_entry.date %}
+        <lastmod>{{ sitemap_entry.date | date(format="%Y-%m-%d") }}</lastmod>
+        {% endif %}
+        <changefreq>{% if sitemap_entry.permalink is containing('/wiki/') %}monthly{% elif sitemap_entry.permalink is containing('/timeline/') %}monthly{% elif sitemap_entry.permalink is containing('/articles/') %}weekly{% elif sitemap_entry.permalink is containing('/essentials/') %}monthly{% else %}weekly{% endif %}</changefreq>
+        <priority>{% if sitemap_entry.permalink is ending_with('.io/') or sitemap_entry.permalink is ending_with('.io') %}1.0{% elif sitemap_entry.permalink is containing('/essentials/') %}0.8{% elif sitemap_entry.permalink is containing('/wiki/') %}0.7{% elif sitemap_entry.permalink is containing('/timeline/') %}0.7{% elif sitemap_entry.permalink is containing('/library/') %}0.7{% elif sitemap_entry.permalink is containing('/articles/') %}0.6{% else %}0.5{% endif %}</priority>
+    </url>
+{% endfor %}
+</urlset>

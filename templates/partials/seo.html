@@ -71,6 +71,27 @@
 <meta name="reading_time" content="{{ page.reading_time }} minutes">
 {% endif %}
 
+<!-- Enhanced AI/AEO Meta Tags -->
+<meta name="ai.extractable_sections" content=".wiki__summary, .wiki__content, .essentials__content, .explainer__content, .article__content, [data-ai-summary], [data-ai-definition], [data-ai-answer], blockquote[data-ai-cite]">
+<meta name="ai.entity_type" content="{% if page %}{% if current_path is containing('/wiki/') %}concept{% elif current_path is containing('/timeline/') %}historical_event{% elif current_path is containing('/library/') %}book{% elif current_path is containing('/essentials/') %}guide{% elif current_path is containing('/explainers/') %}explanation{% else %}article{% endif %}{% else %}website{% endif %}">
+{% if page.taxonomies.tags %}
+<meta name="ai.related_topics" content="{{ page.taxonomies.tags | join(sep=', ') }}">
+{% endif %}
+{% if page.extra.see_also %}
+<meta name="ai.related_content" content="{% for item in page.extra.see_also %}{{ item.title }}{% if not loop.last %}, {% endif %}{% endfor %}">
+{% endif %}
+{% if page.extra.references %}
+<meta name="ai.citations" content="{% for ref in page.extra.references %}{{ ref.title }}{% if ref.author %} by {{ ref.author }}{% endif %}{% if not loop.last %}; {% endif %}{% endfor %}">
+{% endif %}
+<meta name="ai.language" content="{{ detected_lang | default(value='en') }}">
+<meta name="ai.publisher" content="{{ config.title }}">
+{% if page.word_count %}
+<meta name="ai.word_count" content="{{ page.word_count }}">
+{% endif %}
+<meta name="ai.license" content="CC0-1.0">
+<meta name="ai.crawlable" content="true">
+<meta name="ai.indexable" content="{% if page.extra.noindex %}false{% else %}true{% endif %}">
+
 <!-- Canonical URL -->
 <link rel="canonical" href="{{ current_url | safe }}">
 
@@ -102,8 +123,11 @@
   "image": {
     "@type": "ImageObject",
     "url": "{{ get_url(path=page.extra.image | default(value=page.extra.header_image)) }}",
+    "name": "{{ page.title | default(value='') | escape }} - Featured Image",
+    "description": "{% if page.extra.image_alt %}{{ page.extra.image_alt | escape }}{% elif page.description %}{{ page.description | truncate(length=150) | escape }}{% else %}Featured image for {{ page.title | default(value='') | escape }}{% endif %}",
     "width": 1200,
-    "height": 630
+    "height": 630,
+    "caption": "{% if page.extra.image_caption %}{{ page.extra.image_caption | escape }}{% else %}{{ page.title | default(value='') | escape }}{% endif %}"
   },
   {% endif %}
   {% if page.extra.category %}
@@ -185,12 +209,19 @@
 {
   "@context": "https://schema.org",
   "@type": "BreadcrumbList",
+  "@id": "{{ current_url | safe }}#breadcrumb",
+  "name": "Breadcrumb Navigation",
   "itemListElement": [
     {
       "@type": "ListItem",
       "position": 1,
       "name": "Home",
-      "item": "{{ config.base_url }}"
+      "item": {
+        "@type": "WebPage",
+        "@id": "{{ config.base_url }}/",
+        "url": "{{ config.base_url }}/",
+        "name": "Home"
+      }
     }
     {% if page %}
       {% for ancestor in page.ancestors %}
@@ -198,15 +229,25 @@
         ,{
           "@type": "ListItem",
           "position": {{ loop.index + 1 }},
-          "name": "{{ ancestor_section.title | default(value="") | escape }}",
-          "item": "{{ ancestor_section.permalink }}"
+          "name": "{{ ancestor_section.title | default(value='') | escape }}",
+          "item": {
+            "@type": "WebPage",
+            "@id": "{{ ancestor_section.permalink }}",
+            "url": "{{ ancestor_section.permalink }}",
+            "name": "{{ ancestor_section.title | default(value='') | escape }}"
+          }
         }
       {% endfor %}
       ,{
         "@type": "ListItem",
         "position": {{ page.ancestors | length + 2 }},
-        "name": "{{ page.title | default(value="") | escape }}",
-        "item": "{{ page.permalink }}"
+        "name": "{{ page.title | default(value='') | escape }}",
+        "item": {
+          "@type": "WebPage",
+          "@id": "{{ page.permalink }}",
+          "url": "{{ page.permalink }}",
+          "name": "{{ page.title | default(value='') | escape }}"
+        }
       }
     {% elif section %}
       {% for ancestor in section.ancestors %}
@@ -214,15 +255,25 @@
         ,{
           "@type": "ListItem",
           "position": {{ loop.index + 1 }},
-          "name": "{{ ancestor_section.title | default(value="") | escape }}",
-          "item": "{{ ancestor_section.permalink }}"
+          "name": "{{ ancestor_section.title | default(value='') | escape }}",
+          "item": {
+            "@type": "WebPage",
+            "@id": "{{ ancestor_section.permalink }}",
+            "url": "{{ ancestor_section.permalink }}",
+            "name": "{{ ancestor_section.title | default(value='') | escape }}"
+          }
         }
       {% endfor %}
       ,{
         "@type": "ListItem",
         "position": {{ section.ancestors | length + 2 }},
-        "name": "{{ section.title | default(value="") | escape }}",
-        "item": "{{ section.permalink }}"
+        "name": "{{ section.title | default(value='') | escape }}",
+        "item": {
+          "@type": "WebPage",
+          "@id": "{{ section.permalink }}",
+          "url": "{{ section.permalink }}",
+          "name": "{{ section.title | default(value='') | escape }}"
+        }
       }
     {% endif %}
   ]

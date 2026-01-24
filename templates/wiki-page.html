@@ -78,11 +78,18 @@
                     </div>
                     {% endif %}
 
-                    <!-- Management Summary/TLDR - Optimized for AI extraction -->
+                    <!-- Quick Answer / Management Summary - Optimized for AI extraction and voice assistants -->
                     {% if page.extra.summary or page.description %}
-                    <div class="wiki__summary" data-ai-summary="true" aria-label="Quick summary">
-                        <div class="wiki__summary-label">Summary</div>
-                        <div class="wiki__summary-content wiki__tldr">
+                    <div class="wiki__summary quick-answer" data-ai-summary="true" data-ai-answer="true" aria-label="Quick summary" itemprop="abstract">
+                        <div class="wiki__summary-label">
+                            <svg class="wiki__summary-icon" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true">
+                                <circle cx="12" cy="12" r="10"></circle>
+                                <path d="M12 16v-4"></path>
+                                <path d="M12 8h.01"></path>
+                            </svg>
+                            Quick Answer
+                        </div>
+                        <div class="wiki__summary-content wiki__tldr" data-speakable="true">
                             {{ page.extra.summary |
                             default(value=page.description) | markdown | safe }}
                         </div>
@@ -115,7 +122,11 @@
 
                 <!-- Page Content -->
                 {% if page.content %}
-                <div class="wiki__content">{{ page.content | safe }}</div>
+                <div class="wiki__content" data-ai-definition="true" itemscope itemtype="https://schema.org/DefinedTerm">
+                    <meta itemprop="name" content="{{ page.title }}">
+                    <meta itemprop="description" content="{{ page.description | default(value='') }}">
+                    {{ page.content | safe }}
+                </div>
                 {% endif %}
 
                 <!-- See Also Section -->
@@ -191,9 +202,9 @@
 
                 <!-- References Section -->
                 {% if page.extra.references %}
-                <section class="wiki__references" role="doc-endnotes" aria-label="References and citations">
+                <section class="wiki__references" role="doc-endnotes" aria-label="References and citations" data-ai-cite="true">
                     <h2 class="wiki__section-title" id="references-heading">References</h2>
-                    <ol class="wiki__reference-list">
+                    <ol class="wiki__reference-list" itemscope itemtype="https://schema.org/ItemList">
                         {% for ref in page.extra.references %}
                         <li
                             class="wiki__reference-item"

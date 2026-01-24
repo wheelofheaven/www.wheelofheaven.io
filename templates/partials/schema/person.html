@@ -1,0 +1,76 @@
+<!-- Schema.org Person - Author E-E-A-T signals for better search visibility -->
+{% if page.extra.author_info %}
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "Person",
+  "@id": "{{ config.base_url }}/#person-{{ page.extra.author_info.id | default(value=page.extra.author | slugify) }}",
+  "name": "{{ page.extra.author_info.name | default(value=page.extra.author) | escape }}",
+  {% if page.extra.author_info.url %}
+  "url": "{{ page.extra.author_info.url }}",
+  {% endif %}
+  {% if page.extra.author_info.image %}
+  "image": {
+    "@type": "ImageObject",
+    "url": "{{ get_url(path=page.extra.author_info.image) }}",
+    "width": 200,
+    "height": 200
+  },
+  {% endif %}
+  {% if page.extra.author_info.job_title %}
+  "jobTitle": "{{ page.extra.author_info.job_title | escape }}",
+  {% endif %}
+  {% if page.extra.author_info.description %}
+  "description": "{{ page.extra.author_info.description | escape }}",
+  {% endif %}
+  "worksFor": {
+    "@type": "Organization",
+    "@id": "{{ config.extra.organization_id | default(value=config.base_url ~ '/#organization') }}",
+    "name": "{{ config.title }}"
+  },
+  {% if page.extra.author_info.same_as %}
+  "sameAs": [
+    {% for link in page.extra.author_info.same_as %}
+    "{{ link }}"{% if not loop.last %},{% endif %}
+    {% endfor %}
+  ],
+  {% endif %}
+  {% if page.extra.author_info.knows_about %}
+  "knowsAbout": [
+    {% for topic in page.extra.author_info.knows_about %}
+    "{{ topic }}"{% if not loop.last %},{% endif %}
+    {% endfor %}
+  ],
+  {% endif %}
+  {% if page.extra.author_info.credentials %}
+  "hasCredential": [
+    {% for credential in page.extra.author_info.credentials %}
+    {
+      "@type": "EducationalOccupationalCredential",
+      "name": "{{ credential | escape }}"
+    }{% if not loop.last %},{% endif %}
+    {% endfor %}
+  ],
+  {% endif %}
+  "memberOf": {
+    "@type": "Organization",
+    "@id": "{{ config.extra.organization_id | default(value=config.base_url ~ '/#organization') }}"
+  }
+}
+</script>
+{% elif page.extra.author %}
+<!-- Simplified Person schema for basic author attribution -->
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "Person",
+  "@id": "{{ config.base_url }}/#person-{{ page.extra.author | slugify }}",
+  "name": "{{ page.extra.author | escape }}",
+  "worksFor": {
+    "@type": "Organization",
+    "@id": "{{ config.extra.organization_id | default(value=config.base_url ~ '/#organization') }}",
+    "name": "{{ config.title }}"
+  }
+}
+</script>
+{% endif %}

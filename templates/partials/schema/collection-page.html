@@ -1,0 +1,85 @@
+<!-- Schema.org CollectionPage - For section index pages (wiki, timeline, library) -->
+{% if section %}
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "CollectionPage",
+  "@id": "{{ section.permalink }}#collection",
+  "name": "{{ section.title | escape }}",
+  "description": "{% if section.description %}{{ section.description | escape }}{% else %}Collection of {{ section.title | escape }} content{% endif %}",
+  "url": "{{ section.permalink }}",
+  {% if section.extra.image %}
+  "image": {
+    "@type": "ImageObject",
+    "url": "{{ get_url(path=section.extra.image) }}"
+  },
+  {% endif %}
+  "inLanguage": "{{ detected_lang | default(value='en') }}",
+  "isPartOf": {
+    "@type": "WebSite",
+    "@id": "{{ config.base_url }}/#website"
+  },
+  "publisher": {
+    "@type": "Organization",
+    "@id": "{{ config.extra.organization_id | default(value=config.base_url ~ '/#organization') }}"
+  },
+  {% if section.pages %}
+  "mainEntity": {
+    "@type": "ItemList",
+    "name": "{{ section.title | escape }} Contents",
+    "description": "Complete list of {{ section.title | escape }} entries",
+    "numberOfItems": {{ section.pages | length }},
+    "itemListOrder": "https://schema.org/ItemListOrderAscending",
+    "itemListElement": [
+      {% for item_page in section.pages | slice(end=50) %}
+      {
+        "@type": "ListItem",
+        "position": {{ loop.index }},
+        "name": "{{ item_page.title | escape }}",
+        "url": "{{ item_page.permalink }}",
+        "item": {
+          "@type": "{% if current_path is containing('/wiki/') %}DefinedTerm{% elif current_path is containing('/timeline/') %}Event{% elif current_path is containing('/library/') %}Book{% else %}Article{% endif %}",
+          "@id": "{{ item_page.permalink }}",
+          "name": "{{ item_page.title | escape }}",
+          "description": "{{ item_page.description | default(value='') | escape | truncate(length=150) }}",
+          "url": "{{ item_page.permalink }}"
+        }
+      }{% if not loop.last %},{% endif %}
+      {% endfor %}
+    ]
+  },
+  {% endif %}
+  {% if section.subsections %}
+  "hasPart": [
+    {% for subsection_path in section.subsections %}
+      {% set subsection = get_section(path=subsection_path) %}
+    {
+      "@type": "CollectionPage",
+      "name": "{{ subsection.title | escape }}",
+      "url": "{{ subsection.permalink }}",
+      "description": "{{ subsection.description | default(value='') | escape | truncate(length=150) }}"
+    }{% if not loop.last %},{% endif %}
+    {% endfor %}
+  ],
+  {% endif %}
+  "breadcrumb": {
+    "@type": "BreadcrumbList",
+    "itemListElement": [
+      {
+        "@type": "ListItem",
+        "position": 1,
+        "name": "Home",
+        "item": "{{ config.base_url }}"
+      },
+      {
+        "@type": "ListItem",
+        "position": 2,
+        "name": "{{ section.title | escape }}",
+        "item": "{{ section.permalink }}"
+      }
+    ]
+  },
+  "isAccessibleForFree": true
+}
+</script>
+{% endif %}

@@ -1,0 +1,51 @@
+<!-- Schema.org DefinedTermSet - Encyclopedia/Glossary container for Wiki section -->
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "DefinedTermSet",
+  "@id": "{{ config.base_url }}/{{ detected_lang | default(value='en') }}/wiki/#term-set",
+  "name": "Wheel of Heaven Wiki",
+  "alternateName": ["Wheel of Heaven Encyclopedia", "WoH Glossary"],
+  "description": "Encyclopedia of concepts, figures, and themes related to the hypothesis that life on Earth was created by an extraterrestrial civilization known as the Elohim. Covers ancient astronaut theory, Raelism, biblical exegesis, and cosmic chronology.",
+  "url": "{{ get_url(path='wiki/', lang=detected_lang) }}",
+  "inLanguage": "{{ detected_lang | default(value='en') }}",
+  "publisher": {
+    "@type": "Organization",
+    "@id": "{{ config.extra.organization_id | default(value=config.base_url ~ '/#organization') }}"
+  },
+  "license": "https://creativecommons.org/publicdomain/zero/1.0/",
+  "isAccessibleForFree": true,
+  {% if section and section.pages %}
+  "hasDefinedTerm": [
+    {% for wiki_page in section.pages %}
+    {
+      "@type": "DefinedTerm",
+      "@id": "{{ wiki_page.permalink }}",
+      "name": "{{ wiki_page.title | escape }}",
+      "description": "{{ wiki_page.description | default(value='') | escape | truncate(length=200) }}",
+      "url": "{{ wiki_page.permalink }}"
+    }{% if not loop.last %},{% endif %}
+    {% endfor %}
+  ],
+  "numberOfItems": {{ section.pages | length }},
+  {% endif %}
+  "about": [
+    {
+      "@type": "Thing",
+      "name": "Ancient Astronaut Theory"
+    },
+    {
+      "@type": "Thing",
+      "name": "Raelism"
+    },
+    {
+      "@type": "Thing",
+      "name": "Elohim"
+    },
+    {
+      "@type": "Thing",
+      "name": "Extraterrestrial Hypothesis"
+    }
+  ]
+}
+</script>

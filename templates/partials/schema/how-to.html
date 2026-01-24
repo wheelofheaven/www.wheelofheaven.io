@@ -1,0 +1,76 @@
+<!-- Schema.org HowTo - For step-by-step guides and tutorials -->
+{% if page.extra.steps or page.extra.howto %}
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "HowTo",
+  "@id": "{{ current_url | safe }}#howto",
+  "name": "{{ page.title | escape }}",
+  "description": "{% if page.description %}{{ page.description | escape }}{% elif page.extra.tldr %}{{ page.extra.tldr | escape }}{% else %}A guide to understanding {{ page.title | escape }}{% endif %}",
+  "url": "{{ current_url | safe }}",
+  {% if page.date %}
+  "datePublished": "{{ page.date | date(format='%Y-%m-%dT%H:%M:%S') }}+00:00",
+  {% endif %}
+  {% if page.updated %}
+  "dateModified": "{{ page.updated | date(format='%Y-%m-%dT%H:%M:%S') }}+00:00",
+  {% endif %}
+  {% if page.extra.image or page.extra.header_image %}
+  "image": {
+    "@type": "ImageObject",
+    "url": "{{ get_url(path=page.extra.image | default(value=page.extra.header_image)) }}"
+  },
+  {% endif %}
+  {% if page.reading_time %}
+  "totalTime": "PT{{ page.reading_time }}M",
+  "performTime": "PT{{ page.reading_time }}M",
+  {% endif %}
+  "inLanguage": "{{ detected_lang | default(value='en') }}",
+  {% if page.extra.steps %}
+  "step": [
+    {% for step in page.extra.steps %}
+    {
+      "@type": "HowToStep",
+      "position": {{ loop.index }},
+      "name": "{{ step.name | escape }}",
+      "text": "{{ step.text | escape }}",
+      "url": "{{ current_url | safe }}#step-{{ loop.index }}"
+      {% if step.image %},
+      "image": "{{ get_url(path=step.image) }}"
+      {% endif %}
+    }{% if not loop.last %},{% endif %}
+    {% endfor %}
+  ],
+  {% endif %}
+  {% if page.extra.tools %}
+  "tool": [
+    {% for tool in page.extra.tools %}
+    {
+      "@type": "HowToTool",
+      "name": "{{ tool | escape }}"
+    }{% if not loop.last %},{% endif %}
+    {% endfor %}
+  ],
+  {% endif %}
+  {% if page.extra.supplies %}
+  "supply": [
+    {% for supply in page.extra.supplies %}
+    {
+      "@type": "HowToSupply",
+      "name": "{{ supply | escape }}"
+    }{% if not loop.last %},{% endif %}
+    {% endfor %}
+  ],
+  {% endif %}
+  "author": {
+    "@type": "{{ config.extra.author_type | default(value='Organization') }}",
+    "name": "{% if page.extra.author %}{{ page.extra.author | escape }}{% else %}{{ config.extra.author | default(value=config.title) | escape }}{% endif %}",
+    "@id": "{{ config.extra.organization_id | default(value=config.base_url ~ '/#organization') }}"
+  },
+  "publisher": {
+    "@type": "Organization",
+    "@id": "{{ config.extra.organization_id | default(value=config.base_url ~ '/#organization') }}"
+  },
+  "isAccessibleForFree": true
+}
+</script>
+{% endif %}
