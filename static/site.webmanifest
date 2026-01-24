@@ -1,7 +1,8 @@
 {
   "name": "Wheel of Heaven",
   "short_name": "WoH",
-  "description": "Wheel of Heaven is a public knowledge hub that threads Raëlian scriptures, world myth, and modern genomics into a critical, citation-rich narrative about humanity’s potential engineered origin. Read concise primers, explore annotated source texts, and explore the lore all transparent, open-source, and free.",
+  "description": "Wheel of Heaven is a public knowledge hub that threads Raëlian scriptures, world myth, and modern genomics into a critical, citation-rich narrative about humanity's potential engineered origin. Read concise primers, explore annotated source texts, and explore the lore all transparent, open-source, and free.",
+  "version": "1.0.0",
   "start_url": "/",
   "scope": "/",
   "id": "/",
