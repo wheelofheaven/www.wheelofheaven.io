@@ -57,13 +57,16 @@
     const triggers = document.querySelectorAll('.navbar__ask-ai-trigger');
     const services = document.querySelectorAll('.ask-ai-panel__service');
 
-    // AI service URLs
+    // AI service URLs (perplexity supports query params)
     const serviceUrls = {
         claude: 'https://claude.ai/new',
         chatgpt: 'https://chat.openai.com/',
-        perplexity: 'https://www.perplexity.ai/',
+        perplexity: 'https://www.perplexity.ai/search',
         gemini: 'https://gemini.google.com/app'
     };
+
+    // Services that support URL query parameters
+    const supportsUrlQuery = ['perplexity'];
 
     // Build the prompt with page context
     function buildPrompt() {
@@ -170,6 +173,20 @@ What would you like to know about this page?`;
 
     // Handle service click
     async function handleServiceClick(service) {
+        const prompt = buildPrompt();
+
+        // Perplexity supports URL query params - open directly with prompt
+        if (supportsUrlQuery.includes(service)) {
+            const url = `${serviceUrls[service]}?q=${encodeURIComponent(prompt)}`;
+            status.textContent = 'Opening with prompt...';
+            status.className = 'ask-ai-panel__status ask-ai-panel__status--success';
+            setTimeout(() => {
+                window.open(url, '_blank', 'noopener,noreferrer');
+            }, 200);
+            return;
+        }
+
+        // For other services, copy to clipboard first
         const copied = await copyPrompt();
 
         if (copied) {
