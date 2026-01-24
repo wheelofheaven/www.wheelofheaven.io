@@ -1,5 +1,6 @@
 base_url = "https://www.wheelofheaven.io"
 default_language = "en"
+theme = "bifrost"
 title = "Wheel of Heaven"
 description = "The democratization of the Age of Aquarius starts here. Wheel of Heaven is a knowledge base exploring the working hypothesis that life on Earth was intelligently designed by an extraterrestrial civilization, the so-called Elohim."
 compile_sass = true
@@ -18,6 +19,7 @@ author = "Wheel of Heaven"
 author_type = "Organization"
 twitter_username = "wheelofheaven"
 logo = "brand/logo.png"
+cdn_url = "https://assets.wheelofheaven.io"
 # analytics_domain = "analytics.domain.com"
 social_links = ["https://x.com/wheelofheaven", "https://github.com/wheelofheaven", "https://t.me/wheelofheaven"]
 

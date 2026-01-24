@@ -4,3 +4,6 @@
 [submodule "content"]
 	path = content
 	url = git@github.com:wheelofheaven/data-content.git
+[submodule "themes/bifrost"]
+	path = themes/bifrost
+	url = https://github.com/wheelofheaven/bifrost.git
