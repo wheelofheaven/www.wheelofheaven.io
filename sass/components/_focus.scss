@@ -1,0 +1,158 @@
+// Focus Indicators
+//
+// Consistent, visible focus styles for keyboard navigation accessibility.
+// Uses :focus-visible to only show focus ring for keyboard users.
+
+// Global focus styles for all interactive elements
+a,
+button,
+input,
+select,
+textarea,
+[tabindex]:not([tabindex="-1"]),
+[role="button"],
+[role="link"],
+[role="menuitem"],
+[role="tab"] {
+    // Remove default outline for mouse users
+    &:focus {
+        outline: none;
+    }
+
+    // Show focus ring only for keyboard navigation
+    &:focus-visible {
+        outline: 2px solid var(--color-focus);
+        outline-offset: 2px;
+    }
+}
+
+// Special handling for elements that need inner focus
+input,
+select,
+textarea {
+    &:focus-visible {
+        outline-offset: 0;
+        box-shadow: 0 0 0 2px var(--color-focus);
+    }
+}
+
+// Links within text content - subtle underline focus
+.wiki__content,
+.resources__content,
+.explainer__content,
+.essentials__content,
+.library-book__content {
+    a:focus-visible {
+        outline: none;
+        background-color: rgba(var(--color-focus-rgb, 102, 126, 234), 0.15);
+        border-radius: 2px;
+        box-decoration-break: clone;
+    }
+}
+
+// Cards and clickable containers
+.search-result,
+.related-content__card,
+.wiki-section__card,
+.resources-section__card,
+.explainer-section__card,
+.essentials-section__card {
+    &:focus-visible {
+        outline: 2px solid var(--color-focus);
+        outline-offset: 2px;
+        box-shadow: 0 0 0 4px rgba(var(--color-focus-rgb, 102, 126, 234), 0.2);
+    }
+}
+
+// Navigation items - highlight background
+.navbar__link,
+.navbar-dropdown__link,
+.footer a {
+    &:focus-visible {
+        outline: 2px solid var(--color-focus);
+        outline-offset: 2px;
+        background-color: var(--color-hover);
+        border-radius: 0.375rem;
+    }
+}
+
+// Buttons - accent ring
+.btn,
+.button,
+[class*="__btn"] {
+    &:focus-visible {
+        outline: 2px solid var(--color-focus);
+        outline-offset: 2px;
+    }
+}
+
+// TOC links
+.wiki__toc-link,
+.resources__toc-link,
+.explainer__toc-link,
+.library-book__toc-link {
+    &:focus-visible {
+        outline: 2px solid var(--color-focus);
+        outline-offset: 1px;
+        border-radius: 0.25rem;
+    }
+}
+
+// Filter chips and tags
+.search-filter-chip,
+.search-suggestion,
+[class*="__tag"],
+[class*="__chip"] {
+    &:focus-visible {
+        outline: 2px solid var(--color-focus);
+        outline-offset: 2px;
+    }
+}
+
+// Modal close buttons
+[class*="__close"],
+.modal__close {
+    &:focus-visible {
+        outline: 2px solid var(--color-focus);
+        outline-offset: 2px;
+        border-radius: 0.5rem;
+    }
+}
+
+// Social share buttons
+.social-share__btn {
+    &:focus-visible {
+        outline: 2px solid var(--color-focus);
+        outline-offset: 2px;
+    }
+}
+
+// Skip links (already styled in base, but ensure consistency)
+.skip-links__link {
+    &:focus {
+        outline: none;
+        background: var(--color-accent-primary);
+        color: white;
+        box-shadow: 0 0 0 2px var(--color-accent-secondary);
+    }
+}
+
+// High contrast mode support
+@media (prefers-contrast: high) {
+    a:focus-visible,
+    button:focus-visible,
+    input:focus-visible,
+    select:focus-visible,
+    textarea:focus-visible,
+    [tabindex]:not([tabindex="-1"]):focus-visible {
+        outline: 3px solid currentColor;
+        outline-offset: 2px;
+    }
+}
+
+// Reduced motion - simpler focus without transitions
+@media (prefers-reduced-motion: reduce) {
+    *:focus-visible {
+        transition: none;
+    }
+}

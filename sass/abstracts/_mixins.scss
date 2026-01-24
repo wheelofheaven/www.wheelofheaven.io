@@ -3,6 +3,30 @@
 // A mixin is a reusable block of styles that can include logic (like conditions or loops)
 // and output one or more declarations.
 
+// Focus ring mixin - consistent focus indicator
+@mixin focus-ring($offset: 2px, $color: var(--color-focus)) {
+    outline: 2px solid $color;
+    outline-offset: $offset;
+}
+
+// Focus visible mixin - only shows for keyboard navigation
+@mixin focus-visible($offset: 2px, $color: var(--color-focus)) {
+    &:focus {
+        outline: none;
+    }
+
+    &:focus-visible {
+        @include focus-ring($offset, $color);
+    }
+}
+
+// Focus ring with background highlight (for subtle elements)
+@mixin focus-ring-highlight($color: var(--color-focus)) {
+    outline: 2px solid $color;
+    outline-offset: 2px;
+    background-color: var(--color-hover);
+}
+
 // Center element absolutely (unused)
 @mixin center-absolute {
     position: absolute;
