@@ -19,13 +19,14 @@ class NavbarDropdown {
   }
 
   initDropdowns() {
-    // Find all dropdown elements
+    // Find all dropdown trigger elements
     const dropdownElements = document.querySelectorAll(".navbar__dropdown");
 
     dropdownElements.forEach((element) => {
       const trigger = element.querySelector(".navbar__dropdown-trigger");
-      const dropdown = element.querySelector(".navbar-dropdown");
       const dropdownId = element.dataset.dropdown;
+      // Dropdown panels are now outside navbar, find by ID
+      const dropdown = document.getElementById(`${dropdownId}-dropdown`);
 
       if (trigger && dropdown && dropdownId) {
         this.dropdowns.set(dropdownId, {

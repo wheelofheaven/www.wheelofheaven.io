@@ -25,7 +25,7 @@
             >
                 {{ trans(key="navbarTimeline", lang=detected_lang) }}
             </a>
-            <!-- Knowledge Dropdown -->
+            <!-- Knowledge Dropdown Trigger -->
             <div class="navbar__dropdown" data-dropdown="knowledge" role="navigation" aria-label="Knowledge section">
                 <button
                     class="navbar__dropdown-trigger{% if current_path and (current_path is starting_with('/wiki') or current_path is starting_with('/explainers') or current_path is starting_with('/resources') or current_path is starting_with('/library')) %} navbar__dropdown-trigger--active{% endif %}"
@@ -40,178 +40,9 @@
                         {% include "partials/icons/chevron-down.html" %}
                     </span>
                 </button>
-                <div
-                    class="navbar-dropdown navbar-dropdown--knowledge"
-                    id="knowledge-dropdown"
-                >
-                    <div class="navbar-dropdown__container">
-                        <div class="navbar-dropdown__content">
-                            <div class="navbar-dropdown__section">
-                                <h3 class="navbar-dropdown__section-title">
-                                    <span class="navbar-dropdown__section-icon">
-                                        {% include
-                                        "partials/icons/book-open.html" %}
-                                    </span>
-                                    <span data-navbar-key="knowledge"
-                                        >{{ trans(key="navbarKnowledge",
-                                        lang=detected_lang) }}</span
-                                    >
-                                </h3>
-                                <div class="navbar-dropdown__links">
-                                    <a
-                                        href="{{ get_url(path='explainers', lang=detected_lang) }}"
-                                        class="navbar-dropdown__link"
-                                    >
-                                        <span
-                                            class="navbar-dropdown__link-icon"
-                                        >
-                                            {% include
-                                            "partials/icons/help-circle.html" %}
-                                        </span>
-                                        <div>
-                                            <div
-                                                class="navbar-dropdown__link-title"
-                                            >
-                                                <span
-                                                    data-navbar-key="explainers"
-                                                    >{{
-                                                    trans(key="navbarExplainers",
-                                                    lang=detected_lang) }}</span
-                                                >
-                                                <span
-                                                    class="navbar-dropdown__link-arrow"
-                                                >
-                                                    {% include
-                                                    "partials/icons/arrow-right.html"
-                                                    %}
-                                                </span>
-                                            </div>
-                                            <div
-                                                class="navbar-dropdown__link-description"
-                                                data-navbar-key="explainersDesc"
-                                            >
-                                                {{
-                                                trans(key="navbarExplainersDesc",
-                                                lang=detected_lang) }}
-                                            </div>
-                                        </div>
-                                    </a>
-                                    <a
-                                        href="{{ get_url(path='library', lang=detected_lang) }}"
-                                        class="navbar-dropdown__link"
-                                    >
-                                        <span
-                                            class="navbar-dropdown__link-icon"
-                                        >
-                                            {% include
-                                            "partials/icons/ph-scroll-light.html"
-                                            %}
-                                        </span>
-                                        <div>
-                                            <div
-                                                class="navbar-dropdown__link-title"
-                                            >
-                                                <span data-navbar-key="library"
-                                                    >{{
-                                                    trans(key="navbarLibrary",
-                                                    lang=detected_lang) }}</span
-                                                >
-                                                <span
-                                                    class="navbar-dropdown__link-arrow"
-                                                >
-                                                    {% include
-                                                    "partials/icons/arrow-right.html"
-                                                    %}
-                                                </span>
-                                            </div>
-                                            <div
-                                                class="navbar-dropdown__link-description"
-                                                data-navbar-key="libraryDesc"
-                                            >
-                                                {{
-                                                trans(key="navbarLibraryDesc",
-                                                lang=detected_lang) }}
-                                            </div>
-                                        </div>
-                                    </a>
-                                    <a
-                                        href="{{ get_url(path='wiki', lang=detected_lang) }}"
-                                        class="navbar-dropdown__link"
-                                    >
-                                        <span
-                                            class="navbar-dropdown__link-icon"
-                                        >
-                                            {% include
-                                            "partials/icons/book.html" %}
-                                        </span>
-                                        <div>
-                                            <div
-                                                class="navbar-dropdown__link-title"
-                                            >
-                                                <span data-navbar-key="wiki"
-                                                    >{{ trans(key="navbarWiki",
-                                                    lang=detected_lang) }}</span
-                                                >
-                                                <span
-                                                    class="navbar-dropdown__link-arrow"
-                                                >
-                                                    {% include
-                                                    "partials/icons/arrow-right.html"
-                                                    %}
-                                                </span>
-                                            </div>
-                                            <div
-                                                class="navbar-dropdown__link-description"
-                                                data-navbar-key="wikiDesc"
-                                            >
-                                                {{ trans(key="navbarWikiDesc",
-                                                lang=detected_lang) }}
-                                            </div>
-                                        </div>
-                                    </a>
-                                    <a
-                                        href="{{ get_url(path='resources', lang=detected_lang) }}"
-                                        class="navbar-dropdown__link"
-                                    >
-                                        <span
-                                            class="navbar-dropdown__link-icon"
-                                        >
-                                            {% include
-                                            "partials/icons/feather-archive.html" %}
-                                        </span>
-                                        <div>
-                                            <div
-                                                class="navbar-dropdown__link-title"
-                                            >
-                                                <span data-navbar-key="resourcesNav"
-                                                    >{{ trans(key="navbarResourcesNav",
-                                                    lang=detected_lang) }}</span
-                                                >
-                                                <span
-                                                    class="navbar-dropdown__link-arrow"
-                                                >
-                                                    {% include
-                                                    "partials/icons/arrow-right.html"
-                                                    %}
-                                                </span>
-                                            </div>
-                                            <div
-                                                class="navbar-dropdown__link-description"
-                                                data-navbar-key="resourcesNavDesc"
-                                            >
-                                                {{ trans(key="navbarResourcesNavDesc",
-                                                lang=detected_lang) }}
-                                            </div>
-                                        </div>
-                                    </a>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
             </div>
 
-            <!-- Community Dropdown -->
+            <!-- Community Dropdown Trigger -->
             <div class="navbar__dropdown" data-dropdown="community" role="navigation" aria-label="Community section">
                 <button
                     class="navbar__dropdown-trigger{% if current_path and (current_path is starting_with('/about') or current_path is starting_with('/faq') or current_path is starting_with('/contributing')) %} navbar__dropdown-trigger--active{% endif %}"
@@ -226,199 +57,6 @@
                         {% include "partials/icons/chevron-down.html" %}
                     </span>
                 </button>
-                <div
-                    class="navbar-dropdown navbar-dropdown--community"
-                    id="community-dropdown"
-                >
-                    <div class="navbar-dropdown__container">
-                        <div class="navbar-dropdown__content">
-                            <div class="navbar-dropdown__columns">
-                                <div class="navbar-dropdown__section">
-                                    <h3 class="navbar-dropdown__section-title">
-                                        <span
-                                            class="navbar-dropdown__section-icon"
-                                        >
-                                            {% include
-                                            "partials/icons/fluent-building-bank.html"
-                                            %}
-                                        </span>
-                                        <span data-navbar-key="org"
-                                            >{{ trans(key="navbarResourcesOrg",
-                                            lang=detected_lang) }}</span
-                                        >
-                                    </h3>
-                                    <div class="navbar-dropdown__links">
-                                        <a
-                                            href="{{ get_url(path='about', lang=detected_lang) }}"
-                                            class="navbar-dropdown__link navbar-dropdown__link--simple"
-                                        >
-                                            <span
-                                                class="navbar-dropdown__link-icon"
-                                            >
-                                                {% include
-                                                "partials/icons/famicons-telescope-outline.html"
-                                                %}
-                                            </span>
-                                            <span data-navbar-key="about"
-                                                >{{ trans(key="navbarAbout",
-                                                lang=detected_lang) }}</span
-                                            >
-                                            <span
-                                                class="navbar-dropdown__link-arrow"
-                                            >
-                                                {% include
-                                                "partials/icons/arrow-right.html"
-                                                %}
-                                            </span>
-                                        </a>
-                                    </div>
-                                </div>
-                                <div class="navbar-dropdown__section">
-                                    <h3 class="navbar-dropdown__section-title">
-                                        <span
-                                            class="navbar-dropdown__section-icon"
-                                        >
-                                            {% include
-                                            "partials/icons/user-check.html" %}
-                                        </span>
-                                        <span data-navbar-key="community"
-                                            >{{
-                                            trans(key="navbarResourcesCommunity",
-                                            lang=detected_lang) }}</span
-                                        >
-                                    </h3>
-                                    <div class="navbar-dropdown__links">
-                                        <a
-                                            href="{{ get_url(path='code-of-conduct', lang=detected_lang) }}"
-                                            class="navbar-dropdown__link navbar-dropdown__link--simple"
-                                        >
-                                            <span
-                                                class="navbar-dropdown__link-icon"
-                                            >
-                                                {% include
-                                                "partials/icons/octicon-code-of-conduct.html"
-                                                %}
-                                            </span>
-                                            <span
-                                                data-navbar-key="codeOfConduct"
-                                                >{{
-                                                trans(key="navbarCodeOfConduct",
-                                                lang=detected_lang) }}</span
-                                            >
-                                            <span
-                                                class="navbar-dropdown__link-arrow"
-                                            >
-                                                {% include
-                                                "partials/icons/arrow-right.html"
-                                                %}
-                                            </span>
-                                        </a>
-                                        <a
-                                            href="{{ get_url(path='contributing', lang=detected_lang) }}"
-                                            class="navbar-dropdown__link navbar-dropdown__link--simple"
-                                        >
-                                            <span
-                                                class="navbar-dropdown__link-icon"
-                                            >
-                                                {% include
-                                                "partials/icons/user-plus.html"
-                                                %}
-                                            </span>
-                                            <span data-navbar-key="contributing"
-                                                >{{
-                                                trans(key="navbarContributing",
-                                                lang=detected_lang) }}</span
-                                            >
-                                            <span
-                                                class="navbar-dropdown__link-arrow"
-                                            >
-                                                {% include
-                                                "partials/icons/arrow-right.html"
-                                                %}
-                                            </span>
-                                        </a>
-                                        <a
-                                            href="{{ get_url(path='forums', lang=detected_lang) }}"
-                                            class="navbar-dropdown__link navbar-dropdown__link--simple"
-                                        >
-                                            <span
-                                                class="navbar-dropdown__link-icon"
-                                            >
-                                                {% include
-                                                "partials/icons/message-square.html"
-                                                %}
-                                            </span>
-                                            <span data-navbar-key="forums"
-                                                >{{ trans(key="navbarForums",
-                                                lang=detected_lang) }}</span
-                                            >
-                                            <span
-                                                class="navbar-dropdown__link-arrow"
-                                            >
-                                                {% include
-                                                "partials/icons/arrow-right.html"
-                                                %}
-                                            </span>
-                                        </a>
-                                        <a
-                                            href="{{ get_url(path='faq', lang=detected_lang) }}"
-                                            class="navbar-dropdown__link navbar-dropdown__link--simple"
-                                        >
-                                            <span
-                                                class="navbar-dropdown__link-icon"
-                                            >
-                                                {% include
-                                                "partials/icons/tdesign-questionnaire-double.html"
-                                                %}
-                                            </span>
-                                            <span data-navbar-key="faq"
-                                                >{{ trans(key="navbarFAQ",
-                                                lang=detected_lang) }}</span
-                                            >
-                                            <span
-                                                class="navbar-dropdown__link-arrow"
-                                            >
-                                                {% include
-                                                "partials/icons/arrow-right.html"
-                                                %}
-                                            </span>
-                                        </a>
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="navbar-dropdown__bottom-section">
-                                <div class="navbar-dropdown__section">
-                                    <div class="navbar-dropdown__links">
-                                        <a
-                                            href="https://x.com/wheelofheaven"
-                                            class="navbar-dropdown__link navbar-dropdown__link--simple"
-                                            target="_blank"
-                                            rel="noopener noreferrer"
-                                        >
-                                            <span
-                                                class="navbar-dropdown__link-icon"
-                                            >
-                                                {% include
-                                                "partials/icons/twitter.html" %}
-                                            </span>
-                                            <span data-navbar-key="followX"
-                                                >{{ trans(key="navbarFollowX",
-                                                lang=detected_lang) }}</span
-                                            >
-                                            <span
-                                                class="navbar-dropdown__link-arrow"
-                                            >
-                                                {% include
-                                                "partials/icons/arrow-right.html"
-                                                %}
-                                            </span>
-                                        </a>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
             </div>
         </div>
 
@@ -974,3 +612,146 @@
         </script>
     </div>
 </nav>
+
+<!-- Dropdown panels (outside navbar for proper backdrop-filter) -->
+<div class="navbar-dropdown navbar-dropdown--knowledge" id="knowledge-dropdown">
+    <div class="navbar-dropdown__container">
+        <div class="navbar-dropdown__content">
+            <div class="navbar-dropdown__section">
+                <h3 class="navbar-dropdown__section-title">
+                    <span class="navbar-dropdown__section-icon">
+                        {% include "partials/icons/book-open.html" %}
+                    </span>
+                    <span data-navbar-key="knowledge">{{ trans(key="navbarKnowledge", lang=detected_lang) }}</span>
+                </h3>
+                <div class="navbar-dropdown__links">
+                    <a href="{{ get_url(path='explainers', lang=detected_lang) }}" class="navbar-dropdown__link">
+                        <span class="navbar-dropdown__link-icon">
+                            {% include "partials/icons/help-circle.html" %}
+                        </span>
+                        <div>
+                            <div class="navbar-dropdown__link-title">
+                                <span data-navbar-key="explainers">{{ trans(key="navbarExplainers", lang=detected_lang) }}</span>
+                                <span class="navbar-dropdown__link-arrow">{% include "partials/icons/arrow-right.html" %}</span>
+                            </div>
+                            <div class="navbar-dropdown__link-description" data-navbar-key="explainersDesc">{{ trans(key="navbarExplainersDesc", lang=detected_lang) }}</div>
+                        </div>
+                    </a>
+                    <a href="{{ get_url(path='library', lang=detected_lang) }}" class="navbar-dropdown__link">
+                        <span class="navbar-dropdown__link-icon">
+                            {% include "partials/icons/ph-scroll-light.html" %}
+                        </span>
+                        <div>
+                            <div class="navbar-dropdown__link-title">
+                                <span data-navbar-key="library">{{ trans(key="navbarLibrary", lang=detected_lang) }}</span>
+                                <span class="navbar-dropdown__link-arrow">{% include "partials/icons/arrow-right.html" %}</span>
+                            </div>
+                            <div class="navbar-dropdown__link-description" data-navbar-key="libraryDesc">{{ trans(key="navbarLibraryDesc", lang=detected_lang) }}</div>
+                        </div>
+                    </a>
+                    <a href="{{ get_url(path='wiki', lang=detected_lang) }}" class="navbar-dropdown__link">
+                        <span class="navbar-dropdown__link-icon">
+                            {% include "partials/icons/book.html" %}
+                        </span>
+                        <div>
+                            <div class="navbar-dropdown__link-title">
+                                <span data-navbar-key="wiki">{{ trans(key="navbarWiki", lang=detected_lang) }}</span>
+                                <span class="navbar-dropdown__link-arrow">{% include "partials/icons/arrow-right.html" %}</span>
+                            </div>
+                            <div class="navbar-dropdown__link-description" data-navbar-key="wikiDesc">{{ trans(key="navbarWikiDesc", lang=detected_lang) }}</div>
+                        </div>
+                    </a>
+                    <a href="{{ get_url(path='resources', lang=detected_lang) }}" class="navbar-dropdown__link">
+                        <span class="navbar-dropdown__link-icon">
+                            {% include "partials/icons/feather-archive.html" %}
+                        </span>
+                        <div>
+                            <div class="navbar-dropdown__link-title">
+                                <span data-navbar-key="resourcesNav">{{ trans(key="navbarResourcesNav", lang=detected_lang) }}</span>
+                                <span class="navbar-dropdown__link-arrow">{% include "partials/icons/arrow-right.html" %}</span>
+                            </div>
+                            <div class="navbar-dropdown__link-description" data-navbar-key="resourcesNavDesc">{{ trans(key="navbarResourcesNavDesc", lang=detected_lang) }}</div>
+                        </div>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+<div class="navbar-dropdown navbar-dropdown--community" id="community-dropdown">
+    <div class="navbar-dropdown__container">
+        <div class="navbar-dropdown__content">
+            <div class="navbar-dropdown__columns">
+                <div class="navbar-dropdown__section">
+                    <h3 class="navbar-dropdown__section-title">
+                        <span class="navbar-dropdown__section-icon">
+                            {% include "partials/icons/fluent-building-bank.html" %}
+                        </span>
+                        <span data-navbar-key="org">{{ trans(key="navbarResourcesOrg", lang=detected_lang) }}</span>
+                    </h3>
+                    <div class="navbar-dropdown__links">
+                        <a href="{{ get_url(path='about', lang=detected_lang) }}" class="navbar-dropdown__link navbar-dropdown__link--simple">
+                            <span class="navbar-dropdown__link-icon">
+                                {% include "partials/icons/famicons-telescope-outline.html" %}
+                            </span>
+                            <span data-navbar-key="about">{{ trans(key="navbarAbout", lang=detected_lang) }}</span>
+                            <span class="navbar-dropdown__link-arrow">{% include "partials/icons/arrow-right.html" %}</span>
+                        </a>
+                    </div>
+                </div>
+                <div class="navbar-dropdown__section">
+                    <h3 class="navbar-dropdown__section-title">
+                        <span class="navbar-dropdown__section-icon">
+                            {% include "partials/icons/user-check.html" %}
+                        </span>
+                        <span data-navbar-key="community">{{ trans(key="navbarResourcesCommunity", lang=detected_lang) }}</span>
+                    </h3>
+                    <div class="navbar-dropdown__links">
+                        <a href="{{ get_url(path='code-of-conduct', lang=detected_lang) }}" class="navbar-dropdown__link navbar-dropdown__link--simple">
+                            <span class="navbar-dropdown__link-icon">
+                                {% include "partials/icons/octicon-code-of-conduct.html" %}
+                            </span>
+                            <span data-navbar-key="codeOfConduct">{{ trans(key="navbarCodeOfConduct", lang=detected_lang) }}</span>
+                            <span class="navbar-dropdown__link-arrow">{% include "partials/icons/arrow-right.html" %}</span>
+                        </a>
+                        <a href="{{ get_url(path='contributing', lang=detected_lang) }}" class="navbar-dropdown__link navbar-dropdown__link--simple">
+                            <span class="navbar-dropdown__link-icon">
+                                {% include "partials/icons/user-plus.html" %}
+                            </span>
+                            <span data-navbar-key="contributing">{{ trans(key="navbarContributing", lang=detected_lang) }}</span>
+                            <span class="navbar-dropdown__link-arrow">{% include "partials/icons/arrow-right.html" %}</span>
+                        </a>
+                        <a href="{{ get_url(path='forums', lang=detected_lang) }}" class="navbar-dropdown__link navbar-dropdown__link--simple">
+                            <span class="navbar-dropdown__link-icon">
+                                {% include "partials/icons/message-square.html" %}
+                            </span>
+                            <span data-navbar-key="forums">{{ trans(key="navbarForums", lang=detected_lang) }}</span>
+                            <span class="navbar-dropdown__link-arrow">{% include "partials/icons/arrow-right.html" %}</span>
+                        </a>
+                        <a href="{{ get_url(path='faq', lang=detected_lang) }}" class="navbar-dropdown__link navbar-dropdown__link--simple">
+                            <span class="navbar-dropdown__link-icon">
+                                {% include "partials/icons/tdesign-questionnaire-double.html" %}
+                            </span>
+                            <span data-navbar-key="faq">{{ trans(key="navbarFAQ", lang=detected_lang) }}</span>
+                            <span class="navbar-dropdown__link-arrow">{% include "partials/icons/arrow-right.html" %}</span>
+                        </a>
+                    </div>
+                </div>
+            </div>
+            <div class="navbar-dropdown__bottom-section">
+                <div class="navbar-dropdown__section">
+                    <div class="navbar-dropdown__links">
+                        <a href="https://x.com/wheelofheaven" class="navbar-dropdown__link navbar-dropdown__link--simple" target="_blank" rel="noopener noreferrer">
+                            <span class="navbar-dropdown__link-icon">
+                                {% include "partials/icons/twitter.html" %}
+                            </span>
+                            <span data-navbar-key="followX">{{ trans(key="navbarFollowX", lang=detected_lang) }}</span>
+                            <span class="navbar-dropdown__link-arrow">{% include "partials/icons/arrow-right.html" %}</span>
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
