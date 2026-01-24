@@ -35,38 +35,44 @@
     }
 }
 
-// Audio Player - Fixed bottom bar (SoundCloud style)
+// Audio Player - Floating bottom bar (SoundCloud style)
 .audio-player {
     position: fixed;
-    bottom: 0;
-    left: 0;
-    right: 0;
+    bottom: 1rem;
+    left: 50%;
     z-index: 100;
-    transform: translateY(100%);
+    width: calc(100% - 2rem);
+    max-width: 800px;
+    transform: translate(-50%, calc(100% + 2rem));
     transition: transform 0.3s cubic-bezier(0.4, 0, 0.2, 1);
 
     // Glassmorphism background
     background-color: var(--color-navbar-bg);
     backdrop-filter: blur(20px) saturate(180%);
     -webkit-backdrop-filter: blur(20px) saturate(180%);
-    border-top: 1px solid var(--color-hairline);
-    box-shadow: 0 -4px 20px rgba(0, 0, 0, 0.15);
+    border: 1px solid var(--color-hairline);
+    border-radius: 1rem;
+    box-shadow: 0 4px 24px rgba(0, 0, 0, 0.2);
+
+    @media (max-width: 640px) {
+        bottom: 0.75rem;
+        width: calc(100% - 1.5rem);
+        border-radius: 0.75rem;
+    }
 
     &--visible {
-        transform: translateY(0);
+        transform: translate(-50%, 0);
     }
 
     &__container {
         display: flex;
         align-items: center;
-        gap: 1rem;
-        max-width: 1400px;
-        margin: 0 auto;
-        padding: 0.75rem 1.5rem;
+        gap: 0.75rem;
+        padding: 0.5rem 1rem;
 
         @media (max-width: 768px) {
-            gap: 0.75rem;
-            padding: 0.75rem 1rem;
+            gap: 0.5rem;
+            padding: 0.5rem 0.75rem;
         }
     }
 
@@ -75,8 +81,8 @@
         display: flex;
         align-items: center;
         justify-content: center;
-        width: 44px;
-        height: 44px;
+        width: 36px;
+        height: 36px;
         background-color: var(--color-accent-primary);
         color: var(--color-background);
         border: none;
@@ -95,8 +101,8 @@
         }
 
         @media (max-width: 768px) {
-            width: 40px;
-            height: 40px;
+            width: 32px;
+            height: 32px;
         }
     }
 
@@ -104,8 +110,8 @@
         display: none;
 
         svg {
-            width: 20px;
-            height: 20px;
+            width: 16px;
+            height: 16px;
         }
 
         &--play {
@@ -232,8 +238,8 @@
         display: flex;
         align-items: center;
         justify-content: center;
-        width: 36px;
-        height: 36px;
+        width: 28px;
+        height: 28px;
         background: transparent;
         color: var(--color-text-muted);
         border: none;
@@ -248,17 +254,17 @@
         }
 
         svg {
-            width: 18px;
-            height: 18px;
+            width: 16px;
+            height: 16px;
         }
 
         @media (max-width: 768px) {
-            width: 32px;
-            height: 32px;
+            width: 24px;
+            height: 24px;
 
             svg {
-                width: 16px;
-                height: 16px;
+                width: 14px;
+                height: 14px;
             }
         }
     }
@@ -266,10 +272,10 @@
 
 // Add padding to body when player is visible
 body.has-audio-player {
-    padding-bottom: 70px;
+    padding-bottom: 80px;
 
     @media (max-width: 768px) {
-        padding-bottom: 64px;
+        padding-bottom: 70px;
     }
 }
 
