@@ -19,9 +19,11 @@
     max-width: calc(100vw - 2rem);
     opacity: 0;
     visibility: hidden;
-    transform: translateX(-50%) translateY(-8px);
     transition: opacity 0.2s ease, visibility 0.2s ease, transform 0.2s ease;
     pointer-events: none;
+
+    // Default: positioned above the link (fallback), arrow at bottom
+    transform: translateX(-50%) translateY(-8px);
 
     &--visible {
         opacity: 1;
@@ -30,6 +32,7 @@
         pointer-events: auto;
     }
 
+    // When positioned below the link (default behavior), arrow at top
     &--bottom {
         transform: translateX(-50%) translateY(8px);
 
@@ -40,7 +43,11 @@
         .glossary-tooltip__arrow {
             bottom: auto;
             top: -6px;
-            transform: translateX(-50%) rotate(180deg);
+
+            &::before {
+                top: auto;
+                bottom: -5px;
+            }
         }
     }
 

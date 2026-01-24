@@ -78,11 +78,12 @@ A roadmap of potential improvements to make wheelofheaven.io more modern, access
 - Native Web Share API on mobile
 - Floating or inline placement options
 
-### [ ] RSS/Atom Feeds
-- Main site feed for all updates
-- Per-section feeds (wiki, explainers, resources)
-- JSON Feed format option
-- Helps with content syndication
+### [x] RSS/Atom Feeds ✓
+- **Implemented:** Main site feeds at `/atom.xml` and `/rss.xml`
+- **Implemented:** Per-section feeds (wiki, resources, essentials, explainers)
+- **Implemented:** Feed autodiscovery links in HTML head
+- **Implemented:** Per-language feeds for all supported languages
+- Footer already links to main feed
 
 ### [ ] Newsletter Signup
 - Email capture for updates
@@ -184,9 +185,9 @@ A roadmap of potential improvements to make wheelofheaven.io more modern, access
 3. Social share buttons - Standard component
 
 ### Medium Effort
-4. RSS/Atom feeds - Zola supports this
+4. ~~RSS/Atom feeds - Zola supports this~~ ✓
 5. Keyboard shortcuts - JavaScript addition
-6. Glossary tooltips - Requires term detection
+6. ~~Glossary tooltips - Requires term detection~~ ✓
 
 ### Larger Projects
 7. Offline PWA mode - Service worker complexity
@@ -205,4 +206,4 @@ A roadmap of potential improvements to make wheelofheaven.io more modern, access
 
 ---
 
-*Last updated: 2026-01-24*
+*Last updated: 2026-01-24 (RSS/Atom feeds added)*

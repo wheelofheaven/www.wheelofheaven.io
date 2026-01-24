@@ -92,7 +92,12 @@
     async function getDefinition(href) {
         // Normalize href
         const url = new URL(href, window.location.origin);
-        const path = url.pathname;
+        let path = url.pathname;
+
+        // Handle old URL format: /wiki/encyclopedia/slug/ -> /wiki/slug/
+        if (path.includes('/wiki/encyclopedia/')) {
+            path = path.replace('/wiki/encyclopedia/', '/wiki/');
+        }
 
         // Check cache
         if (definitionCache.has(path)) {
@@ -150,20 +155,20 @@
 
     function positionTooltip(link) {
         const linkRect = link.getBoundingClientRect();
-        const tooltipRect = tooltip.getBoundingClientRect();
+        const tooltipHeight = 120; // Approximate tooltip height
         const padding = 10;
 
-        // Position above the link by default
-        let top = linkRect.top - padding;
+        // Position below the link by default
+        let top = linkRect.bottom + padding;
         let left = linkRect.left + (linkRect.width / 2);
 
-        // Adjust if too close to top
-        if (top - tooltipRect.height < padding) {
-            // Position below instead
-            top = linkRect.bottom + padding;
-            tooltip.classList.add('glossary-tooltip--bottom');
-        } else {
+        // Check if tooltip would go below viewport
+        if (top + tooltipHeight > window.innerHeight - padding) {
+            // Position above instead
+            top = linkRect.top - padding;
             tooltip.classList.remove('glossary-tooltip--bottom');
+        } else {
+            tooltip.classList.add('glossary-tooltip--bottom');
         }
 
         // Adjust horizontal position to stay in viewport
