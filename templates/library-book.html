@@ -5,12 +5,13 @@
 {% block content %}
 {% set book_slug = page.slug %}
 {% set book_data = load_data(path="data/library/" ~ book_slug ~ ".json") %}
+{% set catalog = load_data(path="data/library/catalog.json") %}
 
 {% if book_data %}
 <!-- Book Schema for Library Pages -->
 {% include "partials/schema/book.html" %}
 
-<div class="library-book">
+<div class="library-book" data-book-slug="{{ book_slug }}" data-book-code="{{ book_data.code | default(value='') }}">
     <!-- Breadcrumb Navigation -->
     {{ breadcrumbs::library(book_title=library_macros::get_book_title(book_data=book_data, lang=detected_lang), lang=detected_lang) }}
 
@@ -129,6 +130,40 @@
                             </svg>
                             <span>Split</span>
                         </button>
+
+                        <!-- Settings Button -->
+                        <button id="reader-settings-btn" class="library-book__btn library-book__btn--secondary" title="Reader Settings (Shift+?)" aria-label="Open reader settings">
+                            <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true">
+                                <circle cx="12" cy="12" r="3"></circle>
+                                <path d="M19.4 15a1.65 1.65 0 0 0 .33 1.82l.06.06a2 2 0 0 1 0 2.83 2 2 0 0 1-2.83 0l-.06-.06a1.65 1.65 0 0 0-1.82-.33 1.65 1.65 0 0 0-1 1.51V21a2 2 0 0 1-2 2 2 2 0 0 1-2-2v-.09A1.65 1.65 0 0 0 9 19.4a1.65 1.65 0 0 0-1.82.33l-.06.06a2 2 0 0 1-2.83 0 2 2 0 0 1 0-2.83l.06-.06a1.65 1.65 0 0 0 .33-1.82 1.65 1.65 0 0 0-1.51-1H3a2 2 0 0 1-2-2 2 2 0 0 1 2-2h.09A1.65 1.65 0 0 0 4.6 9a1.65 1.65 0 0 0-.33-1.82l-.06-.06a2 2 0 0 1 0-2.83 2 2 0 0 1 2.83 0l.06.06a1.65 1.65 0 0 0 1.82.33H9a1.65 1.65 0 0 0 1-1.51V3a2 2 0 0 1 2-2 2 2 0 0 1 2 2v.09a1.65 1.65 0 0 0 1 1.51 1.65 1.65 0 0 0 1.82-.33l.06-.06a2 2 0 0 1 2.83 0 2 2 0 0 1 0 2.83l-.06.06a1.65 1.65 0 0 0-.33 1.82V9a1.65 1.65 0 0 0 1.51 1H21a2 2 0 0 1 2 2 2 2 0 0 1-2 2h-.09a1.65 1.65 0 0 0-1.51 1z"></path>
+                            </svg>
+                            <span class="desktop-only">Settings</span>
+                        </button>
+                    </div>
+                </div>
+
+                <!-- Settings Panel (hidden by default) -->
+                <div id="reader-settings-panel" class="library-book__settings-panel hidden">
+                    <div class="library-book__settings-section">
+                        <h4 class="library-book__settings-title">Font Size</h4>
+                        <div class="library-book__settings-options">
+                            <button data-font-size="small" class="library-book__settings-btn">A</button>
+                            <button data-font-size="medium" class="library-book__settings-btn active">A</button>
+                            <button data-font-size="large" class="library-book__settings-btn">A</button>
+                            <button data-font-size="x-large" class="library-book__settings-btn">A</button>
+                        </div>
+                    </div>
+                    <div class="library-book__settings-section">
+                        <h4 class="library-book__settings-title">Theme</h4>
+                        <div class="library-book__settings-options">
+                            <button data-reader-theme="auto" class="library-book__settings-btn active">Auto</button>
+                            <button data-reader-theme="light" class="library-book__settings-btn">Light</button>
+                            <button data-reader-theme="sepia" class="library-book__settings-btn">Sepia</button>
+                            <button data-reader-theme="dark" class="library-book__settings-btn">Dark</button>
+                        </div>
+                    </div>
+                    <div class="library-book__settings-section">
+                        <p class="library-book__settings-hint">Press <kbd>?</kbd> for keyboard shortcuts</p>
                     </div>
                 </div>
 
@@ -145,7 +180,7 @@
 
                         <div class="library-book__text" id="text-content-{{ chapter.n }}">
                             {% for paragraph in chapter.paragraphs %}
-                            <div class="library-book__paragraph" id="c{{ chapter.n }}p{{ paragraph.n }}" onclick="selectParagraph('c{{ chapter.n }}p{{ paragraph.n }}')">
+                            <div class="library-book__paragraph" id="c{{ chapter.n }}p{{ paragraph.n }}" data-ref-id="{{ paragraph.refId | default(value='') }}" onclick="selectParagraph('c{{ chapter.n }}p{{ paragraph.n }}')">
                                 <div class="library-book__para-num">{{ paragraph.n }}</div>
                                 <div class="library-book__para-content">
                                     {% set has_translation = paragraph.i18n and paragraph.i18n[lang] %}
@@ -186,6 +221,73 @@
                         </svg>
                     </button>
                 </nav>
+
+                <!-- Related Books Section -->
+                {% set_global current_book_entry = false %}
+                {% for book_entry in catalog.books %}
+                    {% if book_entry.slug == book_slug %}
+                        {% set_global current_book_entry = book_entry %}
+                    {% endif %}
+                {% endfor %}
+
+                {% if current_book_entry %}
+                {% set_global related_books = [] %}
+                {% for book_entry in catalog.books %}
+                    {% if book_entry.slug != book_slug and book_entry.status == "complete" %}
+                        {% if book_entry.tradition == current_book_entry.tradition or book_entry.collection == current_book_entry.collection %}
+                            {% set_global related_books = related_books | concat(with=[book_entry]) %}
+                        {% endif %}
+                    {% endif %}
+                {% endfor %}
+
+                {% if related_books | length > 0 %}
+                <aside class="library-book__related">
+                    <h2 class="library-book__related-title">
+                        <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                            <path d="M4 19.5A2.5 2.5 0 0 1 6.5 17H20"></path>
+                            <path d="M6.5 2H20v20H6.5A2.5 2.5 0 0 1 4 19.5v-15A2.5 2.5 0 0 1 6.5 2z"></path>
+                        </svg>
+                        Related Books
+                    </h2>
+                    <div class="library-book__related-grid">
+                        {% for related in related_books | slice(end=4) %}
+                        {% set related_book_data = load_data(path="data/library/" ~ related.slug ~ ".json", required=false) %}
+                        <a href="{{ get_url(path='library/' ~ related.slug) }}" class="library-book__related-card">
+                            <div class="library-book__related-code">{{ related.code }}</div>
+                            <h3 class="library-book__related-name">
+                                {% if related_book_data and related_book_data.titles and related_book_data.titles[detected_lang] %}
+                                    {{ related_book_data.titles[detected_lang] }}
+                                {% elif related_book_data and related_book_data.titles and related_book_data.titles["en"] %}
+                                    {{ related_book_data.titles["en"] }}
+                                {% else %}
+                                    {{ related.slug | replace(from="-", to=" ") | title }}
+                                {% endif %}
+                            </h3>
+                            <div class="library-book__related-meta">
+                                {% if related.author %}
+                                <span class="library-book__related-author">{{ related.author }}</span>
+                                {% endif %}
+                                {% if related.chapters > 0 %}
+                                <span class="library-book__related-chapters">{{ related.chapters }} chapters</span>
+                                {% endif %}
+                            </div>
+                            {% for tradition in catalog.traditions %}
+                                {% if tradition.id == related.tradition %}
+                                <div class="library-book__related-tradition">
+                                    {% if tradition.name[detected_lang] %}
+                                        {{ tradition.name[detected_lang] }}
+                                    {% else %}
+                                        {{ tradition.name["en"] }}
+                                    {% endif %}
+                                </div>
+                                {% endif %}
+                            {% endfor %}
+                        </a>
+                        {% endfor %}
+                    </div>
+                </aside>
+                {% endif %}
+                {% endif %}
 
                 <!-- Back to Library -->
                 <div class="library-book__back">
@@ -481,5 +583,11 @@ document.addEventListener('DOMContentLoaded', function() {
     }
 });
 </script>
+
+<!-- Library Reader Scripts -->
+<script src="{{ get_url(path='js/library-storage.js') }}"></script>
+<script src="{{ get_url(path='js/library-reader.js') }}"></script>
+<script src="{{ get_url(path='js/library-study-tools.js') }}"></script>
+<script src="{{ get_url(path='js/library-search.js') }}"></script>
 
 {% endblock content %}
