@@ -1,0 +1,212 @@
+<!-- Keyboard Shortcuts -->
+<div class="keyboard-shortcuts-modal" id="keyboardShortcutsModal" role="dialog" aria-labelledby="shortcutsTitle" aria-hidden="true">
+    <div class="keyboard-shortcuts-modal__backdrop"></div>
+    <div class="keyboard-shortcuts-modal__content">
+        <header class="keyboard-shortcuts-modal__header">
+            <h2 class="keyboard-shortcuts-modal__title" id="shortcutsTitle">{{ trans(key="keyboardShortcuts", default="Keyboard Shortcuts") }}</h2>
+            <button class="keyboard-shortcuts-modal__close" aria-label="Close" data-close-shortcuts>
+                <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                    <line x1="18" y1="6" x2="6" y2="18"></line>
+                    <line x1="6" y1="6" x2="18" y2="18"></line>
+                </svg>
+            </button>
+        </header>
+        <div class="keyboard-shortcuts-modal__body">
+            <section class="keyboard-shortcuts-modal__section">
+                <h3 class="keyboard-shortcuts-modal__section-title">{{ trans(key="shortcutsNavigation", default="Navigation") }}</h3>
+                <ul class="keyboard-shortcuts-modal__list">
+                    <li class="keyboard-shortcuts-modal__item">
+                        <span class="keyboard-shortcuts-modal__keys">
+                            <kbd>j</kbd>
+                        </span>
+                        <span class="keyboard-shortcuts-modal__desc">{{ trans(key="shortcutsNextArticle", default="Next article") }}</span>
+                    </li>
+                    <li class="keyboard-shortcuts-modal__item">
+                        <span class="keyboard-shortcuts-modal__keys">
+                            <kbd>k</kbd>
+                        </span>
+                        <span class="keyboard-shortcuts-modal__desc">{{ trans(key="shortcutsPrevArticle", default="Previous article") }}</span>
+                    </li>
+                    <li class="keyboard-shortcuts-modal__item">
+                        <span class="keyboard-shortcuts-modal__keys">
+                            <kbd>h</kbd>
+                        </span>
+                        <span class="keyboard-shortcuts-modal__desc">{{ trans(key="shortcutsHome", default="Go to home") }}</span>
+                    </li>
+                </ul>
+            </section>
+            <section class="keyboard-shortcuts-modal__section">
+                <h3 class="keyboard-shortcuts-modal__section-title">{{ trans(key="shortcutsActions", default="Actions") }}</h3>
+                <ul class="keyboard-shortcuts-modal__list">
+                    <li class="keyboard-shortcuts-modal__item">
+                        <span class="keyboard-shortcuts-modal__keys">
+                            <kbd>/</kbd>
+                        </span>
+                        <span class="keyboard-shortcuts-modal__desc">{{ trans(key="shortcutsSearch", default="Open search") }}</span>
+                    </li>
+                    <li class="keyboard-shortcuts-modal__item">
+                        <span class="keyboard-shortcuts-modal__keys">
+                            <kbd>Esc</kbd>
+                        </span>
+                        <span class="keyboard-shortcuts-modal__desc">{{ trans(key="shortcutsClose", default="Close modal / panel") }}</span>
+                    </li>
+                    <li class="keyboard-shortcuts-modal__item">
+                        <span class="keyboard-shortcuts-modal__keys">
+                            <kbd>?</kbd>
+                        </span>
+                        <span class="keyboard-shortcuts-modal__desc">{{ trans(key="shortcutsHelp", default="Show this help") }}</span>
+                    </li>
+                </ul>
+            </section>
+        </div>
+        <footer class="keyboard-shortcuts-modal__footer">
+            <p class="keyboard-shortcuts-modal__hint">{{ trans(key="shortcutsHint", default="Press any key to close") }}</p>
+        </footer>
+    </div>
+</div>
+
+<script>
+(function() {
+    const modal = document.getElementById('keyboardShortcutsModal');
+    if (!modal) return;
+
+    const backdrop = modal.querySelector('.keyboard-shortcuts-modal__backdrop');
+    const closeBtn = modal.querySelector('[data-close-shortcuts]');
+
+    // Get navigation links for j/k
+    function getArticleLinks() {
+        // Look for prev/next links in navigation
+        const prevLink = document.querySelector('.essentials__nav-link--prev, .wiki__nav-prev, [rel="prev"], a[href*="prev"]');
+        const nextLink = document.querySelector('.essentials__nav-link--next, .wiki__nav-next, [rel="next"], a[href*="next"]');
+
+        // Or get links from section listing
+        const articleLinks = Array.from(document.querySelectorAll(
+            '.wiki-section__link, .resources-section__link, .essentials-section__link, .explainer-section__link'
+        ));
+
+        return { prevLink, nextLink, articleLinks };
+    }
+
+    // Find current page in article list and navigate
+    function navigateArticle(direction) {
+        const { prevLink, nextLink, articleLinks } = getArticleLinks();
+
+        // Try explicit prev/next links first
+        if (direction === 'next' && nextLink) {
+            nextLink.click();
+            return;
+        }
+        if (direction === 'prev' && prevLink) {
+            prevLink.click();
+            return;
+        }
+
+        // Fall back to finding current in list
+        if (articleLinks.length > 0) {
+            const currentPath = window.location.pathname;
+            const currentIndex = articleLinks.findIndex(link =>
+                link.getAttribute('href') === currentPath ||
+                link.href === window.location.href
+            );
+
+            if (currentIndex !== -1) {
+                const targetIndex = direction === 'next' ? currentIndex + 1 : currentIndex - 1;
+                if (targetIndex >= 0 && targetIndex < articleLinks.length) {
+                    articleLinks[targetIndex].click();
+                }
+            }
+        }
+    }
+
+    function openModal() {
+        modal.classList.add('keyboard-shortcuts-modal--open');
+        modal.setAttribute('aria-hidden', 'false');
+        document.body.style.overflow = 'hidden';
+    }
+
+    function closeModal() {
+        modal.classList.remove('keyboard-shortcuts-modal--open');
+        modal.setAttribute('aria-hidden', 'true');
+        document.body.style.overflow = '';
+    }
+
+    function isModalOpen() {
+        return modal.classList.contains('keyboard-shortcuts-modal--open');
+    }
+
+    function isInputFocused() {
+        const active = document.activeElement;
+        const tagName = active?.tagName?.toLowerCase();
+        return tagName === 'input' || tagName === 'textarea' || active?.isContentEditable;
+    }
+
+    function isAnyModalOpen() {
+        // Check for search modal, ask-ai panel, or other modals
+        const searchModal = document.querySelector('.search-modal--open, .search-modal.is-open');
+        const askAiPanel = document.querySelector('.ask-ai__panel--open');
+        return searchModal || askAiPanel || isModalOpen();
+    }
+
+    // Open search modal
+    function openSearch() {
+        const searchBtn = document.querySelector('.navbar__search-btn, [data-search-toggle], .search-toggle');
+        if (searchBtn) {
+            searchBtn.click();
+        }
+    }
+
+    // Global keyboard handler
+    document.addEventListener('keydown', (e) => {
+        // Always handle Escape to close modals
+        if (e.key === 'Escape') {
+            if (isModalOpen()) {
+                closeModal();
+                e.preventDefault();
+            }
+            return;
+        }
+
+        // If shortcuts modal is open, close on any key
+        if (isModalOpen()) {
+            closeModal();
+            e.preventDefault();
+            return;
+        }
+
+        // Don't trigger shortcuts when typing in inputs
+        if (isInputFocused()) return;
+
+        // Don't trigger if another modal is open
+        if (isAnyModalOpen()) return;
+
+        // Don't trigger with modifier keys (except Shift for ?)
+        if (e.ctrlKey || e.metaKey || e.altKey) return;
+
+        switch (e.key) {
+            case '/':
+                e.preventDefault();
+                openSearch();
+                break;
+            case '?':
+                e.preventDefault();
+                openModal();
+                break;
+            case 'j':
+                navigateArticle('next');
+                break;
+            case 'k':
+                navigateArticle('prev');
+                break;
+            case 'h':
+                // Go home - respect current language
+                const lang = document.documentElement.lang || 'en';
+                window.location.href = lang === 'en' ? '/' : `/${lang}/`;
+                break;
+        }
+    });
+
+    // Close modal handlers
+    backdrop?.addEventListener('click', closeModal);
+    closeBtn?.addEventListener('click', closeModal);
+})();
+</script>

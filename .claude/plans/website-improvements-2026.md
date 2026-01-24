@@ -133,11 +133,14 @@ A roadmap of potential improvements to make wheelofheaven.io more modern, access
 
 ## Accessibility
 
-### [ ] Keyboard Shortcuts
-- `j`/`k` for next/previous article
-- `/` to focus search
-- `?` to show shortcut help
-- `Escape` to close modals
+### [x] Keyboard Shortcuts ✓
+- **Implemented:** `/` to open search
+- **Implemented:** `?` to show shortcut help modal
+- **Implemented:** `Escape` to close modals/panels
+- **Implemented:** `j`/`k` for next/previous article navigation
+- **Implemented:** `h` to go home
+- Hidden on touch devices (no keyboard)
+- Translations for all 9 languages
 
 ### [ ] Font Size Controls
 - User-adjustable text size
@@ -187,7 +190,7 @@ A roadmap of potential improvements to make wheelofheaven.io more modern, access
 
 ### Medium Effort
 4. ~~RSS/Atom feeds - Zola supports this~~ ✓
-5. Keyboard shortcuts - JavaScript addition
+5. ~~Keyboard shortcuts - JavaScript addition~~ ✓
 6. ~~Glossary tooltips - Requires term detection~~ ✓
 
 ### Larger Projects
@@ -207,4 +210,4 @@ A roadmap of potential improvements to make wheelofheaven.io more modern, access
 
 ---
 
-*Last updated: 2026-01-24 (Social share buttons added)*
+*Last updated: 2026-01-24 (Keyboard shortcuts added)*
