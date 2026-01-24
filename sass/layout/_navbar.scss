@@ -197,7 +197,7 @@ body.mobile-nav-open {
 
     &__search {
         position: absolute;
-        right: 12rem; // Position to left of language switcher and theme toggle
+        right: 14.5rem; // Position to left of language switcher, theme toggle, and Ask AI
         top: 50%;
         transform: translateY(-50%);
         display: flex;
