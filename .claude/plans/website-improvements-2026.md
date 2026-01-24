@@ -36,10 +36,12 @@ A roadmap of potential improvements to make wheelofheaven.io more modern, access
 
 ## Content Features
 
-### [ ] Reading Progress Indicator
+### [x] Reading Progress Indicator ✓
 - Thin bar at top of page showing scroll progress
 - Helps users know how much content remains
-- Simple to implement, nice UX
+- **Implemented:** `partials/reading-progress.html` included in base.html
+- Shows gradient accent color bar, fades in after 100px scroll
+- Only visible on content pages (wiki, explainer, essentials, resources, etc.)
 
 ### [ ] Highlight & Share
 - Select text to get sharing options

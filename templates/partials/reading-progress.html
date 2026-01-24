@@ -1,0 +1,64 @@
+<!-- Reading Progress Indicator -->
+<div class="reading-progress" id="readingProgress" aria-hidden="true">
+    <div class="reading-progress__bar" id="readingProgressBar"></div>
+</div>
+
+<script>
+(function() {
+    const progress = document.getElementById('readingProgress');
+    const bar = document.getElementById('readingProgressBar');
+
+    if (!progress || !bar) return;
+
+    // Only show on content pages
+    const contentSelectors = [
+        '.wiki__content',
+        '.explainer__content',
+        '.essentials__content',
+        '.resources__content',
+        '.library__content',
+        '.info-page__content',
+        'article'
+    ];
+
+    const hasContent = contentSelectors.some(sel => document.querySelector(sel));
+    if (!hasContent) {
+        progress.style.display = 'none';
+        return;
+    }
+
+    let ticking = false;
+
+    function updateProgress() {
+        const scrollTop = window.scrollY;
+        const docHeight = document.documentElement.scrollHeight - window.innerHeight;
+
+        if (docHeight <= 0) {
+            bar.style.width = '0%';
+            return;
+        }
+
+        const scrollPercent = Math.min((scrollTop / docHeight) * 100, 100);
+        bar.style.width = `${scrollPercent}%`;
+
+        // Show/hide based on scroll position
+        if (scrollTop > 100) {
+            progress.classList.add('reading-progress--visible');
+        } else {
+            progress.classList.remove('reading-progress--visible');
+        }
+
+        ticking = false;
+    }
+
+    window.addEventListener('scroll', () => {
+        if (!ticking) {
+            requestAnimationFrame(updateProgress);
+            ticking = true;
+        }
+    }, { passive: true });
+
+    // Initial update
+    updateProgress();
+})();
+</script>

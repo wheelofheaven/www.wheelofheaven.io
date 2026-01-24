@@ -1,0 +1,38 @@
+// Reading Progress Indicator
+// Thin bar at top of page showing scroll progress
+
+.reading-progress {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    height: 3px;
+    z-index: 200;
+    pointer-events: none;
+    opacity: 0;
+    transition: opacity 0.3s ease;
+
+    &--visible {
+        opacity: 1;
+    }
+
+    &__bar {
+        height: 100%;
+        width: 0%;
+        background: linear-gradient(
+            90deg,
+            var(--color-accent-primary),
+            var(--color-accent-secondary, var(--color-accent-primary))
+        );
+        border-radius: 0 2px 2px 0;
+        transition: width 0.1s linear;
+        box-shadow: 0 0 8px rgba(var(--color-accent-primary-rgb, 255, 200, 87), 0.5);
+    }
+}
+
+// Hide on print
+@media print {
+    .reading-progress {
+        display: none !important;
+    }
+}
