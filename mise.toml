@@ -20,6 +20,15 @@ description = "Compile site statically with Zola"
 depends = ["bundle"]
 run = "zola build"
 
+[tasks.purgecss]
+description = "Remove unused CSS from built files"
+run = "cd themes/bifrost && npm run purgecss"
+
+[tasks.build-prod]
+description = "Production build with CSS purging"
+depends = ["build", "purgecss"]
+run = "echo 'Production build complete'"
+
 [tasks.serve]
 description = "Run dev server (live reload)"
 run = "zola serve --port 1199 --interface 0.0.0.0 --base-url http://localhost:1199 --no-port-append --open"
