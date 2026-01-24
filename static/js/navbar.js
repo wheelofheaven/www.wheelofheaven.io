@@ -144,11 +144,8 @@ class NavbarDropdown {
       "navbar-dropdown--align-right",
     );
 
-    // Reset inline positioning styles
-    dropdownData.dropdown.style.top = '';
-    dropdownData.dropdown.style.left = '';
-    dropdownData.dropdown.style.right = '';
-    dropdownData.dropdown.style.transform = '';
+    // Don't reset inline positioning styles - let the animation complete
+    // Styles will be overwritten when dropdown opens again
 
     // Remove modal open class if no dropdowns are open
     if (!this.hasOpenDropdowns()) {
