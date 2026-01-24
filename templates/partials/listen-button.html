@@ -1,61 +1,89 @@
-<!-- Listen Button - Text-to-Speech using Web Speech API -->
-<div class="listen-button" id="listenButton">
-    <button
-        class="listen-button__trigger"
-        id="listenTrigger"
-        aria-label="Listen to this page"
-        title="Listen to this page"
-    >
-        <span class="listen-button__icon listen-button__icon--play">
+<!-- Listen Button - Trigger -->
+<button
+    class="listen-trigger"
+    id="listenTrigger"
+    aria-label="Listen to this page"
+    title="Listen to this page"
+>
+    <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+        <polygon points="5 3 19 12 5 21 5 3"/>
+    </svg>
+    <span>Listen</span>
+</button>
+
+<!-- Audio Player Bar - Fixed at bottom (SoundCloud style) -->
+<div class="audio-player" id="audioPlayer" aria-hidden="true">
+    <div class="audio-player__container">
+        <!-- Play/Pause -->
+        <button class="audio-player__play" id="audioPlayPause" aria-label="Play">
+            <span class="audio-player__icon audio-player__icon--play">
+                <svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor">
+                    <polygon points="5 3 19 12 5 21 5 3"/>
+                </svg>
+            </span>
+            <span class="audio-player__icon audio-player__icon--pause">
+                <svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor">
+                    <rect x="6" y="4" width="4" height="16"/>
+                    <rect x="14" y="4" width="4" height="16"/>
+                </svg>
+            </span>
+        </button>
+
+        <!-- Time & Progress -->
+        <span class="audio-player__time audio-player__time--current" id="audioTimeCurrent">0:00</span>
+
+        <div class="audio-player__progress" id="audioProgress">
+            <div class="audio-player__progress-bg"></div>
+            <div class="audio-player__progress-fill" id="audioProgressFill"></div>
+            <div class="audio-player__progress-handle" id="audioProgressHandle"></div>
+        </div>
+
+        <span class="audio-player__time audio-player__time--total" id="audioTimeTotal">0:00</span>
+
+        <!-- Title -->
+        <div class="audio-player__title" id="audioTitle">
+            <span class="audio-player__title-text"></span>
+        </div>
+
+        <!-- Close -->
+        <button class="audio-player__close" id="audioClose" aria-label="Stop and close">
             <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
-                <polygon points="5 3 19 12 5 21 5 3"/>
+                <line x1="18" y1="6" x2="6" y2="18"></line>
+                <line x1="6" y1="6" x2="18" y2="18"></line>
             </svg>
-        </span>
-        <span class="listen-button__icon listen-button__icon--pause">
-            <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
-                <rect x="6" y="4" width="4" height="16"/>
-                <rect x="14" y="4" width="4" height="16"/>
-            </svg>
-        </span>
-        <span class="listen-button__icon listen-button__icon--loading">
-            <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
-                <path d="M12 2v4M12 18v4M4.93 4.93l2.83 2.83M16.24 16.24l2.83 2.83M2 12h4M18 12h4M4.93 19.07l2.83-2.83M16.24 7.76l2.83-2.83"/>
-            </svg>
-        </span>
-        <span class="listen-button__label">Listen</span>
-    </button>
-    <button
-        class="listen-button__stop"
-        id="listenStop"
-        aria-label="Stop listening"
-        title="Stop"
-    >
-        <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
-            <rect x="3" y="3" width="18" height="18" rx="2" ry="2"/>
-        </svg>
-    </button>
+        </button>
+    </div>
 </div>
 
 <script>
 (function() {
-    // Check for Speech Synthesis support
     if (!('speechSynthesis' in window)) {
-        const btn = document.getElementById('listenButton');
+        const btn = document.getElementById('listenTrigger');
         if (btn) btn.style.display = 'none';
         return;
     }
 
-    const button = document.getElementById('listenButton');
     const trigger = document.getElementById('listenTrigger');
-    const stopBtn = document.getElementById('listenStop');
+    const player = document.getElementById('audioPlayer');
+    const playPauseBtn = document.getElementById('audioPlayPause');
+    const closeBtn = document.getElementById('audioClose');
+    const progressBar = document.getElementById('audioProgress');
+    const progressFill = document.getElementById('audioProgressFill');
+    const progressHandle = document.getElementById('audioProgressHandle');
+    const timeCurrent = document.getElementById('audioTimeCurrent');
+    const timeTotal = document.getElementById('audioTimeTotal');
+    const titleEl = document.querySelector('.audio-player__title-text');
 
     let utterance = null;
     let isPlaying = false;
     let isPaused = false;
+    let textLength = 0;
+    let estimatedDuration = 0;
+    let startTime = 0;
+    let pausedAt = 0;
+    let progressInterval = null;
 
-    // Get the main content text
     function getContentText() {
-        // Try different content selectors based on page type
         const selectors = [
             '.wiki__content',
             '.explainer__content',
@@ -69,61 +97,88 @@
         for (const selector of selectors) {
             const el = document.querySelector(selector);
             if (el) {
-                // Clone to avoid modifying the DOM
                 const clone = el.cloneNode(true);
-
-                // Remove elements that shouldn't be read
-                clone.querySelectorAll('script, style, nav, .toc, .breadcrumbs, .listen-button, sup, .wiki-cite').forEach(el => el.remove());
-
-                // Get text content
+                clone.querySelectorAll('script, style, nav, .toc, .breadcrumbs, .listen-trigger, .audio-player, sup, .wiki-cite').forEach(el => el.remove());
                 let text = clone.textContent || clone.innerText;
-
-                // Clean up whitespace
                 text = text.replace(/\s+/g, ' ').trim();
-
                 return text;
             }
         }
-
         return '';
     }
 
-    // Update button state
-    function updateState(state) {
-        button.className = 'listen-button';
+    function formatTime(seconds) {
+        const mins = Math.floor(seconds / 60);
+        const secs = Math.floor(seconds % 60);
+        return `${mins}:${secs.toString().padStart(2, '0')}`;
+    }
 
-        if (state === 'playing') {
-            button.classList.add('listen-button--playing');
-            trigger.querySelector('.listen-button__label').textContent = 'Pause';
-            trigger.setAttribute('aria-label', 'Pause listening');
-        } else if (state === 'paused') {
-            button.classList.add('listen-button--paused');
-            trigger.querySelector('.listen-button__label').textContent = 'Resume';
-            trigger.setAttribute('aria-label', 'Resume listening');
-        } else if (state === 'loading') {
-            button.classList.add('listen-button--loading');
-            trigger.querySelector('.listen-button__label').textContent = 'Loading...';
-        } else {
-            trigger.querySelector('.listen-button__label').textContent = 'Listen';
-            trigger.setAttribute('aria-label', 'Listen to this page');
+    function updateProgress(elapsed) {
+        const percent = Math.min((elapsed / estimatedDuration) * 100, 100);
+        progressFill.style.width = `${percent}%`;
+        progressHandle.style.left = `${percent}%`;
+        timeCurrent.textContent = formatTime(elapsed);
+    }
+
+    function startProgressTimer() {
+        startTime = Date.now() - (pausedAt * 1000);
+        progressInterval = setInterval(() => {
+            if (isPlaying && !isPaused) {
+                const elapsed = (Date.now() - startTime) / 1000;
+                updateProgress(elapsed);
+            }
+        }, 100);
+    }
+
+    function stopProgressTimer() {
+        if (progressInterval) {
+            clearInterval(progressInterval);
+            progressInterval = null;
         }
     }
 
-    // Start speaking
+    function showPlayer() {
+        player.classList.add('audio-player--visible');
+        player.setAttribute('aria-hidden', 'false');
+        document.body.classList.add('has-audio-player');
+    }
+
+    function hidePlayer() {
+        player.classList.remove('audio-player--visible');
+        player.setAttribute('aria-hidden', 'true');
+        document.body.classList.remove('has-audio-player');
+    }
+
+    function updatePlayState(playing) {
+        if (playing) {
+            player.classList.add('audio-player--playing');
+            player.classList.remove('audio-player--paused');
+            playPauseBtn.setAttribute('aria-label', 'Pause');
+        } else {
+            player.classList.remove('audio-player--playing');
+            player.classList.add('audio-player--paused');
+            playPauseBtn.setAttribute('aria-label', 'Play');
+        }
+    }
+
     function speak() {
         const text = getContentText();
+        if (!text) return;
 
-        if (!text) {
-            console.warn('No content found to read');
-            return;
-        }
-
-        // Cancel any existing speech
         window.speechSynthesis.cancel();
+
+        textLength = text.length;
+        const wordCount = text.split(/\s+/).length;
+        estimatedDuration = (wordCount / 150) * 60;
+        pausedAt = 0;
+
+        // Set title
+        const pageTitle = document.title.split('|')[0].trim() || 'This page';
+        titleEl.textContent = pageTitle;
+        timeTotal.textContent = formatTime(estimatedDuration);
 
         utterance = new SpeechSynthesisUtterance(text);
 
-        // Try to get a good voice
         const voices = window.speechSynthesis.getVoices();
         const preferredVoices = voices.filter(v =>
             v.lang.startsWith('en') && (v.name.includes('Google') || v.name.includes('Microsoft') || v.name.includes('Samantha'))
@@ -138,37 +193,45 @@
         utterance.onstart = () => {
             isPlaying = true;
             isPaused = false;
-            updateState('playing');
+            updatePlayState(true);
+            startProgressTimer();
         };
 
         utterance.onpause = () => {
             isPaused = true;
-            updateState('paused');
+            pausedAt = (Date.now() - startTime) / 1000;
+            stopProgressTimer();
+            updatePlayState(false);
         };
 
         utterance.onresume = () => {
             isPaused = false;
-            updateState('playing');
+            updatePlayState(true);
+            startProgressTimer();
         };
 
         utterance.onend = () => {
             isPlaying = false;
             isPaused = false;
-            updateState('idle');
+            stopProgressTimer();
+            updateProgress(estimatedDuration);
+            updatePlayState(false);
         };
 
         utterance.onerror = (e) => {
-            console.error('Speech synthesis error:', e);
+            if (e.error !== 'canceled') {
+                console.error('Speech synthesis error:', e);
+            }
             isPlaying = false;
             isPaused = false;
-            updateState('idle');
+            stopProgressTimer();
+            updatePlayState(false);
         };
 
-        updateState('loading');
+        showPlayer();
         window.speechSynthesis.speak(utterance);
     }
 
-    // Toggle play/pause
     function togglePlayPause() {
         if (!isPlaying && !isPaused) {
             speak();
@@ -179,24 +242,35 @@
         }
     }
 
-    // Stop speaking
     function stop() {
         window.speechSynthesis.cancel();
         isPlaying = false;
         isPaused = false;
-        updateState('idle');
+        pausedAt = 0;
+        stopProgressTimer();
+        hidePlayer();
+        progressFill.style.width = '0%';
+        progressHandle.style.left = '0%';
+        timeCurrent.textContent = '0:00';
     }
 
     // Event listeners
-    trigger.addEventListener('click', togglePlayPause);
-    stopBtn.addEventListener('click', stop);
+    trigger.addEventListener('click', () => {
+        if (!isPlaying && !isPaused) {
+            speak();
+        } else {
+            showPlayer();
+        }
+    });
 
-    // Load voices (some browsers load async)
+    playPauseBtn.addEventListener('click', togglePlayPause);
+    closeBtn.addEventListener('click', stop);
+
+    // Load voices
     if (speechSynthesis.onvoiceschanged !== undefined) {
         speechSynthesis.onvoiceschanged = () => {};
     }
 
-    // Stop on page unload
     window.addEventListener('beforeunload', stop);
 })();
 </script>
