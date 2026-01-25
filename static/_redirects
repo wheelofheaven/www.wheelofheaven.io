@@ -1,9 +1,13 @@
 # Wheel of Heaven Redirects
-# Old /intro/* URLs to new structure
+# Handles legacy URL structure migration
 
-# Main intro section
+# =============================================================================
+# ENGLISH - Main intro section
+# =============================================================================
+
 /intro/                              /essentials/                         301
 /intro/at-a-glance/                  /essentials/                         301
+/intro/at-a-glance/*                 /essentials/                         301
 
 # At-a-glance subsections
 /intro/wheel-of-heaven/              /essentials/what-is-woh/             301
@@ -13,6 +17,7 @@
 
 # Timeline section
 /intro/timeline/                     /timeline/                           301
+/intro/timeline/*                    /timeline/                           301
 /intro/preamble/                     /timeline/preamble/                  301
 /intro/age-of-aquarius/              /timeline/age-of-aquarius/           301
 /intro/age-of-pisces/                /timeline/age-of-pisces/             301
@@ -29,6 +34,7 @@
 
 # Take-aways subsections
 /intro/take-aways/                   /essentials/elohim-hypothesis/       301
+/intro/take-aways/*                  /wiki/                               301
 /intro/extraterrestrial-civilization/ /wiki/elohim/                       301
 /intro/intelligent-design/           /wiki/intelligent-design/            301
 /intro/religious-syncretism/         /wiki/comparative-mythology/         301
@@ -36,12 +42,229 @@
 
 # See-more subsections
 /intro/see-more/                     /wiki/                               301
+/intro/see-more/*                    /wiki/                               301
 /intro/faq/                          /wiki/                               301
-/intro/see-more/faq/                 /wiki/                               301
 /intro/knowledge-base/               /wiki/                               301
-/intro/see-more/knowledge-base/      /wiki/                               301
 /intro/community/                    /about/                              301
-/intro/see-more/community/           /about/                              301
+
+# =============================================================================
+# WIKI - Old /encyclopedia/ nested path
+# =============================================================================
+
+/wiki/encyclopedia/                  /wiki/                               301
+/wiki/encyclopedia/*                 /wiki/                               301
+
+# =============================================================================
+# LANGUAGE PREFIXED - German (de)
+# =============================================================================
+
+/de/intro/                           /de/essentials/                      301
+/de/intro/*                          /de/essentials/                      301
+/de/intro/timeline/                  /de/timeline/                        301
+/de/intro/timeline/*                 /de/timeline/                        301
+/de/wiki/encyclopedia/               /de/wiki/                            301
+/de/wiki/encyclopedia/*              /de/wiki/                            301
+/de/contact/                         /de/about/                           301
+/de/contributors/                    /de/about/                           301
+/de/contributors/*                   /de/about/                           301
+/de/tags/                            /de/articles/                        301
+/de/tags/*                           /de/articles/                        301
+/de/categories/                      /de/wiki/                            301
+/de/categories/*                     /de/wiki/                            301
+/de/topics/                          /de/wiki/                            301
+/de/topics/*                         /de/wiki/                            301
+/de/medium/                          /de/wiki/                            301
+/de/medium/*                         /de/wiki/                            301
+/de/resources/                       /de/wiki/                            301
+/de/resources/*                      /de/wiki/                            301
+/de/articles/                        /de/                                 301
+/de/articles/*                       /de/                                 301
+
+# =============================================================================
+# LANGUAGE PREFIXED - Spanish (es)
+# =============================================================================
+
+/es/intro/                           /es/essentials/                      301
+/es/intro/*                          /es/essentials/                      301
+/es/intro/timeline/                  /es/timeline/                        301
+/es/intro/timeline/*                 /es/timeline/                        301
+/es/wiki/encyclopedia/               /es/wiki/                            301
+/es/wiki/encyclopedia/*              /es/wiki/                            301
+/es/contact/                         /es/about/                           301
+/es/contributors/                    /es/about/                           301
+/es/contributors/*                   /es/about/                           301
+/es/tags/                            /es/articles/                        301
+/es/tags/*                           /es/articles/                        301
+/es/categories/                      /es/wiki/                            301
+/es/categories/*                     /es/wiki/                            301
+/es/topics/                          /es/wiki/                            301
+/es/topics/*                         /es/wiki/                            301
+/es/medium/                          /es/wiki/                            301
+/es/medium/*                         /es/wiki/                            301
+/es/resources/                       /es/wiki/                            301
+/es/resources/*                      /es/wiki/                            301
+/es/articles/                        /es/                                 301
+/es/articles/*                       /es/                                 301
+
+# =============================================================================
+# LANGUAGE PREFIXED - French (fr)
+# =============================================================================
+
+/fr/intro/                           /fr/essentials/                      301
+/fr/intro/*                          /fr/essentials/                      301
+/fr/intro/timeline/                  /fr/timeline/                        301
+/fr/intro/timeline/*                 /fr/timeline/                        301
+/fr/wiki/encyclopedia/               /fr/wiki/                            301
+/fr/wiki/encyclopedia/*              /fr/wiki/                            301
+/fr/contact/                         /fr/about/                           301
+/fr/contributors/                    /fr/about/                           301
+/fr/contributors/*                   /fr/about/                           301
+/fr/tags/                            /fr/articles/                        301
+/fr/tags/*                           /fr/articles/                        301
+/fr/categories/                      /fr/wiki/                            301
+/fr/categories/*                     /fr/wiki/                            301
+/fr/topics/                          /fr/wiki/                            301
+/fr/topics/*                         /fr/wiki/                            301
+/fr/medium/                          /fr/wiki/                            301
+/fr/medium/*                         /fr/wiki/                            301
+/fr/resources/                       /fr/wiki/                            301
+/fr/resources/*                      /fr/wiki/                            301
+/fr/articles/                        /fr/                                 301
+/fr/articles/*                       /fr/                                 301
+
+# =============================================================================
+# LANGUAGE PREFIXED - Japanese (ja)
+# =============================================================================
+
+/ja/intro/                           /ja/essentials/                      301
+/ja/intro/*                          /ja/essentials/                      301
+/ja/intro/timeline/                  /ja/timeline/                        301
+/ja/intro/timeline/*                 /ja/timeline/                        301
+/ja/wiki/encyclopedia/               /ja/wiki/                            301
+/ja/wiki/encyclopedia/*              /ja/wiki/                            301
+/ja/contact/                         /ja/about/                           301
+/ja/contributors/                    /ja/about/                           301
+/ja/contributors/*                   /ja/about/                           301
+/ja/tags/                            /ja/articles/                        301
+/ja/tags/*                           /ja/articles/                        301
+/ja/categories/                      /ja/wiki/                            301
+/ja/categories/*                     /ja/wiki/                            301
+/ja/topics/                          /ja/wiki/                            301
+/ja/topics/*                         /ja/wiki/                            301
+/ja/medium/                          /ja/wiki/                            301
+/ja/medium/*                         /ja/wiki/                            301
+/ja/resources/                       /ja/wiki/                            301
+/ja/resources/*                      /ja/wiki/                            301
+/ja/articles/                        /ja/                                 301
+/ja/articles/*                       /ja/                                 301
+
+# =============================================================================
+# LANGUAGE PREFIXED - Russian (ru)
+# =============================================================================
+
+/ru/intro/                           /ru/essentials/                      301
+/ru/intro/*                          /ru/essentials/                      301
+/ru/intro/timeline/                  /ru/timeline/                        301
+/ru/intro/timeline/*                 /ru/timeline/                        301
+/ru/wiki/encyclopedia/               /ru/wiki/                            301
+/ru/wiki/encyclopedia/*              /ru/wiki/                            301
+/ru/contact/                         /ru/about/                           301
+/ru/contributors/                    /ru/about/                           301
+/ru/contributors/*                   /ru/about/                           301
+/ru/tags/                            /ru/articles/                        301
+/ru/tags/*                           /ru/articles/                        301
+/ru/categories/                      /ru/wiki/                            301
+/ru/categories/*                     /ru/wiki/                            301
+/ru/topics/                          /ru/wiki/                            301
+/ru/topics/*                         /ru/wiki/                            301
+/ru/medium/                          /ru/wiki/                            301
+/ru/medium/*                         /ru/wiki/                            301
+/ru/resources/                       /ru/wiki/                            301
+/ru/resources/*                      /ru/wiki/                            301
+/ru/articles/                        /ru/                                 301
+/ru/articles/*                       /ru/                                 301
+
+# =============================================================================
+# LANGUAGE PREFIXED - Chinese Simplified (zh)
+# =============================================================================
+
+/zh/intro/                           /zh/essentials/                      301
+/zh/intro/*                          /zh/essentials/                      301
+/zh/intro/timeline/                  /zh/timeline/                        301
+/zh/intro/timeline/*                 /zh/timeline/                        301
+/zh/wiki/encyclopedia/               /zh/wiki/                            301
+/zh/wiki/encyclopedia/*              /zh/wiki/                            301
+/zh/contact/                         /zh/about/                           301
+/zh/contributors/                    /zh/about/                           301
+/zh/contributors/*                   /zh/about/                           301
+/zh/tags/                            /zh/articles/                        301
+/zh/tags/*                           /zh/articles/                        301
+/zh/categories/                      /zh/wiki/                            301
+/zh/categories/*                     /zh/wiki/                            301
+/zh/topics/                          /zh/wiki/                            301
+/zh/topics/*                         /zh/wiki/                            301
+/zh/medium/                          /zh/wiki/                            301
+/zh/medium/*                         /zh/wiki/                            301
+/zh/resources/                       /zh/wiki/                            301
+/zh/resources/*                      /zh/wiki/                            301
+/zh/articles/                        /zh/                                 301
+/zh/articles/*                       /zh/                                 301
+
+# =============================================================================
+# LANGUAGE PREFIXED - Korean (ko)
+# =============================================================================
+
+/ko/intro/                           /ko/essentials/                      301
+/ko/intro/*                          /ko/essentials/                      301
+/ko/intro/timeline/                  /ko/timeline/                        301
+/ko/intro/timeline/*                 /ko/timeline/                        301
+/ko/wiki/encyclopedia/               /ko/wiki/                            301
+/ko/wiki/encyclopedia/*              /ko/wiki/                            301
+/ko/contact/                         /ko/about/                           301
+/ko/contributors/                    /ko/about/                           301
+/ko/contributors/*                   /ko/about/                           301
+/ko/tags/                            /ko/articles/                        301
+/ko/tags/*                           /ko/articles/                        301
+/ko/categories/                      /ko/wiki/                            301
+/ko/categories/*                     /ko/wiki/                            301
+/ko/topics/                          /ko/wiki/                            301
+/ko/topics/*                         /ko/wiki/                            301
+/ko/medium/                          /ko/wiki/                            301
+/ko/medium/*                         /ko/wiki/                            301
+/ko/resources/                       /ko/wiki/                            301
+/ko/resources/*                      /ko/wiki/                            301
+/ko/articles/                        /ko/                                 301
+/ko/articles/*                       /ko/                                 301
+
+# =============================================================================
+# LANGUAGE PREFIXED - Chinese Traditional (zh-Hant)
+# =============================================================================
+
+/zh-Hant/intro/                      /zh-Hant/essentials/                 301
+/zh-Hant/intro/*                     /zh-Hant/essentials/                 301
+/zh-Hant/intro/timeline/             /zh-Hant/timeline/                   301
+/zh-Hant/intro/timeline/*            /zh-Hant/timeline/                   301
+/zh-Hant/wiki/encyclopedia/          /zh-Hant/wiki/                       301
+/zh-Hant/wiki/encyclopedia/*         /zh-Hant/wiki/                       301
+/zh-Hant/contact/                    /zh-Hant/about/                      301
+/zh-Hant/contributors/               /zh-Hant/about/                      301
+/zh-Hant/contributors/*              /zh-Hant/about/                      301
+/zh-Hant/tags/                       /zh-Hant/articles/                   301
+/zh-Hant/tags/*                      /zh-Hant/articles/                   301
+/zh-Hant/categories/                 /zh-Hant/wiki/                       301
+/zh-Hant/categories/*                /zh-Hant/wiki/                       301
+/zh-Hant/topics/                     /zh-Hant/wiki/                       301
+/zh-Hant/topics/*                    /zh-Hant/wiki/                       301
+/zh-Hant/medium/                     /zh-Hant/wiki/                       301
+/zh-Hant/medium/*                    /zh-Hant/wiki/                       301
+/zh-Hant/resources/                  /zh-Hant/wiki/                       301
+/zh-Hant/resources/*                 /zh-Hant/wiki/                       301
+/zh-Hant/articles/                   /zh-Hant/                            301
+/zh-Hant/articles/*                  /zh-Hant/                            301
+
+# =============================================================================
+# ENGLISH - Catch-all patterns (must be LAST)
+# =============================================================================
 
 # Contact page
 /contact/                            /about/                              301
@@ -50,9 +273,10 @@
 /articles/*                          /articles/                           301
 
 # Old resources (skipped migration - redirect to wiki)
+/resources/                          /wiki/                               301
 /resources/*                         /wiki/                               301
 
-# Old taxonomies (associated with articles/resources)
+# Old taxonomies
 /tags/                               /articles/                           301
 /tags/*                              /articles/                           301
 /categories/                         /wiki/                               301
@@ -65,3 +289,7 @@
 # Contributors
 /contributors/                       /about/                              301
 /contributors/*                      /about/                              301
+
+# Privacy policy (removed - redirect to about)
+/privacy-policy/                     /about/                              301
+/*/privacy-policy/                   /about/                              301
