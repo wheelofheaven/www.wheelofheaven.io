@@ -65,18 +65,10 @@
 /de/wiki/encyclopedia/               /de/wiki/                            301
 /de/wiki/encyclopedia/*              /de/wiki/                            301
 /de/contact/                         /de/about/                           301
-/de/contributors/                    /de/about/                           301
-/de/contributors/*                   /de/about/                           301
-/de/tags/                            /de/articles/                        301
-/de/tags/*                           /de/articles/                        301
 /de/categories/                      /de/wiki/                            301
 /de/categories/*                     /de/wiki/                            301
-/de/topics/                          /de/wiki/                            301
-/de/topics/*                         /de/wiki/                            301
 /de/medium/                          /de/wiki/                            301
 /de/medium/*                         /de/wiki/                            301
-/de/resources/                       /de/wiki/                            301
-/de/resources/*                      /de/wiki/                            301
 /de/articles/                        /de/                                 301
 /de/articles/*                       /de/                                 301
 
@@ -91,18 +83,10 @@
 /es/wiki/encyclopedia/               /es/wiki/                            301
 /es/wiki/encyclopedia/*              /es/wiki/                            301
 /es/contact/                         /es/about/                           301
-/es/contributors/                    /es/about/                           301
-/es/contributors/*                   /es/about/                           301
-/es/tags/                            /es/articles/                        301
-/es/tags/*                           /es/articles/                        301
 /es/categories/                      /es/wiki/                            301
 /es/categories/*                     /es/wiki/                            301
-/es/topics/                          /es/wiki/                            301
-/es/topics/*                         /es/wiki/                            301
 /es/medium/                          /es/wiki/                            301
 /es/medium/*                         /es/wiki/                            301
-/es/resources/                       /es/wiki/                            301
-/es/resources/*                      /es/wiki/                            301
 /es/articles/                        /es/                                 301
 /es/articles/*                       /es/                                 301
 
@@ -117,18 +101,10 @@
 /fr/wiki/encyclopedia/               /fr/wiki/                            301
 /fr/wiki/encyclopedia/*              /fr/wiki/                            301
 /fr/contact/                         /fr/about/                           301
-/fr/contributors/                    /fr/about/                           301
-/fr/contributors/*                   /fr/about/                           301
-/fr/tags/                            /fr/articles/                        301
-/fr/tags/*                           /fr/articles/                        301
 /fr/categories/                      /fr/wiki/                            301
 /fr/categories/*                     /fr/wiki/                            301
-/fr/topics/                          /fr/wiki/                            301
-/fr/topics/*                         /fr/wiki/                            301
 /fr/medium/                          /fr/wiki/                            301
 /fr/medium/*                         /fr/wiki/                            301
-/fr/resources/                       /fr/wiki/                            301
-/fr/resources/*                      /fr/wiki/                            301
 /fr/articles/                        /fr/                                 301
 /fr/articles/*                       /fr/                                 301
 
@@ -143,18 +119,10 @@
 /ja/wiki/encyclopedia/               /ja/wiki/                            301
 /ja/wiki/encyclopedia/*              /ja/wiki/                            301
 /ja/contact/                         /ja/about/                           301
-/ja/contributors/                    /ja/about/                           301
-/ja/contributors/*                   /ja/about/                           301
-/ja/tags/                            /ja/articles/                        301
-/ja/tags/*                           /ja/articles/                        301
 /ja/categories/                      /ja/wiki/                            301
 /ja/categories/*                     /ja/wiki/                            301
-/ja/topics/                          /ja/wiki/                            301
-/ja/topics/*                         /ja/wiki/                            301
 /ja/medium/                          /ja/wiki/                            301
 /ja/medium/*                         /ja/wiki/                            301
-/ja/resources/                       /ja/wiki/                            301
-/ja/resources/*                      /ja/wiki/                            301
 /ja/articles/                        /ja/                                 301
 /ja/articles/*                       /ja/                                 301
 
@@ -169,18 +137,10 @@
 /ru/wiki/encyclopedia/               /ru/wiki/                            301
 /ru/wiki/encyclopedia/*              /ru/wiki/                            301
 /ru/contact/                         /ru/about/                           301
-/ru/contributors/                    /ru/about/                           301
-/ru/contributors/*                   /ru/about/                           301
-/ru/tags/                            /ru/articles/                        301
-/ru/tags/*                           /ru/articles/                        301
 /ru/categories/                      /ru/wiki/                            301
 /ru/categories/*                     /ru/wiki/                            301
-/ru/topics/                          /ru/wiki/                            301
-/ru/topics/*                         /ru/wiki/                            301
 /ru/medium/                          /ru/wiki/                            301
 /ru/medium/*                         /ru/wiki/                            301
-/ru/resources/                       /ru/wiki/                            301
-/ru/resources/*                      /ru/wiki/                            301
 /ru/articles/                        /ru/                                 301
 /ru/articles/*                       /ru/                                 301
 
@@ -195,18 +155,10 @@
 /zh/wiki/encyclopedia/               /zh/wiki/                            301
 /zh/wiki/encyclopedia/*              /zh/wiki/                            301
 /zh/contact/                         /zh/about/                           301
-/zh/contributors/                    /zh/about/                           301
-/zh/contributors/*                   /zh/about/                           301
-/zh/tags/                            /zh/articles/                        301
-/zh/tags/*                           /zh/articles/                        301
 /zh/categories/                      /zh/wiki/                            301
 /zh/categories/*                     /zh/wiki/                            301
-/zh/topics/                          /zh/wiki/                            301
-/zh/topics/*                         /zh/wiki/                            301
 /zh/medium/                          /zh/wiki/                            301
 /zh/medium/*                         /zh/wiki/                            301
-/zh/resources/                       /zh/wiki/                            301
-/zh/resources/*                      /zh/wiki/                            301
 /zh/articles/                        /zh/                                 301
 /zh/articles/*                       /zh/                                 301
 
@@ -221,18 +173,10 @@
 /ko/wiki/encyclopedia/               /ko/wiki/                            301
 /ko/wiki/encyclopedia/*              /ko/wiki/                            301
 /ko/contact/                         /ko/about/                           301
-/ko/contributors/                    /ko/about/                           301
-/ko/contributors/*                   /ko/about/                           301
-/ko/tags/                            /ko/articles/                        301
-/ko/tags/*                           /ko/articles/                        301
 /ko/categories/                      /ko/wiki/                            301
 /ko/categories/*                     /ko/wiki/                            301
-/ko/topics/                          /ko/wiki/                            301
-/ko/topics/*                         /ko/wiki/                            301
 /ko/medium/                          /ko/wiki/                            301
 /ko/medium/*                         /ko/wiki/                            301
-/ko/resources/                       /ko/wiki/                            301
-/ko/resources/*                      /ko/wiki/                            301
 /ko/articles/                        /ko/                                 301
 /ko/articles/*                       /ko/                                 301
 
@@ -247,18 +191,10 @@
 /zh-Hant/wiki/encyclopedia/          /zh-Hant/wiki/                       301
 /zh-Hant/wiki/encyclopedia/*         /zh-Hant/wiki/                       301
 /zh-Hant/contact/                    /zh-Hant/about/                      301
-/zh-Hant/contributors/               /zh-Hant/about/                      301
-/zh-Hant/contributors/*              /zh-Hant/about/                      301
-/zh-Hant/tags/                       /zh-Hant/articles/                   301
-/zh-Hant/tags/*                      /zh-Hant/articles/                   301
 /zh-Hant/categories/                 /zh-Hant/wiki/                       301
 /zh-Hant/categories/*                /zh-Hant/wiki/                       301
-/zh-Hant/topics/                     /zh-Hant/wiki/                       301
-/zh-Hant/topics/*                    /zh-Hant/wiki/                       301
 /zh-Hant/medium/                     /zh-Hant/wiki/                       301
 /zh-Hant/medium/*                    /zh-Hant/wiki/                       301
-/zh-Hant/resources/                  /zh-Hant/wiki/                       301
-/zh-Hant/resources/*                 /zh-Hant/wiki/                       301
 /zh-Hant/articles/                   /zh-Hant/                            301
 /zh-Hant/articles/*                  /zh-Hant/                            301
 
@@ -272,24 +208,10 @@
 # Old articles (skipped migration - redirect to articles section)
 /articles/*                          /articles/                           301
 
-# Old resources (skipped migration - redirect to wiki)
-/resources/                          /wiki/                               301
-/resources/*                         /wiki/                               301
-
-# Old taxonomies
-/tags/                               /articles/                           301
-/tags/*                              /articles/                           301
+# Old categories taxonomy (merged into wiki)
 /categories/                         /wiki/                               301
 /categories/*                        /wiki/                               301
-/topics/                             /wiki/                               301
-/topics/*                            /wiki/                               301
+
+# Old medium taxonomy (merged into wiki)
 /medium/                             /wiki/                               301
 /medium/*                            /wiki/                               301
-
-# Contributors
-/contributors/                       /about/                              301
-/contributors/*                      /about/                              301
-
-# Privacy policy (removed - redirect to about)
-/privacy-policy/                     /about/                              301
-/*/privacy-policy/                   /about/                              301

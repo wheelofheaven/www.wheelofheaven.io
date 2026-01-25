@@ -6,6 +6,12 @@ description = "The democratization of the Age of Aquarius starts here. Wheel of 
 compile_sass = true
 build_search_index = true
 generate_feeds = true
+
+taxonomies = [
+    { name = "tags", feed = true },
+    { name = "topics", feed = false },
+    { name = "authors", feed = false },
+]
 feed_filenames = ["atom.xml", "rss.xml"]
 feed_limit = 20
 
