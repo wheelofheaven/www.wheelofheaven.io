@@ -48,6 +48,13 @@
 /intro/community/                    /about/                              301
 
 # =============================================================================
+# EXPLAINERS - Renamed to Articles
+# =============================================================================
+
+/explainers/                         /articles/                           301
+/explainers/*                        /articles/:splat                     301
+
+# =============================================================================
 # WIKI - Old /encyclopedia/ nested path
 # =============================================================================
 
@@ -64,13 +71,13 @@
 /de/intro/timeline/*                 /de/timeline/                        301
 /de/wiki/encyclopedia/               /de/wiki/                            301
 /de/wiki/encyclopedia/*              /de/wiki/                            301
-/de/contact/                         /de/about/                           301
+/de/contact/                         /contact/                            301
 /de/categories/                      /de/wiki/                            301
 /de/categories/*                     /de/wiki/                            301
 /de/medium/                          /de/wiki/                            301
 /de/medium/*                         /de/wiki/                            301
-/de/articles/                        /de/                                 301
-/de/articles/*                       /de/                                 301
+/de/explainers/                      /de/articles/                        301
+/de/explainers/*                     /de/articles/:splat                  301
 
 # =============================================================================
 # LANGUAGE PREFIXED - Spanish (es)
@@ -82,13 +89,13 @@
 /es/intro/timeline/*                 /es/timeline/                        301
 /es/wiki/encyclopedia/               /es/wiki/                            301
 /es/wiki/encyclopedia/*              /es/wiki/                            301
-/es/contact/                         /es/about/                           301
+/es/contact/                         /contact/                            301
 /es/categories/                      /es/wiki/                            301
 /es/categories/*                     /es/wiki/                            301
 /es/medium/                          /es/wiki/                            301
 /es/medium/*                         /es/wiki/                            301
-/es/articles/                        /es/                                 301
-/es/articles/*                       /es/                                 301
+/es/explainers/                      /es/articles/                        301
+/es/explainers/*                     /es/articles/:splat                  301
 
 # =============================================================================
 # LANGUAGE PREFIXED - French (fr)
@@ -100,13 +107,13 @@
 /fr/intro/timeline/*                 /fr/timeline/                        301
 /fr/wiki/encyclopedia/               /fr/wiki/                            301
 /fr/wiki/encyclopedia/*              /fr/wiki/                            301
-/fr/contact/                         /fr/about/                           301
+/fr/contact/                         /contact/                            301
 /fr/categories/                      /fr/wiki/                            301
 /fr/categories/*                     /fr/wiki/                            301
 /fr/medium/                          /fr/wiki/                            301
 /fr/medium/*                         /fr/wiki/                            301
-/fr/articles/                        /fr/                                 301
-/fr/articles/*                       /fr/                                 301
+/fr/explainers/                      /fr/articles/                        301
+/fr/explainers/*                     /fr/articles/:splat                  301
 
 # =============================================================================
 # LANGUAGE PREFIXED - Japanese (ja)
@@ -118,13 +125,13 @@
 /ja/intro/timeline/*                 /ja/timeline/                        301
 /ja/wiki/encyclopedia/               /ja/wiki/                            301
 /ja/wiki/encyclopedia/*              /ja/wiki/                            301
-/ja/contact/                         /ja/about/                           301
+/ja/contact/                         /contact/                            301
 /ja/categories/                      /ja/wiki/                            301
 /ja/categories/*                     /ja/wiki/                            301
 /ja/medium/                          /ja/wiki/                            301
 /ja/medium/*                         /ja/wiki/                            301
-/ja/articles/                        /ja/                                 301
-/ja/articles/*                       /ja/                                 301
+/ja/explainers/                      /ja/articles/                        301
+/ja/explainers/*                     /ja/articles/:splat                  301
 
 # =============================================================================
 # LANGUAGE PREFIXED - Russian (ru)
@@ -136,13 +143,13 @@
 /ru/intro/timeline/*                 /ru/timeline/                        301
 /ru/wiki/encyclopedia/               /ru/wiki/                            301
 /ru/wiki/encyclopedia/*              /ru/wiki/                            301
-/ru/contact/                         /ru/about/                           301
+/ru/contact/                         /contact/                            301
 /ru/categories/                      /ru/wiki/                            301
 /ru/categories/*                     /ru/wiki/                            301
 /ru/medium/                          /ru/wiki/                            301
 /ru/medium/*                         /ru/wiki/                            301
-/ru/articles/                        /ru/                                 301
-/ru/articles/*                       /ru/                                 301
+/ru/explainers/                      /ru/articles/                        301
+/ru/explainers/*                     /ru/articles/:splat                  301
 
 # =============================================================================
 # LANGUAGE PREFIXED - Chinese Simplified (zh)
@@ -154,13 +161,13 @@
 /zh/intro/timeline/*                 /zh/timeline/                        301
 /zh/wiki/encyclopedia/               /zh/wiki/                            301
 /zh/wiki/encyclopedia/*              /zh/wiki/                            301
-/zh/contact/                         /zh/about/                           301
+/zh/contact/                         /contact/                            301
 /zh/categories/                      /zh/wiki/                            301
 /zh/categories/*                     /zh/wiki/                            301
 /zh/medium/                          /zh/wiki/                            301
 /zh/medium/*                         /zh/wiki/                            301
-/zh/articles/                        /zh/                                 301
-/zh/articles/*                       /zh/                                 301
+/zh/explainers/                      /zh/articles/                        301
+/zh/explainers/*                     /zh/articles/:splat                  301
 
 # =============================================================================
 # LANGUAGE PREFIXED - Korean (ko)
@@ -172,13 +179,13 @@
 /ko/intro/timeline/*                 /ko/timeline/                        301
 /ko/wiki/encyclopedia/               /ko/wiki/                            301
 /ko/wiki/encyclopedia/*              /ko/wiki/                            301
-/ko/contact/                         /ko/about/                           301
+/ko/contact/                         /contact/                            301
 /ko/categories/                      /ko/wiki/                            301
 /ko/categories/*                     /ko/wiki/                            301
 /ko/medium/                          /ko/wiki/                            301
 /ko/medium/*                         /ko/wiki/                            301
-/ko/articles/                        /ko/                                 301
-/ko/articles/*                       /ko/                                 301
+/ko/explainers/                      /ko/articles/                        301
+/ko/explainers/*                     /ko/articles/:splat                  301
 
 # =============================================================================
 # LANGUAGE PREFIXED - Chinese Traditional (zh-Hant)
@@ -190,23 +197,21 @@
 /zh-Hant/intro/timeline/*            /zh-Hant/timeline/                   301
 /zh-Hant/wiki/encyclopedia/          /zh-Hant/wiki/                       301
 /zh-Hant/wiki/encyclopedia/*         /zh-Hant/wiki/                       301
-/zh-Hant/contact/                    /zh-Hant/about/                      301
+/zh-Hant/contact/                    /contact/                            301
 /zh-Hant/categories/                 /zh-Hant/wiki/                       301
 /zh-Hant/categories/*                /zh-Hant/wiki/                       301
 /zh-Hant/medium/                     /zh-Hant/wiki/                       301
 /zh-Hant/medium/*                    /zh-Hant/wiki/                       301
-/zh-Hant/articles/                   /zh-Hant/                            301
-/zh-Hant/articles/*                  /zh-Hant/                            301
+/zh-Hant/explainers/                 /zh-Hant/articles/                   301
+/zh-Hant/explainers/*                /zh-Hant/articles/:splat             301
 
 # =============================================================================
 # ENGLISH - Catch-all patterns (must be LAST)
 # =============================================================================
 
-# Contact page
-/contact/                            /about/                              301
+# Contact page is now its own page at /contact/
 
-# Old articles (skipped migration - redirect to articles section)
-/articles/*                          /articles/                           301
+# Note: /articles/ is now a live section (renamed from /explainers/)
 
 # Old categories taxonomy (merged into wiki)
 /categories/                         /wiki/                               301
