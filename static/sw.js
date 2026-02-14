@@ -35,7 +35,7 @@ const CDN_PRECACHE = [
 
 // Cache strategies
 const CACHE_STRATEGIES = {
-    static: 'cache-first',
+    static: 'stale-while-revalidate',
     pages: 'network-first',
     images: 'cache-first'
 };
@@ -115,7 +115,7 @@ self.addEventListener('fetch', event => {
 
     // Determine cache strategy based on request type
     if (isStaticAsset(url.pathname)) {
-        event.respondWith(cacheFirst(request, STATIC_CACHE));
+        event.respondWith(staleWhileRevalidate(request, STATIC_CACHE));
     } else if (isImage(url.pathname)) {
         event.respondWith(cacheFirst(request, IMAGES_CACHE));
     } else if (isPage(url.pathname)) {
@@ -141,6 +141,25 @@ async function cacheFirst(request, cacheName) {
         console.error('[SW] Cache-first fetch failed:', error);
         return new Response('Offline', { status: 503 });
     }
+}
+
+// Stale-while-revalidate strategy (for CSS/JS)
+// Serves cached version immediately, then updates the cache in the background
+async function staleWhileRevalidate(request, cacheName) {
+    const cache = await caches.open(cacheName);
+    const cached = await caches.match(request);
+
+    const fetchPromise = fetch(request).then(response => {
+        if (response.ok) {
+            cache.put(request, response.clone());
+        }
+        return response;
+    }).catch(error => {
+        console.error('[SW] Revalidation failed:', error);
+        return cached;
+    });
+
+    return cached || fetchPromise;
 }
 
 // Network-first strategy (for HTML pages)
