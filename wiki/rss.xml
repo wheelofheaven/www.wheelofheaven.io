@@ -1,0 +1,776 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<rss xmlns:atom="http://www.w3.org/2005/Atom" version="2.0">
+    <channel>
+      <title>Wheel of Heaven - Encyclopedia</title>
+      <link>https://www.wheelofheaven.io/wiki/</link>
+      <description>The democratization of the Age of Aquarius starts here. Wheel of Heaven is a knowledge base exploring the working hypothesis that life on Earth was intelligently designed by an extraterrestrial civilization, the so-called Elohim.</description>
+      <generator>Zola</generator>
+      <language>en</language>
+      <atom:link href="https://www.wheelofheaven.io/wiki/rss.xml" rel="self" type="application/rss+xml"/>
+      <lastBuildDate>Mon, 15 Jan 2024 00:00:00 +0000</lastBuildDate>
+      <item>
+          <title>How to Use the Wiki</title>
+          <pubDate>Mon, 15 Jan 2024 00:00:00 +0000</pubDate>
+          <author>Unknown</author>
+          <link>https://www.wheelofheaven.io/wiki/how-to-use-wiki/</link>
+          <guid>https://www.wheelofheaven.io/wiki/how-to-use-wiki/</guid>
+          <description xml:base="https://www.wheelofheaven.io/wiki/how-to-use-wiki/">&lt;p&gt;This guide provides comprehensive instructions for creating and maintaining wiki entries in the Wheel of Heaven knowledge base. The wiki system is designed to provide a consistent, accessible, and visually appealing way to present complex information.&lt;&#x2F;p&gt;
+&lt;h2 id=&quot;getting-started&quot;&gt;Getting Started&lt;&#x2F;h2&gt;
+&lt;h3 id=&quot;creating-a-new-wiki-page&quot;&gt;Creating a New Wiki Page&lt;&#x2F;h3&gt;
+&lt;p&gt;To create a new wiki page, create a markdown file in the &lt;code&gt;content&#x2F;wiki&#x2F;&lt;&#x2F;code&gt; directory:&lt;&#x2F;p&gt;
+&lt;pre data-lang=&quot;bash&quot; class=&quot;language-bash &quot;&gt;&lt;code class=&quot;language-bash&quot; data-lang=&quot;bash&quot;&gt;touch content&amp;#x2F;wiki&amp;#x2F;your-concept.md
+&lt;&#x2F;code&gt;&lt;&#x2F;pre&gt;
+&lt;h3 id=&quot;basic-frontmatter-structure&quot;&gt;Basic Frontmatter Structure&lt;&#x2F;h3&gt;
+&lt;p&gt;Every wiki page must include frontmatter with the following required and optional fields:&lt;&#x2F;p&gt;
+&lt;pre data-lang=&quot;toml&quot; class=&quot;language-toml &quot;&gt;&lt;code class=&quot;language-toml&quot; data-lang=&quot;toml&quot;&gt;+++
+title = &amp;quot;Your Concept Title&amp;quot;
+slug = &amp;quot;your-concept&amp;quot;
+description = &amp;quot;Brief description for SEO and page previews&amp;quot;
+date = 2024-01-15
+template = &amp;quot;wiki-page.html&amp;quot;
+
+[extra]
+summary = &amp;quot;2-3 sentence summary that appears prominently below the title&amp;quot;
+category = &amp;quot;Core Concepts&amp;quot;
+alternative_names = [
+    &amp;quot;Alternative Name 1&amp;quot;,
+    &amp;quot;Alternative Spelling&amp;quot;,
+    &amp;quot;Also Known As&amp;quot;
+]
+see_also = [
+    { title = &amp;quot;Related Page&amp;quot;, path = &amp;quot;wiki&amp;#x2F;related-page&amp;#x2F;&amp;quot;, description = &amp;quot;Optional description&amp;quot; }
+]
+external_links = [
+    { title = &amp;quot;External Resource&amp;quot;, url = &amp;quot;https:&amp;#x2F;&amp;#x2F;example.com&amp;quot;, description = &amp;quot;What this link provides&amp;quot; }
+]
+references = [
+    { title = &amp;quot;Source Title&amp;quot;, author = &amp;quot;Author Name&amp;quot;, publication = &amp;quot;Publisher&amp;quot;, date = &amp;quot;2024&amp;quot;, description = &amp;quot;Why this source is relevant&amp;quot; }
+]
++++
+&lt;&#x2F;code&gt;&lt;&#x2F;pre&gt;
+&lt;h2 id=&quot;frontmatter-fields-explained&quot;&gt;Frontmatter Fields Explained&lt;&#x2F;h2&gt;
+&lt;h3 id=&quot;required-fields&quot;&gt;Required Fields&lt;&#x2F;h3&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;strong&gt;title&lt;&#x2F;strong&gt;: The main title of the wiki entry&lt;&#x2F;li&gt;
+&lt;li&gt;&lt;strong&gt;slug&lt;&#x2F;strong&gt;: URL-friendly version of the title&lt;&#x2F;li&gt;
+&lt;li&gt;&lt;strong&gt;template&lt;&#x2F;strong&gt;: Must be set to &lt;code&gt;&quot;wiki-page.html&quot;&lt;&#x2F;code&gt;&lt;&#x2F;li&gt;
+&lt;&#x2F;ul&gt;
+&lt;h3 id=&quot;recommended-fields&quot;&gt;Recommended Fields&lt;&#x2F;h3&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;strong&gt;description&lt;&#x2F;strong&gt;: Brief description used for SEO and previews&lt;&#x2F;li&gt;
+&lt;li&gt;&lt;strong&gt;date&lt;&#x2F;strong&gt;: Last updated date (affects sorting and display)&lt;&#x2F;li&gt;
+&lt;li&gt;&lt;strong&gt;summary&lt;&#x2F;strong&gt;: Prominent summary displayed below the title&lt;&#x2F;li&gt;
+&lt;&#x2F;ul&gt;
+&lt;h3 id=&quot;optional-fields&quot;&gt;Optional Fields&lt;&#x2F;h3&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;strong&gt;category&lt;&#x2F;strong&gt;: Groups related pages together&lt;&#x2F;li&gt;
+&lt;li&gt;&lt;strong&gt;alternative_names&lt;&#x2F;strong&gt;: Array of alternative names, spellings, or translations&lt;&#x2F;li&gt;
+&lt;li&gt;&lt;strong&gt;see_also&lt;&#x2F;strong&gt;: Array of related internal pages&lt;&#x2F;li&gt;
+&lt;li&gt;&lt;strong&gt;external_links&lt;&#x2F;strong&gt;: Array of external resources&lt;&#x2F;li&gt;
+&lt;li&gt;&lt;strong&gt;references&lt;&#x2F;strong&gt;: Array of academic or source references&lt;&#x2F;li&gt;
+&lt;&#x2F;ul&gt;
+&lt;h2 id=&quot;content-structure&quot;&gt;Content Structure&lt;&#x2F;h2&gt;
+&lt;h3 id=&quot;heading-hierarchy&quot;&gt;Heading Hierarchy&lt;&#x2F;h3&gt;
+&lt;p&gt;Use a clear heading structure for automatic table of contents generation:&lt;&#x2F;p&gt;
+&lt;pre data-lang=&quot;markdown&quot; class=&quot;language-markdown &quot;&gt;&lt;code class=&quot;language-markdown&quot; data-lang=&quot;markdown&quot;&gt;## Major Section (H2)
+
+Content for this major section...
+
+### Subsection (H3)
+
+More detailed information...
+
+#### Minor Point (H4)
+
+Specific details or examples...
+&lt;&#x2F;code&gt;&lt;&#x2F;pre&gt;
+&lt;p&gt;The table of contents will automatically generate from H2, H3, and H4 headings.&lt;&#x2F;p&gt;
+&lt;h3 id=&quot;management-summary&quot;&gt;Management Summary&lt;&#x2F;h3&gt;
+&lt;p&gt;The summary field in frontmatter creates a prominent overview section that appears immediately after the title. This should be 2-3 sentences that explain:&lt;&#x2F;p&gt;
+&lt;ol&gt;
+&lt;li&gt;What the concept is&lt;&#x2F;li&gt;
+&lt;li&gt;Why it&#x27;s important&lt;&#x2F;li&gt;
+&lt;li&gt;How it relates to the main hypothesis&lt;&#x2F;li&gt;
+&lt;&#x2F;ol&gt;
+&lt;h2 id=&quot;advanced-content-features&quot;&gt;Advanced Content Features&lt;&#x2F;h2&gt;
+&lt;h3 id=&quot;info-boxes&quot;&gt;Info Boxes&lt;&#x2F;h3&gt;
+&lt;p&gt;Use info boxes to highlight important information:&lt;&#x2F;p&gt;
+&lt;pre data-lang=&quot;markdown&quot; class=&quot;language-markdown &quot;&gt;&lt;code class=&quot;language-markdown&quot; data-lang=&quot;markdown&quot;&gt;
+
+
+
+
+&amp;lt;div class=&amp;quot;wiki-info-box wiki-info-box--info&amp;quot;&amp;gt;
+    
+    &amp;lt;div class=&amp;quot;wiki-info-box__header&amp;quot;&amp;gt;
+        
+        
+        &amp;lt;h4 class=&amp;quot;wiki-info-box__title&amp;quot;&amp;gt;Important Context&amp;lt;&amp;#x2F;h4&amp;gt;
+        
+    &amp;lt;&amp;#x2F;div&amp;gt;
+    
+
+    &amp;lt;div class=&amp;quot;wiki-info-box__content&amp;quot;&amp;gt;
+        &amp;lt;p&amp;gt;This provides additional context that readers should be aware of when understanding this concept.&amp;lt;&amp;#x2F;p&amp;gt;
+
+    &amp;lt;&amp;#x2F;div&amp;gt;
+&amp;lt;&amp;#x2F;div&amp;gt;
+
+
+
+
+
+
+
+&amp;lt;div class=&amp;quot;wiki-info-box wiki-info-box--warning&amp;quot;&amp;gt;
+    
+    &amp;lt;div class=&amp;quot;wiki-info-box__header&amp;quot;&amp;gt;
+        
+        
+        &amp;lt;h4 class=&amp;quot;wiki-info-box__title&amp;quot;&amp;gt;Caution&amp;lt;&amp;#x2F;h4&amp;gt;
+        
+    &amp;lt;&amp;#x2F;div&amp;gt;
+    
+
+    &amp;lt;div class=&amp;quot;wiki-info-box__content&amp;quot;&amp;gt;
+        &amp;lt;p&amp;gt;This highlights potential misconceptions or areas where readers should be careful.&amp;lt;&amp;#x2F;p&amp;gt;
+
+    &amp;lt;&amp;#x2F;div&amp;gt;
+&amp;lt;&amp;#x2F;div&amp;gt;
+
+
+
+
+
+
+
+&amp;lt;div class=&amp;quot;wiki-info-box wiki-info-box--success&amp;quot;&amp;gt;
+    
+    &amp;lt;div class=&amp;quot;wiki-info-box__header&amp;quot;&amp;gt;
+        
+        
+        &amp;lt;h4 class=&amp;quot;wiki-info-box__title&amp;quot;&amp;gt;Key Insight&amp;lt;&amp;#x2F;h4&amp;gt;
+        
+    &amp;lt;&amp;#x2F;div&amp;gt;
+    
+
+    &amp;lt;div class=&amp;quot;wiki-info-box__content&amp;quot;&amp;gt;
+        &amp;lt;p&amp;gt;This emphasizes breakthrough moments or important conclusions.&amp;lt;&amp;#x2F;p&amp;gt;
+
+    &amp;lt;&amp;#x2F;div&amp;gt;
+&amp;lt;&amp;#x2F;div&amp;gt;
+
+&lt;&#x2F;code&gt;&lt;&#x2F;pre&gt;
+&lt;p&gt;Available types: &lt;code&gt;info&lt;&#x2F;code&gt;, &lt;code&gt;warning&lt;&#x2F;code&gt;, &lt;code&gt;danger&lt;&#x2F;code&gt;, &lt;code&gt;success&lt;&#x2F;code&gt;&lt;&#x2F;p&gt;
+&lt;h3 id=&quot;definition-boxes&quot;&gt;Definition Boxes&lt;&#x2F;h3&gt;
+&lt;p&gt;For key terminology, use definition boxes:&lt;&#x2F;p&gt;
+&lt;pre data-lang=&quot;markdown&quot; class=&quot;language-markdown &quot;&gt;&lt;code class=&quot;language-markdown&quot; data-lang=&quot;markdown&quot;&gt;
+
+
+
+&amp;lt;div class=&amp;quot;wiki-definition-box wiki-definition-box--scientific&amp;quot;&amp;gt;
+    
+    &amp;lt;div class=&amp;quot;wiki-definition-box__term&amp;quot;&amp;gt;Technical Term&amp;lt;&amp;#x2F;div&amp;gt;
+    
+
+    &amp;lt;div class=&amp;quot;wiki-definition-box__content&amp;quot;&amp;gt;
+        &amp;lt;p&amp;gt;Clear, precise definition of the term that readers can easily understand and reference.&amp;lt;&amp;#x2F;p&amp;gt;
+
+    &amp;lt;&amp;#x2F;div&amp;gt;
+&amp;lt;&amp;#x2F;div&amp;gt;
+
+&lt;&#x2F;code&gt;&lt;&#x2F;pre&gt;
+&lt;p&gt;Available types: &lt;code&gt;standard&lt;&#x2F;code&gt;, &lt;code&gt;scientific&lt;&#x2F;code&gt;, &lt;code&gt;historical&lt;&#x2F;code&gt;, &lt;code&gt;technical&lt;&#x2F;code&gt;, &lt;code&gt;philosophical&lt;&#x2F;code&gt;&lt;&#x2F;p&gt;
+&lt;h3 id=&quot;citations-and-references&quot;&gt;Citations and References&lt;&#x2F;h3&gt;
+&lt;h4 id=&quot;inline-citations&quot;&gt;Inline Citations&lt;&#x2F;h4&gt;
+&lt;p&gt;Use the reference shortcode for clean inline citations:&lt;&#x2F;p&gt;
+&lt;pre data-lang=&quot;markdown&quot; class=&quot;language-markdown &quot;&gt;&lt;code class=&quot;language-markdown&quot; data-lang=&quot;markdown&quot;&gt;This claim is supported by research 
+
+
+
+
+    
+    
+
+
+&amp;lt;sup class=&amp;quot;wiki-reference&amp;quot;&amp;gt;
+    &amp;lt;a href=&amp;quot;#ref-1&amp;quot; class=&amp;quot;wiki-reference__link&amp;quot; title=&amp;quot;View reference: Smith 2024&amp;quot;&amp;gt;
+        [Smith 2024]
+    &amp;lt;&amp;#x2F;a&amp;gt;
+&amp;lt;&amp;#x2F;sup&amp;gt;
+.
+&lt;&#x2F;code&gt;&lt;&#x2F;pre&gt;
+&lt;h4 id=&quot;footnotes&quot;&gt;Footnotes&lt;&#x2F;h4&gt;
+&lt;p&gt;Standard markdown footnotes work seamlessly:&lt;&#x2F;p&gt;
+&lt;pre data-lang=&quot;markdown&quot; class=&quot;language-markdown &quot;&gt;&lt;code class=&quot;language-markdown&quot; data-lang=&quot;markdown&quot;&gt;This statement needs clarification[^1].
+
+[^1]: This is the footnote text that appears at the bottom of the page.
+&lt;&#x2F;code&gt;&lt;&#x2F;pre&gt;
+&lt;h4 id=&quot;reference-numbers&quot;&gt;Reference Numbers&lt;&#x2F;h4&gt;
+&lt;p&gt;Link to your references section:&lt;&#x2F;p&gt;
+&lt;pre data-lang=&quot;markdown&quot; class=&quot;language-markdown &quot;&gt;&lt;code class=&quot;language-markdown&quot; data-lang=&quot;markdown&quot;&gt;According to recent studies 
+
+
+
+
+    
+    
+
+
+&amp;lt;sup class=&amp;quot;wiki-reference&amp;quot;&amp;gt;
+    &amp;lt;a href=&amp;quot;#ref-1&amp;quot; class=&amp;quot;wiki-reference__link&amp;quot; title=&amp;quot;View reference: &amp;quot;&amp;gt;
+        []
+    &amp;lt;&amp;#x2F;a&amp;gt;
+&amp;lt;&amp;#x2F;sup&amp;gt;
+, this hypothesis is gaining support.
+&lt;&#x2F;code&gt;&lt;&#x2F;pre&gt;
+&lt;h2 id=&quot;best-practices&quot;&gt;Best Practices&lt;&#x2F;h2&gt;
+&lt;h3 id=&quot;writing-style&quot;&gt;Writing Style&lt;&#x2F;h3&gt;
+&lt;ol&gt;
+&lt;li&gt;&lt;strong&gt;Use clear, accessible language&lt;&#x2F;strong&gt; - Avoid unnecessary jargon&lt;&#x2F;li&gt;
+&lt;li&gt;&lt;strong&gt;Define technical terms&lt;&#x2F;strong&gt; - Use definition boxes for key concepts&lt;&#x2F;li&gt;
+&lt;li&gt;&lt;strong&gt;Maintain neutral tone&lt;&#x2F;strong&gt; - Present information objectively&lt;&#x2F;li&gt;
+&lt;li&gt;&lt;strong&gt;Structure logically&lt;&#x2F;strong&gt; - Order information from general to specific&lt;&#x2F;li&gt;
+&lt;li&gt;&lt;strong&gt;Include context&lt;&#x2F;strong&gt; - Explain why the concept matters&lt;&#x2F;li&gt;
+&lt;&#x2F;ol&gt;
+&lt;h3 id=&quot;content-organization&quot;&gt;Content Organization&lt;&#x2F;h3&gt;
+&lt;ol&gt;
+&lt;li&gt;&lt;strong&gt;Start with the summary&lt;&#x2F;strong&gt; - Clear overview in frontmatter&lt;&#x2F;li&gt;
+&lt;li&gt;&lt;strong&gt;Use consistent headings&lt;&#x2F;strong&gt; - Follow the H2 &amp;gt; H3 &amp;gt; H4 hierarchy&lt;&#x2F;li&gt;
+&lt;li&gt;&lt;strong&gt;Group related information&lt;&#x2F;strong&gt; - Keep similar concepts together&lt;&#x2F;li&gt;
+&lt;li&gt;&lt;strong&gt;Cross-reference liberally&lt;&#x2F;strong&gt; - Link to related wiki entries&lt;&#x2F;li&gt;
+&lt;li&gt;&lt;strong&gt;Cite sources&lt;&#x2F;strong&gt; - Include references for claims and data&lt;&#x2F;li&gt;
+&lt;&#x2F;ol&gt;
+&lt;h3 id=&quot;alternative-names&quot;&gt;Alternative Names&lt;&#x2F;h3&gt;
+&lt;p&gt;Include alternative names when:&lt;&#x2F;p&gt;
+&lt;ul&gt;
+&lt;li&gt;The concept has translations in other languages&lt;&#x2F;li&gt;
+&lt;li&gt;Multiple spellings exist in different sources&lt;&#x2F;li&gt;
+&lt;li&gt;The term has evolved over time&lt;&#x2F;li&gt;
+&lt;li&gt;Different authors use different terminology&lt;&#x2F;li&gt;
+&lt;&#x2F;ul&gt;
+&lt;p&gt;Example:&lt;&#x2F;p&gt;
+&lt;pre data-lang=&quot;toml&quot; class=&quot;language-toml &quot;&gt;&lt;code class=&quot;language-toml&quot; data-lang=&quot;toml&quot;&gt;alternative_names = [
+    &amp;quot;&amp;lt;span class=&amp;quot;hebrew&amp;quot;&amp;gt;אֱלֹהִים&amp;lt;&amp;#x2F;span&amp;gt; (Hebrew)&amp;quot;,
+    &amp;quot;Eloha (singular)&amp;quot;,
+    &amp;quot;The Powerful Ones&amp;quot;,
+    &amp;quot;Sky People&amp;quot;
+]
+&lt;&#x2F;code&gt;&lt;&#x2F;pre&gt;
+&lt;h2 id=&quot;typography-and-formatting&quot;&gt;Typography and Formatting&lt;&#x2F;h2&gt;
+&lt;h3 id=&quot;text-emphasis&quot;&gt;Text Emphasis&lt;&#x2F;h3&gt;
+&lt;ul&gt;
+&lt;li&gt;Use &lt;strong&gt;bold&lt;&#x2F;strong&gt; for key terms and important concepts&lt;&#x2F;li&gt;
+&lt;li&gt;Use &lt;em&gt;italic&lt;&#x2F;em&gt; for emphasis or foreign terms&lt;&#x2F;li&gt;
+&lt;li&gt;Use &lt;code&gt;code formatting&lt;&#x2F;code&gt; for technical terms, file paths, or code&lt;&#x2F;li&gt;
+&lt;&#x2F;ul&gt;
+&lt;h3 id=&quot;lists&quot;&gt;Lists&lt;&#x2F;h3&gt;
+&lt;p&gt;Create clear, scannable lists:&lt;&#x2F;p&gt;
+&lt;pre data-lang=&quot;markdown&quot; class=&quot;language-markdown &quot;&gt;&lt;code class=&quot;language-markdown&quot; data-lang=&quot;markdown&quot;&gt;1. **Numbered lists** for sequential information
+2. **Bullet points** for related items
+3. **Nested lists** for subcategories
+&lt;&#x2F;code&gt;&lt;&#x2F;pre&gt;
+&lt;h3 id=&quot;tables&quot;&gt;Tables&lt;&#x2F;h3&gt;
+&lt;p&gt;Use tables for comparative information:&lt;&#x2F;p&gt;
+&lt;pre data-lang=&quot;markdown&quot; class=&quot;language-markdown &quot;&gt;&lt;code class=&quot;language-markdown&quot; data-lang=&quot;markdown&quot;&gt;| Concept | Definition | Source |
+|---------|------------|---------|
+| Term 1  | Definition 1 | Source 1 |
+| Term 2  | Definition 2 | Source 2 |
+&lt;&#x2F;code&gt;&lt;&#x2F;pre&gt;
+&lt;h3 id=&quot;blockquotes&quot;&gt;Blockquotes&lt;&#x2F;h3&gt;
+&lt;p&gt;Use blockquotes for important passages or quotes:&lt;&#x2F;p&gt;
+&lt;pre data-lang=&quot;markdown&quot; class=&quot;language-markdown &quot;&gt;&lt;code class=&quot;language-markdown&quot; data-lang=&quot;markdown&quot;&gt;&amp;gt; This is an important quote that provides key insight into the concept being discussed.
+&amp;gt;
+&amp;gt; &amp;lt;cite&amp;gt;Author Name, Source Publication&amp;lt;&amp;#x2F;cite&amp;gt;
+&lt;&#x2F;code&gt;&lt;&#x2F;pre&gt;
+&lt;h2 id=&quot;technical-implementation&quot;&gt;Technical Implementation&lt;&#x2F;h2&gt;
+&lt;h3 id=&quot;template-system&quot;&gt;Template System&lt;&#x2F;h3&gt;
+&lt;p&gt;The wiki uses a custom Zola template (&lt;code&gt;wiki-page.html&lt;&#x2F;code&gt;) that:&lt;&#x2F;p&gt;
+&lt;ul&gt;
+&lt;li&gt;Auto-generates table of contents from headings&lt;&#x2F;li&gt;
+&lt;li&gt;Renders the summary section prominently&lt;&#x2F;li&gt;
+&lt;li&gt;Handles multiple reference types&lt;&#x2F;li&gt;
+&lt;li&gt;Provides responsive layout for all devices&lt;&#x2F;li&gt;
+&lt;li&gt;Includes proper semantic HTML for accessibility&lt;&#x2F;li&gt;
+&lt;&#x2F;ul&gt;
+&lt;h3 id=&quot;styling&quot;&gt;Styling&lt;&#x2F;h3&gt;
+&lt;p&gt;The CSS follows BEM methodology with:&lt;&#x2F;p&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;strong&gt;Semantic class names&lt;&#x2F;strong&gt; (&lt;code&gt;.wiki__component&lt;&#x2F;code&gt;)&lt;&#x2F;li&gt;
+&lt;li&gt;&lt;strong&gt;CSS custom properties&lt;&#x2F;strong&gt; for theming&lt;&#x2F;li&gt;
+&lt;li&gt;&lt;strong&gt;Responsive design&lt;&#x2F;strong&gt; principles&lt;&#x2F;li&gt;
+&lt;li&gt;&lt;strong&gt;Accessibility&lt;&#x2F;strong&gt; considerations&lt;&#x2F;li&gt;
+&lt;&#x2F;ul&gt;
+&lt;h3 id=&quot;mobile-optimization&quot;&gt;Mobile Optimization&lt;&#x2F;h3&gt;
+&lt;p&gt;The layout adapts for mobile devices:&lt;&#x2F;p&gt;
+&lt;ul&gt;
+&lt;li&gt;TOC moves below content on small screens&lt;&#x2F;li&gt;
+&lt;li&gt;Typography scales appropriately&lt;&#x2F;li&gt;
+&lt;li&gt;Touch targets are properly sized&lt;&#x2F;li&gt;
+&lt;li&gt;Content remains readable at all sizes&lt;&#x2F;li&gt;
+&lt;&#x2F;ul&gt;
+&lt;h2 id=&quot;seo-and-accessibility&quot;&gt;SEO and Accessibility&lt;&#x2F;h2&gt;
+&lt;h3 id=&quot;search-optimization&quot;&gt;Search Optimization&lt;&#x2F;h3&gt;
+&lt;ul&gt;
+&lt;li&gt;Use descriptive titles and slugs&lt;&#x2F;li&gt;
+&lt;li&gt;Include comprehensive descriptions&lt;&#x2F;li&gt;
+&lt;li&gt;Structure content with proper headings&lt;&#x2F;li&gt;
+&lt;li&gt;Use semantic markup for better crawling&lt;&#x2F;li&gt;
+&lt;&#x2F;ul&gt;
+&lt;h3 id=&quot;accessibility-features&quot;&gt;Accessibility Features&lt;&#x2F;h3&gt;
+&lt;ul&gt;
+&lt;li&gt;Proper heading hierarchy for screen readers&lt;&#x2F;li&gt;
+&lt;li&gt;Focus indicators for keyboard navigation&lt;&#x2F;li&gt;
+&lt;li&gt;Alt text for images (when applicable)&lt;&#x2F;li&gt;
+&lt;li&gt;High contrast color schemes&lt;&#x2F;li&gt;
+&lt;li&gt;Semantic HTML structure&lt;&#x2F;li&gt;
+&lt;&#x2F;ul&gt;
+&lt;h2 id=&quot;quality-guidelines&quot;&gt;Quality Guidelines&lt;&#x2F;h2&gt;
+&lt;h3 id=&quot;content-quality&quot;&gt;Content Quality&lt;&#x2F;h3&gt;
+&lt;ol&gt;
+&lt;li&gt;&lt;strong&gt;Accuracy&lt;&#x2F;strong&gt;: Verify all factual claims&lt;&#x2F;li&gt;
+&lt;li&gt;&lt;strong&gt;Completeness&lt;&#x2F;strong&gt;: Cover the topic comprehensively&lt;&#x2F;li&gt;
+&lt;li&gt;&lt;strong&gt;Clarity&lt;&#x2F;strong&gt;: Use clear, understandable language&lt;&#x2F;li&gt;
+&lt;li&gt;&lt;strong&gt;Currency&lt;&#x2F;strong&gt;: Keep information up to date&lt;&#x2F;li&gt;
+&lt;&#x2F;ol&gt;
+&lt;h3 id=&quot;style-consistency&quot;&gt;Style Consistency&lt;&#x2F;h3&gt;
+&lt;ol&gt;
+&lt;li&gt;&lt;strong&gt;Tone&lt;&#x2F;strong&gt;: Maintain encyclopedic, neutral tone&lt;&#x2F;li&gt;
+&lt;li&gt;&lt;strong&gt;Formatting&lt;&#x2F;strong&gt;: Follow established patterns&lt;&#x2F;li&gt;
+&lt;li&gt;&lt;strong&gt;Terminology&lt;&#x2F;strong&gt;: Use consistent terms throughout&lt;&#x2F;li&gt;
+&lt;li&gt;&lt;strong&gt;Citations&lt;&#x2F;strong&gt;: Properly attribute all sources&lt;&#x2F;li&gt;
+&lt;&#x2F;ol&gt;
+&lt;h2 id=&quot;common-patterns&quot;&gt;Common Patterns&lt;&#x2F;h2&gt;
+&lt;h3 id=&quot;scientific-concepts&quot;&gt;Scientific Concepts&lt;&#x2F;h3&gt;
+&lt;p&gt;For scientific topics:&lt;&#x2F;p&gt;
+&lt;pre data-lang=&quot;markdown&quot; class=&quot;language-markdown &quot;&gt;&lt;code class=&quot;language-markdown&quot; data-lang=&quot;markdown&quot;&gt;## Definition
+
+Clear, technical definition using scientific terminology.
+
+## Scientific Basis
+
+Current research and evidence supporting the concept.
+
+## Implications
+
+What this means for the broader hypothesis.
+
+## Controversies
+
+Areas of debate or conflicting interpretations.
+&lt;&#x2F;code&gt;&lt;&#x2F;pre&gt;
+&lt;h3 id=&quot;historical-concepts&quot;&gt;Historical Concepts&lt;&#x2F;h3&gt;
+&lt;p&gt;For historical topics:&lt;&#x2F;p&gt;
+&lt;pre data-lang=&quot;markdown&quot; class=&quot;language-markdown &quot;&gt;&lt;code class=&quot;language-markdown&quot; data-lang=&quot;markdown&quot;&gt;## Historical Context
+
+When and where this concept originated.
+
+## Development
+
+How the concept evolved over time.
+
+## Modern Interpretation
+
+Contemporary understanding and analysis.
+
+## Sources
+
+Primary and secondary sources.
+&lt;&#x2F;code&gt;&lt;&#x2F;pre&gt;
+&lt;h3 id=&quot;technical-terms&quot;&gt;Technical Terms&lt;&#x2F;h3&gt;
+&lt;p&gt;For technical definitions:&lt;&#x2F;p&gt;
+&lt;pre data-lang=&quot;markdown&quot; class=&quot;language-markdown &quot;&gt;&lt;code class=&quot;language-markdown&quot; data-lang=&quot;markdown&quot;&gt;
+
+
+
+&amp;lt;div class=&amp;quot;wiki-definition-box wiki-definition-box--technical&amp;quot;&amp;gt;
+    
+    &amp;lt;div class=&amp;quot;wiki-definition-box__term&amp;quot;&amp;gt;Technical Term&amp;lt;&amp;#x2F;div&amp;gt;
+    
+
+    &amp;lt;div class=&amp;quot;wiki-definition-box__content&amp;quot;&amp;gt;
+        &amp;lt;p&amp;gt;Precise definition with technical accuracy.&amp;lt;&amp;#x2F;p&amp;gt;
+
+    &amp;lt;&amp;#x2F;div&amp;gt;
+&amp;lt;&amp;#x2F;div&amp;gt;
+
+
+## Applications
+
+How this term is used in context.
+
+## Related Technologies
+
+Connected technical concepts.
+&lt;&#x2F;code&gt;&lt;&#x2F;pre&gt;
+&lt;h2 id=&quot;troubleshooting&quot;&gt;Troubleshooting&lt;&#x2F;h2&gt;
+&lt;h3 id=&quot;common-issues&quot;&gt;Common Issues&lt;&#x2F;h3&gt;
+&lt;ol&gt;
+&lt;li&gt;&lt;strong&gt;TOC not generating&lt;&#x2F;strong&gt;: Check heading structure (H2, H3, H4)&lt;&#x2F;li&gt;
+&lt;li&gt;&lt;strong&gt;References not linking&lt;&#x2F;strong&gt;: Verify reference numbering&lt;&#x2F;li&gt;
+&lt;li&gt;&lt;strong&gt;Styling issues&lt;&#x2F;strong&gt;: Ensure proper template selection&lt;&#x2F;li&gt;
+&lt;li&gt;&lt;strong&gt;Mobile layout problems&lt;&#x2F;strong&gt;: Test responsive breakpoints&lt;&#x2F;li&gt;
+&lt;&#x2F;ol&gt;
+&lt;h3 id=&quot;template-debugging&quot;&gt;Template Debugging&lt;&#x2F;h3&gt;
+&lt;p&gt;If pages aren&#x27;t rendering correctly:&lt;&#x2F;p&gt;
+&lt;ol&gt;
+&lt;li&gt;Check frontmatter syntax&lt;&#x2F;li&gt;
+&lt;li&gt;Verify template path&lt;&#x2F;li&gt;
+&lt;li&gt;Validate markdown syntax&lt;&#x2F;li&gt;
+&lt;li&gt;Test locally with &lt;code&gt;zola serve&lt;&#x2F;code&gt;&lt;&#x2F;li&gt;
+&lt;&#x2F;ol&gt;
+&lt;p&gt;This documentation should cover all aspects of creating effective wiki entries. For additional questions or suggestions, refer to the project&#x27;s contribution guidelines.&lt;&#x2F;p&gt;
+</description>
+      </item>
+      <item>
+          <title>Sample Concept</title>
+          <pubDate>Mon, 15 Jan 2024 00:00:00 +0000</pubDate>
+          <author>Unknown</author>
+          <link>https://www.wheelofheaven.io/wiki/sample-concept/</link>
+          <guid>https://www.wheelofheaven.io/wiki/sample-concept/</guid>
+          <description xml:base="https://www.wheelofheaven.io/wiki/sample-concept/">&lt;p&gt;This page demonstrates the complete wiki layout system with all its features. It includes a table of contents, management summary, various content sections, and proper reference handling.&lt;&#x2F;p&gt;
+&lt;h2 id=&quot;overview&quot;&gt;Overview&lt;&#x2F;h2&gt;
+&lt;p&gt;The wiki system is designed to provide a comprehensive knowledge base experience with modern web standards and accessibility in mind. Each wiki entry follows a consistent structure that makes information easy to find and navigate.&lt;&#x2F;p&gt;
+&lt;h3 id=&quot;key-features&quot;&gt;Key Features&lt;&#x2F;h3&gt;
+&lt;p&gt;The wiki layout includes several important components:&lt;&#x2F;p&gt;
+&lt;ol&gt;
+&lt;li&gt;&lt;strong&gt;Table of Contents&lt;&#x2F;strong&gt;: Auto-generated navigation panel on the left&lt;&#x2F;li&gt;
+&lt;li&gt;&lt;strong&gt;Management Summary&lt;&#x2F;strong&gt;: Prominent overview section below the title&lt;&#x2F;li&gt;
+&lt;li&gt;&lt;strong&gt;Structured Content&lt;&#x2F;strong&gt;: Well-organized main content with proper typography&lt;&#x2F;li&gt;
+&lt;li&gt;&lt;strong&gt;Reference System&lt;&#x2F;strong&gt;: Both inline citations and formal references section&lt;&#x2F;li&gt;
+&lt;li&gt;&lt;strong&gt;Related Links&lt;&#x2F;strong&gt;: See also and external links sections&lt;&#x2F;li&gt;
+&lt;&#x2F;ol&gt;
+&lt;h2 id=&quot;content-formatting&quot;&gt;Content Formatting&lt;&#x2F;h2&gt;
+&lt;h3 id=&quot;text-formatting&quot;&gt;Text Formatting&lt;&#x2F;h3&gt;
+&lt;p&gt;You can use standard Markdown formatting including &lt;strong&gt;bold text&lt;&#x2F;strong&gt;, &lt;em&gt;italic text&lt;&#x2F;em&gt;, and &lt;code&gt;inline code&lt;&#x2F;code&gt;. The typography system uses three font families:&lt;&#x2F;p&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;strong&gt;Jost&lt;&#x2F;strong&gt; for body text (clean, readable sans-serif)&lt;&#x2F;li&gt;
+&lt;li&gt;&lt;strong&gt;Space Grotesk&lt;&#x2F;strong&gt; for headings and emphasis (technical serif)&lt;&#x2F;li&gt;
+&lt;li&gt;&lt;strong&gt;IBM Plex Mono&lt;&#x2F;strong&gt; for code and technical elements&lt;&#x2F;li&gt;
+&lt;&#x2F;ul&gt;
+&lt;h3 id=&quot;info-boxes&quot;&gt;Info Boxes&lt;&#x2F;h3&gt;
+&lt;p&gt;You can create informational callouts using the info shortcode:&lt;&#x2F;p&gt;
+
+
+
+
+
+&lt;div class=&quot;wiki-info-box wiki-info-box--info&quot;&gt;
+    
+    &lt;div class=&quot;wiki-info-box__header&quot;&gt;
+        
+        
+        &lt;h4 class=&quot;wiki-info-box__title&quot;&gt;Information&lt;&#x2F;h4&gt;
+        
+    &lt;&#x2F;div&gt;
+    
+
+    &lt;div class=&quot;wiki-info-box__content&quot;&gt;
+        &lt;p&gt;This is an informational callout that can be used to highlight important details or provide additional context about a topic.&lt;&#x2F;p&gt;
+
+    &lt;&#x2F;div&gt;
+&lt;&#x2F;div&gt;
+
+
+
+
+
+&lt;div class=&quot;wiki-info-box wiki-info-box--warning&quot;&gt;
+    
+    &lt;div class=&quot;wiki-info-box__header&quot;&gt;
+        
+        
+        &lt;h4 class=&quot;wiki-info-box__title&quot;&gt;Important Note&lt;&#x2F;h4&gt;
+        
+    &lt;&#x2F;div&gt;
+    
+
+    &lt;div class=&quot;wiki-info-box__content&quot;&gt;
+        &lt;p&gt;Warning boxes can be used to alert readers to important considerations or potential misconceptions.&lt;&#x2F;p&gt;
+
+    &lt;&#x2F;div&gt;
+&lt;&#x2F;div&gt;
+
+
+
+
+
+&lt;div class=&quot;wiki-info-box wiki-info-box--success&quot;&gt;
+    
+    &lt;div class=&quot;wiki-info-box__header&quot;&gt;
+        
+        
+        &lt;h4 class=&quot;wiki-info-box__title&quot;&gt;Key Insight&lt;&#x2F;h4&gt;
+        
+    &lt;&#x2F;div&gt;
+    
+
+    &lt;div class=&quot;wiki-info-box__content&quot;&gt;
+        &lt;p&gt;Success boxes work well for highlighting breakthrough moments or important conclusions.&lt;&#x2F;p&gt;
+
+    &lt;&#x2F;div&gt;
+&lt;&#x2F;div&gt;
+&lt;h3 id=&quot;definition-boxes&quot;&gt;Definition Boxes&lt;&#x2F;h3&gt;
+&lt;p&gt;For terminology, you can use definition boxes:&lt;&#x2F;p&gt;
+
+
+
+
+&lt;div class=&quot;wiki-definition-box wiki-definition-box--scientific&quot;&gt;
+    
+    &lt;div class=&quot;wiki-definition-box__term&quot;&gt;Extraterrestrial Intelligence&lt;&#x2F;div&gt;
+    
+
+    &lt;div class=&quot;wiki-definition-box__content&quot;&gt;
+        &lt;p&gt;A hypothetical form of life that originates outside Earth, possessing cognitive abilities and technological capabilities that may exceed those of humanity.&lt;&#x2F;p&gt;
+
+    &lt;&#x2F;div&gt;
+&lt;&#x2F;div&gt;
+&lt;h3 id=&quot;code-examples&quot;&gt;Code Examples&lt;&#x2F;h3&gt;
+&lt;p&gt;Technical content can include code blocks with syntax highlighting:&lt;&#x2F;p&gt;
+&lt;pre data-lang=&quot;toml&quot; class=&quot;language-toml &quot;&gt;&lt;code class=&quot;language-toml&quot; data-lang=&quot;toml&quot;&gt;[extra]
+summary = &amp;quot;Brief overview of the concept&amp;quot;
+category = &amp;quot;Core Concepts&amp;quot;
+references = [
+    { title = &amp;quot;Source Title&amp;quot;, author = &amp;quot;Author Name&amp;quot;, date = &amp;quot;2024&amp;quot; }
+]
+&lt;&#x2F;code&gt;&lt;&#x2F;pre&gt;
+&lt;h2 id=&quot;citations-and-references&quot;&gt;Citations and References&lt;&#x2F;h2&gt;
+&lt;h3 id=&quot;inline-citations&quot;&gt;Inline Citations&lt;&#x2F;h3&gt;
+&lt;p&gt;You can reference external sources using standard markdown footnotes&lt;sup class=&quot;footnote-reference&quot;&gt;&lt;a href=&quot;#1&quot;&gt;1&lt;&#x2F;a&gt;&lt;&#x2F;sup&gt; or use the reference shortcode 
+
+
+
+
+    
+    
+
+
+&lt;sup class=&quot;wiki-reference&quot;&gt;
+    &lt;a href=&quot;#ref-1&quot; class=&quot;wiki-reference__link&quot; title=&quot;View reference: Ref 1&quot;&gt;
+        [Ref 1]
+    &lt;&#x2F;a&gt;
+&lt;&#x2F;sup&gt;
+ for custom reference linking.&lt;&#x2F;p&gt;
+&lt;h3 id=&quot;footnotes&quot;&gt;Footnotes&lt;&#x2F;h3&gt;
+&lt;p&gt;Standard markdown footnotes work seamlessly with the wiki layout. They appear at the bottom of the content and include return links for easy navigation.&lt;&#x2F;p&gt;
+&lt;h2 id=&quot;subsections&quot;&gt;Subsections&lt;&#x2F;h2&gt;
+&lt;h3 id=&quot;scientific-context&quot;&gt;Scientific Context&lt;&#x2F;h3&gt;
+&lt;p&gt;The wiki system is particularly well-suited for scientific and technical content, with proper support for:&lt;&#x2F;p&gt;
+&lt;ul&gt;
+&lt;li&gt;Mathematical expressions (when needed)&lt;&#x2F;li&gt;
+&lt;li&gt;Scientific notation&lt;&#x2F;li&gt;
+&lt;li&gt;Technical diagrams and charts&lt;&#x2F;li&gt;
+&lt;li&gt;Research citations and academic references&lt;&#x2F;li&gt;
+&lt;&#x2F;ul&gt;
+&lt;h3 id=&quot;historical-perspectives&quot;&gt;Historical Perspectives&lt;&#x2F;h3&gt;
+&lt;p&gt;Historical content benefits from the structured reference system, allowing readers to:&lt;&#x2F;p&gt;
+&lt;ol&gt;
+&lt;li&gt;Access primary sources easily&lt;&#x2F;li&gt;
+&lt;li&gt;Follow citation trails&lt;&#x2F;li&gt;
+&lt;li&gt;Cross-reference related concepts&lt;&#x2F;li&gt;
+&lt;li&gt;Understand chronological context&lt;&#x2F;li&gt;
+&lt;&#x2F;ol&gt;
+&lt;h2 id=&quot;navigation-features&quot;&gt;Navigation Features&lt;&#x2F;h2&gt;
+&lt;h3 id=&quot;table-of-contents&quot;&gt;Table of Contents&lt;&#x2F;h3&gt;
+&lt;p&gt;The left sidebar provides an interactive table of contents that:&lt;&#x2F;p&gt;
+&lt;ul&gt;
+&lt;li&gt;Auto-generates from your heading structure (H2, H3, H4)&lt;&#x2F;li&gt;
+&lt;li&gt;Highlights the current section (when JavaScript is enabled)&lt;&#x2F;li&gt;
+&lt;li&gt;Provides smooth scrolling navigation&lt;&#x2F;li&gt;
+&lt;li&gt;Adapts to mobile layouts&lt;&#x2F;li&gt;
+&lt;&#x2F;ul&gt;
+&lt;h3 id=&quot;cross-references&quot;&gt;Cross-References&lt;&#x2F;h3&gt;
+&lt;p&gt;The &quot;See also&quot; section at the bottom helps readers discover related concepts within the wiki, while external links provide access to outside resources and sources.&lt;&#x2F;p&gt;
+&lt;h2 id=&quot;best-practices&quot;&gt;Best Practices&lt;&#x2F;h2&gt;
+&lt;p&gt;When creating wiki entries, consider:&lt;&#x2F;p&gt;
+&lt;ol&gt;
+&lt;li&gt;&lt;strong&gt;Start with a clear summary&lt;&#x2F;strong&gt; that explains the concept in 2-3 sentences&lt;&#x2F;li&gt;
+&lt;li&gt;&lt;strong&gt;Use consistent heading structure&lt;&#x2F;strong&gt; for proper TOC generation&lt;&#x2F;li&gt;
+&lt;li&gt;&lt;strong&gt;Include relevant categories&lt;&#x2F;strong&gt; to help with organization&lt;&#x2F;li&gt;
+&lt;li&gt;&lt;strong&gt;Add inline citations&lt;&#x2F;strong&gt; for claims that need supporting evidence&lt;&#x2F;li&gt;
+&lt;li&gt;&lt;strong&gt;Link to related concepts&lt;&#x2F;strong&gt; in the see also section&lt;&#x2F;li&gt;
+&lt;li&gt;&lt;strong&gt;Provide external resources&lt;&#x2F;strong&gt; for further reading&lt;&#x2F;li&gt;
+&lt;&#x2F;ol&gt;
+&lt;h3 id=&quot;writing-style&quot;&gt;Writing Style&lt;&#x2F;h3&gt;
+&lt;p&gt;Wiki entries should maintain a:&lt;&#x2F;p&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;strong&gt;Neutral, encyclopedic tone&lt;&#x2F;strong&gt;&lt;&#x2F;li&gt;
+&lt;li&gt;&lt;strong&gt;Clear, concise explanations&lt;&#x2F;strong&gt;&lt;&#x2F;li&gt;
+&lt;li&gt;&lt;strong&gt;Logical information hierarchy&lt;&#x2F;strong&gt;&lt;&#x2F;li&gt;
+&lt;li&gt;&lt;strong&gt;Consistent terminology usage&lt;&#x2F;strong&gt;&lt;&#x2F;li&gt;
+&lt;&#x2F;ul&gt;
+&lt;h2 id=&quot;technical-implementation&quot;&gt;Technical Implementation&lt;&#x2F;h2&gt;
+&lt;h3 id=&quot;template-structure&quot;&gt;Template Structure&lt;&#x2F;h3&gt;
+&lt;p&gt;The wiki uses a custom Zola template (&lt;code&gt;wiki-page.html&lt;&#x2F;code&gt;) that:&lt;&#x2F;p&gt;
+&lt;ul&gt;
+&lt;li&gt;Generates TOC from markdown headers&lt;&#x2F;li&gt;
+&lt;li&gt;Renders the summary section prominently&lt;&#x2F;li&gt;
+&lt;li&gt;Handles multiple reference types&lt;&#x2F;li&gt;
+&lt;li&gt;Provides responsive layout for all devices&lt;&#x2F;li&gt;
+&lt;&#x2F;ul&gt;
+&lt;h3 id=&quot;styling-approach&quot;&gt;Styling Approach&lt;&#x2F;h3&gt;
+&lt;p&gt;The CSS follows BEM methodology with:&lt;&#x2F;p&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;strong&gt;Semantic class names&lt;&#x2F;strong&gt; for maintainability&lt;&#x2F;li&gt;
+&lt;li&gt;&lt;strong&gt;CSS custom properties&lt;&#x2F;strong&gt; for theming&lt;&#x2F;li&gt;
+&lt;li&gt;&lt;strong&gt;Responsive design&lt;&#x2F;strong&gt; principles&lt;&#x2F;li&gt;
+&lt;li&gt;&lt;strong&gt;Accessibility&lt;&#x2F;strong&gt; considerations&lt;&#x2F;li&gt;
+&lt;&#x2F;ul&gt;
+&lt;h2 id=&quot;quote-examples&quot;&gt;Quote Examples&lt;&#x2F;h2&gt;
+&lt;h3 id=&quot;regular-blockquote-with-author-profile&quot;&gt;Regular Blockquote with Author Profile&lt;&#x2F;h3&gt;
+          
+
+&lt;blockquote class=&quot;wiki-content&quot;&gt;
+    &lt;div class=&quot;blockquote-content&quot;&gt;&lt;p&gt;Imagination is more important than knowledge. For knowledge is limited, whereas imagination embraces the entire world, stimulating progress, giving birth to evolution.&lt;&#x2F;p&gt;
+&lt;&#x2F;div&gt;
+
+    
+    &lt;div class=&quot;author-profile__container&quot;&gt;
+        &lt;!-- Work Section (Left) --&gt;
+        
+        &lt;div class=&quot;author-profile__work-section&quot;&gt;
+            &lt;div class=&quot;author-profile__work&quot;&gt;
+                
+                &lt;span class=&quot;author-profile__work-title&quot;&gt;The World As I See It&lt;&#x2F;span&gt;
+                 
+                &lt;span class=&quot;author-profile__work-year&quot;&gt;(1949)&lt;&#x2F;span&gt;
+                
+            &lt;&#x2F;div&gt;
+        &lt;&#x2F;div&gt;
+        
+
+        &lt;!-- Author Section (Right) --&gt;
+        &lt;div class=&quot;author-profile__author-section&quot;&gt;
+            
+            &lt;img
+                class=&quot;author-profile__avatar&quot;
+                src=&quot;https:&#x2F;&#x2F;www.wheelofheaven.io&#x2F;authors&#x2F;einstein.jpg&quot;
+                alt=&quot;Albert Einstein&quot;
+                loading=&quot;lazy&quot;
+                decoding=&quot;async&quot;
+                sizes=&quot;48px&quot;
+                onerror=&quot;this.classList.add(&#x27;hidden&#x27;); this.nextElementSibling.classList.remove(&#x27;hidden&#x27;);&quot;
+            &#x2F;&gt;
+            
+            &lt;div
+                class=&quot;author-profile__avatar author-profile__avatar--placeholder hidden&quot;
+            &gt;
+                A
+            &lt;&#x2F;div&gt;
+
+            &lt;div class=&quot;author-profile__info&quot;&gt;
+                &lt;div class=&quot;author-profile__name&quot;&gt;Albert Einstein&lt;&#x2F;div&gt;
+                
+                &lt;div class=&quot;author-profile__title&quot;&gt;Theoretical Physicist&lt;&#x2F;div&gt;
+                 
+                &lt;div class=&quot;author-profile__dates&quot;&gt;
+                    1879
+                    - 1955
+                &lt;&#x2F;div&gt;
+                
+            &lt;&#x2F;div&gt;
+        &lt;&#x2F;div&gt;
+    &lt;&#x2F;div&gt;
+
+    
+&lt;&#x2F;blockquote&gt;
+&lt;h3 id=&quot;custom-author-quote&quot;&gt;Custom Author Quote&lt;&#x2F;h3&gt;
+       
+
+&lt;blockquote class=&quot;wiki-content&quot;&gt;
+    &lt;div class=&quot;blockquote-content&quot;&gt;&lt;p&gt;This demonstrates how to create a blockquote with a custom author who isn&#x27;t in the authors database, including work reference with URL.&lt;&#x2F;p&gt;
+&lt;&#x2F;div&gt;
+
+    
+    &lt;div class=&quot;author-profile__container&quot;&gt;
+        &lt;!-- Work Section (Left) --&gt;
+        
+        &lt;div class=&quot;author-profile__work-section&quot;&gt;
+            &lt;div class=&quot;author-profile__work&quot;&gt;
+                
+                &lt;a
+                    href=&quot;https:&amp;#x2F;&amp;#x2F;example.com&quot;
+                    class=&quot;author-profile__work-link&quot;
+                    target=&quot;_blank&quot;
+                    rel=&quot;noopener noreferrer&quot;
+                &gt;
+                    Important Work
+                &lt;&#x2F;a&gt;
+                 
+                &lt;span class=&quot;author-profile__work-year&quot;&gt;(2024)&lt;&#x2F;span&gt;
+                
+            &lt;&#x2F;div&gt;
+        &lt;&#x2F;div&gt;
+        
+
+        &lt;!-- Author Section (Right) --&gt;
+        &lt;div class=&quot;author-profile__author-section&quot;&gt;
+            &lt;div
+                class=&quot;author-profile__avatar author-profile__avatar--placeholder&quot;
+            &gt;
+                C
+            &lt;&#x2F;div&gt;
+            &lt;div class=&quot;author-profile__info&quot;&gt;
+                &lt;div class=&quot;author-profile__name&quot;&gt;Custom Author&lt;&#x2F;div&gt;
+                
+                &lt;div class=&quot;author-profile__title&quot;&gt;Example Title&lt;&#x2F;div&gt;
+                
+            &lt;&#x2F;div&gt;
+        &lt;&#x2F;div&gt;
+    &lt;&#x2F;div&gt;
+
+    
+&lt;&#x2F;blockquote&gt;
+&lt;h3 id=&quot;library-quote&quot;&gt;Library Quote&lt;&#x2F;h3&gt;
+
+
+
+
+
+
+
+&lt;blockquote class=&quot;library-quote&quot;&gt;
+    &lt;div class=&quot;library-quote__content&quot;&gt;
+        &lt;p&gt;In the beginning, the Elohim created the heavens and the earth. This is not a supernatural creation story, but an account of scientific terraforming and biological engineering by an advanced extraterrestrial civilization.&lt;&#x2F;p&gt;
+
+    &lt;&#x2F;div&gt;
+
+    
+    &lt;div class=&quot;library-quote__link&quot;&gt;
+        &lt;a href=&quot;https:&#x2F;&#x2F;www.wheelofheaven.io&#x2F;library&#x2F;the-book-which-tells-the-truth&quot; class=&quot;library-quote__button&quot; title=&quot;Read full text in The Book Which Tells The Truth&quot;&gt;
+            &lt;svg class=&quot;library-quote__icon&quot; width=&quot;16&quot; height=&quot;16&quot; viewBox=&quot;0 0 24 24&quot; fill=&quot;none&quot; stroke=&quot;currentColor&quot; stroke-width=&quot;2&quot;&gt;
+                &lt;path d=&quot;M4 19.5v-15A2.5 2.5 0 0 1 6.5 2H20v20H6.5a2.5 2.5 0 0 1 0-5H20&quot;&gt;&lt;&#x2F;path&gt;
+            &lt;&#x2F;svg&gt;
+            &lt;span class=&quot;library-quote__button-text&quot;&gt;Read in The Book Which Tells The Truth&lt;&#x2F;span&gt;
+            &lt;svg class=&quot;library-quote__arrow&quot; width=&quot;12&quot; height=&quot;12&quot; viewBox=&quot;0 0 24 24&quot; fill=&quot;none&quot; stroke=&quot;currentColor&quot; stroke-width=&quot;2&quot;&gt;
+                &lt;path d=&quot;M5 12h14&quot;&gt;&lt;&#x2F;path&gt;
+                &lt;path d=&quot;M12 5l7 7-7 7&quot;&gt;&lt;&#x2F;path&gt;
+            &lt;&#x2F;svg&gt;
+        &lt;&#x2F;a&gt;
+    &lt;&#x2F;div&gt;
+    
+
+    
+    &lt;cite class=&quot;library-quote__citation&quot;&gt;
+        The Book Which Tells The Truth
+        , Chapter 1
+        
+    &lt;&#x2F;cite&gt;
+    
+&lt;&#x2F;blockquote&gt;
+&lt;h3 id=&quot;standard-blockquote&quot;&gt;Standard Blockquote&lt;&#x2F;h3&gt;
+&lt;blockquote&gt;
+&lt;p&gt;This is a regular blockquote without author profile. It uses the enhanced Spectral font styling but maintains the traditional blockquote appearance.&lt;&#x2F;p&gt;
+&lt;p&gt;&lt;cite&gt;Traditional Citation&lt;&#x2F;cite&gt;&lt;&#x2F;p&gt;
+&lt;&#x2F;blockquote&gt;
+&lt;div class=&quot;footnote-definition&quot; id=&quot;1&quot;&gt;&lt;sup class=&quot;footnote-definition-label&quot;&gt;1&lt;&#x2F;sup&gt;
+&lt;p&gt;This is an example of a standard Markdown footnote. It will appear at the bottom of the page with a return link.&lt;&#x2F;p&gt;
+&lt;&#x2F;div&gt;
+&lt;div class=&quot;footnote-definition&quot; id=&quot;2&quot;&gt;&lt;sup class=&quot;footnote-definition-label&quot;&gt;2&lt;&#x2F;sup&gt;
+&lt;p&gt;Footnotes are automatically numbered and include bidirectional linking for easy navigation between the reference and the citation.&lt;&#x2F;p&gt;
+&lt;&#x2F;div&gt;
+</description>
+      </item>
+    </channel>
+</rss>

@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<rss xmlns:atom="http://www.w3.org/2005/Atom" version="2.0">
+    <channel>
+      <title>Wheel of Heaven - Articles</title>
+      <link>https://www.wheelofheaven.io/fr/articles/</link>
+      <description>The democratization of the Age of Aquarius starts here. Wheel of Heaven is a knowledge base exploring the working hypothesis that life on Earth was intelligently designed by an extraterrestrial civilization, the so-called Elohim.</description>
+      <generator>Zola</generator>
+      <language>en</language>
+      <atom:link href="https://www.wheelofheaven.io/fr/articles/rss.xml" rel="self" type="application/rss+xml"/>
+      
+    </channel>
+</rss>

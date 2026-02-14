@@ -1,0 +1,222 @@
+# Wheel of Heaven Redirects
+# Handles legacy URL structure migration
+
+# =============================================================================
+# ENGLISH - Main intro section
+# =============================================================================
+
+/intro/                              /essentials/                         301
+/intro/at-a-glance/                  /essentials/                         301
+/intro/at-a-glance/*                 /essentials/                         301
+
+# At-a-glance subsections
+/intro/wheel-of-heaven/              /essentials/what-is-woh/             301
+/intro/the-setting/                  /essentials/revelation-vs-myth/      301
+/intro/the-foundation/               /essentials/elohim-hypothesis/       301
+/intro/the-hypothesis/               /essentials/elohim-hypothesis/       301
+
+# Timeline section
+/intro/timeline/                     /timeline/                           301
+/intro/timeline/*                    /timeline/                           301
+/intro/preamble/                     /timeline/preamble/                  301
+/intro/age-of-aquarius/              /timeline/age-of-aquarius/           301
+/intro/age-of-pisces/                /timeline/age-of-pisces/             301
+/intro/age-of-aries/                 /timeline/age-of-aries/              301
+/intro/age-of-taurus/                /timeline/age-of-taurus/             301
+/intro/age-of-gemini/                /timeline/age-of-gemini/             301
+/intro/age-of-cancer/                /timeline/age-of-cancer/             301
+/intro/age-of-leo/                   /timeline/age-of-leo/                301
+/intro/age-of-virgo/                 /timeline/age-of-virgo/              301
+/intro/age-of-libra/                 /timeline/age-of-libra/              301
+/intro/age-of-scorpio/               /timeline/age-of-scorpio/            301
+/intro/age-of-sagittarius/           /timeline/age-of-sagittarius/        301
+/intro/age-of-capricorn/             /timeline/age-of-capricorn/          301
+
+# Take-aways subsections
+/intro/take-aways/                   /essentials/elohim-hypothesis/       301
+/intro/take-aways/*                  /wiki/                               301
+/intro/extraterrestrial-civilization/ /wiki/elohim/                       301
+/intro/intelligent-design/           /wiki/intelligent-design/            301
+/intro/religious-syncretism/         /wiki/comparative-mythology/         301
+/intro/the-great-awakening/          /essentials/world-ages/              301
+
+# See-more subsections
+/intro/see-more/                     /wiki/                               301
+/intro/see-more/*                    /wiki/                               301
+/intro/faq/                          /wiki/                               301
+/intro/knowledge-base/               /wiki/                               301
+/intro/community/                    /about/                              301
+
+# =============================================================================
+# EXPLAINERS - Renamed to Articles
+# =============================================================================
+
+/explainers/                         /articles/                           301
+/explainers/*                        /articles/:splat                     301
+
+# =============================================================================
+# WIKI - Old /encyclopedia/ nested path
+# =============================================================================
+
+/wiki/encyclopedia/                  /wiki/                               301
+/wiki/encyclopedia/*                 /wiki/                               301
+
+# =============================================================================
+# LANGUAGE PREFIXED - German (de)
+# =============================================================================
+
+/de/intro/                           /de/essentials/                      301
+/de/intro/*                          /de/essentials/                      301
+/de/intro/timeline/                  /de/timeline/                        301
+/de/intro/timeline/*                 /de/timeline/                        301
+/de/wiki/encyclopedia/               /de/wiki/                            301
+/de/wiki/encyclopedia/*              /de/wiki/                            301
+/de/contact/                         /contact/                            301
+/de/categories/                      /de/wiki/                            301
+/de/categories/*                     /de/wiki/                            301
+/de/medium/                          /de/wiki/                            301
+/de/medium/*                         /de/wiki/                            301
+/de/explainers/                      /de/articles/                        301
+/de/explainers/*                     /de/articles/:splat                  301
+
+# =============================================================================
+# LANGUAGE PREFIXED - Spanish (es)
+# =============================================================================
+
+/es/intro/                           /es/essentials/                      301
+/es/intro/*                          /es/essentials/                      301
+/es/intro/timeline/                  /es/timeline/                        301
+/es/intro/timeline/*                 /es/timeline/                        301
+/es/wiki/encyclopedia/               /es/wiki/                            301
+/es/wiki/encyclopedia/*              /es/wiki/                            301
+/es/contact/                         /contact/                            301
+/es/categories/                      /es/wiki/                            301
+/es/categories/*                     /es/wiki/                            301
+/es/medium/                          /es/wiki/                            301
+/es/medium/*                         /es/wiki/                            301
+/es/explainers/                      /es/articles/                        301
+/es/explainers/*                     /es/articles/:splat                  301
+
+# =============================================================================
+# LANGUAGE PREFIXED - French (fr)
+# =============================================================================
+
+/fr/intro/                           /fr/essentials/                      301
+/fr/intro/*                          /fr/essentials/                      301
+/fr/intro/timeline/                  /fr/timeline/                        301
+/fr/intro/timeline/*                 /fr/timeline/                        301
+/fr/wiki/encyclopedia/               /fr/wiki/                            301
+/fr/wiki/encyclopedia/*              /fr/wiki/                            301
+/fr/contact/                         /contact/                            301
+/fr/categories/                      /fr/wiki/                            301
+/fr/categories/*                     /fr/wiki/                            301
+/fr/medium/                          /fr/wiki/                            301
+/fr/medium/*                         /fr/wiki/                            301
+/fr/explainers/                      /fr/articles/                        301
+/fr/explainers/*                     /fr/articles/:splat                  301
+
+# =============================================================================
+# LANGUAGE PREFIXED - Japanese (ja)
+# =============================================================================
+
+/ja/intro/                           /ja/essentials/                      301
+/ja/intro/*                          /ja/essentials/                      301
+/ja/intro/timeline/                  /ja/timeline/                        301
+/ja/intro/timeline/*                 /ja/timeline/                        301
+/ja/wiki/encyclopedia/               /ja/wiki/                            301
+/ja/wiki/encyclopedia/*              /ja/wiki/                            301
+/ja/contact/                         /contact/                            301
+/ja/categories/                      /ja/wiki/                            301
+/ja/categories/*                     /ja/wiki/                            301
+/ja/medium/                          /ja/wiki/                            301
+/ja/medium/*                         /ja/wiki/                            301
+/ja/explainers/                      /ja/articles/                        301
+/ja/explainers/*                     /ja/articles/:splat                  301
+
+# =============================================================================
+# LANGUAGE PREFIXED - Russian (ru)
+# =============================================================================
+
+/ru/intro/                           /ru/essentials/                      301
+/ru/intro/*                          /ru/essentials/                      301
+/ru/intro/timeline/                  /ru/timeline/                        301
+/ru/intro/timeline/*                 /ru/timeline/                        301
+/ru/wiki/encyclopedia/               /ru/wiki/                            301
+/ru/wiki/encyclopedia/*              /ru/wiki/                            301
+/ru/contact/                         /contact/                            301
+/ru/categories/                      /ru/wiki/                            301
+/ru/categories/*                     /ru/wiki/                            301
+/ru/medium/                          /ru/wiki/                            301
+/ru/medium/*                         /ru/wiki/                            301
+/ru/explainers/                      /ru/articles/                        301
+/ru/explainers/*                     /ru/articles/:splat                  301
+
+# =============================================================================
+# LANGUAGE PREFIXED - Chinese Simplified (zh)
+# =============================================================================
+
+/zh/intro/                           /zh/essentials/                      301
+/zh/intro/*                          /zh/essentials/                      301
+/zh/intro/timeline/                  /zh/timeline/                        301
+/zh/intro/timeline/*                 /zh/timeline/                        301
+/zh/wiki/encyclopedia/               /zh/wiki/                            301
+/zh/wiki/encyclopedia/*              /zh/wiki/                            301
+/zh/contact/                         /contact/                            301
+/zh/categories/                      /zh/wiki/                            301
+/zh/categories/*                     /zh/wiki/                            301
+/zh/medium/                          /zh/wiki/                            301
+/zh/medium/*                         /zh/wiki/                            301
+/zh/explainers/                      /zh/articles/                        301
+/zh/explainers/*                     /zh/articles/:splat                  301
+
+# =============================================================================
+# LANGUAGE PREFIXED - Korean (ko)
+# =============================================================================
+
+/ko/intro/                           /ko/essentials/                      301
+/ko/intro/*                          /ko/essentials/                      301
+/ko/intro/timeline/                  /ko/timeline/                        301
+/ko/intro/timeline/*                 /ko/timeline/                        301
+/ko/wiki/encyclopedia/               /ko/wiki/                            301
+/ko/wiki/encyclopedia/*              /ko/wiki/                            301
+/ko/contact/                         /contact/                            301
+/ko/categories/                      /ko/wiki/                            301
+/ko/categories/*                     /ko/wiki/                            301
+/ko/medium/                          /ko/wiki/                            301
+/ko/medium/*                         /ko/wiki/                            301
+/ko/explainers/                      /ko/articles/                        301
+/ko/explainers/*                     /ko/articles/:splat                  301
+
+# =============================================================================
+# LANGUAGE PREFIXED - Chinese Traditional (zh-Hant)
+# =============================================================================
+
+/zh-Hant/intro/                      /zh-Hant/essentials/                 301
+/zh-Hant/intro/*                     /zh-Hant/essentials/                 301
+/zh-Hant/intro/timeline/             /zh-Hant/timeline/                   301
+/zh-Hant/intro/timeline/*            /zh-Hant/timeline/                   301
+/zh-Hant/wiki/encyclopedia/          /zh-Hant/wiki/                       301
+/zh-Hant/wiki/encyclopedia/*         /zh-Hant/wiki/                       301
+/zh-Hant/contact/                    /contact/                            301
+/zh-Hant/categories/                 /zh-Hant/wiki/                       301
+/zh-Hant/categories/*                /zh-Hant/wiki/                       301
+/zh-Hant/medium/                     /zh-Hant/wiki/                       301
+/zh-Hant/medium/*                    /zh-Hant/wiki/                       301
+/zh-Hant/explainers/                 /zh-Hant/articles/                   301
+/zh-Hant/explainers/*                /zh-Hant/articles/:splat             301
+
+# =============================================================================
+# ENGLISH - Catch-all patterns (must be LAST)
+# =============================================================================
+
+# Contact page is now its own page at /contact/
+
+# Note: /articles/ is now a live section (renamed from /explainers/)
+
+# Old categories taxonomy (merged into wiki)
+/categories/                         /wiki/                               301
+/categories/*                        /wiki/                               301
+
+# Old medium taxonomy (merged into wiki)
+/medium/                             /wiki/                               301
+/medium/*                            /wiki/                               301
