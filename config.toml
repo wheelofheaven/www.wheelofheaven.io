@@ -86,6 +86,7 @@ footerPreamble_url = "/timeline/preamble/"
 # Navbar translations
 navbarEssentials = "Essentials"
 navbarTimeline = "Timeline"
+navbarSources = "Sources"
 navbarKnowledge = "Knowledge"
 navbarCommunity = "Community"
 
@@ -300,6 +301,7 @@ footerPreambleLink = "/de/intro/einleitung/"
 # Navbar translations
 navbarEssentials = "Grundlagen"
 navbarTimeline = "Zeitleiste"
+navbarSources = "Sources"
 navbarKnowledge = "Wissen"
 navbarCommunity = "Community"
 
@@ -496,6 +498,7 @@ footerPreambleLink = "/fr/intro/préambule/"
 # Navbar translations
 navbarEssentials = "Essentiels"
 navbarTimeline = "Chronologie"
+navbarSources = "Sources"
 navbarKnowledge = "Connaissance"
 navbarCommunity = "Communauté"
 
@@ -693,6 +696,7 @@ footerPreambleLink = "/es/intro/preámbulo/"
 # Navbar translations
 navbarEssentials = "Esenciales"
 navbarTimeline = "Cronología"
+navbarSources = "Sources"
 navbarKnowledge = "Conocimiento"
 navbarCommunity = "Comunidad"
 
@@ -973,6 +977,7 @@ remove = "Удалить"
 # Navbar translations
 navbarEssentials = "Основы"
 navbarTimeline = "Хронология"
+navbarSources = "Sources"
 navbarKnowledge = "Знания"
 navbarCommunity = "Сообщество"
 
@@ -1169,6 +1174,7 @@ remove = "削除"
 # Navbar translations
 navbarEssentials = "基本"
 navbarTimeline = "タイムライン"
+navbarSources = "Sources"
 navbarKnowledge = "知識"
 navbarCommunity = "コミュニティ"
 
@@ -1366,6 +1372,7 @@ remove = "移除"
 # Navbar translations
 navbarEssentials = "基础"
 navbarTimeline = "时间线"
+navbarSources = "Sources"
 navbarKnowledge = "知识"
 navbarCommunity = "社区"
 
@@ -1534,6 +1541,7 @@ remove = "移除"
 # Navbar translations
 navbarEssentials = "基礎"
 navbarTimeline = "時間線"
+navbarSources = "Sources"
 navbarKnowledge = "知識"
 navbarCommunity = "社群"
 
@@ -1702,6 +1710,7 @@ remove = "삭제"
 # Navbar translations
 navbarEssentials = "필수"
 navbarTimeline = "타임라인"
+navbarSources = "Sources"
 navbarKnowledge = "지식"
 navbarCommunity = "커뮤니티"
 
