@@ -30,9 +30,13 @@ description = "Production build with CSS purging"
 run = "mise run build && mise run purgecss"
 
 [tasks.serve]
-description = "Run dev server (live reload)"
-run = "zola serve --interface 0.0.0.0 --base-url http://127.0.0.1"
-# Make "serve" exclusive, since it's interactive
+description = "Run dev server (live reload, auto-selects free port)"
+run = """
+port=${ZOLA_PORT:-1111}
+while lsof -Pi :$port -sTCP:LISTEN -t >/dev/null 2>&1; do port=$((port + 1)); done
+echo "Serving on http://127.0.0.1:$port"
+zola serve --port $port --interface 0.0.0.0 --base-url http://127.0.0.1
+"""
 raw = true
 
 [tasks.check]
