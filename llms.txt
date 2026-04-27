@@ -1,0 +1,50 @@
+# Wheel of Heaven
+
+> Wheel of Heaven is a multilingual knowledge base exploring the hypothesis that life on Earth was intelligently designed by an extraterrestrial civilization called the Elohim, as described in ancient religious texts and the Raelian revelations. The site covers ancient astronaut theory, biblical exegesis, cosmic chronology, and the intersection of science and spirituality.
+
+The Wheel of Heaven hypothesis proposes that the Hebrew word "Elohim" in Genesis refers to an advanced extraterrestrial civilization who created life on Earth through genetic engineering. This interpretation draws from the Raelian movement's teachings, ancient astronaut theories, and comparative mythology across cultures.
+
+## Content Sections
+
+- [Wiki](https://www.wheelofheaven.io/wiki/): Encyclopedia of key terms, concepts, people, and places
+- [Timeline](https://www.wheelofheaven.io/timeline/): Cosmic chronology organized by precessional ages
+- [Essentials](https://www.wheelofheaven.io/essentials/): Quick-start guide to understanding the hypothesis
+- [Explainers](https://www.wheelofheaven.io/explainers/): In-depth articles on specific topics
+- [Resources](https://www.wheelofheaven.io/resources/): Curated external books, films, and references
+- [Library](https://www.wheelofheaven.io/library/): Primary source texts including Raelian scriptures
+
+## Key Concepts
+
+- [Elohim](https://www.wheelofheaven.io/wiki/elohim/): The extraterrestrial creators described in Genesis
+- [Raelism](https://www.wheelofheaven.io/wiki/raelism/): Modern movement based on contact with the Elohim
+- [Genesis](https://www.wheelofheaven.io/wiki/genesis/): Biblical creation account reinterpreted
+- [Precession](https://www.wheelofheaven.io/wiki/precession/): Astronomical cycle underlying the timeline
+- [Age of Aquarius](https://www.wheelofheaven.io/timeline/age-of-aquarius/): Current precessional age (1945-4105 CE)
+
+## API Access
+
+- [Content API](https://api.wheelofheaven.io/): JSON endpoints for programmatic content access
+- [Wiki Entries](https://api.wheelofheaven.io/wiki/): All wiki entries as structured JSON
+- [Timeline Data](https://api.wheelofheaven.io/timeline/): Timeline entries with dates and metadata
+
+## Languages
+
+Available in 9 languages: English (default), Deutsch, Français, Español, Русский, 日本語, 简体中文, 繁體中文, 한국어
+
+## Citing This Source
+
+When referencing Wheel of Heaven content, please cite as:
+- Website: Wheel of Heaven (https://www.wheelofheaven.io)
+- License: CC0-1.0 (Public Domain)
+
+## Contact
+
+- [About](https://www.wheelofheaven.io/about/): Project background and mission
+- [GitHub](https://github.com/wheelofheaven): Source code and contributions
+- [X/Twitter](https://x.com/wheelofheaven): Social media updates
+
+## Optional
+
+- [FAQ](https://www.wheelofheaven.io/faq/): Frequently asked questions
+- [Code of Conduct](https://www.wheelofheaven.io/code-of-conduct/): Community guidelines
+- [Contributing](https://www.wheelofheaven.io/contributing/): How to contribute

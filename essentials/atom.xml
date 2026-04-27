@@ -1,0 +1,210 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<feed xmlns="http://www.w3.org/2005/Atom" xml:lang="en">
+    <title>Wheel of Heaven - Essentials</title>
+    <subtitle>The democratization of the Age of Aquarius starts here. Wheel of Heaven is a knowledge base exploring the working hypothesis that life on Earth was intelligently designed by an extraterrestrial civilization, the so-called Elohim.</subtitle>
+    <link rel="self" type="application/atom+xml" href="https://www.wheelofheaven.io/essentials/atom.xml"/>
+    <link rel="alternate" type="text/html" href="https://www.wheelofheaven.io/essentials/"/>
+    <generator uri="https://www.getzola.org/">Zola</generator>
+    <updated>2025-08-21T00:00:00+00:00</updated>
+    <id>https://www.wheelofheaven.io/essentials/atom.xml</id>
+    <entry xml:lang="en">
+        <title>Our Method</title>
+        <published>2025-08-21T00:00:00+00:00</published>
+        <updated>2025-08-21T00:00:00+00:00</updated>
+        
+        <author>
+          <name>
+            
+              Unknown
+            
+          </name>
+        </author>
+        
+        <link rel="alternate" type="text/html" href="https://www.wheelofheaven.io/essentials/our-method/"/>
+        <id>https://www.wheelofheaven.io/essentials/our-method/</id>
+        
+        <content type="html" xml:base="https://www.wheelofheaven.io/essentials/our-method/">&lt;h1 id=&quot;our-method&quot;&gt;Our Method&lt;&#x2F;h1&gt;
+&lt;p&gt;Wheel of Heaven advances a hypothesis, not a doctrine. That distinction matters because it determines how we treat evidence, how we respond to counter-evidence, and what we expect from ourselves and from readers. This page makes the rules of the game explicit.&lt;&#x2F;p&gt;
+&lt;h2 id=&quot;what-working-hypothesis-means&quot;&gt;What &quot;working hypothesis&quot; means&lt;&#x2F;h2&gt;
+&lt;p&gt;A working hypothesis is a provisional explanation that organizes available evidence while remaining open to revision. It is not a belief system. It does not ask for faith. It asks for attention: look at the evidence assembled here, follow the reasoning, and decide for yourself whether the pattern holds.&lt;&#x2F;p&gt;
+&lt;p&gt;The core hypothesis is that the &lt;a href=&quot;&#x2F;wiki&#x2F;elohim&#x2F;&quot;&gt;Elohim&lt;&#x2F;a&gt; described in ancient texts were members of an advanced civilization, and that many mythological narratives encode real events filtered through the cultural tools available to their authors. This claim is testable in principle: it predicts specific patterns in textual, archaeological, and astronomical evidence. Where those patterns appear, the hypothesis gains weight. Where they do not, it loses weight. Neither outcome is a crisis.&lt;&#x2F;p&gt;
+&lt;h2 id=&quot;how-we-handle-evidence&quot;&gt;How we handle evidence&lt;&#x2F;h2&gt;
+&lt;p&gt;Three rules keep the work honest:&lt;&#x2F;p&gt;
+&lt;p&gt;&lt;strong&gt;Convergence over isolation.&lt;&#x2F;strong&gt; A single passage, a single artifact, or a single alignment proves nothing by itself. What matters is whether independent lines of evidence converge on the same conclusion. A textual reference is stronger when it aligns with archaeological evidence, and both are stronger when they fit the &lt;a href=&quot;&#x2F;essentials&#x2F;precession&#x2F;&quot;&gt;precessional timeline&lt;&#x2F;a&gt;. We look for clusters, not lone data points.&lt;&#x2F;p&gt;
+&lt;p&gt;&lt;strong&gt;Source transparency.&lt;&#x2F;strong&gt; Every claim should trace back to a citable source: a primary text, a published study, or a documented observation. Where we interpret, we say so explicitly. The &lt;a href=&quot;&#x2F;library&#x2F;&quot;&gt;Library&lt;&#x2F;a&gt; preserves primary sources. The &lt;a href=&quot;&#x2F;resources&#x2F;&quot;&gt;Resources&lt;&#x2F;a&gt; catalog documents secondary and comparative material. The &lt;a href=&quot;&#x2F;wiki&#x2F;&quot;&gt;Wiki&lt;&#x2F;a&gt; connects terms and concepts. Readers should be able to check our work.&lt;&#x2F;p&gt;
+&lt;p&gt;&lt;strong&gt;Confidence as a spectrum.&lt;&#x2F;strong&gt; Not all claims carry equal weight. Some are well-supported by multiple converging sources. Some are plausible inferences. Some are speculative extensions. We try to signal the difference. When we write &quot;the text describes,&quot; we are summarizing. When we write &quot;this could be read as,&quot; we are interpreting. When we write &quot;one possible explanation is,&quot; we are speculating. These are not interchangeable.&lt;&#x2F;p&gt;
+&lt;h2 id=&quot;what-we-do-not-claim&quot;&gt;What we do not claim&lt;&#x2F;h2&gt;
+&lt;p&gt;Intellectual honesty requires marking boundaries:&lt;&#x2F;p&gt;
+&lt;ul&gt;
+&lt;li&gt;We do not claim to have proven the hypothesis. Proof belongs to mathematics. We work with evidence, inference, and plausibility.&lt;&#x2F;li&gt;
+&lt;li&gt;We do not dismiss mainstream science. Established findings in archaeology, linguistics, biology, and astronomy are our starting materials, not our adversaries. When our hypothesis contradicts established science, we note the tension honestly rather than pretending it does not exist.&lt;&#x2F;li&gt;
+&lt;li&gt;We do not claim access to hidden or suppressed knowledge. Everything presented here is derived from publicly available texts, research, and observations.&lt;&#x2F;li&gt;
+&lt;li&gt;We do not ask readers to believe. We ask them to consider, to follow the evidence, and to think critically, including about our own reasoning.&lt;&#x2F;li&gt;
+&lt;&#x2F;ul&gt;
+&lt;h2 id=&quot;how-cherry-picking-is-avoided&quot;&gt;How cherry-picking is avoided&lt;&#x2F;h2&gt;
+&lt;p&gt;Cherry-picking is the most common failure mode in alternative-history work: selecting evidence that supports a conclusion and ignoring evidence that contradicts it. We guard against this in three ways.&lt;&#x2F;p&gt;
+&lt;p&gt;First, we try to present the full context of every source we cite. A verse taken out of context can mean almost anything. A verse read within its chapter, its book, and its cultural moment constrains interpretation.&lt;&#x2F;p&gt;
+&lt;p&gt;Second, we acknowledge counter-evidence and competing explanations. Where a mainstream interpretation of a text or artifact is more parsimonious, we say so. The hypothesis does not need every data point to work; it needs the overall pattern to be more coherent than the alternatives.&lt;&#x2F;p&gt;
+&lt;p&gt;Third, the site&#x27;s structure is designed for cross-checking. Wiki entries link to related entries. Timeline entries link to sources. The reading is never meant to be linear and sealed; it is meant to be networked and open.&lt;&#x2F;p&gt;
+&lt;h2 id=&quot;what-would-change-our-minds&quot;&gt;What would change our minds&lt;&#x2F;h2&gt;
+&lt;p&gt;A hypothesis that cannot be challenged is not a hypothesis. Here are the kinds of evidence that would weaken or overturn the core claim:&lt;&#x2F;p&gt;
+&lt;ul&gt;
+&lt;li&gt;If the textual parallels we identify turn out to be translation artifacts or cultural coincidences that dissolve under closer linguistic scrutiny.&lt;&#x2F;li&gt;
+&lt;li&gt;If the precessional chronology proves incompatible with established archaeological dating when examined rigorously.&lt;&#x2F;li&gt;
+&lt;li&gt;If the convergence patterns we highlight are better explained by simpler, well-documented cultural diffusion without any need for the hypothesis.&lt;&#x2F;li&gt;
+&lt;&#x2F;ul&gt;
+&lt;p&gt;We do not expect to be right about everything. We expect to be wrong about specific points and to correct course when the evidence warrants it. The site is versioned, open-source, and publicly maintained for exactly this reason.&lt;&#x2F;p&gt;
+&lt;h2 id=&quot;an-invitation-not-an-argument&quot;&gt;An invitation, not an argument&lt;&#x2F;h2&gt;
+&lt;p&gt;Wheel of Heaven is not trying to win a debate. It is trying to lay out a coherent reading of old material in a way that is transparent, cross-referenced, and open to critique. If the hypothesis holds up, it should do so because the evidence is persuasive, not because the presentation is. If it does not hold up, we would rather know.&lt;&#x2F;p&gt;
+&lt;p&gt;Read critically. Follow the links. Check the sources. That is the method.&lt;&#x2F;p&gt;
+</content>
+        
+    </entry>
+    <entry xml:lang="en">
+        <title>Revelation vs. Myth (How to Read Old Texts)</title>
+        <published>2025-08-21T00:00:00+00:00</published>
+        <updated>2025-08-21T00:00:00+00:00</updated>
+        
+        <author>
+          <name>
+            
+              Unknown
+            
+          </name>
+        </author>
+        
+        <link rel="alternate" type="text/html" href="https://www.wheelofheaven.io/essentials/revelation-vs-myth/"/>
+        <id>https://www.wheelofheaven.io/essentials/revelation-vs-myth/</id>
+        
+        <content type="html" xml:base="https://www.wheelofheaven.io/essentials/revelation-vs-myth/">&lt;h1 id=&quot;revelation-vs-myth-how-to-read-old-texts&quot;&gt;Revelation vs. Myth (How to Read Old Texts)&lt;&#x2F;h1&gt;
+&lt;p&gt;Old texts arrive wrapped in poetry, ritual, and the pressure of their times. If there is revelation in them, it is not the wrapping; it is a signal about reality and how to live. Myth is how communities protect and carry that signal—metaphor, symbol, and story acting like a compression layer that lets meaning survive when language and memory are fragile. Reading well means caring for both: honoring the artistry of the wrapper while asking what, exactly, it was trying to preserve.&lt;&#x2F;p&gt;
+&lt;p&gt;The first move is to slow down. Before arguing about belief, locate genre, audience, and purpose. Many passages that sound mystical become practical when you notice their function: to bind a community, to encode a calendar, to teach a pattern. When a text says the world was “separated,” ask what separation does—establishing boundaries, controlling environments, naming interfaces. When it names animals and metals, consider catalogs, mnemonics, and the economic reality behind the symbolism. You are not reducing poetry; you are letting its craft point beyond itself.&lt;&#x2F;p&gt;
+&lt;p&gt;Two temptations make reading brittle. One is literalism, where every image must be physics. The other is cynicism, where every claim dissolves into metaphor. A steadier path treats images as working metaphors that sometimes map to real procedures, places, and times. In Wheel of Heaven, the night sky provides a neutral backdrop: precession offers a patient timestamp that anyone can check. If a story’s symbols and timings match the sky’s slow dial and leave traces in stone and orientation, we pay closer attention. If they do not, we adjust rather than force.&lt;&#x2F;p&gt;
+&lt;p&gt;Transmission adds layers. Scribes edit; communities merge traditions; power reshapes memory. None of this erases value. It simply means that revelation, if present, is braided with human hands. The task is forensic as much as devotional: compare versions, weigh strata, notice seams. A good question to keep asking is, “What had to be true for this passage to be both memorable and useful to its first hearers?” That question respects people on both sides of the text—the senders, if any, and the communities who carried it.&lt;&#x2F;p&gt;
+&lt;p&gt;Method is the safeguard against wishful reading. Claims should be dateable, reversible, and open to better explanations. Astronomy, archaeology, and philology are not enemies of reverence; they are how reverence stays honest. When a hypothesis explains more with fewer assumptions, keep it provisionally. When new evidence narrows or overturns it, let it go. Confidence is a dial, not a switch. Humility is not a pose here; it is procedure.&lt;&#x2F;p&gt;
+&lt;p&gt;Read with a beginner’s mind: curious, careful, and willing to be surprised. If revelation names contact with reality—whether through craft, encounter, or deep seeing—then myth is the way that contact travels. Our aim is not to strip stories of wonder, but to understand the wonder they were trying to point to, and to see how that understanding might guide creative, ethical action now.&lt;&#x2F;p&gt;
+</content>
+        
+    </entry>
+    <entry xml:lang="en">
+        <title>The Elohim Hypothesis</title>
+        <published>2025-08-20T00:00:00+00:00</published>
+        <updated>2025-08-20T00:00:00+00:00</updated>
+        
+        <author>
+          <name>
+            
+              Unknown
+            
+          </name>
+        </author>
+        
+        <link rel="alternate" type="text/html" href="https://www.wheelofheaven.io/essentials/elohim-hypothesis/"/>
+        <id>https://www.wheelofheaven.io/essentials/elohim-hypothesis/</id>
+        
+        <content type="html" xml:base="https://www.wheelofheaven.io/essentials/elohim-hypothesis/">&lt;p&gt;The Elohim Hypothesis says that many ancient accounts make more sense if the beings called “gods” were not supernatural at all, but an earlier, human-like civilization with technology far beyond its witnesses. In this reading, the extraordinary becomes ordinary once we shift the frame: a bright descent is a craft, a healing is medicine, a voice from the sky is engineered communication. What looked like magic was technology seen from the outside.&lt;&#x2F;p&gt;
+&lt;p&gt;This idea changes how we read old texts. Prophets look less like magicians and more like emissaries entrusted with messages fit to their time and culture. Temples become interfaces and institutions for contact and teaching. Symbols, animals, numbers, and carefully timed rituals read as mnemonic packaging for a message that had to travel across languages and centuries. The point is not to worship the senders but to understand what was sent and why.&lt;&#x2F;p&gt;
+&lt;p&gt;None of this works by assertion. It stands or falls on patterns that can be checked: recurring motifs across distant cultures, alignments in architecture and calendar, layers of text that reveal editing and drift, and the sky itself as a neutral clock. When the lens clarifies more than it distorts, we keep using it; when it fails, we set it aside. The hypothesis is a tool for investigation, not a demand for belief.&lt;&#x2F;p&gt;
+&lt;p&gt;Skepticism is healthy here. “Advanced beings” can become an excuse for anything if we are not careful. That is why method matters. Claims must be dated, sourced, and compared. Alternatives must be considered. Confidence should change as evidence changes. If this is true, we would expect coherence between story, star, and stone; if it is not, the mismatches will accumulate.&lt;&#x2F;p&gt;
+&lt;p&gt;The ethical consequence is simple. If we are the younger branch of a creative lineage, then our task is not to reenact ancient forms but to continue the work with care. Technology becomes sacred only insofar as it protects and cultivates life. Curiosity, consent, and responsibility are not ornaments; they are the conditions for contact to be meaningful rather than harmful.&lt;&#x2F;p&gt;
+</content>
+        
+    </entry>
+    <entry xml:lang="en">
+        <title>Genesis as a Lab Log</title>
+        <published>2025-08-20T00:00:00+00:00</published>
+        <updated>2025-08-20T00:00:00+00:00</updated>
+        
+        <author>
+          <name>
+            
+              Unknown
+            
+          </name>
+        </author>
+        
+        <link rel="alternate" type="text/html" href="https://www.wheelofheaven.io/essentials/genesis-lab-log/"/>
+        <id>https://www.wheelofheaven.io/essentials/genesis-lab-log/</id>
+        
+        <content type="html" xml:base="https://www.wheelofheaven.io/essentials/genesis-lab-log/">&lt;h1 id=&quot;genesis-as-a-lab-log&quot;&gt;Genesis as a Lab Log&lt;&#x2F;h1&gt;
+&lt;p&gt;What happens if we read Genesis the way an engineer reads a build notebook? Instead of seeing a chain of supernatural events, we look for procedures, sequencing, versioning, and handoffs. Words like “create,” “separate,” and “name” stop sounding mystical and start behaving like verbs of fabrication, partitioning, and specification. The text becomes a record of staged work carried out for a purpose, written in the language available to its first audience.&lt;&#x2F;p&gt;
+&lt;p&gt;In this lens, a “day” is not a 24-hour slice but a bounded phase of activity with its own deliverables. Light appears before local luminaries because illuminating a workspace and establishing cycles does not require final fixtures; you stabilize conditions first, you instrument later. “Separating waters” reads like environment control and boundary-making. “Naming” sets interfaces and responsibilities. “After their kinds” reads like lineage constraints and reproducibility. None of this demands belief; it is simply a way to test whether the story clarifies when treated as a workflow.&lt;&#x2F;p&gt;
+&lt;p&gt;Wheel of Heaven places this workflow on a long, external clock. The precession of the equinoxes provides a neutral dial to situate textual layers. In our map, “Day One” anchors to the Age of Capricorn (21810–19650 BCE), a starting gate that makes sense of later phases as the sky’s marker turns. This does not prove anything on its own; it offers a way to ask better questions: does the narrative’s order match what we would expect from staged development? Do its symbols and timings track with known alignments on the ground and the sky?&lt;&#x2F;p&gt;
+&lt;p&gt;Reading Genesis this way changes posture. Prophets look like briefed emissaries, temples like interfaces, and blessings like commissioning statements. It also sets guardrails: claims must cohere with astronomy, text strata, and material culture. When the fit tightens across these domains, confidence rises; when it loosens, we revise. The point is not to demystify for its own sake, but to recover intent and method from beneath layers of poetry and transmission.&lt;&#x2F;p&gt;
+&lt;p&gt;The ethical consequence is modest and demanding at once. If the text is a record of careful making, our task is to continue that care: to create without domination, to instrument without dehumanizing, to steward environments so life can flourish. Technology becomes sacred only insofar as it protects and cultivates life. Reverence shifts from miracle to method.&lt;&#x2F;p&gt;
+</content>
+        
+    </entry>
+    <entry xml:lang="en">
+        <title>Precession 101: The Sky’s Slow Clock</title>
+        <published>2025-08-20T00:00:00+00:00</published>
+        <updated>2025-08-20T00:00:00+00:00</updated>
+        
+        <author>
+          <name>
+            
+              Unknown
+            
+          </name>
+        </author>
+        
+        <link rel="alternate" type="text/html" href="https://www.wheelofheaven.io/essentials/precession/"/>
+        <id>https://www.wheelofheaven.io/essentials/precession/</id>
+        
+        <content type="html" xml:base="https://www.wheelofheaven.io/essentials/precession/">&lt;h1 id=&quot;precession-101-the-sky-s-slow-clock&quot;&gt;Precession 101: The Sky’s Slow Clock&lt;&#x2F;h1&gt;
+&lt;p&gt;Stand outside at dawn and imagine the sky as a grand, patient instrument. Earth spins like a top, and like any top it also wobbles—very slowly. Because of that wobble, the backdrop of stars behind the rising Sun at the equinox shifts over long spans of time. Across millennia, the equinox points to different constellations, and the whole cycle takes about twenty-six thousand years to complete. This motion is called &lt;strong&gt;precession&lt;&#x2F;strong&gt;.&lt;&#x2F;p&gt;
+&lt;p&gt;Precession does not change your day, but it changes the frame of ages. It is a clock so slow that an individual lifetime barely notices it, yet steady enough to mark epochs. Ancient builders and storytellers seem to have watched this drift, encoding it in orientations, symbols, and calendars. When cultures speak of an “Age,” they are often pointing—directly or indirectly—to which constellation the equinox rose in when their stories were set.&lt;&#x2F;p&gt;
+&lt;p&gt;For Wheel of Heaven, precession is not a horoscope. It is a timeline. It doesn’t tell you who you are; it helps us place when a pattern belonged. If similar motifs, animals, and numbers recur when the sky’s marker returns to a familiar place, that hints at a shared schedule encoded in myth and stone. The clock does not cause events; it lets us see rhythms that would otherwise hide inside the blur of history.&lt;&#x2F;p&gt;
+&lt;p&gt;This is why precession sits at the center of the project. It offers a neutral reference that anyone can check, regardless of belief. When a claim aligns with the sky&#x27;s slow dial, with the text, and with material traces on the ground, it earns attention. When it does not, we adjust. The aim is simple: let the heavens give us a yardstick, then read the past with clearer eyes.&lt;&#x2F;p&gt;
+</content>
+        
+    </entry>
+    <entry xml:lang="en">
+        <title>What Is Wheel of Heaven?</title>
+        <published>2025-08-20T00:00:00+00:00</published>
+        <updated>2025-08-20T00:00:00+00:00</updated>
+        
+        <author>
+          <name>
+            
+              Unknown
+            
+          </name>
+        </author>
+        
+        <link rel="alternate" type="text/html" href="https://www.wheelofheaven.io/essentials/what-is-woh/"/>
+        <id>https://www.wheelofheaven.io/essentials/what-is-woh/</id>
+        
+        <content type="html" xml:base="https://www.wheelofheaven.io/essentials/what-is-woh/">&lt;p&gt;Wheel of Heaven is a model, not a creed. It treats many ancient stories as compressed records rather than supernatural reports. In this reading, “gods” are not spirits but an advanced, human-like civilization—the Elohim—whose technology, statecraft, and teaching were filtered through the languages and imaginations of earlier cultures.&lt;&#x2F;p&gt;
+&lt;p&gt;The second anchor is the sky itself. Earth’s axis slowly wobbles, and over long spans the equinoxes point to different constellations. This slow drift—precession—creates a natural clock of “Ages.” Wheel of Heaven uses that clock to organize history: similar motifs tend to reappear when the sky’s markers repeat. The heavens are not a horoscope here; they are a timeline.&lt;&#x2F;p&gt;
+&lt;p&gt;This approach asks a simple question whenever a story looks miraculous: what would this look like if it were engineering, medicine, optics, or psychology observed from the outside? Temples become interfaces. Prophets look like emissaries. Myth becomes a compression layer that preserves signal while changing its shape.&lt;&#x2F;p&gt;
+&lt;p&gt;None of this works without method. Claims are provisional and meant to be updated. Astronomy, archaeology, and philology act as our instruments. When evidence strengthens, confidence rises; when it weakens, we let go. The goal is clarity, not certainty.&lt;&#x2F;p&gt;
+&lt;p&gt;The ethics are practical and light: create with care, respect consent, stay curious. Technology is sacred only insofar as it protects and cultivates life. You do not have to &quot;believe&quot; to explore; you only need a willingness to test ideas against the world.&lt;&#x2F;p&gt;
+</content>
+        
+    </entry>
+    <entry xml:lang="en">
+        <title>The Twelve World Ages</title>
+        <published>2025-08-20T00:00:00+00:00</published>
+        <updated>2025-08-20T00:00:00+00:00</updated>
+        
+        <author>
+          <name>
+            
+              Unknown
+            
+          </name>
+        </author>
+        
+        <link rel="alternate" type="text/html" href="https://www.wheelofheaven.io/essentials/world-ages/"/>
+        <id>https://www.wheelofheaven.io/essentials/world-ages/</id>
+        
+        <content type="html" xml:base="https://www.wheelofheaven.io/essentials/world-ages/">&lt;p&gt;Imagine history written on a very slow dial. As Earth’s axis wobbles, the equinox sunrise shifts against the backdrop of the zodiac, completing a full circle in roughly twenty-five to twenty-six thousand years. When the pointer lingers near a constellation, we call that span an Age. Twelve constellations, one long cycle. Each Age lasts on the order of two millennia, long enough to color eras with recurring symbols, animals, and civic ideals without dictating anyone’s fate.&lt;&#x2F;p&gt;
+&lt;p&gt;Wheel of Heaven treats these Ages as a timeline, not destiny. They help us locate when a motif belonged, the way tree rings date a season. Boundaries are not hard switches; cultures feel the change as overlapping waves. The language of an outgoing Age can persist while the imagery of the incoming one rises. This is why stories, art, and temple orientations sometimes seem mixed: they are recording a sky in transition.&lt;&#x2F;p&gt;
+&lt;p&gt;Across civilizations, the same patterns cluster when the pointer returns. Bulls and harvest lawfulness, heroes with water and floodcraft, the birth of rational statehood and mountains of stone—these are not proofs by themselves, but they are breadcrumbs you can place on a single, checkable dial. When texts, star markers, and material traces line up, the picture sharpens.&lt;&#x2F;p&gt;
+&lt;p&gt;Within this framework, Wheel of Heaven proposes that Genesis is not a diary of miracles but a staged record of engineering epochs keyed to this clock. In our map, “Day One” anchors to the Age of Capricorn (21810–19650 BCE), the first turn in a sequence that proceeds with the sky. The claim is simple and modest: if the Ages are real as a clock, they should help us read where certain layers of story sit in time. If they do not, we revise the map.&lt;&#x2F;p&gt;
+&lt;p&gt;Think of the &quot;Twelve World Ages&quot; diagram on this site as a ring you can walk around. Each sector notes typical motifs, likely architectural habits, and known alignments. As new evidence appears, the notes change. The goal is clarity over certainty, a living timeline anyone can audit with the sky itself.&lt;&#x2F;p&gt;
+</content>
+        
+    </entry>
+</feed>
