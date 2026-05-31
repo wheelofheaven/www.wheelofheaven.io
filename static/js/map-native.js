@@ -12,6 +12,7 @@
     const nodeItems = root.querySelectorAll("[data-node-id]");
     const earthNodeItems = root.querySelectorAll("[data-earth-node-id]");
     const earthConnectorLayer = document.getElementById("map-earth-connectors");
+    const earthOffsetY = Number(root.dataset.earthOffsetY || 0);
     const svgNamespace = "http://www.w3.org/2000/svg";
 
     function clearEarthNavigation() {
@@ -60,7 +61,7 @@
 
         const ageIds = node.dataset.earthNodeAges.split(",").filter(Boolean);
         const sourceX = Number(node.dataset.earthNodeX);
-        const sourceY = Number(node.dataset.earthNodeY);
+        const sourceY = Number(node.dataset.earthNodeY) + earthOffsetY;
 
         clearEarthNavigation();
         root.dataset.activeEarthNode = node.dataset.earthNodeId;

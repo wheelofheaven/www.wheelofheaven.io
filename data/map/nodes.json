@@ -60,6 +60,31 @@
     "summary": "Infinite scales of time, space, and created life."
   },
   {
+    "id": "mass-effect",
+    "label": "Mass Effect",
+    "href": "wiki/mass-effect/",
+    "age": "core",
+    "type": "concept",
+    "priority": 2,
+    "x": 800,
+    "y": 535,
+    "anchor": "middle",
+    "summary": "The relationship between scale, mass, and the experience of time."
+  },
+  {
+    "id": "vernal-equinox",
+    "label": "Vernal Equinox",
+    "label_key": "vernal-equinox",
+    "href": "wiki/precession/",
+    "age": "core",
+    "type": "concept",
+    "priority": 3,
+    "x": 1010,
+    "y": 552,
+    "anchor": "start",
+    "summary": "The astronomical reference point used to read the precessional cycle."
+  },
+  {
     "id": "elohim",
     "label": "Elohim",
     "href": "wiki/elohim/",
@@ -94,6 +119,32 @@
     "y": 675,
     "anchor": "start",
     "summary": "The prologue before the twelve age chapters."
+  },
+  {
+    "id": "arrival",
+    "label": "Arrival",
+    "label_key": "arrival",
+    "href": "timeline/in-the-beginning/",
+    "age": "age-of-capricorn",
+    "type": "timeline",
+    "priority": 2,
+    "x": 1428,
+    "y": 730,
+    "anchor": "start",
+    "summary": "The creators reach Earth and begin the long planetary project."
+  },
+  {
+    "id": "discovery-of-earth",
+    "label": "Discovery of Earth",
+    "label_key": "discovery-of-earth",
+    "href": "wiki/terraforming/",
+    "age": "age-of-capricorn",
+    "type": "concept",
+    "priority": 3,
+    "x": 1450,
+    "y": 777,
+    "anchor": "start",
+    "summary": "Earth is identified as the setting for the planetary laboratory."
   },
   {
     "id": "astrobiology",
@@ -382,6 +433,19 @@
     "y": 628,
     "anchor": "end",
     "summary": "Language confusion and human dispersion."
+  },
+  {
+    "id": "nimrod",
+    "label": "Nimrod",
+    "label_key": "nimrod",
+    "href": "wiki/babel/",
+    "age": "age-of-gemini",
+    "type": "concept",
+    "priority": 3,
+    "x": 258,
+    "y": 640,
+    "anchor": "start",
+    "summary": "The post-flood ruler remembered as the great hunter and Babel-builder."
   },
   {
     "id": "abraham",

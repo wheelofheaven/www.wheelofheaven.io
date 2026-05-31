@@ -65,7 +65,7 @@
   {
     "id": "life-laboratory",
     "label": "Life Laboratory",
-    "x": 930,
+    "x": 800,
     "y": 1778,
     "color": "mint",
     "nodes": [
@@ -75,7 +75,7 @@
         "href": "wiki/living-earth/",
         "summary": "Earth understood as a living, engineered system.",
         "ages": ["age-of-sagittarius", "age-of-scorpio", "age-of-libra", "age-of-virgo"],
-        "x": 960,
+        "x": 830,
         "y": 1824
       },
       {
@@ -84,7 +84,7 @@
         "href": "wiki/life-engineering/",
         "summary": "Life treated as a technical and creative discipline.",
         "ages": ["age-of-capricorn", "age-of-scorpio", "age-of-virgo", "age-of-leo"],
-        "x": 1150,
+        "x": 1210,
         "y": 1824
       },
       {
@@ -93,7 +93,7 @@
         "href": "wiki/synthetic-biology/",
         "summary": "The modern mirror of the first-cell problem.",
         "ages": ["age-of-scorpio"],
-        "x": 960,
+        "x": 830,
         "y": 1866
       },
       {
@@ -102,7 +102,7 @@
         "href": "wiki/living-earth/",
         "summary": "The balance problem after complex life appears.",
         "ages": ["age-of-virgo"],
-        "x": 1150,
+        "x": 1210,
         "y": 1866
       },
       {
@@ -111,15 +111,60 @@
         "href": "wiki/eden/",
         "summary": "The laboratory-garden frame for the human beginning.",
         "ages": ["age-of-leo", "age-of-cancer"],
-        "x": 960,
+        "x": 830,
         "y": 1908
+      },
+      {
+        "id": "life-synthesis",
+        "label": "Life Synthesis",
+        "href": "wiki/synthetic-biology/",
+        "summary": "The first-cell threshold in the planetary laboratory.",
+        "ages": ["age-of-scorpio"],
+        "x": 1210,
+        "y": 1908
+      },
+      {
+        "id": "creational-contests",
+        "label": "Creational Contests",
+        "href": "wiki/life-engineering/",
+        "summary": "Creative competition between the teams working on Earth.",
+        "ages": ["age-of-scorpio", "age-of-virgo", "age-of-leo"],
+        "x": 830,
+        "y": 1950
+      },
+      {
+        "id": "first-humans",
+        "label": "First Humans",
+        "href": "wiki/adam-and-eve/",
+        "summary": "The human beginning as the culmination of the creation sequence.",
+        "ages": ["age-of-leo"],
+        "x": 1210,
+        "y": 1950
+      },
+      {
+        "id": "immortality",
+        "label": "Immortality",
+        "href": "wiki/tree-of-life/",
+        "summary": "Continuity of life as an ancient and future-facing threshold.",
+        "ages": ["age-of-cancer", "age-of-aquarius"],
+        "x": 830,
+        "y": 1992
+      },
+      {
+        "id": "mind-upload",
+        "label": "Mind Upload",
+        "href": "wiki/cyberparadism/",
+        "summary": "Digital continuity as a contemporary immortality horizon.",
+        "ages": ["age-of-aquarius"],
+        "x": 1210,
+        "y": 1992
       }
     ]
   },
   {
     "id": "human-transmission",
     "label": "Human Transmission",
-    "x": 350,
+    "x": 290,
     "y": 2074,
     "color": "mauve",
     "nodes": [
@@ -129,7 +174,7 @@
         "href": "wiki/the-tradition/",
         "summary": "The accumulated thread of memory and interpretation.",
         "ages": ["age-of-aries", "age-of-pisces", "age-of-aquarius"],
-        "x": 380,
+        "x": 310,
         "y": 2120
       },
       {
@@ -138,7 +183,7 @@
         "href": "wiki/prophet/",
         "summary": "Human recipients in the long transmission.",
         "ages": ["age-of-aries", "age-of-pisces"],
-        "x": 590,
+        "x": 620,
         "y": 2120
       },
       {
@@ -147,7 +192,7 @@
         "href": "wiki/religion/",
         "summary": "The preserved, distorted, and institutionalized thread.",
         "ages": ["age-of-pisces"],
-        "x": 380,
+        "x": 310,
         "y": 2162
       },
       {
@@ -156,7 +201,7 @@
         "href": "wiki/bible/",
         "summary": "The canonical transmission surface in the West.",
         "ages": ["age-of-aries", "age-of-pisces"],
-        "x": 590,
+        "x": 620,
         "y": 2162
       },
       {
@@ -165,15 +210,60 @@
         "href": "wiki/life-engineering/",
         "summary": "Knowledge of the natural world as a recoverable part of the narrative.",
         "ages": ["age-of-scorpio", "age-of-virgo", "age-of-aquarius"],
-        "x": 380,
+        "x": 310,
         "y": 2204
+      },
+      {
+        "id": "genesis",
+        "label": "Genesis",
+        "href": "wiki/genesis/",
+        "summary": "The creation narrative as a structured memory surface.",
+        "ages": ["age-of-capricorn", "age-of-sagittarius", "age-of-scorpio", "age-of-libra", "age-of-virgo", "age-of-leo"],
+        "x": 620,
+        "y": 2204
+      },
+      {
+        "id": "kabbalah",
+        "label": "Kabbalah",
+        "href": "wiki/kabbalah/",
+        "summary": "The received esoteric tradition and its preserved cosmological vocabulary.",
+        "ages": ["age-of-aries", "age-of-pisces"],
+        "x": 310,
+        "y": 2246
+      },
+      {
+        "id": "the-truth",
+        "label": "The Truth",
+        "href": "wiki/the-truth/",
+        "summary": "The historical reality preserved beneath mystified transmission.",
+        "ages": ["age-of-aries", "age-of-pisces", "age-of-aquarius"],
+        "x": 620,
+        "y": 2246
+      },
+      {
+        "id": "book-which-tells-truth",
+        "label": "The Book Which Tells the Truth",
+        "href": "library/the-book-which-tells-the-truth/",
+        "summary": "The foundational source text for the modern disclosure arc.",
+        "ages": ["age-of-aquarius"],
+        "x": 310,
+        "y": 2288
+      },
+      {
+        "id": "task-of-vulgarization",
+        "label": "Task of Vulgarization",
+        "href": "wiki/the-truth/",
+        "summary": "The long work of making the transmitted narrative broadly legible.",
+        "ages": ["age-of-pisces", "age-of-aquarius"],
+        "x": 620,
+        "y": 2288
       }
     ]
   },
   {
     "id": "present-horizon",
     "label": "Present Horizon",
-    "x": 930,
+    "x": 800,
     "y": 2074,
     "color": "yellow",
     "nodes": [
@@ -183,7 +273,7 @@
         "href": "wiki/apocalypse/",
         "summary": "Revelation and technological maturity in the present age.",
         "ages": ["age-of-aquarius"],
-        "x": 960,
+        "x": 830,
         "y": 2120
       },
       {
@@ -192,7 +282,7 @@
         "href": "wiki/apocalypse/",
         "summary": "Disclosure as unveiling rather than mere catastrophe.",
         "ages": ["age-of-aquarius"],
-        "x": 1150,
+        "x": 1210,
         "y": 2120
       },
       {
@@ -201,7 +291,7 @@
         "href": "wiki/embassy/",
         "summary": "The return-site requirement in the Raelian source.",
         "ages": ["age-of-aquarius"],
-        "x": 960,
+        "x": 830,
         "y": 2162
       },
       {
@@ -210,8 +300,62 @@
         "href": "wiki/golden-age/",
         "summary": "The promised civilizational horizon.",
         "ages": ["age-of-aquarius"],
-        "x": 1150,
+        "x": 1210,
         "y": 2162
+      },
+      {
+        "id": "space-force",
+        "label": "U.S. Space Force",
+        "href": "wiki/us-space-force/",
+        "summary": "A contemporary marker of humanity's expanding space capability.",
+        "ages": ["age-of-aquarius"],
+        "x": 830,
+        "y": 2204
+      },
+      {
+        "id": "revelations",
+        "label": "Revelations",
+        "href": "wiki/apocalypse/",
+        "summary": "Disclosure understood as unveiling.",
+        "ages": ["age-of-aquarius"],
+        "x": 1210,
+        "y": 2204
+      },
+      {
+        "id": "testimony",
+        "label": "Testimony",
+        "href": "wiki/rael/",
+        "summary": "The modern witness account within the disclosure narrative.",
+        "ages": ["age-of-aquarius"],
+        "x": 830,
+        "y": 2246
+      },
+      {
+        "id": "great-awakening",
+        "label": "The Great Awakening",
+        "href": "wiki/apocalypse/",
+        "summary": "A collective shift in understanding after disclosure.",
+        "ages": ["age-of-aquarius"],
+        "x": 1210,
+        "y": 2246
+      },
+      {
+        "id": "samsara",
+        "label": "Escape Saṃsāra",
+        "href": "wiki/samsara/",
+        "summary": "Breaking the civilizational cycle of self-destruction.",
+        "ages": ["age-of-aquarius"],
+        "x": 830,
+        "y": 2288
+      },
+      {
+        "id": "breaking-the-cycle",
+        "label": "Breaking the Cycle",
+        "href": "wiki/samsara/",
+        "summary": "The practical choice presented at the present horizon.",
+        "ages": ["age-of-aquarius"],
+        "x": 1210,
+        "y": 2288
       }
     ]
   }
