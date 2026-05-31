@@ -108,7 +108,9 @@ For structured data, every page has a JSON twin at the corresponding `/v1/{secti
 
 Multilingual: every endpoint also reachable under `/v1/{lang}/...` for de, fr, es, ru, ja, zh, zh-Hant, ko.
 
-API documentation: [docs.wheelofheaven.world/reference/api/](https://docs.wheelofheaven.world/reference/api/).
+Documentation:
+- [AI & LLM Ingestion guide](https://docs.wheelofheaven.world/ai-ingestion/): canonical reference for using this corpus with AI systems — quickstart, llms.txt + llms-full.txt, the API surface for agents, the curated `/v1/context/*` endpoints, library + bibliography extraction, RAG patterns, system-prompt templates, and attribution.
+- [API reference](https://docs.wheelofheaven.world/reference/api/): tabular endpoint catalogue, envelope spec, enums, JSON Schemas, multilingual routing.
 
 ## Citing this source
 
