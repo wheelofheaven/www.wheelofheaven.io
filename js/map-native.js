@@ -5,6 +5,8 @@
     if (!root) return;
 
     const stage = document.getElementById("map-stage");
+    const zoomInBtn = document.getElementById("map-zoom-in");
+    const zoomOutBtn = document.getElementById("map-zoom-out");
     const interactiveItems = root.querySelectorAll("[data-map-title]");
     const ageItems = root.querySelectorAll("[data-map-age]");
     const nodeItems = root.querySelectorAll("[data-node-id]");
@@ -87,6 +89,36 @@
             stage.scrollLeft = maxScrollLeft / 2;
         }
     }
+
+    const zoomLevels = [0.75, 1, 1.25, 1.5, 1.75, 2];
+    let zoomIndex = zoomLevels.indexOf(1);
+
+    function updateZoomButtons() {
+        if (zoomOutBtn) zoomOutBtn.disabled = zoomIndex === 0;
+        if (zoomInBtn) zoomInBtn.disabled = zoomIndex === zoomLevels.length - 1;
+    }
+
+    function setZoom(nextIndex) {
+        if (!stage || nextIndex === zoomIndex || nextIndex < 0 || nextIndex >= zoomLevels.length) return;
+
+        const previousWidth = stage.scrollWidth;
+        const previousHeight = stage.scrollHeight;
+        const centerX = (stage.scrollLeft + stage.clientWidth / 2) / previousWidth;
+        const centerY = (stage.scrollTop + stage.clientHeight / 2) / previousHeight;
+
+        zoomIndex = nextIndex;
+        root.style.setProperty("--map-zoom", zoomLevels[zoomIndex]);
+        updateZoomButtons();
+
+        requestAnimationFrame(() => {
+            stage.scrollLeft = centerX * stage.scrollWidth - stage.clientWidth / 2;
+            stage.scrollTop = centerY * stage.scrollHeight - stage.clientHeight / 2;
+        });
+    }
+
+    if (zoomOutBtn) zoomOutBtn.addEventListener("click", () => setZoom(zoomIndex - 1));
+    if (zoomInBtn) zoomInBtn.addEventListener("click", () => setZoom(zoomIndex + 1));
+    updateZoomButtons();
 
     function scheduleStageCenter() {
         requestAnimationFrame(() => {
