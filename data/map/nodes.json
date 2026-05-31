@@ -96,54 +96,6 @@
     "summary": "The prologue before the twelve age chapters."
   },
   {
-    "id": "life-engineering",
-    "label": "Life Engineering",
-    "href": "wiki/life-engineering/",
-    "age": "age-of-capricorn",
-    "type": "concept",
-    "priority": 2,
-    "x": 1470,
-    "y": 735,
-    "anchor": "start",
-    "summary": "Life treated as a technical, creative discipline."
-  },
-  {
-    "id": "terraforming",
-    "label": "Terraforming",
-    "href": "wiki/terraforming/",
-    "age": "age-of-sagittarius",
-    "type": "concept",
-    "priority": 1,
-    "x": 1495,
-    "y": 378,
-    "anchor": "start",
-    "summary": "Preparing Earth as a viable planetary laboratory."
-  },
-  {
-    "id": "pangaea",
-    "label": "Pangaea",
-    "href": "wiki/pangaea/",
-    "age": "age-of-sagittarius",
-    "type": "concept",
-    "priority": 2,
-    "x": 1542,
-    "y": 424,
-    "anchor": "start",
-    "summary": "The single-landmass motif in the corpus chronology."
-  },
-  {
-    "id": "living-earth",
-    "label": "Living Earth",
-    "href": "wiki/living-earth/",
-    "age": "age-of-sagittarius",
-    "type": "concept",
-    "priority": 2,
-    "x": 1480,
-    "y": 474,
-    "anchor": "start",
-    "summary": "Earth understood as a living, engineered system."
-  },
-  {
     "id": "astrobiology",
     "label": "Astrobiology",
     "href": "wiki/astrobiology/",
@@ -154,18 +106,6 @@
     "y": 300,
     "anchor": "start",
     "summary": "Life considered at planetary and cosmic scale."
-  },
-  {
-    "id": "synthetic-biology",
-    "label": "Synthetic Biology",
-    "href": "wiki/synthetic-biology/",
-    "age": "age-of-scorpio",
-    "type": "concept",
-    "priority": 1,
-    "x": 1485,
-    "y": 55,
-    "anchor": "start",
-    "summary": "The modern mirror of the first-cell problem."
   },
   {
     "id": "synthetic-genomics",
@@ -252,18 +192,6 @@
     "summary": "Civilizational time read through recurring ages."
   },
   {
-    "id": "ecological-equilibrium",
-    "label": "Ecological Equilibrium",
-    "href": "wiki/living-earth/",
-    "age": "age-of-virgo",
-    "type": "concept",
-    "priority": 1,
-    "x": 942,
-    "y": -8,
-    "anchor": "middle",
-    "summary": "The balance problem after complex life appears."
-  },
-  {
     "id": "genetic-engineering-virgo",
     "label": "Genetic Engineering",
     "href": "wiki/genetic-engineering/",
@@ -286,18 +214,6 @@
     "y": 20,
     "anchor": "end",
     "summary": "Life adapted to worlds rather than worlds left untouched."
-  },
-  {
-    "id": "eden",
-    "label": "Eden",
-    "href": "wiki/eden/",
-    "age": "age-of-leo",
-    "type": "concept",
-    "priority": 1,
-    "x": 630,
-    "y": 95,
-    "anchor": "end",
-    "summary": "The laboratory-garden frame for the human beginning."
   },
   {
     "id": "adam-and-eve",
@@ -576,54 +492,6 @@
     "summary": "The central figure of the Piscean distribution arc."
   },
   {
-    "id": "bible",
-    "label": "The Bible",
-    "href": "wiki/bible/",
-    "age": "age-of-pisces",
-    "type": "source",
-    "priority": 2,
-    "x": 720,
-    "y": 1020,
-    "anchor": "start",
-    "summary": "The canonical transmission surface in the West."
-  },
-  {
-    "id": "religion",
-    "label": "Religion",
-    "href": "wiki/religion/",
-    "age": "age-of-pisces",
-    "type": "concept",
-    "priority": 2,
-    "x": 558,
-    "y": 1038,
-    "anchor": "end",
-    "summary": "The preserved, distorted, and institutionalized thread."
-  },
-  {
-    "id": "prophet",
-    "label": "Prophets",
-    "href": "wiki/prophet/",
-    "age": "age-of-pisces",
-    "type": "concept",
-    "priority": 2,
-    "x": 648,
-    "y": 1078,
-    "anchor": "middle",
-    "summary": "The human recipients in the long transmission."
-  },
-  {
-    "id": "the-tradition",
-    "label": "The Tradition",
-    "href": "wiki/the-tradition/",
-    "age": "age-of-pisces",
-    "type": "concept",
-    "priority": 3,
-    "x": 492,
-    "y": 1075,
-    "anchor": "end",
-    "summary": "The accumulated thread of memory and interpretation."
-  },
-  {
     "id": "raelism",
     "label": "Raelism",
     "href": "wiki/raelism/",
@@ -646,42 +514,6 @@
     "y": 908,
     "anchor": "start",
     "summary": "The messenger figure in the source material."
-  },
-  {
-    "id": "apocalypse",
-    "label": "Apocalypse",
-    "href": "wiki/apocalypse/",
-    "age": "age-of-aquarius",
-    "type": "concept",
-    "priority": 2,
-    "x": 1140,
-    "y": 985,
-    "anchor": "start",
-    "summary": "Disclosure as unveiling rather than mere catastrophe."
-  },
-  {
-    "id": "embassy",
-    "label": "Cosmic Embassy",
-    "href": "wiki/embassy/",
-    "age": "age-of-aquarius",
-    "type": "concept",
-    "priority": 1,
-    "x": 1225,
-    "y": 950,
-    "anchor": "start",
-    "summary": "The return-site requirement in the Raelian source."
-  },
-  {
-    "id": "golden-age",
-    "label": "Golden Age",
-    "href": "wiki/golden-age/",
-    "age": "age-of-aquarius",
-    "type": "concept",
-    "priority": 2,
-    "x": 1220,
-    "y": 1035,
-    "anchor": "start",
-    "summary": "The promised civilizational horizon."
   },
   {
     "id": "great-return",

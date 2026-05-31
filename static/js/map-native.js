@@ -10,10 +10,21 @@
     const interactiveItems = root.querySelectorAll("[data-map-title]");
     const ageItems = root.querySelectorAll("[data-map-age]");
     const nodeItems = root.querySelectorAll("[data-node-id]");
+    const earthNodeItems = root.querySelectorAll("[data-earth-node-id]");
+    const earthConnectorLayer = document.getElementById("map-earth-connectors");
+    const svgNamespace = "http://www.w3.org/2000/svg";
+
+    function clearEarthNavigation() {
+        earthNodeItems.forEach((item) => item.classList.remove("is-selected"));
+        ageItems.forEach((item) => item.classList.remove("is-earth-related"));
+        if (earthConnectorLayer) earthConnectorLayer.replaceChildren();
+        delete root.dataset.activeEarthNode;
+    }
 
     function setActiveAge(ageId) {
         if (!ageId) return;
 
+        clearEarthNavigation();
         root.dataset.activeAge = ageId;
 
         ageItems.forEach((item) => {
@@ -29,6 +40,7 @@
     function setActiveNode(node) {
         if (!node) return;
 
+        clearEarthNavigation();
         const ageId = node.dataset.nodeAge;
         if (ageId && ageId !== "core") {
             setActiveAge(ageId);
@@ -43,16 +55,59 @@
         });
     }
 
+    function setActiveEarthNode(node) {
+        if (!node) return;
+
+        const ageIds = node.dataset.earthNodeAges.split(",").filter(Boolean);
+        const sourceX = Number(node.dataset.earthNodeX);
+        const sourceY = Number(node.dataset.earthNodeY);
+
+        clearEarthNavigation();
+        root.dataset.activeEarthNode = node.dataset.earthNodeId;
+        node.classList.add("is-selected");
+        nodeItems.forEach((item) => item.classList.remove("is-selected"));
+
+        ageItems.forEach((item) => {
+            item.classList.toggle("is-earth-related", ageIds.includes(item.dataset.mapAge));
+        });
+
+        if (!earthConnectorLayer) return;
+
+        ageIds.forEach((ageId) => {
+            const age = root.querySelector('.map-age[data-map-age="' + selectorValue(ageId) + '"]');
+            if (!age) return;
+
+            const targetX = Number(age.dataset.mapPointX);
+            const targetY = Number(age.dataset.mapPointY);
+            const controlY = Math.max(targetY + 180, Math.min(sourceY - 150, 1400));
+            const connector = document.createElementNS(svgNamespace, "path");
+
+            connector.classList.add("map-earth-connector");
+            connector.setAttribute("d", "M " + sourceX + " " + sourceY + " Q 800 " + controlY + " " + targetX + " " + targetY);
+            connector.dataset.mapAge = ageId;
+            earthConnectorLayer.appendChild(connector);
+        });
+    }
+
     interactiveItems.forEach((item) => {
         item.addEventListener("mouseenter", () => {
-            if (item.dataset.nodeId) setActiveNode(item);
+            if (item.dataset.earthNodeId) setActiveEarthNode(item);
+            else if (item.dataset.nodeId) setActiveNode(item);
             else if (item.dataset.mapAge) setActiveAge(item.dataset.mapAge);
         });
 
         item.addEventListener("focus", () => {
-            if (item.dataset.nodeId) setActiveNode(item);
+            if (item.dataset.earthNodeId) setActiveEarthNode(item);
+            else if (item.dataset.nodeId) setActiveNode(item);
             else if (item.dataset.mapAge) setActiveAge(item.dataset.mapAge);
         });
+    });
+
+    earthNodeItems.forEach((item) => {
+        item.addEventListener("mouseleave", () => {
+            if (!item.matches(":focus")) clearEarthNavigation();
+        });
+        item.addEventListener("blur", clearEarthNavigation);
     });
 
     function selectorValue(value) {
@@ -68,6 +123,13 @@
         if (node) {
             setActiveNode(node);
             node.scrollIntoView({ block: "center", inline: "center" });
+            return true;
+        }
+
+        const earthNode = root.querySelector('[data-earth-node-id="' + selectorValue(hash) + '"]');
+        if (earthNode) {
+            setActiveEarthNode(earthNode);
+            earthNode.scrollIntoView({ block: "center", inline: "center" });
             return true;
         }
 

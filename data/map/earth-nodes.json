@@ -1,0 +1,218 @@
+[
+  {
+    "id": "planetary-system",
+    "label": "Planetary System",
+    "x": 360,
+    "y": 1778,
+    "color": "cyan",
+    "nodes": [
+      {
+        "id": "earth",
+        "label": "Earth",
+        "href": "wiki/living-earth/",
+        "summary": "The living planetary laboratory at the center of the narrative.",
+        "ages": ["age-of-capricorn", "age-of-sagittarius", "age-of-scorpio"],
+        "x": 390,
+        "y": 1824
+      },
+      {
+        "id": "gaia",
+        "label": "Gaia",
+        "href": "wiki/living-earth/",
+        "summary": "Earth understood as a living and interdependent system.",
+        "ages": ["age-of-sagittarius", "age-of-virgo"],
+        "x": 560,
+        "y": 1824
+      },
+      {
+        "id": "sky",
+        "label": "Sky",
+        "href": "wiki/terraforming/",
+        "summary": "Atmosphere, waters, and the conditions surrounding life.",
+        "ages": ["age-of-sagittarius"],
+        "x": 390,
+        "y": 1866
+      },
+      {
+        "id": "sun",
+        "label": "Sun",
+        "href": "wiki/terraforming/",
+        "summary": "Solar radiation as a constraint in the preparation of Earth.",
+        "ages": ["age-of-sagittarius"],
+        "x": 560,
+        "y": 1866
+      },
+      {
+        "id": "terraforming",
+        "label": "Terraforming",
+        "href": "wiki/terraforming/",
+        "summary": "Preparing Earth as a viable planetary laboratory.",
+        "ages": ["age-of-sagittarius", "age-of-scorpio"],
+        "x": 390,
+        "y": 1908
+      },
+      {
+        "id": "pangaea",
+        "label": "Pangaea",
+        "href": "wiki/pangaea/",
+        "summary": "The single-landmass motif in the corpus chronology.",
+        "ages": ["age-of-sagittarius", "age-of-scorpio"],
+        "x": 590,
+        "y": 1908
+      }
+    ]
+  },
+  {
+    "id": "life-laboratory",
+    "label": "Life Laboratory",
+    "x": 930,
+    "y": 1778,
+    "color": "mint",
+    "nodes": [
+      {
+        "id": "living-earth",
+        "label": "Living Earth",
+        "href": "wiki/living-earth/",
+        "summary": "Earth understood as a living, engineered system.",
+        "ages": ["age-of-sagittarius", "age-of-scorpio", "age-of-libra", "age-of-virgo"],
+        "x": 960,
+        "y": 1824
+      },
+      {
+        "id": "life-engineering",
+        "label": "Life Engineering",
+        "href": "wiki/life-engineering/",
+        "summary": "Life treated as a technical and creative discipline.",
+        "ages": ["age-of-capricorn", "age-of-scorpio", "age-of-virgo", "age-of-leo"],
+        "x": 1150,
+        "y": 1824
+      },
+      {
+        "id": "synthetic-biology",
+        "label": "Synthetic Biology",
+        "href": "wiki/synthetic-biology/",
+        "summary": "The modern mirror of the first-cell problem.",
+        "ages": ["age-of-scorpio"],
+        "x": 960,
+        "y": 1866
+      },
+      {
+        "id": "ecological-equilibrium",
+        "label": "Ecological Equilibrium",
+        "href": "wiki/living-earth/",
+        "summary": "The balance problem after complex life appears.",
+        "ages": ["age-of-virgo"],
+        "x": 1150,
+        "y": 1866
+      },
+      {
+        "id": "eden",
+        "label": "Eden",
+        "href": "wiki/eden/",
+        "summary": "The laboratory-garden frame for the human beginning.",
+        "ages": ["age-of-leo", "age-of-cancer"],
+        "x": 960,
+        "y": 1908
+      }
+    ]
+  },
+  {
+    "id": "human-transmission",
+    "label": "Human Transmission",
+    "x": 350,
+    "y": 2074,
+    "color": "mauve",
+    "nodes": [
+      {
+        "id": "tradition",
+        "label": "The Tradition",
+        "href": "wiki/the-tradition/",
+        "summary": "The accumulated thread of memory and interpretation.",
+        "ages": ["age-of-aries", "age-of-pisces", "age-of-aquarius"],
+        "x": 380,
+        "y": 2120
+      },
+      {
+        "id": "prophets",
+        "label": "Prophets",
+        "href": "wiki/prophet/",
+        "summary": "Human recipients in the long transmission.",
+        "ages": ["age-of-aries", "age-of-pisces"],
+        "x": 590,
+        "y": 2120
+      },
+      {
+        "id": "religion",
+        "label": "Religion",
+        "href": "wiki/religion/",
+        "summary": "The preserved, distorted, and institutionalized thread.",
+        "ages": ["age-of-pisces"],
+        "x": 380,
+        "y": 2162
+      },
+      {
+        "id": "bible",
+        "label": "The Bible",
+        "href": "wiki/bible/",
+        "summary": "The canonical transmission surface in the West.",
+        "ages": ["age-of-aries", "age-of-pisces"],
+        "x": 590,
+        "y": 2162
+      },
+      {
+        "id": "science",
+        "label": "Science",
+        "href": "wiki/life-engineering/",
+        "summary": "Knowledge of the natural world as a recoverable part of the narrative.",
+        "ages": ["age-of-scorpio", "age-of-virgo", "age-of-aquarius"],
+        "x": 380,
+        "y": 2204
+      }
+    ]
+  },
+  {
+    "id": "present-horizon",
+    "label": "Present Horizon",
+    "x": 930,
+    "y": 2074,
+    "color": "yellow",
+    "nodes": [
+      {
+        "id": "disclosure",
+        "label": "Disclosure",
+        "href": "wiki/apocalypse/",
+        "summary": "Revelation and technological maturity in the present age.",
+        "ages": ["age-of-aquarius"],
+        "x": 960,
+        "y": 2120
+      },
+      {
+        "id": "apocalypse",
+        "label": "Apocalypse",
+        "href": "wiki/apocalypse/",
+        "summary": "Disclosure as unveiling rather than mere catastrophe.",
+        "ages": ["age-of-aquarius"],
+        "x": 1150,
+        "y": 2120
+      },
+      {
+        "id": "embassy",
+        "label": "Cosmic Embassy",
+        "href": "wiki/embassy/",
+        "summary": "The return-site requirement in the Raelian source.",
+        "ages": ["age-of-aquarius"],
+        "x": 960,
+        "y": 2162
+      },
+      {
+        "id": "golden-age",
+        "label": "Golden Age",
+        "href": "wiki/golden-age/",
+        "summary": "The promised civilizational horizon.",
+        "ages": ["age-of-aquarius"],
+        "x": 1150,
+        "y": 2162
+      }
+    ]
+  }
+]
