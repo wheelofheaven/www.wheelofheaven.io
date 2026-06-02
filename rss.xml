@@ -9,6 +9,49 @@
       <atom:link href="https://www.wheelofheaven.world/rss.xml" rel="self" type="application/rss+xml"/>
       <lastBuildDate>Tue, 02 Jun 2026 00:00:00 +0000</lastBuildDate>
       <item>
+          <title>Adapa and the South Wind</title>
+          <pubDate>Tue, 02 Jun 2026 00:00:00 +0000</pubDate>
+          <author>Unknown</author>
+          <link>https://www.wheelofheaven.world/library/adapa-woh/</link>
+          <guid>https://www.wheelofheaven.world/library/adapa-woh/</guid>
+          <description xml:base="https://www.wheelofheaven.world/library/adapa-woh/">&lt;p&gt;&lt;strong&gt;Adapa and the South Wind (Wheel of Heaven Translation)&lt;&#x2F;strong&gt; is the
+project&#x27;s &lt;strong&gt;first Akkadian-source text&lt;&#x2F;strong&gt;. The composition survives in
+four fragments spanning roughly a millennium: Fragment A from the
+Amarna archive (EA 356, 14th c. BCE, Middle Babylonian); Fragment B
+from Nineveh (K.8214+, Neo-Assyrian, the main narrative); and
+Fragments C+D from Late Babylonian witnesses. The translation is a
+best-effort reconstruction working from Knudtzon 1915 (PD Fragment A),
+Picchioni 1981, Izre&#x27;el 2001 &lt;em&gt;LSU&lt;&#x2F;em&gt; 10, and Foster 2005 &lt;em&gt;Before the
+Muses&lt;&#x2F;em&gt;; verification against Izre&#x27;el&#x27;s primary critical edition is
+pending.&lt;&#x2F;p&gt;
+&lt;p&gt;The myth: Adapa, a sage of Eridu and a creature of the god Ea, breaks
+the wing of the South Wind by speech-act and is summoned before Anu in
+heaven. Ea coaches him to refuse the food and water Anu will offer,
+warning they are food and water of &lt;em&gt;death&lt;&#x2F;em&gt;. They turn out to be food
+and water of &lt;em&gt;life&lt;&#x2F;em&gt;. Adapa refuses; humanity loses immortality. The
+text pairs with Gen 3:22 (the Yahweh-Elohim withholding the tree of
+life from humans after the Eden expulsion) on the inverse-parallel
+axis — both narratives explain why humans don&#x27;t live forever, but they
+locate the agency on opposite sides of the divine-human boundary.&lt;&#x2F;p&gt;
+&lt;p&gt;&lt;strong&gt;Lines with commentary carry a bracketed marker &lt;code&gt;[ ]&lt;&#x2F;code&gt; at the end of
+the translated line. Click the marker to open the commentary panel.&lt;&#x2F;strong&gt;
+The interlinear view shows the cuneiform alongside the transliteration
+when toggled on. Cuneiform is back-rendered from the composite
+transliteration via the OGSL mapper — Akkadian source material carries
+heavier annotation density (lacunae, parenthesised determinatives,
+uncertainty markers) than the Sumerian ETCSL compositions, so a
+larger share of lines render with the partial-confidence badge.&lt;&#x2F;p&gt;
+&lt;p&gt;79 lines preserved across 4 fragments, with substantial lacunae
+between and within the segments. Translation is signed off pending
+critical-edition verification — the &lt;em&gt;Editor&#x27;s Report&lt;&#x2F;em&gt; in the source
+repository documents the conditions of the reconstruction.&lt;&#x2F;p&gt;
+&lt;p&gt;The English translation was drafted by Claude Opus 4.7 and edited
+through the Wheel of Heaven Translation Program pipeline (Translator →
+Editor → Reviewer). The methodology is documented at
+&lt;a href=&quot;https:&#x2F;&#x2F;docs.wheelofheaven.world&#x2F;contributing&#x2F;content&#x2F;source-text-translation&#x2F;&quot;&gt;Source-Text Translation&lt;&#x2F;a&gt;.&lt;&#x2F;p&gt;
+</description>
+      </item>
+      <item>
           <title>Enki and Ninhursag</title>
           <pubDate>Tue, 02 Jun 2026 00:00:00 +0000</pubDate>
           <author>Unknown</author>
@@ -627,34 +670,6 @@ new texts move from &quot;planned&quot; to &quot;in-progress.&quot;&lt;&#x2F;p&g
           <link>https://www.wheelofheaven.world/ko/library/lets-welcome-the-extraterrestrials/</link>
           <guid>https://www.wheelofheaven.world/ko/library/lets-welcome-the-extraterrestrials/</guid>
           <description xml:base="https://www.wheelofheaven.world/ko/library/lets-welcome-the-extraterrestrials/"></description>
-      </item>
-      <item>
-          <title>Genesis</title>
-          <pubDate>Mon, 18 May 2026 00:00:00 +0000</pubDate>
-          <author>Unknown</author>
-          <link>https://www.wheelofheaven.world/library/genesis-woh/</link>
-          <guid>https://www.wheelofheaven.world/library/genesis-woh/</guid>
-          <description xml:base="https://www.wheelofheaven.world/library/genesis-woh/">&lt;p&gt;&lt;strong&gt;Genesis (Wheel of Heaven Translation)&lt;&#x2F;strong&gt; is the first published chapter of the
-&lt;a href=&quot;https:&#x2F;&#x2F;github.com&#x2F;wheelofheaven&#x2F;www.wheelofheaven.io&#x2F;issues&#x2F;12&quot;&gt;Wheel of Heaven Translation Program&lt;&#x2F;a&gt;.
-Genesis 1 is rendered from the pointed Hebrew Masoretic text (Westminster Leningrad
-Codex, public domain) under a documented WoH lens, with the source and the English
-translation displayed in parallel.&lt;&#x2F;p&gt;
-&lt;p&gt;&lt;strong&gt;Verses with commentary carry a bracketed marker &lt;code&gt;[ ]&lt;&#x2F;code&gt; at the end of the
-translated line. Click the marker to open the commentary panel.&lt;&#x2F;strong&gt;
-Commentaries surface the lexical decisions that distinguish this rendering
-from the inherited English translations — &lt;em&gt;Elohim&lt;&#x2F;em&gt; plural, the &lt;em&gt;bara&#x2F;asah&lt;&#x2F;em&gt;
-verb pattern, &lt;em&gt;raqia&lt;&#x2F;em&gt; as a hammered-out dome, the cohortative &lt;em&gt;na&#x27;aseh&lt;&#x2F;em&gt; in
-v26, &lt;em&gt;tselem&lt;&#x2F;em&gt; and &lt;em&gt;demut&lt;&#x2F;em&gt; as physical resemblance, the polemical refusal of
-&lt;em&gt;shemesh&lt;&#x2F;em&gt; and &lt;em&gt;yareach&lt;&#x2F;em&gt; in v14–16, and others.&lt;&#x2F;p&gt;
-&lt;p&gt;Chapters 1–9 (creation through Noah&#x27;s covenant and vineyard) are signed off
-as &lt;strong&gt;stable&lt;&#x2F;strong&gt; as of 2026-05-21, against translation-glossary v2.0.0.
-Chapters 10–11 (the Table of Nations and the Tower of Babel) are next.&lt;&#x2F;p&gt;
-&lt;p&gt;The English translation was drafted by Claude Opus 4.7, edited through the
-Wheel of Heaven Translation Program pipeline (Translator → Editor → Reviewer),
-and signed off by the named human reviewer per chapter. The methodology is
-documented at
-&lt;a href=&quot;https:&#x2F;&#x2F;docs.wheelofheaven.world&#x2F;contributing&#x2F;content&#x2F;source-text-translation&#x2F;&quot;&gt;Source-Text Translation&lt;&#x2F;a&gt;.&lt;&#x2F;p&gt;
-</description>
       </item>
     </channel>
 </rss>
