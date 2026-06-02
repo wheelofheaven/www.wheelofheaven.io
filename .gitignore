@@ -11,3 +11,7 @@ __pycache__/
 
 # OS
 .DS_Store
+
+# Claude Code (local-only state)
+.claude/scheduled_tasks.lock
+.claude/settings.local.json
