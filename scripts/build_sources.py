@@ -239,7 +239,7 @@ def scan_pages(seeds: dict[str, dict]) -> int:
                             "authored_by": [ref["author"]] if ref.get("author") else [],
                             "publish_date": str(ref.get("date") or ""),
                             "follow_url": url or "",
-                            "description": "",
+                            "description": ref.get("description") or "",
                             "medium": ref.get("medium") or "",
                             "topics": [],
                             "cited_by": [],
@@ -247,6 +247,19 @@ def scan_pages(seeds: dict[str, dict]) -> int:
                         }
                         if norm:
                             seed_by_url[norm] = target_id
+
+                # Fill sparse catalogue records from richer inline references.
+                # Curated source fields already present in the seed take
+                # precedence over chapter-level metadata.
+                target = seeds[target_id]
+                if not target["authored_by"] and ref.get("author"):
+                    target["authored_by"] = [ref["author"]]
+                if not target["publish_date"] and ref.get("date"):
+                    target["publish_date"] = str(ref["date"])
+                if not target["description"] and ref.get("description"):
+                    target["description"] = ref["description"]
+                if not target["medium"] and ref.get("medium"):
+                    target["medium"] = ref["medium"]
 
                 # Append backlink if not already present.
                 existing = seeds[target_id]["cited_by"]
