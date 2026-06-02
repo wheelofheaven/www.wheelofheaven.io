@@ -52,7 +52,20 @@
                 if (!target) return;
                 event.preventDefault();
                 const details = target.querySelector('details');
-                if (details && !details.open) details.setAttribute('open', '');
+                if (details) {
+                    if (!details.open) details.setAttribute('open', '');
+                    // Accordion: close sibling <details> sharing the same
+                    // parent so the clicked tradition is the only one
+                    // expanded. The other tradition groups stay in the
+                    // DOM (and the Featured / showcase blocks stay
+                    // visible) — this is navigation, not filtering.
+                    const parent = target.parentElement;
+                    if (parent) {
+                        parent.querySelectorAll('details').forEach((d) => {
+                            if (d !== details) d.removeAttribute('open');
+                        });
+                    }
+                }
                 target.scrollIntoView({ behavior: 'smooth', block: 'start' });
             });
         });
