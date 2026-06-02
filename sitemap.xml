@@ -7402,6 +7402,18 @@
         <priority>0.7</priority></url>
 
     <url>
+        <loc>https://www.wheelofheaven.world/library/enki-and-ninhursag-woh/</loc>
+        
+        <changefreq>weekly</changefreq>
+        <priority>0.7</priority></url>
+
+    <url>
+        <loc>https://www.wheelofheaven.world/library/enki-and-ninmah-woh/</loc>
+        
+        <changefreq>weekly</changefreq>
+        <priority>0.7</priority></url>
+
+    <url>
         <loc>https://www.wheelofheaven.world/library/enos/</loc>
         
         <changefreq>weekly</changefreq>
@@ -7475,6 +7487,12 @@
 
     <url>
         <loc>https://www.wheelofheaven.world/library/ezra/</loc>
+        
+        <changefreq>weekly</changefreq>
+        <priority>0.7</priority></url>
+
+    <url>
+        <loc>https://www.wheelofheaven.world/library/flood-story-woh/</loc>
         
         <changefreq>weekly</changefreq>
         <priority>0.7</priority></url>
