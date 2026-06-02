@@ -1,0 +1,298 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="robots" content="noindex, nofollow">
+    <title>Wiki category icons — evaluation</title>
+    <!-- Iconify web component — single script gives us <iconify-icon icon="game-icons:foo" /> -->
+    <script src="https://code.iconify.design/iconify-icon/3.0.0/iconify-icon.min.js"></script>
+    <style>
+        :root {
+            --bg: #fafafa;
+            --fg: #1a1a1a;
+            --muted: #666;
+            --border: #e4e4e4;
+            --pick: #3b9a82;
+            --pick-bg: #e8f4f0;
+            --hover-bg: #f0f0f0;
+        }
+        @media (prefers-color-scheme: dark) {
+            :root {
+                --bg: #1a1a1a;
+                --fg: #eaeaea;
+                --muted: #999;
+                --border: #333;
+                --pick: #4fb3a0;
+                --pick-bg: #1a2e29;
+                --hover-bg: #262626;
+            }
+        }
+        * { box-sizing: border-box; }
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", system-ui, sans-serif;
+            margin: 0;
+            padding: 2rem;
+            background: var(--bg);
+            color: var(--fg);
+            line-height: 1.5;
+        }
+        .wrap { max-width: 1200px; margin: 0 auto; }
+        h1 { margin: 0 0 .25rem; font-size: 1.5rem; }
+        .intro {
+            color: var(--muted);
+            font-size: .9rem;
+            margin: 0 0 2rem;
+            max-width: 700px;
+        }
+        .intro code {
+            background: var(--hover-bg);
+            padding: .1em .35em;
+            border-radius: .25rem;
+            font-size: .9em;
+        }
+        .controls {
+            display: flex;
+            gap: 1rem;
+            align-items: center;
+            flex-wrap: wrap;
+            padding: 1rem;
+            margin-bottom: 2rem;
+            border: 1px solid var(--border);
+            border-radius: .5rem;
+            background: var(--hover-bg);
+        }
+        .controls button {
+            font: inherit;
+            padding: .5rem 1rem;
+            border: 1px solid var(--border);
+            border-radius: .375rem;
+            background: var(--bg);
+            color: var(--fg);
+            cursor: pointer;
+        }
+        .controls button:hover { background: var(--hover-bg); }
+        #output {
+            font-family: ui-monospace, SFMono-Regular, monospace;
+            font-size: .8rem;
+            white-space: pre;
+            padding: 1rem;
+            background: var(--hover-bg);
+            border-radius: .375rem;
+            margin: 0;
+            overflow-x: auto;
+            min-height: 3rem;
+        }
+
+        .category {
+            margin: 2rem 0;
+            padding-bottom: 1.5rem;
+            border-bottom: 1px solid var(--border);
+        }
+        .category__head {
+            display: flex;
+            align-items: baseline;
+            gap: .75rem;
+            margin-bottom: .75rem;
+        }
+        .category__name {
+            font-size: 1.05rem;
+            font-weight: 600;
+        }
+        .category__count {
+            font-size: .8rem;
+            color: var(--muted);
+            font-family: ui-monospace, monospace;
+        }
+        .candidates {
+            display: grid;
+            grid-template-columns: repeat(auto-fill, minmax(140px, 1fr));
+            gap: .75rem;
+        }
+        .cand {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            gap: .5rem;
+            padding: 1rem .5rem;
+            border: 2px solid var(--border);
+            border-radius: .5rem;
+            background: var(--bg);
+            cursor: pointer;
+            transition: all .15s ease;
+            font: inherit;
+            color: var(--fg);
+            text-align: center;
+        }
+        .cand:hover {
+            background: var(--hover-bg);
+            border-color: var(--muted);
+        }
+        .cand[aria-pressed="true"] {
+            border-color: var(--pick);
+            background: var(--pick-bg);
+        }
+        .cand iconify-icon {
+            font-size: 2.5rem;
+            color: var(--fg);
+        }
+        .cand[aria-pressed="true"] iconify-icon { color: var(--pick); }
+        .cand__id {
+            font-family: ui-monospace, monospace;
+            font-size: .7rem;
+            color: var(--muted);
+            word-break: break-all;
+            line-height: 1.3;
+        }
+        .cand__suggest {
+            font-size: .65rem;
+            text-transform: uppercase;
+            letter-spacing: .05em;
+            color: var(--pick);
+            font-weight: 600;
+        }
+    </style>
+</head>
+<body>
+<div class="wrap">
+    <h1>Wiki category icons — evaluation</h1>
+    <p class="intro">
+        18 categories on <code>/wiki/</code>. Each row shows candidates from
+        <a href="https://icon-sets.iconify.design/game-icons/" target="_blank" rel="noopener">Game-Icons</a>.
+        The first card in each row is my suggestion (marked <strong>SUGGESTED</strong>).
+        Click any card to select it for that category; selection persists in localStorage.
+        Hit <strong>Copy mapping</strong> at the top to dump your choices into the box for sending back.
+    </p>
+
+    <div class="controls">
+        <button onclick="copyMapping()">Copy mapping</button>
+        <button onclick="resetPicks()">Reset to suggested</button>
+        <button onclick="clearPicks()">Clear all</button>
+    </div>
+    <pre id="output">No selections yet. Click cards above to pick.</pre>
+
+<!-- Categories in catalog order -->
+<!-- Format: data-category = exact category name (matches frontmatter), -->
+<!-- data-icon = game-icons slug. First in each list is the suggestion. -->
+
+<script>
+// Define candidates per category. Each entry: { category, count, candidates: [icon-slug, ...] }.
+// First candidate is the SUGGESTED one (rendered with the highlight).
+const CATEGORIES = [
+    { name: "Cosmology & Framework",  count: 14, candidates: ["cosmic-egg", "galaxy", "abstract-094", "orbital", "ringed-planet"] },
+    { name: "Events & Narratives",    count: 12, candidates: ["scroll-unfurled", "stone-tablet", "open-book", "scroll-quill"] },
+    { name: "Symbolism & Motifs",     count: 12, candidates: ["ouroboros", "abstract-024", "triple-shells", "evil-eyes"] },
+    { name: "Science & Technology",   count: 11, candidates: ["atom", "dna2", "circuitry", "ancient-screw"] },
+    { name: "Cosmic Chronology",      count:  9, candidates: ["hourglass", "sundial", "orbital", "aquarius"] },
+    { name: "Methodology",            count:  7, candidates: ["scales", "ancient-screw", "cog", "fountain-pen"] },
+    { name: "Biblical Figures",       count:  8, candidates: ["stone-tablet", "monk-face", "chess-bishop", "crown-of-thorns", "holy-grail"] },
+    { name: "Theology & Traditions",  count:  6, candidates: ["greek-temple", "church", "prayer-beads", "lyre"] },
+    { name: "Reference Lists",        count:  6, candidates: ["bookmarklet", "bookmark", "book-cover", "open-book"] },
+    { name: "Elohim",                 count:  5, candidates: ["angel-wings", "winged-shield", "angel-outfit", "sun-priest"] },
+    { name: "Raëlism",                count:  5, candidates: ["enlightenment", "eclipse", "inner-self", "trefoil-lily"] },
+    { name: "Ufology",                count:  4, candidates: ["ufo", "ringed-planet", "evil-eyes", "earth-spit"] },
+    { name: "Places & Locations",     count:  4, candidates: ["treasure-map", "position-marker", "mountain-road"] },
+    { name: "Texts & Sources",        count:  3, candidates: ["open-book", "scroll-unfurled", "book-cover", "stone-tablet"] },
+    { name: "Peoples & Groups",       count:  2, candidates: ["three-friends", "tribal-pendant"] },
+    { name: "Culture & Aesthetics",   count:  1, candidates: ["palette", "paint-brush", "lyre"] },
+    { name: "Cosmic Roles",           count:  1, candidates: ["monk-face", "chess-king", "crown-of-thorns", "winged-sword"] },
+    { name: "Meta",                   count:  1, candidates: ["inner-self", "cog", "abstract-024"] },
+];
+
+const STORAGE_KEY = "wiki-icons-eval-picks";
+
+function loadPicks() {
+    try {
+        return JSON.parse(localStorage.getItem(STORAGE_KEY) || "{}");
+    } catch (e) { return {}; }
+}
+function savePicks(picks) {
+    try {
+        localStorage.setItem(STORAGE_KEY, JSON.stringify(picks));
+    } catch (e) {}
+}
+
+function render() {
+    const picks = loadPicks();
+    const wrap = document.querySelector(".wrap");
+    // Remove any existing category blocks (so re-render works)
+    wrap.querySelectorAll(".category").forEach(n => n.remove());
+
+    CATEGORIES.forEach(({ name, count, candidates }) => {
+        const cat = document.createElement("section");
+        cat.className = "category";
+        const head = document.createElement("header");
+        head.className = "category__head";
+        head.innerHTML = `
+            <span class="category__name">${name}</span>
+            <span class="category__count">${count} entries</span>
+        `;
+        cat.appendChild(head);
+
+        const grid = document.createElement("div");
+        grid.className = "candidates";
+        const currentPick = picks[name] || candidates[0]; // default to suggestion
+
+        candidates.forEach((icon, idx) => {
+            const cell = document.createElement("button");
+            cell.className = "cand";
+            cell.type = "button";
+            cell.setAttribute("aria-pressed", icon === currentPick ? "true" : "false");
+            cell.dataset.category = name;
+            cell.dataset.icon = icon;
+            cell.innerHTML = `
+                <iconify-icon icon="game-icons:${icon}"></iconify-icon>
+                <span class="cand__id">${icon}</span>
+                ${idx === 0 ? '<span class="cand__suggest">Suggested</span>' : ''}
+            `;
+            cell.addEventListener("click", () => {
+                picks[name] = icon;
+                savePicks(picks);
+                render();
+                updateOutput();
+            });
+            grid.appendChild(cell);
+        });
+        cat.appendChild(grid);
+        wrap.appendChild(cat);
+    });
+
+    updateOutput();
+}
+
+function updateOutput() {
+    const picks = loadPicks();
+    const lines = CATEGORIES.map(({ name, candidates }) => {
+        const chosen = picks[name] || candidates[0];
+        const isDefault = !picks[name];
+        const tag = isDefault ? " (suggested, unchanged)" : "";
+        return `  "${name}" = "game-icons:${chosen}"${tag}`;
+    });
+    document.getElementById("output").textContent = lines.join("\n");
+}
+
+function copyMapping() {
+    const text = document.getElementById("output").textContent;
+    navigator.clipboard.writeText(text).then(() => {
+        const btn = event.target;
+        const orig = btn.textContent;
+        btn.textContent = "Copied!";
+        setTimeout(() => { btn.textContent = orig; }, 1500);
+    });
+}
+
+function resetPicks() {
+    localStorage.removeItem(STORAGE_KEY);
+    render();
+}
+
+function clearPicks() {
+    // "clear" means reset to suggestions (which is the default state).
+    resetPicks();
+}
+
+render();
+</script>
+</div>
+</body>
+</html>
