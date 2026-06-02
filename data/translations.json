@@ -1,9 +1,12 @@
 {
   "_meta": {
-    "generated_at": "2026-05-23T11:30:01+00:00",
-    "count": 263
+    "generated_at": "2026-06-01T06:05:51+00:00",
+    "count": 264
   },
   "paths": {
+    "AGENTS": [
+      "en"
+    ],
     "README": [
       "en"
     ],
