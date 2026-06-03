@@ -1,15 +1,28 @@
 // Listen-to-this-page feature
 //
-// Two top-level engines, exposed to the user as a binary toggle:
-//   - "system": browser SpeechSynthesis — instant, free, quality varies by OS
-//   - "studio": a higher-quality neural TTS, selected per-page-language:
-//        en, de, fr, es, ru, ja, ko  → Supertonic 3 (via transformers.js v4)
-//        zh, zh-Hant                 → Piper (via @mintplex-labs/piper-tts-web)
-//        anything else / load failure → silently falls back to "system"
+// Three engines, tried in this order:
+//   - "prerecorded": pre-rendered ElevenLabs audiobook for the current
+//                    library book + language + chapter, if a manifest is
+//                    published at assets.wheelofheaven.world. Highest
+//                    fidelity; paragraph highlight driven by a timing
+//                    sidecar against audio.currentTime.
+//   - "studio":      neural TTS generated in-browser, selected per-language:
+//                       en, de, fr, es, ru, ko       → MMS-TTS via transformers.js v4
+//                       zh, zh-Hant                  → Piper
+//                       anything else / load failure → silently falls back to system
+//   - "system":      browser SpeechSynthesis — instant, free, quality varies by OS
 //
+// The user toggle ("System" / "Studio") chooses between the two GENERATED
+// engines. The prerecorded engine is preferred silently when available — no
+// UI for it; if the manifest exists for this page, you get the audiobook.
 // Engine preference is persisted in localStorage under `woh:listen:engine`.
-// All model assets are lazy-fetched from a public CDN on first use; we do not
-// self-host model weights.
+//
+// Playback is unit-based: the page is split into an ordered list of reading
+// units. On library-book pages each unit is one verse paragraph (carrying its
+// DOM id `c{ch}p{n}`); elsewhere units are sentence-sized chunks of the page
+// text with no id. All three engines report the index of the unit currently
+// being read, which drives the reading highlight (library pages) and the
+// progress bar.
 
 (function () {
     const trigger = document.getElementById('listenTrigger');
@@ -46,9 +59,24 @@
         return { family, tag: raw };
     }
 
-    // Which studio sub-engine handles this language, or null if unsupported.
+    // MMS-TTS (Meta MMS / VITS) model per language family — the languages
+    // transformers.js can synthesize directly with no romanization step.
+    // Each model IS the language; output is { audio: Float32Array,
+    // sampling_rate: 16000 }. Japanese and Chinese aren't in this set
+    // (Chinese is handled by Piper below; Japanese falls back to system).
+    const MMS_MODELS = {
+        en: 'Xenova/mms-tts-eng',
+        de: 'Xenova/mms-tts-deu',
+        fr: 'Xenova/mms-tts-fra',
+        es: 'Xenova/mms-tts-spa',
+        ru: 'Xenova/mms-tts-rus',
+        ko: 'Xenova/mms-tts-kor',
+    };
+
+    // Which studio sub-engine handles this language, or null if unsupported
+    // (in which case studio silently falls back to the system voice).
     function studioEngineFor({ family, tag }) {
-        if (['en', 'de', 'fr', 'es', 'ru', 'ja', 'ko'].includes(family)) return 'supertonic';
+        if (MMS_MODELS[family]) return 'mms';
         if (family === 'zh') return 'piper';
         return null;
     }
@@ -72,12 +100,22 @@
     let isPlaying = false;
     let isPaused = false;
     let estimatedDuration = 0;
-    let startTime = 0;
-    let pausedAt = 0;
-    let progressInterval = null;
+    // Once a studio model fails/hangs in this session, route to the system
+    // voice without flipping the user's saved preference. Reset when the user
+    // explicitly toggles the engine, so they can retry.
+    let studioFailedThisSession = false;
+
+    // Unit-based playback state. playQueue holds the ordered reading units for
+    // the current session; each is { id, text } where id is a paragraph DOM id
+    // on library pages or null elsewhere. lastHighlightedId tracks the verse
+    // currently carrying the reading highlight so we can clear it.
+    let playQueue = [];
+    let lastHighlightedId = null;
 
     // --- DOM helpers ---------------------------------------------------------
 
+    // Flat page-text extraction, used as the non-library fallback and as the
+    // basis for sentence chunking.
     function getContentText() {
         const selectors = [
             '.wiki__content',
@@ -103,35 +141,81 @@
         return '';
     }
 
+    // Build the ordered list of reading units for the current page.
+    //   - Library books → one unit per verse paragraph, carrying its DOM id so
+    //     the unit can be highlighted and scrolled to as it plays. Only the
+    //     primary reading line is spoken (translation, or original when there
+    //     is no translation); the inline commentary button, citation marks,
+    //     interlinear and reference lines are excluded.
+    //   - Everything else → sentence-sized chunks of the flat page text, with
+    //     id null (no highlight, but still drives unit-based progress).
+    function getReadingUnits() {
+        const libContent = document.querySelector('.library-book__content');
+        if (libContent) {
+            const units = [];
+            libContent.querySelectorAll('.library-book__paragraph').forEach((p) => {
+                if (!p.id) return;
+                let text = '';
+                const translation = p.querySelector('.library-book__para-translation');
+                if (translation) {
+                    const clone = translation.cloneNode(true);
+                    clone
+                        .querySelectorAll('.library-book__commentary-link, button, sup')
+                        .forEach((n) => n.remove());
+                    text = (clone.textContent || '').replace(/\s+/g, ' ').trim();
+                }
+                if (!text) {
+                    const original = p.querySelector('.library-book__para-original');
+                    if (original) text = (original.textContent || '').replace(/\s+/g, ' ').trim();
+                }
+                if (text) units.push({ id: p.id, text });
+            });
+            if (units.length) return units;
+        }
+
+        const blob = getContentText();
+        if (!blob) return [];
+        return chunkText(blob).map((t) => ({ id: null, text: t }));
+    }
+
     function formatTime(seconds) {
         const mins = Math.floor(seconds / 60);
         const secs = Math.floor(seconds % 60);
         return `${mins}:${secs.toString().padStart(2, '0')}`;
     }
 
-    function updateProgress(elapsed) {
-        const percent = estimatedDuration
-            ? Math.min((elapsed / estimatedDuration) * 100, 100)
-            : 0;
+    // Bar + current-time reflect the fraction of units completed. We don't know
+    // real audio duration for the studio engines, so progress advances at unit
+    // boundaries rather than via a wall-clock timer — honest, if stepwise.
+    function setProgressFraction(fraction) {
+        const percent = Math.max(0, Math.min(fraction, 1)) * 100;
         progressFill.style.width = `${percent}%`;
         progressHandle.style.left = `${percent}%`;
-        timeCurrent.textContent = formatTime(elapsed);
+        timeCurrent.textContent = formatTime((fraction || 0) * estimatedDuration);
     }
 
-    function startProgressTimer() {
-        startTime = Date.now() - pausedAt * 1000;
-        progressInterval = setInterval(() => {
-            if (isPlaying && !isPaused) {
-                updateProgress((Date.now() - startTime) / 1000);
-            }
-        }, 100);
+    // --- Reading highlight (library pages) -----------------------------------
+
+    function clearHighlight() {
+        if (!lastHighlightedId) return;
+        const prev = document.getElementById(lastHighlightedId);
+        if (prev) prev.classList.remove('library-book__paragraph--reading');
+        lastHighlightedId = null;
     }
 
-    function stopProgressTimer() {
-        if (progressInterval) {
-            clearInterval(progressInterval);
-            progressInterval = null;
-        }
+    function highlightUnit(id) {
+        clearHighlight();
+        if (!id) return;
+        const el = document.getElementById(id);
+        if (!el) return;
+        el.classList.add('library-book__paragraph--reading');
+        lastHighlightedId = id;
+        // Auto-scroll only when the verse isn't comfortably in view, so we
+        // don't yank the page on every boundary while the reader is already
+        // looking at the right place.
+        const rect = el.getBoundingClientRect();
+        const fullyVisible = rect.top >= 80 && rect.bottom <= window.innerHeight - 120;
+        if (!fullyVisible) el.scrollIntoView({ behavior: 'smooth', block: 'center' });
     }
 
     function showPlayer() {
@@ -216,123 +300,199 @@
     }
 
     // --- Engine: System (Web Speech) -----------------------------------------
+    //
+    // Speaks one utterance per unit, chaining on `onend`, so the controller
+    // learns which unit is playing (onUnitStart) and can highlight it.
 
     function createSystemEngine() {
-        let utterance = null;
+        let units = [];
+        let index = 0;
+        let stopped = false;
+        let cbs = null;
+
+        function pickVoice(utterance) {
+            const lang = detectPageLang();
+            const voices = window.speechSynthesis.getVoices();
+            const langMatch = voices.find((v) => v.lang.toLowerCase().startsWith(lang.family));
+            if (langMatch) utterance.voice = langMatch;
+            utterance.rate = 1.0;
+            utterance.pitch = 1.0;
+        }
+
+        function speakNext() {
+            if (stopped) return;
+            if (index >= units.length) {
+                cbs.onEnd();
+                return;
+            }
+            const i = index++;
+            const utterance = new SpeechSynthesisUtterance(units[i].text);
+            pickVoice(utterance);
+            utterance.onstart = () => {
+                if (i === 0) cbs.onStart();
+                cbs.onUnitStart(i);
+            };
+            utterance.onend = () => speakNext();
+            utterance.onerror = (e) => {
+                if (e.error === 'canceled' || e.error === 'interrupted') return;
+                console.error('Speech synthesis error:', e);
+                speakNext();
+            };
+            window.speechSynthesis.speak(utterance);
+        }
+
         return {
             name: 'system',
             async load() {},
-            speak(text, callbacks) {
+            speak(unitList, callbacks) {
                 window.speechSynthesis.cancel();
-                utterance = new SpeechSynthesisUtterance(text);
-                const lang = detectPageLang();
-                const voices = window.speechSynthesis.getVoices();
-                const langMatch = voices.find((v) =>
-                    v.lang.toLowerCase().startsWith(lang.family)
-                );
-                if (langMatch) utterance.voice = langMatch;
-                utterance.rate = 1.0;
-                utterance.pitch = 1.0;
-                utterance.onstart = callbacks.onStart;
-                utterance.onpause = callbacks.onPause;
-                utterance.onresume = callbacks.onResume;
-                utterance.onend = callbacks.onEnd;
-                utterance.onerror = (e) => {
-                    if (e.error !== 'canceled') console.error('Speech synthesis error:', e);
-                    callbacks.onEnd();
-                };
-                window.speechSynthesis.speak(utterance);
+                units = unitList;
+                index = 0;
+                stopped = false;
+                cbs = callbacks;
+                speakNext();
             },
             pause() { window.speechSynthesis.pause(); },
             resume() { window.speechSynthesis.resume(); },
-            stop() { window.speechSynthesis.cancel(); },
+            stop() {
+                stopped = true;
+                window.speechSynthesis.cancel();
+            },
         };
     }
 
     // --- Shared chunked-playback runner --------------------------------------
-    // Both studio engines share the same "generate next chunk, play, then
-    // generate again" loop; only the per-chunk generator differs.
+    // Both studio engines share the same loop; only the per-unit generator
+    // differs. Generation is *pipelined*: the moment a unit starts playing we
+    // kick off generation of the next one, so its audio is ready when the
+    // current unit ends. Without this, neural generation (seconds per verse)
+    // serialized behind playback leaves an audible gap where the reading
+    // highlight sits idle on a finished verse. Reports the index of each unit
+    // as it begins via callbacks.onUnitStart.
 
     function createChunkedRunner({ generate, label }) {
         let audioEl = null;
-        let queue = [];
-        let queueIndex = 0;
+        let units = [];
+        let index = 0;            // next unit to play
         let callbacksRef = null;
         let stopped = false;
+        let nextResultPromise = null; // prefetched generation for units[index]
+
+        // Never rejects — resolves to { blob } or { error } so a prefetched
+        // promise can sit unawaited for a moment without an unhandled rejection.
+        function generateAt(i) {
+            if (i < 0 || i >= units.length) return null;
+            return generate(units[i].text).then(
+                (blob) => ({ blob }),
+                (error) => ({ error })
+            );
+        }
 
         async function playNext() {
             if (stopped) return;
-            if (queueIndex >= queue.length) {
+            if (index >= units.length) {
                 callbacksRef?.onEnd();
                 return;
             }
-            const chunk = queue[queueIndex++];
+            const i = index++;
+            const resultPromise = nextResultPromise || generateAt(i);
+            nextResultPromise = null;
+
+            const result = await resultPromise;
+            if (stopped) return;
+            if (!result || result.error) {
+                console.error(`${label} generation error:`, result && result.error);
+                callbacksRef?.onEnd();
+                return;
+            }
+
+            // Start generating the next unit while this one plays.
+            nextResultPromise = generateAt(index);
+
+            const url = URL.createObjectURL(result.blob);
+            if (audioEl) {
+                audioEl.pause();
+                try { URL.revokeObjectURL(audioEl.src); } catch (_) {}
+            }
+            audioEl = new Audio(url);
+            audioEl.onended = () => {
+                URL.revokeObjectURL(url);
+                playNext();
+            };
+            audioEl.onerror = (e) => {
+                console.error(`${label} audio playback error:`, e);
+                callbacksRef?.onEnd();
+            };
+            if (i === 0) callbacksRef?.onStart();
+            callbacksRef?.onUnitStart(i);
             try {
-                const blob = await generate(chunk);
-                if (stopped) return;
-                const url = URL.createObjectURL(blob);
-                if (audioEl) {
-                    audioEl.pause();
-                    try { URL.revokeObjectURL(audioEl.src); } catch (_) {}
-                }
-                audioEl = new Audio(url);
-                audioEl.onended = () => {
-                    URL.revokeObjectURL(url);
-                    playNext();
-                };
-                audioEl.onerror = (e) => {
-                    console.error(`${label} audio playback error:`, e);
-                    callbacksRef?.onEnd();
-                };
-                if (queueIndex === 1) callbacksRef?.onStart();
                 await audioEl.play();
             } catch (err) {
-                console.error(`${label} generation error:`, err);
+                console.error(`${label} playback start error:`, err);
                 callbacksRef?.onEnd();
             }
         }
 
         return {
-            start(text, callbacks) {
+            start(unitList, callbacks) {
                 callbacksRef = callbacks;
                 stopped = false;
-                queue = chunkText(text);
-                queueIndex = 0;
+                units = unitList;
+                index = 0;
+                nextResultPromise = null;
                 return playNext();
             },
             pause() { if (audioEl) audioEl.pause(); },
             resume() { if (audioEl) audioEl.play(); },
             stop() {
                 stopped = true;
+                nextResultPromise = null;
                 if (audioEl) {
                     audioEl.pause();
                     try { URL.revokeObjectURL(audioEl.src); } catch (_) {}
                     audioEl = null;
                 }
-                queue = [];
-                queueIndex = 0;
+                units = [];
+                index = 0;
             },
         };
     }
 
-    // --- Engine: Supertonic (via transformers.js v4) -------------------------
+    // Reject if a model download/init doesn't settle in time, so a hung
+    // studio load falls back to the system voice instead of spinning forever.
+    function withTimeout(promise, ms, label) {
+        return new Promise((resolve, reject) => {
+            const t = setTimeout(
+                () => reject(new Error(`${label} timed out after ${ms}ms`)),
+                ms
+            );
+            promise.then(
+                (v) => { clearTimeout(t); resolve(v); },
+                (e) => { clearTimeout(t); reject(e); }
+            );
+        });
+    }
 
-    function createSupertonicEngine() {
+    // --- Engine: MMS-TTS (Meta MMS / VITS via transformers.js v4) ------------
+
+    function createMmsEngine() {
         let pipe = null;
         let runner = null;
 
         async function ensureLoaded() {
             if (pipe) return;
-            showLoading('Loading studio voice (Supertonic)…');
-            const mod = await import(
+            const model = MMS_MODELS[detectPageLang().family];
+            showLoading('Loading studio voice…');
+            const { pipeline } = await import(
                 /* @vite-ignore */ 'https://cdn.jsdelivr.net/npm/@huggingface/transformers@4/+esm'
             );
-            const { pipeline } = mod;
-            pipe = await pipeline('text-to-speech', 'Supertone/supertonic-3', {
+            // dtype 'q8' resolves to onnx/model_quantized.onnx (~36 MB) — much
+            // smaller than the fp32 default, with no audible quality loss here.
+            pipe = await pipeline('text-to-speech', model, {
                 dtype: 'q8',
                 progress_callback: (p) => {
                     if (p && p.status === 'progress' && typeof p.progress === 'number') {
-                        showLoading(`Loading studio voice (Supertonic)… ${Math.round(p.progress)}%`);
+                        showLoading(`Loading studio voice… ${Math.round(p.progress)}%`);
                     }
                 },
             });
@@ -340,23 +500,21 @@
         }
 
         async function generate(text) {
-            const lang = detectPageLang();
-            // Supertonic accepts a language hint; pass the page's family code.
-            const out = await pipe(text, { language: lang.family });
-            // transformers.js TTS pipelines return { audio: Float32Array, sampling_rate: number }.
+            // MMS/VITS models are single-language and take no speaker embedding.
+            const out = await pipe(text);
             return floatToWavBlob(out.audio, out.sampling_rate);
         }
 
         return {
-            name: 'supertonic',
-            async load() { await ensureLoaded(); },
-            async speak(text, callbacks) {
+            name: 'mms',
+            async load() { await withTimeout(ensureLoaded(), 120000, 'studio voice'); },
+            async speak(unitList, callbacks) {
                 try {
-                    await ensureLoaded();
-                    runner = createChunkedRunner({ generate, label: 'Supertonic' });
-                    await runner.start(text, callbacks);
+                    await withTimeout(ensureLoaded(), 120000, 'studio voice');
+                    runner = createChunkedRunner({ generate, label: 'MMS' });
+                    await runner.start(unitList, callbacks);
                 } catch (err) {
-                    console.error('Supertonic engine failed:', err);
+                    console.error('MMS engine failed:', err);
                     hideLoading();
                     callbacks.onEnd();
                     throw err;
@@ -385,19 +543,20 @@
 
         async function generate(text) {
             const voiceId = piperVoiceFor(detectPageLang());
-            // piper-tts-web exposes predict() which returns a ReadableStream of WAV bytes.
-            const stream = await piper.predict({ text, voiceId });
-            return await new Response(stream).blob();
+            // piper-tts-web's predict() resolves to a WAV Blob. (Older guesses
+            // assumed a ReadableStream; normalize either way to be safe.)
+            const out = await piper.predict({ text, voiceId });
+            return out instanceof Blob ? out : await new Response(out).blob();
         }
 
         return {
             name: 'piper',
-            async load() { await ensureLoaded(); },
-            async speak(text, callbacks) {
+            async load() { await withTimeout(ensureLoaded(), 120000, 'studio voice'); },
+            async speak(unitList, callbacks) {
                 try {
-                    await ensureLoaded();
+                    await withTimeout(ensureLoaded(), 120000, 'studio voice');
                     runner = createChunkedRunner({ generate, label: 'Piper' });
-                    await runner.start(text, callbacks);
+                    await runner.start(unitList, callbacks);
                 } catch (err) {
                     console.error('Piper engine failed:', err);
                     hideLoading();
@@ -411,29 +570,219 @@
         };
     }
 
-    // --- Engine resolver (studio = supertonic | piper, picked per language) --
+    // --- Engine: Prerecorded (ElevenLabs audiobook served from assets CDN) ---
+    //
+    // Probes `{ASSETS_BASE}/audio/{lang}/{slug}/manifest.json` for the current
+    // page; if a chapter listed in the manifest matches the units we're about
+    // to speak, streams the MP3 and drives onUnitStart from the timing sidecar
+    // against audio.currentTime. Returns null from probe() when no audiobook
+    // is published for this page — caller falls back to studio/system.
+
+    const ASSETS_BASE = (window.WOH_ASSETS_BASE || 'https://assets.wheelofheaven.world').replace(/\/$/, '');
+
+    // The audio language code matches data-library: en, fr, de, es, ru, ja,
+    // ko, zh, zh-Hant. Most match family directly; zh-Hant is the one full-tag
+    // form we keep distinct.
+    function audioLangCode({ family, tag }) {
+        if (tag === 'zh-Hant') return 'zh-Hant';
+        return family;
+    }
+
+    // Reads the book slug from a `data-book-slug` attribute on .library-book
+    // (set by the template) and the visible chapter range from the units the
+    // controller is about to play.
+    function detectBookContext(unitList) {
+        const root = document.querySelector('[data-book-slug]');
+        if (!root) return null;
+        const slug = root.dataset.bookSlug;
+        if (!slug) return null;
+        // Collect chapter numbers from the unit IDs (c{ch}p{n}).
+        const chapters = new Set();
+        for (const u of unitList) {
+            if (!u.id) continue;
+            const m = u.id.match(/^c(\d+)p\d+$/);
+            if (m) chapters.add(parseInt(m[1], 10));
+        }
+        return { slug, chapters: [...chapters].sort((a, b) => a - b) };
+    }
+
+    // Per-page manifest cache so the player doesn't refetch.
+    let manifestCache = null;
+    async function fetchManifest(slug, lang) {
+        if (manifestCache && manifestCache.slug === slug && manifestCache.lang === lang) {
+            return manifestCache.data;
+        }
+        const url = `${ASSETS_BASE}/audio/${lang}/${slug}/manifest.json`;
+        try {
+            const r = await fetch(url, { cache: 'no-cache' });
+            if (!r.ok) {
+                manifestCache = { slug, lang, data: null };
+                return null;
+            }
+            const data = await r.json();
+            manifestCache = { slug, lang, data };
+            return data;
+        } catch (e) {
+            manifestCache = { slug, lang, data: null };
+            return null;
+        }
+    }
+
+    function createPrerecordedEngine() {
+        let audioEl = null;
+        let timing = null;
+        let stopped = false;
+        let cbs = null;
+        let unitIdxByParaN = null;
+        let lastUnitIdx = -1;
+
+        // Returns { audioUrl, timing, chapters } if any chapter the units span
+        // has pre-recorded audio, otherwise null. When multiple chapters appear
+        // in the unit list (rare — library pages usually show one), the first
+        // chapter wins; the rest fall through to the generative engines for
+        // a later run.
+        async function probe(unitList) {
+            const ctx = detectBookContext(unitList);
+            if (!ctx) return null;
+            const lang = audioLangCode(detectPageLang());
+            const manifest = await fetchManifest(ctx.slug, lang);
+            if (!manifest || !manifest.chapters || !manifest.chapters.length) return null;
+            const availableChapters = new Set(manifest.chapters.map((c) => c.n));
+            const targetChapter = ctx.chapters.find((n) => availableChapters.has(n));
+            if (!targetChapter) return null;
+            const chapEntry = manifest.chapters.find((c) => c.n === targetChapter);
+            const timingUrl = `${ASSETS_BASE}/${chapEntry.timing_url}`;
+            try {
+                const r = await fetch(timingUrl, { cache: 'force-cache' });
+                if (!r.ok) return null;
+                const timingData = await r.json();
+                return {
+                    audioUrl: `${ASSETS_BASE}/${chapEntry.audio_url}`,
+                    timing: timingData,
+                    chapter: targetChapter,
+                };
+            } catch (e) {
+                return null;
+            }
+        }
+
+        function teardownAudio() {
+            if (!audioEl) return;
+            audioEl.pause();
+            audioEl.onended = null;
+            audioEl.ontimeupdate = null;
+            audioEl.onerror = null;
+            audioEl.onplay = null;
+            audioEl.onpause = null;
+            audioEl = null;
+        }
+
+        return {
+            name: 'prerecorded',
+            probe,
+            async load() {},
+            async speak(unitList, callbacks, probeData) {
+                cbs = callbacks;
+                stopped = false;
+                lastUnitIdx = -1;
+                const data = probeData || (await probe(unitList));
+                if (!data) throw new Error('prerecorded: no audio available');
+                timing = data.timing;
+                // Build a map from paragraph number → index in unitList so we
+                // can call onUnitStart with the controller's view of position.
+                unitIdxByParaN = {};
+                unitList.forEach((u, i) => {
+                    if (!u.id) return;
+                    const m = u.id.match(/^c(\d+)p(\d+)$/);
+                    if (m && parseInt(m[1], 10) === data.chapter) {
+                        unitIdxByParaN[parseInt(m[2], 10)] = i;
+                    }
+                });
+
+                teardownAudio();
+                audioEl = new Audio(data.audioUrl);
+                audioEl.preload = 'auto';
+
+                audioEl.onplay = () => {
+                    if (stopped) return;
+                    cbs.onStart && cbs.onStart();
+                };
+                audioEl.onpause = () => {
+                    if (stopped || audioEl.ended) return;
+                    cbs.onPause && cbs.onPause();
+                };
+                audioEl.ontimeupdate = () => {
+                    if (stopped || !audioEl) return;
+                    const t = audioEl.currentTime;
+                    // Find the paragraph currently being read. timing is small
+                    // (dozens to hundreds of entries) so linear search is fine.
+                    let current = null;
+                    for (const p of timing.paragraphs) {
+                        if (t >= p.start && t < p.end) {
+                            current = p;
+                            break;
+                        }
+                    }
+                    if (!current) return;
+                    const idx = unitIdxByParaN[current.n];
+                    if (idx !== undefined && idx !== lastUnitIdx) {
+                        cbs.onUnitStart && cbs.onUnitStart(idx);
+                        lastUnitIdx = idx;
+                    }
+                };
+                audioEl.onended = () => {
+                    if (stopped) return;
+                    cbs.onEnd && cbs.onEnd();
+                };
+                audioEl.onerror = (e) => {
+                    console.error('prerecorded audio error:', e);
+                    cbs.onEnd && cbs.onEnd();
+                };
+
+                try {
+                    await audioEl.play();
+                } catch (err) {
+                    console.error('prerecorded play failed:', err);
+                    throw err;
+                }
+            },
+            pause() {
+                if (audioEl) audioEl.pause();
+            },
+            resume() {
+                if (audioEl) audioEl.play();
+            },
+            stop() {
+                stopped = true;
+                teardownAudio();
+                unitIdxByParaN = null;
+                lastUnitIdx = -1;
+            },
+        };
+    }
+
+    // --- Engine resolver (studio = mms | piper, picked per language) ---------
 
     function getEngine() {
         if (currentEngine && currentEngine.name === engineDescriptor()) return currentEngine;
         if (currentEngine) currentEngine.stop();
 
-        if (engineName === 'studio') {
-            const sub = studioEngineFor(detectPageLang());
-            if (sub === 'supertonic') currentEngine = createSupertonicEngine();
-            else if (sub === 'piper') currentEngine = createPiperEngine();
-            else currentEngine = createSystemEngine(); // language outside studio coverage
-        } else {
-            currentEngine = createSystemEngine();
-        }
+        const sub = engineDescriptor();
+        if (sub === 'mms') currentEngine = createMmsEngine();
+        else if (sub === 'piper') currentEngine = createPiperEngine();
+        else currentEngine = createSystemEngine();
         return currentEngine;
     }
 
+    // Resolve which concrete engine should run right now. Studio routes to a
+    // language-specific sub-engine, but once studio has failed this session we
+    // pin to system so retries don't loop back into the broken studio load.
     function engineDescriptor() {
-        if (engineName !== 'studio') return 'system';
+        if (engineName !== 'studio' || studioFailedThisSession) return 'system';
         return studioEngineFor(detectPageLang()) || 'system';
     }
 
-    // --- Float32 PCM → WAV blob helper (for Supertonic) ----------------------
+    // --- Float32 PCM → WAV blob helper (MMS-TTS output) ----------------------
 
     function floatToWavBlob(samples, sampleRate) {
         const buffer = new ArrayBuffer(44 + samples.length * 2);
@@ -464,53 +813,102 @@
 
     // --- Playback control ----------------------------------------------------
 
-    async function speak() {
-        const text = getContentText();
-        if (!text) return;
+    function onUnitStart(i) {
+        const unit = playQueue[i];
+        if (unit) highlightUnit(unit.id);
+        // Fraction reflects the start of unit i; bar advances per unit.
+        const total = playQueue.length || 1;
+        setProgressFraction(i / total);
+    }
 
-        const wordCount = text.split(/\s+/).length;
-        estimatedDuration = (wordCount / 150) * 60;
-        pausedAt = 0;
+    // Cached prerecorded engine + probe result. Probe is async; we run it once
+    // per session so the next speak() can route to it without re-fetching the
+    // manifest. Falsy probeData means "not available — fall through to studio".
+    let prerecordedEngine = null;
+    let prerecordedProbed = false;
+    let prerecordedData = null;
+
+    async function tryPrerecorded(unitList) {
+        if (!prerecordedEngine) prerecordedEngine = createPrerecordedEngine();
+        if (!prerecordedProbed) {
+            try {
+                prerecordedData = await prerecordedEngine.probe(unitList);
+            } catch (_e) {
+                prerecordedData = null;
+            }
+            prerecordedProbed = true;
+        }
+        return prerecordedData;
+    }
+
+    const callbackBundle = {
+        onStart: () => {
+            isPlaying = true;
+            isPaused = false;
+            updatePlayState(true);
+        },
+        onUnitStart,
+        onPause: () => {
+            isPaused = true;
+            updatePlayState(false);
+        },
+        onResume: () => {
+            isPaused = false;
+            updatePlayState(true);
+        },
+        onEnd: () => {
+            isPlaying = false;
+            isPaused = false;
+            setProgressFraction(1);
+            clearHighlight();
+            updatePlayState(false);
+        },
+    };
+
+    async function speak() {
+        playQueue = getReadingUnits();
+        if (!playQueue.length) return;
+
+        const totalWords = playQueue.reduce(
+            (n, u) => n + u.text.split(/\s+/).length,
+            0
+        );
+        estimatedDuration = (totalWords / 150) * 60;
 
         const pageTitle = document.title.split('|')[0].trim() || labelThisPage;
         titleEl.textContent = pageTitle;
         timeTotal.textContent = formatTime(estimatedDuration);
+        setProgressFraction(0);
 
         showPlayer();
 
+        // 1. Prerecorded first if available — highest fidelity, no generation
+        // cost, paragraph highlight via timing sidecar.
+        const probeData = await tryPrerecorded(playQueue);
+        if (probeData) {
+            currentEngine = prerecordedEngine;
+            try {
+                await prerecordedEngine.speak(playQueue, callbackBundle, probeData);
+                return;
+            } catch (err) {
+                console.error('prerecorded failed, falling through:', err);
+                // fall through to generated engines
+            }
+        }
+
+        // 2. Studio/system as before.
         let engine = getEngine();
         try {
-            await engine.speak(text, {
-                onStart: () => {
-                    isPlaying = true;
-                    isPaused = false;
-                    updatePlayState(true);
-                    startProgressTimer();
-                },
-                onPause: () => {
-                    isPaused = true;
-                    pausedAt = (Date.now() - startTime) / 1000;
-                    stopProgressTimer();
-                    updatePlayState(false);
-                },
-                onResume: () => {
-                    isPaused = false;
-                    updatePlayState(true);
-                    startProgressTimer();
-                },
-                onEnd: () => {
-                    isPlaying = false;
-                    isPaused = false;
-                    stopProgressTimer();
-                    updateProgress(estimatedDuration);
-                    updatePlayState(false);
-                },
-            });
+            await engine.speak(playQueue, callbackBundle);
         } catch (_err) {
-            // Studio engine failed (CDN block, WASM unsupported, etc.).
-            // Fall back to system for this session without flipping the user's preference.
+            // Studio engine failed/timed out (CDN block, WASM unsupported,
+            // incompatible model, slow link). Pin to system for the rest of
+            // the session — without flipping the user's saved preference — and
+            // replay. The session flag stops getEngine() from re-selecting the
+            // broken studio engine on the retry.
             if (hasWebSpeech && engine.name !== 'system') {
-                currentEngine = createSystemEngine();
+                studioFailedThisSession = true;
+                currentEngine = null;
                 await speak();
             }
         }
@@ -520,17 +918,14 @@
         if (!isPlaying && !isPaused) {
             speak();
         } else if (isPlaying && !isPaused) {
-            getEngine().pause();
+            (currentEngine || getEngine()).pause();
             isPaused = true;
-            pausedAt = (Date.now() - startTime) / 1000;
-            stopProgressTimer();
             updatePlayState(false);
         } else if (isPaused) {
-            getEngine().resume();
+            (currentEngine || getEngine()).resume();
             isPaused = false;
             isPlaying = true;
             updatePlayState(true);
-            startProgressTimer();
         }
     }
 
@@ -538,12 +933,10 @@
         if (currentEngine) currentEngine.stop();
         isPlaying = false;
         isPaused = false;
-        pausedAt = 0;
-        stopProgressTimer();
+        clearHighlight();
         hidePlayer();
         hideLoading();
-        progressFill.style.width = '0%';
-        progressHandle.style.left = '0%';
+        setProgressFraction(0);
         timeCurrent.textContent = '0:00';
     }
 
@@ -551,7 +944,6 @@
         const wasPlaying = isPlaying || isPaused;
         if (wasPlaying) {
             if (currentEngine) currentEngine.stop();
-            stopProgressTimer();
             isPlaying = false;
             isPaused = false;
             updatePlayState(false);
@@ -560,6 +952,9 @@
         if (engineName === 'studio' && !window.WebAssembly) engineName = 'system';
         localStorage.setItem(STORAGE_KEY, engineName);
         currentEngine = null;
+        // Explicit toggle is a fresh intent — let studio be retried even if it
+        // failed earlier this session.
+        studioFailedThisSession = false;
         setEngineLabel();
         if (wasPlaying) speak();
     }
