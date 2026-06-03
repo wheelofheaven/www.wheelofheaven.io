@@ -46,7 +46,7 @@
     "game-fossil":                  {"family": "filled",  "source": "game-icons", "viewBox": "0 0 512 512", "iconify": "https://icon-sets.iconify.design/game-icons/fossil/",                     "usage": ["section:sources", "navbar:knowledge.sources"]},
     "game-galaxy":                   {"family": "filled",  "source": "game-icons","viewBox": "0 0 512 512", "iconify": "https://icon-sets.iconify.design/game-icons/galaxy/",                        "usage": ["wiki_category:Cosmology & Framework"],           "added": "2026-06"},
     "game-hand-of-god":             {"family": "filled",  "source": "game-icons", "viewBox": "0 0 512 512", "iconify": "https://icon-sets.iconify.design/game-icons/hand-of-god/",                "usage": ["unused"],       "added": "2026-05"},
-    "game-hexagram-eye":            {"family": "mixed",   "source": "custom",     "viewBox": "0 0 24 24",   "iconify": null,                                                                      "usage": ["unused"],                   "added": "2026-05", "$note": "Was tradition:western_esoteric — superseded by game-tarot-the-magician."},
+    "game-hexagram-eye":            {"family": "mixed",   "source": "custom",     "viewBox": "0 0 24 24",   "iconify": null,                                                                      "usage": ["tradition:kabbalah"],       "added": "2026-05", "$note": "Was tradition:western_esoteric — superseded by game-tarot-the-magician. Repurposed for tradition:kabbalah in 2026-06 (hexagram = Magen David + esoteric-eye = Jewish mystical tradition; semantic fit for Hekhalot/Merkavah/Kabbalah)."},
     "game-inner-self":               {"family": "filled",  "source": "game-icons","viewBox": "0 0 512 512", "iconify": "https://icon-sets.iconify.design/game-icons/inner-self/",                    "usage": ["wiki_category:Meta"],                            "added": "2026-06"},
     "game-lotus":                   {"family": "filled",  "source": "game-icons", "viewBox": "0 0 512 512", "iconify": "https://icon-sets.iconify.design/game-icons/lotus/",                      "usage": ["tradition:raelian", "wiki_category:Raëlism"],        "added": "2026-05"},
     "game-lyre":                     {"family": "filled",  "source": "game-icons","viewBox": "0 0 512 512", "iconify": "https://icon-sets.iconify.design/game-icons/lyre/",                          "usage": ["wiki_category:Culture & Aesthetics"],            "added": "2026-06"},
@@ -121,7 +121,8 @@
       "egyptian":          "game-egyptian-profile",
       "vedic":             "game-meditation",
       "mesoamerican":      "game-colombian-statue",
-      "western_esoteric":  "game-tarot-the-magician"
+      "western_esoteric":  "game-tarot-the-magician",
+      "kabbalah":          "game-hexagram-eye"
     },
     "event_type": {
       "announcement": "game-megaphone"
