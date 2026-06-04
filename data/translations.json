@@ -1,7 +1,7 @@
 {
   "_meta": {
-    "generated_at": "2026-06-04T06:07:37+00:00",
-    "count": 269
+    "generated_at": "2026-06-04T10:20:22+00:00",
+    "count": 270
   },
   "paths": {
     "AGENTS": [
@@ -1208,6 +1208,9 @@
       "ru",
       "zh",
       "zh-Hant"
+    ],
+    "library/zephaniah": [
+      "en"
     ],
     "map": [
       "de",
