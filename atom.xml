@@ -130,6 +130,38 @@ Wellhausen-Gressmann. All attributions correct.&lt;&#x2F;p&gt;
         
     </entry>
     <entry xml:lang="en">
+        <title>Zephaniah</title>
+        <published>2026-06-04T00:00:00+00:00</published>
+        <updated>2026-06-04T00:00:00+00:00</updated>
+        
+        <author>
+          <name>
+            
+              Unknown
+            
+          </name>
+        </author>
+        
+        <link rel="alternate" type="text/html" href="https://www.wheelofheaven.world/library/zephaniah/"/>
+        <id>https://www.wheelofheaven.world/library/zephaniah/</id>
+        
+        <content type="html" xml:base="https://www.wheelofheaven.world/library/zephaniah/">&lt;p&gt;&lt;strong&gt;Zephaniah&lt;&#x2F;strong&gt;
+(Original: &lt;em&gt;צְפַנְיָה (Tsfanyah)&lt;&#x2F;em&gt;)&lt;&#x2F;p&gt;
+&lt;p&gt;is part of the Hebrew Bible (Tanakh) collection in the Bible.&lt;&#x2F;p&gt;
+&lt;h2 id=&quot;about-this-edition&quot;&gt;About this edition&lt;&#x2F;h2&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;strong&gt;Coverage:&lt;&#x2F;strong&gt; 3 chapters, 53 verses&lt;&#x2F;li&gt;
+&lt;li&gt;&lt;strong&gt;Reference format:&lt;&#x2F;strong&gt; &lt;code&gt;ZEP {chapter}:{verse}&lt;&#x2F;code&gt;&lt;&#x2F;li&gt;
+&lt;li&gt;&lt;strong&gt;Translation:&lt;&#x2F;strong&gt; American Standard Version (1901), public domain&lt;&#x2F;li&gt;
+&lt;&#x2F;ul&gt;
+&lt;h2 id=&quot;see-also&quot;&gt;See also&lt;&#x2F;h2&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;a href=&quot;&#x2F;resources&#x2F;&quot;&gt;Resources&lt;&#x2F;a&gt;&lt;&#x2F;li&gt;
+&lt;&#x2F;ul&gt;
+</content>
+        
+    </entry>
+    <entry xml:lang="en">
         <title>Qur&#x27;an — early-manuscript selection</title>
         <published>2026-06-03T00:00:00+00:00</published>
         <updated>2026-06-03T00:00:00+00:00</updated>
@@ -1148,25 +1180,6 @@ new texts move from &quot;planned&quot; to &quot;in-progress.&quot;&lt;&#x2F;p&g
         <id>https://www.wheelofheaven.world/fr/library/lets-welcome-the-extraterrestrials/</id>
         
         <content type="html" xml:base="https://www.wheelofheaven.world/fr/library/lets-welcome-the-extraterrestrials/"></content>
-        
-    </entry>
-    <entry xml:lang="en">
-        <title>Let&#x27;s Welcome the Extraterrestrials</title>
-        <published>2026-05-18T00:00:00+00:00</published>
-        <updated>2026-05-18T00:00:00+00:00</updated>
-        
-        <author>
-          <name>
-            
-              Unknown
-            
-          </name>
-        </author>
-        
-        <link rel="alternate" type="text/html" href="https://www.wheelofheaven.world/ja/library/lets-welcome-the-extraterrestrials/"/>
-        <id>https://www.wheelofheaven.world/ja/library/lets-welcome-the-extraterrestrials/</id>
-        
-        <content type="html" xml:base="https://www.wheelofheaven.world/ja/library/lets-welcome-the-extraterrestrials/"></content>
         
     </entry>
 </feed>
