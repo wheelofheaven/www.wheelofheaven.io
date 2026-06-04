@@ -1,7 +1,7 @@
 {
   "_meta": {
-    "generated_at": "2026-06-01T06:05:51+00:00",
-    "count": 264
+    "generated_at": "2026-06-04T06:07:37+00:00",
+    "count": 269
   },
   "paths": {
     "AGENTS": [
@@ -402,6 +402,9 @@
       "zh",
       "zh-Hant"
     ],
+    "library/adapa-woh": [
+      "en"
+    ],
     "library/alma": [
       "de",
       "en",
@@ -434,6 +437,9 @@
       "ru",
       "zh",
       "zh-Hant"
+    ],
+    "library/baal-cycle-woh": [
+      "en"
     ],
     "library/book-of-enoch": [
       "de",
@@ -525,6 +531,12 @@
       "ru",
       "zh",
       "zh-Hant"
+    ],
+    "library/enki-and-ninhursag-woh": [
+      "en"
+    ],
+    "library/enki-and-ninmah-woh": [
+      "en"
     ],
     "library/enos": [
       "de",
@@ -652,6 +664,9 @@
       "ru",
       "zh",
       "zh-Hant"
+    ],
+    "library/flood-story-woh": [
+      "en"
     ],
     "library/galatians": [
       "de",
