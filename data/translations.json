@@ -1,7 +1,7 @@
 {
   "_meta": {
     "generated_at": "2026-06-04T10:20:22+00:00",
-    "count": 270
+    "count": 273
   },
   "paths": {
     "AGENTS": [
@@ -401,6 +401,9 @@
       "ru",
       "zh",
       "zh-Hant"
+    ],
+    "library/acts-woh": [
+      "en"
     ],
     "library/adapa-woh": [
       "en"
@@ -922,6 +925,9 @@
       "zh",
       "zh-Hant"
     ],
+    "library/luke-woh": [
+      "en"
+    ],
     "library/mark": [
       "de",
       "en",
@@ -932,6 +938,9 @@
       "ru",
       "zh",
       "zh-Hant"
+    ],
+    "library/mark-woh": [
+      "en"
     ],
     "library/matthew": [
       "de",
