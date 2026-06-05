@@ -1,0 +1,542 @@
+{
+  "en": {
+    "in-the-beginning": {
+      "name": "In the beginning...",
+      "event": "Before time began, in the vast expanse of the cosmos, the Elohim civilization flourished. Advanced beings who mastered science and creation, they would soon discover our world and begin the greatest experiment in galactic history."
+    },
+    "age-of-capricorn": {
+      "name": "Age of Capricorn",
+      "event": "Synthetic life engineering on the Elohim home planet with the inevitable escape of synthetic 'monster' lifeforms. Earth discovered, exploration. Known as the 1st day of Creation (Genesis)"
+    },
+    "age-of-sagittarius": {
+      "name": "Age of Sagittarius",
+      "event": "Study and analysis of Earth's atmosphere and its constitution and the harmfulness of the sun light. Known as the 2nd day of Creation (Genesis)"
+    },
+    "age-of-scorpio": {
+      "name": "Age of Scorpio",
+      "event": "Terraforming and first synthetic life engineering adapted to the new planet (Earth); creation of prokaryotes, fungi, plant life and most likely insects. Known as the 3rd day of Creation (Genesis)"
+    },
+    "age-of-libra": {
+      "name": "Age of Libra",
+      "event": "Astronomy, measure of time, adaptation of life to Earth environment. Engineering of fish and bird life, as well as dragons, known to us as dinosaurs. Known as the 4th day of Creation (Genesis)"
+    },
+    "age-of-virgo": {
+      "name": "Age of Virgo",
+      "event": "Engineering of all types of land animals, mammals, reptiles. Everything was done to keep things in balance/ecology. Known as the 5th day of Creation (Genesis)"
+    },
+    "age-of-leo": {
+      "name": "Age of Leo",
+      "event": "First Earthly humans engineered. Lived as primitive among the Elohim. Weren't allowed to learn about their cosmic origins. Known as the 6th day of Creation (Genesis)"
+    },
+    "age-of-cancer": {
+      "name": "Age of Cancer",
+      "event": "The Elohim rebel group known as the Serpent/Dragon was banished to remain on Earth after they taught the Earthlings about their cosmic origins. They conceived offsprings with the humans, creating the first hybrids. Known as the 7th day of Creation (Genesis) of Rest."
+    },
+    "age-of-gemini": {
+      "name": "Age of Gemini",
+      "event": "The Elohim government didn't like the events on Earth, so they were planning to destroy life on Earth. The banished faction among with Noah build a spaceship to escape the planet, known as Noah's Ark. When the flood-inducing weaponry hit Earth, life was preserved on the Ark in orbit around the planet. After the flood, Noah's Ark landed on Earth and reseeded Earth with the help of the Elohim survivors. Creation of a huge space rocket, the Tower of Babel. War in Heaven among the Elohim factions."
+    },
+    "age-of-taurus": {
+      "name": "Age of Taurus",
+      "event": "Destruction of the center of progress such as Sodom and Gomorrah. The Serpentine Elohim faction lost and was pardoned, so they returned back to their home planet. The public opinion about life on Earth got favorable. Events of Abraham."
+    },
+    "age-of-aries": {
+      "name": "Age of Aries",
+      "event": "Events of Moses and Exodus"
+    },
+    "age-of-pisces": {
+      "name": "Age of Pisces",
+      "event": "Jesus and his fishermen, multiplication of people, increase of demographics, independent development."
+    },
+    "age-of-aquarius": {
+      "name": "Age of Aquarius",
+      "event": "Revelation of our cosmic origins, the last prophet, the avoiding of the nuclear holocaust/destroying our civilization, Golden Age is awaiting, the return of our father in Heaven, our creators, the Elohim"
+    }
+  },
+  "de": {
+    "in-the-beginning": {
+      "name": "Am Anfang...",
+      "event": "Bevor die Zeit begann, in der weiten Ausdehnung des Kosmos, blühte die Zivilisation der Elohim. Als hochentwickelte Wesen, die Wissenschaft und Schöpfung meisterten, sollten sie bald unsere Welt entdecken und das größte Experiment der galaktischen Geschichte beginnen."
+    },
+    "age-of-capricorn": {
+      "name": "Zeitalter des Steinbocks",
+      "event": "Synthetische Lebensentwicklung auf dem Heimatplaneten der Elohim mit dem unvermeidlichen Entkommen synthetischer „Monster\"-Lebensformen. Entdeckung der Erde, Erkundung. Bekannt als der 1. Schöpfungstag (Genesis)."
+    },
+    "age-of-sagittarius": {
+      "name": "Zeitalter des Schützen",
+      "event": "Untersuchung und Analyse der Erdatmosphäre, ihrer Zusammensetzung und der Schädlichkeit des Sonnenlichts. Bekannt als der 2. Schöpfungstag (Genesis)."
+    },
+    "age-of-scorpio": {
+      "name": "Zeitalter des Skorpions",
+      "event": "Terraforming und erste synthetische Lebensentwicklung, an den neuen Planeten (Erde) angepasst; Erschaffung von Prokaryoten, Pilzen, Pflanzenleben und höchstwahrscheinlich Insekten. Bekannt als der 3. Schöpfungstag (Genesis)."
+    },
+    "age-of-libra": {
+      "name": "Zeitalter der Waage",
+      "event": "Astronomie, Zeitmessung, Anpassung des Lebens an die Umwelt der Erde. Entwicklung von Fisch- und Vogelleben sowie von Drachen, die uns als Dinosaurier bekannt sind. Bekannt als der 4. Schöpfungstag (Genesis)."
+    },
+    "age-of-virgo": {
+      "name": "Zeitalter der Jungfrau",
+      "event": "Entwicklung aller Arten von Landtieren, Säugetieren und Reptilien. Alles geschah unter Wahrung des ökologischen Gleichgewichts. Bekannt als der 5. Schöpfungstag (Genesis)."
+    },
+    "age-of-leo": {
+      "name": "Zeitalter des Löwen",
+      "event": "Die ersten irdischen Menschen wurden geschaffen. Sie lebten primitiv unter den Elohim. Es war ihnen nicht erlaubt, von ihrer kosmischen Herkunft zu erfahren. Bekannt als der 6. Schöpfungstag (Genesis)."
+    },
+    "age-of-cancer": {
+      "name": "Zeitalter des Krebses",
+      "event": "Die rebellische Gruppe der Elohim, bekannt als die Schlange bzw. der Drache, wurde dazu verurteilt, auf der Erde zu verbleiben, nachdem sie die Erdbewohner über ihre kosmische Herkunft aufgeklärt hatte. Sie zeugten Nachkommen mit den Menschen und schufen so die ersten Hybriden. Bekannt als der 7. Schöpfungstag (Genesis), der Tag der Ruhe."
+    },
+    "age-of-gemini": {
+      "name": "Zeitalter der Zwillinge",
+      "event": "Die Regierung der Elohim missbilligte die Ereignisse auf der Erde und plante daher, das Leben auf der Erde zu zerstören. Die verbannte Fraktion baute zusammen mit Noah ein Raumschiff, um vom Planeten zu fliehen, bekannt als die Arche Noah. Als die flutauslösenden Waffen die Erde trafen, blieb das Leben in der Arche im Orbit um den Planeten bewahrt. Nach der Flut landete die Arche Noah auf der Erde und besiedelte sie mit Hilfe der überlebenden Elohim neu. Bau einer riesigen Weltraumrakete, des Turms zu Babel. Krieg im Himmel zwischen den Fraktionen der Elohim."
+    },
+    "age-of-taurus": {
+      "name": "Zeitalter des Stiers",
+      "event": "Zerstörung von Zentren des Fortschritts wie Sodom und Gomorra. Die schlangenartige Elohim-Fraktion unterlag und wurde begnadigt, sodass sie auf ihren Heimatplaneten zurückkehrte. Die öffentliche Meinung über das Leben auf der Erde wurde wohlwollend. Ereignisse um Abraham."
+    },
+    "age-of-aries": {
+      "name": "Zeitalter des Widders",
+      "event": "Ereignisse um Mose und den Auszug aus Ägypten."
+    },
+    "age-of-pisces": {
+      "name": "Zeitalter der Fische",
+      "event": "Jesus und seine Fischer, Vermehrung der Menschen, demografisches Wachstum, eigenständige Entwicklung."
+    },
+    "age-of-aquarius": {
+      "name": "Zeitalter des Wassermanns",
+      "event": "Offenbarung unserer kosmischen Herkunft, der letzte Prophet, das Abwenden des nuklearen Holocaust bzw. der Zerstörung unserer Zivilisation; ein Goldenes Zeitalter steht bevor, die Rückkehr unseres Vaters im Himmel, unserer Schöpfer, der Elohim."
+    }
+  },
+  "es": {
+    "in-the-beginning": {
+      "name": "En el principio...",
+      "event": "Antes de que comenzara el tiempo, en la vasta extensión del cosmos, florecía la civilización de los Elohim. Seres avanzados que dominaban la ciencia y la creación, pronto descubrirían nuestro mundo y darían inicio al mayor experimento de la historia galáctica."
+    },
+    "age-of-capricorn": {
+      "name": "Era de Capricornio",
+      "event": "Ingeniería de vida sintética en el planeta natal de los Elohim, con la inevitable fuga de formas de vida sintéticas «monstruosas». Descubrimiento y exploración de la Tierra. Conocido como el 1.º día de la Creación (Génesis)."
+    },
+    "age-of-sagittarius": {
+      "name": "Era de Sagitario",
+      "event": "Estudio y análisis de la atmósfera terrestre, su composición y la nocividad de la luz solar. Conocido como el 2.º día de la Creación (Génesis)."
+    },
+    "age-of-scorpio": {
+      "name": "Era de Escorpio",
+      "event": "Terraformación e ingeniería de las primeras formas de vida sintética adaptadas al nuevo planeta (la Tierra); creación de procariotas, hongos, vida vegetal y, muy probablemente, insectos. Conocido como el 3.º día de la Creación (Génesis)."
+    },
+    "age-of-libra": {
+      "name": "Era de Libra",
+      "event": "Astronomía, medición del tiempo y adaptación de la vida al entorno terrestre. Ingeniería de peces y aves, así como de dragones, conocidos por nosotros como dinosaurios. Conocido como el 4.º día de la Creación (Génesis)."
+    },
+    "age-of-virgo": {
+      "name": "Era de Virgo",
+      "event": "Ingeniería de todo tipo de animales terrestres, mamíferos y reptiles. Todo se hizo para mantener el equilibrio ecológico. Conocido como el 5.º día de la Creación (Génesis)."
+    },
+    "age-of-leo": {
+      "name": "Era de Leo",
+      "event": "Ingeniería de los primeros humanos terrestres. Vivían como primitivos entre los Elohim. No se les permitía conocer sus orígenes cósmicos. Conocido como el 6.º día de la Creación (Génesis)."
+    },
+    "age-of-cancer": {
+      "name": "Era de Cáncer",
+      "event": "El grupo rebelde de los Elohim conocido como la Serpiente/Dragón fue desterrado a permanecer en la Tierra tras enseñar a los terrícolas sus orígenes cósmicos. Concibieron descendencia con los humanos, creando los primeros híbridos. Conocido como el 7.º día de la Creación (Génesis), el día del Descanso."
+    },
+    "age-of-gemini": {
+      "name": "Era de Géminis",
+      "event": "Al gobierno de los Elohim no le agradaban los acontecimientos de la Tierra, por lo que planeaba destruir la vida en el planeta. La facción desterrada, junto con Noé, construyó una nave espacial para escapar, conocida como el Arca de Noé. Cuando el armamento generador del diluvio golpeó la Tierra, la vida fue preservada en el Arca en órbita alrededor del planeta. Tras el diluvio, el Arca de Noé aterrizó y resembró la Tierra con la ayuda de los Elohim supervivientes. Creación de un enorme cohete espacial, la Torre de Babel. Guerra en el Cielo entre las facciones de los Elohim."
+    },
+    "age-of-taurus": {
+      "name": "Era de Tauro",
+      "event": "Destrucción de los centros de progreso, como Sodoma y Gomorra. La facción serpentina de los Elohim perdió y fue indultada, regresando a su planeta natal. La opinión pública sobre la vida en la Tierra se volvió favorable. Acontecimientos de Abraham."
+    },
+    "age-of-aries": {
+      "name": "Era de Aries",
+      "event": "Acontecimientos de Moisés y el Éxodo."
+    },
+    "age-of-pisces": {
+      "name": "Era de Piscis",
+      "event": "Jesús y sus pescadores, multiplicación de los pueblos, crecimiento demográfico y desarrollo independiente."
+    },
+    "age-of-aquarius": {
+      "name": "Era de Acuario",
+      "event": "Revelación de nuestros orígenes cósmicos, el último profeta, la evitación del holocausto nuclear y la destrucción de nuestra civilización; nos aguarda una Edad de Oro y el retorno de nuestro padre en el Cielo, nuestros creadores: los Elohim."
+    }
+  },
+  "fr": {
+    "in-the-beginning": {
+      "name": "Au commencement…",
+      "event": "Avant que le temps ne commence, dans la vaste étendue du cosmos, la civilisation des Élohim prospérait. Êtres avancés ayant maîtrisé la science et la création, ils allaient bientôt découvrir notre monde et entreprendre la plus grande expérience de l'histoire galactique."
+    },
+    "age-of-capricorn": {
+      "name": "Ère du Capricorne",
+      "event": "Ingénierie de la vie synthétique sur la planète d'origine des Élohim, avec l'inévitable évasion de formes de vie synthétiques « monstrueuses ». Découverte et exploration de la Terre. Connue comme le 1er jour de la Création (Genèse)."
+    },
+    "age-of-sagittarius": {
+      "name": "Ère du Sagittaire",
+      "event": "Étude et analyse de l'atmosphère terrestre, de sa composition et de la nocivité de la lumière solaire. Connue comme le 2e jour de la Création (Genèse)."
+    },
+    "age-of-scorpio": {
+      "name": "Ère du Scorpion",
+      "event": "Terraformation et première ingénierie de la vie synthétique adaptée à la nouvelle planète (la Terre) ; création des procaryotes, des champignons, de la flore et, très probablement, des insectes. Connue comme le 3e jour de la Création (Genèse)."
+    },
+    "age-of-libra": {
+      "name": "Ère de la Balance",
+      "event": "Astronomie, mesure du temps, adaptation de la vie à l'environnement terrestre. Ingénierie des poissons et des oiseaux, ainsi que des dragons, que nous connaissons sous le nom de dinosaures. Connue comme le 4e jour de la Création (Genèse)."
+    },
+    "age-of-virgo": {
+      "name": "Ère de la Vierge",
+      "event": "Ingénierie de toutes sortes d'animaux terrestres, mammifères et reptiles. Tout fut entrepris pour maintenir l'équilibre écologique. Connue comme le 5e jour de la Création (Genèse)."
+    },
+    "age-of-leo": {
+      "name": "Ère du Lion",
+      "event": "Ingénierie des premiers humains terrestres. Ils vivaient en primitifs parmi les Élohim. Il ne leur était pas permis d'apprendre leurs origines cosmiques. Connue comme le 6e jour de la Création (Genèse)."
+    },
+    "age-of-cancer": {
+      "name": "Ère du Cancer",
+      "event": "Le groupe rebelle des Élohim, connu sous le nom de Serpent/Dragon, fut banni et contraint de demeurer sur Terre après avoir enseigné aux Terriens leurs origines cosmiques. Ils engendrèrent des descendants avec les humains, donnant naissance aux premiers hybrides. Connue comme le 7e jour de la Création (Genèse), jour du Repos."
+    },
+    "age-of-gemini": {
+      "name": "Ère des Gémeaux",
+      "event": "Le gouvernement des Élohim n'appréciait pas les événements survenus sur Terre et projetait d'y détruire toute vie. La faction bannie, avec Noé, construisit un vaisseau spatial pour échapper à la planète, connu sous le nom d'Arche de Noé. Lorsque les armes provoquant le déluge frappèrent la Terre, la vie fut préservée à bord de l'Arche, en orbite autour de la planète. Après le déluge, l'Arche de Noé se posa sur Terre et la repeupla avec l'aide des Élohim survivants. Construction d'une immense fusée spatiale, la Tour de Babel. Guerre au Ciel entre les factions des Élohim."
+    },
+    "age-of-taurus": {
+      "name": "Ère du Taureau",
+      "event": "Destruction des centres de progrès tels que Sodome et Gomorrhe. La faction serpentine des Élohim, ayant perdu, fut graciée et retourna sur sa planète d'origine. L'opinion publique au sujet de la vie sur Terre devint favorable. Événements liés à Abraham."
+    },
+    "age-of-aries": {
+      "name": "Ère du Bélier",
+      "event": "Événements de Moïse et de l'Exode."
+    },
+    "age-of-pisces": {
+      "name": "Ère des Poissons",
+      "event": "Jésus et ses pêcheurs, multiplication des peuples, croissance démographique, développement autonome."
+    },
+    "age-of-aquarius": {
+      "name": "Ère du Verseau",
+      "event": "Révélation de nos origines cosmiques, dernier prophète, évitement de l'holocauste nucléaire et de la destruction de notre civilisation ; un Âge d'or nous attend, ainsi que le retour de notre père aux Cieux, nos créateurs, les Élohim."
+    }
+  },
+  "ja": {
+    "in-the-beginning": {
+      "name": "始まりに……",
+      "event": "時が始まる前、広大な宇宙の中で、エロヒムの文明は栄えていました。科学と創造を極めた高度な存在である彼らは、やがてこの地球を発見し、銀河史上最大の実験に着手することになります。"
+    },
+    "age-of-capricorn": {
+      "name": "山羊座の時代",
+      "event": "エロヒムの母星における合成生命の工学的創造と、合成された「怪物」のような生命体の不可避な逃走。地球の発見と探査。創世記における創造の第1日として知られています。"
+    },
+    "age-of-sagittarius": {
+      "name": "射手座の時代",
+      "event": "地球の大気とその組成、ならびに太陽光の有害性に関する研究と分析。創世記における創造の第2日として知られています。"
+    },
+    "age-of-scorpio": {
+      "name": "蠍座の時代",
+      "event": "テラフォーミングと、新しい惑星(地球)に適応した最初の合成生命の工学的創造。原核生物、菌類、植物、そしておそらく昆虫の創造。創世記における創造の第3日として知られています。"
+    },
+    "age-of-libra": {
+      "name": "天秤座の時代",
+      "event": "天文学、時間の測定、そして地球環境への生命の適応。魚類と鳥類、さらに私たちが恐竜として知る龍の工学的創造。創世記における創造の第4日として知られています。"
+    },
+    "age-of-virgo": {
+      "name": "乙女座の時代",
+      "event": "あらゆる種類の陸上動物、哺乳類、爬虫類の工学的創造。すべては均衡と生態系を保つために行われました。創世記における創造の第5日として知られています。"
+    },
+    "age-of-leo": {
+      "name": "獅子座の時代",
+      "event": "最初の地球人類が工学的に創造されました。彼らはエロヒムのもとで原始的な存在として暮らし、自らの宇宙的起源について知ることは許されませんでした。創世記における創造の第6日として知られています。"
+    },
+    "age-of-cancer": {
+      "name": "蟹座の時代",
+      "event": "蛇/龍として知られるエロヒムの反逆集団は、地球人に彼らの宇宙的起源について教えた後、地球に留まるよう追放されました。彼らは人間と子をもうけ、最初のハイブリッドを生み出しました。創世記における創造の第7日、すなわち安息の日として知られています。"
+    },
+    "age-of-gemini": {
+      "name": "双子座の時代",
+      "event": "エロヒム政府は地球での出来事を好ましく思わず、地球上の生命を滅ぼそうと計画しました。追放された一派はノアとともに惑星を脱出するための宇宙船を建造し、それがノアの方舟として知られています。洪水を引き起こす兵器が地球を襲ったとき、生命は惑星の軌道上にある方舟の中で保存されました。洪水の後、ノアの方舟は地球に着陸し、生き残ったエロヒムの助けを得て地球に再び種を蒔きました。巨大な宇宙ロケット、バベルの塔の建造。エロヒム諸派の間で天界における戦争が勃発しました。"
+    },
+    "age-of-taurus": {
+      "name": "牡牛座の時代",
+      "event": "ソドムとゴモラのような進歩の中心地の破壊。蛇のエロヒム派は敗北しましたが赦され、母星へと帰還しました。地球上の生命に関する世論は好意的なものとなりました。アブラハムの出来事。"
+    },
+    "age-of-aries": {
+      "name": "牡羊座の時代",
+      "event": "モーセと出エジプトの出来事。"
+    },
+    "age-of-pisces": {
+      "name": "魚座の時代",
+      "event": "イエスとその漁師たち、人々の増殖、人口の増加、そして独立した発展。"
+    },
+    "age-of-aquarius": {
+      "name": "みずがめ座の時代",
+      "event": "私たちの宇宙的起源の啓示、最後の預言者、核の大惨事や私たちの文明の破壊の回避。黄金時代が待ち受けており、天におられる父、私たちの創造主であるエロヒムが帰還されます。"
+    }
+  },
+  "ko": {
+    "in-the-beginning": {
+      "name": "태초에...",
+      "event": "시간이 시작되기 전, 광활한 우주 공간 속에서 엘로힘 문명이 번성하고 있었습니다. 과학과 창조를 통달한 진보된 존재였던 그들은 곧 우리의 세계를 발견하고 은하 역사상 가장 위대한 실험을 시작하게 됩니다."
+    },
+    "age-of-capricorn": {
+      "name": "염소자리 시대",
+      "event": "엘로힘 모성에서 진행된 합성 생명체 공학과, 그로 인해 필연적으로 발생한 합성 '괴물' 생명체의 탈출. 지구의 발견과 탐사. 창조의 첫째 날(창세기)로 알려져 있습니다."
+    },
+    "age-of-sagittarius": {
+      "name": "사수자리 시대",
+      "event": "지구 대기와 그 구성, 그리고 햇빛의 유해성에 대한 연구와 분석. 창조의 둘째 날(창세기)로 알려져 있습니다."
+    },
+    "age-of-scorpio": {
+      "name": "전갈자리 시대",
+      "event": "지구 환경에 맞춘 테라포밍과 새로운 행성(지구)에 적응한 최초의 합성 생명체 공학. 원핵생물, 곰팡이, 식물, 그리고 가장 가능성이 높은 곤충의 창조. 창조의 셋째 날(창세기)로 알려져 있습니다."
+    },
+    "age-of-libra": {
+      "name": "천칭자리 시대",
+      "event": "천문학, 시간 측정, 지구 환경에 대한 생명의 적응. 어류와 조류, 그리고 우리에게 공룡으로 알려진 용(드래곤)의 공학. 창조의 넷째 날(창세기)로 알려져 있습니다."
+    },
+    "age-of-virgo": {
+      "name": "처녀자리 시대",
+      "event": "포유류, 파충류 등 모든 종류의 육상 동물에 대한 공학. 균형과 생태를 유지하기 위해 모든 작업이 이루어졌습니다. 창조의 다섯째 날(창세기)로 알려져 있습니다."
+    },
+    "age-of-leo": {
+      "name": "사자자리 시대",
+      "event": "최초의 지구 인류가 공학적으로 창조되었습니다. 그들은 엘로힘 사이에서 원시적으로 살았으며, 자신들의 우주적 기원에 대해 배우는 것이 허용되지 않았습니다. 창조의 여섯째 날(창세기)로 알려져 있습니다."
+    },
+    "age-of-cancer": {
+      "name": "게자리 시대",
+      "event": "뱀/용으로 알려진 엘로힘 반란 집단은 지구인들에게 그들의 우주적 기원을 가르친 뒤 지구에 남도록 추방되었습니다. 그들은 인간과 자손을 낳아 최초의 혼혈을 만들었습니다. 안식을 의미하는 창조의 일곱째 날(창세기)로 알려져 있습니다."
+    },
+    "age-of-gemini": {
+      "name": "쌍둥이자리 시대",
+      "event": "엘로힘 정부는 지구에서 벌어지는 사건들을 못마땅하게 여겨, 지구상의 생명을 파괴할 계획을 세우고 있었습니다. 추방된 분파는 노아와 함께 행성을 탈출하기 위한 우주선을 건조했으니, 이것이 노아의 방주로 알려져 있습니다. 홍수를 유발하는 무기가 지구를 강타했을 때, 행성 궤도에 있던 방주 안에서 생명이 보존되었습니다. 홍수 이후, 노아의 방주는 지구에 착륙하여 살아남은 엘로힘의 도움으로 지구에 생명을 다시 뿌렸습니다. 거대한 우주 로켓인 바벨탑의 건설. 엘로힘 분파들 사이의 천상의 전쟁."
+    },
+    "age-of-taurus": {
+      "name": "황소자리 시대",
+      "event": "소돔과 고모라와 같은 진보의 중심지의 파괴. 뱀의 엘로힘 분파는 패배하여 사면받았고, 모성으로 귀환했습니다. 지구 생명에 대한 여론이 호의적으로 변했습니다. 아브라함의 사건들."
+    },
+    "age-of-aries": {
+      "name": "양자리 시대",
+      "event": "모세와 출애굽의 사건들."
+    },
+    "age-of-pisces": {
+      "name": "물고기자리 시대",
+      "event": "예수와 그의 어부들, 인구의 증식, 인구 통계의 증가, 독립적 발전."
+    },
+    "age-of-aquarius": {
+      "name": "물병자리 시대",
+      "event": "우리의 우주적 기원의 계시, 마지막 예언자, 핵 대학살/우리 문명의 파괴 회피, 황금시대의 도래, 하늘에 계신 우리 아버지이자 창조자인 엘로힘의 귀환."
+    }
+  },
+  "ru": {
+    "in-the-beginning": {
+      "name": "В начале…",
+      "event": "До того как началось время, в безбрежных просторах космоса процветала цивилизация Элохим. Высокоразвитые существа, овладевшие наукой и искусством творения, вскоре открыли наш мир и приступили к величайшему эксперименту в истории галактики."
+    },
+    "age-of-capricorn": {
+      "name": "Эпоха Козерога",
+      "event": "Создание синтетической жизни на родной планете Элохим и неизбежный побег синтетических «чудовищных» форм жизни. Открытие Земли, её исследование. Известна как 1-й день Творения (Бытие)."
+    },
+    "age-of-sagittarius": {
+      "name": "Эпоха Стрельца",
+      "event": "Изучение и анализ атмосферы Земли, её состава и вредоносного воздействия солнечного света. Известна как 2-й день Творения (Бытие)."
+    },
+    "age-of-scorpio": {
+      "name": "Эпоха Скорпиона",
+      "event": "Терраформирование и первая инженерия синтетической жизни, адаптированной к новой планете (Земле); создание прокариот, грибов, растительной жизни и, по всей видимости, насекомых. Известна как 3-й день Творения (Бытие)."
+    },
+    "age-of-libra": {
+      "name": "Эпоха Весов",
+      "event": "Астрономия, измерение времени, приспособление жизни к земной среде. Создание рыб и птиц, а также драконов, известных нам как динозавры. Известна как 4-й день Творения (Бытие)."
+    },
+    "age-of-virgo": {
+      "name": "Эпоха Девы",
+      "event": "Создание всех типов наземных животных — млекопитающих и рептилий. Всё было устроено так, чтобы сохранить равновесие и экологию. Известна как 5-й день Творения (Бытие)."
+    },
+    "age-of-leo": {
+      "name": "Эпоха Льва",
+      "event": "Созданы первые земные люди. Жили как примитивные существа среди Элохим. Им не позволяли узнать о своём космическом происхождении. Известна как 6-й день Творения (Бытие)."
+    },
+    "age-of-cancer": {
+      "name": "Эпоха Рака",
+      "event": "Группа мятежных Элохим, известная как Змей / Дракон, была изгнана и оставлена на Земле после того, как открыла землянам их космическое происхождение. Они зачали потомство с людьми, создав первых гибридов. Известна как 7-й день Творения (Бытие) — день Покоя."
+    },
+    "age-of-gemini": {
+      "name": "Эпоха Близнецов",
+      "event": "Правительству Элохим не нравились события на Земле, и оно намеревалось уничтожить жизнь на планете. Изгнанная фракция вместе с Ноем построила космический корабль для бегства с Земли — известный как Ноев Ковчег. Когда оружие, вызвавшее потоп, обрушилось на Землю, жизнь была сохранена на Ковчеге, находившемся на орбите планеты. После потопа Ноев Ковчег приземлился на Землю и вновь засеял её жизнью с помощью выживших Элохим. Создание огромной космической ракеты — Вавилонской башни. Война на Небесах между фракциями Элохим."
+    },
+    "age-of-taurus": {
+      "name": "Эпоха Тельца",
+      "event": "Уничтожение центров прогресса — таких как Содом и Гоморра. Змеиная фракция Элохим потерпела поражение и была помилована, после чего вернулась на свою родную планету. Общественное мнение о жизни на Земле стало благоприятным. События, связанные с Авраамом."
+    },
+    "age-of-aries": {
+      "name": "Эпоха Овна",
+      "event": "События, связанные с Моисеем и Исходом."
+    },
+    "age-of-pisces": {
+      "name": "Эпоха Рыб",
+      "event": "Иисус и его рыбаки, умножение людей, рост народонаселения, самостоятельное развитие."
+    },
+    "age-of-aquarius": {
+      "name": "Эпоха Водолея",
+      "event": "Откровение о нашем космическом происхождении, последний пророк, предотвращение ядерного холокоста и уничтожения нашей цивилизации, грядущий Золотой Век, возвращение нашего Отца Небесного — наших создателей, Элохим."
+    }
+  },
+  "zh": {
+    "in-the-beginning": {
+      "name": "太初……",
+      "event": "在时间开始之前，于浩瀚的宇宙中，耶洛因文明繁荣昌盛。他们是掌握了科学与创造的先进存在，不久便将发现我们的世界，并开启银河史上最伟大的实验。"
+    },
+    "age-of-capricorn": {
+      "name": "摩羯座时代",
+      "event": "耶洛因母星上的合成生命工程，以及合成「怪物」生命形态的不可避免的逃逸。地球被发现并展开探索。即《创世记》中所记的创造的第一日。"
+    },
+    "age-of-sagittarius": {
+      "name": "射手座时代",
+      "event": "对地球大气及其组成成分的研究与分析，以及阳光有害性的勘察。即《创世记》中所记的创造的第二日。"
+    },
+    "age-of-scorpio": {
+      "name": "天蝎座时代",
+      "event": "对新星球（地球）进行地球化改造，并开展首次适应该星球的合成生命工程；创造了原核生物、真菌、植物，最有可能还包括昆虫。即《创世记》中所记的创造的第三日。"
+    },
+    "age-of-libra": {
+      "name": "天秤座时代",
+      "event": "天文学的发展、时间的量度、生命对地球环境的适应。工程化制造了鱼类与鸟类，以及我们所知的恐龙——亦即龙。即《创世记》中所记的创造的第四日。"
+    },
+    "age-of-virgo": {
+      "name": "处女座时代",
+      "event": "工程化制造了各类陆生动物、哺乳动物与爬行动物。一切皆为维持平衡与生态而为。即《创世记》中所记的创造的第五日。"
+    },
+    "age-of-leo": {
+      "name": "狮子座时代",
+      "event": "首批地球人类被工程化创造出来。他们作为原始人生活在耶洛因之间，不被允许知晓自身的宇宙起源。即《创世记》中所记的创造的第六日。"
+    },
+    "age-of-cancer": {
+      "name": "巨蟹座时代",
+      "event": "耶洛因中被称为「蛇／龙」的反叛派系，因向地球人揭示其宇宙起源而被判罚留在地球。他们与人类生下后代，造就了最早的混血儿。即《创世记》中所记的创造的第七日——安息日。"
+    },
+    "age-of-gemini": {
+      "name": "双子座时代",
+      "event": "耶洛因政府不满地球上发生的事，便计划摧毁地球上的生命。被流放的派系与挪亚一同建造了一艘飞船以逃离星球，即「挪亚方舟」。当引发洪水的武器袭击地球时，生命在环绕地球轨道上的方舟中得以保全。洪水过后，挪亚方舟降落地球，并在幸存的耶洛因的协助下重新播撒生命。建造了一座巨型太空火箭——「巴别塔」。耶洛因各派系之间爆发了天界之战。"
+    },
+    "age-of-taurus": {
+      "name": "金牛座时代",
+      "event": "所多玛与蛾摩拉等进步中心被摧毁。蛇形耶洛因派系战败并获赦免，遂返回其母星。公众对地球生命的看法转为有利。亚伯拉罕的事件发生于此时。"
+    },
+    "age-of-aries": {
+      "name": "白羊座时代",
+      "event": "摩西与出埃及的事件。"
+    },
+    "age-of-pisces": {
+      "name": "双鱼座时代",
+      "event": "耶稣与他的渔夫们，人口的繁衍增长、人口结构的扩张、独立的发展。"
+    },
+    "age-of-aquarius": {
+      "name": "水瓶座时代",
+      "event": "我们宇宙起源的揭示、最后的先知、避免核浩劫与文明毁灭，黄金时代正在等待，我们在天上的父——我们的创造者耶洛因——即将归来。"
+    }
+  },
+  "zh-Hant": {
+    "in-the-beginning": {
+      "name": "起初……",
+      "event": "在時間開始之前，於浩瀚無垠的宇宙中，耶洛因文明蓬勃發展。他們是精通科學與創造的先進存有，不久將會發現我們的世界，並開啟銀河史上最偉大的實驗。"
+    },
+    "age-of-capricorn": {
+      "name": "摩羯座時代",
+      "event": "耶洛因母星上的合成生命工程，以及合成「怪物」生命形態無可避免的逃逸。地球被發現並展開探索。即《創世記》所述創造的第一日。"
+    },
+    "age-of-sagittarius": {
+      "name": "射手座時代",
+      "event": "對地球大氣層及其組成的研究與分析，以及陽光的有害性。即《創世記》所述創造的第二日。"
+    },
+    "age-of-scorpio": {
+      "name": "天蠍座時代",
+      "event": "地球化改造，以及首批適應新行星（地球）的合成生命工程；創造原核生物、真菌、植物生命，以及很可能包括昆蟲。即《創世記》所述創造的第三日。"
+    },
+    "age-of-libra": {
+      "name": "天秤座時代",
+      "event": "天文學、時間的測量，以及生命對地球環境的適應。魚類與鳥類生命的工程，還有我們所知為恐龍的龍類。即《創世記》所述創造的第四日。"
+    },
+    "age-of-virgo": {
+      "name": "處女座時代",
+      "event": "各類陸地動物、哺乳類與爬蟲類的工程。一切皆為維持平衡與生態而為之。即《創世記》所述創造的第五日。"
+    },
+    "age-of-leo": {
+      "name": "獅子座時代",
+      "event": "首批地球人類被工程創造。他們以原始狀態與耶洛因共同生活，不被允許得知自身的宇宙起源。即《創世記》所述創造的第六日。"
+    },
+    "age-of-cancer": {
+      "name": "巨蟹座時代",
+      "event": "被稱為蛇／龍的耶洛因反叛團體，因向地球人傳授其宇宙起源而被放逐，必須留在地球上。他們與人類生育後代，創造了首批混血兒。即《創世記》所述創造的第七日，安息之日。"
+    },
+    "age-of-gemini": {
+      "name": "雙子座時代",
+      "event": "耶洛因政府不滿地球上發生的事件，因此計劃毀滅地球上的生命。被放逐的派系與諾亞一同建造太空船以逃離行星，即諾亞方舟。當引發洪水的武器襲擊地球時，生命被保存於環繞行星軌道上的方舟之中。洪水之後，諾亞方舟降落地球，並在耶洛因倖存者的協助下重新播種地球。建造了一座巨大的太空火箭，即巴別塔。耶洛因各派系之間爆發了天界之戰。"
+    },
+    "age-of-taurus": {
+      "name": "金牛座時代",
+      "event": "毀滅了如所多瑪與蛾摩拉等進步中心。蛇形耶洛因派系戰敗並獲赦免，因此返回其母星。關於地球生命的公眾輿論轉為有利。亞伯拉罕之事件。"
+    },
+    "age-of-aries": {
+      "name": "白羊座時代",
+      "event": "摩西與《出埃及記》之事件。"
+    },
+    "age-of-pisces": {
+      "name": "雙魚座時代",
+      "event": "耶穌與其漁夫門徒，人口的增殖，人口統計的增長，獨立發展。"
+    },
+    "age-of-aquarius": {
+      "name": "水瓶座時代",
+      "event": "我們宇宙起源的揭示，最後一位先知，避免核浩劫／毀滅我們的文明，黃金時代正在等待，我們在天上的父，我們的創造者——耶洛因的歸來。"
+    }
+  },
+  "he": {
+    "in-the-beginning": {
+      "name": "בראשית...",
+      "event": "לפני ראשית הזמן, במרחבי היקום העצומים, פרחה תרבות האלוהים. ישויות מתקדמות אשר אחזו במדע ובמלאכת היצירה, ועתידות היו לגלות בקרוב את עולמנו ולפתוח בניסוי הגדול ביותר בתולדות הגלקסיה."
+    },
+    "age-of-capricorn": {
+      "name": "עידן הגדי",
+      "event": "הנדסת חיים סינתטית בכוכב הלכת של האלוהים, ובעקבותיה הימלטותם הבלתי נמנעת של יצורי »מפלצת« סינתטיים. גילוי כדור הארץ וחקירתו. ידוע כיום הראשון של הבריאה (בראשית)."
+    },
+    "age-of-sagittarius": {
+      "name": "עידן הקשת",
+      "event": "מחקר וניתוח של האטמוספירה של כדור הארץ והרכבה, ושל מזיקות אור השמש. ידוע כיום השני של הבריאה (בראשית)."
+    },
+    "age-of-scorpio": {
+      "name": "עידן העקרב",
+      "event": "טראפורמינג והנדסת החיים הסינתטיים הראשונה המותאמת לכוכב הלכת החדש (כדור הארץ); יצירת פרוקריוטים, פטריות, חיי הצומח ומן הסתם גם חרקים. ידוע כיום השלישי של הבריאה (בראשית)."
+    },
+    "age-of-libra": {
+      "name": "עידן המאזניים",
+      "event": "אסטרונומיה, מדידת זמן, הסתגלות החיים לסביבת כדור הארץ. הנדסת חיי דגים ועופות, וכן דרקונים, הידועים לנו כדינוזאורים. ידוע כיום הרביעי של הבריאה (בראשית)."
+    },
+    "age-of-virgo": {
+      "name": "עידן הבתולה",
+      "event": "הנדסת כל סוגי בעלי החיים היבשתיים, יונקים וזוחלים. הכול נעשה תוך שמירה על איזון ואקולוגיה. ידוע כיום החמישי של הבריאה (בראשית)."
+    },
+    "age-of-leo": {
+      "name": "עידן האריה",
+      "event": "הנדסת בני האדם הארציים הראשונים. הם חיו כפרימיטיביים בקרב האלוהים. לא הותר להם ללמוד על מוצאם הקוסמי. ידוע כיום השישי של הבריאה (בראשית)."
+    },
+    "age-of-cancer": {
+      "name": "עידן הסרטן",
+      "event": "סיעת המורדים בקרב האלוהים, הידועה בשם הנחש/הדרקון, הוגלתה להישאר על כדור הארץ לאחר שלימדה את בני הארץ על מוצאם הקוסמי. הם הולידו צאצאים עם בני האדם, ויצרו את הכלאיים הראשונים. ידוע כיום השביעי של הבריאה (בראשית), יום המנוחה."
+    },
+    "age-of-gemini": {
+      "name": "עידן התאומים",
+      "event": "ממשלת האלוהים לא הייתה שבעת רצון מן המתרחש על כדור הארץ, ועל כן תכננה להשמיד את החיים על פניו. הסיעה המוגלית, יחד עם נח, בנתה ספינת חלל כדי להימלט מן הכוכב, הידועה בשם תיבת נח. כאשר פגע בכדור הארץ הנשק מחולל המבול, נשתמרו החיים בתיבה במסלול סביב כוכב הלכת. לאחר המבול נחתה תיבת נח על כדור הארץ ועיבדה אותו מחדש בסיוע ניצולי האלוהים. בניית רקטת חלל ענקית, מגדל בבל. מלחמה בשמים בין סיעות האלוהים."
+    },
+    "age-of-taurus": {
+      "name": "עידן השור",
+      "event": "חורבן מוקדי הקדמה כדוגמת סדום ועמורה. סיעת הנחש שבקרב האלוהים הובסה אך חנינה הוענקה לה, ועל כן שבה לכוכב מולדתה. דעת הציבור באשר לחיים על כדור הארץ הפכה לאוהדת. מעשי אברהם."
+    },
+    "age-of-aries": {
+      "name": "עידן הטלה",
+      "event": "מעשי משה ויציאת מצרים."
+    },
+    "age-of-pisces": {
+      "name": "עידן הדגים",
+      "event": "ישו ודייגיו, פרייה ורבייה של בני האדם, גידול דמוגרפי, התפתחות עצמאית."
+    },
+    "age-of-aquarius": {
+      "name": "עידן הדלי",
+      "event": "התגלות מוצאנו הקוסמי, הנביא האחרון, מניעת השואה הגרעינית והשמדת תרבותנו, תור הזהב הממתין לבוא, שיבת אבינו שבשמים, יוצרינו, האלוהים."
+    }
+  }
+}

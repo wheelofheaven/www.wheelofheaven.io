@@ -300,6 +300,21 @@ Quoted text here.
 {% end %}
 ```
 
+### Library inline reference (`libref`)
+
+Inline counterpart to `library` — use when prose mentions a scripture
+reference without pulling out the verse text as a blockquote. Same
+auto-resolution rules and same language-awareness.
+
+```markdown
+The transition signal is preserved in {% libref(book="zephaniah", chapter=1, verse=10) %}Zephaniah 1:10{% end %}.
+```
+
+Renders an `<a class="libref">…</a>` (style-light, defers to the
+content-area cascade). Prefer this over hand-written markdown links
+like `[Zephaniah 1:10](/library/zephaniah/#c1p10)`, which hard-point at
+the English path in every translation.
+
 ### Citations
 
 ```markdown
