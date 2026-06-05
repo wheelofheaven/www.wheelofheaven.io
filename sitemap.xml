@@ -4438,6 +4438,12 @@
         <priority>0.7</priority></url>
 
     <url>
+        <loc>https://www.wheelofheaven.world/he/timeline/age-of-sagittarius/</loc>
+        
+        <changefreq>monthly</changefreq>
+        <priority>0.7</priority></url>
+
+    <url>
         <loc>https://www.wheelofheaven.world/he/timeline/preamble/</loc>
         
         <changefreq>monthly</changefreq>
@@ -6533,6 +6539,12 @@
 
     <url>
         <loc>https://www.wheelofheaven.world/ko/timeline/age-of-capricorn/</loc>
+        
+        <changefreq>monthly</changefreq>
+        <priority>0.7</priority></url>
+
+    <url>
+        <loc>https://www.wheelofheaven.world/ko/timeline/age-of-sagittarius/</loc>
         
         <changefreq>monthly</changefreq>
         <priority>0.7</priority></url>
@@ -10847,6 +10859,12 @@
 
     <url>
         <loc>https://www.wheelofheaven.world/zh-Hant/timeline/age-of-capricorn/</loc>
+        
+        <changefreq>monthly</changefreq>
+        <priority>0.7</priority></url>
+
+    <url>
+        <loc>https://www.wheelofheaven.world/zh-Hant/timeline/age-of-sagittarius/</loc>
         
         <changefreq>monthly</changefreq>
         <priority>0.7</priority></url>
