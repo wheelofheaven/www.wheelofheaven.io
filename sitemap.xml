@@ -6550,6 +6550,12 @@
         <priority>0.7</priority></url>
 
     <url>
+        <loc>https://www.wheelofheaven.world/ko/timeline/age-of-scorpio/</loc>
+        
+        <changefreq>monthly</changefreq>
+        <priority>0.7</priority></url>
+
+    <url>
         <loc>https://www.wheelofheaven.world/ko/timeline/in-the-beginning/</loc>
         
         <changefreq>monthly</changefreq>
@@ -10865,6 +10871,12 @@
 
     <url>
         <loc>https://www.wheelofheaven.world/zh-Hant/timeline/age-of-sagittarius/</loc>
+        
+        <changefreq>monthly</changefreq>
+        <priority>0.7</priority></url>
+
+    <url>
+        <loc>https://www.wheelofheaven.world/zh-Hant/timeline/age-of-scorpio/</loc>
         
         <changefreq>monthly</changefreq>
         <priority>0.7</priority></url>
