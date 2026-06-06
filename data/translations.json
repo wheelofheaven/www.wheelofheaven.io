@@ -1,7 +1,7 @@
 {
   "_meta": {
-    "generated_at": "2026-06-06T19:10:28+00:00",
-    "count": 273
+    "generated_at": "2026-06-06T19:26:31+00:00",
+    "count": 274
   },
   "paths": {
     "AGENTS": [
@@ -859,6 +859,9 @@
       "zh",
       "zh-Hant"
     ],
+    "library/jubilees-woh": [
+      "en"
+    ],
     "library/jude": [
       "de",
       "en",
@@ -1357,9 +1360,12 @@
       "en",
       "es",
       "fr",
+      "he",
       "ja",
+      "ko",
       "ru",
-      "zh"
+      "zh",
+      "zh-Hant"
     ],
     "timeline/age-of-capricorn": [
       "de",
