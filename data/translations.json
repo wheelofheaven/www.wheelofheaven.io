@@ -1,6 +1,6 @@
 {
   "_meta": {
-    "generated_at": "2026-06-04T10:20:22+00:00",
+    "generated_at": "2026-06-06T19:10:28+00:00",
     "count": 273
   },
   "paths": {
@@ -1366,9 +1366,12 @@
       "en",
       "es",
       "fr",
+      "he",
       "ja",
+      "ko",
       "ru",
-      "zh"
+      "zh",
+      "zh-Hant"
     ],
     "timeline/age-of-gemini": [
       "de",
@@ -1384,18 +1387,24 @@
       "en",
       "es",
       "fr",
+      "he",
       "ja",
+      "ko",
       "ru",
-      "zh"
+      "zh",
+      "zh-Hant"
     ],
     "timeline/age-of-libra": [
       "de",
       "en",
       "es",
       "fr",
+      "he",
       "ja",
+      "ko",
       "ru",
-      "zh"
+      "zh",
+      "zh-Hant"
     ],
     "timeline/age-of-pisces": [
       "de",
@@ -1411,18 +1420,24 @@
       "en",
       "es",
       "fr",
+      "he",
       "ja",
+      "ko",
       "ru",
-      "zh"
+      "zh",
+      "zh-Hant"
     ],
     "timeline/age-of-scorpio": [
       "de",
       "en",
       "es",
       "fr",
+      "he",
       "ja",
+      "ko",
       "ru",
-      "zh"
+      "zh",
+      "zh-Hant"
     ],
     "timeline/age-of-taurus": [
       "de",
@@ -1438,9 +1453,12 @@
       "en",
       "es",
       "fr",
+      "he",
       "ja",
+      "ko",
       "ru",
-      "zh"
+      "zh",
+      "zh-Hant"
     ],
     "timeline/in-the-beginning": [
       "de",
@@ -1458,9 +1476,12 @@
       "en",
       "es",
       "fr",
+      "he",
       "ja",
+      "ko",
       "ru",
-      "zh"
+      "zh",
+      "zh-Hant"
     ],
     "timeline/the-wheel-keeps-turning": [
       "en"
