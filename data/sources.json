@@ -1,9 +1,9 @@
 {
-  "generated_at": "2026-06-04T14:25:56+00:00",
+  "generated_at": "2026-06-06T05:44:32+00:00",
   "generator": "scripts/build_sources.py",
   "schema_version": 1,
   "total": 131,
-  "total_cites": 97,
+  "total_cites": 110,
   "media_counts": {
     "religious-text": 48,
     "nonfiction-book": 32,
@@ -75,8 +75,14 @@
         "Precession",
         "Religion"
       ],
-      "cited_by": [],
-      "cite_count": 0
+      "cited_by": [
+        {
+          "section": "wiki",
+          "title": "Elohim",
+          "path": "/wiki/elohim/"
+        }
+      ],
+      "cite_count": 1
     },
     {
       "id": "a-hebrew-and-english-lexicon-of-the-old-testament",
@@ -731,8 +737,19 @@
         "Neo-Euhemerism",
         "Theology"
       ],
-      "cited_by": [],
-      "cite_count": 0
+      "cited_by": [
+        {
+          "section": "wiki",
+          "title": "Elohim",
+          "path": "/wiki/elohim/"
+        },
+        {
+          "section": "wiki",
+          "title": "Hebrew Bible",
+          "path": "/wiki/hebrew-bible/"
+        }
+      ],
+      "cite_count": 2
     },
     {
       "id": "exodus",
@@ -902,9 +919,19 @@
           "section": "timeline",
           "title": "The Wheel Keeps Turning",
           "path": "/timeline/the-wheel-keeps-turning/"
+        },
+        {
+          "section": "wiki",
+          "title": "Elohim",
+          "path": "/wiki/elohim/"
+        },
+        {
+          "section": "wiki",
+          "title": "Hebrew Bible",
+          "path": "/wiki/hebrew-bible/"
         }
       ],
-      "cite_count": 5
+      "cite_count": 7
     },
     {
       "id": "genome-editing-of-human-embryos-broadening-the-ethical-debate",
@@ -1957,8 +1984,14 @@
         "Religion",
         "Theology"
       ],
-      "cited_by": [],
-      "cite_count": 0
+      "cited_by": [
+        {
+          "section": "wiki",
+          "title": "Hebrew Bible",
+          "path": "/wiki/hebrew-bible/"
+        }
+      ],
+      "cite_count": 1
     },
     {
       "id": "signature-in-the-cell",
@@ -2032,8 +2065,14 @@
         "The Chosen People",
         "The Tradition"
       ],
-      "cited_by": [],
-      "cite_count": 0
+      "cited_by": [
+        {
+          "section": "wiki",
+          "title": "Hebrew Bible",
+          "path": "/wiki/hebrew-bible/"
+        }
+      ],
+      "cite_count": 1
     },
     {
       "id": "temporary-temples",
@@ -2109,8 +2148,14 @@
         "Neo-Euhemerism",
         "Theology"
       ],
-      "cited_by": [],
-      "cite_count": 0
+      "cited_by": [
+        {
+          "section": "wiki",
+          "title": "Elohim",
+          "path": "/wiki/elohim/"
+        }
+      ],
+      "cite_count": 1
     },
     {
       "id": "la-bible-of-la-pleiade",
@@ -2172,8 +2217,19 @@
         "Religion",
         "Syncretism"
       ],
-      "cited_by": [],
-      "cite_count": 0
+      "cited_by": [
+        {
+          "section": "wiki",
+          "title": "Elohim",
+          "path": "/wiki/elohim/"
+        },
+        {
+          "section": "wiki",
+          "title": "Hebrew Bible",
+          "path": "/wiki/hebrew-bible/"
+        }
+      ],
+      "cite_count": 2
     },
     {
       "id": "the-chaldean-account-of-genesis",
@@ -2490,8 +2546,14 @@
         "Neo-Euhemerism",
         "Theology"
       ],
-      "cited_by": [],
-      "cite_count": 0
+      "cited_by": [
+        {
+          "section": "wiki",
+          "title": "Hebrew Bible",
+          "path": "/wiki/hebrew-bible/"
+        }
+      ],
+      "cite_count": 1
     },
     {
       "id": "pillar-of-enoch-dot-com",
@@ -2730,8 +2792,19 @@
         "Neo-Euhemerism",
         "Precession"
       ],
-      "cited_by": [],
-      "cite_count": 0
+      "cited_by": [
+        {
+          "section": "wiki",
+          "title": "Elohim",
+          "path": "/wiki/elohim/"
+        },
+        {
+          "section": "wiki",
+          "title": "Hebrew Bible",
+          "path": "/wiki/hebrew-bible/"
+        }
+      ],
+      "cite_count": 2
     },
     {
       "id": "voices-of-the-rocks-a-scientist-looks-at-catastrophes-and-ancient-civilizations",

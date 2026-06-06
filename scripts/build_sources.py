@@ -13,10 +13,12 @@ Seed strategy (idempotent):
     Once sources.json is committed the submodule is no longer needed.
 
 Inline scan:
-  - content/{wiki,articles,timeline,library}/**/*.md — reads the TOML
-    frontmatter for `[extra].references = [...]` arrays. Each entry
-    becomes either a new source or a backlink against an existing one
-    (matched by `follow_url`).
+  - content/{wiki,articles,timeline,library,sources}/**/*.md — reads the
+    TOML frontmatter for `[extra].references = [...]` arrays.
+  - New structured references with an `id` become backlinks against the
+    matching source record.
+  - Legacy title/url references become either a new source or a backlink
+    against an existing one (matched by `follow_url`).
 
 Output:
   - data/sources.json — single flat file consumed by
@@ -38,7 +40,7 @@ PROJECT_ROOT = Path(__file__).resolve().parent.parent
 LEGACY_SEED_DIR = PROJECT_ROOT / "data" / "sources" / "sources"
 OUTPUT_PATH = PROJECT_ROOT / "data" / "sources.json"
 CONTENT_ROOT = PROJECT_ROOT / "content"
-SCAN_SECTIONS = ("wiki", "articles", "timeline", "library")
+SCAN_SECTIONS = ("wiki", "articles", "timeline", "library", "sources")
 
 # Legacy data-bibliography source_type → new V1 `medium` value. The new
 # vocabulary matches `.claude/rules/content.md`'s `medium` list so the
@@ -217,6 +219,19 @@ def scan_pages(seeds: dict[str, dict]) -> int:
             for ref in refs:
                 if not isinstance(ref, dict):
                     continue
+                ref_id = (ref.get("id") or "").strip()
+                if ref_id:
+                    if ref_id not in seeds:
+                        rel_path = md_path.relative_to(PROJECT_ROOT)
+                        raise ValueError(f"{rel_path}: unknown source id in extra.references: {ref_id}")
+                    target_id = ref_id
+                    target = seeds[target_id]
+                    existing = target["cited_by"]
+                    if not any(c["path"] == page_link["path"] for c in existing):
+                        existing.append(page_link)
+                        cites_recorded += 1
+                    continue
+
                 title = (ref.get("title") or "").strip()
                 if not title:
                     continue

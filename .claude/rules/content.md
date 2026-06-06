@@ -108,6 +108,22 @@ references = [
 +++
 ```
 
+Prefer stable source IDs for new references when the source already exists in
+`data/sources.json`:
+
+```toml
+[[extra.references]]
+id = "sefaria"
+note = "Optional page-specific gloss for why this source matters here"
+locator = "Optional page, chapter, section, or passage locator"
+```
+
+The `id` must match a source record in `data/sources.json`.
+`mise run check` validates these IDs.
+Legacy title/url references remain valid during migration, but new wiki,
+article, timeline, library, and source-hub references should use source IDs
+whenever possible.
+
 ### Essentials Page
 
 ```toml

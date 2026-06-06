@@ -57,7 +57,7 @@ raw = true
 
 [tasks.check]
 description = "Run diagnostics without writing files"
-run = "zola check"
+run = "python3 scripts/validate_source_references.py && zola check"
 
 [tasks.clean]
 description = "Wipe public directory"
