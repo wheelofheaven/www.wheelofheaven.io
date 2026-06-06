@@ -32,6 +32,21 @@ document.addEventListener("DOMContentLoaded", () => {
     });
   }
 
+  // On translated pages a `.translation-notice` banner sits above the
+  // navbar and the navbar's `top` is animated from below-the-banner to
+  // 0.5rem by partials/translation-notice-script.html over the banner's
+  // own scroll range. Without an offset, the mobile scroll-hide fires
+  // (at scrollY > 100) while the navbar is still mid-animation, so the
+  // navbar appears to "follow the banner up and out" and then on
+  // scroll-up reappears at the settled 0.5rem position — a different
+  // place from where it disappeared. Add the banner's height to the
+  // hide threshold so the animation completes first.
+  const translationNotice = document.querySelector(".translation-notice");
+  function scrollHideThreshold() {
+    const bannerH = translationNotice ? translationNotice.offsetHeight : 0;
+    return CONFIG.SCROLL_THRESHOLD + bannerH;
+  }
+
   // 📱 Mobile navbar scroll behavior with throttling
   function updateNavbarVisibility() {
     // Don't process scroll events when mobile menu is open (body is locked)
@@ -47,7 +62,7 @@ document.addEventListener("DOMContentLoaded", () => {
 
       // Only react to significant scroll movements
       if (scrollDelta > CONFIG.SCROLL_DELTA_MIN) {
-        if (currentScrollY > lastScrollY && currentScrollY > CONFIG.SCROLL_THRESHOLD) {
+        if (currentScrollY > lastScrollY && currentScrollY > scrollHideThreshold()) {
           // Scrolling down - hide navbar
           navbar.classList.add("navbar--hidden");
           // Close mobile search if open
