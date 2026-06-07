@@ -1,12 +1,12 @@
 {
-  "generated_at": "2026-06-06T05:44:32+00:00",
+  "generated_at": "2026-06-07T13:54:51+00:00",
   "generator": "scripts/build_sources.py",
   "schema_version": 1,
-  "total": 131,
-  "total_cites": 110,
+  "total": 164,
+  "total_cites": 257,
   "media_counts": {
-    "religious-text": 48,
-    "nonfiction-book": 32,
+    "religious-text": 61,
+    "nonfiction-book": 52,
     "academic-paper": 17,
     "documentary": 9,
     "wiki": 10,
@@ -17,6 +17,25 @@
     "lecture": 1
   },
   "sources": [
+    {
+      "id": "1-chronicles",
+      "title": "1 Chronicles",
+      "authored_by": [
+        "Anonymous (Chronicler)"
+      ],
+      "publish_date": "c. 5th–4th c. BCE",
+      "follow_url": "",
+      "description": "First of the two Chronicles books — post-exilic retelling of the monarchy with strong focus on David, the temple, and the Levitical priesthood.",
+      "medium": "religious-text",
+      "topics": [
+        "Hebrew Bible",
+        "Post-exilic",
+        "David",
+        "Temple"
+      ],
+      "cited_by": [],
+      "cite_count": 0
+    },
     {
       "id": "1-enoch-the-book-of-the-watchers",
       "title": "1 Enoch (The Book of the Watchers)",
@@ -33,9 +52,114 @@
           "section": "timeline",
           "title": "Preamble",
           "path": "/timeline/preamble/"
+        },
+        {
+          "section": "wiki",
+          "title": "Council of the Eternals",
+          "path": "/wiki/council-of-eternals/"
+        },
+        {
+          "section": "wiki",
+          "title": "Satan",
+          "path": "/wiki/satan/"
         }
       ],
-      "cite_count": 1
+      "cite_count": 3
+    },
+    {
+      "id": "1-kings",
+      "title": "1 Kings",
+      "authored_by": [
+        "Anonymous (Deuteronomistic History)"
+      ],
+      "publish_date": "c. 6th c. BCE",
+      "follow_url": "",
+      "description": "First of the two Kings books in the Hebrew Bible, narrating the reigns from Solomon through the divided monarchy down to the death of Ahab. Cited in the corpus principally for 1 Kings 22 (Micaiah's divine-council vision), the Elijah cycle (chs 17–19), and the temple-building account (chs 6–8).",
+      "medium": "religious-text",
+      "topics": [
+        "Hebrew Bible",
+        "Deuteronomistic History",
+        "Divine Council",
+        "Elijah"
+      ],
+      "cited_by": [],
+      "cite_count": 0
+    },
+    {
+      "id": "1-samuel",
+      "title": "1 Samuel",
+      "authored_by": [
+        "Anonymous (Deuteronomistic History)"
+      ],
+      "publish_date": "c. 6th c. BCE",
+      "follow_url": "",
+      "description": "First of the two Samuel books in the Hebrew Bible, narrating the transition from the judges through Saul's rise and David's emergence. Cited in the corpus principally for the Ark narrative (1 Sam 4–6) and the Saul/David transition.",
+      "medium": "religious-text",
+      "topics": [
+        "Hebrew Bible",
+        "Deuteronomistic History",
+        "David",
+        "Saul"
+      ],
+      "cited_by": [],
+      "cite_count": 0
+    },
+    {
+      "id": "2-chronicles",
+      "title": "2 Chronicles",
+      "authored_by": [
+        "Anonymous (Chronicler)"
+      ],
+      "publish_date": "c. 5th–4th c. BCE",
+      "follow_url": "",
+      "description": "Second of the two Chronicles books — continuation of the post-exilic retelling, covering Solomon's temple and the kings of Judah through the exile.",
+      "medium": "religious-text",
+      "topics": [
+        "Hebrew Bible",
+        "Post-exilic",
+        "Solomon",
+        "Temple"
+      ],
+      "cited_by": [],
+      "cite_count": 0
+    },
+    {
+      "id": "2-kings",
+      "title": "2 Kings",
+      "authored_by": [
+        "Anonymous (Deuteronomistic History)"
+      ],
+      "publish_date": "c. 6th c. BCE",
+      "follow_url": "",
+      "description": "Second of the two Kings books in the Hebrew Bible, narrating the divided monarchy from Ahaziah through the Babylonian exile. Cited in the corpus principally for the Elijah-Elisha cycle, the chariot-of-fire ascent (2:11), and the Josianic reform account.",
+      "medium": "religious-text",
+      "topics": [
+        "Hebrew Bible",
+        "Deuteronomistic History",
+        "Elijah",
+        "Elisha"
+      ],
+      "cited_by": [],
+      "cite_count": 0
+    },
+    {
+      "id": "2-samuel",
+      "title": "2 Samuel",
+      "authored_by": [
+        "Anonymous (Deuteronomistic History)"
+      ],
+      "publish_date": "c. 6th c. BCE",
+      "follow_url": "",
+      "description": "Second of the two Samuel books in the Hebrew Bible, narrating David's reign — from his consolidation of the throne through the succession narrative. Cited in the corpus principally for the Ark transfer to Jerusalem (2 Sam 6) and the Davidic covenant (2 Sam 7).",
+      "medium": "religious-text",
+      "topics": [
+        "Hebrew Bible",
+        "Deuteronomistic History",
+        "David",
+        "Ark of the Covenant"
+      ],
+      "cited_by": [],
+      "cite_count": 0
     },
     {
       "id": "a-concise-dictionary-of-the-words-in-the-hebrew-bible-strong-s",
@@ -78,11 +202,21 @@
       "cited_by": [
         {
           "section": "wiki",
+          "title": "Council of the Eternals",
+          "path": "/wiki/council-of-eternals/"
+        },
+        {
+          "section": "wiki",
           "title": "Elohim",
           "path": "/wiki/elohim/"
+        },
+        {
+          "section": "wiki",
+          "title": "Genesis",
+          "path": "/wiki/genesis/"
         }
       ],
-      "cite_count": 1
+      "cite_count": 3
     },
     {
       "id": "a-hebrew-and-english-lexicon-of-the-old-testament",
@@ -100,9 +234,33 @@
           "section": "timeline",
           "title": "Age of Virgo",
           "path": "/timeline/age-of-virgo/"
+        },
+        {
+          "section": "wiki",
+          "title": "Yahweh",
+          "path": "/wiki/yahweh/"
         }
       ],
-      "cite_count": 1
+      "cite_count": 2
+    },
+    {
+      "id": "a-history-of-god",
+      "title": "A History of God: The 4,000-Year Quest of Judaism, Christianity and Islam",
+      "authored_by": [
+        "Karen Armstrong"
+      ],
+      "publish_date": "1993",
+      "follow_url": "https://www.penguinrandomhouse.com/books/65898/a-history-of-god-by-karen-armstrong/",
+      "description": "Karen Armstrong's popular survey of how the concept of God developed across the three Abrahamic traditions. Less technical than the academic monographs but widely cited as an accessible entry point to the monotheism-as-historical-development argument.",
+      "medium": "nonfiction-book",
+      "topics": [
+        "Monotheism",
+        "Yahweh",
+        "Religious history",
+        "Comparative religion"
+      ],
+      "cited_by": [],
+      "cite_count": 0
     },
     {
       "id": "a-programmable-dual-rna-guided-dna-endonuclease-in-adaptive-bacterial-immunity",
@@ -140,9 +298,32 @@
           "section": "timeline",
           "title": "Age of Aquarius",
           "path": "/timeline/age-of-aquarius/"
+        },
+        {
+          "section": "wiki",
+          "title": "Jesus",
+          "path": "/wiki/jesus/"
         }
       ],
-      "cite_count": 1
+      "cite_count": 2
+    },
+    {
+      "id": "aliens-adored",
+      "title": "Aliens Adored: Raël's UFO Religion",
+      "authored_by": [
+        "Susan J. Palmer"
+      ],
+      "publish_date": "2004",
+      "follow_url": "https://www.rutgersuniversitypress.org/aliens-adored/9780813534749/",
+      "description": "Susan J. Palmer's field-based scholarly monograph on the International Raëlian Movement, drawing on direct observation and interviews. The most substantial academic treatment of Raëlism as a new religious movement; standard reference in the NRM-studies literature.",
+      "medium": "nonfiction-book",
+      "topics": [
+        "Raëlism",
+        "New Religious Movements",
+        "UFO religions"
+      ],
+      "cited_by": [],
+      "cite_count": 0
     },
     {
       "id": "alternative-history-s-mainstream-history",
@@ -156,6 +337,24 @@
       "medium": "documentary",
       "topics": [
         "History of Science"
+      ],
+      "cited_by": [],
+      "cite_count": 0
+    },
+    {
+      "id": "an-adversary-in-heaven",
+      "title": "An Adversary in Heaven: śāṭān in the Hebrew Bible",
+      "authored_by": [
+        "Peggy L. Day"
+      ],
+      "publish_date": "1988",
+      "follow_url": "",
+      "description": "Peggy L. Day's technical philological monograph on the Hebrew noun *śāṭān* in the Hebrew Bible — establishing the case that the term in its biblical usage designates an adversarial-prosecutorial role rather than a proper name for a personal evil figure. Standard reference for the Hebrew-Bible philological background of the satan figure.",
+      "medium": "nonfiction-book",
+      "topics": [
+        "Satan",
+        "Hebrew Bible",
+        "Philology"
       ],
       "cited_by": [],
       "cite_count": 0
@@ -200,8 +399,14 @@
         "Pyramids",
         "The Tradition"
       ],
-      "cited_by": [],
-      "cite_count": 0
+      "cited_by": [
+        {
+          "section": "wiki",
+          "title": "Ancient Astronaut Hypothesis",
+          "path": "/wiki/ancient-astronaut-hypothesis/"
+        }
+      ],
+      "cite_count": 1
     },
     {
       "id": "astronomical-algorithms",
@@ -219,9 +424,14 @@
           "section": "timeline",
           "title": "Age of Libra",
           "path": "/timeline/age-of-libra/"
+        },
+        {
+          "section": "wiki",
+          "title": "Precession",
+          "path": "/wiki/precession/"
         }
       ],
-      "cite_count": 1
+      "cite_count": 2
     },
     {
       "id": "atrahasis",
@@ -239,9 +449,19 @@
           "section": "timeline",
           "title": "Preamble",
           "path": "/timeline/preamble/"
+        },
+        {
+          "section": "wiki",
+          "title": "Council of the Eternals",
+          "path": "/wiki/council-of-eternals/"
+        },
+        {
+          "section": "wiki",
+          "title": "Genesis",
+          "path": "/wiki/genesis/"
         }
       ],
-      "cite_count": 1
+      "cite_count": 3
     },
     {
       "id": "avesta",
@@ -258,8 +478,24 @@
         "Mythology",
         "The Tradition"
       ],
-      "cited_by": [],
-      "cite_count": 0
+      "cited_by": [
+        {
+          "section": "wiki",
+          "title": "Golden Age",
+          "path": "/wiki/golden-age/"
+        },
+        {
+          "section": "wiki",
+          "title": "Satan",
+          "path": "/wiki/satan/"
+        },
+        {
+          "section": "wiki",
+          "title": "World Age",
+          "path": "/wiki/world-age/"
+        }
+      ],
+      "cite_count": 3
     },
     {
       "id": "bahaipedia",
@@ -314,9 +550,19 @@
           "section": "timeline",
           "title": "The Wheel Keeps Turning",
           "path": "/timeline/the-wheel-keeps-turning/"
+        },
+        {
+          "section": "wiki",
+          "title": "Golden Age",
+          "path": "/wiki/golden-age/"
+        },
+        {
+          "section": "wiki",
+          "title": "World Age",
+          "path": "/wiki/world-age/"
         }
       ],
-      "cite_count": 1
+      "cite_count": 3
     },
     {
       "id": "book-of-abraham",
@@ -351,8 +597,14 @@
         "Mythology",
         "The Tradition"
       ],
-      "cited_by": [],
-      "cite_count": 0
+      "cited_by": [
+        {
+          "section": "wiki",
+          "title": "Satan",
+          "path": "/wiki/satan/"
+        }
+      ],
+      "cite_count": 1
     },
     {
       "id": "book-of-mormon",
@@ -394,6 +646,27 @@
       "cite_count": 1
     },
     {
+      "id": "canaanite-myth-and-hebrew-epic",
+      "title": "Canaanite Myth and Hebrew Epic: Essays in the History of the Religion of Israel",
+      "authored_by": [
+        "Frank Moore Cross"
+      ],
+      "publish_date": "1973",
+      "follow_url": "https://www.hup.harvard.edu/file/feeds/PDF/9780674091764_sample.pdf",
+      "description": "Frank Moore Cross's foundational study of West Semitic religion and its relation to early Israelite religion. Cross argues that the divine assembly of El, attested in the Ugaritic texts, is the proper background for the divine-council passages of the Hebrew Bible, and that Yahweh emerges as a warrior figure within (and eventually displacing) that council. Standard reference for the El-Yahweh continuity argument and the divine-council reading.",
+      "medium": "nonfiction-book",
+      "topics": [
+        "Divine Council",
+        "Hebrew Bible",
+        "Ugaritic",
+        "Yahweh",
+        "El",
+        "West Semitic"
+      ],
+      "cited_by": [],
+      "cite_count": 0
+    },
+    {
       "id": "chaos-making-a-new-science",
       "title": "Chaos: Making a New Science",
       "authored_by": [
@@ -412,6 +685,24 @@
         }
       ],
       "cite_count": 1
+    },
+    {
+      "id": "chariots-of-the-gods",
+      "title": "Chariots of the Gods? Unsolved Mysteries of the Past",
+      "authored_by": [
+        "Erich von Däniken"
+      ],
+      "publish_date": "1968",
+      "follow_url": "https://www.daniken.com/",
+      "description": "Erich von Däniken's foundational text of the modern popular ancient-astronaut literature. Argues, through a survey of mythological and archaeological material, that extraterrestrial visitors influenced the development of early human civilizations. Translated into more than thirty languages and the sales-leader of the genre; the touchstone the rest of the ancient-astronaut literature is positioned against.",
+      "medium": "nonfiction-book",
+      "topics": [
+        "Ancient Astronauts",
+        "Pseudo-archaeology",
+        "Mythology"
+      ],
+      "cited_by": [],
+      "cite_count": 0
     },
     {
       "id": "creation-of-a-bacterial-cell-controlled-by-a-chemically-synthesized-genome",
@@ -473,8 +764,14 @@
         "Cyberparadism",
         "Futurism"
       ],
-      "cited_by": [],
-      "cite_count": 0
+      "cited_by": [
+        {
+          "section": "wiki",
+          "title": "Golden Age",
+          "path": "/wiki/golden-age/"
+        }
+      ],
+      "cite_count": 1
     },
     {
       "id": "daniel",
@@ -497,9 +794,14 @@
           "section": "timeline",
           "title": "Age of Aries",
           "path": "/timeline/age-of-aries/"
+        },
+        {
+          "section": "wiki",
+          "title": "Jesus",
+          "path": "/wiki/jesus/"
         }
       ],
-      "cite_count": 2
+      "cite_count": 3
     },
     {
       "id": "debate-between-sheep-and-grain",
@@ -578,6 +880,51 @@
         }
       ],
       "cite_count": 1
+    },
+    {
+      "id": "deuteronomy",
+      "title": "Deuteronomy",
+      "authored_by": [
+        "Anonymous (Deuteronomistic source)"
+      ],
+      "publish_date": "c. 7th c. BCE",
+      "follow_url": "",
+      "description": "Fifth book of the Pentateuch — Moses's farewell discourses on the eve of the Israelite entry into Canaan. Cited in the corpus principally for the Shema (Deut 6:4), the divine-council/Most-High distribution-of-nations passage (Deut 32:8–9), and the death-of-Moses account (Deut 34).",
+      "medium": "religious-text",
+      "topics": [
+        "Hebrew Bible",
+        "Pentateuch",
+        "Divine Council",
+        "Moses"
+      ],
+      "cited_by": [
+        {
+          "section": "wiki",
+          "title": "Moses",
+          "path": "/wiki/moses/"
+        }
+      ],
+      "cite_count": 1
+    },
+    {
+      "id": "did-god-have-a-wife",
+      "title": "Did God Have a Wife? Archaeology and Folk Religion in Ancient Israel",
+      "authored_by": [
+        "William G. Dever"
+      ],
+      "publish_date": "2005",
+      "follow_url": "https://www.eerdmans.com/9780802828521/did-god-have-a-wife/",
+      "description": "William Dever's argument from material-culture evidence that ancient Israelite popular religion was substantively polytheistic, with Yahweh worshipped alongside a consort goddess (Asherah) attested in iconography and inscriptions across the Iron Age. Frequently cited as the archaeological counterpart to Smith's textual reconstruction.",
+      "medium": "nonfiction-book",
+      "topics": [
+        "Asherah",
+        "Yahweh",
+        "Israelite religion",
+        "Archaeology",
+        "Folk religion"
+      ],
+      "cited_by": [],
+      "cite_count": 0
     },
     {
       "id": "divine-signposts",
@@ -660,8 +1007,24 @@
         "Neo-Euhemerism",
         "Theology"
       ],
-      "cited_by": [],
-      "cite_count": 0
+      "cited_by": [
+        {
+          "section": "wiki",
+          "title": "Ancient Astronaut Hypothesis",
+          "path": "/wiki/ancient-astronaut-hypothesis/"
+        },
+        {
+          "section": "wiki",
+          "title": "Council of the Eternals",
+          "path": "/wiki/council-of-eternals/"
+        },
+        {
+          "section": "wiki",
+          "title": "Genesis",
+          "path": "/wiki/genesis/"
+        }
+      ],
+      "cite_count": 3
     },
     {
       "id": "enlil-and-ninlil-the-begetting-of-nanna",
@@ -698,9 +1061,19 @@
           "section": "timeline",
           "title": "Preamble",
           "path": "/timeline/preamble/"
+        },
+        {
+          "section": "wiki",
+          "title": "Council of the Eternals",
+          "path": "/wiki/council-of-eternals/"
+        },
+        {
+          "section": "wiki",
+          "title": "Genesis",
+          "path": "/wiki/genesis/"
         }
       ],
-      "cite_count": 1
+      "cite_count": 3
     },
     {
       "id": "epic-of-gilgamesh",
@@ -716,8 +1089,14 @@
         "Mythology",
         "The Tradition"
       ],
-      "cited_by": [],
-      "cite_count": 0
+      "cited_by": [
+        {
+          "section": "wiki",
+          "title": "Genesis",
+          "path": "/wiki/genesis/"
+        }
+      ],
+      "cite_count": 1
     },
     {
       "id": "escaping-from-eden",
@@ -740,16 +1119,46 @@
       "cited_by": [
         {
           "section": "wiki",
+          "title": "Ancient Astronaut Hypothesis",
+          "path": "/wiki/ancient-astronaut-hypothesis/"
+        },
+        {
+          "section": "wiki",
+          "title": "Council of the Eternals",
+          "path": "/wiki/council-of-eternals/"
+        },
+        {
+          "section": "wiki",
           "title": "Elohim",
           "path": "/wiki/elohim/"
         },
         {
           "section": "wiki",
+          "title": "Genesis",
+          "path": "/wiki/genesis/"
+        },
+        {
+          "section": "wiki",
           "title": "Hebrew Bible",
           "path": "/wiki/hebrew-bible/"
+        },
+        {
+          "section": "wiki",
+          "title": "Jesus",
+          "path": "/wiki/jesus/"
+        },
+        {
+          "section": "wiki",
+          "title": "Raëlism",
+          "path": "/wiki/raelism/"
+        },
+        {
+          "section": "wiki",
+          "title": "Yahweh",
+          "path": "/wiki/yahweh/"
         }
       ],
-      "cite_count": 2
+      "cite_count": 8
     },
     {
       "id": "exodus",
@@ -767,9 +1176,19 @@
           "section": "timeline",
           "title": "Age of Aries",
           "path": "/timeline/age-of-aries/"
+        },
+        {
+          "section": "wiki",
+          "title": "Moses",
+          "path": "/wiki/moses/"
+        },
+        {
+          "section": "wiki",
+          "title": "Yahweh",
+          "path": "/wiki/yahweh/"
         }
       ],
-      "cite_count": 1
+      "cite_count": 3
     },
     {
       "id": "extraterrestrials-took-me-to-their-planet",
@@ -792,8 +1211,64 @@
         "Religion",
         "Syncretism"
       ],
-      "cited_by": [],
-      "cite_count": 0
+      "cited_by": [
+        {
+          "section": "wiki",
+          "title": "Ancient Astronaut Hypothesis",
+          "path": "/wiki/ancient-astronaut-hypothesis/"
+        },
+        {
+          "section": "wiki",
+          "title": "Council of the Eternals",
+          "path": "/wiki/council-of-eternals/"
+        },
+        {
+          "section": "wiki",
+          "title": "Elohim",
+          "path": "/wiki/elohim/"
+        },
+        {
+          "section": "wiki",
+          "title": "Golden Age",
+          "path": "/wiki/golden-age/"
+        },
+        {
+          "section": "wiki",
+          "title": "Jesus",
+          "path": "/wiki/jesus/"
+        },
+        {
+          "section": "wiki",
+          "title": "Moses",
+          "path": "/wiki/moses/"
+        },
+        {
+          "section": "wiki",
+          "title": "Raël",
+          "path": "/wiki/rael/"
+        },
+        {
+          "section": "wiki",
+          "title": "Raëlism",
+          "path": "/wiki/raelism/"
+        },
+        {
+          "section": "wiki",
+          "title": "Satan",
+          "path": "/wiki/satan/"
+        },
+        {
+          "section": "wiki",
+          "title": "World Age",
+          "path": "/wiki/world-age/"
+        },
+        {
+          "section": "wiki",
+          "title": "Yahweh",
+          "path": "/wiki/yahweh/"
+        }
+      ],
+      "cite_count": 11
     },
     {
       "id": "ezekiel",
@@ -816,9 +1291,14 @@
           "section": "timeline",
           "title": "Age of Aries",
           "path": "/timeline/age-of-aries/"
+        },
+        {
+          "section": "wiki",
+          "title": "Yahweh",
+          "path": "/wiki/yahweh/"
         }
       ],
-      "cite_count": 2
+      "cite_count": 3
     },
     {
       "id": "fda-approves-first-gene-therapies-to-treat-patients-with-sickle-cell-disease",
@@ -860,8 +1340,19 @@
         "Pyramids",
         "The Tradition"
       ],
-      "cited_by": [],
-      "cite_count": 0
+      "cited_by": [
+        {
+          "section": "wiki",
+          "title": "Ancient Astronaut Hypothesis",
+          "path": "/wiki/ancient-astronaut-hypothesis/"
+        },
+        {
+          "section": "wiki",
+          "title": "World Age",
+          "path": "/wiki/world-age/"
+        }
+      ],
+      "cite_count": 2
     },
     {
       "id": "foundational-text-on-complex-topics",
@@ -927,11 +1418,31 @@
         },
         {
           "section": "wiki",
+          "title": "Genesis",
+          "path": "/wiki/genesis/"
+        },
+        {
+          "section": "wiki",
           "title": "Hebrew Bible",
           "path": "/wiki/hebrew-bible/"
+        },
+        {
+          "section": "wiki",
+          "title": "Raëlism",
+          "path": "/wiki/raelism/"
+        },
+        {
+          "section": "wiki",
+          "title": "Satan",
+          "path": "/wiki/satan/"
+        },
+        {
+          "section": "wiki",
+          "title": "Yahweh",
+          "path": "/wiki/yahweh/"
         }
       ],
-      "cite_count": 7
+      "cite_count": 11
     },
     {
       "id": "genome-editing-of-human-embryos-broadening-the-ethical-debate",
@@ -974,9 +1485,14 @@
           "section": "timeline",
           "title": "Age of Pisces",
           "path": "/timeline/age-of-pisces/"
+        },
+        {
+          "section": "wiki",
+          "title": "Jesus",
+          "path": "/wiki/jesus/"
         }
       ],
-      "cite_count": 2
+      "cite_count": 3
     },
     {
       "id": "gospel-of-luke-acts-of-the-apostles",
@@ -994,9 +1510,33 @@
           "section": "timeline",
           "title": "Age of Pisces",
           "path": "/timeline/age-of-pisces/"
+        },
+        {
+          "section": "wiki",
+          "title": "Jesus",
+          "path": "/wiki/jesus/"
         }
       ],
-      "cite_count": 1
+      "cite_count": 2
+    },
+    {
+      "id": "gospel-of-mark",
+      "title": "Gospel of Mark",
+      "authored_by": [
+        "Mark (traditional attribution)"
+      ],
+      "publish_date": "c. 70 CE",
+      "follow_url": "",
+      "description": "The shortest of the canonical Gospels and, on the prevailing scholarly view, the earliest — the source on which Matthew and Luke draw. Cited in the corpus principally for the baptism and temptation accounts (Mark 1), the messianic-secret theme, and the passion narrative.",
+      "medium": "religious-text",
+      "topics": [
+        "New Testament",
+        "Gospel",
+        "Jesus",
+        "Synoptic problem"
+      ],
+      "cited_by": [],
+      "cite_count": 0
     },
     {
       "id": "gospel-of-matthew",
@@ -1019,9 +1559,14 @@
           "section": "timeline",
           "title": "Age of Pisces",
           "path": "/timeline/age-of-pisces/"
+        },
+        {
+          "section": "wiki",
+          "title": "Jesus",
+          "path": "/wiki/jesus/"
         }
       ],
-      "cite_count": 2
+      "cite_count": 3
     },
     {
       "id": "hamlets-mill",
@@ -1066,9 +1611,39 @@
           "section": "timeline",
           "title": "The Wheel Keeps Turning",
           "path": "/timeline/the-wheel-keeps-turning/"
+        },
+        {
+          "section": "wiki",
+          "title": "Ancient Astronaut Hypothesis",
+          "path": "/wiki/ancient-astronaut-hypothesis/"
+        },
+        {
+          "section": "wiki",
+          "title": "Great Year",
+          "path": "/wiki/great-year/"
+        },
+        {
+          "section": "wiki",
+          "title": "Jesus",
+          "path": "/wiki/jesus/"
+        },
+        {
+          "section": "wiki",
+          "title": "Precession",
+          "path": "/wiki/precession/"
+        },
+        {
+          "section": "wiki",
+          "title": "World Age",
+          "path": "/wiki/world-age/"
+        },
+        {
+          "section": "wiki",
+          "title": "Zodiac",
+          "path": "/wiki/zodiac/"
         }
       ],
-      "cite_count": 5
+      "cite_count": 11
     },
     {
       "id": "hard-to-be-a-god",
@@ -1148,9 +1723,44 @@
           "section": "timeline",
           "title": "The Wheel Keeps Turning",
           "path": "/timeline/the-wheel-keeps-turning/"
+        },
+        {
+          "section": "wiki",
+          "title": "Ancient Astronaut Hypothesis",
+          "path": "/wiki/ancient-astronaut-hypothesis/"
+        },
+        {
+          "section": "wiki",
+          "title": "Golden Age",
+          "path": "/wiki/golden-age/"
+        },
+        {
+          "section": "wiki",
+          "title": "Jesus",
+          "path": "/wiki/jesus/"
+        },
+        {
+          "section": "wiki",
+          "title": "Raël",
+          "path": "/wiki/rael/"
+        },
+        {
+          "section": "wiki",
+          "title": "Raëlism",
+          "path": "/wiki/raelism/"
+        },
+        {
+          "section": "wiki",
+          "title": "Satan",
+          "path": "/wiki/satan/"
+        },
+        {
+          "section": "wiki",
+          "title": "World Age",
+          "path": "/wiki/world-age/"
         }
       ],
-      "cite_count": 2
+      "cite_count": 9
     },
     {
       "id": "internet-sacred-text-archive",
@@ -1232,9 +1842,62 @@
           "section": "timeline",
           "title": "Age of Aquarius",
           "path": "/timeline/age-of-aquarius/"
+        },
+        {
+          "section": "wiki",
+          "title": "Golden Age",
+          "path": "/wiki/golden-age/"
+        },
+        {
+          "section": "wiki",
+          "title": "Jesus",
+          "path": "/wiki/jesus/"
+        },
+        {
+          "section": "wiki",
+          "title": "Yahweh",
+          "path": "/wiki/yahweh/"
         }
       ],
-      "cite_count": 1
+      "cite_count": 4
+    },
+    {
+      "id": "jeremiah",
+      "title": "Jeremiah",
+      "authored_by": [
+        "Jeremiah (and disciples)"
+      ],
+      "publish_date": "c. 6th c. BCE",
+      "follow_url": "",
+      "description": "The Hebrew Bible's longest prophetic book, attributed to the late-monarchic prophet Jeremiah and his circle. Cited in the corpus principally for the divine-council and false-prophet passages (especially Jer 23) and for the new-covenant material (Jer 31).",
+      "medium": "religious-text",
+      "topics": [
+        "Hebrew Bible",
+        "Prophecy",
+        "Divine Council"
+      ],
+      "cited_by": [],
+      "cite_count": 0
+    },
+    {
+      "id": "job",
+      "title": "Job",
+      "authored_by": [
+        "Anonymous (Hebrew Bible)"
+      ],
+      "publish_date": "c. 6th–4th c. BCE",
+      "follow_url": "",
+      "description": "The Hebrew Bible's wisdom-literature dialogue on theodicy and divine justice. Cited in the corpus principally for the prologue (Job 1–2) — the heavenly-court scenes in which the satan figure appears as Yahweh's adversarial-prosecutor — and for the whirlwind speeches' cosmological imagery.",
+      "medium": "religious-text",
+      "topics": [
+        "Hebrew Bible",
+        "Divine Council",
+        "Satan",
+        "Wisdom literature",
+        "Theodicy"
+      ],
+      "cited_by": [],
+      "cite_count": 0
     },
     {
       "id": "joel",
@@ -1519,6 +2182,66 @@
         "Religion",
         "Syncretism"
       ],
+      "cited_by": [
+        {
+          "section": "wiki",
+          "title": "Ancient Astronaut Hypothesis",
+          "path": "/wiki/ancient-astronaut-hypothesis/"
+        },
+        {
+          "section": "wiki",
+          "title": "Elohim",
+          "path": "/wiki/elohim/"
+        },
+        {
+          "section": "wiki",
+          "title": "Golden Age",
+          "path": "/wiki/golden-age/"
+        },
+        {
+          "section": "wiki",
+          "title": "Jesus",
+          "path": "/wiki/jesus/"
+        },
+        {
+          "section": "wiki",
+          "title": "Raël",
+          "path": "/wiki/rael/"
+        },
+        {
+          "section": "wiki",
+          "title": "Raëlism",
+          "path": "/wiki/raelism/"
+        },
+        {
+          "section": "wiki",
+          "title": "Satan",
+          "path": "/wiki/satan/"
+        },
+        {
+          "section": "wiki",
+          "title": "Yahweh",
+          "path": "/wiki/yahweh/"
+        }
+      ],
+      "cite_count": 8
+    },
+    {
+      "id": "leviticus",
+      "title": "Leviticus",
+      "authored_by": [
+        "Anonymous (Priestly source)"
+      ],
+      "publish_date": "c. 6th–5th c. BCE",
+      "follow_url": "",
+      "description": "Third book of the Pentateuch — ritual, sacrificial, and holiness legislation. Cited in the corpus principally for the Holiness Code (Lev 17–26) and the Jubilee instructions (Lev 25).",
+      "medium": "religious-text",
+      "topics": [
+        "Hebrew Bible",
+        "Pentateuch",
+        "Ritual",
+        "Holiness Code"
+      ],
       "cited_by": [],
       "cite_count": 0
     },
@@ -1560,8 +2283,14 @@
         "Mythology",
         "Precession"
       ],
-      "cited_by": [],
-      "cite_count": 0
+      "cited_by": [
+        {
+          "section": "wiki",
+          "title": "Precession",
+          "path": "/wiki/precession/"
+        }
+      ],
+      "cite_count": 1
     },
     {
       "id": "mazzaroth-rolleston",
@@ -1582,8 +2311,19 @@
         "Mythology",
         "Precession"
       ],
-      "cited_by": [],
-      "cite_count": 0
+      "cited_by": [
+        {
+          "section": "wiki",
+          "title": "Precession",
+          "path": "/wiki/precession/"
+        },
+        {
+          "section": "wiki",
+          "title": "Zodiac",
+          "path": "/wiki/zodiac/"
+        }
+      ],
+      "cite_count": 2
     },
     {
       "id": "misunderstandings-about-the-tunguska-event-shock-wave-physics-and-airbursts-have",
@@ -1661,9 +2401,14 @@
           "section": "timeline",
           "title": "Age of Pisces",
           "path": "/timeline/age-of-pisces/"
+        },
+        {
+          "section": "wiki",
+          "title": "Jesus",
+          "path": "/wiki/jesus/"
         }
       ],
-      "cite_count": 1
+      "cite_count": 2
     },
     {
       "id": "no-mineralogic-or-geochemical-evidence-of-impact-at-tall-el-hammam-a-middle-bron",
@@ -1701,9 +2446,14 @@
           "section": "timeline",
           "title": "Age of Aries",
           "path": "/timeline/age-of-aries/"
+        },
+        {
+          "section": "wiki",
+          "title": "Moses",
+          "path": "/wiki/moses/"
         }
       ],
-      "cite_count": 1
+      "cite_count": 2
     },
     {
       "id": "order-out-of-chaos-man-s-new-dialogue-with-nature",
@@ -1763,6 +2513,24 @@
       "cite_count": 0
     },
     {
+      "id": "passport-to-the-cosmos",
+      "title": "Passport to the Cosmos: Human Transformation and Alien Encounters",
+      "authored_by": [
+        "John E. Mack"
+      ],
+      "publish_date": "1999",
+      "follow_url": "https://johnemackinstitute.org/",
+      "description": "Harvard psychiatrist John E. Mack's second book on the abduction-experience literature, following his 1994 *Abduction: Human Encounters with Aliens*. Frames abduction reports as both psychological and possibly ontological phenomena worth taking seriously. Mack's institutional credentials and his methodological care make this a standard reference for the academic engagement with abduction accounts.",
+      "medium": "nonfiction-book",
+      "topics": [
+        "Abduction",
+        "UFO phenomena",
+        "Consciousness"
+      ],
+      "cited_by": [],
+      "cite_count": 0
+    },
+    {
       "id": "popol-vuh",
       "title": "Popol Vuh",
       "authored_by": [
@@ -1778,9 +2546,34 @@
           "section": "timeline",
           "title": "Preamble",
           "path": "/timeline/preamble/"
+        },
+        {
+          "section": "wiki",
+          "title": "World Age",
+          "path": "/wiki/world-age/"
         }
       ],
-      "cite_count": 1
+      "cite_count": 2
+    },
+    {
+      "id": "prolegomena-zur-geschichte-israels",
+      "title": "Prolegomena zur Geschichte Israels",
+      "authored_by": [
+        "Julius Wellhausen"
+      ],
+      "publish_date": "1878",
+      "follow_url": "https://archive.org/details/prolegomenahisto00well",
+      "description": "Julius Wellhausen's foundational text for the Documentary Hypothesis, establishing the JEDP-source reconstruction of the Pentateuch that has structured Hebrew Bible scholarship since the late nineteenth century. Originally published as *Geschichte Israels, Bd. 1* (1878), subsequently retitled. English translation: *Prolegomena to the History of Ancient Israel* (1885).",
+      "medium": "nonfiction-book",
+      "topics": [
+        "Documentary Hypothesis",
+        "JEDP",
+        "Pentateuch",
+        "Source criticism",
+        "Hebrew Bible"
+      ],
+      "cited_by": [],
+      "cite_count": 0
     },
     {
       "id": "prose-edda",
@@ -1798,9 +2591,32 @@
           "section": "timeline",
           "title": "Preamble",
           "path": "/timeline/preamble/"
+        },
+        {
+          "section": "wiki",
+          "title": "Golden Age",
+          "path": "/wiki/golden-age/"
         }
       ],
-      "cite_count": 1
+      "cite_count": 2
+    },
+    {
+      "id": "psalms",
+      "title": "Psalms",
+      "authored_by": [
+        "Anonymous (Hebrew Bible)"
+      ],
+      "publish_date": "c. 10th–4th c. BCE",
+      "follow_url": "",
+      "description": "The Hebrew Bible's anthology of liturgical poetry (150 psalms). Cited in the corpus principally for Psalm 82 (the divine council scene) and for the Yahweh-as-warrior and royal-enthronement psalms.",
+      "medium": "religious-text",
+      "topics": [
+        "Hebrew Bible",
+        "Divine Council",
+        "Liturgy"
+      ],
+      "cited_by": [],
+      "cite_count": 0
     },
     {
       "id": "qur-anic-geography",
@@ -1845,8 +2661,19 @@
         "Neo-Euhemerism",
         "Raëlism"
       ],
-      "cited_by": [],
-      "cite_count": 0
+      "cited_by": [
+        {
+          "section": "wiki",
+          "title": "Raël",
+          "path": "/wiki/rael/"
+        },
+        {
+          "section": "wiki",
+          "title": "Raëlism",
+          "path": "/wiki/raelism/"
+        }
+      ],
+      "cite_count": 2
     },
     {
       "id": "redating-the-great-sphinx-of-giza",
@@ -1924,9 +2751,19 @@
           "section": "timeline",
           "title": "Age of Aquarius",
           "path": "/timeline/age-of-aquarius/"
+        },
+        {
+          "section": "wiki",
+          "title": "Golden Age",
+          "path": "/wiki/golden-age/"
+        },
+        {
+          "section": "wiki",
+          "title": "Yahweh",
+          "path": "/wiki/yahweh/"
         }
       ],
-      "cite_count": 1
+      "cite_count": 3
     },
     {
       "id": "the-ricks-must-be-crazy",
@@ -1943,6 +2780,25 @@
       "topics": [
         "Infinity",
         "Neo-Euhemerism"
+      ],
+      "cited_by": [],
+      "cite_count": 0
+    },
+    {
+      "id": "satan-a-biography",
+      "title": "Satan: A Biography",
+      "authored_by": [
+        "Henry Ansgar Kelly"
+      ],
+      "publish_date": "2006",
+      "follow_url": "https://www.cambridge.org/9780521604024",
+      "description": "Henry Ansgar Kelly's biographical-history treatment of the satan figure across the Hebrew Bible, Second Temple literature, the New Testament, and the patristic and medieval Christian traditions. Argues for treating the figure's development as a coherent story of transformation rather than as a single static referent.",
+      "medium": "nonfiction-book",
+      "topics": [
+        "Satan",
+        "Hebrew Bible",
+        "Christian theology",
+        "Religious history"
       ],
       "cited_by": [],
       "cite_count": 0
@@ -1987,11 +2843,21 @@
       "cited_by": [
         {
           "section": "wiki",
+          "title": "Genesis",
+          "path": "/wiki/genesis/"
+        },
+        {
+          "section": "wiki",
           "title": "Hebrew Bible",
           "path": "/wiki/hebrew-bible/"
+        },
+        {
+          "section": "wiki",
+          "title": "Jesus",
+          "path": "/wiki/jesus/"
         }
       ],
-      "cite_count": 1
+      "cite_count": 3
     },
     {
       "id": "signature-in-the-cell",
@@ -2068,11 +2934,16 @@
       "cited_by": [
         {
           "section": "wiki",
+          "title": "Council of the Eternals",
+          "path": "/wiki/council-of-eternals/"
+        },
+        {
+          "section": "wiki",
           "title": "Hebrew Bible",
           "path": "/wiki/hebrew-bible/"
         }
       ],
-      "cite_count": 1
+      "cite_count": 2
     },
     {
       "id": "temporary-temples",
@@ -2112,6 +2983,25 @@
       "cite_count": 0
     },
     {
+      "id": "the-12th-planet",
+      "title": "The 12th Planet",
+      "authored_by": [
+        "Zecharia Sitchin"
+      ],
+      "publish_date": "1976",
+      "follow_url": "https://www.sitchin.com/the-12th-planet/",
+      "description": "First volume of Zecharia Sitchin's *Earth Chronicles* series, identifying the Anunnaki of Sumerian texts with extraterrestrial visitors from a hypothetical planet Nibiru on a 3,600-year orbit. Sitchin's specific philological readings of Sumerian and Akkadian texts have been substantially contested by professional Assyriologists; his framework is the most-cited within the popular ancient-astronaut literature.",
+      "medium": "nonfiction-book",
+      "topics": [
+        "Ancient Astronauts",
+        "Sumerian",
+        "Anunnaki",
+        "Nibiru"
+      ],
+      "cited_by": [],
+      "cite_count": 0
+    },
+    {
       "id": "the-apportionment-of-human-diversity",
       "title": "The Apportionment of Human Diversity",
       "authored_by": [
@@ -2130,6 +3020,25 @@
         }
       ],
       "cite_count": 1
+    },
+    {
+      "id": "the-assembly-of-the-gods",
+      "title": "The Assembly of the Gods: The Divine Council in Canaanite and Early Hebrew Literature",
+      "authored_by": [
+        "E. Theodore Mullen Jr."
+      ],
+      "publish_date": "1980",
+      "follow_url": "https://www.eisenbrauns.org/books/titles/978-0-89130-380-7.html",
+      "description": "E. Theodore Mullen Jr.'s detailed comparative monograph on the divine-council motif in Ugaritic and Hebrew sources. Frequently cited as the foundational technical study for the divine-council reading of Genesis 1:26, Psalm 82, Job 1–2, and 1 Kings 22.",
+      "medium": "nonfiction-book",
+      "topics": [
+        "Divine Council",
+        "Ugaritic",
+        "Hebrew Bible",
+        "Comparative literature"
+      ],
+      "cited_by": [],
+      "cite_count": 0
     },
     {
       "id": "the-bible-is-not-a-sacred-book",
@@ -2151,11 +3060,51 @@
       "cited_by": [
         {
           "section": "wiki",
+          "title": "Ancient Astronaut Hypothesis",
+          "path": "/wiki/ancient-astronaut-hypothesis/"
+        },
+        {
+          "section": "wiki",
+          "title": "Council of the Eternals",
+          "path": "/wiki/council-of-eternals/"
+        },
+        {
+          "section": "wiki",
           "title": "Elohim",
           "path": "/wiki/elohim/"
+        },
+        {
+          "section": "wiki",
+          "title": "Genesis",
+          "path": "/wiki/genesis/"
+        },
+        {
+          "section": "wiki",
+          "title": "Jesus",
+          "path": "/wiki/jesus/"
+        },
+        {
+          "section": "wiki",
+          "title": "Precession",
+          "path": "/wiki/precession/"
+        },
+        {
+          "section": "wiki",
+          "title": "Raëlism",
+          "path": "/wiki/raelism/"
+        },
+        {
+          "section": "wiki",
+          "title": "Satan",
+          "path": "/wiki/satan/"
+        },
+        {
+          "section": "wiki",
+          "title": "Yahweh",
+          "path": "/wiki/yahweh/"
         }
       ],
-      "cite_count": 1
+      "cite_count": 9
     },
     {
       "id": "la-bible-of-la-pleiade",
@@ -2220,16 +3169,81 @@
       "cited_by": [
         {
           "section": "wiki",
+          "title": "Ancient Astronaut Hypothesis",
+          "path": "/wiki/ancient-astronaut-hypothesis/"
+        },
+        {
+          "section": "wiki",
+          "title": "Council of the Eternals",
+          "path": "/wiki/council-of-eternals/"
+        },
+        {
+          "section": "wiki",
           "title": "Elohim",
           "path": "/wiki/elohim/"
         },
         {
           "section": "wiki",
+          "title": "Genesis",
+          "path": "/wiki/genesis/"
+        },
+        {
+          "section": "wiki",
+          "title": "Golden Age",
+          "path": "/wiki/golden-age/"
+        },
+        {
+          "section": "wiki",
+          "title": "Great Year",
+          "path": "/wiki/great-year/"
+        },
+        {
+          "section": "wiki",
           "title": "Hebrew Bible",
           "path": "/wiki/hebrew-bible/"
+        },
+        {
+          "section": "wiki",
+          "title": "Jesus",
+          "path": "/wiki/jesus/"
+        },
+        {
+          "section": "wiki",
+          "title": "Moses",
+          "path": "/wiki/moses/"
+        },
+        {
+          "section": "wiki",
+          "title": "Precession",
+          "path": "/wiki/precession/"
+        },
+        {
+          "section": "wiki",
+          "title": "Raël",
+          "path": "/wiki/rael/"
+        },
+        {
+          "section": "wiki",
+          "title": "Raëlism",
+          "path": "/wiki/raelism/"
+        },
+        {
+          "section": "wiki",
+          "title": "Satan",
+          "path": "/wiki/satan/"
+        },
+        {
+          "section": "wiki",
+          "title": "World Age",
+          "path": "/wiki/world-age/"
+        },
+        {
+          "section": "wiki",
+          "title": "Yahweh",
+          "path": "/wiki/yahweh/"
         }
       ],
-      "cite_count": 2
+      "cite_count": 15
     },
     {
       "id": "the-chaldean-account-of-genesis",
@@ -2246,8 +3260,14 @@
         "Comparative Mythology",
         "Genesis"
       ],
-      "cited_by": [],
-      "cite_count": 0
+      "cited_by": [
+        {
+          "section": "wiki",
+          "title": "Genesis",
+          "path": "/wiki/genesis/"
+        }
+      ],
+      "cite_count": 1
     },
     {
       "id": "the-church-of-jesus-latter-day-saints-scriptures",
@@ -2302,8 +3322,29 @@
         "Neo-Euhemerism",
         "Precession"
       ],
-      "cited_by": [],
-      "cite_count": 0
+      "cited_by": [
+        {
+          "section": "wiki",
+          "title": "Ancient Astronaut Hypothesis",
+          "path": "/wiki/ancient-astronaut-hypothesis/"
+        },
+        {
+          "section": "wiki",
+          "title": "Genesis",
+          "path": "/wiki/genesis/"
+        },
+        {
+          "section": "wiki",
+          "title": "World Age",
+          "path": "/wiki/world-age/"
+        },
+        {
+          "section": "wiki",
+          "title": "Zodiac",
+          "path": "/wiki/zodiac/"
+        }
+      ],
+      "cite_count": 4
     },
     {
       "id": "the-devils-delusion",
@@ -2320,6 +3361,45 @@
         "Creationism",
         "Genesis",
         "History of Science"
+      ],
+      "cited_by": [],
+      "cite_count": 0
+    },
+    {
+      "id": "the-devil-perceptions-of-evil",
+      "title": "The Devil: Perceptions of Evil from Antiquity to Primitive Christianity",
+      "authored_by": [
+        "Jeffrey Burton Russell"
+      ],
+      "publish_date": "1977",
+      "follow_url": "https://www.cornellpress.cornell.edu/book/9780801494093/the-devil/",
+      "description": "First volume of Jeffrey Burton Russell's four-volume Cornell University Press history of the devil figure across Western religious tradition. Covers the pre-Christian and early-Christian period (antiquity through the second century CE). Sequels: *Satan: The Early Christian Tradition* (1981), *Lucifer: The Devil in the Middle Ages* (1984), *Mephistopheles: The Devil in the Modern World* (1986).",
+      "medium": "nonfiction-book",
+      "topics": [
+        "Satan",
+        "Devil",
+        "Religious history",
+        "Antiquity"
+      ],
+      "cited_by": [],
+      "cite_count": 0
+    },
+    {
+      "id": "the-early-history-of-god",
+      "title": "The Early History of God: Yahweh and the Other Deities in Ancient Israel",
+      "authored_by": [
+        "Mark S. Smith"
+      ],
+      "publish_date": "2002",
+      "follow_url": "https://www.eerdmans.com/9780802839725/the-early-history-of-god/",
+      "description": "Mark S. Smith's standard scholarly treatment of the emergence of Israelite monotheism out of a West Semitic polytheistic background. Smith traces the convergence of El and Yahweh, the absorption of Canaanite deities into the Yahweh figure, and the gradual transition from a divine-council pantheon to mono-Yahwism through the Iron Age and Second Temple period. Second edition (Eerdmans) is the standard reference.",
+      "medium": "nonfiction-book",
+      "topics": [
+        "Yahweh",
+        "Elohim",
+        "Divine Council",
+        "Israelite religion",
+        "Monotheism"
       ],
       "cited_by": [],
       "cite_count": 0
@@ -2378,8 +3458,14 @@
         "Sumer",
         "The Tradition"
       ],
-      "cited_by": [],
-      "cite_count": 0
+      "cited_by": [
+        {
+          "section": "wiki",
+          "title": "Genesis",
+          "path": "/wiki/genesis/"
+        }
+      ],
+      "cite_count": 1
     },
     {
       "id": "the-fractal-geometry-of-nature",
@@ -2407,6 +3493,24 @@
       "cite_count": 2
     },
     {
+      "id": "the-gods-have-landed",
+      "title": "The Gods Have Landed: New Religions from Other Worlds",
+      "authored_by": [
+        "James R. Lewis (editor)"
+      ],
+      "publish_date": "1995",
+      "follow_url": "https://sunypress.edu/Books/T/The-Gods-Have-Landed2",
+      "description": "Edited collection on UFO-themed new religious movements, including chapters on Raëlism, the Aetherius Society, Heaven's Gate, and related groups. Standard SUNY Press contribution to the academic literature on NRMs adjacent to the ancient-astronaut hypothesis.",
+      "medium": "nonfiction-book",
+      "topics": [
+        "UFO religions",
+        "New Religious Movements",
+        "Raëlism"
+      ],
+      "cited_by": [],
+      "cite_count": 0
+    },
+    {
       "id": "the-gospels-in-the-stars",
       "title": "The Gospel in the Stars",
       "authored_by": [
@@ -2425,8 +3529,19 @@
         "Mythology",
         "Precession"
       ],
-      "cited_by": [],
-      "cite_count": 0
+      "cited_by": [
+        {
+          "section": "wiki",
+          "title": "Precession",
+          "path": "/wiki/precession/"
+        },
+        {
+          "section": "wiki",
+          "title": "Zodiac",
+          "path": "/wiki/zodiac/"
+        }
+      ],
+      "cite_count": 2
     },
     {
       "id": "the-hebrew-and-aramaic-lexicon-of-the-old-testament",
@@ -2444,9 +3559,14 @@
           "section": "timeline",
           "title": "Age of Virgo",
           "path": "/timeline/age-of-virgo/"
+        },
+        {
+          "section": "wiki",
+          "title": "Yahweh",
+          "path": "/wiki/yahweh/"
         }
       ],
-      "cite_count": 1
+      "cite_count": 2
     },
     {
       "id": "the-human-history-mistake",
@@ -2549,11 +3669,64 @@
       "cited_by": [
         {
           "section": "wiki",
+          "title": "Ancient Astronaut Hypothesis",
+          "path": "/wiki/ancient-astronaut-hypothesis/"
+        },
+        {
+          "section": "wiki",
+          "title": "Council of the Eternals",
+          "path": "/wiki/council-of-eternals/"
+        },
+        {
+          "section": "wiki",
+          "title": "Elohim",
+          "path": "/wiki/elohim/"
+        },
+        {
+          "section": "wiki",
+          "title": "Genesis",
+          "path": "/wiki/genesis/"
+        },
+        {
+          "section": "wiki",
           "title": "Hebrew Bible",
           "path": "/wiki/hebrew-bible/"
+        },
+        {
+          "section": "wiki",
+          "title": "Jesus",
+          "path": "/wiki/jesus/"
+        },
+        {
+          "section": "wiki",
+          "title": "Satan",
+          "path": "/wiki/satan/"
+        },
+        {
+          "section": "wiki",
+          "title": "Yahweh",
+          "path": "/wiki/yahweh/"
         }
       ],
-      "cite_count": 1
+      "cite_count": 8
+    },
+    {
+      "id": "the-origin-of-satan",
+      "title": "The Origin of Satan",
+      "authored_by": [
+        "Elaine Pagels"
+      ],
+      "publish_date": "1995",
+      "follow_url": "https://www.penguinrandomhouse.com/books/40608/the-origin-of-satan-by-elaine-pagels/",
+      "description": "Elaine Pagels's historical reconstruction of how the figure of Satan emerged in late Second Temple Judaism and early Christianity, with attention to how the figure was deployed in the demonization of opponents (Jewish and Roman) by the early Christian movement. Standard reference in the academic-popular literature on the development of the satan figure.",
+      "medium": "nonfiction-book",
+      "topics": [
+        "Satan",
+        "Second Temple Judaism",
+        "Early Christianity"
+      ],
+      "cited_by": [],
+      "cite_count": 0
     },
     {
       "id": "pillar-of-enoch-dot-com",
@@ -2610,9 +3783,24 @@
           "section": "timeline",
           "title": "Age of Pisces",
           "path": "/timeline/age-of-pisces/"
+        },
+        {
+          "section": "wiki",
+          "title": "Golden Age",
+          "path": "/wiki/golden-age/"
+        },
+        {
+          "section": "wiki",
+          "title": "Jesus",
+          "path": "/wiki/jesus/"
+        },
+        {
+          "section": "wiki",
+          "title": "Satan",
+          "path": "/wiki/satan/"
         }
       ],
-      "cite_count": 1
+      "cite_count": 4
     },
     {
       "id": "the-revelation-of-the-pyramid",
@@ -2673,8 +3861,24 @@
         "Neo-Euhemerism",
         "Theology"
       ],
-      "cited_by": [],
-      "cite_count": 0
+      "cited_by": [
+        {
+          "section": "wiki",
+          "title": "Ancient Astronaut Hypothesis",
+          "path": "/wiki/ancient-astronaut-hypothesis/"
+        },
+        {
+          "section": "wiki",
+          "title": "Council of the Eternals",
+          "path": "/wiki/council-of-eternals/"
+        },
+        {
+          "section": "wiki",
+          "title": "Genesis",
+          "path": "/wiki/genesis/"
+        }
+      ],
+      "cite_count": 3
     },
     {
       "id": "the-sky-people",
@@ -2713,9 +3917,32 @@
           "section": "timeline",
           "title": "Age of Aries",
           "path": "/timeline/age-of-aries/"
+        },
+        {
+          "section": "wiki",
+          "title": "Yahweh",
+          "path": "/wiki/yahweh/"
         }
       ],
-      "cite_count": 1
+      "cite_count": 2
+    },
+    {
+      "id": "the-stairway-to-heaven",
+      "title": "The Stairway to Heaven",
+      "authored_by": [
+        "Zecharia Sitchin"
+      ],
+      "publish_date": "1980",
+      "follow_url": "https://www.sitchin.com/the-stairway-to-heaven/",
+      "description": "Second volume of Sitchin's *Earth Chronicles* series, focusing on ancient Near Eastern accounts of communication and transport between humans and the Anunnaki — including the Egyptian, Babylonian, and biblical materials. Continues the program of *The 12th Planet*.",
+      "medium": "nonfiction-book",
+      "topics": [
+        "Ancient Astronauts",
+        "Sumerian",
+        "Mesopotamian"
+      ],
+      "cited_by": [],
+      "cite_count": 0
     },
     {
       "id": "the-techno-optimist-manifesto",
@@ -2731,6 +3958,50 @@
         "Age of Aquarius",
         "Cyberparadism",
         "Futurism"
+      ],
+      "cited_by": [
+        {
+          "section": "wiki",
+          "title": "Golden Age",
+          "path": "/wiki/golden-age/"
+        }
+      ],
+      "cite_count": 1
+    },
+    {
+      "id": "the-unseen-realm",
+      "title": "The Unseen Realm: Recovering the Supernatural Worldview of the Bible",
+      "authored_by": [
+        "Michael S. Heiser"
+      ],
+      "publish_date": "2015",
+      "follow_url": "https://www.lexhampress.com/product/144379/the-unseen-realm-recovering-the-supernatural-worldview-of-the-bible",
+      "description": "Heiser's evangelical-scholarly treatment of the divine-council reading of the Hebrew Bible, arguing that the elohim of Psalm 82 and related passages must be read as a real plural — a council of subordinate divine beings under Yahweh. Distinct from the comparative-religious tradition (Smith, Cross) in that Heiser writes from a confessional standpoint while accepting the philological argument for plurality.",
+      "medium": "nonfiction-book",
+      "topics": [
+        "Divine Council",
+        "Elohim",
+        "Psalm 82",
+        "Hebrew Bible",
+        "Theology"
+      ],
+      "cited_by": [],
+      "cite_count": 0
+    },
+    {
+      "id": "the-wars-of-gods-and-men",
+      "title": "The Wars of Gods and Men",
+      "authored_by": [
+        "Zecharia Sitchin"
+      ],
+      "publish_date": "1985",
+      "follow_url": "https://www.sitchin.com/the-wars-of-gods-and-men/",
+      "description": "Third volume of Sitchin's *Earth Chronicles* series, reading ancient texts as records of conflicts between Anunnaki factions and their human proxies — including the destruction of Sodom and Gomorrah, which Sitchin reads as a nuclear strike.",
+      "medium": "nonfiction-book",
+      "topics": [
+        "Ancient Astronauts",
+        "Sumerian",
+        "Sodom"
       ],
       "cited_by": [],
       "cite_count": 0
@@ -2770,9 +4041,29 @@
           "section": "timeline",
           "title": "Preamble",
           "path": "/timeline/preamble/"
+        },
+        {
+          "section": "wiki",
+          "title": "Council of the Eternals",
+          "path": "/wiki/council-of-eternals/"
+        },
+        {
+          "section": "wiki",
+          "title": "Golden Age",
+          "path": "/wiki/golden-age/"
+        },
+        {
+          "section": "wiki",
+          "title": "Great Year",
+          "path": "/wiki/great-year/"
+        },
+        {
+          "section": "wiki",
+          "title": "World Age",
+          "path": "/wiki/world-age/"
         }
       ],
-      "cite_count": 1
+      "cite_count": 5
     },
     {
       "id": "those-gods-who-made-heaven-and-earth",
@@ -2795,16 +4086,63 @@
       "cited_by": [
         {
           "section": "wiki",
+          "title": "Ancient Astronaut Hypothesis",
+          "path": "/wiki/ancient-astronaut-hypothesis/"
+        },
+        {
+          "section": "wiki",
+          "title": "Council of the Eternals",
+          "path": "/wiki/council-of-eternals/"
+        },
+        {
+          "section": "wiki",
           "title": "Elohim",
           "path": "/wiki/elohim/"
         },
         {
           "section": "wiki",
+          "title": "Genesis",
+          "path": "/wiki/genesis/"
+        },
+        {
+          "section": "wiki",
           "title": "Hebrew Bible",
           "path": "/wiki/hebrew-bible/"
+        },
+        {
+          "section": "wiki",
+          "title": "Jesus",
+          "path": "/wiki/jesus/"
+        },
+        {
+          "section": "wiki",
+          "title": "Raëlism",
+          "path": "/wiki/raelism/"
+        },
+        {
+          "section": "wiki",
+          "title": "Yahweh",
+          "path": "/wiki/yahweh/"
         }
       ],
-      "cite_count": 2
+      "cite_count": 8
+    },
+    {
+      "id": "ufo-religions",
+      "title": "UFO Religions",
+      "authored_by": [
+        "Christopher Partridge (editor)"
+      ],
+      "publish_date": "2003",
+      "follow_url": "https://www.routledge.com/UFO-Religions/Partridge/p/book/9780415263238",
+      "description": "Edited collection covering the broad landscape of UFO-themed religious movements, including chapters on Raëlism, the Aetherius Society, the Unarius Academy, the Ashtar Command, the Order of the Solar Temple, and related groups. Routledge volume in the NRM-studies literature.",
+      "medium": "nonfiction-book",
+      "topics": [
+        "UFO religions",
+        "New Religious Movements"
+      ],
+      "cited_by": [],
+      "cite_count": 0
     },
     {
       "id": "voices-of-the-rocks-a-scientist-looks-at-catastrophes-and-ancient-civilizations",
@@ -2827,6 +4165,26 @@
       "cite_count": 1
     },
     {
+      "id": "who-wrote-the-bible",
+      "title": "Who Wrote the Bible?",
+      "authored_by": [
+        "Richard Elliott Friedman"
+      ],
+      "publish_date": "1987",
+      "follow_url": "https://www.harpercollins.com/products/who-wrote-the-bible-richard-elliott-friedman",
+      "description": "Richard Elliott Friedman's accessible primer on the Documentary Hypothesis, identifying the J, E, P, and D sources of the Pentateuch and arguing for specific historical contexts and authorial figures. Companion volume *The Bible with Sources Revealed* (2003) presents the same reconstruction in colour-coded translation.",
+      "medium": "nonfiction-book",
+      "topics": [
+        "Documentary Hypothesis",
+        "Pentateuch",
+        "JEDP",
+        "Source criticism",
+        "Hebrew Bible"
+      ],
+      "cited_by": [],
+      "cite_count": 0
+    },
+    {
       "id": "wonders-in-the-sky",
       "title": "Wonders in the Sky: Unexplained Aerial Objects from Antiquity to Modern Times",
       "authored_by": [
@@ -2843,6 +4201,25 @@
         "Reference work",
         "Religion",
         "The Tradition"
+      ],
+      "cited_by": [],
+      "cite_count": 0
+    },
+    {
+      "id": "zechariah",
+      "title": "Zechariah",
+      "authored_by": [
+        "Zechariah (and a later anonymous voice)"
+      ],
+      "publish_date": "c. 6th–5th c. BCE",
+      "follow_url": "",
+      "description": "Post-exilic prophetic book of the Hebrew Bible, partly attributed to the late-6th-century prophet Zechariah (chs 1–8) and partly to a later anonymous voice (chs 9–14). Cited in the corpus principally for Zechariah 3 (the high-priest vision with the satan figure as accuser) and the eschatological visions of the later chapters.",
+      "medium": "religious-text",
+      "topics": [
+        "Hebrew Bible",
+        "Prophecy",
+        "Satan",
+        "Apocalyptic"
       ],
       "cited_by": [],
       "cite_count": 0
