@@ -703,12 +703,14 @@
         let currentParaWords = null;        // timing words[] for the active paragraph
         let currentWordSpan = null;         // span currently carrying --reading
         let wordMismatchLogged = false;     // throttle the warn to once per session
+        // v4.2: chapter sequencing — manifest + book context persist across
+        // chapter swaps so onended can auto-advance to the next chapter.
+        let manifestRef = null;
+        let bookSlugRef = null;
+        let bookLangRef = null;
+        let unitListRef = null;
+        let currentChapter = null;
 
-        // Returns { audioUrl, timing, chapters } if any chapter the units span
-        // has pre-recorded audio, otherwise null. When multiple chapters appear
-        // in the unit list (rare — library pages usually show one), the first
-        // chapter wins; the rest fall through to the generative engines for
-        // a later run.
         async function probe(unitList) {
             const ctx = detectBookContext(unitList);
             if (!ctx) return null;
@@ -718,21 +720,185 @@
             const availableChapters = new Set(manifest.chapters.map((c) => c.n));
             const targetChapter = ctx.chapters.find((n) => availableChapters.has(n));
             if (!targetChapter) return null;
-            const chapEntry = manifest.chapters.find((c) => c.n === targetChapter);
-            const timingUrl = `${ASSETS_BASE}/${chapEntry.timing_url}`;
+            return {
+                chapter: targetChapter,
+                manifest: manifest,
+                slug: ctx.slug,
+                lang: lang,
+            };
+        }
+
+        // v4.2: Load and play a specific chapter, swapping the audio + ambient
+        // elements in place. Used by speak() for the initial chapter and by
+        // the onended handler for auto-advance. Returns true if it started
+        // playback, false if no manifest entry exists for the chapter (book
+        // is finished).
+        async function playChapter(chapterN) {
+            if (stopped) return false;
+            const chapEntry = manifestRef.chapters.find((c) => c.n === chapterN);
+            if (!chapEntry) return false;
             try {
-                const r = await fetch(timingUrl, { cache: 'force-cache' });
-                if (!r.ok) return null;
-                const timingData = await r.json();
-                return {
-                    audioUrl: `${ASSETS_BASE}/${chapEntry.audio_url}`,
-                    formats: chapEntry.formats || null,
-                    ambientUrl: chapEntry.ambient_url ? `${ASSETS_BASE}/${chapEntry.ambient_url}` : null,
-                    timing: timingData,
-                    chapter: targetChapter,
+                const r = await fetch(`${ASSETS_BASE}/${chapEntry.timing_url}`, { cache: 'force-cache' });
+                if (!r.ok) return false;
+                timing = await r.json();
+            } catch (e) { return false; }
+
+            currentChapter = chapterN;
+            lastUnitIdx = -1;
+            currentParaSpans = null;
+            currentParaWords = null;
+            if (currentWordSpan) {
+                currentWordSpan.classList.remove('library-book__word--reading');
+                currentWordSpan = null;
+            }
+            unitIdxByParaN = {};
+            unitListRef.forEach((u, i) => {
+                if (!u.id) return;
+                const m = u.id.match(/^c(\d+)p(\d+)$/);
+                if (m && parseInt(m[1], 10) === chapterN) {
+                    unitIdxByParaN[parseInt(m[2], 10)] = i;
+                }
+            });
+            teardownAudio();
+            wireAudio({
+                audioUrl: `${ASSETS_BASE}/${chapEntry.audio_url}`,
+                formats: chapEntry.formats || null,
+                ambientUrl: chapEntry.ambient_url ? `${ASSETS_BASE}/${chapEntry.ambient_url}` : null,
+            });
+            try {
+                await audioEl.play();
+                return true;
+            } catch (err) {
+                console.error('prerecorded play failed:', err);
+                return false;
+            }
+        }
+
+        // v4.2: Construct audioEl + ambientEl and wire all event handlers.
+        // Extracted from speak() so playChapter() can call it per-chapter swap.
+        function wireAudio(data) {
+            audioEl = new Audio();
+            if (data.formats && data.formats.length) {
+                for (const f of data.formats) {
+                    const s = document.createElement('source');
+                    s.src = `${ASSETS_BASE}/${f.url}`;
+                    s.type = f.type;
+                    audioEl.appendChild(s);
+                }
+                // .load() ensures the browser actually picks a source.
+                // Without it, .play() may work but currentTime / duration
+                // stay degraded — breaking word-highlight and progress.
+                audioEl.load();
+            } else {
+                audioEl.src = data.audioUrl;
+            }
+            audioEl.preload = 'auto';
+
+            if (data.ambientUrl && isImmersiveEnabled()) {
+                ambientEl = new Audio(data.ambientUrl);
+                ambientEl.preload = 'auto';
+                ambientEl.loop = false;
+                ambientEl.onerror = () => {
+                    console.warn('listen-button: ambient track failed; voice continues');
+                    ambientEl = null;
                 };
-            } catch (e) {
-                return null;
+            }
+
+            audioEl.onplay = () => {
+                if (stopped) return;
+                if (ambientEl) {
+                    ambientEl.currentTime = audioEl.currentTime;
+                    ambientEl.play().catch(() => {});
+                }
+                cbs.onStart && cbs.onStart();
+            };
+            audioEl.onpause = () => {
+                if (stopped || audioEl.ended) return;
+                if (ambientEl) ambientEl.pause();
+                cbs.onPause && cbs.onPause();
+            };
+            audioEl.onseeked = () => {
+                if (ambientEl) ambientEl.currentTime = audioEl.currentTime;
+            };
+            audioEl.ontimeupdate = () => {
+                if (stopped || !audioEl) return;
+                const t = audioEl.currentTime;
+                if (audioEl.duration && cbs.onProgress) {
+                    cbs.onProgress(t / audioEl.duration, t, audioEl.duration);
+                }
+                let current = null;
+                for (const p of timing.paragraphs) {
+                    if (t >= p.start && t < p.end) { current = p; break; }
+                }
+                if (!current) return;
+                const idx = unitIdxByParaN[current.n];
+                if (idx !== undefined && idx !== lastUnitIdx) {
+                    cbs.onUnitStart && cbs.onUnitStart(idx);
+                    lastUnitIdx = idx;
+                    if (currentWordSpan) {
+                        currentWordSpan.classList.remove('library-book__word--reading');
+                        currentWordSpan = null;
+                    }
+                    currentParaWords = current.words || null;
+                    currentParaSpans = null;
+                    if (currentParaWords && unitListRef[idx] && unitListRef[idx].id) {
+                        const spans = wrapParagraphWords(unitListRef[idx].id);
+                        if (spans && spans.length === currentParaWords.length) {
+                            currentParaSpans = spans;
+                        } else if (spans && !wordMismatchLogged) {
+                            console.warn(
+                                'listen-button: word count mismatch on',
+                                unitListRef[idx].id,
+                                '— display:', spans.length,
+                                'audio:', currentParaWords.length,
+                                '(falling back to paragraph-only highlight)'
+                            );
+                            wordMismatchLogged = true;
+                        }
+                    }
+                }
+                if (currentParaSpans && currentParaWords) {
+                    let wIdx = -1;
+                    for (let i = 0; i < currentParaWords.length; i++) {
+                        const w = currentParaWords[i];
+                        if (t >= w.start && t < w.end) { wIdx = i; break; }
+                    }
+                    const next = wIdx >= 0 ? currentParaSpans[wIdx] : null;
+                    if (next !== currentWordSpan) {
+                        if (currentWordSpan) {
+                            currentWordSpan.classList.remove('library-book__word--reading');
+                        }
+                        if (next) next.classList.add('library-book__word--reading');
+                        currentWordSpan = next;
+                    }
+                }
+            };
+            audioEl.onended = () => {
+                if (stopped) return;
+                if (ambientEl) ambientEl.pause();
+                // v4.2: auto-advance to the next chapter if one exists.
+                const next = manifestRef.chapters.find((c) => c.n > currentChapter);
+                if (next) {
+                    playChapter(next.n).then((ok) => {
+                        if (!ok && !stopped) cbs.onEnd && cbs.onEnd();
+                    });
+                    return;
+                }
+                cbs.onEnd && cbs.onEnd();
+            };
+            audioEl.onerror = (e) => {
+                console.error('prerecorded audio error:', e);
+                if (ambientEl) ambientEl.pause();
+                cbs.onEnd && cbs.onEnd();
+            };
+
+            if (ambientEl) {
+                ambientDriftTimer = setInterval(() => {
+                    if (stopped || !audioEl || !ambientEl) return;
+                    if (audioEl.paused) return;
+                    const dt = Math.abs(ambientEl.currentTime - audioEl.currentTime);
+                    if (dt > 0.15) ambientEl.currentTime = audioEl.currentTime;
+                }, 5000);
             }
         }
 
@@ -764,173 +930,14 @@
             async speak(unitList, callbacks, probeData) {
                 cbs = callbacks;
                 stopped = false;
-                lastUnitIdx = -1;
                 const data = probeData || (await probe(unitList));
                 if (!data) throw new Error('prerecorded: no audio available');
-                timing = data.timing;
-                // Build a map from paragraph number → index in unitList so we
-                // can call onUnitStart with the controller's view of position.
-                unitIdxByParaN = {};
-                unitList.forEach((u, i) => {
-                    if (!u.id) return;
-                    const m = u.id.match(/^c(\d+)p(\d+)$/);
-                    if (m && parseInt(m[1], 10) === data.chapter) {
-                        unitIdxByParaN[parseInt(m[2], 10)] = i;
-                    }
-                });
-
-                teardownAudio();
-                // When the manifest exposes a formats[] array (Opus + MP3),
-                // build the audio element with one <source> per format so the
-                // browser picks the best codec it supports. Without formats[]
-                // (older manifests), fall back to the single audio_url.
-                audioEl = new Audio();
-                if (data.formats && data.formats.length) {
-                    for (const f of data.formats) {
-                        const s = document.createElement('source');
-                        s.src = `${ASSETS_BASE}/${f.url}`;
-                        s.type = f.type;
-                        audioEl.appendChild(s);
-                    }
-                    // After appending <source> children to a detached audio
-                    // element, call .load() so the browser actually inspects
-                    // them and picks one. Without this, .play() may succeed
-                    // on some browsers via fallback resolution but
-                    // timeupdate / duration metadata can stay zero, which
-                    // breaks word-highlight (we never get a current word
-                    // because audioEl.currentTime never advances meaningfully)
-                    // and progress display.
-                    audioEl.load();
-                } else {
-                    audioEl.src = data.audioUrl;
-                }
-                audioEl.preload = 'auto';
-
-                // v4: build the ambient second track if the manifest exposes
-                // one AND the user has opted in via Immersive Mode. Ambient
-                // follows the voice element — voice is authoritative for
-                // start/pause/seek/end; ambient just plays underneath.
-                if (data.ambientUrl && isImmersiveEnabled()) {
-                    ambientEl = new Audio(data.ambientUrl);
-                    ambientEl.preload = 'auto';
-                    ambientEl.loop = false;  // matches voice length exactly
-                    ambientEl.onerror = () => {
-                        console.warn('listen-button: ambient track failed; voice continues');
-                        ambientEl = null;
-                    };
-                }
-
-                audioEl.onplay = () => {
-                    if (stopped) return;
-                    if (ambientEl) {
-                        ambientEl.currentTime = audioEl.currentTime;
-                        ambientEl.play().catch(() => {});
-                    }
-                    cbs.onStart && cbs.onStart();
-                };
-                audioEl.onpause = () => {
-                    if (stopped || audioEl.ended) return;
-                    if (ambientEl) ambientEl.pause();
-                    cbs.onPause && cbs.onPause();
-                };
-                audioEl.onseeked = () => {
-                    if (ambientEl) ambientEl.currentTime = audioEl.currentTime;
-                };
-                audioEl.ontimeupdate = () => {
-                    if (stopped || !audioEl) return;
-                    const t = audioEl.currentTime;
-                    // Smooth progress callback (prerecorded engine has a
-                    // continuous timeline; the controller uses this to
-                    // advance the progress fill between paragraph
-                    // boundaries instead of the paragraph-discrete jumps
-                    // that onUnitStart gives).
-                    if (audioEl.duration && cbs.onProgress) {
-                        cbs.onProgress(t / audioEl.duration, t, audioEl.duration);
-                    }
-                    // Find the paragraph currently being read. timing is small
-                    // (dozens to hundreds of entries) so linear search is fine.
-                    let current = null;
-                    for (const p of timing.paragraphs) {
-                        if (t >= p.start && t < p.end) {
-                            current = p;
-                            break;
-                        }
-                    }
-                    if (!current) return;
-                    const idx = unitIdxByParaN[current.n];
-                    if (idx !== undefined && idx !== lastUnitIdx) {
-                        cbs.onUnitStart && cbs.onUnitStart(idx);
-                        lastUnitIdx = idx;
-                        // Set up word-level highlighting for this paragraph.
-                        if (currentWordSpan) {
-                            currentWordSpan.classList.remove('library-book__word--reading');
-                            currentWordSpan = null;
-                        }
-                        currentParaWords = current.words || null;
-                        currentParaSpans = null;
-                        if (currentParaWords && unitList[idx] && unitList[idx].id) {
-                            const spans = wrapParagraphWords(unitList[idx].id);
-                            if (spans && spans.length === currentParaWords.length) {
-                                currentParaSpans = spans;
-                            } else if (spans && !wordMismatchLogged) {
-                                console.warn(
-                                    'listen-button: word count mismatch on',
-                                    unitList[idx].id,
-                                    '— display:', spans.length,
-                                    'audio:', currentParaWords.length,
-                                    '(falling back to paragraph-only highlight)'
-                                );
-                                wordMismatchLogged = true;
-                            }
-                        }
-                    }
-                    // Word-level highlight inside the active paragraph.
-                    if (currentParaSpans && currentParaWords) {
-                        let wIdx = -1;
-                        for (let i = 0; i < currentParaWords.length; i++) {
-                            const w = currentParaWords[i];
-                            if (t >= w.start && t < w.end) { wIdx = i; break; }
-                        }
-                        const next = wIdx >= 0 ? currentParaSpans[wIdx] : null;
-                        if (next !== currentWordSpan) {
-                            if (currentWordSpan) {
-                                currentWordSpan.classList.remove('library-book__word--reading');
-                            }
-                            if (next) next.classList.add('library-book__word--reading');
-                            currentWordSpan = next;
-                        }
-                    }
-                };
-                audioEl.onended = () => {
-                    if (stopped) return;
-                    if (ambientEl) ambientEl.pause();
-                    cbs.onEnd && cbs.onEnd();
-                };
-                audioEl.onerror = (e) => {
-                    console.error('prerecorded audio error:', e);
-                    if (ambientEl) ambientEl.pause();
-                    cbs.onEnd && cbs.onEnd();
-                };
-
-                // v4 drift correction: ambient and voice are independent
-                // <audio> elements, so playback rates can drift over long
-                // chapters. Every 5s while playing, snap ambient back if it's
-                // more than 150ms off from voice.
-                if (ambientEl) {
-                    ambientDriftTimer = setInterval(() => {
-                        if (stopped || !audioEl || !ambientEl) return;
-                        if (audioEl.paused) return;
-                        const dt = Math.abs(ambientEl.currentTime - audioEl.currentTime);
-                        if (dt > 0.15) ambientEl.currentTime = audioEl.currentTime;
-                    }, 5000);
-                }
-
-                try {
-                    await audioEl.play();
-                } catch (err) {
-                    console.error('prerecorded play failed:', err);
-                    throw err;
-                }
+                manifestRef = data.manifest;
+                bookSlugRef = data.slug;
+                bookLangRef = data.lang;
+                unitListRef = unitList;
+                const ok = await playChapter(data.chapter);
+                if (!ok) throw new Error('prerecorded: failed to load first chapter');
             },
             pause() {
                 if (audioEl) audioEl.pause();
@@ -957,6 +964,10 @@
                 currentWordSpan = null;
                 currentParaSpans = null;
                 currentParaWords = null;
+                // v4.2: clear chapter-sequencing state too.
+                manifestRef = null;
+                unitListRef = null;
+                currentChapter = null;
             },
         };
     }
