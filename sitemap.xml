@@ -4522,6 +4522,12 @@
         <priority>0.7</priority></url>
 
     <url>
+        <loc>https://www.wheelofheaven.world/he/timeline/in-the-beginning/</loc>
+        
+        <changefreq>monthly</changefreq>
+        <priority>0.7</priority></url>
+
+    <url>
         <loc>https://www.wheelofheaven.world/he/timeline/preamble/</loc>
         
         <changefreq>monthly</changefreq>
