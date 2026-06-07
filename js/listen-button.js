@@ -36,6 +36,12 @@
     const timeCurrent = document.getElementById('audioTimeCurrent');
     const timeTotal = document.getElementById('audioTimeTotal');
     const titleEl = document.querySelector('.audio-player__title-text');
+    // v4.3 — chapter title + jump overlay
+    const chapterTextEl = document.querySelector('.audio-player__chapter-text');
+    const titleButton = document.getElementById('audioTitle');
+    const chapterMenu = document.getElementById('audioChapterMenu');
+    const titleBookRow = document.querySelector('.audio-player__title-row--book');
+    const titleChapterRow = document.querySelector('.audio-player__title-row--chapter');
     const engineToggle = document.getElementById('audioEngineToggle');
     const engineLabel = document.getElementById('audioEngineLabel');
     const loadingEl = document.getElementById('audioLoading');
@@ -702,6 +708,7 @@
         let currentParaSpans = null;        // NodeList of .library-book__word for the active paragraph
         let currentParaWords = null;        // timing words[] for the active paragraph
         let currentWordSpan = null;         // span currently carrying --reading
+        let prevWordSpan = null;            // v4.3: span carrying --reading-prev (trail)
         let wordMismatchLogged = false;     // throttle the warn to once per session
         // v4.2: chapter sequencing — manifest + book context persist across
         // chapter swaps so onended can auto-advance to the next chapter.
@@ -751,6 +758,10 @@
                 currentWordSpan.classList.remove('library-book__word--reading');
                 currentWordSpan = null;
             }
+            if (prevWordSpan) {
+                prevWordSpan.classList.remove('library-book__word--reading-prev');
+                prevWordSpan = null;
+            }
             unitIdxByParaN = {};
             unitListRef.forEach((u, i) => {
                 if (!u.id) return;
@@ -765,6 +776,14 @@
                 formats: chapEntry.formats || null,
                 ambientUrl: chapEntry.ambient_url ? `${ASSETS_BASE}/${chapEntry.ambient_url}` : null,
             });
+            // v4.3: notify the controller of the chapter change so it can
+            // update the title row + chapter-menu highlight.
+            if (cbs.onChapterChange) {
+                cbs.onChapterChange({
+                    n: chapterN,
+                    title: chapEntry.title || `Chapter ${chapterN}`,
+                });
+            }
             try {
                 await audioEl.play();
                 return true;
@@ -839,6 +858,12 @@
                         currentWordSpan.classList.remove('library-book__word--reading');
                         currentWordSpan = null;
                     }
+                    // v4.3 trail: clear any --reading-prev when paragraph
+                    // changes so we don't leave a stale span behind.
+                    if (prevWordSpan) {
+                        prevWordSpan.classList.remove('library-book__word--reading-prev');
+                        prevWordSpan = null;
+                    }
                     currentParaWords = current.words || null;
                     currentParaSpans = null;
                     if (currentParaWords && unitListRef[idx] && unitListRef[idx].id) {
@@ -865,10 +890,23 @@
                     }
                     const next = wIdx >= 0 ? currentParaSpans[wIdx] : null;
                     if (next !== currentWordSpan) {
-                        if (currentWordSpan) {
-                            currentWordSpan.classList.remove('library-book__word--reading');
+                        // v4.3 trail: the word that was the leading word
+                        // becomes the trailing word; the word that WAS
+                        // trailing (if any) goes back to default colour.
+                        if (prevWordSpan && prevWordSpan !== next) {
+                            prevWordSpan.classList.remove('library-book__word--reading-prev');
                         }
-                        if (next) next.classList.add('library-book__word--reading');
+                        if (currentWordSpan && currentWordSpan !== next) {
+                            currentWordSpan.classList.remove('library-book__word--reading');
+                            currentWordSpan.classList.add('library-book__word--reading-prev');
+                            prevWordSpan = currentWordSpan;
+                        }
+                        if (next) {
+                            // If `next` was the trailing word, remove that
+                            // marker before promoting it to leading.
+                            next.classList.remove('library-book__word--reading-prev');
+                            next.classList.add('library-book__word--reading');
+                        }
                         currentWordSpan = next;
                     }
                 }
@@ -950,6 +988,17 @@
                 const r = Math.max(0, Math.min(1, ratio));
                 audioEl.currentTime = r * audioEl.duration;
             },
+            // v4.3 — direct jump to a chapter by manifest number. Used by
+            // the chapter-jump overlay. Reuses the same playChapter() path
+            // as initial speak() and auto-advance, so behavior stays uniform.
+            jumpToChapter(n) {
+                if (!manifestRef) return;
+                playChapter(n);
+            },
+            // v4.3 — expose the manifest + current chapter so the controller
+            // can populate the chapter-jump menu and mark the active row.
+            getManifest() { return manifestRef; },
+            getCurrentChapter() { return currentChapter; },
             resume() {
                 if (audioEl) audioEl.play();
             },
@@ -961,7 +1010,11 @@
                 if (currentWordSpan) {
                     currentWordSpan.classList.remove('library-book__word--reading');
                 }
+                if (prevWordSpan) {
+                    prevWordSpan.classList.remove('library-book__word--reading-prev');
+                }
                 currentWordSpan = null;
+                prevWordSpan = null;
                 currentParaSpans = null;
                 currentParaWords = null;
                 // v4.2: clear chapter-sequencing state too.
@@ -1057,6 +1110,7 @@
             isPlaying = true;
             isPaused = false;
             updatePlayState(true);
+            startTitleCycle();
         },
         onUnitStart,
         // v4.1 — onProgress is emitted by engines that have a real
@@ -1084,14 +1138,113 @@
             isPaused = false;
             updatePlayState(true);
         },
+        // v4.3 — prerecorded engine emits this when chapter changes (initial
+        // load, auto-advance, or user jump). Update the chapter-title row +
+        // re-render the chapter menu to reflect the new active row.
+        onChapterChange: ({ n, title }) => {
+            if (chapterTextEl) chapterTextEl.textContent = title;
+            renderChapterMenu();
+        },
         onEnd: () => {
             isPlaying = false;
             isPaused = false;
             setProgressFraction(1);
             clearHighlight();
             updatePlayState(false);
+            stopTitleCycle();
         },
     };
+
+    // v4.3 — title row crossfade. Two stacked rows (book + chapter)
+    // alternate visibility every 5 s during playback so both names
+    // surface without competing for fixed space. Stops on engine end.
+    let titleCycleTimer = null;
+    function startTitleCycle() {
+        if (!titleBookRow || !titleChapterRow) return;
+        stopTitleCycle();
+        let showingBook = true;
+        titleCycleTimer = setInterval(() => {
+            // Skip the swap if the chapter row has no text yet (initial load).
+            if (chapterTextEl && !chapterTextEl.textContent) return;
+            showingBook = !showingBook;
+            titleBookRow.classList.toggle('is-active', showingBook);
+            titleChapterRow.classList.toggle('is-active', !showingBook);
+        }, 5000);
+    }
+    function stopTitleCycle() {
+        if (titleCycleTimer) {
+            clearInterval(titleCycleTimer);
+            titleCycleTimer = null;
+        }
+        // Reset to book-title visible.
+        if (titleBookRow) titleBookRow.classList.add('is-active');
+        if (titleChapterRow) titleChapterRow.classList.remove('is-active');
+    }
+
+    // v4.3 — chapter jump overlay. Reads the active engine's manifest +
+    // current chapter to render one button per chapter. Click → engine
+    // jumps + closes the menu.
+    function renderChapterMenu() {
+        if (!chapterMenu || !currentEngine) return;
+        if (typeof currentEngine.getManifest !== 'function') {
+            chapterMenu.hidden = true;
+            return;
+        }
+        const manifest = currentEngine.getManifest();
+        const cur = typeof currentEngine.getCurrentChapter === 'function'
+            ? currentEngine.getCurrentChapter() : null;
+        if (!manifest || !manifest.chapters || !manifest.chapters.length) {
+            chapterMenu.hidden = true;
+            return;
+        }
+        chapterMenu.innerHTML = '';
+        manifest.chapters.forEach((c) => {
+            const btn = document.createElement('button');
+            btn.type = 'button';
+            btn.className = 'audio-player__chapter-item';
+            if (c.n === cur) btn.classList.add('is-current');
+            btn.setAttribute('role', 'menuitem');
+            const num = document.createElement('span');
+            num.className = 'audio-player__chapter-item-num';
+            num.textContent = String(c.n);
+            const name = document.createElement('span');
+            name.className = 'audio-player__chapter-item-name';
+            name.textContent = c.title || `Chapter ${c.n}`;
+            const dur = document.createElement('span');
+            dur.className = 'audio-player__chapter-item-dur';
+            dur.textContent = formatTime(c.duration_seconds || 0);
+            btn.appendChild(num);
+            btn.appendChild(name);
+            btn.appendChild(dur);
+            btn.addEventListener('click', () => {
+                closeChapterMenu();
+                if (currentEngine && typeof currentEngine.jumpToChapter === 'function') {
+                    currentEngine.jumpToChapter(c.n);
+                }
+            });
+            chapterMenu.appendChild(btn);
+        });
+    }
+    function openChapterMenu() {
+        if (!chapterMenu || !titleButton) return;
+        renderChapterMenu();
+        if (!chapterMenu.children.length) return;
+        chapterMenu.hidden = false;
+        // Next frame so the opacity transition runs.
+        requestAnimationFrame(() => chapterMenu.classList.add('is-open'));
+        titleButton.setAttribute('aria-expanded', 'true');
+        chapterMenu.setAttribute('aria-hidden', 'false');
+    }
+    function closeChapterMenu() {
+        if (!chapterMenu || !titleButton) return;
+        chapterMenu.classList.remove('is-open');
+        titleButton.setAttribute('aria-expanded', 'false');
+        chapterMenu.setAttribute('aria-hidden', 'true');
+        // After transition, hide entirely so it's not in the tab order.
+        setTimeout(() => {
+            if (!chapterMenu.classList.contains('is-open')) chapterMenu.hidden = true;
+        }, 200);
+    }
 
     async function speak() {
         playQueue = getReadingUnits();
@@ -1239,6 +1392,27 @@
         };
         progressBar.addEventListener('pointerup', endDrag);
         progressBar.addEventListener('pointercancel', endDrag);
+    }
+
+    // v4.3 — title click opens the chapter-jump overlay (when the engine
+    // exposes a manifest, i.e. the prerecorded engine is active).
+    if (titleButton && chapterMenu) {
+        titleButton.addEventListener('click', (e) => {
+            e.stopPropagation();
+            if (chapterMenu.classList.contains('is-open')) closeChapterMenu();
+            else openChapterMenu();
+        });
+        document.addEventListener('click', (e) => {
+            if (!chapterMenu.classList.contains('is-open')) return;
+            if (chapterMenu.contains(e.target) || titleButton.contains(e.target)) return;
+            closeChapterMenu();
+        });
+        document.addEventListener('keydown', (e) => {
+            if (e.key === 'Escape' && chapterMenu.classList.contains('is-open')) {
+                closeChapterMenu();
+                titleButton.focus();
+            }
+        });
     }
 
     if (hasWebSpeech && speechSynthesis.onvoiceschanged !== undefined) {
