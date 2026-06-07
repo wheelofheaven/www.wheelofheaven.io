@@ -826,6 +826,12 @@
         <priority>0.7</priority></url>
 
     <url>
+        <loc>https://www.wheelofheaven.world/de/timeline/the-wheel-keeps-turning/</loc>
+        
+        <changefreq>monthly</changefreq>
+        <priority>0.7</priority></url>
+
+    <url>
         <loc>https://www.wheelofheaven.world/de/wiki/</loc>
         
         <changefreq>monthly</changefreq>
@@ -2255,6 +2261,12 @@
 
     <url>
         <loc>https://www.wheelofheaven.world/es/timeline/preamble/</loc>
+        
+        <changefreq>monthly</changefreq>
+        <priority>0.7</priority></url>
+
+    <url>
+        <loc>https://www.wheelofheaven.world/es/timeline/the-wheel-keeps-turning/</loc>
         
         <changefreq>monthly</changefreq>
         <priority>0.7</priority></url>
@@ -3700,6 +3712,12 @@
         <priority>0.7</priority></url>
 
     <url>
+        <loc>https://www.wheelofheaven.world/fr/timeline/the-wheel-keeps-turning/</loc>
+        
+        <changefreq>monthly</changefreq>
+        <priority>0.7</priority></url>
+
+    <url>
         <loc>https://www.wheelofheaven.world/fr/wiki/</loc>
         
         <changefreq>monthly</changefreq>
@@ -4510,6 +4528,12 @@
         <priority>0.7</priority></url>
 
     <url>
+        <loc>https://www.wheelofheaven.world/he/timeline/the-wheel-keeps-turning/</loc>
+        
+        <changefreq>monthly</changefreq>
+        <priority>0.7</priority></url>
+
+    <url>
         <loc>https://www.wheelofheaven.world/he/wiki/</loc>
         
         <changefreq>monthly</changefreq>
@@ -5255,6 +5279,12 @@
 
     <url>
         <loc>https://www.wheelofheaven.world/ja/timeline/preamble/</loc>
+        
+        <changefreq>monthly</changefreq>
+        <priority>0.7</priority></url>
+
+    <url>
+        <loc>https://www.wheelofheaven.world/ja/timeline/the-wheel-keeps-turning/</loc>
         
         <changefreq>monthly</changefreq>
         <priority>0.7</priority></url>
@@ -6677,6 +6707,12 @@
 
     <url>
         <loc>https://www.wheelofheaven.world/ko/timeline/preamble/</loc>
+        
+        <changefreq>monthly</changefreq>
+        <priority>0.7</priority></url>
+
+    <url>
+        <loc>https://www.wheelofheaven.world/ko/timeline/the-wheel-keeps-turning/</loc>
         
         <changefreq>monthly</changefreq>
         <priority>0.7</priority></url>
@@ -8831,6 +8867,12 @@
 
     <url>
         <loc>https://www.wheelofheaven.world/ru/timeline/preamble/</loc>
+        
+        <changefreq>monthly</changefreq>
+        <priority>0.7</priority></url>
+
+    <url>
+        <loc>https://www.wheelofheaven.world/ru/timeline/the-wheel-keeps-turning/</loc>
         
         <changefreq>monthly</changefreq>
         <priority>0.7</priority></url>
@@ -11074,6 +11116,12 @@
         <priority>0.7</priority></url>
 
     <url>
+        <loc>https://www.wheelofheaven.world/zh-Hant/timeline/the-wheel-keeps-turning/</loc>
+        
+        <changefreq>monthly</changefreq>
+        <priority>0.7</priority></url>
+
+    <url>
         <loc>https://www.wheelofheaven.world/zh-Hant/wiki/</loc>
         
         <changefreq>monthly</changefreq>
@@ -12479,6 +12527,12 @@
 
     <url>
         <loc>https://www.wheelofheaven.world/zh/timeline/preamble/</loc>
+        
+        <changefreq>monthly</changefreq>
+        <priority>0.7</priority></url>
+
+    <url>
+        <loc>https://www.wheelofheaven.world/zh/timeline/the-wheel-keeps-turning/</loc>
         
         <changefreq>monthly</changefreq>
         <priority>0.7</priority></url>
