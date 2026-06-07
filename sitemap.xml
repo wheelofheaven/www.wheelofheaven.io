@@ -712,6 +712,12 @@
         <priority>0.5</priority></url>
 
     <url>
+        <loc>https://www.wheelofheaven.world/de/news/library-hebrew-bible-nine-languages/</loc>
+        
+        <changefreq>weekly</changefreq>
+        <priority>0.5</priority></url>
+
+    <url>
         <loc>https://www.wheelofheaven.world/de/news/page/1/</loc>
         
         <changefreq>weekly</changefreq>
@@ -2159,6 +2165,12 @@
 
     <url>
         <loc>https://www.wheelofheaven.world/es/news/</loc>
+        
+        <changefreq>weekly</changefreq>
+        <priority>0.5</priority></url>
+
+    <url>
+        <loc>https://www.wheelofheaven.world/es/news/library-hebrew-bible-nine-languages/</loc>
         
         <changefreq>weekly</changefreq>
         <priority>0.5</priority></url>
@@ -3628,6 +3640,12 @@
         <priority>0.5</priority></url>
 
     <url>
+        <loc>https://www.wheelofheaven.world/fr/news/library-hebrew-bible-nine-languages/</loc>
+        
+        <changefreq>weekly</changefreq>
+        <priority>0.5</priority></url>
+
+    <url>
         <loc>https://www.wheelofheaven.world/fr/news/page/1/</loc>
         
         <changefreq>weekly</changefreq>
@@ -5063,6 +5081,12 @@
 
     <url>
         <loc>https://www.wheelofheaven.world/he/news/</loc>
+        
+        <changefreq>weekly</changefreq>
+        <priority>0.5</priority></url>
+
+    <url>
+        <loc>https://www.wheelofheaven.world/he/news/library-hebrew-bible-nine-languages/</loc>
         
         <changefreq>weekly</changefreq>
         <priority>0.5</priority></url>
@@ -6514,6 +6538,12 @@
         <priority>0.5</priority></url>
 
     <url>
+        <loc>https://www.wheelofheaven.world/ja/news/library-hebrew-bible-nine-languages/</loc>
+        
+        <changefreq>weekly</changefreq>
+        <priority>0.5</priority></url>
+
+    <url>
         <loc>https://www.wheelofheaven.world/ja/news/page/1/</loc>
         
         <changefreq>weekly</changefreq>
@@ -7955,6 +7985,12 @@
 
     <url>
         <loc>https://www.wheelofheaven.world/ko/news/</loc>
+        
+        <changefreq>weekly</changefreq>
+        <priority>0.5</priority></url>
+
+    <url>
+        <loc>https://www.wheelofheaven.world/ko/news/library-hebrew-bible-nine-languages/</loc>
         
         <changefreq>weekly</changefreq>
         <priority>0.5</priority></url>
@@ -10151,6 +10187,12 @@
 
     <url>
         <loc>https://www.wheelofheaven.world/ru/news/</loc>
+        
+        <changefreq>weekly</changefreq>
+        <priority>0.5</priority></url>
+
+    <url>
+        <loc>https://www.wheelofheaven.world/ru/news/library-hebrew-bible-nine-languages/</loc>
         
         <changefreq>weekly</changefreq>
         <priority>0.5</priority></url>
@@ -12418,6 +12460,12 @@
         <priority>0.5</priority></url>
 
     <url>
+        <loc>https://www.wheelofheaven.world/zh-Hant/news/library-hebrew-bible-nine-languages/</loc>
+        
+        <changefreq>weekly</changefreq>
+        <priority>0.5</priority></url>
+
+    <url>
         <loc>https://www.wheelofheaven.world/zh-Hant/news/page/1/</loc>
         
         <changefreq>weekly</changefreq>
@@ -13859,6 +13907,12 @@
 
     <url>
         <loc>https://www.wheelofheaven.world/zh/news/</loc>
+        
+        <changefreq>weekly</changefreq>
+        <priority>0.5</priority></url>
+
+    <url>
+        <loc>https://www.wheelofheaven.world/zh/news/library-hebrew-bible-nine-languages/</loc>
         
         <changefreq>weekly</changefreq>
         <priority>0.5</priority></url>

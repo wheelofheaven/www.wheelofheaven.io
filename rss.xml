@@ -27,6 +27,52 @@ Wheel of Heaven Translation Program pipeline. The methodology is documented at
 </description>
       </item>
       <item>
+          <title>Bibliothek: Hebräische Bibel jetzt in neun Sprachen lesbar</title>
+          <pubDate>Sun, 07 Jun 2026 00:00:00 +0000</pubDate>
+          <author>Unknown</author>
+          <link>https://www.wheelofheaven.world/de/news/library-hebrew-bible-nine-languages/</link>
+          <guid>https://www.wheelofheaven.world/de/news/library-hebrew-bible-nine-languages/</guid>
+          <description xml:base="https://www.wheelofheaven.world/de/news/library-hebrew-bible-nine-languages/">&lt;h2 id=&quot;was-ausgeliefert-wurde&quot;&gt;Was ausgeliefert wurde&lt;&#x2F;h2&gt;
+&lt;p&gt;Seit dem 7. Juni 2026 beherbergt die Wheel-of-Heaven-Bibliothek die vollständige Hebräische Bibel — von Genesis bis Zephanja, sechsunddreißig Bücher — in neun Sprachen. Jedes Kapitel stellt die englische ASV-Grundlage von 1901 neben importierten gemeinfreien Ausgaben in Deutsch, Spanisch, Französisch, Japanisch, Koreanisch, Russisch, Vereinfachtem Chinesisch und Traditionellem Chinesisch dar. Leserinnen und Leser, die die Bibliothek in einer der neun Sprachversionen der Seite konsultieren, sehen den Text nun in ihrer Lesesprache, ohne den Umweg über das Englische nehmen zu müssen.&lt;&#x2F;p&gt;
+&lt;p&gt;Die importierten Ausgaben sind benannt, datiert und offen lizenziert. Der Katalog dokumentiert zudem die sprachspezifische Abdeckung: Wo Verszählungsverschiebungen zwischen der masoretischen und der Vulgata- oder Synodal-Tradition einen Vers nicht alignieren lassen, bleibt die englische ASV als Rückfallebene erhalten.&lt;&#x2F;p&gt;
+&lt;table&gt;&lt;thead&gt;&lt;tr&gt;&lt;th&gt;Sprache&lt;&#x2F;th&gt;&lt;th&gt;Ausgabe&lt;&#x2F;th&gt;&lt;th&gt;Jahr&lt;&#x2F;th&gt;&lt;th&gt;Lizenz&lt;&#x2F;th&gt;&lt;&#x2F;tr&gt;&lt;&#x2F;thead&gt;&lt;tbody&gt;
+&lt;tr&gt;&lt;td&gt;Englisch&lt;&#x2F;td&gt;&lt;td&gt;American Standard Version (ASV)&lt;&#x2F;td&gt;&lt;td&gt;1901&lt;&#x2F;td&gt;&lt;td&gt;Gemeinfrei&lt;&#x2F;td&gt;&lt;&#x2F;tr&gt;
+&lt;tr&gt;&lt;td&gt;Deutsch&lt;&#x2F;td&gt;&lt;td&gt;Elberfelder&lt;&#x2F;td&gt;&lt;td&gt;1905&lt;&#x2F;td&gt;&lt;td&gt;Gemeinfrei&lt;&#x2F;td&gt;&lt;&#x2F;tr&gt;
+&lt;tr&gt;&lt;td&gt;Spanisch&lt;&#x2F;td&gt;&lt;td&gt;Reina-Valera&lt;&#x2F;td&gt;&lt;td&gt;1909&lt;&#x2F;td&gt;&lt;td&gt;Gemeinfrei&lt;&#x2F;td&gt;&lt;&#x2F;tr&gt;
+&lt;tr&gt;&lt;td&gt;Französisch&lt;&#x2F;td&gt;&lt;td&gt;Crampon (gemeinfreier Dhorme für Hiob, Samuel, wo vorhanden)&lt;&#x2F;td&gt;&lt;td&gt;1923&lt;&#x2F;td&gt;&lt;td&gt;Gemeinfrei&lt;&#x2F;td&gt;&lt;&#x2F;tr&gt;
+&lt;tr&gt;&lt;td&gt;Japanisch&lt;&#x2F;td&gt;&lt;td&gt;口語訳 (Kougo-yaku)&lt;&#x2F;td&gt;&lt;td&gt;1955&lt;&#x2F;td&gt;&lt;td&gt;Gemeinfrei (Urheberpersönlichkeitsrechte)&lt;&#x2F;td&gt;&lt;&#x2F;tr&gt;
+&lt;tr&gt;&lt;td&gt;Koreanisch&lt;&#x2F;td&gt;&lt;td&gt;Korean Revised Version (KRV)&lt;&#x2F;td&gt;&lt;td&gt;1961&lt;&#x2F;td&gt;&lt;td&gt;Gemeinfrei&lt;&#x2F;td&gt;&lt;&#x2F;tr&gt;
+&lt;tr&gt;&lt;td&gt;Russisch&lt;&#x2F;td&gt;&lt;td&gt;Synodal&lt;&#x2F;td&gt;&lt;td&gt;1876&lt;&#x2F;td&gt;&lt;td&gt;Gemeinfrei&lt;&#x2F;td&gt;&lt;&#x2F;tr&gt;
+&lt;tr&gt;&lt;td&gt;Vereinfachtes Chinesisch&lt;&#x2F;td&gt;&lt;td&gt;Chinese Union Version (和合本)&lt;&#x2F;td&gt;&lt;td&gt;1919&lt;&#x2F;td&gt;&lt;td&gt;Gemeinfrei&lt;&#x2F;td&gt;&lt;&#x2F;tr&gt;
+&lt;tr&gt;&lt;td&gt;Traditionelles Chinesisch&lt;&#x2F;td&gt;&lt;td&gt;Chinese Union Version (和合本)&lt;&#x2F;td&gt;&lt;td&gt;1919&lt;&#x2F;td&gt;&lt;td&gt;Gemeinfrei&lt;&#x2F;td&gt;&lt;&#x2F;tr&gt;
+&lt;&#x2F;tbody&gt;&lt;&#x2F;table&gt;
+&lt;p&gt;Die Herkunft pro Buch — Übersetzungsname, Jahr, Lizenz, Quell-URL, Abrufdatum — ist in &lt;code&gt;data-library&#x2F;catalog.json&lt;&#x2F;code&gt; für jeden Eintrag unter dem Block &lt;code&gt;translations.{lang}&lt;&#x2F;code&gt; des jeweiligen Buchs erfasst.&lt;&#x2F;p&gt;
+&lt;h2 id=&quot;warum-wortgetreue-ubersetzungen&quot;&gt;Warum wortgetreue Übersetzungen&lt;&#x2F;h2&gt;
+&lt;p&gt;Jede oben aufgeführte importierte Ausgabe ist nach ihrer Übersetzungstheorie eine &lt;strong&gt;formaläquivalente&lt;&#x2F;strong&gt; Übersetzung — gelegentlich locker „wortgetreu“ genannt. Die ausgewählten Ausgaben stehen auf der &lt;em&gt;konkordanten&lt;&#x2F;em&gt; Seite ihrer jeweiligen Traditionen: Die Elberfelder gilt bekanntlich als die wortgetreueste deutsche Bibel der Neuzeit; Reina-Valera, Crampon, die Synodal, die KRV und die Chinese Union Version gehören in ihren jeweiligen Sprachen alle derselben formaläquivalenten Linie an. Das 口語訳 ist die umgangssprachlich-japanische Modernisierung der klassischen 文語訳 — nach den Maßstäben der Tradition weiterhin formaläquivalent, ausdrücklich gegenüber der funktionaläquivalenten 新共同訳 (1987) positioniert, die später zum japanischen katholisch-protestantischen Standard wurde.&lt;&#x2F;p&gt;
+&lt;p&gt;Die Wahl ist bewusst, nicht nostalgisch. Eine formaläquivalente Übersetzung versucht, die &lt;strong&gt;lexikalische und syntaktische Gestalt&lt;&#x2F;strong&gt; des Quelltexts zu bewahren — ein hebräisches Wort, ein Zielwort, wo die Sprachen es zulassen; ein hebräischer Satzteil, ein Zielsatzteil; dasselbe Wort im selben Quellvers erhält dieselbe Übersetzung im gesamten Korpus, wo immer möglich. Eine funktionaläquivalente Übersetzung tut das Gegenteil — sie versucht, die &lt;em&gt;Wirkung&lt;&#x2F;em&gt; auf die Leserin zu bewahren, was bedeutet, dass sie die Entscheidungen des Quelltexts routinemäßig zusammenzieht, paraphrasiert und in idiomatische Zielsprache glättet.&lt;&#x2F;p&gt;
+&lt;p&gt;Für eine Bibliothek, deren gesamter Zweck, acht Übersetzungen zu beherbergen, vergleichend ist — &lt;em&gt;was macht jede Tradition mit den Perikopen des Gottesnamens, mit Genesis 1,1, mit Psalm 82, mit dem Elohim-Plural?&lt;&#x2F;em&gt; —, ist Formaläquivalenz das einzige Register, das die Frage bewahrt. Sobald eine Übersetzung entschieden hat, &lt;code&gt;יהוה&lt;&#x2F;code&gt; als „the LORD“ wiederzugeben, weil sich das besser auf Englisch liest, oder als 主, weil sich das besser auf Japanisch liest, ist die lexikalische Entscheidung, die der Korpus verfolgen will, bereits verloren. Die Leserin sieht das Aufräumen des Übersetzers, nicht die Lesart des Übersetzers.&lt;&#x2F;p&gt;
+&lt;p&gt;Dasselbe gilt für den Elohim-Referenten selbst. Die Elberfelder hält „Jehova“ &#x2F; „Elohim“ dort sichtbar, wo das Hebräische sie unterscheidet; Crampon schreibt mit derselben Disziplin „Yahweh“ und „Élohim“; die Synodal bewahrt die Paarungen „Господь“ &#x2F; „Бог“, die auf den zugrunde liegenden Quelltext zurückverweisen. Eine funktionaläquivalente Übersetzung gäbe der Leserin im selben Vers einen undifferenzierten &lt;em&gt;Gott&lt;&#x2F;em&gt; — einfacher zu lesen, aber das vergleichende Argument hat nichts mehr, was es vergleichen könnte.&lt;&#x2F;p&gt;
+&lt;h2 id=&quot;warum-dies-die-richtige-gestalt-fur-die-bibliothek-ist&quot;&gt;Warum dies die richtige Gestalt für die Bibliothek ist&lt;&#x2F;h2&gt;
+&lt;p&gt;Die Bibliothek hat die Hebräische Bibel stets als operativen Quelltext behandelt, den das Projekt liest, und nicht als Ziel-Übersetzung. Die englische ASV ist die Leseoberfläche für die Hauptzielgruppe des Projekts; das zugrunde liegende Hebräisch ist das, womit sich der Korpus tatsächlich auseinandersetzt. Was bis heute fehlte, war ein sauberer Weg für nicht-englischsprachige Leserinnen und Leser, die Bibliothek zu konsultieren, ohne Englisch zur obligatorischen Zwischenstation zu machen.&lt;&#x2F;p&gt;
+&lt;p&gt;Die Wahl der Ausgabe pro Sprache folgt der Quellen-Hierarchiedisziplin des Korpus. Jede importierte Übersetzung ist eine kritische oder nahezu kritische Ausgabe aus dem neunzehnten oder zwanzigsten Jahrhundert — alt genug, um gemeinfrei zu sein, jung genug, um philologisch ernsthaft zu sein. Wo die bevorzugte Lesart des Korpus eine moderne, noch urheberrechtlich geschützte Ausgabe erfordern würde, verwendet das Projekt entweder die gemeinfreie Teilmenge dieser Ausgabe oder vermerkt die Lücke ausdrücklich. Der deutlichste Fall ist Französisch: Die Pléiade-Bibel von Dhorme — die Ausgabe, mit der Raël selbst während des Kontakts von 1973 arbeitete — steht bis etwa 2071 unter französischem Urheberrecht. Die Bibliothek verwendet Crampon 1923 als Grundlage, wobei Dhormes frühere gemeinfreie Hiob- (1929) und Samuel-Ausgaben (1910) Crampon für diese drei Bücher ersetzen, wo sie vorliegen. Die vollständige Begründung für jede Sprache — warum Elberfelder statt Luther, warum Crampon statt Darby, warum 口語訳 statt 新共同訳, warum die KRV von 1961 statt der strengeren von 1938 — findet sich auf der Docs-Site unter &lt;a href=&quot;https:&#x2F;&#x2F;docs.wheelofheaven.world&#x2F;contributing&#x2F;content&#x2F;imported-translations&#x2F;&quot;&gt;docs.wheelofheaven.world&#x2F;contributing&#x2F;content&#x2F;imported-translations&lt;&#x2F;a&gt;.&lt;&#x2F;p&gt;
+&lt;p&gt;Der Korpus liest die Hebräische Bibel als geschichteten Text, dessen Elohim-Referent in der Originalsprache operativ ist. Moderne Übersetzungen sind nachgelagerte interpretative Bewegungen, und welche interpretative Bewegung eine Übersetzung vollzieht, ist an bestimmten Versen sichtbar — Genesis 1,1, Psalm 82, Exodus 3,14, die Perikopen des Gottesnamens durch den Text hindurch. Acht importierte Übersetzungen Seite an Seite mit der ASV zu beherbergen, macht diese Sichtbarkeit gewöhnlich: Wer vergleichen möchte, was Elberfelder, Crampon, die Synodal und die CUV mit einem umstrittenen Vers tun, kann das nun tun, ohne die Bibliotheksseite zu verlassen.&lt;&#x2F;p&gt;
+&lt;h2 id=&quot;wo-dies-im-langeren-plan-steht&quot;&gt;Wo dies im längeren Plan steht&lt;&#x2F;h2&gt;
+&lt;p&gt;Die Pipeline für importierte Übersetzungen ist die eine Hälfte des Auftrags der Bibliothek. Die andere Hälfte ist die &lt;a href=&quot;https:&#x2F;&#x2F;docs.wheelofheaven.world&#x2F;contributing&#x2F;content&#x2F;source-text-translation&#x2F;&quot;&gt;Wheel-of-Heaven-Übersetzung&lt;&#x2F;a&gt;, die sich derzeit Kapitel für Kapitel durch Genesis vorarbeitet — eine frische englische Lesart aus dem Hebräischen, hergestellt unter der projekteigenen Glossardisziplin, mit einer Translator-Editor-Reviewer-Pipeline hinter jedem Kapitel. Die importierten Übersetzungen decken die &lt;strong&gt;Breite&lt;&#x2F;strong&gt; ab (jedes Buch, acht Sprachen, gemeinfreie Ausgaben, heute ausgeliefert); die WoH-Übersetzung liefert die &lt;strong&gt;Tiefe&lt;&#x2F;strong&gt; (eine Tradition, ein Buch nach dem anderen, philologisch verteidigt, weiterhin in Arbeit).&lt;&#x2F;p&gt;
+&lt;p&gt;Beide Pipelines speisen dasselbe Feld &lt;code&gt;paragraphs[].i18n[lang]&lt;&#x2F;code&gt; in jeder Kapiteldatei, was bedeutet, dass die Bibliotheksvorlage sie über dieselbe Schnittstelle darstellt. Wenn die WoH-Übersetzung von Genesis ihre erste stabile Fassung erreicht, wird sie neben diesen importierten Lesarten als der eigene Beitrag des Projekts zur vergleichenden Landschaft stehen, die es aufgebaut hat.&lt;&#x2F;p&gt;
+&lt;h2 id=&quot;wo-dies-zu-sehen-ist&quot;&gt;Wo dies zu sehen ist&lt;&#x2F;h2&gt;
+&lt;ul&gt;
+&lt;li&gt;Bibliotheksindex: &lt;a href=&quot;&#x2F;library&#x2F;&quot;&gt;&#x2F;library&#x2F;&lt;&#x2F;a&gt; — jedes Buch der Hebräischen Bibel listet nun neun Sprachen in seiner Verfügbarkeitsmatrix auf&lt;&#x2F;li&gt;
+&lt;li&gt;Ein Beispielkapitel: &lt;a href=&quot;&#x2F;library&#x2F;genesis&#x2F;&quot;&gt;&#x2F;library&#x2F;genesis&#x2F;&lt;&#x2F;a&gt; (oder in Ihrer Lesesprache: &lt;code&gt;&#x2F;de&#x2F;library&#x2F;genesis&#x2F;&lt;&#x2F;code&gt;, &lt;code&gt;&#x2F;ja&#x2F;library&#x2F;genesis&#x2F;&lt;&#x2F;code&gt;, …)&lt;&#x2F;li&gt;
+&lt;li&gt;Katalog und Herkunft pro Buch: &lt;a href=&quot;https:&#x2F;&#x2F;github.com&#x2F;wheelofheaven&#x2F;data-library&#x2F;blob&#x2F;main&#x2F;catalog.json&quot;&gt;&lt;code&gt;data-library&#x2F;catalog.json&lt;&#x2F;code&gt; auf GitHub&lt;&#x2F;a&gt;&lt;&#x2F;li&gt;
+&lt;li&gt;Methodik und sprachspezifische Begründung des Quellenprogramms: &lt;a href=&quot;https:&#x2F;&#x2F;docs.wheelofheaven.world&#x2F;contributing&#x2F;content&#x2F;imported-translations&#x2F;&quot;&gt;docs.wheelofheaven.world&#x2F;contributing&#x2F;content&#x2F;imported-translations&lt;&#x2F;a&gt;&lt;&#x2F;li&gt;
+&lt;&#x2F;ul&gt;
+&lt;h2 id=&quot;bekannte-nacharbeiten&quot;&gt;Bekannte Nacharbeiten&lt;&#x2F;h2&gt;
+&lt;p&gt;Drei. Die französischen Dhorme-Platzhalter für 1-Samuel, 2-Samuel und Hiob warten noch auf einen sauberen OCR-Durchgang — die zugrunde liegenden djvu-Scans im Internet Archive verschachteln hebräischen Apparat und Kommentar zu stark, um sie programmatisch zu extrahieren. Die Obadja-Kapiteldatei weist eine Gerüstlücke auf (nur einer von einundzwanzig Versen ist auf Absatzebene aufgeschlüsselt), die der Katalog derzeit fälschlich als vollständige Abdeckung meldet. Und die deutsche Elberfelder-Quelle für 1-Chronik (bibel-online.net) hat in den Kapiteln 13, 17, 18, 22 und 28 eine bekannte Duplikatinhaltsanomalie, die der Katalog in &lt;code&gt;_meta.notes&lt;&#x2F;code&gt; vermerkt, die Merge-Pipeline aber stromabwärts noch nicht herausgefiltert hat. Keine dieser Punkte blockiert die Lesbarkeit des importierten Textes; alle drei sind für den nächsten Durchgang vorgemerkt.&lt;&#x2F;p&gt;
+&lt;hr &#x2F;&gt;
+&lt;p&gt;&lt;em&gt;— Eingereicht am 7. Juni 2026, Wheel-of-Heaven-Redaktion.&lt;&#x2F;em&gt;&lt;&#x2F;p&gt;
+</description>
+      </item>
+      <item>
           <title>Génesis</title>
           <pubDate>Sun, 07 Jun 2026 00:00:00 +0000</pubDate>
           <author>Unknown</author>
@@ -42,6 +88,52 @@ bajo la lente documentada WoH, con la fuente y la traducción presentadas en par
 &lt;p&gt;The English translation was drafted by Claude Opus 4.7 and edited through the
 Wheel of Heaven Translation Program pipeline. The methodology is documented at
 &lt;a href=&quot;https:&#x2F;&#x2F;docs.wheelofheaven.world&#x2F;contributing&#x2F;content&#x2F;source-text-translation&#x2F;&quot;&gt;Source-Text Translation&lt;&#x2F;a&gt;.&lt;&#x2F;p&gt;
+</description>
+      </item>
+      <item>
+          <title>Biblioteca: la Biblia hebrea se lee ya en nueve idiomas</title>
+          <pubDate>Sun, 07 Jun 2026 00:00:00 +0000</pubDate>
+          <author>Unknown</author>
+          <link>https://www.wheelofheaven.world/es/news/library-hebrew-bible-nine-languages/</link>
+          <guid>https://www.wheelofheaven.world/es/news/library-hebrew-bible-nine-languages/</guid>
+          <description xml:base="https://www.wheelofheaven.world/es/news/library-hebrew-bible-nine-languages/">&lt;h2 id=&quot;lo-que-se-ha-entregado&quot;&gt;Lo que se ha entregado&lt;&#x2F;h2&gt;
+&lt;p&gt;A 7 de junio de 2026, la biblioteca de Wheel of Heaven aloja la Biblia hebrea completa — de Génesis a Sofonías, treinta y seis libros — en nueve idiomas. Cada capítulo presenta la línea base del ASV inglés de 1901 junto a ediciones de dominio público importadas en alemán, español, francés, japonés, coreano, ruso, chino simplificado y chino tradicional. Los lectores que consulten la biblioteca en cualquiera de los nueve idiomas del sitio ven ahora el texto en su lengua de lectura sin necesidad de pasar por el inglés.&lt;&#x2F;p&gt;
+&lt;p&gt;Las ediciones importadas están identificadas con su nombre, fecha y licencia abierta. El catálogo también informa de la cobertura por idioma: cuando los desplazamientos en la versificación entre las tradiciones masorético, Vulgata o Synodal dejan un versículo sin alinear, el ASV inglés permanece como respaldo.&lt;&#x2F;p&gt;
+&lt;table&gt;&lt;thead&gt;&lt;tr&gt;&lt;th&gt;Idioma&lt;&#x2F;th&gt;&lt;th&gt;Edición&lt;&#x2F;th&gt;&lt;th&gt;Año&lt;&#x2F;th&gt;&lt;th&gt;Licencia&lt;&#x2F;th&gt;&lt;&#x2F;tr&gt;&lt;&#x2F;thead&gt;&lt;tbody&gt;
+&lt;tr&gt;&lt;td&gt;Inglés&lt;&#x2F;td&gt;&lt;td&gt;American Standard Version (ASV)&lt;&#x2F;td&gt;&lt;td&gt;1901&lt;&#x2F;td&gt;&lt;td&gt;Dominio público&lt;&#x2F;td&gt;&lt;&#x2F;tr&gt;
+&lt;tr&gt;&lt;td&gt;Alemán&lt;&#x2F;td&gt;&lt;td&gt;Elberfelder&lt;&#x2F;td&gt;&lt;td&gt;1905&lt;&#x2F;td&gt;&lt;td&gt;Dominio público&lt;&#x2F;td&gt;&lt;&#x2F;tr&gt;
+&lt;tr&gt;&lt;td&gt;Español&lt;&#x2F;td&gt;&lt;td&gt;Reina-Valera&lt;&#x2F;td&gt;&lt;td&gt;1909&lt;&#x2F;td&gt;&lt;td&gt;Dominio público&lt;&#x2F;td&gt;&lt;&#x2F;tr&gt;
+&lt;tr&gt;&lt;td&gt;Francés&lt;&#x2F;td&gt;&lt;td&gt;Crampon (Dhorme DP para Job y Samuel donde existe)&lt;&#x2F;td&gt;&lt;td&gt;1923&lt;&#x2F;td&gt;&lt;td&gt;Dominio público&lt;&#x2F;td&gt;&lt;&#x2F;tr&gt;
+&lt;tr&gt;&lt;td&gt;Japonés&lt;&#x2F;td&gt;&lt;td&gt;口語訳 (Kougo-yaku)&lt;&#x2F;td&gt;&lt;td&gt;1955&lt;&#x2F;td&gt;&lt;td&gt;Dominio público (derechos morales)&lt;&#x2F;td&gt;&lt;&#x2F;tr&gt;
+&lt;tr&gt;&lt;td&gt;Coreano&lt;&#x2F;td&gt;&lt;td&gt;Korean Revised Version (KRV)&lt;&#x2F;td&gt;&lt;td&gt;1961&lt;&#x2F;td&gt;&lt;td&gt;Dominio público&lt;&#x2F;td&gt;&lt;&#x2F;tr&gt;
+&lt;tr&gt;&lt;td&gt;Ruso&lt;&#x2F;td&gt;&lt;td&gt;Synodal&lt;&#x2F;td&gt;&lt;td&gt;1876&lt;&#x2F;td&gt;&lt;td&gt;Dominio público&lt;&#x2F;td&gt;&lt;&#x2F;tr&gt;
+&lt;tr&gt;&lt;td&gt;Chino simplificado&lt;&#x2F;td&gt;&lt;td&gt;Chinese Union Version (和合本)&lt;&#x2F;td&gt;&lt;td&gt;1919&lt;&#x2F;td&gt;&lt;td&gt;Dominio público&lt;&#x2F;td&gt;&lt;&#x2F;tr&gt;
+&lt;tr&gt;&lt;td&gt;Chino tradicional&lt;&#x2F;td&gt;&lt;td&gt;Chinese Union Version (和合本)&lt;&#x2F;td&gt;&lt;td&gt;1919&lt;&#x2F;td&gt;&lt;td&gt;Dominio público&lt;&#x2F;td&gt;&lt;&#x2F;tr&gt;
+&lt;&#x2F;tbody&gt;&lt;&#x2F;table&gt;
+&lt;p&gt;La procedencia por libro — nombre de la traducción, año, licencia, URL de origen, fecha de recuperación — se registra en &lt;code&gt;data-library&#x2F;catalog.json&lt;&#x2F;code&gt; para cada entrada, bajo el bloque &lt;code&gt;translations.{lang}&lt;&#x2F;code&gt; de cada libro.&lt;&#x2F;p&gt;
+&lt;h2 id=&quot;por-que-traducciones-literales&quot;&gt;Por qué traducciones literales&lt;&#x2F;h2&gt;
+&lt;p&gt;Cada edición importada en la lista anterior es, por su teoría de traducción, una traducción de &lt;strong&gt;equivalencia formal&lt;&#x2F;strong&gt; — a veces llamada de forma laxa &quot;literal&quot;. Las ediciones elegidas se sitúan en el lado &lt;em&gt;concordante&lt;&#x2F;em&gt; de sus respectivas tradiciones: Elberfelder es famosa por ser la Biblia alemana más palabra por palabra de la era moderna; Reina-Valera, Crampon, la Synodal, la KRV y la Chinese Union Version pertenecen todas al mismo linaje de equivalencia formal en sus propias lenguas. 口語訳 es la modernización en japonés coloquial de la clásica 文語訳 — todavía de equivalencia formal según los estándares de la tradición, deliberadamente posicionada frente a la 新共同訳 de equivalencia dinámica (1987), que más tarde se convirtió en el estándar católico-protestante japonés.&lt;&#x2F;p&gt;
+&lt;p&gt;La elección es deliberada, no nostálgica. Una traducción de equivalencia formal intenta preservar la &lt;strong&gt;forma léxica y sintáctica&lt;&#x2F;strong&gt; de la fuente — una palabra hebrea, una palabra de destino, donde las lenguas lo permitan; una cláusula hebrea, una cláusula de destino; la misma palabra en el mismo versículo fuente recibe la misma traducción a lo largo del corpus donde es posible. Una traducción de equivalencia dinámica hace lo contrario — intenta preservar el &lt;em&gt;efecto&lt;&#x2F;em&gt; en el lector, lo que significa que rutinariamente colapsa, parafrasea y suaviza las elecciones de la fuente en una lengua de destino idiomática.&lt;&#x2F;p&gt;
+&lt;p&gt;Para una biblioteca cuya única razón para alojar ocho traducciones es comparativa — &lt;em&gt;¿qué hace cada tradición con las perícopas del nombre divino, con Génesis 1:1, con el Salmo 82, con el plural Elohim?&lt;&#x2F;em&gt; — la equivalencia formal es el único registro que preserva la pregunta. Una vez que una traducción ha decidido verter &lt;code&gt;יהוה&lt;&#x2F;code&gt; como &quot;the LORD&quot; porque se lee mejor en inglés, o como 主 porque se lee mejor en japonés, la elección léxica que el canon quiere rastrear ya se ha perdido. El lector ve la pulcritud del traductor, no la lectura del traductor.&lt;&#x2F;p&gt;
+&lt;p&gt;El mismo razonamiento se aplica al propio referente Elohim. Elberfelder mantiene visibles &quot;Jehova&quot; &#x2F; &quot;Elohim&quot; donde el hebreo los distingue; Crampon escribe &quot;Yahweh&quot; y &quot;Élohim&quot; con la misma disciplina; la Synodal preserva los pares &quot;Господь&quot; &#x2F; &quot;Бог&quot; que retornan a la fuente subyacente. Una traducción de equivalencia dinámica daría al lector, en el mismo versículo, un único &lt;em&gt;Dios&lt;&#x2F;em&gt; indiferenciado — más fácil de leer, pero el argumento comparativo ya no tiene nada con que comparar.&lt;&#x2F;p&gt;
+&lt;h2 id=&quot;por-que-esta-es-la-forma-correcta-para-la-biblioteca&quot;&gt;Por qué esta es la forma correcta para la biblioteca&lt;&#x2F;h2&gt;
+&lt;p&gt;La biblioteca siempre ha tratado la Biblia hebrea como el texto fuente operativo que el proyecto lee, no como una traducción de destino. El ASV inglés es la superficie de lectura para la audiencia principal del proyecto; el hebreo subyacente es con lo que el canon realmente se compromete. Lo que faltaba, hasta hoy, era una forma limpia de que los lectores no anglófonos consultaran la biblioteca sin convertir el inglés en una escala intermedia obligatoria.&lt;&#x2F;p&gt;
+&lt;p&gt;La elección de edición por idioma sigue la disciplina del corpus en cuanto a la jerarquización de fuentes. Cada traducción importada es una edición crítica o cuasi-crítica del siglo XIX o XX — lo bastante antigua para estar en dominio público, lo bastante reciente para ser filológicamente seria. Cuando la lectura preferida del canon requeriría una edición moderna aún protegida por derechos de autor, el proyecto utiliza el subconjunto de dominio público de esa edición o señala la laguna de forma explícita. El caso más claro es el francés: la Biblia de la Pléiade de Dhorme — la edición con la que el propio Raël trabajó durante el contacto de 1973 — permanece bajo derechos de autor franceses hasta aproximadamente 2071. La biblioteca utiliza Crampon 1923 como línea base, con el Job (1929) y el Samuel (1910) anteriores de dominio público de Dhorme sustituyendo a Crampon en esos tres libros donde existen. El razonamiento completo para cada idioma — por qué Elberfelder en lugar de Luther, por qué Crampon en lugar de Darby, por qué 口語訳 en lugar de 新共同訳, por qué la KRV de 1961 en lugar de la estricta de 1938 — vive en el sitio de documentación en &lt;a href=&quot;https:&#x2F;&#x2F;docs.wheelofheaven.world&#x2F;contributing&#x2F;content&#x2F;imported-translations&#x2F;&quot;&gt;docs.wheelofheaven.world&#x2F;contributing&#x2F;content&#x2F;imported-translations&lt;&#x2F;a&gt;.&lt;&#x2F;p&gt;
+&lt;p&gt;El corpus lee la Biblia hebrea como un texto en capas cuyo referente Elohim es operativo en la lengua original. Las traducciones modernas son movimientos interpretativos posteriores, y qué movimiento interpretativo realiza una traducción es visible en versículos específicos — Génesis 1:1, Salmo 82, Éxodo 3:14, las perícopas del nombre divino a lo largo del texto. Alojar ocho traducciones importadas codo a codo con el ASV vuelve ordinaria esa visibilidad: el lector que quiera comparar qué hacen Elberfelder, Crampon, la Synodal y la CUV con un versículo controvertido puede ahora hacerlo sin salir de la página de la biblioteca.&lt;&#x2F;p&gt;
+&lt;h2 id=&quot;donde-se-inscribe-esto-en-el-plan-mas-amplio&quot;&gt;Dónde se inscribe esto en el plan más amplio&lt;&#x2F;h2&gt;
+&lt;p&gt;El pipeline de traducciones importadas es la mitad del mandato de la biblioteca. La otra mitad es la &lt;a href=&quot;https:&#x2F;&#x2F;docs.wheelofheaven.world&#x2F;contributing&#x2F;content&#x2F;source-text-translation&#x2F;&quot;&gt;Traducción de Wheel of Heaven&lt;&#x2F;a&gt;, que avanza actualmente por Génesis capítulo a capítulo — una nueva lectura inglesa producida desde el hebreo bajo la propia disciplina de glosario del proyecto, con un pipeline Traductor-Editor-Revisor detrás de cada capítulo. Las traducciones importadas cubren la &lt;strong&gt;amplitud&lt;&#x2F;strong&gt; (cada libro, ocho idiomas, ediciones de dominio público, entregado hoy); la traducción WoH aporta la &lt;strong&gt;profundidad&lt;&#x2F;strong&gt; (una tradición, un libro a la vez, filológicamente defendida, todavía en curso).&lt;&#x2F;p&gt;
+&lt;p&gt;Ambos pipelines alimentan el mismo campo &lt;code&gt;paragraphs[].i18n[lang]&lt;&#x2F;code&gt; en cada archivo de capítulo, lo que significa que la plantilla de la biblioteca los renderiza a través de la misma interfaz. Cuando la traducción WoH de Génesis alcance su primera versión estable, se situará junto a estas lecturas importadas como la propia contribución del proyecto al panorama comparativo que ha venido construyendo.&lt;&#x2F;p&gt;
+&lt;h2 id=&quot;donde-verlo&quot;&gt;Dónde verlo&lt;&#x2F;h2&gt;
+&lt;ul&gt;
+&lt;li&gt;Índice de la biblioteca: &lt;a href=&quot;&#x2F;library&#x2F;&quot;&gt;&#x2F;library&#x2F;&lt;&#x2F;a&gt; — cada libro de la Biblia hebrea muestra ahora nueve idiomas en su matriz de disponibilidad&lt;&#x2F;li&gt;
+&lt;li&gt;Un capítulo de muestra: &lt;a href=&quot;&#x2F;library&#x2F;genesis&#x2F;&quot;&gt;&#x2F;library&#x2F;genesis&#x2F;&lt;&#x2F;a&gt; (o en tu idioma de lectura: &lt;code&gt;&#x2F;de&#x2F;library&#x2F;genesis&#x2F;&lt;&#x2F;code&gt;, &lt;code&gt;&#x2F;ja&#x2F;library&#x2F;genesis&#x2F;&lt;&#x2F;code&gt;, …)&lt;&#x2F;li&gt;
+&lt;li&gt;Catálogo y procedencia por libro: &lt;a href=&quot;https:&#x2F;&#x2F;github.com&#x2F;wheelofheaven&#x2F;data-library&#x2F;blob&#x2F;main&#x2F;catalog.json&quot;&gt;&lt;code&gt;data-library&#x2F;catalog.json&lt;&#x2F;code&gt; en GitHub&lt;&#x2F;a&gt;&lt;&#x2F;li&gt;
+&lt;li&gt;Metodología y razonamiento del programa de fuentes por idioma: &lt;a href=&quot;https:&#x2F;&#x2F;docs.wheelofheaven.world&#x2F;contributing&#x2F;content&#x2F;imported-translations&#x2F;&quot;&gt;docs.wheelofheaven.world&#x2F;contributing&#x2F;content&#x2F;imported-translations&lt;&#x2F;a&gt;&lt;&#x2F;li&gt;
+&lt;&#x2F;ul&gt;
+&lt;h2 id=&quot;pendientes-conocidos&quot;&gt;Pendientes conocidos&lt;&#x2F;h2&gt;
+&lt;p&gt;Tres. Los marcadores de posición franceses de Dhorme para 1 Samuel, 2 Samuel y Job todavía esperan un pase OCR limpio — las exploraciones djvu subyacentes en Internet Archive intercalan el aparato hebreo y el comentario de forma demasiado agresiva para extraerlos de modo programático. El archivo del capítulo de Abdías presenta una laguna de andamiaje (solo uno de los veintiún versículos está dividido a nivel de párrafo) que el catálogo informa actualmente, de manera errónea, como cobertura completa. Y la fuente de referencia alemana de Elberfelder para 1 Crónicas (bibel-online.net) tiene una particularidad conocida de contenido duplicado en los capítulos 13, 17, 18, 22 y 28 que el catálogo recoge en &lt;code&gt;_meta.notes&lt;&#x2F;code&gt; pero que el pipeline de fusión aún no ha filtrado aguas abajo. Ninguno de estos puntos bloquea la legibilidad del texto importado; los tres están registrados para el próximo pase.&lt;&#x2F;p&gt;
+&lt;hr &#x2F;&gt;
+&lt;p&gt;&lt;em&gt;— Archivado el 7 de junio de 2026, mesa editorial de Wheel of Heaven.&lt;&#x2F;em&gt;&lt;&#x2F;p&gt;
 </description>
       </item>
       <item>
@@ -64,6 +156,52 @@ Wheel of Heaven Translation Program pipeline. The methodology is documented at
 </description>
       </item>
       <item>
+          <title>Bibliothèque : la Bible hébraïque désormais lisible en neuf langues</title>
+          <pubDate>Sun, 07 Jun 2026 00:00:00 +0000</pubDate>
+          <author>Unknown</author>
+          <link>https://www.wheelofheaven.world/fr/news/library-hebrew-bible-nine-languages/</link>
+          <guid>https://www.wheelofheaven.world/fr/news/library-hebrew-bible-nine-languages/</guid>
+          <description xml:base="https://www.wheelofheaven.world/fr/news/library-hebrew-bible-nine-languages/">&lt;h2 id=&quot;ce-qui-a-ete-livre&quot;&gt;Ce qui a été livré&lt;&#x2F;h2&gt;
+&lt;p&gt;Au 7 juin 2026, la bibliothèque de la Roue du Ciel héberge l&#x27;intégralité de la Bible hébraïque — de la Genèse à Sophonie, soit trente-six livres — en neuf langues. Chaque chapitre affiche la base de référence anglaise ASV 1901 aux côtés d&#x27;éditions importées du domaine public en allemand, espagnol, français, japonais, coréen, russe, chinois simplifié et chinois traditionnel. Les lecteurs qui consultent la bibliothèque dans l&#x27;une quelconque des neuf langues du site voient désormais le texte dans leur langue de lecture sans avoir à passer par l&#x27;anglais.&lt;&#x2F;p&gt;
+&lt;p&gt;Les éditions importées sont nommées, datées et placées sous une licence ouverte. Le catalogue indique également la couverture par langue : lorsque les divergences de versification entre les traditions massorétique, de la Vulgate ou synodale laissent un verset non aligné, l&#x27;ASV anglaise demeure comme solution de repli.&lt;&#x2F;p&gt;
+&lt;table&gt;&lt;thead&gt;&lt;tr&gt;&lt;th&gt;Langue&lt;&#x2F;th&gt;&lt;th&gt;Édition&lt;&#x2F;th&gt;&lt;th&gt;Année&lt;&#x2F;th&gt;&lt;th&gt;Licence&lt;&#x2F;th&gt;&lt;&#x2F;tr&gt;&lt;&#x2F;thead&gt;&lt;tbody&gt;
+&lt;tr&gt;&lt;td&gt;Anglais&lt;&#x2F;td&gt;&lt;td&gt;American Standard Version (ASV)&lt;&#x2F;td&gt;&lt;td&gt;1901&lt;&#x2F;td&gt;&lt;td&gt;Domaine public&lt;&#x2F;td&gt;&lt;&#x2F;tr&gt;
+&lt;tr&gt;&lt;td&gt;Allemand&lt;&#x2F;td&gt;&lt;td&gt;Elberfelder&lt;&#x2F;td&gt;&lt;td&gt;1905&lt;&#x2F;td&gt;&lt;td&gt;Domaine public&lt;&#x2F;td&gt;&lt;&#x2F;tr&gt;
+&lt;tr&gt;&lt;td&gt;Espagnol&lt;&#x2F;td&gt;&lt;td&gt;Reina-Valera&lt;&#x2F;td&gt;&lt;td&gt;1909&lt;&#x2F;td&gt;&lt;td&gt;Domaine public&lt;&#x2F;td&gt;&lt;&#x2F;tr&gt;
+&lt;tr&gt;&lt;td&gt;Français&lt;&#x2F;td&gt;&lt;td&gt;Crampon (Dhorme du domaine public pour Job et Samuel lorsque disponible)&lt;&#x2F;td&gt;&lt;td&gt;1923&lt;&#x2F;td&gt;&lt;td&gt;Domaine public&lt;&#x2F;td&gt;&lt;&#x2F;tr&gt;
+&lt;tr&gt;&lt;td&gt;Japonais&lt;&#x2F;td&gt;&lt;td&gt;口語訳 (Kougo-yaku)&lt;&#x2F;td&gt;&lt;td&gt;1955&lt;&#x2F;td&gt;&lt;td&gt;Domaine public (droits moraux)&lt;&#x2F;td&gt;&lt;&#x2F;tr&gt;
+&lt;tr&gt;&lt;td&gt;Coréen&lt;&#x2F;td&gt;&lt;td&gt;Korean Revised Version (KRV)&lt;&#x2F;td&gt;&lt;td&gt;1961&lt;&#x2F;td&gt;&lt;td&gt;Domaine public&lt;&#x2F;td&gt;&lt;&#x2F;tr&gt;
+&lt;tr&gt;&lt;td&gt;Russe&lt;&#x2F;td&gt;&lt;td&gt;Synodal&lt;&#x2F;td&gt;&lt;td&gt;1876&lt;&#x2F;td&gt;&lt;td&gt;Domaine public&lt;&#x2F;td&gt;&lt;&#x2F;tr&gt;
+&lt;tr&gt;&lt;td&gt;Chinois simplifié&lt;&#x2F;td&gt;&lt;td&gt;Chinese Union Version (和合本)&lt;&#x2F;td&gt;&lt;td&gt;1919&lt;&#x2F;td&gt;&lt;td&gt;Domaine public&lt;&#x2F;td&gt;&lt;&#x2F;tr&gt;
+&lt;tr&gt;&lt;td&gt;Chinois traditionnel&lt;&#x2F;td&gt;&lt;td&gt;Chinese Union Version (和合本)&lt;&#x2F;td&gt;&lt;td&gt;1919&lt;&#x2F;td&gt;&lt;td&gt;Domaine public&lt;&#x2F;td&gt;&lt;&#x2F;tr&gt;
+&lt;&#x2F;tbody&gt;&lt;&#x2F;table&gt;
+&lt;p&gt;La provenance par livre — nom de la traduction, année, licence, URL de la source, date de récupération — est consignée dans &lt;code&gt;data-library&#x2F;catalog.json&lt;&#x2F;code&gt; pour chaque entrée, sous le bloc &lt;code&gt;translations.{lang}&lt;&#x2F;code&gt; de chaque livre.&lt;&#x2F;p&gt;
+&lt;h2 id=&quot;pourquoi-des-traductions-litterales&quot;&gt;Pourquoi des traductions littérales&lt;&#x2F;h2&gt;
+&lt;p&gt;Chaque édition importée ci-dessus est, par sa théorie de la traduction, une traduction d&#x27;&lt;strong&gt;équivalence formelle&lt;&#x2F;strong&gt; — parfois appelée familièrement « littérale ». Les éditions retenues se rangent du côté &lt;em&gt;concordant&lt;&#x2F;em&gt; de leur tradition respective : l&#x27;Elberfelder est notoirement la Bible allemande la plus mot-à-mot de l&#x27;époque moderne ; la Reina-Valera, Crampon, la Synodale, la KRV et la Chinese Union Version appartiennent toutes à la même lignée d&#x27;équivalence formelle dans leur propre langue. La 口語訳 est la modernisation en japonais courant de la 文語訳 classique — encore d&#x27;équivalence formelle selon les standards de la tradition, délibérément positionnée contre la 新共同訳 (1987), d&#x27;équivalence dynamique, qui devint plus tard la version standard catholico-protestante japonaise.&lt;&#x2F;p&gt;
+&lt;p&gt;Ce choix est délibéré, non nostalgique. Une traduction d&#x27;équivalence formelle cherche à préserver la &lt;strong&gt;forme lexicale et syntaxique&lt;&#x2F;strong&gt; de la source — un mot hébreu, un mot cible, lorsque les langues le permettent ; une proposition hébraïque, une proposition cible ; un même mot dans un même verset source reçoit la même traduction à travers le corpus lorsque cela est possible. Une traduction d&#x27;équivalence dynamique fait l&#x27;inverse — elle cherche à préserver l&#x27;&lt;em&gt;effet&lt;&#x2F;em&gt; sur le lecteur, ce qui implique qu&#x27;elle condense, paraphrase et lisse régulièrement les choix de la source en une langue cible idiomatique.&lt;&#x2F;p&gt;
+&lt;p&gt;Pour une bibliothèque dont la raison d&#x27;être consiste à héberger huit traductions à des fins comparatives — &lt;em&gt;que fait chaque tradition des péricopes du nom divin, de Genèse 1,1, du Psaume 82, du pluriel Elohim ?&lt;&#x2F;em&gt; — l&#x27;équivalence formelle est le seul registre qui préserve la question. Dès qu&#x27;une traduction a décidé de rendre &lt;code&gt;יהוה&lt;&#x2F;code&gt; par « le SEIGNEUR » parce que cela se lit mieux en anglais, ou par 主 parce que cela se lit mieux en japonais, le choix lexical que le canon cherche à suivre a déjà disparu. Le lecteur voit le toilettage du traducteur, non sa lecture.&lt;&#x2F;p&gt;
+&lt;p&gt;Le même raisonnement vaut pour le référent Elohim lui-même. L&#x27;Elberfelder garde « Jehova » &#x2F; « Elohim » apparents là où l&#x27;hébreu les distingue ; Crampon écrit « Yahvé » et « Élohim » avec la même rigueur ; la Synodale préserve les paires « Господь » &#x2F; « Бог » qui renvoient au texte source. Une traduction d&#x27;équivalence dynamique donnerait, dans le même verset, un &lt;em&gt;Dieu&lt;&#x2F;em&gt; indifférencié — plus facile à lire, mais l&#x27;argument comparatif n&#x27;aurait plus rien à comparer.&lt;&#x2F;p&gt;
+&lt;h2 id=&quot;pourquoi-c-est-la-bonne-forme-pour-la-bibliotheque&quot;&gt;Pourquoi c&#x27;est la bonne forme pour la bibliothèque&lt;&#x2F;h2&gt;
+&lt;p&gt;La bibliothèque a toujours traité la Bible hébraïque comme le texte-source opérationnel que le projet lit, et non comme une traduction de destination. L&#x27;ASV anglaise est la surface de lecture pour le public principal du projet ; l&#x27;hébreu sous-jacent est ce avec quoi le canon dialogue réellement. Ce qui manquait, jusqu&#x27;à aujourd&#x27;hui, c&#x27;était un moyen propre pour les lecteurs non anglophones de consulter la bibliothèque sans faire de l&#x27;anglais une étape intermédiaire obligatoire.&lt;&#x2F;p&gt;
+&lt;p&gt;Le choix de l&#x27;édition par langue suit la discipline de hiérarchie des sources du canon. Chaque traduction importée est une édition critique ou quasi critique du XIXᵉ ou du XXᵉ siècle — assez ancienne pour appartenir au domaine public, assez récente pour être philologiquement sérieuse. Là où la lecture privilégiée par le canon exigerait une édition moderne encore sous droits d&#x27;auteur, le projet utilise soit le sous-ensemble du domaine public de cette édition, soit signale explicitement la lacune. Le cas le plus clair est celui du français : la Bible de la Pléiade traduite par Dhorme — l&#x27;édition à partir de laquelle Raël lui-même a travaillé lors du contact de 1973 — demeure sous droits d&#x27;auteur français jusque vers 2071. La bibliothèque utilise Crampon 1923 comme base de référence, le Job (1929) et le Samuel (1910) de Dhorme, antérieurs et tombés dans le domaine public, remplaçant Crampon pour ces trois livres lorsqu&#x27;ils existent. Le raisonnement complet pour chaque langue — pourquoi Elberfelder plutôt que Luther, pourquoi Crampon plutôt que Darby, pourquoi 口語訳 plutôt que 新共同訳, pourquoi la KRV de 1961 plutôt que la version stricte de 1938 — figure sur le site de documentation à &lt;a href=&quot;https:&#x2F;&#x2F;docs.wheelofheaven.world&#x2F;contributing&#x2F;content&#x2F;imported-translations&#x2F;&quot;&gt;docs.wheelofheaven.world&#x2F;contributing&#x2F;content&#x2F;imported-translations&lt;&#x2F;a&gt;.&lt;&#x2F;p&gt;
+&lt;p&gt;Le corpus lit la Bible hébraïque comme un texte en couches dont le référent Elohim est opératoire dans la langue originale. Les traductions modernes sont des gestes interprétatifs en aval, et le geste interprétatif que pose une traduction est visible à des versets précis — Genèse 1,1, Psaume 82, Exode 3,14, les péricopes du nom divin disséminées dans tout le corpus. Héberger huit traductions importées côte à côte avec l&#x27;ASV rend cette visibilité ordinaire : le lecteur qui souhaite comparer ce que l&#x27;Elberfelder, Crampon, la Synodale et la CUV font d&#x27;un verset contesté peut désormais le faire sans quitter la page de la bibliothèque.&lt;&#x2F;p&gt;
+&lt;h2 id=&quot;ou-cela-s-inscrit-dans-le-plan-plus-large&quot;&gt;Où cela s&#x27;inscrit dans le plan plus large&lt;&#x2F;h2&gt;
+&lt;p&gt;Le pipeline des traductions importées constitue une moitié du mandat de la bibliothèque. L&#x27;autre moitié est la &lt;a href=&quot;https:&#x2F;&#x2F;docs.wheelofheaven.world&#x2F;contributing&#x2F;content&#x2F;source-text-translation&#x2F;&quot;&gt;Traduction de la Roue du Ciel&lt;&#x2F;a&gt;, qui progresse actuellement chapitre par chapitre à travers la Genèse — une nouvelle lecture anglaise produite à partir de l&#x27;hébreu selon la discipline glossaire propre au projet, avec un pipeline Traducteur-Éditeur-Réviseur derrière chaque chapitre. Les traductions importées couvrent l&#x27;&lt;strong&gt;étendue&lt;&#x2F;strong&gt; (chaque livre, huit langues, éditions du domaine public, livrées aujourd&#x27;hui) ; la Traduction de la Roue du Ciel apporte la &lt;strong&gt;profondeur&lt;&#x2F;strong&gt; (une tradition, un livre à la fois, philologiquement défendu, encore en cours).&lt;&#x2F;p&gt;
+&lt;p&gt;Les deux pipelines alimentent le même champ &lt;code&gt;paragraphs[].i18n[lang]&lt;&#x2F;code&gt; sur chaque fichier de chapitre, ce qui signifie que le gabarit de la bibliothèque les affiche via la même interface. Lorsque la Traduction de la Roue du Ciel de la Genèse atteindra sa première version stable, elle prendra place aux côtés de ces lectures importées comme la contribution propre du projet au paysage comparatif qu&#x27;il a patiemment construit.&lt;&#x2F;p&gt;
+&lt;h2 id=&quot;ou-consulter-le-resultat&quot;&gt;Où consulter le résultat&lt;&#x2F;h2&gt;
+&lt;ul&gt;
+&lt;li&gt;Index de la bibliothèque : &lt;a href=&quot;&#x2F;library&#x2F;&quot;&gt;&#x2F;library&#x2F;&lt;&#x2F;a&gt; — chaque livre de la Bible hébraïque liste désormais neuf langues dans sa matrice de disponibilité&lt;&#x2F;li&gt;
+&lt;li&gt;Un chapitre exemple : &lt;a href=&quot;&#x2F;library&#x2F;genesis&#x2F;&quot;&gt;&#x2F;library&#x2F;genesis&#x2F;&lt;&#x2F;a&gt; (ou dans votre langue de lecture : &lt;code&gt;&#x2F;de&#x2F;library&#x2F;genesis&#x2F;&lt;&#x2F;code&gt;, &lt;code&gt;&#x2F;ja&#x2F;library&#x2F;genesis&#x2F;&lt;&#x2F;code&gt;, …)&lt;&#x2F;li&gt;
+&lt;li&gt;Catalogue et provenance par livre : &lt;a href=&quot;https:&#x2F;&#x2F;github.com&#x2F;wheelofheaven&#x2F;data-library&#x2F;blob&#x2F;main&#x2F;catalog.json&quot;&gt;&lt;code&gt;data-library&#x2F;catalog.json&lt;&#x2F;code&gt; sur GitHub&lt;&#x2F;a&gt;&lt;&#x2F;li&gt;
+&lt;li&gt;Méthodologie et raisonnement du programme des sources par langue : &lt;a href=&quot;https:&#x2F;&#x2F;docs.wheelofheaven.world&#x2F;contributing&#x2F;content&#x2F;imported-translations&#x2F;&quot;&gt;docs.wheelofheaven.world&#x2F;contributing&#x2F;content&#x2F;imported-translations&lt;&#x2F;a&gt;&lt;&#x2F;li&gt;
+&lt;&#x2F;ul&gt;
+&lt;h2 id=&quot;suites-connues&quot;&gt;Suites connues&lt;&#x2F;h2&gt;
+&lt;p&gt;Trois. Les placeholders français Dhorme pour 1-Samuel, 2-Samuel et Job attendent encore une passe OCR propre — les scans djvu sous-jacents sur Internet Archive entrelacent l&#x27;apparat critique hébreu et le commentaire de manière trop agressive pour permettre une extraction programmatique. Le fichier de chapitre d&#x27;Abdias présente une lacune de structure (un seul verset sur vingt-et-un est découpé au niveau du paragraphe) que le catalogue indique à tort comme une couverture complète. Et la source de référence allemande Elberfelder pour 1-Chroniques (bibel-online.net) présente une particularité connue de contenu dupliqué dans les chapitres 13, 17, 18, 22 et 28 que le catalogue signale dans &lt;code&gt;_meta.notes&lt;&#x2F;code&gt; mais que le pipeline de fusion n&#x27;a pas encore filtrée en aval. Aucun de ces points ne bloque la lisibilité du texte importé ; tous trois sont consignés pour la prochaine passe.&lt;&#x2F;p&gt;
+&lt;hr &#x2F;&gt;
+&lt;p&gt;&lt;em&gt;— Déposé le 7 juin 2026, rédaction de la Roue du Ciel.&lt;&#x2F;em&gt;&lt;&#x2F;p&gt;
+</description>
+      </item>
+      <item>
           <title>בְּרֵאשִׁית</title>
           <pubDate>Sun, 07 Jun 2026 00:00:00 +0000</pubDate>
           <author>Unknown</author>
@@ -77,6 +215,52 @@ Wheel of Heaven Translation Program pipeline. The methodology is documented at
 &lt;p&gt;The English translation was drafted by Claude Opus 4.7 and edited through the
 Wheel of Heaven Translation Program pipeline. The methodology is documented at
 &lt;a href=&quot;https:&#x2F;&#x2F;docs.wheelofheaven.world&#x2F;contributing&#x2F;content&#x2F;source-text-translation&#x2F;&quot;&gt;Source-Text Translation&lt;&#x2F;a&gt;.&lt;&#x2F;p&gt;
+</description>
+      </item>
+      <item>
+          <title>ספרייה: התנ&quot;ך נקרא כעת בתשע שפות</title>
+          <pubDate>Sun, 07 Jun 2026 00:00:00 +0000</pubDate>
+          <author>Unknown</author>
+          <link>https://www.wheelofheaven.world/he/news/library-hebrew-bible-nine-languages/</link>
+          <guid>https://www.wheelofheaven.world/he/news/library-hebrew-bible-nine-languages/</guid>
+          <description xml:base="https://www.wheelofheaven.world/he/news/library-hebrew-bible-nine-languages/">&lt;h2 id=&quot;mh-hvshq&quot;&gt;מה הושק&lt;&#x2F;h2&gt;
+&lt;p&gt;החל מ־7 ביוני 2026, ספריית גלגל השמיים מארחת את התנ&quot;ך המלא — מבראשית ועד צפניה, שלושים ושישה ספרים — בתשע שפות. כל פרק מציג את קו הבסיס של ASV האנגלי משנת 1901 לצד מהדורות מיובאות בנחלת הכלל בגרמנית, ספרדית, צרפתית, יפנית, קוריאנית, רוסית, סינית מפושטת וסינית מסורתית. קוראים המעיינים בספרייה בכל אחת מתשע שפות האתר רואים כעת את הטקסט בשפת הקריאה שלהם בלי שיצטרכו לעבור דרך אנגלית.&lt;&#x2F;p&gt;
+&lt;p&gt;המהדורות המיובאות שמוּות, מתוארכות ומורשות באופן פתוח. הקטלוג מדווח גם על הכיסוי לכל שפה: היכן שהבדלי חלוקה לפסוקים בין המסורת המסורתית לוולגטה או למסורת הסינודלית משאירים פסוק לא מיושר, ASV האנגלי נשאר כברירת מחדל.&lt;&#x2F;p&gt;
+&lt;table&gt;&lt;thead&gt;&lt;tr&gt;&lt;th&gt;שפה&lt;&#x2F;th&gt;&lt;th&gt;מהדורה&lt;&#x2F;th&gt;&lt;th&gt;שנה&lt;&#x2F;th&gt;&lt;th&gt;רישיון&lt;&#x2F;th&gt;&lt;&#x2F;tr&gt;&lt;&#x2F;thead&gt;&lt;tbody&gt;
+&lt;tr&gt;&lt;td&gt;אנגלית&lt;&#x2F;td&gt;&lt;td&gt;American Standard Version (ASV)&lt;&#x2F;td&gt;&lt;td&gt;1901&lt;&#x2F;td&gt;&lt;td&gt;נחלת הכלל&lt;&#x2F;td&gt;&lt;&#x2F;tr&gt;
+&lt;tr&gt;&lt;td&gt;גרמנית&lt;&#x2F;td&gt;&lt;td&gt;Elberfelder&lt;&#x2F;td&gt;&lt;td&gt;1905&lt;&#x2F;td&gt;&lt;td&gt;נחלת הכלל&lt;&#x2F;td&gt;&lt;&#x2F;tr&gt;
+&lt;tr&gt;&lt;td&gt;ספרדית&lt;&#x2F;td&gt;&lt;td&gt;Reina-Valera&lt;&#x2F;td&gt;&lt;td&gt;1909&lt;&#x2F;td&gt;&lt;td&gt;נחלת הכלל&lt;&#x2F;td&gt;&lt;&#x2F;tr&gt;
+&lt;tr&gt;&lt;td&gt;צרפתית&lt;&#x2F;td&gt;&lt;td&gt;Crampon (Dhorme בנחלת הכלל לאיוב ולשמואל היכן שקיים)&lt;&#x2F;td&gt;&lt;td&gt;1923&lt;&#x2F;td&gt;&lt;td&gt;נחלת הכלל&lt;&#x2F;td&gt;&lt;&#x2F;tr&gt;
+&lt;tr&gt;&lt;td&gt;יפנית&lt;&#x2F;td&gt;&lt;td&gt;口語訳 (Kougo-yaku)&lt;&#x2F;td&gt;&lt;td&gt;1955&lt;&#x2F;td&gt;&lt;td&gt;נחלת הכלל (זכויות מוסריות)&lt;&#x2F;td&gt;&lt;&#x2F;tr&gt;
+&lt;tr&gt;&lt;td&gt;קוריאנית&lt;&#x2F;td&gt;&lt;td&gt;Korean Revised Version (KRV)&lt;&#x2F;td&gt;&lt;td&gt;1961&lt;&#x2F;td&gt;&lt;td&gt;נחלת הכלל&lt;&#x2F;td&gt;&lt;&#x2F;tr&gt;
+&lt;tr&gt;&lt;td&gt;רוסית&lt;&#x2F;td&gt;&lt;td&gt;Synodal&lt;&#x2F;td&gt;&lt;td&gt;1876&lt;&#x2F;td&gt;&lt;td&gt;נחלת הכלל&lt;&#x2F;td&gt;&lt;&#x2F;tr&gt;
+&lt;tr&gt;&lt;td&gt;סינית מפושטת&lt;&#x2F;td&gt;&lt;td&gt;Chinese Union Version (和合本)&lt;&#x2F;td&gt;&lt;td&gt;1919&lt;&#x2F;td&gt;&lt;td&gt;נחלת הכלל&lt;&#x2F;td&gt;&lt;&#x2F;tr&gt;
+&lt;tr&gt;&lt;td&gt;סינית מסורתית&lt;&#x2F;td&gt;&lt;td&gt;Chinese Union Version (和合本)&lt;&#x2F;td&gt;&lt;td&gt;1919&lt;&#x2F;td&gt;&lt;td&gt;נחלת הכלל&lt;&#x2F;td&gt;&lt;&#x2F;tr&gt;
+&lt;&#x2F;tbody&gt;&lt;&#x2F;table&gt;
+&lt;p&gt;מקור המידע לכל ספר — שם התרגום, שנה, רישיון, כתובת URL מקור, תאריך אחזור — נרשם ב־&lt;code&gt;data-library&#x2F;catalog.json&lt;&#x2F;code&gt; עבור כל ערך, תחת בלוק &lt;code&gt;translations.{lang}&lt;&#x2F;code&gt; של כל ספר.&lt;&#x2F;p&gt;
+&lt;h2 id=&quot;mdv-trgvmym-mylvlyym&quot;&gt;מדוע תרגומים מילוליים&lt;&#x2F;h2&gt;
+&lt;p&gt;כל מהדורה מיובאת לעיל היא, על פי תיאוריית התרגום שלה, תרגום ב&lt;strong&gt;שוויון פורמלי&lt;&#x2F;strong&gt; — לעתים מכונה בערך &quot;מילולי&quot;. המהדורות שנבחרו ניצבות בצד ה&lt;em&gt;קונקורדנטי&lt;&#x2F;em&gt; של מסורותיהן: Elberfelder ידועה כתנ&quot;ך הגרמני המילולי ביותר של העידן המודרני; Reina-Valera, Crampon, ה־Synodal, ה־KRV וה־Chinese Union Version שייכים כולם לאותו שושלת של שוויון פורמלי בשפותיהם. 口語訳 הוא המודרניזציה של היפנית המדוברת של ה־文語訳 הקלאסי — עדיין שוויון־פורמלי לפי אמות המידה של המסורת, ממוקם בכוונה תחילה מול ה־新共同訳 (1987) של שוויון דינמי שהפך מאוחר יותר לסטנדרט הקתולי־פרוטסטנטי היפני.&lt;&#x2F;p&gt;
+&lt;p&gt;הבחירה היא מכוונת, לא נוסטלגית. תרגום בשוויון פורמלי מנסה לשמר את &lt;strong&gt;הצורה הלקסיקלית והתחבירית&lt;&#x2F;strong&gt; של המקור — מילה עברית אחת, מילת יעד אחת, היכן שהשפות יאפשרו זאת; פסוקית עברית אחת, פסוקית יעד אחת; אותה מילה באותו פסוק מקור מקבלת את אותו תרגום בכל הקורפוס כשאפשר. תרגום בשוויון דינמי עושה את ההפך — הוא מנסה לשמר את ה&lt;em&gt;אפקט&lt;&#x2F;em&gt; על הקורא, מה שאומר שהוא באופן שגרתי מקפל, מנסח מחדש ומחליק את בחירות המקור לשפת יעד אידיומטית.&lt;&#x2F;p&gt;
+&lt;p&gt;עבור ספרייה שכל סיבת קיומה לארח שמונה תרגומים היא השוואתית — &lt;em&gt;מה כל מסורת עושה עם הקטעים של השם האלוהי, עם בראשית א:א, עם תהילים פ&quot;ב, עם הריבוי של אלוהים?&lt;&#x2F;em&gt; — שוויון פורמלי הוא המשלב היחיד המשמר את השאלה. ברגע שתרגום החליט לתרגם את &lt;code&gt;יהוה&lt;&#x2F;code&gt; כ&quot;the LORD&quot; כי זה נקרא טוב יותר באנגלית, או כ־主 כי זה נקרא טוב יותר ביפנית, הבחירה הלקסיקלית שהקנון רוצה לעקוב אחריה כבר נעלמה. הקורא רואה את הסידור של המתרגם, לא את הקריאה של המתרגם.&lt;&#x2F;p&gt;
+&lt;p&gt;אותו נימוק חל על המוסבר של אלוהים עצמו. Elberfelder שומר על &quot;Jehova&quot; &#x2F; &quot;Elohim&quot; גלויים היכן שהעברית מבחינה ביניהם; Crampon כותב &quot;Yahweh&quot; ו־&quot;Élohim&quot; באותה משמעת; ה־Synodal משמר זוגות &quot;Господь&quot; &#x2F; &quot;Бог&quot; המתמפים בחזרה למקור הבסיסי. תרגום בשוויון דינמי היה, באותו פסוק, נותן לקורא &lt;em&gt;אל&lt;&#x2F;em&gt; אחד בלתי־מובחן — קל יותר לקריאה, אך לטיעון ההשוואתי כבר אין למה להשוות.&lt;&#x2F;p&gt;
+&lt;h2 id=&quot;mdv-zvhy-htsvrh-hnkvnh-lspryyh&quot;&gt;מדוע זוהי הצורה הנכונה לספרייה&lt;&#x2F;h2&gt;
+&lt;p&gt;הספרייה תמיד התייחסה לתנ&quot;ך כטקסט המקור הפעיל שהפרויקט קורא, לא כתרגום יעד. ASV האנגלי הוא משטח הקריאה לקהל הראשי של הפרויקט; העברית הבסיסית היא מה שהקנון בעצם עוסק בו. מה שחסר, עד היום, היה דרך נקייה לקוראים שאינם דוברי אנגלית להיוועץ בספרייה מבלי להפוך את האנגלית לתחנת ביניים מחייבת.&lt;&#x2F;p&gt;
+&lt;p&gt;בחירת המהדורה לכל שפה עוקבת אחר משמעת דרגות־המקור של הקנון. כל תרגום מיובא הוא מהדורה ביקורתית או כמעט־ביקורתית מהמאה התשע־עשרה או העשרים — מספיק עתיק כדי להיות בנחלת הכלל, מספיק חדש כדי להיות פילולוגית רציני. היכן שהקריאה המועדפת על הקנון תדרוש מהדורה מודרנית שעדיין תחת זכויות יוצרים, הפרויקט משתמש בתת־הקבוצה של אותה מהדורה הנמצאת בנחלת הכלל או מציין את הפער במפורש. המקרה הברור ביותר הוא הצרפתית: תנ&quot;ך פלייאד של Dhorme — המהדורה שראל עצמו עבד ממנה במהלך המגע ב־1973 — נמצא תחת זכויות יוצרים צרפתיות עד בערך 2071. הספרייה משתמשת ב־Crampon 1923 כקו הבסיס, עם Dhorme המוקדם יותר בנחלת הכלל לאיוב (1929) ושמואל (1910) המחליפים את Crampon לשלושת הספרים הללו היכן שהם קיימים. ההיגיון המלא לכל שפה — מדוע Elberfelder ולא Luther, מדוע Crampon ולא Darby, מדוע 口語訳 ולא 新共同訳, מדוע KRV 1961 ולא 1938 המחמירה — חי באתר התיעוד בכתובת &lt;a href=&quot;https:&#x2F;&#x2F;docs.wheelofheaven.world&#x2F;contributing&#x2F;content&#x2F;imported-translations&#x2F;&quot;&gt;docs.wheelofheaven.world&#x2F;contributing&#x2F;content&#x2F;imported-translations&lt;&#x2F;a&gt;.&lt;&#x2F;p&gt;
+&lt;p&gt;הקורפוס קורא את התנ&quot;ך כטקסט שכבתי שהמוסבר של אלוהים בו פעיל בשפת המקור. תרגומים מודרניים הם מהלכים פרשניים נגזרים, ואיזה מהלך פרשני תרגום עושה גלוי בפסוקים ספציפיים — בראשית א:א, תהילים פ&quot;ב, שמות ג:יד, קטעי השם האלוהי לאורך הדרך. אירוח של שמונה תרגומים מיובאים זה לצד זה עם ASV הופך את הנראות הזו לרגילה: הקורא הרוצה להשוות מה Elberfelder, Crampon, ה־Synodal וה־CUV עושים עם פסוק שנוי במחלוקת יכול לעשות זאת כעת מבלי לעזוב את דף הספרייה.&lt;&#x2F;p&gt;
+&lt;h2 id=&quot;hykn-zh-mmvqm-btvknyt-hrkhbh-yvtr&quot;&gt;היכן זה ממוקם בתוכנית הרחבה יותר&lt;&#x2F;h2&gt;
+&lt;p&gt;צינור התרגומים המיובאים הוא חצי אחד מהמנדט של הספרייה. החצי השני הוא &lt;a href=&quot;https:&#x2F;&#x2F;docs.wheelofheaven.world&#x2F;contributing&#x2F;content&#x2F;source-text-translation&#x2F;&quot;&gt;תרגום גלגל השמיים&lt;&#x2F;a&gt;, המתקדם כעת בבראשית פרק אחר פרק — קריאה אנגלית חדשה המופקת מהעברית תחת משמעת המילון של הפרויקט עצמו, עם צינור מתרגם־עורך־סוקר מאחורי כל פרק. התרגומים המיובאים מכסים את ה&lt;strong&gt;רוחב&lt;&#x2F;strong&gt; (כל ספר, שמונה שפות, מהדורות נחלת הכלל, הושק היום); תרגום WoH מספק את ה&lt;strong&gt;עומק&lt;&#x2F;strong&gt; (מסורת אחת, ספר אחד בכל פעם, מוגן פילולוגית, עדיין בתהליך).&lt;&#x2F;p&gt;
+&lt;p&gt;שני הצינורות מזינים את אותו שדה &lt;code&gt;paragraphs[].i18n[lang]&lt;&#x2F;code&gt; בכל קובץ פרק, מה שאומר שתבנית הספרייה מציגה אותם דרך אותה ממשק. כאשר תרגום WoH של בראשית יגיע לגרסת היציבות הראשונה שלו, הוא יישב לצד הקריאות המיובאות הללו כתרומה של הפרויקט עצמו לנוף ההשוואתי שהוא בנה.&lt;&#x2F;p&gt;
+&lt;h2 id=&quot;hykn-lr-vt-z-t&quot;&gt;היכן לראות זאת&lt;&#x2F;h2&gt;
+&lt;ul&gt;
+&lt;li&gt;אינדקס הספרייה: &lt;a href=&quot;&#x2F;library&#x2F;&quot;&gt;&#x2F;library&#x2F;&lt;&#x2F;a&gt; — כל ספר תנ&quot;ך מציג כעת תשע שפות במטריצת הזמינות שלו&lt;&#x2F;li&gt;
+&lt;li&gt;פרק לדוגמה: &lt;a href=&quot;&#x2F;library&#x2F;genesis&#x2F;&quot;&gt;&#x2F;library&#x2F;genesis&#x2F;&lt;&#x2F;a&gt; (או בשפת הקריאה שלך: &lt;code&gt;&#x2F;de&#x2F;library&#x2F;genesis&#x2F;&lt;&#x2F;code&gt;, &lt;code&gt;&#x2F;ja&#x2F;library&#x2F;genesis&#x2F;&lt;&#x2F;code&gt;, …)&lt;&#x2F;li&gt;
+&lt;li&gt;קטלוג ומקור לכל ספר: &lt;a href=&quot;https:&#x2F;&#x2F;github.com&#x2F;wheelofheaven&#x2F;data-library&#x2F;blob&#x2F;main&#x2F;catalog.json&quot;&gt;&lt;code&gt;data-library&#x2F;catalog.json&lt;&#x2F;code&gt; ב־GitHub&lt;&#x2F;a&gt;&lt;&#x2F;li&gt;
+&lt;li&gt;מתודולוגיה והיגיון תוכנית המקורות לכל שפה: &lt;a href=&quot;https:&#x2F;&#x2F;docs.wheelofheaven.world&#x2F;contributing&#x2F;content&#x2F;imported-translations&#x2F;&quot;&gt;docs.wheelofheaven.world&#x2F;contributing&#x2F;content&#x2F;imported-translations&lt;&#x2F;a&gt;&lt;&#x2F;li&gt;
+&lt;&#x2F;ul&gt;
+&lt;h2 id=&quot;mshymvt-hmshk-ydv-vt&quot;&gt;משימות המשך ידועות&lt;&#x2F;h2&gt;
+&lt;p&gt;שלוש. הממלאי־מקום של Dhorme בצרפתית עבור שמואל א, שמואל ב, ואיוב עדיין ממתינים למעבר OCR נקי — סריקות ה־djvu הבסיסיות ב־Internet Archive שוזרות מכשירי עברית ופרשנות בצורה אגרסיבית מדי מכדי להוציא באופן תוכניתי. לקובץ פרק עובדיה יש פער שלד (רק אחד מתוך עשרים ואחד פסוקים מפוצל ברמת הפסקה) שהקטלוג כרגע מדווח עליו בטעות ככיסוי מלא. ול־Elberfelder הגרמני של דברי הימים א כמקור־רישום (bibel-online.net) יש מוזרות ידועה של תוכן כפול בפרקים יג, יז, יח, כב ו־כח שהקטלוג מציין ב־&lt;code&gt;_meta.notes&lt;&#x2F;code&gt; אך צינור המיזוג עדיין לא סינן במורד הזרם. אף אחד מאלה לא חוסם את קריאות הטקסט המיובא; כל השלושה נמצאים במעקב למעבר הבא.&lt;&#x2F;p&gt;
+&lt;hr &#x2F;&gt;
+&lt;p&gt;&lt;em&gt;— תוייק 7 ביוני 2026, מערכת גלגל השמיים.&lt;&#x2F;em&gt;&lt;&#x2F;p&gt;
 </description>
       </item>
       <item>
@@ -97,6 +281,52 @@ Wheel of Heaven Translation Program pipeline. The methodology is documented at
 </description>
       </item>
       <item>
+          <title>ライブラリ:ヘブライ語聖書が9言語で読めるようになりました</title>
+          <pubDate>Sun, 07 Jun 2026 00:00:00 +0000</pubDate>
+          <author>Unknown</author>
+          <link>https://www.wheelofheaven.world/ja/news/library-hebrew-bible-nine-languages/</link>
+          <guid>https://www.wheelofheaven.world/ja/news/library-hebrew-bible-nine-languages/</guid>
+          <description xml:base="https://www.wheelofheaven.world/ja/news/library-hebrew-bible-nine-languages/">&lt;h2 id=&quot;he-gagong-kai-saretaka&quot;&gt;何が公開されたか&lt;&#x2F;h2&gt;
+&lt;p&gt;2026年6月7日現在、Wheel of Heavenライブラリは、ヘブライ語聖書全体——創世記からゼパニヤ書まで、36書——を9言語で提供しています。すべての章は、英語ASV 1901を基準とし、ドイツ語、スペイン語、フランス語、日本語、韓国語、ロシア語、簡体字中国語、繁体字中国語の輸入されたパブリックドメイン版と並べて表示されます。9つのサイト言語のいずれかでライブラリを参照する読者は、英語を経由せずに、自分の読解言語でテキストを読めるようになりました。&lt;&#x2F;p&gt;
+&lt;p&gt;輸入された版はそれぞれ名称、年代、オープンライセンスが明示されています。カタログはまた、言語ごとのカバレッジも報告しています。マソラ本文とウルガタまたはシノドス伝統との間で節区分が異なり、節が整合しない場合は、英語ASVがフォールバックとして残されます。&lt;&#x2F;p&gt;
+&lt;table&gt;&lt;thead&gt;&lt;tr&gt;&lt;th&gt;言語&lt;&#x2F;th&gt;&lt;th&gt;版&lt;&#x2F;th&gt;&lt;th&gt;年&lt;&#x2F;th&gt;&lt;th&gt;ライセンス&lt;&#x2F;th&gt;&lt;&#x2F;tr&gt;&lt;&#x2F;thead&gt;&lt;tbody&gt;
+&lt;tr&gt;&lt;td&gt;英語&lt;&#x2F;td&gt;&lt;td&gt;American Standard Version (ASV)&lt;&#x2F;td&gt;&lt;td&gt;1901&lt;&#x2F;td&gt;&lt;td&gt;パブリックドメイン&lt;&#x2F;td&gt;&lt;&#x2F;tr&gt;
+&lt;tr&gt;&lt;td&gt;ドイツ語&lt;&#x2F;td&gt;&lt;td&gt;Elberfelder&lt;&#x2F;td&gt;&lt;td&gt;1905&lt;&#x2F;td&gt;&lt;td&gt;パブリックドメイン&lt;&#x2F;td&gt;&lt;&#x2F;tr&gt;
+&lt;tr&gt;&lt;td&gt;スペイン語&lt;&#x2F;td&gt;&lt;td&gt;Reina-Valera&lt;&#x2F;td&gt;&lt;td&gt;1909&lt;&#x2F;td&gt;&lt;td&gt;パブリックドメイン&lt;&#x2F;td&gt;&lt;&#x2F;tr&gt;
+&lt;tr&gt;&lt;td&gt;フランス語&lt;&#x2F;td&gt;&lt;td&gt;Crampon(ヨブ記、サムエル記の現存部分はPD Dhorme)&lt;&#x2F;td&gt;&lt;td&gt;1923&lt;&#x2F;td&gt;&lt;td&gt;パブリックドメイン&lt;&#x2F;td&gt;&lt;&#x2F;tr&gt;
+&lt;tr&gt;&lt;td&gt;日本語&lt;&#x2F;td&gt;&lt;td&gt;口語訳&lt;&#x2F;td&gt;&lt;td&gt;1955&lt;&#x2F;td&gt;&lt;td&gt;パブリックドメイン(著作者人格権)&lt;&#x2F;td&gt;&lt;&#x2F;tr&gt;
+&lt;tr&gt;&lt;td&gt;韓国語&lt;&#x2F;td&gt;&lt;td&gt;Korean Revised Version (KRV)&lt;&#x2F;td&gt;&lt;td&gt;1961&lt;&#x2F;td&gt;&lt;td&gt;パブリックドメイン&lt;&#x2F;td&gt;&lt;&#x2F;tr&gt;
+&lt;tr&gt;&lt;td&gt;ロシア語&lt;&#x2F;td&gt;&lt;td&gt;Synodal&lt;&#x2F;td&gt;&lt;td&gt;1876&lt;&#x2F;td&gt;&lt;td&gt;パブリックドメイン&lt;&#x2F;td&gt;&lt;&#x2F;tr&gt;
+&lt;tr&gt;&lt;td&gt;簡体字中国語&lt;&#x2F;td&gt;&lt;td&gt;Chinese Union Version(和合本)&lt;&#x2F;td&gt;&lt;td&gt;1919&lt;&#x2F;td&gt;&lt;td&gt;パブリックドメイン&lt;&#x2F;td&gt;&lt;&#x2F;tr&gt;
+&lt;tr&gt;&lt;td&gt;繁体字中国語&lt;&#x2F;td&gt;&lt;td&gt;Chinese Union Version(和合本)&lt;&#x2F;td&gt;&lt;td&gt;1919&lt;&#x2F;td&gt;&lt;td&gt;パブリックドメイン&lt;&#x2F;td&gt;&lt;&#x2F;tr&gt;
+&lt;&#x2F;tbody&gt;&lt;&#x2F;table&gt;
+&lt;p&gt;書ごとの来歴情報——翻訳名、年、ライセンス、ソースURL、取得日——は、各エントリについて &lt;code&gt;data-library&#x2F;catalog.json&lt;&#x2F;code&gt; に、各書の &lt;code&gt;translations.{lang}&lt;&#x2F;code&gt; ブロックの下に記録されています。&lt;&#x2F;p&gt;
+&lt;h2 id=&quot;nazezhu-yu-yi-nanoka&quot;&gt;なぜ逐語訳なのか&lt;&#x2F;h2&gt;
+&lt;p&gt;上記の輸入版はすべて、その翻訳理論において&lt;strong&gt;形式的等価訳&lt;&#x2F;strong&gt;——時に大まかに「逐語訳」とも呼ばれます——です。選ばれた版は、それぞれの伝統において&lt;em&gt;一致主義的&lt;&#x2F;em&gt;な側に位置します。Elberfelderは近代における最も語句単位のドイツ語聖書として有名であり、Reina-Valera、Crampon、Synodal、KRV、そしてChinese Union Versionも、それぞれの言語における同じ形式的等価訳の系譜に属します。口語訳は古典的な文語訳の口語的日本語への近代化版であり——伝統の基準では依然として形式的等価でありながら、後に日本のカトリック・プロテスタントの標準となった動的等価訳の新共同訳(1987年)に対して意図的に位置づけられたものです。&lt;&#x2F;p&gt;
+&lt;p&gt;この選択は意図的であり、懐古的なものではありません。形式的等価訳は、源泉の&lt;strong&gt;語彙的・統語的形態&lt;&#x2F;strong&gt;を保存しようと試みます——言語が許す限り、ヘブライ語の一語に対して目的言語の一語、ヘブライ語の一節に対して目的言語の一節、源泉の同じ節における同じ語は、可能な限りコーパス全体で同じ訳語が与えられます。動的等価訳はその逆を行います——読者への&lt;em&gt;効果&lt;&#x2F;em&gt;を保存しようと試み、その結果として源泉の選択を慣用的な目的言語へとまとめあげ、言い換え、平滑化することが日常的になります。&lt;&#x2F;p&gt;
+&lt;p&gt;8つの翻訳を提供する全理由が比較にあるライブラリ——&lt;em&gt;各伝統は神名のペリコーペ、創世記1章1節、詩編82編、エロヒムの複数形を、それぞれどう扱っているのか?&lt;&#x2F;em&gt;——にとって、形式的等価こそが、この問いを保存できる唯一の語調です。ある翻訳が &lt;code&gt;יהוה&lt;&#x2F;code&gt; を、英語ではその方が読みやすいから「the LORD」と、あるいは日本語ではその方が読みやすいから「主」と訳すと決めた瞬間に、正典が追跡しようとしている語彙的選択はすでに失われてしまっています。読者が目にするのは、翻訳者の整頓であって、翻訳者の読解ではありません。&lt;&#x2F;p&gt;
+&lt;p&gt;同じ論理がエロヒムという指示対象自体にも当てはまります。Elberfelderはヘブライ語が区別している箇所で「Jehova」と「Elohim」を可視のまま保ちます。Cramponは同じ規律で「Yahweh」と「Élohim」を書き分けます。Synodalは「Господь」と「Бог」の対応を、基底のソースに遡って対応づけられる形で保存します。動的等価訳であれば、同じ節で読者に区別のない一つの&lt;em&gt;神&lt;&#x2F;em&gt;を与えるでしょう——読みやすくはなりますが、比較の議論はもはや比較すべき対象を失います。&lt;&#x2F;p&gt;
+&lt;h2 id=&quot;nazekoregaraiburarinitotutezheng-siixing-nanoka&quot;&gt;なぜこれがライブラリにとって正しい形なのか&lt;&#x2F;h2&gt;
+&lt;p&gt;ライブラリは常に、ヘブライ語聖書を、プロジェクトが読み解く作業対象としての源泉テキストとして扱ってきたのであり、到達地点としての翻訳としてではありません。英語ASVはプロジェクトの主たる読者層のための読解の表面ですが、正典が実際に向き合っているのは基底のヘブライ語です。今日まで欠けていたのは、英語を必須の中継地点としなくても、非英語話者の読者がライブラリを参照できる清潔な方法でした。&lt;&#x2F;p&gt;
+&lt;p&gt;各言語における版の選択は、正典のソース階層規律に従っています。輸入された各翻訳は、19世紀または20世紀の批評版または準批評版です——パブリックドメインとなるに足る古さでありながら、文献学的に真摯であるに足る新しさを備えています。正典の優先する読みが、なお著作権下にある現代の版を必要とする場合、プロジェクトはその版のパブリックドメイン部分集合を用いるか、あるいは明示的にそのギャップを記録します。最も明確な事例はフランス語です。ドルム版プレイヤード聖書——ラエル自身が1973年の接触の際に用いていた版——は、フランスの著作権下におよそ2071年まであります。ライブラリはCrampon 1923を基準とし、Cramponに代えて、Dhormeのより初期のパブリックドメインに属するヨブ記(1929年)とサムエル記(1910年)が存在する3書については、それらを用いています。すべての言語についての完全な論理——なぜLutherではなくElberfelderなのか、なぜDarbyではなくCramponなのか、なぜ新共同訳ではなく口語訳なのか、なぜ厳格な1938年版ではなく1961年のKRVなのか——は、ドキュメントサイト &lt;a href=&quot;https:&#x2F;&#x2F;docs.wheelofheaven.world&#x2F;contributing&#x2F;content&#x2F;imported-translations&#x2F;&quot;&gt;docs.wheelofheaven.world&#x2F;contributing&#x2F;content&#x2F;imported-translations&lt;&#x2F;a&gt; にあります。&lt;&#x2F;p&gt;
+&lt;p&gt;コーパスはヘブライ語聖書を、エロヒムの指示対象が原語において作用している、層をなすテキストとして読みます。現代の諸翻訳は下流の解釈的所作であり、ある翻訳がどの解釈的所作をなしているかは、特定の節——創世記1章1節、詩編82編、出エジプト記3章14節、コーパス全体にわたる神名のペリコーペ——において可視となります。8つの輸入翻訳をASVと並べて提供することは、その可視性を当たり前のものにします。Elberfelder、Crampon、Synodal、CUVが争点となる節をそれぞれどう扱っているかを比較したい読者は、ライブラリのページを離れることなく、それができるようになります。&lt;&#x2F;p&gt;
+&lt;h2 id=&quot;yorichang-qi-noji-hua-niokeruwei-zhi-duke&quot;&gt;より長期の計画における位置づけ&lt;&#x2F;h2&gt;
+&lt;p&gt;輸入翻訳パイプラインは、ライブラリの使命の半分です。もう半分は、現在創世記を章ごとに進めている &lt;a href=&quot;https:&#x2F;&#x2F;docs.wheelofheaven.world&#x2F;contributing&#x2F;content&#x2F;source-text-translation&#x2F;&quot;&gt;Wheel of Heaven翻訳&lt;&#x2F;a&gt; です——プロジェクト独自の用語規律のもと、ヘブライ語から新たに英語訳を起こし、各章の背後にTranslator-Editor-Reviewerのパイプラインを備えるものです。輸入翻訳は&lt;strong&gt;広さ&lt;&#x2F;strong&gt;(すべての書、8言語、パブリックドメイン版、本日公開)をカバーします。WoH翻訳は&lt;strong&gt;深さ&lt;&#x2F;strong&gt;(一伝統、一書ずつ、文献学的に擁護され、なお進行中)を提供します。&lt;&#x2F;p&gt;
+&lt;p&gt;両方のパイプラインは、各章ファイルの同じ &lt;code&gt;paragraphs[].i18n[lang]&lt;&#x2F;code&gt; フィールドにデータを供給しており、ライブラリのテンプレートはそれらを同じインターフェースを通じてレンダリングします。WoH翻訳の創世記が最初の安定リリースに達したとき、それは、プロジェクトがこれまで築いてきた比較的景観に対するプロジェクト自身の貢献として、これら輸入された読みと並んで配置されることになります。&lt;&#x2F;p&gt;
+&lt;h2 id=&quot;dokodejian-rareruka&quot;&gt;どこで見られるか&lt;&#x2F;h2&gt;
+&lt;ul&gt;
+&lt;li&gt;ライブラリ目次:&lt;a href=&quot;&#x2F;library&#x2F;&quot;&gt;&#x2F;library&#x2F;&lt;&#x2F;a&gt; ——ヘブライ語聖書のすべての書は、利用可能性の一覧に9言語を掲載するようになりました&lt;&#x2F;li&gt;
+&lt;li&gt;サンプル章:&lt;a href=&quot;&#x2F;library&#x2F;genesis&#x2F;&quot;&gt;&#x2F;library&#x2F;genesis&#x2F;&lt;&#x2F;a&gt;(あるいは読解言語で:&lt;code&gt;&#x2F;de&#x2F;library&#x2F;genesis&#x2F;&lt;&#x2F;code&gt;、&lt;code&gt;&#x2F;ja&#x2F;library&#x2F;genesis&#x2F;&lt;&#x2F;code&gt;、……)&lt;&#x2F;li&gt;
+&lt;li&gt;書ごとのカタログと来歴情報:&lt;a href=&quot;https:&#x2F;&#x2F;github.com&#x2F;wheelofheaven&#x2F;data-library&#x2F;blob&#x2F;main&#x2F;catalog.json&quot;&gt;GitHub上の &lt;code&gt;data-library&#x2F;catalog.json&lt;&#x2F;code&gt;&lt;&#x2F;a&gt;&lt;&#x2F;li&gt;
+&lt;li&gt;方法論および言語別ソースプログラムの論理:&lt;a href=&quot;https:&#x2F;&#x2F;docs.wheelofheaven.world&#x2F;contributing&#x2F;content&#x2F;imported-translations&#x2F;&quot;&gt;docs.wheelofheaven.world&#x2F;contributing&#x2F;content&#x2F;imported-translations&lt;&#x2F;a&gt;&lt;&#x2F;li&gt;
+&lt;&#x2F;ul&gt;
+&lt;h2 id=&quot;ji-zhi-nohuoroatupu&quot;&gt;既知のフォローアップ&lt;&#x2F;h2&gt;
+&lt;p&gt;三点あります。フランス語のドルム版による第一サムエル記、第二サムエル記、ヨブ記の暫定版は、なお清潔なOCRパスを必要としています——基となるInternet Archive上のdjvuスキャンが、ヘブライ語の校異と注釈をあまりに密接に交錯させており、プログラム的な抽出が困難です。オバデヤ書の章ファイルには足場のギャップがあり(21節のうち1節のみが段落レベルで分割されている状態)、カタログは現在これを完全なカバレッジとして誤報告しています。そして、第一歴代誌のドイツ語Elberfelder基準ソース(bibel-online.net)には、13、17、18、22、28章において既知の重複コンテンツの癖があり、カタログは &lt;code&gt;_meta.notes&lt;&#x2F;code&gt; でこれを記録していますが、マージパイプラインはまだ下流でそれをフィルタリングしていません。これらのいずれも輸入テキストの可読性を妨げるものではなく、三件すべてが次のパスに向けて追跡されています。&lt;&#x2F;p&gt;
+&lt;hr &#x2F;&gt;
+&lt;p&gt;&lt;em&gt;— 2026年6月7日記、Wheel of Heaven編集部。&lt;&#x2F;em&gt;&lt;&#x2F;p&gt;
+</description>
+      </item>
+      <item>
           <title>창세기</title>
           <pubDate>Sun, 07 Jun 2026 00:00:00 +0000</pubDate>
           <author>Unknown</author>
@@ -110,6 +340,52 @@ Wheel of Heaven Translation Program pipeline. The methodology is documented at
 &lt;p&gt;The English translation was drafted by Claude Opus 4.7 and edited through the
 Wheel of Heaven Translation Program pipeline. The methodology is documented at
 &lt;a href=&quot;https:&#x2F;&#x2F;docs.wheelofheaven.world&#x2F;contributing&#x2F;content&#x2F;source-text-translation&#x2F;&quot;&gt;Source-Text Translation&lt;&#x2F;a&gt;.&lt;&#x2F;p&gt;
+</description>
+      </item>
+      <item>
+          <title>라이브러리: 히브리어 성경, 이제 9개 언어로 읽힙니다</title>
+          <pubDate>Sun, 07 Jun 2026 00:00:00 +0000</pubDate>
+          <author>Unknown</author>
+          <link>https://www.wheelofheaven.world/ko/news/library-hebrew-bible-nine-languages/</link>
+          <guid>https://www.wheelofheaven.world/ko/news/library-hebrew-bible-nine-languages/</guid>
+          <description xml:base="https://www.wheelofheaven.world/ko/news/library-hebrew-bible-nine-languages/">&lt;h2 id=&quot;culsidoen-geos&quot;&gt;출시된 것&lt;&#x2F;h2&gt;
+&lt;p&gt;2026년 6월 7일부로, Wheel of Heaven 라이브러리는 히브리어 성경 전체 — 창세기부터 스바냐까지, 서른여섯 권 — 를 9개 언어로 호스팅합니다. 모든 장(章)은 영어 ASV 1901 기준 본문과 나란히 독일어, 스페인어, 프랑스어, 일본어, 한국어, 러시아어, 간체 중국어, 번체 중국어로 수입된 퍼블릭 도메인 번역본을 렌더링합니다. 9개 사이트 언어 중 어느 것으로 라이브러리를 열람하는 독자라도 이제 영어를 거치지 않고 자신의 독서 언어로 본문을 볼 수 있습니다.&lt;&#x2F;p&gt;
+&lt;p&gt;수입된 번역본들은 명칭·연도·공개 라이선스가 모두 명시되어 있습니다. 카탈로그는 또한 언어별 커버리지를 보고합니다: 마소라 본문과 불가타 또는 시노드 전통 사이의 구절 분할 차이로 어떤 구절이 정렬되지 않을 경우, 영어 ASV가 대체본으로 남습니다.&lt;&#x2F;p&gt;
+&lt;table&gt;&lt;thead&gt;&lt;tr&gt;&lt;th&gt;언어&lt;&#x2F;th&gt;&lt;th&gt;번역본&lt;&#x2F;th&gt;&lt;th&gt;연도&lt;&#x2F;th&gt;&lt;th&gt;라이선스&lt;&#x2F;th&gt;&lt;&#x2F;tr&gt;&lt;&#x2F;thead&gt;&lt;tbody&gt;
+&lt;tr&gt;&lt;td&gt;영어&lt;&#x2F;td&gt;&lt;td&gt;American Standard Version (ASV)&lt;&#x2F;td&gt;&lt;td&gt;1901&lt;&#x2F;td&gt;&lt;td&gt;퍼블릭 도메인&lt;&#x2F;td&gt;&lt;&#x2F;tr&gt;
+&lt;tr&gt;&lt;td&gt;독일어&lt;&#x2F;td&gt;&lt;td&gt;Elberfelder&lt;&#x2F;td&gt;&lt;td&gt;1905&lt;&#x2F;td&gt;&lt;td&gt;퍼블릭 도메인&lt;&#x2F;td&gt;&lt;&#x2F;tr&gt;
+&lt;tr&gt;&lt;td&gt;스페인어&lt;&#x2F;td&gt;&lt;td&gt;Reina-Valera&lt;&#x2F;td&gt;&lt;td&gt;1909&lt;&#x2F;td&gt;&lt;td&gt;퍼블릭 도메인&lt;&#x2F;td&gt;&lt;&#x2F;tr&gt;
+&lt;tr&gt;&lt;td&gt;프랑스어&lt;&#x2F;td&gt;&lt;td&gt;Crampon (현존하는 욥기·사무엘서는 PD Dhorme)&lt;&#x2F;td&gt;&lt;td&gt;1923&lt;&#x2F;td&gt;&lt;td&gt;퍼블릭 도메인&lt;&#x2F;td&gt;&lt;&#x2F;tr&gt;
+&lt;tr&gt;&lt;td&gt;일본어&lt;&#x2F;td&gt;&lt;td&gt;口語訳 (Kougo-yaku)&lt;&#x2F;td&gt;&lt;td&gt;1955&lt;&#x2F;td&gt;&lt;td&gt;퍼블릭 도메인 (저작인격권 유보)&lt;&#x2F;td&gt;&lt;&#x2F;tr&gt;
+&lt;tr&gt;&lt;td&gt;한국어&lt;&#x2F;td&gt;&lt;td&gt;Korean Revised Version (KRV)&lt;&#x2F;td&gt;&lt;td&gt;1961&lt;&#x2F;td&gt;&lt;td&gt;퍼블릭 도메인&lt;&#x2F;td&gt;&lt;&#x2F;tr&gt;
+&lt;tr&gt;&lt;td&gt;러시아어&lt;&#x2F;td&gt;&lt;td&gt;Synodal&lt;&#x2F;td&gt;&lt;td&gt;1876&lt;&#x2F;td&gt;&lt;td&gt;퍼블릭 도메인&lt;&#x2F;td&gt;&lt;&#x2F;tr&gt;
+&lt;tr&gt;&lt;td&gt;간체 중국어&lt;&#x2F;td&gt;&lt;td&gt;Chinese Union Version (和合本)&lt;&#x2F;td&gt;&lt;td&gt;1919&lt;&#x2F;td&gt;&lt;td&gt;퍼블릭 도메인&lt;&#x2F;td&gt;&lt;&#x2F;tr&gt;
+&lt;tr&gt;&lt;td&gt;번체 중국어&lt;&#x2F;td&gt;&lt;td&gt;Chinese Union Version (和合本)&lt;&#x2F;td&gt;&lt;td&gt;1919&lt;&#x2F;td&gt;&lt;td&gt;퍼블릭 도메인&lt;&#x2F;td&gt;&lt;&#x2F;tr&gt;
+&lt;&#x2F;tbody&gt;&lt;&#x2F;table&gt;
+&lt;p&gt;각 책의 출처 — 번역본 명칭, 연도, 라이선스, 원천 URL, 회수 일자 — 는 모든 항목에 대해 &lt;code&gt;data-library&#x2F;catalog.json&lt;&#x2F;code&gt;의 각 책 &lt;code&gt;translations.{lang}&lt;&#x2F;code&gt; 블록 아래에 기록되어 있습니다.&lt;&#x2F;p&gt;
+&lt;h2 id=&quot;wae-jigyeog-beonyeoginga&quot;&gt;왜 직역 번역인가&lt;&#x2F;h2&gt;
+&lt;p&gt;위에 수입된 모든 번역본은 그 번역 이론상 &lt;strong&gt;형식적 등가&lt;&#x2F;strong&gt; 번역이며, 흔히 느슨하게 &quot;직역&quot;이라 불리기도 합니다. 선정된 번역본들은 각자 전통 내의 &lt;em&gt;일치(concordant)&lt;&#x2F;em&gt; 측에 위치합니다: Elberfelder는 현대 독일어 성경 중 가장 단어 대 단어에 가까운 번역으로 유명하며, Reina-Valera, Crampon, Synodal, 개역한글성경, Chinese Union Version은 모두 각 언어 내에서 동일한 형식적 등가 계보에 속합니다. 口語訳는 고전적 文語訳의 구어 일본어 현대화이며 — 전통의 기준에서 여전히 형식적 등가이고, 후에 일본 가톨릭-프로테스탄트 공통 표준이 된 동적 등가 新共同訳(1987)과는 의도적으로 대비되는 위치에 놓입니다.&lt;&#x2F;p&gt;
+&lt;p&gt;이 선택은 의도적이지, 회고적 향수에서 비롯된 것이 아닙니다. 형식적 등가 번역은 원천의 &lt;strong&gt;어휘적·통사적 형태&lt;&#x2F;strong&gt;를 보존하려 합니다 — 언어가 허용하는 한 한 히브리어 단어에 한 대응 단어, 한 히브리어 절에 한 대응 절을 두며, 같은 원천 구절 내의 같은 단어는 가능한 한 코퍼스 전반에 걸쳐 같은 번역어를 받습니다. 동적 등가 번역은 그 반대입니다 — 독자에게 미치는 &lt;em&gt;효과&lt;&#x2F;em&gt;를 보존하려 하며, 이는 원천의 선택을 일상적으로 축약·의역하여 대상 언어의 관용적 표현으로 매끄럽게 만든다는 뜻입니다.&lt;&#x2F;p&gt;
+&lt;p&gt;여덟 종의 번역본을 호스팅하는 이유 전체가 비교적이라는 — &lt;em&gt;각 전통은 신명(神名) 단락, 창세기 1장 1절, 시편 82편, 엘로힘 복수형을 어떻게 다루는가?&lt;&#x2F;em&gt; — 라이브러리에 있어, 형식적 등가는 그 질문을 보존할 수 있는 유일한 등기(登記)입니다. 어떤 번역이 영어로 더 잘 읽힌다는 이유로 &lt;code&gt;יהוה&lt;&#x2F;code&gt;를 &quot;the LORD&quot;로 옮기거나, 일본어로 더 잘 읽힌다는 이유로 &quot;主&quot;로 옮기기로 결정한 순간, 정전이 추적하고자 하는 어휘적 선택은 이미 사라진 것입니다. 독자는 번역자의 &lt;em&gt;읽기&lt;&#x2F;em&gt;가 아니라 번역자의 &lt;em&gt;정돈&lt;&#x2F;em&gt;을 보게 됩니다.&lt;&#x2F;p&gt;
+&lt;p&gt;같은 추론은 엘로힘 지시 대상 자체에도 적용됩니다. Elberfelder는 히브리어 본문이 구별하는 곳에서 &quot;Jehova&quot; &#x2F; &quot;Elohim&quot;을 가시적으로 유지합니다; Crampon은 같은 규율로 &quot;Yahweh&quot;와 &quot;Élohim&quot;을 표기합니다; Synodal은 근저의 원천으로 거슬러 매핑되는 &quot;Господь&quot; &#x2F; &quot;Бог&quot; 짝을 보존합니다. 동적 등가 번역이라면 같은 구절에서 독자에게 미분화된 &lt;em&gt;하나님&lt;&#x2F;em&gt;을 하나만 주게 됩니다 — 읽기에는 더 쉽겠으나, 비교 논증은 더 이상 비교할 거리를 갖지 못합니다.&lt;&#x2F;p&gt;
+&lt;h2 id=&quot;wae-igeosi-raibeureorie-jeoghabhan-hyeongtaeinga&quot;&gt;왜 이것이 라이브러리에 적합한 형태인가&lt;&#x2F;h2&gt;
+&lt;p&gt;라이브러리는 줄곧 히브리어 성경을 프로젝트가 읽는 작동적 원천 본문으로 다뤄 왔지, 도착어 번역으로 다뤄 오지 않았습니다. 영어 ASV는 프로젝트의 주요 독자층을 위한 독서 표층이며; 정전이 실제로 다루는 것은 그 밑에 있는 히브리어 본문입니다. 오늘까지 빠져 있던 것은 영어를 거치는 의무적 중간 기착 없이 비영어권 독자가 라이브러리를 열람할 수 있는 깔끔한 방법이었습니다.&lt;&#x2F;p&gt;
+&lt;p&gt;언어별 번역본 선정은 정전의 원천 등급 규율을 따릅니다. 수입된 각 번역본은 19세기 또는 20세기의 비평적 또는 준비평적 판본이며 — 퍼블릭 도메인에 들기에 충분히 오래되었으면서, 문헌학적으로 진지하기에 충분히 최근의 것입니다. 정전이 선호하는 독해를 위해 아직 저작권 보호 중인 현대 판본이 필요한 경우, 프로젝트는 해당 판본의 퍼블릭 도메인 부분 집합을 사용하거나 그 격차를 명시적으로 기록합니다. 가장 분명한 사례는 프랑스어입니다: Dhorme Pléiade Bible — 1973년 접촉 당시 라엘 자신이 사용한 판본 — 은 대략 2071년까지 프랑스 저작권 하에 있습니다. 라이브러리는 Crampon 1923을 기준 본문으로 사용하되, Dhorme의 더 이른 퍼블릭 도메인 욥기(1929)와 사무엘서(1910)가 존재하는 그 세 권에 대해서는 Crampon을 대체합니다. 언어별 전체 근거 — 왜 루터역이 아닌 Elberfelder인지, 왜 Darby가 아닌 Crampon인지, 왜 新共同訳가 아닌 口語訳인지, 왜 엄격한 1938년판이 아닌 1961년 개역한글성경인지 — 는 문서 사이트의 &lt;a href=&quot;https:&#x2F;&#x2F;docs.wheelofheaven.world&#x2F;contributing&#x2F;content&#x2F;imported-translations&#x2F;&quot;&gt;docs.wheelofheaven.world&#x2F;contributing&#x2F;content&#x2F;imported-translations&lt;&#x2F;a&gt;에 정리되어 있습니다.&lt;&#x2F;p&gt;
+&lt;p&gt;코퍼스는 히브리어 성경을, 엘로힘 지시 대상이 원어에서 작동하는 다층적 본문으로 읽습니다. 현대 번역들은 하류의 해석적 수에 해당하며, 어떤 번역이 어떤 해석적 수를 두었는지는 특정 구절들에서 가시화됩니다 — 창세기 1장 1절, 시편 82편, 출애굽기 3장 14절, 그리고 도처의 신명 단락. ASV와 나란히 여덟 종의 수입 번역본을 호스팅하는 것은 그 가시성을 일상적인 것으로 만듭니다: Elberfelder, Crampon, Synodal, CUV가 논쟁적인 구절에서 무엇을 하는지 비교하고 싶은 독자는 이제 라이브러리 페이지를 떠나지 않고 그렇게 할 수 있습니다.&lt;&#x2F;p&gt;
+&lt;h2 id=&quot;deo-gin-gyehoeg-aneseoyi-wici&quot;&gt;더 긴 계획 안에서의 위치&lt;&#x2F;h2&gt;
+&lt;p&gt;수입 번역 파이프라인은 라이브러리 임무의 한 절반입니다. 다른 절반은 &lt;a href=&quot;https:&#x2F;&#x2F;docs.wheelofheaven.world&#x2F;contributing&#x2F;content&#x2F;source-text-translation&#x2F;&quot;&gt;Wheel of Heaven Translation&lt;&#x2F;a&gt;이며, 현재 창세기를 장 단위로 진행 중입니다 — 프로젝트 자체의 용어집 규율 아래 히브리어로부터 산출되는 새로운 영어 독해이며, 모든 장 뒤에는 Translator-Editor-Reviewer 파이프라인이 자리합니다. 수입 번역본들은 &lt;strong&gt;폭&lt;&#x2F;strong&gt;을 담당하고(모든 책, 8개 언어, 퍼블릭 도메인 판본, 오늘 출시), WoH 번역은 &lt;strong&gt;깊이&lt;&#x2F;strong&gt;를 제공합니다(한 전통, 한 번에 한 권, 문헌학적으로 변론된 채로, 아직 진행 중).&lt;&#x2F;p&gt;
+&lt;p&gt;두 파이프라인 모두 각 챕터 파일의 동일한 &lt;code&gt;paragraphs[].i18n[lang]&lt;&#x2F;code&gt; 필드를 채우며, 이는 라이브러리 템플릿이 동일한 인터페이스를 통해 양자를 렌더링한다는 뜻입니다. 창세기의 WoH 번역이 첫 안정 릴리스에 도달할 때, 그것은 프로젝트가 구축해 온 비교적 풍경에 대한 프로젝트 자신의 기여로서 이 수입된 독해들 옆에 자리 잡을 것입니다.&lt;&#x2F;p&gt;
+&lt;h2 id=&quot;eodieseo-bol-su-issneunga&quot;&gt;어디에서 볼 수 있는가&lt;&#x2F;h2&gt;
+&lt;ul&gt;
+&lt;li&gt;라이브러리 색인: &lt;a href=&quot;&#x2F;library&#x2F;&quot;&gt;&#x2F;library&#x2F;&lt;&#x2F;a&gt; — 모든 히브리어 성경 책의 가용성 매트릭스에 이제 9개 언어가 표시됩니다&lt;&#x2F;li&gt;
+&lt;li&gt;샘플 장: &lt;a href=&quot;&#x2F;library&#x2F;genesis&#x2F;&quot;&gt;&#x2F;library&#x2F;genesis&#x2F;&lt;&#x2F;a&gt; (또는 독자의 읽기 언어로: &lt;code&gt;&#x2F;de&#x2F;library&#x2F;genesis&#x2F;&lt;&#x2F;code&gt;, &lt;code&gt;&#x2F;ja&#x2F;library&#x2F;genesis&#x2F;&lt;&#x2F;code&gt;, …)&lt;&#x2F;li&gt;
+&lt;li&gt;책별 카탈로그 및 출처: &lt;a href=&quot;https:&#x2F;&#x2F;github.com&#x2F;wheelofheaven&#x2F;data-library&#x2F;blob&#x2F;main&#x2F;catalog.json&quot;&gt;GitHub의 &lt;code&gt;data-library&#x2F;catalog.json&lt;&#x2F;code&gt;&lt;&#x2F;a&gt;&lt;&#x2F;li&gt;
+&lt;li&gt;방법론 및 언어별 원천 프로그램 근거: &lt;a href=&quot;https:&#x2F;&#x2F;docs.wheelofheaven.world&#x2F;contributing&#x2F;content&#x2F;imported-translations&#x2F;&quot;&gt;docs.wheelofheaven.world&#x2F;contributing&#x2F;content&#x2F;imported-translations&lt;&#x2F;a&gt;&lt;&#x2F;li&gt;
+&lt;&#x2F;ul&gt;
+&lt;h2 id=&quot;alryeojin-husog-jageob&quot;&gt;알려진 후속 작업&lt;&#x2F;h2&gt;
+&lt;p&gt;세 가지. 사무엘상, 사무엘하, 욥기의 프랑스어 Dhorme 자리표시본은 깨끗한 OCR 작업을 기다리고 있는 상태입니다 — Internet Archive의 djvu 스캔이 히브리어 비평장치와 주석을 너무 공격적으로 끼워 넣어 프로그램적으로 추출하기 어렵습니다. 오바댜 장 파일에는 비계(scaffolding) 격차가 있어(스물한 절 중 한 절만 단락 단위로 분리되어 있음), 카탈로그는 현재 이를 완전한 커버리지로 잘못 보고하고 있습니다. 그리고 역대상 독일어 Elberfelder 출처 기록(bibel-online.net)에는 13장, 17장, 18장, 22장, 28장의 알려진 중복 콘텐츠 결함이 있는데, 카탈로그는 &lt;code&gt;_meta.notes&lt;&#x2F;code&gt;에 이를 기록해 두었으나 병합 파이프라인이 아직 하류에서 이를 걸러내지 못하고 있습니다. 이 셋 중 어느 것도 수입 본문의 가독성을 막지 않으며, 세 가지 모두 다음 작업 차수를 위해 추적되고 있습니다.&lt;&#x2F;p&gt;
+&lt;hr &#x2F;&gt;
+&lt;p&gt;&lt;em&gt;— 2026년 6월 7일 작성, Wheel of Heaven 편집실.&lt;&#x2F;em&gt;&lt;&#x2F;p&gt;
 </description>
       </item>
       <item>
@@ -394,6 +670,52 @@ Wheel of Heaven Translation Program pipeline. The methodology is documented at
 </description>
       </item>
       <item>
+          <title>Библиотека: Еврейская Библия теперь читается на девяти языках</title>
+          <pubDate>Sun, 07 Jun 2026 00:00:00 +0000</pubDate>
+          <author>Unknown</author>
+          <link>https://www.wheelofheaven.world/ru/news/library-hebrew-bible-nine-languages/</link>
+          <guid>https://www.wheelofheaven.world/ru/news/library-hebrew-bible-nine-languages/</guid>
+          <description xml:base="https://www.wheelofheaven.world/ru/news/library-hebrew-bible-nine-languages/">&lt;h2 id=&quot;chto-bylo-vypushcheno&quot;&gt;Что было выпущено&lt;&#x2F;h2&gt;
+&lt;p&gt;По состоянию на 7 июня 2026 года библиотека Колеса Небес содержит полную Еврейскую Библию — от Бытия до Софонии, тридцать шесть книг — на девяти языках. Каждая глава отображает базовое английское прочтение ASV 1901 года вместе с импортированными изданиями, находящимися в общественном достоянии, на немецком, испанском, французском, японском, корейском, русском, упрощённом китайском и традиционном китайском языках. Читатели, обращающиеся к библиотеке на любом из девяти языков сайта, теперь видят текст на своём языке чтения, не будучи вынуждены проходить через английский.&lt;&#x2F;p&gt;
+&lt;p&gt;Импортированные издания названы, датированы и лицензированы на открытых условиях. Каталог также сообщает о покрытии для каждого языка: там, где сдвиги в делении на стихи между масоретской и Вульгатой или Синодальной традициями оставляют стих невыровненным, английский ASV остаётся в качестве запасного варианта.&lt;&#x2F;p&gt;
+&lt;table&gt;&lt;thead&gt;&lt;tr&gt;&lt;th&gt;Язык&lt;&#x2F;th&gt;&lt;th&gt;Издание&lt;&#x2F;th&gt;&lt;th&gt;Год&lt;&#x2F;th&gt;&lt;th&gt;Лицензия&lt;&#x2F;th&gt;&lt;&#x2F;tr&gt;&lt;&#x2F;thead&gt;&lt;tbody&gt;
+&lt;tr&gt;&lt;td&gt;Английский&lt;&#x2F;td&gt;&lt;td&gt;American Standard Version (ASV)&lt;&#x2F;td&gt;&lt;td&gt;1901&lt;&#x2F;td&gt;&lt;td&gt;Общественное достояние&lt;&#x2F;td&gt;&lt;&#x2F;tr&gt;
+&lt;tr&gt;&lt;td&gt;Немецкий&lt;&#x2F;td&gt;&lt;td&gt;Elberfelder&lt;&#x2F;td&gt;&lt;td&gt;1905&lt;&#x2F;td&gt;&lt;td&gt;Общественное достояние&lt;&#x2F;td&gt;&lt;&#x2F;tr&gt;
+&lt;tr&gt;&lt;td&gt;Испанский&lt;&#x2F;td&gt;&lt;td&gt;Reina-Valera&lt;&#x2F;td&gt;&lt;td&gt;1909&lt;&#x2F;td&gt;&lt;td&gt;Общественное достояние&lt;&#x2F;td&gt;&lt;&#x2F;tr&gt;
+&lt;tr&gt;&lt;td&gt;Французский&lt;&#x2F;td&gt;&lt;td&gt;Crampon (PD Dhorme для Иова, Самуила, где сохранилось)&lt;&#x2F;td&gt;&lt;td&gt;1923&lt;&#x2F;td&gt;&lt;td&gt;Общественное достояние&lt;&#x2F;td&gt;&lt;&#x2F;tr&gt;
+&lt;tr&gt;&lt;td&gt;Японский&lt;&#x2F;td&gt;&lt;td&gt;口語訳 (Kougo-yaku)&lt;&#x2F;td&gt;&lt;td&gt;1955&lt;&#x2F;td&gt;&lt;td&gt;Общественное достояние (моральные права)&lt;&#x2F;td&gt;&lt;&#x2F;tr&gt;
+&lt;tr&gt;&lt;td&gt;Корейский&lt;&#x2F;td&gt;&lt;td&gt;Korean Revised Version (KRV)&lt;&#x2F;td&gt;&lt;td&gt;1961&lt;&#x2F;td&gt;&lt;td&gt;Общественное достояние&lt;&#x2F;td&gt;&lt;&#x2F;tr&gt;
+&lt;tr&gt;&lt;td&gt;Русский&lt;&#x2F;td&gt;&lt;td&gt;Синодальный перевод&lt;&#x2F;td&gt;&lt;td&gt;1876&lt;&#x2F;td&gt;&lt;td&gt;Общественное достояние&lt;&#x2F;td&gt;&lt;&#x2F;tr&gt;
+&lt;tr&gt;&lt;td&gt;Упрощённый китайский&lt;&#x2F;td&gt;&lt;td&gt;Chinese Union Version (和合本)&lt;&#x2F;td&gt;&lt;td&gt;1919&lt;&#x2F;td&gt;&lt;td&gt;Общественное достояние&lt;&#x2F;td&gt;&lt;&#x2F;tr&gt;
+&lt;tr&gt;&lt;td&gt;Традиционный китайский&lt;&#x2F;td&gt;&lt;td&gt;Chinese Union Version (和合本)&lt;&#x2F;td&gt;&lt;td&gt;1919&lt;&#x2F;td&gt;&lt;td&gt;Общественное достояние&lt;&#x2F;td&gt;&lt;&#x2F;tr&gt;
+&lt;&#x2F;tbody&gt;&lt;&#x2F;table&gt;
+&lt;p&gt;Происхождение для каждой книги — название перевода, год, лицензия, URL источника, дата получения — записано в &lt;code&gt;data-library&#x2F;catalog.json&lt;&#x2F;code&gt; для каждой записи, под блоком &lt;code&gt;translations.{lang}&lt;&#x2F;code&gt; каждой книги.&lt;&#x2F;p&gt;
+&lt;h2 id=&quot;pochemu-bukval-nye-perevody&quot;&gt;Почему буквальные переводы&lt;&#x2F;h2&gt;
+&lt;p&gt;Каждое импортированное издание выше, по своей теории перевода, является &lt;strong&gt;формально-эквивалентным&lt;&#x2F;strong&gt; переводом — иногда вольно называемым «буквальным». Выбранные издания располагаются на &lt;em&gt;конкордантной&lt;&#x2F;em&gt; стороне своих соответствующих традиций: Elberfelder известен как наиболее дословный немецкий перевод Библии современной эпохи; Reina-Valera, Crampon, Синодальный, KRV и Chinese Union Version — все принадлежат к той же формально-эквивалентной линии в своих языках. 口語訳 — это разговорно-японская модернизация классического 文語訳 — всё ещё формально-эквивалентная по стандартам традиции, намеренно противопоставленная динамически-эквивалентному 新共同訳 (1987), который позже стал японским католическо-протестантским стандартом.&lt;&#x2F;p&gt;
+&lt;p&gt;Выбор сделан осознанно, а не из ностальгии. Формально-эквивалентный перевод пытается сохранить &lt;strong&gt;лексическую и синтаксическую форму&lt;&#x2F;strong&gt; источника — одно еврейское слово, одно слово на целевом языке, где языки это позволяют; одно еврейское придаточное, одно придаточное на целевом языке; одно и то же слово в одном и том же исходном стихе получает один и тот же перевод по всему корпусу, где это возможно. Динамически-эквивалентный перевод поступает наоборот — он пытается сохранить &lt;em&gt;воздействие&lt;&#x2F;em&gt; на читателя, что означает регулярное сворачивание, перефразирование и сглаживание выборов источника в идиоматический целевой язык.&lt;&#x2F;p&gt;
+&lt;p&gt;Для библиотеки, у которой вся причина содержать восемь переводов — сравнительная — &lt;em&gt;что каждая традиция делает с перикопами божественного имени, с Бытием 1:1, с Псалмом 82, с множественным числом Элохим?&lt;&#x2F;em&gt; — формальная эквивалентность является единственным регистром, который сохраняет вопрос. Как только перевод решил передать &lt;code&gt;יהוה&lt;&#x2F;code&gt; как «the LORD», потому что так лучше читается на английском, или как 主, потому что так лучше читается на японском, лексический выбор, который канон хочет отслеживать, уже исчез. Читатель видит редактуру переводчика, а не прочтение переводчика.&lt;&#x2F;p&gt;
+&lt;p&gt;Та же логика применима к самому референту Элохим. Elberfelder сохраняет «Jehova» &#x2F; «Elohim» видимыми там, где еврейский их различает; Crampon пишет «Yahweh» и «Élohim» с той же дисциплиной; Синодальный перевод сохраняет пары «Господь» &#x2F; «Бог», которые отображаются обратно на лежащий в основе источник. Динамически-эквивалентный перевод дал бы читателю в том же стихе одного недифференцированного &lt;em&gt;Бога&lt;&#x2F;em&gt; — легче читать, но сравнительному аргументу больше нечего сравнивать.&lt;&#x2F;p&gt;
+&lt;h2 id=&quot;pochemu-eto-pravil-naia-forma-dlia-biblioteki&quot;&gt;Почему это правильная форма для библиотеки&lt;&#x2F;h2&gt;
+&lt;p&gt;Библиотека всегда рассматривала Еврейскую Библию как оперативный исходный текст, который читает проект, а не как целевой перевод. Английский ASV — это поверхность чтения для основной аудитории проекта; нижележащий еврейский — это то, с чем канон фактически работает. Чего не хватало до сегодняшнего дня, так это чистого способа для неанглоязычных читателей обращаться к библиотеке, не делая английский обязательной промежуточной остановкой.&lt;&#x2F;p&gt;
+&lt;p&gt;Выбор издания для каждого языка следует дисциплине уровней источников канона. Каждый импортированный перевод — это критическое или близкое к критическому издание девятнадцатого или двадцатого века — достаточно старое, чтобы быть в общественном достоянии, достаточно недавнее, чтобы быть филологически серьёзным. Там, где предпочтительное прочтение канона потребовало бы современного издания, всё ещё находящегося под защитой авторских прав, проект либо использует подмножество этого издания, находящееся в общественном достоянии, либо явно отмечает пробел. Наиболее ясный случай — французский: Pléiade-Библия Дорма — издание, с которым работал сам Раэль во время контакта 1973 года, — находится под французским авторским правом примерно до 2071 года. Библиотека использует Crampon 1923 в качестве базы, а более ранний публичный Иов Дорма (1929) и Самуил (1910) заменяют Crampon для тех трёх книг, где они существуют. Полное обоснование для каждого языка — почему Elberfelder, а не Лютер, почему Crampon, а не Дарби, почему 口語訳, а не 新共同訳, почему KRV 1961, а не строгий 1938 — находится на сайте документации по адресу &lt;a href=&quot;https:&#x2F;&#x2F;docs.wheelofheaven.world&#x2F;contributing&#x2F;content&#x2F;imported-translations&#x2F;&quot;&gt;docs.wheelofheaven.world&#x2F;contributing&#x2F;content&#x2F;imported-translations&lt;&#x2F;a&gt;.&lt;&#x2F;p&gt;
+&lt;p&gt;Корпус читает Еврейскую Библию как многослойный текст, чей референт Элохим оперативен в оригинальном языке. Современные переводы — это нижестоящие интерпретативные ходы, и какой интерпретативный ход делает перевод, видно в конкретных стихах — Бытие 1:1, Псалом 82, Исход 3:14, перикопы божественного имени повсюду. Размещение восьми импортированных переводов рядом с ASV делает эту видимость обычной: читатель, который хочет сравнить, что Elberfelder, Crampon, Синодальный перевод и CUV делают со спорным стихом, теперь может сделать это, не покидая страницу библиотеки.&lt;&#x2F;p&gt;
+&lt;h2 id=&quot;gde-eto-razmeshchaetsia-v-bolee-dolgosrochnom-plane&quot;&gt;Где это размещается в более долгосрочном плане&lt;&#x2F;h2&gt;
+&lt;p&gt;Конвейер импортированных переводов — это одна половина мандата библиотеки. Другая половина — &lt;a href=&quot;https:&#x2F;&#x2F;docs.wheelofheaven.world&#x2F;contributing&#x2F;content&#x2F;source-text-translation&#x2F;&quot;&gt;Перевод Колеса Небес&lt;&#x2F;a&gt;, в настоящее время продвигающийся через Бытие глава за главой — свежее английское прочтение, производимое с еврейского под собственной дисциплиной глоссария проекта, с конвейером Переводчик-Редактор-Рецензент за каждой главой. Импортированные переводы покрывают &lt;strong&gt;широту&lt;&#x2F;strong&gt; (каждая книга, восемь языков, издания в общественном достоянии, выпущенные сегодня); Перевод Колеса Небес обеспечивает &lt;strong&gt;глубину&lt;&#x2F;strong&gt; (одна традиция, одна книга за раз, филологически защищённая, всё ещё в процессе).&lt;&#x2F;p&gt;
+&lt;p&gt;Оба конвейера питают одно и то же поле &lt;code&gt;paragraphs[].i18n[lang]&lt;&#x2F;code&gt; в каждом файле главы, что означает, что шаблон библиотеки отображает их через один и тот же интерфейс. Когда Перевод Колеса Небес Бытия достигнет своего первого стабильного релиза, он встанет рядом с этими импортированными прочтениями как собственный вклад проекта в сравнительный ландшафт, который он строил.&lt;&#x2F;p&gt;
+&lt;h2 id=&quot;gde-eto-posmotret&quot;&gt;Где это посмотреть&lt;&#x2F;h2&gt;
+&lt;ul&gt;
+&lt;li&gt;Указатель библиотеки: &lt;a href=&quot;&#x2F;library&#x2F;&quot;&gt;&#x2F;library&#x2F;&lt;&#x2F;a&gt; — каждая книга Еврейской Библии теперь перечисляет девять языков в своей матрице доступности&lt;&#x2F;li&gt;
+&lt;li&gt;Образец главы: &lt;a href=&quot;&#x2F;library&#x2F;genesis&#x2F;&quot;&gt;&#x2F;library&#x2F;genesis&#x2F;&lt;&#x2F;a&gt; (или на вашем языке чтения: &lt;code&gt;&#x2F;de&#x2F;library&#x2F;genesis&#x2F;&lt;&#x2F;code&gt;, &lt;code&gt;&#x2F;ja&#x2F;library&#x2F;genesis&#x2F;&lt;&#x2F;code&gt;, …)&lt;&#x2F;li&gt;
+&lt;li&gt;Каталог и происхождение для каждой книги: &lt;a href=&quot;https:&#x2F;&#x2F;github.com&#x2F;wheelofheaven&#x2F;data-library&#x2F;blob&#x2F;main&#x2F;catalog.json&quot;&gt;&lt;code&gt;data-library&#x2F;catalog.json&lt;&#x2F;code&gt; на GitHub&lt;&#x2F;a&gt;&lt;&#x2F;li&gt;
+&lt;li&gt;Методология и обоснование программы источников по языкам: &lt;a href=&quot;https:&#x2F;&#x2F;docs.wheelofheaven.world&#x2F;contributing&#x2F;content&#x2F;imported-translations&#x2F;&quot;&gt;docs.wheelofheaven.world&#x2F;contributing&#x2F;content&#x2F;imported-translations&lt;&#x2F;a&gt;&lt;&#x2F;li&gt;
+&lt;&#x2F;ul&gt;
+&lt;h2 id=&quot;izvestnye-dorabotki&quot;&gt;Известные доработки&lt;&#x2F;h2&gt;
+&lt;p&gt;Три. Французские заглушки Дорма для 1-Самуила, 2-Самуила и Иова всё ещё ожидают чистого OCR-прохода — нижележащие djvu-сканы в Internet Archive слишком агрессивно переплетают еврейский аппарат и комментарий, чтобы их можно было извлечь программно. В файле главы Авдия есть пробел в скаффолдинге (только один из двадцати одного стиха разбит на уровне абзаца), который каталог в настоящее время ошибочно сообщает как полное покрытие. И источник записи 1-Паралипоменон на немецком Elberfelder (bibel-online.net) имеет известную особенность дублирования содержимого в главах 13, 17, 18, 22 и 28, которую каталог отмечает в &lt;code&gt;_meta.notes&lt;&#x2F;code&gt;, но конвейер слияния ещё не отфильтровал на дальнейших этапах. Ни одна из этих проблем не блокирует читаемость импортированного текста; все три отслеживаются для следующего прохода.&lt;&#x2F;p&gt;
+&lt;hr &#x2F;&gt;
+&lt;p&gt;&lt;em&gt;— Записано 7 июня 2026 года, редакция Колеса Небес.&lt;&#x2F;em&gt;&lt;&#x2F;p&gt;
+</description>
+      </item>
+      <item>
           <title>創世記</title>
           <pubDate>Sun, 07 Jun 2026 00:00:00 +0000</pubDate>
           <author>Unknown</author>
@@ -407,6 +729,52 @@ zh-Hant、he）；其餘章節暫僅有英文譯本。&lt;&#x2F;p&gt;
 &lt;p&gt;The English translation was drafted by Claude Opus 4.7 and edited through the
 Wheel of Heaven Translation Program pipeline. The methodology is documented at
 &lt;a href=&quot;https:&#x2F;&#x2F;docs.wheelofheaven.world&#x2F;contributing&#x2F;content&#x2F;source-text-translation&#x2F;&quot;&gt;Source-Text Translation&lt;&#x2F;a&gt;.&lt;&#x2F;p&gt;
+</description>
+      </item>
+      <item>
+          <title>圖書館:希伯來聖經現以九種語言呈現</title>
+          <pubDate>Sun, 07 Jun 2026 00:00:00 +0000</pubDate>
+          <author>Unknown</author>
+          <link>https://www.wheelofheaven.world/zh-Hant/news/library-hebrew-bible-nine-languages/</link>
+          <guid>https://www.wheelofheaven.world/zh-Hant/news/library-hebrew-bible-nine-languages/</guid>
+          <description xml:base="https://www.wheelofheaven.world/zh-Hant/news/library-hebrew-bible-nine-languages/">&lt;h2 id=&quot;ci-ci-shang-xian-de-nei-rong&quot;&gt;此次上線的內容&lt;&#x2F;h2&gt;
+&lt;p&gt;截至 2026 年 6 月 7 日,天輪圖書館已以九種語言收錄完整的希伯來聖經——自《創世記》至《西番雅書》,共三十六卷。每一章皆將英語 ASV 1901 基準版,與德語、西班牙語、法語、日語、韓語、俄語、簡體中文及繁體中文之公有領域匯入版本並列呈現。讀者以九種站點語言中之任一種瀏覽圖書館時,皆可直接以其閱讀語言檢閱文本,無須繞道英語。&lt;&#x2F;p&gt;
+&lt;p&gt;所匯入之版本皆已具名、附年份、並採開放授權。目錄亦逐語言記載收錄涵蓋範圍:凡因馬索拉文本傳統與武加大或東正教教會斯拉夫(Synodal)傳統之分節方式不同,而導致某節無法對齊之處,英語 ASV 即作為備援保留。&lt;&#x2F;p&gt;
+&lt;table&gt;&lt;thead&gt;&lt;tr&gt;&lt;th&gt;語言&lt;&#x2F;th&gt;&lt;th&gt;版本&lt;&#x2F;th&gt;&lt;th&gt;年份&lt;&#x2F;th&gt;&lt;th&gt;授權&lt;&#x2F;th&gt;&lt;&#x2F;tr&gt;&lt;&#x2F;thead&gt;&lt;tbody&gt;
+&lt;tr&gt;&lt;td&gt;英語&lt;&#x2F;td&gt;&lt;td&gt;American Standard Version (ASV)&lt;&#x2F;td&gt;&lt;td&gt;1901&lt;&#x2F;td&gt;&lt;td&gt;公有領域&lt;&#x2F;td&gt;&lt;&#x2F;tr&gt;
+&lt;tr&gt;&lt;td&gt;德語&lt;&#x2F;td&gt;&lt;td&gt;Elberfelder&lt;&#x2F;td&gt;&lt;td&gt;1905&lt;&#x2F;td&gt;&lt;td&gt;公有領域&lt;&#x2F;td&gt;&lt;&#x2F;tr&gt;
+&lt;tr&gt;&lt;td&gt;西班牙語&lt;&#x2F;td&gt;&lt;td&gt;Reina-Valera&lt;&#x2F;td&gt;&lt;td&gt;1909&lt;&#x2F;td&gt;&lt;td&gt;公有領域&lt;&#x2F;td&gt;&lt;&#x2F;tr&gt;
+&lt;tr&gt;&lt;td&gt;法語&lt;&#x2F;td&gt;&lt;td&gt;Crampon(《約伯記》、《撒母耳記》存世部分採公有領域 Dhorme)&lt;&#x2F;td&gt;&lt;td&gt;1923&lt;&#x2F;td&gt;&lt;td&gt;公有領域&lt;&#x2F;td&gt;&lt;&#x2F;tr&gt;
+&lt;tr&gt;&lt;td&gt;日語&lt;&#x2F;td&gt;&lt;td&gt;口語訳(Kougo-yaku)&lt;&#x2F;td&gt;&lt;td&gt;1955&lt;&#x2F;td&gt;&lt;td&gt;公有領域(著作人格權保留)&lt;&#x2F;td&gt;&lt;&#x2F;tr&gt;
+&lt;tr&gt;&lt;td&gt;韓語&lt;&#x2F;td&gt;&lt;td&gt;Korean Revised Version (KRV)&lt;&#x2F;td&gt;&lt;td&gt;1961&lt;&#x2F;td&gt;&lt;td&gt;公有領域&lt;&#x2F;td&gt;&lt;&#x2F;tr&gt;
+&lt;tr&gt;&lt;td&gt;俄語&lt;&#x2F;td&gt;&lt;td&gt;Synodal&lt;&#x2F;td&gt;&lt;td&gt;1876&lt;&#x2F;td&gt;&lt;td&gt;公有領域&lt;&#x2F;td&gt;&lt;&#x2F;tr&gt;
+&lt;tr&gt;&lt;td&gt;簡體中文&lt;&#x2F;td&gt;&lt;td&gt;Chinese Union Version(和合本)&lt;&#x2F;td&gt;&lt;td&gt;1919&lt;&#x2F;td&gt;&lt;td&gt;公有領域&lt;&#x2F;td&gt;&lt;&#x2F;tr&gt;
+&lt;tr&gt;&lt;td&gt;繁體中文&lt;&#x2F;td&gt;&lt;td&gt;Chinese Union Version(和合本)&lt;&#x2F;td&gt;&lt;td&gt;1919&lt;&#x2F;td&gt;&lt;td&gt;公有領域&lt;&#x2F;td&gt;&lt;&#x2F;tr&gt;
+&lt;&#x2F;tbody&gt;&lt;&#x2F;table&gt;
+&lt;p&gt;每一書卷之出處資訊——譯本名稱、年份、授權、來源網址、擷取日期——皆已記錄於每筆條目於 &lt;code&gt;data-library&#x2F;catalog.json&lt;&#x2F;code&gt; 中之 &lt;code&gt;translations.{lang}&lt;&#x2F;code&gt; 區塊。&lt;&#x2F;p&gt;
+&lt;h2 id=&quot;wei-he-cai-yong-zhi-yi-ben&quot;&gt;為何採用直譯本&lt;&#x2F;h2&gt;
+&lt;p&gt;上述每一個匯入版本,依其翻譯理論而言,皆屬於 &lt;strong&gt;形式對等&lt;&#x2F;strong&gt; 譯本——有時被寬鬆地稱為「直譯本」。所選版本皆位於各自傳統中 &lt;em&gt;較為一致對應&lt;&#x2F;em&gt; 的一側:Elberfelder 素以近代德語聖經中最逐字對譯而著稱;Reina-Valera、Crampon、Synodal、KRV 與和合本,在各自語言之中,亦皆屬同一形式對等血脈。口語訳是將古典 文語訳 譯為現代日常日語的版本——依該傳統之標準,仍屬形式對等;其立場上有意與後來成為日本天主教與新教共通標準的動態對等 新共同訳(1987)劃清界線。&lt;&#x2F;p&gt;
+&lt;p&gt;此選擇是經過思量的,而非懷舊之舉。形式對等譯本嘗試保留源文本的 &lt;strong&gt;詞彙與句法輪廓&lt;&#x2F;strong&gt;——只要目標語言允許,即以一個目標詞對應一個希伯來詞;一個希伯來子句對應一個目標子句;同一節經文中之同一個詞,在整部語料庫中盡可能採同一個譯法。動態對等譯本則反其道而行——它嘗試保留源文本對讀者的 &lt;em&gt;效果&lt;&#x2F;em&gt;,而這意味著它經常會將源文本的選擇壓縮、改寫、並抹平為慣用的目標語言。&lt;&#x2F;p&gt;
+&lt;p&gt;對一個以收錄八種譯本作為比較之核心理由的圖書館而言——&lt;em&gt;各個傳統如何處理神之名的相關段落?如何處理〈創世記〉1:1?如何處理〈詩篇〉82?如何處理 Elohim 的複數形?&lt;&#x2F;em&gt;——形式對等是唯一能保留此一問題的語體。一旦某個譯本決定將 &lt;code&gt;יהוה&lt;&#x2F;code&gt; 譯為「the LORD」,因為這在英語中讀來較順,或譯為「主」,因為這在日語中讀來較順,語料庫所欲追蹤之詞彙抉擇便已消失。讀者所見的,是譯者的整飾,而非譯者的解讀。&lt;&#x2F;p&gt;
+&lt;p&gt;同樣的邏輯亦適用於 Elohim 此一指稱本身。Elberfelder 在希伯來文加以區分之處,保留可見的「Jehova」&#x2F;「Elohim」之別;Crampon 以相同的紀律寫出「Yahweh」與「Élohim」;Synodal 則保留「Господь」&#x2F;「Бог」之配對,使其得以對應到底下的源文本。動態對等譯本則會在同一節經文中,給讀者一個未加區別的 &lt;em&gt;神&lt;&#x2F;em&gt;——閱讀起來較容易,但比較性的論證已無物可比。&lt;&#x2F;p&gt;
+&lt;h2 id=&quot;wei-he-zhe-dui-tu-shu-guan-er-yan-shi-qia-dang-de-xing-tai&quot;&gt;為何這對圖書館而言是恰當的形態&lt;&#x2F;h2&gt;
+&lt;p&gt;圖書館一向將希伯來聖經視為本計畫所閱讀的有效源文本,而非作為目的地的譯本。英語 ASV 是本計畫主要受眾的閱讀介面;但其下的希伯來文,才是語料庫真正所處理的對象。直至今日尚付諸闕如的,是讓非英語讀者得以在不必繞行英語的情況下,乾淨地檢閱圖書館之路徑。&lt;&#x2F;p&gt;
+&lt;p&gt;各語言版本之選擇遵循語料庫之來源層級紀律。每一個匯入譯本,皆為十九或二十世紀的考據版或近考據版——年代夠久,足以進入公有領域;年代夠新,足以在語文學上嚴肅。凡語料庫所偏好之讀本需要使用仍在著作權保護期內的現代版本者,本計畫或採用該版本中之公有領域子集,或明確標註其缺漏。最清楚的案例是法語:多姆 Pléiade 聖經——亦即雷爾於 1973 年接觸時所據之版本——其法國著作權保護期延續至約 2071 年。圖書館以 Crampon 1923 為基準版,並於多姆早期公有領域之《約伯記》(1929)與《撒母耳記》(1910)存世之三卷處,以多姆取代 Crampon。各語言之完整選擇理由——為何採 Elberfelder 而非 Luther、為何採 Crampon 而非 Darby、為何採 口語訳 而非 新共同訳、為何採 1961 年 KRV 而非更嚴格的 1938 年版——均載於文件站 &lt;a href=&quot;https:&#x2F;&#x2F;docs.wheelofheaven.world&#x2F;contributing&#x2F;content&#x2F;imported-translations&#x2F;&quot;&gt;docs.wheelofheaven.world&#x2F;contributing&#x2F;content&#x2F;imported-translations&lt;&#x2F;a&gt;。&lt;&#x2F;p&gt;
+&lt;p&gt;本語料庫將希伯來聖經視為一個分層之文本,其 Elohim 之指稱在原文之中具有操作性。現代譯本是下游的詮釋抉擇,而某一譯本所作的詮釋抉擇,會在特定經節之中顯露出來——〈創世記〉1:1、〈詩篇〉82、〈出埃及記〉3:14,以及通篇之神之名相關段落。將八種匯入譯本與 ASV 並列呈現,使此可見性成為尋常之事:欲比較 Elberfelder、Crampon、Synodal 與和合本如何處理某一具爭議經節的讀者,如今無須離開圖書館頁面即可進行此項比較。&lt;&#x2F;p&gt;
+&lt;h2 id=&quot;ci-shi-jian-zai-geng-chang-ji-hua-zhong-de-wei-zhi&quot;&gt;此事件在更長計畫中的位置&lt;&#x2F;h2&gt;
+&lt;p&gt;匯入譯本流程僅是圖書館宗旨的其中一半。另一半是 &lt;a href=&quot;https:&#x2F;&#x2F;docs.wheelofheaven.world&#x2F;contributing&#x2F;content&#x2F;source-text-translation&#x2F;&quot;&gt;天輪翻譯計畫&lt;&#x2F;a&gt;,目前正逐章推進《創世記》——一份在本計畫自身之術語紀律下、由希伯來文重新產出的英語讀本,每一章背後皆有 譯者—編者—審校 之流程支持。匯入譯本所負責的是 &lt;strong&gt;廣度&lt;&#x2F;strong&gt;(每一書卷、八種語言、公有領域版本,今日全部上線);而天輪翻譯則提供 &lt;strong&gt;深度&lt;&#x2F;strong&gt;(一個傳統、一次一卷、語文學上有所辯護、目前仍在進行中)。&lt;&#x2F;p&gt;
+&lt;p&gt;兩條流程皆寫入每章節檔案上同一個 &lt;code&gt;paragraphs[].i18n[lang]&lt;&#x2F;code&gt; 欄位,這意味著圖書館模板會透過同一套介面渲染兩者。當天輪翻譯的《創世記》達到首個穩定釋出時,它將與這些匯入讀本並列,作為本計畫對其長期構築之比較地景所貢獻之自有讀本。&lt;&#x2F;p&gt;
+&lt;h2 id=&quot;he-chu-ke-yi-jian-dao-ci-ci-cheng-guo&quot;&gt;何處可以見到此次成果&lt;&#x2F;h2&gt;
+&lt;ul&gt;
+&lt;li&gt;圖書館索引:&lt;a href=&quot;&#x2F;library&#x2F;&quot;&gt;&#x2F;library&#x2F;&lt;&#x2F;a&gt; ——每一本希伯來聖經書卷之可用語言矩陣現已列出九種語言&lt;&#x2F;li&gt;
+&lt;li&gt;範例章節:&lt;a href=&quot;&#x2F;library&#x2F;genesis&#x2F;&quot;&gt;&#x2F;library&#x2F;genesis&#x2F;&lt;&#x2F;a&gt;(或以您的閱讀語言:&lt;code&gt;&#x2F;de&#x2F;library&#x2F;genesis&#x2F;&lt;&#x2F;code&gt;、&lt;code&gt;&#x2F;ja&#x2F;library&#x2F;genesis&#x2F;&lt;&#x2F;code&gt;、……)&lt;&#x2F;li&gt;
+&lt;li&gt;每卷之目錄與出處:&lt;a href=&quot;https:&#x2F;&#x2F;github.com&#x2F;wheelofheaven&#x2F;data-library&#x2F;blob&#x2F;main&#x2F;catalog.json&quot;&gt;GitHub 上之 &lt;code&gt;data-library&#x2F;catalog.json&lt;&#x2F;code&gt;&lt;&#x2F;a&gt;&lt;&#x2F;li&gt;
+&lt;li&gt;方法論與各語言之來源計畫理由:&lt;a href=&quot;https:&#x2F;&#x2F;docs.wheelofheaven.world&#x2F;contributing&#x2F;content&#x2F;imported-translations&#x2F;&quot;&gt;docs.wheelofheaven.world&#x2F;contributing&#x2F;content&#x2F;imported-translations&lt;&#x2F;a&gt;&lt;&#x2F;li&gt;
+&lt;&#x2F;ul&gt;
+&lt;h2 id=&quot;yi-zhi-dai-ban-shi-xiang&quot;&gt;已知待辦事項&lt;&#x2F;h2&gt;
+&lt;p&gt;三項。法語 Dhorme 之《撒母耳記上》、《撒母耳記下》與《約伯記》之佔位內容,仍待一次乾淨的 OCR 處理——Internet Archive 上底層之 djvu 掃描,將希伯來原文之考據資料與註釋過於密集地交錯排列,難以以程式方式擷取。《俄巴底亞書》章節檔案存在一個結構性缺漏(全書二十一節中,僅有一節已於段落層級拆分),而目錄目前誤報為已完整收錄。德語 Elberfelder 之《歷代志上》來源網站(bibel-online.net)在第 13、17、18、22 與 28 章存在已知之內容重複瑕疵,目錄已於 &lt;code&gt;_meta.notes&lt;&#x2F;code&gt; 中註明,但合併流程尚未於下游加以過濾。以上三項皆不影響匯入文本之可讀性;均已列入下一輪處理之追蹤項目。&lt;&#x2F;p&gt;
+&lt;hr &#x2F;&gt;
+&lt;p&gt;&lt;em&gt;— 2026 年 6 月 7 日撰於天輪編輯室。&lt;&#x2F;em&gt;&lt;&#x2F;p&gt;
 </description>
       </item>
       <item>
@@ -426,983 +794,49 @@ Wheel of Heaven Translation Program pipeline. The methodology is documented at
 </description>
       </item>
       <item>
-          <title>Jubilees (Ship A: Primeval + Patriarchal Frame)</title>
-          <pubDate>Sat, 06 Jun 2026 00:00:00 +0000</pubDate>
+          <title>图书馆：希伯来圣经现支持九种语言阅读</title>
+          <pubDate>Sun, 07 Jun 2026 00:00:00 +0000</pubDate>
           <author>Unknown</author>
-          <link>https://www.wheelofheaven.world/library/jubilees-woh/</link>
-          <guid>https://www.wheelofheaven.world/library/jubilees-woh/</guid>
-          <description xml:base="https://www.wheelofheaven.world/library/jubilees-woh/">&lt;p&gt;&lt;strong&gt;Jubilees Ship A: The Primeval + Patriarchal Frame (chs 1-12) —
-Wheel of Heaven Translation.&lt;&#x2F;strong&gt; The principal Hebrew-language
-Enochian companion text + the most extensively cross-corpus-engaged
-non-canonical text in Second Temple Jewish literature. &lt;strong&gt;12 chapters
-&#x2F; 373 verses&lt;&#x2F;strong&gt;, from Moses on Sinai through Abraham&#x27;s iconoclasm at
-Ur.&lt;&#x2F;p&gt;
-&lt;p&gt;&lt;strong&gt;Per-verse layered witness reconstruction&lt;&#x2F;strong&gt;: &lt;strong&gt;Hebrew Dead Sea
-Scrolls fragments&lt;&#x2F;strong&gt; (4Q216 dated late 2nd c. BCE per Milik-VanderKam
-DJD XIII 1994, with additional witnesses 4Q218 + 11Q12 across Ship A
-scope) as PRIMARY where preserved; &lt;strong&gt;Greek patristic citations&lt;&#x2F;strong&gt;
-(Epiphanius &lt;em&gt;De mensuris et ponderibus&lt;&#x2F;em&gt; 21-24 per Dean 1935)
-SECONDARY where extant — notably the table-of-nations + sub-allotments
-material at chs 8-9; &lt;strong&gt;Ge&#x27;ez (Ethiopic)&lt;&#x2F;strong&gt; — the only complete witness
-— TERTIARY and fallback (VanderKam 1989 CSCO 510-511 + Charles 1902
-PD).&lt;&#x2F;p&gt;
-&lt;p&gt;Hebrew is the original composition language. Greek translation existed
-but survives only in patristic fragments. &lt;strong&gt;Hebrew DSS coverage of
-Ship A scope is sparse&lt;&#x2F;strong&gt; — only chs 1-2 (4Q216 substantial) + ch 2:26-27
-(4Q218 Sabbath) + sparse 11Q12 fragments at chs 4 + 5:1 + (probably)
-ch 8 have Hebrew witnesses; chs 3, 6-12 are Ge&#x27;ez-primary with sparse
-Greek-secondary at chs 8-9.&lt;&#x2F;p&gt;
-&lt;p&gt;&lt;strong&gt;Sources:&lt;&#x2F;strong&gt; Milik, J. T., and VanderKam, J. C., &#x27;Jubilees&#x27; in &lt;em&gt;Qumran
-Cave 4: VIII, Parabiblical Texts, Part 1&lt;&#x2F;em&gt; (DJD XIII, Oxford 1994) —
-THE foundational publication of the DSS Hebrew Jubilees fragments;
-VanderKam, J. C., &lt;em&gt;The Book of Jubilees: A Critical Text and
-Translation&lt;&#x2F;em&gt; (CSCO 510-511; Scriptores Aethiopici 87-88; Leuven 1989)
-— THE standard modern critical Ge&#x27;ez edition + English; Charles, R.
-H., &lt;em&gt;The Book of Jubilees, or the Little Genesis&lt;&#x2F;em&gt; (London 1902; PD);
-VanderKam, J. C., &lt;em&gt;Jubilees: A Commentary in Two Volumes&lt;&#x2F;em&gt; (Hermeneia,
-Minneapolis 2018) — THE standard modern critical commentary; Segal,
-M., &lt;em&gt;The Book of Jubilees: Rewritten Bible, Redaction, Ideology and
-Theology&lt;&#x2F;em&gt; (JSJSup 117, Leiden 2007); Kugel, J. L., &lt;em&gt;A Walk through
-Jubilees&lt;&#x2F;em&gt; (JSJSup 156, Leiden 2012); Werman, C., &lt;em&gt;Sefer ha-Yovelim&lt;&#x2F;em&gt;
-(Jerusalem 2015); van Ruiten, J. T. A. G. M., &lt;em&gt;Primaeval History
-Interpreted: The Rewriting of Genesis 1-11 in the Book of Jubilees&lt;&#x2F;em&gt;
-(JSJSup 66, 2000); Scott, J. M., &lt;em&gt;Geography in Early Judaism and
-Christianity: The Book of Jubilees&lt;&#x2F;em&gt; (SNTS Monograph 113, 2002).&lt;&#x2F;p&gt;
-&lt;h2 id=&quot;narrative-arc&quot;&gt;Narrative arc&lt;&#x2F;h2&gt;
-&lt;p&gt;&lt;strong&gt;Ch 1&lt;&#x2F;strong&gt; — Moses ascends Sinai for 40 days + 40 nights; God predicts
-Israel&#x27;s apostasy + restoration; &lt;strong&gt;the heavenly tablets&lt;&#x2F;strong&gt; are dictated
-to Moses through &lt;strong&gt;the angel of the presence&lt;&#x2F;strong&gt; (&lt;em&gt;malak ha-panim&lt;&#x2F;em&gt;) —
-the chief celestial mediator + the dictator of the entire book.&lt;&#x2F;p&gt;
-&lt;p&gt;&lt;strong&gt;Ch 2&lt;&#x2F;strong&gt; — The angel of the presence recites the seven-days-of-creation
-in the Genesis 1 pattern, with embedded Jubilees-distinctive
-angelology (the &lt;strong&gt;seven categories of angels&lt;&#x2F;strong&gt; created on Day 1) and
-proto-calendrical detail (the luminaries-for-signs formula at 2:9).
-The Sabbath ordinance is established with the angel of the presence
-keeping Sabbath in heaven alongside Israel.&lt;&#x2F;p&gt;
-&lt;p&gt;&lt;strong&gt;Ch 3&lt;&#x2F;strong&gt; — Eden + the woman from the rib + Adam&#x27;s naming of animals&lt;&#x2F;p&gt;
+          <link>https://www.wheelofheaven.world/zh/news/library-hebrew-bible-nine-languages/</link>
+          <guid>https://www.wheelofheaven.world/zh/news/library-hebrew-bible-nine-languages/</guid>
+          <description xml:base="https://www.wheelofheaven.world/zh/news/library-hebrew-bible-nine-languages/">&lt;h2 id=&quot;yi-fa-bu-de-nei-rong&quot;&gt;已发布的内容&lt;&#x2F;h2&gt;
+&lt;p&gt;截至2026年6月7日，天轮图书馆收录了完整的希伯来圣经——从创世记到西番雅书，共三十六卷——并提供九种语言。每一章都在英语 ASV 1901 基准之外，并列呈现德语、西班牙语、法语、日语、韩语、俄语、简体中文与繁体中文的导入公有领域版本。以九种站点语言中任何一种查阅图书馆的读者，现在都可以直接以其阅读语言看到文本，无需再绕道英语。&lt;&#x2F;p&gt;
+&lt;p&gt;导入的版本均标注了名称、年份与公开许可。目录还报告了各语种的覆盖情况：当马所拉传统与武加大或大公会议传统之间的经节编号差异导致某节经文未能对齐时，英语 ASV 仍作为后备保留。&lt;&#x2F;p&gt;
+&lt;table&gt;&lt;thead&gt;&lt;tr&gt;&lt;th&gt;语言&lt;&#x2F;th&gt;&lt;th&gt;版本&lt;&#x2F;th&gt;&lt;th&gt;年份&lt;&#x2F;th&gt;&lt;th&gt;许可&lt;&#x2F;th&gt;&lt;&#x2F;tr&gt;&lt;&#x2F;thead&gt;&lt;tbody&gt;
+&lt;tr&gt;&lt;td&gt;英语&lt;&#x2F;td&gt;&lt;td&gt;American Standard Version (ASV)&lt;&#x2F;td&gt;&lt;td&gt;1901&lt;&#x2F;td&gt;&lt;td&gt;公有领域&lt;&#x2F;td&gt;&lt;&#x2F;tr&gt;
+&lt;tr&gt;&lt;td&gt;德语&lt;&#x2F;td&gt;&lt;td&gt;Elberfelder&lt;&#x2F;td&gt;&lt;td&gt;1905&lt;&#x2F;td&gt;&lt;td&gt;公有领域&lt;&#x2F;td&gt;&lt;&#x2F;tr&gt;
+&lt;tr&gt;&lt;td&gt;西班牙语&lt;&#x2F;td&gt;&lt;td&gt;Reina-Valera&lt;&#x2F;td&gt;&lt;td&gt;1909&lt;&#x2F;td&gt;&lt;td&gt;公有领域&lt;&#x2F;td&gt;&lt;&#x2F;tr&gt;
+&lt;tr&gt;&lt;td&gt;法语&lt;&#x2F;td&gt;&lt;td&gt;Crampon（约伯记、撒母耳记现存部分使用公有领域 Dhorme）&lt;&#x2F;td&gt;&lt;td&gt;1923&lt;&#x2F;td&gt;&lt;td&gt;公有领域&lt;&#x2F;td&gt;&lt;&#x2F;tr&gt;
+&lt;tr&gt;&lt;td&gt;日语&lt;&#x2F;td&gt;&lt;td&gt;口語訳 (Kougo-yaku)&lt;&#x2F;td&gt;&lt;td&gt;1955&lt;&#x2F;td&gt;&lt;td&gt;公有领域（保留人格权）&lt;&#x2F;td&gt;&lt;&#x2F;tr&gt;
+&lt;tr&gt;&lt;td&gt;韩语&lt;&#x2F;td&gt;&lt;td&gt;Korean Revised Version (KRV)&lt;&#x2F;td&gt;&lt;td&gt;1961&lt;&#x2F;td&gt;&lt;td&gt;公有领域&lt;&#x2F;td&gt;&lt;&#x2F;tr&gt;
+&lt;tr&gt;&lt;td&gt;俄语&lt;&#x2F;td&gt;&lt;td&gt;Synodal&lt;&#x2F;td&gt;&lt;td&gt;1876&lt;&#x2F;td&gt;&lt;td&gt;公有领域&lt;&#x2F;td&gt;&lt;&#x2F;tr&gt;
+&lt;tr&gt;&lt;td&gt;简体中文&lt;&#x2F;td&gt;&lt;td&gt;Chinese Union Version (和合本)&lt;&#x2F;td&gt;&lt;td&gt;1919&lt;&#x2F;td&gt;&lt;td&gt;公有领域&lt;&#x2F;td&gt;&lt;&#x2F;tr&gt;
+&lt;tr&gt;&lt;td&gt;繁体中文&lt;&#x2F;td&gt;&lt;td&gt;Chinese Union Version (和合本)&lt;&#x2F;td&gt;&lt;td&gt;1919&lt;&#x2F;td&gt;&lt;td&gt;公有领域&lt;&#x2F;td&gt;&lt;&#x2F;tr&gt;
+&lt;&#x2F;tbody&gt;&lt;&#x2F;table&gt;
+&lt;p&gt;每卷书的来源信息——译本名称、年份、许可、源 URL、检索日期——记录在每个条目的 &lt;code&gt;data-library&#x2F;catalog.json&lt;&#x2F;code&gt; 中，置于该书 &lt;code&gt;translations.{lang}&lt;&#x2F;code&gt; 区块之下。&lt;&#x2F;p&gt;
+&lt;h2 id=&quot;wei-he-xuan-yong-zhi-yi-ben&quot;&gt;为何选用直译本&lt;&#x2F;h2&gt;
+&lt;p&gt;上述所列每个导入版本，按其翻译理论，均为&lt;strong&gt;形式对等&lt;&#x2F;strong&gt;译本——有时也被笼统地称为&quot;直译&quot;。所选版本在各自传统中均位于&lt;em&gt;一致性&lt;&#x2F;em&gt;的一端：Elberfelder 是公认的现代以来最逐字逐句的德语圣经；Reina-Valera、Crampon、Synodal、KRV 与 Chinese Union Version 在各自语言中也都属于同一形式对等谱系。口語訳 是古典文語訳 的口语化日语现代化版本——按该传统的标准仍为形式对等，刻意定位为对抗后来成为日本天主教与新教共同标准的动态对等 新共同訳（1987）。&lt;&#x2F;p&gt;
+&lt;p&gt;这一选择是经过深思熟虑的，并非怀旧。形式对等译本试图保留来源的&lt;strong&gt;词汇与句法形态&lt;&#x2F;strong&gt;——只要语言允许，一个希伯来词对应一个目标词；一个希伯来分句对应一个目标分句；同一来源经节中的同一词，在整个语料中尽量得到同样的翻译。动态对等译本则反其道而行——它试图保留对读者所产生的&lt;em&gt;效果&lt;&#x2F;em&gt;，这意味着它惯常地压缩、改述、并将来源的选择平整化为目标语言的习惯表达。&lt;&#x2F;p&gt;
+&lt;p&gt;对于一座以比较为唯一存在理由而托管八种译本的图书馆而言——&lt;em&gt;每个传统如何处理神圣之名的经文段落？如何处理创世记 1:1？如何处理诗篇 82？如何处理 Elohim 的复数形式？&lt;&#x2F;em&gt;——形式对等是唯一能保留这个问题的语域。一旦某译本决定将 &lt;code&gt;יהוה&lt;&#x2F;code&gt; 译为&quot;the LORD&quot;只因这样更符合英语读感、或译为&quot;主&quot;只因这样更符合日语读感，那么语料想要追踪的词汇选择便已消失。读者所见的是译者的修整，而非译者的解读。&lt;&#x2F;p&gt;
+&lt;p&gt;同样的推理也适用于 Elohim 这一指称本身。Elberfelder 在希伯来文区分两词之处保留&quot;Jehova&quot; &#x2F; &quot;Elohim&quot; 的可见性；Crampon 以同样的严谨写作&quot;Yahweh&quot;与&quot;Élohim&quot;；Synodal 保留与底层来源对应的&quot;Господь&quot; &#x2F; &quot;Бог&quot;配对。动态对等译本会在同一节经文中只给读者一个未加区分的&lt;em&gt;神&lt;&#x2F;em&gt;——读起来更顺，但比较性论证已无对象可比。&lt;&#x2F;p&gt;
+&lt;h2 id=&quot;wei-he-ci-xing-tai-gua-he-tu-shu-guan&quot;&gt;为何此形态适合图书馆&lt;&#x2F;h2&gt;
+&lt;p&gt;图书馆始终将希伯来圣经视为本项目所读取的运作性源文，而非作为目标译本。英语 ASV 是项目主要读者群的阅读界面；底层希伯来文才是语料实际所接触的对象。今天之前所缺失的，是一条让非英语读者无需以英语为强制中介即可查阅图书馆的整洁路径。&lt;&#x2F;p&gt;
+&lt;p&gt;各语种版本的选定遵循语料的源头分级原则。每个导入译本都是十九或二十世纪的批判性或近批判性版本——足够久远以进入公有领域，又足够晚近以保有语文学严肃性。当语料偏好的读法需要仍在版权保护下的现代版本时，项目要么使用该版本的公有领域子集，要么明确标注其缺口。最清楚的例子是法语：Dhorme 七星文库圣经——也就是 Raël 在1973年接触期间所参考的版本——在法国版权法下大约要到2071年才进入公有领域。图书馆以 Crampon 1923 为基准，并以 Dhorme 较早期的公有领域约伯记（1929）与撒母耳记（1910）在这三卷书可用之处替换 Crampon。各语种完整的选定推理——为何选 Elberfelder 而非路德版，为何选 Crampon 而非 Darby，为何选 口語訳 而非 新共同訳，为何选1961年 KRV 而非更严格的1938年版——见文档站点 &lt;a href=&quot;https:&#x2F;&#x2F;docs.wheelofheaven.world&#x2F;contributing&#x2F;content&#x2F;imported-translations&#x2F;&quot;&gt;docs.wheelofheaven.world&#x2F;contributing&#x2F;content&#x2F;imported-translations&lt;&#x2F;a&gt;。&lt;&#x2F;p&gt;
+&lt;p&gt;语料将希伯来圣经读作一部分层文本，其 Elohim 指称在原文语言中具有运作性。现代译本是下游的诠释性举动，而某译本所作的诠释举动在特定经节中清晰可见——创世记 1:1、诗篇 82、出埃及记 3:14、以及散见全书的神圣之名段落。将八种导入译本与 ASV 并列托管，使这种可见性成为常态：想要比较 Elberfelder、Crampon、Synodal 与 CUV 各自如何处理某节争议经文的读者，现在无需离开图书馆页面便可做到。&lt;&#x2F;p&gt;
+&lt;h2 id=&quot;zhe-zai-geng-chang-yuan-de-ji-hua-zhong-de-wei-zhi&quot;&gt;这在更长远的计划中的位置&lt;&#x2F;h2&gt;
+&lt;p&gt;导入译本管线是图书馆使命的一半。另一半是&lt;a href=&quot;https:&#x2F;&#x2F;docs.wheelofheaven.world&#x2F;contributing&#x2F;content&#x2F;source-text-translation&#x2F;&quot;&gt;天轮翻译&lt;&#x2F;a&gt;，目前正逐章推进创世记——一份在项目自身术语表纪律下，从希伯来文产出的新鲜英语读本，每章背后均有翻译者-编辑者-审阅者管线。导入译本提供&lt;strong&gt;广度&lt;&#x2F;strong&gt;（覆盖每卷书、八种语言、公有领域版本，今日发布）；天轮翻译提供&lt;strong&gt;深度&lt;&#x2F;strong&gt;（一个传统、一次一卷书、语文学上有所辩护，仍在进行中）。&lt;&#x2F;p&gt;
+&lt;p&gt;两条管线都灌注到每个章节文件相同的 &lt;code&gt;paragraphs[].i18n[lang]&lt;&#x2F;code&gt; 字段中，这意味着图书馆模板通过同一界面来呈现两者。当天轮翻译的创世记达到首个稳定版本时，它将作为项目自身对所建构的比较图景的贡献，与这些导入读本并列。&lt;&#x2F;p&gt;
+&lt;h2 id=&quot;he-chu-ke-jian&quot;&gt;何处可见&lt;&#x2F;h2&gt;
 &lt;ul&gt;
-&lt;li&gt;the fall + the Jubilees-distinctive detail that &lt;strong&gt;the serpent&#x27;s
-punishment includes loss of speech&lt;&#x2F;strong&gt; (&#x27;their mouth was sealed... that
-they no longer spoke&#x27;). The 80-day + 40-day post-birth purification
-time-doublings are the foundational text for Lev 12. Adam burns
-incense as &lt;strong&gt;proto-priestly Adam&lt;&#x2F;strong&gt;.&lt;&#x2F;li&gt;
+&lt;li&gt;图书馆索引：&lt;a href=&quot;&#x2F;library&#x2F;&quot;&gt;&#x2F;library&#x2F;&lt;&#x2F;a&gt;——每卷希伯来圣经现在其可用性矩阵中列出九种语言&lt;&#x2F;li&gt;
+&lt;li&gt;章节样例：&lt;a href=&quot;&#x2F;library&#x2F;genesis&#x2F;&quot;&gt;&#x2F;library&#x2F;genesis&#x2F;&lt;&#x2F;a&gt;（或以您的阅读语言：&lt;code&gt;&#x2F;de&#x2F;library&#x2F;genesis&#x2F;&lt;&#x2F;code&gt;、&lt;code&gt;&#x2F;ja&#x2F;library&#x2F;genesis&#x2F;&lt;&#x2F;code&gt;……）&lt;&#x2F;li&gt;
+&lt;li&gt;每卷书的目录与来源信息：&lt;a href=&quot;https:&#x2F;&#x2F;github.com&#x2F;wheelofheaven&#x2F;data-library&#x2F;blob&#x2F;main&#x2F;catalog.json&quot;&gt;GitHub 上的 &lt;code&gt;data-library&#x2F;catalog.json&lt;&#x2F;code&gt;&lt;&#x2F;a&gt;&lt;&#x2F;li&gt;
+&lt;li&gt;方法论与分语种源头计划推理：&lt;a href=&quot;https:&#x2F;&#x2F;docs.wheelofheaven.world&#x2F;contributing&#x2F;content&#x2F;imported-translations&#x2F;&quot;&gt;docs.wheelofheaven.world&#x2F;contributing&#x2F;content&#x2F;imported-translations&lt;&#x2F;a&gt;&lt;&#x2F;li&gt;
 &lt;&#x2F;ul&gt;
-&lt;p&gt;&lt;strong&gt;Ch 4&lt;&#x2F;strong&gt; — Adam&#x27;s descendants through Cain + Awan + Azura to Noah.
-&lt;strong&gt;Jub 4:5&lt;&#x2F;strong&gt; establishes the measure-for-measure principle (&#x27;by the
-stone... his house fell upon him and he died&#x27;). &lt;strong&gt;Jub 4:17-26 is THE
-foundational Enoch-as-celestial-scribe text&lt;&#x2F;strong&gt; — Enoch is the FIRST of
-humanity to learn writing, composes a calendrical compendium, receives
-apocalyptic-historical revelation, spends 6 jubilees of years with
-the angels, writes the indictment of the Watchers, is taken into Eden,
-and serves as celestial-priest + judge. &lt;strong&gt;Jub 4:30&lt;&#x2F;strong&gt; — the 1000-year-day
-midrash on Gen 5:5 (cross-corpus to Ps 90:4 + 2 Pet 3:8).&lt;&#x2F;p&gt;
-&lt;p&gt;&lt;strong&gt;Ch 5&lt;&#x2F;strong&gt; — The compressed &lt;strong&gt;Watchers narrative&lt;&#x2F;strong&gt; parallel to 1 Enoch
-6-11 (Hebrew-primary at 5:1 via 11Q12). Jubilees uses &lt;em&gt;malake el&lt;&#x2F;em&gt;
-&#x27;angels of God&#x27; rather than the Genesis 6:1 &lt;em&gt;bnei elohim&lt;&#x2F;em&gt; &#x27;sons of
-God&#x27; — a deliberate disambiguation. The giants slaughter each other
-prior to the Flood (5:7-9). &lt;strong&gt;Jub 5:13&lt;&#x2F;strong&gt; — the heavenly tablets contain
-all judgments in righteousness. &lt;strong&gt;Jub 5:17-19&lt;&#x2F;strong&gt; — the foundational Yom
-Kippur etiology.&lt;&#x2F;p&gt;
-&lt;p&gt;&lt;strong&gt;Ch 6&lt;&#x2F;strong&gt; — The &lt;strong&gt;Noachic covenant&lt;&#x2F;strong&gt; + the seven Noahide commands
-(blood-prohibition + violence-prohibition; cross-corpus to b.
-Sanhedrin 56a-60a + Acts 15). &lt;strong&gt;Jub 6:17-22&lt;&#x2F;strong&gt; is Jubilees&#x27; foundational
-establishment of &lt;strong&gt;Shavuot as the covenant-renewal feast&lt;&#x2F;strong&gt;. &lt;strong&gt;Jub
-6:32-38 is THE FOUNDATIONAL 364-day-solar-calendar polemic&lt;&#x2F;strong&gt;:
-&quot;observe the years according to this reckoning — 364 days, and they
-will constitute a complete year&quot; (6:32). The sharpest polemic
-verse — 6:36 &quot;they will make the moon disturb the seasons&quot; — is the
-defining polemical statement of the calendrical-identity-dispute that
-separated the Qumran-Enochic-Jubilees community from the proto-Rabbinic
-luni-solar tradition.&lt;&#x2F;p&gt;
-&lt;p&gt;&lt;strong&gt;Ch 7&lt;&#x2F;strong&gt; — Noah&#x27;s vineyard + drunkenness + curse of Ham&#x2F;Canaan;
-&lt;strong&gt;Noah&#x27;s testament&lt;&#x2F;strong&gt; to his grandsons; the tripartite-giants nomenclature
-(Naphidim + Nephilim + Elyo at 7:22); proto-Mastema material at 7:27.&lt;&#x2F;p&gt;
-&lt;p&gt;&lt;strong&gt;Chs 8-9&lt;&#x2F;strong&gt; — &lt;strong&gt;The table-of-nations + land-division-by-lot&lt;&#x2F;strong&gt; under
-angelic supervision. &lt;strong&gt;Greek-primary at 8:12, 8:22, 8:25&lt;&#x2F;strong&gt; (Epiphanius
-Greek). &lt;strong&gt;Jub 8:19 is THE EXPLICIT three-holy-mountains formula&lt;&#x2F;strong&gt;:
-&lt;strong&gt;Mount Zion&lt;&#x2F;strong&gt; as the navel-of-the-earth + &lt;strong&gt;Mount Sinai&lt;&#x2F;strong&gt; as the
-center-of-the-desert + &lt;strong&gt;Mount of the East &#x2F; Eden-mountain&lt;&#x2F;strong&gt; as the
-center-of-the-world — extending the existing 7-tradition cosmic-mountain
-cluster to an 8-tradition cluster. The 9:14-15 oath of binding
-establishes the cosmographic-justification of the conquest-etiology.&lt;&#x2F;p&gt;
-&lt;p&gt;&lt;strong&gt;Ch 10&lt;&#x2F;strong&gt; — &lt;strong&gt;Mastema introduced&lt;&#x2F;strong&gt; at 10:7-9 — the prince-of-the-spirits
-petitions God to leave 1&#x2F;10 of the demons unbound. One of the &lt;strong&gt;earliest
-extant proper-noun designations of the Satan-figure&lt;&#x2F;strong&gt; in Second Temple
-Judaism. &lt;strong&gt;Noah&#x27;s medicinal book&lt;&#x2F;strong&gt; at 10:10-14 — the foundational text
-for the &lt;strong&gt;Sefer Refuot&lt;&#x2F;strong&gt; tradition (cross-corpus to b. Pesachim 56a
-where Hezekiah hides the Book of Cures). &lt;strong&gt;The Tower of Babel&lt;&#x2F;strong&gt; with
-Jubilees-distinctive wind-overthrow detail (10:21 — &quot;the Lord sent a
-great wind against the tower and overthrew it onto the ground&quot;) +
-seventy-languages dispersal (10:26).&lt;&#x2F;p&gt;
-&lt;p&gt;&lt;strong&gt;Ch 11&lt;&#x2F;strong&gt; — Abram&#x27;s birth + Mastema directs idolatry (11:3) + sends
-ravens against Abram&#x27;s seed (11:11; Abram drives them away by speaking
-— foundational for the &lt;strong&gt;Abram-as-child-iconoclast&lt;&#x2F;strong&gt; tradition).&lt;&#x2F;p&gt;
-&lt;p&gt;&lt;strong&gt;Ch 12&lt;&#x2F;strong&gt; — &lt;strong&gt;Abraham&#x27;s iconoclasm&lt;&#x2F;strong&gt;. &lt;strong&gt;Jub 12:12-14 is THE EARLIEST
-EXTANT TEXT of the Abraham-iconoclasm-fire tradition&lt;&#x2F;strong&gt;: Abram burns
-down &#x27;the house of idols&#x27; (12:12) + Haran dies trying to rescue the
-idols (12:14). This is the seed of the trans-Abrahamic tradition
-spanning Apocalypse of Abraham 1-8 + Genesis Rabbah 38:13 + b. Bava
-Batra 91a (the rabbinic &lt;em&gt;Ur-Kasdim&lt;&#x2F;em&gt; as &#x27;fire of the Chaldees&#x27; midrash)&lt;&#x2F;p&gt;
-&lt;ul&gt;
-&lt;li&gt;Qur&#x27;an Sura 21:51-71 + 37:83-98 + 6:74-79 + 19:41-50 (Ibrahim cast
-into the furnace). &lt;strong&gt;Jub 12:19&lt;&#x2F;strong&gt; — Abram&#x27;s anti-Mastema prayer to El
-Elyon. &lt;strong&gt;Jub 12:25-26&lt;&#x2F;strong&gt; is THE EARLIEST EXTANT TEXT of the &lt;strong&gt;Hebrew-as-
-creation-language tradition&lt;&#x2F;strong&gt; — the angel opens Abram&#x27;s mouth + ears
-and teaches him Hebrew, &quot;the language that had been from the beginning
-of the world but had been forgotten&quot; at Babel; Abram then reads the
-pre-Mosaic Enochic + Noachic library.&lt;&#x2F;li&gt;
-&lt;&#x2F;ul&gt;
-&lt;h2 id=&quot;cross-corpus-density&quot;&gt;Cross-corpus density&lt;&#x2F;h2&gt;
-&lt;p&gt;Jubilees is the principal native-Hebrew witness to: the &lt;strong&gt;Watchers
-tradition&lt;&#x2F;strong&gt; (parallel to 1 En 6-11); &lt;strong&gt;Enoch-as-celestial-scribe&lt;&#x2F;strong&gt; (Jub
-4:17-26 — the foundational text for the Enoch-Metatron tradition);
-the &lt;strong&gt;heavenly tablets&lt;&#x2F;strong&gt; motif (densest extant articulation, 25+
-occurrences); the &lt;strong&gt;giants-become-evil-spirits demonology&lt;&#x2F;strong&gt; (Jub 10:1-6
-parallel to 1 En 15:8); the &lt;strong&gt;364-day solar calendar polemic&lt;&#x2F;strong&gt; (Jub
-6:32-38 foundational; 1 En 72-82 technical implementation).&lt;&#x2F;p&gt;
-&lt;p&gt;&lt;strong&gt;Ten major bidirectional wires&lt;&#x2F;strong&gt; established or extended this pass:&lt;&#x2F;p&gt;
-&lt;ol&gt;
-&lt;li&gt;&lt;strong&gt;Mastema as the earliest extant Satan-figure&lt;&#x2F;strong&gt; designation —
-bidirectional with CD 16:5 + 1QS 3:18-25 + 1QM 13:11 + Test. Levi
-19.&lt;&#x2F;li&gt;
-&lt;li&gt;&lt;strong&gt;Heavenly tablets densest extant articulation&lt;&#x2F;strong&gt; — extends v2.67.0
-1 Enoch 81 entry; bidirectional to Dan 7:10 + Rev 5:1 + Rev 20:12.&lt;&#x2F;li&gt;
-&lt;li&gt;&lt;strong&gt;Enoch-as-scribe foundation&lt;&#x2F;strong&gt; — Jub 4:17-26 the earliest systematic
-articulation; bidirectional to 1 En 12-13 + 3 Enoch &#x2F; Metatron
-tradition.&lt;&#x2F;li&gt;
-&lt;li&gt;&lt;strong&gt;364-day calendar polemic foundation&lt;&#x2F;strong&gt; — Jub 6:32-38 + Jub 6:36
-foundational polemic; CD 16:2-3 identifies Jubilees as calendrical
-authority.&lt;&#x2F;li&gt;
-&lt;li&gt;&lt;strong&gt;Abraham-iconoclasm-fire trans-Abrahamic tradition&lt;&#x2F;strong&gt; — Jub 12:12-14
-the earliest extant text; bidirectional to Apoc. Abraham + Genesis
-Rabbah 38:13 + b. Bava Batra 91a + Qur&#x27;an Sura 21&#x2F;37&#x2F;6&#x2F;19.&lt;&#x2F;li&gt;
-&lt;li&gt;&lt;strong&gt;Three-holy-mountains omphalos extension&lt;&#x2F;strong&gt; — Jub 8:19 (Zion +
-Sinai + Mt-of-the-East) extends the cosmic-mountain cluster.&lt;&#x2F;li&gt;
-&lt;li&gt;&lt;strong&gt;Giants-become-evil-spirits demonology&lt;&#x2F;strong&gt; — Jub 10:1-6 + 1 En
-15:8-12 bidirectional.&lt;&#x2F;li&gt;
-&lt;li&gt;&lt;strong&gt;Hebrew-as-creation-language tradition&lt;&#x2F;strong&gt; — Jub 12:25-26 the earliest
-text; bidirectional to b. Sanhedrin 38b + Genesis Rabbah 18:4 +
-Jerome + Augustine.&lt;&#x2F;li&gt;
-&lt;li&gt;&lt;strong&gt;Tower-of-Babel wind-overthrow tradition&lt;&#x2F;strong&gt; — Jub 10:21 the earliest
-specific wind-overthrow; bidirectional to Pseudo-Philo + Sib. Or.
-&lt;ul&gt;
-&lt;li&gt;3 Bar + b. Sanhedrin 109a.&lt;&#x2F;li&gt;
-&lt;&#x2F;ul&gt;
-&lt;&#x2F;li&gt;
-&lt;li&gt;&lt;strong&gt;Sefer Refuot &#x2F; Noah&#x27;s medicinal book&lt;&#x2F;strong&gt; — Jub 10:10-14 the
-foundational text; bidirectional to b. Pesachim 56a + Aramaic Levi
-51-57 + Mesopotamian apkallū knowledge-transmission framework.&lt;&#x2F;li&gt;
-&lt;&#x2F;ol&gt;
-&lt;h2 id=&quot;jubilees-in-the-canon&quot;&gt;Jubilees in the canon&lt;&#x2F;h2&gt;
-&lt;p&gt;Jubilees was widely read at Qumran — the 15+ DSS witnesses make it one
-of the most-attested non-canonical texts in the Scrolls — and explicitly
-cited at CD 16:2-3 (the Damascus Document) as authoritative on
-calendrical questions. It is canonical in the &lt;strong&gt;Ethiopian Orthodox
-Tewahedo Church&lt;&#x2F;strong&gt; (where it appears as &lt;em&gt;Kufale&lt;&#x2F;em&gt; &#x27;division&#x27;) and in the
-&lt;strong&gt;Beta Israel&lt;&#x2F;strong&gt; (Ethiopian Jewish) tradition. It survived in these
-canon-traditions but was lost to the wider Christian + rabbinic
-traditions until the modern recovery.&lt;&#x2F;p&gt;
-&lt;h2 id=&quot;translation-choices-preserved&quot;&gt;Translation choices preserved&lt;&#x2F;h2&gt;
-&lt;ul&gt;
-&lt;li&gt;&lt;strong&gt;Per-verse layered witness attribution&lt;&#x2F;strong&gt; — Hebrew DSS primary where
-preserved; Greek Epiphanius secondary at chs 8-9; Ge&#x27;ez tertiary +
-fallback&lt;&#x2F;li&gt;
-&lt;li&gt;&lt;strong&gt;Mastema&lt;&#x2F;strong&gt; preserved as proper noun (not &quot;Satan&quot; &#x2F; &quot;the Adversary&quot;
-on surface) — the Jubilees-specific identity is philologically distinct
-from later cosmic-dualist Satan-figure&lt;&#x2F;li&gt;
-&lt;li&gt;&lt;strong&gt;Heavenly tablets&lt;&#x2F;strong&gt; (&lt;em&gt;luhot ha-shamayim&lt;&#x2F;em&gt;) preserved as a fixed
-technical phrase across all 25+ occurrences&lt;&#x2F;li&gt;
-&lt;li&gt;&lt;strong&gt;Angel of the presence&lt;&#x2F;strong&gt; (&lt;em&gt;malak ha-panim&lt;&#x2F;em&gt;) preserved as a fixed
-Jubilees-distinctive title&lt;&#x2F;li&gt;
-&lt;li&gt;&lt;strong&gt;Three holy mountains&lt;&#x2F;strong&gt; trio preserved as proper nouns (Mount Zion
-&lt;ul&gt;
-&lt;li&gt;Mount Sinai + Mount of the East &#x2F; Eden-mountain)&lt;&#x2F;li&gt;
-&lt;&#x2F;ul&gt;
-&lt;&#x2F;li&gt;
-&lt;li&gt;&lt;em&gt;Watchers&lt;&#x2F;em&gt; &#x2F; &lt;em&gt;malake el&lt;&#x2F;em&gt; &#x2F; &lt;em&gt;bnei elohim&lt;&#x2F;em&gt; — &quot;Watchers&quot; &#x2F; &quot;angels of
-God&quot; &#x2F; &quot;sons of God&quot; per established 1 Enoch precedent&lt;&#x2F;li&gt;
-&lt;li&gt;&lt;strong&gt;364-day-calendar polemical voice preserved&lt;&#x2F;strong&gt; without softening or
-pre-resolution&lt;&#x2F;li&gt;
-&lt;li&gt;Mt-of-the-East identification ambiguity preserved at 8:19 (three
-competing scholarly identifications noted in commentary)&lt;&#x2F;li&gt;
-&lt;li&gt;Mastema vs Beliar variant at 1:20: principal Ge&#x27;ez Bēlhārā reading
-&quot;Beliar&quot; preserved&lt;&#x2F;li&gt;
-&lt;li&gt;1&#x2F;10 demon-bargain at 10:8-9: bargain-narrative voice preserved
-without harmonization with later cosmic-dualism&lt;&#x2F;li&gt;
-&lt;li&gt;NO archaic forms; NO Sitchin&#x2F;WoH&#x2F;ancient-astronaut framing on surface&lt;&#x2F;li&gt;
-&lt;li&gt;Acknowledgment-without-endorsement framework at the Mastema-as-rival-
-Elohim-faction reading + the Watchers-as-Elohim-civilization reading
-lives in commentary apparatus only&lt;&#x2F;li&gt;
-&lt;&#x2F;ul&gt;
-&lt;p&gt;The translation was drafted by Claude Opus 4.7 and edited through the
-Wheel of Heaven Translation Program pipeline (Translator → Editor →
-Reviewer). 12 new central glossary entries (all &lt;code&gt;claim_type=direct&lt;&#x2F;code&gt;)&lt;&#x2F;p&gt;
-&lt;ul&gt;
-&lt;li&gt;10 existing-entry extensions + 7 per-translation overlay entries;
-central glossary v2.67.0 → &lt;strong&gt;v2.68.0&lt;&#x2F;strong&gt;; per-translation overlay v1.0.0
-→ &lt;strong&gt;v1.1.0&lt;&#x2F;strong&gt;. All 373 verses reviewer-approved; zero lens-leakage
-flags; zero speculative-claim entries.&lt;&#x2F;li&gt;
-&lt;&#x2F;ul&gt;
-&lt;p&gt;&lt;strong&gt;Ship B (Jubilees 13-50)&lt;&#x2F;strong&gt; remains a future ship — the patriarchal
-narrative from Abraham&#x27;s call through the Sinai-revelation. Includes:
-the binding of Isaac through Mastema (Jub 17-18); Jacob&#x27;s Bethel
-theophany (Jub 27); the Levi-priesthood etiology (Jub 30-32); Joseph
-(Jub 39-46); Moses + the Exodus + Sinai (Jub 47-50). Estimated scope:
-~38 chapters, ~900+ verses — significantly larger than Ship A.&lt;&#x2F;p&gt;
-&lt;p&gt;The methodology is documented at
-&lt;a href=&quot;https:&#x2F;&#x2F;docs.wheelofheaven.world&#x2F;contributing&#x2F;content&#x2F;source-text-translation&#x2F;&quot;&gt;Source-Text Translation&lt;&#x2F;a&gt;.&lt;&#x2F;p&gt;
-&lt;h2 id=&quot;see-also&quot;&gt;See also&lt;&#x2F;h2&gt;
-&lt;ul&gt;
-&lt;li&gt;&lt;a href=&quot;&#x2F;wiki&#x2F;reference-corpus-of-the-raelian-canon&#x2F;&quot;&gt;Reference corpus of the Raëlian canon&lt;&#x2F;a&gt; — the catalogue of texts the Raëlian canon engages&lt;&#x2F;li&gt;
-&lt;li&gt;&lt;a href=&quot;&#x2F;library&#x2F;book-of-enoch-woh&#x2F;&quot;&gt;1 Enoch (Watchers + Astronomical Book)&lt;&#x2F;a&gt; — the principal Aramaic Enochian companion text&lt;&#x2F;li&gt;
-&lt;li&gt;&lt;a href=&quot;&#x2F;library&#x2F;gilgamesh-woh&#x2F;&quot;&gt;The Epic of Gilgamesh (Wheel of Heaven Translation)&lt;&#x2F;a&gt; — also named in &lt;em&gt;Yes... I am Raelian&lt;&#x2F;em&gt; among the texts &quot;closer to the truth&quot;&lt;&#x2F;li&gt;
-&lt;li&gt;&lt;a href=&quot;&#x2F;library&#x2F;genesis-woh&#x2F;&quot;&gt;Genesis (Wheel of Heaven Translation)&lt;&#x2F;a&gt; — the canonical Genesis material Jubilees rewrites&lt;&#x2F;li&gt;
-&lt;&#x2F;ul&gt;
-</description>
-      </item>
-      <item>
-          <title>1 Enoch (Watchers + Astronomical Book)</title>
-          <pubDate>Fri, 05 Jun 2026 00:00:00 +0000</pubDate>
-          <author>Unknown</author>
-          <link>https://www.wheelofheaven.world/library/book-of-enoch-woh/</link>
-          <guid>https://www.wheelofheaven.world/library/book-of-enoch-woh/</guid>
-          <description xml:base="https://www.wheelofheaven.world/library/book-of-enoch-woh/">&lt;p&gt;&lt;strong&gt;1 Enoch — Wheel of Heaven Translation. Ships A+B: the Book of the
-Watchers (chs 1-36) + the Astronomical Book (chs 72-82).&lt;&#x2F;strong&gt; The most
-directly WoH-engaged text in the entire pseudepigrapha — named in
-&lt;em&gt;Yes... I am Raelian&lt;&#x2F;em&gt; among the texts &quot;closer to the truth,&quot;
-alongside the Mahābhārata, Kojiki, Popol Vuh, and the Epic of
-Gilgamesh.&lt;&#x2F;p&gt;
-&lt;p&gt;&lt;strong&gt;47 chapters &#x2F; 403 verses&lt;&#x2F;strong&gt; across two compositions, produced from a
-&lt;strong&gt;per-verse layered witness reconstruction&lt;&#x2F;strong&gt;:&lt;&#x2F;p&gt;
-&lt;ul&gt;
-&lt;li&gt;&lt;strong&gt;Ship A — Book of the Watchers (chs 1-36; 248 verses).&lt;&#x2F;strong&gt; Aramaic
-Dead Sea Scrolls fragments (&lt;strong&gt;4Q201 &#x2F; 4Q202 &#x2F; 4Q204 &#x2F; 4Q205 &#x2F;
-4Q206 &#x2F; 4Q207&lt;&#x2F;strong&gt;; late 3rd c. BCE – 1st c. BCE) as PRIMARY witness
-where preserved; &lt;strong&gt;Greek Akhmim Panopolitanus codex&lt;&#x2F;strong&gt; (6th c. CE;
-chs 1-32 substantially complete) SECONDARY; &lt;strong&gt;Ge&#x27;ez (Ethiopic)&lt;&#x2F;strong&gt; —
-the only complete witness — TERTIARY and fallback. The Greek
-Akhmim breaks off mid-chapter 32; chs 33-36 are witnessed by Ge&#x27;ez
-alone.&lt;&#x2F;li&gt;
-&lt;li&gt;&lt;strong&gt;Ship B — Astronomical Book &#x2F; &lt;em&gt;Sefer ha-Mazzalot&lt;&#x2F;em&gt; &#x2F; Book of the
-Luminaries (chs 72-82; 155 verses).&lt;&#x2F;strong&gt; Aramaic DSS fragments
-&lt;strong&gt;4Q208 &#x2F; 4Q209 &#x2F; 4Q210 &#x2F; 4Q211&lt;&#x2F;strong&gt; as PRIMARY witness where preserved
-— &lt;strong&gt;4Q208 is the OLDEST surviving Enoch material overall&lt;&#x2F;strong&gt;, dated by
-Milik 1976 to &quot;the end of the third or beginning of the second
-century BCE,&quot; predating even the Watchers fragments. &lt;strong&gt;No Greek
-witness&lt;&#x2F;strong&gt; for chs 72-82 (Akhmim covers only chs 1-32); the layered
-schema collapses to Aramaic + Ge&#x27;ez. Significantly: &lt;strong&gt;the Aramaic
-recension is materially longer than the Ge&#x27;ez&lt;&#x2F;strong&gt;, with much
-astronomical detail (lunar synodic tables, gate-by-gate sun
-tracking, precise day-counts) abbreviated or omitted in the
-Ethiopic transmission tradition (Milik 1976; Nickelsburg–VanderKam
-2012; Drawnel 2011).&lt;&#x2F;li&gt;
-&lt;&#x2F;ul&gt;
-&lt;p&gt;&lt;strong&gt;Sources:&lt;&#x2F;strong&gt; Milik 1976 &lt;em&gt;The Books of Enoch&lt;&#x2F;em&gt; (the foundational
-publication of the Qumran Aramaic fragments); Black 1985 &lt;em&gt;The Book
-of Enoch or 1 Enoch&lt;&#x2F;em&gt; (Greek + commentary); Nickelsburg 2001 &lt;em&gt;1 Enoch
-1&lt;&#x2F;em&gt; (Hermeneia, chs 1-36, 81-108); &lt;strong&gt;Nickelsburg–VanderKam 2012 &lt;em&gt;1
-Enoch 2&lt;&#x2F;em&gt; (Hermeneia, chs 37-82) — THE standard modern critical
-commentary on the Astronomical Book&lt;&#x2F;strong&gt;; Charles 1912 &lt;em&gt;The Book of
-Enoch&lt;&#x2F;em&gt; (PD, Ge&#x27;ez baseline); Knibb 1978 &lt;em&gt;The Ethiopic Book of Enoch&lt;&#x2F;em&gt;
-(Ge&#x27;ez scholarly standard); &lt;strong&gt;Neugebauer 1985 &lt;em&gt;The &#x27;Astronomical&#x27;
-Chapters of the Ethiopic Book of Enoch (72-82)&lt;&#x2F;em&gt; — the specialist
-scientific commentary&lt;&#x2F;strong&gt;; Tigchelaar–García Martínez DJD XXXVI (2000);
-&lt;strong&gt;VanderKam 1998 &lt;em&gt;Calendars in the Dead Sea Scrolls&lt;&#x2F;em&gt;&lt;&#x2F;strong&gt;; Beckwith
-1996; Glessmer 1999; Drawnel 2011 &lt;em&gt;The Aramaic Astronomical Book&lt;&#x2F;em&gt;;
-Stern 2001; VanderKam 1984 &lt;em&gt;Enoch and the Growth of an Apocalyptic
-Tradition&lt;&#x2F;em&gt;; Reed 2005 &lt;em&gt;Fallen Angels and the History of Judaism and
-Christianity&lt;&#x2F;em&gt;; Stuckenbruck 2007.&lt;&#x2F;p&gt;
-&lt;h2 id=&quot;ship-a-book-of-the-watchers-chs-1-36&quot;&gt;Ship A — Book of the Watchers (chs 1-36)&lt;&#x2F;h2&gt;
-&lt;p&gt;Enoch&#x27;s opening theophany prophecy (chs 1-5; the &lt;em&gt;Jude 14-15 quote
-site&lt;&#x2F;em&gt; at 1:9); the Watchers&#x27; descent on Mount Hermon (ch 6) + the 200
-sons-of-heaven taking human wives + the 20 Watcher chiefs (Šemiḥazah,
-ʿAzazʾēl, Bărāqʾēl, Kōkabʾēl, etc.); the engendering of the Nephilim
-giants (ch 7); &lt;strong&gt;Asael&#x27;s knowledge-transmission catalog&lt;&#x2F;strong&gt; —
-metallurgy, weapons-craft, cosmetics, magic, astronomical-divination
-(ch 8); the archangels&#x27; intercession (ch 9); the Most High&#x27;s
-commission + Asael bound at Dudael (ch 10); &lt;strong&gt;Enoch the
-scribe-intercessor&lt;&#x2F;strong&gt; (chs 12-13); &lt;strong&gt;the throne-vision and the Great
-Glory&lt;&#x2F;strong&gt; (ch 14 — the four-tradition throne-vision cluster); the
-indictment-sealed + the &lt;strong&gt;giants-become-evil-spirits demonology&lt;&#x2F;strong&gt;
-(chs 15-16); Enoch&#x27;s cosmic tours through the abyss + mountains-of-
-fire + &lt;strong&gt;the seven mountains of God&lt;&#x2F;strong&gt; (chs 17-19, 24-25); the &lt;strong&gt;list
-of seven archangels&lt;&#x2F;strong&gt; (ch 20; Aramaic 4 vs Greek 7 textual variant
-preserved); the prison of the fallen stars (ch 21); &lt;strong&gt;the four
-hollow places of the dead&lt;&#x2F;strong&gt; (ch 22 — foundational intermediate-state
-doctrine); the &lt;strong&gt;tree of life on the paradisiacal mountain&lt;&#x2F;strong&gt; (chs
-24-25); &lt;strong&gt;Jerusalem as the center of the earth&lt;&#x2F;strong&gt; (ch 26); &lt;strong&gt;the
-Valley of Hinnom = Gehenna&lt;&#x2F;strong&gt; (ch 27 — fountainhead text for the 12
-NT &lt;em&gt;geenna&lt;&#x2F;em&gt; references); the eastern paradise + aromatic trees (chs
-28-31); &lt;strong&gt;the tree of wisdom = Genesis 3 tree of knowledge&lt;&#x2F;strong&gt; (ch 32 —
-Sophia&#x2F;Hokhmah fountainhead); the four-corners gates of heaven (chs
-33-36; Ge&#x27;ez witness only).&lt;&#x2F;p&gt;
-&lt;h2 id=&quot;ship-b-astronomical-book-chs-72-82&quot;&gt;Ship B — Astronomical Book (chs 72-82)&lt;&#x2F;h2&gt;
-&lt;p&gt;&lt;strong&gt;Ch 72&lt;&#x2F;strong&gt; — &lt;strong&gt;Uriel&#x27;s prologue&lt;&#x2F;strong&gt; + the sun&#x27;s annual circuit through
-the 6 eastern + 6 western gates. The central calendrical statement
-at &lt;strong&gt;72:32&lt;&#x2F;strong&gt;: the sun completes 364 days &quot;and nothing is added to
-it&quot; — foundational for the Qumran solar-calendar tradition.&lt;&#x2F;p&gt;
-&lt;p&gt;&lt;strong&gt;Chs 73-74&lt;&#x2F;strong&gt; — the moon&#x27;s nature; the &lt;strong&gt;354-day lunar year vs the
-364-day solar year&lt;&#x2F;strong&gt;; the 10-day annual gap; multi-year reconciliation
-tabulations. 4Q208 (the oldest Enoch fragment) preserves substantially
-fuller fractional-light tables than Ge&#x27;ez records.&lt;&#x2F;p&gt;
-&lt;p&gt;&lt;strong&gt;Ch 75&lt;&#x2F;strong&gt; — the four &quot;leaders of thousands&quot; governing the four 91-day
-quarters of the year + the &lt;strong&gt;four epact-days&lt;&#x2F;strong&gt;. The sharpest polemic
-verses: &lt;strong&gt;&quot;those who do not add them in — humans err&quot;&lt;&#x2F;strong&gt;.&lt;&#x2F;p&gt;
-&lt;p&gt;&lt;strong&gt;Ch 76&lt;&#x2F;strong&gt; — the &lt;strong&gt;twelve gates of the four winds&lt;&#x2F;strong&gt; (3 per cardinal
-direction); the differentiated effects of each (rains, snow, fog, dew,
-beneficial vs destructive winds). Aramaic-primary at 76:1-2.&lt;&#x2F;p&gt;
-&lt;p&gt;&lt;strong&gt;Ch 77&lt;&#x2F;strong&gt; — the four quarters of the earth; &lt;strong&gt;&quot;north as the dwelling
-of the Most High&quot;&lt;&#x2F;strong&gt; (77:2; Aramaic-primary, extending the cosmic-
-mountain cluster to Ps 48:3 &lt;em&gt;yarkəṯē ṣāp̄ôn&lt;&#x2F;em&gt; + Ugaritic Ṣapunu); the
-seven mountains + seven rivers.&lt;&#x2F;p&gt;
-&lt;p&gt;&lt;strong&gt;Ch 78&lt;&#x2F;strong&gt; — the names of sun and moon (corrupted in Ge&#x27;ez
-transmission; preserved verbatim per layered-witness convention); the
-moon&#x27;s 14-day waxing + 14-day waning; &lt;strong&gt;the 49-unit moonlight grid&lt;&#x2F;strong&gt;
-that 4Q208&#x2F;4Q209 preserves but Ge&#x27;ez compresses.&lt;&#x2F;p&gt;
-&lt;p&gt;&lt;strong&gt;Ch 79&lt;&#x2F;strong&gt; — Uriel&#x27;s revelation summary.&lt;&#x2F;p&gt;
-&lt;p&gt;&lt;strong&gt;Ch 80&lt;&#x2F;strong&gt; — &lt;strong&gt;the cosmic-disorder oracle&lt;&#x2F;strong&gt;. In the last days the
-heavenly bodies will deviate, the moon will change its laws, rain
-will fail, stars will transgress their orbits, and humans will mistake
-stars for gods. &lt;strong&gt;THE central NT cross-corpus chapter&lt;&#x2F;strong&gt;:
-&lt;a class=&quot;libref&quot; href=&quot;https:&#x2F;&#x2F;www.wheelofheaven.world&#x2F;library&#x2F;joel#c2p30&quot;&gt;Joel 2:30-31&lt;&#x2F;a&gt;
-
-→ &lt;a class=&quot;libref&quot; href=&quot;https:&#x2F;&#x2F;www.wheelofheaven.world&#x2F;library&#x2F;matthew#c24p29&quot;&gt;Mt 24:29&lt;&#x2F;a&gt;
- &#x2F;
-&lt;a class=&quot;libref&quot; href=&quot;https:&#x2F;&#x2F;www.wheelofheaven.world&#x2F;library&#x2F;mark#c13p24&quot;&gt;Mk 13:24-25&lt;&#x2F;a&gt;
- &#x2F;
-&lt;a class=&quot;libref&quot; href=&quot;https:&#x2F;&#x2F;www.wheelofheaven.world&#x2F;library&#x2F;luke#c21p25&quot;&gt;Lk 21:25-26&lt;&#x2F;a&gt;
-
-→ &lt;a class=&quot;libref&quot; href=&quot;https:&#x2F;&#x2F;www.wheelofheaven.world&#x2F;library&#x2F;revelation#c6p12&quot;&gt;Rev 6:12-13&lt;&#x2F;a&gt;
-
-→ Sura 81:1-14 + Sura 54:1. The apocryphal-tradition fountainhead
-bridging Joel and the NT cosmic-signs cluster.&lt;&#x2F;p&gt;
-&lt;p&gt;&lt;strong&gt;Ch 81&lt;&#x2F;strong&gt; — &lt;strong&gt;the heavenly tablets&lt;&#x2F;strong&gt; (&lt;em&gt;luḥōt ha-shamayim&lt;&#x2F;em&gt;) that
-contain all deeds + all generations; Enoch instructed by &lt;strong&gt;seven holy
-ones&lt;&#x2F;strong&gt;; the &lt;strong&gt;one-year-with-his-children-then-final-assumption&lt;&#x2F;strong&gt;
-commission. Cross-corpus to Jubilees 5&#x2F;23&#x2F;30 + Dan 7:10 + Rev 5:1 +
-Rev 20:12.&lt;&#x2F;p&gt;
-&lt;p&gt;&lt;strong&gt;Ch 82&lt;&#x2F;strong&gt; — Enoch&#x27;s instructions to &lt;strong&gt;Methuselah&lt;&#x2F;strong&gt;; the leaders of
-the year&#x27;s four seasons + 12 months + 360 days + 4 epact days. &lt;strong&gt;The
-364-day Qumran calendar polemic at its sharpest&lt;&#x2F;strong&gt; — Aramaic-primary
-at 82:4-5 from 4Q211. 4Q211 preserves Aramaic continuation BEYOND the
-Ge&#x27;ez ending — confirming Milik&#x27;s hypothesis that the original
-Astronomical Book extended significantly further into autumn&#x2F;winter
-quarter-leader material that the Ge&#x27;ez tradition truncated.&lt;&#x2F;p&gt;
-&lt;h2 id=&quot;highest-cross-corpus-density-in-the-corpus&quot;&gt;Highest cross-corpus density in the corpus&lt;&#x2F;h2&gt;
-&lt;p&gt;Seven major bidirectional wires established across Ships A+B:&lt;&#x2F;p&gt;
-&lt;ol&gt;
-&lt;li&gt;&lt;strong&gt;First 4-tradition throne-vision wire&lt;&#x2F;strong&gt;: &lt;a class=&quot;wikilink&quot; href=&quot;https:&#x2F;&#x2F;www.wheelofheaven.world&#x2F;wiki&#x2F;ezekiel&quot;&gt;Ezekiel 1&lt;&#x2F;a&gt;
-
-→ Daniel 7 → 1 Enoch 14 → &lt;a class=&quot;wikilink&quot; href=&quot;https:&#x2F;&#x2F;www.wheelofheaven.world&#x2F;wiki&#x2F;shiur-qomah&quot;&gt;Shi&#x27;ur
-Qomah&lt;&#x2F;a&gt;
- → &lt;a class=&quot;wikilink&quot; href=&quot;https:&#x2F;&#x2F;www.wheelofheaven.world&#x2F;wiki&#x2F;book-of-revelation&quot;&gt;Revelation
-1 + 4&lt;&#x2F;a&gt;
-.&lt;&#x2F;li&gt;
-&lt;li&gt;&lt;strong&gt;7-tradition cosmic-mountain cluster&lt;&#x2F;strong&gt; (extended from 6): Mt
-Sinai&#x2F;Horeb + Mt Ṣapunu + Mt Nimush&#x2F;Ararat&#x2F;al-Jūdī + Eden-mountain
-&lt;ul&gt;
-&lt;li&gt;Mt Hermon + the seven mountains of 1 Enoch 18 + 24-25 + the
-north-as-dwelling-of-the-Most-High of 1 Enoch 77:2.&lt;&#x2F;li&gt;
-&lt;&#x2F;ul&gt;
-&lt;&#x2F;li&gt;
-&lt;li&gt;&lt;strong&gt;Watcher canonical-engagement framework&lt;&#x2F;strong&gt; — acknowledgment-without-
-endorsement at the Watchers-as-Elohim + Asael-as-technology-transfer
-sites; parallel to the Anunnaki &#x2F; apkallū framework already in
-production.&lt;&#x2F;li&gt;
-&lt;li&gt;&lt;strong&gt;NT × 1 Enoch wire&lt;&#x2F;strong&gt;: &lt;a class=&quot;libref&quot; href=&quot;https:&#x2F;&#x2F;www.wheelofheaven.world&#x2F;library&#x2F;jude#c1p14&quot;&gt;Jude 14-15&lt;&#x2F;a&gt;
-
-verbatim quote of 1 Enoch 1:9; Jude 6 + 2 Peter 2:4 (Watchers&#x27;
-confinement); Revelation 6:9-10 (four hollow places); Revelation
-8:2 (seven archangels); Revelation 22:2 (tree of life); 12 NT
-&lt;em&gt;geenna&lt;&#x2F;em&gt; references (Valley of Hinnom).&lt;&#x2F;li&gt;
-&lt;li&gt;&lt;strong&gt;Enoch–Metatron tradition wire&lt;&#x2F;strong&gt;: 1 Enoch 12-13 + 81 (scribe +
-heavenly tablets + final assumption) → 3 Enoch Sefer Hekhalot
-enthroned-Metatron.&lt;&#x2F;li&gt;
-&lt;li&gt;&lt;strong&gt;Sophia &#x2F; Hokhmah tradition fountainhead&lt;&#x2F;strong&gt;: 1 Enoch 32 tree of
-wisdom → Proverbs 8 + Wisdom of Solomon 7-9.&lt;&#x2F;li&gt;
-&lt;li&gt;&lt;strong&gt;Cosmic-signs cluster&lt;&#x2F;strong&gt;: 1 Enoch 80 → Joel 2 → Synoptic Olivet
-Discourse → Revelation 6 → Sura 81 &#x2F; Sura 54 — the apocryphal-
-tradition fountainhead bridge.&lt;&#x2F;li&gt;
-&lt;&#x2F;ol&gt;
-&lt;h2 id=&quot;the-qumran-364-day-calendar-polemic&quot;&gt;The Qumran 364-day-calendar polemic&lt;&#x2F;h2&gt;
-&lt;p&gt;The Astronomical Book is &lt;strong&gt;the principal extant statement of the
-Qumran community&#x27;s 364-day solar calendar&lt;&#x2F;strong&gt;, sharpest at 72:32 (&quot;nothing
-is added to it&quot;), 75:2-3 (&quot;humans err — they do not reckon the four
-epact-days&quot;), and 82:4-6 (the beatitude-polemic in Aramaic from
-4Q211). The same calendar reappears in &lt;strong&gt;Jubilees 6:32-38&lt;&#x2F;strong&gt; (the
-parallel polemical text) and is implemented in the &lt;strong&gt;4Q319-4Q330
-Mishmarot&lt;&#x2F;strong&gt; calendrical texts, &lt;strong&gt;CD 16:2-3&lt;&#x2F;strong&gt; (calendar-as-covenant in
-the Damascus Document), and &lt;strong&gt;4QMMT&lt;&#x2F;strong&gt; (the calendar as a mark of
-identity-separation from mainstream Second Temple Judaism&#x27;s
-lunar-solar reckoning). Standard scholarship: VanderKam 1998
-&lt;em&gt;Calendars in the Dead Sea Scrolls&lt;&#x2F;em&gt;; Beckwith 1996; Glessmer 1999;
-Stern 2001.&lt;&#x2F;p&gt;
-&lt;h2 id=&quot;the-watchers-myth-ship-a&quot;&gt;The Watchers myth (Ship A)&lt;&#x2F;h2&gt;
-&lt;p&gt;The 200 sons-of-heaven (&lt;em&gt;bnei elohim&lt;&#x2F;em&gt;; Aramaic &lt;em&gt;bn-ilm&lt;&#x2F;em&gt;; Greek
-&lt;em&gt;huioi tou theou&lt;&#x2F;em&gt;) descend under Šemiḥazah to take human wives
-(1 En 6-7) and beget the Nephilim — directly expanding
-&lt;a class=&quot;libref&quot; href=&quot;https:&#x2F;&#x2F;www.wheelofheaven.world&#x2F;library&#x2F;genesis#c6p1&quot;&gt;Genesis 6:1-4&lt;&#x2F;a&gt;
-
-into a fully-developed mythological narrative. Asael (Aramaic
-ʿAśāʾēl; Greek + Ge&#x27;ez Azazel) teaches humanity metallurgy, swords,
-knives, shields, breastplates, mining, jewelry, cosmetics, alchemy,
-and astrology (1 En 8:1-3) — &lt;strong&gt;the canon&#x27;s central Enoch citation
-site&lt;&#x2F;strong&gt;. The Watchers-as-Elohim-civilization reading and the
-Asael-as-Elohim-technology-transfer reading are preserved as
-canonical-reception phenomena at the &lt;strong&gt;apparatus level only&lt;&#x2F;strong&gt;
-(glossary entries + per-verse commentary); the translation surface
-preserves the scholarly mainstream reading (Reed 2005 &lt;em&gt;Fallen Angels&lt;&#x2F;em&gt;;
-Nickelsburg 2001 Hermeneia; Stuckenbruck 2014). Same
-acknowledgment-without-endorsement framework as the established
-Anunnaki + Igigi + apkallū precedents in the Mesopotamian sub-corpus.&lt;&#x2F;p&gt;
-&lt;h2 id=&quot;translation-choices-preserved&quot;&gt;Translation choices preserved&lt;&#x2F;h2&gt;
-&lt;ul&gt;
-&lt;li&gt;&lt;strong&gt;Per-verse layered witness attribution&lt;&#x2F;strong&gt; across both Ships&lt;&#x2F;li&gt;
-&lt;li&gt;&lt;strong&gt;Aramaic onomastics preserved&lt;&#x2F;strong&gt; per Milik 1976: Šemiḥazah, ʿAśāʾēl,
-Bărāqʾēl, Kōkabʾēl, Mīkāʾēl, Śarīʾēl, Rāpāʾēl, Gabrīʾēl, ʾŪrīʾēl&lt;&#x2F;li&gt;
-&lt;li&gt;&lt;strong&gt;Aramaic 4 vs Greek 7 archangels&lt;&#x2F;strong&gt; textual variant preserved at
-ch 20&lt;&#x2F;li&gt;
-&lt;li&gt;&lt;strong&gt;300-vs-3000 cubits giant-stature&lt;&#x2F;strong&gt; variant preserved at ch 7:2&lt;&#x2F;li&gt;
-&lt;li&gt;&lt;em&gt;Watchers&lt;&#x2F;em&gt; renders ʿīrīn &#x2F; &lt;em&gt;egrēgoroi&lt;&#x2F;em&gt; &#x2F; &lt;em&gt;teguh&lt;&#x2F;em&gt; — standard
-scholarly English&lt;&#x2F;li&gt;
-&lt;li&gt;&lt;em&gt;Gehenna&lt;&#x2F;em&gt; at ch 27 with Valley-of-Hinnom etymology in apparatus&lt;&#x2F;li&gt;
-&lt;li&gt;&lt;strong&gt;Calendrical-polemic voice preserved&lt;&#x2F;strong&gt; at 72:32, 75:2-3, 82:4-6&lt;&#x2F;li&gt;
-&lt;li&gt;&lt;strong&gt;18-vs-22-part day-ratio scholarly crux&lt;&#x2F;strong&gt; at 72:7+ preserved
-without harmonization (Neugebauer 1985 two-system explanation in
-commentary)&lt;&#x2F;li&gt;
-&lt;li&gt;&lt;strong&gt;Corrupted Ge&#x27;ez sun&#x2F;moon names&lt;&#x2F;strong&gt; at 78:1-2 preserved verbatim
-(no emendation)&lt;&#x2F;li&gt;
-&lt;&#x2F;ul&gt;
-&lt;p&gt;The translation was drafted by Claude Opus 4.7 and edited through the
-Wheel of Heaven Translation Program pipeline (Translator → Editor →
-Reviewer) across two ships. Cumulative across Ship A + B: &lt;strong&gt;25 new
-central glossary entries + 22 existing-entry extensions + 12
-per-translation overlay entries&lt;&#x2F;strong&gt;; central glossary v2.65.0 → &lt;strong&gt;v2.67.0&lt;&#x2F;strong&gt;;
-per-translation overlay v1.0.0 → &lt;strong&gt;v1.2.0&lt;&#x2F;strong&gt;. All 403 verses received
-reviewer-approve verdicts; zero lens-leakage flags; zero entries pending
-speculative-claim sign-off.&lt;&#x2F;p&gt;
-&lt;p&gt;&lt;strong&gt;Remaining 1 Enoch material&lt;&#x2F;strong&gt; — the Parables &#x2F; Book of Similitudes
-(chs 37-71), the Dream Visions &#x2F; Animal Apocalypse (chs 83-90), and
-the Epistle of Enoch (chs 91-108) — sits as potential future ships,
-but none is named in &lt;em&gt;Yes... I am Raelian&lt;&#x2F;em&gt; nor anchored in the
-oldest-DSS witness layer the way Watchers + Astronomical are.&lt;&#x2F;p&gt;
-&lt;p&gt;The methodology is documented at
-&lt;a href=&quot;https:&#x2F;&#x2F;docs.wheelofheaven.world&#x2F;contributing&#x2F;content&#x2F;source-text-translation&#x2F;&quot;&gt;Source-Text Translation&lt;&#x2F;a&gt;.&lt;&#x2F;p&gt;
-&lt;h2 id=&quot;see-also&quot;&gt;See also&lt;&#x2F;h2&gt;
-&lt;ul&gt;
-&lt;li&gt;&lt;a href=&quot;&#x2F;wiki&#x2F;reference-corpus-of-the-raelian-canon&#x2F;&quot;&gt;Reference corpus of the Raëlian canon&lt;&#x2F;a&gt; — the catalogue of texts the Raëlian canon engages&lt;&#x2F;li&gt;
-&lt;li&gt;&lt;a href=&quot;&#x2F;library&#x2F;gilgamesh-woh&#x2F;&quot;&gt;The Epic of Gilgamesh (Wheel of Heaven Translation)&lt;&#x2F;a&gt; — also named in &lt;em&gt;Yes... I am Raelian&lt;&#x2F;em&gt; among the texts &quot;closer to the truth&quot;&lt;&#x2F;li&gt;
-&lt;li&gt;&lt;a href=&quot;&#x2F;library&#x2F;adapa-woh&#x2F;&quot;&gt;Adapa (Wheel of Heaven Translation)&lt;&#x2F;a&gt; — the Mesopotamian apkallū tradition (cross-corpus to Asael&#x27;s knowledge-transmission)&lt;&#x2F;li&gt;
-&lt;li&gt;&lt;a href=&quot;&#x2F;library&#x2F;genesis-woh&#x2F;&quot;&gt;Genesis (Wheel of Heaven Translation)&lt;&#x2F;a&gt; — Genesis 6:1-4 &lt;em&gt;bnei elohim&lt;&#x2F;em&gt; + Nephilim, the seed of the Watchers narrative&lt;&#x2F;li&gt;
-&lt;&#x2F;ul&gt;
-</description>
-      </item>
-      <item>
-          <title>The Epic of Gilgamesh</title>
-          <pubDate>Fri, 05 Jun 2026 00:00:00 +0000</pubDate>
-          <author>Unknown</author>
-          <link>https://www.wheelofheaven.world/library/gilgamesh-woh/</link>
-          <guid>https://www.wheelofheaven.world/library/gilgamesh-woh/</guid>
-          <description xml:base="https://www.wheelofheaven.world/library/gilgamesh-woh/">&lt;p&gt;&lt;strong&gt;Gilgamesh Tablet XI (Wheel of Heaven Translation)&lt;&#x2F;strong&gt; — the
-Standard Babylonian recension Flood narrative. The fifth Mesopotamian
-text in the WoH corpus (after Enki and Ninmah, the Sumerian Flood
-Story, Enki and Ninhursag, and Adapa) and &lt;strong&gt;the single most-canon-
-named Mesopotamian text&lt;&#x2F;strong&gt; — the Raëlian canon (per &lt;em&gt;Yes... I am
-Raelian&lt;&#x2F;em&gt; commentary) names the Epic of Gilgamesh among the texts
-&quot;closer to the truth,&quot; alongside the Mahābhārata, Kojiki, and Popol
-Vuh.&lt;&#x2F;p&gt;
-&lt;p&gt;&lt;strong&gt;308 lines&lt;&#x2F;strong&gt; of Standard Babylonian Akkadian per the George 2003
-critical edition line-numbering. &lt;strong&gt;Sin-leqi-unninni recension&lt;&#x2F;strong&gt;
-(~1200 BCE; underlying Atrahasis-tradition extends back to the
-early-2nd-millennium). Primary manuscript witnesses: the &lt;strong&gt;Library
-of Ashurbanipal Nineveh tablets&lt;&#x2F;strong&gt; (7th c. BCE; British Museum K series
-including K.3375 + K.7752 + K.2252 + Sm. 4302 + others; recovered by
-Layard 1849). Rediscovered by &lt;strong&gt;George Smith in 1872&lt;&#x2F;strong&gt; — his 1873
-publication &lt;em&gt;The Chaldean Account of the Deluge&lt;&#x2F;em&gt; demonstrated the
-Mesopotamian antecedent to the biblical Flood narrative.&lt;&#x2F;p&gt;
-&lt;p&gt;&lt;strong&gt;Sources:&lt;&#x2F;strong&gt; George 2003 &lt;em&gt;The Babylonian Gilgamesh Epic&lt;&#x2F;em&gt; (Oxford, 2
-vols) — THE modern critical edition; Thompson 1930 &lt;em&gt;The Epic of
-Gilgamish&lt;&#x2F;em&gt; (PD critical edition with cuneiform copy + transliteration);
-Smith 1873 &lt;em&gt;The Chaldean Account of the Deluge&lt;&#x2F;em&gt; (PD discovery
-publication); Foster 2005 &lt;em&gt;Before the Muses&lt;&#x2F;em&gt; 3rd ed. (scholarly
-modern English baseline). Verification pending against George 2003
-critical edition + original Nineveh codicology.&lt;&#x2F;p&gt;
-&lt;p&gt;&lt;strong&gt;Narrative arc.&lt;&#x2F;strong&gt; Gilgamesh&#x27;s journey to find Utnapishtim the
-immortal flood-survivor; Utnapishtim recounts how the gods (Anu,
-Enlil, Ninurta, Ennugi, Ea) decided to flood the earth; Ea&#x27;s warning
-to Utnapishtim through the reed-wall; the boat (&lt;em&gt;tebû&lt;&#x2F;em&gt;&#x2F;&lt;em&gt;eleppu&lt;&#x2F;em&gt;)
-construction with seven decks; embarkation of family + craftsmen +
-&quot;the seed of all living creatures&quot;; the six-day-seven-night flood
-from the Anunnaki + Adad&#x27;s thunder; the landing on Mt Nimush; the
-bird-test (dove → swallow → raven); the disembarkation + sacrifice
-(&quot;the gods gathered like flies&quot;); Enlil&#x27;s anger + Ea&#x27;s defense; the
-deification + immortality grant to Utnapishtim; Gilgamesh&#x27;s failure
-(the seven-loaves test); the loss of the plant-of-rejuvenation to
-the serpent; the return to Uruk.&lt;&#x2F;p&gt;
-&lt;p&gt;&lt;strong&gt;Highest cross-corpus density in the Mesopotamian sub-corpus.&lt;&#x2F;strong&gt;
-Direct parallels documented per line:&lt;&#x2F;p&gt;
-&lt;ul&gt;
-&lt;li&gt;&lt;strong&gt;Hebrew Bible Genesis 6-9&lt;&#x2F;strong&gt; (Noah narrative) — boat construction,
-animal loading, flood-duration, bird-test, mountain-landing,
-sacrifice, divine-promise. Heidel 1946 &lt;em&gt;The Gilgamesh Epic and Old
-Testament Parallels&lt;&#x2F;em&gt; is the foundational comparative study.&lt;&#x2F;li&gt;
-&lt;li&gt;&lt;strong&gt;Sumerian Flood Story&lt;&#x2F;strong&gt; (Ziusudra recension; already in WoH
-Translation as flood-story-woh) — older Mesopotamian flood-tradition.&lt;&#x2F;li&gt;
-&lt;li&gt;&lt;strong&gt;Akkadian Atrahasis&lt;&#x2F;strong&gt; (Lambert-Millard 1969) — Sin-leqi-unninni
-signals at L189 that Utnapishtim and Atra-ḫasīs are the same
-character under alternative standing-epithets (&quot;Surpassingly Wise&quot;
-vs &quot;I-found-life&quot;).&lt;&#x2F;li&gt;
-&lt;li&gt;&lt;strong&gt;Berossus &lt;em&gt;Babyloniaca&lt;&#x2F;em&gt;&lt;&#x2F;strong&gt; (Hellenistic-period Greek retelling
-preserved in Eusebius via Polyhistor).&lt;&#x2F;li&gt;
-&lt;li&gt;&lt;strong&gt;Qur&#x27;an Surah 11:25-49&lt;&#x2F;strong&gt; (Noah narrative; cf. Mt Nimush ↔ al-Jūdī
-Q 11:44).&lt;&#x2F;li&gt;
-&lt;&#x2F;ul&gt;
-&lt;p&gt;&lt;strong&gt;Multi-tradition cosmic-mountain flood-landing cluster in
-production.&lt;&#x2F;strong&gt; The new central entry &lt;code&gt;mt-nimush-nisir-ararat-judi- flood-mountain-landing-cross-corpus&lt;&#x2F;code&gt; is bidirectionally wired with:&lt;&#x2F;p&gt;
-&lt;ul&gt;
-&lt;li&gt;v2.57.0 &lt;code&gt;mount-sapunu-tsafon-cosmic-mountain&lt;&#x2F;code&gt; (Ugaritic Baal Cycle)&lt;&#x2F;li&gt;
-&lt;li&gt;v2.61.0 &lt;code&gt;har-sinai-horev-the-mountain-of-Elohim&lt;&#x2F;code&gt; (Hebrew Bible
-Exodus)&lt;&#x2F;li&gt;
-&lt;&#x2F;ul&gt;
-&lt;p&gt;The &lt;strong&gt;Mt Nimush ↔ Mt Ararat ↔ Mt Ṣapunu ↔ Mt Sinai&#x2F;Horeb ↔ al-Jūdī&lt;&#x2F;strong&gt;
-Northwest-Semitic + Mesopotamian + Qur&#x27;anic cosmic-mountain cluster
-spans five traditions in five languages.&lt;&#x2F;p&gt;
-&lt;p&gt;&lt;strong&gt;The Utnapishtim-deification-vs-Adapa-immortality-loss structural
-inversion&lt;&#x2F;strong&gt; is now in production as a bidirectional central entry —
-&lt;code&gt;utnapishtim-deification-vs-adapa-immortality-loss-cross-corpus&lt;&#x2F;code&gt;.
-The same immortality-test pattern, opposite outcomes:&lt;&#x2F;p&gt;
-&lt;ul&gt;
-&lt;li&gt;&lt;strong&gt;Adapa&lt;&#x2F;strong&gt; refuses the divine food Anu offers (per Ea&#x27;s coaching) →
-humanity loses immortality&lt;&#x2F;li&gt;
-&lt;li&gt;&lt;strong&gt;Utnapishtim&lt;&#x2F;strong&gt; is granted divinity outright at L196 (&lt;em&gt;Ūta-napišti u
-sinništu-šu lū emû kī ilāni nāši&lt;&#x2F;em&gt; &quot;Utnapishtim and his wife shall
-become like us — the gods!&quot;) → individual won-immortality&lt;&#x2F;li&gt;
-&lt;&#x2F;ul&gt;
-&lt;p&gt;Cross-corpus also to Genesis 3 (serpent + tree-of-life-loss); to the
-L270 plant-of-rejuvenation + L291 serpent-steals-immortality at the
-end of Tablet XI (the serpent etiology paralleling Gen 3).&lt;&#x2F;p&gt;
-&lt;p&gt;&lt;strong&gt;Translation choices preserved:&lt;&#x2F;strong&gt;&lt;&#x2F;p&gt;
-&lt;ul&gt;
-&lt;li&gt;&lt;strong&gt;Mt Nimush&lt;&#x2F;strong&gt; (George 2003 reading) on surface; &lt;strong&gt;Mt Niṣir&lt;&#x2F;strong&gt;
-(Thompson 1930, Heidel 1946) documented as overlay textual variant&lt;&#x2F;li&gt;
-&lt;li&gt;&lt;strong&gt;George 2003 line-numbering&lt;&#x2F;strong&gt; convention (vs Thompson&#x2F;Foster
-narrative-section pagination)&lt;&#x2F;li&gt;
-&lt;li&gt;&lt;em&gt;&lt;strong&gt;Atra-ḫasīs&lt;&#x2F;strong&gt;&lt;&#x2F;em&gt; alias preserved at L189 with hyphen + ḫ + ī&lt;&#x2F;li&gt;
-&lt;li&gt;&lt;em&gt;&lt;strong&gt;ikû&lt;&#x2F;strong&gt;&lt;&#x2F;em&gt; &#x2F; &lt;em&gt;&lt;strong&gt;nindan&lt;&#x2F;strong&gt;&lt;&#x2F;em&gt; unit-measurements preserved with bracketed
-gloss&lt;&#x2F;li&gt;
-&lt;li&gt;&lt;em&gt;&lt;strong&gt;abūbu&lt;&#x2F;strong&gt;&lt;&#x2F;em&gt; &quot;flood&quot; rendered &quot;flood&quot;&lt;&#x2F;li&gt;
-&lt;li&gt;Akkadian divine names preserved: Anu, Enlil, Ea, Adad, Anunnaki,
-Igigi, Ninurta, Ennugi, Atra-ḫasīs, Utnapishtim&lt;&#x2F;li&gt;
-&lt;li&gt;Place names preserved: Shuruppak, Mt Nimush&lt;&#x2F;li&gt;
-&lt;&#x2F;ul&gt;
-&lt;p&gt;&lt;strong&gt;Acknowledgment-without-endorsement framework&lt;&#x2F;strong&gt; applied at the two
-popular-fringe magnet-term sites: Anunnaki + Igigi (L14, L101, L170)
-and the apkallū &#x2F; Seven Sages (L308). The scholarly classical reading
-preserved (Anunnaki = &quot;those of princely seed&quot; — high gods; Igigi =
-lower-tier gods; apkallū = antediluvian sages; Black-Green 1992; George
-2003) — same framework as the Shi&#x27;ur Qomah &lt;em&gt;parasangs&lt;&#x2F;em&gt; + Qur&#x27;an
-&lt;em&gt;inshiqāq al-qamar&lt;&#x2F;em&gt; + Exodus &lt;em&gt;pillar&#x2F;parting&#x2F;manna&#x2F;theophany&lt;&#x2F;em&gt; +
-Matthew &lt;em&gt;Sower&#x2F;Transfiguration&#x2F;Great-Commission&lt;&#x2F;em&gt; + NT canon-closure
-precedents.&lt;&#x2F;p&gt;
-&lt;p&gt;The translation was drafted by Claude Opus 4.7 and edited through
-the Wheel of Heaven Translation Program pipeline (Translator → Editor
-→ Reviewer). 12+ named-scholarship citations verified by the Reviewer:
-George 2003, Foster 2005, Lambert-Millard 1969, Heidel 1946 + 1949,
-Tigay 1982, Kvanvig 2011, Westermann 1984, Wenham WBC, Black-Green
-1992, Thompson 1930. All attributions correct.&lt;&#x2F;p&gt;
-&lt;p&gt;The methodology is documented at
-&lt;a href=&quot;https:&#x2F;&#x2F;docs.wheelofheaven.world&#x2F;contributing&#x2F;content&#x2F;source-text-translation&#x2F;&quot;&gt;Source-Text Translation&lt;&#x2F;a&gt;.&lt;&#x2F;p&gt;
-</description>
-      </item>
-      <item>
-          <title>The Acts of the Apostles</title>
-          <pubDate>Thu, 04 Jun 2026 00:00:00 +0000</pubDate>
-          <author>Unknown</author>
-          <link>https://www.wheelofheaven.world/library/acts-woh/</link>
-          <guid>https://www.wheelofheaven.world/library/acts-woh/</guid>
-          <description xml:base="https://www.wheelofheaven.world/library/acts-woh/">&lt;p&gt;&lt;strong&gt;Acts 2 + 12 + 15 + 17 (Wheel of Heaven Translation)&lt;&#x2F;strong&gt; — four canon-cited Acts chapters. The Raëlian canon engages each of these in &lt;em&gt;Extraterrestrials Took Me To Their Planet&lt;&#x2F;em&gt; — acknowledgment-without-endorsement framework applied.&lt;&#x2F;p&gt;
-&lt;p&gt;&lt;strong&gt;147 verses across 4 chapters&lt;&#x2F;strong&gt; sourced from &lt;strong&gt;Codex Vaticanus (B&#x2F;03)&lt;&#x2F;strong&gt; + &lt;strong&gt;Codex Sinaiticus (א&#x2F;01)&lt;&#x2F;strong&gt; + &lt;strong&gt;P45 Chester Beatty I (~250 CE)&lt;&#x2F;strong&gt; cross-collation + NA28&#x2F;UBS5&#x2F;SBLGNT critical apparatus.&lt;&#x2F;p&gt;
-&lt;p&gt;&lt;strong&gt;The 4 canon-cited chapters:&lt;&#x2F;strong&gt;&lt;&#x2F;p&gt;
-&lt;ul&gt;
-&lt;li&gt;
-&lt;p&gt;&lt;strong&gt;Acts 2 (47 verses) — Pentecost.&lt;&#x2F;strong&gt; The tongues-of-fire descent + Peter&#x27;s sermon citing Joel 2:28-32 (the cosmic-signs prophecy). Central entry &lt;code&gt;pentecost-acts-2-tongues-of-fire-sinai-num-11-cross-corpus&lt;&#x2F;code&gt; documents the Sinai (Ex 19) + Num 11 cross-corpus; bidirectional with v2.61.0 Exodus &lt;code&gt;sinai-theophany-ex-19&lt;&#x2F;code&gt;. The Joel 2 citation participates in the cosmic-signs cluster.&lt;&#x2F;p&gt;
-&lt;&#x2F;li&gt;
-&lt;li&gt;
-&lt;p&gt;&lt;strong&gt;Acts 12 (25 verses) — Peter&#x27;s prison release via angelic intervention.&lt;&#x2F;strong&gt; Central entry &lt;code&gt;peter-prison-release-acts-12-daniel-6-angelic-deliverance-cross-corpus&lt;&#x2F;code&gt; documents the angelic-deliverance pattern (Daniel 6 lion&#x27;s-den + Daniel 3 fiery-furnace + Acts 5:19 first-prison-release). The Herod Agrippa I death at v23 is the 44 CE historical anchor.&lt;&#x2F;p&gt;
-&lt;&#x2F;li&gt;
-&lt;li&gt;
-&lt;p&gt;&lt;strong&gt;Acts 15 (41 verses) — the Jerusalem Council.&lt;&#x2F;strong&gt; The Gentile-inclusion decision; the Apostolic Decree&#x27;s four-fold prohibition (idol-sacrifices + blood + strangled-things + &lt;em&gt;porneia&lt;&#x2F;em&gt;). Central entry &lt;code&gt;apostolic-decree-acts-15-noahide-leviticus-17-18-cross-corpus&lt;&#x2F;code&gt; documents the Lev 17-18 (&lt;em&gt;ger toshav&lt;&#x2F;em&gt; commandments) + rabbinic Noahide-commandments cross-corpus. &lt;strong&gt;Christian-supersessionist disavowal&lt;&#x2F;strong&gt;: this passage does NOT support a &quot;law-superseded&quot; reading; the Apostolic Decree is an ad hoc-Gentile-table-fellowship arrangement preserving Jewish-purity-boundaries, not a Mosaic-covenant abrogation. &lt;strong&gt;Acts 15:34 preserved as an empty verse-hole&lt;&#x2F;strong&gt; per Alexandrian critical convention (the Western&#x2F;Bezae interpolation is documented at overlay).&lt;&#x2F;p&gt;
-&lt;&#x2F;li&gt;
-&lt;li&gt;
-&lt;p&gt;&lt;strong&gt;Acts 17 (34 verses) — Paul at the Areopagus &#x2F; Mars Hill.&lt;&#x2F;strong&gt; Major canon-engagement site. Central entry &lt;code&gt;areopagus-speech-acts-17-22-31-natural-theology-aratus-epimenides-cross-corpus&lt;&#x2F;code&gt; documents: (a) the &lt;em&gt;agnōstō theō&lt;&#x2F;em&gt; &quot;unknown god&quot; altar inscription at v23; (b) the &lt;em&gt;en autō zōmen kai kinoumetha kai esmen&lt;&#x2F;em&gt; &quot;in him we live and move and have our being&quot; — likely Epimenidean (Cretica, attested in Isho&#x27;dad of Merv); (c) the &lt;em&gt;tou gar kai genos esmen&lt;&#x2F;em&gt; &quot;for we are also his offspring&quot; — verbatim quote from &lt;strong&gt;Aratus &lt;em&gt;Phaenomena&lt;&#x2F;em&gt; line 5&lt;&#x2F;strong&gt; (also Cleanthes &lt;em&gt;Hymn to Zeus&lt;&#x2F;em&gt;). Major Greek-philosophical natural-theology cross-corpus.&lt;&#x2F;p&gt;
-&lt;&#x2F;li&gt;
-&lt;&#x2F;ul&gt;
-&lt;p&gt;Scholarly references: Witherington SP 1998, Bock BECNT 2007, Pervo Hermeneia 2009, Keener 2012-2015 (4-volume), Barrett ICC 1994&#x2F;1998. Verification pending against the original codicology.&lt;&#x2F;p&gt;
-&lt;p&gt;The methodology is documented at &lt;a href=&quot;https:&#x2F;&#x2F;docs.wheelofheaven.world&#x2F;contributing&#x2F;content&#x2F;source-text-translation&#x2F;&quot;&gt;Source-Text Translation&lt;&#x2F;a&gt;.&lt;&#x2F;p&gt;
-</description>
-      </item>
-      <item>
-          <title>Exodus</title>
-          <pubDate>Thu, 04 Jun 2026 00:00:00 +0000</pubDate>
-          <author>Unknown</author>
-          <link>https://www.wheelofheaven.world/library/exodus-woh/</link>
-          <guid>https://www.wheelofheaven.world/library/exodus-woh/</guid>
-          <description xml:base="https://www.wheelofheaven.world/library/exodus-woh/">&lt;p&gt;&lt;strong&gt;Exodus (Wheel of Heaven Translation)&lt;&#x2F;strong&gt; — the second-most-canonically-
-engaged Hebrew Bible book in the Raëlian corpus after Genesis. Hebrew:
-&lt;em&gt;Shemot&lt;&#x2F;em&gt; — &quot;Names&quot;. This translation covers the seven chapters the
-canon engages with chapter-and-verse precision in &lt;em&gt;The Truth&lt;&#x2F;em&gt; and
-&lt;em&gt;Extra-Terrestrials Took Me To Their Planet&lt;&#x2F;em&gt;:&lt;&#x2F;p&gt;
-&lt;ul&gt;
-&lt;li&gt;&lt;strong&gt;Exodus 3&lt;&#x2F;strong&gt; — the burning bush + the divine-name revelation
-(&lt;em&gt;ʾehyeh ʾăšer ʾehyeh&lt;&#x2F;em&gt;) + the patriarchal-God-formula&lt;&#x2F;li&gt;
-&lt;li&gt;&lt;strong&gt;Exodus 13&lt;&#x2F;strong&gt; — the consecration of the firstborn + the pillar of
-cloud and fire&lt;&#x2F;li&gt;
-&lt;li&gt;&lt;strong&gt;Exodus 14&lt;&#x2F;strong&gt; — the parting of the sea + the destruction of
-Pharaoh&#x27;s host&lt;&#x2F;li&gt;
-&lt;li&gt;&lt;strong&gt;Exodus 16&lt;&#x2F;strong&gt; — the manna and the quail&lt;&#x2F;li&gt;
-&lt;li&gt;&lt;strong&gt;Exodus 17&lt;&#x2F;strong&gt; — the water from the rock at Massah-Meribah + the
-battle with Amalek&lt;&#x2F;li&gt;
-&lt;li&gt;&lt;strong&gt;Exodus 19&lt;&#x2F;strong&gt; — the Sinai theophany (the descent of YHWH on the
-mountain in fire, smoke, and trumpet-blast)&lt;&#x2F;li&gt;
-&lt;li&gt;&lt;strong&gt;Exodus 20&lt;&#x2F;strong&gt; — the Decalogue + the altar law&lt;&#x2F;li&gt;
-&lt;&#x2F;ul&gt;
-&lt;p&gt;&lt;strong&gt;175 verses across 7 chapters.&lt;&#x2F;strong&gt; Source: Sefaria v3 API Tanach with
-Ta&#x27;amei Hamikra (Westminster Leningrad Codex base, Public Domain) —
-same source pattern as the &lt;a href=&quot;&#x2F;library&#x2F;genesis-woh&#x2F;&quot;&gt;Genesis precedent&lt;&#x2F;a&gt;.&lt;&#x2F;p&gt;
-&lt;p&gt;&lt;strong&gt;Four highest-citation-density Raëlian-canon lens-risk sites — all
-managed with explicit named verbatim disavowals:&lt;&#x2F;strong&gt;&lt;&#x2F;p&gt;
-&lt;ul&gt;
-&lt;li&gt;&lt;strong&gt;Ex 13:21-22 (the pillar of cloud and fire)&lt;&#x2F;strong&gt; — the divine-presence-
-marker preceding Israel. Raëlian-canon reads as &quot;Elohim-craft
-navigation system.&quot; Sommer 2009 &lt;em&gt;The Bodies of God&lt;&#x2F;em&gt; divine-presence
-theology framing; Raëlian-craft disavowal explicit.&lt;&#x2F;li&gt;
-&lt;li&gt;&lt;strong&gt;Ex 14:16-22 (the parting of the sea)&lt;&#x2F;strong&gt; — &lt;strong&gt;the canon&#x27;s most-
-explicit &quot;physical demonstration of Elohim technology&quot; citation&lt;&#x2F;strong&gt;
-in Exodus. Three reading-strata preserved: mainstream miracle
-(Childs 1974, Sarna 1991, Propp 1999); naturalistic east-wind tidal-
-event (Hoffmeier 2005); Raëlian engineered hydrodynamic-atmospheric
-demonstration. &lt;strong&gt;Verbatim Sitchin + Christian-typological (1 Cor
-10:1-2 Red-Sea-as-baptism) + Raëlian disavowals.&lt;&#x2F;strong&gt;&lt;&#x2F;li&gt;
-&lt;li&gt;&lt;strong&gt;Ex 16:4 (the manna)&lt;&#x2F;strong&gt; — five reading-strata: classical Jewish &#x2F;
-Bodenheimer 1947 tamarisk-honeydew naturalistic &#x2F; rabbinic-typological
-&lt;em&gt;mān ha-ganuz&lt;&#x2F;em&gt; hidden manna &#x2F; Christian-typological (John 6 Jesus-
-as-bread-of-life; 1 Cor 10:3 spiritual food; Rev 2:17 hidden manna)
-&#x2F; Raëlian engineered nutrition. All disavowals.&lt;&#x2F;li&gt;
-&lt;li&gt;&lt;strong&gt;Ex 19:16-19 (the Sinai theophany)&lt;&#x2F;strong&gt; — &lt;strong&gt;THE OTHER most-load-bearing
-canon-citation site.&lt;&#x2F;strong&gt; Four reading-strata: mainstream theological
-(Childs 1974, Propp 2006); form-critical thunderstorm-theophany
-(Cross 1973, Day 2000); volcanic-Sinai hypothesis (Stade, Wellhausen,
-Gressmann; nuanced by Humphreys 2003) preserved as documented
-academic-historical strand without adjudication; Raëlian Elohim-
-spacecraft descent. &lt;strong&gt;Verbatim all-four disavowals.&lt;&#x2F;strong&gt;&lt;&#x2F;li&gt;
-&lt;&#x2F;ul&gt;
-&lt;p&gt;&lt;strong&gt;Plus three other major lens-risk sites:&lt;&#x2F;strong&gt;&lt;&#x2F;p&gt;
-&lt;ul&gt;
-&lt;li&gt;&lt;strong&gt;Ex 3:14 (&lt;em&gt;ʾehyeh ʾăšer ʾehyeh&lt;&#x2F;em&gt;)&lt;&#x2F;strong&gt; — the divine-name revelation,
-the central theological-philosophical site of Hebrew Bible divine-
-presence theology. &lt;strong&gt;Five reading-strata preserved&lt;&#x2F;strong&gt;: KJV&#x2F;RSV &quot;I am
-that I am&quot; (the WoH surface choice); JPS&#x2F;Propp future-aspectual
-&quot;I will be what I will be&quot;; LXX &lt;em&gt;ho ōn&lt;&#x2F;em&gt;; Albright causative hiphʿil
-&quot;I will cause to be what I will cause to be&quot;; process-theology &quot;the
-Becoming One.&quot; Christological (John 8:58 &lt;em&gt;egō eimi&lt;&#x2F;em&gt;) + Raëlian
-engineered-AI-presence pre-resolution explicitly disavowed.&lt;&#x2F;li&gt;
-&lt;li&gt;&lt;strong&gt;Ex 19:5-6 (the covenantal-formula)&lt;&#x2F;strong&gt; — &lt;em&gt;sĕgullâ&lt;&#x2F;em&gt; + &lt;em&gt;mamleḵeṯ
-kōhănîm wĕ-ḡôy qāḏôš&lt;&#x2F;em&gt; &quot;treasured possession + kingdom of priests +
-holy nation.&quot; Cross-corpus to Deut 7:6, 14:2, 26:18; Ps 135:4; 1 Pet
-2:9 + Rev 1:6 &#x2F; 5:10 (the NT priestly-nation reapplication).
-&lt;strong&gt;Christian-supersessionist disavowal explicit.&lt;&#x2F;strong&gt;&lt;&#x2F;li&gt;
-&lt;li&gt;&lt;strong&gt;Ex 20:2-17 (the Decalogue enumeration)&lt;&#x2F;strong&gt; — Hebrew Masoretic &#x2F;
-Jewish enumeration preserved on surface (&lt;em&gt;Anokhi YHWH Eloheikha&lt;&#x2F;em&gt; at
-20:2 = the First Word). The five Christian enumeration alternatives
-(Augustinian &#x2F; Catholic &#x2F; Lutheran &#x2F; Orthodox &#x2F; Reformed) all
-documented at the central entry &lt;strong&gt;without adjudication&lt;&#x2F;strong&gt;.&lt;&#x2F;li&gt;
-&lt;&#x2F;ul&gt;
-&lt;p&gt;&lt;strong&gt;Translation choices preserved:&lt;&#x2F;strong&gt;&lt;&#x2F;p&gt;
-&lt;ul&gt;
-&lt;li&gt;&lt;em&gt;ʾehyeh ʾăšer ʾehyeh&lt;&#x2F;em&gt; → &quot;I am that I am&quot; (KJV&#x2F;RSV tradition); other
-scholarly renderings documented at the central entry&lt;&#x2F;li&gt;
-&lt;li&gt;&lt;em&gt;rāṣaḥ&lt;&#x2F;em&gt; → &quot;murder&quot; (modern critical, based on Num 35 cities-of-
-refuge distributional evidence); KJV &quot;kill&quot; + pacifist-conscientious-
-objector reception preserved at the overlay-rendering convention&lt;&#x2F;li&gt;
-&lt;li&gt;&lt;em&gt;ḥāmaḏ&lt;&#x2F;em&gt; → &quot;covet&quot; (Augustinian-psychological reading); Anderson 1991
-action-oriented &quot;scheme-to-acquire&quot; preserved as documented minority&lt;&#x2F;li&gt;
-&lt;li&gt;MT Ex 17:16 &lt;em&gt;kes&lt;&#x2F;em&gt; &quot;throne&quot; preserved on surface (LXX&#x2F;Samaritan &lt;em&gt;nes&lt;&#x2F;em&gt;
-&quot;banner&quot; documented as textual variant)&lt;&#x2F;li&gt;
-&lt;&#x2F;ul&gt;
-&lt;p&gt;&lt;strong&gt;First Hebrew Bible × Ugaritic Levantine bidirectional cross-corpus
-wire.&lt;&#x2F;strong&gt; The new &lt;code&gt;har-sinai-horev&lt;&#x2F;code&gt; (Sinai&#x2F;Horeb as cosmic-mountain)
-entry is bidirectionally wired with the v2.57.0 Baal Cycle &lt;code&gt;mount- sapunu-tsafon-cosmic-mountain&lt;&#x2F;code&gt; entry. The cosmic-mountain Northwest-
-Semitic substrate (Clifford 1972 &lt;em&gt;The Cosmic Mountain in Canaan and
-the Old Testament&lt;&#x2F;em&gt;; Day 2000 &lt;em&gt;Yahweh and the Gods and Goddesses of
-Canaan&lt;&#x2F;em&gt;) is now in production with explicit cross-tradition
-philological-cognate vs comparative-mythology distinction.&lt;&#x2F;p&gt;
-&lt;p&gt;&lt;strong&gt;Third canon-source-tension closure&lt;&#x2F;strong&gt; after Shi&#x27;ur Qomah (&lt;em&gt;parasangs&lt;&#x2F;em&gt;)
-and Qur&#x27;an (&lt;em&gt;inshiqāq al-qamar&lt;&#x2F;em&gt; + &lt;em&gt;ḥūr ʿīn&lt;&#x2F;em&gt;). The acknowledgment-
-without-endorsement framework is now applied at 4 Exodus sites plus
-Ex 3:14 — the pattern is established as a project-wide convention.&lt;&#x2F;p&gt;
-&lt;p&gt;The translation was drafted by Claude Opus 4.7 and edited through the
-Wheel of Heaven Translation Program pipeline (Translator → Editor →
-Reviewer). 12+ named-scholarship citations verified by the Reviewer:
-Childs 1974, Propp 1999&#x2F;2006 (Anchor Bible), Sarna 1991 (JPS), Cassuto
-1951&#x2F;1967, Houtman 1993-2000 (HCOT), Sommer 2009, Cross 1973, Day
-2000, Hoffmeier 2005, Bodenheimer 1947, Humphreys 2003, Miller 1973,
-Albright 1924, Mettinger 1995, Anderson 1991, Clifford 1972, Stade-
-Wellhausen-Gressmann. All attributions correct.&lt;&#x2F;p&gt;
-&lt;p&gt;The methodology is documented at
-&lt;a href=&quot;https:&#x2F;&#x2F;docs.wheelofheaven.world&#x2F;contributing&#x2F;content&#x2F;source-text-translation&#x2F;&quot;&gt;Source-Text Translation&lt;&#x2F;a&gt;.&lt;&#x2F;p&gt;
-</description>
-      </item>
-      <item>
-          <title>The Gospel According to Luke</title>
-          <pubDate>Thu, 04 Jun 2026 00:00:00 +0000</pubDate>
-          <author>Unknown</author>
-          <link>https://www.wheelofheaven.world/library/luke-woh/</link>
-          <guid>https://www.wheelofheaven.world/library/luke-woh/</guid>
-          <description xml:base="https://www.wheelofheaven.world/library/luke-woh/">&lt;p&gt;&lt;strong&gt;Luke 21 (Wheel of Heaven Translation)&lt;&#x2F;strong&gt; — the Lukan Olivet Discourse. The Raëlian canon engages Luke 21:25-26 (cosmic-signs in sun, moon, stars) and Luke 21:27 (Son of Man coming in a cloud) in &lt;em&gt;The End of the World&lt;&#x2F;em&gt; — acknowledgment-without-endorsement framework applied per the established precedents.&lt;&#x2F;p&gt;
-&lt;p&gt;&lt;strong&gt;38 verses&lt;&#x2F;strong&gt; sourced from &lt;strong&gt;Codex Vaticanus (B&#x2F;03)&lt;&#x2F;strong&gt; + &lt;strong&gt;Codex Sinaiticus (א&#x2F;01)&lt;&#x2F;strong&gt; + &lt;strong&gt;P75 (Bodmer XIV-XV, ~175-225 CE)&lt;&#x2F;strong&gt; — the earliest substantial Luke witness, containing complete Luke. NA28&#x2F;UBS5&#x2F;SBLGNT critical apparatus as reference.&lt;&#x2F;p&gt;
-&lt;p&gt;&lt;strong&gt;Key sites:&lt;&#x2F;strong&gt;&lt;&#x2F;p&gt;
-&lt;ul&gt;
-&lt;li&gt;
-&lt;p&gt;&lt;strong&gt;Luke 21:25-26&lt;&#x2F;strong&gt; — &lt;em&gt;sēmeia en hēliō kai selēnē kai astrois&lt;&#x2F;em&gt; &quot;signs in sun and moon and stars&quot; + &lt;em&gt;synochē ethnōn en aporiā&lt;&#x2F;em&gt; &quot;distress of nations in perplexity&quot; + people fainting with fear. &lt;strong&gt;Major cosmic-signs site.&lt;&#x2F;strong&gt; Cross-corpus chain documented at central entry &lt;code&gt;cosmic-signs-cluster-joel-2-mark-13-acts-2-luke-21-rev-6&lt;&#x2F;code&gt;: Joel 2:30-31 + Isa 13:10 + Ezek 32:7-8 + Mark 13:24-25 + Mt 24:29 + Acts 2:19-20 + Rev 6:12-13. &lt;strong&gt;Bidirectional cross-corpus wire&lt;&#x2F;strong&gt; with v2.60.0 Qur&#x27;an &lt;code&gt;inshiqaq-al-qamar-splitting-of-the-moon-sura-54-1&lt;&#x2F;code&gt; — first HB × NT × Qur&#x27;an four-tradition cosmic-signs cluster in production.&lt;&#x2F;p&gt;
-&lt;&#x2F;li&gt;
-&lt;li&gt;
-&lt;p&gt;&lt;strong&gt;Luke 21:27&lt;&#x2F;strong&gt; — &lt;em&gt;ton huion tou anthrōpou erchomenon en nephelē&lt;&#x2F;em&gt; &quot;the Son of Man coming in a cloud.&quot; Cross-corpus Dan 7:13-14 + Mark 13:26 + Mt 24:30 + Rev 1:7. The Lukan singular &lt;em&gt;nephelē&lt;&#x2F;em&gt; (vs Mark&#x2F;Mt plural &lt;em&gt;nephelōn&lt;&#x2F;em&gt;) noted; correctly tied to Acts 1:9-11 Ascension &lt;em&gt;nephelē&lt;&#x2F;em&gt;.&lt;&#x2F;p&gt;
-&lt;&#x2F;li&gt;
-&lt;li&gt;
-&lt;p&gt;&lt;strong&gt;Luke 21:32&lt;&#x2F;strong&gt; — &lt;em&gt;hē genea hautē&lt;&#x2F;em&gt; &quot;this generation&quot; eschatological-imminence saying. Five-reading-strata preserved at overlay convention (Marshall NIGTC; Fitzmyer AB; Bovon Hermeneia).&lt;&#x2F;p&gt;
-&lt;&#x2F;li&gt;
-&lt;&#x2F;ul&gt;
-&lt;p&gt;Scholarly references: Nolland WBC 1989-1993, Fitzmyer AB 1981-1985, Bovon Hermeneia 2002-2013, Marshall NIGTC 1978. Verification pending against the original codicology.&lt;&#x2F;p&gt;
-&lt;p&gt;The methodology is documented at &lt;a href=&quot;https:&#x2F;&#x2F;docs.wheelofheaven.world&#x2F;contributing&#x2F;content&#x2F;source-text-translation&#x2F;&quot;&gt;Source-Text Translation&lt;&#x2F;a&gt;.&lt;&#x2F;p&gt;
-</description>
-      </item>
-      <item>
-          <title>The Gospel According to Mark</title>
-          <pubDate>Thu, 04 Jun 2026 00:00:00 +0000</pubDate>
-          <author>Unknown</author>
-          <link>https://www.wheelofheaven.world/library/mark-woh/</link>
-          <guid>https://www.wheelofheaven.world/library/mark-woh/</guid>
-          <description xml:base="https://www.wheelofheaven.world/library/mark-woh/">&lt;p&gt;&lt;strong&gt;Mark 16 (Wheel of Heaven Translation)&lt;&#x2F;strong&gt; — the Resurrection narrative + the longer-ending textual-critical site. The Raëlian canon engages Mark 16:18 (snake-handling passage) and Mark 16:19 (Ascension) in &lt;em&gt;Extraterrestrials Took Me To Their Planet&lt;&#x2F;em&gt; — acknowledgment-without-endorsement framework applied per the established Shi&#x27;ur Qomah &#x2F; Qur&#x27;an &#x2F; Exodus &#x2F; Matthew precedents.&lt;&#x2F;p&gt;
-&lt;p&gt;&lt;strong&gt;The longer-ending textual-critical dispute.&lt;&#x2F;strong&gt; Mark 16 ends at verse 8 (&lt;em&gt;ephobounto gar&lt;&#x2F;em&gt; &quot;for they were afraid&quot;) in &lt;strong&gt;Codex Vaticanus (B&#x2F;03)&lt;&#x2F;strong&gt; and &lt;strong&gt;Codex Sinaiticus (א&#x2F;01)&lt;&#x2F;strong&gt; — the two earliest substantial uncial witnesses. The &quot;longer ending&quot; Mark 16:9-20 (containing the resurrection appearances + the Ascension at v19 + the snake-handling and poison-immunity passage at v18) is ABSENT in Vaticanus + Sinaiticus + Codex Bobiensis (k, Old Latin) + Sinaitic Syriac. The longer ending is PRESENT in Codex Alexandrinus + Codex Bezae + later Byzantine tradition. &lt;strong&gt;Consensus modern critical view&lt;&#x2F;strong&gt; (Metzger UBS Textual Commentary; Aland-Aland; Marcus 2009 AB; Collins 2007 Hermeneia): the longer ending is a 2nd-century scribal addition to harmonize Mark with the other Gospels.&lt;&#x2F;p&gt;
-&lt;p&gt;This translation preserves the canonical longer-ending text on the surface (verses 9-20 rendered as canonical Mark 16) — same pattern as Matthew&#x27;s Conybeare-hypothesis handling at Mt 28:19 — with the textual-criticism dispute documented at the central glossary entry &lt;code&gt;mark-16-9-20-longer-ending-textual-critical-site&lt;&#x2F;code&gt; (v2.64.0).&lt;&#x2F;p&gt;
-&lt;p&gt;&lt;strong&gt;20 verses&lt;&#x2F;strong&gt; sourced from Vaticanus + Sinaiticus (primary 4th-c. uncial witnesses) + P45 Chester Beatty I (~250 CE, contains substantial Mark) cross-collation + NA28&#x2F;UBS5&#x2F;SBLGNT critical apparatus. Scholarly references: Metzger 1994, France 2002 NIGTC, Marcus 2000&#x2F;2009 AB, Collins 2007 Hermeneia. Verification pending against the original codicology.&lt;&#x2F;p&gt;
-&lt;p&gt;The methodology is documented at &lt;a href=&quot;https:&#x2F;&#x2F;docs.wheelofheaven.world&#x2F;contributing&#x2F;content&#x2F;source-text-translation&#x2F;&quot;&gt;Source-Text Translation&lt;&#x2F;a&gt;.&lt;&#x2F;p&gt;
-</description>
-      </item>
-      <item>
-          <title>The Gospel According to Matthew</title>
-          <pubDate>Thu, 04 Jun 2026 00:00:00 +0000</pubDate>
-          <author>Unknown</author>
-          <link>https://www.wheelofheaven.world/library/matthew-woh/</link>
-          <guid>https://www.wheelofheaven.world/library/matthew-woh/</guid>
-          <description xml:base="https://www.wheelofheaven.world/library/matthew-woh/">&lt;p&gt;&lt;strong&gt;Matthew (Wheel of Heaven Translation)&lt;&#x2F;strong&gt; — the most heavily cited
-New Testament book in the Raëlian canon. &lt;em&gt;The Role of Christ&lt;&#x2F;em&gt; engages
-Matthew across 17 of its 28 chapters; this translation covers the
-eight highest-citation-density chapters as the canon-closure
-selection. &lt;strong&gt;The project&#x27;s first Christian-tradition text and first
-Koine Greek source text.&lt;&#x2F;strong&gt;&lt;&#x2F;p&gt;
-&lt;p&gt;&lt;strong&gt;The 8 canon-cited chapters:&lt;&#x2F;strong&gt;&lt;&#x2F;p&gt;
-&lt;ul&gt;
-&lt;li&gt;&lt;strong&gt;Mt 1&lt;&#x2F;strong&gt; — the genealogy of Jesus + the virgin-birth narrative&lt;&#x2F;li&gt;
-&lt;li&gt;&lt;strong&gt;Mt 5&lt;&#x2F;strong&gt; — Sermon on the Mount Pt I (Beatitudes; salt and light;
-&quot;not to abolish but to fulfill&quot;; the antitheses)&lt;&#x2F;li&gt;
-&lt;li&gt;&lt;strong&gt;Mt 6&lt;&#x2F;strong&gt; — Sermon on the Mount Pt II (alms; the Lord&#x27;s Prayer;
-fasting; treasure in heaven; anxiety)&lt;&#x2F;li&gt;
-&lt;li&gt;&lt;strong&gt;Mt 7&lt;&#x2F;strong&gt; — Sermon on the Mount Pt III (judgment; ask-seek-knock;
-the Golden Rule; the narrow gate; the two builders)&lt;&#x2F;li&gt;
-&lt;li&gt;&lt;strong&gt;Mt 13&lt;&#x2F;strong&gt; — &lt;strong&gt;THE EXPLICIT CANON SITE&lt;&#x2F;strong&gt;: the kingdom parables
-(Sower, Tares, Mustard Seed, Leaven, Hidden Treasure, Pearl, Net).
-Raël&#x27;s &lt;em&gt;The Role of Christ&lt;&#x2F;em&gt; reads the Parable of the Sower as
-&lt;em&gt;&quot;the description of life being seeded on multiple worlds&quot;&lt;&#x2F;em&gt; — the
-four soil-types interpreted literally as four planet-types
-receiving the Elohim seeding-of-life.&lt;&#x2F;li&gt;
-&lt;li&gt;&lt;strong&gt;Mt 17&lt;&#x2F;strong&gt; — the Transfiguration + the demoniac boy + the
-temple-tax&lt;&#x2F;li&gt;
-&lt;li&gt;&lt;strong&gt;Mt 25&lt;&#x2F;strong&gt; — Ten Virgins + Talents + Sheep and Goats (the final
-judgment)&lt;&#x2F;li&gt;
-&lt;li&gt;&lt;strong&gt;Mt 28&lt;&#x2F;strong&gt; — the Resurrection + the Great Commission&lt;&#x2F;li&gt;
-&lt;&#x2F;ul&gt;
-&lt;p&gt;&lt;strong&gt;287 verses across 8 chapters.&lt;&#x2F;strong&gt; The &lt;strong&gt;early-manuscript approach&lt;&#x2F;strong&gt;
-parallels the Qur&#x27;an translation&#x27;s Tübingen + Codex
-Parisino-petropolitanus method: source the text from the earliest
-substantially-complete codices and cross-collate against the earlier
-papyri where they preserve target verses.&lt;&#x2F;p&gt;
-&lt;p&gt;&lt;strong&gt;Sources:&lt;&#x2F;strong&gt;&lt;&#x2F;p&gt;
-&lt;ul&gt;
-&lt;li&gt;&lt;strong&gt;Codex Vaticanus (B &#x2F; 03)&lt;&#x2F;strong&gt; — Vatican Library Gr. 1209,
-~325-350 CE — primary 4th-c. uncial witness; contains complete
-Matthew; the standard NA28&#x2F;UBS5 critical-text base&lt;&#x2F;li&gt;
-&lt;li&gt;&lt;strong&gt;Codex Sinaiticus (א &#x2F; 01)&lt;&#x2F;strong&gt; — British Library Add. 43725 + Sinai
-&lt;ul&gt;
-&lt;li&gt;Leipzig + St. Petersburg, ~330-360 CE — only complete uncial
-codex; secondary primary witness&lt;&#x2F;li&gt;
-&lt;&#x2F;ul&gt;
-&lt;&#x2F;li&gt;
-&lt;li&gt;&lt;strong&gt;Cross-collation against early papyri&lt;&#x2F;strong&gt; where target verses are
-preserved:
-&lt;ul&gt;
-&lt;li&gt;&lt;strong&gt;P104&lt;&#x2F;strong&gt; (Oxford P.Oxy 4404; ~150 CE) — among the EARLIEST
-surviving Matthew witnesses, ~150-200 years before the great
-uncials&lt;&#x2F;li&gt;
-&lt;li&gt;&lt;strong&gt;P64+P67&lt;&#x2F;strong&gt; (Magdalen + Barcelona; late 2nd c. CE) — Mt 5:20-22,
-25-28 + Mt 26&lt;&#x2F;li&gt;
-&lt;li&gt;&lt;strong&gt;P77&lt;&#x2F;strong&gt; (~200 CE) — Mt 23:30-39&lt;&#x2F;li&gt;
-&lt;li&gt;&lt;strong&gt;P103&lt;&#x2F;strong&gt; (P.Oxy 4403; late 2nd &#x2F; early 3rd c. CE) — Mt 13:55-57,
-14:3-5 (cross-collation for our Mt 13)&lt;&#x2F;li&gt;
-&lt;li&gt;&lt;strong&gt;P45&lt;&#x2F;strong&gt; (Chester Beatty I; ~250 CE) — substantial Matthew
-portions including Mt 20-26 (cross-collation for our Mt 25)&lt;&#x2F;li&gt;
-&lt;&#x2F;ul&gt;
-&lt;&#x2F;li&gt;
-&lt;&#x2F;ul&gt;
-&lt;p&gt;&lt;strong&gt;Critical apparatus reference:&lt;&#x2F;strong&gt; NA28 (Nestle-Aland 28th edition,
-2012), UBS5 (United Bible Societies 5th, 2014), SBLGNT (Society of
-Biblical Literature, Holmes 2010), THGNT (Tyndale House, Jongkind
-2017).&lt;&#x2F;p&gt;
-&lt;p&gt;&lt;strong&gt;Three highest-citation-density Raëlian-canon lens-risk sites —
-all managed with explicit named verbatim disavowals:&lt;&#x2F;strong&gt;&lt;&#x2F;p&gt;
-&lt;ul&gt;
-&lt;li&gt;&lt;strong&gt;Mt 13:3-23 (the Parable of the Sower)&lt;&#x2F;strong&gt; — &lt;strong&gt;THE single
-most-load-bearing canon-engagement&lt;&#x2F;strong&gt; in the entire Matthew
-translation. Three reading-strata preserved: mainstream
-Christian-tradition (Davies-Allison ICC, Luz Hermeneia, France
-NICNT, Snodgrass 2008); Jewish-historical-critical (Levine 2014
-&lt;em&gt;Short Stories by Jesus&lt;&#x2F;em&gt;); Raëlian-canon panspermia. Verbatim
-acknowledgment-without-endorsement per the Shi&#x27;ur Qomah &lt;em&gt;parasangs&lt;&#x2F;em&gt;
-&lt;ul&gt;
-&lt;li&gt;Qur&#x27;an &lt;em&gt;inshiqāq al-qamar&lt;&#x2F;em&gt; + Exodus pillar&#x2F;parting&#x2F;manna&#x2F;theophany
-precedents.&lt;&#x2F;li&gt;
-&lt;&#x2F;ul&gt;
-&lt;&#x2F;li&gt;
-&lt;li&gt;&lt;strong&gt;Mt 17:1-9 (the Transfiguration)&lt;&#x2F;strong&gt; — Raëlian-canon &quot;Elohim
-manifest in glory + Moses+Elijah appearing&quot; acknowledgment-without-
-endorsement. The &lt;em&gt;bath-qol&lt;&#x2F;em&gt; voice at Mt 17:5 is a four-layered
-scriptural allusion: Ps 2:7 (&lt;em&gt;ben-Yhwh&lt;&#x2F;em&gt;) + Isa 42:1 (servant-chosen)
-&lt;ul&gt;
-&lt;li&gt;Deut 18:15 (prophet-like-Moses) + Mt 3:17 (the baptism-voice).
-Allison 1993 &lt;em&gt;The New Moses&lt;&#x2F;em&gt;.&lt;&#x2F;li&gt;
-&lt;&#x2F;ul&gt;
-&lt;&#x2F;li&gt;
-&lt;li&gt;&lt;strong&gt;Mt 28:18-20 (the Great Commission)&lt;&#x2F;strong&gt; — Raëlian-canon engagement +
-the &lt;strong&gt;Conybeare 1901 hypothesis&lt;&#x2F;strong&gt; preserved without adjudication
-(Eusebius&#x27;s pre-Nicene citations of Mt 28:19 use a shorter
-&lt;em&gt;en tō onomati mou&lt;&#x2F;em&gt; form; Conybeare proposed the trinitarian formula
-is a later interpolation. All extant Greek MSS preserve the
-trinitarian formula; the Didache 7 + Justin &lt;em&gt;1 Apology&lt;&#x2F;em&gt; 61 attest
-the formula in early-2nd-c. usage). WoH-Translation renders the
-canonical text on surface; documents Conybeare as one scholarly
-position.&lt;&#x2F;li&gt;
-&lt;&#x2F;ul&gt;
-&lt;p&gt;&lt;strong&gt;Plus four other major lens-risk sites:&lt;&#x2F;strong&gt;&lt;&#x2F;p&gt;
-&lt;ul&gt;
-&lt;li&gt;&lt;strong&gt;Mt 1:22-23 (the virgin birth + Isa 7:14)&lt;&#x2F;strong&gt; — LXX &lt;em&gt;parthenos&lt;&#x2F;em&gt;
-(virgin) vs Hebrew &lt;em&gt;ʿalmâ&lt;&#x2F;em&gt; (young woman) philological dispute
-preserved-not-adjudicated. Brown 1993 &lt;em&gt;The Birth of the Messiah&lt;&#x2F;em&gt;
-&lt;ul&gt;
-&lt;li&gt;Levine 2014 &lt;em&gt;Jewish Annotated New Testament&lt;&#x2F;em&gt; Jewish-scholarly
-counterpoint.&lt;&#x2F;li&gt;
-&lt;&#x2F;ul&gt;
-&lt;&#x2F;li&gt;
-&lt;li&gt;&lt;strong&gt;Mt 5:17 (&quot;I came not to abolish but to fulfill&quot;)&lt;&#x2F;strong&gt; — locus
-classicus of Jewish-Christian dialogue. Explicit
-Christian-supersessionist disavowal: this verse does NOT support a
-reading where the Torah is superseded. The verb &lt;em&gt;plērōsai&lt;&#x2F;em&gt;
-philological breadth preserved (complete &#x2F; do &#x2F; fully realize).&lt;&#x2F;li&gt;
-&lt;li&gt;&lt;strong&gt;Mt 6:9-13 (the Lord&#x27;s Prayer)&lt;&#x2F;strong&gt; — the WoH-Translation renders
-WITHOUT the Byzantine doxology at 6:13b (consensus modern
-critical-text — absent in Vaticanus + Sinaiticus + earliest mss;
-Metzger UBS Textual Commentary). The doxology is documented as a
-textual variant. The &lt;em&gt;epiousios&lt;&#x2F;em&gt; hapax at 6:11 — three classical
-readings preserved (daily &#x2F; for-tomorrow &#x2F; supersubstantial).&lt;&#x2F;li&gt;
-&lt;li&gt;&lt;strong&gt;Mt 25:40 (&quot;the least of these brothers&quot;)&lt;&#x2F;strong&gt; — three reading-strata
-preserved per Gray 1989 &lt;em&gt;The Least of My Brothers: A History of
-Interpretation&lt;&#x2F;em&gt;: (A) universalist (all suffering humanity);
-(B) ecclesial-particularist (Christians-in-distress); (C)
-Jewish-particularist (Jewish-people-in-distress). The v45 absence
-of &lt;em&gt;tōn adelphōn mou&lt;&#x2F;em&gt; is the key counter-datum.&lt;&#x2F;li&gt;
-&lt;&#x2F;ul&gt;
-&lt;p&gt;&lt;strong&gt;Translation choices preserved:&lt;&#x2F;strong&gt;&lt;&#x2F;p&gt;
-&lt;ul&gt;
-&lt;li&gt;&lt;em&gt;theos&lt;&#x2F;em&gt; → &quot;God&quot;; &lt;em&gt;kyrios&lt;&#x2F;em&gt; → &quot;Lord&quot;; &lt;em&gt;Iēsous&lt;&#x2F;em&gt; → &quot;Jesus&quot;;
-&lt;em&gt;Christos&lt;&#x2F;em&gt; → &quot;Christ&quot; (Greek-Hebrew-Aramaic cognate documented at
-central entries)&lt;&#x2F;li&gt;
-&lt;li&gt;Genealogical text: preserve four women named (Tamar, Rahab, Ruth,
-&quot;wife of Uriah&quot; Bathsheba) per Brown 1993&#x27;s four readings&lt;&#x2F;li&gt;
-&lt;li&gt;&lt;em&gt;makarios&lt;&#x2F;em&gt; in the Beatitudes → &quot;blessed&quot; (KJV&#x2F;RSV tradition)&lt;&#x2F;li&gt;
-&lt;li&gt;&lt;em&gt;epiousios&lt;&#x2F;em&gt; in the Lord&#x27;s Prayer → &quot;daily&quot; (mainstream English
-tradition); alternatives documented&lt;&#x2F;li&gt;
-&lt;li&gt;Byzantine doxology at Mt 6:13b → OMITTED (critical-text consensus);
-documented as variant&lt;&#x2F;li&gt;
-&lt;li&gt;&lt;em&gt;raca&lt;&#x2F;em&gt; at Mt 5:22 → preserved with parenthetical&lt;&#x2F;li&gt;
-&lt;li&gt;&lt;em&gt;aiōnios&lt;&#x2F;em&gt; at Mt 25:41, 46 → &quot;eternal&quot; (mainstream); &quot;age-pertaining&quot;
-documented as scholarly alternative&lt;&#x2F;li&gt;
-&lt;li&gt;Trinitarian baptismal formula at Mt 28:19 → preserved as canonical
-text; Conybeare 1901 hypothesis documented at central entry&lt;&#x2F;li&gt;
-&lt;&#x2F;ul&gt;
-&lt;p&gt;&lt;strong&gt;First Greek × Hebrew × Ugaritic three-way cosmic-mountain wire in
-production.&lt;&#x2F;strong&gt; The new &lt;code&gt;mountain-as-revelation-site-mt&lt;&#x2F;code&gt; (Mt as
-new-Moses typology — Allison 1993) is bidirectionally wired with the
-v2.61.0 Exodus &lt;code&gt;har-sinai-horev&lt;&#x2F;code&gt; (Sinai&#x2F;Horeb as cosmic-mountain) and
-the v2.57.0 Baal Cycle &lt;code&gt;mount-sapunu-tsafon-cosmic-mountain&lt;&#x2F;code&gt;. The
-Northwest-Semitic cosmic-mountain substrate (Clifford 1972 &lt;em&gt;The
-Cosmic Mountain in Canaan and the Old Testament&lt;&#x2F;em&gt;; Day 2000 &lt;em&gt;Yahweh
-and the Gods and Goddesses of Canaan&lt;&#x2F;em&gt;) now extends Hebrew → Ugaritic →
-Greek NT. Three-tradition cross-corpus cluster in production.&lt;&#x2F;p&gt;
-&lt;p&gt;&lt;strong&gt;Fourth canon-source-tension closure&lt;&#x2F;strong&gt; after Shi&#x27;ur Qomah
-(&lt;em&gt;parasangs&lt;&#x2F;em&gt;), Qur&#x27;an (&lt;em&gt;inshiqāq al-qamar&lt;&#x2F;em&gt; + &lt;em&gt;ḥūr ʿīn&lt;&#x2F;em&gt;), and Exodus
-(pillar&#x2F;parting&#x2F;manna&#x2F;theophany). The acknowledgment-without-
-endorsement framework is now applied at Mt 13 (Sower) + Mt 17
-(Transfiguration) + Mt 28 (Great Commission). Pattern established as
-project-wide convention.&lt;&#x2F;p&gt;
-&lt;p&gt;The translation was drafted by Claude Opus 4.7 and edited through the
-Wheel of Heaven Translation Program pipeline (Translator → Editor →
-Reviewer). 12+ named-scholarship citations verified by the Reviewer:
-Davies-Allison ICC 1988-1997, Luz Hermeneia 2001-2007, France NICNT
-2007, Hagner WBC 1993-1995, Nolland NIGTC 2005, Brown 1993 &lt;em&gt;Birth of
-the Messiah&lt;&#x2F;em&gt;, Levine-Brettler JANT 2017, Snodgrass 2008 &lt;em&gt;Stories
-with Intent&lt;&#x2F;em&gt;, Allison 1993 &lt;em&gt;The New Moses&lt;&#x2F;em&gt;, Kupp 1996 &lt;em&gt;Matthew&#x27;s
-Emmanuel&lt;&#x2F;em&gt;, Gray 1989 &lt;em&gt;The Least of My Brothers&lt;&#x2F;em&gt;, Conybeare 1901 &lt;em&gt;ZNW&lt;&#x2F;em&gt;
-2, Betz 1995 &lt;em&gt;The Sermon on the Mount&lt;&#x2F;em&gt;, Metzger UBS Textual
-Commentary, BDAG, TDNT, Justin Martyr &lt;em&gt;Dialogue with Trypho&lt;&#x2F;em&gt;. All
-attributions correct.&lt;&#x2F;p&gt;
-&lt;p&gt;The methodology is documented at
-&lt;a href=&quot;https:&#x2F;&#x2F;docs.wheelofheaven.world&#x2F;contributing&#x2F;content&#x2F;source-text-translation&#x2F;&quot;&gt;Source-Text Translation&lt;&#x2F;a&gt;.&lt;&#x2F;p&gt;
-</description>
-      </item>
-      <item>
-          <title>Revelation</title>
-          <pubDate>Thu, 04 Jun 2026 00:00:00 +0000</pubDate>
-          <author>Unknown</author>
-          <link>https://www.wheelofheaven.world/library/revelation-woh/</link>
-          <guid>https://www.wheelofheaven.world/library/revelation-woh/</guid>
-          <description xml:base="https://www.wheelofheaven.world/library/revelation-woh/">&lt;p&gt;&lt;strong&gt;Revelation 1 + 4 + 6 (Wheel of Heaven Translation)&lt;&#x2F;strong&gt; — three canon-cited Apocalypse chapters. The Raëlian canon engages Revelation chapters 1, 4, 6+ at length in &lt;em&gt;The New Revelations&lt;&#x2F;em&gt; — acknowledgment-without-endorsement framework applied per the established precedents.&lt;&#x2F;p&gt;
-&lt;p&gt;&lt;strong&gt;48 verses across 3 chapters&lt;&#x2F;strong&gt; sourced from &lt;strong&gt;Codex Sinaiticus (א&#x2F;01; 4th c. CE)&lt;&#x2F;strong&gt; as the primary uncial witness — note &lt;strong&gt;Codex Vaticanus is INCOMPLETE for Revelation&lt;&#x2F;strong&gt; (it ends mid-Hebrews, so Sinaiticus serves as the sole 4th-c. uncial witness for the Apocalypse) — cross-collated against &lt;strong&gt;P47 Chester Beatty III (~250 CE)&lt;&#x2F;strong&gt;, the earliest substantial Revelation papyrus. NA28&#x2F;UBS5&#x2F;SBLGNT critical apparatus as reference.&lt;&#x2F;p&gt;
-&lt;p&gt;&lt;strong&gt;The 3 canon-cited chapters:&lt;&#x2F;strong&gt;&lt;&#x2F;p&gt;
-&lt;ul&gt;
-&lt;li&gt;
-&lt;p&gt;&lt;strong&gt;Rev 1 (20 verses) — the throne-vision opening.&lt;&#x2F;strong&gt; John on Patmos + the one-like-a-son-of-man among the seven lampstands; &lt;em&gt;hē phōnē autou hōs phōnē hydatōn pollōn&lt;&#x2F;em&gt; &quot;his voice like the sound of many waters.&quot; Massive cross-corpus to Dan 7 + Dan 10 + Ezek 1 + Ezek 43:2.&lt;&#x2F;p&gt;
-&lt;ul&gt;
-&lt;li&gt;&lt;strong&gt;Rev 1:4 &lt;em&gt;apo ho ōn kai ho ēn kai ho erchomenos&lt;&#x2F;em&gt;&lt;&#x2F;strong&gt; — the famous Greek-grammatical solecism (prepositional genitive takes nominative articles). Central entry &lt;code&gt;apo-ho-on-rev-1-4-greek-grammatical-solecism-divine-name-cross-corpus&lt;&#x2F;code&gt; documents the Ex 3:14 LXX &lt;em&gt;ho ōn&lt;&#x2F;em&gt; divine-name-preservation thesis; &lt;strong&gt;bidirectional cross-corpus wire&lt;&#x2F;strong&gt; with v2.61.0 Exodus &lt;code&gt;ehyeh-asher-ehyeh-divine-name-revelation&lt;&#x2F;code&gt;. The solecism is &lt;strong&gt;preserved in the English&lt;&#x2F;strong&gt; (&quot;from the one who is and who was and who is to come&quot;).&lt;&#x2F;li&gt;
-&lt;li&gt;&lt;strong&gt;Rev 1:7&lt;&#x2F;strong&gt; — &lt;em&gt;erchetai meta tōn nephelōn&lt;&#x2F;em&gt; &quot;coming with the clouds.&quot; Cross-corpus Dan 7:13 + Zech 12:10 + Mark 13:26 + Luke 21:27 + Mt 24:30. Central entry &lt;code&gt;son-of-man-coming-in-cloud-dan-7-13-synoptic-revelation-1-7-cross-corpus&lt;&#x2F;code&gt;.&lt;&#x2F;li&gt;
-&lt;&#x2F;ul&gt;
-&lt;&#x2F;li&gt;
-&lt;li&gt;
-&lt;p&gt;&lt;strong&gt;Rev 4 (11 verses) — the throne-room.&lt;&#x2F;strong&gt; The &lt;em&gt;thyra ēneōgmenē en tō ouranō&lt;&#x2F;em&gt; &quot;door opened in heaven&quot; + the 24 elders + the four living creatures + the trisagion. &lt;strong&gt;The first NT × Hebrew Bible × Hekhalot triple bidirectional throne-vision wire&lt;&#x2F;strong&gt; in production:&lt;&#x2F;p&gt;
-&lt;ul&gt;
-&lt;li&gt;Central entry &lt;code&gt;throne-vision-rev-1-4-ezek-1-dan-7-shiur-qomah-cross-corpus&lt;&#x2F;code&gt; triple-wires Rev 1+4 with v2.61.0 &lt;code&gt;ezekiel-1-throne-vision-merkavah-tradition&lt;&#x2F;code&gt; (Exodus pass) and v2.59.0 &lt;code&gt;shiur-qomah-cosmic-body-of-divine-hekhalot-throne-vision-tradition&lt;&#x2F;code&gt; (Shi&#x27;ur Qomah pass) — three traditions in three languages (Hebrew + Aramaic + Koine Greek).&lt;&#x2F;li&gt;
-&lt;li&gt;Central entry &lt;code&gt;four-living-creatures-rev-4-6-8-ezek-1-chayyot-shiur-qomah-cross-corpus&lt;&#x2F;code&gt; for the &lt;em&gt;tessara zōa&lt;&#x2F;em&gt; (lion &#x2F; ox &#x2F; man &#x2F; eagle) full of eyes — bidirectional with the existing &lt;code&gt;chayyot&lt;&#x2F;code&gt; entry (covering Ezek 1+10 + Shi&#x27;ur Qomah 64-faced amplification; now extends with Rev 4 refIds).&lt;&#x2F;li&gt;
-&lt;li&gt;Central entry &lt;code&gt;trisagion-rev-4-8-isa-6-3-sanctus-liturgical-tradition-cross-corpus&lt;&#x2F;code&gt; for &lt;em&gt;hagios hagios hagios&lt;&#x2F;em&gt;.&lt;&#x2F;li&gt;
-&lt;&#x2F;ul&gt;
-&lt;&#x2F;li&gt;
-&lt;li&gt;
-&lt;p&gt;&lt;strong&gt;Rev 6 (17 verses) — the seven seals.&lt;&#x2F;strong&gt; The Four Horsemen + the cosmic-signs at the sixth seal.&lt;&#x2F;p&gt;
-&lt;ul&gt;
-&lt;li&gt;Central entry &lt;code&gt;four-horsemen-rev-6-1-8-zechariah-1-6-cross-corpus&lt;&#x2F;code&gt;: white &#x2F; red &#x2F; black &#x2F; &lt;em&gt;chlōros&lt;&#x2F;em&gt; horses. Cross-corpus Zech 1:8-11 + Zech 6:1-8. &lt;strong&gt;Rev 6:8 &lt;em&gt;chlōros&lt;&#x2F;em&gt; horse rendered &quot;pale green&quot;&lt;&#x2F;strong&gt; (literal color; not just &quot;pale&quot; — overlay convention).&lt;&#x2F;li&gt;
-&lt;li&gt;&lt;strong&gt;Rev 6:12-14 cosmic-signs&lt;&#x2F;strong&gt; — the sun became black as sackcloth, the moon as blood, the stars fell to earth. &lt;strong&gt;First HB × NT × Qur&#x27;an four-tradition cosmic-signs cluster in production&lt;&#x2F;strong&gt;: central entry &lt;code&gt;cosmic-signs-cluster-joel-2-mark-13-acts-2-luke-21-rev-6-cross-corpus&lt;&#x2F;code&gt; is bidirectionally wired with v2.60.0 Qur&#x27;an &lt;code&gt;inshiqaq-al-qamar-splitting-of-the-moon-sura-54-1&lt;&#x2F;code&gt;. The Joel 2 → Isa 13 → Ezek 32 → Mark 13 → Mt 24 → Luke 21:25 → Acts 2:19 → Rev 6:12 → Sura 54:1 chain.&lt;&#x2F;li&gt;
-&lt;&#x2F;ul&gt;
-&lt;&#x2F;li&gt;
-&lt;&#x2F;ul&gt;
-&lt;p&gt;Scholarly references: Aune WBC 1997-1998 (52A&#x2F;52B&#x2F;52C), Beale NIGTC 1999, Koester AB 2014, Bauckham &lt;em&gt;Theology of the Book of Revelation&lt;&#x2F;em&gt; 1993 + &lt;em&gt;The Climax of Prophecy&lt;&#x2F;em&gt; 1993, Mounce NICNT 1997, Smalley 2005, Boxall BNTC 2006, Caird BNTC 1966. Verification pending against the original codicology.&lt;&#x2F;p&gt;
-&lt;p&gt;The methodology is documented at &lt;a href=&quot;https:&#x2F;&#x2F;docs.wheelofheaven.world&#x2F;contributing&#x2F;content&#x2F;source-text-translation&#x2F;&quot;&gt;Source-Text Translation&lt;&#x2F;a&gt;.&lt;&#x2F;p&gt;
+&lt;h2 id=&quot;yi-zhi-dai-ban-shi-xiang&quot;&gt;已知待办事项&lt;&#x2F;h2&gt;
+&lt;p&gt;三项。法语 Dhorme 在撒母耳记上、撒母耳记下与约伯记的占位文本仍待一次干净的 OCR 处理——互联网档案馆上的底层 djvu 扫描件将希伯来文校勘装置与注释交织得过于密集，无法以程序方式提取。俄巴底亚书章节文件存在脚手架缺口（二十一节经文中只有一节按段落层级拆分），目录目前误报为完整覆盖。1历代志德语 Elberfelder 的源头记录（bibel-online.net）在第13、17、18、22、28章中存在已知的内容重复异常，目录已在 &lt;code&gt;_meta.notes&lt;&#x2F;code&gt; 中标注，但合并管线尚未在下游过滤。这三项均不影响导入文本的可读性；全部列入下一轮处理。&lt;&#x2F;p&gt;
+&lt;hr &#x2F;&gt;
+&lt;p&gt;&lt;em&gt;——2026年6月7日发自天轮编辑部。&lt;&#x2F;em&gt;&lt;&#x2F;p&gt;
 </description>
       </item>
     </channel>

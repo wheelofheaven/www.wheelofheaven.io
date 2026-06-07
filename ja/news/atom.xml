@@ -5,8 +5,65 @@
     <link rel="self" type="application/atom+xml" href="https://www.wheelofheaven.world/ja/news/atom.xml"/>
     <link rel="alternate" type="text/html" href="https://www.wheelofheaven.world/ja/news/"/>
     <generator uri="https://www.getzola.org/">Zola</generator>
-    <updated>2026-05-22T00:00:00+00:00</updated>
+    <updated>2026-06-07T00:00:00+00:00</updated>
     <id>https://www.wheelofheaven.world/ja/news/atom.xml</id>
+    <entry xml:lang="en">
+        <title>ライブラリ:ヘブライ語聖書が9言語で読めるようになりました</title>
+        <published>2026-06-07T00:00:00+00:00</published>
+        <updated>2026-06-07T00:00:00+00:00</updated>
+        
+        <author>
+          <name>
+            
+              Unknown
+            
+          </name>
+        </author>
+        
+        <link rel="alternate" type="text/html" href="https://www.wheelofheaven.world/ja/news/library-hebrew-bible-nine-languages/"/>
+        <id>https://www.wheelofheaven.world/ja/news/library-hebrew-bible-nine-languages/</id>
+        
+        <content type="html" xml:base="https://www.wheelofheaven.world/ja/news/library-hebrew-bible-nine-languages/">&lt;h2 id=&quot;he-gagong-kai-saretaka&quot;&gt;何が公開されたか&lt;&#x2F;h2&gt;
+&lt;p&gt;2026年6月7日現在、Wheel of Heavenライブラリは、ヘブライ語聖書全体——創世記からゼパニヤ書まで、36書——を9言語で提供しています。すべての章は、英語ASV 1901を基準とし、ドイツ語、スペイン語、フランス語、日本語、韓国語、ロシア語、簡体字中国語、繁体字中国語の輸入されたパブリックドメイン版と並べて表示されます。9つのサイト言語のいずれかでライブラリを参照する読者は、英語を経由せずに、自分の読解言語でテキストを読めるようになりました。&lt;&#x2F;p&gt;
+&lt;p&gt;輸入された版はそれぞれ名称、年代、オープンライセンスが明示されています。カタログはまた、言語ごとのカバレッジも報告しています。マソラ本文とウルガタまたはシノドス伝統との間で節区分が異なり、節が整合しない場合は、英語ASVがフォールバックとして残されます。&lt;&#x2F;p&gt;
+&lt;table&gt;&lt;thead&gt;&lt;tr&gt;&lt;th&gt;言語&lt;&#x2F;th&gt;&lt;th&gt;版&lt;&#x2F;th&gt;&lt;th&gt;年&lt;&#x2F;th&gt;&lt;th&gt;ライセンス&lt;&#x2F;th&gt;&lt;&#x2F;tr&gt;&lt;&#x2F;thead&gt;&lt;tbody&gt;
+&lt;tr&gt;&lt;td&gt;英語&lt;&#x2F;td&gt;&lt;td&gt;American Standard Version (ASV)&lt;&#x2F;td&gt;&lt;td&gt;1901&lt;&#x2F;td&gt;&lt;td&gt;パブリックドメイン&lt;&#x2F;td&gt;&lt;&#x2F;tr&gt;
+&lt;tr&gt;&lt;td&gt;ドイツ語&lt;&#x2F;td&gt;&lt;td&gt;Elberfelder&lt;&#x2F;td&gt;&lt;td&gt;1905&lt;&#x2F;td&gt;&lt;td&gt;パブリックドメイン&lt;&#x2F;td&gt;&lt;&#x2F;tr&gt;
+&lt;tr&gt;&lt;td&gt;スペイン語&lt;&#x2F;td&gt;&lt;td&gt;Reina-Valera&lt;&#x2F;td&gt;&lt;td&gt;1909&lt;&#x2F;td&gt;&lt;td&gt;パブリックドメイン&lt;&#x2F;td&gt;&lt;&#x2F;tr&gt;
+&lt;tr&gt;&lt;td&gt;フランス語&lt;&#x2F;td&gt;&lt;td&gt;Crampon(ヨブ記、サムエル記の現存部分はPD Dhorme)&lt;&#x2F;td&gt;&lt;td&gt;1923&lt;&#x2F;td&gt;&lt;td&gt;パブリックドメイン&lt;&#x2F;td&gt;&lt;&#x2F;tr&gt;
+&lt;tr&gt;&lt;td&gt;日本語&lt;&#x2F;td&gt;&lt;td&gt;口語訳&lt;&#x2F;td&gt;&lt;td&gt;1955&lt;&#x2F;td&gt;&lt;td&gt;パブリックドメイン(著作者人格権)&lt;&#x2F;td&gt;&lt;&#x2F;tr&gt;
+&lt;tr&gt;&lt;td&gt;韓国語&lt;&#x2F;td&gt;&lt;td&gt;Korean Revised Version (KRV)&lt;&#x2F;td&gt;&lt;td&gt;1961&lt;&#x2F;td&gt;&lt;td&gt;パブリックドメイン&lt;&#x2F;td&gt;&lt;&#x2F;tr&gt;
+&lt;tr&gt;&lt;td&gt;ロシア語&lt;&#x2F;td&gt;&lt;td&gt;Synodal&lt;&#x2F;td&gt;&lt;td&gt;1876&lt;&#x2F;td&gt;&lt;td&gt;パブリックドメイン&lt;&#x2F;td&gt;&lt;&#x2F;tr&gt;
+&lt;tr&gt;&lt;td&gt;簡体字中国語&lt;&#x2F;td&gt;&lt;td&gt;Chinese Union Version(和合本)&lt;&#x2F;td&gt;&lt;td&gt;1919&lt;&#x2F;td&gt;&lt;td&gt;パブリックドメイン&lt;&#x2F;td&gt;&lt;&#x2F;tr&gt;
+&lt;tr&gt;&lt;td&gt;繁体字中国語&lt;&#x2F;td&gt;&lt;td&gt;Chinese Union Version(和合本)&lt;&#x2F;td&gt;&lt;td&gt;1919&lt;&#x2F;td&gt;&lt;td&gt;パブリックドメイン&lt;&#x2F;td&gt;&lt;&#x2F;tr&gt;
+&lt;&#x2F;tbody&gt;&lt;&#x2F;table&gt;
+&lt;p&gt;書ごとの来歴情報——翻訳名、年、ライセンス、ソースURL、取得日——は、各エントリについて &lt;code&gt;data-library&#x2F;catalog.json&lt;&#x2F;code&gt; に、各書の &lt;code&gt;translations.{lang}&lt;&#x2F;code&gt; ブロックの下に記録されています。&lt;&#x2F;p&gt;
+&lt;h2 id=&quot;nazezhu-yu-yi-nanoka&quot;&gt;なぜ逐語訳なのか&lt;&#x2F;h2&gt;
+&lt;p&gt;上記の輸入版はすべて、その翻訳理論において&lt;strong&gt;形式的等価訳&lt;&#x2F;strong&gt;——時に大まかに「逐語訳」とも呼ばれます——です。選ばれた版は、それぞれの伝統において&lt;em&gt;一致主義的&lt;&#x2F;em&gt;な側に位置します。Elberfelderは近代における最も語句単位のドイツ語聖書として有名であり、Reina-Valera、Crampon、Synodal、KRV、そしてChinese Union Versionも、それぞれの言語における同じ形式的等価訳の系譜に属します。口語訳は古典的な文語訳の口語的日本語への近代化版であり——伝統の基準では依然として形式的等価でありながら、後に日本のカトリック・プロテスタントの標準となった動的等価訳の新共同訳(1987年)に対して意図的に位置づけられたものです。&lt;&#x2F;p&gt;
+&lt;p&gt;この選択は意図的であり、懐古的なものではありません。形式的等価訳は、源泉の&lt;strong&gt;語彙的・統語的形態&lt;&#x2F;strong&gt;を保存しようと試みます——言語が許す限り、ヘブライ語の一語に対して目的言語の一語、ヘブライ語の一節に対して目的言語の一節、源泉の同じ節における同じ語は、可能な限りコーパス全体で同じ訳語が与えられます。動的等価訳はその逆を行います——読者への&lt;em&gt;効果&lt;&#x2F;em&gt;を保存しようと試み、その結果として源泉の選択を慣用的な目的言語へとまとめあげ、言い換え、平滑化することが日常的になります。&lt;&#x2F;p&gt;
+&lt;p&gt;8つの翻訳を提供する全理由が比較にあるライブラリ——&lt;em&gt;各伝統は神名のペリコーペ、創世記1章1節、詩編82編、エロヒムの複数形を、それぞれどう扱っているのか?&lt;&#x2F;em&gt;——にとって、形式的等価こそが、この問いを保存できる唯一の語調です。ある翻訳が &lt;code&gt;יהוה&lt;&#x2F;code&gt; を、英語ではその方が読みやすいから「the LORD」と、あるいは日本語ではその方が読みやすいから「主」と訳すと決めた瞬間に、正典が追跡しようとしている語彙的選択はすでに失われてしまっています。読者が目にするのは、翻訳者の整頓であって、翻訳者の読解ではありません。&lt;&#x2F;p&gt;
+&lt;p&gt;同じ論理がエロヒムという指示対象自体にも当てはまります。Elberfelderはヘブライ語が区別している箇所で「Jehova」と「Elohim」を可視のまま保ちます。Cramponは同じ規律で「Yahweh」と「Élohim」を書き分けます。Synodalは「Господь」と「Бог」の対応を、基底のソースに遡って対応づけられる形で保存します。動的等価訳であれば、同じ節で読者に区別のない一つの&lt;em&gt;神&lt;&#x2F;em&gt;を与えるでしょう——読みやすくはなりますが、比較の議論はもはや比較すべき対象を失います。&lt;&#x2F;p&gt;
+&lt;h2 id=&quot;nazekoregaraiburarinitotutezheng-siixing-nanoka&quot;&gt;なぜこれがライブラリにとって正しい形なのか&lt;&#x2F;h2&gt;
+&lt;p&gt;ライブラリは常に、ヘブライ語聖書を、プロジェクトが読み解く作業対象としての源泉テキストとして扱ってきたのであり、到達地点としての翻訳としてではありません。英語ASVはプロジェクトの主たる読者層のための読解の表面ですが、正典が実際に向き合っているのは基底のヘブライ語です。今日まで欠けていたのは、英語を必須の中継地点としなくても、非英語話者の読者がライブラリを参照できる清潔な方法でした。&lt;&#x2F;p&gt;
+&lt;p&gt;各言語における版の選択は、正典のソース階層規律に従っています。輸入された各翻訳は、19世紀または20世紀の批評版または準批評版です——パブリックドメインとなるに足る古さでありながら、文献学的に真摯であるに足る新しさを備えています。正典の優先する読みが、なお著作権下にある現代の版を必要とする場合、プロジェクトはその版のパブリックドメイン部分集合を用いるか、あるいは明示的にそのギャップを記録します。最も明確な事例はフランス語です。ドルム版プレイヤード聖書——ラエル自身が1973年の接触の際に用いていた版——は、フランスの著作権下におよそ2071年まであります。ライブラリはCrampon 1923を基準とし、Cramponに代えて、Dhormeのより初期のパブリックドメインに属するヨブ記(1929年)とサムエル記(1910年)が存在する3書については、それらを用いています。すべての言語についての完全な論理——なぜLutherではなくElberfelderなのか、なぜDarbyではなくCramponなのか、なぜ新共同訳ではなく口語訳なのか、なぜ厳格な1938年版ではなく1961年のKRVなのか——は、ドキュメントサイト &lt;a href=&quot;https:&#x2F;&#x2F;docs.wheelofheaven.world&#x2F;contributing&#x2F;content&#x2F;imported-translations&#x2F;&quot;&gt;docs.wheelofheaven.world&#x2F;contributing&#x2F;content&#x2F;imported-translations&lt;&#x2F;a&gt; にあります。&lt;&#x2F;p&gt;
+&lt;p&gt;コーパスはヘブライ語聖書を、エロヒムの指示対象が原語において作用している、層をなすテキストとして読みます。現代の諸翻訳は下流の解釈的所作であり、ある翻訳がどの解釈的所作をなしているかは、特定の節——創世記1章1節、詩編82編、出エジプト記3章14節、コーパス全体にわたる神名のペリコーペ——において可視となります。8つの輸入翻訳をASVと並べて提供することは、その可視性を当たり前のものにします。Elberfelder、Crampon、Synodal、CUVが争点となる節をそれぞれどう扱っているかを比較したい読者は、ライブラリのページを離れることなく、それができるようになります。&lt;&#x2F;p&gt;
+&lt;h2 id=&quot;yorichang-qi-noji-hua-niokeruwei-zhi-duke&quot;&gt;より長期の計画における位置づけ&lt;&#x2F;h2&gt;
+&lt;p&gt;輸入翻訳パイプラインは、ライブラリの使命の半分です。もう半分は、現在創世記を章ごとに進めている &lt;a href=&quot;https:&#x2F;&#x2F;docs.wheelofheaven.world&#x2F;contributing&#x2F;content&#x2F;source-text-translation&#x2F;&quot;&gt;Wheel of Heaven翻訳&lt;&#x2F;a&gt; です——プロジェクト独自の用語規律のもと、ヘブライ語から新たに英語訳を起こし、各章の背後にTranslator-Editor-Reviewerのパイプラインを備えるものです。輸入翻訳は&lt;strong&gt;広さ&lt;&#x2F;strong&gt;(すべての書、8言語、パブリックドメイン版、本日公開)をカバーします。WoH翻訳は&lt;strong&gt;深さ&lt;&#x2F;strong&gt;(一伝統、一書ずつ、文献学的に擁護され、なお進行中)を提供します。&lt;&#x2F;p&gt;
+&lt;p&gt;両方のパイプラインは、各章ファイルの同じ &lt;code&gt;paragraphs[].i18n[lang]&lt;&#x2F;code&gt; フィールドにデータを供給しており、ライブラリのテンプレートはそれらを同じインターフェースを通じてレンダリングします。WoH翻訳の創世記が最初の安定リリースに達したとき、それは、プロジェクトがこれまで築いてきた比較的景観に対するプロジェクト自身の貢献として、これら輸入された読みと並んで配置されることになります。&lt;&#x2F;p&gt;
+&lt;h2 id=&quot;dokodejian-rareruka&quot;&gt;どこで見られるか&lt;&#x2F;h2&gt;
+&lt;ul&gt;
+&lt;li&gt;ライブラリ目次:&lt;a href=&quot;&#x2F;library&#x2F;&quot;&gt;&#x2F;library&#x2F;&lt;&#x2F;a&gt; ——ヘブライ語聖書のすべての書は、利用可能性の一覧に9言語を掲載するようになりました&lt;&#x2F;li&gt;
+&lt;li&gt;サンプル章:&lt;a href=&quot;&#x2F;library&#x2F;genesis&#x2F;&quot;&gt;&#x2F;library&#x2F;genesis&#x2F;&lt;&#x2F;a&gt;(あるいは読解言語で:&lt;code&gt;&#x2F;de&#x2F;library&#x2F;genesis&#x2F;&lt;&#x2F;code&gt;、&lt;code&gt;&#x2F;ja&#x2F;library&#x2F;genesis&#x2F;&lt;&#x2F;code&gt;、……)&lt;&#x2F;li&gt;
+&lt;li&gt;書ごとのカタログと来歴情報:&lt;a href=&quot;https:&#x2F;&#x2F;github.com&#x2F;wheelofheaven&#x2F;data-library&#x2F;blob&#x2F;main&#x2F;catalog.json&quot;&gt;GitHub上の &lt;code&gt;data-library&#x2F;catalog.json&lt;&#x2F;code&gt;&lt;&#x2F;a&gt;&lt;&#x2F;li&gt;
+&lt;li&gt;方法論および言語別ソースプログラムの論理:&lt;a href=&quot;https:&#x2F;&#x2F;docs.wheelofheaven.world&#x2F;contributing&#x2F;content&#x2F;imported-translations&#x2F;&quot;&gt;docs.wheelofheaven.world&#x2F;contributing&#x2F;content&#x2F;imported-translations&lt;&#x2F;a&gt;&lt;&#x2F;li&gt;
+&lt;&#x2F;ul&gt;
+&lt;h2 id=&quot;ji-zhi-nohuoroatupu&quot;&gt;既知のフォローアップ&lt;&#x2F;h2&gt;
+&lt;p&gt;三点あります。フランス語のドルム版による第一サムエル記、第二サムエル記、ヨブ記の暫定版は、なお清潔なOCRパスを必要としています——基となるInternet Archive上のdjvuスキャンが、ヘブライ語の校異と注釈をあまりに密接に交錯させており、プログラム的な抽出が困難です。オバデヤ書の章ファイルには足場のギャップがあり(21節のうち1節のみが段落レベルで分割されている状態)、カタログは現在これを完全なカバレッジとして誤報告しています。そして、第一歴代誌のドイツ語Elberfelder基準ソース(bibel-online.net)には、13、17、18、22、28章において既知の重複コンテンツの癖があり、カタログは &lt;code&gt;_meta.notes&lt;&#x2F;code&gt; でこれを記録していますが、マージパイプラインはまだ下流でそれをフィルタリングしていません。これらのいずれも輸入テキストの可読性を妨げるものではなく、三件すべてが次のパスに向けて追跡されています。&lt;&#x2F;p&gt;
+&lt;hr &#x2F;&gt;
+&lt;p&gt;&lt;em&gt;— 2026年6月7日記、Wheel of Heaven編集部。&lt;&#x2F;em&gt;&lt;&#x2F;p&gt;
+</content>
+        
+    </entry>
     <entry xml:lang="en">
         <title>PURSUE第02弾リリース：球体、トランスメディウム事例、そして初のカラー映像</title>
         <published>2026-05-22T00:00:00+00:00</published>
