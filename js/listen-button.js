@@ -628,6 +628,47 @@
         }
     }
 
+    // Lazily wrap each whitespace-separated word in a paragraph's
+    // translation text into <span class="library-book__word">. Returns the
+    // ordered NodeList of word spans, or null if the paragraph DOM isn't
+    // present. Idempotent: subsequent calls return the existing spans.
+    // Skips text inside the commentary button so the wrap doesn't fight
+    // the commentary popover.
+    function wrapParagraphWords(unitId) {
+        if (!unitId) return null;
+        const para = document.getElementById(unitId);
+        if (!para) return null;
+        const target = para.querySelector('.library-book__para-translation') || para;
+        const existing = target.querySelectorAll('.library-book__word');
+        if (existing.length > 0) return existing;
+        const walker = document.createTreeWalker(target, NodeFilter.SHOW_TEXT);
+        const textNodes = [];
+        let n;
+        while ((n = walker.nextNode())) {
+            if (n.parentElement && n.parentElement.closest('.library-book__commentary-link')) continue;
+            textNodes.push(n);
+        }
+        textNodes.forEach((tn) => {
+            const text = tn.nodeValue;
+            if (!text || !text.trim()) return;
+            const parts = text.split(/(\s+)/);
+            const frag = document.createDocumentFragment();
+            parts.forEach((p) => {
+                if (!p) return;
+                if (/^\s+$/.test(p)) {
+                    frag.appendChild(document.createTextNode(p));
+                } else {
+                    const span = document.createElement('span');
+                    span.className = 'library-book__word';
+                    span.textContent = p;
+                    frag.appendChild(span);
+                }
+            });
+            tn.parentNode.replaceChild(frag, tn);
+        });
+        return target.querySelectorAll('.library-book__word');
+    }
+
     function createPrerecordedEngine() {
         let audioEl = null;
         let timing = null;
@@ -635,6 +676,11 @@
         let cbs = null;
         let unitIdxByParaN = null;
         let lastUnitIdx = -1;
+        // Word-highlight state. Reset whenever the active paragraph changes.
+        let currentParaSpans = null;        // NodeList of .library-book__word for the active paragraph
+        let currentParaWords = null;        // timing words[] for the active paragraph
+        let currentWordSpan = null;         // span currently carrying --reading
+        let wordMismatchLogged = false;     // throttle the warn to once per session
 
         // Returns { audioUrl, timing, chapters } if any chapter the units span
         // has pre-recorded audio, otherwise null. When multiple chapters appear
@@ -728,6 +774,44 @@
                     if (idx !== undefined && idx !== lastUnitIdx) {
                         cbs.onUnitStart && cbs.onUnitStart(idx);
                         lastUnitIdx = idx;
+                        // Set up word-level highlighting for this paragraph.
+                        if (currentWordSpan) {
+                            currentWordSpan.classList.remove('library-book__word--reading');
+                            currentWordSpan = null;
+                        }
+                        currentParaWords = current.words || null;
+                        currentParaSpans = null;
+                        if (currentParaWords && unitList[idx] && unitList[idx].id) {
+                            const spans = wrapParagraphWords(unitList[idx].id);
+                            if (spans && spans.length === currentParaWords.length) {
+                                currentParaSpans = spans;
+                            } else if (spans && !wordMismatchLogged) {
+                                console.warn(
+                                    'listen-button: word count mismatch on',
+                                    unitList[idx].id,
+                                    '— display:', spans.length,
+                                    'audio:', currentParaWords.length,
+                                    '(falling back to paragraph-only highlight)'
+                                );
+                                wordMismatchLogged = true;
+                            }
+                        }
+                    }
+                    // Word-level highlight inside the active paragraph.
+                    if (currentParaSpans && currentParaWords) {
+                        let wIdx = -1;
+                        for (let i = 0; i < currentParaWords.length; i++) {
+                            const w = currentParaWords[i];
+                            if (t >= w.start && t < w.end) { wIdx = i; break; }
+                        }
+                        const next = wIdx >= 0 ? currentParaSpans[wIdx] : null;
+                        if (next !== currentWordSpan) {
+                            if (currentWordSpan) {
+                                currentWordSpan.classList.remove('library-book__word--reading');
+                            }
+                            if (next) next.classList.add('library-book__word--reading');
+                            currentWordSpan = next;
+                        }
                     }
                 };
                 audioEl.onended = () => {
@@ -757,6 +841,12 @@
                 teardownAudio();
                 unitIdxByParaN = null;
                 lastUnitIdx = -1;
+                if (currentWordSpan) {
+                    currentWordSpan.classList.remove('library-book__word--reading');
+                }
+                currentWordSpan = null;
+                currentParaSpans = null;
+                currentParaWords = null;
             },
         };
     }

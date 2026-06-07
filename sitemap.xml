@@ -4432,7 +4432,25 @@
         <priority>0.7</priority></url>
 
     <url>
+        <loc>https://www.wheelofheaven.world/he/timeline/age-of-aries/</loc>
+        
+        <changefreq>monthly</changefreq>
+        <priority>0.7</priority></url>
+
+    <url>
+        <loc>https://www.wheelofheaven.world/he/timeline/age-of-cancer/</loc>
+        
+        <changefreq>monthly</changefreq>
+        <priority>0.7</priority></url>
+
+    <url>
         <loc>https://www.wheelofheaven.world/he/timeline/age-of-capricorn/</loc>
+        
+        <changefreq>monthly</changefreq>
+        <priority>0.7</priority></url>
+
+    <url>
+        <loc>https://www.wheelofheaven.world/he/timeline/age-of-gemini/</loc>
         
         <changefreq>monthly</changefreq>
         <priority>0.7</priority></url>
@@ -4450,6 +4468,12 @@
         <priority>0.7</priority></url>
 
     <url>
+        <loc>https://www.wheelofheaven.world/he/timeline/age-of-pisces/</loc>
+        
+        <changefreq>monthly</changefreq>
+        <priority>0.7</priority></url>
+
+    <url>
         <loc>https://www.wheelofheaven.world/he/timeline/age-of-sagittarius/</loc>
         
         <changefreq>monthly</changefreq>
@@ -4457,6 +4481,12 @@
 
     <url>
         <loc>https://www.wheelofheaven.world/he/timeline/age-of-scorpio/</loc>
+        
+        <changefreq>monthly</changefreq>
+        <priority>0.7</priority></url>
+
+    <url>
+        <loc>https://www.wheelofheaven.world/he/timeline/age-of-taurus/</loc>
         
         <changefreq>monthly</changefreq>
         <priority>0.7</priority></url>
@@ -6562,7 +6592,25 @@
         <priority>0.7</priority></url>
 
     <url>
+        <loc>https://www.wheelofheaven.world/ko/timeline/age-of-aries/</loc>
+        
+        <changefreq>monthly</changefreq>
+        <priority>0.7</priority></url>
+
+    <url>
+        <loc>https://www.wheelofheaven.world/ko/timeline/age-of-cancer/</loc>
+        
+        <changefreq>monthly</changefreq>
+        <priority>0.7</priority></url>
+
+    <url>
         <loc>https://www.wheelofheaven.world/ko/timeline/age-of-capricorn/</loc>
+        
+        <changefreq>monthly</changefreq>
+        <priority>0.7</priority></url>
+
+    <url>
+        <loc>https://www.wheelofheaven.world/ko/timeline/age-of-gemini/</loc>
         
         <changefreq>monthly</changefreq>
         <priority>0.7</priority></url>
@@ -6580,6 +6628,12 @@
         <priority>0.7</priority></url>
 
     <url>
+        <loc>https://www.wheelofheaven.world/ko/timeline/age-of-pisces/</loc>
+        
+        <changefreq>monthly</changefreq>
+        <priority>0.7</priority></url>
+
+    <url>
         <loc>https://www.wheelofheaven.world/ko/timeline/age-of-sagittarius/</loc>
         
         <changefreq>monthly</changefreq>
@@ -6587,6 +6641,12 @@
 
     <url>
         <loc>https://www.wheelofheaven.world/ko/timeline/age-of-scorpio/</loc>
+        
+        <changefreq>monthly</changefreq>
+        <priority>0.7</priority></url>
+
+    <url>
+        <loc>https://www.wheelofheaven.world/ko/timeline/age-of-taurus/</loc>
         
         <changefreq>monthly</changefreq>
         <priority>0.7</priority></url>
@@ -7486,6 +7546,12 @@
         <priority>0.7</priority></url>
 
     <url>
+        <loc>https://www.wheelofheaven.world/library/daniel-woh/</loc>
+        
+        <changefreq>weekly</changefreq>
+        <priority>0.7</priority></url>
+
+    <url>
         <loc>https://www.wheelofheaven.world/library/daniel/</loc>
         
         <changefreq>weekly</changefreq>
@@ -7715,6 +7781,12 @@
 
     <url>
         <loc>https://www.wheelofheaven.world/library/joshua/</loc>
+        
+        <changefreq>weekly</changefreq>
+        <priority>0.7</priority></url>
+
+    <url>
+        <loc>https://www.wheelofheaven.world/library/jubilees-woh/</loc>
         
         <changefreq>weekly</changefreq>
         <priority>0.7</priority></url>
@@ -10906,7 +10978,25 @@
         <priority>0.7</priority></url>
 
     <url>
+        <loc>https://www.wheelofheaven.world/zh-Hant/timeline/age-of-aries/</loc>
+        
+        <changefreq>monthly</changefreq>
+        <priority>0.7</priority></url>
+
+    <url>
+        <loc>https://www.wheelofheaven.world/zh-Hant/timeline/age-of-cancer/</loc>
+        
+        <changefreq>monthly</changefreq>
+        <priority>0.7</priority></url>
+
+    <url>
         <loc>https://www.wheelofheaven.world/zh-Hant/timeline/age-of-capricorn/</loc>
+        
+        <changefreq>monthly</changefreq>
+        <priority>0.7</priority></url>
+
+    <url>
+        <loc>https://www.wheelofheaven.world/zh-Hant/timeline/age-of-gemini/</loc>
         
         <changefreq>monthly</changefreq>
         <priority>0.7</priority></url>
@@ -10924,6 +11014,12 @@
         <priority>0.7</priority></url>
 
     <url>
+        <loc>https://www.wheelofheaven.world/zh-Hant/timeline/age-of-pisces/</loc>
+        
+        <changefreq>monthly</changefreq>
+        <priority>0.7</priority></url>
+
+    <url>
         <loc>https://www.wheelofheaven.world/zh-Hant/timeline/age-of-sagittarius/</loc>
         
         <changefreq>monthly</changefreq>
@@ -10931,6 +11027,12 @@
 
     <url>
         <loc>https://www.wheelofheaven.world/zh-Hant/timeline/age-of-scorpio/</loc>
+        
+        <changefreq>monthly</changefreq>
+        <priority>0.7</priority></url>
+
+    <url>
+        <loc>https://www.wheelofheaven.world/zh-Hant/timeline/age-of-taurus/</loc>
         
         <changefreq>monthly</changefreq>
         <priority>0.7</priority></url>
