@@ -418,6 +418,12 @@
         <priority>0.7</priority></url>
 
     <url>
+        <loc>https://www.wheelofheaven.world/de/library/genesis-woh/</loc>
+        
+        <changefreq>weekly</changefreq>
+        <priority>0.7</priority></url>
+
+    <url>
         <loc>https://www.wheelofheaven.world/de/library/genesis/</loc>
         
         <changefreq>weekly</changefreq>
@@ -1853,6 +1859,12 @@
 
     <url>
         <loc>https://www.wheelofheaven.world/es/library/galatians/</loc>
+        
+        <changefreq>weekly</changefreq>
+        <priority>0.7</priority></url>
+
+    <url>
+        <loc>https://www.wheelofheaven.world/es/library/genesis-woh/</loc>
         
         <changefreq>weekly</changefreq>
         <priority>0.7</priority></url>
@@ -3304,6 +3316,12 @@
         <priority>0.7</priority></url>
 
     <url>
+        <loc>https://www.wheelofheaven.world/fr/library/genesis-woh/</loc>
+        
+        <changefreq>weekly</changefreq>
+        <priority>0.7</priority></url>
+
+    <url>
         <loc>https://www.wheelofheaven.world/fr/library/genesis/</loc>
         
         <changefreq>weekly</changefreq>
@@ -4426,6 +4444,12 @@
         <priority>0.7</priority></url>
 
     <url>
+        <loc>https://www.wheelofheaven.world/he/library/genesis-woh/</loc>
+        
+        <changefreq>weekly</changefreq>
+        <priority>0.7</priority></url>
+
+    <url>
         <loc>https://www.wheelofheaven.world/he/news/</loc>
         
         <changefreq>weekly</changefreq>
@@ -4877,6 +4901,12 @@
 
     <url>
         <loc>https://www.wheelofheaven.world/ja/library/galatians/</loc>
+        
+        <changefreq>weekly</changefreq>
+        <priority>0.7</priority></url>
+
+    <url>
+        <loc>https://www.wheelofheaven.world/ja/library/genesis-woh/</loc>
         
         <changefreq>weekly</changefreq>
         <priority>0.7</priority></url>
@@ -6305,6 +6335,12 @@
 
     <url>
         <loc>https://www.wheelofheaven.world/ko/library/galatians/</loc>
+        
+        <changefreq>weekly</changefreq>
+        <priority>0.7</priority></url>
+
+    <url>
+        <loc>https://www.wheelofheaven.world/ko/library/genesis-woh/</loc>
         
         <changefreq>weekly</changefreq>
         <priority>0.7</priority></url>
@@ -8465,6 +8501,12 @@
 
     <url>
         <loc>https://www.wheelofheaven.world/ru/library/galatians/</loc>
+        
+        <changefreq>weekly</changefreq>
+        <priority>0.7</priority></url>
+
+    <url>
+        <loc>https://www.wheelofheaven.world/ru/library/genesis-woh/</loc>
         
         <changefreq>weekly</changefreq>
         <priority>0.7</priority></url>
@@ -10714,6 +10756,12 @@
         <priority>0.7</priority></url>
 
     <url>
+        <loc>https://www.wheelofheaven.world/zh-Hant/library/genesis-woh/</loc>
+        
+        <changefreq>weekly</changefreq>
+        <priority>0.7</priority></url>
+
+    <url>
         <loc>https://www.wheelofheaven.world/zh-Hant/library/genesis/</loc>
         
         <changefreq>weekly</changefreq>
@@ -12125,6 +12173,12 @@
 
     <url>
         <loc>https://www.wheelofheaven.world/zh/library/galatians/</loc>
+        
+        <changefreq>weekly</changefreq>
+        <priority>0.7</priority></url>
+
+    <url>
+        <loc>https://www.wheelofheaven.world/zh/library/genesis-woh/</loc>
         
         <changefreq>weekly</changefreq>
         <priority>0.7</priority></url>
