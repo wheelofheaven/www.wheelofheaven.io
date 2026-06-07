@@ -4432,6 +4432,12 @@
         <priority>0.7</priority></url>
 
     <url>
+        <loc>https://www.wheelofheaven.world/he/timeline/age-of-aquarius/</loc>
+        
+        <changefreq>monthly</changefreq>
+        <priority>0.7</priority></url>
+
+    <url>
         <loc>https://www.wheelofheaven.world/he/timeline/age-of-aries/</loc>
         
         <changefreq>monthly</changefreq>
@@ -6587,6 +6593,12 @@
 
     <url>
         <loc>https://www.wheelofheaven.world/ko/timeline/</loc>
+        
+        <changefreq>monthly</changefreq>
+        <priority>0.7</priority></url>
+
+    <url>
+        <loc>https://www.wheelofheaven.world/ko/timeline/age-of-aquarius/</loc>
         
         <changefreq>monthly</changefreq>
         <priority>0.7</priority></url>
@@ -10973,6 +10985,12 @@
 
     <url>
         <loc>https://www.wheelofheaven.world/zh-Hant/timeline/</loc>
+        
+        <changefreq>monthly</changefreq>
+        <priority>0.7</priority></url>
+
+    <url>
+        <loc>https://www.wheelofheaven.world/zh-Hant/timeline/age-of-aquarius/</loc>
         
         <changefreq>monthly</changefreq>
         <priority>0.7</priority></url>
