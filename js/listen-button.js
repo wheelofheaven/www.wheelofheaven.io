@@ -669,8 +669,30 @@
         return target.querySelectorAll('.library-book__word');
     }
 
+    // v4 — Immersive Mode: ambient bed on a second <audio> element, synced
+    // to the voice track. Persisted across sessions in localStorage under
+    // `woh:listen:immersive`. **On by default** during the v4 rollout so
+    // chapters with an ambient_url surface it without hidden settings; a
+    // user can disable per-session in DevTools via:
+    //     localStorage.setItem('woh:listen:immersive', '0')
+    // A first-class UI toggle in the audio player bar is planned but not
+    // shipped yet.
+    const IMMERSIVE_STORAGE_KEY = 'woh:listen:immersive';
+    function isImmersiveEnabled() {
+        try {
+            const v = localStorage.getItem(IMMERSIVE_STORAGE_KEY);
+            return v === null ? true : v === '1';
+        } catch (e) { return true; }
+    }
+    function setImmersiveEnabled(v) {
+        try { localStorage.setItem(IMMERSIVE_STORAGE_KEY, v ? '1' : '0'); }
+        catch (e) {}
+    }
+
     function createPrerecordedEngine() {
         let audioEl = null;
+        let ambientEl = null;               // v4: second <audio> for ambient bed
+        let ambientDriftTimer = null;       // v4: setInterval handle for sync correction
         let timing = null;
         let stopped = false;
         let cbs = null;
@@ -705,6 +727,7 @@
                 return {
                     audioUrl: `${ASSETS_BASE}/${chapEntry.audio_url}`,
                     formats: chapEntry.formats || null,
+                    ambientUrl: chapEntry.ambient_url ? `${ASSETS_BASE}/${chapEntry.ambient_url}` : null,
                     timing: timingData,
                     chapter: targetChapter,
                 };
@@ -722,6 +745,16 @@
             audioEl.onplay = null;
             audioEl.onpause = null;
             audioEl = null;
+            // v4: tear down the ambient second track in lockstep.
+            if (ambientDriftTimer) {
+                clearInterval(ambientDriftTimer);
+                ambientDriftTimer = null;
+            }
+            if (ambientEl) {
+                ambientEl.pause();
+                ambientEl.onerror = null;
+                ambientEl = null;
+            }
         }
 
         return {
@@ -764,13 +797,35 @@
                 }
                 audioEl.preload = 'auto';
 
+                // v4: build the ambient second track if the manifest exposes
+                // one AND the user has opted in via Immersive Mode. Ambient
+                // follows the voice element — voice is authoritative for
+                // start/pause/seek/end; ambient just plays underneath.
+                if (data.ambientUrl && isImmersiveEnabled()) {
+                    ambientEl = new Audio(data.ambientUrl);
+                    ambientEl.preload = 'auto';
+                    ambientEl.loop = false;  // matches voice length exactly
+                    ambientEl.onerror = () => {
+                        console.warn('listen-button: ambient track failed; voice continues');
+                        ambientEl = null;
+                    };
+                }
+
                 audioEl.onplay = () => {
                     if (stopped) return;
+                    if (ambientEl) {
+                        ambientEl.currentTime = audioEl.currentTime;
+                        ambientEl.play().catch(() => {});
+                    }
                     cbs.onStart && cbs.onStart();
                 };
                 audioEl.onpause = () => {
                     if (stopped || audioEl.ended) return;
+                    if (ambientEl) ambientEl.pause();
                     cbs.onPause && cbs.onPause();
+                };
+                audioEl.onseeked = () => {
+                    if (ambientEl) ambientEl.currentTime = audioEl.currentTime;
                 };
                 audioEl.ontimeupdate = () => {
                     if (stopped || !audioEl) return;
@@ -831,12 +886,27 @@
                 };
                 audioEl.onended = () => {
                     if (stopped) return;
+                    if (ambientEl) ambientEl.pause();
                     cbs.onEnd && cbs.onEnd();
                 };
                 audioEl.onerror = (e) => {
                     console.error('prerecorded audio error:', e);
+                    if (ambientEl) ambientEl.pause();
                     cbs.onEnd && cbs.onEnd();
                 };
+
+                // v4 drift correction: ambient and voice are independent
+                // <audio> elements, so playback rates can drift over long
+                // chapters. Every 5s while playing, snap ambient back if it's
+                // more than 150ms off from voice.
+                if (ambientEl) {
+                    ambientDriftTimer = setInterval(() => {
+                        if (stopped || !audioEl || !ambientEl) return;
+                        if (audioEl.paused) return;
+                        const dt = Math.abs(ambientEl.currentTime - audioEl.currentTime);
+                        if (dt > 0.15) ambientEl.currentTime = audioEl.currentTime;
+                    }, 5000);
+                }
 
                 try {
                     await audioEl.play();
