@@ -23,6 +23,18 @@
         }
       }
     },
+    "news/library-hebrew-bible-nine-languages": {
+      "title": "Library: Hebrew Bible Now Reads in Nine Languages",
+      "permalink": "https://www.wheelofheaven.world/news/library-hebrew-bible-nine-languages/",
+      "first_eligible_at": "2026-06-07T14:18:22Z",
+      "channels": {
+        "telegram": {
+          "post_id": "@wheelofheaven/15",
+          "url": "https://t.me/wheelofheaven/15",
+          "posted_at": "2026-06-07T14:18:22Z"
+        }
+      }
+    },
     "news/pursue-release-01-uap-files": {
       "title": "PURSUE Release 01: U.S. Opens UAP Files to the Public",
       "permalink": "https://www.wheelofheaven.world/news/pursue-release-01-uap-files/",
