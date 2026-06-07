@@ -1,7 +1,7 @@
 {
   "_meta": {
-    "generated_at": "2026-06-06T19:26:31+00:00",
-    "count": 274
+    "generated_at": "2026-06-07T12:45:04+00:00",
+    "count": 272
   },
   "paths": {
     "AGENTS": [
@@ -513,6 +513,9 @@
       "zh",
       "zh-Hant"
     ],
+    "library/daniel-woh": [
+      "en"
+    ],
     "library/deuteronomy": [
       "de",
       "en",
@@ -694,7 +697,16 @@
       "zh-Hant"
     ],
     "library/genesis-woh": [
-      "en"
+      "de",
+      "en",
+      "es",
+      "fr",
+      "he",
+      "ja",
+      "ko",
+      "ru",
+      "zh",
+      "zh-Hant"
     ],
     "library/gilgamesh-woh": [
       "en"
@@ -1248,10 +1260,28 @@
       "zh-Hant"
     ],
     "news/pursue-release-01-uap-files": [
-      "en"
+      "de",
+      "en",
+      "es",
+      "fr",
+      "he",
+      "ja",
+      "ko",
+      "ru",
+      "zh",
+      "zh-Hant"
     ],
     "news/pursue-release-02-spheres-and-transmedium": [
-      "en"
+      "de",
+      "en",
+      "es",
+      "fr",
+      "he",
+      "ja",
+      "ko",
+      "ru",
+      "zh",
+      "zh-Hant"
     ],
     "offline": [
       "de",
@@ -1342,18 +1372,24 @@
       "en",
       "es",
       "fr",
+      "he",
       "ja",
+      "ko",
       "ru",
-      "zh"
+      "zh",
+      "zh-Hant"
     ],
     "timeline/age-of-aries": [
       "de",
       "en",
       "es",
       "fr",
+      "he",
       "ja",
+      "ko",
       "ru",
-      "zh"
+      "zh",
+      "zh-Hant"
     ],
     "timeline/age-of-cancer": [
       "de",
@@ -1384,9 +1420,12 @@
       "en",
       "es",
       "fr",
+      "he",
       "ja",
+      "ko",
       "ru",
-      "zh"
+      "zh",
+      "zh-Hant"
     ],
     "timeline/age-of-leo": [
       "de",
@@ -1417,9 +1456,12 @@
       "en",
       "es",
       "fr",
+      "he",
       "ja",
+      "ko",
       "ru",
-      "zh"
+      "zh",
+      "zh-Hant"
     ],
     "timeline/age-of-sagittarius": [
       "de",
@@ -1450,9 +1492,12 @@
       "en",
       "es",
       "fr",
+      "he",
       "ja",
+      "ko",
       "ru",
-      "zh"
+      "zh",
+      "zh-Hant"
     ],
     "timeline/age-of-virgo": [
       "de",
@@ -1471,6 +1516,7 @@
       "en",
       "es",
       "fr",
+      "he",
       "ja",
       "ko",
       "ru",
@@ -1490,7 +1536,16 @@
       "zh-Hant"
     ],
     "timeline/the-wheel-keeps-turning": [
-      "en"
+      "de",
+      "en",
+      "es",
+      "fr",
+      "he",
+      "ja",
+      "ko",
+      "ru",
+      "zh",
+      "zh-Hant"
     ],
     "wiki": [
       "de",
@@ -1845,14 +1900,6 @@
       "zh",
       "zh-Hant"
     ],
-    "wiki/elohimian-home-planet": [
-      "de",
-      "es",
-      "fr",
-      "ja",
-      "ru",
-      "zh"
-    ],
     "wiki/elohimian-space-wars": [
       "de",
       "en",
@@ -1896,10 +1943,6 @@
       "ru",
       "zh",
       "zh-Hant"
-    ],
-    "wiki/four-levels-of-consideration": [
-      "de",
-      "fr"
     ],
     "wiki/fractal-cosmology": [
       "de",
@@ -2430,7 +2473,15 @@
       "zh-Hant"
     ],
     "wiki/reference-corpus-of-the-raelian-canon": [
-      "en"
+      "de",
+      "en",
+      "es",
+      "fr",
+      "ja",
+      "ko",
+      "ru",
+      "zh",
+      "zh-Hant"
     ],
     "wiki/religion": [
       "de",
@@ -2629,14 +2680,6 @@
       "ru",
       "zh",
       "zh-Hant"
-    ],
-    "wiki/tldr": [
-      "de",
-      "es",
-      "fr",
-      "ja",
-      "ru",
-      "zh"
     ],
     "wiki/tower-of-babel": [
       "de",
