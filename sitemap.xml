@@ -4450,13 +4450,55 @@
         <priority>0.5</priority></url>
 
     <url>
+        <loc>https://www.wheelofheaven.world/he/about/</loc>
+        
+        <changefreq>weekly</changefreq>
+        <priority>0.5</priority></url>
+
+    <url>
         <loc>https://www.wheelofheaven.world/he/articles/</loc>
         
         <changefreq>weekly</changefreq>
         <priority>0.6</priority></url>
 
     <url>
+        <loc>https://www.wheelofheaven.world/he/code-of-conduct/</loc>
+        
+        <changefreq>weekly</changefreq>
+        <priority>0.5</priority></url>
+
+    <url>
+        <loc>https://www.wheelofheaven.world/he/contact/</loc>
+        
+        <changefreq>weekly</changefreq>
+        <priority>0.5</priority></url>
+
+    <url>
+        <loc>https://www.wheelofheaven.world/he/contributing/</loc>
+        
+        <changefreq>weekly</changefreq>
+        <priority>0.5</priority></url>
+
+    <url>
         <loc>https://www.wheelofheaven.world/he/contributors/</loc>
+        
+        <changefreq>weekly</changefreq>
+        <priority>0.5</priority></url>
+
+    <url>
+        <loc>https://www.wheelofheaven.world/he/cookie-policy/</loc>
+        
+        <changefreq>weekly</changefreq>
+        <priority>0.5</priority></url>
+
+    <url>
+        <loc>https://www.wheelofheaven.world/he/faq/</loc>
+        
+        <changefreq>weekly</changefreq>
+        <priority>0.5</priority></url>
+
+    <url>
+        <loc>https://www.wheelofheaven.world/he/forums/</loc>
         
         <changefreq>weekly</changefreq>
         <priority>0.5</priority></url>
@@ -4493,6 +4535,24 @@
 
     <url>
         <loc>https://www.wheelofheaven.world/he/news/pursue-release-02-spheres-and-transmedium/</loc>
+        
+        <changefreq>weekly</changefreq>
+        <priority>0.5</priority></url>
+
+    <url>
+        <loc>https://www.wheelofheaven.world/he/offline/</loc>
+        
+        <changefreq>weekly</changefreq>
+        <priority>0.5</priority></url>
+
+    <url>
+        <loc>https://www.wheelofheaven.world/he/press/</loc>
+        
+        <changefreq>weekly</changefreq>
+        <priority>0.5</priority></url>
+
+    <url>
+        <loc>https://www.wheelofheaven.world/he/privacy-policy/</loc>
         
         <changefreq>weekly</changefreq>
         <priority>0.5</priority></url>

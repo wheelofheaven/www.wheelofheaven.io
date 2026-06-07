@@ -451,7 +451,7 @@
      The sheet is aggressively cached (see _headers), so the render-
      blocking cost only applies to uncached first visits. -->
 
-<style data-critical-inlined>*,*::before,*::after{margin:0;padding:0;box-sizing:border-box}html,body{height:100%;font-family:sans-serif}html{font-size:106.25%;scroll-padding-top:5.5rem;overflow-x:clip}body{display:flex;flex-direction:column;overflow-x:clip}body>main{flex:1 0 auto}body>footer{flex-shrink:0}img,svg,video,canvas{display:block;max-width:100%;height:auto}button,input,select,textarea{font:inherit;color:inherit;background:none;border:none;outline:none}@font-face{font-family:iAWriterQuattroS;font-style:normal;font-weight:400;font-display:swap;src:local("iAWriterQuattroS-Regular"),url("fonts/vendor/ia-writer-quattro/iAWriterQuattroS-Regular.woff2") format("woff2")}@font-face{font-family:iAWriterQuattroS;font-style:normal;font-weight:700;font-display:swap;src:local("iAWriterQuattroS-Bold"),url("fonts/vendor/ia-writer-quattro/iAWriterQuattroS-Bold.woff2") format("woff2")}@font-face{font-family:Jost;font-style:normal;font-weight:400;font-display:swap;src:local("Jost-Regular"),url("fonts/vendor/jost/jost-v19-cyrillic_latin-regular.woff2") format("woff2")}@font-face{font-family:Jost;font-style:normal;font-weight:700;font-display:swap;src:local("Jost-Bold"),url("fonts/vendor/jost/jost-v19-cyrillic_latin-700.woff2") format("woff2")}@font-face{font-family:SpaceGrotesk;font-style:normal;font-weight:400;font-display:swap;src:local("SpaceGrotesk-Regular"),url("fonts/vendor/space-grotesk/space-grotesk-v21-latin-regular.woff2") format("woff2")}@font-face{font-family:SpaceGrotesk;font-style:normal;font-weight:700;font-display:swap;src:local("SpaceGrotesk-Bold"),url("fonts/vendor/space-grotesk/space-grotesk-v21-latin-700.woff2") format("woff2")}@font-face{font-family:"Noto Sans SC";font-style:normal;font-weight:400;font-display:swap;src:url("fonts/vendor/noto-cjk-switcher/noto-sans-sc-switcher.woff2") format("woff2");unicode-range:U+4E2D,U+4F53,U+6587,U+7B80}@font-face{font-family:"Noto Sans TC";font-style:normal;font-weight:400;font-display:swap;src:url("fonts/vendor/noto-cjk-switcher/noto-sans-tc-switcher.woff2") format("woff2");unicode-range:U+4E2D,U+6587,U+7E41,U+9AD4}@font-face{font-family:"Noto Sans JP";font-style:normal;font-weight:400;font-display:swap;src:url("fonts/vendor/noto-cjk-switcher/noto-sans-jp-switcher.woff2") format("woff2");unicode-range:U+65E5,U+672C,U+8A9E}@font-face{font-family:"Noto Sans KR";font-style:normal;font-weight:400;font-display:swap;src:url("fonts/vendor/noto-cjk-switcher/noto-sans-kr-switcher.woff2") format("woff2");unicode-range:U+AD6D,U+C5B4,U+D55C}@font-face{font-family:"Frank Ruhl Libre";font-style:normal;font-weight:400 900;font-display:swap;src:url("fonts/vendor/frank-ruhl-libre/frl-hebrew.woff2") format("woff2");unicode-range:U+0307-0308,U+0590-05FF,U+200C-2010,U+20AA,U+25CC,U+FB1D-FB4F}@font-face{font-family:"Noto Sans Cuneiform";font-style:normal;font-weight:400;font-display:swap;src:url("fonts/vendor/noto-sans-cuneiform/noto-sans-cuneiform-regular.woff2") format("woff2");unicode-range:U+12000-123FF,U+12400-1246E,U+12470-12474,U+12480-12543}@font-face{font-family:"Noto Sans Ugaritic";font-style:normal;font-weight:400;font-display:swap;src:url("fonts/vendor/noto-sans-ugaritic/noto-sans-ugaritic-regular.woff2") format("woff2");unicode-range:U+10380-1039F}@font-face{font-family:"Frank Ruhl Libre";font-style:normal;font-weight:400 900;font-display:swap;src:url("fonts/vendor/frank-ruhl-libre/frl-latin-ext.woff2") format("woff2");unicode-range:U+0100-02BA,U+02BD-02C5,U+02C7-02CC,U+02CE-02D7,U+02DD-02FF,U+0304,U+0308,U+0329,U+1D00-1DBF,U+1E00-1E9F,U+1EF2-1EFF,U+2020,U+20A0-20AB,U+20AD-20C0,U+2113,U+2C60-2C7F,U+A720-A7FF}@font-face{font-family:"Frank Ruhl Libre";font-style:normal;font-weight:400 900;font-display:swap;src:url("fonts/vendor/frank-ruhl-libre/frl-latin.woff2") format("woff2");unicode-range:U+0000-00FF,U+0131,U+0152-0153,U+02BB-02BC,U+02C6,U+02DA,U+02DC,U+0304,U+0308,U+0329,U+2000-206F,U+20AC,U+2122,U+2191,U+2193,U+2212,U+2215,U+FEFF,U+FFFD}@font-face{font-family:"GFS Didot";font-style:normal;font-weight:400;font-display:swap;src:url("fonts/vendor/gfs-didot/gfs-greek-ext.woff2") format("woff2");unicode-range:U+1F00-1FFF}@font-face{font-family:"GFS Didot";font-style:normal;font-weight:400;font-display:swap;src:url("fonts/vendor/gfs-didot/gfs-greek.woff2") format("woff2");unicode-range:U+0370-0377,U+037A-037F,U+0384-038A,U+038C,U+038E-03A1,U+03A3-03FF}@font-face{font-family:"GFS Didot";font-style:normal;font-weight:400;font-display:swap;src:url("fonts/vendor/gfs-didot/gfs-vietnamese.woff2") format("woff2");unicode-range:U+0102-0103,U+0110-0111,U+0128-0129,U+0168-0169,U+01A0-01A1,U+01AF-01B0,U+0300-0301,U+0303-0304,U+0308-0309,U+0323,U+0329,U+1EA0-1EF9,U+20AB}@font-face{font-family:"GFS Didot";font-style:normal;font-weight:400;font-display:swap;src:url("fonts/vendor/gfs-didot/gfs-latin.woff2") format("woff2");unicode-range:U+0000-00FF,U+0131,U+0152-0153,U+02BB-02BC,U+02C6,U+02DA,U+02DC,U+0304,U+0308,U+0329,U+2000-206F,U+20AC,U+2122,U+2191,U+2193,U+2212,U+2215,U+FEFF,U+FFFD}@font-face{font-family:"IBM Plex Serif";font-style:normal;font-weight:400;font-display:swap;src:url("fonts/vendor/ibm-plex-serif/ibm-plex-serif-v20-latin-regular.woff2") format("woff2");unicode-range:U+0000-00FF,U+0131,U+0152-0153,U+02BB-02BC,U+02C6,U+02DA,U+02DC,U+0304,U+0308,U+0329,U+2000-206F,U+20AC,U+2122,U+2191,U+2193,U+2212,U+2215,U+FEFF,U+FFFD}@font-face{font-family:"IBM Plex Serif";font-style:normal;font-weight:400;font-display:swap;src:url("fonts/vendor/ibm-plex-serif/ibm-plex-serif-v20-latin-ext-regular.woff2") format("woff2");unicode-range:U+0100-02BA,U+02BD-02C5,U+02C7-02CC,U+02CE-02D7,U+02DD-02FF,U+0304,U+0308,U+0329,U+1D00-1DBF,U+1E00-1E9F,U+1EF2-1EFF,U+2020,U+20A0-20AB,U+20AD-20C0,U+2113,U+2C60-2C7F,U+A720-A7FF}@font-face{font-family:"IBM Plex Serif";font-style:normal;font-weight:700;font-display:swap;src:url("fonts/vendor/ibm-plex-serif/ibm-plex-serif-v20-latin-700.woff2") format("woff2");unicode-range:U+0000-00FF,U+0131,U+0152-0153,U+02BB-02BC,U+02C6,U+02DA,U+02DC,U+0304,U+0308,U+0329,U+2000-206F,U+20AC,U+2122,U+2191,U+2193,U+2212,U+2215,U+FEFF,U+FFFD}@font-face{font-family:"IBM Plex Serif";font-style:normal;font-weight:700;font-display:swap;src:url("fonts/vendor/ibm-plex-serif/ibm-plex-serif-v20-latin-ext-700.woff2") format("woff2");unicode-range:U+0100-02BA,U+02BD-02C5,U+02C7-02CC,U+02CE-02D7,U+02DD-02FF,U+0304,U+0308,U+0329,U+1D00-1DBF,U+1E00-1E9F,U+1EF2-1EFF,U+2020,U+20A0-20AB,U+20AD-20C0,U+2113,U+2C60-2C7F,U+A720-A7FF}@font-face{font-family:"IBM Plex Serif";font-style:italic;font-weight:400;font-display:swap;src:url("fonts/vendor/ibm-plex-serif/ibm-plex-serif-v20-latin-italic.woff2") format("woff2");unicode-range:U+0000-00FF,U+0131,U+0152-0153,U+02BB-02BC,U+02C6,U+02DA,U+02DC,U+0304,U+0308,U+0329,U+2000-206F,U+20AC,U+2122,U+2191,U+2193,U+2212,U+2215,U+FEFF,U+FFFD}@font-face{font-family:"IBM Plex Serif";font-style:italic;font-weight:400;font-display:swap;src:url("fonts/vendor/ibm-plex-serif/ibm-plex-serif-v20-latin-ext-italic.woff2") format("woff2");unicode-range:U+0100-02BA,U+02BD-02C5,U+02C7-02CC,U+02CE-02D7,U+02DD-02FF,U+0304,U+0308,U+0329,U+1D00-1DBF,U+1E00-1E9F,U+1EF2-1EFF,U+2020,U+20A0-20AB,U+20AD-20C0,U+2113,U+2C60-2C7F,U+A720-A7FF}@font-face{font-family:"Noto Sans IPA";font-style:normal;font-weight:400;font-display:swap;src:url("fonts/vendor/noto-sans-ipa/noto-sans-ipa.woff2") format("woff2");unicode-range:U+0250-02AF,U+02B0-02FF,U+1D00-1DBF}body{font-family:var(--font-family-body);font-size:1rem;line-height:1.6;color:var(--color-text);background-color:var(--color-background)}[lang=ja]{font-family:"Zen Kaku Gothic New","Hiragino Kaku Gothic ProN","Hiragino Sans","Yu Gothic UI","Yu Gothic","Meiryo","Noto Sans JP",sans-serif}[lang=zh],[lang=zh-Hans],[lang=zh-CN]{font-family:"Noto Sans SC","PingFang SC","Hiragino Sans GB","Microsoft YaHei",sans-serif}[lang=zh-Hant],[lang=zh-TW]{font-family:"Noto Sans TC","PingFang TC","Microsoft JhengHei",sans-serif}[lang=ko]{font-family:"Pretendard","Pretendard Variable","Apple SD Gothic Neo","Malgun Gothic","Nanum Gothic","Noto Sans KR",sans-serif}h1,h2,h3,h4,h5,h6{font-weight:700;line-height:1.2;margin-bottom:.5em}p{margin-bottom:1rem}ul,ol{padding-left:1.5rem;margin-bottom:1rem}html,body,.navbar,footer,main,button,a,.card,input,select,textarea{transition:background-color .3s ease,color .3s ease,border-color .3s ease}.skip-link{position:absolute;top:-100%;left:50%;transform:translateX(-50%);z-index:9999;padding:1rem 2rem;background:var(--color-accent-primary);color:#fff;text-decoration:none;border-radius:0 0 .5rem .5rem;font-weight:600;transition:top .3s ease}.skip-link:focus{top:0;outline:2px solid var(--color-accent-secondary);outline-offset:2px}.skip-links{position:fixed;top:0;left:50%;transform:translateX(-50%);z-index:10000;display:flex;gap:.25rem;padding:.25rem;background:var(--color-navbar-bg);backdrop-filter:blur(20px) saturate(180%);-webkit-backdrop-filter:blur(20px) saturate(180%);border:1px solid var(--color-hairline);border-top:none;border-radius:0 0 .75rem .75rem;box-shadow:0 4px 20px rgba(0,0,0,.15);opacity:0;visibility:hidden;pointer-events:none;transition:opacity .2s ease,visibility .2s ease}.skip-links:focus-within{opacity:1;visibility:visible;pointer-events:auto}.skip-links__link{display:flex;align-items:center;gap:.5rem;padding:.625rem 1rem;background:rgba(0,0,0,0);color:var(--color-text);text-decoration:none;font-size:.875rem;font-weight:500;border-radius:.5rem;white-space:nowrap;transition:all .15s ease}.skip-links__link:hover{background:var(--color-hover)}.skip-links__link:focus{outline:none;background:var(--color-accent-primary);color:#fff;box-shadow:0 0 0 2px var(--color-accent-secondary)}.skip-links__link[hidden]{display:none}.skip-links__icon{flex-shrink:0;opacity:.7}.skip-links__link:focus .skip-links__icon{opacity:1}@media (max-width: 768px){.skip-links{flex-direction:column;left:1rem;right:1rem;transform:none;max-width:calc(100% - 2rem)}.skip-links__link{justify-content:flex-start}}.hidden{display:none !important}.visually-hidden{position:absolute !important;width:1px !important;height:1px !important;padding:0 !important;margin:-1px !important;overflow:hidden !important;clip:rect(0, 0, 0, 0) !important;white-space:nowrap !important;border:0 !important}.mobile-only{display:none}.desktop-only{display:block}@media (max-width: 768px){.mobile-only{display:block}.desktop-only{display:none}}*{scrollbar-width:thin;scrollbar-color:var(--color-scrollbar-thumb) var(--color-scrollbar-track)}::-webkit-scrollbar{width:8px;height:8px}::-webkit-scrollbar-track{background:var(--color-scrollbar-track);border-radius:4px}::-webkit-scrollbar-thumb{background:var(--color-scrollbar-thumb);border-radius:4px;border:2px solid var(--color-scrollbar-track)}::-webkit-scrollbar-thumb:hover{background:var(--color-scrollbar-thumb-hover)}::-webkit-scrollbar-corner{background:rgba(0,0,0,0)}::selection{background-color:#ff8c3a;color:#1a1a1a}::-moz-selection{background-color:#ff8c3a;color:#1a1a1a}[lang=he]{font-family:"Frank Ruhl Libre","David Libre","Noto Serif Hebrew","Times New Roman",serif;direction:rtl;unicode-bidi:isolate}.hebrew,.text-hebrew{font-family:"Frank Ruhl Libre","David Libre","Noto Serif Hebrew","Times New Roman",serif;font-weight:500;direction:rtl;unicode-bidi:isolate;display:inline-block}[lang=grc],[lang=el]{font-family:"GFS Didot","Cardo","Noto Serif","Times New Roman",serif}.greek,.text-greek{font-family:"GFS Didot","Cardo","Noto Serif","Times New Roman",serif}:root{--font-family-body: Jost,GFS Didot,Noto Sans IPA,Hiragino Kaku Gothic ProN,Hiragino Sans,Yu Gothic UI,PingFang SC,Microsoft YaHei,Arial Hebrew,-apple-system,blinkmacsystemfont,Segoe UI,roboto,Helvetica Neue,arial,Noto Sans,sans-serif,Segoe UI Emoji,Segoe UI Symbol,Noto Color Emoji;--font-family-lead: SpaceGrotesk,GFS Didot,Noto Sans IPA,Hiragino Mincho ProN,Yu Mincho,Noto Serif JP,PingFang SC,Noto Serif SC,Arial Hebrew,Noto Serif Hebrew,Georgia,Times,Times New Roman,serif;--font-family-citation: IBM Plex Serif,Frank Ruhl Libre,GFS Didot,Noto Sans IPA,Noto Serif JP,Hiragino Mincho ProN,Yu Mincho,Noto Serif SC,Songti SC,Noto Serif TC,Noto Serif KR,Arial Hebrew,Noto Serif Hebrew,Noto Serif,Georgia,Times,Times New Roman,serif;--color-text: #f8f9fa;--color-text-muted: #ced4da;--color-background: #1b1f22;--color-background-secondary: #212529;--color-accent-primary: #98f5e1;--color-accent-secondary: #a3c4f3;--color-hairline: #343a40;--color-hover: rgba(255, 255, 255, 0.1);--color-focus: #98f5e1;--color-navbar-bg: rgba(27, 31, 34, 0.1);--color-card-bg: #212529;--color-border: rgba(255, 255, 255, 0.01);--color-border-strong: rgba(255, 255, 255, 0.02);--color-input-bg: rgba(27, 31, 34, 0.9);--color-input-border: rgba(255, 255, 255, 0.15);--color-placeholder: rgba(255, 255, 255, 0.6);--color-scrollbar-track: transparent;--color-scrollbar-thumb: rgba(255, 255, 255, 0.15);--color-scrollbar-thumb-hover: rgba(255, 255, 255, 0.25)}*{transition:background-color .3s ease,color .3s ease,border-color .3s ease,box-shadow .3s ease}@media (prefers-color-scheme: light){:root:not([data-theme]){--color-text: #212529;--color-text-muted: #6c757d;--color-background: #fff;--color-background-secondary: #f8f9fa;--color-accent-primary: #8365c7;--color-accent-secondary: #6649a8;--color-hairline: #dee2e6;--color-hover: rgba(0, 0, 0, 0.1);--color-focus: #8365c7;--color-navbar-bg: rgba(255, 255, 255, 0.1);--color-card-bg: #fff;--color-border: rgba(0, 0, 0, 0.01);--color-border-strong: rgba(0, 0, 0, 0.02);--color-input-bg: rgba(255, 255, 255, 0.8);--color-input-border: rgba(0, 0, 0, 0.1);--color-placeholder: rgba(0, 0, 0, 0.6);--color-scrollbar-track: transparent;--color-scrollbar-thumb: rgba(0, 0, 0, 0.15);--color-scrollbar-thumb-hover: rgba(0, 0, 0, 0.25)}}@media (prefers-contrast: high){:root{--color-border: currentColor;--color-border-strong: currentColor;--color-hairline: currentColor}}@media (prefers-reduced-transparency: reduce){:root{--color-navbar-bg: #212529}}@media (prefers-reduced-transparency: reduce) and (prefers-color-scheme: light){:root:not([data-theme]){--color-navbar-bg: #f8f9fa}}@media (prefers-reduced-motion: reduce){*{transition:none !important;animation:none !important}}[data-theme=light]{--color-text: #212529;--color-text-muted: #6c757d;--color-background: #fff;--color-background-secondary: #f8f9fa;--color-accent-primary: #9d81d9;--color-accent-secondary: #5e91e5;--color-hairline: #dee2e6;--color-hover: rgba(0, 0, 0, 0.1);--color-focus: #9d81d9;--color-navbar-bg: rgba(255, 255, 255, 0.65);--color-card-bg: #fff;--color-border: rgba(0, 0, 0, 0.01);--color-border-strong: rgba(0, 0, 0, 0.02);--color-input-bg: rgba(255, 255, 255, 0.8);--color-input-border: rgba(0, 0, 0, 0.1);--color-placeholder: rgba(0, 0, 0, 0.6);--color-scrollbar-track: transparent;--color-scrollbar-thumb: rgba(0, 0, 0, 0.15);--color-scrollbar-thumb-hover: rgba(0, 0, 0, 0.25)}[data-theme=light] .wiki__header::before{opacity:.4 !important;backdrop-filter:blur(4px) !important;-webkit-backdrop-filter:blur(4px) !important}[data-theme=light] .card{background-color:var(--color-card-bg);color:var(--color-text);border:1px solid var(--color-border)}[data-theme=light] .navbar{background-color:var(--color-navbar-bg)}[data-theme=light] .translation-notice{background-color:var(--color-navbar-bg)}@media (prefers-reduced-transparency: reduce){[data-theme=light]{--color-navbar-bg: #f8f9fa}}[data-theme=dark]{--color-text: #f8f9fa;--color-text-muted: #ced4da;--color-background: #1b1f22;--color-background-secondary: #212529;--color-accent-primary: #98f5e1;--color-accent-secondary: #a3c4f3;--color-hairline: #343a40;--color-hover: rgba(255, 255, 255, 0.1);--color-focus: #98f5e1;--color-navbar-bg: rgba(27, 31, 34, 0.1);--color-card-bg: #212529;--color-border: rgba(255, 255, 255, 0.01);--color-border-strong: rgba(255, 255, 255, 0.02);--color-input-bg: rgba(27, 31, 34, 0.9);--color-input-border: rgba(255, 255, 255, 0.15);--color-placeholder: rgba(255, 255, 255, 0.6);--color-scrollbar-track: transparent;--color-scrollbar-thumb: rgba(255, 255, 255, 0.15);--color-scrollbar-thumb-hover: rgba(255, 255, 255, 0.25)}[data-theme=dark] .card{background-color:var(--color-card-bg);color:var(--color-text);border:1px solid var(--color-border)}@media (prefers-reduced-transparency: reduce){[data-theme=dark]{--color-navbar-bg: #212529}}body.mobile-nav-open{overflow:hidden;height:100vh;height:100dvh}@keyframes logo-spin{from{transform:rotate(0deg)}to{transform:rotate(360deg)}}.navbar{display:flex;align-items:center;justify-content:space-between;padding:.75rem 1.5rem;border-radius:1rem;position:fixed;top:.5rem;left:50%;transform:translateX(-50%);width:90%;max-width:80rem;z-index:50;color:var(--color-text);font-family:var(--font-family-body);border:1px solid var(--color-border)}.navbar::before{content:"";position:absolute;inset:0;border-radius:inherit;background-color:var(--color-navbar-bg);backdrop-filter:blur(12px);-webkit-backdrop-filter:blur(12px);z-index:-1}.navbar__logo{display:inline-block;color:var(--color-text)}.navbar__logo img,.navbar__logo svg{width:3rem;height:auto;display:block;transition:transform .3s ease;min-width:2.5rem;flex-shrink:0}.navbar__logo:hover img,.navbar__logo:hover svg,.navbar__logo:active img,.navbar__logo:active svg{animation:logo-spin 9s linear infinite}@media (hover: none) and (pointer: coarse){.navbar__logo:active img,.navbar__logo:active svg{animation:logo-spin 9s linear infinite}}.navbar__content{display:flex;flex:1;justify-content:flex-end;align-items:center;margin-left:1rem}.navbar__links{display:flex;gap:1rem}.navbar__link{color:var(--color-text);text-decoration:none;padding:.25rem .75rem;border-radius:.375rem;font-weight:500;transition:all .2s ease;font-family:var(--font-family-body);position:relative;transform:translateY(0);cursor:pointer}.navbar__link:hover{background-color:var(--color-hover);color:var(--color-accent-primary)}.navbar__link:active{transform:translateY(1px);transition:transform .1s ease}.navbar__link:focus{background-color:var(--color-hover);color:var(--color-accent-primary);outline:none}.navbar__link--active{color:var(--color-accent-primary);background-color:var(--color-hover)}.navbar__link--icon{display:flex;align-items:center;gap:.375rem}.navbar__link--icon svg{flex-shrink:0}.navbar__dropdown{position:relative;display:inline-block}.navbar__cta-split{position:relative;display:inline-flex;align-items:stretch;margin-left:.75rem;margin-right:1rem;border-radius:.5rem;overflow:hidden;background-image:linear-gradient(135deg, rgba(152,245,225,.25), rgba(157,129,217,.25));backdrop-filter:blur(20px) saturate(180%);-webkit-backdrop-filter:blur(20px) saturate(180%);box-shadow:inset 0 1px 0 rgba(255,255,255,.22);transition:filter .2s ease,transform .2s ease}.navbar__cta-split::before{content:"";position:absolute;inset:0;border-radius:inherit;padding:1px;background:linear-gradient(135deg, rgba(152,245,225,.6), rgba(157,129,217,.6));-webkit-mask:linear-gradient(#000 0 0) content-box,linear-gradient(#000 0 0);-webkit-mask-composite:xor;mask:linear-gradient(#000 0 0) content-box,linear-gradient(#000 0 0);mask-composite:exclude;pointer-events:none}.navbar__cta-split:hover{filter:brightness(1.12) saturate(1.1)}.navbar__cta-split__main{display:inline-flex;align-items:center;padding:.375rem .875rem;color:var(--color-on-accent, #fff);text-decoration:none;font-weight:600;font-family:var(--font-family-body);font-size:inherit;transition:background-color .2s ease;border-right:1px solid rgba(255,255,255,.18)}.navbar__cta-split__main:hover,.navbar__cta-split__main:focus{background-color:rgba(255,255,255,.08);color:var(--color-on-accent, #fff);outline:none}.navbar__cta-split__main:active{transform:translateY(1px);transition:transform .1s ease}.navbar__cta-split__main--active{background-color:rgba(255,255,255,.12)}[data-theme=light] .navbar__cta-split__main{color:var(--color-accent-primary)}[data-theme=light] .navbar__cta-split__main:hover,[data-theme=light] .navbar__cta-split__main:focus{background-color:color-mix(in srgb, var(--color-accent-primary) 14%, rgba(0,0,0,0));color:var(--color-accent-primary)}.navbar__cta-split .navbar__dropdown-trigger{padding:.375rem .125rem;border-radius:0;color:var(--color-on-accent, #fff);background:rgba(0,0,0,0)}.navbar__cta-split .navbar__dropdown-trigger .navbar__dropdown-trigger__caret{width:1rem;height:1rem}.navbar__cta-split .navbar__dropdown-trigger .navbar__dropdown-trigger__caret svg{width:1rem;height:1rem}.navbar__cta-split .navbar__dropdown-trigger:hover,.navbar__cta-split .navbar__dropdown-trigger:focus{background-color:rgba(255,255,255,.08);color:var(--color-on-accent, #fff)}.navbar__cta-split .navbar__dropdown-trigger--active{background-color:rgba(255,255,255,.12);color:var(--color-on-accent, #fff)}[data-theme=light] .navbar__cta-split .navbar__dropdown-trigger{color:var(--color-accent-primary)}[data-theme=light] .navbar__cta-split .navbar__dropdown-trigger:hover,[data-theme=light] .navbar__cta-split .navbar__dropdown-trigger:focus,[data-theme=light] .navbar__cta-split .navbar__dropdown-trigger--active{background-color:color-mix(in srgb, var(--color-accent-primary) 14%, rgba(0,0,0,0));color:var(--color-accent-primary)}.navbar__dropdown-inline{display:none}.navbar__dropdown-trigger{display:flex;align-items:center;gap:.375rem;color:var(--color-text);text-decoration:none;padding:.25rem .75rem;border-radius:.375rem;font-weight:500;transition:all .2s ease;font-family:var(--font-family-body);cursor:pointer;background:none;border:none;font-size:inherit;position:relative;transform:translateY(0)}.navbar__dropdown-trigger:hover{background-color:var(--color-hover);color:var(--color-accent-primary)}.navbar__dropdown-trigger:active{transform:translateY(1px);transition:transform .1s ease}.navbar__dropdown-trigger:focus{background-color:var(--color-hover);color:var(--color-accent-primary);outline:none}.navbar__dropdown-trigger--active{color:var(--color-accent-primary);background-color:var(--color-hover)}.navbar__dropdown-trigger__caret{display:inline-flex;align-items:center;justify-content:center;transition:transform .3s ease}.navbar__dropdown-trigger__caret svg{width:1.5rem;height:1.5rem;min-width:1.5rem;flex-shrink:0}.navbar__dropdown-trigger--active .navbar__dropdown-trigger__caret{transform:rotate(180deg)}.navbar__controls{display:flex;align-items:center;gap:1rem;flex-shrink:0;min-width:0}.navbar__search{position:absolute;width:0;height:0;overflow:hidden;opacity:0;pointer-events:none}.navbar__search .navbar__search-input{position:absolute;inset:0;width:100%;height:100%;border:none;background:rgba(0,0,0,0);color:var(--color-text);font-family:inherit}.search-modal-open .navbar__search{position:absolute;top:50%;left:5rem;right:1rem;width:auto;height:auto;transform:translateY(-50%);opacity:1;pointer-events:auto}.search-modal-open .navbar__search .navbar__search-input{--search-fill: rgba(25, 28, 32, 0.85);position:relative;inset:auto;width:100%;padding:.5rem 1rem;border-radius:.75rem;border:1.5px solid rgba(0,0,0,0);background:linear-gradient(var(--search-fill), var(--search-fill)) padding-box,linear-gradient(90deg, #fde4cf 0%, #f1c0e8 14%, #cfbaf0 28%, #a3c4f3 42%, #90dbf4 56%, #98f5e1 70%, #b9fbc0 84%, #fde4cf 100%) border-box;backdrop-filter:blur(20px) saturate(180%);-webkit-backdrop-filter:blur(20px) saturate(180%);box-shadow:0 8px 32px rgba(0,0,0,.2);font-size:1rem}.search-modal-open .navbar__search .navbar__search-input::placeholder{color:var(--color-placeholder)}.search-modal-open .navbar__search .navbar__search-input:focus{outline:none}[data-theme=light] .search-modal-open .navbar__search .navbar__search-input{--search-fill: rgba(255, 255, 255, 0.85)}.navbar__search-btn{position:relative;display:flex;align-items:center;justify-content:center;width:40px;height:40px;padding:0;background:none;border:none;border-radius:.5rem;color:var(--color-text-muted);cursor:pointer;flex-shrink:0;transition:background-color .2s ease,color .2s ease}.navbar__search-btn:hover{background-color:var(--color-hover);color:var(--color-text)}.navbar__search-btn:focus-visible{outline:2px solid var(--color-focus);outline-offset:2px}.navbar__search-btn__icon,.navbar__search-btn__hint{position:absolute;inset:0;display:flex;align-items:center;justify-content:center;transition:opacity .4s ease}.navbar__search-btn__icon{animation:navbar-search-cycle-icon 9s ease-in-out infinite}.navbar__search-btn__icon svg{width:24px;height:24px}.navbar__search-btn__hint{opacity:0;animation:navbar-search-cycle-hint 9s ease-in-out infinite}.navbar__search-btn__kbd{display:inline-flex;align-items:center;justify-content:center;min-width:1.4rem;height:1.4rem;padding:0 .4rem;font-family:ui-monospace,SFMono-Regular,Menlo,Consolas,monospace;font-size:.8rem;font-weight:600;line-height:1;color:inherit;background:rgba(0,0,0,0);border:1.5px solid currentColor;border-radius:.3rem;box-shadow:0 2px 0 -1px currentColor}.navbar__search-btn:hover .navbar__search-btn__icon,.navbar__search-btn:focus-visible .navbar__search-btn__icon{opacity:1;animation-play-state:paused}.navbar__search-btn:hover .navbar__search-btn__hint,.navbar__search-btn:focus-visible .navbar__search-btn__hint{opacity:0;animation-play-state:paused}@media (prefers-reduced-motion: reduce){.navbar__search-btn__icon,.navbar__search-btn__hint{animation:none}.navbar__search-btn__icon{opacity:1}.navbar__search-btn__hint{opacity:0}}.navbar__lang-dropdown{position:relative}.navbar__lang-trigger{display:flex;align-items:center;gap:.375rem;padding:.375rem .5rem;background-color:var(--color-card-bg);border:1px solid var(--color-hairline);border-radius:.5rem;color:var(--color-text);font-size:.875rem;font-family:var(--font-family-body);cursor:pointer;transition:all .2s ease}.navbar__lang-trigger:hover{background-color:var(--color-hover);border-color:var(--color-border-strong)}.navbar__lang-trigger:focus{outline:none;border-color:var(--color-accent-primary);box-shadow:0 0 0 2px rgba(102,126,234,.2)}.navbar__lang-trigger[aria-expanded=true]{border-color:var(--color-accent-primary)}.navbar__lang-trigger[aria-expanded=true] .navbar__lang-chevron{transform:rotate(180deg)}.navbar__lang-current{font-weight:500}.navbar__lang-chevron{flex-shrink:0;color:var(--color-text-muted);transition:transform .2s ease}.navbar__lang-menu{position:absolute;top:calc(100% + .75rem);right:0;min-width:140px;padding:.375rem;margin:0;list-style:none;background-color:var(--color-card-bg);border:1px solid var(--color-hairline);border-radius:.75rem;box-shadow:0 8px 24px rgba(0,0,0,.15);opacity:0;visibility:hidden;transform:translateY(-8px);transition:all .2s ease;z-index:100;backdrop-filter:blur(12px) saturate(180%);-webkit-backdrop-filter:blur(12px) saturate(180%)}.navbar__lang-menu--open{opacity:1;visibility:visible;transform:translateY(0)}.navbar__lang-option{padding:.5rem .75rem;border-radius:.5rem;color:var(--color-text);font-size:.875rem;cursor:pointer;transition:all .15s ease}.navbar__lang-option:hover{background-color:var(--color-hover)}.navbar__lang-option--active{background-color:var(--color-accent-primary);color:#fff}.navbar__lang-option--active:hover{background-color:var(--color-accent-primary)}.navbar__theme-toggle{background:none;border:none;color:var(--color-text);cursor:pointer;padding:.5rem;border-radius:.375rem;transition:all .3s ease;display:flex;align-items:center;justify-content:center}.navbar__theme-toggle:hover,.navbar__theme-toggle:focus{background-color:var(--color-hover);color:var(--color-accent-primary);outline:none}.navbar__theme-toggle:active{transform:translateY(1px);transition:transform .1s ease}.navbar__mobile-toggle{display:none;background:none;border:none;color:var(--color-text);cursor:pointer;padding:.5rem;border-radius:.375rem;transition:all .3s ease}.navbar__mobile-toggle:hover,.navbar__mobile-toggle:focus{background-color:var(--color-hover);color:var(--color-accent-primary);outline:none}.navbar__mobile-toggle svg{width:1.5rem;height:1.5rem;min-width:1.5rem;flex-shrink:0}.navbar__theme-icon{position:relative;width:1.5rem;height:1.5rem}.navbar__theme-icon .icon{position:absolute;inset:0;width:100%;height:100%;stroke:currentColor;fill:none;stroke-width:2;stroke-linecap:round;stroke-linejoin:round;opacity:0;transform:scale(.8);transition:opacity .4s ease,transform .4s ease}.navbar__theme-icon .icon--sun{opacity:0;transform:scale(.8)}.navbar__theme-icon .icon--moon{opacity:1;transform:scale(1)}.navbar__theme-icon--light .icon--sun{opacity:1;transform:scale(1)}.navbar__theme-icon--light .icon--moon{opacity:0;transform:scale(.8)}.navbar__mobile-content{display:none;flex-shrink:0}@media (min-width: 1000px){.navbar__mobile-content{display:none !important}.navbar__mobile-content .navbar__mobile-controls{display:none !important}}@media (min-width: 1000px){.mobile-only{display:none !important}}@media (max-width: 999px){.desktop-only{display:none !important}}@media (min-width: 1000px) and (max-width: 1200px){.navbar__controls{gap:.5rem}.navbar__lang-dropdown .navbar__lang-current{max-width:3rem;overflow:hidden;text-overflow:ellipsis;white-space:nowrap}}@media (max-width: 1024px){.navbar__logo img,.navbar__logo svg{min-width:2.5rem;width:3rem}.navbar__controls{gap:.75rem}}@media (max-width: 999px){.navbar__cta-split{display:block;border-radius:.5rem;overflow:visible}.navbar__cta-split__main{display:flex;justify-content:center;border-right:none;border-radius:.5rem;padding:.75rem 1rem}.navbar{width:95%;padding:.5rem 1rem;transition:transform .3s ease}.navbar__logo img,.navbar__logo svg{min-width:2rem;width:2.5rem}.navbar--hidden{transform:translateX(-50%) translateY(-100%)}.navbar__content{margin-left:.5rem;flex-shrink:1;min-width:0}.navbar__links{display:none}.navbar__bar-controls{display:none}.navbar__pane--lang{display:none}.navbar__mobile-search{display:flex;align-items:center;position:absolute;right:13rem;top:50%;transform:translateY(-50%);flex-direction:row;justify-content:flex-end}.navbar__mobile-search input{width:0;padding:0;border:none;background-color:var(--color-input-bg);border-radius:.5rem;color:var(--color-text);font-size:1rem;font-family:inherit;opacity:0;pointer-events:none;transition:width .3s cubic-bezier(.4, 0, .2, 1),padding .3s cubic-bezier(.4, 0, .2, 1),opacity .2s ease,border .3s ease,margin .3s ease}.navbar__mobile-search input::placeholder{color:var(--color-placeholder)}.navbar__mobile-search input:focus{outline:none}.navbar__mobile-search--active{left:4rem;right:13rem}.navbar__mobile-search--active input{width:100%;padding:.5rem .75rem;border:1px solid var(--color-input-border);opacity:1;pointer-events:all;margin-right:.5rem}.navbar__mobile-search--active input:focus{border-color:var(--color-accent-primary)}.navbar__controls #mobileSearchToggle{order:2;position:relative;z-index:10}.navbar__mobile-toggle{display:flex;order:3}.navbar__mobile-toggle#mobileSearchToggle{order:2}.navbar--search-active .navbar__mobile-toggle#mobileSearchToggle{background-color:var(--color-accent-primary);color:#fff}.navbar__mobile-toggle#mobileNavToggle{order:3}.navbar__controls{gap:.5rem;display:flex;align-items:center;flex-shrink:0}.navbar__controls>.navbar__lang-dropdown,.navbar__controls>.navbar__theme-switcher,.navbar__controls>.navbar__theme-toggle{display:none}.navbar__controls .navbar__dropdown .navbar-dropdown{display:none}.navbar__controls .navbar__link,.navbar__controls .navbar__dropdown-trigger{min-height:44px;display:flex;align-items:center;position:relative;z-index:999999;pointer-events:auto}.navbar__bar-controls .navbar__lang-dropdown{position:relative}.navbar__bar-controls .navbar__lang-dropdown .navbar__lang-menu{position:absolute;top:auto;bottom:calc(100% + .5rem);right:auto;left:0;min-width:140px;max-height:50vh;overflow-y:auto;overscroll-behavior:contain;-webkit-overflow-scrolling:touch;z-index:10000;display:none;opacity:0;transform:translateY(8px)}.navbar__bar-controls .navbar__lang-dropdown .navbar__lang-menu--open{display:block;opacity:1;visibility:visible;transform:translateY(0)}.navbar .navbar__menu-icon{position:relative;width:1.5rem;height:1.5rem;display:flex;align-items:center;justify-content:center}.navbar .navbar__menu-icon--menu,.navbar .navbar__menu-icon--close{position:absolute;display:flex;align-items:center;justify-content:center;transition:opacity .3s ease,transform .3s ease}.navbar .navbar__menu-icon--menu svg,.navbar .navbar__menu-icon--close svg{width:1.5rem;height:1.5rem}.navbar .navbar__menu-icon--menu{opacity:1;transform:rotate(0deg)}.navbar .navbar__menu-icon--close{opacity:0;transform:rotate(-90deg)}.navbar.navbar--mobile-expanded .navbar__menu-icon--menu{opacity:0;transform:rotate(90deg)}.navbar.navbar--mobile-expanded .navbar__menu-icon--close{opacity:1;transform:rotate(0deg)}.navbar--mobile-expanded{border-bottom-left-radius:0;border-bottom-right-radius:0;border-bottom-color:rgba(0,0,0,0)}.navbar--mobile-expanded::before{border-bottom-left-radius:0;border-bottom-right-radius:0}.navbar--mobile-expanded .navbar__menu-read{display:flex;align-items:center;width:100%;min-height:44px;padding:.75rem 1rem;color:var(--color-text);background:rgba(0,0,0,0);border:1px solid rgba(0,0,0,0);border-radius:.5rem;font-weight:500;font-family:var(--font-family-body);font-size:1rem;text-decoration:none;transition:background-color .2s ease,color .2s ease}.navbar--mobile-expanded .navbar__menu-read:hover,.navbar--mobile-expanded .navbar__menu-read:focus{background-color:var(--color-hover);color:var(--color-accent-primary);outline:none}.navbar--mobile-expanded .navbar__menu-read--active{color:var(--color-accent-primary);background-color:var(--color-hover)}.navbar--mobile-expanded .navbar__bar-controls{display:flex;align-items:center;justify-content:flex-start;gap:.5rem;margin-top:1.25rem;padding-top:1rem;border-top:1px solid var(--color-border)}.navbar--mobile-expanded .navbar__bar-btn{display:inline-flex;align-items:center;justify-content:center;gap:.375rem;width:44px;height:44px;min-width:44px;padding:0 .75rem;background:rgba(0,0,0,0);color:var(--color-text);border:1px solid var(--color-border);border-radius:.5rem;cursor:pointer;font-family:var(--font-family-body);font-size:.875rem;transition:background-color .2s ease,color .2s ease}.navbar--mobile-expanded .navbar__bar-btn:hover,.navbar--mobile-expanded .navbar__bar-btn:focus{background-color:var(--color-hover);color:var(--color-accent-primary);outline:none}.navbar--mobile-expanded .navbar__bar-btn.navbar__lang-trigger{width:44px;min-width:44px;padding:0}.navbar--mobile-expanded .navbar__bar-btn.navbar__lang-trigger .navbar__lang-trigger__icon{display:inline-flex;align-items:center;justify-content:center}.navbar--mobile-expanded .navbar__bar-btn.navbar__lang-trigger .navbar__lang-trigger__icon svg{width:22px;height:22px}.navbar--mobile-expanded .navbar__bar-btn--end{margin-left:auto}.navbar--mobile-expanded .reading-list-toggle.navbar__bar-btn{width:44px;height:44px;padding:0;color:var(--color-text)}.navbar--mobile-expanded .reading-list-toggle.navbar__bar-btn svg{width:22px;height:22px}.navbar--mobile-expanded #mobile-theme-toggle .navbar__theme-icon{width:22px;height:22px}.navbar--mobile-expanded .navbar__content{display:block;position:absolute;top:100%;left:0;right:0;margin-left:0;margin-right:0;max-height:calc(100vh - 5rem);max-height:calc(100dvh - 5rem);background-color:var(--color-navbar-bg);backdrop-filter:blur(12px);-webkit-backdrop-filter:blur(12px);border:1px solid var(--color-border);border-top:none;border-radius:0 0 1rem 1rem;box-shadow:0 25px 50px rgba(0,0,0,.4);padding:1.25rem 1rem 2rem;z-index:9998;opacity:0;transform:translateY(-10px);transition:opacity .3s ease,transform .3s ease;pointer-events:none;overflow-y:auto;overflow-x:hidden;-webkit-overflow-scrolling:touch;overscroll-behavior:contain}.navbar--mobile-expanded .navbar__content::before{content:"";position:absolute;top:0;left:0;right:0;bottom:0;border-radius:inherit;z-index:-1}.navbar--mobile-expanded .navbar__content .navbar__links{display:flex;flex-direction:column;gap:.5rem;margin-bottom:1.25rem}.navbar--mobile-expanded .navbar__content .navbar__links .navbar__link{display:flex;align-items:center;width:100%;min-height:44px;padding:.75rem 1rem;border-radius:.5rem;font-size:1rem;font-weight:500}.navbar--mobile-expanded .navbar__content .navbar__links .navbar__dropdown{position:static;width:100%}.navbar--mobile-expanded .navbar__content .navbar__links .navbar__dropdown .navbar__dropdown-trigger{display:flex;width:100%;justify-content:space-between;min-height:44px;padding:.75rem 1rem;font-size:1rem;font-weight:500;color:var(--color-text);background:rgba(0,0,0,0);border:1px solid rgba(0,0,0,0);border-radius:.5rem;cursor:pointer;text-align:left}.navbar--mobile-expanded .navbar__content .navbar__links .navbar__dropdown .navbar__dropdown-trigger:hover,.navbar--mobile-expanded .navbar__content .navbar__links .navbar__dropdown .navbar__dropdown-trigger:focus{background-color:var(--color-hover);color:var(--color-accent-primary);outline:none}.navbar--mobile-expanded .navbar__content .navbar__links .navbar__dropdown .navbar__dropdown-inline{display:none;flex-direction:column;gap:.125rem;padding:.25rem 0 .5rem .75rem;margin:0;border-left:1px solid var(--color-border);margin-left:1rem}.navbar--mobile-expanded .navbar__content .navbar__links .navbar__dropdown .navbar__dropdown-inline-title{display:none}.navbar--mobile-expanded .navbar__content .navbar__links .navbar__dropdown .navbar__dropdown-inline-link{color:var(--color-text);text-decoration:none;padding:.625rem .75rem;min-height:40px;display:flex;align-items:center;border-radius:.5rem;font-size:.95rem;font-weight:500;transition:all .2s ease}.navbar--mobile-expanded .navbar__content .navbar__links .navbar__dropdown .navbar__dropdown-inline-link:hover,.navbar--mobile-expanded .navbar__content .navbar__links .navbar__dropdown .navbar__dropdown-inline-link:active{background-color:var(--color-hover);color:var(--color-accent-primary)}.navbar--mobile-expanded .navbar__content .navbar__links .navbar__dropdown.navbar__dropdown--mobile-open .navbar__dropdown-inline{display:flex}.navbar--mobile-expanded .navbar__content .navbar__links .navbar__dropdown.navbar__dropdown--mobile-open .navbar__dropdown-trigger__caret{transform:rotate(180deg)}.navbar--mobile-expanded .navbar__content .navbar__panes{display:flex;width:200%;transition:transform .3s ease}.navbar--mobile-expanded .navbar__content .navbar__pane{flex:0 0 50%;min-width:0}.navbar--mobile-expanded .navbar__content.navbar__content--lang-open .navbar__panes{transform:translateX(-50%)}.navbar--mobile-expanded .navbar__content .navbar__pane--lang{display:flex;flex-direction:column;gap:.75rem}.navbar--mobile-expanded .navbar__content .navbar__pane--lang .navbar__pane-header{display:flex;flex-direction:column;gap:.5rem;padding-bottom:.5rem;border-bottom:1px solid var(--color-border)}.navbar--mobile-expanded .navbar__content .navbar__pane--lang .navbar__pane-back{display:inline-flex;align-items:center;gap:.5rem;align-self:flex-start;min-height:44px;padding:.5rem .75rem;background:rgba(0,0,0,0);border:1px solid rgba(0,0,0,0);border-radius:.5rem;color:var(--color-text);font-family:var(--font-family-body);font-size:.95rem;font-weight:500;cursor:pointer;transition:background-color .2s ease,color .2s ease}.navbar--mobile-expanded .navbar__content .navbar__pane--lang .navbar__pane-back:hover,.navbar--mobile-expanded .navbar__content .navbar__pane--lang .navbar__pane-back:focus{background-color:var(--color-hover);color:var(--color-accent-primary);outline:none}.navbar--mobile-expanded .navbar__content .navbar__pane--lang .navbar__pane-title{margin:0;padding:0 1rem;font-size:.8rem;font-weight:600;text-transform:uppercase;letter-spacing:.05em;color:var(--color-text-muted)}.navbar--mobile-expanded .navbar__content .navbar__pane--lang .navbar__lang-list{display:flex;flex-direction:column;gap:.125rem;margin:0;padding:0;list-style:none}.navbar--mobile-expanded .navbar__content .navbar__pane--lang .navbar__lang-option{display:flex;align-items:center;width:100%;min-height:44px;padding:.75rem 1rem;border-radius:.5rem;color:var(--color-text);font-size:1rem;font-weight:500;cursor:pointer;transition:background-color .2s ease,color .2s ease}.navbar--mobile-expanded .navbar__content .navbar__pane--lang .navbar__lang-option:hover,.navbar--mobile-expanded .navbar__content .navbar__pane--lang .navbar__lang-option:active,.navbar--mobile-expanded .navbar__content .navbar__pane--lang .navbar__lang-option:focus{background-color:var(--color-hover);color:var(--color-accent-primary);outline:none}.navbar--mobile-expanded .navbar__content .navbar__pane--lang .navbar__lang-option--active{background-color:var(--color-hover);color:var(--color-accent-primary);font-weight:600}.navbar--mobile-expanded .navbar__content{opacity:1;transform:translateY(0);pointer-events:all}.navbar--search-active #mobileSearchToggle{background-color:var(--color-accent-primary);color:#fff}.navbar--search-active #mobileSearchToggle:hover,.navbar--search-active #mobileSearchToggle:focus{background-color:var(--color-accent-primary);color:#fff}}@media (max-width: 999px){[data-theme=light] .navbar--mobile-expanded .navbar__content{border-color:rgba(0,0,0,.1);box-shadow:0 25px 50px rgba(0,0,0,.15)}[data-theme=light] .navbar--mobile-expanded .navbar-dropdown__container{background:rgba(0,0,0,.04);border-color:rgba(0,0,0,.08)}[data-theme=light] .navbar--mobile-expanded .navbar__dropdown-inline{background:rgba(0,0,0,.04);border-color:rgba(0,0,0,.08)}}body.timeline-space-overlay .navbar{background-color:rgba(27,31,34,.6);border-color:rgba(255,255,255,.15);color:rgba(255,255,255,.95)}body.timeline-space-overlay .navbar__logo{color:rgba(255,255,255,.95)}body.timeline-space-overlay .navbar__logo svg{fill:rgba(255,255,255,.95)}body.timeline-space-overlay .navbar__link{color:rgba(255,255,255,.9)}body.timeline-space-overlay .navbar__link:hover{background-color:rgba(255,255,255,.1);color:var(--color-accent-primary)}body.timeline-space-overlay .navbar__link--active{color:var(--color-accent-primary)}body.timeline-space-overlay .navbar__dropdown-trigger{color:rgba(255,255,255,.9)}body.timeline-space-overlay .navbar__dropdown-trigger:hover{background-color:rgba(255,255,255,.1);color:var(--color-accent-primary)}body.timeline-space-overlay .navbar__lang-trigger{color:rgba(255,255,255,.9);border-color:rgba(255,255,255,.2)}body.timeline-space-overlay .navbar__lang-trigger:hover{border-color:var(--color-accent-primary);color:var(--color-accent-primary)}body.timeline-space-overlay .navbar__lang-menu{background-color:rgba(27,31,34,.95);border-color:rgba(255,255,255,.15)}body.timeline-space-overlay .navbar__lang-option{color:rgba(255,255,255,.9)}body.timeline-space-overlay .navbar__lang-option:hover{background-color:rgba(255,255,255,.1)}body.timeline-space-overlay .navbar__lang-option--active{color:var(--color-accent-primary)}body.timeline-space-overlay .navbar__theme-toggle{color:rgba(255,255,255,.9)}body.timeline-space-overlay .navbar__theme-toggle:hover{background-color:rgba(255,255,255,.1);color:var(--color-accent-primary)}body.timeline-space-overlay .navbar__search-input{background-color:rgba(255,255,255,.1);border-color:rgba(255,255,255,.2);color:rgba(255,255,255,.95)}body.timeline-space-overlay .navbar__search-input::placeholder{color:rgba(255,255,255,.5)}body.timeline-space-overlay .navbar__search-input:focus{border-color:var(--color-accent-primary)}body.timeline-space-overlay .navbar__mobile-toggle{color:rgba(255,255,255,.9)}body.timeline-space-overlay .navbar__mobile-toggle:hover{background-color:rgba(255,255,255,.1)}body.timeline-space-overlay .navbar-dropdown__container{background-color:rgba(27,31,34,.95);border-color:rgba(255,255,255,.15);box-shadow:0 8px 32px rgba(0,0,0,.4)}body.timeline-space-overlay .navbar-dropdown__section-title{color:rgba(255,255,255,.7)}body.timeline-space-overlay .navbar-dropdown__link{color:rgba(255,255,255,.9)}body.timeline-space-overlay .navbar-dropdown__link:hover{background-color:rgba(255,255,255,.08)}body.timeline-space-overlay .navbar-dropdown__link-description{color:rgba(255,255,255,.6)}@keyframes navbar-search-cycle-icon{0%, 78%, 100%{opacity:1}84%, 94%{opacity:0}}@keyframes navbar-search-cycle-hint{0%, 78%, 100%{opacity:0}84%, 94%{opacity:1}}.header{position:absolute;width:100%;z-index:100;pointer-events:none}.header>*{pointer-events:auto}:root:has(.landing){scroll-snap-type:y proximity;scroll-behavior:smooth;scroll-padding-top:4rem}@media (prefers-reduced-motion: reduce){:root:has(.landing){scroll-behavior:auto;scroll-snap-type:none}}.landing{position:relative}.landing__nav{position:fixed;right:1.5rem;top:50%;transform:translateY(-50%);z-index:40;display:flex;flex-direction:column;gap:.5rem;pointer-events:none}@media (max-width: 900px){.landing__nav{display:none}}.landing__nav-list{list-style:none;margin:0;padding:0;display:flex;flex-direction:column;gap:.5rem}.landing__nav-item{display:block}.landing__nav-dot{display:flex;align-items:center;gap:.625rem;padding:.25rem 0;color:var(--color-text-muted);text-decoration:none;pointer-events:auto;transition:color .2s ease,transform .2s ease}.landing__nav-dot::before{content:"";display:block;width:8px;height:8px;border:1.5px solid currentColor;border-radius:50%;background:rgba(0,0,0,0);transition:all .2s ease;flex-shrink:0;opacity:.5}.landing__nav-dot:hover,.landing__nav-dot:focus-visible{color:var(--color-text);outline:none}.landing__nav-dot:hover::before,.landing__nav-dot:focus-visible::before{opacity:1;transform:scale(1.15)}.landing__nav-dot:hover .landing__nav-dot-title,.landing__nav-dot:focus-visible .landing__nav-dot-title{opacity:1;transform:translateX(0)}.landing__nav-dot--active{color:var(--color-accent-primary)}.landing__nav-dot--active::before{background:currentColor;border-color:currentColor;opacity:1;transform:scale(1.15)}.landing__nav-dot-number{font-family:ui-monospace,SFMono-Regular,Menlo,Consolas,monospace;font-size:.625rem;font-weight:600;letter-spacing:.08em;opacity:.5;min-width:.875rem}.landing__nav-dot-title{font-family:var(--font-family-body);font-size:.75rem;white-space:nowrap;opacity:0;transform:translateX(-.5rem);transition:opacity .2s ease,transform .2s ease;pointer-events:none}.landing-section{min-height:100vh;min-height:100svh;display:flex;flex-direction:column;align-items:center;justify-content:center;position:relative;padding:6rem 2rem 5rem;scroll-snap-align:start;scroll-snap-stop:normal}@media (max-width: 768px){.landing-section{padding:5rem 1.25rem 4rem}}.landing-section__inner{max-width:38rem;width:100%;text-align:center;display:flex;flex-direction:column;align-items:center;gap:1.5rem}.landing-section__inner--clock{max-width:64rem;display:grid;grid-template-columns:minmax(0, 1fr) minmax(0, 1fr);gap:3rem;align-items:center;text-align:left}@media (max-width: 900px){.landing-section__inner--clock{grid-template-columns:minmax(0, 1fr);text-align:center}}.landing-section--paths .landing-section__inner{max-width:64rem}.landing-section__text{display:flex;flex-direction:column;gap:1.25rem}@media (max-width: 900px){.landing-section__text{align-items:center}}.landing-section__eyebrow{font-family:ui-monospace,SFMono-Regular,Menlo,Consolas,monospace;font-size:.6875rem;font-weight:600;text-transform:uppercase;letter-spacing:.18em;color:var(--color-text-muted);margin:0}.landing-section__heading{font-family:var(--font-family-lead);font-size:clamp(1.875rem,4.2vw,3.25rem);font-weight:700;line-height:1.15;letter-spacing:-.01em;color:var(--color-text);margin:0;max-width:32rem}.landing-section__heading--question{font-size:clamp(2.25rem,5.5vw,4rem);max-width:38rem}.landing-section__sub{font-size:clamp(1.0625rem,1.75vw,1.25rem);line-height:1.55;color:var(--color-text-muted);margin:0;max-width:36rem}.landing-section__sub .hebrew{font-weight:500;font-size:1.15em;font-style:normal;color:var(--color-text);line-height:1;margin:0 .15em 0 0;vertical-align:baseline}.landing-section__sub .landing-translit{display:inline-block;margin:0 .1em 0 .3em;font-family:var(--font-family-body);font-size:.75em;color:inherit;letter-spacing:.02em;vertical-align:.05em}.landing-section__body{font-size:clamp(1rem,1.4vw,1.125rem);line-height:1.65;color:var(--color-text);margin:0;max-width:36rem}.landing-section__hint{position:absolute;bottom:1.75rem;left:50%;transform:translateX(-50%);display:inline-flex;flex-direction:column;align-items:center;gap:.375rem;font-family:ui-monospace,SFMono-Regular,Menlo,Consolas,monospace;font-size:.6875rem;font-weight:500;text-transform:uppercase;letter-spacing:.16em;color:var(--color-text-muted);text-decoration:none;opacity:.7;transition:opacity .2s ease,transform .3s ease}.landing-section__hint svg{animation:landing-hint-bob 2.5s ease-in-out infinite}.landing-section__hint:hover,.landing-section__hint:focus-visible{opacity:1;outline:none}.landing-section__hint:hover svg,.landing-section__hint:focus-visible svg{animation-duration:1.2s}.landing-section--coda .landing-section__hint{display:none}@keyframes landing-hint-bob{0%, 100%{transform:translateY(0)}50%{transform:translateY(.25rem)}}.landing-section--question,.landing-section--video{color:#fff;overflow:hidden}.landing-section--question .landing-section__inner,.landing-section--video .landing-section__inner{position:relative;z-index:3}.landing-section--question .landing-section__heading,.landing-section--question .landing-section__body,.landing-section--video .landing-section__heading,.landing-section--video .landing-section__body{color:#fff}.landing-section--question .landing-section__sub,.landing-section--video .landing-section__sub{color:rgba(255,255,255,.85)}.landing-section--question .landing-section__sub .hebrew,.landing-section--video .landing-section__sub .hebrew{color:#fff}.landing-section--question .landing-section__hint,.landing-section--video .landing-section__hint{color:rgba(255,255,255,.85);z-index:3}.landing-section--question .landing-section__hint:hover,.landing-section--question .landing-section__hint:focus-visible,.landing-section--video .landing-section__hint:hover,.landing-section--video .landing-section__hint:focus-visible{color:#fff}.landing-section__brandmark{display:inline-flex;align-items:center;justify-content:center;color:#fff;margin-bottom:.25rem;opacity:.95}.landing-section__brandmark svg{width:clamp(9.5rem,21vw,14rem);height:auto;display:block}.landing-section__media{position:fixed;inset:0;z-index:0;overflow:hidden;opacity:0;pointer-events:none;transition:opacity .7s ease-in-out}.landing-section.is-active .landing-section__media{opacity:1}@media (prefers-reduced-motion: reduce){.landing-section__media{transition:none}}.landing-section__video{position:absolute;top:50%;left:50%;width:100%;height:100%;object-fit:cover;transform:translate(-50%, -50%);pointer-events:none}.landing-section__overlay{position:absolute;inset:0;background:linear-gradient(to bottom, rgba(0,0,0,.55) 0%, rgba(0,0,0,.35) 35%, rgba(0,0,0,.35) 65%, rgba(0,0,0,.65) 100%);z-index:1;pointer-events:none}.landing-arc{position:relative;width:100%;max-width:36rem;height:5rem;margin:1.5rem 0 .5rem}.landing-arc__line{position:absolute;left:0;right:0;top:50%;height:1px;background:linear-gradient(90deg, rgba(0,0,0,0) 0%, var(--color-text-muted) 15%, var(--color-text-muted) 85%, rgba(0,0,0,0) 100%);opacity:.4}.landing-arc__marker{position:absolute;top:50%;transform:translate(-50%, -50%);display:flex;flex-direction:column;align-items:center;gap:.25rem}.landing-arc__marker--start{left:0;transform:translate(0, -50%);align-items:flex-start}.landing-arc__marker--mid{left:50%}.landing-arc__marker--now{left:100%;transform:translate(-100%, -50%);align-items:flex-end}.landing-arc__marker--now .landing-arc__icon{color:var(--color-accent-primary);opacity:1;animation:landing-arc-pulse 2.4s ease-in-out infinite}.landing-arc__icon{display:inline-flex;align-items:center;justify-content:center;margin-bottom:.375rem;color:var(--color-text);opacity:.75}.landing-arc__icon svg{width:1.25rem;height:1.25rem;stroke-width:1.6}.landing-arc__year{font-family:ui-monospace,SFMono-Regular,Menlo,Consolas,monospace;font-size:.6875rem;font-weight:600;letter-spacing:.05em;color:var(--color-text)}.landing-arc__label{font-family:var(--font-family-body);font-size:.75rem;color:var(--color-text-muted)}@keyframes landing-arc-pulse{0%, 100%{opacity:.75;transform:scale(1)}50%{opacity:1;transform:scale(1.12)}}.landing-dial{position:relative;width:100%;aspect-ratio:1/1;max-width:24rem;margin:0 auto}@media (max-width: 900px){.landing-dial{max-width:18rem}}.landing-dial__ring{list-style:none;margin:0;padding:0;position:absolute;inset:0}.landing-dial__sign{position:absolute;top:50%;left:50%;width:2.5rem;height:2.5rem;margin:-1.25rem 0 0 -1.25rem;--angle: 0deg;transform:rotate(var(--angle)) translateY(-9rem) rotate(calc(-1*var(--angle)))}@media (max-width: 900px){.landing-dial__sign{transform:rotate(var(--angle)) translateY(-7rem) rotate(calc(-1*var(--angle)))}}.landing-dial__sign a{display:flex;align-items:center;justify-content:center;width:100%;height:100%;border-radius:50%;color:currentColor;opacity:.55;text-decoration:none;transition:opacity .2s ease,transform .2s ease,color .2s ease;position:relative}.landing-dial__sign a svg{width:1.5rem;height:1.5rem}.landing-dial__sign a:hover,.landing-dial__sign a:focus-visible{opacity:1;outline:none;transform:scale(1.15)}.landing-dial__sign--current a{opacity:1}.landing-dial__sign--current a::after{content:"";position:absolute;inset:-4px;border-radius:50%;border:1.5px solid currentColor;animation:landing-dial-current-pulse 2.4s ease-in-out infinite}.landing-dial__sign-label{position:absolute;left:50%;transform:translateX(-50%);font-family:ui-monospace,SFMono-Regular,Menlo,Consolas,monospace;font-size:.625rem;font-weight:600;text-transform:uppercase;letter-spacing:.14em;white-space:nowrap;color:currentColor;opacity:.85;pointer-events:none}.landing-dial__sign-label--top{bottom:calc(100% + .375rem)}.landing-dial__sign-label--bottom{top:calc(100% + .375rem)}.landing-dial__sign--1{--angle: 0deg}.landing-dial__sign--2{--angle: 30deg}.landing-dial__sign--3{--angle: 60deg}.landing-dial__sign--4{--angle: 90deg}.landing-dial__sign--5{--angle: 120deg}.landing-dial__sign--6{--angle: 150deg}.landing-dial__sign--7{--angle: 180deg}.landing-dial__sign--8{--angle: 210deg}.landing-dial__sign--9{--angle: 240deg}.landing-dial__sign--10{--angle: 270deg}.landing-dial__sign--11{--angle: 300deg}.landing-dial__sign--12{--angle: 330deg}.landing-dial__center{position:absolute;inset:30%;display:flex;align-items:center;justify-content:center;border-radius:50%;border:1px solid currentColor;background:rgba(0,0,0,0);opacity:.7}.landing-dial__center-text{font-family:ui-monospace,SFMono-Regular,Menlo,Consolas,monospace;font-size:.75rem;font-weight:600;text-align:center;line-height:1.3;color:currentColor;letter-spacing:.05em}@keyframes landing-dial-current-pulse{0%, 100%{opacity:.3;transform:scale(1)}50%{opacity:.7;transform:scale(1.08)}}.landing-now__glyph{color:var(--color-accent-primary);margin-bottom:.5rem;line-height:1;display:inline-flex}.landing-now__glyph svg{width:clamp(4rem,10vw,6.5rem);height:auto;stroke-width:1.2}.landing-coda__quote{font-family:var(--font-family-citation);font-style:italic;font-size:clamp(1.25rem,2.4vw,1.75rem);line-height:1.5;max-width:38rem;color:var(--color-text);margin:0;position:relative;padding:0 0 0 1.25rem;border-left:3px solid var(--color-accent-primary);text-align:left;font-feature-settings:"kern" 1,"liga" 1;text-rendering:optimizeLegibility}.landing-coda__quote p{margin:0 0 1rem}.landing-coda__cite{display:block;font-family:ui-monospace,SFMono-Regular,Menlo,Consolas,monospace;font-style:normal;font-size:.75rem;font-weight:600;text-transform:uppercase;letter-spacing:.12em;color:var(--color-text-muted)}.landing-coda__desc{font-size:.9375rem;line-height:1.6;color:var(--color-text-muted);max-width:32rem;margin:0}.landing-coda__links{display:flex;gap:1.5rem;flex-wrap:wrap;justify-content:center;margin-top:.5rem}.landing-coda__link{display:inline-flex;align-items:center;gap:.5rem;color:var(--color-text-muted);font-family:var(--font-family-body);font-size:.875rem;font-weight:500;text-decoration:none;transition:color .2s ease}.landing-coda__link:hover,.landing-coda__link:focus-visible{color:var(--color-accent-primary);outline:none}.landing-section--question,.landing-section--arc,.landing-section--now,.landing-section--paths{background:var(--color-background)}.landing-section--hypothesis,.landing-section--clock,.landing-section--method,.landing-section--coda{background:var(--color-background-secondary)}.landing-section--question,.landing-section--video{background:#0a0a0a}.read__paths{display:grid;grid-template-columns:repeat(3, minmax(0, 1fr));gap:1.5rem;margin:0 auto}@media (max-width: 900px){.read__paths{grid-template-columns:1fr;gap:1rem}}.keyboard-shortcuts-modal,.highlight-share,.glossary-tooltip,.offline-indicator,.reading-list-panel,.pwa-install-banner,.pwa-update-banner{position:fixed;opacity:0;visibility:hidden}.reading-progress,.to-top,.search-fab,.reader-fab{opacity:0}html:not(.css-loaded) .translation-notice,html:not(.css-loaded) .footer,html:not(.css-loaded) .snackbar-container,html:not(.css-loaded) .navbar-dropdown,html:not(.css-loaded) .navbar__pane--lang,html:not(.css-loaded) .navbar__pane--main,html:not(.css-loaded) .read__paths,html:not(.css-loaded) .claim-badges,html:not(.css-loaded) .reader-fab-toc{opacity:0;visibility:hidden}</style><link rel="preload" href="https://www.wheelofheaven.world/main.css?v=f444bab09161fa2f36a0f8affad0acc14fe7327c" as="style" onload="this.onload=null;this.rel='stylesheet'"><noscript><link rel="stylesheet" href="https://www.wheelofheaven.world/main.css?v=f444bab09161fa2f36a0f8affad0acc14fe7327c"></noscript>
+<style data-critical-inlined>*,*::before,*::after{margin:0;padding:0;box-sizing:border-box}html,body{height:100%;font-family:sans-serif}html{font-size:106.25%;scroll-padding-top:5.5rem;overflow-x:clip}body{display:flex;flex-direction:column;overflow-x:clip}body>main{flex:1 0 auto}body>footer{flex-shrink:0}img,svg,video,canvas{display:block;max-width:100%;height:auto}button,input,select,textarea{font:inherit;color:inherit;background:none;border:none;outline:none}@font-face{font-family:iAWriterQuattroS;font-style:normal;font-weight:400;font-display:swap;src:local("iAWriterQuattroS-Regular"),url("fonts/vendor/ia-writer-quattro/iAWriterQuattroS-Regular.woff2") format("woff2")}@font-face{font-family:iAWriterQuattroS;font-style:normal;font-weight:700;font-display:swap;src:local("iAWriterQuattroS-Bold"),url("fonts/vendor/ia-writer-quattro/iAWriterQuattroS-Bold.woff2") format("woff2")}@font-face{font-family:Jost;font-style:normal;font-weight:400;font-display:swap;src:local("Jost-Regular"),url("fonts/vendor/jost/jost-v19-cyrillic_latin-regular.woff2") format("woff2")}@font-face{font-family:Jost;font-style:normal;font-weight:700;font-display:swap;src:local("Jost-Bold"),url("fonts/vendor/jost/jost-v19-cyrillic_latin-700.woff2") format("woff2")}@font-face{font-family:SpaceGrotesk;font-style:normal;font-weight:400;font-display:swap;src:local("SpaceGrotesk-Regular"),url("fonts/vendor/space-grotesk/space-grotesk-v21-latin-regular.woff2") format("woff2")}@font-face{font-family:SpaceGrotesk;font-style:normal;font-weight:700;font-display:swap;src:local("SpaceGrotesk-Bold"),url("fonts/vendor/space-grotesk/space-grotesk-v21-latin-700.woff2") format("woff2")}@font-face{font-family:"Noto Sans SC";font-style:normal;font-weight:400;font-display:swap;src:url("fonts/vendor/noto-cjk-switcher/noto-sans-sc-switcher.woff2") format("woff2");unicode-range:U+4E2D,U+4F53,U+6587,U+7B80}@font-face{font-family:"Noto Sans TC";font-style:normal;font-weight:400;font-display:swap;src:url("fonts/vendor/noto-cjk-switcher/noto-sans-tc-switcher.woff2") format("woff2");unicode-range:U+4E2D,U+6587,U+7E41,U+9AD4}@font-face{font-family:"Noto Sans JP";font-style:normal;font-weight:400;font-display:swap;src:url("fonts/vendor/noto-cjk-switcher/noto-sans-jp-switcher.woff2") format("woff2");unicode-range:U+65E5,U+672C,U+8A9E}@font-face{font-family:"Noto Sans KR";font-style:normal;font-weight:400;font-display:swap;src:url("fonts/vendor/noto-cjk-switcher/noto-sans-kr-switcher.woff2") format("woff2");unicode-range:U+AD6D,U+C5B4,U+D55C}@font-face{font-family:"Frank Ruhl Libre";font-style:normal;font-weight:400 900;font-display:swap;src:url("fonts/vendor/frank-ruhl-libre/frl-hebrew.woff2") format("woff2");unicode-range:U+0307-0308,U+0590-05FF,U+200C-2010,U+20AA,U+25CC,U+FB1D-FB4F}@font-face{font-family:"Noto Sans Cuneiform";font-style:normal;font-weight:400;font-display:swap;src:url("fonts/vendor/noto-sans-cuneiform/noto-sans-cuneiform-regular.woff2") format("woff2");unicode-range:U+12000-123FF,U+12400-1246E,U+12470-12474,U+12480-12543}@font-face{font-family:"Noto Sans Ugaritic";font-style:normal;font-weight:400;font-display:swap;src:url("fonts/vendor/noto-sans-ugaritic/noto-sans-ugaritic-regular.woff2") format("woff2");unicode-range:U+10380-1039F}@font-face{font-family:"Frank Ruhl Libre";font-style:normal;font-weight:400 900;font-display:swap;src:url("fonts/vendor/frank-ruhl-libre/frl-latin-ext.woff2") format("woff2");unicode-range:U+0100-02BA,U+02BD-02C5,U+02C7-02CC,U+02CE-02D7,U+02DD-02FF,U+0304,U+0308,U+0329,U+1D00-1DBF,U+1E00-1E9F,U+1EF2-1EFF,U+2020,U+20A0-20AB,U+20AD-20C0,U+2113,U+2C60-2C7F,U+A720-A7FF}@font-face{font-family:"Frank Ruhl Libre";font-style:normal;font-weight:400 900;font-display:swap;src:url("fonts/vendor/frank-ruhl-libre/frl-latin.woff2") format("woff2");unicode-range:U+0000-00FF,U+0131,U+0152-0153,U+02BB-02BC,U+02C6,U+02DA,U+02DC,U+0304,U+0308,U+0329,U+2000-206F,U+20AC,U+2122,U+2191,U+2193,U+2212,U+2215,U+FEFF,U+FFFD}@font-face{font-family:"GFS Didot";font-style:normal;font-weight:400;font-display:swap;src:url("fonts/vendor/gfs-didot/gfs-greek-ext.woff2") format("woff2");unicode-range:U+1F00-1FFF}@font-face{font-family:"GFS Didot";font-style:normal;font-weight:400;font-display:swap;src:url("fonts/vendor/gfs-didot/gfs-greek.woff2") format("woff2");unicode-range:U+0370-0377,U+037A-037F,U+0384-038A,U+038C,U+038E-03A1,U+03A3-03FF}@font-face{font-family:"GFS Didot";font-style:normal;font-weight:400;font-display:swap;src:url("fonts/vendor/gfs-didot/gfs-vietnamese.woff2") format("woff2");unicode-range:U+0102-0103,U+0110-0111,U+0128-0129,U+0168-0169,U+01A0-01A1,U+01AF-01B0,U+0300-0301,U+0303-0304,U+0308-0309,U+0323,U+0329,U+1EA0-1EF9,U+20AB}@font-face{font-family:"GFS Didot";font-style:normal;font-weight:400;font-display:swap;src:url("fonts/vendor/gfs-didot/gfs-latin.woff2") format("woff2");unicode-range:U+0000-00FF,U+0131,U+0152-0153,U+02BB-02BC,U+02C6,U+02DA,U+02DC,U+0304,U+0308,U+0329,U+2000-206F,U+20AC,U+2122,U+2191,U+2193,U+2212,U+2215,U+FEFF,U+FFFD}@font-face{font-family:"IBM Plex Serif";font-style:normal;font-weight:400;font-display:swap;src:url("fonts/vendor/ibm-plex-serif/ibm-plex-serif-v20-latin-regular.woff2") format("woff2");unicode-range:U+0000-00FF,U+0131,U+0152-0153,U+02BB-02BC,U+02C6,U+02DA,U+02DC,U+0304,U+0308,U+0329,U+2000-206F,U+20AC,U+2122,U+2191,U+2193,U+2212,U+2215,U+FEFF,U+FFFD}@font-face{font-family:"IBM Plex Serif";font-style:normal;font-weight:400;font-display:swap;src:url("fonts/vendor/ibm-plex-serif/ibm-plex-serif-v20-latin-ext-regular.woff2") format("woff2");unicode-range:U+0100-02BA,U+02BD-02C5,U+02C7-02CC,U+02CE-02D7,U+02DD-02FF,U+0304,U+0308,U+0329,U+1D00-1DBF,U+1E00-1E9F,U+1EF2-1EFF,U+2020,U+20A0-20AB,U+20AD-20C0,U+2113,U+2C60-2C7F,U+A720-A7FF}@font-face{font-family:"IBM Plex Serif";font-style:normal;font-weight:700;font-display:swap;src:url("fonts/vendor/ibm-plex-serif/ibm-plex-serif-v20-latin-700.woff2") format("woff2");unicode-range:U+0000-00FF,U+0131,U+0152-0153,U+02BB-02BC,U+02C6,U+02DA,U+02DC,U+0304,U+0308,U+0329,U+2000-206F,U+20AC,U+2122,U+2191,U+2193,U+2212,U+2215,U+FEFF,U+FFFD}@font-face{font-family:"IBM Plex Serif";font-style:normal;font-weight:700;font-display:swap;src:url("fonts/vendor/ibm-plex-serif/ibm-plex-serif-v20-latin-ext-700.woff2") format("woff2");unicode-range:U+0100-02BA,U+02BD-02C5,U+02C7-02CC,U+02CE-02D7,U+02DD-02FF,U+0304,U+0308,U+0329,U+1D00-1DBF,U+1E00-1E9F,U+1EF2-1EFF,U+2020,U+20A0-20AB,U+20AD-20C0,U+2113,U+2C60-2C7F,U+A720-A7FF}@font-face{font-family:"IBM Plex Serif";font-style:italic;font-weight:400;font-display:swap;src:url("fonts/vendor/ibm-plex-serif/ibm-plex-serif-v20-latin-italic.woff2") format("woff2");unicode-range:U+0000-00FF,U+0131,U+0152-0153,U+02BB-02BC,U+02C6,U+02DA,U+02DC,U+0304,U+0308,U+0329,U+2000-206F,U+20AC,U+2122,U+2191,U+2193,U+2212,U+2215,U+FEFF,U+FFFD}@font-face{font-family:"IBM Plex Serif";font-style:italic;font-weight:400;font-display:swap;src:url("fonts/vendor/ibm-plex-serif/ibm-plex-serif-v20-latin-ext-italic.woff2") format("woff2");unicode-range:U+0100-02BA,U+02BD-02C5,U+02C7-02CC,U+02CE-02D7,U+02DD-02FF,U+0304,U+0308,U+0329,U+1D00-1DBF,U+1E00-1E9F,U+1EF2-1EFF,U+2020,U+20A0-20AB,U+20AD-20C0,U+2113,U+2C60-2C7F,U+A720-A7FF}@font-face{font-family:"Noto Sans IPA";font-style:normal;font-weight:400;font-display:swap;src:url("fonts/vendor/noto-sans-ipa/noto-sans-ipa.woff2") format("woff2");unicode-range:U+0250-02AF,U+02B0-02FF,U+1D00-1DBF}body{font-family:var(--font-family-body);font-size:1rem;line-height:1.6;color:var(--color-text);background-color:var(--color-background)}[lang=ja]{font-family:"Zen Kaku Gothic New","Hiragino Kaku Gothic ProN","Hiragino Sans","Yu Gothic UI","Yu Gothic","Meiryo","Noto Sans JP",sans-serif}[lang=zh],[lang=zh-Hans],[lang=zh-CN]{font-family:"Noto Sans SC","PingFang SC","Hiragino Sans GB","Microsoft YaHei",sans-serif}[lang=zh-Hant],[lang=zh-TW]{font-family:"Noto Sans TC","PingFang TC","Microsoft JhengHei",sans-serif}[lang=ko]{font-family:"Pretendard","Pretendard Variable","Apple SD Gothic Neo","Malgun Gothic","Nanum Gothic","Noto Sans KR",sans-serif}h1,h2,h3,h4,h5,h6{font-weight:700;line-height:1.2;margin-bottom:.5em}p{margin-bottom:1rem}ul,ol{padding-left:1.5rem;margin-bottom:1rem}html,body,.navbar,footer,main,button,a,.card,input,select,textarea{transition:background-color .3s ease,color .3s ease,border-color .3s ease}.skip-link{position:absolute;top:-100%;left:50%;transform:translateX(-50%);z-index:9999;padding:1rem 2rem;background:var(--color-accent-primary);color:#fff;text-decoration:none;border-radius:0 0 .5rem .5rem;font-weight:600;transition:top .3s ease}.skip-link:focus{top:0;outline:2px solid var(--color-accent-secondary);outline-offset:2px}.skip-links{position:fixed;top:0;left:50%;transform:translateX(-50%);z-index:10000;display:flex;gap:.25rem;padding:.25rem;background:var(--color-navbar-bg);backdrop-filter:blur(20px) saturate(180%);-webkit-backdrop-filter:blur(20px) saturate(180%);border:1px solid var(--color-hairline);border-top:none;border-radius:0 0 .75rem .75rem;box-shadow:0 4px 20px rgba(0,0,0,.15);opacity:0;visibility:hidden;pointer-events:none;transition:opacity .2s ease,visibility .2s ease}.skip-links:focus-within{opacity:1;visibility:visible;pointer-events:auto}.skip-links__link{display:flex;align-items:center;gap:.5rem;padding:.625rem 1rem;background:rgba(0,0,0,0);color:var(--color-text);text-decoration:none;font-size:.875rem;font-weight:500;border-radius:.5rem;white-space:nowrap;transition:all .15s ease}.skip-links__link:hover{background:var(--color-hover)}.skip-links__link:focus{outline:none;background:var(--color-accent-primary);color:#fff;box-shadow:0 0 0 2px var(--color-accent-secondary)}.skip-links__link[hidden]{display:none}.skip-links__icon{flex-shrink:0;opacity:.7}.skip-links__link:focus .skip-links__icon{opacity:1}@media (max-width: 768px){.skip-links{flex-direction:column;left:1rem;right:1rem;transform:none;max-width:calc(100% - 2rem)}.skip-links__link{justify-content:flex-start}}.hidden{display:none !important}.visually-hidden{position:absolute !important;width:1px !important;height:1px !important;padding:0 !important;margin:-1px !important;overflow:hidden !important;clip:rect(0, 0, 0, 0) !important;white-space:nowrap !important;border:0 !important}.mobile-only{display:none}.desktop-only{display:block}@media (max-width: 768px){.mobile-only{display:block}.desktop-only{display:none}}*{scrollbar-width:thin;scrollbar-color:var(--color-scrollbar-thumb) var(--color-scrollbar-track)}::-webkit-scrollbar{width:8px;height:8px}::-webkit-scrollbar-track{background:var(--color-scrollbar-track);border-radius:4px}::-webkit-scrollbar-thumb{background:var(--color-scrollbar-thumb);border-radius:4px;border:2px solid var(--color-scrollbar-track)}::-webkit-scrollbar-thumb:hover{background:var(--color-scrollbar-thumb-hover)}::-webkit-scrollbar-corner{background:rgba(0,0,0,0)}::selection{background-color:#ff8c3a;color:#1a1a1a}::-moz-selection{background-color:#ff8c3a;color:#1a1a1a}[lang=he]{font-family:"Frank Ruhl Libre","David Libre","Noto Serif Hebrew","Times New Roman",serif;direction:rtl;unicode-bidi:isolate}.hebrew,.text-hebrew{font-family:"Frank Ruhl Libre","David Libre","Noto Serif Hebrew","Times New Roman",serif;font-weight:500;direction:rtl;unicode-bidi:isolate;display:inline-block}[lang=grc],[lang=el]{font-family:"GFS Didot","Cardo","Noto Serif","Times New Roman",serif}.greek,.text-greek{font-family:"GFS Didot","Cardo","Noto Serif","Times New Roman",serif}:root{--font-family-body: Jost,GFS Didot,Noto Sans IPA,Hiragino Kaku Gothic ProN,Hiragino Sans,Yu Gothic UI,PingFang SC,Microsoft YaHei,Arial Hebrew,-apple-system,blinkmacsystemfont,Segoe UI,roboto,Helvetica Neue,arial,Noto Sans,sans-serif,Segoe UI Emoji,Segoe UI Symbol,Noto Color Emoji;--font-family-lead: SpaceGrotesk,GFS Didot,Noto Sans IPA,Hiragino Mincho ProN,Yu Mincho,Noto Serif JP,PingFang SC,Noto Serif SC,Arial Hebrew,Noto Serif Hebrew,Georgia,Times,Times New Roman,serif;--font-family-citation: IBM Plex Serif,Frank Ruhl Libre,GFS Didot,Noto Sans IPA,Noto Serif JP,Hiragino Mincho ProN,Yu Mincho,Noto Serif SC,Songti SC,Noto Serif TC,Noto Serif KR,Arial Hebrew,Noto Serif Hebrew,Noto Serif,Georgia,Times,Times New Roman,serif;--color-text: #f8f9fa;--color-text-muted: #ced4da;--color-background: #1b1f22;--color-background-secondary: #212529;--color-accent-primary: #98f5e1;--color-accent-secondary: #a3c4f3;--color-hairline: #343a40;--color-hover: rgba(255, 255, 255, 0.1);--color-focus: #98f5e1;--color-navbar-bg: rgba(27, 31, 34, 0.1);--color-card-bg: #212529;--color-border: rgba(255, 255, 255, 0.01);--color-border-strong: rgba(255, 255, 255, 0.02);--color-input-bg: rgba(27, 31, 34, 0.9);--color-input-border: rgba(255, 255, 255, 0.15);--color-placeholder: rgba(255, 255, 255, 0.6);--color-scrollbar-track: transparent;--color-scrollbar-thumb: rgba(255, 255, 255, 0.15);--color-scrollbar-thumb-hover: rgba(255, 255, 255, 0.25)}*{transition:background-color .3s ease,color .3s ease,border-color .3s ease,box-shadow .3s ease}@media (prefers-color-scheme: light){:root:not([data-theme]){--color-text: #212529;--color-text-muted: #6c757d;--color-background: #fff;--color-background-secondary: #f8f9fa;--color-accent-primary: #8365c7;--color-accent-secondary: #6649a8;--color-hairline: #dee2e6;--color-hover: rgba(0, 0, 0, 0.1);--color-focus: #8365c7;--color-navbar-bg: rgba(255, 255, 255, 0.1);--color-card-bg: #fff;--color-border: rgba(0, 0, 0, 0.01);--color-border-strong: rgba(0, 0, 0, 0.02);--color-input-bg: rgba(255, 255, 255, 0.8);--color-input-border: rgba(0, 0, 0, 0.1);--color-placeholder: rgba(0, 0, 0, 0.6);--color-scrollbar-track: transparent;--color-scrollbar-thumb: rgba(0, 0, 0, 0.15);--color-scrollbar-thumb-hover: rgba(0, 0, 0, 0.25)}}@media (prefers-contrast: high){:root{--color-border: currentColor;--color-border-strong: currentColor;--color-hairline: currentColor}}@media (prefers-reduced-transparency: reduce){:root{--color-navbar-bg: #212529}}@media (prefers-reduced-transparency: reduce) and (prefers-color-scheme: light){:root:not([data-theme]){--color-navbar-bg: #f8f9fa}}@media (prefers-reduced-motion: reduce){*{transition:none !important;animation:none !important}}[data-theme=light]{--color-text: #212529;--color-text-muted: #6c757d;--color-background: #fff;--color-background-secondary: #f8f9fa;--color-accent-primary: #9d81d9;--color-accent-secondary: #5e91e5;--color-hairline: #dee2e6;--color-hover: rgba(0, 0, 0, 0.1);--color-focus: #9d81d9;--color-navbar-bg: rgba(255, 255, 255, 0.65);--color-card-bg: #fff;--color-border: rgba(0, 0, 0, 0.01);--color-border-strong: rgba(0, 0, 0, 0.02);--color-input-bg: rgba(255, 255, 255, 0.8);--color-input-border: rgba(0, 0, 0, 0.1);--color-placeholder: rgba(0, 0, 0, 0.6);--color-scrollbar-track: transparent;--color-scrollbar-thumb: rgba(0, 0, 0, 0.15);--color-scrollbar-thumb-hover: rgba(0, 0, 0, 0.25)}[data-theme=light] .wiki__header::before{opacity:.4 !important;backdrop-filter:blur(4px) !important;-webkit-backdrop-filter:blur(4px) !important}[data-theme=light] .card{background-color:var(--color-card-bg);color:var(--color-text);border:1px solid var(--color-border)}[data-theme=light] .navbar{background-color:var(--color-navbar-bg)}[data-theme=light] .translation-notice{background-color:var(--color-navbar-bg)}@media (prefers-reduced-transparency: reduce){[data-theme=light]{--color-navbar-bg: #f8f9fa}}[data-theme=dark]{--color-text: #f8f9fa;--color-text-muted: #ced4da;--color-background: #1b1f22;--color-background-secondary: #212529;--color-accent-primary: #98f5e1;--color-accent-secondary: #a3c4f3;--color-hairline: #343a40;--color-hover: rgba(255, 255, 255, 0.1);--color-focus: #98f5e1;--color-navbar-bg: rgba(27, 31, 34, 0.1);--color-card-bg: #212529;--color-border: rgba(255, 255, 255, 0.01);--color-border-strong: rgba(255, 255, 255, 0.02);--color-input-bg: rgba(27, 31, 34, 0.9);--color-input-border: rgba(255, 255, 255, 0.15);--color-placeholder: rgba(255, 255, 255, 0.6);--color-scrollbar-track: transparent;--color-scrollbar-thumb: rgba(255, 255, 255, 0.15);--color-scrollbar-thumb-hover: rgba(255, 255, 255, 0.25)}[data-theme=dark] .card{background-color:var(--color-card-bg);color:var(--color-text);border:1px solid var(--color-border)}@media (prefers-reduced-transparency: reduce){[data-theme=dark]{--color-navbar-bg: #212529}}body.mobile-nav-open{overflow:hidden;height:100vh;height:100dvh}@keyframes logo-spin{from{transform:rotate(0deg)}to{transform:rotate(360deg)}}.navbar{display:flex;align-items:center;justify-content:space-between;padding:.75rem 1.5rem;border-radius:1rem;position:fixed;top:.5rem;left:50%;transform:translateX(-50%);width:90%;max-width:80rem;z-index:50;color:var(--color-text);font-family:var(--font-family-body);border:1px solid var(--color-border)}.navbar::before{content:"";position:absolute;inset:0;border-radius:inherit;background-color:var(--color-navbar-bg);backdrop-filter:blur(12px);-webkit-backdrop-filter:blur(12px);z-index:-1}.navbar__logo{display:inline-block;color:var(--color-text)}.navbar__logo img,.navbar__logo svg{width:3rem;height:auto;display:block;transition:transform .3s ease;min-width:2.5rem;flex-shrink:0}.navbar__logo:hover img,.navbar__logo:hover svg,.navbar__logo:active img,.navbar__logo:active svg{animation:logo-spin 9s linear infinite}@media (hover: none) and (pointer: coarse){.navbar__logo:active img,.navbar__logo:active svg{animation:logo-spin 9s linear infinite}}.navbar__content{display:flex;flex:1;justify-content:flex-end;align-items:center;margin-left:1rem}.navbar__links{display:flex;gap:1rem}.navbar__link{color:var(--color-text);text-decoration:none;padding:.25rem .75rem;border-radius:.375rem;font-weight:500;transition:all .2s ease;font-family:var(--font-family-body);position:relative;transform:translateY(0);cursor:pointer}.navbar__link:hover{background-color:var(--color-hover);color:var(--color-accent-primary)}.navbar__link:active{transform:translateY(1px);transition:transform .1s ease}.navbar__link:focus{background-color:var(--color-hover);color:var(--color-accent-primary);outline:none}.navbar__link--active{color:var(--color-accent-primary);background-color:var(--color-hover)}.navbar__link--icon{display:flex;align-items:center;gap:.375rem}.navbar__link--icon svg{flex-shrink:0}.navbar__dropdown{position:relative;display:inline-block}.navbar__cta-split{position:relative;display:inline-flex;align-items:stretch;margin-left:.75rem;margin-right:1rem;border-radius:.5rem;overflow:hidden;background-image:linear-gradient(135deg, rgba(152,245,225,.25), rgba(157,129,217,.25));backdrop-filter:blur(20px) saturate(180%);-webkit-backdrop-filter:blur(20px) saturate(180%);box-shadow:inset 0 1px 0 rgba(255,255,255,.22);transition:filter .2s ease,transform .2s ease}.navbar__cta-split::before{content:"";position:absolute;inset:0;border-radius:inherit;padding:1px;background:linear-gradient(135deg, rgba(152,245,225,.6), rgba(157,129,217,.6));-webkit-mask:linear-gradient(#000 0 0) content-box,linear-gradient(#000 0 0);-webkit-mask-composite:xor;mask:linear-gradient(#000 0 0) content-box,linear-gradient(#000 0 0);mask-composite:exclude;pointer-events:none}.navbar__cta-split:hover{filter:brightness(1.12) saturate(1.1)}.navbar__cta-split__main{display:inline-flex;align-items:center;padding:.375rem .875rem;color:var(--color-on-accent, #fff);text-decoration:none;font-weight:600;font-family:var(--font-family-body);font-size:inherit;transition:background-color .2s ease;border-right:1px solid rgba(255,255,255,.18)}.navbar__cta-split__main:hover,.navbar__cta-split__main:focus{background-color:rgba(255,255,255,.08);color:var(--color-on-accent, #fff);outline:none}.navbar__cta-split__main:active{transform:translateY(1px);transition:transform .1s ease}.navbar__cta-split__main--active{background-color:rgba(255,255,255,.12)}[data-theme=light] .navbar__cta-split__main{color:var(--color-accent-primary)}[data-theme=light] .navbar__cta-split__main:hover,[data-theme=light] .navbar__cta-split__main:focus{background-color:color-mix(in srgb, var(--color-accent-primary) 14%, rgba(0,0,0,0));color:var(--color-accent-primary)}.navbar__cta-split .navbar__dropdown-trigger{padding:.375rem .125rem;border-radius:0;color:var(--color-on-accent, #fff);background:rgba(0,0,0,0)}.navbar__cta-split .navbar__dropdown-trigger .navbar__dropdown-trigger__caret{width:1rem;height:1rem}.navbar__cta-split .navbar__dropdown-trigger .navbar__dropdown-trigger__caret svg{width:1rem;height:1rem}.navbar__cta-split .navbar__dropdown-trigger:hover,.navbar__cta-split .navbar__dropdown-trigger:focus{background-color:rgba(255,255,255,.08);color:var(--color-on-accent, #fff)}.navbar__cta-split .navbar__dropdown-trigger--active{background-color:rgba(255,255,255,.12);color:var(--color-on-accent, #fff)}[data-theme=light] .navbar__cta-split .navbar__dropdown-trigger{color:var(--color-accent-primary)}[data-theme=light] .navbar__cta-split .navbar__dropdown-trigger:hover,[data-theme=light] .navbar__cta-split .navbar__dropdown-trigger:focus,[data-theme=light] .navbar__cta-split .navbar__dropdown-trigger--active{background-color:color-mix(in srgb, var(--color-accent-primary) 14%, rgba(0,0,0,0));color:var(--color-accent-primary)}.navbar__dropdown-inline{display:none}.navbar__dropdown-trigger{display:flex;align-items:center;gap:.375rem;color:var(--color-text);text-decoration:none;padding:.25rem .75rem;border-radius:.375rem;font-weight:500;transition:all .2s ease;font-family:var(--font-family-body);cursor:pointer;background:none;border:none;font-size:inherit;position:relative;transform:translateY(0)}.navbar__dropdown-trigger:hover{background-color:var(--color-hover);color:var(--color-accent-primary)}.navbar__dropdown-trigger:active{transform:translateY(1px);transition:transform .1s ease}.navbar__dropdown-trigger:focus{background-color:var(--color-hover);color:var(--color-accent-primary);outline:none}.navbar__dropdown-trigger--active{color:var(--color-accent-primary);background-color:var(--color-hover)}.navbar__dropdown-trigger__caret{display:inline-flex;align-items:center;justify-content:center;transition:transform .3s ease}.navbar__dropdown-trigger__caret svg{width:1.5rem;height:1.5rem;min-width:1.5rem;flex-shrink:0}.navbar__dropdown-trigger--active .navbar__dropdown-trigger__caret{transform:rotate(180deg)}.navbar__controls{display:flex;align-items:center;gap:1rem;flex-shrink:0;min-width:0}.navbar__search{position:absolute;width:0;height:0;overflow:hidden;opacity:0;pointer-events:none}.navbar__search .navbar__search-input{position:absolute;inset:0;width:100%;height:100%;border:none;background:rgba(0,0,0,0);color:var(--color-text);font-family:inherit}.search-modal-open .navbar__search{position:absolute;top:50%;left:5rem;right:1rem;width:auto;height:auto;transform:translateY(-50%);opacity:1;pointer-events:auto}.search-modal-open .navbar__search .navbar__search-input{--search-fill: rgba(25, 28, 32, 0.85);position:relative;inset:auto;width:100%;padding:.5rem 1rem;border-radius:.75rem;border:1.5px solid rgba(0,0,0,0);background:linear-gradient(var(--search-fill), var(--search-fill)) padding-box,linear-gradient(90deg, #fde4cf 0%, #f1c0e8 14%, #cfbaf0 28%, #a3c4f3 42%, #90dbf4 56%, #98f5e1 70%, #b9fbc0 84%, #fde4cf 100%) border-box;backdrop-filter:blur(20px) saturate(180%);-webkit-backdrop-filter:blur(20px) saturate(180%);box-shadow:0 8px 32px rgba(0,0,0,.2);font-size:1rem}.search-modal-open .navbar__search .navbar__search-input::placeholder{color:var(--color-placeholder)}.search-modal-open .navbar__search .navbar__search-input:focus{outline:none}[data-theme=light] .search-modal-open .navbar__search .navbar__search-input{--search-fill: rgba(255, 255, 255, 0.85)}.navbar__search-btn{position:relative;display:flex;align-items:center;justify-content:center;width:40px;height:40px;padding:0;background:none;border:none;border-radius:.5rem;color:var(--color-text-muted);cursor:pointer;flex-shrink:0;transition:background-color .2s ease,color .2s ease}.navbar__search-btn:hover{background-color:var(--color-hover);color:var(--color-text)}.navbar__search-btn:focus-visible{outline:2px solid var(--color-focus);outline-offset:2px}.navbar__search-btn__icon,.navbar__search-btn__hint{position:absolute;inset:0;display:flex;align-items:center;justify-content:center;transition:opacity .4s ease}.navbar__search-btn__icon{animation:navbar-search-cycle-icon 9s ease-in-out infinite}.navbar__search-btn__icon svg{width:24px;height:24px}.navbar__search-btn__hint{opacity:0;animation:navbar-search-cycle-hint 9s ease-in-out infinite}.navbar__search-btn__kbd{display:inline-flex;align-items:center;justify-content:center;min-width:1.4rem;height:1.4rem;padding:0 .4rem;font-family:ui-monospace,SFMono-Regular,Menlo,Consolas,monospace;font-size:.8rem;font-weight:600;line-height:1;color:inherit;background:rgba(0,0,0,0);border:1.5px solid currentColor;border-radius:.3rem;box-shadow:0 2px 0 -1px currentColor}.navbar__search-btn:hover .navbar__search-btn__icon,.navbar__search-btn:focus-visible .navbar__search-btn__icon{opacity:1;animation-play-state:paused}.navbar__search-btn:hover .navbar__search-btn__hint,.navbar__search-btn:focus-visible .navbar__search-btn__hint{opacity:0;animation-play-state:paused}@media (prefers-reduced-motion: reduce){.navbar__search-btn__icon,.navbar__search-btn__hint{animation:none}.navbar__search-btn__icon{opacity:1}.navbar__search-btn__hint{opacity:0}}.navbar__lang-dropdown{position:relative}.navbar__lang-trigger{display:flex;align-items:center;gap:.375rem;padding:.375rem .5rem;background-color:var(--color-card-bg);border:1px solid var(--color-hairline);border-radius:.5rem;color:var(--color-text);font-size:.875rem;font-family:var(--font-family-body);cursor:pointer;transition:all .2s ease}.navbar__lang-trigger:hover{background-color:var(--color-hover);border-color:var(--color-border-strong)}.navbar__lang-trigger:focus{outline:none;border-color:var(--color-accent-primary);box-shadow:0 0 0 2px rgba(102,126,234,.2)}.navbar__lang-trigger[aria-expanded=true]{border-color:var(--color-accent-primary)}.navbar__lang-trigger[aria-expanded=true] .navbar__lang-chevron{transform:rotate(180deg)}.navbar__lang-current{font-weight:500}.navbar__lang-chevron{flex-shrink:0;color:var(--color-text-muted);transition:transform .2s ease}.navbar__lang-menu{position:absolute;top:calc(100% + .75rem);right:0;min-width:140px;padding:.375rem;margin:0;list-style:none;background-color:var(--color-card-bg);border:1px solid var(--color-hairline);border-radius:.75rem;box-shadow:0 8px 24px rgba(0,0,0,.15);opacity:0;visibility:hidden;transform:translateY(-8px);transition:all .2s ease;z-index:100;backdrop-filter:blur(12px) saturate(180%);-webkit-backdrop-filter:blur(12px) saturate(180%)}.navbar__lang-menu--open{opacity:1;visibility:visible;transform:translateY(0)}.navbar__lang-option{padding:.5rem .75rem;border-radius:.5rem;color:var(--color-text);font-size:.875rem;cursor:pointer;transition:all .15s ease}.navbar__lang-option:hover{background-color:var(--color-hover)}.navbar__lang-option--active{background-color:var(--color-accent-primary);color:#fff}.navbar__lang-option--active:hover{background-color:var(--color-accent-primary)}.navbar__theme-toggle{background:none;border:none;color:var(--color-text);cursor:pointer;padding:.5rem;border-radius:.375rem;transition:all .3s ease;display:flex;align-items:center;justify-content:center}.navbar__theme-toggle:hover,.navbar__theme-toggle:focus{background-color:var(--color-hover);color:var(--color-accent-primary);outline:none}.navbar__theme-toggle:active{transform:translateY(1px);transition:transform .1s ease}.navbar__mobile-toggle{display:none;background:none;border:none;color:var(--color-text);cursor:pointer;padding:.5rem;border-radius:.375rem;transition:all .3s ease}.navbar__mobile-toggle:hover,.navbar__mobile-toggle:focus{background-color:var(--color-hover);color:var(--color-accent-primary);outline:none}.navbar__mobile-toggle svg{width:1.5rem;height:1.5rem;min-width:1.5rem;flex-shrink:0}.navbar__theme-icon{position:relative;width:1.5rem;height:1.5rem}.navbar__theme-icon .icon{position:absolute;inset:0;width:100%;height:100%;stroke:currentColor;fill:none;stroke-width:2;stroke-linecap:round;stroke-linejoin:round;opacity:0;transform:scale(.8);transition:opacity .4s ease,transform .4s ease}.navbar__theme-icon .icon--sun{opacity:0;transform:scale(.8)}.navbar__theme-icon .icon--moon{opacity:1;transform:scale(1)}.navbar__theme-icon--light .icon--sun{opacity:1;transform:scale(1)}.navbar__theme-icon--light .icon--moon{opacity:0;transform:scale(.8)}.navbar__mobile-content{display:none;flex-shrink:0}@media (min-width: 1000px){.navbar__mobile-content{display:none !important}.navbar__mobile-content .navbar__mobile-controls{display:none !important}}@media (min-width: 1000px){.mobile-only{display:none !important}}@media (max-width: 999px){.desktop-only{display:none !important}}@media (min-width: 1000px) and (max-width: 1200px){.navbar__controls{gap:.5rem}.navbar__lang-dropdown .navbar__lang-current{max-width:3rem;overflow:hidden;text-overflow:ellipsis;white-space:nowrap}}@media (max-width: 1024px){.navbar__logo img,.navbar__logo svg{min-width:2.5rem;width:3rem}.navbar__controls{gap:.75rem}}@media (max-width: 999px){.navbar__cta-split{display:block;border-radius:.5rem;overflow:visible}.navbar__cta-split__main{display:flex;justify-content:center;border-right:none;border-radius:.5rem;padding:.75rem 1rem}.navbar{width:95%;padding:.5rem 1rem;transition:transform .3s ease}.navbar__logo img,.navbar__logo svg{min-width:2rem;width:2.5rem}.navbar--hidden{transform:translateX(-50%) translateY(-100%)}.navbar__content{margin-left:.5rem;flex-shrink:1;min-width:0}.navbar__links{display:none}.navbar__bar-controls{display:none}.navbar__pane--lang{display:none}.navbar__mobile-search{display:flex;align-items:center;position:absolute;right:13rem;top:50%;transform:translateY(-50%);flex-direction:row;justify-content:flex-end}.navbar__mobile-search input{width:0;padding:0;border:none;background-color:var(--color-input-bg);border-radius:.5rem;color:var(--color-text);font-size:1rem;font-family:inherit;opacity:0;pointer-events:none;transition:width .3s cubic-bezier(.4, 0, .2, 1),padding .3s cubic-bezier(.4, 0, .2, 1),opacity .2s ease,border .3s ease,margin .3s ease}.navbar__mobile-search input::placeholder{color:var(--color-placeholder)}.navbar__mobile-search input:focus{outline:none}.navbar__mobile-search--active{left:4rem;right:13rem}.navbar__mobile-search--active input{width:100%;padding:.5rem .75rem;border:1px solid var(--color-input-border);opacity:1;pointer-events:all;margin-right:.5rem}.navbar__mobile-search--active input:focus{border-color:var(--color-accent-primary)}.navbar__controls #mobileSearchToggle{order:2;position:relative;z-index:10}.navbar__mobile-toggle{display:flex;order:3}.navbar__mobile-toggle#mobileSearchToggle{order:2}.navbar--search-active .navbar__mobile-toggle#mobileSearchToggle{background-color:var(--color-accent-primary);color:#fff}.navbar__mobile-toggle#mobileNavToggle{order:3}.navbar__controls{gap:.5rem;display:flex;align-items:center;flex-shrink:0}.navbar__controls>.navbar__lang-dropdown,.navbar__controls>.navbar__theme-switcher,.navbar__controls>.navbar__theme-toggle{display:none}.navbar__controls .navbar__dropdown .navbar-dropdown{display:none}.navbar__controls .navbar__link,.navbar__controls .navbar__dropdown-trigger{min-height:44px;display:flex;align-items:center;position:relative;z-index:999999;pointer-events:auto}.navbar__bar-controls .navbar__lang-dropdown{position:relative}.navbar__bar-controls .navbar__lang-dropdown .navbar__lang-menu{position:absolute;top:auto;bottom:calc(100% + .5rem);right:auto;left:0;min-width:140px;max-height:50vh;overflow-y:auto;overscroll-behavior:contain;-webkit-overflow-scrolling:touch;z-index:10000;display:none;opacity:0;transform:translateY(8px)}.navbar__bar-controls .navbar__lang-dropdown .navbar__lang-menu--open{display:block;opacity:1;visibility:visible;transform:translateY(0)}.navbar .navbar__menu-icon{position:relative;width:1.5rem;height:1.5rem;display:flex;align-items:center;justify-content:center}.navbar .navbar__menu-icon--menu,.navbar .navbar__menu-icon--close{position:absolute;display:flex;align-items:center;justify-content:center;transition:opacity .3s ease,transform .3s ease}.navbar .navbar__menu-icon--menu svg,.navbar .navbar__menu-icon--close svg{width:1.5rem;height:1.5rem}.navbar .navbar__menu-icon--menu{opacity:1;transform:rotate(0deg)}.navbar .navbar__menu-icon--close{opacity:0;transform:rotate(-90deg)}.navbar.navbar--mobile-expanded .navbar__menu-icon--menu{opacity:0;transform:rotate(90deg)}.navbar.navbar--mobile-expanded .navbar__menu-icon--close{opacity:1;transform:rotate(0deg)}.navbar--mobile-expanded{border-bottom-left-radius:0;border-bottom-right-radius:0;border-bottom-color:rgba(0,0,0,0)}.navbar--mobile-expanded::before{border-bottom-left-radius:0;border-bottom-right-radius:0}.navbar--mobile-expanded .navbar__menu-read{display:flex;align-items:center;width:100%;min-height:44px;padding:.75rem 1rem;color:var(--color-text);background:rgba(0,0,0,0);border:1px solid rgba(0,0,0,0);border-radius:.5rem;font-weight:500;font-family:var(--font-family-body);font-size:1rem;text-decoration:none;transition:background-color .2s ease,color .2s ease}.navbar--mobile-expanded .navbar__menu-read:hover,.navbar--mobile-expanded .navbar__menu-read:focus{background-color:var(--color-hover);color:var(--color-accent-primary);outline:none}.navbar--mobile-expanded .navbar__menu-read--active{color:var(--color-accent-primary);background-color:var(--color-hover)}.navbar--mobile-expanded .navbar__bar-controls{display:flex;align-items:center;justify-content:flex-start;gap:.5rem;margin-top:1.25rem;padding-top:1rem;border-top:1px solid var(--color-border)}.navbar--mobile-expanded .navbar__bar-btn{display:inline-flex;align-items:center;justify-content:center;gap:.375rem;width:44px;height:44px;min-width:44px;padding:0 .75rem;background:rgba(0,0,0,0);color:var(--color-text);border:1px solid var(--color-border);border-radius:.5rem;cursor:pointer;font-family:var(--font-family-body);font-size:.875rem;transition:background-color .2s ease,color .2s ease}.navbar--mobile-expanded .navbar__bar-btn:hover,.navbar--mobile-expanded .navbar__bar-btn:focus{background-color:var(--color-hover);color:var(--color-accent-primary);outline:none}.navbar--mobile-expanded .navbar__bar-btn.navbar__lang-trigger{width:44px;min-width:44px;padding:0}.navbar--mobile-expanded .navbar__bar-btn.navbar__lang-trigger .navbar__lang-trigger__icon{display:inline-flex;align-items:center;justify-content:center}.navbar--mobile-expanded .navbar__bar-btn.navbar__lang-trigger .navbar__lang-trigger__icon svg{width:22px;height:22px}.navbar--mobile-expanded .navbar__bar-btn--end{margin-left:auto}.navbar--mobile-expanded .reading-list-toggle.navbar__bar-btn{width:44px;height:44px;padding:0;color:var(--color-text)}.navbar--mobile-expanded .reading-list-toggle.navbar__bar-btn svg{width:22px;height:22px}.navbar--mobile-expanded #mobile-theme-toggle .navbar__theme-icon{width:22px;height:22px}.navbar--mobile-expanded .navbar__content{display:block;position:absolute;top:100%;left:0;right:0;margin-left:0;margin-right:0;max-height:calc(100vh - 5rem);max-height:calc(100dvh - 5rem);background-color:var(--color-navbar-bg);backdrop-filter:blur(12px);-webkit-backdrop-filter:blur(12px);border:1px solid var(--color-border);border-top:none;border-radius:0 0 1rem 1rem;box-shadow:0 25px 50px rgba(0,0,0,.4);padding:1.25rem 1rem 2rem;z-index:9998;opacity:0;transform:translateY(-10px);transition:opacity .3s ease,transform .3s ease;pointer-events:none;overflow-y:auto;overflow-x:hidden;-webkit-overflow-scrolling:touch;overscroll-behavior:contain}.navbar--mobile-expanded .navbar__content::before{content:"";position:absolute;top:0;left:0;right:0;bottom:0;border-radius:inherit;z-index:-1}.navbar--mobile-expanded .navbar__content .navbar__links{display:flex;flex-direction:column;gap:.5rem;margin-bottom:1.25rem}.navbar--mobile-expanded .navbar__content .navbar__links .navbar__link{display:flex;align-items:center;width:100%;min-height:44px;padding:.75rem 1rem;border-radius:.5rem;font-size:1rem;font-weight:500}.navbar--mobile-expanded .navbar__content .navbar__links .navbar__dropdown{position:static;width:100%}.navbar--mobile-expanded .navbar__content .navbar__links .navbar__dropdown .navbar__dropdown-trigger{display:flex;width:100%;justify-content:space-between;min-height:44px;padding:.75rem 1rem;font-size:1rem;font-weight:500;color:var(--color-text);background:rgba(0,0,0,0);border:1px solid rgba(0,0,0,0);border-radius:.5rem;cursor:pointer;text-align:left}.navbar--mobile-expanded .navbar__content .navbar__links .navbar__dropdown .navbar__dropdown-trigger:hover,.navbar--mobile-expanded .navbar__content .navbar__links .navbar__dropdown .navbar__dropdown-trigger:focus{background-color:var(--color-hover);color:var(--color-accent-primary);outline:none}.navbar--mobile-expanded .navbar__content .navbar__links .navbar__dropdown .navbar__dropdown-inline{display:none;flex-direction:column;gap:.125rem;padding:.25rem 0 .5rem .75rem;margin:0;border-left:1px solid var(--color-border);margin-left:1rem}.navbar--mobile-expanded .navbar__content .navbar__links .navbar__dropdown .navbar__dropdown-inline-title{display:none}.navbar--mobile-expanded .navbar__content .navbar__links .navbar__dropdown .navbar__dropdown-inline-link{color:var(--color-text);text-decoration:none;padding:.625rem .75rem;min-height:40px;display:flex;align-items:center;border-radius:.5rem;font-size:.95rem;font-weight:500;transition:all .2s ease}.navbar--mobile-expanded .navbar__content .navbar__links .navbar__dropdown .navbar__dropdown-inline-link:hover,.navbar--mobile-expanded .navbar__content .navbar__links .navbar__dropdown .navbar__dropdown-inline-link:active{background-color:var(--color-hover);color:var(--color-accent-primary)}.navbar--mobile-expanded .navbar__content .navbar__links .navbar__dropdown.navbar__dropdown--mobile-open .navbar__dropdown-inline{display:flex}.navbar--mobile-expanded .navbar__content .navbar__links .navbar__dropdown.navbar__dropdown--mobile-open .navbar__dropdown-trigger__caret{transform:rotate(180deg)}.navbar--mobile-expanded .navbar__content .navbar__panes{display:flex;width:200%;transition:transform .3s ease}.navbar--mobile-expanded .navbar__content .navbar__pane{flex:0 0 50%;min-width:0}.navbar--mobile-expanded .navbar__content.navbar__content--lang-open .navbar__panes{transform:translateX(-50%)}.navbar--mobile-expanded .navbar__content .navbar__pane--lang{display:flex;flex-direction:column;gap:.75rem}.navbar--mobile-expanded .navbar__content .navbar__pane--lang .navbar__pane-header{display:flex;flex-direction:column;gap:.5rem;padding-bottom:.5rem;border-bottom:1px solid var(--color-border)}.navbar--mobile-expanded .navbar__content .navbar__pane--lang .navbar__pane-back{display:inline-flex;align-items:center;gap:.5rem;align-self:flex-start;min-height:44px;padding:.5rem .75rem;background:rgba(0,0,0,0);border:1px solid rgba(0,0,0,0);border-radius:.5rem;color:var(--color-text);font-family:var(--font-family-body);font-size:.95rem;font-weight:500;cursor:pointer;transition:background-color .2s ease,color .2s ease}.navbar--mobile-expanded .navbar__content .navbar__pane--lang .navbar__pane-back:hover,.navbar--mobile-expanded .navbar__content .navbar__pane--lang .navbar__pane-back:focus{background-color:var(--color-hover);color:var(--color-accent-primary);outline:none}.navbar--mobile-expanded .navbar__content .navbar__pane--lang .navbar__pane-title{margin:0;padding:0 1rem;font-size:.8rem;font-weight:600;text-transform:uppercase;letter-spacing:.05em;color:var(--color-text-muted)}.navbar--mobile-expanded .navbar__content .navbar__pane--lang .navbar__lang-list{display:flex;flex-direction:column;gap:.125rem;margin:0;padding:0;list-style:none}.navbar--mobile-expanded .navbar__content .navbar__pane--lang .navbar__lang-option{display:flex;align-items:center;width:100%;min-height:44px;padding:.75rem 1rem;border-radius:.5rem;color:var(--color-text);font-size:1rem;font-weight:500;cursor:pointer;transition:background-color .2s ease,color .2s ease}.navbar--mobile-expanded .navbar__content .navbar__pane--lang .navbar__lang-option:hover,.navbar--mobile-expanded .navbar__content .navbar__pane--lang .navbar__lang-option:active,.navbar--mobile-expanded .navbar__content .navbar__pane--lang .navbar__lang-option:focus{background-color:var(--color-hover);color:var(--color-accent-primary);outline:none}.navbar--mobile-expanded .navbar__content .navbar__pane--lang .navbar__lang-option--active{background-color:var(--color-hover);color:var(--color-accent-primary);font-weight:600}.navbar--mobile-expanded .navbar__content{opacity:1;transform:translateY(0);pointer-events:all}.navbar--search-active #mobileSearchToggle{background-color:var(--color-accent-primary);color:#fff}.navbar--search-active #mobileSearchToggle:hover,.navbar--search-active #mobileSearchToggle:focus{background-color:var(--color-accent-primary);color:#fff}}@media (max-width: 999px){[data-theme=light] .navbar--mobile-expanded .navbar__content{border-color:rgba(0,0,0,.1);box-shadow:0 25px 50px rgba(0,0,0,.15)}[data-theme=light] .navbar--mobile-expanded .navbar-dropdown__container{background:rgba(0,0,0,.04);border-color:rgba(0,0,0,.08)}[data-theme=light] .navbar--mobile-expanded .navbar__dropdown-inline{background:rgba(0,0,0,.04);border-color:rgba(0,0,0,.08)}}body.timeline-space-overlay .navbar{background-color:rgba(27,31,34,.6);border-color:rgba(255,255,255,.15);color:rgba(255,255,255,.95)}body.timeline-space-overlay .navbar__logo{color:rgba(255,255,255,.95)}body.timeline-space-overlay .navbar__logo svg{fill:rgba(255,255,255,.95)}body.timeline-space-overlay .navbar__link{color:rgba(255,255,255,.9)}body.timeline-space-overlay .navbar__link:hover{background-color:rgba(255,255,255,.1);color:var(--color-accent-primary)}body.timeline-space-overlay .navbar__link--active{color:var(--color-accent-primary)}body.timeline-space-overlay .navbar__dropdown-trigger{color:rgba(255,255,255,.9)}body.timeline-space-overlay .navbar__dropdown-trigger:hover{background-color:rgba(255,255,255,.1);color:var(--color-accent-primary)}body.timeline-space-overlay .navbar__lang-trigger{color:rgba(255,255,255,.9);border-color:rgba(255,255,255,.2)}body.timeline-space-overlay .navbar__lang-trigger:hover{border-color:var(--color-accent-primary);color:var(--color-accent-primary)}body.timeline-space-overlay .navbar__lang-menu{background-color:rgba(27,31,34,.95);border-color:rgba(255,255,255,.15)}body.timeline-space-overlay .navbar__lang-option{color:rgba(255,255,255,.9)}body.timeline-space-overlay .navbar__lang-option:hover{background-color:rgba(255,255,255,.1)}body.timeline-space-overlay .navbar__lang-option--active{color:var(--color-accent-primary)}body.timeline-space-overlay .navbar__theme-toggle{color:rgba(255,255,255,.9)}body.timeline-space-overlay .navbar__theme-toggle:hover{background-color:rgba(255,255,255,.1);color:var(--color-accent-primary)}body.timeline-space-overlay .navbar__search-input{background-color:rgba(255,255,255,.1);border-color:rgba(255,255,255,.2);color:rgba(255,255,255,.95)}body.timeline-space-overlay .navbar__search-input::placeholder{color:rgba(255,255,255,.5)}body.timeline-space-overlay .navbar__search-input:focus{border-color:var(--color-accent-primary)}body.timeline-space-overlay .navbar__mobile-toggle{color:rgba(255,255,255,.9)}body.timeline-space-overlay .navbar__mobile-toggle:hover{background-color:rgba(255,255,255,.1)}body.timeline-space-overlay .navbar-dropdown__container{background-color:rgba(27,31,34,.95);border-color:rgba(255,255,255,.15);box-shadow:0 8px 32px rgba(0,0,0,.4)}body.timeline-space-overlay .navbar-dropdown__section-title{color:rgba(255,255,255,.7)}body.timeline-space-overlay .navbar-dropdown__link{color:rgba(255,255,255,.9)}body.timeline-space-overlay .navbar-dropdown__link:hover{background-color:rgba(255,255,255,.08)}body.timeline-space-overlay .navbar-dropdown__link-description{color:rgba(255,255,255,.6)}@keyframes navbar-search-cycle-icon{0%, 78%, 100%{opacity:1}84%, 94%{opacity:0}}@keyframes navbar-search-cycle-hint{0%, 78%, 100%{opacity:0}84%, 94%{opacity:1}}.header{position:absolute;width:100%;z-index:100;pointer-events:none}.header>*{pointer-events:auto}:root:has(.landing){scroll-snap-type:y proximity;scroll-behavior:smooth;scroll-padding-top:4rem}@media (prefers-reduced-motion: reduce){:root:has(.landing){scroll-behavior:auto;scroll-snap-type:none}}.landing{position:relative}.landing__nav{position:fixed;right:1.5rem;top:50%;transform:translateY(-50%);z-index:40;display:flex;flex-direction:column;gap:.5rem;pointer-events:none}@media (max-width: 900px){.landing__nav{display:none}}.landing__nav-list{list-style:none;margin:0;padding:0;display:flex;flex-direction:column;gap:.5rem}.landing__nav-item{display:block}.landing__nav-dot{display:flex;align-items:center;gap:.625rem;padding:.25rem 0;color:var(--color-text-muted);text-decoration:none;pointer-events:auto;transition:color .2s ease,transform .2s ease}.landing__nav-dot::before{content:"";display:block;width:8px;height:8px;border:1.5px solid currentColor;border-radius:50%;background:rgba(0,0,0,0);transition:all .2s ease;flex-shrink:0;opacity:.5}.landing__nav-dot:hover,.landing__nav-dot:focus-visible{color:var(--color-text);outline:none}.landing__nav-dot:hover::before,.landing__nav-dot:focus-visible::before{opacity:1;transform:scale(1.15)}.landing__nav-dot:hover .landing__nav-dot-title,.landing__nav-dot:focus-visible .landing__nav-dot-title{opacity:1;transform:translateX(0)}.landing__nav-dot--active{color:var(--color-accent-primary)}.landing__nav-dot--active::before{background:currentColor;border-color:currentColor;opacity:1;transform:scale(1.15)}.landing__nav-dot-number{font-family:ui-monospace,SFMono-Regular,Menlo,Consolas,monospace;font-size:.625rem;font-weight:600;letter-spacing:.08em;opacity:.5;min-width:.875rem}.landing__nav-dot-title{font-family:var(--font-family-body);font-size:.75rem;white-space:nowrap;opacity:0;transform:translateX(-.5rem);transition:opacity .2s ease,transform .2s ease;pointer-events:none}.landing-section{min-height:100vh;min-height:100svh;display:flex;flex-direction:column;align-items:center;justify-content:center;position:relative;padding:6rem 2rem 5rem;scroll-snap-align:start;scroll-snap-stop:normal}@media (max-width: 768px){.landing-section{padding:5rem 1.25rem 4rem}}.landing-section__inner{max-width:38rem;width:100%;text-align:center;display:flex;flex-direction:column;align-items:center;gap:1.5rem}.landing-section__inner--clock{max-width:64rem;display:grid;grid-template-columns:minmax(0, 1fr) minmax(0, 1fr);gap:3rem;align-items:center;text-align:left}@media (max-width: 900px){.landing-section__inner--clock{grid-template-columns:minmax(0, 1fr);text-align:center}}.landing-section--paths .landing-section__inner{max-width:64rem}.landing-section__text{display:flex;flex-direction:column;gap:1.25rem}@media (max-width: 900px){.landing-section__text{align-items:center}}.landing-section__eyebrow{font-family:ui-monospace,SFMono-Regular,Menlo,Consolas,monospace;font-size:.6875rem;font-weight:600;text-transform:uppercase;letter-spacing:.18em;color:var(--color-text-muted);margin:0}.landing-section__heading{font-family:var(--font-family-lead);font-size:clamp(1.875rem,4.2vw,3.25rem);font-weight:700;line-height:1.15;letter-spacing:-.01em;color:var(--color-text);margin:0;max-width:32rem}.landing-section__heading--question{font-size:clamp(2.25rem,5.5vw,4rem);max-width:38rem}.landing-section__sub{font-size:clamp(1.0625rem,1.75vw,1.25rem);line-height:1.55;color:var(--color-text-muted);margin:0;max-width:36rem}.landing-section__sub .hebrew{font-weight:500;font-size:1.15em;font-style:normal;color:var(--color-text);line-height:1;margin:0 .15em 0 0;vertical-align:baseline}.landing-section__sub .landing-translit{display:inline-block;margin:0 .1em 0 .3em;font-family:var(--font-family-body);font-size:.75em;color:inherit;letter-spacing:.02em;vertical-align:.05em}.landing-section__body{font-size:clamp(1rem,1.4vw,1.125rem);line-height:1.65;color:var(--color-text);margin:0;max-width:36rem}.landing-section__hint{position:absolute;bottom:1.75rem;left:50%;transform:translateX(-50%);display:inline-flex;flex-direction:column;align-items:center;gap:.375rem;font-family:ui-monospace,SFMono-Regular,Menlo,Consolas,monospace;font-size:.6875rem;font-weight:500;text-transform:uppercase;letter-spacing:.16em;color:var(--color-text-muted);text-decoration:none;opacity:.7;transition:opacity .2s ease,transform .3s ease}.landing-section__hint svg{animation:landing-hint-bob 2.5s ease-in-out infinite}.landing-section__hint:hover,.landing-section__hint:focus-visible{opacity:1;outline:none}.landing-section__hint:hover svg,.landing-section__hint:focus-visible svg{animation-duration:1.2s}.landing-section--coda .landing-section__hint{display:none}@keyframes landing-hint-bob{0%, 100%{transform:translateY(0)}50%{transform:translateY(.25rem)}}.landing-section--question,.landing-section--video{color:#fff;overflow:hidden}.landing-section--question .landing-section__inner,.landing-section--video .landing-section__inner{position:relative;z-index:3}.landing-section--question .landing-section__heading,.landing-section--question .landing-section__body,.landing-section--video .landing-section__heading,.landing-section--video .landing-section__body{color:#fff}.landing-section--question .landing-section__sub,.landing-section--video .landing-section__sub{color:rgba(255,255,255,.85)}.landing-section--question .landing-section__sub .hebrew,.landing-section--video .landing-section__sub .hebrew{color:#fff}.landing-section--question .landing-section__hint,.landing-section--video .landing-section__hint{color:rgba(255,255,255,.85);z-index:3}.landing-section--question .landing-section__hint:hover,.landing-section--question .landing-section__hint:focus-visible,.landing-section--video .landing-section__hint:hover,.landing-section--video .landing-section__hint:focus-visible{color:#fff}.landing-section__brandmark{display:inline-flex;align-items:center;justify-content:center;color:#fff;margin-bottom:.25rem;opacity:.95}.landing-section__brandmark svg{width:clamp(9.5rem,21vw,14rem);height:auto;display:block}.landing-section__media{position:fixed;inset:0;z-index:0;overflow:hidden;opacity:0;pointer-events:none;transition:opacity .7s ease-in-out}.landing-section.is-active .landing-section__media{opacity:1}@media (prefers-reduced-motion: reduce){.landing-section__media{transition:none}}.landing-section__video{position:absolute;top:50%;left:50%;width:100%;height:100%;object-fit:cover;transform:translate(-50%, -50%);pointer-events:none}.landing-section__overlay{position:absolute;inset:0;background:linear-gradient(to bottom, rgba(0,0,0,.55) 0%, rgba(0,0,0,.35) 35%, rgba(0,0,0,.35) 65%, rgba(0,0,0,.65) 100%);z-index:1;pointer-events:none}.landing-arc{position:relative;width:100%;max-width:36rem;height:5rem;margin:1.5rem 0 .5rem}.landing-arc__line{position:absolute;left:0;right:0;top:50%;height:1px;background:linear-gradient(90deg, rgba(0,0,0,0) 0%, var(--color-text-muted) 15%, var(--color-text-muted) 85%, rgba(0,0,0,0) 100%);opacity:.4}.landing-arc__marker{position:absolute;top:50%;transform:translate(-50%, -50%);display:flex;flex-direction:column;align-items:center;gap:.25rem}.landing-arc__marker--start{left:0;transform:translate(0, -50%);align-items:flex-start}.landing-arc__marker--mid{left:50%}.landing-arc__marker--now{left:100%;transform:translate(-100%, -50%);align-items:flex-end}.landing-arc__marker--now .landing-arc__icon{color:var(--color-accent-primary);opacity:1;animation:landing-arc-pulse 2.4s ease-in-out infinite}.landing-arc__icon{display:inline-flex;align-items:center;justify-content:center;margin-bottom:.375rem;color:var(--color-text);opacity:.75}.landing-arc__icon svg{width:1.25rem;height:1.25rem;stroke-width:1.6}.landing-arc__year{font-family:ui-monospace,SFMono-Regular,Menlo,Consolas,monospace;font-size:.6875rem;font-weight:600;letter-spacing:.05em;color:var(--color-text)}.landing-arc__label{font-family:var(--font-family-body);font-size:.75rem;color:var(--color-text-muted)}@keyframes landing-arc-pulse{0%, 100%{opacity:.75;transform:scale(1)}50%{opacity:1;transform:scale(1.12)}}.landing-dial{position:relative;width:100%;aspect-ratio:1/1;max-width:24rem;margin:0 auto}@media (max-width: 900px){.landing-dial{max-width:18rem}}.landing-dial__ring{list-style:none;margin:0;padding:0;position:absolute;inset:0}.landing-dial__sign{position:absolute;top:50%;left:50%;width:2.5rem;height:2.5rem;margin:-1.25rem 0 0 -1.25rem;--angle: 0deg;transform:rotate(var(--angle)) translateY(-9rem) rotate(calc(-1*var(--angle)))}@media (max-width: 900px){.landing-dial__sign{transform:rotate(var(--angle)) translateY(-7rem) rotate(calc(-1*var(--angle)))}}.landing-dial__sign a{display:flex;align-items:center;justify-content:center;width:100%;height:100%;border-radius:50%;color:currentColor;opacity:.55;text-decoration:none;transition:opacity .2s ease,transform .2s ease,color .2s ease;position:relative}.landing-dial__sign a svg{width:1.5rem;height:1.5rem}.landing-dial__sign a:hover,.landing-dial__sign a:focus-visible{opacity:1;outline:none;transform:scale(1.15)}.landing-dial__sign--current a{opacity:1}.landing-dial__sign--current a::after{content:"";position:absolute;inset:-4px;border-radius:50%;border:1.5px solid currentColor;animation:landing-dial-current-pulse 2.4s ease-in-out infinite}.landing-dial__sign-label{position:absolute;left:50%;transform:translateX(-50%);font-family:ui-monospace,SFMono-Regular,Menlo,Consolas,monospace;font-size:.625rem;font-weight:600;text-transform:uppercase;letter-spacing:.14em;white-space:nowrap;color:currentColor;opacity:.85;pointer-events:none}.landing-dial__sign-label--top{bottom:calc(100% + .375rem)}.landing-dial__sign-label--bottom{top:calc(100% + .375rem)}.landing-dial__sign--1{--angle: 0deg}.landing-dial__sign--2{--angle: 30deg}.landing-dial__sign--3{--angle: 60deg}.landing-dial__sign--4{--angle: 90deg}.landing-dial__sign--5{--angle: 120deg}.landing-dial__sign--6{--angle: 150deg}.landing-dial__sign--7{--angle: 180deg}.landing-dial__sign--8{--angle: 210deg}.landing-dial__sign--9{--angle: 240deg}.landing-dial__sign--10{--angle: 270deg}.landing-dial__sign--11{--angle: 300deg}.landing-dial__sign--12{--angle: 330deg}.landing-dial__center{position:absolute;inset:30%;display:flex;align-items:center;justify-content:center;border-radius:50%;border:1px solid currentColor;background:rgba(0,0,0,0);opacity:.7}.landing-dial__center-text{font-family:ui-monospace,SFMono-Regular,Menlo,Consolas,monospace;font-size:.75rem;font-weight:600;text-align:center;line-height:1.3;color:currentColor;letter-spacing:.05em}@keyframes landing-dial-current-pulse{0%, 100%{opacity:.3;transform:scale(1)}50%{opacity:.7;transform:scale(1.08)}}.landing-now__glyph{color:var(--color-accent-primary);margin-bottom:.5rem;line-height:1;display:inline-flex}.landing-now__glyph svg{width:clamp(4rem,10vw,6.5rem);height:auto;stroke-width:1.2}.landing-coda__quote{font-family:var(--font-family-citation);font-style:italic;font-size:clamp(1.25rem,2.4vw,1.75rem);line-height:1.5;max-width:38rem;color:var(--color-text);margin:0;position:relative;padding:0 0 0 1.25rem;border-left:3px solid var(--color-accent-primary);text-align:left;font-feature-settings:"kern" 1,"liga" 1;text-rendering:optimizeLegibility}.landing-coda__quote p{margin:0 0 1rem}.landing-coda__cite{display:block;font-family:ui-monospace,SFMono-Regular,Menlo,Consolas,monospace;font-style:normal;font-size:.75rem;font-weight:600;text-transform:uppercase;letter-spacing:.12em;color:var(--color-text-muted)}.landing-coda__desc{font-size:.9375rem;line-height:1.6;color:var(--color-text-muted);max-width:32rem;margin:0}.landing-coda__links{display:flex;gap:1.5rem;flex-wrap:wrap;justify-content:center;margin-top:.5rem}.landing-coda__link{display:inline-flex;align-items:center;gap:.5rem;color:var(--color-text-muted);font-family:var(--font-family-body);font-size:.875rem;font-weight:500;text-decoration:none;transition:color .2s ease}.landing-coda__link:hover,.landing-coda__link:focus-visible{color:var(--color-accent-primary);outline:none}.landing-section--question,.landing-section--arc,.landing-section--now,.landing-section--paths{background:var(--color-background)}.landing-section--hypothesis,.landing-section--clock,.landing-section--method,.landing-section--coda{background:var(--color-background-secondary)}.landing-section--question,.landing-section--video{background:#0a0a0a}.read__paths{display:grid;grid-template-columns:repeat(3, minmax(0, 1fr));gap:1.5rem;margin:0 auto}@media (max-width: 900px){.read__paths{grid-template-columns:1fr;gap:1rem}}.keyboard-shortcuts-modal,.highlight-share,.glossary-tooltip,.offline-indicator,.reading-list-panel,.pwa-install-banner,.pwa-update-banner{position:fixed;opacity:0;visibility:hidden}.reading-progress,.to-top,.search-fab,.reader-fab{opacity:0}html:not(.css-loaded) .translation-notice,html:not(.css-loaded) .footer,html:not(.css-loaded) .snackbar-container,html:not(.css-loaded) .navbar-dropdown,html:not(.css-loaded) .navbar__pane--lang,html:not(.css-loaded) .navbar__pane--main,html:not(.css-loaded) .read__paths,html:not(.css-loaded) .claim-badges,html:not(.css-loaded) .reader-fab-toc{opacity:0;visibility:hidden}</style><link rel="preload" href="https://www.wheelofheaven.world/main.css?v=023a30d3d45ddc57f7464fb6bb97974f828d84f6" as="style" onload="this.onload=null;this.rel='stylesheet'"><noscript><link rel="stylesheet" href="https://www.wheelofheaven.world/main.css?v=023a30d3d45ddc57f7464fb6bb97974f828d84f6"></noscript>
 
 
         <!-- Language Alternates -->
@@ -555,6 +555,13 @@
         
     
 
+    
+        
+            
+        
+        
+<link rel="alternate" hreflang="he" href="https://www.wheelofheaven.world/he/faq/">
+        
     
 
 
@@ -2397,19 +2404,19 @@
     
     {
       "@type": "Question",
-      "name": "Wheel of Heaven 是什么？",
+      "name": "什么是天之轮（Wheel of Heaven）？",
       "acceptedAnswer": {
         "@type": "Answer",
-        "text": "Wheel of Heaven 是通过一条工作假设来阅读古代世界创造传统的长读：希伯来圣经称为 埃洛希姆 的存在——一个复数名词，被翻译为单数的「上帝」所遮蔽——是来自他处的一支小型且高度发达的人类文明；他们来到这里，准备了这颗行星，设计了地球上的生命，并在宗教文本中留下了记录。\n这一阅读跨越岁差周期的十二个时代：从大约两万两千年前项目的开端起，穿过当下的时代，直至下一个「大年」所开启的悠长未来。本站开源、多语言、免费。它的构造允许被检验。"
+        "text": "天之轮是对古代世界各创世传统的一次长篇阅读，所采用的是单一的工作假设：希伯来圣经称为 Elohim 的存在——一个复数名词，被翻译伪装成单数的\"上帝\"——是一个来自他处的小型先进人类文明，他们来到此地，整备了这颗行星，设计了地球上的生命，并在宗教文本中留下了记录。\n这一阅读贯穿岁差周期的十二个时代，从大约两万两千年前项目的开端，到当前的时代，并延伸至下一个大年正在开启的漫长未来。本站为开源、多语种、免费。它的构建是为了被检验。"
       }
     },
     
     {
       "@type": "Question",
-      "name": "工作假设是什么？",
+      "name": "什么是工作假设？",
       "acceptedAnswer": {
         "@type": "Answer",
-        "text": "该假设由五个相互关联的部分组成：\n\n创世记中的 埃洛希姆 是字面上的复数。 希伯来语原词在语法上为复数名词。语料库按其字面来读——创造人类的不是单一神祇，而是一群存在者。\n埃洛希姆是一支高度发达的人类文明，而非超自然存在。 他们在生物学上与人类相亲缘，技术上远超人类，并在地球上从事一项有意识的科学计划。\n我们作为「宗教」继承下来的，是对他们工作的长久记忆。 人类的宗教传统以压缩并常被神秘化的形式，保存着关于埃洛希姆文明在约两万两千年间介入的一份准确历史证词。\n这一工作沿岁差周期组织。 地球自转轴约 25,920 年一周的缓慢摆动，是记录该计划的日历。十二个约 2,160 年的时代构成「大年」。\n当前时代是揭示的时代。 始于 1950 年的水瓶时代，是这段长久记忆在科学上有能力评估它的人类面前变得可读的时代。\n\n该假设提供出来，是为了被试验、评估、与其他选项相对照——并不作为既定事实而被断言。"
+        "text": "该假设由五个相互关联的部分组成：\n\n《创世记》中的 Elohim 是字面上的复数。 这个希伯来词在语法上是复数名词。本文集按字面意义阅读它——创造人类的存在是一群存在，而非单一神祇。\n耶洛因是先进的人类文明，而非超自然存在。 他们在生物学上与人类相关，在技术上远远领先，并在地球上从事一项有意识的科学项目。\n我们作为宗教所继承的，是对他们工作的长久记忆。 人类的宗教传统以压缩且常常被神秘化的形式，保存了耶洛因文明在约两万两千年中的干预的准确历史记录。\n工作沿岁差周期组织。 地球轴的约 25,920 年缓慢摆动，是记录这一项目的历法。每约 2,160 年一个的十二个时代细分了大年。\n当前时代是揭示的时代。 始于 1950 年的水瓶时代，是这一长久记忆对一个有科学能力评估它的人类变得可读的时代。\n\n该假设被提出，是为了被尝试、评估，并与替代方案对照检验。它并非作为既定事实被断言。"
       }
     },
     
@@ -2418,7 +2425,7 @@
       "name": "这是谁写的？",
       "acceptedAnswer": {
         "@type": "Answer",
-        "text": "本项目由扎拉·钦斯弗斯撰写。作为一位独立读者与雷尔派人士，她花了十五年来梳理语料库所呈现的这一框架。项目以一位作者的第一人称单数声音进行，并向合作者开放。欢迎通过 GitHub 投稿。"
+        "text": "项目由 Zara Zinsfuss 撰写，他是一名独立的阅读者和雷尔教徒，已用十五年时间梳理本文集所呈现的框架。项目以一位作者的第一人称单数声音写作，并对协作者开放。欢迎通过 GitHub 贡献。"
       }
     },
     
@@ -2427,43 +2434,43 @@
       "name": "这是一种宗教吗？",
       "acceptedAnswer": {
         "@type": "Answer",
-        "text": "不是。语料库把宗教文本作为某一高度发达文明所记录工作之历史证词来阅读，而不是作为崇拜对象。项目不要求信仰，不设崇拜活动，也不提供属灵权威。它是应用于宗教文本的一种解读框架，而非宗教本身的框架。\n也就是说，项目同样认真地对待宗教文本——某种意义上比世俗学术更认真，把它们的历史性主张视为值得评估，而不是直接打发。项目也并非反宗教。它并不主张宗教传统是错的，而是主张其核心的历史主张是准确的，而其超自然的外壳是后来的神秘化。"
+        "text": "不是。本文集将宗教文本视为一个先进文明已记录工作的历史证词，而非崇拜对象。项目不要求信仰、没有礼拜实践，也不提供任何属灵权威。它是应用于宗教文本的一种诠释框架，而非宗教框架本身。\n话虽如此，项目认真对待宗教文本——在某些方面，比世俗学术界通常更为认真，因为它将其历史主张视为值得评估而非加以否定。项目也不反宗教。它不主张宗教传统是错误的；它主张其核心历史主张是准确的，而其超自然框架是后来的神秘化。"
       }
     },
     
     {
       "@type": "Question",
-      "name": "这是经过同行评议的学术研究吗？",
+      "name": "这是经过同行评审的学术研究吗？",
       "acceptedAnswer": {
         "@type": "Answer",
-        "text": "不是，项目也不作此主张。Wheel of Heaven 是一位独立作者所写的长篇论说项目，并非学术出版物。当项目与当代学术——圣经研究、遗传学、天体生物学、考古天文学等——发生关系时，它以一位公开文献的认真读者的身份进行，并以科学自身的术语接受科学。\n项目的认识论纪律是内在的，而非建制性的：每一页都把其主要论断标注为直接（来源所断言）、推断（学术合理推论）或思辨（项目作为解释性综合所提出）。读者被邀请把项目的具体论断与其他选项进行评估。"
+        "text": "不是，项目也并未如此声称。天之轮是由一位独立作者进行的长篇文章项目，而非学术出版物。当项目涉及当代学术——圣经研究、遗传学、天体生物学、考古天文学等领域——时，它是作为已发表文献的严肃读者参与的，以科学自身的方式对待之。\n项目的认识论纪律是内部的而非制度性的：每一页都将其主要主张标记为直接（来源所主张的）、推断（学术合理得出的结论）或推测（项目作为诠释综合所提出的）。读者被邀请将项目的具体主张与替代方案进行评估对比。"
       }
     },
     
     {
       "@type": "Question",
-      "name": "我为什么要认真对待这个？",
+      "name": "为什么我应该认真对待它？",
       "acceptedAnswer": {
         "@type": "Answer",
-        "text": "那是恰当的提问，项目唯一诚实的回答是：试试这个透镜。语料库并不要求读者先行同意。它提供了一个具体的解读框架，谨慎地应用于可得的证据，并以明确的标识区分「来源主张」「推断」与「思辨」。读者被邀请走入其中、评估该框架所产生的诸种解读，并判断它们是否能与其他选项相抗衡。\n项目的序言这样说：「语料库是一扇门。读者根据他在门那边所发现的东西，或穿过、或不穿过。」\n如果在诚实的接触之后，该框架并不值得你继续投入注意——那也是公正的结果。项目并不投入于说服每一位读者；它投入于：让那些愿意认真阅读的读者读得通。"
+        "text": "这是个正确的问题，而项目唯一诚实的回答是：试试这副镜片。本文集并未事先要求赞同。它提供的是一个具体的诠释框架，被审慎地应用于可用证据，并以明确的标签区分来源主张、推断与推测。读者被邀请走过去，评估这一框架所产生的解读，并判断它们是否能在与替代方案的对照中立得住。\n项目的序言这样说：\"这部文集是一扇门。读者依据其在门后所发现的，走过去，或不走过去。\"\n如果经过诚实的接触之后，框架未能赢得读者持续的关注，那是公正的结果。项目并不投身于说服每一位读者。它投身于对认真投入的读者保持可读性。"
       }
     },
     
     {
       "@type": "Question",
-      "name": "这与雷尔派有什么不同？",
+      "name": "这与雷尔运动有何不同？",
       "acceptedAnswer": {
         "@type": "Answer",
-        "text": "Wheel of Heaven 以雷尔派的原始材料——主要是 讲述真相的书（克劳德·沃利隆，1974年）及其后续卷——作为其主要解读透镜。在这个意义上，项目是雷尔派的下游。\n但项目并非雷尔派运动的出版物。语料库实质上超出了雷尔派的标准制度化自我呈现：岁差框架、与跨文化神话学的整合、对特定圣经段落的技术性解读、对联盟的政治-结构性重构、与当代基因组学与天体生物学的对话——这些都不是标准雷尔派制度化材料的特征。本项目并未获雷尔派运动正式背书，也可能永不获得。语料库偏离标准雷尔派表述之处，皆有明示理由。\n作者是雷尔派人士。项目则不是。"
+        "text": "天之轮以雷尔派的源材料——主要是《讲述真相之书》（克洛德·沃里隆，1974 年）及后续卷——作为其主要诠释镜片。在这个意义上，项目是雷尔派的下游。\n但项目并非雷尔运动的出版物。本文集在标准雷尔派自我呈现之外大幅延伸：岁差框架、与跨文化神话的整合、对具体圣经段落的技术性阅读、对联盟政治结构的重建、对当代基因组学与天体生物学的参与——这些都不是标准雷尔派机构材料的特征。项目未经雷尔运动认可，也可能永远不会被认可。当本文集偏离标准雷尔派表述时，会附以明确的理由。\n作者是雷尔教徒。项目不是。"
       }
     },
     
     {
       "@type": "Question",
-      "name": "这与「古代宇航员」学说有什么不同？",
+      "name": "这与古代宇航员理论有何不同？",
       "acceptedAnswer": {
         "@type": "Answer",
-        "text": "项目共享「古代宇航员」传统的根本主张——古代宗教与神话材料保存着关于先进文明干预的准确证词——但在「源头规训」与诸具体解读上的承诺有明显差异。\n项目并非西钦衍生作品。它不接受 Nibiru 框架、Anunnaki 身份认定，亦不接受西钦《地球编年史》的具体编年主张。它也不是冯·丹尼肯衍生作品，尽管 Erich von Däniken 的《众神的战车？》（1968 年）是更广义框架的早期普及者。\n项目的具体框架——以雷尔派为源头、按岁差组织、内部受源头规训——把它与更广义的古代宇航员传统区分开来。项目会就该传统的具体论点按其优劣进行讨论，但不背书该传统的整体。"
+        "text": "项目与古代宇航员传统共享其基础主张——即古代宗教和神话材料保存了对先进文明干预的准确证词——但在来源纪律和具体诠释承诺上有显著差异。\n项目并非西琴衍生。它不接受尼比鲁框架、阿努纳奇身份认定，也不接受撒迦利亚·西琴《地球编年史》系列的具体年代主张。它也并非冯·丹尼肯衍生，尽管埃里希·冯·丹尼肯的《众神之车？》（1968 年）是普及更广框架的先驱。\n项目的具体框架——以雷尔派来源驱动、按岁差组织、内部来源纪律严明——使其与更广泛的古代宇航员传统相区别。项目就该传统的具体论点凭其本身价值参与讨论，而不为整个传统背书。"
       }
     },
     
@@ -2472,34 +2479,34 @@
       "name": "你们如何处理证据问题？",
       "acceptedAnswer": {
         "@type": "Answer",
-        "text": "认真且公开。语料库使用三类证据：\n文本证据——宗教与神话来源实际上说了什么，尽可能贴近原文阅读。语料库最有力的材料是解读性的：当框架被应用于某一具体的希伯来语段落时，它是否产生比其他选项更连贯的解读？\n比较证据——独立传统之间反复出现的图式。当美索不达米亚、圣经、吠陀与中美洲来源保留着结构相似的叙述时，这种反复本身就是值得审视的证据。\n科学证据——当代遗传学、天体生物学、行星科学与合成生物学就该框架主张的技术可行性提出什么。语料库在这里的论证是条件性的：如果 框架成立，科学应当呈现某种特定面貌；语料库追踪科学实际情况与此的契合程度。\n项目并不主张确定的证明。它主张的是一个连贯且具解释力的框架，在可得证据之上诚实地加以应用——读者被邀请来评估它。"
+        "text": "审慎而明确地处理。本文集使用三种证据：\n文本证据——宗教与神话来源的实际表述，在可能的情况下贴近原语言阅读。本文集最有力的材料是诠释性的：当框架应用于具体的希伯来段落时，是否产生比替代方案更连贯的解读？\n比较证据——跨独立传统的重复模式。当美索不达米亚、圣经、吠陀和中美洲的来源保存结构相似的记述时，这种重复是值得审视的证据。\n科学证据——当代遗传学、天体生物学、行星科学和合成生物学，对框架主张技术可行性的论述。本文集在此的论证是条件性的：如果框架正确，科学应当呈现特定面貌；本文集追踪科学实际呈现的吻合程度。\n项目并不声称结论性的证明。它声称的是一个连贯且具有解释力的框架，被诚实地应用于可用证据，并邀请读者评估之。"
       }
     },
     
     {
       "@type": "Question",
-      "name": "用平易的话说，岁差周期是什么？",
+      "name": "用通俗语言来说，岁差周期是什么？",
       "acceptedAnswer": {
         "@type": "Answer",
-        "text": "地球自转轴倾斜约 23.5°，且在空间中并不指向固定方向。像陀螺一样，地轴在天空中缓慢画出一个圆，约每 25,920 年完成一圈。这一运动称为 分点岁差。\n实际后果是：春分日太阳背后所升起的星座，沿黄道带缓慢向西移动。两千年前是白羊；今天是双鱼；很快将是水瓶。这一周期约每 26,000 年重复一次。\n按黄道带的十二星座来切分，这一周期得出每段约 2,160 年的「岁差时代」。语料库把这些时代用作其编年框架。详见 Wiki 词条岁差运动。"
+        "text": "地球轴倾斜约 23.5°，并且并不指向空间中某个固定方向。像一个旋转的陀螺，地轴在天空中缓慢画出一个圆，每约 25,920 年完成一次完整的循环。这一运动被称为二分点的岁差。\n实际后果是：春分时升起在太阳背后的星座，沿黄道带缓慢向西移动。两千年前那是白羊座；今天是双鱼座；不久将是水瓶座。该循环每约 26,000 年重复一次。\n按黄道带的十二星座划分，该循环产生每个约 2,160 年的岁差时代。本文集将这些时代用作其年代学框架。详情请参见 岁差 词条。"
       }
     },
     
     {
       "@type": "Question",
-      "name": "十二个时代是哪些？它们从何而来？",
+      "name": "十二个时代是哪些，它们从何而来？",
       "acceptedAnswer": {
         "@type": "Answer",
-        "text": "十二个岁差时代以黄道带星座命名。春分点以与黄道顺序相反的方向逐次西移。语料库的工作年代：\n\n摩羯 — –21,810 至 –19,650\n射手 — –19,650 至 –17,490\n天蝎 — –17,490 至 –15,330\n天秤 — –15,330 至 –13,170\n处女 — –13,170 至 –11,010\n狮子 — –11,010 至 –8,850\n巨蟹 — –8,850 至 –6,690\n双子 — –6,690 至 –4,530\n金牛 — –4,530 至 –2,370\n白羊 — –2,370 至 –210\n双鱼 — –210 至 1,950\n水瓶 — 1,950 至 4,110\n\n该框架借鉴乔治奥·德·桑蒂利亚纳与赫塔·冯·德钦德的岁差神话学研究（Hamlet's Mill，1969 年）。他们重构了古代世界如何把岁差周期编码进许多独立传统的宗教与神话符号之中。\n各时代之间的边界以黄道带的等分来设定（IAU 的天文星座边界并不把黄道等分）。本年代是语料库的工作年代，由分点在等分十二宫上的天文位置推算而得。"
+        "text": "十二个岁差时代以黄道星座命名。春分点以与黄道相反的顺序向西穿过它们。本文集的工作日期：\n\n摩羯座——前 21,810 至前 19,650 年\n射手座——前 19,650 至前 17,490 年\n天蝎座——前 17,490 至前 15,330 年\n天秤座——前 15,330 至前 13,170 年\n处女座——前 13,170 至前 11,010 年\n狮子座——前 11,010 至前 8,850 年\n巨蟹座——前 8,850 至前 6,690 年\n双子座——前 6,690 至前 4,530 年\n金牛座——前 4,530 至前 2,370 年\n白羊座——前 2,370 至前 210 年\n双鱼座——前 210 至公元 1,950 年\n水瓶座——1,950 至 4,110 年\n\n该框架借鉴了乔治·德·桑提拉纳与赫尔塔·冯·德兴德的岁差神话研究（《哈姆雷特之磨》，1969 年），他们重建了古代世界如何在许多独立传统的宗教与神话符号中编码岁差周期。\n时代之间的边界由黄道带的等分划定（国际天文学联合会的天文星座边界并不将黄道平均划分）。这些日期是本文集的工作年表，由对等号黄道带的春分点位置进行天文学计算所得。"
       }
     },
     
     {
       "@type": "Question",
-      "name": "「埃洛希姆」是什么意思？项目为什么把它读作复数？",
+      "name": "\"Elohim\"是什么意思，项目为何将其读作复数？",
       "acceptedAnswer": {
         "@type": "Answer",
-        "text": "埃洛希姆（אֱלֹהִים）是常用圣经译作「上帝」的那个希伯来词。从语法上看，它是一个复数名词——后缀 -im 是希伯来语标准的复数标记，与另一些阳性名词的复数化（基路伯/基路冰，拿非/拿非利）一致。\n通常的基督教与犹太教神学把这个复数读作「庄严复数」（单数神被以复数加以呼唤，以示崇高，类似王室的「我们」），或读作「三位一体」的占位符。语料库照字面来读：复数的 埃洛希姆 指向多位存在。\n希伯来文本的若干特征支持这一读法：\n\n创世记 1:26 使用第一人称复数动词：na'aseh adam be-tsalmenu kidmutenu——「让 我们 按照 我们 的形象、我们 的样式造人。」\n创世记 3:22 使用相似的复数：hen ha-adam hayah ke-achad mimennu——「看哪，人已成为 我们 中的一员。」\n创世记 6:1–4 引入 benei ha-Elohim——「众埃洛希姆的儿子们」——作为有别于人类的特殊范畴。\n文本在不同段落中区分 YHWH Elohim（复数范畴中被命名的某位特定存在）与单独的 Elohim（整个范畴）。\n\n详见 Wiki 词条埃洛希姆。"
+        "text": "Elohim（אֱלֹהִים）是传统圣经译作\"上帝\"的希伯来词。从语法上看，它是复数名词——-im 后缀是标准的希伯来语复数标记，与使其他阳性名词复数化的后缀相同（cherub / cherubim，Nephil / Nephilim）。\n传统的基督教和犹太教神学将该复数解读为\"庄严复数\"（一位神祇以复数表述以示宏伟，类似于王室的\"我们\"）或作为三位一体的占位语。本文集按字面意义阅读它：复数 Elohim 指多位存在。\n希伯来文本的若干特征支持这一阅读：\n\n创世记 1:26 使用第一人称复数动词：na'aseh adam be-tsalmenu kidmutenu——\"让我们按我们的形象、依我们的样式造人。\"\n创世记 3:22 使用类似的复数：hen ha-adam hayah ke-achad mimennu——\"看哪，那人已经像我们中的一个了。\"\n创世记 6:1–4 引入了 benei ha-Elohim——\"耶洛因的众子\"——作为不同于人类的特定类别存在。\n文本在不同段落中将 YHWH Elohim（复数类别中一个具名的具体形象）与单独的 Elohim（类别本身）相区分。\n\n详情请参见 耶洛因 词条。"
       }
     },
     
@@ -2508,7 +2515,7 @@
       "name": "我们现在处于哪个时代？",
       "acceptedAnswer": {
         "@type": "Answer",
-        "text": "按语料库的工作年代，处于水瓶时代。该时代约始于 1950 年，将持续接下来的 ~2,160 年。语料库以最字面的方式阅读水瓶座的「持水者」：被容留之物被倾倒出来的时代。\n语料库视为水瓶时代开启之标志的具体事件：1945 年的核门槛、1948 年以色列的复立、1969 年 Hamlet's Mill 的出版、1973 年沃利隆接触、2003 年人类基因组计划的完成，以及合成生物学与系外行星天文学的持续成熟。\n完整论述见水瓶时代一章。"
+        "text": "按本文集的工作年表，是水瓶时代。该时代开启于 1950 年前后，将延续未来约 2,160 年。本文集在最字面的意义上阅读水瓶的持水者：所容纳之物被倾倒而出的时代。\n本文集所识别的标志水瓶时代开启的具体事件：1945 年的核门槛、1948 年以色列的复建、1969 年《哈姆雷特之磨》的出版、1973 年的沃里隆接触、2003 年人类基因组计划的完成，以及合成生物学和系外行星天文学的持续成熟。\n完整论述请参见 水瓶时代 章节。"
       }
     },
     
@@ -2517,7 +2524,7 @@
       "name": "项目对进化论的立场是什么？",
       "acceptedAnswer": {
         "@type": "Answer",
-        "text": "语料库并不否定作为「生物随时间变化的描述」的进化。它否定的是这样一种主张：单凭进化、不受引导，便能解释生命与人类的起源。\n按语料库的读法，化石记录中的主要形态学过渡，是埃洛希姆文明所开展的设计-迭代阶段；每个设计阶段内部更小的进化变化，则按惯常机制（突变、选择、漂变）发生。某些过渡的表观突然性——寒武纪大爆发、智人 自先前的人科形态中迅速出现——正是设计-迭代计划所会产生的样子。\n项目接受地球约 45 亿年的地质年代，并非「年轻地球」框架。埃洛希姆计划的起点定在距今约 21,810 年的摩羯时代到来，而非这颗行星的地质形成。"
+        "text": "本文集并不拒绝进化论作为对生物随时间变化的描述。它拒绝的是这样的主张：单凭进化、未经引导，足以解释生命和人类的起源。\n按本文集的阅读，化石记录中主要的形态学转变是由耶洛因文明所进行的设计迭代阶段，而每个设计阶段内部的较小进化变化则通过常规机制（突变、选择、漂变）发生。某些转变的明显突然性——寒武纪大爆发、智人从先前人科形式的迅速涌现——正是设计迭代项目所会产生的样貌。\n项目接受地球约 45 亿年的地质学定年，并非青年地球框架。耶洛因项目的年代是从约 21,810 年前摩羯时代的抵达计起，而非从这颗行星的地质形成计起。"
       }
     },
     
@@ -2526,7 +2533,7 @@
       "name": "项目对耶稣的立场是什么？",
       "acceptedAnswer": {
         "@type": "Answer",
-        "text": "语料库把耶稣视为一位历史人物，其传道事工对应于白羊向双鱼的岁差过渡。雷尔派源材料对耶稣的本质与起源有具体主张（即耶稣是一位埃洛哈与一位人类女性的后裔，与创世记 6 章的 benei ha-Elohim 模式相承）；语料库把这些主张作为源系统内容加以处理。\n语料库并不在传统基督教意义上把耶稣视为神圣人物，亦不把他视为早期教会的虚构发明。这位历史人物被读作来自埃洛希姆联盟在双鱼时代的一位使者；其教导与生平在其后被由其运动所生发的制度化基督教传统神秘化。\n更详细的论述见白羊时代与双鱼时代两章。"
+        "text": "本文集将耶稣视为历史人物，其传道事工对应于从白羊到双鱼的岁差过渡。雷尔派来源对耶稣的本质和起源有具体主张（作为一位 Eloha 与一位人类女子的后代，与创世记 6 章 benei ha-Elohim 的模式相延续）；本文集作为来源族群的内容来参与这些主张。\n本文集不将耶稣视为传统基督教意义上的神性形象，也不视为早期教会的虚构发明。这一历史人物被读作来自耶洛因联盟的双鱼时代信使，其教导与生平后来被从其运动中兴起的体制基督教传统所神秘化。\n更长篇的论述请参见 白羊时代 和 双鱼时代 章节。"
       }
     },
     
@@ -2535,25 +2542,25 @@
       "name": "项目对其他宗教的立场是什么？",
       "acceptedAnswer": {
         "@type": "Answer",
-        "text": "语料库在其比较性工作中，与所有主要世界宗教进行对接，并以它们各自的语汇处理它们，而不是将其视为亚伯拉罕系框架的变体。吠陀与印度教传统、古典佛教与大乘佛教、道教、美洲原住民传统、澳大利亚原住民的「梦境」等——在语料库的读法中——以不同的文化与神学语汇保留着同一底层叙事的不同碎片。\n语料库不把这些传统压平为彼此。共享母题不证明共同起源；平行并非同一。传统间的差异得到保留与对话。比较工作仍在进行中，对具体传统的处理在不同章节中详略不一。\n伊斯兰传统主要在双鱼时代一章中加以处理，《古兰经》的启示被作为该时代联盟「分布式先知」策略的一部分来阅读。"
+        "text": "本文集将所有主要世界宗教作为其比较工作的一部分加以参与，按其各自的术语对待，而非作为亚伯拉罕框架的变体。吠陀和印度教传统、古典与大乘佛教、道教、美洲原住民传统、澳大利亚原住民的\"梦时\"传统等等，按本文集的阅读，都以不同的文化与神学词汇保存着同一基础叙述的片段。\n本文集并不将这些传统压扁互融。共有的主题并非共同起源的证明；相似并非同一。传统之间的差异被保留并加以讨论。比较工作仍在进行中，对具体传统的处理在某些章节中比其他章节更为成熟。\n伊斯兰传统主要在双鱼时代章节中得到讨论，《古兰经》的启示被读作那一时代联盟分布式先知策略的一部分。"
       }
     },
     
     {
       "@type": "Question",
-      "name": "项目对未来作出任何预测吗？",
+      "name": "项目是否对未来作出任何预测？",
       "acceptedAnswer": {
         "@type": "Answer",
-        "text": "语料库的框架更多暗示一种总体走向，而不是带有具体日期的预测。水瓶时代被读作渐进揭示的时代——长程历史记录变得日益可读的过程，伴随着人类向自身创造性能力的成熟。在接下来的 ~2,160 年里，框架预期：合成生物学持续向埃洛希姆所具有的那种设计能力成熟；系外行星持续被发现，并可能侦测到生物特征或技术特征；宗教传统与科学传统持续整合；以及在第二个「大年」中，人类终将自身成为一个创造性文明。\n语料库不就「接触」、「揭示事件」或末世场景给出具体日期的预测。框架是对一条长弧的描述，而非对具体事件的预言。"
+        "text": "本文集的框架隐含了一种总体走向，而非具体的标日预测。水瓶时代被读作渐进揭示的时代——长久历史记录逐步变得可读，并伴随着人类朝向自身创造能力的成熟。在未来约 2,160 年间，该框架预期：合成生物学持续朝着耶洛因所拥有的那种设计能力成熟、系外行星持续被发现并可能检测到生物特征或技术特征、宗教与科学传统持续整合，最终人类自身在第二个大年中接近成为一个创造文明。\n本文集不就接触、揭示事件或末世情景作出具体的标日预测。该框架是对一段长弧的描述，而非对具体事件的预测。"
       }
     },
     
     {
       "@type": "Question",
-      "name": "项目依赖哪些来源？",
+      "name": "项目借鉴哪些来源？",
       "acceptedAnswer": {
         "@type": "Answer",
-        "text": "语料库依赖多个来源家族，并在其中明确划分层级：\n主要：雷尔派源材料，主要是 讲述真相的书（沃利隆，1974 年）及其后续卷。\n次要：岁差神话学传统，基础文献是乔治奥·德·桑蒂利亚纳与赫塔·冯·德钦德的 Hamlet's Mill（1969 年）。\n第三层：让·桑迪 1968–1972 年对圣经材料作为外星活动记录的重读（La Lune, clé de la Bible；Les Dieux nous sont nés；L'Ère du Verseau）。\n比较层：圣经、美索不达米亚、吠陀、中美洲及其他一手宗教与神话来源，尽可能阅读其原文。\n接触但不背书：更广义的古代宇航员文献（冯·丹尼肯、西钦、汉考克等），就具体论点选择性接触。\n以其自身术语对待：圣经学、遗传学、天体生物学、考古天文学与合成生物学等领域的当代同行评议学术。\n完整的来源版图见图书馆与资源两节。"
+        "text": "本文集借鉴多个来源族群，并在其间设置明确的层级优先：\n主要：雷尔派源材料，主要是《讲述真相之书》（沃里隆，1974 年）及后续卷。\n次要：岁差神话传统，奠基性的乔治·德·桑提拉纳与赫尔塔·冯·德兴德的《哈姆雷特之磨》（1969 年）。\n第三层：让·桑迪 1968–1972 年对圣经材料作为外星活动记录的重新诠释（La Lune, clé de la Bible；Les Dieux nous sont nés；L'Ère du Verseau）。\n比较：圣经、美索不达米亚、吠陀、中美洲及其他原始宗教与神话来源，在可能的情况下以其原语言阅读。\n参与但不背书：更广泛的古代宇航员文献（冯·丹尼肯、西琴、汉考克及其他），就具体论点选择性参与。\n按其自身条件参与：圣经研究、遗传学、天体生物学、考古天文学和合成生物学中的当代同行评审学术。\n完整的来源景观请参见 文库 和 资源 部分。"
       }
     },
     
@@ -2562,52 +2569,52 @@
       "name": "项目如何处理不确定性与分歧？",
       "acceptedAnswer": {
         "@type": "Answer",
-        "text": "直接处理。项目的编辑风格指南明确要求：不确定性必须被命名，而不是被遮蔽：\n\n「该日期存在争议。」\n「这一年代是传统的，而非学术上的。」\n「这一身份认定是解读性的，源头中并未明示。」\n「此一平行具有暗示性，但并未在谱系学意义上被证明。」\n\n学界共识与语料库框架不一致的地方，语料库会直接处理这种不一致，命名替代性读法，并陈述语料库为何得出不同结论的具体推理。证据确实悬而未决的地方，语料库会直说。语料库在思辨的地方，也会直说。"
+        "text": "直接处理。项目的编辑风格指南明确要求不确定性被命名出来，而不是被隐藏：\n\n\"该日期存在争议。\"\n\"这一年表是传统而非学术性的。\"\n\"该认定是诠释性的，并未在来源中明示。\"\n\"该平行性具有暗示意味，但并非可证明的谱系关联。\"\n\n当学术共识与本文集的框架相分歧时，本文集直接讨论这一分歧，命名替代解读，并陈述本文集得出不同结论的具体推理。在证据确实开放之处，本文集明言之。在本文集进行推测之处，亦明言之。"
       }
     },
     
     {
       "@type": "Question",
-      "name": "页面徽章上的「直接」「推断」「思辨」分别是什么意思？",
+      "name": "页面徽章上的\"直接\"、\"推断\"和\"推测\"是什么意思？",
       "acceptedAnswer": {
         "@type": "Answer",
-        "text": "语料库的每一页都带有一个小徽章，表明该页主要论断的认知论地位：\n直接论断——源文本本身所断言的内容。*「创世记 1:26 写道『我们要按照我们的形象造人』。」*这是最可靠的论断；核实就是核对来源。\n推断论断——学术从源头中合理推出的结论。*「动词的复数形式表明存在多个施动者。」*这类论断涉及解读工作，但仍紧贴证据。\n思辨论断——项目作为解读性综合所提出的内容。*「创世记中复数的埃洛希姆，可以与雷尔派源材料所描述的那个小型文明加以同认。」*这是项目最具特色的贡献，也最有可能在未来被修订。\n徽章让读者能在「单项论断」的层级上调校信任。一个思辨性论断并不因为它是思辨的就错了；它被 标注为 思辨，是为了让读者知道按何种权重去掂量它。"
+        "text": "本文集的每一页都带有一个小徽章，标示其主要主张的认识论状态：\n直接主张——来源文本自身所主张的内容。\"创世记 1:26 写道'让我们按我们的形象造人。'\" 这些是最可靠的主张；核实只是对照来源的事。\n推断主张——学术合理地从来源得出的结论。\"复数动词形式表明多个施事者。\" 这些主张涉及诠释工作，但仍贴近证据。\n推测主张——项目作为诠释综合所提出的内容。\"创世记中复数的耶洛因可以与雷尔派来源所描述的小型文明相认定。\" 这些主张是项目的特色贡献，最容易被修订。\n徽章让读者在单个主张的层面校准信任。推测性的主张不因其推测而错；它被标记为推测，是为了让读者知道相应地予以权衡。"
       }
     },
     
     {
       "@type": "Question",
-      "name": "翻译是如何处理的？",
+      "name": "翻译如何处理？",
       "acceptedAnswer": {
         "@type": "Answer",
-        "text": "凡解读依赖于原语之处，语料库尽量贴近原语阅读。对希伯来圣经材料，语料库以马所拉文本为依据，把特定希伯来词以转写命名，并在翻译选择对解读有实质影响处加以讨论。对美索不达米亚材料，语料库依据标准的学术校订与译本（Foster、George、Lambert 等）。对其他源头家族，语料库使用所能取得的最佳学术校订本，并在使用时明示。\n本站本身以英文为源头，发布九种语言。凡翻译选择对解读有实质影响处，英文原文优先。"
+        "text": "当诠释依赖于此时，本文集贴近源语言阅读。对于希伯来圣经材料，本文集使用马所拉文本，以转写形式命名具体希伯来词汇，并在翻译选择实质性影响诠释时加以讨论。对于美索不达米亚材料，本文集依赖标准学术版本与译本（Foster、George、Lambert 等）。对于其他来源族群，本文集使用现有最佳学术版本，并在使用时予以明示。\n本站本身以九种语言发布，以英文为翻译的源。当翻译选择实质性影响诠释时，以英文原文为准。"
       }
     },
     
     {
       "@type": "Question",
-      "name": "怎样开始阅读？",
+      "name": "如何开始阅读？",
       "acceptedAnswer": {
         "@type": "Answer",
-        "text": "按深度递增有三种选项：\n\n阅读入门——本项目的简短概览，附三条阅读路径。\nWiki——从关键术语（埃洛希姆、岁差运动、世界纪元）开始，沿交叉链接前进。\n年表——长篇本，从序言开始，依次走过十二个时代。\n\n年表是最大的投入，也是最值得投入之处。"
+        "text": "三种深度递增的选项：\n\n阅读导览——项目的简短概览，含三条阅读路径。\n词条——从关键词条开始（耶洛因、岁差、世界时代），并沿交叉链接前行。\n时间线——长篇之书，从 序言 开始，并贯穿十二个时代。\n\n时间线是最大的投入，但也是最有回报的。"
       }
     },
     
     {
       "@type": "Question",
-      "name": "在哪里阅读原典？",
+      "name": "在哪里阅读源文本？",
       "acceptedAnswer": {
         "@type": "Answer",
-        "text": "图书馆版块收录语料库所读取的一手原典文本，并配有注释与背景。包括：\n\n讲述真相的书（沃利隆，1974 年）——雷尔派的奠基文本。\n创世记（希伯来文本与英语标准译本）。\n以诺书。\n埃努玛·埃利什。\n语料库引用的其他原典。\n\n对于语料库引用但未托管的外部原典，请参见资源版块。"
+        "text": "文库 部分托管本文集所引用的主要源文本，附有评注和上下文。包括：\n\n《讲述真相之书》（沃里隆，1974 年）——雷尔派的奠基文本。\n《创世记》（希伯来文本及标准英译本）。\n《以诺书》。\n《埃努玛·埃利什》。\n本文集所借鉴的其他主要来源。\n\n对于本文集所借鉴但未托管的外部源材料，请参见 资源 部分。"
       }
     },
     
     {
       "@type": "Question",
-      "name": "内容可以自由使用吗？",
+      "name": "内容可以免费使用吗？",
       "acceptedAnswer": {
         "@type": "Answer",
-        "text": "可以。Wheel of Heaven 的全部内容在 Creative Commons Zero (CC0-1.0) 之下被释放至公有领域。你可以无限制地阅读、分享、引用、翻译、在其上继续创作或再发布该内容。署名受欢迎，但并非必须。"
+        "text": "可以。所有天之轮内容根据 Creative Commons Zero（CC0-1.0） 发布到公共领域。你可以无限制地阅读、分享、引用、翻译、在其上构建或重新发布内容。署名受欢迎但非必需。"
       }
     },
     
@@ -2616,7 +2623,7 @@
       "name": "如何引用本项目？",
       "acceptedAnswer": {
         "@type": "Answer",
-        "text": "建议的引用格式：\n\nZinsfuss, Zara. Wheel of Heaven. wheelofheaven.world. 访问于 [日期]。\n\n针对具体页面，请附上页面标题与 URL：\n\nZinsfuss, Zara. 「摩羯时代」。Wheel of Heaven. https://www.wheelofheaven.world/zh/timeline/age-of-capricorn/. 访问于 [日期]。"
+        "text": "建议引用格式：\n\nZinsfuss, Zara. Wheel of Heaven. wheelofheaven.world. 访问于 [日期]。\n\n对于具体页面，附上页面标题和 URL：\n\nZinsfuss, Zara. \"Age of Capricorn.\"《Wheel of Heaven》. https://www.wheelofheaven.world/timeline/age-of-capricorn/. 访问于 [日期]。"
       }
     },
     
@@ -2625,34 +2632,34 @@
       "name": "如何贡献？",
       "acceptedAnswer": {
         "@type": "Answer",
-        "text": "几种方式：\n\n讨论与提问——GitHub Discussions 是本项目主要的公开论坛。\n翻译——本站以九种语言发布，欢迎额外的翻译协助。参见贡献。\n内容更正与建议——可在 GitHub 仓库开 Issue。\n代码与基础设施——本站开源，欢迎开发性的贡献。\n财务支持——通过 Open Collective。项目目前完全由自掏腰包维持；任何帮助都会被珍视。"
+        "text": "有多种方式：\n\n讨论与提问——GitHub Discussions 是项目的主要公共论坛。\n翻译——本站以九种语言发布，欢迎额外的翻译帮助。请参见 贡献指南，以及 翻译指南 了解工作流程和各语言规约。\n内容更正与建议——可在 GitHub 仓库 上开启 issue。关于如何撰写新条目（词条、文章、新闻快讯），请参见 开发者文档。\n代码与基础设施——本站开源，欢迎开发贡献。docs.wheelofheaven.world 上的 快速开始 让你在五分钟内得到本地预览。\n资金支持——通过 Open Collective。项目目前完全自费运作；帮助受到欢迎。"
       }
     },
     
     {
       "@type": "Question",
-      "name": "项目如何筹资？",
+      "name": "项目如何获得资金？",
       "acceptedAnswer": {
         "@type": "Answer",
-        "text": "迄今为止，完全由扎拉·钦斯弗斯自掏腰包。本项目独立写作，不投放广告，不出售任何东西，没有商业赞助。\n任何帮助都将被感激。通过 Open Collective 提供的自愿性捐助，将用于托管、基础设施与翻译工作——目前这些开支并无任何外部来源覆盖，全靠作者自身的时间与金钱。\nCC0 许可意味着，没有人——包括项目自身——能独占性地对内容进行商业化。"
+        "text": "到目前为止，完全由 Zara Zinsfuss 自掏腰包。项目由独立作者撰写，不投放广告，不出售任何东西，也没有商业赞助商。\n帮助会受到感谢。通过 Open Collective 的自愿捐助，将用于托管、基础设施和翻译工作——目前这些都仅由作者自己的时间和金钱承担。\nCC0 许可意味着内容不能被任何人——包括项目自身——独占商业化。"
       }
     },
     
     {
       "@type": "Question",
-      "name": "在哪里报告错误或表达异议？",
+      "name": "在哪里报告错误或分歧？",
       "acceptedAnswer": {
         "@type": "Answer",
-        "text": "根据情况，两个渠道：\n\n事实性错误、失效链接、技术问题：在 GitHub 仓库开 Issue。\n对解读的不同意见、替代读法、实质性的异议：在 GitHub Discussions 开主题。\n\n实质性的异议受欢迎。本项目持「工作假设」的立场，意味着它不投入于「为反驳任何批评而捍卫已有读法」，而是投入于：尽可能给出最强的读法，并在批评说得对的地方修订。"
+        "text": "两个渠道，取决于种类：\n\n事实错误、链接失效、技术问题：在 GitHub 仓库 上开启 issue。\n对诠释的分歧、替代解读、实质性挑战：在 GitHub Discussions 上开启一个讨论。\n\n实质性挑战受到欢迎。项目的工作假设立场意味着它并不投身于针对每一项批评为自己的解读辩护——它投身于产生尽可能强的解读，并在批评正确之处加以修订。"
       }
     },
     
     {
       "@type": "Question",
-      "name": "本站可用哪些语言？",
+      "name": "本站有哪些语言版本？",
       "acceptedAnswer": {
         "@type": "Answer",
-        "text": "九种：英语（原始语）、Deutsch、Français、Español、Русский、日本語、简体中文、繁體中文、한국어。译文从英文原文派生。欢迎更多语言加入；参见贡献。"
+        "text": "九种：English（主要）、Deutsch、Français、Español、Русский、日本語、简体中文、繁體中文、한국어。译文均派生自英文原文。欢迎额外的语言；请参见 贡献指南。"
       }
     },
     
@@ -2661,25 +2668,25 @@
       "name": "有可以加入的社区吗？",
       "acceptedAnswer": {
         "@type": "Answer",
-        "text": "有——项目社区托管在 GitHub Discussions，它作为项目的主要公开论坛，用于提问、讨论、贡献，以及与语料库的实质性互动。\n不存在正式的会员制，没有需要签署的信条，也不要求你认同项目的框架。社区向读者、怀疑者、贡献者，以及任何对语料库所触及之问题怀有严肃兴趣的人开放。"
+        "text": "有——项目的社区托管于 GitHub Discussions，它作为提问、讨论、贡献以及对本文集进行实质性接触的主要公共论坛。\n没有正式会员资格，没有要订立的信条，也不要求同意项目的框架。社区对读者、怀疑者、贡献者，以及任何对本文集所参与问题怀有严肃兴趣的人开放。"
       }
     },
     
     {
       "@type": "Question",
-      "name": "与机构化的雷尔派运动是什么关系？",
+      "name": "与体制性雷尔运动的关系如何？",
       "acceptedAnswer": {
         "@type": "Answer",
-        "text": "作者是雷尔派人士，但 Wheel of Heaven 并非雷尔派运动的出版物。本项目独立运作。雷尔派运动有其自身的机构结构、出版物与外联活动；Wheel of Heaven 不是其中任何一项。\n项目也并不与雷尔派运动对立。语料库以雷尔派源材料作为主要透镜并以严肃的态度对待之。语料库在标准雷尔派表述之外有所扩展之处，皆基于明示的理由——而不是对运动自身工作的批评。\n关于机构化的运动，更多背景见 Wiki 词条雷尔派。"
+        "text": "作者是一位雷尔教徒，但天之轮并非雷尔运动的出版物。项目独立运作。雷尔运动有自身的机构结构、出版物和外联活动；天之轮均非其中之一。\n项目对雷尔运动也并无任何对立。本文集以雷尔派源材料作为其主要镜片，并以认真态度予以参与。当本文集超出标准雷尔派表述时，附以明确理由，而非对运动自身工作的批评。\n关于体制性运动的更多内容，雷尔运动 词条提供了背景。"
       }
     },
     
     {
       "@type": "Question",
-      "name": "对贡献者有什么期待？",
+      "name": "对贡献者有何期待？",
       "acceptedAnswer": {
         "@type": "Answer",
-        "text": "贡献者应秉持善意参与，阅读行为准则，并遵循贡献指南。本项目欢迎实质性的参与——包括不同意见——并要求贡献者维持语料库自身依循的编辑标准：源头自觉、表达清晰、在认识论上谨慎。\n贡献者无需认同本项目的框架。批评性的参与受欢迎。"
+        "text": "贡献者应以诚意参与，阅读 行为准则，并遵循 贡献指南。项目欢迎实质性参与——包括分歧——并要求贡献者维持本文集所秉持的编辑标准：来源意识、清晰写作、认识论审慎。\n贡献者并非必须同意项目的框架。批判性参与受到欢迎。"
       }
     }
     
@@ -2782,26 +2789,26 @@
                 <div class="faq__list">
                     
                     <details class="faq__item" id="what-is-wheel-of-heaven">
-                        <summary class="faq__question">Wheel of Heaven 是什么？</summary>
+                        <summary class="faq__question">什么是天之轮（Wheel of Heaven）？</summary>
                         <div class="faq__answer">
-                            <p>Wheel of Heaven 是通过一条工作假设来阅读古代世界创造传统的长读：希伯来圣经称为 <em>埃洛希姆</em> 的存在——一个复数名词，被翻译为单数的「上帝」所遮蔽——是来自他处的一支小型且高度发达的人类文明；他们来到这里，准备了这颗行星，设计了地球上的生命，并在宗教文本中留下了记录。</p>
-<p>这一阅读跨越岁差周期的十二个时代：从大约两万两千年前项目的开端起，穿过当下的时代，直至下一个「大年」所开启的悠长未来。本站开源、多语言、免费。它的构造允许被检验。</p>
+                            <p>天之轮是对古代世界各创世传统的一次长篇阅读，所采用的是单一的工作假设：希伯来圣经称为 <em>Elohim</em> 的存在——一个复数名词，被翻译伪装成单数的"上帝"——是一个来自他处的小型先进人类文明，他们来到此地，整备了这颗行星，设计了地球上的生命，并在宗教文本中留下了记录。</p>
+<p>这一阅读贯穿岁差周期的十二个时代，从大约两万两千年前项目的开端，到当前的时代，并延伸至下一个大年正在开启的漫长未来。本站为开源、多语种、免费。它的构建是为了被检验。</p>
 
                         </div>
                     </details>
                     
                     <details class="faq__item" id="what-is-the-working-hypothesis">
-                        <summary class="faq__question">工作假设是什么？</summary>
+                        <summary class="faq__question">什么是工作假设？</summary>
                         <div class="faq__answer">
                             <p>该假设由五个相互关联的部分组成：</p>
 <ol>
-<li><strong>创世记中的 <em>埃洛希姆</em> 是字面上的复数。</strong> 希伯来语原词在语法上为复数名词。语料库按其字面来读——创造人类的不是单一神祇，而是一群存在者。</li>
-<li><strong>埃洛希姆是一支高度发达的人类文明，而非超自然存在。</strong> 他们在生物学上与人类相亲缘，技术上远超人类，并在地球上从事一项有意识的科学计划。</li>
-<li><strong>我们作为「宗教」继承下来的，是对他们工作的长久记忆。</strong> 人类的宗教传统以压缩并常被神秘化的形式，保存着关于埃洛希姆文明在约两万两千年间介入的一份准确历史证词。</li>
-<li><strong>这一工作沿岁差周期组织。</strong> 地球自转轴约 25,920 年一周的缓慢摆动，是记录该计划的日历。十二个约 2,160 年的时代构成「大年」。</li>
-<li><strong>当前时代是揭示的时代。</strong> 始于 1950 年的水瓶时代，是这段长久记忆在科学上有能力评估它的人类面前变得可读的时代。</li>
+<li><strong>《创世记》中的 <em>Elohim</em> 是字面上的复数。</strong> 这个希伯来词在语法上是复数名词。本文集按字面意义阅读它——创造人类的存在是一群存在，而非单一神祇。</li>
+<li><strong>耶洛因是先进的人类文明，而非超自然存在。</strong> 他们在生物学上与人类相关，在技术上远远领先，并在地球上从事一项有意识的科学项目。</li>
+<li><strong>我们作为宗教所继承的，是对他们工作的长久记忆。</strong> 人类的宗教传统以压缩且常常被神秘化的形式，保存了耶洛因文明在约两万两千年中的干预的准确历史记录。</li>
+<li><strong>工作沿岁差周期组织。</strong> 地球轴的约 25,920 年缓慢摆动，是记录这一项目的历法。每约 2,160 年一个的十二个时代细分了大年。</li>
+<li><strong>当前时代是揭示的时代。</strong> 始于 1950 年的水瓶时代，是这一长久记忆对一个有科学能力评估它的人类变得可读的时代。</li>
 </ol>
-<p>该假设提供出来，是为了被试验、评估、与其他选项相对照——并不作为既定事实而被断言。</p>
+<p>该假设被提出，是为了被尝试、评估，并与替代方案对照检验。它并非作为既定事实被断言。</p>
 
                         </div>
                     </details>
@@ -2809,7 +2816,7 @@
                     <details class="faq__item" id="who-wrote-this">
                         <summary class="faq__question">这是谁写的？</summary>
                         <div class="faq__answer">
-                            <p>本项目由扎拉·钦斯弗斯撰写。作为一位独立读者与雷尔派人士，她花了十五年来梳理语料库所呈现的这一框架。项目以一位作者的第一人称单数声音进行，并向合作者开放。欢迎通过 <a href="https://github.com/wheelofheaven">GitHub</a> 投稿。</p>
+                            <p>项目由 Zara Zinsfuss 撰写，他是一名独立的阅读者和雷尔教徒，已用十五年时间梳理本文集所呈现的框架。项目以一位作者的第一人称单数声音写作，并对协作者开放。欢迎通过 <a href="https://github.com/wheelofheaven">GitHub</a> 贡献。</p>
 
                         </div>
                     </details>
@@ -2817,47 +2824,47 @@
                     <details class="faq__item" id="is-this-a-religion">
                         <summary class="faq__question">这是一种宗教吗？</summary>
                         <div class="faq__answer">
-                            <p>不是。语料库把宗教文本作为某一高度发达文明所记录工作之历史证词来阅读，而不是作为崇拜对象。项目不要求信仰，不设崇拜活动，也不提供属灵权威。它是应用于宗教文本的一种解读框架，而非宗教本身的框架。</p>
-<p>也就是说，项目同样认真地对待宗教文本——某种意义上比世俗学术更认真，把它们的历史性主张视为值得评估，而不是直接打发。项目也并非反宗教。它并不主张宗教传统是错的，而是主张其核心的历史主张是准确的，而其超自然的外壳是后来的神秘化。</p>
+                            <p>不是。本文集将宗教文本视为一个先进文明已记录工作的历史证词，而非崇拜对象。项目不要求信仰、没有礼拜实践，也不提供任何属灵权威。它是应用于宗教文本的一种诠释框架，而非宗教框架本身。</p>
+<p>话虽如此，项目认真对待宗教文本——在某些方面，比世俗学术界通常更为认真，因为它将其历史主张视为值得评估而非加以否定。项目也不反宗教。它不主张宗教传统是错误的；它主张其核心历史主张是准确的，而其超自然框架是后来的神秘化。</p>
 
                         </div>
                     </details>
                     
                     <details class="faq__item" id="is-this-peer-reviewed">
-                        <summary class="faq__question">这是经过同行评议的学术研究吗？</summary>
+                        <summary class="faq__question">这是经过同行评审的学术研究吗？</summary>
                         <div class="faq__answer">
-                            <p>不是，项目也不作此主张。Wheel of Heaven 是一位独立作者所写的长篇论说项目，并非学术出版物。当项目与当代学术——圣经研究、遗传学、天体生物学、考古天文学等——发生关系时，它以一位公开文献的认真读者的身份进行，并以科学自身的术语接受科学。</p>
-<p>项目的认识论纪律是内在的，而非建制性的：每一页都把其主要论断标注为<strong>直接</strong>（来源所断言）、<strong>推断</strong>（学术合理推论）或<strong>思辨</strong>（项目作为解释性综合所提出）。读者被邀请把项目的具体论断与其他选项进行评估。</p>
+                            <p>不是，项目也并未如此声称。天之轮是由一位独立作者进行的长篇文章项目，而非学术出版物。当项目涉及当代学术——圣经研究、遗传学、天体生物学、考古天文学等领域——时，它是作为已发表文献的严肃读者参与的，以科学自身的方式对待之。</p>
+<p>项目的认识论纪律是内部的而非制度性的：每一页都将其主要主张标记为<strong>直接</strong>（来源所主张的）、<strong>推断</strong>（学术合理得出的结论）或<strong>推测</strong>（项目作为诠释综合所提出的）。读者被邀请将项目的具体主张与替代方案进行评估对比。</p>
 
                         </div>
                     </details>
                     
                     <details class="faq__item" id="why-take-this-seriously">
-                        <summary class="faq__question">我为什么要认真对待这个？</summary>
+                        <summary class="faq__question">为什么我应该认真对待它？</summary>
                         <div class="faq__answer">
-                            <p>那是恰当的提问，项目唯一诚实的回答是：试试这个透镜。语料库并不要求读者先行同意。它提供了一个具体的解读框架，谨慎地应用于可得的证据，并以明确的标识区分「来源主张」「推断」与「思辨」。读者被邀请走入其中、评估该框架所产生的诸种解读，并判断它们是否能与其他选项相抗衡。</p>
-<p>项目的序言这样说：<em>「语料库是一扇门。读者根据他在门那边所发现的东西，或穿过、或不穿过。」</em></p>
-<p>如果在诚实的接触之后，该框架并不值得你继续投入注意——那也是公正的结果。项目并不投入于说服每一位读者；它投入于：让那些愿意认真阅读的读者读得通。</p>
+                            <p>这是个正确的问题，而项目唯一诚实的回答是：试试这副镜片。本文集并未事先要求赞同。它提供的是一个具体的诠释框架，被审慎地应用于可用证据，并以明确的标签区分来源主张、推断与推测。读者被邀请走过去，评估这一框架所产生的解读，并判断它们是否能在与替代方案的对照中立得住。</p>
+<p>项目的序言这样说：<em>"这部文集是一扇门。读者依据其在门后所发现的，走过去，或不走过去。"</em></p>
+<p>如果经过诚实的接触之后，框架未能赢得读者持续的关注，那是公正的结果。项目并不投身于说服每一位读者。它投身于对认真投入的读者保持可读性。</p>
 
                         </div>
                     </details>
                     
                     <details class="faq__item" id="difference-from-raelism">
-                        <summary class="faq__question">这与雷尔派有什么不同？</summary>
+                        <summary class="faq__question">这与雷尔运动有何不同？</summary>
                         <div class="faq__answer">
-                            <p>Wheel of Heaven 以雷尔派的原始材料——主要是 <em>讲述真相的书</em>（克劳德·沃利隆，1974年）及其后续卷——作为其主要解读透镜。在这个意义上，项目是雷尔派的下游。</p>
-<p>但项目并非雷尔派运动的出版物。语料库实质上超出了雷尔派的标准制度化自我呈现：岁差框架、与跨文化神话学的整合、对特定圣经段落的技术性解读、对联盟的政治-结构性重构、与当代基因组学与天体生物学的对话——这些都不是标准雷尔派制度化材料的特征。本项目并未获雷尔派运动正式背书，也可能永不获得。语料库偏离标准雷尔派表述之处，皆有明示理由。</p>
-<p>作者是雷尔派人士。项目则不是。</p>
+                            <p>天之轮以雷尔派的源材料——主要是《讲述真相之书》（克洛德·沃里隆，1974 年）及后续卷——作为其主要诠释镜片。在这个意义上，项目是雷尔派的下游。</p>
+<p>但项目并非雷尔运动的出版物。本文集在标准雷尔派自我呈现之外大幅延伸：岁差框架、与跨文化神话的整合、对具体圣经段落的技术性阅读、对联盟政治结构的重建、对当代基因组学与天体生物学的参与——这些都不是标准雷尔派机构材料的特征。项目未经雷尔运动认可，也可能永远不会被认可。当本文集偏离标准雷尔派表述时，会附以明确的理由。</p>
+<p>作者是雷尔教徒。项目不是。</p>
 
                         </div>
                     </details>
                     
                     <details class="faq__item" id="difference-from-ancient-astronaut">
-                        <summary class="faq__question">这与「古代宇航员」学说有什么不同？</summary>
+                        <summary class="faq__question">这与古代宇航员理论有何不同？</summary>
                         <div class="faq__answer">
-                            <p>项目共享「古代宇航员」传统的根本主张——古代宗教与神话材料保存着关于先进文明干预的准确证词——但在「源头规训」与诸具体解读上的承诺有明显差异。</p>
-<p>项目并非西钦衍生作品。它不接受 Nibiru 框架、Anunnaki 身份认定，亦不接受西钦《地球编年史》的具体编年主张。它也不是冯·丹尼肯衍生作品，尽管 Erich von Däniken 的《众神的战车？》（1968 年）是更广义框架的早期普及者。</p>
-<p>项目的具体框架——以雷尔派为源头、按岁差组织、内部受源头规训——把它与更广义的古代宇航员传统区分开来。项目会就该传统的具体论点按其优劣进行讨论，但不背书该传统的整体。</p>
+                            <p>项目与古代宇航员传统共享其基础主张——即古代宗教和神话材料保存了对先进文明干预的准确证词——但在来源纪律和具体诠释承诺上有显著差异。</p>
+<p>项目并非西琴衍生。它不接受尼比鲁框架、阿努纳奇身份认定，也不接受撒迦利亚·西琴《地球编年史》系列的具体年代主张。它也并非冯·丹尼肯衍生，尽管埃里希·冯·丹尼肯的《众神之车？》（1968 年）是普及更广框架的先驱。</p>
+<p>项目的具体框架——以雷尔派来源驱动、按岁差组织、内部来源纪律严明——使其与更广泛的古代宇航员传统相区别。项目就该传统的具体论点凭其本身价值参与讨论，而不为整个传统背书。</p>
 
                         </div>
                     </details>
@@ -2865,11 +2872,11 @@
                     <details class="faq__item" id="question-of-evidence">
                         <summary class="faq__question">你们如何处理证据问题？</summary>
                         <div class="faq__answer">
-                            <p>认真且公开。语料库使用三类证据：</p>
-<p><strong>文本证据</strong>——宗教与神话来源实际上说了什么，尽可能贴近原文阅读。语料库最有力的材料是解读性的：当框架被应用于某一具体的希伯来语段落时，它是否产生比其他选项更连贯的解读？</p>
-<p><strong>比较证据</strong>——独立传统之间反复出现的图式。当美索不达米亚、圣经、吠陀与中美洲来源保留着结构相似的叙述时，这种反复本身就是值得审视的证据。</p>
-<p><strong>科学证据</strong>——当代遗传学、天体生物学、行星科学与合成生物学就该框架主张的技术可行性提出什么。语料库在这里的论证是条件性的：<em>如果</em> 框架成立，科学应当呈现某种特定面貌；语料库追踪科学实际情况与此的契合程度。</p>
-<p>项目并不主张确定的证明。它主张的是一个连贯且具解释力的框架，在可得证据之上诚实地加以应用——读者被邀请来评估它。</p>
+                            <p>审慎而明确地处理。本文集使用三种证据：</p>
+<p><strong>文本证据</strong>——宗教与神话来源的实际表述，在可能的情况下贴近原语言阅读。本文集最有力的材料是诠释性的：当框架应用于具体的希伯来段落时，是否产生比替代方案更连贯的解读？</p>
+<p><strong>比较证据</strong>——跨独立传统的重复模式。当美索不达米亚、圣经、吠陀和中美洲的来源保存结构相似的记述时，这种重复是值得审视的证据。</p>
+<p><strong>科学证据</strong>——当代遗传学、天体生物学、行星科学和合成生物学，对框架主张技术可行性的论述。本文集在此的论证是条件性的：<em>如果</em>框架正确，科学应当呈现特定面貌；本文集追踪科学实际呈现的吻合程度。</p>
+<p>项目并不声称结论性的证明。它声称的是一个连贯且具有解释力的框架，被诚实地应用于可用证据，并邀请读者评估之。</p>
 
                         </div>
                     </details>
@@ -2882,52 +2889,52 @@
                 <div class="faq__list">
                     
                     <details class="faq__item" id="what-is-precession">
-                        <summary class="faq__question">用平易的话说，岁差周期是什么？</summary>
+                        <summary class="faq__question">用通俗语言来说，岁差周期是什么？</summary>
                         <div class="faq__answer">
-                            <p>地球自转轴倾斜约 23.5°，且在空间中并不指向固定方向。像陀螺一样，地轴在天空中缓慢画出一个圆，约每 25,920 年完成一圈。这一运动称为 <em>分点岁差</em>。</p>
-<p>实际后果是：春分日太阳背后所升起的星座，沿黄道带缓慢向西移动。两千年前是白羊；今天是双鱼；很快将是水瓶。这一周期约每 26,000 年重复一次。</p>
-<p>按黄道带的十二星座来切分，这一周期得出每段约 2,160 年的「岁差时代」。语料库把这些时代用作其编年框架。详见 Wiki 词条<a href="/zh/wiki/precession/">岁差运动</a>。</p>
+                            <p>地球轴倾斜约 23.5°，并且并不指向空间中某个固定方向。像一个旋转的陀螺，地轴在天空中缓慢画出一个圆，每约 25,920 年完成一次完整的循环。这一运动被称为<em>二分点的岁差</em>。</p>
+<p>实际后果是：春分时升起在太阳背后的星座，沿黄道带缓慢向西移动。两千年前那是白羊座；今天是双鱼座；不久将是水瓶座。该循环每约 26,000 年重复一次。</p>
+<p>按黄道带的十二星座划分，该循环产生每个约 2,160 年的<em>岁差时代</em>。本文集将这些时代用作其年代学框架。详情请参见 <a href="/wiki/precession/">岁差</a> 词条。</p>
 
                         </div>
                     </details>
                     
                     <details class="faq__item" id="twelve-ages">
-                        <summary class="faq__question">十二个时代是哪些？它们从何而来？</summary>
+                        <summary class="faq__question">十二个时代是哪些，它们从何而来？</summary>
                         <div class="faq__answer">
-                            <p>十二个岁差时代以黄道带星座命名。春分点以与黄道顺序相反的方向逐次西移。语料库的工作年代：</p>
+                            <p>十二个岁差时代以黄道星座命名。春分点以与黄道相反的顺序向西穿过它们。本文集的工作日期：</p>
 <ul>
-<li>摩羯 — –21,810 至 –19,650</li>
-<li>射手 — –19,650 至 –17,490</li>
-<li>天蝎 — –17,490 至 –15,330</li>
-<li>天秤 — –15,330 至 –13,170</li>
-<li>处女 — –13,170 至 –11,010</li>
-<li>狮子 — –11,010 至 –8,850</li>
-<li>巨蟹 — –8,850 至 –6,690</li>
-<li>双子 — –6,690 至 –4,530</li>
-<li>金牛 — –4,530 至 –2,370</li>
-<li>白羊 — –2,370 至 –210</li>
-<li>双鱼 — –210 至 1,950</li>
-<li>水瓶 — 1,950 至 4,110</li>
+<li>摩羯座——前 21,810 至前 19,650 年</li>
+<li>射手座——前 19,650 至前 17,490 年</li>
+<li>天蝎座——前 17,490 至前 15,330 年</li>
+<li>天秤座——前 15,330 至前 13,170 年</li>
+<li>处女座——前 13,170 至前 11,010 年</li>
+<li>狮子座——前 11,010 至前 8,850 年</li>
+<li>巨蟹座——前 8,850 至前 6,690 年</li>
+<li>双子座——前 6,690 至前 4,530 年</li>
+<li>金牛座——前 4,530 至前 2,370 年</li>
+<li>白羊座——前 2,370 至前 210 年</li>
+<li>双鱼座——前 210 至公元 1,950 年</li>
+<li>水瓶座——1,950 至 4,110 年</li>
 </ul>
-<p>该框架借鉴乔治奥·德·桑蒂利亚纳与赫塔·冯·德钦德的岁差神话学研究（<em>Hamlet's Mill</em>，1969 年）。他们重构了古代世界如何把岁差周期编码进许多独立传统的宗教与神话符号之中。</p>
-<p>各时代之间的边界以黄道带的等分来设定（IAU 的天文星座边界并不把黄道等分）。本年代是语料库的工作年代，由分点在等分十二宫上的天文位置推算而得。</p>
+<p>该框架借鉴了乔治·德·桑提拉纳与赫尔塔·冯·德兴德的岁差神话研究（《哈姆雷特之磨》，1969 年），他们重建了古代世界如何在许多独立传统的宗教与神话符号中编码岁差周期。</p>
+<p>时代之间的边界由黄道带的等分划定（国际天文学联合会的天文星座边界并不将黄道平均划分）。这些日期是本文集的工作年表，由对等号黄道带的春分点位置进行天文学计算所得。</p>
 
                         </div>
                     </details>
                     
                     <details class="faq__item" id="what-does-elohim-mean">
-                        <summary class="faq__question">「埃洛希姆」是什么意思？项目为什么把它读作复数？</summary>
+                        <summary class="faq__question">&quot;Elohim&quot;是什么意思，项目为何将其读作复数？</summary>
                         <div class="faq__answer">
-                            <p><em>埃洛希姆</em>（אֱלֹהִים）是常用圣经译作「上帝」的那个希伯来词。从语法上看，它是一个复数名词——后缀 <em>-im</em> 是希伯来语标准的复数标记，与另一些阳性名词的复数化（<em>基路伯</em>/<em>基路冰</em>，<em>拿非</em>/<em>拿非利</em>）一致。</p>
-<p>通常的基督教与犹太教神学把这个复数读作「庄严复数」（单数神被以复数加以呼唤，以示崇高，类似王室的「我们」），或读作「三位一体」的占位符。语料库照字面来读：复数的 <em>埃洛希姆</em> 指向多位存在。</p>
-<p>希伯来文本的若干特征支持这一读法：</p>
+                            <p><em>Elohim</em>（אֱלֹהִים）是传统圣经译作"上帝"的希伯来词。从语法上看，它是复数名词——<em>-im</em> 后缀是标准的希伯来语复数标记，与使其他阳性名词复数化的后缀相同（<em>cherub</em> / <em>cherubim</em>，<em>Nephil</em> / <em>Nephilim</em>）。</p>
+<p>传统的基督教和犹太教神学将该复数解读为"庄严复数"（一位神祇以复数表述以示宏伟，类似于王室的"我们"）或作为三位一体的占位语。本文集按字面意义阅读它：复数 <em>Elohim</em> 指多位存在。</p>
+<p>希伯来文本的若干特征支持这一阅读：</p>
 <ul>
-<li>创世记 1:26 使用第一人称复数动词：<em>na'aseh adam be-tsalmenu kidmutenu</em>——「让 <em>我们</em> 按照 <em>我们</em> 的形象、<em>我们</em> 的样式造人。」</li>
-<li>创世记 3:22 使用相似的复数：<em>hen ha-adam hayah ke-achad mimennu</em>——「看哪，人已成为 <em>我们</em> 中的一员。」</li>
-<li>创世记 6:1–4 引入 <em>benei ha-Elohim</em>——「众埃洛希姆的儿子们」——作为有别于人类的特殊范畴。</li>
-<li>文本在不同段落中区分 <em>YHWH Elohim</em>（复数范畴中被命名的某位特定存在）与单独的 <em>Elohim</em>（整个范畴）。</li>
+<li>创世记 1:26 使用第一人称复数动词：<em>na'aseh adam be-tsalmenu kidmutenu</em>——"让<em>我们</em>按<em>我们的</em>形象、依<em>我们的</em>样式造人。"</li>
+<li>创世记 3:22 使用类似的复数：<em>hen ha-adam hayah ke-achad mimennu</em>——"看哪，那人已经像<em>我们</em>中的一个了。"</li>
+<li>创世记 6:1–4 引入了 <em>benei ha-Elohim</em>——"耶洛因的众子"——作为不同于人类的特定类别存在。</li>
+<li>文本在不同段落中将 <em>YHWH Elohim</em>（复数类别中一个具名的具体形象）与单独的 <em>Elohim</em>（类别本身）相区分。</li>
 </ul>
-<p>详见 Wiki 词条<a href="/zh/wiki/elohim/">埃洛希姆</a>。</p>
+<p>详情请参见 <a href="/wiki/elohim/">耶洛因</a> 词条。</p>
 
                         </div>
                     </details>
@@ -2935,9 +2942,9 @@
                     <details class="faq__item" id="what-age-are-we-in">
                         <summary class="faq__question">我们现在处于哪个时代？</summary>
                         <div class="faq__answer">
-                            <p>按语料库的工作年代，处于水瓶时代。该时代约始于 1950 年，将持续接下来的 ~2,160 年。语料库以最字面的方式阅读水瓶座的「持水者」：被容留之物被倾倒出来的时代。</p>
-<p>语料库视为水瓶时代开启之标志的具体事件：1945 年的核门槛、1948 年以色列的复立、1969 年 <em>Hamlet's Mill</em> 的出版、1973 年沃利隆接触、2003 年人类基因组计划的完成，以及合成生物学与系外行星天文学的持续成熟。</p>
-<p>完整论述见<a href="/zh/timeline/age-of-aquarius/">水瓶时代</a>一章。</p>
+                            <p>按本文集的工作年表，是水瓶时代。该时代开启于 1950 年前后，将延续未来约 2,160 年。本文集在最字面的意义上阅读水瓶的持水者：所容纳之物被倾倒而出的时代。</p>
+<p>本文集所识别的标志水瓶时代开启的具体事件：1945 年的核门槛、1948 年以色列的复建、1969 年《哈姆雷特之磨》的出版、1973 年的沃里隆接触、2003 年人类基因组计划的完成，以及合成生物学和系外行星天文学的持续成熟。</p>
+<p>完整论述请参见 <a href="/timeline/age-of-aquarius/">水瓶时代</a> 章节。</p>
 
                         </div>
                     </details>
@@ -2945,9 +2952,9 @@
                     <details class="faq__item" id="position-on-evolution">
                         <summary class="faq__question">项目对进化论的立场是什么？</summary>
                         <div class="faq__answer">
-                            <p>语料库并不否定作为「生物随时间变化的描述」的进化。它否定的是这样一种主张：单凭进化、不受引导，便能解释生命与人类的起源。</p>
-<p>按语料库的读法，化石记录中的主要形态学过渡，是埃洛希姆文明所开展的设计-迭代阶段；每个设计阶段内部更小的进化变化，则按惯常机制（突变、选择、漂变）发生。某些过渡的表观突然性——寒武纪大爆发、<em>智人</em> 自先前的人科形态中迅速出现——正是设计-迭代计划所会产生的样子。</p>
-<p>项目接受地球约 45 亿年的地质年代，并非「年轻地球」框架。埃洛希姆计划的起点定在距今约 21,810 年的摩羯时代到来，而非这颗行星的地质形成。</p>
+                            <p>本文集并不拒绝进化论作为对生物随时间变化的描述。它拒绝的是这样的主张：单凭进化、未经引导，足以解释生命和人类的起源。</p>
+<p>按本文集的阅读，化石记录中主要的形态学转变是由耶洛因文明所进行的设计迭代阶段，而每个设计阶段内部的较小进化变化则通过常规机制（突变、选择、漂变）发生。某些转变的明显突然性——寒武纪大爆发、<em>智人</em>从先前人科形式的迅速涌现——正是设计迭代项目所会产生的样貌。</p>
+<p>项目接受地球约 45 亿年的地质学定年，并非青年地球框架。耶洛因项目的年代是从约 21,810 年前摩羯时代的抵达计起，而非从这颗行星的地质形成计起。</p>
 
                         </div>
                     </details>
@@ -2955,9 +2962,9 @@
                     <details class="faq__item" id="position-on-jesus">
                         <summary class="faq__question">项目对耶稣的立场是什么？</summary>
                         <div class="faq__answer">
-                            <p>语料库把耶稣视为一位历史人物，其传道事工对应于白羊向双鱼的岁差过渡。雷尔派源材料对耶稣的本质与起源有具体主张（即耶稣是一位埃洛哈与一位人类女性的后裔，与创世记 6 章的 <em>benei ha-Elohim</em> 模式相承）；语料库把这些主张作为源系统内容加以处理。</p>
-<p>语料库并不在传统基督教意义上把耶稣视为神圣人物，亦不把他视为早期教会的虚构发明。这位历史人物被读作来自埃洛希姆联盟在双鱼时代的一位使者；其教导与生平在其后被由其运动所生发的制度化基督教传统神秘化。</p>
-<p>更详细的论述见<a href="/zh/timeline/age-of-aries/">白羊时代</a>与<a href="/zh/timeline/age-of-pisces/">双鱼时代</a>两章。</p>
+                            <p>本文集将耶稣视为历史人物，其传道事工对应于从白羊到双鱼的岁差过渡。雷尔派来源对耶稣的本质和起源有具体主张（作为一位 Eloha 与一位人类女子的后代，与创世记 6 章 <em>benei ha-Elohim</em> 的模式相延续）；本文集作为来源族群的内容来参与这些主张。</p>
+<p>本文集不将耶稣视为传统基督教意义上的神性形象，也不视为早期教会的虚构发明。这一历史人物被读作来自耶洛因联盟的双鱼时代信使，其教导与生平后来被从其运动中兴起的体制基督教传统所神秘化。</p>
+<p>更长篇的论述请参见 <a href="/timeline/age-of-aries/">白羊时代</a> 和 <a href="/timeline/age-of-pisces/">双鱼时代</a> 章节。</p>
 
                         </div>
                     </details>
@@ -2965,18 +2972,18 @@
                     <details class="faq__item" id="position-on-other-religions">
                         <summary class="faq__question">项目对其他宗教的立场是什么？</summary>
                         <div class="faq__answer">
-                            <p>语料库在其比较性工作中，与所有主要世界宗教进行对接，并以它们各自的语汇处理它们，而不是将其视为亚伯拉罕系框架的变体。吠陀与印度教传统、古典佛教与大乘佛教、道教、美洲原住民传统、澳大利亚原住民的「梦境」等——在语料库的读法中——以不同的文化与神学语汇保留着同一底层叙事的不同碎片。</p>
-<p>语料库不把这些传统压平为彼此。共享母题不证明共同起源；平行并非同一。传统间的差异得到保留与对话。比较工作仍在进行中，对具体传统的处理在不同章节中详略不一。</p>
-<p>伊斯兰传统主要在双鱼时代一章中加以处理，《古兰经》的启示被作为该时代联盟「分布式先知」策略的一部分来阅读。</p>
+                            <p>本文集将所有主要世界宗教作为其比较工作的一部分加以参与，按其各自的术语对待，而非作为亚伯拉罕框架的变体。吠陀和印度教传统、古典与大乘佛教、道教、美洲原住民传统、澳大利亚原住民的"梦时"传统等等，按本文集的阅读，都以不同的文化与神学词汇保存着同一基础叙述的片段。</p>
+<p>本文集并不将这些传统压扁互融。共有的主题并非共同起源的证明；相似并非同一。传统之间的差异被保留并加以讨论。比较工作仍在进行中，对具体传统的处理在某些章节中比其他章节更为成熟。</p>
+<p>伊斯兰传统主要在双鱼时代章节中得到讨论，《古兰经》的启示被读作那一时代联盟分布式先知策略的一部分。</p>
 
                         </div>
                     </details>
                     
                     <details class="faq__item" id="predictions">
-                        <summary class="faq__question">项目对未来作出任何预测吗？</summary>
+                        <summary class="faq__question">项目是否对未来作出任何预测？</summary>
                         <div class="faq__answer">
-                            <p>语料库的框架更多暗示一种总体走向，而不是带有具体日期的预测。水瓶时代被读作渐进揭示的时代——长程历史记录变得日益可读的过程，伴随着人类向自身创造性能力的成熟。在接下来的 ~2,160 年里，框架预期：合成生物学持续向埃洛希姆所具有的那种设计能力成熟；系外行星持续被发现，并可能侦测到生物特征或技术特征；宗教传统与科学传统持续整合；以及在第二个「大年」中，人类终将自身成为一个创造性文明。</p>
-<p>语料库不就「接触」、「揭示事件」或末世场景给出具体日期的预测。框架是对一条长弧的描述，而非对具体事件的预言。</p>
+                            <p>本文集的框架隐含了一种总体走向，而非具体的标日预测。水瓶时代被读作渐进揭示的时代——长久历史记录逐步变得可读，并伴随着人类朝向自身创造能力的成熟。在未来约 2,160 年间，该框架预期：合成生物学持续朝着耶洛因所拥有的那种设计能力成熟、系外行星持续被发现并可能检测到生物特征或技术特征、宗教与科学传统持续整合，最终人类自身在第二个大年中接近成为一个创造文明。</p>
+<p>本文集不就接触、揭示事件或末世情景作出具体的标日预测。该框架是对一段长弧的描述，而非对具体事件的预测。</p>
 
                         </div>
                     </details>
@@ -2989,16 +2996,16 @@
                 <div class="faq__list">
                     
                     <details class="faq__item" id="what-sources">
-                        <summary class="faq__question">项目依赖哪些来源？</summary>
+                        <summary class="faq__question">项目借鉴哪些来源？</summary>
                         <div class="faq__answer">
-                            <p>语料库依赖多个来源家族，并在其中明确划分层级：</p>
-<p><strong>主要</strong>：雷尔派源材料，主要是 <em>讲述真相的书</em>（沃利隆，1974 年）及其后续卷。</p>
-<p><strong>次要</strong>：岁差神话学传统，基础文献是乔治奥·德·桑蒂利亚纳与赫塔·冯·德钦德的 <em>Hamlet's Mill</em>（1969 年）。</p>
-<p><strong>第三层</strong>：让·桑迪 1968–1972 年对圣经材料作为外星活动记录的重读（<em>La Lune, clé de la Bible</em>；<em>Les Dieux nous sont nés</em>；<em>L'Ère du Verseau</em>）。</p>
-<p><strong>比较层</strong>：圣经、美索不达米亚、吠陀、中美洲及其他一手宗教与神话来源，尽可能阅读其原文。</p>
-<p><strong>接触但不背书</strong>：更广义的古代宇航员文献（冯·丹尼肯、西钦、汉考克等），就具体论点选择性接触。</p>
-<p><strong>以其自身术语对待</strong>：圣经学、遗传学、天体生物学、考古天文学与合成生物学等领域的当代同行评议学术。</p>
-<p>完整的来源版图见<a href="/zh/library/">图书馆</a>与<a href="/zh/resources/">资源</a>两节。</p>
+                            <p>本文集借鉴多个来源族群，并在其间设置明确的层级优先：</p>
+<p><strong>主要</strong>：雷尔派源材料，主要是《讲述真相之书》（沃里隆，1974 年）及后续卷。</p>
+<p><strong>次要</strong>：岁差神话传统，奠基性的乔治·德·桑提拉纳与赫尔塔·冯·德兴德的《哈姆雷特之磨》（1969 年）。</p>
+<p><strong>第三层</strong>：让·桑迪 1968–1972 年对圣经材料作为外星活动记录的重新诠释（<em>La Lune, clé de la Bible</em>；<em>Les Dieux nous sont nés</em>；<em>L'Ère du Verseau</em>）。</p>
+<p><strong>比较</strong>：圣经、美索不达米亚、吠陀、中美洲及其他原始宗教与神话来源，在可能的情况下以其原语言阅读。</p>
+<p><strong>参与但不背书</strong>：更广泛的古代宇航员文献（冯·丹尼肯、西琴、汉考克及其他），就具体论点选择性参与。</p>
+<p><strong>按其自身条件参与</strong>：圣经研究、遗传学、天体生物学、考古天文学和合成生物学中的当代同行评审学术。</p>
+<p>完整的来源景观请参见 <a href="/library/">文库</a> 和 <a href="/resources/">资源</a> 部分。</p>
 
                         </div>
                     </details>
@@ -3006,35 +3013,35 @@
                     <details class="faq__item" id="handling-uncertainty">
                         <summary class="faq__question">项目如何处理不确定性与分歧？</summary>
                         <div class="faq__answer">
-                            <p>直接处理。项目的编辑风格指南明确要求：不确定性必须被命名，而不是被遮蔽：</p>
+                            <p>直接处理。项目的编辑风格指南明确要求不确定性被命名出来，而不是被隐藏：</p>
 <ul>
-<li>「该日期存在争议。」</li>
-<li>「这一年代是传统的，而非学术上的。」</li>
-<li>「这一身份认定是解读性的，源头中并未明示。」</li>
-<li>「此一平行具有暗示性，但并未在谱系学意义上被证明。」</li>
+<li>"该日期存在争议。"</li>
+<li>"这一年表是传统而非学术性的。"</li>
+<li>"该认定是诠释性的，并未在来源中明示。"</li>
+<li>"该平行性具有暗示意味，但并非可证明的谱系关联。"</li>
 </ul>
-<p>学界共识与语料库框架不一致的地方，语料库会直接处理这种不一致，命名替代性读法，并陈述语料库为何得出不同结论的具体推理。证据确实悬而未决的地方，语料库会直说。语料库在思辨的地方，也会直说。</p>
+<p>当学术共识与本文集的框架相分歧时，本文集直接讨论这一分歧，命名替代解读，并陈述本文集得出不同结论的具体推理。在证据确实开放之处，本文集明言之。在本文集进行推测之处，亦明言之。</p>
 
                         </div>
                     </details>
                     
                     <details class="faq__item" id="claim-badges">
-                        <summary class="faq__question">页面徽章上的「直接」「推断」「思辨」分别是什么意思？</summary>
+                        <summary class="faq__question">页面徽章上的&quot;直接&quot;、&quot;推断&quot;和&quot;推测&quot;是什么意思？</summary>
                         <div class="faq__answer">
-                            <p>语料库的每一页都带有一个小徽章，表明该页主要论断的认知论地位：</p>
-<p><strong>直接论断</strong>——源文本本身所断言的内容。*「创世记 1:26 写道『我们要按照我们的形象造人』。」*这是最可靠的论断；核实就是核对来源。</p>
-<p><strong>推断论断</strong>——学术从源头中合理推出的结论。*「动词的复数形式表明存在多个施动者。」*这类论断涉及解读工作，但仍紧贴证据。</p>
-<p><strong>思辨论断</strong>——项目作为解读性综合所提出的内容。*「创世记中复数的埃洛希姆，可以与雷尔派源材料所描述的那个小型文明加以同认。」*这是项目最具特色的贡献，也最有可能在未来被修订。</p>
-<p>徽章让读者能在「单项论断」的层级上调校信任。一个思辨性论断并不因为它是思辨的就错了；它被 <em>标注为</em> 思辨，是为了让读者知道按何种权重去掂量它。</p>
+                            <p>本文集的每一页都带有一个小徽章，标示其主要主张的认识论状态：</p>
+<p><strong>直接主张</strong>——来源文本自身所主张的内容。<em>"创世记 1:26 写道'让我们按我们的形象造人。'"</em> 这些是最可靠的主张；核实只是对照来源的事。</p>
+<p><strong>推断主张</strong>——学术合理地从来源得出的结论。<em>"复数动词形式表明多个施事者。"</em> 这些主张涉及诠释工作，但仍贴近证据。</p>
+<p><strong>推测主张</strong>——项目作为诠释综合所提出的内容。<em>"创世记中复数的耶洛因可以与雷尔派来源所描述的小型文明相认定。"</em> 这些主张是项目的特色贡献，最容易被修订。</p>
+<p>徽章让读者在单个主张的层面校准信任。推测性的主张不因其推测而错；它被<em>标记</em>为推测，是为了让读者知道相应地予以权衡。</p>
 
                         </div>
                     </details>
                     
                     <details class="faq__item" id="translations">
-                        <summary class="faq__question">翻译是如何处理的？</summary>
+                        <summary class="faq__question">翻译如何处理？</summary>
                         <div class="faq__answer">
-                            <p>凡解读依赖于原语之处，语料库尽量贴近原语阅读。对希伯来圣经材料，语料库以马所拉文本为依据，把特定希伯来词以转写命名，并在翻译选择对解读有实质影响处加以讨论。对美索不达米亚材料，语料库依据标准的学术校订与译本（Foster、George、Lambert 等）。对其他源头家族，语料库使用所能取得的最佳学术校订本，并在使用时明示。</p>
-<p>本站本身以英文为源头，发布九种语言。凡翻译选择对解读有实质影响处，英文原文优先。</p>
+                            <p>当诠释依赖于此时，本文集贴近源语言阅读。对于希伯来圣经材料，本文集使用马所拉文本，以转写形式命名具体希伯来词汇，并在翻译选择实质性影响诠释时加以讨论。对于美索不达米亚材料，本文集依赖标准学术版本与译本（Foster、George、Lambert 等）。对于其他来源族群，本文集使用现有最佳学术版本，并在使用时予以明示。</p>
+<p>本站本身以九种语言发布，以英文为翻译的源。当翻译选择实质性影响诠释时，以英文原文为准。</p>
 
                         </div>
                     </details>
@@ -3047,39 +3054,39 @@
                 <div class="faq__list">
                     
                     <details class="faq__item" id="how-to-start">
-                        <summary class="faq__question">怎样开始阅读？</summary>
+                        <summary class="faq__question">如何开始阅读？</summary>
                         <div class="faq__answer">
-                            <p>按深度递增有三种选项：</p>
+                            <p>三种深度递增的选项：</p>
 <ol>
-<li><a href="/zh/read/">阅读入门</a>——本项目的简短概览，附三条阅读路径。</li>
-<li><a href="/zh/wiki/">Wiki</a>——从关键术语（<a href="/zh/wiki/elohim/">埃洛希姆</a>、<a href="/zh/wiki/precession/">岁差运动</a>、<a href="/zh/wiki/world-age/">世界纪元</a>）开始，沿交叉链接前进。</li>
-<li><a href="/zh/timeline/">年表</a>——长篇本，从<a href="/zh/timeline/preamble/">序言</a>开始，依次走过十二个时代。</li>
+<li><a href="/read/">阅读导览</a>——项目的简短概览，含三条阅读路径。</li>
+<li><a href="/wiki/">词条</a>——从关键词条开始（<a href="/wiki/elohim/">耶洛因</a>、<a href="/wiki/precession/">岁差</a>、<a href="/wiki/world-age/">世界时代</a>），并沿交叉链接前行。</li>
+<li><a href="/timeline/">时间线</a>——长篇之书，从 <a href="/timeline/preamble/">序言</a> 开始，并贯穿十二个时代。</li>
 </ol>
-<p>年表是最大的投入，也是最值得投入之处。</p>
+<p>时间线是最大的投入，但也是最有回报的。</p>
 
                         </div>
                     </details>
                     
                     <details class="faq__item" id="where-to-read-sources">
-                        <summary class="faq__question">在哪里阅读原典？</summary>
+                        <summary class="faq__question">在哪里阅读源文本？</summary>
                         <div class="faq__answer">
-                            <p><a href="/zh/library/">图书馆</a>版块收录语料库所读取的一手原典文本，并配有注释与背景。包括：</p>
+                            <p><a href="/library/">文库</a> 部分托管本文集所引用的主要源文本，附有评注和上下文。包括：</p>
 <ul>
-<li><em>讲述真相的书</em>（沃利隆，1974 年）——雷尔派的奠基文本。</li>
-<li>创世记（希伯来文本与英语标准译本）。</li>
-<li>以诺书。</li>
-<li>埃努玛·埃利什。</li>
-<li>语料库引用的其他原典。</li>
+<li>《讲述真相之书》（沃里隆，1974 年）——雷尔派的奠基文本。</li>
+<li>《创世记》（希伯来文本及标准英译本）。</li>
+<li>《以诺书》。</li>
+<li>《埃努玛·埃利什》。</li>
+<li>本文集所借鉴的其他主要来源。</li>
 </ul>
-<p>对于语料库引用但未托管的外部原典，请参见<a href="/zh/resources/">资源</a>版块。</p>
+<p>对于本文集所借鉴但未托管的外部源材料，请参见 <a href="/resources/">资源</a> 部分。</p>
 
                         </div>
                     </details>
                     
                     <details class="faq__item" id="is-content-free">
-                        <summary class="faq__question">内容可以自由使用吗？</summary>
+                        <summary class="faq__question">内容可以免费使用吗？</summary>
                         <div class="faq__answer">
-                            <p>可以。Wheel of Heaven 的全部内容在 <a href="https://creativecommons.org/publicdomain/zero/1.0/">Creative Commons Zero (CC0-1.0)</a> 之下被释放至公有领域。你可以无限制地阅读、分享、引用、翻译、在其上继续创作或再发布该内容。署名受欢迎，但并非必须。</p>
+                            <p>可以。所有天之轮内容根据 <a href="https://creativecommons.org/publicdomain/zero/1.0/">Creative Commons Zero（CC0-1.0）</a> 发布到公共领域。你可以无限制地阅读、分享、引用、翻译、在其上构建或重新发布内容。署名受欢迎但非必需。</p>
 
                         </div>
                     </details>
@@ -3087,13 +3094,13 @@
                     <details class="faq__item" id="how-to-cite">
                         <summary class="faq__question">如何引用本项目？</summary>
                         <div class="faq__answer">
-                            <p>建议的引用格式：</p>
+                            <p>建议引用格式：</p>
 <blockquote>
 <p>Zinsfuss, Zara. <em>Wheel of Heaven</em>. wheelofheaven.world. 访问于 [日期]。</p>
 </blockquote>
-<p>针对具体页面，请附上页面标题与 URL：</p>
+<p>对于具体页面，附上页面标题和 URL：</p>
 <blockquote>
-<p>Zinsfuss, Zara. 「摩羯时代」。<em>Wheel of Heaven</em>. https://www.wheelofheaven.world/zh/timeline/age-of-capricorn/. 访问于 [日期]。</p>
+<p>Zinsfuss, Zara. "Age of Capricorn."《Wheel of Heaven》. https://www.wheelofheaven.world/timeline/age-of-capricorn/. 访问于 [日期]。</p>
 </blockquote>
 
                         </div>
@@ -3102,45 +3109,45 @@
                     <details class="faq__item" id="how-to-contribute">
                         <summary class="faq__question">如何贡献？</summary>
                         <div class="faq__answer">
-                            <p>几种方式：</p>
+                            <p>有多种方式：</p>
 <ul>
-<li><strong>讨论与提问</strong>——<a href="https://github.com/orgs/wheelofheaven/discussions">GitHub Discussions</a> 是本项目主要的公开论坛。</li>
-<li><strong>翻译</strong>——本站以九种语言发布，欢迎额外的翻译协助。参见<a href="/zh/contributing/">贡献</a>。</li>
-<li><strong>内容更正与建议</strong>——可在 <a href="https://github.com/wheelofheaven">GitHub 仓库</a>开 Issue。</li>
-<li><strong>代码与基础设施</strong>——本站开源，欢迎开发性的贡献。</li>
-<li><strong>财务支持</strong>——通过 <a href="https://opencollective.com/wheelofheaven">Open Collective</a>。项目目前完全由自掏腰包维持；任何帮助都会被珍视。</li>
+<li><strong>讨论与提问</strong>——<a href="https://github.com/orgs/wheelofheaven/discussions">GitHub Discussions</a> 是项目的主要公共论坛。</li>
+<li><strong>翻译</strong>——本站以九种语言发布，欢迎额外的翻译帮助。请参见 <a href="/contributing/">贡献指南</a>，以及 <a href="https://docs.wheelofheaven.world/contributing/content/translations/">翻译指南</a> 了解工作流程和各语言规约。</li>
+<li><strong>内容更正与建议</strong>——可在 <a href="https://github.com/wheelofheaven">GitHub 仓库</a> 上开启 issue。关于如何撰写新条目（词条、文章、新闻快讯），请参见 <a href="https://docs.wheelofheaven.world/contributing/content/overview/">开发者文档</a>。</li>
+<li><strong>代码与基础设施</strong>——本站开源，欢迎开发贡献。docs.wheelofheaven.world 上的 <a href="https://docs.wheelofheaven.world/getting-started/quickstart/">快速开始</a> 让你在五分钟内得到本地预览。</li>
+<li><strong>资金支持</strong>——通过 <a href="https://opencollective.com/wheelofheaven">Open Collective</a>。项目目前完全自费运作；帮助受到欢迎。</li>
 </ul>
 
                         </div>
                     </details>
                     
                     <details class="faq__item" id="how-funded">
-                        <summary class="faq__question">项目如何筹资？</summary>
+                        <summary class="faq__question">项目如何获得资金？</summary>
                         <div class="faq__answer">
-                            <p>迄今为止，完全由扎拉·钦斯弗斯自掏腰包。本项目独立写作，不投放广告，不出售任何东西，没有商业赞助。</p>
-<p>任何帮助都将被感激。通过 <a href="https://opencollective.com/wheelofheaven">Open Collective</a> 提供的自愿性捐助，将用于托管、基础设施与翻译工作——目前这些开支并无任何外部来源覆盖，全靠作者自身的时间与金钱。</p>
-<p>CC0 许可意味着，没有人——包括项目自身——能独占性地对内容进行商业化。</p>
+                            <p>到目前为止，完全由 Zara Zinsfuss 自掏腰包。项目由独立作者撰写，不投放广告，不出售任何东西，也没有商业赞助商。</p>
+<p>帮助会受到感谢。通过 <a href="https://opencollective.com/wheelofheaven">Open Collective</a> 的自愿捐助，将用于托管、基础设施和翻译工作——目前这些都仅由作者自己的时间和金钱承担。</p>
+<p>CC0 许可意味着内容不能被任何人——包括项目自身——独占商业化。</p>
 
                         </div>
                     </details>
                     
                     <details class="faq__item" id="how-to-report">
-                        <summary class="faq__question">在哪里报告错误或表达异议？</summary>
+                        <summary class="faq__question">在哪里报告错误或分歧？</summary>
                         <div class="faq__answer">
-                            <p>根据情况，两个渠道：</p>
+                            <p>两个渠道，取决于种类：</p>
 <ul>
-<li><strong>事实性错误、失效链接、技术问题</strong>：在 <a href="https://github.com/wheelofheaven">GitHub 仓库</a>开 Issue。</li>
-<li><strong>对解读的不同意见、替代读法、实质性的异议</strong>：在 <a href="https://github.com/orgs/wheelofheaven/discussions">GitHub Discussions</a> 开主题。</li>
+<li><strong>事实错误、链接失效、技术问题</strong>：在 <a href="https://github.com/wheelofheaven">GitHub 仓库</a> 上开启 issue。</li>
+<li><strong>对诠释的分歧、替代解读、实质性挑战</strong>：在 <a href="https://github.com/orgs/wheelofheaven/discussions">GitHub Discussions</a> 上开启一个讨论。</li>
 </ul>
-<p>实质性的异议受欢迎。本项目持「工作假设」的立场，意味着它不投入于「为反驳任何批评而捍卫已有读法」，而是投入于：尽可能给出最强的读法，并在批评说得对的地方修订。</p>
+<p>实质性挑战受到欢迎。项目的工作假设立场意味着它并不投身于针对每一项批评为自己的解读辩护——它投身于产生尽可能强的解读，并在批评正确之处加以修订。</p>
 
                         </div>
                     </details>
                     
                     <details class="faq__item" id="languages">
-                        <summary class="faq__question">本站可用哪些语言？</summary>
+                        <summary class="faq__question">本站有哪些语言版本？</summary>
                         <div class="faq__answer">
-                            <p>九种：英语（原始语）、Deutsch、Français、Español、Русский、日本語、简体中文、繁體中文、한국어。译文从英文原文派生。欢迎更多语言加入；参见<a href="/zh/contributing/">贡献</a>。</p>
+                            <p>九种：English（主要）、Deutsch、Français、Español、Русский、日本語、简体中文、繁體中文、한국어。译文均派生自英文原文。欢迎额外的语言；请参见 <a href="/contributing/">贡献指南</a>。</p>
 
                         </div>
                     </details>
@@ -3155,27 +3162,27 @@
                     <details class="faq__item" id="is-there-community">
                         <summary class="faq__question">有可以加入的社区吗？</summary>
                         <div class="faq__answer">
-                            <p>有——项目社区托管在 <a href="https://github.com/orgs/wheelofheaven/discussions">GitHub Discussions</a>，它作为项目的主要公开论坛，用于提问、讨论、贡献，以及与语料库的实质性互动。</p>
-<p>不存在正式的会员制，没有需要签署的信条，也不要求你认同项目的框架。社区向读者、怀疑者、贡献者，以及任何对语料库所触及之问题怀有严肃兴趣的人开放。</p>
+                            <p>有——项目的社区托管于 <a href="https://github.com/orgs/wheelofheaven/discussions">GitHub Discussions</a>，它作为提问、讨论、贡献以及对本文集进行实质性接触的主要公共论坛。</p>
+<p>没有正式会员资格，没有要订立的信条，也不要求同意项目的框架。社区对读者、怀疑者、贡献者，以及任何对本文集所参与问题怀有严肃兴趣的人开放。</p>
 
                         </div>
                     </details>
                     
                     <details class="faq__item" id="relationship-to-raelism">
-                        <summary class="faq__question">与机构化的雷尔派运动是什么关系？</summary>
+                        <summary class="faq__question">与体制性雷尔运动的关系如何？</summary>
                         <div class="faq__answer">
-                            <p>作者是雷尔派人士，但 Wheel of Heaven 并非雷尔派运动的出版物。本项目独立运作。雷尔派运动有其自身的机构结构、出版物与外联活动；Wheel of Heaven 不是其中任何一项。</p>
-<p>项目也并不与雷尔派运动对立。语料库以雷尔派源材料作为主要透镜并以严肃的态度对待之。语料库在标准雷尔派表述之外有所扩展之处，皆基于明示的理由——而不是对运动自身工作的批评。</p>
-<p>关于机构化的运动，更多背景见 Wiki 词条<a href="/zh/wiki/raelism/">雷尔派</a>。</p>
+                            <p>作者是一位雷尔教徒，但天之轮并非雷尔运动的出版物。项目独立运作。雷尔运动有自身的机构结构、出版物和外联活动；天之轮均非其中之一。</p>
+<p>项目对雷尔运动也并无任何对立。本文集以雷尔派源材料作为其主要镜片，并以认真态度予以参与。当本文集超出标准雷尔派表述时，附以明确理由，而非对运动自身工作的批评。</p>
+<p>关于体制性运动的更多内容，<a href="/wiki/raelism/">雷尔运动</a> 词条提供了背景。</p>
 
                         </div>
                     </details>
                     
                     <details class="faq__item" id="contributor-expectations">
-                        <summary class="faq__question">对贡献者有什么期待？</summary>
+                        <summary class="faq__question">对贡献者有何期待？</summary>
                         <div class="faq__answer">
-                            <p>贡献者应秉持善意参与，阅读<a href="/zh/code-of-conduct/">行为准则</a>，并遵循<a href="/zh/contributing/">贡献指南</a>。本项目欢迎实质性的参与——包括不同意见——并要求贡献者维持语料库自身依循的编辑标准：源头自觉、表达清晰、在认识论上谨慎。</p>
-<p>贡献者无需认同本项目的框架。批评性的参与受欢迎。</p>
+                            <p>贡献者应以诚意参与，阅读 <a href="/code-of-conduct/">行为准则</a>，并遵循 <a href="/contributing/">贡献指南</a>。项目欢迎实质性参与——包括分歧——并要求贡献者维持本文集所秉持的编辑标准：来源意识、清晰写作、认识论审慎。</p>
+<p>贡献者并非必须同意项目的框架。批判性参与受到欢迎。</p>
 
                         </div>
                     </details>
@@ -4980,7 +4987,7 @@ window.__searchI18n = {
 </script>
 
         <!-- Core bundle: Fuse.js, navbar, search, reading-list, pwa, toc, to-top -->
-<script src="https://www.wheelofheaven.world/js/dist/core.bundle.js?v=f444bab09161fa2f36a0f8affad0acc14fe7327c" defer></script>
+<script src="https://www.wheelofheaven.world/js/dist/core.bundle.js?v=023a30d3d45ddc57f7464fb6bb97974f828d84f6" defer></script>
 
         
 
