@@ -704,6 +704,7 @@
                 const timingData = await r.json();
                 return {
                     audioUrl: `${ASSETS_BASE}/${chapEntry.audio_url}`,
+                    formats: chapEntry.formats || null,
                     timing: timingData,
                     chapter: targetChapter,
                 };
@@ -746,7 +747,21 @@
                 });
 
                 teardownAudio();
-                audioEl = new Audio(data.audioUrl);
+                // When the manifest exposes a formats[] array (Opus + MP3),
+                // build the audio element with one <source> per format so the
+                // browser picks the best codec it supports. Without formats[]
+                // (older manifests), fall back to the single audio_url.
+                audioEl = new Audio();
+                if (data.formats && data.formats.length) {
+                    for (const f of data.formats) {
+                        const s = document.createElement('source');
+                        s.src = `${ASSETS_BASE}/${f.url}`;
+                        s.type = f.type;
+                        audioEl.appendChild(s);
+                    }
+                } else {
+                    audioEl.src = data.audioUrl;
+                }
                 audioEl.preload = 'auto';
 
                 audioEl.onplay = () => {

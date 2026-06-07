@@ -712,6 +712,24 @@
         <priority>0.5</priority></url>
 
     <url>
+        <loc>https://www.wheelofheaven.world/de/news/page/1/</loc>
+        
+        <changefreq>weekly</changefreq>
+        <priority>0.5</priority></url>
+
+    <url>
+        <loc>https://www.wheelofheaven.world/de/news/pursue-release-01-uap-files/</loc>
+        
+        <changefreq>weekly</changefreq>
+        <priority>0.5</priority></url>
+
+    <url>
+        <loc>https://www.wheelofheaven.world/de/news/pursue-release-02-spheres-and-transmedium/</loc>
+        
+        <changefreq>weekly</changefreq>
+        <priority>0.5</priority></url>
+
+    <url>
         <loc>https://www.wheelofheaven.world/de/offline/</loc>
         
         <changefreq>weekly</changefreq>
@@ -1030,12 +1048,6 @@
         <priority>0.7</priority></url>
 
     <url>
-        <loc>https://www.wheelofheaven.world/de/wiki/elohimian-home-planet/</loc>
-        
-        <changefreq>monthly</changefreq>
-        <priority>0.7</priority></url>
-
-    <url>
         <loc>https://www.wheelofheaven.world/de/wiki/elohimian-space-wars/</loc>
         
         <changefreq>monthly</changefreq>
@@ -1049,12 +1061,6 @@
 
     <url>
         <loc>https://www.wheelofheaven.world/de/wiki/forerunners/</loc>
-        
-        <changefreq>monthly</changefreq>
-        <priority>0.7</priority></url>
-
-    <url>
-        <loc>https://www.wheelofheaven.world/de/wiki/four-levels-of-consideration/</loc>
         
         <changefreq>monthly</changefreq>
         <priority>0.7</priority></url>
@@ -1354,6 +1360,12 @@
         <priority>0.7</priority></url>
 
     <url>
+        <loc>https://www.wheelofheaven.world/de/wiki/reference-corpus-of-the-raelian-canon/</loc>
+        
+        <changefreq>monthly</changefreq>
+        <priority>0.7</priority></url>
+
+    <url>
         <loc>https://www.wheelofheaven.world/de/wiki/religion/</loc>
         
         <changefreq>monthly</changefreq>
@@ -1457,12 +1469,6 @@
 
     <url>
         <loc>https://www.wheelofheaven.world/de/wiki/third-temple/</loc>
-        
-        <changefreq>monthly</changefreq>
-        <priority>0.7</priority></url>
-
-    <url>
-        <loc>https://www.wheelofheaven.world/de/wiki/tldr/</loc>
         
         <changefreq>monthly</changefreq>
         <priority>0.7</priority></url>
@@ -2158,6 +2164,24 @@
         <priority>0.5</priority></url>
 
     <url>
+        <loc>https://www.wheelofheaven.world/es/news/page/1/</loc>
+        
+        <changefreq>weekly</changefreq>
+        <priority>0.5</priority></url>
+
+    <url>
+        <loc>https://www.wheelofheaven.world/es/news/pursue-release-01-uap-files/</loc>
+        
+        <changefreq>weekly</changefreq>
+        <priority>0.5</priority></url>
+
+    <url>
+        <loc>https://www.wheelofheaven.world/es/news/pursue-release-02-spheres-and-transmedium/</loc>
+        
+        <changefreq>weekly</changefreq>
+        <priority>0.5</priority></url>
+
+    <url>
         <loc>https://www.wheelofheaven.world/es/offline/</loc>
         
         <changefreq>weekly</changefreq>
@@ -2476,12 +2500,6 @@
         <priority>0.7</priority></url>
 
     <url>
-        <loc>https://www.wheelofheaven.world/es/wiki/elohimian-home-planet/</loc>
-        
-        <changefreq>monthly</changefreq>
-        <priority>0.7</priority></url>
-
-    <url>
         <loc>https://www.wheelofheaven.world/es/wiki/elohimian-space-wars/</loc>
         
         <changefreq>monthly</changefreq>
@@ -2794,6 +2812,12 @@
         <priority>0.7</priority></url>
 
     <url>
+        <loc>https://www.wheelofheaven.world/es/wiki/reference-corpus-of-the-raelian-canon/</loc>
+        
+        <changefreq>monthly</changefreq>
+        <priority>0.7</priority></url>
+
+    <url>
         <loc>https://www.wheelofheaven.world/es/wiki/religion/</loc>
         
         <changefreq>monthly</changefreq>
@@ -2897,12 +2921,6 @@
 
     <url>
         <loc>https://www.wheelofheaven.world/es/wiki/third-temple/</loc>
-        
-        <changefreq>monthly</changefreq>
-        <priority>0.7</priority></url>
-
-    <url>
-        <loc>https://www.wheelofheaven.world/es/wiki/tldr/</loc>
         
         <changefreq>monthly</changefreq>
         <priority>0.7</priority></url>
@@ -3610,6 +3628,24 @@
         <priority>0.5</priority></url>
 
     <url>
+        <loc>https://www.wheelofheaven.world/fr/news/page/1/</loc>
+        
+        <changefreq>weekly</changefreq>
+        <priority>0.5</priority></url>
+
+    <url>
+        <loc>https://www.wheelofheaven.world/fr/news/pursue-release-01-uap-files/</loc>
+        
+        <changefreq>weekly</changefreq>
+        <priority>0.5</priority></url>
+
+    <url>
+        <loc>https://www.wheelofheaven.world/fr/news/pursue-release-02-spheres-and-transmedium/</loc>
+        
+        <changefreq>weekly</changefreq>
+        <priority>0.5</priority></url>
+
+    <url>
         <loc>https://www.wheelofheaven.world/fr/offline/</loc>
         
         <changefreq>weekly</changefreq>
@@ -3928,12 +3964,6 @@
         <priority>0.7</priority></url>
 
     <url>
-        <loc>https://www.wheelofheaven.world/fr/wiki/elohimian-home-planet/</loc>
-        
-        <changefreq>monthly</changefreq>
-        <priority>0.7</priority></url>
-
-    <url>
         <loc>https://www.wheelofheaven.world/fr/wiki/elohimian-space-wars/</loc>
         
         <changefreq>monthly</changefreq>
@@ -3947,12 +3977,6 @@
 
     <url>
         <loc>https://www.wheelofheaven.world/fr/wiki/forerunners/</loc>
-        
-        <changefreq>monthly</changefreq>
-        <priority>0.7</priority></url>
-
-    <url>
-        <loc>https://www.wheelofheaven.world/fr/wiki/four-levels-of-consideration/</loc>
         
         <changefreq>monthly</changefreq>
         <priority>0.7</priority></url>
@@ -4252,6 +4276,12 @@
         <priority>0.7</priority></url>
 
     <url>
+        <loc>https://www.wheelofheaven.world/fr/wiki/reference-corpus-of-the-raelian-canon/</loc>
+        
+        <changefreq>monthly</changefreq>
+        <priority>0.7</priority></url>
+
+    <url>
         <loc>https://www.wheelofheaven.world/fr/wiki/religion/</loc>
         
         <changefreq>monthly</changefreq>
@@ -4360,12 +4390,6 @@
         <priority>0.7</priority></url>
 
     <url>
-        <loc>https://www.wheelofheaven.world/fr/wiki/tldr/</loc>
-        
-        <changefreq>monthly</changefreq>
-        <priority>0.7</priority></url>
-
-    <url>
         <loc>https://www.wheelofheaven.world/fr/wiki/tower-of-babel/</loc>
         
         <changefreq>monthly</changefreq>
@@ -4451,6 +4475,24 @@
 
     <url>
         <loc>https://www.wheelofheaven.world/he/news/</loc>
+        
+        <changefreq>weekly</changefreq>
+        <priority>0.5</priority></url>
+
+    <url>
+        <loc>https://www.wheelofheaven.world/he/news/page/1/</loc>
+        
+        <changefreq>weekly</changefreq>
+        <priority>0.5</priority></url>
+
+    <url>
+        <loc>https://www.wheelofheaven.world/he/news/pursue-release-01-uap-files/</loc>
+        
+        <changefreq>weekly</changefreq>
+        <priority>0.5</priority></url>
+
+    <url>
+        <loc>https://www.wheelofheaven.world/he/news/pursue-release-02-spheres-and-transmedium/</loc>
         
         <changefreq>weekly</changefreq>
         <priority>0.5</priority></url>
@@ -5200,6 +5242,24 @@
         <priority>0.5</priority></url>
 
     <url>
+        <loc>https://www.wheelofheaven.world/ja/news/page/1/</loc>
+        
+        <changefreq>weekly</changefreq>
+        <priority>0.5</priority></url>
+
+    <url>
+        <loc>https://www.wheelofheaven.world/ja/news/pursue-release-01-uap-files/</loc>
+        
+        <changefreq>weekly</changefreq>
+        <priority>0.5</priority></url>
+
+    <url>
+        <loc>https://www.wheelofheaven.world/ja/news/pursue-release-02-spheres-and-transmedium/</loc>
+        
+        <changefreq>weekly</changefreq>
+        <priority>0.5</priority></url>
+
+    <url>
         <loc>https://www.wheelofheaven.world/ja/offline/</loc>
         
         <changefreq>weekly</changefreq>
@@ -5518,12 +5578,6 @@
         <priority>0.7</priority></url>
 
     <url>
-        <loc>https://www.wheelofheaven.world/ja/wiki/elohimian-home-planet/</loc>
-        
-        <changefreq>monthly</changefreq>
-        <priority>0.7</priority></url>
-
-    <url>
         <loc>https://www.wheelofheaven.world/ja/wiki/elohimian-space-wars/</loc>
         
         <changefreq>monthly</changefreq>
@@ -5836,6 +5890,12 @@
         <priority>0.7</priority></url>
 
     <url>
+        <loc>https://www.wheelofheaven.world/ja/wiki/reference-corpus-of-the-raelian-canon/</loc>
+        
+        <changefreq>monthly</changefreq>
+        <priority>0.7</priority></url>
+
+    <url>
         <loc>https://www.wheelofheaven.world/ja/wiki/religion/</loc>
         
         <changefreq>monthly</changefreq>
@@ -5939,12 +5999,6 @@
 
     <url>
         <loc>https://www.wheelofheaven.world/ja/wiki/third-temple/</loc>
-        
-        <changefreq>monthly</changefreq>
-        <priority>0.7</priority></url>
-
-    <url>
-        <loc>https://www.wheelofheaven.world/ja/wiki/tldr/</loc>
         
         <changefreq>monthly</changefreq>
         <priority>0.7</priority></url>
@@ -6634,6 +6688,24 @@
         <priority>0.5</priority></url>
 
     <url>
+        <loc>https://www.wheelofheaven.world/ko/news/page/1/</loc>
+        
+        <changefreq>weekly</changefreq>
+        <priority>0.5</priority></url>
+
+    <url>
+        <loc>https://www.wheelofheaven.world/ko/news/pursue-release-01-uap-files/</loc>
+        
+        <changefreq>weekly</changefreq>
+        <priority>0.5</priority></url>
+
+    <url>
+        <loc>https://www.wheelofheaven.world/ko/news/pursue-release-02-spheres-and-transmedium/</loc>
+        
+        <changefreq>weekly</changefreq>
+        <priority>0.5</priority></url>
+
+    <url>
         <loc>https://www.wheelofheaven.world/ko/offline/</loc>
         
         <changefreq>weekly</changefreq>
@@ -7259,6 +7331,12 @@
 
     <url>
         <loc>https://www.wheelofheaven.world/ko/wiki/raelism/</loc>
+        
+        <changefreq>monthly</changefreq>
+        <priority>0.7</priority></url>
+
+    <url>
+        <loc>https://www.wheelofheaven.world/ko/wiki/reference-corpus-of-the-raelian-canon/</loc>
         
         <changefreq>monthly</changefreq>
         <priority>0.7</priority></url>
@@ -8800,6 +8878,24 @@
         <priority>0.5</priority></url>
 
     <url>
+        <loc>https://www.wheelofheaven.world/ru/news/page/1/</loc>
+        
+        <changefreq>weekly</changefreq>
+        <priority>0.5</priority></url>
+
+    <url>
+        <loc>https://www.wheelofheaven.world/ru/news/pursue-release-01-uap-files/</loc>
+        
+        <changefreq>weekly</changefreq>
+        <priority>0.5</priority></url>
+
+    <url>
+        <loc>https://www.wheelofheaven.world/ru/news/pursue-release-02-spheres-and-transmedium/</loc>
+        
+        <changefreq>weekly</changefreq>
+        <priority>0.5</priority></url>
+
+    <url>
         <loc>https://www.wheelofheaven.world/ru/offline/</loc>
         
         <changefreq>weekly</changefreq>
@@ -9118,12 +9214,6 @@
         <priority>0.7</priority></url>
 
     <url>
-        <loc>https://www.wheelofheaven.world/ru/wiki/elohimian-home-planet/</loc>
-        
-        <changefreq>monthly</changefreq>
-        <priority>0.7</priority></url>
-
-    <url>
         <loc>https://www.wheelofheaven.world/ru/wiki/elohimian-space-wars/</loc>
         
         <changefreq>monthly</changefreq>
@@ -9436,6 +9526,12 @@
         <priority>0.7</priority></url>
 
     <url>
+        <loc>https://www.wheelofheaven.world/ru/wiki/reference-corpus-of-the-raelian-canon/</loc>
+        
+        <changefreq>monthly</changefreq>
+        <priority>0.7</priority></url>
+
+    <url>
         <loc>https://www.wheelofheaven.world/ru/wiki/religion/</loc>
         
         <changefreq>monthly</changefreq>
@@ -9539,12 +9635,6 @@
 
     <url>
         <loc>https://www.wheelofheaven.world/ru/wiki/third-temple/</loc>
-        
-        <changefreq>monthly</changefreq>
-        <priority>0.7</priority></url>
-
-    <url>
-        <loc>https://www.wheelofheaven.world/ru/wiki/tldr/</loc>
         
         <changefreq>monthly</changefreq>
         <priority>0.7</priority></url>
@@ -11050,6 +11140,24 @@
         <priority>0.5</priority></url>
 
     <url>
+        <loc>https://www.wheelofheaven.world/zh-Hant/news/page/1/</loc>
+        
+        <changefreq>weekly</changefreq>
+        <priority>0.5</priority></url>
+
+    <url>
+        <loc>https://www.wheelofheaven.world/zh-Hant/news/pursue-release-01-uap-files/</loc>
+        
+        <changefreq>weekly</changefreq>
+        <priority>0.5</priority></url>
+
+    <url>
+        <loc>https://www.wheelofheaven.world/zh-Hant/news/pursue-release-02-spheres-and-transmedium/</loc>
+        
+        <changefreq>weekly</changefreq>
+        <priority>0.5</priority></url>
+
+    <url>
         <loc>https://www.wheelofheaven.world/zh-Hant/offline/</loc>
         
         <changefreq>weekly</changefreq>
@@ -11675,6 +11783,12 @@
 
     <url>
         <loc>https://www.wheelofheaven.world/zh-Hant/wiki/raelism/</loc>
+        
+        <changefreq>monthly</changefreq>
+        <priority>0.7</priority></url>
+
+    <url>
+        <loc>https://www.wheelofheaven.world/zh-Hant/wiki/reference-corpus-of-the-raelian-canon/</loc>
         
         <changefreq>monthly</changefreq>
         <priority>0.7</priority></url>
@@ -12472,6 +12586,24 @@
         <priority>0.5</priority></url>
 
     <url>
+        <loc>https://www.wheelofheaven.world/zh/news/page/1/</loc>
+        
+        <changefreq>weekly</changefreq>
+        <priority>0.5</priority></url>
+
+    <url>
+        <loc>https://www.wheelofheaven.world/zh/news/pursue-release-01-uap-files/</loc>
+        
+        <changefreq>weekly</changefreq>
+        <priority>0.5</priority></url>
+
+    <url>
+        <loc>https://www.wheelofheaven.world/zh/news/pursue-release-02-spheres-and-transmedium/</loc>
+        
+        <changefreq>weekly</changefreq>
+        <priority>0.5</priority></url>
+
+    <url>
         <loc>https://www.wheelofheaven.world/zh/offline/</loc>
         
         <changefreq>weekly</changefreq>
@@ -12790,12 +12922,6 @@
         <priority>0.7</priority></url>
 
     <url>
-        <loc>https://www.wheelofheaven.world/zh/wiki/elohimian-home-planet/</loc>
-        
-        <changefreq>monthly</changefreq>
-        <priority>0.7</priority></url>
-
-    <url>
         <loc>https://www.wheelofheaven.world/zh/wiki/elohimian-space-wars/</loc>
         
         <changefreq>monthly</changefreq>
@@ -13108,6 +13234,12 @@
         <priority>0.7</priority></url>
 
     <url>
+        <loc>https://www.wheelofheaven.world/zh/wiki/reference-corpus-of-the-raelian-canon/</loc>
+        
+        <changefreq>monthly</changefreq>
+        <priority>0.7</priority></url>
+
+    <url>
         <loc>https://www.wheelofheaven.world/zh/wiki/religion/</loc>
         
         <changefreq>monthly</changefreq>
@@ -13211,12 +13343,6 @@
 
     <url>
         <loc>https://www.wheelofheaven.world/zh/wiki/third-temple/</loc>
-        
-        <changefreq>monthly</changefreq>
-        <priority>0.7</priority></url>
-
-    <url>
-        <loc>https://www.wheelofheaven.world/zh/wiki/tldr/</loc>
         
         <changefreq>monthly</changefreq>
         <priority>0.7</priority></url>
