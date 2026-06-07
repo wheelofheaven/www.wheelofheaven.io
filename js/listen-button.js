@@ -792,6 +792,15 @@
                         s.type = f.type;
                         audioEl.appendChild(s);
                     }
+                    // After appending <source> children to a detached audio
+                    // element, call .load() so the browser actually inspects
+                    // them and picks one. Without this, .play() may succeed
+                    // on some browsers via fallback resolution but
+                    // timeupdate / duration metadata can stay zero, which
+                    // breaks word-highlight (we never get a current word
+                    // because audioEl.currentTime never advances meaningfully)
+                    // and progress display.
+                    audioEl.load();
                 } else {
                     audioEl.src = data.audioUrl;
                 }
@@ -830,6 +839,14 @@
                 audioEl.ontimeupdate = () => {
                     if (stopped || !audioEl) return;
                     const t = audioEl.currentTime;
+                    // Smooth progress callback (prerecorded engine has a
+                    // continuous timeline; the controller uses this to
+                    // advance the progress fill between paragraph
+                    // boundaries instead of the paragraph-discrete jumps
+                    // that onUnitStart gives).
+                    if (audioEl.duration && cbs.onProgress) {
+                        cbs.onProgress(t / audioEl.duration, t, audioEl.duration);
+                    }
                     // Find the paragraph currently being read. timing is small
                     // (dozens to hundreds of entries) so linear search is fine.
                     let current = null;
@@ -917,6 +934,14 @@
             },
             pause() {
                 if (audioEl) audioEl.pause();
+            },
+            // v4.1 — drag-to-seek support. Controller passes a 0..1 ratio
+            // from a click/drag on the progress bar; we map it directly to
+            // audioEl.currentTime. Ambient track follows via onseeked.
+            seek(ratio) {
+                if (!audioEl || !audioEl.duration) return;
+                const r = Math.max(0, Math.min(1, ratio));
+                audioEl.currentTime = r * audioEl.duration;
             },
             resume() {
                 if (audioEl) audioEl.play();
@@ -1023,6 +1048,23 @@
             updatePlayState(true);
         },
         onUnitStart,
+        // v4.1 — onProgress is emitted by engines that have a real
+        // continuous timeline (currently only the prerecorded engine).
+        // Studio/system engines stay paragraph-discrete via onUnitStart.
+        // We snap the visual progress bar to the real audio position
+        // here, so it advances smoothly between paragraph boundaries
+        // and reflects user seeks immediately.
+        onProgress: (ratio, currentSeconds, totalSeconds) => {
+            const percent = Math.max(0, Math.min(ratio, 1)) * 100;
+            progressFill.style.width = `${percent}%`;
+            progressHandle.style.left = `${percent}%`;
+            if (typeof currentSeconds === 'number') {
+                timeCurrent.textContent = formatTime(currentSeconds);
+            }
+            if (typeof totalSeconds === 'number' && totalSeconds && !Number.isNaN(totalSeconds)) {
+                timeTotal.textContent = formatTime(totalSeconds);
+            }
+        },
         onPause: () => {
             isPaused = true;
             updatePlayState(false);
@@ -1145,6 +1187,48 @@
     playPauseBtn.addEventListener('click', togglePlayPause);
     closeBtn.addEventListener('click', stop);
     if (engineToggle) engineToggle.addEventListener('click', toggleEngine);
+
+    // v4.1 — drag-to-seek on the progress bar. Click anywhere on the
+    // progress strip (or drag the handle) and the engine seeks to the
+    // corresponding position. Only works for engines that implement
+    // .seek(ratio) — currently just prerecorded; studio/system silently
+    // ignore (they have no real timeline to seek within).
+    const progressBar = document.getElementById('audioProgress');
+    if (progressBar) {
+        let isDragging = false;
+        const positionRatio = (clientX) => {
+            const rect = progressBar.getBoundingClientRect();
+            const x = clientX - rect.left;
+            return Math.max(0, Math.min(1, x / rect.width));
+        };
+        const seekTo = (clientX) => {
+            if (!currentEngine || typeof currentEngine.seek !== 'function') return;
+            const ratio = positionRatio(clientX);
+            currentEngine.seek(ratio);
+            // Snap the visual fill immediately for tactile feedback —
+            // the engine will catch up via onProgress on the next tick.
+            const pct = ratio * 100;
+            progressFill.style.width = `${pct}%`;
+            progressHandle.style.left = `${pct}%`;
+        };
+        progressBar.addEventListener('pointerdown', (e) => {
+            e.preventDefault();
+            isDragging = true;
+            progressBar.setPointerCapture(e.pointerId);
+            seekTo(e.clientX);
+        });
+        progressBar.addEventListener('pointermove', (e) => {
+            if (!isDragging) return;
+            seekTo(e.clientX);
+        });
+        const endDrag = (e) => {
+            if (!isDragging) return;
+            isDragging = false;
+            try { progressBar.releasePointerCapture(e.pointerId); } catch (_) {}
+        };
+        progressBar.addEventListener('pointerup', endDrag);
+        progressBar.addEventListener('pointercancel', endDrag);
+    }
 
     if (hasWebSpeech && speechSynthesis.onvoiceschanged !== undefined) {
         speechSynthesis.onvoiceschanged = () => {};
