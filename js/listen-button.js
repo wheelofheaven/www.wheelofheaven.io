@@ -197,6 +197,8 @@
         const percent = Math.max(0, Math.min(fraction, 1)) * 100;
         progressFill.style.width = `${percent}%`;
         progressHandle.style.left = `${percent}%`;
+        // v4.4 — keep the play-button progress ring in sync too.
+        if (playPauseBtn) playPauseBtn.style.setProperty('--progress', percent.toFixed(2));
         timeCurrent.textContent = formatTime((fraction || 0) * estimatedDuration);
     }
 
@@ -1123,6 +1125,10 @@
             const percent = Math.max(0, Math.min(ratio, 1)) * 100;
             progressFill.style.width = `${percent}%`;
             progressHandle.style.left = `${percent}%`;
+            // v4.4 — also drive the play button's circular progress ring.
+            // The SVG fill's stroke-dashoffset reads --progress 0..100
+            // from the .audio-player__play element.
+            if (playPauseBtn) playPauseBtn.style.setProperty('--progress', percent.toFixed(2));
             if (typeof currentSeconds === 'number') {
                 timeCurrent.textContent = formatTime(currentSeconds);
             }
@@ -1374,6 +1380,7 @@
             const pct = ratio * 100;
             progressFill.style.width = `${pct}%`;
             progressHandle.style.left = `${pct}%`;
+            if (playPauseBtn) playPauseBtn.style.setProperty('--progress', pct.toFixed(2));
         };
         progressBar.addEventListener('pointerdown', (e) => {
             e.preventDefault();
