@@ -1,8 +1,8 @@
 {
-  "generated_at": "2026-06-08T07:55:06.658106Z",
+  "generated_at": "2026-06-08T11:54:46.794549Z",
   "generator": "scripts/build_sources.py",
   "schema_version": 1,
-  "total": 249,
+  "total": 258,
   "total_cites": 257,
   "media_counts": {
     "religious-text": 61,
@@ -969,6 +969,23 @@
       "cite_count": 0
     },
     {
+      "id": "chronicle-of-akakor",
+      "title": "Chronicle of Akakor",
+      "authored_by": [
+        "Karl Brugger"
+      ],
+      "publish_date": "1976",
+      "follow_url": "https://en.wikipedia.org/wiki/Chronicle_of_Akakor",
+      "description": "A 1976 work by German journalist Karl Brugger purporting to record the oral history of the Ugha Mongulala people of the Amazon, transmitted by their chief Tatunca Nara. Widely treated by subsequent scholarship as a literary hoax. Cited in the *Yes... I am Raelian* commentary as a Latin American testimony alongside the Popol Vuh; its inclusion is acknowledged as one of the canon's source tensions.",
+      "medium": "nonfiction-book",
+      "topics": [
+        "Ancient Astronaut Theory",
+        "Comparative Religion"
+      ],
+      "cited_by": [],
+      "cite_count": 0
+    },
+    {
       "id": "clines-job-wbc",
       "title": "Job 1-20 / 21-37 / 38-42 (Word Biblical Commentary)",
       "authored_by": [
@@ -1222,6 +1239,24 @@
       "cite_count": 1
     },
     {
+      "id": "dhorme-bible",
+      "title": "La Bible (traduction Dhorme)",
+      "authored_by": [
+        "Édouard Dhorme"
+      ],
+      "publish_date": "1956-1959",
+      "follow_url": "https://en.wikipedia.org/wiki/%C3%89douard_Dhorme",
+      "description": "Édouard Dhorme's French translation of the Hebrew Bible, published by Bibliothèque de la Pléiade. The translation Rael consulted during the 1973 contact and the principal French Bible used by the Raëlian canon. Dhorme's renderings — particularly *science* for what other translations give as *good and evil*, and his Assyriological-philological precision — are themselves a substantial interpretive position the canon adopts.",
+      "medium": "religious-text",
+      "topics": [
+        "Hebrew Bible",
+        "Translation",
+        "Raëlism"
+      ],
+      "cited_by": [],
+      "cite_count": 0
+    },
+    {
       "id": "did-god-have-a-wife",
       "title": "Did God Have a Wife? Archaeology and Folk Religion in Ancient Israel",
       "authored_by": [
@@ -1374,6 +1409,23 @@
         }
       ],
       "cite_count": 3
+    },
+    {
+      "id": "edouard-dhorme-biography",
+      "title": "Édouard Dhorme (biographical reference)",
+      "authored_by": [
+        "Various"
+      ],
+      "publish_date": "2020s",
+      "follow_url": "https://en.wikipedia.org/wiki/%C3%89douard_Dhorme",
+      "description": "French Catholic priest and Assyriologist (1881-1966), translator of the principal twentieth-century French Bible used by the Raëlian canon. Specialist in Akkadian, Hebrew, and ancient Near Eastern languages whose philological precision shaped the translation choices the canon depends on.",
+      "medium": "wiki",
+      "topics": [
+        "Hebrew Bible",
+        "Translation"
+      ],
+      "cited_by": [],
+      "cite_count": 0
     },
     {
       "id": "elysium-film",
@@ -2577,6 +2629,23 @@
       "cite_count": 0
     },
     {
+      "id": "kojiki",
+      "title": "Kojiki (古事記)",
+      "authored_by": [
+        "Ō no Yasumaro (compiled 712 CE)"
+      ],
+      "publish_date": "712",
+      "follow_url": "https://en.wikipedia.org/wiki/Kojiki",
+      "description": "The oldest extant Japanese chronicle, a record of myths, legends, hymns, songs, and oral traditions including the Shinto cosmogony. Listed in the *Yes... I am Raelian* commentary among traditions carrying 'traces' of the Elohim contact.",
+      "medium": "religious-text",
+      "topics": [
+        "Japanese Tradition",
+        "Comparative Religion"
+      ],
+      "cited_by": [],
+      "cite_count": 0
+    },
+    {
       "id": "kosmographia",
       "title": "Kosmographia — The Official Randall Carlson Podcast",
       "authored_by": [
@@ -2908,6 +2977,23 @@
         "Pentateuch",
         "Ritual",
         "Holiness Code"
+      ],
+      "cited_by": [],
+      "cite_count": 0
+    },
+    {
+      "id": "mahabharata",
+      "title": "Mahābhārata",
+      "authored_by": [
+        "Vyasa (traditional ascription)"
+      ],
+      "publish_date": "c. 4th century BCE — 4th century CE",
+      "follow_url": "https://en.wikipedia.org/wiki/Mahabharata",
+      "description": "The principal Sanskrit epic of the Hindu tradition, comprising approximately 100,000 śloka couplets. Names the *Vedas* and *Rāmāyaṇa* within its broader textual corpus. Listed in the *Yes... I am Raelian* commentary as carrying 'traces' of the Elohim contact.",
+      "medium": "religious-text",
+      "topics": [
+        "Hindu Tradition",
+        "Comparative Religion"
       ],
       "cited_by": [],
       "cite_count": 0
@@ -3645,6 +3731,23 @@
       "cite_count": 2
     },
     {
+      "id": "ramayana",
+      "title": "Rāmāyaṇa",
+      "authored_by": [
+        "Vālmīki (traditional ascription)"
+      ],
+      "publish_date": "c. 7th-4th century BCE",
+      "follow_url": "https://en.wikipedia.org/wiki/Ramayana",
+      "description": "The other principal Sanskrit epic of the Hindu tradition. Listed alongside the *Mahābhārata* in the Raëlian canon's commentary on surviving traces.",
+      "medium": "religious-text",
+      "topics": [
+        "Hindu Tradition",
+        "Comparative Religion"
+      ],
+      "cited_by": [],
+      "cite_count": 0
+    },
+    {
       "id": "redating-the-great-sphinx-of-giza",
       "title": "Redating the Great Sphinx of Giza",
       "authored_by": [
@@ -3751,6 +3854,24 @@
         }
       ],
       "cite_count": 3
+    },
+    {
+      "id": "rnkjv",
+      "title": "Restored Name King James Version (RNKJV)",
+      "authored_by": [
+        "Restored Name King James community"
+      ],
+      "publish_date": "2001-present",
+      "follow_url": "https://en.wikipedia.org/wiki/Sacred_Name_Bible",
+      "description": "A modern revision of the King James Version that restores *Elohim* and *Yahweh* in place of the conventional 'God' and 'the Lord' renderings. Used throughout the 2005 English-language omnibus edition of *Intelligent Design — Message From the Designers*.",
+      "medium": "religious-text",
+      "topics": [
+        "Hebrew Bible",
+        "Translation",
+        "Raëlism"
+      ],
+      "cited_by": [],
+      "cite_count": 0
     },
     {
       "id": "rochberg-heavenly-writing",
@@ -4032,6 +4153,23 @@
       "topics": [
         "Hebrew Bible",
         "Precession"
+      ],
+      "cited_by": [],
+      "cite_count": 0
+    },
+    {
+      "id": "shiur-qomah",
+      "title": "Shi'ur Qomah",
+      "authored_by": [
+        "Anonymous (early Jewish mystical tradition)"
+      ],
+      "publish_date": "c. 2nd-4th century CE",
+      "follow_url": "https://en.wikipedia.org/wiki/Shi%27ur_Qomah",
+      "description": "An early Jewish mystical text giving anthropomorphic measurements of the divine body in cosmic units (*parasangs*). The cosmological passage attributed to 'the Kabbalah' in *The End of the World* — measuring the 'height of the creator' in parasangs — matches motifs from the *Shi'ur Qomah* tradition rather than the *Zohar* corpus the term 'Kabbalah' more conventionally designates.",
+      "medium": "religious-text",
+      "topics": [
+        "Kabbalah",
+        "Jewish Mysticism"
       ],
       "cited_by": [],
       "cite_count": 0
@@ -5511,6 +5649,23 @@
       "topics": [
         "Dead Sea Scrolls",
         "Hebrew Bible"
+      ],
+      "cited_by": [],
+      "cite_count": 0
+    },
+    {
+      "id": "vedas",
+      "title": "The Vedas",
+      "authored_by": [
+        "Various Vedic seers (traditional ascription)"
+      ],
+      "publish_date": "c. 1500-500 BCE",
+      "follow_url": "https://en.wikipedia.org/wiki/Vedas",
+      "description": "The foundational Sanskrit religious-philosophical corpus of the Hindu tradition — Ṛgveda, Yajurveda, Sāmaveda, and Atharvaveda. Listed in the Raëlian canon's commentary as part of the Mahābhārata's broader textual horizon.",
+      "medium": "religious-text",
+      "topics": [
+        "Hindu Tradition",
+        "Comparative Religion"
       ],
       "cited_by": [],
       "cite_count": 0
