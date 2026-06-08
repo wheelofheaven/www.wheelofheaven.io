@@ -1,8 +1,8 @@
 {
-  "generated_at": "2026-06-07T13:54:51+00:00",
+  "generated_at": "2026-06-08T07:14:55.015968Z",
   "generator": "scripts/build_sources.py",
   "schema_version": 1,
-  "total": 164,
+  "total": 186,
   "total_cites": 257,
   "media_counts": {
     "religious-text": 61,
@@ -308,6 +308,24 @@
       "cite_count": 2
     },
     {
+      "id": "aesthetics-wiki-cyberparadism",
+      "title": "Cyberparadism (Aesthetics Wiki)",
+      "authored_by": [
+        "Aesthetics Wiki community"
+      ],
+      "publish_date": "2023",
+      "follow_url": "https://aesthetics.fandom.com/wiki/Cyberparadism",
+      "description": "The Aesthetics Wiki entry on Cyberparadism. Aesthetics Wiki, hosted on Fandom, is the principal contemporary online platform for the systematic articulation of internet-cultural aesthetics. The Cyberparadism entry there was the origin venue of the aesthetic's formalization.",
+      "medium": "wiki",
+      "topics": [
+        "Cyberparadism",
+        "Age of Aquarius",
+        "Futurism"
+      ],
+      "cited_by": [],
+      "cite_count": 0
+    },
+    {
       "id": "aliens-adored",
       "title": "Aliens Adored: Raël's UFO Religion",
       "authored_by": [
@@ -516,6 +534,24 @@
       "cite_count": 0
     },
     {
+      "id": "banks-culture-series",
+      "title": "The Culture Series",
+      "authored_by": [
+        "Iain M. Banks"
+      ],
+      "publish_date": "1987-2012",
+      "follow_url": "https://en.wikipedia.org/wiki/Culture_series",
+      "description": "Banks's ten-novel sequence depicting the Culture, a post-scarcity galactic civilisation with mature AI-organic integration and harmonious civilisational organisation. The series registers as substantively-mature Cyberparadism at unusually-systematic literary articulation.",
+      "medium": "fiction-book",
+      "topics": [
+        "Cyberparadism",
+        "Fiction",
+        "Futurism"
+      ],
+      "cited_by": [],
+      "cite_count": 0
+    },
+    {
       "id": "barton-cylinder",
       "title": "Barton Cylinder",
       "authored_by": [
@@ -530,6 +566,24 @@
         "Religion",
         "Sumer",
         "The Tradition"
+      ],
+      "cited_by": [],
+      "cite_count": 0
+    },
+    {
+      "id": "benyus-biomimicry",
+      "title": "Biomimicry: Innovation Inspired by Nature",
+      "authored_by": [
+        "Janine M. Benyus"
+      ],
+      "publish_date": "1997",
+      "follow_url": "https://biomimicry.org/janine-benyus/",
+      "description": "Benyus's principal articulation of biomimicry as design methodology drawing on natural systems. The substantial subsequent design-tradition operates as one of the principal architectural-design lineages feeding Cyberparadist visual vocabulary.",
+      "medium": "nonfiction-book",
+      "topics": [
+        "Cyberparadism",
+        "Science",
+        "Architecture"
       ],
       "cited_by": [],
       "cite_count": 0
@@ -1027,6 +1081,24 @@
       "cite_count": 3
     },
     {
+      "id": "elysium-film",
+      "title": "Elysium",
+      "authored_by": [
+        "Neill Blomkamp",
+        "Sony Pictures"
+      ],
+      "publish_date": "2013",
+      "follow_url": "https://en.wikipedia.org/wiki/Elysium_(film)",
+      "description": "Blomkamp's articulation of the orbital-ring-world Elysium as visual realisation of Cyberparadist aesthetic attached to substantively anti-Cyberparadist social-political content; functions on Cyberparadist reading as illustration of how aesthetic-surface without substantive Law-of-Equity commitment produces dystopia rather than utopia.",
+      "medium": "documentary",
+      "topics": [
+        "Cyberparadism",
+        "Fiction"
+      ],
+      "cited_by": [],
+      "cite_count": 0
+    },
+    {
       "id": "enlil-and-ninlil-the-begetting-of-nanna",
       "title": "Enlil and Ninlil: The begetting of Nanna",
       "authored_by": [
@@ -1375,6 +1447,24 @@
       "cite_count": 1
     },
     {
+      "id": "fuller-spaceship-earth",
+      "title": "Operating Manual for Spaceship Earth",
+      "authored_by": [
+        "R. Buckminster Fuller"
+      ],
+      "publish_date": "1969",
+      "follow_url": "https://en.wikipedia.org/wiki/Operating_Manual_for_Spaceship_Earth",
+      "description": "Fuller's foundational articulation of Earth as a single-system spaceship, with the substantial geodesic-architectural tradition and the substantial efficiency-maximisation ethic that the Cyberparadism Manifesto references explicitly.",
+      "medium": "nonfiction-book",
+      "topics": [
+        "Cyberparadism",
+        "Science",
+        "Futurism"
+      ],
+      "cited_by": [],
+      "cite_count": 0
+    },
+    {
       "id": "genesis",
       "title": "Genesis",
       "authored_by": [
@@ -1463,6 +1553,24 @@
         }
       ],
       "cite_count": 1
+    },
+    {
+      "id": "gibson-neuromancer",
+      "title": "Neuromancer",
+      "authored_by": [
+        "William Gibson"
+      ],
+      "publish_date": "1984",
+      "follow_url": "https://williamgibsonbooks.com/books/neuromancer/",
+      "description": "Gibson's principal cyberpunk novel and the work that coined the term *cyberspace*. Neuromancer became the foundational text of the cyberpunk literary movement and the principal dystopian-technological aesthetic that Cyberparadism operates against.",
+      "medium": "fiction-book",
+      "topics": [
+        "Cyberparadism",
+        "Fiction",
+        "Futurism"
+      ],
+      "cited_by": [],
+      "cite_count": 0
     },
     {
       "id": "gospel-of-john",
@@ -2022,6 +2130,43 @@
       "cite_count": 0
     },
     {
+      "id": "la-bible-of-la-pleiade",
+      "title": "The Bible of La Pleiade",
+      "authored_by": [
+        "Edouard Dorme",
+        "La Pléiade"
+      ],
+      "publish_date": "1956",
+      "follow_url": "https://www.la-pleiade.fr/Catalogue/GALLIMARD/Bibliotheque-de-la-Pleiade/La-Bible4",
+      "description": "The \"La Bible: Ancient Testament (tome 1 et 2)\" from La Pléiade publisher, translated by Édouard Dhorme, Franck Michaéli, and Antoine Guillaumont, offers a comprehensive look at the Old Testament.\n\n- Tome 1: This volume includes the Pentateuch, which contains narratives of the creation, early prophets, and the Exodus. It also covers historical books such as Joshua, the books of Samuel, the books of Kings, Chronicles, Ezra, Nehemiah, and the books of the Maccabees. This edition is notable for its \"historian's perspective\" of these texts, making it a significant literary monument. Despite its publication in 1956, it doesn't incorporate the most recent archaeological discoveries and analyses. The texts are enriched with an enlightening introduction about the history of the Bible, including its Hebrew texts and Greek or Latin versions. Key figures such as Adam and Eve, Noah, Abraham, Moses, Samson, David, and Solomon are featured, along with detailed accounts of religious laws, precepts, and the long enumerations of Jewish tribes.\n\n- Tome 2: This second volume includes the Four Major Prophets, the Twelve Minor Prophets, the Three Poetic Books, the Five Scrolls, and the Deuterocanonical books. The translations for this volume were contributed by Jean Koenig, Édouard Dhorme, Frank Michaéli, Jean Hadot, and Antoine Guillaumont. This part of the collection highlights the Old Testament as a vast literary compilation comprising liturgical poems, tales and legends, hymns and songs, and sayings and proverbs. It presents a rich variety of texts, satisfying a wide range of readers with different interests. Notable contents include the voluptuous poetry of the Song of Songs and the profound philosophical musings found in Ecclesiastes and the Book of Job.\n\nThese volumes provide a deep and varied exploration of the Old Testament, reflecting both its historical significance and its vast literary wealth. The translations and introductions contribute to a nuanced understanding of these ancient texts, making them accessible to a modern readership.\n\n![Image](images/dhorme-bible-books.jpg \"La Bible: Ancient Testament, Tome I & Tome II (1956) — Edouard Dhorme\")\n\n### About Edouard Dhorme\n\nEdouard Dhorme (1881-1966) was a French Assyriologist and biblical scholar. He is best known for his work on the Akkadian language and the cuneiform script, as well as his translations and commentaries on the Hebrew Bible and the Dead Sea Scrolls.\n\nDhorme studied at the Ecole biblique et archéologique française de Jérusalem, where he developed his expertise in Semitic languages and literature. He later taught at several universities, including the Sorbonne in Paris, where he was appointed professor of Assyriology in 1933.\n\nDhorme's most influential works include \"The Ancient Near East,\" a survey of the history, culture, and religions of the region, and \"Theologie babylonienne et judéo-chrétienne,\" a comparative study of Babylonian and Judeo-Christian theology. He also contributed to the French translation of the Bible known as the \"Bible de Jérusalem,\" and published several commentaries on individual books of the Hebrew Bible, including the Psalms and the Book of Job. Dhorme's contributions to the fields of Assyriology and biblical scholarship are still recognized and studied today.\n\n### See also\n\n- [Wiki › Dhorme Bible translation](/wiki/encyclopedia/dhorme-bible-translation/)</br>\n\n### External links\n\n- [La Bible: Ancient Testament | Bibliothèque de la Pléiade](https://www.la-pleiade.fr/Catalogue/GALLIMARD/Bibliotheque-de-la-Pleiade/La-Bible4)",
+      "medium": "article",
+      "topics": [
+        "Bible",
+        "Elohim",
+        "Theology"
+      ],
+      "cited_by": [],
+      "cite_count": 0
+    },
+    {
+      "id": "le-guin-dispossessed",
+      "title": "The Dispossessed: An Ambiguous Utopia",
+      "authored_by": [
+        "Ursula K. Le Guin"
+      ],
+      "publish_date": "1974",
+      "follow_url": "https://www.ursulakleguin.com/dispossessed",
+      "description": "Le Guin's novel of post-scarcity-cooperative civilisational arrangement on the moon Anarres, operating with substantial scientific-technological sophistication and substantial commitment to equity, freedom, and responsibility.",
+      "medium": "fiction-book",
+      "topics": [
+        "Cyberparadism",
+        "Fiction",
+        "Futurism"
+      ],
+      "cited_by": [],
+      "cite_count": 0
+    },
+    {
       "id": "le-livre-qui-dit-la-v-rit",
       "title": "Le Livre qui dit la vérité",
       "authored_by": [
@@ -2366,6 +2511,60 @@
       "cite_count": 1
     },
     {
+      "id": "miyazaki-castle-in-the-sky",
+      "title": "Castle in the Sky",
+      "authored_by": [
+        "Hayao Miyazaki",
+        "Studio Ghibli"
+      ],
+      "publish_date": "1986",
+      "follow_url": "https://www.ghibli.jp/works/laputa/",
+      "description": "Miyazaki's articulation of the Laputan civilisation as substantively-advanced harmonious-technology integration. One principal Cyberparadist-aligned Studio Ghibli production.",
+      "medium": "documentary",
+      "topics": [
+        "Cyberparadism",
+        "Fiction"
+      ],
+      "cited_by": [],
+      "cite_count": 0
+    },
+    {
+      "id": "miyazaki-nausicaa",
+      "title": "Nausicaä of the Valley of the Wind",
+      "authored_by": [
+        "Hayao Miyazaki",
+        "Studio Ghibli"
+      ],
+      "publish_date": "1984",
+      "follow_url": "https://www.ghibli.jp/works/nausicaa/",
+      "description": "Miyazaki's foundational ecological-utopian film, integrating advanced atmospheric technology with substantial post-apocalyptic environmental restoration. The substantial Ghibli ecological aesthetic registers principal Cyberparadist content through harmonious-technology-and-nature articulation.",
+      "medium": "documentary",
+      "topics": [
+        "Cyberparadism",
+        "Fiction"
+      ],
+      "cited_by": [],
+      "cite_count": 0
+    },
+    {
+      "id": "miyazaki-princess-mononoke",
+      "title": "Princess Mononoke",
+      "authored_by": [
+        "Hayao Miyazaki",
+        "Studio Ghibli"
+      ],
+      "publish_date": "1997",
+      "follow_url": "https://www.ghibli.jp/works/mononoke/",
+      "description": "Miyazaki's articulation of the substantial human-nature-technology negotiation, with substantial Cyberparadist content through harmonious-integration commitment despite the central conflict-narrative framing.",
+      "medium": "documentary",
+      "topics": [
+        "Cyberparadism",
+        "Fiction"
+      ],
+      "cited_by": [],
+      "cite_count": 0
+    },
+    {
       "id": "modern-perspectives-on-topic-analysis",
       "title": "Modern Perspectives on Topic Analysis",
       "authored_by": [
@@ -2384,6 +2583,43 @@
         }
       ],
       "cite_count": 1
+    },
+    {
+      "id": "mores-utopia",
+      "title": "Utopia",
+      "authored_by": [
+        "Thomas More"
+      ],
+      "publish_date": "1516",
+      "follow_url": "https://en.wikipedia.org/wiki/Utopia_(book)",
+      "description": "More's foundational text of the Western utopian literary tradition. The substantial subsequent utopian-literary tradition within which Cyberparadism operates as specific contemporary aesthetic-cultural-technological articulation.",
+      "medium": "fiction-book",
+      "topics": [
+        "Cyberparadism",
+        "Fiction",
+        "Futurism"
+      ],
+      "cited_by": [],
+      "cite_count": 0
+    },
+    {
+      "id": "multispecies-cities-anthology",
+      "title": "Multispecies Cities: Solarpunk Urban Futures",
+      "authored_by": [
+        "Christoph Rupprecht (ed.)",
+        "World Weaver Press"
+      ],
+      "publish_date": "2021",
+      "follow_url": "https://worldweaverpress.com/multispecies-cities/",
+      "description": "Solarpunk anthology gathering substantial articulations of multispecies urban arrangements. Continues the principal Solarpunk literary tradition closely adjacent to Cyberparadism.",
+      "medium": "fiction-book",
+      "topics": [
+        "Cyberparadism",
+        "Fiction",
+        "Futurism"
+      ],
+      "cited_by": [],
+      "cite_count": 0
     },
     {
       "id": "nicene-creed",
@@ -2456,6 +2692,24 @@
       "cite_count": 2
     },
     {
+      "id": "oblivion-film",
+      "title": "Oblivion",
+      "authored_by": [
+        "Joseph Kosinski",
+        "Universal Pictures"
+      ],
+      "publish_date": "2013",
+      "follow_url": "https://en.wikipedia.org/wiki/Oblivion_(2013_film)",
+      "description": "Kosinski's articulation of post-conflict Earth with the substantial elevated-tower-habitat Cyberparadist visual register, attached to broader post-collapse narrative framing.",
+      "medium": "documentary",
+      "topics": [
+        "Cyberparadism",
+        "Fiction"
+      ],
+      "cited_by": [],
+      "cite_count": 0
+    },
+    {
       "id": "order-out-of-chaos-man-s-new-dialogue-with-nature",
       "title": "Order Out of Chaos: Man's New Dialogue with Nature",
       "authored_by": [
@@ -2496,6 +2750,23 @@
       "cite_count": 1
     },
     {
+      "id": "otto-hangende-dach",
+      "title": "Das Hängende Dach",
+      "authored_by": [
+        "Frei Otto"
+      ],
+      "publish_date": "1954",
+      "follow_url": "https://en.wikipedia.org/wiki/Frei_Otto",
+      "description": "Otto's foundational text on lightweight tensile architecture, one of the principal architectural-design lineages feeding Cyberparadist organic-minimalist visual vocabulary.",
+      "medium": "nonfiction-book",
+      "topics": [
+        "Cyberparadism",
+        "Architecture"
+      ],
+      "cited_by": [],
+      "cite_count": 0
+    },
+    {
       "id": "parzival",
       "title": "Parzival",
       "authored_by": [
@@ -2526,6 +2797,26 @@
         "Abduction",
         "UFO phenomena",
         "Consciousness"
+      ],
+      "cited_by": [],
+      "cite_count": 0
+    },
+    {
+      "id": "pillar-of-enoch-dot-com",
+      "title": "The Pillar of Enoch",
+      "authored_by": [
+        "Helena Lehman"
+      ],
+      "publish_date": "1993?",
+      "follow_url": "https://pillar-of-enoch.com",
+      "description": "Helena Lehman's \"Pillar of Enoch\" website is a resource for those interested in Judeo-Christian spiritual truths, ancient history, and future prophecies related to signs in the heavens as connected to Bible prophecy. The site features her \"Language of God Book Series,\" which explores biblical allegory and symbolism. The series delves into the prophetic imagery of the Bible, sacred monuments like the Great Pyramid and Solomon's Temple, and connections to constellations like Orion. Additionally, it discusses the Pillar of Enoch or Great Pyramid and its relation to the pre-Flood Sethites, the Gospel in the Stars, and how these elements tie into understanding biblical prophecies like those in Daniel, Ezekiel, and Revelation​.\n\n### See also\n\n[Wiki › Great Year](/wiki/encyclopedia/great-year/)</br>\n[Wiki › Precession](/wiki/encyclopedia/precession/)</br>",
+      "medium": "wiki",
+      "topics": [
+        "Gospel in the Stars",
+        "Mazzaroth",
+        "Mythology",
+        "The Tradition",
+        "Precession"
       ],
       "cited_by": [],
       "cite_count": 0
@@ -2766,25 +3057,6 @@
       "cite_count": 3
     },
     {
-      "id": "the-ricks-must-be-crazy",
-      "title": "Rick and Morty (S2E06): The Ricks Must Be Crazy",
-      "authored_by": [
-        "Dominic Polcino",
-        "Dan Guterman",
-        "Adult Swim"
-      ],
-      "publish_date": "2015",
-      "follow_url": "https://www.adultswim.com/videos/rick-and-morty/",
-      "description": "Rick and Morty Season 2, Episode 6, titled \"The Ricks Must Be Crazy,\" is a highly inventive and humorous exploration of complex scientific concepts, mainly nested universes and the ethics of creating and exploiting such realities.\n\nIn this episode, Rick and Morty venture into the microverse within Rick's car battery, where Rick has created an entire universe (the microverse) to power his vehicle. The inhabitants of this microverse unknowingly generate power for Rick through their daily activities. The plot thickens when they discover that a scientist in the microverse has created a mini-microverse to power his own planet, unaware that he, in turn, is in a universe inside a car battery.\n\nThis episode brilliantly plays with the idea of nested realities and the ethical implications of creating universes for personal gain. Rick, as the creator of the microverse, faces a moral conundrum when his creations gain the capability to challenge his authority and purpose.\n\n\"The Ricks Must Be Crazy\" also delves into themes of free will, manipulation, and the nature of reality. The episode is a satirical take on the god-complex and the philosophical implications of creation and power. It raises questions about the responsibility of creators towards their creations and the ethical limits of using sentient beings for personal benefits.\n\n### Common themes\n\nThe episode \"The Ricks Must Be Crazy\" from \"Rick and Morty\" aligns intriguingly with the concepts of infinity as explored on the Wheel of Heaven website. The episode's narrative, centered on nested universes within Rick's car battery, reflects the idea of an infinite, layered reality, resonating with the Wheel of Heaven's portrayal of existence as endless and devoid of a central point or end​.\n\nThis thematic alignment is further deepened by the episode's exploration of the micro and macro realms, mirroring the Wheel of Heaven's concept of infinite realms of life at varying scales, as well as the cyclical and repetitive nature of existence across all levels of the cosmos​. The episode's representation of these nested realities and the ethical implications of their creation and exploitation echoes the Wheel of Heaven's contemplation on the infinite nature of existence and the human position within this continuum.\n\n### See more\n\n- [Wiki › Mass effect](/wiki/encyclopedia/mass-effect/)\n- [Wiki › Infinity](/wiki/encyclopedia/infinity/)\n\n### External links\n\n- [The Ricks Must Be Crazy | Rick and Morty Wiki | Fandom](https://rickandmorty.fandom.com/wiki/The_Ricks_Must_Be_Crazy)",
-      "medium": "documentary",
-      "topics": [
-        "Infinity",
-        "Neo-Euhemerism"
-      ],
-      "cited_by": [],
-      "cite_count": 0
-    },
-    {
       "id": "satan-a-biography",
       "title": "Satan: A Biography",
       "authored_by": [
@@ -2897,6 +3169,42 @@
       "cite_count": 1
     },
     {
+      "id": "solarpunk-anthology-2018",
+      "title": "Solarpunk: Ecological and Fantastical Stories in a Sustainable World",
+      "authored_by": [
+        "Fábio Fernandes (trans.)",
+        "World Weaver Press"
+      ],
+      "publish_date": "2018",
+      "follow_url": "https://worldweaverpress.com/solarpunk/",
+      "description": "The principal English-language Solarpunk anthology, translating the substantial Brazilian Solarpunk literary movement. Solarpunk operates as Cyberparadism's substantively-closest aesthetic cousin.",
+      "medium": "fiction-book",
+      "topics": [
+        "Cyberparadism",
+        "Fiction",
+        "Futurism"
+      ],
+      "cited_by": [],
+      "cite_count": 0
+    },
+    {
+      "id": "soleri-arcology",
+      "title": "Arcology: The City in the Image of Man",
+      "authored_by": [
+        "Paolo Soleri"
+      ],
+      "publish_date": "1969",
+      "follow_url": "https://www.arcosanti.org/",
+      "description": "Soleri's principal articulation of arcology — high-density human habitats integrated with surrounding ecologies — one of the principal architectural-design lineages feeding Cyberparadist visual vocabulary.",
+      "medium": "nonfiction-book",
+      "topics": [
+        "Cyberparadism",
+        "Architecture"
+      ],
+      "cited_by": [],
+      "cite_count": 0
+    },
+    {
       "id": "space-a-gogo-dot-com",
       "title": "Space a Go Go (archived website)",
       "authored_by": [
@@ -2912,6 +3220,62 @@
         "Neo-Euhemerism",
         "Pyramids",
         "Raëlism"
+      ],
+      "cited_by": [],
+      "cite_count": 0
+    },
+    {
+      "id": "star-trek-tng",
+      "title": "Star Trek: The Next Generation",
+      "authored_by": [
+        "Gene Roddenberry",
+        "Paramount Television"
+      ],
+      "publish_date": "1987-1994",
+      "follow_url": "https://www.startrek.com/series/star-trek-the-next-generation",
+      "description": "The principal Star Trek series of the post-original-series period. The Federation aesthetic — post-scarcity organisation, advanced-technology integration with environmental-ethical commitment, cooperative-civilisational organisation, and cosmic-frontier extension — registers as substantively Cyberparadist.",
+      "medium": "documentary",
+      "topics": [
+        "Cyberparadism",
+        "Fiction",
+        "Futurism"
+      ],
+      "cited_by": [],
+      "cite_count": 0
+    },
+    {
+      "id": "stephenson-diamond-age",
+      "title": "The Diamond Age: Or, A Young Lady's Illustrated Primer",
+      "authored_by": [
+        "Neal Stephenson"
+      ],
+      "publish_date": "1995",
+      "follow_url": "https://www.nealstephenson.com/the-diamond-age.html",
+      "description": "Stephenson's post-cyberpunk novel exploring nanotechnology, post-state phyle organisation, and the substantial cultural-transformational consequences of mature molecular-manufacturing capacity.",
+      "medium": "fiction-book",
+      "topics": [
+        "Cyberparadism",
+        "Fiction",
+        "Futurism"
+      ],
+      "cited_by": [],
+      "cite_count": 0
+    },
+    {
+      "id": "sunvault-anthology",
+      "title": "Sunvault: Stories of Solarpunk and Eco-Speculation",
+      "authored_by": [
+        "Phoebe Wagner (ed.)",
+        "Brontë Christopher Wieland (ed.)"
+      ],
+      "publish_date": "2017",
+      "follow_url": "https://upperrubberboot.com/sunvault/",
+      "description": "Principal English-language Solarpunk anthology gathering substantial short-fiction articulations of the Solarpunk aesthetic. Closely-adjacent literary corpus to Cyberparadism.",
+      "medium": "fiction-book",
+      "topics": [
+        "Cyberparadism",
+        "Fiction",
+        "Futurism"
       ],
       "cited_by": [],
       "cite_count": 0
@@ -3105,25 +3469,6 @@
         }
       ],
       "cite_count": 9
-    },
-    {
-      "id": "la-bible-of-la-pleiade",
-      "title": "The Bible of La Pleiade",
-      "authored_by": [
-        "Edouard Dorme",
-        "La Pléiade"
-      ],
-      "publish_date": "1956",
-      "follow_url": "https://www.la-pleiade.fr/Catalogue/GALLIMARD/Bibliotheque-de-la-Pleiade/La-Bible4",
-      "description": "The \"La Bible: Ancient Testament (tome 1 et 2)\" from La Pléiade publisher, translated by Édouard Dhorme, Franck Michaéli, and Antoine Guillaumont, offers a comprehensive look at the Old Testament.\n\n- Tome 1: This volume includes the Pentateuch, which contains narratives of the creation, early prophets, and the Exodus. It also covers historical books such as Joshua, the books of Samuel, the books of Kings, Chronicles, Ezra, Nehemiah, and the books of the Maccabees. This edition is notable for its \"historian's perspective\" of these texts, making it a significant literary monument. Despite its publication in 1956, it doesn't incorporate the most recent archaeological discoveries and analyses. The texts are enriched with an enlightening introduction about the history of the Bible, including its Hebrew texts and Greek or Latin versions. Key figures such as Adam and Eve, Noah, Abraham, Moses, Samson, David, and Solomon are featured, along with detailed accounts of religious laws, precepts, and the long enumerations of Jewish tribes.\n\n- Tome 2: This second volume includes the Four Major Prophets, the Twelve Minor Prophets, the Three Poetic Books, the Five Scrolls, and the Deuterocanonical books. The translations for this volume were contributed by Jean Koenig, Édouard Dhorme, Frank Michaéli, Jean Hadot, and Antoine Guillaumont. This part of the collection highlights the Old Testament as a vast literary compilation comprising liturgical poems, tales and legends, hymns and songs, and sayings and proverbs. It presents a rich variety of texts, satisfying a wide range of readers with different interests. Notable contents include the voluptuous poetry of the Song of Songs and the profound philosophical musings found in Ecclesiastes and the Book of Job.\n\nThese volumes provide a deep and varied exploration of the Old Testament, reflecting both its historical significance and its vast literary wealth. The translations and introductions contribute to a nuanced understanding of these ancient texts, making them accessible to a modern readership.\n\n![Image](images/dhorme-bible-books.jpg \"La Bible: Ancient Testament, Tome I & Tome II (1956) — Edouard Dhorme\")\n\n### About Edouard Dhorme\n\nEdouard Dhorme (1881-1966) was a French Assyriologist and biblical scholar. He is best known for his work on the Akkadian language and the cuneiform script, as well as his translations and commentaries on the Hebrew Bible and the Dead Sea Scrolls.\n\nDhorme studied at the Ecole biblique et archéologique française de Jérusalem, where he developed his expertise in Semitic languages and literature. He later taught at several universities, including the Sorbonne in Paris, where he was appointed professor of Assyriology in 1933.\n\nDhorme's most influential works include \"The Ancient Near East,\" a survey of the history, culture, and religions of the region, and \"Theologie babylonienne et judéo-chrétienne,\" a comparative study of Babylonian and Judeo-Christian theology. He also contributed to the French translation of the Bible known as the \"Bible de Jérusalem,\" and published several commentaries on individual books of the Hebrew Bible, including the Psalms and the Book of Job. Dhorme's contributions to the fields of Assyriology and biblical scholarship are still recognized and studied today.\n\n### See also\n\n- [Wiki › Dhorme Bible translation](/wiki/encyclopedia/dhorme-bible-translation/)</br>\n\n### External links\n\n- [La Bible: Ancient Testament | Bibliothèque de la Pléiade](https://www.la-pleiade.fr/Catalogue/GALLIMARD/Bibliotheque-de-la-Pleiade/La-Bible4)",
-      "medium": "article",
-      "topics": [
-        "Bible",
-        "Elohim",
-        "Theology"
-      ],
-      "cited_by": [],
-      "cite_count": 0
     },
     {
       "id": "the-book-of-mormon",
@@ -3347,25 +3692,6 @@
       "cite_count": 4
     },
     {
-      "id": "the-devils-delusion",
-      "title": "The Devil's Delusion: Atheism and Its Scientific Pretension",
-      "authored_by": [
-        "David Berlinski"
-      ],
-      "publish_date": "2008",
-      "follow_url": "",
-      "description": "In \"The Devil's Delusion: Atheism and Its Scientific Pretensions,\" David Berlinski mounts a vigorous critique of scientific atheism, particularly addressing the assertions made by figures like Richard Dawkins and Sam Harris. Berlinski, a secular Jew and mathematician, questions the completeness and authority of science in answering profound existential and moral questions.\n\nBerlinski argues that the science often cited by atheists to debunk religious beliefs actually does not conclusively negate the possibility of a divine existence. He highlights the limitations of scientific theories, especially in fields like quantum mechanics and relativity, in explaining the origins and nature of the universe, and he points out that these theories lack comprehensive empirical verifiability. Berlinski expresses skepticism towards Darwinian evolutionary theory, questioning its ability to fully explain the complexity of life and the emergence of human consciousness.\n\nMoreover, Berlinski challenges the idea that a secular, rationalist approach can provide a robust foundation for morality. He suggests that objective morality might indeed require a religious underpinning, countering the claim that moral understanding can be achieved purely through rational thought.\n\nDespite his critiques, Berlinski does not completely dismiss the achievements of Western science. He acknowledges the importance of scientific theories as significant human accomplishments but argues that they fall short in addressing the profound questions traditionally explored by religion.\n\nControversially, Berlinski's book raises questions about his own religious beliefs. Despite his defense of religious thought, Berlinski himself is not religious, leading to discussions about the sincerity and motivation behind his arguments. His book is seen as a response to the rise of militant atheism and the dismissal of religious belief by prominent thinkers in the scientific community. It has been described as well-informed, pointed, and entertaining, offering a perspective that is both critical of scientific atheism and reflective of a broader intellectual discourse on the intersection of science and religion​.",
-      "medium": "nonfiction-book",
-      "topics": [
-        "Bible",
-        "Creationism",
-        "Genesis",
-        "History of Science"
-      ],
-      "cited_by": [],
-      "cite_count": 0
-    },
-    {
       "id": "the-devil-perceptions-of-evil",
       "title": "The Devil: Perceptions of Evil from Antiquity to Primitive Christianity",
       "authored_by": [
@@ -3380,6 +3706,25 @@
         "Devil",
         "Religious history",
         "Antiquity"
+      ],
+      "cited_by": [],
+      "cite_count": 0
+    },
+    {
+      "id": "the-devils-delusion",
+      "title": "The Devil's Delusion: Atheism and Its Scientific Pretension",
+      "authored_by": [
+        "David Berlinski"
+      ],
+      "publish_date": "2008",
+      "follow_url": "",
+      "description": "In \"The Devil's Delusion: Atheism and Its Scientific Pretensions,\" David Berlinski mounts a vigorous critique of scientific atheism, particularly addressing the assertions made by figures like Richard Dawkins and Sam Harris. Berlinski, a secular Jew and mathematician, questions the completeness and authority of science in answering profound existential and moral questions.\n\nBerlinski argues that the science often cited by atheists to debunk religious beliefs actually does not conclusively negate the possibility of a divine existence. He highlights the limitations of scientific theories, especially in fields like quantum mechanics and relativity, in explaining the origins and nature of the universe, and he points out that these theories lack comprehensive empirical verifiability. Berlinski expresses skepticism towards Darwinian evolutionary theory, questioning its ability to fully explain the complexity of life and the emergence of human consciousness.\n\nMoreover, Berlinski challenges the idea that a secular, rationalist approach can provide a robust foundation for morality. He suggests that objective morality might indeed require a religious underpinning, countering the claim that moral understanding can be achieved purely through rational thought.\n\nDespite his critiques, Berlinski does not completely dismiss the achievements of Western science. He acknowledges the importance of scientific theories as significant human accomplishments but argues that they fall short in addressing the profound questions traditionally explored by religion.\n\nControversially, Berlinski's book raises questions about his own religious beliefs. Despite his defense of religious thought, Berlinski himself is not religious, leading to discussions about the sincerity and motivation behind his arguments. His book is seen as a response to the rise of militant atheism and the dismissal of religious belief by prominent thinkers in the scientific community. It has been described as well-informed, pointed, and entertaining, offering a perspective that is both critical of scientific atheism and reflective of a broader intellectual discourse on the intersection of science and religion​.",
+      "medium": "nonfiction-book",
+      "topics": [
+        "Bible",
+        "Creationism",
+        "Genesis",
+        "History of Science"
       ],
       "cited_by": [],
       "cite_count": 0
@@ -3729,26 +4074,6 @@
       "cite_count": 0
     },
     {
-      "id": "pillar-of-enoch-dot-com",
-      "title": "The Pillar of Enoch",
-      "authored_by": [
-        "Helena Lehman"
-      ],
-      "publish_date": "1993?",
-      "follow_url": "https://pillar-of-enoch.com",
-      "description": "Helena Lehman's \"Pillar of Enoch\" website is a resource for those interested in Judeo-Christian spiritual truths, ancient history, and future prophecies related to signs in the heavens as connected to Bible prophecy. The site features her \"Language of God Book Series,\" which explores biblical allegory and symbolism. The series delves into the prophetic imagery of the Bible, sacred monuments like the Great Pyramid and Solomon's Temple, and connections to constellations like Orion. Additionally, it discusses the Pillar of Enoch or Great Pyramid and its relation to the pre-Flood Sethites, the Gospel in the Stars, and how these elements tie into understanding biblical prophecies like those in Daniel, Ezekiel, and Revelation​.\n\n### See also\n\n[Wiki › Great Year](/wiki/encyclopedia/great-year/)</br>\n[Wiki › Precession](/wiki/encyclopedia/precession/)</br>",
-      "medium": "wiki",
-      "topics": [
-        "Gospel in the Stars",
-        "Mazzaroth",
-        "Mythology",
-        "The Tradition",
-        "Precession"
-      ],
-      "cited_by": [],
-      "cite_count": 0
-    },
-    {
       "id": "the-possibility-of-an-island",
       "title": "The Possibility of an Island",
       "authored_by": [
@@ -3821,6 +4146,25 @@
         "Precession",
         "Pyramids",
         "The Tradition"
+      ],
+      "cited_by": [],
+      "cite_count": 0
+    },
+    {
+      "id": "the-ricks-must-be-crazy",
+      "title": "Rick and Morty (S2E06): The Ricks Must Be Crazy",
+      "authored_by": [
+        "Dominic Polcino",
+        "Dan Guterman",
+        "Adult Swim"
+      ],
+      "publish_date": "2015",
+      "follow_url": "https://www.adultswim.com/videos/rick-and-morty/",
+      "description": "Rick and Morty Season 2, Episode 6, titled \"The Ricks Must Be Crazy,\" is a highly inventive and humorous exploration of complex scientific concepts, mainly nested universes and the ethics of creating and exploiting such realities.\n\nIn this episode, Rick and Morty venture into the microverse within Rick's car battery, where Rick has created an entire universe (the microverse) to power his vehicle. The inhabitants of this microverse unknowingly generate power for Rick through their daily activities. The plot thickens when they discover that a scientist in the microverse has created a mini-microverse to power his own planet, unaware that he, in turn, is in a universe inside a car battery.\n\nThis episode brilliantly plays with the idea of nested realities and the ethical implications of creating universes for personal gain. Rick, as the creator of the microverse, faces a moral conundrum when his creations gain the capability to challenge his authority and purpose.\n\n\"The Ricks Must Be Crazy\" also delves into themes of free will, manipulation, and the nature of reality. The episode is a satirical take on the god-complex and the philosophical implications of creation and power. It raises questions about the responsibility of creators towards their creations and the ethical limits of using sentient beings for personal benefits.\n\n### Common themes\n\nThe episode \"The Ricks Must Be Crazy\" from \"Rick and Morty\" aligns intriguingly with the concepts of infinity as explored on the Wheel of Heaven website. The episode's narrative, centered on nested universes within Rick's car battery, reflects the idea of an infinite, layered reality, resonating with the Wheel of Heaven's portrayal of existence as endless and devoid of a central point or end​.\n\nThis thematic alignment is further deepened by the episode's exploration of the micro and macro realms, mirroring the Wheel of Heaven's concept of infinite realms of life at varying scales, as well as the cyclical and repetitive nature of existence across all levels of the cosmos​. The episode's representation of these nested realities and the ethical implications of their creation and exploitation echoes the Wheel of Heaven's contemplation on the infinite nature of existence and the human position within this continuum.\n\n### See more\n\n- [Wiki › Mass effect](/wiki/encyclopedia/mass-effect/)\n- [Wiki › Infinity](/wiki/encyclopedia/infinity/)\n\n### External links\n\n- [The Ricks Must Be Crazy | Rick and Morty Wiki | Fandom](https://rickandmorty.fandom.com/wiki/The_Ricks_Must_Be_Crazy)",
+      "medium": "documentary",
+      "topics": [
+        "Infinity",
+        "Neo-Euhemerism"
       ],
       "cited_by": [],
       "cite_count": 0
@@ -4128,6 +4472,25 @@
       "cite_count": 8
     },
     {
+      "id": "tomorrowland-film",
+      "title": "Tomorrowland",
+      "authored_by": [
+        "Brad Bird",
+        "Walt Disney Pictures"
+      ],
+      "publish_date": "2015",
+      "follow_url": "https://en.wikipedia.org/wiki/Tomorrowland_(film)",
+      "description": "Disney's articulation of the optimistic-technological-future cultural vision, drawing substantively on the broader 1960s Tomorrowland aesthetic. Registers substantial Cyberparadist content through specific harmonious-technology-and-nature visual articulation.",
+      "medium": "documentary",
+      "topics": [
+        "Cyberparadism",
+        "Fiction",
+        "Futurism"
+      ],
+      "cited_by": [],
+      "cite_count": 0
+    },
+    {
       "id": "ufo-religions",
       "title": "UFO Religions",
       "authored_by": [
@@ -4165,6 +4528,25 @@
       "cite_count": 1
     },
     {
+      "id": "wall-e",
+      "title": "WALL-E",
+      "authored_by": [
+        "Andrew Stanton",
+        "Pixar Animation Studios"
+      ],
+      "publish_date": "2008",
+      "follow_url": "https://movies.disney.com/wall-e",
+      "description": "Pixar's post-apocalyptic-recovery articulation, with the substantial closing-sequence registration of post-recovery Cyberparadist harmonious-technology-and-restored-nature integration.",
+      "medium": "documentary",
+      "topics": [
+        "Cyberparadism",
+        "Fiction",
+        "Futurism"
+      ],
+      "cited_by": [],
+      "cite_count": 0
+    },
+    {
       "id": "who-wrote-the-bible",
       "title": "Who Wrote the Bible?",
       "authored_by": [
@@ -4180,6 +4562,24 @@
         "JEDP",
         "Source criticism",
         "Hebrew Bible"
+      ],
+      "cited_by": [],
+      "cite_count": 0
+    },
+    {
+      "id": "wiener-cybernetics",
+      "title": "Cybernetics: Or Control and Communication in the Animal and the Machine",
+      "authored_by": [
+        "Norbert Wiener"
+      ],
+      "publish_date": "1948",
+      "follow_url": "https://mitpress.mit.edu/9780262730099/cybernetics/",
+      "description": "Wiener's foundational treatise establishing cybernetics as the scientific study of regulatory and communicative systems. The book introduced the cyber- prefix into modern technical-scientific vocabulary and laid the groundwork for the broader cyber- aesthetic family.",
+      "medium": "nonfiction-book",
+      "topics": [
+        "Cyberparadism",
+        "Science",
+        "Futurism"
       ],
       "cited_by": [],
       "cite_count": 0
