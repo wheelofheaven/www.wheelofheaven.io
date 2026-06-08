@@ -700,6 +700,12 @@
         <priority>0.7</priority></url>
 
     <url>
+        <loc>https://www.wheelofheaven.world/de/listen/</loc>
+        
+        <changefreq>weekly</changefreq>
+        <priority>0.5</priority></url>
+
+    <url>
         <loc>https://www.wheelofheaven.world/de/map/</loc>
         
         <changefreq>weekly</changefreq>
@@ -2156,6 +2162,12 @@
         
         <changefreq>weekly</changefreq>
         <priority>0.7</priority></url>
+
+    <url>
+        <loc>https://www.wheelofheaven.world/es/listen/</loc>
+        
+        <changefreq>weekly</changefreq>
+        <priority>0.5</priority></url>
 
     <url>
         <loc>https://www.wheelofheaven.world/es/map/</loc>
@@ -3628,6 +3640,12 @@
         <priority>0.7</priority></url>
 
     <url>
+        <loc>https://www.wheelofheaven.world/fr/listen/</loc>
+        
+        <changefreq>weekly</changefreq>
+        <priority>0.5</priority></url>
+
+    <url>
         <loc>https://www.wheelofheaven.world/fr/map/</loc>
         
         <changefreq>weekly</changefreq>
@@ -5080,6 +5098,12 @@
         <priority>0.7</priority></url>
 
     <url>
+        <loc>https://www.wheelofheaven.world/he/listen/</loc>
+        
+        <changefreq>weekly</changefreq>
+        <priority>0.5</priority></url>
+
+    <url>
         <loc>https://www.wheelofheaven.world/he/news/</loc>
         
         <changefreq>weekly</changefreq>
@@ -6524,6 +6548,12 @@
         
         <changefreq>weekly</changefreq>
         <priority>0.7</priority></url>
+
+    <url>
+        <loc>https://www.wheelofheaven.world/ja/listen/</loc>
+        
+        <changefreq>weekly</changefreq>
+        <priority>0.5</priority></url>
 
     <url>
         <loc>https://www.wheelofheaven.world/ja/map/</loc>
@@ -7976,6 +8006,12 @@
         
         <changefreq>weekly</changefreq>
         <priority>0.7</priority></url>
+
+    <url>
+        <loc>https://www.wheelofheaven.world/ko/listen/</loc>
+        
+        <changefreq>weekly</changefreq>
+        <priority>0.5</priority></url>
 
     <url>
         <loc>https://www.wheelofheaven.world/ko/map/</loc>
@@ -9496,6 +9532,12 @@
         <priority>0.7</priority></url>
 
     <url>
+        <loc>https://www.wheelofheaven.world/listen/</loc>
+        
+        <changefreq>weekly</changefreq>
+        <priority>0.5</priority></url>
+
+    <url>
         <loc>https://www.wheelofheaven.world/map/</loc>
         
         <changefreq>weekly</changefreq>
@@ -10178,6 +10220,12 @@
         
         <changefreq>weekly</changefreq>
         <priority>0.7</priority></url>
+
+    <url>
+        <loc>https://www.wheelofheaven.world/ru/listen/</loc>
+        
+        <changefreq>weekly</changefreq>
+        <priority>0.5</priority></url>
 
     <url>
         <loc>https://www.wheelofheaven.world/ru/map/</loc>
@@ -12448,6 +12496,12 @@
         <priority>0.7</priority></url>
 
     <url>
+        <loc>https://www.wheelofheaven.world/zh-Hant/listen/</loc>
+        
+        <changefreq>weekly</changefreq>
+        <priority>0.5</priority></url>
+
+    <url>
         <loc>https://www.wheelofheaven.world/zh-Hant/map/</loc>
         
         <changefreq>weekly</changefreq>
@@ -13898,6 +13952,12 @@
         
         <changefreq>weekly</changefreq>
         <priority>0.7</priority></url>
+
+    <url>
+        <loc>https://www.wheelofheaven.world/zh/listen/</loc>
+        
+        <changefreq>weekly</changefreq>
+        <priority>0.5</priority></url>
 
     <url>
         <loc>https://www.wheelofheaven.world/zh/map/</loc>
