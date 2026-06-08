@@ -17,6 +17,12 @@ Categories (an orphan may carry several):
   - `generic-term`       title is a short common single word; raw-text
                          search produces noisy results — needs human review
   - `true-ghost`         no mentions found anywhere; candidate for retire/merge
+  - `pattern-a-redirect` has `redirect_to` in extra AND body < 200 words:
+                         intentional pure-stub bridge page, working as designed
+                         (template renders the redirect link). Not a true orphan.
+  - `pattern-b-redirect` has `redirect_to` in extra AND body >= 200 words:
+                         substantive page misusing `redirect_to` — should use
+                         `see_also` for "read more / next pages" navigation.
 
 Output: `.claude/plans/wiki-orphan-assessment-2026-06.md`
 """
@@ -58,7 +64,7 @@ def parse_frontmatter(text):
 
 
 def load_wiki_terms():
-    """Return (slug -> {title, aliases}, term -> set(slugs))."""
+    """Return (slug -> {title, aliases, redirect_to}, term -> set(slugs))."""
     by_slug = {}
     term_index = defaultdict(set)
     for md in sorted(WIKI_DIR.glob("*.md")):
@@ -71,7 +77,12 @@ def load_wiki_terms():
         title = fm.get("title", slug)
         extra = fm.get("extra", {}) if isinstance(fm.get("extra"), dict) else {}
         aliases = extra.get("alternative_names", []) or []
-        by_slug[slug] = {"title": title, "aliases": list(aliases)}
+        redirect_to = extra.get("redirect_to") if isinstance(extra, dict) else None
+        by_slug[slug] = {
+            "title": title,
+            "aliases": list(aliases),
+            "redirect_to": redirect_to,
+        }
         for term in [title] + list(aliases):
             key = term.lower().strip()
             if len(key) >= MIN_SEARCH_TERM_LEN:
@@ -125,9 +136,10 @@ def main():
     for orphan in sorted(orphans, key=lambda e: e["slug"]):
         slug = orphan["slug"]
         path = WIKI_DIR / f"{slug}.md"
-        info = by_slug.get(slug, {"title": orphan["title"], "aliases": []})
+        info = by_slug.get(slug, {"title": orphan["title"], "aliases": [], "redirect_to": None})
         title = info["title"]
         aliases = info["aliases"]
+        redirect_to = info.get("redirect_to")
         body_words = orphan["body_words"]
 
         # Alias collision: does this orphan's title/alias appear as title or alias
@@ -161,7 +173,12 @@ def main():
         mention_files = sorted({f for hits in mention_map.values() for f, _ in hits})
 
         tags = []
-        if body_words < 200:
+        if redirect_to is not None:
+            if body_words < 200:
+                tags.append("pattern-a-redirect")
+            else:
+                tags.append("pattern-b-redirect")
+        if body_words < 200 and "pattern-a-redirect" not in tags:
             tags.append("stub")
         if collisions:
             tags.append("alias-collision")
@@ -169,13 +186,20 @@ def main():
             tags.append("generic-term")
         if total_mentions > 0 and "generic-term" not in tags:
             tags.append("unaliased-mentions")
-        if total_mentions == 0 and "stub" not in tags and "generic-term" not in tags and not collisions:
+        if (
+            total_mentions == 0
+            and "stub" not in tags
+            and "pattern-a-redirect" not in tags
+            and "generic-term" not in tags
+            and not collisions
+        ):
             tags.append("true-ghost")
 
         results.append({
             "slug": slug,
             "title": title,
             "aliases": aliases,
+            "redirect_to": redirect_to,
             "body_words": body_words,
             "collisions": sorted(collisions),
             "total_mentions": total_mentions,
@@ -189,11 +213,13 @@ def main():
     out.append("# Wiki Orphan Assessment — 2026-06\n")
     out.append(f"Classification of the {len(results)} orphan wiki entries identified by the quality audit (zero in-degree from English content).\n")
     out.append("## Tag definitions\n")
-    out.append("- **`stub`** — body < 200 words; needs development regardless of orphan status")
+    out.append("- **`pattern-a-redirect`** — has `redirect_to` in `[extra]` AND body < 200 words: intentional pure-stub bridge page, working as designed. Template renders the redirect link. **Not a true orphan** — exclude from action backlog.")
+    out.append("- **`pattern-b-redirect`** — has `redirect_to` in `[extra]` AND body >= 200 words: substantive standalone page misusing the `redirect_to` field. Should be refactored to use `see_also` for \"read more / next pages\" navigation.")
+    out.append("- **`stub`** — body < 200 words AND no `redirect_to`; placeholder needing development")
     out.append("- **`alias-collision`** — title or alias overlaps with another wiki entry; likely duplicate or already-aliased")
     out.append("- **`unaliased-mentions`** — title/alias appears as raw text in other English content; aliasing opportunity (add `{% wiki %}` shortcodes where mentioned)")
     out.append("- **`generic-term`** — single common-English word title; raw-text search too noisy to be reliable, needs human review")
-    out.append("- **`true-ghost`** — no mentions anywhere; candidate for retire / merge / fundamental re-scoping\n")
+    out.append("- **`true-ghost`** — no mentions anywhere AND no `redirect_to`; candidate for retire / merge / fundamental re-scoping\n")
 
     # Summary by tag
     from collections import Counter
@@ -205,6 +231,31 @@ def main():
     for tag, n in tag_counts.most_common():
         out.append(f"- `{tag}` — **{n}** entries")
     out.append("")
+
+    # Pattern A redirect section (intentional, working as designed)
+    pattern_a = [r for r in results if "pattern-a-redirect" in r["tags"]]
+    if pattern_a:
+        out.append(f"## Pattern A redirects — intentional bridge pages ({len(pattern_a)})\n")
+        out.append("These have `redirect_to` in `[extra]` and minimal body content. They render with a redirect link via `wiki-page.html`. **Not action items.** Listed here so future audits can filter them out.\n")
+        out.append("| slug | title | redirect target | body words |")
+        out.append("|---|---|---|--:|")
+        for r in sorted(pattern_a, key=lambda x: x["slug"]):
+            target = (r.get("redirect_to") or {}).get("title", "—")
+            out.append(f"| `{r['slug']}` | {r['title']} | {target} | {r['body_words']} |")
+        out.append("")
+
+    # Pattern B redirect section (substantive — needs refactor)
+    pattern_b = [r for r in results if "pattern-b-redirect" in r["tags"]]
+    if pattern_b:
+        out.append(f"## Pattern B redirects — needs refactor ({len(pattern_b)})\n")
+        out.append("Substantive standalone pages that misuse `redirect_to`. Should be refactored to use `see_also` for \"read more / next pages\" navigation. These ARE genuine orphans in addition to the field misuse.\n")
+        out.append("| slug | title | misused redirect target | body words | other tags |")
+        out.append("|---|---|---|--:|---|")
+        for r in sorted(pattern_b, key=lambda x: -x["body_words"]):
+            target = (r.get("redirect_to") or {}).get("title", "—")
+            other_tags = [t for t in r["tags"] if t != "pattern-b-redirect"]
+            out.append(f"| `{r['slug']}` | {r['title']} | {target} | {r['body_words']} | {', '.join(other_tags) or '—'} |")
+        out.append("")
 
     # Stub section
     stubs = [r for r in results if "stub" in r["tags"]]
