@@ -1,7 +1,7 @@
 // Listen-to-this-page feature
 //
 // Three engines, tried in this order:
-//   - "prerecorded": pre-rendered ElevenLabs audiobook for the current
+//   - "prerecorded": pre-rendered ElevenLabs audio play for the current
 //                    library book + language + chapter, if a manifest is
 //                    published at assets.wheelofheaven.world. Highest
 //                    fidelity; paragraph highlight driven by a timing
@@ -14,7 +14,7 @@
 //
 // The user toggle ("System" / "Studio") chooses between the two GENERATED
 // engines. The prerecorded engine is preferred silently when available — no
-// UI for it; if the manifest exists for this page, you get the audiobook.
+// UI for it; if the manifest exists for this page, you get the audio play.
 // Engine preference is persisted in localStorage under `woh:listen:engine`.
 //
 // Playback is unit-based: the page is split into an ordered list of reading
@@ -578,12 +578,12 @@
         };
     }
 
-    // --- Engine: Prerecorded (ElevenLabs audiobook served from assets CDN) ---
+    // --- Engine: Prerecorded (ElevenLabs audio play served from assets CDN) ---
     //
     // Probes `{ASSETS_BASE}/audio/{lang}/{slug}/manifest.json` for the current
     // page; if a chapter listed in the manifest matches the units we're about
     // to speak, streams the MP3 and drives onUnitStart from the timing sidecar
-    // against audio.currentTime. Returns null from probe() when no audiobook
+    // against audio.currentTime. Returns null from probe() when no audio play
     // is published for this page — caller falls back to studio/system.
 
     const ASSETS_BASE = (window.WOH_ASSETS_BASE || 'https://assets.wheelofheaven.world').replace(/\/$/, '');
