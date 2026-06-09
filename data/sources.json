@@ -1,19 +1,19 @@
 {
-  "generated_at": "2026-06-08T11:54:46.794549Z",
+  "generated_at": "2026-06-09T13:25:15+00:00",
   "generator": "scripts/build_sources.py",
   "schema_version": 1,
-  "total": 258,
-  "total_cites": 257,
+  "total": 276,
+  "total_cites": 431,
   "media_counts": {
-    "religious-text": 61,
-    "nonfiction-book": 52,
-    "academic-paper": 17,
-    "documentary": 9,
-    "wiki": 10,
+    "religious-text": 75,
+    "academic-paper": 62,
+    "nonfiction-book": 87,
+    "documentary": 17,
+    "wiki": 12,
     "article": 8,
     "website": 1,
     "unknown": 2,
-    "fiction-book": 3,
+    "fiction-book": 11,
     "lecture": 1
   },
   "sources": [
@@ -65,6 +65,30 @@
         }
       ],
       "cite_count": 3
+    },
+    {
+      "id": "nickelsburg-enoch-1",
+      "title": "1 Enoch 1: A Commentary on the Book of 1 Enoch, Chapters 1-36; 81-108",
+      "authored_by": [
+        "George W. E. Nickelsburg"
+      ],
+      "publish_date": "2001",
+      "follow_url": "https://fortresspress.com/",
+      "description": "Nickelsburg's principal Hermeneia commentary on 1 Enoch; foundational for the Watchers tradition and the Genesis 6 Nephilim material.",
+      "medium": "academic-paper",
+      "topics": [
+        "Watchers",
+        "Nephilim",
+        "Second Temple"
+      ],
+      "cited_by": [
+        {
+          "section": "wiki",
+          "title": "Satan",
+          "path": "/wiki/satan/"
+        }
+      ],
+      "cite_count": 1
     },
     {
       "id": "1-kings",
@@ -162,6 +186,35 @@
       "cite_count": 0
     },
     {
+      "id": "cassuto-genesis",
+      "title": "A Commentary on the Book of Genesis",
+      "authored_by": [
+        "Umberto Cassuto"
+      ],
+      "publish_date": "1961",
+      "follow_url": "https://www.magnespress.co.il/",
+      "description": "Cassuto's foundational Jewish-scholarly commentary on Genesis, principal counter-articulation against documentary-hypothesis fragmentation.",
+      "medium": "academic-paper",
+      "topics": [
+        "Eden",
+        "Genesis",
+        "Hebrew Bible"
+      ],
+      "cited_by": [
+        {
+          "section": "wiki",
+          "title": "Eden",
+          "path": "/wiki/eden/"
+        },
+        {
+          "section": "wiki",
+          "title": "Hebrew Bible",
+          "path": "/wiki/hebrew-bible/"
+        }
+      ],
+      "cite_count": 2
+    },
+    {
       "id": "a-concise-dictionary-of-the-words-in-the-hebrew-bible-strong-s",
       "title": "A Concise Dictionary of the Words in the Hebrew Bible (Strong's)",
       "authored_by": [
@@ -244,6 +297,23 @@
       "cite_count": 2
     },
     {
+      "id": "neugebauer-history-astronomy",
+      "title": "A History of Ancient Mathematical Astronomy (3 vols.)",
+      "authored_by": [
+        "Otto Neugebauer"
+      ],
+      "publish_date": "1975",
+      "follow_url": "https://link.springer.com/",
+      "description": "Neugebauer's principal three-volume historical reference for ancient mathematical astronomy.",
+      "medium": "academic-paper",
+      "topics": [
+        "Precession",
+        "Astronomy"
+      ],
+      "cited_by": [],
+      "cite_count": 0
+    },
+    {
       "id": "a-history-of-god",
       "title": "A History of God: The 4,000-Year Quest of Judaism, Christianity and Islam",
       "authored_by": [
@@ -258,6 +328,42 @@
         "Yahweh",
         "Religious history",
         "Comparative religion"
+      ],
+      "cited_by": [],
+      "cite_count": 0
+    },
+    {
+      "id": "tester-western-astrology",
+      "title": "A History of Western Astrology",
+      "authored_by": [
+        "S. J. Tester"
+      ],
+      "publish_date": "1987",
+      "follow_url": "https://boydellandbrewer.com/",
+      "description": "Tester's principal historical articulation of the Western astrological tradition.",
+      "medium": "academic-paper",
+      "topics": [
+        "Astrology",
+        "Precession",
+        "Western Tradition"
+      ],
+      "cited_by": [],
+      "cite_count": 0
+    },
+    {
+      "id": "campion-history-astrology",
+      "title": "A History of Western Astrology (2 vols.)",
+      "authored_by": [
+        "Nicholas Campion"
+      ],
+      "publish_date": "2008-2009",
+      "follow_url": "https://www.bloomsbury.com/",
+      "description": "Campion's principal two-volume historical articulation of the Western astrological tradition; the contemporary reference work.",
+      "medium": "academic-paper",
+      "topics": [
+        "Astrology",
+        "Precession",
+        "Western Tradition"
       ],
       "cited_by": [],
       "cite_count": 0
@@ -278,6 +384,31 @@
           "section": "timeline",
           "title": "Age of Leo",
           "path": "/timeline/age-of-leo/"
+        }
+      ],
+      "cite_count": 1
+    },
+    {
+      "id": "bunch-tall-el-hammam",
+      "title": "A Tunguska sized airburst destroyed Tall el-Hammam a Middle Bronze Age city in the Jordan Valley near the Dead Sea",
+      "authored_by": [
+        "Ted E. Bunch",
+        "et al."
+      ],
+      "publish_date": "2021",
+      "follow_url": "https://www.nature.com/articles/s41598-021-97778-3",
+      "description": "Bunch et al.'s principal Scientific Reports article articulating the Tunguska-sized cosmic-airburst interpretation of the Tall el-Hammam Middle Bronze Age destruction event.",
+      "medium": "academic-paper",
+      "topics": [
+        "Great Flood",
+        "Sodom and Gomorrah",
+        "Catastrophism"
+      ],
+      "cited_by": [
+        {
+          "section": "wiki",
+          "title": "Great Flood",
+          "path": "/wiki/great-flood/"
         }
       ],
       "cite_count": 1
@@ -308,24 +439,6 @@
       "cite_count": 2
     },
     {
-      "id": "aesthetics-wiki-cyberparadism",
-      "title": "Cyberparadism (Aesthetics Wiki)",
-      "authored_by": [
-        "Aesthetics Wiki community"
-      ],
-      "publish_date": "2023",
-      "follow_url": "https://aesthetics.fandom.com/wiki/Cyberparadism",
-      "description": "The Aesthetics Wiki entry on Cyberparadism. Aesthetics Wiki, hosted on Fandom, is the principal contemporary online platform for the systematic articulation of internet-cultural aesthetics. The Cyberparadism entry there was the origin venue of the aesthetic's formalization.",
-      "medium": "wiki",
-      "topics": [
-        "Cyberparadism",
-        "Age of Aquarius",
-        "Futurism"
-      ],
-      "cited_by": [],
-      "cite_count": 0
-    },
-    {
       "id": "aliens-adored",
       "title": "Aliens Adored: Raël's UFO Religion",
       "authored_by": [
@@ -344,35 +457,19 @@
       "cite_count": 0
     },
     {
-      "id": "alter-art-biblical-narrative",
-      "title": "The Art of Biblical Narrative",
+      "id": "ptolemy-almagest",
+      "title": "Almagest",
       "authored_by": [
-        "Robert Alter"
+        "Claudius Ptolemy"
       ],
-      "publish_date": "1981",
-      "follow_url": "https://www.basicbooks.com/",
-      "description": "Alter's principal articulation of the literary-critical reading of biblical narrative, foundational for the contemporary literary approach.",
+      "publish_date": "c. 150 CE",
+      "follow_url": "https://press.princeton.edu/",
+      "description": "Ptolemy's principal astronomical-mathematical synthesis; the principal ancient source for the Greek-mathematical articulation of precession.",
       "medium": "academic-paper",
       "topics": [
-        "Hebrew Bible",
-        "Literary Criticism"
-      ],
-      "cited_by": [],
-      "cite_count": 0
-    },
-    {
-      "id": "alter-hebrew-bible",
-      "title": "The Hebrew Bible: A Translation with Commentary (3 vols.)",
-      "authored_by": [
-        "Robert Alter"
-      ],
-      "publish_date": "2018",
-      "follow_url": "https://wwnorton.com/",
-      "description": "Alter's principal three-volume English translation of the Hebrew Bible with substantial scholarly commentary.",
-      "medium": "academic-paper",
-      "topics": [
-        "Hebrew Bible",
-        "Translation"
+        "Precession",
+        "Astronomy",
+        "Ancient"
       ],
       "cited_by": [],
       "cite_count": 0
@@ -392,6 +489,54 @@
       ],
       "cited_by": [],
       "cite_count": 0
+    },
+    {
+      "id": "america-before",
+      "title": "America Before: The Key to Earth's Lost Civilization",
+      "authored_by": [
+        "Graham Hancock"
+      ],
+      "publish_date": "2019",
+      "follow_url": "https://grahamhancock.com/america-before/",
+      "description": "Graham Hancock's 2019 work focuses the catastrophist hypothesis on the Americas — arguing that the genetic, archaeological, and earthwork evidence (the Solutrean hypothesis, the Amazonian dark earths, the North American mounds, the Bolivian geoglyphs) is consistent with the presence of a substantial pre-Younger-Dryas civilization in the Americas, with the post-impact archaeological record preserving fragmentary memory of that civilization. The work is the principal recent extension of the catastrophist tradition to the New World and engages directly with the genetic findings of Skoglund, Reich, and others on early American population history.",
+      "medium": "nonfiction-book",
+      "topics": [
+        "Antediluvian",
+        "Americas",
+        "Younger Dryas",
+        "Lost Civilization"
+      ],
+      "cited_by": [
+        {
+          "section": "wiki",
+          "title": "Antediluvian",
+          "path": "/wiki/antediluvian/"
+        }
+      ],
+      "cite_count": 1
+    },
+    {
+      "id": "day-adversary-heaven",
+      "title": "An Adversary in Heaven: Satan in the Hebrew Bible",
+      "authored_by": [
+        "Peggy L. Day"
+      ],
+      "publish_date": "1988",
+      "follow_url": "https://www.sbl-site.org/",
+      "description": "Day's foundational philological study of the Hebrew satan figure across the Hebrew Bible, distinguishing common-noun and definite-article usages.",
+      "medium": "academic-paper",
+      "topics": [
+        "Satan",
+        "Hebrew Bible"
+      ],
+      "cited_by": [
+        {
+          "section": "wiki",
+          "title": "Satan",
+          "path": "/wiki/satan/"
+        }
+      ],
+      "cite_count": 1
     },
     {
       "id": "an-adversary-in-heaven",
@@ -461,6 +606,100 @@
       "cite_count": 1
     },
     {
+      "id": "pritchard-anet",
+      "title": "Ancient Near Eastern Texts Relating to the Old Testament",
+      "authored_by": [
+        "James B. Pritchard"
+      ],
+      "publish_date": "1969",
+      "follow_url": "https://press.princeton.edu/",
+      "description": "Pritchard's principal English-language reference for ancient Near Eastern texts parallel to the Hebrew Bible.",
+      "medium": "religious-text",
+      "topics": [
+        "Hebrew Bible",
+        "Ancient Near East"
+      ],
+      "cited_by": [
+        {
+          "section": "wiki",
+          "title": "Hebrew Bible",
+          "path": "/wiki/hebrew-bible/"
+        }
+      ],
+      "cite_count": 1
+    },
+    {
+      "id": "annales-veteris-testamenti",
+      "title": "Annales Veteris Testamenti",
+      "authored_by": [
+        "James Ussher"
+      ],
+      "publish_date": "1650",
+      "follow_url": "https://archive.org/details/annalesveteriset00ussh",
+      "description": "Archbishop James Ussher's 1650 chronology of the Old Testament — the work that produced the famous date of 4004 BCE for the creation of the world and 2348 BCE for the Flood. Ussher's chronology, derived from summing the patriarchal ages in Genesis 5 and tracking the genealogies through to identifiable historical events, was widely adopted across the Anglophone world, printed in the margins of the Authorized Version for two centuries, and is the principal reference point for the early-modern Christian chronology of the antediluvian period.",
+      "medium": "nonfiction-book",
+      "topics": [
+        "Antediluvian",
+        "Biblical Chronology",
+        "Genesis",
+        "Flood"
+      ],
+      "cited_by": [
+        {
+          "section": "wiki",
+          "title": "Antediluvian",
+          "path": "/wiki/antediluvian/"
+        }
+      ],
+      "cite_count": 1
+    },
+    {
+      "id": "mcginn-antichrist",
+      "title": "Antichrist: Two Thousand Years of the Human Fascination with Evil",
+      "authored_by": [
+        "Bernard McGinn"
+      ],
+      "publish_date": "1994",
+      "follow_url": "https://www.harpercollins.com/",
+      "description": "McGinn's principal historical treatment of the Antichrist tradition, closely adjacent to the Satan-development scholarship.",
+      "medium": "academic-paper",
+      "topics": [
+        "Satan",
+        "Christianity"
+      ],
+      "cited_by": [
+        {
+          "section": "wiki",
+          "title": "Satan",
+          "path": "/wiki/satan/"
+        }
+      ],
+      "cite_count": 1
+    },
+    {
+      "id": "soleri-arcology",
+      "title": "Arcology: The City in the Image of Man",
+      "authored_by": [
+        "Paolo Soleri"
+      ],
+      "publish_date": "1969",
+      "follow_url": "https://www.arcosanti.org/",
+      "description": "Soleri's principal articulation of arcology — high-density human habitats integrated with surrounding ecologies — one of the principal architectural-design lineages feeding Cyberparadist visual vocabulary.",
+      "medium": "nonfiction-book",
+      "topics": [
+        "Cyberparadism",
+        "Architecture"
+      ],
+      "cited_by": [
+        {
+          "section": "wiki",
+          "title": "Cyberparadism",
+          "path": "/wiki/cyberparadism/"
+        }
+      ],
+      "cite_count": 1
+    },
+    {
       "id": "astronomical-algorithms",
       "title": "Astronomical Algorithms",
       "authored_by": [
@@ -493,15 +732,38 @@
         "A. R. Millard"
       ],
       "publish_date": "1969",
-      "follow_url": "https://global.oup.com/academic/",
-      "description": "Lambert and Millard's principal critical edition and translation of the Atrahasis Babylonian flood narrative.",
-      "medium": "religious-text",
+      "follow_url": "https://global.oup.com/academic/product/atra-hasis-9780198131724",
+      "description": "W. G. Lambert and A. R. Millard's 1969 critical edition and translation of the Old Babylonian *Atra-ḫasīs* Epic — the most detailed Mesopotamian narrative of the pre-Flood period. The epic describes the creation of humans by the gods to perform labor, the proliferation of humanity, the divine decision to send a flood to reduce the human population, and the survival of Atra-ḫasīs through divine warning. The structural parallels to Genesis 6–9 are extensive (the warning to the survivor, the construction of a vessel, the loading of animals, the post-flood sacrifice). Lambert and Millard remain the standard scholarly edition.",
+      "medium": "nonfiction-book",
       "topics": [
-        "Great Flood",
-        "Mesopotamian"
+        "Antediluvian",
+        "Flood",
+        "Atra-ḫasīs",
+        "Mesopotamian Literature"
       ],
-      "cited_by": [],
-      "cite_count": 0
+      "cited_by": [
+        {
+          "section": "wiki",
+          "title": "Antediluvian",
+          "path": "/wiki/antediluvian/"
+        },
+        {
+          "section": "wiki",
+          "title": "Eden",
+          "path": "/wiki/eden/"
+        },
+        {
+          "section": "wiki",
+          "title": "Great Flood",
+          "path": "/wiki/great-flood/"
+        },
+        {
+          "section": "wiki",
+          "title": "Hebrew Bible",
+          "path": "/wiki/hebrew-bible/"
+        }
+      ],
+      "cite_count": 4
     },
     {
       "id": "atrahasis",
@@ -532,24 +794,6 @@
         }
       ],
       "cite_count": 3
-    },
-    {
-      "id": "aveni-skywatchers",
-      "title": "Skywatchers of Ancient Mexico",
-      "authored_by": [
-        "Anthony F. Aveni"
-      ],
-      "publish_date": "1980",
-      "follow_url": "https://utpress.utexas.edu/",
-      "description": "Aveni's foundational treatment of Mesoamerican archaeoastronomy, principal reference for Mesoamerican precessional-cosmological content.",
-      "medium": "academic-paper",
-      "topics": [
-        "Precession",
-        "Mesoamerican",
-        "Archaeoastronomy"
-      ],
-      "cited_by": [],
-      "cite_count": 0
     },
     {
       "id": "avesta",
@@ -586,23 +830,6 @@
       "cite_count": 3
     },
     {
-      "id": "awn-satan-iblis",
-      "title": "Satan's Tragedy and Redemption: Iblīs in Sufi Psychology",
-      "authored_by": [
-        "Peter J. Awn"
-      ],
-      "publish_date": "1983",
-      "follow_url": "https://brill.com/",
-      "description": "Awn's principal study of the Iblis tradition in Sufi psychology, articulating the distinctive Sufi reading of Iblis as principled-opposition figure.",
-      "medium": "academic-paper",
-      "topics": [
-        "Satan",
-        "Islam"
-      ],
-      "cited_by": [],
-      "cite_count": 0
-    },
-    {
       "id": "bahaipedia",
       "title": "Bahaipedia",
       "authored_by": [
@@ -616,24 +843,6 @@
         "Archive",
         "Encyclopedia",
         "Religion"
-      ],
-      "cited_by": [],
-      "cite_count": 0
-    },
-    {
-      "id": "banks-culture-series",
-      "title": "The Culture Series",
-      "authored_by": [
-        "Iain M. Banks"
-      ],
-      "publish_date": "1987-2012",
-      "follow_url": "https://en.wikipedia.org/wiki/Culture_series",
-      "description": "Banks's ten-novel sequence depicting the Culture, a post-scarcity galactic civilisation with mature AI-organic integration and harmonious civilisational organisation. The series registers as substantively-mature Cyberparadism at unusually-systematic literary articulation.",
-      "medium": "fiction-book",
-      "topics": [
-        "Cyberparadism",
-        "Fiction",
-        "Futurism"
       ],
       "cited_by": [],
       "cite_count": 0
@@ -658,22 +867,52 @@
       "cite_count": 0
     },
     {
-      "id": "benyus-biomimicry",
-      "title": "Biomimicry: Innovation Inspired by Nature",
+      "id": "foster-before-muses",
+      "title": "Before the Muses: An Anthology of Akkadian Literature",
       "authored_by": [
-        "Janine M. Benyus"
+        "Benjamin R. Foster"
       ],
-      "publish_date": "1997",
-      "follow_url": "https://biomimicry.org/janine-benyus/",
-      "description": "Benyus's principal articulation of biomimicry as design methodology drawing on natural systems. The substantial subsequent design-tradition operates as one of the principal architectural-design lineages feeding Cyberparadist visual vocabulary.",
+      "publish_date": "2005",
+      "follow_url": "https://www.cdlpress.com/",
+      "description": "Foster's principal accessible anthology of Akkadian literature; the principal English-language reference for the Mesopotamian flood-narrative corpus.",
+      "medium": "religious-text",
+      "topics": [
+        "Great Flood",
+        "Mesopotamian"
+      ],
+      "cited_by": [
+        {
+          "section": "wiki",
+          "title": "Great Flood",
+          "path": "/wiki/great-flood/"
+        }
+      ],
+      "cite_count": 1
+    },
+    {
+      "id": "before-the-muses",
+      "title": "Before the Muses: An Anthology of Akkadian Literature",
+      "authored_by": [
+        "Benjamin R. Foster"
+      ],
+      "publish_date": "2005",
+      "follow_url": "https://www.cdlpress.com/before-the-muses/",
+      "description": "Benjamin R. Foster's anthology (3rd edition, 2005; CDL Press) is the standard comprehensive English translation of the Akkadian literary corpus, including the *Atra-ḫasīs* Epic, the Standard Babylonian *Gilgamesh*, the *Enūma Eliš*, the *Descent of Ishtar*, the Babylonian theodicies, and the broader courtly, wisdom, and ritual literature. Foster's Tablet XI translation of the *Gilgamesh* flood narrative is the principal scholarly access point for the Mesopotamian flood traditions that parallel Genesis 6–9 and the broader antediluvian material.",
       "medium": "nonfiction-book",
       "topics": [
-        "Cyberparadism",
-        "Science",
-        "Architecture"
+        "Antediluvian",
+        "Flood",
+        "Gilgamesh",
+        "Akkadian Literature"
       ],
-      "cited_by": [],
-      "cite_count": 0
+      "cited_by": [
+        {
+          "section": "wiki",
+          "title": "Antediluvian",
+          "path": "/wiki/antediluvian/"
+        }
+      ],
+      "cite_count": 1
     },
     {
       "id": "bhagavad-gita",
@@ -706,55 +945,28 @@
       "cite_count": 3
     },
     {
-      "id": "biglino-bibbia-non-parla",
-      "title": "La Bibbia non parla di Dio",
+      "id": "benyus-biomimicry",
+      "title": "Biomimicry: Innovation Inspired by Nature",
       "authored_by": [
-        "Mauro Biglino"
+        "Janine M. Benyus"
       ],
-      "publish_date": "2015",
-      "follow_url": "https://www.librimondadori.it/",
-      "description": "Biglino's articulation of the argument that mainstream translation traditions obscure the Hebrew Bible's original content about the Elohim.",
+      "publish_date": "1997",
+      "follow_url": "https://biomimicry.org/janine-benyus/",
+      "description": "Benyus's principal articulation of biomimicry as design methodology drawing on natural systems. The substantial subsequent design-tradition operates as one of the principal architectural-design lineages feeding Cyberparadist visual vocabulary.",
       "medium": "nonfiction-book",
       "topics": [
-        "Hebrew Bible",
-        "Elohim"
+        "Cyberparadism",
+        "Science",
+        "Architecture"
       ],
-      "cited_by": [],
-      "cite_count": 0
-    },
-    {
-      "id": "biglino-il-libro",
-      "title": "Il Libro che cambierà per sempre le nostre idee sulla Bibbia",
-      "authored_by": [
-        "Mauro Biglino"
+      "cited_by": [
+        {
+          "section": "wiki",
+          "title": "Cyberparadism",
+          "path": "/wiki/cyberparadism/"
+        }
       ],
-      "publish_date": "2010",
-      "follow_url": "https://www.unoeditori.com/",
-      "description": "Biglino's first principal articulation of the strict-literal Hebrew Bible reading, foundational to the broader Biglino corpus.",
-      "medium": "nonfiction-book",
-      "topics": [
-        "Hebrew Bible",
-        "Elohim"
-      ],
-      "cited_by": [],
-      "cite_count": 0
-    },
-    {
-      "id": "bodman-poetics-iblis",
-      "title": "The Poetics of Iblīs: Narrative Theology in the Qurʾān",
-      "authored_by": [
-        "Whitney S. Bodman"
-      ],
-      "publish_date": "2011",
-      "follow_url": "https://hts.hds.harvard.edu/",
-      "description": "Bodman's principal study of the Iblis narrative in the Quran, closely parallel content to the Hebrew satan figure.",
-      "medium": "academic-paper",
-      "topics": [
-        "Satan",
-        "Islam"
-      ],
-      "cited_by": [],
-      "cite_count": 0
+      "cite_count": 1
     },
     {
       "id": "book-of-abraham",
@@ -792,11 +1004,16 @@
       "cited_by": [
         {
           "section": "wiki",
+          "title": "Reference corpus of the Raëlian canon",
+          "path": "/wiki/reference-corpus-of-the-raelian-canon/"
+        },
+        {
+          "section": "wiki",
           "title": "Satan",
           "path": "/wiki/satan/"
         }
       ],
-      "cite_count": 1
+      "cite_count": 2
     },
     {
       "id": "book-of-mormon",
@@ -813,23 +1030,6 @@
         "Mormonism",
         "Spirituality",
         "The Tradition"
-      ],
-      "cited_by": [],
-      "cite_count": 0
-    },
-    {
-      "id": "boyce-zoroastrians",
-      "title": "Zoroastrians: Their Religious Beliefs and Practices",
-      "authored_by": [
-        "Mary Boyce"
-      ],
-      "publish_date": "1979",
-      "follow_url": "https://www.routledge.com/",
-      "description": "Boyce's principal accessible treatment of Zoroastrian religion; the Angra Mainyu / Ahura Mazda cosmic-dualistic framework that substantially influenced Second Temple Jewish development of the satan figure.",
-      "medium": "academic-paper",
-      "topics": [
-        "Comparative Religion",
-        "Satan"
       ],
       "cited_by": [],
       "cite_count": 0
@@ -855,43 +1055,6 @@
       "cite_count": 1
     },
     {
-      "id": "bunch-tall-el-hammam",
-      "title": "A Tunguska sized airburst destroyed Tall el-Hammam a Middle Bronze Age city in the Jordan Valley near the Dead Sea",
-      "authored_by": [
-        "Ted E. Bunch",
-        "et al."
-      ],
-      "publish_date": "2021",
-      "follow_url": "https://www.nature.com/articles/s41598-021-97778-3",
-      "description": "Bunch et al.'s principal Scientific Reports article articulating the Tunguska-sized cosmic-airburst interpretation of the Tall el-Hammam Middle Bronze Age destruction event.",
-      "medium": "academic-paper",
-      "topics": [
-        "Great Flood",
-        "Sodom and Gomorrah",
-        "Catastrophism"
-      ],
-      "cited_by": [],
-      "cite_count": 0
-    },
-    {
-      "id": "campion-history-astrology",
-      "title": "A History of Western Astrology (2 vols.)",
-      "authored_by": [
-        "Nicholas Campion"
-      ],
-      "publish_date": "2008-2009",
-      "follow_url": "https://www.bloomsbury.com/",
-      "description": "Campion's principal two-volume historical articulation of the Western astrological tradition; the contemporary reference work.",
-      "medium": "academic-paper",
-      "topics": [
-        "Astrology",
-        "Precession",
-        "Western Tradition"
-      ],
-      "cited_by": [],
-      "cite_count": 0
-    },
-    {
       "id": "canaanite-myth-and-hebrew-epic",
       "title": "Canaanite Myth and Hebrew Epic: Essays in the History of the Religion of Israel",
       "authored_by": [
@@ -909,26 +1072,125 @@
         "El",
         "West Semitic"
       ],
-      "cited_by": [],
-      "cite_count": 0
+      "cited_by": [
+        {
+          "section": "wiki",
+          "title": "Elohim",
+          "path": "/wiki/elohim/"
+        }
+      ],
+      "cite_count": 1
     },
     {
-      "id": "cassuto-genesis",
-      "title": "A Commentary on the Book of Genesis",
+      "id": "cross-canaanite-myth",
+      "title": "Canaanite Myth and Hebrew Epic: Essays in the History of the Religion of Israel",
       "authored_by": [
-        "Umberto Cassuto"
+        "Frank Moore Cross"
       ],
-      "publish_date": "1961",
-      "follow_url": "https://www.magnespress.co.il/",
-      "description": "Cassuto's foundational Jewish-scholarly commentary on Genesis, principal counter-articulation against documentary-hypothesis fragmentation.",
+      "publish_date": "1973",
+      "follow_url": "https://www.hup.harvard.edu/",
+      "description": "Cross's foundational articulation of the Canaanite-Israelite religious continuity, principal contemporary reference for the El-Yahweh historical development.",
       "medium": "academic-paper",
       "topics": [
-        "Eden",
-        "Genesis",
-        "Hebrew Bible"
+        "Hebrew Bible",
+        "Yahweh"
       ],
-      "cited_by": [],
-      "cite_count": 0
+      "cited_by": [
+        {
+          "section": "wiki",
+          "title": "Hebrew Bible",
+          "path": "/wiki/hebrew-bible/"
+        }
+      ],
+      "cite_count": 1
+    },
+    {
+      "id": "miyazaki-castle-in-the-sky",
+      "title": "Castle in the Sky",
+      "authored_by": [
+        "Hayao Miyazaki",
+        "Studio Ghibli"
+      ],
+      "publish_date": "1986",
+      "follow_url": "https://www.ghibli.jp/works/laputa/",
+      "description": "Miyazaki's articulation of the Laputan civilisation as substantively-advanced harmonious-technology integration. One principal Cyberparadist-aligned Studio Ghibli production.",
+      "medium": "documentary",
+      "topics": [
+        "Cyberparadism",
+        "Fiction"
+      ],
+      "cited_by": [
+        {
+          "section": "wiki",
+          "title": "Cyberparadism",
+          "path": "/wiki/cyberparadism/"
+        }
+      ],
+      "cite_count": 1
+    },
+    {
+      "id": "cataclysm-allan-delair",
+      "title": "Cataclysm! Compelling Evidence of a Cosmic Catastrophe in 9500 B.C.",
+      "authored_by": [
+        "D. S. Allan",
+        "J. B. Delair"
+      ],
+      "publish_date": "1995",
+      "follow_url": "https://www.amazon.com/Cataclysm-Compelling-Evidence-Cosmic-Catastrophe/dp/187918142X",
+      "description": "D. S. Allan and J. B. Delair's 1995 work (Bear & Company) is the principal early articulation of the late-Pleistocene cosmic-catastrophe hypothesis that subsequent catastrophist literature has built on. Allan and Delair marshal geological, palaeontological, and mythological evidence for a cosmic impact event at approximately 9500 BCE producing global extinctions, sea-level rise, and the climatic conditions of the early Holocene. The work substantially predates the Firestone et al. 2007 Younger Dryas Boundary research and provides the broader catastrophist framework within which subsequent work has been positioned.",
+      "medium": "nonfiction-book",
+      "topics": [
+        "Catastrophism",
+        "Younger Dryas",
+        "Antediluvian",
+        "Late Pleistocene"
+      ],
+      "cited_by": [
+        {
+          "section": "wiki",
+          "title": "Antediluvian",
+          "path": "/wiki/antediluvian/"
+        }
+      ],
+      "cite_count": 1
+    },
+    {
+      "id": "sendy-ces-dieux",
+      "title": "Ces dieux qui firent le ciel et la terre",
+      "authored_by": [
+        "Jean Sendy"
+      ],
+      "publish_date": "1969",
+      "follow_url": "https://www.editionsrobertlaffont.com/",
+      "description": "Sendy's foundational French articulation of the Elohim hypothesis. The English translation appeared as *Those Gods Who Made Heaven and Earth* (Berkley, 1972). One of the principal pre-Raëlian articulations of the framework's specific reading.",
+      "medium": "nonfiction-book",
+      "topics": [
+        "Elohim",
+        "Ancient Astronaut Theory"
+      ],
+      "cited_by": [
+        {
+          "section": "wiki",
+          "title": "Eden",
+          "path": "/wiki/eden/"
+        },
+        {
+          "section": "wiki",
+          "title": "Great Flood",
+          "path": "/wiki/great-flood/"
+        },
+        {
+          "section": "wiki",
+          "title": "Hebrew Bible",
+          "path": "/wiki/hebrew-bible/"
+        },
+        {
+          "section": "wiki",
+          "title": "Satan",
+          "path": "/wiki/satan/"
+        }
+      ],
+      "cite_count": 4
     },
     {
       "id": "chaos-making-a-new-science",
@@ -982,25 +1244,14 @@
         "Ancient Astronaut Theory",
         "Comparative Religion"
       ],
-      "cited_by": [],
-      "cite_count": 0
-    },
-    {
-      "id": "clines-job-wbc",
-      "title": "Job 1-20 / 21-37 / 38-42 (Word Biblical Commentary)",
-      "authored_by": [
-        "David J. A. Clines"
+      "cited_by": [
+        {
+          "section": "wiki",
+          "title": "Reference corpus of the Raëlian canon",
+          "path": "/wiki/reference-corpus-of-the-raelian-canon/"
+        }
       ],
-      "publish_date": "1989-2011",
-      "follow_url": "https://www.zondervanacademic.com/",
-      "description": "Clines's three-volume Word Biblical Commentary on Job, principal contemporary critical commentary.",
-      "medium": "academic-paper",
-      "topics": [
-        "Satan",
-        "Hebrew Bible"
-      ],
-      "cited_by": [],
-      "cite_count": 0
+      "cite_count": 1
     },
     {
       "id": "creation-of-a-bacterial-cell-controlled-by-a-chemically-synthesized-genome",
@@ -1048,21 +1299,52 @@
       "cite_count": 0
     },
     {
-      "id": "cross-canaanite-myth",
-      "title": "Canaanite Myth and Hebrew Epic: Essays in the History of the Religion of Israel",
+      "id": "wiener-cybernetics",
+      "title": "Cybernetics: Or Control and Communication in the Animal and the Machine",
       "authored_by": [
-        "Frank Moore Cross"
+        "Norbert Wiener"
       ],
-      "publish_date": "1973",
-      "follow_url": "https://www.hup.harvard.edu/",
-      "description": "Cross's foundational articulation of the Canaanite-Israelite religious continuity, principal contemporary reference for the El-Yahweh historical development.",
-      "medium": "academic-paper",
+      "publish_date": "1948",
+      "follow_url": "https://mitpress.mit.edu/9780262730099/cybernetics/",
+      "description": "Wiener's foundational treatise establishing cybernetics as the scientific study of regulatory and communicative systems. The book introduced the cyber- prefix into modern technical-scientific vocabulary and laid the groundwork for the broader cyber- aesthetic family.",
+      "medium": "nonfiction-book",
       "topics": [
-        "Hebrew Bible",
-        "Yahweh"
+        "Cyberparadism",
+        "Science",
+        "Futurism"
       ],
-      "cited_by": [],
-      "cite_count": 0
+      "cited_by": [
+        {
+          "section": "wiki",
+          "title": "Cyberparadism",
+          "path": "/wiki/cyberparadism/"
+        }
+      ],
+      "cite_count": 1
+    },
+    {
+      "id": "aesthetics-wiki-cyberparadism",
+      "title": "Cyberparadism (Aesthetics Wiki)",
+      "authored_by": [
+        "Aesthetics Wiki community"
+      ],
+      "publish_date": "2023",
+      "follow_url": "https://aesthetics.fandom.com/wiki/Cyberparadism",
+      "description": "The Aesthetics Wiki entry on Cyberparadism. Aesthetics Wiki, hosted on Fandom, is the principal contemporary online platform for the systematic articulation of internet-cultural aesthetics. The Cyberparadism entry there was the origin venue of the aesthetic's formalization.",
+      "medium": "wiki",
+      "topics": [
+        "Cyberparadism",
+        "Age of Aquarius",
+        "Futurism"
+      ],
+      "cited_by": [
+        {
+          "section": "wiki",
+          "title": "Cyberparadism",
+          "path": "/wiki/cyberparadism/"
+        }
+      ],
+      "cite_count": 1
     },
     {
       "id": "cyberparadism-manifesto",
@@ -1082,11 +1364,16 @@
       "cited_by": [
         {
           "section": "wiki",
+          "title": "Cyberparadism",
+          "path": "/wiki/cyberparadism/"
+        },
+        {
+          "section": "wiki",
           "title": "Golden Age",
           "path": "/wiki/golden-age/"
         }
       ],
-      "cite_count": 1
+      "cite_count": 2
     },
     {
       "id": "daniel",
@@ -1119,21 +1406,27 @@
       "cite_count": 3
     },
     {
-      "id": "day-adversary-heaven",
-      "title": "An Adversary in Heaven: Satan in the Hebrew Bible",
+      "id": "otto-hangende-dach",
+      "title": "Das Hängende Dach",
       "authored_by": [
-        "Peggy L. Day"
+        "Frei Otto"
       ],
-      "publish_date": "1988",
-      "follow_url": "https://www.sbl-site.org/",
-      "description": "Day's foundational philological study of the Hebrew satan figure across the Hebrew Bible, distinguishing common-noun and definite-article usages.",
-      "medium": "academic-paper",
+      "publish_date": "1954",
+      "follow_url": "https://en.wikipedia.org/wiki/Frei_Otto",
+      "description": "Otto's foundational text on lightweight tensile architecture, one of the principal architectural-design lineages feeding Cyberparadist organic-minimalist visual vocabulary.",
+      "medium": "nonfiction-book",
       "topics": [
-        "Satan",
-        "Hebrew Bible"
+        "Cyberparadism",
+        "Architecture"
       ],
-      "cited_by": [],
-      "cite_count": 0
+      "cited_by": [
+        {
+          "section": "wiki",
+          "title": "Cyberparadism",
+          "path": "/wiki/cyberparadism/"
+        }
+      ],
+      "cite_count": 1
     },
     {
       "id": "debate-between-sheep-and-grain",
@@ -1239,24 +1532,6 @@
       "cite_count": 1
     },
     {
-      "id": "dhorme-bible",
-      "title": "La Bible (traduction Dhorme)",
-      "authored_by": [
-        "Édouard Dhorme"
-      ],
-      "publish_date": "1956-1959",
-      "follow_url": "https://en.wikipedia.org/wiki/%C3%89douard_Dhorme",
-      "description": "Édouard Dhorme's French translation of the Hebrew Bible, published by Bibliothèque de la Pléiade. The translation Rael consulted during the 1973 contact and the principal French Bible used by the Raëlian canon. Dhorme's renderings — particularly *science* for what other translations give as *good and evil*, and his Assyriological-philological precision — are themselves a substantial interpretive position the canon adopts.",
-      "medium": "religious-text",
-      "topics": [
-        "Hebrew Bible",
-        "Translation",
-        "Raëlism"
-      ],
-      "cited_by": [],
-      "cite_count": 0
-    },
-    {
       "id": "did-god-have-a-wife",
       "title": "Did God Have a Wife? Archaeology and Folk Religion in Ancient Israel",
       "authored_by": [
@@ -1315,40 +1590,6 @@
       "cite_count": 1
     },
     {
-      "id": "doniger-hindu-myths",
-      "title": "Hindu Myths: A Sourcebook",
-      "authored_by": [
-        "Wendy Doniger"
-      ],
-      "publish_date": "1975",
-      "follow_url": "https://www.penguinrandomhouse.com/",
-      "description": "Doniger's principal English-language sourcebook for Hindu mythology, including the asura tradition closely parallel to the Hebrew satan content.",
-      "medium": "religious-text",
-      "topics": [
-        "Comparative Religion",
-        "Hindu Tradition"
-      ],
-      "cited_by": [],
-      "cite_count": 0
-    },
-    {
-      "id": "doniger-hindus",
-      "title": "The Hindus: An Alternative History",
-      "authored_by": [
-        "Wendy Doniger"
-      ],
-      "publish_date": "2009",
-      "follow_url": "https://www.penguinrandomhouse.com/",
-      "description": "Doniger's principal contemporary articulation of an alternative history of Hindu tradition, including substantial precessional-cosmological content.",
-      "medium": "academic-paper",
-      "topics": [
-        "Hindu Tradition",
-        "Comparative Religion"
-      ],
-      "cited_by": [],
-      "cite_count": 0
-    },
-    {
       "id": "early-islamic-qiblas",
       "title": "Early Islamic Qiblas",
       "authored_by": [
@@ -1404,28 +1645,57 @@
         },
         {
           "section": "wiki",
+          "title": "Eden",
+          "path": "/wiki/eden/"
+        },
+        {
+          "section": "wiki",
           "title": "Genesis",
           "path": "/wiki/genesis/"
         }
       ],
-      "cite_count": 3
+      "cite_count": 4
     },
     {
-      "id": "edouard-dhorme-biography",
-      "title": "Édouard Dhorme (biographical reference)",
+      "id": "krupp-echoes-ancient-skies",
+      "title": "Echoes of the Ancient Skies: The Astronomy of Lost Civilizations",
       "authored_by": [
-        "Various"
+        "E. C. Krupp"
       ],
-      "publish_date": "2020s",
-      "follow_url": "https://en.wikipedia.org/wiki/%C3%89douard_Dhorme",
-      "description": "French Catholic priest and Assyriologist (1881-1966), translator of the principal twentieth-century French Bible used by the Raëlian canon. Specialist in Akkadian, Hebrew, and ancient Near Eastern languages whose philological precision shaped the translation choices the canon depends on.",
-      "medium": "wiki",
+      "publish_date": "1983",
+      "follow_url": "https://www.harpercollins.com/",
+      "description": "Krupp's principal accessible survey of ancient archaeoastronomy across cultures.",
+      "medium": "academic-paper",
       "topics": [
-        "Hebrew Bible",
-        "Translation"
+        "Precession",
+        "Archaeoastronomy"
       ],
       "cited_by": [],
       "cite_count": 0
+    },
+    {
+      "id": "oppenheimer-eden-east",
+      "title": "Eden in the East: The Drowned Continent of Southeast Asia",
+      "authored_by": [
+        "Stephen Oppenheimer"
+      ],
+      "publish_date": "1998",
+      "follow_url": "https://www.weidenfeldandnicolson.co.uk/",
+      "description": "Oppenheimer's principal articulation of the Sundaland Eden hypothesis, locating the originary cultural source in submerged Southeast Asia.",
+      "medium": "nonfiction-book",
+      "topics": [
+        "Eden",
+        "Archaeology",
+        "Great Flood"
+      ],
+      "cited_by": [
+        {
+          "section": "wiki",
+          "title": "Eden",
+          "path": "/wiki/eden/"
+        }
+      ],
+      "cite_count": 1
     },
     {
       "id": "elysium-film",
@@ -1442,8 +1712,14 @@
         "Cyberparadism",
         "Fiction"
       ],
-      "cited_by": [],
-      "cite_count": 0
+      "cited_by": [
+        {
+          "section": "wiki",
+          "title": "Cyberparadism",
+          "path": "/wiki/cyberparadism/"
+        }
+      ],
+      "cite_count": 1
     },
     {
       "id": "enlil-and-ninlil-the-begetting-of-nanna",
@@ -1513,9 +1789,14 @@
           "section": "wiki",
           "title": "Genesis",
           "path": "/wiki/genesis/"
+        },
+        {
+          "section": "wiki",
+          "title": "Reference corpus of the Raëlian canon",
+          "path": "/wiki/reference-corpus-of-the-raelian-canon/"
         }
       ],
-      "cite_count": 1
+      "cite_count": 2
     },
     {
       "id": "escaping-from-eden",
@@ -1548,6 +1829,11 @@
         },
         {
           "section": "wiki",
+          "title": "Eden",
+          "path": "/wiki/eden/"
+        },
+        {
+          "section": "wiki",
           "title": "Elohim",
           "path": "/wiki/elohim/"
         },
@@ -1573,11 +1859,69 @@
         },
         {
           "section": "wiki",
+          "title": "Wheel of Heaven",
+          "path": "/wiki/wheel-of-heaven/"
+        },
+        {
+          "section": "wiki",
           "title": "Yahweh",
           "path": "/wiki/yahweh/"
         }
       ],
-      "cite_count": 8
+      "cite_count": 10
+    },
+    {
+      "id": "firestone-pnas-2007",
+      "title": "Evidence for an Extraterrestrial Impact 12,900 Years Ago",
+      "authored_by": [
+        "Richard B. Firestone",
+        "Allen West",
+        "James P. Kennett",
+        "et al."
+      ],
+      "publish_date": "2007",
+      "follow_url": "https://www.pnas.org/doi/10.1073/pnas.0706977104",
+      "description": "Richard Firestone, Allen West, James Kennett, and twenty-two co-authors' October 2007 *Proceedings of the National Academy of Sciences* paper — the principal peer-reviewed scientific publication of the Younger Dryas Impact Hypothesis. The paper reports geochemical and stratigraphic evidence (a layer of nanodiamonds, magnetic spherules, and platinum-group anomalies at the Younger Dryas boundary) consistent with a substantial extraterrestrial impact event at approximately 12,900 years before present. The hypothesis remains contested in mainstream science; this paper is the foundational scientific source.",
+      "medium": "academic-paper",
+      "topics": [
+        "Younger Dryas",
+        "Impact Hypothesis",
+        "Late Pleistocene",
+        "Antediluvian"
+      ],
+      "cited_by": [
+        {
+          "section": "wiki",
+          "title": "Antediluvian",
+          "path": "/wiki/antediluvian/"
+        }
+      ],
+      "cite_count": 1
+    },
+    {
+      "id": "firestone-younger-dryas",
+      "title": "Evidence for an extraterrestrial impact 12,900 years ago that contributed to the megafaunal extinctions and the Younger Dryas cooling",
+      "authored_by": [
+        "Richard B. Firestone",
+        "et al."
+      ],
+      "publish_date": "2007",
+      "follow_url": "https://www.pnas.org/",
+      "description": "Firestone et al.'s principal Proceedings of the National Academy of Sciences article on the Younger Dryas cosmic-impact hypothesis.",
+      "medium": "academic-paper",
+      "topics": [
+        "Great Flood",
+        "Catastrophism",
+        "Prehistoric"
+      ],
+      "cited_by": [
+        {
+          "section": "wiki",
+          "title": "Great Flood",
+          "path": "/wiki/great-flood/"
+        }
+      ],
+      "cite_count": 1
     },
     {
       "id": "exodus",
@@ -1673,8 +2017,18 @@
         },
         {
           "section": "wiki",
+          "title": "Reference corpus of the Raëlian canon",
+          "path": "/wiki/reference-corpus-of-the-raelian-canon/"
+        },
+        {
+          "section": "wiki",
           "title": "Satan",
           "path": "/wiki/satan/"
+        },
+        {
+          "section": "wiki",
+          "title": "Wheel of Heaven",
+          "path": "/wiki/wheel-of-heaven/"
         },
         {
           "section": "wiki",
@@ -1687,7 +2041,7 @@
           "path": "/wiki/yahweh/"
         }
       ],
-      "cite_count": 11
+      "cite_count": 13
     },
     {
       "id": "ezekiel",
@@ -1713,11 +2067,40 @@
         },
         {
           "section": "wiki",
+          "title": "Wheel of Heaven",
+          "path": "/wiki/wheel-of-heaven/"
+        },
+        {
+          "section": "wiki",
           "title": "Yahweh",
           "path": "/wiki/yahweh/"
         }
       ],
-      "cite_count": 3
+      "cite_count": 4
+    },
+    {
+      "id": "reed-fallen-angels",
+      "title": "Fallen Angels and the History of Judaism and Christianity: The Reception of Enochic Literature",
+      "authored_by": [
+        "Annette Yoshiko Reed"
+      ],
+      "publish_date": "2005",
+      "follow_url": "https://www.cambridge.org/",
+      "description": "Reed's principal monograph on the reception of Enochic literature in Jewish and Christian tradition.",
+      "medium": "academic-paper",
+      "topics": [
+        "Watchers",
+        "Nephilim",
+        "Second Temple"
+      ],
+      "cited_by": [
+        {
+          "section": "wiki",
+          "title": "Satan",
+          "path": "/wiki/satan/"
+        }
+      ],
+      "cite_count": 1
     },
     {
       "id": "fda-approves-first-gene-therapies-to-treat-patients-with-sickle-cell-disease",
@@ -1767,65 +2150,16 @@
         },
         {
           "section": "wiki",
+          "title": "Antediluvian",
+          "path": "/wiki/antediluvian/"
+        },
+        {
+          "section": "wiki",
           "title": "World Age",
           "path": "/wiki/world-age/"
         }
       ],
-      "cite_count": 2
-    },
-    {
-      "id": "finkelstein-bible-unearthed",
-      "title": "The Bible Unearthed: Archaeology's New Vision of Ancient Israel and the Origin of Its Sacred Texts",
-      "authored_by": [
-        "Israel Finkelstein",
-        "Neil Asher Silberman"
-      ],
-      "publish_date": "2001",
-      "follow_url": "https://www.simonandschuster.com/",
-      "description": "Finkelstein and Silberman's principal contemporary articulation of the archaeological reading of the Hebrew Bible.",
-      "medium": "academic-paper",
-      "topics": [
-        "Hebrew Bible",
-        "Archaeology"
-      ],
-      "cited_by": [],
-      "cite_count": 0
-    },
-    {
-      "id": "firestone-younger-dryas",
-      "title": "Evidence for an extraterrestrial impact 12,900 years ago that contributed to the megafaunal extinctions and the Younger Dryas cooling",
-      "authored_by": [
-        "Richard B. Firestone",
-        "et al."
-      ],
-      "publish_date": "2007",
-      "follow_url": "https://www.pnas.org/",
-      "description": "Firestone et al.'s principal Proceedings of the National Academy of Sciences article on the Younger Dryas cosmic-impact hypothesis.",
-      "medium": "academic-paper",
-      "topics": [
-        "Great Flood",
-        "Catastrophism",
-        "Prehistoric"
-      ],
-      "cited_by": [],
-      "cite_count": 0
-    },
-    {
-      "id": "foster-before-muses",
-      "title": "Before the Muses: An Anthology of Akkadian Literature",
-      "authored_by": [
-        "Benjamin R. Foster"
-      ],
-      "publish_date": "2005",
-      "follow_url": "https://www.cdlpress.com/",
-      "description": "Foster's principal accessible anthology of Akkadian literature; the principal English-language reference for the Mesopotamian flood-narrative corpus.",
-      "medium": "religious-text",
-      "topics": [
-        "Great Flood",
-        "Mesopotamian"
-      ],
-      "cited_by": [],
-      "cite_count": 0
+      "cite_count": 3
     },
     {
       "id": "foundational-text-on-complex-topics",
@@ -1846,58 +2180,6 @@
         }
       ],
       "cite_count": 1
-    },
-    {
-      "id": "friedman-bible-sources-revealed",
-      "title": "The Bible with Sources Revealed",
-      "authored_by": [
-        "Richard Elliott Friedman"
-      ],
-      "publish_date": "2003",
-      "follow_url": "https://www.harpercollins.com/",
-      "description": "Friedman's principal articulation of the documentary-hypothesis-sourced presentation of the Pentateuch text.",
-      "medium": "academic-paper",
-      "topics": [
-        "Hebrew Bible",
-        "Documentary Hypothesis"
-      ],
-      "cited_by": [],
-      "cite_count": 0
-    },
-    {
-      "id": "friedman-who-wrote-bible",
-      "title": "Who Wrote the Bible?",
-      "authored_by": [
-        "Richard Elliott Friedman"
-      ],
-      "publish_date": "1987",
-      "follow_url": "https://www.harpercollins.com/",
-      "description": "Friedman's principal accessible articulation of the documentary hypothesis for general readers.",
-      "medium": "academic-paper",
-      "topics": [
-        "Hebrew Bible",
-        "Documentary Hypothesis"
-      ],
-      "cited_by": [],
-      "cite_count": 0
-    },
-    {
-      "id": "fuller-spaceship-earth",
-      "title": "Operating Manual for Spaceship Earth",
-      "authored_by": [
-        "R. Buckminster Fuller"
-      ],
-      "publish_date": "1969",
-      "follow_url": "https://en.wikipedia.org/wiki/Operating_Manual_for_Spaceship_Earth",
-      "description": "Fuller's foundational articulation of Earth as a single-system spaceship, with the substantial geodesic-architectural tradition and the substantial efficiency-maximisation ethic that the Cyberparadism Manifesto references explicitly.",
-      "medium": "nonfiction-book",
-      "topics": [
-        "Cyberparadism",
-        "Science",
-        "Futurism"
-      ],
-      "cited_by": [],
-      "cite_count": 0
     },
     {
       "id": "genesis",
@@ -1948,6 +2230,11 @@
         },
         {
           "section": "wiki",
+          "title": "Great Flood",
+          "path": "/wiki/great-flood/"
+        },
+        {
+          "section": "wiki",
           "title": "Hebrew Bible",
           "path": "/wiki/hebrew-bible/"
         },
@@ -1963,11 +2250,84 @@
         },
         {
           "section": "wiki",
+          "title": "Wheel of Heaven",
+          "path": "/wiki/wheel-of-heaven/"
+        },
+        {
+          "section": "wiki",
           "title": "Yahweh",
           "path": "/wiki/yahweh/"
         }
       ],
-      "cite_count": 11
+      "cite_count": 13
+    },
+    {
+      "id": "westermann-genesis-1-11",
+      "title": "Genesis 1-11: A Continental Commentary",
+      "authored_by": [
+        "Claus Westermann"
+      ],
+      "publish_date": "1994",
+      "follow_url": "https://fortresspress.com/",
+      "description": "Westermann's principal continental commentary on Genesis 1-11; foundational critical commentary on the primeval history.",
+      "medium": "academic-paper",
+      "topics": [
+        "Eden",
+        "Genesis",
+        "Hebrew Bible"
+      ],
+      "cited_by": [
+        {
+          "section": "wiki",
+          "title": "Eden",
+          "path": "/wiki/eden/"
+        },
+        {
+          "section": "wiki",
+          "title": "Great Flood",
+          "path": "/wiki/great-flood/"
+        },
+        {
+          "section": "wiki",
+          "title": "Hebrew Bible",
+          "path": "/wiki/hebrew-bible/"
+        }
+      ],
+      "cite_count": 3
+    },
+    {
+      "id": "sarna-genesis-jps",
+      "title": "Genesis: The JPS Torah Commentary",
+      "authored_by": [
+        "Nahum M. Sarna"
+      ],
+      "publish_date": "1989",
+      "follow_url": "https://jps.org/",
+      "description": "Sarna's principal Jewish Publication Society commentary on Genesis, the principal contemporary Jewish-scholarly commentary.",
+      "medium": "academic-paper",
+      "topics": [
+        "Eden",
+        "Genesis",
+        "Hebrew Bible"
+      ],
+      "cited_by": [
+        {
+          "section": "wiki",
+          "title": "Eden",
+          "path": "/wiki/eden/"
+        },
+        {
+          "section": "wiki",
+          "title": "Great Flood",
+          "path": "/wiki/great-flood/"
+        },
+        {
+          "section": "wiki",
+          "title": "Hebrew Bible",
+          "path": "/wiki/hebrew-bible/"
+        }
+      ],
+      "cite_count": 3
     },
     {
       "id": "genome-editing-of-human-embryos-broadening-the-ethical-debate",
@@ -1988,41 +2348,6 @@
         }
       ],
       "cite_count": 1
-    },
-    {
-      "id": "george-gilgamesh",
-      "title": "The Epic of Gilgamesh: The Babylonian Epic Poem and Other Texts in Akkadian and Sumerian",
-      "authored_by": [
-        "Andrew George"
-      ],
-      "publish_date": "1999",
-      "follow_url": "https://www.penguinrandomhouse.com/",
-      "description": "George's principal accessible English edition and translation of the Gilgamesh epic and adjacent Akkadian-Sumerian texts.",
-      "medium": "religious-text",
-      "topics": [
-        "Great Flood",
-        "Mesopotamian"
-      ],
-      "cited_by": [],
-      "cite_count": 0
-    },
-    {
-      "id": "gibson-neuromancer",
-      "title": "Neuromancer",
-      "authored_by": [
-        "William Gibson"
-      ],
-      "publish_date": "1984",
-      "follow_url": "https://williamgibsonbooks.com/books/neuromancer/",
-      "description": "Gibson's principal cyberpunk novel and the work that coined the term *cyberspace*. Neuromancer became the foundational text of the cyberpunk literary movement and the principal dystopian-technological aesthetic that Cyberparadism operates against.",
-      "medium": "fiction-book",
-      "topics": [
-        "Cyberparadism",
-        "Fiction",
-        "Futurism"
-      ],
-      "cited_by": [],
-      "cite_count": 0
     },
     {
       "id": "gospel-of-john",
@@ -2129,38 +2454,29 @@
       "cite_count": 3
     },
     {
-      "id": "habel-job",
-      "title": "The Book of Job: A Commentary",
+      "id": "gobekli-tepe-schmidt",
+      "title": "Göbekli Tepe: A Stone Age Sanctuary in South-Eastern Anatolia",
       "authored_by": [
-        "Norman C. Habel"
+        "Klaus Schmidt"
       ],
-      "publish_date": "1985",
-      "follow_url": "https://www.wjkbooks.com/",
-      "description": "Habel's principal Westminster commentary on Job; substantial articulation of the ha-satan figure as institutional opposition.",
-      "medium": "academic-paper",
+      "publish_date": "2012",
+      "follow_url": "https://www.exoriente.org/bookshop/index.php?action=details&articleId=151",
+      "description": "Klaus Schmidt's 2012 English edition (originally *Sie bauten die ersten Tempel: Das rätselhafte Heiligtum der Steinzeitjäger*, 2006) — the principal scholarly treatment of the Göbekli Tepe excavation, written by the archaeologist who identified and led the dig from 1995 until his death in 2014. The site's massive carved limestone pillars (the largest 5.5m tall, weighing 10–20 tons each), the deliberate burial of the enclosures around 8000 BCE, and the carbon dating placing earliest construction at c. 9600 BCE have substantially overturned the previously dominant view of when complex human civilization began. The work is the foundational source for the Pre-Pottery Neolithic revision that underwrites contemporary archaeological engagement with the early Holocene.",
+      "medium": "nonfiction-book",
       "topics": [
-        "Satan",
-        "Hebrew Bible"
+        "Göbekli Tepe",
+        "Pre-Pottery Neolithic",
+        "Antediluvian",
+        "Anatolian Archaeology"
       ],
-      "cited_by": [],
-      "cite_count": 0
-    },
-    {
-      "id": "halloran-sumerian-lexicon",
-      "title": "Sumerian Lexicon",
-      "authored_by": [
-        "John A. Halloran"
+      "cited_by": [
+        {
+          "section": "wiki",
+          "title": "Antediluvian",
+          "path": "/wiki/antediluvian/"
+        }
       ],
-      "publish_date": "2006",
-      "follow_url": "https://www.sumerian.org/",
-      "description": "Halloran's accessible Sumerian lexicon, principal contemporary reference for Sumerian etymology behind the Eden / Edin material.",
-      "medium": "academic-paper",
-      "topics": [
-        "Eden",
-        "Sumerian"
-      ],
-      "cited_by": [],
-      "cite_count": 0
+      "cite_count": 1
     },
     {
       "id": "hamlets-mill",
@@ -2228,6 +2544,11 @@
         },
         {
           "section": "wiki",
+          "title": "Wheel of Heaven",
+          "path": "/wiki/wheel-of-heaven/"
+        },
+        {
+          "section": "wiki",
           "title": "World Age",
           "path": "/wiki/world-age/"
         },
@@ -2237,7 +2558,7 @@
           "path": "/wiki/zodiac/"
         }
       ],
-      "cite_count": 11
+      "cite_count": 12
     },
     {
       "id": "hard-to-be-a-god",
@@ -2254,24 +2575,6 @@
         "Ancient astronauts",
         "Fiction",
         "Neo-Euhemerism"
-      ],
-      "cited_by": [],
-      "cite_count": 0
-    },
-    {
-      "id": "heidel-gilgamesh-ot",
-      "title": "The Gilgamesh Epic and Old Testament Parallels",
-      "authored_by": [
-        "Alexander Heidel"
-      ],
-      "publish_date": "1949",
-      "follow_url": "https://press.uchicago.edu/",
-      "description": "Heidel's foundational comparative articulation of the Gilgamesh-Genesis parallel structure, including the flood narratives.",
-      "medium": "academic-paper",
-      "topics": [
-        "Great Flood",
-        "Mesopotamian",
-        "Genesis"
       ],
       "cited_by": [],
       "cite_count": 0
@@ -2295,6 +2598,34 @@
       "cite_count": 0
     },
     {
+      "id": "doniger-hindu-myths",
+      "title": "Hindu Myths: A Sourcebook",
+      "authored_by": [
+        "Wendy Doniger"
+      ],
+      "publish_date": "1975",
+      "follow_url": "https://www.penguinrandomhouse.com/",
+      "description": "Doniger's principal English-language sourcebook for Hindu mythology, including the asura tradition closely parallel to the Hebrew satan content.",
+      "medium": "religious-text",
+      "topics": [
+        "Comparative Religion",
+        "Hindu Tradition"
+      ],
+      "cited_by": [
+        {
+          "section": "wiki",
+          "title": "Great Flood",
+          "path": "/wiki/great-flood/"
+        },
+        {
+          "section": "wiki",
+          "title": "Satan",
+          "path": "/wiki/satan/"
+        }
+      ],
+      "cite_count": 2
+    },
+    {
       "id": "histories-book-ii",
       "title": "Histories, Book II",
       "authored_by": [
@@ -2313,6 +2644,57 @@
         }
       ],
       "cite_count": 1
+    },
+    {
+      "id": "kugel-how-to-read-bible",
+      "title": "How to Read the Bible: A Guide to Scripture, Then and Now",
+      "authored_by": [
+        "James L. Kugel"
+      ],
+      "publish_date": "2007",
+      "follow_url": "https://www.simonandschuster.com/",
+      "description": "Kugel's principal articulation of the contrast between ancient interpretive and modern critical readings of the Hebrew Bible.",
+      "medium": "academic-paper",
+      "topics": [
+        "Hebrew Bible",
+        "Hermeneutics"
+      ],
+      "cited_by": [
+        {
+          "section": "wiki",
+          "title": "Hebrew Bible",
+          "path": "/wiki/hebrew-bible/"
+        }
+      ],
+      "cite_count": 1
+    },
+    {
+      "id": "biglino-il-libro",
+      "title": "Il Libro che cambierà per sempre le nostre idee sulla Bibbia",
+      "authored_by": [
+        "Mauro Biglino"
+      ],
+      "publish_date": "2010",
+      "follow_url": "https://www.unoeditori.com/",
+      "description": "Biglino's first principal articulation of the strict-literal Hebrew Bible reading, foundational to the broader Biglino corpus.",
+      "medium": "nonfiction-book",
+      "topics": [
+        "Hebrew Bible",
+        "Elohim"
+      ],
+      "cited_by": [
+        {
+          "section": "wiki",
+          "title": "Eden",
+          "path": "/wiki/eden/"
+        },
+        {
+          "section": "wiki",
+          "title": "Hebrew Bible",
+          "path": "/wiki/hebrew-bible/"
+        }
+      ],
+      "cite_count": 2
     },
     {
       "id": "intelligent-design-message-from-the-designers",
@@ -2343,8 +2725,23 @@
         },
         {
           "section": "wiki",
+          "title": "Eden",
+          "path": "/wiki/eden/"
+        },
+        {
+          "section": "wiki",
           "title": "Golden Age",
           "path": "/wiki/golden-age/"
+        },
+        {
+          "section": "wiki",
+          "title": "Great Flood",
+          "path": "/wiki/great-flood/"
+        },
+        {
+          "section": "wiki",
+          "title": "Hebrew Bible",
+          "path": "/wiki/hebrew-bible/"
         },
         {
           "section": "wiki",
@@ -2363,8 +2760,18 @@
         },
         {
           "section": "wiki",
+          "title": "Reference corpus of the Raëlian canon",
+          "path": "/wiki/reference-corpus-of-the-raelian-canon/"
+        },
+        {
+          "section": "wiki",
           "title": "Satan",
           "path": "/wiki/satan/"
+        },
+        {
+          "section": "wiki",
+          "title": "Wheel of Heaven",
+          "path": "/wiki/wheel-of-heaven/"
         },
         {
           "section": "wiki",
@@ -2372,7 +2779,7 @@
           "path": "/wiki/world-age/"
         }
       ],
-      "cite_count": 9
+      "cite_count": 14
     },
     {
       "id": "internet-sacred-text-archive",
@@ -2512,6 +2919,52 @@
       "cite_count": 0
     },
     {
+      "id": "pope-job",
+      "title": "Job (Anchor Bible)",
+      "authored_by": [
+        "Marvin H. Pope"
+      ],
+      "publish_date": "1973",
+      "follow_url": "https://www.anchorbible.com/",
+      "description": "Pope's principal Anchor Bible commentary on Job, including substantial treatment of the ha-satan figure in the prologue.",
+      "medium": "academic-paper",
+      "topics": [
+        "Satan",
+        "Hebrew Bible"
+      ],
+      "cited_by": [
+        {
+          "section": "wiki",
+          "title": "Satan",
+          "path": "/wiki/satan/"
+        }
+      ],
+      "cite_count": 1
+    },
+    {
+      "id": "clines-job-wbc",
+      "title": "Job 1-20 / 21-37 / 38-42 (Word Biblical Commentary)",
+      "authored_by": [
+        "David J. A. Clines"
+      ],
+      "publish_date": "1989-2011",
+      "follow_url": "https://www.zondervanacademic.com/",
+      "description": "Clines's three-volume Word Biblical Commentary on Job, principal contemporary critical commentary.",
+      "medium": "academic-paper",
+      "topics": [
+        "Satan",
+        "Hebrew Bible"
+      ],
+      "cited_by": [
+        {
+          "section": "wiki",
+          "title": "Satan",
+          "path": "/wiki/satan/"
+        }
+      ],
+      "cite_count": 1
+    },
+    {
       "id": "joel",
       "title": "Joel",
       "authored_by": [
@@ -2590,25 +3043,14 @@
         "Intelligent Design",
         "Futurism"
       ],
-      "cited_by": [],
-      "cite_count": 0
-    },
-    {
-      "id": "kelly-satan-biography",
-      "title": "Satan: A Biography",
-      "authored_by": [
-        "Henry Ansgar Kelly"
+      "cited_by": [
+        {
+          "section": "wiki",
+          "title": "Cyberparadism",
+          "path": "/wiki/cyberparadism/"
+        }
       ],
-      "publish_date": "2006",
-      "follow_url": "https://www.cambridge.org/",
-      "description": "Kelly's principal historical-philological biography of the Satan figure across Jewish and Christian traditions.",
-      "medium": "academic-paper",
-      "topics": [
-        "Satan",
-        "Christianity"
-      ],
-      "cited_by": [],
-      "cite_count": 0
+      "cite_count": 1
     },
     {
       "id": "kitab-i-aqdas",
@@ -2642,8 +3084,14 @@
         "Japanese Tradition",
         "Comparative Religion"
       ],
-      "cited_by": [],
-      "cite_count": 0
+      "cited_by": [
+        {
+          "section": "wiki",
+          "title": "Reference corpus of the Raëlian canon",
+          "path": "/wiki/reference-corpus-of-the-raelian-canon/"
+        }
+      ],
+      "cite_count": 1
     },
     {
       "id": "kosmographia",
@@ -2668,94 +3116,102 @@
       "cite_count": 0
     },
     {
-      "id": "kramer-enki-myths",
-      "title": "Myths of Enki, the Crafty God",
+      "id": "sendy-ere-du-verseau",
+      "title": "L'ère du Verseau",
       "authored_by": [
-        "Samuel Noah Kramer",
-        "John Maier"
+        "Jean Sendy"
       ],
-      "publish_date": "1989",
-      "follow_url": "https://global.oup.com/academic/",
-      "description": "Kramer and Maier's principal accessible English collection of the Enki mythological corpus from Sumerian sources.",
-      "medium": "religious-text",
+      "publish_date": "1970",
+      "follow_url": "https://www.editionsrobertlaffont.com/",
+      "description": "Sendy's articulation of the Aquarian-age inheritance threshold and the broader precessional framework. Foundational text for the corpus's Aquarian-age reading.",
+      "medium": "nonfiction-book",
       "topics": [
-        "Sumerian",
-        "Comparative Religion",
-        "Eden"
+        "Age of Aquarius",
+        "Precession"
       ],
-      "cited_by": [],
-      "cite_count": 0
+      "cited_by": [
+        {
+          "section": "wiki",
+          "title": "Hebrew Bible",
+          "path": "/wiki/hebrew-bible/"
+        }
+      ],
+      "cite_count": 1
     },
     {
-      "id": "krupp-echoes-ancient-skies",
-      "title": "Echoes of the Ancient Skies: The Astronomy of Lost Civilizations",
+      "id": "biglino-bibbia-non-parla",
+      "title": "La Bibbia non parla di Dio",
       "authored_by": [
-        "E. C. Krupp"
+        "Mauro Biglino"
       ],
-      "publish_date": "1983",
-      "follow_url": "https://www.harpercollins.com/",
-      "description": "Krupp's principal accessible survey of ancient archaeoastronomy across cultures.",
-      "medium": "academic-paper",
-      "topics": [
-        "Precession",
-        "Archaeoastronomy"
-      ],
-      "cited_by": [],
-      "cite_count": 0
-    },
-    {
-      "id": "kugel-how-to-read-bible",
-      "title": "How to Read the Bible: A Guide to Scripture, Then and Now",
-      "authored_by": [
-        "James L. Kugel"
-      ],
-      "publish_date": "2007",
-      "follow_url": "https://www.simonandschuster.com/",
-      "description": "Kugel's principal articulation of the contrast between ancient interpretive and modern critical readings of the Hebrew Bible.",
-      "medium": "academic-paper",
+      "publish_date": "2015",
+      "follow_url": "https://www.librimondadori.it/",
+      "description": "Biglino's articulation of the argument that mainstream translation traditions obscure the Hebrew Bible's original content about the Elohim.",
+      "medium": "nonfiction-book",
       "topics": [
         "Hebrew Bible",
-        "Hermeneutics"
+        "Elohim"
       ],
-      "cited_by": [],
-      "cite_count": 0
+      "cited_by": [
+        {
+          "section": "wiki",
+          "title": "Eden",
+          "path": "/wiki/eden/"
+        },
+        {
+          "section": "wiki",
+          "title": "Hebrew Bible",
+          "path": "/wiki/hebrew-bible/"
+        }
+      ],
+      "cite_count": 2
     },
     {
-      "id": "la-bible-of-la-pleiade",
-      "title": "The Bible of La Pleiade",
+      "id": "dhorme-bible",
+      "title": "La Bible (traduction Dhorme)",
       "authored_by": [
-        "Edouard Dorme",
-        "La Pléiade"
+        "Édouard Dhorme"
       ],
-      "publish_date": "1956",
-      "follow_url": "https://www.la-pleiade.fr/Catalogue/GALLIMARD/Bibliotheque-de-la-Pleiade/La-Bible4",
-      "description": "The \"La Bible: Ancient Testament (tome 1 et 2)\" from La Pléiade publisher, translated by Édouard Dhorme, Franck Michaéli, and Antoine Guillaumont, offers a comprehensive look at the Old Testament.\n\n- Tome 1: This volume includes the Pentateuch, which contains narratives of the creation, early prophets, and the Exodus. It also covers historical books such as Joshua, the books of Samuel, the books of Kings, Chronicles, Ezra, Nehemiah, and the books of the Maccabees. This edition is notable for its \"historian's perspective\" of these texts, making it a significant literary monument. Despite its publication in 1956, it doesn't incorporate the most recent archaeological discoveries and analyses. The texts are enriched with an enlightening introduction about the history of the Bible, including its Hebrew texts and Greek or Latin versions. Key figures such as Adam and Eve, Noah, Abraham, Moses, Samson, David, and Solomon are featured, along with detailed accounts of religious laws, precepts, and the long enumerations of Jewish tribes.\n\n- Tome 2: This second volume includes the Four Major Prophets, the Twelve Minor Prophets, the Three Poetic Books, the Five Scrolls, and the Deuterocanonical books. The translations for this volume were contributed by Jean Koenig, Édouard Dhorme, Frank Michaéli, Jean Hadot, and Antoine Guillaumont. This part of the collection highlights the Old Testament as a vast literary compilation comprising liturgical poems, tales and legends, hymns and songs, and sayings and proverbs. It presents a rich variety of texts, satisfying a wide range of readers with different interests. Notable contents include the voluptuous poetry of the Song of Songs and the profound philosophical musings found in Ecclesiastes and the Book of Job.\n\nThese volumes provide a deep and varied exploration of the Old Testament, reflecting both its historical significance and its vast literary wealth. The translations and introductions contribute to a nuanced understanding of these ancient texts, making them accessible to a modern readership.\n\n![Image](images/dhorme-bible-books.jpg \"La Bible: Ancient Testament, Tome I & Tome II (1956) — Edouard Dhorme\")\n\n### About Edouard Dhorme\n\nEdouard Dhorme (1881-1966) was a French Assyriologist and biblical scholar. He is best known for his work on the Akkadian language and the cuneiform script, as well as his translations and commentaries on the Hebrew Bible and the Dead Sea Scrolls.\n\nDhorme studied at the Ecole biblique et archéologique française de Jérusalem, where he developed his expertise in Semitic languages and literature. He later taught at several universities, including the Sorbonne in Paris, where he was appointed professor of Assyriology in 1933.\n\nDhorme's most influential works include \"The Ancient Near East,\" a survey of the history, culture, and religions of the region, and \"Theologie babylonienne et judéo-chrétienne,\" a comparative study of Babylonian and Judeo-Christian theology. He also contributed to the French translation of the Bible known as the \"Bible de Jérusalem,\" and published several commentaries on individual books of the Hebrew Bible, including the Psalms and the Book of Job. Dhorme's contributions to the fields of Assyriology and biblical scholarship are still recognized and studied today.\n\n### See also\n\n- [Wiki › Dhorme Bible translation](/wiki/encyclopedia/dhorme-bible-translation/)</br>\n\n### External links\n\n- [La Bible: Ancient Testament | Bibliothèque de la Pléiade](https://www.la-pleiade.fr/Catalogue/GALLIMARD/Bibliotheque-de-la-Pleiade/La-Bible4)",
-      "medium": "article",
+      "publish_date": "1956-1959",
+      "follow_url": "https://en.wikipedia.org/wiki/%C3%89douard_Dhorme",
+      "description": "Édouard Dhorme's French translation of the Hebrew Bible, published by Bibliothèque de la Pléiade. The translation Rael consulted during the 1973 contact and the principal French Bible used by the Raëlian canon. Dhorme's renderings — particularly *science* for what other translations give as *good and evil*, and his Assyriological-philological precision — are themselves a substantial interpretive position the canon adopts.",
+      "medium": "religious-text",
       "topics": [
-        "Bible",
-        "Elohim",
-        "Theology"
+        "Hebrew Bible",
+        "Translation",
+        "Raëlism"
       ],
-      "cited_by": [],
-      "cite_count": 0
+      "cited_by": [
+        {
+          "section": "wiki",
+          "title": "Reference corpus of the Raëlian canon",
+          "path": "/wiki/reference-corpus-of-the-raelian-canon/"
+        }
+      ],
+      "cite_count": 1
     },
     {
-      "id": "le-guin-dispossessed",
-      "title": "The Dispossessed: An Ambiguous Utopia",
+      "id": "sendy-lune-cle-bible",
+      "title": "La lune, clé de la Bible",
       "authored_by": [
-        "Ursula K. Le Guin"
+        "Jean Sendy"
       ],
-      "publish_date": "1974",
-      "follow_url": "https://www.ursulakleguin.com/dispossessed",
-      "description": "Le Guin's novel of post-scarcity-cooperative civilisational arrangement on the moon Anarres, operating with substantial scientific-technological sophistication and substantial commitment to equity, freedom, and responsibility.",
-      "medium": "fiction-book",
+      "publish_date": "1968",
+      "follow_url": "https://www.julliard.fr/",
+      "description": "Sendy's early articulation of the lunar-astronomical reading of biblical chronology.",
+      "medium": "nonfiction-book",
       "topics": [
-        "Cyberparadism",
-        "Fiction",
-        "Futurism"
+        "Hebrew Bible",
+        "Precession"
       ],
-      "cited_by": [],
-      "cite_count": 0
+      "cited_by": [
+        {
+          "section": "wiki",
+          "title": "Great Flood",
+          "path": "/wiki/great-flood/"
+        }
+      ],
+      "cite_count": 1
     },
     {
       "id": "le-livre-qui-dit-la-v-rit",
@@ -2838,6 +3294,58 @@
       "cite_count": 1
     },
     {
+      "id": "rohl-legend-genesis",
+      "title": "Legend: The Genesis of Civilisation",
+      "authored_by": [
+        "David Rohl"
+      ],
+      "publish_date": "1998",
+      "follow_url": "https://www.davidrohl.org/",
+      "description": "Rohl's principal articulation of the historical-archaeological reading of Genesis, with substantial Eden-location material.",
+      "medium": "nonfiction-book",
+      "topics": [
+        "Eden",
+        "Hebrew Bible",
+        "Archaeology"
+      ],
+      "cited_by": [
+        {
+          "section": "wiki",
+          "title": "Eden",
+          "path": "/wiki/eden/"
+        }
+      ],
+      "cite_count": 1
+    },
+    {
+      "id": "sendy-cahiers-moise",
+      "title": "Les cahiers de cours de Moïse",
+      "authored_by": [
+        "Jean Sendy"
+      ],
+      "publish_date": "1974",
+      "follow_url": "https://www.editionsrobertlaffont.com/",
+      "description": "Sendy's articulation of the Mosaic narrative through the framework's reading. Companion text to the broader Sendy corpus.",
+      "medium": "nonfiction-book",
+      "topics": [
+        "Hebrew Bible",
+        "Moses"
+      ],
+      "cited_by": [
+        {
+          "section": "wiki",
+          "title": "Eden",
+          "path": "/wiki/eden/"
+        },
+        {
+          "section": "wiki",
+          "title": "Hebrew Bible",
+          "path": "/wiki/hebrew-bible/"
+        }
+      ],
+      "cite_count": 2
+    },
+    {
       "id": "les-extra-terrestres-m-ont-emmen-sur-leur-plan-te",
       "title": "Les Extra-Terrestres m'ont emmené sur leur planète",
       "authored_by": [
@@ -2893,9 +3401,14 @@
           "section": "timeline",
           "title": "The Wheel Keeps Turning",
           "path": "/timeline/the-wheel-keeps-turning/"
+        },
+        {
+          "section": "wiki",
+          "title": "Cyberparadism",
+          "path": "/wiki/cyberparadism/"
         }
       ],
-      "cite_count": 9
+      "cite_count": 10
     },
     {
       "id": "lets-welcome-the-extraterrestrials",
@@ -2926,6 +3439,11 @@
         },
         {
           "section": "wiki",
+          "title": "Eden",
+          "path": "/wiki/eden/"
+        },
+        {
+          "section": "wiki",
           "title": "Elohim",
           "path": "/wiki/elohim/"
         },
@@ -2933,6 +3451,11 @@
           "section": "wiki",
           "title": "Golden Age",
           "path": "/wiki/golden-age/"
+        },
+        {
+          "section": "wiki",
+          "title": "Hebrew Bible",
+          "path": "/wiki/hebrew-bible/"
         },
         {
           "section": "wiki",
@@ -2951,8 +3474,18 @@
         },
         {
           "section": "wiki",
+          "title": "Reference corpus of the Raëlian canon",
+          "path": "/wiki/reference-corpus-of-the-raelian-canon/"
+        },
+        {
+          "section": "wiki",
           "title": "Satan",
           "path": "/wiki/satan/"
+        },
+        {
+          "section": "wiki",
+          "title": "Wheel of Heaven",
+          "path": "/wiki/wheel-of-heaven/"
         },
         {
           "section": "wiki",
@@ -2960,7 +3493,7 @@
           "path": "/wiki/yahweh/"
         }
       ],
-      "cite_count": 8
+      "cite_count": 12
     },
     {
       "id": "leviticus",
@@ -2982,6 +3515,56 @@
       "cite_count": 0
     },
     {
+      "id": "russell-lucifer-middle-ages",
+      "title": "Lucifer: The Devil in the Middle Ages",
+      "authored_by": [
+        "Jeffrey Burton Russell"
+      ],
+      "publish_date": "1984",
+      "follow_url": "https://www.cornellpress.cornell.edu/",
+      "description": "Russell's third volume; the medieval demonological elaboration of the conflated Satan/Lucifer/Devil figure.",
+      "medium": "academic-paper",
+      "topics": [
+        "Satan",
+        "Lucifer",
+        "Christianity"
+      ],
+      "cited_by": [
+        {
+          "section": "wiki",
+          "title": "Satan",
+          "path": "/wiki/satan/"
+        }
+      ],
+      "cite_count": 1
+    },
+    {
+      "id": "magicians-of-the-gods",
+      "title": "Magicians of the Gods: The Forgotten Wisdom of Earth's Lost Civilisation",
+      "authored_by": [
+        "Graham Hancock"
+      ],
+      "publish_date": "2015",
+      "follow_url": "https://grahamhancock.com/magicians-of-the-gods/",
+      "description": "Graham Hancock's 2015 sequel to *Fingerprints of the Gods* (1995). The work converges on the Younger Dryas impact hypothesis — the proposal that a comet-fragment impact at approximately 12,800 years before present produced the Younger Dryas climate event and destroyed an advanced civilization that had existed during the preceding warm period. Hancock marshals the Göbekli Tepe evidence, the Younger Dryas Boundary research of Firestone, Kennett, and others, and the global pre-Flood traditions to argue for a coherent catastrophist reconstruction of late-Pleistocene civilization. The corpus shares Hancock's broad direction without endorsing the comet-impact mechanism as the Flood event itself.",
+      "medium": "nonfiction-book",
+      "topics": [
+        "Antediluvian",
+        "Flood",
+        "Younger Dryas",
+        "Lost Civilization",
+        "Göbekli Tepe"
+      ],
+      "cited_by": [
+        {
+          "section": "wiki",
+          "title": "Antediluvian",
+          "path": "/wiki/antediluvian/"
+        }
+      ],
+      "cite_count": 1
+    },
+    {
       "id": "mahabharata",
       "title": "Mahābhārata",
       "authored_by": [
@@ -2995,8 +3578,37 @@
         "Hindu Tradition",
         "Comparative Religion"
       ],
-      "cited_by": [],
-      "cite_count": 0
+      "cited_by": [
+        {
+          "section": "wiki",
+          "title": "Reference corpus of the Raëlian canon",
+          "path": "/wiki/reference-corpus-of-the-raelian-canon/"
+        }
+      ],
+      "cite_count": 1
+    },
+    {
+      "id": "williams-mahayana",
+      "title": "Mahāyāna Buddhism: The Doctrinal Foundations",
+      "authored_by": [
+        "Paul Williams"
+      ],
+      "publish_date": "2008",
+      "follow_url": "https://www.routledge.com/",
+      "description": "Williams's principal accessible introduction to Mahāyāna Buddhism, including the Mara tradition and prophet-testing function.",
+      "medium": "academic-paper",
+      "topics": [
+        "Comparative Religion",
+        "Buddhism"
+      ],
+      "cited_by": [
+        {
+          "section": "wiki",
+          "title": "Satan",
+          "path": "/wiki/satan/"
+        }
+      ],
+      "cite_count": 1
     },
     {
       "id": "mathematics-and-the-unexpected",
@@ -3079,21 +3691,52 @@
       "cite_count": 2
     },
     {
-      "id": "mcginn-antichrist",
-      "title": "Antichrist: Two Thousand Years of the Human Fascination with Evil",
+      "id": "russell-mephistopheles-modern",
+      "title": "Mephistopheles: The Devil in the Modern World",
       "authored_by": [
-        "Bernard McGinn"
+        "Jeffrey Burton Russell"
       ],
-      "publish_date": "1994",
-      "follow_url": "https://www.harpercollins.com/",
-      "description": "McGinn's principal historical treatment of the Antichrist tradition, closely adjacent to the Satan-development scholarship.",
+      "publish_date": "1986",
+      "follow_url": "https://www.cornellpress.cornell.edu/",
+      "description": "Russell's fourth volume; the modern transformations of the Devil figure across post-Reformation Western culture.",
       "medium": "academic-paper",
       "topics": [
         "Satan",
         "Christianity"
       ],
-      "cited_by": [],
-      "cite_count": 0
+      "cited_by": [
+        {
+          "section": "wiki",
+          "title": "Satan",
+          "path": "/wiki/satan/"
+        }
+      ],
+      "cite_count": 1
+    },
+    {
+      "id": "mesopotamian-chronicles",
+      "title": "Mesopotamian Chronicles",
+      "authored_by": [
+        "Jean-Jacques Glassner"
+      ],
+      "publish_date": "2004",
+      "follow_url": "https://www.sbl-site.org/publications/Books_WAW.aspx",
+      "description": "Jean-Jacques Glassner's 2004 critical edition and translation (Society of Biblical Literature) of the Mesopotamian chronicle tradition, including the Sumerian King List in its various recensions. The Sumerian King List records a sequence of pre-Flood kings with reigns of extraordinary length — Alulim at 28,800 years, Alalngar at 36,000 years, and others — interrupted by the Flood, after which reign-lengths drop sharply. The structural parallel to Genesis 5 (ten antediluvian patriarchs with vast lifespans ending in the Flood) is among the most discussed parallels in comparative ancient Near Eastern literature.",
+      "medium": "nonfiction-book",
+      "topics": [
+        "Antediluvian",
+        "Sumerian King List",
+        "Mesopotamian History",
+        "Chronicle Tradition"
+      ],
+      "cited_by": [
+        {
+          "section": "wiki",
+          "title": "Antediluvian",
+          "path": "/wiki/antediluvian/"
+        }
+      ],
+      "cite_count": 1
     },
     {
       "id": "misunderstandings-about-the-tunguska-event-shock-wave-physics-and-airbursts-have",
@@ -3136,60 +3779,6 @@
       "cite_count": 1
     },
     {
-      "id": "miyazaki-castle-in-the-sky",
-      "title": "Castle in the Sky",
-      "authored_by": [
-        "Hayao Miyazaki",
-        "Studio Ghibli"
-      ],
-      "publish_date": "1986",
-      "follow_url": "https://www.ghibli.jp/works/laputa/",
-      "description": "Miyazaki's articulation of the Laputan civilisation as substantively-advanced harmonious-technology integration. One principal Cyberparadist-aligned Studio Ghibli production.",
-      "medium": "documentary",
-      "topics": [
-        "Cyberparadism",
-        "Fiction"
-      ],
-      "cited_by": [],
-      "cite_count": 0
-    },
-    {
-      "id": "miyazaki-nausicaa",
-      "title": "Nausicaä of the Valley of the Wind",
-      "authored_by": [
-        "Hayao Miyazaki",
-        "Studio Ghibli"
-      ],
-      "publish_date": "1984",
-      "follow_url": "https://www.ghibli.jp/works/nausicaa/",
-      "description": "Miyazaki's foundational ecological-utopian film, integrating advanced atmospheric technology with substantial post-apocalyptic environmental restoration. The substantial Ghibli ecological aesthetic registers principal Cyberparadist content through harmonious-technology-and-nature articulation.",
-      "medium": "documentary",
-      "topics": [
-        "Cyberparadism",
-        "Fiction"
-      ],
-      "cited_by": [],
-      "cite_count": 0
-    },
-    {
-      "id": "miyazaki-princess-mononoke",
-      "title": "Princess Mononoke",
-      "authored_by": [
-        "Hayao Miyazaki",
-        "Studio Ghibli"
-      ],
-      "publish_date": "1997",
-      "follow_url": "https://www.ghibli.jp/works/mononoke/",
-      "description": "Miyazaki's articulation of the substantial human-nature-technology negotiation, with substantial Cyberparadist content through harmonious-integration commitment despite the central conflict-narrative framing.",
-      "medium": "documentary",
-      "topics": [
-        "Cyberparadism",
-        "Fiction"
-      ],
-      "cited_by": [],
-      "cite_count": 0
-    },
-    {
       "id": "modern-perspectives-on-topic-analysis",
       "title": "Modern Perspectives on Topic Analysis",
       "authored_by": [
@@ -3210,24 +3799,6 @@
       "cite_count": 1
     },
     {
-      "id": "mores-utopia",
-      "title": "Utopia",
-      "authored_by": [
-        "Thomas More"
-      ],
-      "publish_date": "1516",
-      "follow_url": "https://en.wikipedia.org/wiki/Utopia_(book)",
-      "description": "More's foundational text of the Western utopian literary tradition. The substantial subsequent utopian-literary tradition within which Cyberparadism operates as specific contemporary aesthetic-cultural-technological articulation.",
-      "medium": "fiction-book",
-      "topics": [
-        "Cyberparadism",
-        "Fiction",
-        "Futurism"
-      ],
-      "cited_by": [],
-      "cite_count": 0
-    },
-    {
       "id": "multispecies-cities-anthology",
       "title": "Multispecies Cities: Solarpunk Urban Futures",
       "authored_by": [
@@ -3243,42 +3814,92 @@
         "Fiction",
         "Futurism"
       ],
-      "cited_by": [],
-      "cite_count": 0
+      "cited_by": [
+        {
+          "section": "wiki",
+          "title": "Cyberparadism",
+          "path": "/wiki/cyberparadism/"
+        }
+      ],
+      "cite_count": 1
     },
     {
-      "id": "neugebauer-history-astronomy",
-      "title": "A History of Ancient Mathematical Astronomy (3 vols.)",
+      "id": "kramer-enki-myths",
+      "title": "Myths of Enki, the Crafty God",
       "authored_by": [
-        "Otto Neugebauer"
+        "Samuel Noah Kramer",
+        "John Maier"
       ],
-      "publish_date": "1975",
-      "follow_url": "https://link.springer.com/",
-      "description": "Neugebauer's principal three-volume historical reference for ancient mathematical astronomy.",
-      "medium": "academic-paper",
-      "topics": [
-        "Precession",
-        "Astronomy"
-      ],
-      "cited_by": [],
-      "cite_count": 0
-    },
-    {
-      "id": "newsom-job-moral",
-      "title": "The Book of Job: A Contest of Moral Imaginations",
-      "authored_by": [
-        "Carol A. Newsom"
-      ],
-      "publish_date": "2003",
+      "publish_date": "1989",
       "follow_url": "https://global.oup.com/academic/",
-      "description": "Newsom's principal monograph on Job, including substantive treatment of the ha-satan figure's institutional-adversarial role.",
-      "medium": "academic-paper",
+      "description": "Kramer and Maier's principal accessible English collection of the Enki mythological corpus from Sumerian sources.",
+      "medium": "religious-text",
       "topics": [
-        "Satan",
-        "Hebrew Bible"
+        "Sumerian",
+        "Comparative Religion",
+        "Eden"
       ],
-      "cited_by": [],
-      "cite_count": 0
+      "cited_by": [
+        {
+          "section": "wiki",
+          "title": "Eden",
+          "path": "/wiki/eden/"
+        },
+        {
+          "section": "wiki",
+          "title": "Great Flood",
+          "path": "/wiki/great-flood/"
+        }
+      ],
+      "cite_count": 2
+    },
+    {
+      "id": "miyazaki-nausicaa",
+      "title": "Nausicaä of the Valley of the Wind",
+      "authored_by": [
+        "Hayao Miyazaki",
+        "Studio Ghibli"
+      ],
+      "publish_date": "1984",
+      "follow_url": "https://www.ghibli.jp/works/nausicaa/",
+      "description": "Miyazaki's foundational ecological-utopian film, integrating advanced atmospheric technology with substantial post-apocalyptic environmental restoration. The substantial Ghibli ecological aesthetic registers principal Cyberparadist content through harmonious-technology-and-nature articulation.",
+      "medium": "documentary",
+      "topics": [
+        "Cyberparadism",
+        "Fiction"
+      ],
+      "cited_by": [
+        {
+          "section": "wiki",
+          "title": "Cyberparadism",
+          "path": "/wiki/cyberparadism/"
+        }
+      ],
+      "cite_count": 1
+    },
+    {
+      "id": "gibson-neuromancer",
+      "title": "Neuromancer",
+      "authored_by": [
+        "William Gibson"
+      ],
+      "publish_date": "1984",
+      "follow_url": "https://williamgibsonbooks.com/books/neuromancer/",
+      "description": "Gibson's principal cyberpunk novel and the work that coined the term *cyberspace*. Neuromancer became the foundational text of the cyberpunk literary movement and the principal dystopian-technological aesthetic that Cyberparadism operates against.",
+      "medium": "fiction-book",
+      "topics": [
+        "Cyberparadism",
+        "Fiction",
+        "Futurism"
+      ],
+      "cited_by": [
+        {
+          "section": "wiki",
+          "title": "Cyberparadism",
+          "path": "/wiki/cyberparadism/"
+        }
+      ],
+      "cite_count": 1
     },
     {
       "id": "nicene-creed",
@@ -3306,24 +3927,6 @@
       "cite_count": 2
     },
     {
-      "id": "nickelsburg-enoch-1",
-      "title": "1 Enoch 1: A Commentary on the Book of 1 Enoch, Chapters 1-36; 81-108",
-      "authored_by": [
-        "George W. E. Nickelsburg"
-      ],
-      "publish_date": "2001",
-      "follow_url": "https://fortresspress.com/",
-      "description": "Nickelsburg's principal Hermeneia commentary on 1 Enoch; foundational for the Watchers tradition and the Genesis 6 Nephilim material.",
-      "medium": "academic-paper",
-      "topics": [
-        "Watchers",
-        "Nephilim",
-        "Second Temple"
-      ],
-      "cited_by": [],
-      "cite_count": 0
-    },
-    {
       "id": "no-mineralogic-or-geochemical-evidence-of-impact-at-tall-el-hammam-a-middle-bron",
       "title": "No mineralogic or geochemical evidence of impact at Tall el-Hammam, a Middle Bronze Age city in the Jordan Valley near the Dead Sea",
       "authored_by": [
@@ -3339,6 +3942,30 @@
           "section": "timeline",
           "title": "Age of Taurus",
           "path": "/timeline/age-of-taurus/"
+        }
+      ],
+      "cite_count": 1
+    },
+    {
+      "id": "ryan-pitman-noahs-flood",
+      "title": "Noah's Flood: The New Scientific Discoveries About the Event That Changed History",
+      "authored_by": [
+        "William Ryan",
+        "Walter Pitman"
+      ],
+      "publish_date": "1998",
+      "follow_url": "https://www.simonandschuster.com/",
+      "description": "Ryan and Pitman's principal articulation of the Black Sea flood hypothesis as historical anchor for the great-flood traditions.",
+      "medium": "nonfiction-book",
+      "topics": [
+        "Great Flood",
+        "Archaeology"
+      ],
+      "cited_by": [
+        {
+          "section": "wiki",
+          "title": "Great Flood",
+          "path": "/wiki/great-flood/"
         }
       ],
       "cite_count": 1
@@ -3383,26 +4010,38 @@
         "Cyberparadism",
         "Fiction"
       ],
-      "cited_by": [],
-      "cite_count": 0
+      "cited_by": [
+        {
+          "section": "wiki",
+          "title": "Cyberparadism",
+          "path": "/wiki/cyberparadism/"
+        }
+      ],
+      "cite_count": 1
     },
     {
-      "id": "oppenheimer-eden-east",
-      "title": "Eden in the East: The Drowned Continent of Southeast Asia",
+      "id": "fuller-spaceship-earth",
+      "title": "Operating Manual for Spaceship Earth",
       "authored_by": [
-        "Stephen Oppenheimer"
+        "R. Buckminster Fuller"
       ],
-      "publish_date": "1998",
-      "follow_url": "https://www.weidenfeldandnicolson.co.uk/",
-      "description": "Oppenheimer's principal articulation of the Sundaland Eden hypothesis, locating the originary cultural source in submerged Southeast Asia.",
+      "publish_date": "1969",
+      "follow_url": "https://en.wikipedia.org/wiki/Operating_Manual_for_Spaceship_Earth",
+      "description": "Fuller's foundational articulation of Earth as a single-system spaceship, with the substantial geodesic-architectural tradition and the substantial efficiency-maximisation ethic that the Cyberparadism Manifesto references explicitly.",
       "medium": "nonfiction-book",
       "topics": [
-        "Eden",
-        "Archaeology",
-        "Great Flood"
+        "Cyberparadism",
+        "Science",
+        "Futurism"
       ],
-      "cited_by": [],
-      "cite_count": 0
+      "cited_by": [
+        {
+          "section": "wiki",
+          "title": "Cyberparadism",
+          "path": "/wiki/cyberparadism/"
+        }
+      ],
+      "cite_count": 1
     },
     {
       "id": "order-out-of-chaos-man-s-new-dialogue-with-nature",
@@ -3445,40 +4084,6 @@
       "cite_count": 1
     },
     {
-      "id": "otto-hangende-dach",
-      "title": "Das Hängende Dach",
-      "authored_by": [
-        "Frei Otto"
-      ],
-      "publish_date": "1954",
-      "follow_url": "https://en.wikipedia.org/wiki/Frei_Otto",
-      "description": "Otto's foundational text on lightweight tensile architecture, one of the principal architectural-design lineages feeding Cyberparadist organic-minimalist visual vocabulary.",
-      "medium": "nonfiction-book",
-      "topics": [
-        "Cyberparadism",
-        "Architecture"
-      ],
-      "cited_by": [],
-      "cite_count": 0
-    },
-    {
-      "id": "pagels-origin-satan",
-      "title": "The Origin of Satan",
-      "authored_by": [
-        "Elaine Pagels"
-      ],
-      "publish_date": "1995",
-      "follow_url": "https://www.randomhouse.com/",
-      "description": "Pagels's principal articulation of the polemical-sociological origins of the Christian Satan figure as boundary-marker against religious-political opponents.",
-      "medium": "academic-paper",
-      "topics": [
-        "Satan",
-        "Christianity"
-      ],
-      "cited_by": [],
-      "cite_count": 0
-    },
-    {
       "id": "parzival",
       "title": "Parzival",
       "authored_by": [
@@ -3514,43 +4119,6 @@
       "cite_count": 0
     },
     {
-      "id": "pillar-of-enoch-dot-com",
-      "title": "The Pillar of Enoch",
-      "authored_by": [
-        "Helena Lehman"
-      ],
-      "publish_date": "1993?",
-      "follow_url": "https://pillar-of-enoch.com",
-      "description": "Helena Lehman's \"Pillar of Enoch\" website is a resource for those interested in Judeo-Christian spiritual truths, ancient history, and future prophecies related to signs in the heavens as connected to Bible prophecy. The site features her \"Language of God Book Series,\" which explores biblical allegory and symbolism. The series delves into the prophetic imagery of the Bible, sacred monuments like the Great Pyramid and Solomon's Temple, and connections to constellations like Orion. Additionally, it discusses the Pillar of Enoch or Great Pyramid and its relation to the pre-Flood Sethites, the Gospel in the Stars, and how these elements tie into understanding biblical prophecies like those in Daniel, Ezekiel, and Revelation​.\n\n### See also\n\n[Wiki › Great Year](/wiki/encyclopedia/great-year/)</br>\n[Wiki › Precession](/wiki/encyclopedia/precession/)</br>",
-      "medium": "wiki",
-      "topics": [
-        "Gospel in the Stars",
-        "Mazzaroth",
-        "Mythology",
-        "The Tradition",
-        "Precession"
-      ],
-      "cited_by": [],
-      "cite_count": 0
-    },
-    {
-      "id": "pope-job",
-      "title": "Job (Anchor Bible)",
-      "authored_by": [
-        "Marvin H. Pope"
-      ],
-      "publish_date": "1973",
-      "follow_url": "https://www.anchorbible.com/",
-      "description": "Pope's principal Anchor Bible commentary on Job, including substantial treatment of the ha-satan figure in the prologue.",
-      "medium": "academic-paper",
-      "topics": [
-        "Satan",
-        "Hebrew Bible"
-      ],
-      "cited_by": [],
-      "cite_count": 0
-    },
-    {
       "id": "popol-vuh",
       "title": "Popol Vuh",
       "authored_by": [
@@ -3569,28 +4137,88 @@
         },
         {
           "section": "wiki",
+          "title": "Reference corpus of the Raëlian canon",
+          "path": "/wiki/reference-corpus-of-the-raelian-canon/"
+        },
+        {
+          "section": "wiki",
           "title": "World Age",
           "path": "/wiki/world-age/"
         }
       ],
-      "cite_count": 2
+      "cite_count": 3
     },
     {
-      "id": "pritchard-anet",
-      "title": "Ancient Near Eastern Texts Relating to the Old Testament",
+      "id": "miyazaki-princess-mononoke",
+      "title": "Princess Mononoke",
       "authored_by": [
-        "James B. Pritchard"
+        "Hayao Miyazaki",
+        "Studio Ghibli"
       ],
-      "publish_date": "1969",
-      "follow_url": "https://press.princeton.edu/",
-      "description": "Pritchard's principal English-language reference for ancient Near Eastern texts parallel to the Hebrew Bible.",
-      "medium": "religious-text",
+      "publish_date": "1997",
+      "follow_url": "https://www.ghibli.jp/works/mononoke/",
+      "description": "Miyazaki's articulation of the substantial human-nature-technology negotiation, with substantial Cyberparadist content through harmonious-integration commitment despite the central conflict-narrative framing.",
+      "medium": "documentary",
+      "topics": [
+        "Cyberparadism",
+        "Fiction"
+      ],
+      "cited_by": [
+        {
+          "section": "wiki",
+          "title": "Cyberparadism",
+          "path": "/wiki/cyberparadism/"
+        }
+      ],
+      "cite_count": 1
+    },
+    {
+      "id": "principles-of-geology",
+      "title": "Principles of Geology",
+      "authored_by": [
+        "Charles Lyell"
+      ],
+      "publish_date": "1830",
+      "follow_url": "https://archive.org/details/principlesgeolo01lyelgoog",
+      "description": "Charles Lyell's three-volume *Principles of Geology* (1830–1833) consolidated Huttonian uniformitarianism as the dominant nineteenth-century geological framework. Lyell's exhaustive marshalling of evidence — for the slow operation of geological processes, for the antiquity of the Earth, against catastrophist readings of the stratigraphic record — produced the geological consensus against which the biblical Flood as a historical event becomes problematic. The work was a principal influence on Darwin's *Origin of Species* and the principal scientific source against which subsequent diluvialist and catastrophist arguments have been positioned.",
+      "medium": "nonfiction-book",
+      "topics": [
+        "Geology",
+        "Uniformitarianism",
+        "Antediluvian",
+        "Nineteenth-Century Science"
+      ],
+      "cited_by": [
+        {
+          "section": "wiki",
+          "title": "Antediluvian",
+          "path": "/wiki/antediluvian/"
+        }
+      ],
+      "cite_count": 1
+    },
+    {
+      "id": "wellhausen-prolegomena",
+      "title": "Prolegomena to the History of Israel",
+      "authored_by": [
+        "Julius Wellhausen"
+      ],
+      "publish_date": "1878",
+      "follow_url": "https://www.google.com/books/edition/Prolegomena_to_the_History_of_Israel/_/",
+      "description": "Wellhausen's foundational articulation of the documentary hypothesis (J, E, D, P sources of the Pentateuch). The principal historical-critical reference.",
+      "medium": "academic-paper",
       "topics": [
         "Hebrew Bible",
-        "Ancient Near East"
+        "Documentary Hypothesis"
       ],
-      "cited_by": [],
-      "cite_count": 0
+      "cited_by": [
+        {
+          "section": "wiki",
+          "title": "Hebrew Bible",
+          "path": "/wiki/hebrew-bible/"
+        }
+      ],
+      "cite_count": 1
     },
     {
       "id": "prolegomena-zur-geschichte-israels",
@@ -3609,8 +4237,14 @@
         "Source criticism",
         "Hebrew Bible"
       ],
-      "cited_by": [],
-      "cite_count": 0
+      "cited_by": [
+        {
+          "section": "wiki",
+          "title": "Wheel of Heaven",
+          "path": "/wiki/wheel-of-heaven/"
+        }
+      ],
+      "cite_count": 1
     },
     {
       "id": "prose-edda",
@@ -3656,22 +4290,29 @@
       "cite_count": 0
     },
     {
-      "id": "ptolemy-almagest",
-      "title": "Almagest",
+      "id": "pseudodoxia-epidemica",
+      "title": "Pseudodoxia Epidemica",
       "authored_by": [
-        "Claudius Ptolemy"
+        "Sir Thomas Browne"
       ],
-      "publish_date": "c. 150 CE",
-      "follow_url": "https://press.princeton.edu/",
-      "description": "Ptolemy's principal astronomical-mathematical synthesis; the principal ancient source for the Greek-mathematical articulation of precession.",
-      "medium": "academic-paper",
+      "publish_date": "1646",
+      "follow_url": "https://archive.org/details/pseudodoxiaepid00browgoog",
+      "description": "Sir Thomas Browne's 1646 encyclopaedic survey of 'vulgar errors' — popular received opinions Browne subjected to empirical, philological, and natural-philosophical scrutiny. The work is one of the earliest sustained English-language exercises in source-critical natural history, and is the citation point for the technical use of *antediluvian* as the designation for the period before the Flood. Browne treats the longevity of the patriarchs, the conditions of the pre-Flood world, and the natural history of the Genesis narrative as genuinely contested early-modern questions.",
+      "medium": "nonfiction-book",
       "topics": [
-        "Precession",
-        "Astronomy",
-        "Ancient"
+        "Antediluvian",
+        "Genesis",
+        "Flood",
+        "Early-Modern Natural History"
       ],
-      "cited_by": [],
-      "cite_count": 0
+      "cited_by": [
+        {
+          "section": "wiki",
+          "title": "Antediluvian",
+          "path": "/wiki/antediluvian/"
+        }
+      ],
+      "cite_count": 1
     },
     {
       "id": "qur-anic-geography",
@@ -3731,23 +4372,6 @@
       "cite_count": 2
     },
     {
-      "id": "ramayana",
-      "title": "Rāmāyaṇa",
-      "authored_by": [
-        "Vālmīki (traditional ascription)"
-      ],
-      "publish_date": "c. 7th-4th century BCE",
-      "follow_url": "https://en.wikipedia.org/wiki/Ramayana",
-      "description": "The other principal Sanskrit epic of the Hindu tradition. Listed alongside the *Mahābhārata* in the Raëlian canon's commentary on surviving traces.",
-      "medium": "religious-text",
-      "topics": [
-        "Hindu Tradition",
-        "Comparative Religion"
-      ],
-      "cited_by": [],
-      "cite_count": 0
-    },
-    {
       "id": "redating-the-great-sphinx-of-giza",
       "title": "Redating the Great Sphinx of Giza",
       "authored_by": [
@@ -3768,22 +4392,53 @@
       "cite_count": 1
     },
     {
-      "id": "reed-fallen-angels",
-      "title": "Fallen Angels and the History of Judaism and Christianity: The Reception of Enochic Literature",
+      "id": "reliquiae-diluvianae",
+      "title": "Reliquiae Diluvianae",
       "authored_by": [
-        "Annette Yoshiko Reed"
+        "William Buckland"
       ],
-      "publish_date": "2005",
-      "follow_url": "https://www.cambridge.org/",
-      "description": "Reed's principal monograph on the reception of Enochic literature in Jewish and Christian tradition.",
-      "medium": "academic-paper",
+      "publish_date": "1823",
+      "follow_url": "https://archive.org/details/reliquiaediluvia00buck",
+      "description": "William Buckland's 1823 *Reliquiae Diluvianae* — the major nineteenth-century work of diluvialism, the geological tradition that read the stratigraphic record as preserving evidence of the biblical Flood. Buckland, then Reader in Geology at Oxford, marshalled evidence from cave deposits, erratic boulders, and surface gravels to argue for a recent global inundation. Buckland himself eventually abandoned the position in the 1830s in light of Louis Agassiz's glacial-theory developments; the broader scientific community followed across the subsequent decades. The work remains the principal documentary source for the diluvialist phase of mainstream nineteenth-century geology.",
+      "medium": "nonfiction-book",
       "topics": [
-        "Watchers",
-        "Nephilim",
-        "Second Temple"
+        "Flood",
+        "Diluvialism",
+        "Nineteenth-Century Geology",
+        "Antediluvian"
       ],
-      "cited_by": [],
-      "cite_count": 0
+      "cited_by": [
+        {
+          "section": "wiki",
+          "title": "Antediluvian",
+          "path": "/wiki/antediluvian/"
+        }
+      ],
+      "cite_count": 1
+    },
+    {
+      "id": "rnkjv",
+      "title": "Restored Name King James Version (RNKJV)",
+      "authored_by": [
+        "Restored Name King James community"
+      ],
+      "publish_date": "2001-present",
+      "follow_url": "https://en.wikipedia.org/wiki/Sacred_Name_Bible",
+      "description": "A modern revision of the King James Version that restores *Elohim* and *Yahweh* in place of the conventional 'God' and 'the Lord' renderings. Used throughout the 2005 English-language omnibus edition of *Intelligent Design — Message From the Designers*.",
+      "medium": "religious-text",
+      "topics": [
+        "Hebrew Bible",
+        "Translation",
+        "Raëlism"
+      ],
+      "cited_by": [
+        {
+          "section": "wiki",
+          "title": "Reference corpus of the Raëlian canon",
+          "path": "/wiki/reference-corpus-of-the-raelian-canon/"
+        }
+      ],
+      "cite_count": 1
     },
     {
       "id": "retracted-article-a-tunguska-sized-airburst-destroyed-tall-el-hammam-a-middle-br",
@@ -3856,163 +4511,92 @@
       "cite_count": 3
     },
     {
-      "id": "rnkjv",
-      "title": "Restored Name King James Version (RNKJV)",
+      "id": "the-ricks-must-be-crazy",
+      "title": "Rick and Morty (S2E06): The Ricks Must Be Crazy",
       "authored_by": [
-        "Restored Name King James community"
+        "Dominic Polcino",
+        "Dan Guterman",
+        "Adult Swim"
       ],
-      "publish_date": "2001-present",
-      "follow_url": "https://en.wikipedia.org/wiki/Sacred_Name_Bible",
-      "description": "A modern revision of the King James Version that restores *Elohim* and *Yahweh* in place of the conventional 'God' and 'the Lord' renderings. Used throughout the 2005 English-language omnibus edition of *Intelligent Design — Message From the Designers*.",
+      "publish_date": "2015",
+      "follow_url": "https://www.adultswim.com/videos/rick-and-morty/",
+      "description": "Rick and Morty Season 2, Episode 6, titled \"The Ricks Must Be Crazy,\" is a highly inventive and humorous exploration of complex scientific concepts, mainly nested universes and the ethics of creating and exploiting such realities.\n\nIn this episode, Rick and Morty venture into the microverse within Rick's car battery, where Rick has created an entire universe (the microverse) to power his vehicle. The inhabitants of this microverse unknowingly generate power for Rick through their daily activities. The plot thickens when they discover that a scientist in the microverse has created a mini-microverse to power his own planet, unaware that he, in turn, is in a universe inside a car battery.\n\nThis episode brilliantly plays with the idea of nested realities and the ethical implications of creating universes for personal gain. Rick, as the creator of the microverse, faces a moral conundrum when his creations gain the capability to challenge his authority and purpose.\n\n\"The Ricks Must Be Crazy\" also delves into themes of free will, manipulation, and the nature of reality. The episode is a satirical take on the god-complex and the philosophical implications of creation and power. It raises questions about the responsibility of creators towards their creations and the ethical limits of using sentient beings for personal benefits.\n\n### Common themes\n\nThe episode \"The Ricks Must Be Crazy\" from \"Rick and Morty\" aligns intriguingly with the concepts of infinity as explored on the Wheel of Heaven website. The episode's narrative, centered on nested universes within Rick's car battery, reflects the idea of an infinite, layered reality, resonating with the Wheel of Heaven's portrayal of existence as endless and devoid of a central point or end​.\n\nThis thematic alignment is further deepened by the episode's exploration of the micro and macro realms, mirroring the Wheel of Heaven's concept of infinite realms of life at varying scales, as well as the cyclical and repetitive nature of existence across all levels of the cosmos​. The episode's representation of these nested realities and the ethical implications of their creation and exploitation echoes the Wheel of Heaven's contemplation on the infinite nature of existence and the human position within this continuum.\n\n### See more\n\n- [Wiki › Mass effect](/wiki/encyclopedia/mass-effect/)\n- [Wiki › Infinity](/wiki/encyclopedia/infinity/)\n\n### External links\n\n- [The Ricks Must Be Crazy | Rick and Morty Wiki | Fandom](https://rickandmorty.fandom.com/wiki/The_Ricks_Must_Be_Crazy)",
+      "medium": "documentary",
+      "topics": [
+        "Infinity",
+        "Neo-Euhemerism"
+      ],
+      "cited_by": [],
+      "cite_count": 0
+    },
+    {
+      "id": "ramayana",
+      "title": "Rāmāyaṇa",
+      "authored_by": [
+        "Vālmīki (traditional ascription)"
+      ],
+      "publish_date": "c. 7th-4th century BCE",
+      "follow_url": "https://en.wikipedia.org/wiki/Ramayana",
+      "description": "The other principal Sanskrit epic of the Hindu tradition. Listed alongside the *Mahābhārata* in the Raëlian canon's commentary on surviving traces.",
       "medium": "religious-text",
       "topics": [
-        "Hebrew Bible",
-        "Translation",
-        "Raëlism"
-      ],
-      "cited_by": [],
-      "cite_count": 0
-    },
-    {
-      "id": "rochberg-heavenly-writing",
-      "title": "The Heavenly Writing: Divination, Horoscopy, and Astronomy in Mesopotamian Culture",
-      "authored_by": [
-        "Francesca Rochberg"
-      ],
-      "publish_date": "2004",
-      "follow_url": "https://www.cambridge.org/",
-      "description": "Rochberg's principal monograph on Mesopotamian celestial divination and astronomy.",
-      "medium": "academic-paper",
-      "topics": [
-        "Precession",
-        "Mesopotamian",
-        "Archaeoastronomy"
-      ],
-      "cited_by": [],
-      "cite_count": 0
-    },
-    {
-      "id": "rohl-legend-genesis",
-      "title": "Legend: The Genesis of Civilisation",
-      "authored_by": [
-        "David Rohl"
-      ],
-      "publish_date": "1998",
-      "follow_url": "https://www.davidrohl.org/",
-      "description": "Rohl's principal articulation of the historical-archaeological reading of Genesis, with substantial Eden-location material.",
-      "medium": "nonfiction-book",
-      "topics": [
-        "Eden",
-        "Hebrew Bible",
-        "Archaeology"
-      ],
-      "cited_by": [],
-      "cite_count": 0
-    },
-    {
-      "id": "russell-devil-antiquity",
-      "title": "The Devil: Perceptions of Evil from Antiquity to Primitive Christianity",
-      "authored_by": [
-        "Jeffrey Burton Russell"
-      ],
-      "publish_date": "1977",
-      "follow_url": "https://www.cornellpress.cornell.edu/",
-      "description": "Russell's first volume in the principal tetralogy on the history of the Devil figure; covers antiquity through primitive Christianity.",
-      "medium": "academic-paper",
-      "topics": [
-        "Satan",
+        "Hindu Tradition",
         "Comparative Religion"
       ],
-      "cited_by": [],
-      "cite_count": 0
+      "cited_by": [
+        {
+          "section": "wiki",
+          "title": "Reference corpus of the Raëlian canon",
+          "path": "/wiki/reference-corpus-of-the-raelian-canon/"
+        }
+      ],
+      "cite_count": 1
     },
     {
-      "id": "russell-lucifer-middle-ages",
-      "title": "Lucifer: The Devil in the Middle Ages",
+      "id": "awn-satan-iblis",
+      "title": "Satan's Tragedy and Redemption: Iblīs in Sufi Psychology",
       "authored_by": [
-        "Jeffrey Burton Russell"
+        "Peter J. Awn"
       ],
-      "publish_date": "1984",
-      "follow_url": "https://www.cornellpress.cornell.edu/",
-      "description": "Russell's third volume; the medieval demonological elaboration of the conflated Satan/Lucifer/Devil figure.",
+      "publish_date": "1983",
+      "follow_url": "https://brill.com/",
+      "description": "Awn's principal study of the Iblis tradition in Sufi psychology, articulating the distinctive Sufi reading of Iblis as principled-opposition figure.",
       "medium": "academic-paper",
       "topics": [
         "Satan",
-        "Lucifer",
-        "Christianity"
+        "Islam"
       ],
-      "cited_by": [],
-      "cite_count": 0
+      "cited_by": [
+        {
+          "section": "wiki",
+          "title": "Satan",
+          "path": "/wiki/satan/"
+        }
+      ],
+      "cite_count": 1
     },
     {
-      "id": "russell-mephistopheles-modern",
-      "title": "Mephistopheles: The Devil in the Modern World",
+      "id": "kelly-satan-biography",
+      "title": "Satan: A Biography",
       "authored_by": [
-        "Jeffrey Burton Russell"
+        "Henry Ansgar Kelly"
       ],
-      "publish_date": "1986",
-      "follow_url": "https://www.cornellpress.cornell.edu/",
-      "description": "Russell's fourth volume; the modern transformations of the Devil figure across post-Reformation Western culture.",
-      "medium": "academic-paper",
-      "topics": [
-        "Satan",
-        "Christianity"
-      ],
-      "cited_by": [],
-      "cite_count": 0
-    },
-    {
-      "id": "russell-satan-early-christian",
-      "title": "Satan: The Early Christian Tradition",
-      "authored_by": [
-        "Jeffrey Burton Russell"
-      ],
-      "publish_date": "1981",
-      "follow_url": "https://www.cornellpress.cornell.edu/",
-      "description": "Russell's second volume; principal articulation of the early-Christian elaboration of the Satan figure into the personification of cosmic evil.",
+      "publish_date": "2006",
+      "follow_url": "https://www.cambridge.org/",
+      "description": "Kelly's principal historical-philological biography of the Satan figure across Jewish and Christian traditions.",
       "medium": "academic-paper",
       "topics": [
         "Satan",
         "Christianity"
       ],
-      "cited_by": [],
-      "cite_count": 0
-    },
-    {
-      "id": "ryan-pitman-noahs-flood",
-      "title": "Noah's Flood: The New Scientific Discoveries About the Event That Changed History",
-      "authored_by": [
-        "William Ryan",
-        "Walter Pitman"
+      "cited_by": [
+        {
+          "section": "wiki",
+          "title": "Satan",
+          "path": "/wiki/satan/"
+        }
       ],
-      "publish_date": "1998",
-      "follow_url": "https://www.simonandschuster.com/",
-      "description": "Ryan and Pitman's principal articulation of the Black Sea flood hypothesis as historical anchor for the great-flood traditions.",
-      "medium": "nonfiction-book",
-      "topics": [
-        "Great Flood",
-        "Archaeology"
-      ],
-      "cited_by": [],
-      "cite_count": 0
-    },
-    {
-      "id": "sarna-genesis-jps",
-      "title": "Genesis: The JPS Torah Commentary",
-      "authored_by": [
-        "Nahum M. Sarna"
-      ],
-      "publish_date": "1989",
-      "follow_url": "https://jps.org/",
-      "description": "Sarna's principal Jewish Publication Society commentary on Genesis, the principal contemporary Jewish-scholarly commentary.",
-      "medium": "academic-paper",
-      "topics": [
-        "Eden",
-        "Genesis",
-        "Hebrew Bible"
-      ],
-      "cited_by": [],
-      "cite_count": 0
+      "cite_count": 1
     },
     {
       "id": "satan-a-biography",
@@ -4032,6 +4616,29 @@
       ],
       "cited_by": [],
       "cite_count": 0
+    },
+    {
+      "id": "russell-satan-early-christian",
+      "title": "Satan: The Early Christian Tradition",
+      "authored_by": [
+        "Jeffrey Burton Russell"
+      ],
+      "publish_date": "1981",
+      "follow_url": "https://www.cornellpress.cornell.edu/",
+      "description": "Russell's second volume; principal articulation of the early-Christian elaboration of the Satan figure into the personification of cosmic evil.",
+      "medium": "academic-paper",
+      "topics": [
+        "Satan",
+        "Christianity"
+      ],
+      "cited_by": [
+        {
+          "section": "wiki",
+          "title": "Satan",
+          "path": "/wiki/satan/"
+        }
+      ],
+      "cite_count": 1
     },
     {
       "id": "science-after-babel",
@@ -4090,74 +4697,6 @@
       "cite_count": 3
     },
     {
-      "id": "sendy-cahiers-moise",
-      "title": "Les cahiers de cours de Moïse",
-      "authored_by": [
-        "Jean Sendy"
-      ],
-      "publish_date": "1974",
-      "follow_url": "https://www.editionsrobertlaffont.com/",
-      "description": "Sendy's articulation of the Mosaic narrative through the framework's reading. Companion text to the broader Sendy corpus.",
-      "medium": "nonfiction-book",
-      "topics": [
-        "Hebrew Bible",
-        "Moses"
-      ],
-      "cited_by": [],
-      "cite_count": 0
-    },
-    {
-      "id": "sendy-ces-dieux",
-      "title": "Ces dieux qui firent le ciel et la terre",
-      "authored_by": [
-        "Jean Sendy"
-      ],
-      "publish_date": "1969",
-      "follow_url": "https://www.editionsrobertlaffont.com/",
-      "description": "Sendy's foundational French articulation of the Elohim hypothesis. The English translation appeared as *Those Gods Who Made Heaven and Earth* (Berkley, 1972). One of the principal pre-Raëlian articulations of the framework's specific reading.",
-      "medium": "nonfiction-book",
-      "topics": [
-        "Elohim",
-        "Ancient Astronaut Theory"
-      ],
-      "cited_by": [],
-      "cite_count": 0
-    },
-    {
-      "id": "sendy-ere-du-verseau",
-      "title": "L'ère du Verseau",
-      "authored_by": [
-        "Jean Sendy"
-      ],
-      "publish_date": "1970",
-      "follow_url": "https://www.editionsrobertlaffont.com/",
-      "description": "Sendy's articulation of the Aquarian-age inheritance threshold and the broader precessional framework. Foundational text for the corpus's Aquarian-age reading.",
-      "medium": "nonfiction-book",
-      "topics": [
-        "Age of Aquarius",
-        "Precession"
-      ],
-      "cited_by": [],
-      "cite_count": 0
-    },
-    {
-      "id": "sendy-lune-cle-bible",
-      "title": "La lune, clé de la Bible",
-      "authored_by": [
-        "Jean Sendy"
-      ],
-      "publish_date": "1968",
-      "follow_url": "https://www.julliard.fr/",
-      "description": "Sendy's early articulation of the lunar-astronomical reading of biblical chronology.",
-      "medium": "nonfiction-book",
-      "topics": [
-        "Hebrew Bible",
-        "Precession"
-      ],
-      "cited_by": [],
-      "cite_count": 0
-    },
-    {
       "id": "shiur-qomah",
       "title": "Shi'ur Qomah",
       "authored_by": [
@@ -4171,8 +4710,14 @@
         "Kabbalah",
         "Jewish Mysticism"
       ],
-      "cited_by": [],
-      "cite_count": 0
+      "cited_by": [
+        {
+          "section": "wiki",
+          "title": "Reference corpus of the Raëlian canon",
+          "path": "/wiki/reference-corpus-of-the-raelian-canon/"
+        }
+      ],
+      "cite_count": 1
     },
     {
       "id": "signature-in-the-cell",
@@ -4192,35 +4737,19 @@
       "cite_count": 0
     },
     {
-      "id": "sitchin-12th-planet",
-      "title": "The 12th Planet",
+      "id": "aveni-skywatchers",
+      "title": "Skywatchers of Ancient Mexico",
       "authored_by": [
-        "Zecharia Sitchin"
+        "Anthony F. Aveni"
       ],
-      "publish_date": "1976",
-      "follow_url": "https://www.sitchin.com/",
-      "description": "Sitchin's foundational articulation of the ancient-astronaut reading of Mesopotamian-biblical material; the principal popular-cultural anchor for the broader Elohim-as-ET reading.",
-      "medium": "nonfiction-book",
-      "topics": [
-        "Ancient Astronaut Theory",
-        "Mesopotamian"
-      ],
-      "cited_by": [],
-      "cite_count": 0
-    },
-    {
-      "id": "smith-early-history-god",
-      "title": "The Early History of God: Yahweh and the Other Deities in Ancient Israel",
-      "authored_by": [
-        "Mark S. Smith"
-      ],
-      "publish_date": "1990",
-      "follow_url": "https://www.eerdmans.com/",
-      "description": "Smith's principal articulation of the early development of Israelite religion within the broader Canaanite-Levantine religious context.",
+      "publish_date": "1980",
+      "follow_url": "https://utpress.utexas.edu/",
+      "description": "Aveni's foundational treatment of Mesoamerican archaeoastronomy, principal reference for Mesoamerican precessional-cosmological content.",
       "medium": "academic-paper",
       "topics": [
-        "Hebrew Bible",
-        "Yahweh"
+        "Precession",
+        "Mesoamerican",
+        "Archaeoastronomy"
       ],
       "cited_by": [],
       "cite_count": 0
@@ -4261,25 +4790,14 @@
         "Fiction",
         "Futurism"
       ],
-      "cited_by": [],
-      "cite_count": 0
-    },
-    {
-      "id": "soleri-arcology",
-      "title": "Arcology: The City in the Image of Man",
-      "authored_by": [
-        "Paolo Soleri"
+      "cited_by": [
+        {
+          "section": "wiki",
+          "title": "Cyberparadism",
+          "path": "/wiki/cyberparadism/"
+        }
       ],
-      "publish_date": "1969",
-      "follow_url": "https://www.arcosanti.org/",
-      "description": "Soleri's principal articulation of arcology — high-density human habitats integrated with surrounding ecologies — one of the principal architectural-design lineages feeding Cyberparadist visual vocabulary.",
-      "medium": "nonfiction-book",
-      "topics": [
-        "Cyberparadism",
-        "Architecture"
-      ],
-      "cited_by": [],
-      "cite_count": 0
+      "cite_count": 1
     },
     {
       "id": "space-a-gogo-dot-com",
@@ -4317,43 +4835,37 @@
         "Fiction",
         "Futurism"
       ],
-      "cited_by": [],
-      "cite_count": 0
+      "cited_by": [
+        {
+          "section": "wiki",
+          "title": "Cyberparadism",
+          "path": "/wiki/cyberparadism/"
+        }
+      ],
+      "cite_count": 1
     },
     {
-      "id": "stephenson-diamond-age",
-      "title": "The Diamond Age: Or, A Young Lady's Illustrated Primer",
+      "id": "halloran-sumerian-lexicon",
+      "title": "Sumerian Lexicon",
       "authored_by": [
-        "Neal Stephenson"
+        "John A. Halloran"
       ],
-      "publish_date": "1995",
-      "follow_url": "https://www.nealstephenson.com/the-diamond-age.html",
-      "description": "Stephenson's post-cyberpunk novel exploring nanotechnology, post-state phyle organisation, and the substantial cultural-transformational consequences of mature molecular-manufacturing capacity.",
-      "medium": "fiction-book",
+      "publish_date": "2006",
+      "follow_url": "https://www.sumerian.org/",
+      "description": "Halloran's accessible Sumerian lexicon, principal contemporary reference for Sumerian etymology behind the Eden / Edin material.",
+      "medium": "academic-paper",
       "topics": [
-        "Cyberparadism",
-        "Fiction",
-        "Futurism"
+        "Eden",
+        "Sumerian"
       ],
-      "cited_by": [],
-      "cite_count": 0
-    },
-    {
-      "id": "sturluson-prose-edda",
-      "title": "The Prose Edda",
-      "authored_by": [
-        "Snorri Sturluson"
+      "cited_by": [
+        {
+          "section": "wiki",
+          "title": "Eden",
+          "path": "/wiki/eden/"
+        }
       ],
-      "publish_date": "c. 1220",
-      "follow_url": "https://www.penguinrandomhouse.com/",
-      "description": "Sturluson's principal articulation of the Norse mythological tradition, including the Loki figure with substantial parallel content to the Hebrew satan.",
-      "medium": "religious-text",
-      "topics": [
-        "Comparative Religion",
-        "Norse Tradition"
-      ],
-      "cited_by": [],
-      "cite_count": 0
+      "cite_count": 1
     },
     {
       "id": "sunvault-anthology",
@@ -4371,8 +4883,14 @@
         "Fiction",
         "Futurism"
       ],
-      "cited_by": [],
-      "cite_count": 0
+      "cited_by": [
+        {
+          "section": "wiki",
+          "title": "Cyberparadism",
+          "path": "/wiki/cyberparadism/"
+        }
+      ],
+      "cite_count": 1
     },
     {
       "id": "tanakh",
@@ -4402,6 +4920,31 @@
         }
       ],
       "cite_count": 2
+    },
+    {
+      "id": "telluris-theoria-sacra",
+      "title": "Telluris Theoria Sacra (The Sacred Theory of the Earth)",
+      "authored_by": [
+        "Thomas Burnet"
+      ],
+      "publish_date": "1681",
+      "follow_url": "https://archive.org/details/sacredtheoryofea00burn",
+      "description": "Thomas Burnet's 1681 (English 1684) *Sacred Theory of the Earth* is the most influential late-seventeenth-century attempt to give a unified natural-philosophical account of the Genesis cosmology. Burnet argued that the pre-Flood Earth was a smooth, paradisal sphere whose collapse produced the Flood and the present-day continental relief. The work is a foundational text in the early-modern engagement with the antediluvian world, and the principal Latinate source through which *diluvium* / antediluvian terminology entered scholarly English usage.",
+      "medium": "nonfiction-book",
+      "topics": [
+        "Antediluvian",
+        "Flood",
+        "Early Geology",
+        "Cosmology"
+      ],
+      "cited_by": [
+        {
+          "section": "wiki",
+          "title": "Antediluvian",
+          "path": "/wiki/antediluvian/"
+        }
+      ],
+      "cite_count": 1
     },
     {
       "id": "temporary-temples",
@@ -4441,22 +4984,60 @@
       "cite_count": 0
     },
     {
-      "id": "tester-western-astrology",
-      "title": "A History of Western Astrology",
+      "id": "tov-textual-criticism",
+      "title": "Textual Criticism of the Hebrew Bible",
       "authored_by": [
-        "S. J. Tester"
+        "Emanuel Tov"
       ],
-      "publish_date": "1987",
-      "follow_url": "https://boydellandbrewer.com/",
-      "description": "Tester's principal historical articulation of the Western astrological tradition.",
+      "publish_date": "2012",
+      "follow_url": "https://fortresspress.com/",
+      "description": "Tov's principal contemporary reference for the textual criticism of the Hebrew Bible.",
       "medium": "academic-paper",
       "topics": [
-        "Astrology",
-        "Precession",
-        "Western Tradition"
+        "Hebrew Bible",
+        "Textual Criticism"
       ],
-      "cited_by": [],
-      "cite_count": 0
+      "cited_by": [
+        {
+          "section": "wiki",
+          "title": "Hebrew Bible",
+          "path": "/wiki/hebrew-bible/"
+        }
+      ],
+      "cite_count": 1
+    },
+    {
+      "id": "sitchin-12th-planet",
+      "title": "The 12th Planet",
+      "authored_by": [
+        "Zecharia Sitchin"
+      ],
+      "publish_date": "1976",
+      "follow_url": "https://www.sitchin.com/",
+      "description": "Sitchin's foundational articulation of the ancient-astronaut reading of Mesopotamian-biblical material; the principal popular-cultural anchor for the broader Elohim-as-ET reading.",
+      "medium": "nonfiction-book",
+      "topics": [
+        "Ancient Astronaut Theory",
+        "Mesopotamian"
+      ],
+      "cited_by": [
+        {
+          "section": "wiki",
+          "title": "Eden",
+          "path": "/wiki/eden/"
+        },
+        {
+          "section": "wiki",
+          "title": "Great Flood",
+          "path": "/wiki/great-flood/"
+        },
+        {
+          "section": "wiki",
+          "title": "Hebrew Bible",
+          "path": "/wiki/hebrew-bible/"
+        }
+      ],
+      "cite_count": 3
     },
     {
       "id": "the-12th-planet",
@@ -4474,8 +5055,14 @@
         "Anunnaki",
         "Nibiru"
       ],
-      "cited_by": [],
-      "cite_count": 0
+      "cited_by": [
+        {
+          "section": "wiki",
+          "title": "Wheel of Heaven",
+          "path": "/wiki/wheel-of-heaven/"
+        }
+      ],
+      "cite_count": 1
     },
     {
       "id": "the-apportionment-of-human-diversity",
@@ -4498,6 +5085,29 @@
       "cite_count": 1
     },
     {
+      "id": "alter-art-biblical-narrative",
+      "title": "The Art of Biblical Narrative",
+      "authored_by": [
+        "Robert Alter"
+      ],
+      "publish_date": "1981",
+      "follow_url": "https://www.basicbooks.com/",
+      "description": "Alter's principal articulation of the literary-critical reading of biblical narrative, foundational for the contemporary literary approach.",
+      "medium": "academic-paper",
+      "topics": [
+        "Hebrew Bible",
+        "Literary Criticism"
+      ],
+      "cited_by": [
+        {
+          "section": "wiki",
+          "title": "Hebrew Bible",
+          "path": "/wiki/hebrew-bible/"
+        }
+      ],
+      "cite_count": 1
+    },
+    {
       "id": "the-assembly-of-the-gods",
       "title": "The Assembly of the Gods: The Divine Council in Canaanite and Early Hebrew Literature",
       "authored_by": [
@@ -4515,6 +5125,31 @@
       ],
       "cited_by": [],
       "cite_count": 0
+    },
+    {
+      "id": "vidal-naquet-atlantis-story",
+      "title": "The Atlantis Story: A Short History of Plato's Myth",
+      "authored_by": [
+        "Pierre Vidal-Naquet"
+      ],
+      "publish_date": "2007",
+      "follow_url": "https://www.exeterpress.co.uk/products/the-atlantis-story",
+      "description": "Pierre Vidal-Naquet's 2007 study (University of Exeter Press; original French *L'Atlantide: Petite histoire d'un mythe platonicien*, 2005) is the standard contemporary scholarly treatment of the *Timaeus*/*Critias* Atlantis tradition and its long history of literal-historical reinterpretation. Vidal-Naquet's position is sceptical of any historical Atlantis: he reads the dialogues as Platonic political philosophy in mythological form rather than as preserving any genuine ancient tradition. The work is the principal mainstream scholarly source against which alternative-archaeological Atlantis identifications (the mid-Atlantic, the Mediterranean, Mauritania's Richat Structure) are positioned.",
+      "medium": "nonfiction-book",
+      "topics": [
+        "Atlantis",
+        "Plato",
+        "Antediluvian",
+        "Mythography"
+      ],
+      "cited_by": [
+        {
+          "section": "wiki",
+          "title": "Antediluvian",
+          "path": "/wiki/antediluvian/"
+        }
+      ],
+      "cite_count": 1
     },
     {
       "id": "the-bible-is-not-a-sacred-book",
@@ -4583,6 +5218,118 @@
       "cite_count": 9
     },
     {
+      "id": "la-bible-of-la-pleiade",
+      "title": "The Bible of La Pleiade",
+      "authored_by": [
+        "Edouard Dorme",
+        "La Pléiade"
+      ],
+      "publish_date": "1956",
+      "follow_url": "https://www.la-pleiade.fr/Catalogue/GALLIMARD/Bibliotheque-de-la-Pleiade/La-Bible4",
+      "description": "The \"La Bible: Ancient Testament (tome 1 et 2)\" from La Pléiade publisher, translated by Édouard Dhorme, Franck Michaéli, and Antoine Guillaumont, offers a comprehensive look at the Old Testament.\n\n- Tome 1: This volume includes the Pentateuch, which contains narratives of the creation, early prophets, and the Exodus. It also covers historical books such as Joshua, the books of Samuel, the books of Kings, Chronicles, Ezra, Nehemiah, and the books of the Maccabees. This edition is notable for its \"historian's perspective\" of these texts, making it a significant literary monument. Despite its publication in 1956, it doesn't incorporate the most recent archaeological discoveries and analyses. The texts are enriched with an enlightening introduction about the history of the Bible, including its Hebrew texts and Greek or Latin versions. Key figures such as Adam and Eve, Noah, Abraham, Moses, Samson, David, and Solomon are featured, along with detailed accounts of religious laws, precepts, and the long enumerations of Jewish tribes.\n\n- Tome 2: This second volume includes the Four Major Prophets, the Twelve Minor Prophets, the Three Poetic Books, the Five Scrolls, and the Deuterocanonical books. The translations for this volume were contributed by Jean Koenig, Édouard Dhorme, Frank Michaéli, Jean Hadot, and Antoine Guillaumont. This part of the collection highlights the Old Testament as a vast literary compilation comprising liturgical poems, tales and legends, hymns and songs, and sayings and proverbs. It presents a rich variety of texts, satisfying a wide range of readers with different interests. Notable contents include the voluptuous poetry of the Song of Songs and the profound philosophical musings found in Ecclesiastes and the Book of Job.\n\nThese volumes provide a deep and varied exploration of the Old Testament, reflecting both its historical significance and its vast literary wealth. The translations and introductions contribute to a nuanced understanding of these ancient texts, making them accessible to a modern readership.\n\n![Image](images/dhorme-bible-books.jpg \"La Bible: Ancient Testament, Tome I & Tome II (1956) — Edouard Dhorme\")\n\n### About Edouard Dhorme\n\nEdouard Dhorme (1881-1966) was a French Assyriologist and biblical scholar. He is best known for his work on the Akkadian language and the cuneiform script, as well as his translations and commentaries on the Hebrew Bible and the Dead Sea Scrolls.\n\nDhorme studied at the Ecole biblique et archéologique française de Jérusalem, where he developed his expertise in Semitic languages and literature. He later taught at several universities, including the Sorbonne in Paris, where he was appointed professor of Assyriology in 1933.\n\nDhorme's most influential works include \"The Ancient Near East,\" a survey of the history, culture, and religions of the region, and \"Theologie babylonienne et judéo-chrétienne,\" a comparative study of Babylonian and Judeo-Christian theology. He also contributed to the French translation of the Bible known as the \"Bible de Jérusalem,\" and published several commentaries on individual books of the Hebrew Bible, including the Psalms and the Book of Job. Dhorme's contributions to the fields of Assyriology and biblical scholarship are still recognized and studied today.\n\n### See also\n\n- [Wiki › Dhorme Bible translation](/wiki/encyclopedia/dhorme-bible-translation/)</br>\n\n### External links\n\n- [La Bible: Ancient Testament | Bibliothèque de la Pléiade](https://www.la-pleiade.fr/Catalogue/GALLIMARD/Bibliotheque-de-la-Pleiade/La-Bible4)",
+      "medium": "article",
+      "topics": [
+        "Bible",
+        "Elohim",
+        "Theology"
+      ],
+      "cited_by": [],
+      "cite_count": 0
+    },
+    {
+      "id": "finkelstein-bible-unearthed",
+      "title": "The Bible Unearthed: Archaeology's New Vision of Ancient Israel and the Origin of Its Sacred Texts",
+      "authored_by": [
+        "Israel Finkelstein",
+        "Neil Asher Silberman"
+      ],
+      "publish_date": "2001",
+      "follow_url": "https://www.simonandschuster.com/",
+      "description": "Finkelstein and Silberman's principal contemporary articulation of the archaeological reading of the Hebrew Bible.",
+      "medium": "academic-paper",
+      "topics": [
+        "Hebrew Bible",
+        "Archaeology"
+      ],
+      "cited_by": [
+        {
+          "section": "wiki",
+          "title": "Hebrew Bible",
+          "path": "/wiki/hebrew-bible/"
+        }
+      ],
+      "cite_count": 1
+    },
+    {
+      "id": "friedman-bible-sources-revealed",
+      "title": "The Bible with Sources Revealed",
+      "authored_by": [
+        "Richard Elliott Friedman"
+      ],
+      "publish_date": "2003",
+      "follow_url": "https://www.harpercollins.com/",
+      "description": "Friedman's principal articulation of the documentary-hypothesis-sourced presentation of the Pentateuch text.",
+      "medium": "academic-paper",
+      "topics": [
+        "Hebrew Bible",
+        "Documentary Hypothesis"
+      ],
+      "cited_by": [
+        {
+          "section": "wiki",
+          "title": "Hebrew Bible",
+          "path": "/wiki/hebrew-bible/"
+        }
+      ],
+      "cite_count": 1
+    },
+    {
+      "id": "habel-job",
+      "title": "The Book of Job: A Commentary",
+      "authored_by": [
+        "Norman C. Habel"
+      ],
+      "publish_date": "1985",
+      "follow_url": "https://www.wjkbooks.com/",
+      "description": "Habel's principal Westminster commentary on Job; substantial articulation of the ha-satan figure as institutional opposition.",
+      "medium": "academic-paper",
+      "topics": [
+        "Satan",
+        "Hebrew Bible"
+      ],
+      "cited_by": [
+        {
+          "section": "wiki",
+          "title": "Satan",
+          "path": "/wiki/satan/"
+        }
+      ],
+      "cite_count": 1
+    },
+    {
+      "id": "newsom-job-moral",
+      "title": "The Book of Job: A Contest of Moral Imaginations",
+      "authored_by": [
+        "Carol A. Newsom"
+      ],
+      "publish_date": "2003",
+      "follow_url": "https://global.oup.com/academic/",
+      "description": "Newsom's principal monograph on Job, including substantive treatment of the ha-satan figure's institutional-adversarial role.",
+      "medium": "academic-paper",
+      "topics": [
+        "Satan",
+        "Hebrew Bible"
+      ],
+      "cited_by": [
+        {
+          "section": "wiki",
+          "title": "Satan",
+          "path": "/wiki/satan/"
+        }
+      ],
+      "cite_count": 1
+    },
+    {
       "id": "the-book-of-mormon",
       "title": "The Book of Mormon",
       "authored_by": [
@@ -4631,8 +5378,18 @@
         },
         {
           "section": "wiki",
+          "title": "Antediluvian",
+          "path": "/wiki/antediluvian/"
+        },
+        {
+          "section": "wiki",
           "title": "Council of the Eternals",
           "path": "/wiki/council-of-eternals/"
+        },
+        {
+          "section": "wiki",
+          "title": "Eden",
+          "path": "/wiki/eden/"
         },
         {
           "section": "wiki",
@@ -4648,6 +5405,11 @@
           "section": "wiki",
           "title": "Golden Age",
           "path": "/wiki/golden-age/"
+        },
+        {
+          "section": "wiki",
+          "title": "Great Flood",
+          "path": "/wiki/great-flood/"
         },
         {
           "section": "wiki",
@@ -4686,8 +5448,18 @@
         },
         {
           "section": "wiki",
+          "title": "Reference corpus of the Raëlian canon",
+          "path": "/wiki/reference-corpus-of-the-raelian-canon/"
+        },
+        {
+          "section": "wiki",
           "title": "Satan",
           "path": "/wiki/satan/"
+        },
+        {
+          "section": "wiki",
+          "title": "Wheel of Heaven",
+          "path": "/wiki/wheel-of-heaven/"
         },
         {
           "section": "wiki",
@@ -4700,7 +5472,7 @@
           "path": "/wiki/yahweh/"
         }
       ],
-      "cite_count": 15
+      "cite_count": 20
     },
     {
       "id": "the-chaldean-account-of-genesis",
@@ -4787,8 +5559,18 @@
         },
         {
           "section": "wiki",
+          "title": "Elohim",
+          "path": "/wiki/elohim/"
+        },
+        {
+          "section": "wiki",
           "title": "Genesis",
           "path": "/wiki/genesis/"
+        },
+        {
+          "section": "wiki",
+          "title": "Wheel of Heaven",
+          "path": "/wiki/wheel-of-heaven/"
         },
         {
           "section": "wiki",
@@ -4801,26 +5583,87 @@
           "path": "/wiki/zodiac/"
         }
       ],
-      "cite_count": 4
+      "cite_count": 6
     },
     {
-      "id": "the-devil-perceptions-of-evil",
-      "title": "The Devil: Perceptions of Evil from Antiquity to Primitive Christianity",
+      "id": "vermes-dead-sea-scrolls",
+      "title": "The Complete Dead Sea Scrolls in English",
       "authored_by": [
-        "Jeffrey Burton Russell"
+        "Geza Vermes"
       ],
-      "publish_date": "1977",
-      "follow_url": "https://www.cornellpress.cornell.edu/book/9780801494093/the-devil/",
-      "description": "First volume of Jeffrey Burton Russell's four-volume Cornell University Press history of the devil figure across Western religious tradition. Covers the pre-Christian and early-Christian period (antiquity through the second century CE). Sequels: *Satan: The Early Christian Tradition* (1981), *Lucifer: The Devil in the Middle Ages* (1984), *Mephistopheles: The Devil in the Modern World* (1986).",
-      "medium": "nonfiction-book",
+      "publish_date": "2004",
+      "follow_url": "https://www.penguinrandomhouse.com/",
+      "description": "Vermes's principal accessible English translation of the Dead Sea Scrolls corpus.",
+      "medium": "religious-text",
       "topics": [
-        "Satan",
-        "Devil",
-        "Religious history",
-        "Antiquity"
+        "Dead Sea Scrolls",
+        "Hebrew Bible"
       ],
-      "cited_by": [],
-      "cite_count": 0
+      "cited_by": [
+        {
+          "section": "wiki",
+          "title": "Hebrew Bible",
+          "path": "/wiki/hebrew-bible/"
+        },
+        {
+          "section": "wiki",
+          "title": "Satan",
+          "path": "/wiki/satan/"
+        }
+      ],
+      "cite_count": 2
+    },
+    {
+      "id": "banks-culture-series",
+      "title": "The Culture Series",
+      "authored_by": [
+        "Iain M. Banks"
+      ],
+      "publish_date": "1987-2012",
+      "follow_url": "https://en.wikipedia.org/wiki/Culture_series",
+      "description": "Banks's ten-novel sequence depicting the Culture, a post-scarcity galactic civilisation with mature AI-organic integration and harmonious civilisational organisation. The series registers as substantively-mature Cyberparadism at unusually-systematic literary articulation.",
+      "medium": "fiction-book",
+      "topics": [
+        "Cyberparadism",
+        "Fiction",
+        "Futurism"
+      ],
+      "cited_by": [
+        {
+          "section": "wiki",
+          "title": "Cyberparadism",
+          "path": "/wiki/cyberparadism/"
+        }
+      ],
+      "cite_count": 1
+    },
+    {
+      "id": "vanderkam-dss-today",
+      "title": "The Dead Sea Scrolls Today",
+      "authored_by": [
+        "James C. VanderKam"
+      ],
+      "publish_date": "2010",
+      "follow_url": "https://www.eerdmans.com/",
+      "description": "VanderKam's principal accessible introduction to the Dead Sea Scrolls and their scholarly significance.",
+      "medium": "academic-paper",
+      "topics": [
+        "Dead Sea Scrolls",
+        "Hebrew Bible"
+      ],
+      "cited_by": [
+        {
+          "section": "wiki",
+          "title": "Hebrew Bible",
+          "path": "/wiki/hebrew-bible/"
+        },
+        {
+          "section": "wiki",
+          "title": "Satan",
+          "path": "/wiki/satan/"
+        }
+      ],
+      "cite_count": 2
     },
     {
       "id": "the-devils-delusion",
@@ -4842,6 +5685,119 @@
       "cite_count": 0
     },
     {
+      "id": "russell-devil-antiquity",
+      "title": "The Devil: Perceptions of Evil from Antiquity to Primitive Christianity",
+      "authored_by": [
+        "Jeffrey Burton Russell"
+      ],
+      "publish_date": "1977",
+      "follow_url": "https://www.cornellpress.cornell.edu/",
+      "description": "Russell's first volume in the principal tetralogy on the history of the Devil figure; covers antiquity through primitive Christianity.",
+      "medium": "academic-paper",
+      "topics": [
+        "Satan",
+        "Comparative Religion"
+      ],
+      "cited_by": [
+        {
+          "section": "wiki",
+          "title": "Satan",
+          "path": "/wiki/satan/"
+        }
+      ],
+      "cite_count": 1
+    },
+    {
+      "id": "the-devil-perceptions-of-evil",
+      "title": "The Devil: Perceptions of Evil from Antiquity to Primitive Christianity",
+      "authored_by": [
+        "Jeffrey Burton Russell"
+      ],
+      "publish_date": "1977",
+      "follow_url": "https://www.cornellpress.cornell.edu/book/9780801494093/the-devil/",
+      "description": "First volume of Jeffrey Burton Russell's four-volume Cornell University Press history of the devil figure across Western religious tradition. Covers the pre-Christian and early-Christian period (antiquity through the second century CE). Sequels: *Satan: The Early Christian Tradition* (1981), *Lucifer: The Devil in the Middle Ages* (1984), *Mephistopheles: The Devil in the Modern World* (1986).",
+      "medium": "nonfiction-book",
+      "topics": [
+        "Satan",
+        "Devil",
+        "Religious history",
+        "Antiquity"
+      ],
+      "cited_by": [],
+      "cite_count": 0
+    },
+    {
+      "id": "stephenson-diamond-age",
+      "title": "The Diamond Age: Or, A Young Lady's Illustrated Primer",
+      "authored_by": [
+        "Neal Stephenson"
+      ],
+      "publish_date": "1995",
+      "follow_url": "https://www.nealstephenson.com/the-diamond-age.html",
+      "description": "Stephenson's post-cyberpunk novel exploring nanotechnology, post-state phyle organisation, and the substantial cultural-transformational consequences of mature molecular-manufacturing capacity.",
+      "medium": "fiction-book",
+      "topics": [
+        "Cyberparadism",
+        "Fiction",
+        "Futurism"
+      ],
+      "cited_by": [
+        {
+          "section": "wiki",
+          "title": "Cyberparadism",
+          "path": "/wiki/cyberparadism/"
+        }
+      ],
+      "cite_count": 1
+    },
+    {
+      "id": "le-guin-dispossessed",
+      "title": "The Dispossessed: An Ambiguous Utopia",
+      "authored_by": [
+        "Ursula K. Le Guin"
+      ],
+      "publish_date": "1974",
+      "follow_url": "https://www.ursulakleguin.com/dispossessed",
+      "description": "Le Guin's novel of post-scarcity-cooperative civilisational arrangement on the moon Anarres, operating with substantial scientific-technological sophistication and substantial commitment to equity, freedom, and responsibility.",
+      "medium": "fiction-book",
+      "topics": [
+        "Cyberparadism",
+        "Fiction",
+        "Futurism"
+      ],
+      "cited_by": [
+        {
+          "section": "wiki",
+          "title": "Cyberparadism",
+          "path": "/wiki/cyberparadism/"
+        }
+      ],
+      "cite_count": 1
+    },
+    {
+      "id": "smith-early-history-god",
+      "title": "The Early History of God: Yahweh and the Other Deities in Ancient Israel",
+      "authored_by": [
+        "Mark S. Smith"
+      ],
+      "publish_date": "1990",
+      "follow_url": "https://www.eerdmans.com/",
+      "description": "Smith's principal articulation of the early development of Israelite religion within the broader Canaanite-Levantine religious context.",
+      "medium": "academic-paper",
+      "topics": [
+        "Hebrew Bible",
+        "Yahweh"
+      ],
+      "cited_by": [
+        {
+          "section": "wiki",
+          "title": "Hebrew Bible",
+          "path": "/wiki/hebrew-bible/"
+        }
+      ],
+      "cite_count": 1
+    },
+    {
       "id": "the-early-history-of-god",
       "title": "The Early History of God: Yahweh and the Other Deities in Ancient Israel",
       "authored_by": [
@@ -4858,8 +5814,53 @@
         "Israelite religion",
         "Monotheism"
       ],
-      "cited_by": [],
-      "cite_count": 0
+      "cited_by": [
+        {
+          "section": "wiki",
+          "title": "Elohim",
+          "path": "/wiki/elohim/"
+        }
+      ],
+      "cite_count": 1
+    },
+    {
+      "id": "wallis-eden-conspiracy",
+      "title": "The Eden Conspiracy",
+      "authored_by": [
+        "Paul Anthony Wallis"
+      ],
+      "publish_date": "2024",
+      "follow_url": "https://www.collectiveinkbooks.com/6th-books",
+      "description": "Wallis's articulation of the Eden narrative as engineered-civilizational origin event, with substantial cross-cultural comparative material.",
+      "medium": "nonfiction-book",
+      "topics": [
+        "Eden",
+        "Elohim",
+        "Ancient Astronaut Theory"
+      ],
+      "cited_by": [
+        {
+          "section": "wiki",
+          "title": "Eden",
+          "path": "/wiki/eden/"
+        },
+        {
+          "section": "wiki",
+          "title": "Great Flood",
+          "path": "/wiki/great-flood/"
+        },
+        {
+          "section": "wiki",
+          "title": "Hebrew Bible",
+          "path": "/wiki/hebrew-bible/"
+        },
+        {
+          "section": "wiki",
+          "title": "Satan",
+          "path": "/wiki/satan/"
+        }
+      ],
+      "cite_count": 4
     },
     {
       "id": "the-electronic-text-corpus-of-sumerian-literature",
@@ -4898,6 +5899,29 @@
       ],
       "cited_by": [],
       "cite_count": 0
+    },
+    {
+      "id": "george-gilgamesh",
+      "title": "The Epic of Gilgamesh: The Babylonian Epic Poem and Other Texts in Akkadian and Sumerian",
+      "authored_by": [
+        "Andrew George"
+      ],
+      "publish_date": "1999",
+      "follow_url": "https://www.penguinrandomhouse.com/",
+      "description": "George's principal accessible English edition and translation of the Gilgamesh epic and adjacent Akkadian-Sumerian texts.",
+      "medium": "religious-text",
+      "topics": [
+        "Great Flood",
+        "Mesopotamian"
+      ],
+      "cited_by": [
+        {
+          "section": "wiki",
+          "title": "Great Flood",
+          "path": "/wiki/great-flood/"
+        }
+      ],
+      "cite_count": 1
     },
     {
       "id": "the-eridu-genesis",
@@ -4948,6 +5972,30 @@
         }
       ],
       "cite_count": 2
+    },
+    {
+      "id": "heidel-gilgamesh-ot",
+      "title": "The Gilgamesh Epic and Old Testament Parallels",
+      "authored_by": [
+        "Alexander Heidel"
+      ],
+      "publish_date": "1949",
+      "follow_url": "https://press.uchicago.edu/",
+      "description": "Heidel's foundational comparative articulation of the Gilgamesh-Genesis parallel structure, including the flood narratives.",
+      "medium": "academic-paper",
+      "topics": [
+        "Great Flood",
+        "Mesopotamian",
+        "Genesis"
+      ],
+      "cited_by": [
+        {
+          "section": "wiki",
+          "title": "Great Flood",
+          "path": "/wiki/great-flood/"
+        }
+      ],
+      "cite_count": 1
     },
     {
       "id": "the-gods-have-landed",
@@ -5001,6 +6049,24 @@
       "cite_count": 2
     },
     {
+      "id": "rochberg-heavenly-writing",
+      "title": "The Heavenly Writing: Divination, Horoscopy, and Astronomy in Mesopotamian Culture",
+      "authored_by": [
+        "Francesca Rochberg"
+      ],
+      "publish_date": "2004",
+      "follow_url": "https://www.cambridge.org/",
+      "description": "Rochberg's principal monograph on Mesopotamian celestial divination and astronomy.",
+      "medium": "academic-paper",
+      "topics": [
+        "Precession",
+        "Mesopotamian",
+        "Archaeoastronomy"
+      ],
+      "cited_by": [],
+      "cite_count": 0
+    },
+    {
       "id": "the-hebrew-and-aramaic-lexicon-of-the-old-testament",
       "title": "The Hebrew and Aramaic Lexicon of the Old Testament",
       "authored_by": [
@@ -5024,6 +6090,46 @@
         }
       ],
       "cite_count": 2
+    },
+    {
+      "id": "alter-hebrew-bible",
+      "title": "The Hebrew Bible: A Translation with Commentary (3 vols.)",
+      "authored_by": [
+        "Robert Alter"
+      ],
+      "publish_date": "2018",
+      "follow_url": "https://wwnorton.com/",
+      "description": "Alter's principal three-volume English translation of the Hebrew Bible with substantial scholarly commentary.",
+      "medium": "academic-paper",
+      "topics": [
+        "Hebrew Bible",
+        "Translation"
+      ],
+      "cited_by": [
+        {
+          "section": "wiki",
+          "title": "Hebrew Bible",
+          "path": "/wiki/hebrew-bible/"
+        }
+      ],
+      "cite_count": 1
+    },
+    {
+      "id": "doniger-hindus",
+      "title": "The Hindus: An Alternative History",
+      "authored_by": [
+        "Wendy Doniger"
+      ],
+      "publish_date": "2009",
+      "follow_url": "https://www.penguinrandomhouse.com/",
+      "description": "Doniger's principal contemporary articulation of an alternative history of Hindu tradition, including substantial precessional-cosmological content.",
+      "medium": "academic-paper",
+      "topics": [
+        "Hindu Tradition",
+        "Comparative Religion"
+      ],
+      "cited_by": [],
+      "cite_count": 0
     },
     {
       "id": "the-human-history-mistake",
@@ -5106,6 +6212,31 @@
       "cite_count": 0
     },
     {
+      "id": "myth-of-the-eternal-return",
+      "title": "The Myth of the Eternal Return",
+      "authored_by": [
+        "Mircea Eliade"
+      ],
+      "publish_date": "1954",
+      "follow_url": "https://press.princeton.edu/books/paperback/9780691182971/the-myth-of-the-eternal-return",
+      "description": "Mircea Eliade's 1949 (English 1954, Princeton University Press) foundational work in the comparative phenomenology of religion. Eliade analyses the cyclical-time cosmologies of archaic cultures — Hindu *yuga*, Mesoamerican *suns*, Norse *Ragnarök*, the antediluvian / post-Flood schema — as expressions of a shared structural pattern: the periodic return of cosmic origins through ritual repetition and mythological narration. The work remains the principal scholarly source for the comparative observation that global cyclical-destruction traditions display deep structural similarities, against which the corpus's reading of these traditions as fragmentary historical memory is positioned.",
+      "medium": "nonfiction-book",
+      "topics": [
+        "Comparative Religion",
+        "Cyclical Time",
+        "Antediluvian",
+        "Mythography"
+      ],
+      "cited_by": [
+        {
+          "section": "wiki",
+          "title": "Antediluvian",
+          "path": "/wiki/antediluvian/"
+        }
+      ],
+      "cite_count": 1
+    },
+    {
       "id": "the-naked-bible",
       "title": "The Naked Bible",
       "authored_by": [
@@ -5136,6 +6267,11 @@
         },
         {
           "section": "wiki",
+          "title": "Eden",
+          "path": "/wiki/eden/"
+        },
+        {
+          "section": "wiki",
           "title": "Elohim",
           "path": "/wiki/elohim/"
         },
@@ -5143,6 +6279,11 @@
           "section": "wiki",
           "title": "Genesis",
           "path": "/wiki/genesis/"
+        },
+        {
+          "section": "wiki",
+          "title": "Great Flood",
+          "path": "/wiki/great-flood/"
         },
         {
           "section": "wiki",
@@ -5161,11 +6302,65 @@
         },
         {
           "section": "wiki",
+          "title": "Wheel of Heaven",
+          "path": "/wiki/wheel-of-heaven/"
+        },
+        {
+          "section": "wiki",
           "title": "Yahweh",
           "path": "/wiki/yahweh/"
         }
       ],
-      "cite_count": 8
+      "cite_count": 11
+    },
+    {
+      "id": "natufian-culture-in-the-levant",
+      "title": "The Natufian Culture in the Levant",
+      "authored_by": [
+        "Ofer Bar-Yosef",
+        "François R. Valla"
+      ],
+      "publish_date": "1991",
+      "follow_url": "https://www.amazon.com/Natufian-Culture-Levant-International-Monographs/dp/187962101X",
+      "description": "Ofer Bar-Yosef and François R. Valla's 1991 edited volume (International Monographs in Prehistory) is the standard scholarly treatment of the Natufian culture — the late Epipalaeolithic Levantine complex (c. 13,000–9700 BCE) that immediately precedes the Pre-Pottery Neolithic and the Göbekli Tepe horizon. The Natufian is the principal archaeological context for the emergence of sedentism, intensive plant gathering, and the social conditions that produced the subsequent Neolithic transition. The volume remains the foundational comparative source for engaging the broader regional context within which Göbekli Tepe sits.",
+      "medium": "nonfiction-book",
+      "topics": [
+        "Natufian",
+        "Pre-Pottery Neolithic",
+        "Levantine Archaeology",
+        "Antediluvian"
+      ],
+      "cited_by": [
+        {
+          "section": "wiki",
+          "title": "Antediluvian",
+          "path": "/wiki/antediluvian/"
+        }
+      ],
+      "cite_count": 1
+    },
+    {
+      "id": "pagels-origin-satan",
+      "title": "The Origin of Satan",
+      "authored_by": [
+        "Elaine Pagels"
+      ],
+      "publish_date": "1995",
+      "follow_url": "https://www.randomhouse.com/",
+      "description": "Pagels's principal articulation of the polemical-sociological origins of the Christian Satan figure as boundary-marker against religious-political opponents.",
+      "medium": "academic-paper",
+      "topics": [
+        "Satan",
+        "Christianity"
+      ],
+      "cited_by": [
+        {
+          "section": "wiki",
+          "title": "Satan",
+          "path": "/wiki/satan/"
+        }
+      ],
+      "cite_count": 1
     },
     {
       "id": "the-origin-of-satan",
@@ -5186,6 +6381,74 @@
       "cite_count": 0
     },
     {
+      "id": "origins-of-the-worlds-mythologies",
+      "title": "The Origins of the World's Mythologies",
+      "authored_by": [
+        "E. J. Michael Witzel"
+      ],
+      "publish_date": "2012",
+      "follow_url": "https://global.oup.com/academic/product/the-origins-of-the-worlds-mythologies-9780199812851",
+      "description": "E. J. Michael Witzel's 2012 Oxford University Press study attempts the broadest contemporary comparative-mythological reconstruction: a putative 'Laurasian' mythological substrate underlying the great traditions of Eurasia and the Americas, contrasted with an older 'Gondwanan' substrate in sub-Saharan Africa, Australia, and Papua New Guinea. Witzel's reconstruction is controversial in mainstream comparative-religion scholarship but offers the most systematic recent account of the structural parallels between the global flood, golden-age, and lost-civilization traditions. The work is a principal mainstream reference point for the structural-parallel observations that underwrite alternative reconstructions of pre-Flood civilization.",
+      "medium": "nonfiction-book",
+      "topics": [
+        "Comparative Mythology",
+        "Flood",
+        "Antediluvian",
+        "Laurasian Hypothesis"
+      ],
+      "cited_by": [
+        {
+          "section": "wiki",
+          "title": "Antediluvian",
+          "path": "/wiki/antediluvian/"
+        }
+      ],
+      "cite_count": 1
+    },
+    {
+      "id": "pillar-of-enoch-dot-com",
+      "title": "The Pillar of Enoch",
+      "authored_by": [
+        "Helena Lehman"
+      ],
+      "publish_date": "1993?",
+      "follow_url": "https://pillar-of-enoch.com",
+      "description": "Helena Lehman's \"Pillar of Enoch\" website is a resource for those interested in Judeo-Christian spiritual truths, ancient history, and future prophecies related to signs in the heavens as connected to Bible prophecy. The site features her \"Language of God Book Series,\" which explores biblical allegory and symbolism. The series delves into the prophetic imagery of the Bible, sacred monuments like the Great Pyramid and Solomon's Temple, and connections to constellations like Orion. Additionally, it discusses the Pillar of Enoch or Great Pyramid and its relation to the pre-Flood Sethites, the Gospel in the Stars, and how these elements tie into understanding biblical prophecies like those in Daniel, Ezekiel, and Revelation​.\n\n### See also\n\n[Wiki › Great Year](/wiki/encyclopedia/great-year/)</br>\n[Wiki › Precession](/wiki/encyclopedia/precession/)</br>",
+      "medium": "wiki",
+      "topics": [
+        "Gospel in the Stars",
+        "Mazzaroth",
+        "Mythology",
+        "The Tradition",
+        "Precession"
+      ],
+      "cited_by": [],
+      "cite_count": 0
+    },
+    {
+      "id": "bodman-poetics-iblis",
+      "title": "The Poetics of Iblīs: Narrative Theology in the Qurʾān",
+      "authored_by": [
+        "Whitney S. Bodman"
+      ],
+      "publish_date": "2011",
+      "follow_url": "https://hts.hds.harvard.edu/",
+      "description": "Bodman's principal study of the Iblis narrative in the Quran, closely parallel content to the Hebrew satan figure.",
+      "medium": "academic-paper",
+      "topics": [
+        "Satan",
+        "Islam"
+      ],
+      "cited_by": [
+        {
+          "section": "wiki",
+          "title": "Satan",
+          "path": "/wiki/satan/"
+        }
+      ],
+      "cite_count": 1
+    },
+    {
       "id": "the-possibility-of-an-island",
       "title": "The Possibility of an Island",
       "authored_by": [
@@ -5203,6 +6466,29 @@
       ],
       "cited_by": [],
       "cite_count": 0
+    },
+    {
+      "id": "sturluson-prose-edda",
+      "title": "The Prose Edda",
+      "authored_by": [
+        "Snorri Sturluson"
+      ],
+      "publish_date": "c. 1220",
+      "follow_url": "https://www.penguinrandomhouse.com/",
+      "description": "Sturluson's principal articulation of the Norse mythological tradition, including the Loki figure with substantial parallel content to the Hebrew satan.",
+      "medium": "religious-text",
+      "topics": [
+        "Comparative Religion",
+        "Norse Tradition"
+      ],
+      "cited_by": [
+        {
+          "section": "wiki",
+          "title": "Satan",
+          "path": "/wiki/satan/"
+        }
+      ],
+      "cite_count": 1
     },
     {
       "id": "the-qur-an",
@@ -5233,11 +6519,16 @@
         },
         {
           "section": "wiki",
+          "title": "Reference corpus of the Raëlian canon",
+          "path": "/wiki/reference-corpus-of-the-raelian-canon/"
+        },
+        {
+          "section": "wiki",
           "title": "Satan",
           "path": "/wiki/satan/"
         }
       ],
-      "cite_count": 4
+      "cite_count": 5
     },
     {
       "id": "the-revelation-of-the-pyramid",
@@ -5258,25 +6549,6 @@
         "Precession",
         "Pyramids",
         "The Tradition"
-      ],
-      "cited_by": [],
-      "cite_count": 0
-    },
-    {
-      "id": "the-ricks-must-be-crazy",
-      "title": "Rick and Morty (S2E06): The Ricks Must Be Crazy",
-      "authored_by": [
-        "Dominic Polcino",
-        "Dan Guterman",
-        "Adult Swim"
-      ],
-      "publish_date": "2015",
-      "follow_url": "https://www.adultswim.com/videos/rick-and-morty/",
-      "description": "Rick and Morty Season 2, Episode 6, titled \"The Ricks Must Be Crazy,\" is a highly inventive and humorous exploration of complex scientific concepts, mainly nested universes and the ethics of creating and exploiting such realities.\n\nIn this episode, Rick and Morty venture into the microverse within Rick's car battery, where Rick has created an entire universe (the microverse) to power his vehicle. The inhabitants of this microverse unknowingly generate power for Rick through their daily activities. The plot thickens when they discover that a scientist in the microverse has created a mini-microverse to power his own planet, unaware that he, in turn, is in a universe inside a car battery.\n\nThis episode brilliantly plays with the idea of nested realities and the ethical implications of creating universes for personal gain. Rick, as the creator of the microverse, faces a moral conundrum when his creations gain the capability to challenge his authority and purpose.\n\n\"The Ricks Must Be Crazy\" also delves into themes of free will, manipulation, and the nature of reality. The episode is a satirical take on the god-complex and the philosophical implications of creation and power. It raises questions about the responsibility of creators towards their creations and the ethical limits of using sentient beings for personal benefits.\n\n### Common themes\n\nThe episode \"The Ricks Must Be Crazy\" from \"Rick and Morty\" aligns intriguingly with the concepts of infinity as explored on the Wheel of Heaven website. The episode's narrative, centered on nested universes within Rick's car battery, reflects the idea of an infinite, layered reality, resonating with the Wheel of Heaven's portrayal of existence as endless and devoid of a central point or end​.\n\nThis thematic alignment is further deepened by the episode's exploration of the micro and macro realms, mirroring the Wheel of Heaven's concept of infinite realms of life at varying scales, as well as the cyclical and repetitive nature of existence across all levels of the cosmos​. The episode's representation of these nested realities and the ethical implications of their creation and exploitation echoes the Wheel of Heaven's contemplation on the infinite nature of existence and the human position within this continuum.\n\n### See more\n\n- [Wiki › Mass effect](/wiki/encyclopedia/mass-effect/)\n- [Wiki › Infinity](/wiki/encyclopedia/infinity/)\n\n### External links\n\n- [The Ricks Must Be Crazy | Rick and Morty Wiki | Fandom](https://rickandmorty.fandom.com/wiki/The_Ricks_Must_Be_Crazy)",
-      "medium": "documentary",
-      "topics": [
-        "Infinity",
-        "Neo-Euhemerism"
       ],
       "cited_by": [],
       "cite_count": 0
@@ -5330,11 +6602,16 @@
         },
         {
           "section": "wiki",
+          "title": "Eden",
+          "path": "/wiki/eden/"
+        },
+        {
+          "section": "wiki",
           "title": "Genesis",
           "path": "/wiki/genesis/"
         }
       ],
-      "cite_count": 3
+      "cite_count": 4
     },
     {
       "id": "the-sky-people",
@@ -5418,11 +6695,16 @@
       "cited_by": [
         {
           "section": "wiki",
+          "title": "Cyberparadism",
+          "path": "/wiki/cyberparadism/"
+        },
+        {
+          "section": "wiki",
           "title": "Golden Age",
           "path": "/wiki/golden-age/"
         }
       ],
-      "cite_count": 1
+      "cite_count": 2
     },
     {
       "id": "the-unseen-realm",
@@ -5443,6 +6725,29 @@
       ],
       "cited_by": [],
       "cite_count": 0
+    },
+    {
+      "id": "vedas",
+      "title": "The Vedas",
+      "authored_by": [
+        "Various Vedic seers (traditional ascription)"
+      ],
+      "publish_date": "c. 1500-500 BCE",
+      "follow_url": "https://en.wikipedia.org/wiki/Vedas",
+      "description": "The foundational Sanskrit religious-philosophical corpus of the Hindu tradition — Ṛgveda, Yajurveda, Sāmaveda, and Atharvaveda. Listed in the Raëlian canon's commentary as part of the Mahābhārata's broader textual horizon.",
+      "medium": "religious-text",
+      "topics": [
+        "Hindu Tradition",
+        "Comparative Religion"
+      ],
+      "cited_by": [
+        {
+          "section": "wiki",
+          "title": "Reference corpus of the Raëlian canon",
+          "path": "/wiki/reference-corpus-of-the-raelian-canon/"
+        }
+      ],
+      "cite_count": 1
     },
     {
       "id": "the-wars-of-gods-and-men",
@@ -5478,8 +6783,14 @@
         "Reference work",
         "The Tradition"
       ],
-      "cited_by": [],
-      "cite_count": 0
+      "cited_by": [
+        {
+          "section": "wiki",
+          "title": "Wheel of Heaven",
+          "path": "/wiki/wheel-of-heaven/"
+        }
+      ],
+      "cite_count": 1
     },
     {
       "id": "theogony-and-works-and-days",
@@ -5522,6 +6833,31 @@
       "cite_count": 5
     },
     {
+      "id": "theory-of-the-earth",
+      "title": "Theory of the Earth",
+      "authored_by": [
+        "James Hutton"
+      ],
+      "publish_date": "1788",
+      "follow_url": "https://archive.org/details/theoryofearthwit01hutt",
+      "description": "James Hutton's 1788 paper (expanded to a two-volume work in 1795) is the founding text of geological uniformitarianism — the principle that the same physical processes operating today have, over deep time, produced the present-day geological record. Hutton's famous formulation that the geological record displays 'no vestige of a beginning, no prospect of an end' is the conceptual displacement of the early-modern biblical-chronological framework by what would become the geological consensus. The displacement of Ussher's 4004 BCE chronology by Hutton's deep-time geology is the principal nineteenth-century transformation of the natural-philosophical context for the antediluvian world.",
+      "medium": "nonfiction-book",
+      "topics": [
+        "Geology",
+        "Deep Time",
+        "Uniformitarianism",
+        "Antediluvian"
+      ],
+      "cited_by": [
+        {
+          "section": "wiki",
+          "title": "Antediluvian",
+          "path": "/wiki/antediluvian/"
+        }
+      ],
+      "cite_count": 1
+    },
+    {
       "id": "those-gods-who-made-heaven-and-earth",
       "title": "Those Gods Who Made Heaven and Earth: The Evidence for Alien Visitors to Earth before the Dawn of History",
       "authored_by": [
@@ -5544,6 +6880,11 @@
           "section": "wiki",
           "title": "Ancient Astronaut Hypothesis",
           "path": "/wiki/ancient-astronaut-hypothesis/"
+        },
+        {
+          "section": "wiki",
+          "title": "Antediluvian",
+          "path": "/wiki/antediluvian/"
         },
         {
           "section": "wiki",
@@ -5577,11 +6918,16 @@
         },
         {
           "section": "wiki",
+          "title": "Wheel of Heaven",
+          "path": "/wiki/wheel-of-heaven/"
+        },
+        {
+          "section": "wiki",
           "title": "Yahweh",
           "path": "/wiki/yahweh/"
         }
       ],
-      "cite_count": 8
+      "cite_count": 10
     },
     {
       "id": "tomorrowland-film",
@@ -5599,25 +6945,14 @@
         "Fiction",
         "Futurism"
       ],
-      "cited_by": [],
-      "cite_count": 0
-    },
-    {
-      "id": "tov-textual-criticism",
-      "title": "Textual Criticism of the Hebrew Bible",
-      "authored_by": [
-        "Emanuel Tov"
+      "cited_by": [
+        {
+          "section": "wiki",
+          "title": "Cyberparadism",
+          "path": "/wiki/cyberparadism/"
+        }
       ],
-      "publish_date": "2012",
-      "follow_url": "https://fortresspress.com/",
-      "description": "Tov's principal contemporary reference for the textual criticism of the Hebrew Bible.",
-      "medium": "academic-paper",
-      "topics": [
-        "Hebrew Bible",
-        "Textual Criticism"
-      ],
-      "cited_by": [],
-      "cite_count": 0
+      "cite_count": 1
     },
     {
       "id": "ufo-religions",
@@ -5637,55 +6972,28 @@
       "cite_count": 0
     },
     {
-      "id": "vanderkam-dss-today",
-      "title": "The Dead Sea Scrolls Today",
+      "id": "mores-utopia",
+      "title": "Utopia",
       "authored_by": [
-        "James C. VanderKam"
+        "Thomas More"
       ],
-      "publish_date": "2010",
-      "follow_url": "https://www.eerdmans.com/",
-      "description": "VanderKam's principal accessible introduction to the Dead Sea Scrolls and their scholarly significance.",
-      "medium": "academic-paper",
+      "publish_date": "1516",
+      "follow_url": "https://en.wikipedia.org/wiki/Utopia_(book)",
+      "description": "More's foundational text of the Western utopian literary tradition. The substantial subsequent utopian-literary tradition within which Cyberparadism operates as specific contemporary aesthetic-cultural-technological articulation.",
+      "medium": "fiction-book",
       "topics": [
-        "Dead Sea Scrolls",
-        "Hebrew Bible"
+        "Cyberparadism",
+        "Fiction",
+        "Futurism"
       ],
-      "cited_by": [],
-      "cite_count": 0
-    },
-    {
-      "id": "vedas",
-      "title": "The Vedas",
-      "authored_by": [
-        "Various Vedic seers (traditional ascription)"
+      "cited_by": [
+        {
+          "section": "wiki",
+          "title": "Cyberparadism",
+          "path": "/wiki/cyberparadism/"
+        }
       ],
-      "publish_date": "c. 1500-500 BCE",
-      "follow_url": "https://en.wikipedia.org/wiki/Vedas",
-      "description": "The foundational Sanskrit religious-philosophical corpus of the Hindu tradition — Ṛgveda, Yajurveda, Sāmaveda, and Atharvaveda. Listed in the Raëlian canon's commentary as part of the Mahābhārata's broader textual horizon.",
-      "medium": "religious-text",
-      "topics": [
-        "Hindu Tradition",
-        "Comparative Religion"
-      ],
-      "cited_by": [],
-      "cite_count": 0
-    },
-    {
-      "id": "vermes-dead-sea-scrolls",
-      "title": "The Complete Dead Sea Scrolls in English",
-      "authored_by": [
-        "Geza Vermes"
-      ],
-      "publish_date": "2004",
-      "follow_url": "https://www.penguinrandomhouse.com/",
-      "description": "Vermes's principal accessible English translation of the Dead Sea Scrolls corpus.",
-      "medium": "religious-text",
-      "topics": [
-        "Dead Sea Scrolls",
-        "Hebrew Bible"
-      ],
-      "cited_by": [],
-      "cite_count": 0
+      "cite_count": 1
     },
     {
       "id": "voices-of-the-rocks-a-scientist-looks-at-catastrophes-and-ancient-civilizations",
@@ -5708,6 +7016,31 @@
       "cite_count": 1
     },
     {
+      "id": "voices-of-the-rocks",
+      "title": "Voices of the Rocks: A Scientist Looks at Catastrophes and Ancient Civilizations",
+      "authored_by": [
+        "Robert M. Schoch"
+      ],
+      "publish_date": "1999",
+      "follow_url": "https://www.robertschoch.com/voicesoftherocks.html",
+      "description": "Robert M. Schoch's 1999 book (Harmony) consolidates his geological argument for the redating of the Great Sphinx of Giza on the basis of weathering patterns. Schoch, a geologist at Boston University, has argued since the early 1990s that the Sphinx's substantial rain-erosion features indicate a date significantly earlier than the conventional Old Kingdom attribution (c. 2500 BCE) — possibly as early as the Pre-Dynastic period or the late Pleistocene. The specific claims about the Sphinx remain contested in academic Egyptology; the broader argument about pre-Flood civilization places Schoch within the catastrophist-civilization tradition.",
+      "medium": "nonfiction-book",
+      "topics": [
+        "Sphinx",
+        "Egyptology",
+        "Catastrophism",
+        "Antediluvian"
+      ],
+      "cited_by": [
+        {
+          "section": "wiki",
+          "title": "Antediluvian",
+          "path": "/wiki/antediluvian/"
+        }
+      ],
+      "cite_count": 1
+    },
+    {
       "id": "wall-e",
       "title": "WALL-E",
       "authored_by": [
@@ -5723,61 +7056,37 @@
         "Fiction",
         "Futurism"
       ],
-      "cited_by": [],
-      "cite_count": 0
+      "cited_by": [
+        {
+          "section": "wiki",
+          "title": "Cyberparadism",
+          "path": "/wiki/cyberparadism/"
+        }
+      ],
+      "cite_count": 1
     },
     {
-      "id": "wallis-eden-conspiracy",
-      "title": "The Eden Conspiracy",
+      "id": "friedman-who-wrote-bible",
+      "title": "Who Wrote the Bible?",
       "authored_by": [
-        "Paul Anthony Wallis"
+        "Richard Elliott Friedman"
       ],
-      "publish_date": "2024",
-      "follow_url": "https://www.collectiveinkbooks.com/6th-books",
-      "description": "Wallis's articulation of the Eden narrative as engineered-civilizational origin event, with substantial cross-cultural comparative material.",
-      "medium": "nonfiction-book",
-      "topics": [
-        "Eden",
-        "Elohim",
-        "Ancient Astronaut Theory"
-      ],
-      "cited_by": [],
-      "cite_count": 0
-    },
-    {
-      "id": "wellhausen-prolegomena",
-      "title": "Prolegomena to the History of Israel",
-      "authored_by": [
-        "Julius Wellhausen"
-      ],
-      "publish_date": "1878",
-      "follow_url": "https://www.google.com/books/edition/Prolegomena_to_the_History_of_Israel/_/",
-      "description": "Wellhausen's foundational articulation of the documentary hypothesis (J, E, D, P sources of the Pentateuch). The principal historical-critical reference.",
+      "publish_date": "1987",
+      "follow_url": "https://www.harpercollins.com/",
+      "description": "Friedman's principal accessible articulation of the documentary hypothesis for general readers.",
       "medium": "academic-paper",
       "topics": [
         "Hebrew Bible",
         "Documentary Hypothesis"
       ],
-      "cited_by": [],
-      "cite_count": 0
-    },
-    {
-      "id": "westermann-genesis-1-11",
-      "title": "Genesis 1-11: A Continental Commentary",
-      "authored_by": [
-        "Claus Westermann"
+      "cited_by": [
+        {
+          "section": "wiki",
+          "title": "Hebrew Bible",
+          "path": "/wiki/hebrew-bible/"
+        }
       ],
-      "publish_date": "1994",
-      "follow_url": "https://fortresspress.com/",
-      "description": "Westermann's principal continental commentary on Genesis 1-11; foundational critical commentary on the primeval history.",
-      "medium": "academic-paper",
-      "topics": [
-        "Eden",
-        "Genesis",
-        "Hebrew Bible"
-      ],
-      "cited_by": [],
-      "cite_count": 0
+      "cite_count": 1
     },
     {
       "id": "who-wrote-the-bible",
@@ -5796,43 +7105,14 @@
         "Source criticism",
         "Hebrew Bible"
       ],
-      "cited_by": [],
-      "cite_count": 0
-    },
-    {
-      "id": "wiener-cybernetics",
-      "title": "Cybernetics: Or Control and Communication in the Animal and the Machine",
-      "authored_by": [
-        "Norbert Wiener"
+      "cited_by": [
+        {
+          "section": "wiki",
+          "title": "Wheel of Heaven",
+          "path": "/wiki/wheel-of-heaven/"
+        }
       ],
-      "publish_date": "1948",
-      "follow_url": "https://mitpress.mit.edu/9780262730099/cybernetics/",
-      "description": "Wiener's foundational treatise establishing cybernetics as the scientific study of regulatory and communicative systems. The book introduced the cyber- prefix into modern technical-scientific vocabulary and laid the groundwork for the broader cyber- aesthetic family.",
-      "medium": "nonfiction-book",
-      "topics": [
-        "Cyberparadism",
-        "Science",
-        "Futurism"
-      ],
-      "cited_by": [],
-      "cite_count": 0
-    },
-    {
-      "id": "williams-mahayana",
-      "title": "Mahāyāna Buddhism: The Doctrinal Foundations",
-      "authored_by": [
-        "Paul Williams"
-      ],
-      "publish_date": "2008",
-      "follow_url": "https://www.routledge.com/",
-      "description": "Williams's principal accessible introduction to Mahāyāna Buddhism, including the Mara tradition and prophet-testing function.",
-      "medium": "academic-paper",
-      "topics": [
-        "Comparative Religion",
-        "Buddhism"
-      ],
-      "cited_by": [],
-      "cite_count": 0
+      "cite_count": 1
     },
     {
       "id": "wonders-in-the-sky",
@@ -5893,6 +7173,56 @@
         }
       ],
       "cite_count": 1
+    },
+    {
+      "id": "boyce-zoroastrians",
+      "title": "Zoroastrians: Their Religious Beliefs and Practices",
+      "authored_by": [
+        "Mary Boyce"
+      ],
+      "publish_date": "1979",
+      "follow_url": "https://www.routledge.com/",
+      "description": "Boyce's principal accessible treatment of Zoroastrian religion; the Angra Mainyu / Ahura Mazda cosmic-dualistic framework that substantially influenced Second Temple Jewish development of the satan figure.",
+      "medium": "academic-paper",
+      "topics": [
+        "Comparative Religion",
+        "Satan"
+      ],
+      "cited_by": [
+        {
+          "section": "wiki",
+          "title": "Eden",
+          "path": "/wiki/eden/"
+        },
+        {
+          "section": "wiki",
+          "title": "Great Flood",
+          "path": "/wiki/great-flood/"
+        },
+        {
+          "section": "wiki",
+          "title": "Satan",
+          "path": "/wiki/satan/"
+        }
+      ],
+      "cite_count": 3
+    },
+    {
+      "id": "edouard-dhorme-biography",
+      "title": "Édouard Dhorme (biographical reference)",
+      "authored_by": [
+        "Various"
+      ],
+      "publish_date": "2020s",
+      "follow_url": "https://en.wikipedia.org/wiki/%C3%89douard_Dhorme",
+      "description": "French Catholic priest and Assyriologist (1881-1966), translator of the principal twentieth-century French Bible used by the Raëlian canon. Specialist in Akkadian, Hebrew, and ancient Near Eastern languages whose philological precision shaped the translation choices the canon depends on.",
+      "medium": "wiki",
+      "topics": [
+        "Hebrew Bible",
+        "Translation"
+      ],
+      "cited_by": [],
+      "cite_count": 0
     }
   ]
 }
