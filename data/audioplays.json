@@ -1,0 +1,12 @@
+{
+  "_meta": {
+    "schema": 1,
+    "note": "Per-book per-language inventory of prerecorded ElevenLabs audio plays. Used by templates/listen-section.html to render the /listen/ landing page. The flag catalog.books[].hasAudio answers 'does this book have any audio play' (drives the /library/ filter chip and the per-book Listen button); this file answers 'in which languages'."
+  },
+  "books": [
+    {
+      "slug": "the-book-which-tells-the-truth",
+      "languages": ["en"]
+    }
+  ]
+}
