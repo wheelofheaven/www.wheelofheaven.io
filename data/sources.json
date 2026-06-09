@@ -1,13 +1,13 @@
 {
-  "generated_at": "2026-06-09T13:25:15+00:00",
+  "generated_at": "2026-06-09T14:26:02+00:00",
   "generator": "scripts/build_sources.py",
   "schema_version": 1,
-  "total": 276,
-  "total_cites": 431,
+  "total": 308,
+  "total_cites": 476,
   "media_counts": {
     "religious-text": 75,
-    "academic-paper": 62,
-    "nonfiction-book": 87,
+    "academic-paper": 67,
+    "nonfiction-book": 114,
     "documentary": 17,
     "wiki": 12,
     "article": 8,
@@ -509,11 +509,16 @@
       "cited_by": [
         {
           "section": "wiki",
+          "title": "Ancient Builders",
+          "path": "/wiki/ancient-builders/"
+        },
+        {
+          "section": "wiki",
           "title": "Antediluvian",
           "path": "/wiki/antediluvian/"
         }
       ],
-      "cite_count": 1
+      "cite_count": 2
     },
     {
       "id": "day-adversary-heaven",
@@ -572,6 +577,31 @@
           "section": "timeline",
           "title": "Age of Virgo",
           "path": "/timeline/age-of-virgo/"
+        }
+      ],
+      "cite_count": 1
+    },
+    {
+      "id": "levengood-physiologia-plantarum-1994",
+      "title": "Anatomical Anomalies in Crop Formation Plants",
+      "authored_by": [
+        "William C. Levengood"
+      ],
+      "publish_date": "1994",
+      "follow_url": "https://onlinelibrary.wiley.com/doi/10.1111/j.1399-3054.1994.tb05346.x",
+      "description": "William C. Levengood, *Physiologia Plantarum* 92, no. 2 (1994): 356–363 — the principal peer-reviewed scientific publication of the BLT Research Team's residual-anomaly framework for crop circles. Levengood, a biophysicist, argued that crops in selected formations exhibit substantial node-elongation patterns consistent with brief intense heating, principally attributed to microwave radiation. The paper is the foundational peer-reviewed citation of the residual-anomaly research program; subsequent BLT work has substantially operated outside peer review. The paper remains substantively contested in broader mainstream-scientific framework.",
+      "medium": "academic-paper",
+      "topics": [
+        "Crop Circles",
+        "Node Elongation",
+        "Plant Anatomy",
+        "BLT Research"
+      ],
+      "cited_by": [
+        {
+          "section": "wiki",
+          "title": "Crop Circles",
+          "path": "/wiki/crop-circles/"
         }
       ],
       "cite_count": 1
@@ -725,6 +755,31 @@
       "cite_count": 2
     },
     {
+      "id": "atlantis-antediluvian-world",
+      "title": "Atlantis: The Antediluvian World",
+      "authored_by": [
+        "Ignatius Donnelly"
+      ],
+      "publish_date": "1882",
+      "follow_url": "https://archive.org/details/atlantisantediluv00donnrich",
+      "description": "Ignatius Donnelly's 1882 Harper & Brothers work — the foundational nineteenth-century revival of the Atlantis tradition and the principal source of subsequent popular Atlantis discourse. Donnelly, a U.S. Congressman and amateur scholar, argued that Plato's Atlantis was a real historical civilization in the Atlantic Ocean whose destruction produced the cross-cultural Flood traditions and whose surviving cultural transmitters seeded the Bronze Age civilizations of the Mediterranean, the Americas, and beyond. The work substantially shaped subsequent Atlantis discourse from Cayce through Hancock.",
+      "medium": "nonfiction-book",
+      "topics": [
+        "Atlantis",
+        "Lost Civilization",
+        "Flood Traditions",
+        "Comparative Mythology"
+      ],
+      "cited_by": [
+        {
+          "section": "wiki",
+          "title": "Ancient Builders",
+          "path": "/wiki/ancient-builders/"
+        }
+      ],
+      "cite_count": 1
+    },
+    {
       "id": "atra-hasis-lambert-millard",
       "title": "Atra-ḫasīs: The Babylonian Story of the Flood",
       "authored_by": [
@@ -794,6 +849,32 @@
         }
       ],
       "cite_count": 3
+    },
+    {
+      "id": "avebury-biography-of-a-landscape",
+      "title": "Avebury: The Biography of a Landscape",
+      "authored_by": [
+        "Joshua Pollard",
+        "Andrew Reynolds"
+      ],
+      "publish_date": "2002",
+      "follow_url": "https://www.amazon.com/Avebury-Biography-Landscape-Joshua-Pollard/dp/0752419579",
+      "description": "Joshua Pollard and Andrew Reynolds's 2002 Tempus work — the principal contemporary scholarly synthesis of the substantial Avebury landscape archaeology, integrating substantial excavation work since Burl's foundational treatment with substantial broader contextual engagement. The work substantially documents the substantial prehistoric monumental landscape of which crop circles operate as substantial contemporary cultural-artistic extension.",
+      "medium": "nonfiction-book",
+      "topics": [
+        "Avebury",
+        "Wiltshire",
+        "British Prehistory",
+        "Landscape Archaeology"
+      ],
+      "cited_by": [
+        {
+          "section": "wiki",
+          "title": "Crop Circles",
+          "path": "/wiki/crop-circles/"
+        }
+      ],
+      "cite_count": 1
     },
     {
       "id": "avesta",
@@ -1219,16 +1300,23 @@
         "Erich von Däniken"
       ],
       "publish_date": "1968",
-      "follow_url": "https://www.daniken.com/",
-      "description": "Erich von Däniken's foundational text of the modern popular ancient-astronaut literature. Argues, through a survey of mythological and archaeological material, that extraterrestrial visitors influenced the development of early human civilizations. Translated into more than thirty languages and the sales-leader of the genre; the touchstone the rest of the ancient-astronaut literature is positioned against.",
+      "follow_url": "https://daniken.com/en/",
+      "description": "Erich von Däniken's 1968 (English 1969, G. P. Putnam's Sons) foundational work — the most influential single text of the contemporary ancient-astronaut tradition. Von Däniken proposes that specific ancient monuments (the Egyptian pyramids, the Nazca lines, the Easter Island moai, the Sacsayhuamán polygonal masonry, the Baalbek trilithons, the Mayan Palenque sarcophagus lid) were built with extraterrestrial assistance or by extraterrestrial visitors directly. The work substantially shaped the mid-to-late twentieth-century popular ancient-astronaut tradition. The Wheel of Heaven corpus explicitly distances itself from von Däniken's cultural-dismissive methodology — the framing that the conventionally-credited civilizations could not have built their monuments.",
       "medium": "nonfiction-book",
       "topics": [
         "Ancient Astronauts",
-        "Pseudo-archaeology",
-        "Mythology"
+        "Ancient Builders",
+        "Pyramids",
+        "Lost Civilization"
       ],
-      "cited_by": [],
-      "cite_count": 0
+      "cited_by": [
+        {
+          "section": "wiki",
+          "title": "Ancient Builders",
+          "path": "/wiki/ancient-builders/"
+        }
+      ],
+      "cite_count": 1
     },
     {
       "id": "chronicle-of-akakor",
@@ -1249,6 +1337,31 @@
           "section": "wiki",
           "title": "Reference corpus of the Raëlian canon",
           "path": "/wiki/reference-corpus-of-the-raelian-canon/"
+        }
+      ],
+      "cite_count": 1
+    },
+    {
+      "id": "circular-evidence",
+      "title": "Circular Evidence: A Detailed Investigation of the Flattened Swirled Crops Phenomenon",
+      "authored_by": [
+        "Pat Delgado",
+        "Colin Andrews"
+      ],
+      "publish_date": "1989",
+      "follow_url": "https://www.amazon.com/Circular-Evidence-Pat-Delgado/dp/0747506299",
+      "description": "Pat Delgado and Colin Andrews's 1989 Bloomsbury work — the principal early book-length engagement with the British crop circle phenomenon and the foundational text of pre-confession crop circle research. Delgado, an electromechanical engineer, and Andrews, an electrical engineer, were the principal English-language documentarians of the substantial 1980s-phase formations. Their substantial photographic catalogue and substantial systematic case documentation shaped the discipline's early methodological framework. The work substantially predates the 1991 Bower-Chorley confession and operates substantively within the residual-anomaly research framework.",
+      "medium": "nonfiction-book",
+      "topics": [
+        "Crop Circles",
+        "British Crop Circles",
+        "1980s Documentation"
+      ],
+      "cited_by": [
+        {
+          "section": "wiki",
+          "title": "Crop Circles",
+          "path": "/wiki/crop-circles/"
         }
       ],
       "cite_count": 1
@@ -1297,6 +1410,55 @@
       ],
       "cited_by": [],
       "cite_count": 0
+    },
+    {
+      "id": "crop-circles-signs-of-contact",
+      "title": "Crop Circles: Signs of Contact",
+      "authored_by": [
+        "Colin Andrews",
+        "Stephen J. Spignesi"
+      ],
+      "publish_date": "2003",
+      "follow_url": "https://www.colinandrews.net/",
+      "description": "Colin Andrews and Stephen J. Spignesi's 2003 New Page Books work — Andrews's substantial subsequent engagement with the crop circle phenomenon, post-Bower-Chorley confession. The work substantially articulates the alternative-ufological framework for selected formations while acknowledging the documented human-construction record for the majority of contemporary cases. Andrews has remained the principal English-language researcher engaged with the phenomenon across multiple decades.",
+      "medium": "nonfiction-book",
+      "topics": [
+        "Crop Circles",
+        "Ufology",
+        "Alternative Archaeology"
+      ],
+      "cited_by": [
+        {
+          "section": "wiki",
+          "title": "Crop Circles",
+          "path": "/wiki/crop-circles/"
+        }
+      ],
+      "cite_count": 1
+    },
+    {
+      "id": "pringle-crop-circles",
+      "title": "Crop Circles: The Greatest Mystery of Modern Times",
+      "authored_by": [
+        "Lucy Pringle"
+      ],
+      "publish_date": "1999",
+      "follow_url": "https://www.lucypringle.co.uk/",
+      "description": "Lucy Pringle's 1999 Thorsons work — the principal accessible 1990s synthesis of crop circle research, written by the founding researcher of the substantial Pringle Crop Circle Archive (one of the principal photographic and case databases for the contemporary phenomenon). Pringle has remained active in the field since the late 1980s and has produced substantial subsequent photographic documentation and case-engagement work.",
+      "medium": "nonfiction-book",
+      "topics": [
+        "Crop Circles",
+        "Photographic Documentation",
+        "1990s Research"
+      ],
+      "cited_by": [
+        {
+          "section": "wiki",
+          "title": "Crop Circles",
+          "path": "/wiki/crop-circles/"
+        }
+      ],
+      "cite_count": 1
     },
     {
       "id": "wiener-cybernetics",
@@ -1424,6 +1586,31 @@
           "section": "wiki",
           "title": "Cyberparadism",
           "path": "/wiki/cyberparadism/"
+        }
+      ],
+      "cite_count": 1
+    },
+    {
+      "id": "deadly-voyager",
+      "title": "Deadly Voyager: The Ancient Comet Strike That Changed Earth and Human History",
+      "authored_by": [
+        "James Lawrence Powell"
+      ],
+      "publish_date": "2020",
+      "follow_url": "https://www.amazon.com/Deadly-Voyager-Ancient-Strike-Changed/dp/1734341505",
+      "description": "James Lawrence Powell's 2020 Powell Books work — the principal accessible scholarly synthesis of the Younger Dryas Impact Hypothesis (YDIH) evidence accumulated since Firestone et al.'s 2007 *PNAS* paper. Powell, a geochemist and former president of the Franklin Institute and Reed College, synthesises the substantial accumulated evidence (platinum spikes, nanodiamonds, carbon spherules, widespread combustion markers, megafaunal extinctions, Clovis-culture collapse) for a major cosmic impact or atmospheric airburst event at approximately 12,900 BCE. The YDIH remains contested in mainstream geology; Powell's work is the principal recent advocacy synthesis.",
+      "medium": "nonfiction-book",
+      "topics": [
+        "Younger Dryas",
+        "Impact Hypothesis",
+        "Late Pleistocene",
+        "Catastrophism"
+      ],
+      "cited_by": [
+        {
+          "section": "wiki",
+          "title": "Ancient Builders",
+          "path": "/wiki/ancient-builders/"
         }
       ],
       "cite_count": 1
@@ -1698,6 +1885,32 @@
       "cite_count": 1
     },
     {
+      "id": "edgar-cayce-on-atlantis",
+      "title": "Edgar Cayce on Atlantis",
+      "authored_by": [
+        "Edgar Cayce",
+        "Edgar Evans Cayce (ed.)"
+      ],
+      "publish_date": "1968",
+      "follow_url": "https://www.edgarcayce.org/the-readings/atlantis/",
+      "description": "Edited by Edgar Evans Cayce (Hawthorn, 1968), this volume compiles the substantial body of Atlantis-related material from Edgar Cayce's (1877–1945) trance readings of the 1920s–1940s. Cayce, the \"sleeping prophet,\" substantially elaborated the Atlantis tradition with specific content — population estimates, technological levels (including \"crystal\" power technology), the substantial Atlantean diaspora, the \"Hall of Records\" beneath the Sphinx — that has substantially shaped subsequent New Age and alternative-archaeology Atlantis discourse. The work is the principal access point to Cayce's Atlantis content.",
+      "medium": "nonfiction-book",
+      "topics": [
+        "Atlantis",
+        "Lost Civilization",
+        "Edgar Cayce",
+        "Western Esotericism"
+      ],
+      "cited_by": [
+        {
+          "section": "wiki",
+          "title": "Ancient Builders",
+          "path": "/wiki/ancient-builders/"
+        }
+      ],
+      "cite_count": 1
+    },
+    {
       "id": "elysium-film",
       "title": "Elysium",
       "authored_by": [
@@ -1892,11 +2105,16 @@
       "cited_by": [
         {
           "section": "wiki",
+          "title": "Ancient Builders",
+          "path": "/wiki/ancient-builders/"
+        },
+        {
+          "section": "wiki",
           "title": "Antediluvian",
           "path": "/wiki/antediluvian/"
         }
       ],
-      "cite_count": 1
+      "cite_count": 2
     },
     {
       "id": "firestone-younger-dryas",
@@ -1982,6 +2200,11 @@
         },
         {
           "section": "wiki",
+          "title": "Ancient Builders",
+          "path": "/wiki/ancient-builders/"
+        },
+        {
+          "section": "wiki",
           "title": "Council of the Eternals",
           "path": "/wiki/council-of-eternals/"
         },
@@ -2041,7 +2264,7 @@
           "path": "/wiki/yahweh/"
         }
       ],
-      "cite_count": 13
+      "cite_count": 14
     },
     {
       "id": "ezekiel",
@@ -2150,6 +2373,11 @@
         },
         {
           "section": "wiki",
+          "title": "Ancient Builders",
+          "path": "/wiki/ancient-builders/"
+        },
+        {
+          "section": "wiki",
           "title": "Antediluvian",
           "path": "/wiki/antediluvian/"
         },
@@ -2159,7 +2387,7 @@
           "path": "/wiki/world-age/"
         }
       ],
-      "cite_count": 3
+      "cite_count": 4
     },
     {
       "id": "foundational-text-on-complex-topics",
@@ -2350,6 +2578,57 @@
       "cite_count": 1
     },
     {
+      "id": "giza-and-the-pyramids",
+      "title": "Giza and the Pyramids: The Definitive History",
+      "authored_by": [
+        "Mark Lehner",
+        "Zahi Hawass"
+      ],
+      "publish_date": "2017",
+      "follow_url": "https://press.uchicago.edu/ucp/books/book/distributed/G/bo27537423.html",
+      "description": "Mark Lehner and Zahi Hawass's 2017 University of Chicago Press collaboration is the definitive contemporary scholarly synthesis of Giza Plateau archaeology. The work combines Lehner's decades of AERA excavation (the Heit el-Ghurab workers' village; the bakery, brewery, and cattle-processing complexes; the Lost City of the Pyramid Builders) with Hawass's decades of supervisory excavation of the pyramid complexes themselves. The volume substantially documents the actual workforce, supply infrastructure, and construction sequence of the Old Kingdom Giza monuments.",
+      "medium": "nonfiction-book",
+      "topics": [
+        "Egyptian Pyramids",
+        "Giza",
+        "Egyptology",
+        "Ancient Builders"
+      ],
+      "cited_by": [
+        {
+          "section": "wiki",
+          "title": "Ancient Builders",
+          "path": "/wiki/ancient-builders/"
+        }
+      ],
+      "cite_count": 1
+    },
+    {
+      "id": "glimpses-of-other-realities",
+      "title": "Glimpses of Other Realities",
+      "authored_by": [
+        "Linda Moulton Howe"
+      ],
+      "publish_date": "1993",
+      "follow_url": "https://www.earthfiles.com/",
+      "description": "Linda Moulton Howe's two-volume 1993–1998 LMH Productions work — the principal accessible articulation of Howe's substantive engagement with alternative ufology, including substantive crop circle case material. Howe, an Emmy Award-winning investigative journalist who has reported on UFO phenomena since the 1980s, substantially developed the alternative-ufological framework for engaging selected crop circle formations as substantively non-human-made communication content. The work is one of the principal accessible articulations of the alternative-ufological crop circle framework.",
+      "medium": "nonfiction-book",
+      "topics": [
+        "Crop Circles",
+        "Ufology",
+        "Alternative Investigation",
+        "Linda Moulton Howe"
+      ],
+      "cited_by": [
+        {
+          "section": "wiki",
+          "title": "Crop Circles",
+          "path": "/wiki/crop-circles/"
+        }
+      ],
+      "cite_count": 1
+    },
+    {
       "id": "gospel-of-john",
       "title": "Gospel of John",
       "authored_by": [
@@ -2472,11 +2751,16 @@
       "cited_by": [
         {
           "section": "wiki",
+          "title": "Ancient Builders",
+          "path": "/wiki/ancient-builders/"
+        },
+        {
+          "section": "wiki",
           "title": "Antediluvian",
           "path": "/wiki/antediluvian/"
         }
       ],
-      "cite_count": 1
+      "cite_count": 2
     },
     {
       "id": "hamlets-mill",
@@ -2578,6 +2862,31 @@
       ],
       "cited_by": [],
       "cite_count": 0
+    },
+    {
+      "id": "hengeworld",
+      "title": "Hengeworld",
+      "authored_by": [
+        "Mike Pitts"
+      ],
+      "publish_date": "2000",
+      "follow_url": "https://www.penguin.co.uk/books/56086/hengeworld",
+      "description": "Mike Pitts's 2000 Century work — the principal accessible scholarly synthesis of the Late Neolithic and Early Bronze Age henge tradition in Britain, with Stonehenge as the central case. Pitts, longtime editor of *British Archaeology* and excavator of the Stonehenge environs, situates Stonehenge within the broader Wessex monumental tradition (Avebury, Silbury Hill, Durrington Walls, the Cursus monuments) and documents the substantial communal-ritual character of the construction across multiple phases c. 3000–1500 BCE.",
+      "medium": "nonfiction-book",
+      "topics": [
+        "Stonehenge",
+        "British Prehistory",
+        "Neolithic",
+        "Ancient Builders"
+      ],
+      "cited_by": [
+        {
+          "section": "wiki",
+          "title": "Ancient Builders",
+          "path": "/wiki/ancient-builders/"
+        }
+      ],
+      "cite_count": 1
     },
     {
       "id": "hermetica",
@@ -2695,6 +3004,31 @@
         }
       ],
       "cite_count": 2
+    },
+    {
+      "id": "inca-architecture-ollantaytambo",
+      "title": "Inca Architecture and Construction at Ollantaytambo",
+      "authored_by": [
+        "Jean-Pierre Protzen"
+      ],
+      "publish_date": "1993",
+      "follow_url": "https://global.oup.com/academic/product/inca-architecture-and-construction-at-ollantaytambo-9780195070699",
+      "description": "Jean-Pierre Protzen's 1993 Oxford University Press monograph — the foundational experimental-archaeology study of Inca polygonal masonry technique. Protzen, an architect by training, conducted on-site replication experiments demonstrating that the famous polygonal-interlocking stonework at Ollantaytambo (and by extension Sacsayhuamán, Machu Picchu, and other Inca sites) was achieved through hammer-stone pounding, test-fitting, and progressive refinement, all within documented Inca tool capability. The work remains the principal scholarly reference on Inca construction technique.",
+      "medium": "nonfiction-book",
+      "topics": [
+        "Inca",
+        "Ollantaytambo",
+        "Polygonal Masonry",
+        "Andean Archaeology"
+      ],
+      "cited_by": [
+        {
+          "section": "wiki",
+          "title": "Ancient Builders",
+          "path": "/wiki/ancient-builders/"
+        }
+      ],
+      "cite_count": 1
     },
     {
       "id": "intelligent-design-message-from-the-designers",
@@ -3411,6 +3745,31 @@
       "cite_count": 10
     },
     {
+      "id": "journal-de-merer-tallet",
+      "title": "Les papyrus de la Mer Rouge I: Le \"Journal de Merer\"",
+      "authored_by": [
+        "Pierre Tallet"
+      ],
+      "publish_date": "2017",
+      "follow_url": "https://www.ifao.egnet.net/publications/catalogue/9782724707106/",
+      "description": "Pierre Tallet's 2017 critical edition (Institut français d'archéologie orientale) of the Wadi al-Jarf papyri discovered 2013 — the oldest known papyri in the world. The principal document, the *Journal de Merer*, is a foreman's logbook from year 27 of Khufu's reign documenting the limestone transport operation for the Great Pyramid's casing stones. Merer's daily entries record the team's movements between the Tura quarries across the Nile and the Giza pyramid site, providing the most direct contemporary documentation of Old Kingdom pyramid construction logistics yet discovered.",
+      "medium": "nonfiction-book",
+      "topics": [
+        "Egyptian Pyramids",
+        "Giza",
+        "Diary of Merer",
+        "Pyramid Construction"
+      ],
+      "cited_by": [
+        {
+          "section": "wiki",
+          "title": "Ancient Builders",
+          "path": "/wiki/ancient-builders/"
+        }
+      ],
+      "cite_count": 1
+    },
+    {
       "id": "lets-welcome-the-extraterrestrials",
       "title": "Let's Welcome The Extraterrestrials",
       "authored_by": [
@@ -3436,6 +3795,11 @@
           "section": "wiki",
           "title": "Ancient Astronaut Hypothesis",
           "path": "/wiki/ancient-astronaut-hypothesis/"
+        },
+        {
+          "section": "wiki",
+          "title": "Ancient Builders",
+          "path": "/wiki/ancient-builders/"
         },
         {
           "section": "wiki",
@@ -3493,7 +3857,32 @@
           "path": "/wiki/yahweh/"
         }
       ],
-      "cite_count": 12
+      "cite_count": 13
+    },
+    {
+      "id": "nickell-levengood-skeptical-inquirer-1996",
+      "title": "Levengood's Crop-Circle Plant Research",
+      "authored_by": [
+        "Joe Nickell"
+      ],
+      "publish_date": "1996",
+      "follow_url": "https://skepticalinquirer.org/",
+      "description": "Joe Nickell, *Skeptical Inquirer* 20, no. 2 (1996): 19–21 — the principal published skeptical critique of the Levengood residual-anomaly research. Nickell, the Committee for Skeptical Inquiry's senior research fellow, argues that substantial methodological concerns (selection bias in case choice; soil sampling methodology; statistical controls; the substantial distinction between authentic anomalies and broader sampling effects) undermine the strong residual-anomaly claims. The article is one of the principal published skeptical engagements with the BLT research framework.",
+      "medium": "academic-paper",
+      "topics": [
+        "Crop Circles",
+        "Skeptical Inquiry",
+        "BLT Research",
+        "Methodological Critique"
+      ],
+      "cited_by": [
+        {
+          "section": "wiki",
+          "title": "Crop Circles",
+          "path": "/wiki/crop-circles/"
+        }
+      ],
+      "cite_count": 1
     },
     {
       "id": "leviticus",
@@ -3558,11 +3947,16 @@
       "cited_by": [
         {
           "section": "wiki",
+          "title": "Ancient Builders",
+          "path": "/wiki/ancient-builders/"
+        },
+        {
+          "section": "wiki",
           "title": "Antediluvian",
           "path": "/wiki/antediluvian/"
         }
       ],
-      "cite_count": 1
+      "cite_count": 2
     },
     {
       "id": "mahabharata",
@@ -3734,6 +4128,31 @@
           "section": "wiki",
           "title": "Antediluvian",
           "path": "/wiki/antediluvian/"
+        }
+      ],
+      "cite_count": 1
+    },
+    {
+      "id": "miracles-and-the-pulp-press",
+      "title": "Miracles and the Pulp Press during the English Revolution",
+      "authored_by": [
+        "Jerome Friedman"
+      ],
+      "publish_date": "1993",
+      "follow_url": "https://www.ucl.ac.uk/ucl-press/",
+      "description": "Jerome Friedman's 1993 UCL Press work — the principal scholarly treatment of the substantial mid-17th-century English pulp press engagement with miraculous and supernatural content. Friedman substantially documents the substantive role of broadsheets, ballads, and pamphlets in disseminating supernatural-prodigy content within the religious-political turbulence of the English Revolution period, providing substantive context for the substantial pamphlet tradition within which the 1678 Mowing Devil pamphlet operates.",
+      "medium": "nonfiction-book",
+      "topics": [
+        "17th-Century Pamphlet Literature",
+        "English Revolution",
+        "Pulp Press",
+        "Mowing Devil Context"
+      ],
+      "cited_by": [
+        {
+          "section": "wiki",
+          "title": "Crop Circles",
+          "path": "/wiki/crop-circles/"
         }
       ],
       "cite_count": 1
@@ -4044,6 +4463,31 @@
       "cite_count": 1
     },
     {
+      "id": "haselhoff-physiologia-plantarum-2001",
+      "title": "Opinions and Comments on Levengood WC, Talbott NP (1999) Dispersion of Energies in Worldwide Crop Formations",
+      "authored_by": [
+        "Eltjo H. Haselhoff"
+      ],
+      "publish_date": "2001",
+      "follow_url": "https://onlinelibrary.wiley.com/doi/10.1034/j.1399-3054.2001.1110117.x",
+      "description": "Eltjo H. Haselhoff, *Physiologia Plantarum* 111, no. 1 (2001): 123–125 — Haselhoff's peer-reviewed commentary engaging the substantial Levengood and Talbott crop-formation research, principally extending the node-bending analysis. The paper is the principal peer-reviewed publication beyond the 1994 Levengood paper within the residual-anomaly research framework. Subsequent BLT-related work has substantially operated outside peer review.",
+      "medium": "academic-paper",
+      "topics": [
+        "Crop Circles",
+        "Node Bending",
+        "BLT Research",
+        "Peer Review"
+      ],
+      "cited_by": [
+        {
+          "section": "wiki",
+          "title": "Crop Circles",
+          "path": "/wiki/crop-circles/"
+        }
+      ],
+      "cite_count": 1
+    },
+    {
       "id": "order-out-of-chaos-man-s-new-dialogue-with-nature",
       "title": "Order Out of Chaos: Man's New Dialogue with Nature",
       "authored_by": [
@@ -4059,6 +4503,35 @@
           "section": "timeline",
           "title": "Preamble",
           "path": "/timeline/preamble/"
+        }
+      ],
+      "cite_count": 1
+    },
+    {
+      "id": "nash-sarsen-megaliths-2020",
+      "title": "Origins of the sarsen megaliths at Stonehenge",
+      "authored_by": [
+        "David J. Nash",
+        "T. Jake R. Ciborowski",
+        "J. Stewart Ullyott",
+        "Mike Parker Pearson",
+        "et al."
+      ],
+      "publish_date": "2020",
+      "follow_url": "https://www.science.org/doi/10.1126/sciadv.abc0133",
+      "description": "David J. Nash et al., *Science Advances* 6, no. 31 (29 July 2020) — the peer-reviewed paper that conclusively identified the source of Stonehenge's sarsen megaliths through geochemical fingerprinting. The team confirmed that 50 of 52 surviving sarsens originate from West Woods in the Marlborough Downs, approximately 25 km north of Stonehenge. The finding resolved a long-standing question about Stonehenge construction logistics and substantially reframes the transport problem from the longer-distance hypothetical alternatives.",
+      "medium": "academic-paper",
+      "topics": [
+        "Stonehenge",
+        "Geochemistry",
+        "Sarsens",
+        "Ancient Builders"
+      ],
+      "cited_by": [
+        {
+          "section": "wiki",
+          "title": "Ancient Builders",
+          "path": "/wiki/ancient-builders/"
         }
       ],
       "cite_count": 1
@@ -4147,6 +4620,31 @@
         }
       ],
       "cite_count": 3
+    },
+    {
+      "id": "prehistoric-avebury",
+      "title": "Prehistoric Avebury",
+      "authored_by": [
+        "Aubrey Burl"
+      ],
+      "publish_date": "1979",
+      "follow_url": "https://yalebooks.yale.edu/book/9780300090871/",
+      "description": "Aubrey Burl's 1979 Yale University Press work (revised edition 2002) — the principal accessible scholarly treatment of the substantial Avebury Henge complex, the largest stone circle in the world. Burl substantially documents the substantial Late Neolithic and Early Bronze Age monumental landscape of the Avebury region (Avebury Henge; Silbury Hill; the West Kennet Long Barrow; the Sanctuary; the broader monumental complex), providing the substantive context for the substantial Wiltshire crop circle concentration that operates within the broader prehistoric monumental landscape.",
+      "medium": "nonfiction-book",
+      "topics": [
+        "Avebury",
+        "Wiltshire",
+        "British Prehistory",
+        "Neolithic"
+      ],
+      "cited_by": [
+        {
+          "section": "wiki",
+          "title": "Crop Circles",
+          "path": "/wiki/crop-circles/"
+        }
+      ],
+      "cite_count": 1
     },
     {
       "id": "miyazaki-princess-mononoke",
@@ -4272,6 +4770,31 @@
       "cite_count": 2
     },
     {
+      "id": "providence-in-early-modern-england",
+      "title": "Providence in Early Modern England",
+      "authored_by": [
+        "Alexandra Walsham"
+      ],
+      "publish_date": "1999",
+      "follow_url": "https://global.oup.com/academic/product/providence-in-early-modern-england-9780198208877",
+      "description": "Alexandra Walsham's 1999 Oxford University Press work — the principal scholarly treatment of the substantial 17th-century English broadsheet and pamphlet-literature tradition documenting supernatural prodigies, miraculous events, and divine providence. Walsham substantially situates the substantial pamphlet output of the period (including works like the 1678 Mowing Devil pamphlet) within the broader providential-interpretation framework of early-modern English religion, providing the substantive context within which any historical engagement with the 1678 pamphlet as crop-circle precedent must be undertaken.",
+      "medium": "nonfiction-book",
+      "topics": [
+        "Crop Circles",
+        "17th-Century Pamphlet Literature",
+        "Mowing Devil",
+        "Early Modern Religion"
+      ],
+      "cited_by": [
+        {
+          "section": "wiki",
+          "title": "Crop Circles",
+          "path": "/wiki/crop-circles/"
+        }
+      ],
+      "cite_count": 1
+    },
+    {
       "id": "psalms",
       "title": "Psalms",
       "authored_by": [
@@ -4370,6 +4893,30 @@
         }
       ],
       "cite_count": 2
+    },
+    {
+      "id": "real-life-x-files-nickell",
+      "title": "Real-Life X-Files: Investigating the Paranormal",
+      "authored_by": [
+        "Joe Nickell"
+      ],
+      "publish_date": "2001",
+      "follow_url": "https://www.kentuckypress.com/9780813124131/real-life-x-files/",
+      "description": "Joe Nickell's 2001 University Press of Kentucky work — the principal accessible articulation of Nickell's substantive paranormal investigation methodology, with substantial crop circle content. Nickell substantially documents the systematic skeptical investigation of paranormal claims including crop circles, UFO sightings, ghost cases, and broader paranormal phenomena. The work substantially articulates the methodological skeptical framework within which mainstream-scientific engagement with crop circles operates.",
+      "medium": "nonfiction-book",
+      "topics": [
+        "Crop Circles",
+        "Skeptical Inquiry",
+        "Paranormal Investigation"
+      ],
+      "cited_by": [
+        {
+          "section": "wiki",
+          "title": "Crop Circles",
+          "path": "/wiki/crop-circles/"
+        }
+      ],
+      "cite_count": 1
     },
     {
       "id": "redating-the-great-sphinx-of-giza",
@@ -4528,6 +5075,30 @@
       ],
       "cited_by": [],
       "cite_count": 0
+    },
+    {
+      "id": "round-in-circles-schnabel",
+      "title": "Round in Circles: Physicists, Poltergeists, Pranksters, and the Secret History of the Cropwatchers",
+      "authored_by": [
+        "Jim Schnabel"
+      ],
+      "publish_date": "1993",
+      "follow_url": "https://www.amazon.com/Round-Circles-Physicists-Poltergeists-Pranksters/dp/0241001714",
+      "description": "Jim Schnabel's 1993 Hamish Hamilton work — the principal accessible journalistic engagement with the crop circle phenomenon following the Bower-Chorley confession. Schnabel substantially documents the discipline's institutional history (Pat Delgado and Colin Andrews; Terence Meaden and the plasma vortex hypothesis; the substantial Cerealogist community; the 1991 Bower-Chorley confession; the substantial subsequent organized circle-making emergence). The work is the principal accessible non-fiction account of the discipline's substantive transformation across the 1991 confession.",
+      "medium": "nonfiction-book",
+      "topics": [
+        "Crop Circles",
+        "Bower-Chorley Confession",
+        "Skeptical Inquiry"
+      ],
+      "cited_by": [
+        {
+          "section": "wiki",
+          "title": "Crop Circles",
+          "path": "/wiki/crop-circles/"
+        }
+      ],
+      "cite_count": 1
     },
     {
       "id": "ramayana",
@@ -4697,6 +5268,31 @@
       "cite_count": 3
     },
     {
+      "id": "serpent-in-the-sky",
+      "title": "Serpent in the Sky: The High Wisdom of Ancient Egypt",
+      "authored_by": [
+        "John Anthony West"
+      ],
+      "publish_date": "1993",
+      "follow_url": "https://www.questbooks.com/serpent-in-the-sky",
+      "description": "John Anthony West's 1993 Quest Books work — the principal articulation of West's substantial alternative-Egyptology argument and the first major popular presentation of the Sphinx redating hypothesis that Robert Schoch subsequently developed geologically. West (1932–2018) developed the René Schwaller de Lubicz \"symbolist\" reading of Egyptian iconography and argued for a substantially older Egyptian civilizational origin than the conventional dynastic chronology allows. The work remains the principal entry point to West's broader alternative-Egyptology corpus.",
+      "medium": "nonfiction-book",
+      "topics": [
+        "Egypt",
+        "Sphinx",
+        "Alternative Egyptology",
+        "Ancient Builders"
+      ],
+      "cited_by": [
+        {
+          "section": "wiki",
+          "title": "Ancient Builders",
+          "path": "/wiki/ancient-builders/"
+        }
+      ],
+      "cite_count": 1
+    },
+    {
       "id": "shiur-qomah",
       "title": "Shi'ur Qomah",
       "authored_by": [
@@ -4840,6 +5436,31 @@
           "section": "wiki",
           "title": "Cyberparadism",
           "path": "/wiki/cyberparadism/"
+        }
+      ],
+      "cite_count": 1
+    },
+    {
+      "id": "stonehenge-parker-pearson",
+      "title": "Stonehenge: Exploring the Greatest Stone Age Mystery",
+      "authored_by": [
+        "Mike Parker Pearson"
+      ],
+      "publish_date": "2012",
+      "follow_url": "https://www.simonandschuster.com/books/Stonehenge/Mike-Parker-Pearson/9781439140451",
+      "description": "Mike Parker Pearson's 2012 Simon & Schuster monograph — the principal contemporary scholarly synthesis of Stonehenge archaeology, written by the lead investigator of the Stonehenge Riverside Project (2003–2009). The work synthesises Parker Pearson's discovery of the Bluestonehenge monument, the documentation of the Durrington Walls Neolithic village (the principal builders' settlement), the bluestone quarrying at Craig Rhos-y-felin and Carn Goedog in Wales, and the substantial reinterpretation of Stonehenge as part of a larger Late Neolithic ceremonial landscape on the Salisbury Plain.",
+      "medium": "nonfiction-book",
+      "topics": [
+        "Stonehenge",
+        "British Prehistory",
+        "Neolithic",
+        "Ancient Builders"
+      ],
+      "cited_by": [
+        {
+          "section": "wiki",
+          "title": "Ancient Builders",
+          "path": "/wiki/ancient-builders/"
         }
       ],
       "cite_count": 1
@@ -5046,23 +5667,28 @@
         "Zecharia Sitchin"
       ],
       "publish_date": "1976",
-      "follow_url": "https://www.sitchin.com/the-12th-planet/",
-      "description": "First volume of Zecharia Sitchin's *Earth Chronicles* series, identifying the Anunnaki of Sumerian texts with extraterrestrial visitors from a hypothetical planet Nibiru on a 3,600-year orbit. Sitchin's specific philological readings of Sumerian and Akkadian texts have been substantially contested by professional Assyriologists; his framework is the most-cited within the popular ancient-astronaut literature.",
+      "follow_url": "https://www.sitchin.com/",
+      "description": "Zecharia Sitchin's 1976 Stein and Day work — the foundational volume of the *Earth Chronicles* series and the principal source of the contemporary Anunnaki interpretation. Sitchin (1920–2010) proposed that the Sumerian *Anunnaki* designate a specific extraterrestrial civilization originating on a hypothetical planet \"Nibiru\" on a 3,600-year orbit, who created humanity through genetic engineering, directed substantial Mesopotamian monumental construction, and substantially shaped Bronze Age civilization. Sitchin's specific Sumerian readings and his Nibiru hypothesis remain rejected by mainstream Assyriology and astronomy; the broader ancient-astronaut tradition substantially elaborates from Sitchin's framework.",
       "medium": "nonfiction-book",
       "topics": [
-        "Ancient Astronauts",
-        "Sumerian",
         "Anunnaki",
+        "Sumerian",
+        "Ancient Astronauts",
         "Nibiru"
       ],
       "cited_by": [
+        {
+          "section": "wiki",
+          "title": "Ancient Builders",
+          "path": "/wiki/ancient-builders/"
+        },
         {
           "section": "wiki",
           "title": "Wheel of Heaven",
           "path": "/wiki/wheel-of-heaven/"
         }
       ],
-      "cite_count": 1
+      "cite_count": 2
     },
     {
       "id": "the-apportionment-of-human-diversity",
@@ -5145,11 +5771,16 @@
       "cited_by": [
         {
           "section": "wiki",
+          "title": "Ancient Builders",
+          "path": "/wiki/ancient-builders/"
+        },
+        {
+          "section": "wiki",
           "title": "Antediluvian",
           "path": "/wiki/antediluvian/"
         }
       ],
-      "cite_count": 1
+      "cite_count": 2
     },
     {
       "id": "the-bible-is-not-a-sacred-book",
@@ -5378,6 +6009,11 @@
         },
         {
           "section": "wiki",
+          "title": "Ancient Builders",
+          "path": "/wiki/ancient-builders/"
+        },
+        {
+          "section": "wiki",
           "title": "Antediluvian",
           "path": "/wiki/antediluvian/"
         },
@@ -5385,6 +6021,11 @@
           "section": "wiki",
           "title": "Council of the Eternals",
           "path": "/wiki/council-of-eternals/"
+        },
+        {
+          "section": "wiki",
+          "title": "Crop Circles",
+          "path": "/wiki/crop-circles/"
         },
         {
           "section": "wiki",
@@ -5472,7 +6113,7 @@
           "path": "/wiki/yahweh/"
         }
       ],
-      "cite_count": 20
+      "cite_count": 22
     },
     {
       "id": "the-chaldean-account-of-genesis",
@@ -5514,6 +6155,30 @@
       ],
       "cited_by": [],
       "cite_count": 0
+    },
+    {
+      "id": "the-circles-effect-meaden",
+      "title": "The Circles Effect and Its Mysteries",
+      "authored_by": [
+        "Terence Meaden"
+      ],
+      "publish_date": "1989",
+      "follow_url": "https://www.amazon.com/Circles-Effect-Its-Mysteries-Meaden/dp/0951518402",
+      "description": "Terence Meaden's 1989 Artetech work — the principal articulation of the plasma vortex hypothesis for crop circle formation. Meaden, a British physicist and meteorologist, argued that rotating columns of ionized atmospheric plasma — operating analogously to dust devils but producing ionization effects — could produce the circular flattening patterns characteristic of early-phase crop circles. The hypothesis attracted substantial early-1990s peer-reviewed engagement in meteorological literature before being substantially abandoned across the 1990s in light of the Bower-Chorley confession and the substantial increase in formation complexity beyond plausible vortex output.",
+      "medium": "nonfiction-book",
+      "topics": [
+        "Crop Circles",
+        "Plasma Vortex Hypothesis",
+        "Atmospheric Physics"
+      ],
+      "cited_by": [
+        {
+          "section": "wiki",
+          "title": "Crop Circles",
+          "path": "/wiki/crop-circles/"
+        }
+      ],
+      "cite_count": 1
     },
     {
       "id": "the-collection-of-divine-messages-of-cai-dai",
@@ -5614,6 +6279,31 @@
       "cite_count": 2
     },
     {
+      "id": "the-complete-pyramids",
+      "title": "The Complete Pyramids: Solving the Ancient Mysteries",
+      "authored_by": [
+        "Mark Lehner"
+      ],
+      "publish_date": "1997",
+      "follow_url": "https://thamesandhudson.com/the-complete-pyramids-9780500285473",
+      "description": "Mark Lehner's 1997 Thames & Hudson reference work is the standard accessible scholarly treatment of the entire Egyptian pyramid corpus — from the third-dynasty step pyramid of Djoser through the Middle Kingdom decline. Lehner, founder of Ancient Egypt Research Associates (AERA), has led the Giza Plateau Mapping Project since the 1980s. The work synthesises the documented record of pyramid construction methods, workforce organisation, quarrying, transport, and architectural development across the Old Kingdom corpus, and remains the principal one-volume scholarly access point.",
+      "medium": "nonfiction-book",
+      "topics": [
+        "Egyptian Pyramids",
+        "Giza",
+        "Egyptology",
+        "Ancient Builders"
+      ],
+      "cited_by": [
+        {
+          "section": "wiki",
+          "title": "Ancient Builders",
+          "path": "/wiki/ancient-builders/"
+        }
+      ],
+      "cite_count": 1
+    },
+    {
       "id": "banks-culture-series",
       "title": "The Culture Series",
       "authored_by": [
@@ -5664,6 +6354,31 @@
         }
       ],
       "cite_count": 2
+    },
+    {
+      "id": "the-deepening-complexity-crop-circles",
+      "title": "The Deepening Complexity of Crop Circles: Scientific Research and Urban Legends",
+      "authored_by": [
+        "Eltjo H. Haselhoff"
+      ],
+      "publish_date": "2001",
+      "follow_url": "https://www.amazon.com/Deepening-Complexity-Crop-Circles-Scientific/dp/1583940464",
+      "description": "Eltjo H. Haselhoff's 2001 Frog Books work — the principal accessible articulation of the residual-anomaly research framework for crop circles by a Dutch physicist who substantially extended the Levengood / BLT methodology. Haselhoff articulates substantive node-bending analysis, substantive electromagnetic-anomaly research, and the broader residual-anomaly framework within which selected formations are argued to exhibit characteristics inconsistent with pure human construction. The work is the principal non-BLT articulation of the residual-anomaly research program.",
+      "medium": "nonfiction-book",
+      "topics": [
+        "Crop Circles",
+        "Residual Anomalies",
+        "Node Bending",
+        "Alternative Research"
+      ],
+      "cited_by": [
+        {
+          "section": "wiki",
+          "title": "Crop Circles",
+          "path": "/wiki/crop-circles/"
+        }
+      ],
+      "cite_count": 1
     },
     {
       "id": "the-devils-delusion",
@@ -5949,6 +6664,32 @@
       "cite_count": 1
     },
     {
+      "id": "the-field-guide-crop-circle-making",
+      "title": "The Field Guide: The Art, History and Philosophy of Crop Circle Making",
+      "authored_by": [
+        "Rob Irving",
+        "John Lundberg"
+      ],
+      "publish_date": "2006",
+      "follow_url": "https://www.strangeattractor.co.uk/shoppe/the-field-guide-the-art-history-and-philosophy-of-crop-circle-making/",
+      "description": "Rob Irving and John Lundberg's 2006 Strange Attractor Press work — the principal documented articulation of contemporary organized circle-making practice, written by two of the founding members of the Circlemakers collective. The work substantially documents the construction methodology, the artistic-philosophical framework within which contemporary circle-making operates, the substantial commercial work for advertising and entertainment clients, and the substantial cultural-historical engagement with the phenomenon. The work is the principal scholarly access point to the Circlemakers' self-articulation as a contemporary art practice.",
+      "medium": "nonfiction-book",
+      "topics": [
+        "Crop Circles",
+        "Circlemakers",
+        "Contemporary Art",
+        "Construction Methodology"
+      ],
+      "cited_by": [
+        {
+          "section": "wiki",
+          "title": "Crop Circles",
+          "path": "/wiki/crop-circles/"
+        }
+      ],
+      "cite_count": 1
+    },
+    {
       "id": "the-fractal-geometry-of-nature",
       "title": "The Fractal Geometry of Nature",
       "authored_by": [
@@ -5993,6 +6734,31 @@
           "section": "wiki",
           "title": "Great Flood",
           "path": "/wiki/great-flood/"
+        }
+      ],
+      "cite_count": 1
+    },
+    {
+      "id": "giza-power-plant",
+      "title": "The Giza Power Plant: Technologies of Ancient Egypt",
+      "authored_by": [
+        "Christopher Dunn"
+      ],
+      "publish_date": "1998",
+      "follow_url": "https://www.gizapower.com/",
+      "description": "Christopher Dunn's 1998 Bear & Company work — the principal engineering-focused alternative-Egyptology engagement with the Great Pyramid. Dunn, a master craftsman and aerospace manufacturing engineer, argues that specific machining marks visible on Egyptian granite artifacts (the substantial Serapeum granite boxes at Saqqara; specific drilling and sawing marks on Old Kingdom granite) require explanations beyond the documented tool capability of dynastic Egypt. The work has remained substantively contested in mainstream Egyptology; Dunn's specific engineering observations are the principal data the alternative-archaeology tradition cites.",
+      "medium": "nonfiction-book",
+      "topics": [
+        "Giza",
+        "Egyptology",
+        "Engineering",
+        "Ancient Builders"
+      ],
+      "cited_by": [
+        {
+          "section": "wiki",
+          "title": "Ancient Builders",
+          "path": "/wiki/ancient-builders/"
         }
       ],
       "cite_count": 1
@@ -6186,6 +6952,31 @@
           "section": "timeline",
           "title": "Preamble",
           "path": "/timeline/preamble/"
+        }
+      ],
+      "cite_count": 1
+    },
+    {
+      "id": "lost-continent-of-mu",
+      "title": "The Lost Continent of Mu",
+      "authored_by": [
+        "James Churchward"
+      ],
+      "publish_date": "1926",
+      "follow_url": "https://archive.org/details/lostcontinentofm00chur",
+      "description": "James Churchward's 1926 work — the principal foundational text of the Mu / Pacific lost-civilization tradition. Churchward (1851–1936) claimed access to \"Naacal tablets\" preserved in Indian and Tibetan monasteries that document the existence of a substantial Pacific civilization (\"Mu\") destroyed by volcanic catastrophe approximately 12,000 years before present, with the substantial diaspora seeding subsequent civilizations across the Pacific Rim. The work substantially shaped the Pacific equivalent of the Atlantic Atlantis tradition; the academic consensus rejects Churchward's specific historical claims while acknowledging the work's cultural-historical influence.",
+      "medium": "nonfiction-book",
+      "topics": [
+        "Mu",
+        "Lemuria",
+        "Pacific Lost Civilization",
+        "Ancient Builders"
+      ],
+      "cited_by": [
+        {
+          "section": "wiki",
+          "title": "Ancient Builders",
+          "path": "/wiki/ancient-builders/"
         }
       ],
       "cite_count": 1
@@ -6554,6 +7345,35 @@
       "cite_count": 0
     },
     {
+      "id": "dietrich-gobekli-antiquity-2012",
+      "title": "The role of cult and feasting in the emergence of Neolithic communities: New evidence from Göbekli Tepe, south-eastern Turkey",
+      "authored_by": [
+        "Oliver Dietrich",
+        "Manfred Heun",
+        "Jens Notroff",
+        "Klaus Schmidt",
+        "Martin Zarnkow"
+      ],
+      "publish_date": "2012",
+      "follow_url": "https://www.cambridge.org/core/journals/antiquity/article/role-of-cult-and-feasting-in-the-emergence-of-neolithic-communities-new-evidence-from-gobekli-tepe-southeastern-turkey/9C3D5C2D6A2A4E2C8B5C5A8C3F0F0E2C",
+      "description": "Oliver Dietrich, Manfred Heun, Jens Notroff, Klaus Schmidt, and Martin Zarnkow, *Antiquity* 86, no. 333 (September 2012): 674–695 — the principal peer-reviewed scholarly article articulating the \"cult and feasting\" interpretation of Göbekli Tepe and its substantial implications for the Neolithic revolution. The authors argue from the substantial faunal evidence (large quantities of wild aurochs and gazelle bone), the substantial vessel evidence (large-scale stone vessel capacities suggestive of fermented beverage production), and the architectural-iconographic context that Göbekli Tepe operated as a regional gathering site whose substantial collective labour requirements may have driven, rather than followed, the Neolithic transition to settled agriculture.",
+      "medium": "academic-paper",
+      "topics": [
+        "Göbekli Tepe",
+        "Pre-Pottery Neolithic",
+        "Cult and Feasting",
+        "Neolithic Revolution"
+      ],
+      "cited_by": [
+        {
+          "section": "wiki",
+          "title": "Ancient Builders",
+          "path": "/wiki/ancient-builders/"
+        }
+      ],
+      "cite_count": 1
+    },
+    {
       "id": "the-sacred-city",
       "title": "The Sacred City",
       "authored_by": [
@@ -6676,6 +7496,32 @@
       ],
       "cited_by": [],
       "cite_count": 0
+    },
+    {
+      "id": "statues-that-walked",
+      "title": "The Statues That Walked: Unraveling the Mystery of Easter Island",
+      "authored_by": [
+        "Terry Hunt",
+        "Carl Lipo"
+      ],
+      "publish_date": "2011",
+      "follow_url": "https://www.simonandschuster.com/books/The-Statues-that-Walked/Terry-Hunt/9781439150313",
+      "description": "Terry Hunt and Carl Lipo's 2011 Free Press work — the principal contemporary scholarly engagement with Easter Island (Rapa Nui) archaeology. The authors propose and experimentally demonstrate the \"walking\" hypothesis for moai transport: that the statues were moved upright across the island using ropes that rocked them side-to-side. Their 2012 documented experimental demonstration substantively confirmed the method's feasibility and is the principal mainstream account of how the moai were transported from the Rano Raraku quarry to the coastal ahu platforms.",
+      "medium": "nonfiction-book",
+      "topics": [
+        "Easter Island",
+        "Moai",
+        "Rapa Nui",
+        "Ancient Builders"
+      ],
+      "cited_by": [
+        {
+          "section": "wiki",
+          "title": "Ancient Builders",
+          "path": "/wiki/ancient-builders/"
+        }
+      ],
+      "cite_count": 1
     },
     {
       "id": "the-techno-optimist-manifesto",
@@ -6972,6 +7818,31 @@
       "cite_count": 0
     },
     {
+      "id": "underworld-hancock",
+      "title": "Underworld: The Mysterious Origins of Civilization",
+      "authored_by": [
+        "Graham Hancock"
+      ],
+      "publish_date": "2002",
+      "follow_url": "https://grahamhancock.com/underworld/",
+      "description": "Graham Hancock's 2002 Crown work — the principal extension of the catastrophist-civilization hypothesis to submerged archaeological sites. Hancock surveys evidence for submerged prehistoric structures off Malta, India (Gulf of Cambay, Mahabalipuram), Japan (Yonaguni), Cuba, and the Bahamas (Bimini Road), arguing that the substantial post-glacial sea-level rise (~120 m between the Last Glacial Maximum and the early Holocene) submerged substantial coastal civilizational evidence that survives as the underwater \"traces\" Hancock catalogues. The work substantively engages mainstream marine archaeology while drawing alternative-archaeology conclusions.",
+      "medium": "nonfiction-book",
+      "topics": [
+        "Lost Civilization",
+        "Submerged Sites",
+        "Sea-Level Rise",
+        "Ancient Builders"
+      ],
+      "cited_by": [
+        {
+          "section": "wiki",
+          "title": "Ancient Builders",
+          "path": "/wiki/ancient-builders/"
+        }
+      ],
+      "cite_count": 1
+    },
+    {
       "id": "mores-utopia",
       "title": "Utopia",
       "authored_by": [
@@ -7034,11 +7905,16 @@
       "cited_by": [
         {
           "section": "wiki",
+          "title": "Ancient Builders",
+          "path": "/wiki/ancient-builders/"
+        },
+        {
+          "section": "wiki",
           "title": "Antediluvian",
           "path": "/wiki/antediluvian/"
         }
       ],
-      "cite_count": 1
+      "cite_count": 2
     },
     {
       "id": "wall-e",
