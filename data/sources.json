@@ -1,19 +1,19 @@
 {
-  "generated_at": "2026-06-09T14:26:02+00:00",
+  "generated_at": "2026-06-11T11:13:47+00:00",
   "generator": "scripts/build_sources.py",
   "schema_version": 1,
-  "total": 308,
-  "total_cites": 476,
+  "total": 345,
+  "total_cites": 542,
   "media_counts": {
-    "religious-text": 75,
-    "academic-paper": 67,
-    "nonfiction-book": 114,
+    "religious-text": 88,
+    "academic-paper": 63,
+    "nonfiction-book": 130,
+    "article": 16,
     "documentary": 17,
     "wiki": 12,
-    "article": 8,
+    "fiction-book": 15,
     "website": 1,
     "unknown": 2,
-    "fiction-book": 11,
     "lecture": 1
   },
   "sources": [
@@ -235,6 +235,36 @@
       "cite_count": 1
     },
     {
+      "id": "skinner-genesis-icc",
+      "title": "A Critical and Exegetical Commentary on Genesis",
+      "authored_by": [
+        "John Skinner"
+      ],
+      "publish_date": "1910",
+      "follow_url": "https://archive.org/details/criticalexegetic01skinuoft",
+      "description": "John Skinner's 1910 International Critical Commentary on Genesis — the foundational English-language historical-critical commentary on Genesis, preserving the classic documentary-hypothesis reading of the Yahwist and Priestly sources. Still cited as the baseline historical-critical treatment of the Eden narrative and the Genesis source-divisions.",
+      "medium": "article",
+      "topics": [
+        "Genesis",
+        "Documentary Hypothesis",
+        "Historical Criticism",
+        "Eden"
+      ],
+      "cited_by": [
+        {
+          "section": "wiki",
+          "title": "Adam and Eve",
+          "path": "/wiki/adam-and-eve/"
+        },
+        {
+          "section": "wiki",
+          "title": "Serpent",
+          "path": "/wiki/serpent/"
+        }
+      ],
+      "cite_count": 2
+    },
+    {
       "id": "a-gentlemans-joyous-esotericism",
       "title": "A Gentleman’s Joyous Esotericism: Jean Sendy Above and Beyond the Ancient Aliens",
       "authored_by": [
@@ -434,6 +464,37 @@
           "section": "wiki",
           "title": "Jesus",
           "path": "/wiki/jesus/"
+        }
+      ],
+      "cite_count": 2
+    },
+    {
+      "id": "pagels-adam-eve-serpent",
+      "title": "Adam, Eve, and the Serpent",
+      "authored_by": [
+        "Elaine Pagels"
+      ],
+      "publish_date": "1988",
+      "follow_url": "https://www.penguinrandomhouse.com/books/167763/adam-eve-and-the-serpent-by-elaine-pagels/",
+      "description": "Elaine Pagels's 1988 Random House study of how the interpretation of Genesis 1–3 shaped Western thought across two millennia, with particular attention to Augustine's original-sin synthesis as a specific contested development rather than a textual given. The standard accessible treatment of the interpretive history the corpus engages.",
+      "medium": "nonfiction-book",
+      "topics": [
+        "Adam and Eve",
+        "Serpent",
+        "Original Sin",
+        "Augustine",
+        "Eden"
+      ],
+      "cited_by": [
+        {
+          "section": "wiki",
+          "title": "Adam and Eve",
+          "path": "/wiki/adam-and-eve/"
+        },
+        {
+          "section": "wiki",
+          "title": "Serpent",
+          "path": "/wiki/serpent/"
         }
       ],
       "cite_count": 2
@@ -799,6 +860,11 @@
       "cited_by": [
         {
           "section": "wiki",
+          "title": "Adam and Eve",
+          "path": "/wiki/adam-and-eve/"
+        },
+        {
+          "section": "wiki",
           "title": "Antediluvian",
           "path": "/wiki/antediluvian/"
         },
@@ -818,7 +884,7 @@
           "path": "/wiki/hebrew-bible/"
         }
       ],
-      "cite_count": 4
+      "cite_count": 5
     },
     {
       "id": "atrahasis",
@@ -989,11 +1055,16 @@
       "cited_by": [
         {
           "section": "wiki",
+          "title": "Adam and Eve",
+          "path": "/wiki/adam-and-eve/"
+        },
+        {
+          "section": "wiki",
           "title": "Antediluvian",
           "path": "/wiki/antediluvian/"
         }
       ],
-      "cite_count": 1
+      "cite_count": 2
     },
     {
       "id": "bhagavad-gita",
@@ -1092,9 +1163,14 @@
           "section": "wiki",
           "title": "Satan",
           "path": "/wiki/satan/"
+        },
+        {
+          "section": "wiki",
+          "title": "Serpent",
+          "path": "/wiki/serpent/"
         }
       ],
-      "cite_count": 2
+      "cite_count": 3
     },
     {
       "id": "book-of-mormon",
@@ -1131,6 +1207,31 @@
           "section": "timeline",
           "title": "Preamble",
           "path": "/timeline/preamble/"
+        }
+      ],
+      "cite_count": 1
+    },
+    {
+      "id": "cain-a-mystery",
+      "title": "Cain: A Mystery",
+      "authored_by": [
+        "Lord Byron"
+      ],
+      "publish_date": "1821",
+      "follow_url": "https://www.gutenberg.org/ebooks/8909",
+      "description": "Lord Byron's 1821 closet drama presenting a sympathetic Lucifer who offers Cain a cosmological vision challenging the orthodox account, including a prior-worlds tradition. A principal Romantic-era development of Lucifer as sympathetic teacher-figure, structurally adjacent to the corpus's reading of Lucifer's pedagogical role.",
+      "medium": "fiction-book",
+      "topics": [
+        "Lucifer",
+        "Cain",
+        "Romanticism",
+        "English Literature"
+      ],
+      "cited_by": [
+        {
+          "section": "wiki",
+          "title": "Lucifer",
+          "path": "/wiki/lucifer/"
         }
       ],
       "cite_count": 1
@@ -1314,6 +1415,31 @@
           "section": "wiki",
           "title": "Ancient Builders",
           "path": "/wiki/ancient-builders/"
+        }
+      ],
+      "cite_count": 1
+    },
+    {
+      "id": "birrell-chinese-mythology",
+      "title": "Chinese Mythology: An Introduction",
+      "authored_by": [
+        "Anne Birrell"
+      ],
+      "publish_date": "1993",
+      "follow_url": "https://www.press.jhu.edu/books/title/2096/chinese-mythology",
+      "description": "Anne Birrell's 1993 Johns Hopkins University Press study and translation of early Chinese mythology, including the Pangu cosmogony and the Nüwa clay-formation narrative the corpus reads comparatively against the Genesis creation material.",
+      "medium": "religious-text",
+      "topics": [
+        "Chinese Mythology",
+        "Pangu",
+        "Nüwa",
+        "Comparative Mythology"
+      ],
+      "cited_by": [
+        {
+          "section": "wiki",
+          "title": "Adam and Eve",
+          "path": "/wiki/adam-and-eve/"
         }
       ],
       "cite_count": 1
@@ -1739,6 +1865,31 @@
       "cite_count": 0
     },
     {
+      "id": "meyers-discovering-eve",
+      "title": "Discovering Eve: Ancient Israelite Women in Context",
+      "authored_by": [
+        "Carol Meyers"
+      ],
+      "publish_date": "1988",
+      "follow_url": "https://global.oup.com/academic/product/discovering-eve-9780195049343",
+      "description": "Carol Meyers's 1988 Oxford University Press historical-anthropological study reading Eve as representing the agricultural-laboring woman of Iron Age Israel, reframing the Genesis 3:16 'curses' as descriptive of difficult social conditions rather than prescriptive gender hierarchy.",
+      "medium": "nonfiction-book",
+      "topics": [
+        "Eve",
+        "Adam and Eve",
+        "Israelite Society",
+        "Feminist Scholarship"
+      ],
+      "cited_by": [
+        {
+          "section": "wiki",
+          "title": "Adam and Eve",
+          "path": "/wiki/adam-and-eve/"
+        }
+      ],
+      "cite_count": 1
+    },
+    {
       "id": "divine-signposts",
       "title": "Divine Signposts",
       "authored_by": [
@@ -1755,6 +1906,31 @@
       ],
       "cited_by": [],
       "cite_count": 0
+    },
+    {
+      "id": "doctrine-and-covenants",
+      "title": "Doctrine and Covenants",
+      "authored_by": [
+        "Joseph Smith"
+      ],
+      "publish_date": "1835",
+      "follow_url": "https://www.churchofjesuschrist.org/study/scriptures/dc-testament",
+      "description": "The Latter-day Saint scriptural compilation of revelations to Joseph Smith and successors, source of the Adam-as-Michael (Adam-ondi-Ahman) doctrine the corpus registers but does not adopt. The corpus reads Joseph Smith within the broader prophetic tradition while distinguishing the specific Adam-as-Michael identification.",
+      "medium": "religious-text",
+      "topics": [
+        "Adam",
+        "Latter-day Saints",
+        "Joseph Smith",
+        "Restorationism"
+      ],
+      "cited_by": [
+        {
+          "section": "wiki",
+          "title": "Adam and Eve",
+          "path": "/wiki/adam-and-eve/"
+        }
+      ],
+      "cite_count": 1
     },
     {
       "id": "dogon-restudied-a-field-evaluation-of-the-work-of-marcel-griaule",
@@ -2195,6 +2371,11 @@
       "cited_by": [
         {
           "section": "wiki",
+          "title": "Adam and Eve",
+          "path": "/wiki/adam-and-eve/"
+        },
+        {
+          "section": "wiki",
           "title": "Ancient Astronaut Hypothesis",
           "path": "/wiki/ancient-astronaut-hypothesis/"
         },
@@ -2264,7 +2445,7 @@
           "path": "/wiki/yahweh/"
         }
       ],
-      "cite_count": 14
+      "cite_count": 15
     },
     {
       "id": "ezekiel",
@@ -2491,20 +2672,26 @@
     },
     {
       "id": "westermann-genesis-1-11",
-      "title": "Genesis 1-11: A Continental Commentary",
+      "title": "Genesis 1–11: A Continental Commentary",
       "authored_by": [
         "Claus Westermann"
       ],
       "publish_date": "1994",
-      "follow_url": "https://fortresspress.com/",
-      "description": "Westermann's principal continental commentary on Genesis 1-11; foundational critical commentary on the primeval history.",
-      "medium": "academic-paper",
+      "follow_url": "https://www.fortresspress.com/store/product/9780800695002/Genesis-1-11",
+      "description": "Claus Westermann's monumental form-critical commentary on the Genesis primeval history (German original 1974; English 1984/1994). The standard scholarly treatment of Genesis 1–11, exhaustive on the Eden narrative, the Serpent, the genealogies, and the Flood. The principal mainstream historical-critical reference the corpus engages on the Adam-Eve, Serpent, and Lucifer material.",
+      "medium": "article",
       "topics": [
-        "Eden",
         "Genesis",
-        "Hebrew Bible"
+        "Hebrew Bible",
+        "Form Criticism",
+        "Eden"
       ],
       "cited_by": [
+        {
+          "section": "wiki",
+          "title": "Adam and Eve",
+          "path": "/wiki/adam-and-eve/"
+        },
         {
           "section": "wiki",
           "title": "Eden",
@@ -2519,9 +2706,69 @@
           "section": "wiki",
           "title": "Hebrew Bible",
           "path": "/wiki/hebrew-bible/"
+        },
+        {
+          "section": "wiki",
+          "title": "Serpent",
+          "path": "/wiki/serpent/"
         }
       ],
-      "cite_count": 3
+      "cite_count": 5
+    },
+    {
+      "id": "allen-genesis-in-egypt",
+      "title": "Genesis in Egypt: The Philosophy of Ancient Egyptian Creation Accounts",
+      "authored_by": [
+        "James P. Allen"
+      ],
+      "publish_date": "1988",
+      "follow_url": "https://egyptology.yale.edu/",
+      "description": "James P. Allen's 1988 Yale Egyptological Studies treatment of Egyptian creation theology (Atum, Khnum-as-potter, the Memphite Theology). The standard scholarly source for the Egyptian first-human and creation-through-speech traditions the corpus reads comparatively against Genesis.",
+      "medium": "nonfiction-book",
+      "topics": [
+        "Egyptian Mythology",
+        "Creation",
+        "Khnum",
+        "Comparative Mythology"
+      ],
+      "cited_by": [
+        {
+          "section": "wiki",
+          "title": "Adam and Eve",
+          "path": "/wiki/adam-and-eve/"
+        }
+      ],
+      "cite_count": 1
+    },
+    {
+      "id": "von-rad-genesis",
+      "title": "Genesis: A Commentary",
+      "authored_by": [
+        "Gerhard von Rad"
+      ],
+      "publish_date": "1961",
+      "follow_url": "https://www.wjkbooks.com/Products/0664227457/genesis.aspx",
+      "description": "Gerhard von Rad's 1961 commentary (German 1949–53) — the principal form-critical and theological reading of Genesis in twentieth-century Protestant scholarship. Von Rad's treatment of the Yahwist's Eden narrative as a profound theological meditation on human disobedience is a standard reference point for the mainstream reading the corpus engages.",
+      "medium": "article",
+      "topics": [
+        "Genesis",
+        "Form Criticism",
+        "Hebrew Bible",
+        "Eden"
+      ],
+      "cited_by": [
+        {
+          "section": "wiki",
+          "title": "Adam and Eve",
+          "path": "/wiki/adam-and-eve/"
+        },
+        {
+          "section": "wiki",
+          "title": "Serpent",
+          "path": "/wiki/serpent/"
+        }
+      ],
+      "cite_count": 2
     },
     {
       "id": "sarna-genesis-jps",
@@ -2530,15 +2777,21 @@
         "Nahum M. Sarna"
       ],
       "publish_date": "1989",
-      "follow_url": "https://jps.org/",
-      "description": "Sarna's principal Jewish Publication Society commentary on Genesis, the principal contemporary Jewish-scholarly commentary.",
-      "medium": "academic-paper",
+      "follow_url": "https://jps.org/books/genesis/",
+      "description": "Nahum Sarna's 1989 Jewish Publication Society commentary on Genesis — a standard scholarly reference combining philological rigour with traditional Jewish exegesis. Sarna's treatment of the Eden narrative, the patriarchal genealogies, and the Hebrew of Genesis 1–11 is a principal mainstream reference point against which the corpus positions its reading of the creation and Eden material.",
+      "medium": "article",
       "topics": [
-        "Eden",
         "Genesis",
-        "Hebrew Bible"
+        "Hebrew Bible",
+        "Jewish Exegesis",
+        "Eden"
       ],
       "cited_by": [
+        {
+          "section": "wiki",
+          "title": "Adam and Eve",
+          "path": "/wiki/adam-and-eve/"
+        },
         {
           "section": "wiki",
           "title": "Eden",
@@ -2555,7 +2808,7 @@
           "path": "/wiki/hebrew-bible/"
         }
       ],
-      "cite_count": 3
+      "cite_count": 4
     },
     {
       "id": "genome-editing-of-human-embryos-broadening-the-ethical-debate",
@@ -2624,6 +2877,57 @@
           "section": "wiki",
           "title": "Crop Circles",
           "path": "/wiki/crop-circles/"
+        }
+      ],
+      "cite_count": 1
+    },
+    {
+      "id": "trible-rhetoric-sexuality",
+      "title": "God and the Rhetoric of Sexuality",
+      "authored_by": [
+        "Phyllis Trible"
+      ],
+      "publish_date": "1978",
+      "follow_url": "https://www.fortresspress.com/",
+      "description": "Phyllis Trible's 1978 Fortress Press study, an influential close reading of Genesis 2–3 arguing for substantial gender equality in the original Hebrew text, with patriarchal interpretation a later imposition. The corpus aligns with Trible on Eve's not being uniquely culpable in the disclosure.",
+      "medium": "nonfiction-book",
+      "topics": [
+        "Adam and Eve",
+        "Eve",
+        "Feminist Theology",
+        "Genesis"
+      ],
+      "cited_by": [
+        {
+          "section": "wiki",
+          "title": "Adam and Eve",
+          "path": "/wiki/adam-and-eve/"
+        }
+      ],
+      "cite_count": 1
+    },
+    {
+      "id": "black-green-mesopotamia",
+      "title": "Gods, Demons and Symbols of Ancient Mesopotamia: An Illustrated Dictionary",
+      "authored_by": [
+        "Jeremy Black",
+        "Anthony Green"
+      ],
+      "publish_date": "1992",
+      "follow_url": "https://www.britishmuseum.org/",
+      "description": "Jeremy Black and Anthony Green's 1992 British Museum Press reference — the standard illustrated dictionary of Mesopotamian iconography, including the chaos-dragon (Tiamat, mušḫuššu) and wisdom-serpent (Ningishzida) figures the corpus uses to distinguish the chaos-serpent and wisdom-serpent clusters.",
+      "medium": "nonfiction-book",
+      "topics": [
+        "Mesopotamia",
+        "Serpent",
+        "Iconography",
+        "Comparative Mythology"
+      ],
+      "cited_by": [
+        {
+          "section": "wiki",
+          "title": "Serpent",
+          "path": "/wiki/serpent/"
         }
       ],
       "cite_count": 1
@@ -2913,14 +3217,21 @@
         "Wendy Doniger"
       ],
       "publish_date": "1975",
-      "follow_url": "https://www.penguinrandomhouse.com/",
-      "description": "Doniger's principal English-language sourcebook for Hindu mythology, including the asura tradition closely parallel to the Hebrew satan content.",
+      "follow_url": "https://www.penguin.co.uk/books/35361/hindu-myths",
+      "description": "Wendy Doniger's 1975 Penguin Classics anthology of Hindu mythological texts in translation, including the Manu and flood traditions the corpus reads comparatively against the Adam and Noah material.",
       "medium": "religious-text",
       "topics": [
-        "Comparative Religion",
-        "Hindu Tradition"
+        "Hindu Mythology",
+        "Manu",
+        "Flood",
+        "Comparative Mythology"
       ],
       "cited_by": [
+        {
+          "section": "wiki",
+          "title": "Adam and Eve",
+          "path": "/wiki/adam-and-eve/"
+        },
         {
           "section": "wiki",
           "title": "Great Flood",
@@ -2932,7 +3243,7 @@
           "path": "/wiki/satan/"
         }
       ],
-      "cite_count": 2
+      "cite_count": 3
     },
     {
       "id": "histories-book-ii",
@@ -3004,6 +3315,32 @@
         }
       ],
       "cite_count": 2
+    },
+    {
+      "id": "inanna-queen-of-heaven",
+      "title": "Inanna: Queen of Heaven and Earth",
+      "authored_by": [
+        "Diane Wolkstein",
+        "Samuel Noah Kramer"
+      ],
+      "publish_date": "1983",
+      "follow_url": "https://www.harpercollins.com/products/inanna-queen-of-heaven-and-earth-diane-wolkstein",
+      "description": "Diane Wolkstein and Samuel Noah Kramer's 1983 translation and commentary on the Sumerian Inanna cycle, including Inanna's descent to the underworld. The principal accessible English source for the descent-and-restoration narrative the corpus reads comparatively against the cosmic-fall material.",
+      "medium": "religious-text",
+      "topics": [
+        "Inanna",
+        "Sumerian Mythology",
+        "Descent Myth",
+        "Comparative Mythology"
+      ],
+      "cited_by": [
+        {
+          "section": "wiki",
+          "title": "Lucifer",
+          "path": "/wiki/lucifer/"
+        }
+      ],
+      "cite_count": 1
     },
     {
       "id": "inca-architecture-ollantaytambo",
@@ -3910,22 +4247,28 @@
         "Jeffrey Burton Russell"
       ],
       "publish_date": "1984",
-      "follow_url": "https://www.cornellpress.cornell.edu/",
-      "description": "Russell's third volume; the medieval demonological elaboration of the conflated Satan/Lucifer/Devil figure.",
-      "medium": "academic-paper",
+      "follow_url": "https://www.cornellpress.cornell.edu/book/9780801494291/lucifer/",
+      "description": "Jeffrey Burton Russell's 1984 Cornell University Press volume — part of his four-volume history of the Devil concept, covering the medieval consolidation of the Lucifer figure. The standard scholarly account of how the patristic-medieval tradition fixed the cosmic-Lucifer synthesis the corpus's reading distinguishes from the underlying figures.",
+      "medium": "nonfiction-book",
       "topics": [
-        "Satan",
         "Lucifer",
-        "Christianity"
+        "Devil",
+        "Medieval Theology",
+        "Satan"
       ],
       "cited_by": [
+        {
+          "section": "wiki",
+          "title": "Lucifer",
+          "path": "/wiki/lucifer/"
+        },
         {
           "section": "wiki",
           "title": "Satan",
           "path": "/wiki/satan/"
         }
       ],
-      "cite_count": 1
+      "cite_count": 2
     },
     {
       "id": "magicians-of-the-gods",
@@ -4000,6 +4343,31 @@
           "section": "wiki",
           "title": "Satan",
           "path": "/wiki/satan/"
+        }
+      ],
+      "cite_count": 1
+    },
+    {
+      "id": "major-trends-jewish-mysticism",
+      "title": "Major Trends in Jewish Mysticism",
+      "authored_by": [
+        "Gershom Scholem"
+      ],
+      "publish_date": "1941",
+      "follow_url": "https://www.schocken.com/",
+      "description": "Gershom Scholem's 1941 foundational study of Kabbalah — the work that established the modern academic study of Jewish mysticism, treating the Zoharic and Lurianic traditions including the Serpent/Sammael material and the Adam Kadmon cosmology the corpus engages.",
+      "medium": "nonfiction-book",
+      "topics": [
+        "Kabbalah",
+        "Jewish Mysticism",
+        "Zohar",
+        "Adam Kadmon"
+      ],
+      "cited_by": [
+        {
+          "section": "wiki",
+          "title": "Serpent",
+          "path": "/wiki/serpent/"
         }
       ],
       "cite_count": 1
@@ -4128,6 +4496,31 @@
           "section": "wiki",
           "title": "Antediluvian",
           "path": "/wiki/antediluvian/"
+        }
+      ],
+      "cite_count": 1
+    },
+    {
+      "id": "metamorphoses",
+      "title": "Metamorphoses",
+      "authored_by": [
+        "Ovid"
+      ],
+      "publish_date": "8",
+      "follow_url": "https://www.gutenberg.org/ebooks/21765",
+      "description": "Ovid's narrative poem (c. 8 CE) compiling Greco-Roman mythology, including the Phaethon falling-figure narrative and the ages-of-man sequence. Primary source for the falling-figure and golden-age comparative material the corpus engages around Lucifer.",
+      "medium": "religious-text",
+      "topics": [
+        "Ovid",
+        "Phaethon",
+        "Greco-Roman Mythology",
+        "Falling Figure"
+      ],
+      "cited_by": [
+        {
+          "section": "wiki",
+          "title": "Lucifer",
+          "path": "/wiki/lucifer/"
         }
       ],
       "cite_count": 1
@@ -4390,6 +4783,31 @@
       "cite_count": 1
     },
     {
+      "id": "lindow-norse-mythology",
+      "title": "Norse Mythology: A Guide to the Gods, Heroes, Rituals, and Beliefs",
+      "authored_by": [
+        "John Lindow"
+      ],
+      "publish_date": "2001",
+      "follow_url": "https://global.oup.com/academic/product/norse-mythology-9780195153828",
+      "description": "John Lindow's 2001 Oxford University Press reference on Norse mythology, including the Ask-and-Embla first-human narrative the corpus reads comparatively against Adam and Eve.",
+      "medium": "nonfiction-book",
+      "topics": [
+        "Norse Mythology",
+        "Ask and Embla",
+        "Creation",
+        "Comparative Mythology"
+      ],
+      "cited_by": [
+        {
+          "section": "wiki",
+          "title": "Adam and Eve",
+          "path": "/wiki/adam-and-eve/"
+        }
+      ],
+      "cite_count": 1
+    },
+    {
       "id": "numbers",
       "title": "Numbers",
       "authored_by": [
@@ -4434,6 +4852,31 @@
           "section": "wiki",
           "title": "Cyberparadism",
           "path": "/wiki/cyberparadism/"
+        }
+      ],
+      "cite_count": 1
+    },
+    {
+      "id": "de-principiis",
+      "title": "On First Principles (De Principiis)",
+      "authored_by": [
+        "Origen"
+      ],
+      "publish_date": "230",
+      "follow_url": "https://www.newadvent.org/fathers/04121.htm",
+      "description": "Origen's early-third-century systematic theology, an early source applying the Isaiah 14 Helel passage to a cosmic fallen figure — a foundational stage in the patristic construction of the cosmic-Lucifer reading the corpus distinguishes from the underlying figures.",
+      "medium": "article",
+      "topics": [
+        "Origen",
+        "Lucifer",
+        "Patristics",
+        "Isaiah 14"
+      ],
+      "cited_by": [
+        {
+          "section": "wiki",
+          "title": "Lucifer",
+          "path": "/wiki/lucifer/"
         }
       ],
       "cite_count": 1
@@ -4557,6 +5000,31 @@
       "cite_count": 1
     },
     {
+      "id": "paradise-lost",
+      "title": "Paradise Lost",
+      "authored_by": [
+        "John Milton"
+      ],
+      "publish_date": "1667",
+      "follow_url": "https://www.gutenberg.org/ebooks/26",
+      "description": "John Milton's 1667 epic in blank verse retelling the fall of Lucifer, the temptation in Eden, and humanity's expulsion. The single most influential post-biblical literary engagement with Lucifer in Western tradition; Milton's charismatic, sympathetic Lucifer shaped all subsequent Romantic engagement. The corpus reads it as the literary antecedent of the figure's moral rehabilitation.",
+      "medium": "fiction-book",
+      "topics": [
+        "Lucifer",
+        "Eden",
+        "English Literature",
+        "Fall of Man"
+      ],
+      "cited_by": [
+        {
+          "section": "wiki",
+          "title": "Lucifer",
+          "path": "/wiki/lucifer/"
+        }
+      ],
+      "cite_count": 1
+    },
+    {
       "id": "parzival",
       "title": "Parzival",
       "authored_by": [
@@ -4620,6 +5088,31 @@
         }
       ],
       "cite_count": 3
+    },
+    {
+      "id": "tedlock-popol-vuh",
+      "title": "Popol Vuh: The Mayan Book of the Dawn of Life",
+      "authored_by": [
+        "Dennis Tedlock (trans.)"
+      ],
+      "publish_date": "1996",
+      "follow_url": "https://www.simonandschuster.com/books/Popol-Vuh/Dennis-Tedlock/9780684818450",
+      "description": "Dennis Tedlock's 1996 translation of the Quiché Maya Popol Vuh, including the successive first-human creation attempts (mud, wood, corn). The standard English source for the Maya creation tradition the corpus reads comparatively against the seven-creator-team picture.",
+      "medium": "religious-text",
+      "topics": [
+        "Maya Mythology",
+        "Popol Vuh",
+        "Creation",
+        "Comparative Mythology"
+      ],
+      "cited_by": [
+        {
+          "section": "wiki",
+          "title": "Adam and Eve",
+          "path": "/wiki/adam-and-eve/"
+        }
+      ],
+      "cite_count": 1
     },
     {
       "id": "prehistoric-avebury",
@@ -4740,6 +5233,56 @@
           "section": "wiki",
           "title": "Wheel of Heaven",
           "path": "/wiki/wheel-of-heaven/"
+        }
+      ],
+      "cite_count": 1
+    },
+    {
+      "id": "prometheus-bound",
+      "title": "Prometheus Bound",
+      "authored_by": [
+        "Aeschylus"
+      ],
+      "publish_date": "-460",
+      "follow_url": "https://www.gutenberg.org/ebooks/27673",
+      "description": "Aeschylus's tragedy (c. 5th century BCE) presenting Prometheus as benefactor of humanity wrongly punished by a tyrannical Zeus for transmitting fire and the civilizational arts. The classical primary source for the Prometheus parallel the corpus reads as preserving fragmentary memory of the Lucifer-faction's knowledge-transmission role.",
+      "medium": "religious-text",
+      "topics": [
+        "Prometheus",
+        "Greek Tragedy",
+        "Culture Hero",
+        "Lucifer"
+      ],
+      "cited_by": [
+        {
+          "section": "wiki",
+          "title": "Lucifer",
+          "path": "/wiki/lucifer/"
+        }
+      ],
+      "cite_count": 1
+    },
+    {
+      "id": "prometheus-unbound",
+      "title": "Prometheus Unbound",
+      "authored_by": [
+        "Percy Bysshe Shelley"
+      ],
+      "publish_date": "1820",
+      "follow_url": "https://www.gutenberg.org/ebooks/4800",
+      "description": "Percy Bysshe Shelley's 1820 lyrical drama developing the Prometheus figure as the moral hero of resistance to tyrannical authority, with the Lucifer-Prometheus parallel made explicit in Shelley's preface. The most thorough Romantic-era development of the light-bringer figure as positive moral exemplar.",
+      "medium": "fiction-book",
+      "topics": [
+        "Prometheus",
+        "Lucifer",
+        "Romanticism",
+        "English Literature"
+      ],
+      "cited_by": [
+        {
+          "section": "wiki",
+          "title": "Lucifer",
+          "path": "/wiki/lucifer/"
         }
       ],
       "cite_count": 1
@@ -5153,21 +5696,33 @@
         "Henry Ansgar Kelly"
       ],
       "publish_date": "2006",
-      "follow_url": "https://www.cambridge.org/",
-      "description": "Kelly's principal historical-philological biography of the Satan figure across Jewish and Christian traditions.",
-      "medium": "academic-paper",
+      "follow_url": "https://www.cambridge.org/9780521604024",
+      "description": "Henry Ansgar Kelly's 2006 Cambridge University Press study — the most comprehensive recent academic account of how the Satan figure developed across the Hebrew Bible, Second Temple Jewish literature, the New Testament, and patristic theology. Kelly argues the developed cosmic-adversary Devil is a post-biblical synthesis. The principal scholarly support for the corpus's Serpent/Satan/Lucifer disambiguation.",
+      "medium": "nonfiction-book",
       "topics": [
         "Satan",
-        "Christianity"
+        "Devil",
+        "Hebrew Bible",
+        "Second Temple Judaism"
       ],
       "cited_by": [
         {
           "section": "wiki",
+          "title": "Lucifer",
+          "path": "/wiki/lucifer/"
+        },
+        {
+          "section": "wiki",
           "title": "Satan",
           "path": "/wiki/satan/"
+        },
+        {
+          "section": "wiki",
+          "title": "Serpent",
+          "path": "/wiki/serpent/"
         }
       ],
-      "cite_count": 1
+      "cite_count": 3
     },
     {
       "id": "satan-a-biography",
@@ -5416,6 +5971,31 @@
       "cite_count": 0
     },
     {
+      "id": "plaskow-standing-again-sinai",
+      "title": "Standing Again at Sinai: Judaism from a Feminist Perspective",
+      "authored_by": [
+        "Judith Plaskow"
+      ],
+      "publish_date": "1990",
+      "follow_url": "https://www.harpercollins.com/",
+      "description": "Judith Plaskow's 1990 Harper work, a foundational Jewish feminist theology engaging the Adam-Eve and Lilith traditions. Includes the reclamation of Lilith as a symbol of feminine autonomy that the corpus registers as a substantive cultural development.",
+      "medium": "nonfiction-book",
+      "topics": [
+        "Lilith",
+        "Feminist Theology",
+        "Judaism",
+        "Adam and Eve"
+      ],
+      "cited_by": [
+        {
+          "section": "wiki",
+          "title": "Adam and Eve",
+          "path": "/wiki/adam-and-eve/"
+        }
+      ],
+      "cite_count": 1
+    },
+    {
       "id": "star-trek-tng",
       "title": "Star Trek: The Next Generation",
       "authored_by": [
@@ -5484,6 +6064,31 @@
           "section": "wiki",
           "title": "Eden",
           "path": "/wiki/eden/"
+        }
+      ],
+      "cite_count": 1
+    },
+    {
+      "id": "summa-theologiae",
+      "title": "Summa Theologiae",
+      "authored_by": [
+        "Thomas Aquinas"
+      ],
+      "publish_date": "1274",
+      "follow_url": "https://www.newadvent.org/summa/",
+      "description": "Thomas Aquinas's thirteenth-century systematic theology; questions 63–64 of the First Part treat the angels and their fall, elaborating the developed scholastic Lucifer doctrine. The corpus cites it as the medieval consolidation of the cosmic-Lucifer synthesis.",
+      "medium": "article",
+      "topics": [
+        "Aquinas",
+        "Lucifer",
+        "Scholasticism",
+        "Angelology"
+      ],
+      "cited_by": [
+        {
+          "section": "wiki",
+          "title": "Lucifer",
+          "path": "/wiki/lucifer/"
         }
       ],
       "cite_count": 1
@@ -5689,6 +6294,56 @@
         }
       ],
       "cite_count": 2
+    },
+    {
+      "id": "alphabet-of-ben-sira",
+      "title": "The Alphabet of Ben Sira",
+      "authored_by": [
+        "Anonymous (medieval)"
+      ],
+      "publish_date": "900",
+      "follow_url": "https://www.jewishvirtuallibrary.org/the-alphabet-of-ben-sira",
+      "description": "A medieval Hebrew satirical compilation (c. 8th–10th century CE), the foundational text for the Lilith-as-Adam's-first-wife narrative. The corpus registers the Lilith tradition as a medieval folkloric elaboration not present in the Raëlian source material.",
+      "medium": "religious-text",
+      "topics": [
+        "Lilith",
+        "Jewish Folklore",
+        "Adam and Eve",
+        "Medieval Judaism"
+      ],
+      "cited_by": [
+        {
+          "section": "wiki",
+          "title": "Adam and Eve",
+          "path": "/wiki/adam-and-eve/"
+        }
+      ],
+      "cite_count": 1
+    },
+    {
+      "id": "charles-apocrypha-pseudepigrapha",
+      "title": "The Apocrypha and Pseudepigrapha of the Old Testament",
+      "authored_by": [
+        "R. H. Charles (ed.)"
+      ],
+      "publish_date": "1913",
+      "follow_url": "https://archive.org/details/apocryphapseudep02charuoft",
+      "description": "R. H. Charles's 1913 two-volume Oxford edition — the foundational English collection of Second Temple Jewish literature including 1 Enoch, Jubilees, and the Life of Adam and Eve, which develop the Watchers tradition and the early Serpent-as-devil identifications the corpus engages.",
+      "medium": "religious-text",
+      "topics": [
+        "Second Temple Judaism",
+        "Watchers",
+        "Pseudepigrapha",
+        "Serpent"
+      ],
+      "cited_by": [
+        {
+          "section": "wiki",
+          "title": "Serpent",
+          "path": "/wiki/serpent/"
+        }
+      ],
+      "cite_count": 1
     },
     {
       "id": "the-apportionment-of-human-diversity",
@@ -6004,6 +6659,11 @@
       "cited_by": [
         {
           "section": "wiki",
+          "title": "Adam and Eve",
+          "path": "/wiki/adam-and-eve/"
+        },
+        {
+          "section": "wiki",
           "title": "Ancient Astronaut Hypothesis",
           "path": "/wiki/ancient-astronaut-hypothesis/"
         },
@@ -6069,6 +6729,11 @@
         },
         {
           "section": "wiki",
+          "title": "Lucifer",
+          "path": "/wiki/lucifer/"
+        },
+        {
+          "section": "wiki",
           "title": "Moses",
           "path": "/wiki/moses/"
         },
@@ -6099,6 +6764,11 @@
         },
         {
           "section": "wiki",
+          "title": "Serpent",
+          "path": "/wiki/serpent/"
+        },
+        {
+          "section": "wiki",
           "title": "Wheel of Heaven",
           "path": "/wiki/wheel-of-heaven/"
         },
@@ -6113,7 +6783,7 @@
           "path": "/wiki/yahweh/"
         }
       ],
-      "cite_count": 22
+      "cite_count": 25
     },
     {
       "id": "the-chaldean-account-of-genesis",
@@ -6179,6 +6849,36 @@
         }
       ],
       "cite_count": 1
+    },
+    {
+      "id": "city-of-god",
+      "title": "The City of God",
+      "authored_by": [
+        "Augustine of Hippo"
+      ],
+      "publish_date": "426",
+      "follow_url": "https://www.newadvent.org/fathers/1201.htm",
+      "description": "Augustine of Hippo's early-fifth-century work, a principal source of the patristic synthesis of the Lucifer-fall and original-sin doctrines. The corpus reads Augustine's reading of Genesis 3 as the specific theological development — not a textual given — that fixed the Western original-sin doctrine the framework rejects.",
+      "medium": "article",
+      "topics": [
+        "Augustine",
+        "Original Sin",
+        "Lucifer",
+        "Patristics"
+      ],
+      "cited_by": [
+        {
+          "section": "wiki",
+          "title": "Adam and Eve",
+          "path": "/wiki/adam-and-eve/"
+        },
+        {
+          "section": "wiki",
+          "title": "Lucifer",
+          "path": "/wiki/lucifer/"
+        }
+      ],
+      "cite_count": 2
     },
     {
       "id": "the-collection-of-divine-messages-of-cai-dai",
@@ -6299,6 +6999,31 @@
           "section": "wiki",
           "title": "Ancient Builders",
           "path": "/wiki/ancient-builders/"
+        }
+      ],
+      "cite_count": 1
+    },
+    {
+      "id": "cosmic-serpent-narby",
+      "title": "The Cosmic Serpent: DNA and the Origins of Knowledge",
+      "authored_by": [
+        "Jeremy Narby"
+      ],
+      "publish_date": "1998",
+      "follow_url": "https://www.penguinrandomhouse.com/books/330425/the-cosmic-serpent-by-jeremy-narby/",
+      "description": "Jeremy Narby's 1998 work proposing that cross-cultural intertwined-serpent imagery (the caduceus, Ningishzida's staff) encodes ancestral knowledge of the DNA double helix. The corpus registers the DNA-iconography hypothesis as suggestive but not load-bearing for its reading of the Eden Serpent.",
+      "medium": "nonfiction-book",
+      "topics": [
+        "Serpent",
+        "DNA",
+        "Shamanism",
+        "Iconography"
+      ],
+      "cited_by": [
+        {
+          "section": "wiki",
+          "title": "Serpent",
+          "path": "/wiki/serpent/"
         }
       ],
       "cite_count": 1
@@ -6578,6 +7303,41 @@
       "cite_count": 4
     },
     {
+      "id": "the-eden-conspiracy",
+      "title": "The Eden Conspiracy",
+      "authored_by": [
+        "Paul Anthony Wallis"
+      ],
+      "publish_date": "2024",
+      "follow_url": "https://www.paulanthonywallis.com/",
+      "description": "Paul Anthony Wallis's 2024 work (6th Books) — the most direct recent engagement with the Eden narrative from the Elohim-pluralist reinterpretive tradition. Wallis reads the Serpent as a dissenting Elohim faction, the cherubim and flaming sword as technological, and the Eden episode as a political crisis over human education. Broadly compatible with the corpus's reading; the principal accessible recent treatment.",
+      "medium": "nonfiction-book",
+      "topics": [
+        "Eden",
+        "Serpent",
+        "Elohim",
+        "Ancient Astronauts"
+      ],
+      "cited_by": [
+        {
+          "section": "wiki",
+          "title": "Adam and Eve",
+          "path": "/wiki/adam-and-eve/"
+        },
+        {
+          "section": "wiki",
+          "title": "Lucifer",
+          "path": "/wiki/lucifer/"
+        },
+        {
+          "section": "wiki",
+          "title": "Serpent",
+          "path": "/wiki/serpent/"
+        }
+      ],
+      "cite_count": 3
+    },
+    {
       "id": "the-electronic-text-corpus-of-sumerian-literature",
       "title": "The Electronic Text Corpus of Sumerian Literature",
       "authored_by": [
@@ -6614,6 +7374,31 @@
       ],
       "cited_by": [],
       "cite_count": 0
+    },
+    {
+      "id": "george-epic-of-gilgamesh",
+      "title": "The Epic of Gilgamesh: The Babylonian Epic Poem",
+      "authored_by": [
+        "Andrew George (trans.)"
+      ],
+      "publish_date": "1999",
+      "follow_url": "https://www.penguin.co.uk/books/35192/the-epic-of-gilgamesh",
+      "description": "Andrew George's 1999 Penguin Classics translation — the standard scholarly English edition of the Standard Babylonian Gilgamesh and related Akkadian/Sumerian texts, including the Enkidu narrative the corpus reads comparatively against the Eve/civilization material.",
+      "medium": "religious-text",
+      "topics": [
+        "Gilgamesh",
+        "Enkidu",
+        "Akkadian Literature",
+        "Comparative Mythology"
+      ],
+      "cited_by": [
+        {
+          "section": "wiki",
+          "title": "Adam and Eve",
+          "path": "/wiki/adam-and-eve/"
+        }
+      ],
+      "cite_count": 1
     },
     {
       "id": "george-gilgamesh",
@@ -6764,6 +7549,56 @@
       "cite_count": 1
     },
     {
+      "id": "pagels-gnostic-gospels",
+      "title": "The Gnostic Gospels",
+      "authored_by": [
+        "Elaine Pagels"
+      ],
+      "publish_date": "1979",
+      "follow_url": "https://www.penguinrandomhouse.com/books/167762/the-gnostic-gospels-by-elaine-pagels/",
+      "description": "Elaine Pagels's 1979 Random House study of the Nag Hammadi Gnostic texts and their suppressed alternative Christianities, including the Ophite and Sethian readings that reversed the valuation of the Eden Serpent. The principal accessible scholarly entry to the Gnostic material the corpus engages on the Serpent.",
+      "medium": "nonfiction-book",
+      "topics": [
+        "Gnosticism",
+        "Serpent",
+        "Nag Hammadi",
+        "Early Christianity"
+      ],
+      "cited_by": [
+        {
+          "section": "wiki",
+          "title": "Serpent",
+          "path": "/wiki/serpent/"
+        }
+      ],
+      "cite_count": 1
+    },
+    {
+      "id": "gnostic-scriptures",
+      "title": "The Gnostic Scriptures",
+      "authored_by": [
+        "Bentley Layton"
+      ],
+      "publish_date": "1987",
+      "follow_url": "https://www.penguinrandomhouse.com/books/289264/the-gnostic-scriptures-by-bentley-layton/",
+      "description": "Bentley Layton's 1987 annotated translation of the principal Gnostic texts, a standard scholarly edition of the Sethian, Valentinian, and related materials including the Serpent-reversal traditions. A principal reference for the Ophite reading the corpus partially aligns with on the Serpent.",
+      "medium": "religious-text",
+      "topics": [
+        "Gnosticism",
+        "Serpent",
+        "Sethians",
+        "Ophites"
+      ],
+      "cited_by": [
+        {
+          "section": "wiki",
+          "title": "Serpent",
+          "path": "/wiki/serpent/"
+        }
+      ],
+      "cite_count": 1
+    },
+    {
       "id": "the-gods-have-landed",
       "title": "The Gods Have Landed: New Religions from Other Worlds",
       "authored_by": [
@@ -6780,6 +7615,31 @@
       ],
       "cited_by": [],
       "cite_count": 0
+    },
+    {
+      "id": "charlesworth-good-evil-serpent",
+      "title": "The Good and Evil Serpent: How a Universal Symbol Became Christianized",
+      "authored_by": [
+        "James H. Charlesworth"
+      ],
+      "publish_date": "2010",
+      "follow_url": "https://yalebooks.yale.edu/book/9780300140828/the-good-and-evil-serpent/",
+      "description": "James H. Charlesworth's 2010 Yale University Press study — the most substantial recent academic treatment of serpent symbolism across the ancient Mediterranean and Near East, documenting the widespread positive (wisdom, healing) valuation of serpents before the Christian negative reading. Supports the corpus's wisdom-serpent / chaos-serpent distinction.",
+      "medium": "nonfiction-book",
+      "topics": [
+        "Serpent",
+        "Symbolism",
+        "Comparative Religion",
+        "Iconography"
+      ],
+      "cited_by": [
+        {
+          "section": "wiki",
+          "title": "Serpent",
+          "path": "/wiki/serpent/"
+        }
+      ],
+      "cite_count": 1
     },
     {
       "id": "the-gospels-in-the-stars",
@@ -6982,6 +7842,31 @@
       "cite_count": 1
     },
     {
+      "id": "marriage-of-heaven-and-hell",
+      "title": "The Marriage of Heaven and Hell",
+      "authored_by": [
+        "William Blake"
+      ],
+      "publish_date": "1790",
+      "follow_url": "https://www.gutenberg.org/ebooks/45315",
+      "description": "William Blake's 1790 prophetic work, source of the famous reading that Milton was 'of the Devil's party without knowing it.' Blake's inversion of conventional moral valuations — treating energy and rebellion as creative goods — is a principal Romantic antecedent of the corpus's non-orthodox reading of Lucifer.",
+      "medium": "fiction-book",
+      "topics": [
+        "Lucifer",
+        "Romanticism",
+        "English Literature",
+        "Devil"
+      ],
+      "cited_by": [
+        {
+          "section": "wiki",
+          "title": "Lucifer",
+          "path": "/wiki/lucifer/"
+        }
+      ],
+      "cite_count": 1
+    },
+    {
       "id": "the-moon-outpost-of-the-gods",
       "title": "The Moon: Outpost of the Gods",
       "authored_by": [
@@ -7028,6 +7913,31 @@
       "cite_count": 1
     },
     {
+      "id": "nag-hammadi-library",
+      "title": "The Nag Hammadi Library in English",
+      "authored_by": [
+        "James M. Robinson (ed.)"
+      ],
+      "publish_date": "1988",
+      "follow_url": "https://www.harpercollins.com/products/the-nag-hammadi-library-in-english-james-m-robinson",
+      "description": "James M. Robinson's edited translation (3rd rev. ed. 1988) of the 1945 Nag Hammadi Coptic codices — the principal primary-source corpus of Gnostic Christianity, including the Hypostasis of the Archons, On the Origin of the World, and the Apocryphon of John that preserve Ophite-adjacent readings of the Eden Serpent and the demiurge.",
+      "medium": "religious-text",
+      "topics": [
+        "Gnosticism",
+        "Serpent",
+        "Nag Hammadi",
+        "Demiurge"
+      ],
+      "cited_by": [
+        {
+          "section": "wiki",
+          "title": "Serpent",
+          "path": "/wiki/serpent/"
+        }
+      ],
+      "cite_count": 1
+    },
+    {
       "id": "the-naked-bible",
       "title": "The Naked Bible",
       "authored_by": [
@@ -7046,6 +7956,11 @@
         "Theology"
       ],
       "cited_by": [
+        {
+          "section": "wiki",
+          "title": "Adam and Eve",
+          "path": "/wiki/adam-and-eve/"
+        },
         {
           "section": "wiki",
           "title": "Ancient Astronaut Hypothesis",
@@ -7088,8 +8003,18 @@
         },
         {
           "section": "wiki",
+          "title": "Lucifer",
+          "path": "/wiki/lucifer/"
+        },
+        {
+          "section": "wiki",
           "title": "Satan",
           "path": "/wiki/satan/"
+        },
+        {
+          "section": "wiki",
+          "title": "Serpent",
+          "path": "/wiki/serpent/"
         },
         {
           "section": "wiki",
@@ -7102,7 +8027,7 @@
           "path": "/wiki/yahweh/"
         }
       ],
-      "cite_count": 11
+      "cite_count": 14
     },
     {
       "id": "natufian-culture-in-the-levant",
@@ -7129,6 +8054,36 @@
         }
       ],
       "cite_count": 1
+    },
+    {
+      "id": "forsyth-the-old-enemy",
+      "title": "The Old Enemy: Satan and the Combat Myth",
+      "authored_by": [
+        "Neil Forsyth"
+      ],
+      "publish_date": "1987",
+      "follow_url": "https://press.princeton.edu/books/paperback/9780691014746/the-old-enemy",
+      "description": "Neil Forsyth's 1987 Princeton University Press study tracing the cosmic-adversary tradition from ancient Near Eastern combat-myth sources through the developed Christian Satan figure. The standard scholarly treatment of how the combat-myth structure shaped the biblical and post-biblical adversary, providing comparative-mythological context for the corpus's reading.",
+      "medium": "nonfiction-book",
+      "topics": [
+        "Satan",
+        "Combat Myth",
+        "Comparative Mythology",
+        "Devil"
+      ],
+      "cited_by": [
+        {
+          "section": "wiki",
+          "title": "Lucifer",
+          "path": "/wiki/lucifer/"
+        },
+        {
+          "section": "wiki",
+          "title": "Serpent",
+          "path": "/wiki/serpent/"
+        }
+      ],
+      "cite_count": 2
     },
     {
       "id": "pagels-origin-satan",
@@ -7170,6 +8125,36 @@
       ],
       "cited_by": [],
       "cite_count": 0
+    },
+    {
+      "id": "pagels-origin-of-satan",
+      "title": "The Origin of Satan",
+      "authored_by": [
+        "Elaine Pagels"
+      ],
+      "publish_date": "1995",
+      "follow_url": "https://www.penguinrandomhouse.com/books/167764/the-origin-of-satan-by-elaine-pagels/",
+      "description": "Elaine Pagels's 1995 Random House study of how the Satan figure developed in early Christianity and the social-political contexts that shaped it. Pagels argues the cosmic Satan was constructed to demonize religious opponents. Standard scholarly treatment supporting the corpus's reading of the Devil as a post-biblical synthesis.",
+      "medium": "nonfiction-book",
+      "topics": [
+        "Satan",
+        "Early Christianity",
+        "Devil",
+        "Hebrew Bible"
+      ],
+      "cited_by": [
+        {
+          "section": "wiki",
+          "title": "Lucifer",
+          "path": "/wiki/lucifer/"
+        },
+        {
+          "section": "wiki",
+          "title": "Serpent",
+          "path": "/wiki/serpent/"
+        }
+      ],
+      "cite_count": 2
     },
     {
       "id": "origins-of-the-worlds-mythologies",
@@ -7390,6 +8375,31 @@
       ],
       "cited_by": [],
       "cite_count": 0
+    },
+    {
+      "id": "the-satanic-bible",
+      "title": "The Satanic Bible",
+      "authored_by": [
+        "Anton LaVey"
+      ],
+      "publish_date": "1969",
+      "follow_url": "https://www.churchofsatan.com/",
+      "description": "Anton LaVey's 1969 foundational text of LaVeyan Satanism — a secular-humanist philosophy using Lucifer/Satan iconography symbolically rather than theologically. The corpus registers it as a significant cultural appropriation of the Lucifer name without endorsing it as an accurate reading of the figure.",
+      "medium": "article",
+      "topics": [
+        "Lucifer",
+        "Satanism",
+        "Occult",
+        "Contemporary Religion"
+      ],
+      "cited_by": [
+        {
+          "section": "wiki",
+          "title": "Lucifer",
+          "path": "/wiki/lucifer/"
+        }
+      ],
+      "cite_count": 1
     },
     {
       "id": "the-scars-of-eden",
@@ -7614,6 +8624,37 @@
       "cite_count": 0
     },
     {
+      "id": "zohar-pritzker",
+      "title": "The Zohar (Pritzker Edition)",
+      "authored_by": [
+        "Daniel C. Matt (trans.)"
+      ],
+      "publish_date": "2003",
+      "follow_url": "https://www.sup.org/zohar/",
+      "description": "The Pritzker Edition (Daniel Matt et al., Stanford University Press, 2003–2017) — the standard scholarly English translation of the Zohar, the principal text of Kabbalah (composed in preserved form c. late 13th century). Develops the Sammael-on-the-Serpent narrative and the Lilith and Adam Kadmon traditions the corpus engages comparatively.",
+      "medium": "religious-text",
+      "topics": [
+        "Kabbalah",
+        "Zohar",
+        "Serpent",
+        "Lilith",
+        "Adam Kadmon"
+      ],
+      "cited_by": [
+        {
+          "section": "wiki",
+          "title": "Adam and Eve",
+          "path": "/wiki/adam-and-eve/"
+        },
+        {
+          "section": "wiki",
+          "title": "Serpent",
+          "path": "/wiki/serpent/"
+        }
+      ],
+      "cite_count": 2
+    },
+    {
       "id": "the-zohar-pritzker",
       "title": "The Zohar: Pritzker Edition",
       "authored_by": [
@@ -7679,6 +8720,31 @@
       "cite_count": 5
     },
     {
+      "id": "theogony-works-and-days",
+      "title": "Theogony and Works and Days",
+      "authored_by": [
+        "Hesiod"
+      ],
+      "publish_date": "-700",
+      "follow_url": "https://www.gutenberg.org/ebooks/348",
+      "description": "Hesiod's two foundational Greek poems (c. 700 BCE) preserving the Prometheus narrative (the fire-theft and the punishment) and the myth of the Golden Race and the ages of decline. Primary source for the Greek culture-hero and golden-age traditions the corpus reads comparatively against the Lucifer and antediluvian material.",
+      "medium": "religious-text",
+      "topics": [
+        "Hesiod",
+        "Prometheus",
+        "Golden Age",
+        "Greek Mythology"
+      ],
+      "cited_by": [
+        {
+          "section": "wiki",
+          "title": "Lucifer",
+          "path": "/wiki/lucifer/"
+        }
+      ],
+      "cite_count": 1
+    },
+    {
       "id": "theory-of-the-earth",
       "title": "Theory of the Earth",
       "authored_by": [
@@ -7724,6 +8790,11 @@
       "cited_by": [
         {
           "section": "wiki",
+          "title": "Adam and Eve",
+          "path": "/wiki/adam-and-eve/"
+        },
+        {
+          "section": "wiki",
           "title": "Ancient Astronaut Hypothesis",
           "path": "/wiki/ancient-astronaut-hypothesis/"
         },
@@ -7759,8 +8830,18 @@
         },
         {
           "section": "wiki",
+          "title": "Lucifer",
+          "path": "/wiki/lucifer/"
+        },
+        {
+          "section": "wiki",
           "title": "Raëlism",
           "path": "/wiki/raelism/"
+        },
+        {
+          "section": "wiki",
+          "title": "Serpent",
+          "path": "/wiki/serpent/"
         },
         {
           "section": "wiki",
@@ -7773,7 +8854,7 @@
           "path": "/wiki/yahweh/"
         }
       ],
-      "cite_count": 10
+      "cite_count": 13
     },
     {
       "id": "tomorrowland-film",
