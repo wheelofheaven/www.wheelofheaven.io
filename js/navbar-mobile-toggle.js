@@ -32,18 +32,20 @@ document.addEventListener("DOMContentLoaded", () => {
     });
   }
 
-  // On translated pages a `.translation-notice` banner sits above the
-  // navbar and the navbar's `top` is animated from below-the-banner to
-  // 0.5rem by partials/translation-notice-script.html over the banner's
-  // own scroll range. Without an offset, the mobile scroll-hide fires
-  // (at scrollY > 100) while the navbar is still mid-animation, so the
-  // navbar appears to "follow the banner up and out" and then on
-  // scroll-up reappears at the settled 0.5rem position — a different
-  // place from where it disappeared. Add the banner's height to the
-  // hide threshold so the animation completes first.
-  const translationNotice = document.querySelector(".translation-notice");
+  // When the .notification-stack is present and has visible cards, its
+  // height is added to the scroll-hide threshold so the navbar's top
+  // animation (run by notification-stack.js as the stack scrolls out
+  // of view) completes before mobile scroll-hide kicks in. Otherwise
+  // the navbar would appear to "follow the stack up and out" and then
+  // reappear at the settled 0.5rem position on scroll-up — a visibly
+  // different place from where it disappeared.
+  //
+  // The stack collapses to 0 height (display: none) when no cards are
+  // visible, so on English pages with no PWA prompts active this
+  // contributes nothing — threshold stays at SCROLL_THRESHOLD.
+  const notificationStack = document.querySelector(".notification-stack");
   function scrollHideThreshold() {
-    const bannerH = translationNotice ? translationNotice.offsetHeight : 0;
+    const bannerH = notificationStack ? notificationStack.offsetHeight : 0;
     return CONFIG.SCROLL_THRESHOLD + bannerH;
   }
 
