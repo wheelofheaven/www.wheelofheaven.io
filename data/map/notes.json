@@ -1,0 +1,311 @@
+[
+  {
+    "id": "public-outrage",
+    "x": 560,
+    "y": 315,
+    "size": "md",
+    "anchor": "middle",
+    "area": "wheel"
+  },
+  {
+    "id": "mystify",
+    "x": 560,
+    "y": 342,
+    "size": "sm",
+    "anchor": "middle",
+    "area": "wheel"
+  },
+  {
+    "id": "platonic-age",
+    "x": 1255,
+    "y": 556,
+    "size": "sm",
+    "anchor": "middle",
+    "area": "wheel"
+  },
+  {
+    "id": "day-length",
+    "x": 1252,
+    "y": 586,
+    "size": "sm",
+    "anchor": "middle",
+    "area": "wheel"
+  },
+  {
+    "id": "sun-radiation",
+    "x": 1390,
+    "y": 952,
+    "size": "md",
+    "anchor": "middle",
+    "area": "wheel",
+    "style": "em"
+  },
+  {
+    "id": "renouveller",
+    "x": 1040,
+    "y": 1076,
+    "size": "sm",
+    "anchor": "middle",
+    "area": "wheel",
+    "style": "em"
+  },
+  {
+    "id": "jurassic-park",
+    "x": 1268,
+    "y": 1247,
+    "size": "md",
+    "anchor": "start",
+    "area": "wheel",
+    "style": "display"
+  },
+  {
+    "id": "embryonic",
+    "x": 1330,
+    "y": 1326,
+    "size": "xs",
+    "anchor": "middle",
+    "area": "wheel"
+  },
+  {
+    "id": "breaking-cycle",
+    "x": 893,
+    "y": 1200,
+    "size": "xs",
+    "anchor": "middle",
+    "area": "wheel"
+  },
+  {
+    "id": "q2030",
+    "x": 964,
+    "y": 1196,
+    "size": "xs",
+    "anchor": "start",
+    "area": "wheel",
+    "style": "em"
+  },
+  {
+    "id": "giant-experiment",
+    "x": 460,
+    "y": 1500,
+    "size": "sm",
+    "anchor": "middle",
+    "area": "wheel"
+  },
+  {
+    "id": "inheriting-torch",
+    "x": 285,
+    "y": 1635,
+    "size": "sm",
+    "anchor": "middle",
+    "area": "wheel"
+  },
+  {
+    "id": "space-station",
+    "x": 230,
+    "y": 1672,
+    "size": "sm",
+    "anchor": "middle",
+    "area": "wheel"
+  },
+  {
+    "id": "of-space",
+    "x": 772,
+    "y": 753,
+    "size": "sm",
+    "anchor": "end",
+    "area": "wheel",
+    "style": "em"
+  },
+  {
+    "id": "of-time",
+    "x": 872,
+    "y": 753,
+    "size": "sm",
+    "anchor": "start",
+    "area": "wheel",
+    "style": "em"
+  },
+  {
+    "id": "as-above",
+    "x": 747,
+    "y": 778,
+    "size": "sm",
+    "anchor": "middle",
+    "area": "wheel",
+    "style": "em"
+  },
+  {
+    "id": "ewige",
+    "x": 974,
+    "y": 781,
+    "size": "sm",
+    "anchor": "middle",
+    "area": "wheel",
+    "style": "em"
+  },
+  {
+    "id": "cyclical",
+    "x": 985,
+    "y": 815,
+    "size": "sm",
+    "anchor": "middle",
+    "area": "wheel",
+    "style": "em"
+  },
+  {
+    "id": "contained",
+    "x": 738,
+    "y": 824,
+    "size": "sm",
+    "anchor": "middle",
+    "area": "wheel",
+    "style": "em"
+  },
+  {
+    "id": "cosmic-knowledge",
+    "x": 834,
+    "y": 949,
+    "size": "md",
+    "anchor": "middle",
+    "area": "wheel",
+    "style": "em"
+  },
+  {
+    "id": "venus-morning-star",
+    "x": 997,
+    "y": 1366,
+    "size": "sm",
+    "anchor": "middle",
+    "area": "wheel"
+  },
+  {
+    "id": "succession",
+    "x": 799,
+    "y": 1794,
+    "size": "md",
+    "anchor": "middle",
+    "area": "earth",
+    "style": "em"
+  },
+  {
+    "id": "forty",
+    "x": 450,
+    "y": 1840,
+    "size": "sm",
+    "anchor": "middle",
+    "area": "earth",
+    "style": "em"
+  },
+  {
+    "id": "ambassadors",
+    "x": 536,
+    "y": 1874,
+    "size": "xs",
+    "anchor": "middle",
+    "area": "earth",
+    "style": "em"
+  },
+  {
+    "id": "religare",
+    "x": 690,
+    "y": 1882,
+    "size": "xs",
+    "anchor": "middle",
+    "area": "earth",
+    "style": "em"
+  },
+  {
+    "id": "scientia",
+    "x": 922,
+    "y": 1880,
+    "size": "xs",
+    "anchor": "middle",
+    "area": "earth",
+    "style": "em"
+  },
+  {
+    "id": "mysticism",
+    "x": 727,
+    "y": 1969,
+    "size": "md",
+    "anchor": "middle",
+    "area": "earth",
+    "style": "em"
+  },
+  {
+    "id": "esotericism",
+    "x": 874,
+    "y": 1967,
+    "size": "md",
+    "anchor": "middle",
+    "area": "earth",
+    "style": "em"
+  },
+  {
+    "id": "collective-unconscious",
+    "x": 762,
+    "y": 1998,
+    "size": "md",
+    "anchor": "middle",
+    "area": "earth",
+    "style": "em"
+  },
+  {
+    "id": "secret-societies",
+    "x": 887,
+    "y": 2055,
+    "size": "md",
+    "anchor": "middle",
+    "area": "earth",
+    "style": "em"
+  },
+  {
+    "id": "starship",
+    "x": 1066,
+    "y": 1597,
+    "size": "md",
+    "anchor": "middle",
+    "area": "earth"
+  },
+  {
+    "id": "atomic-war",
+    "x": 912,
+    "y": 1650,
+    "size": "md",
+    "anchor": "middle",
+    "area": "earth"
+  },
+  {
+    "id": "meyer",
+    "x": 1120,
+    "y": 1711,
+    "size": "xs",
+    "anchor": "middle",
+    "area": "earth"
+  },
+  {
+    "id": "james-tour",
+    "x": 1108,
+    "y": 1732,
+    "size": "xs",
+    "anchor": "middle",
+    "area": "earth"
+  },
+  {
+    "id": "berlinski",
+    "x": 1200,
+    "y": 1732,
+    "size": "xs",
+    "anchor": "middle",
+    "area": "earth"
+  },
+  {
+    "id": "is-alive",
+    "x": 1166,
+    "y": 1641,
+    "size": "md",
+    "anchor": "middle",
+    "area": "earth",
+    "style": "em"
+  }
+]

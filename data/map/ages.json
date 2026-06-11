@@ -8,12 +8,22 @@
     "href": "timeline/age-of-capricorn/",
     "color": "mauve",
     "summary": "The arrival, survey, and beginning of the Earth project.",
-    "path": "M 1228.9 422.5 A 545.0 285.0 -23.44 0 1 1046.8 576.6",
-    "x": 1148.2,
-    "y": 503.1,
-    "label_x": 1303.1,
-    "label_y": 581.7,
-    "anchor": "start"
+    "path": "M 1387.1 785.4 A 671.35 414.05 140.390 0 1 1214.8 1071.2",
+    "x": 1319.0,
+    "y": 930.7,
+    "label_path": "M 1224.3 1060.5 A 671.35 414.05 140.390 0 0 1381.4 802.8",
+    "stamp": {
+      "text": "21'810 BCE",
+      "x": 1603.0587,
+      "y": 370.29449,
+      "rotate": 28.683823
+    },
+    "day_box": {
+      "x": 1240.3085,
+      "y": 877.15375,
+      "w": 69.209274,
+      "h": 32.042057
+    }
   },
   {
     "id": "age-of-sagittarius",
@@ -24,12 +34,22 @@
     "href": "timeline/age-of-sagittarius/",
     "color": "blue",
     "summary": "Atmosphere, waters, sunlight, and the conditions for life.",
-    "path": "M 1311.9 248.7 A 545.0 285.0 -23.44 0 1 1238.4 410.7",
-    "x": 1289.7,
-    "y": 328.0,
-    "label_x": 1447.3,
-    "label_y": 321.3,
-    "anchor": "start"
+    "path": "M 1368.2 459.7 A 671.35 414.05 140.390 0 1 1398.1 748.7",
+    "x": 1412.8,
+    "y": 590.2,
+    "label_path": "M 1400.0 741.5 A 671.35 414.05 140.390 0 0 1372.1 465.9",
+    "stamp": {
+      "text": "19'650 BCE",
+      "x": 1315.7155,
+      "y": 961.43646,
+      "rotate": -8.8689123
+    },
+    "day_box": {
+      "x": 1278.5,
+      "y": 729.5,
+      "w": 69.209274,
+      "h": 32.042057
+    }
   },
   {
     "id": "age-of-scorpio",
@@ -40,12 +60,22 @@
     "href": "timeline/age-of-scorpio/",
     "color": "cyan",
     "summary": "The first living systems and synthetic-biology threshold.",
-    "path": "M 1257.7 111.4 A 545.0 285.0 -23.44 0 1 1312.6 237.9",
-    "x": 1300.0,
-    "y": 168.2,
-    "label_x": 1433.2,
-    "label_y": 75.1,
-    "anchor": "start"
+    "path": "M 1256.7 364.6 A 671.35 414.05 140.390 0 1 1351.0 436.5",
+    "x": 1308.6,
+    "y": 395.8,
+    "label_path": "M 1268.4 370.3 A 671.35 414.05 140.390 0 1 1353.3 439.3",
+    "stamp": {
+      "text": "17'490 BCE",
+      "x": 928.54303,
+      "y": 1149.8955,
+      "rotate": -33.593088
+    },
+    "day_box": {
+      "x": 1253.8651,
+      "y": 418.87894,
+      "w": 60.486874,
+      "h": 28.184744
+    }
   },
   {
     "id": "age-of-libra",
@@ -56,12 +86,22 @@
     "href": "timeline/age-of-libra/",
     "color": "teal",
     "summary": "The cosmic clock, birds, fishes, and great reptiles.",
-    "path": "M 1080.9 47.4 A 545.0 285.0 -23.44 0 1 1249.4 104.5",
-    "x": 1176.3,
-    "y": 66.5,
-    "label_x": 1260.6,
-    "label_y": -45,
-    "anchor": "start"
+    "path": "M 1031.8 334.2 A 671.35 414.05 140.390 0 1 1227.9 352.8",
+    "x": 1135.8,
+    "y": 333.0,
+    "label_path": "M 990.0 339.6 A 671.35 414.05 140.390 0 1 1252.2 361.6",
+    "stamp": {
+      "text": "15'330 BCE",
+      "x": 554.40082,
+      "y": 1176.8164,
+      "rotate": -50.230985
+    },
+    "day_box": {
+      "x": 1112.5409,
+      "y": 356.30536,
+      "w": 55.977177,
+      "h": 21.762266
+    }
   },
   {
     "id": "age-of-virgo",
@@ -72,12 +112,22 @@
     "href": "timeline/age-of-virgo/",
     "color": "mint",
     "summary": "Land animals and ecological balance.",
-    "path": "M 828.8 73.9 A 545.0 285.0 -23.44 0 1 1065.8 46.3",
-    "x": 951.8,
-    "y": 50.2,
-    "label_x": 975.8,
-    "label_y": -48,
-    "anchor": "start"
+    "path": "M 807.8 397.2 A 671.35 414.05 140.390 0 1 993.3 339.6",
+    "x": 901.4,
+    "y": 361.8,
+    "label_path": "M 818.0 392.7 A 671.35 414.05 140.390 0 1 983.5 341.3",
+    "stamp": {
+      "text": "13'170 BCE",
+      "x": 101.22055,
+      "y": 1088.835,
+      "rotate": -69.34987
+    },
+    "day_box": {
+      "x": 899.39954,
+      "y": 379.64725,
+      "w": 55.977177,
+      "h": 21.762266
+    }
   },
   {
     "id": "age-of-leo",
@@ -88,12 +138,22 @@
     "href": "timeline/age-of-leo/",
     "color": "green",
     "summary": "The engineering of humanity.",
-    "path": "M 569.0 183.7 A 545.0 285.0 -23.44 0 1 811.0 78.8",
-    "x": 686.6,
-    "y": 123.5,
-    "label_x": 633.6,
-    "label_y": -9.700000000000003,
-    "anchor": "end"
+    "path": "M 539.4 572.0 A 671.35 414.05 140.390 0 1 767.4 416.3",
+    "x": 649.4,
+    "y": 485.9,
+    "label_path": "M 525.6 584.5 A 671.35 414.05 140.390 0 1 812.2 394.9",
+    "stamp": {
+      "text": "11'010 BCE",
+      "x": 399.8356,
+      "y": -744.69806,
+      "rotate": 83.637628
+    },
+    "day_box": {
+      "x": 650.06006,
+      "y": 500.52328,
+      "w": 60.486874,
+      "h": 28.184744
+    }
   },
   {
     "id": "age-of-cancer",
@@ -104,12 +164,22 @@
     "href": "timeline/age-of-cancer/",
     "color": "yellow",
     "summary": "Eden, the serpent, human awakening, and exile.",
-    "path": "M 371.1 347.5 A 545.0 285.0 -23.44 0 1 553.2 193.4",
-    "x": 451.8,
-    "y": 266.9,
-    "label_x": 326.9,
-    "label_y": 228.3,
-    "anchor": "end"
+    "path": "M 332.7 827.0 A 671.35 414.05 140.390 0 1 505.3 603.9",
+    "x": 408.8,
+    "y": 711.8,
+    "label_path": "M 328.3 835.7 A 671.35 414.05 140.390 0 1 519.3 590.4",
+    "stamp": {
+      "text": "8'850 BCE",
+      "x": 691.92291,
+      "y": 49.302738,
+      "rotate": 43.861552
+    },
+    "day_box": {
+      "x": 418.05325,
+      "y": 720.84564,
+      "w": 69.209274,
+      "h": 32.042057
+    }
   },
   {
     "id": "age-of-gemini",
@@ -120,12 +190,16 @@
     "href": "timeline/age-of-gemini/",
     "color": "pink",
     "summary": "The Flood, preservation, Babel, and conflict in heaven.",
-    "path": "M 288.1 521.3 A 545.0 285.0 -23.44 0 1 361.6 359.3",
-    "x": 310.3,
-    "y": 442.0,
-    "label_x": 162.7,
-    "label_y": 458.7,
-    "anchor": "end"
+    "path": "M 267.3 1199.6 A 671.35 414.05 140.390 0 1 313.5 864.2",
+    "x": 257.5,
+    "y": 1042.0,
+    "label_path": "M 274.1 1217.2 A 671.35 414.05 140.390 0 1 318.0 855.7",
+    "stamp": {
+      "text": "6'690 BCE",
+      "x": 295.23657,
+      "y": 832.77356,
+      "rotate": 4.8332416
+    }
   },
   {
     "id": "age-of-taurus",
@@ -136,12 +210,16 @@
     "href": "timeline/age-of-taurus/",
     "color": "soft-pink",
     "summary": "Post-flood reconstruction and the Abrahamic threshold.",
-    "path": "M 342.3 658.6 A 545.0 285.0 -23.44 0 1 287.4 532.1",
-    "x": 300.0,
-    "y": 601.8,
-    "label_x": 156.8,
-    "label_y": 664.9,
-    "anchor": "end"
+    "path": "M 402.4 1360.5 A 671.35 414.05 140.390 0 1 277.5 1227.7",
+    "x": 327.5,
+    "y": 1304.9,
+    "label_path": "M 271.6 1210.3 A 671.35 414.05 140.390 0 0 425.0 1370.0",
+    "stamp": {
+      "text": "4'530 BCE",
+      "x": -576.06628,
+      "y": 1147.8502,
+      "rotate": -36.619846
+    }
   },
   {
     "id": "age-of-aries",
@@ -152,12 +230,16 @@
     "href": "timeline/age-of-aries/",
     "color": "lavender",
     "summary": "Moses, Exodus, law, and the Hebrew prophetic line.",
-    "path": "M 519.1 722.6 A 545.0 285.0 -23.44 0 1 350.6 665.5",
-    "x": 423.7,
-    "y": 703.5,
-    "label_x": 319.4,
-    "label_y": 821,
-    "anchor": "end"
+    "path": "M 653.4 1393.1 A 671.35 414.05 140.390 0 1 430.5 1373.1",
+    "x": 534.4,
+    "y": 1396.7,
+    "label_path": "M 409.1 1362.9 A 671.35 414.05 140.390 0 0 677.4 1388.9",
+    "stamp": {
+      "text": "2'370 BCE",
+      "x": -939.91669,
+      "y": 1132.7023,
+      "rotate": -54.705344
+    }
   },
   {
     "id": "age-of-pisces",
@@ -168,12 +250,16 @@
     "href": "timeline/age-of-pisces/",
     "color": "mauve",
     "summary": "Jesus, scripture, religion, and the spread of the message.",
-    "path": "M 771.2 696.1 A 545.0 285.0 -23.44 0 1 534.2 723.7",
-    "x": 648.2,
-    "y": 719.8,
-    "label_x": 624.2,
-    "label_y": 872.7,
-    "anchor": "end"
+    "path": "M 903.6 1311.7 A 671.35 414.05 140.390 0 1 692.4 1386.6",
+    "x": 797.4,
+    "y": 1357.4,
+    "label_path": "M 669.0 1390.3 A 671.35 414.05 140.390 0 0 908.3 1308.9",
+    "stamp": {
+      "text": "210 BCE",
+      "x": -1280.5923,
+      "y": 959.77472,
+      "rotate": -76.76414
+    }
   },
   {
     "id": "age-of-aquarius",
@@ -184,11 +270,15 @@
     "href": "timeline/age-of-aquarius/",
     "color": "blue",
     "summary": "Revelation, technological maturity, and the return question.",
-    "path": "M 1031.0 586.3 A 545.0 285.0 -23.44 0 1 789.0 691.2",
-    "x": 913.4,
-    "y": 646.5,
-    "label_x": 1016.4,
-    "label_y": 799.7,
-    "anchor": "start"
+    "path": "M 1183.3 1105.0 A 671.35 414.05 140.390 0 1 943.6 1290.2",
+    "x": 1069.6,
+    "y": 1206.4,
+    "label_path": "M 939.1 1293.2 A 671.35 414.05 140.390 0 0 1173.4 1115.5",
+    "stamp": {
+      "text": "1945 CE",
+      "x": 1529.2922,
+      "y": -562.47229,
+      "rotate": 76.079297
+    }
   }
 ]

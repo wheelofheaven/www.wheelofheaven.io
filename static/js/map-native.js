@@ -183,6 +183,33 @@
     if (zoomInBtn) zoomInBtn.addEventListener("click", () => setZoom(zoomIndex + 1));
     updateZoomButtons();
 
+    const posterBtn = document.getElementById("map-poster-toggle");
+    if (posterBtn) {
+        const POSTER_KEY = "mapPosterMode";
+
+        function setPosterMode(on) {
+            root.classList.toggle("is-poster", on);
+            posterBtn.setAttribute("aria-pressed", on ? "true" : "false");
+            try {
+                localStorage.setItem(POSTER_KEY, on ? "1" : "0");
+            } catch (e) {
+                /* storage unavailable */
+            }
+        }
+
+        let savedPoster = false;
+        try {
+            savedPoster = localStorage.getItem(POSTER_KEY) === "1";
+        } catch (e) {
+            /* storage unavailable */
+        }
+        if (savedPoster) setPosterMode(true);
+
+        posterBtn.addEventListener("click", () => {
+            setPosterMode(!root.classList.contains("is-poster"));
+        });
+    }
+
     function scheduleStageCenter() {
         requestAnimationFrame(() => {
             requestAnimationFrame(centerStageHorizontally);
