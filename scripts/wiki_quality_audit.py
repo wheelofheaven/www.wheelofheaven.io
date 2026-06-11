@@ -45,6 +45,11 @@ FRONTMATTER_RE = re.compile(r"^\+\+\+\s*\n(.*?)\n\+\+\+\s*\n?(.*)$", re.DOTALL)
 CITE_SHORTCODE_RE = re.compile(r"\{%\s*cite\s*\(", re.IGNORECASE)
 WIKI_SHORTCODE_RE = re.compile(r'\{%\s*wiki\s*\(\s*slug\s*=\s*"([^"]+)"', re.IGNORECASE)
 WIKI_MARKDOWN_LINK_RE = re.compile(r'\]\(/wiki/([a-z0-9\-]+)/?\)', re.IGNORECASE)
+# Single-segment relative links (](../slug/)) are wiki-internal ONLY when the
+# linking file itself lives in wiki/ — URL-relative resolution from /wiki/x/
+# makes ../y/ → /wiki/y/. The corpus uses this form for ~97% of wiki links
+# (3,306 relative vs 97 absolute as of 2026-06).
+WIKI_RELATIVE_LINK_RE = re.compile(r'\]\(\.\./([a-z0-9\-]+)/?\)', re.IGNORECASE)
 
 
 def parse_frontmatter(text):
@@ -111,6 +116,9 @@ def build_in_degree():
             seen.add(sc.group(1))
         for ml in WIKI_MARKDOWN_LINK_RE.finditer(body):
             seen.add(ml.group(1))
+        if md.parent.name == "wiki":
+            for rl in WIKI_RELATIVE_LINK_RE.finditer(body):
+                seen.add(rl.group(1))
         # Don't count an entry's link to itself
         self_slug = md.stem if md.parent.name == "wiki" else None
         for slug in seen:
