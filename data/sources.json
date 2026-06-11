@@ -1,14 +1,14 @@
 {
-  "generated_at": "2026-06-11T11:13:47+00:00",
+  "generated_at": "2026-06-11T19:35:09+00:00",
   "generator": "scripts/build_sources.py",
   "schema_version": 1,
-  "total": 345,
-  "total_cites": 542,
+  "total": 360,
+  "total_cites": 576,
   "media_counts": {
-    "religious-text": 88,
-    "academic-paper": 63,
-    "nonfiction-book": 130,
-    "article": 16,
+    "religious-text": 91,
+    "academic-paper": 66,
+    "nonfiction-book": 138,
+    "article": 17,
     "documentary": 17,
     "wiki": 12,
     "fiction-book": 15,
@@ -263,6 +263,32 @@
         }
       ],
       "cite_count": 2
+    },
+    {
+      "id": "schele-freidel-forest-of-kings",
+      "title": "A Forest of Kings: The Untold Story of the Ancient Maya",
+      "authored_by": [
+        "Linda Schele",
+        "David Freidel"
+      ],
+      "publish_date": "1990",
+      "follow_url": "https://www.harpercollins.com/",
+      "description": "Linda Schele and David Freidel's 1990 William Morrow study of Maya civilization and cosmology, including the *Wakah-Chan* world-tree iconography. A standard reference for the Mesoamerican world-tree tradition the corpus reads comparatively.",
+      "medium": "nonfiction-book",
+      "topics": [
+        "Maya",
+        "World Tree",
+        "Mesoamerica",
+        "Cosmic Tree"
+      ],
+      "cited_by": [
+        {
+          "section": "wiki",
+          "title": "Tree of Life",
+          "path": "/wiki/tree-of-life/"
+        }
+      ],
+      "cite_count": 1
     },
     {
       "id": "a-gentlemans-joyous-esotericism",
@@ -882,9 +908,14 @@
           "section": "wiki",
           "title": "Hebrew Bible",
           "path": "/wiki/hebrew-bible/"
+        },
+        {
+          "section": "wiki",
+          "title": "Tree of Life",
+          "path": "/wiki/tree-of-life/"
         }
       ],
-      "cite_count": 5
+      "cite_count": 6
     },
     {
       "id": "atrahasis",
@@ -1067,36 +1098,6 @@
       "cite_count": 2
     },
     {
-      "id": "bhagavad-gita",
-      "title": "Bhagavad Gita",
-      "authored_by": [
-        "Vyasa (traditional attribution)"
-      ],
-      "publish_date": "c. 2nd c. BCE",
-      "follow_url": "",
-      "description": "Cited in §II on the Krishna figure as one of the alliance prophets.",
-      "medium": "religious-text",
-      "topics": [],
-      "cited_by": [
-        {
-          "section": "timeline",
-          "title": "The Wheel Keeps Turning",
-          "path": "/timeline/the-wheel-keeps-turning/"
-        },
-        {
-          "section": "wiki",
-          "title": "Golden Age",
-          "path": "/wiki/golden-age/"
-        },
-        {
-          "section": "wiki",
-          "title": "World Age",
-          "path": "/wiki/world-age/"
-        }
-      ],
-      "cite_count": 3
-    },
-    {
       "id": "benyus-biomimicry",
       "title": "Biomimicry: Innovation Inspired by Nature",
       "authored_by": [
@@ -1168,9 +1169,14 @@
           "section": "wiki",
           "title": "Serpent",
           "path": "/wiki/serpent/"
+        },
+        {
+          "section": "wiki",
+          "title": "Tree of Life",
+          "path": "/wiki/tree-of-life/"
         }
       ],
-      "cite_count": 3
+      "cite_count": 4
     },
     {
       "id": "book-of-mormon",
@@ -1440,9 +1446,14 @@
           "section": "wiki",
           "title": "Adam and Eve",
           "path": "/wiki/adam-and-eve/"
+        },
+        {
+          "section": "wiki",
+          "title": "Tree of Life",
+          "path": "/wiki/tree-of-life/"
         }
       ],
-      "cite_count": 1
+      "cite_count": 2
     },
     {
       "id": "chronicle-of-akakor",
@@ -1978,6 +1989,31 @@
       "cite_count": 2
     },
     {
+      "id": "stordalen-echoes-of-eden",
+      "title": "Echoes of Eden: Genesis 2–3 and Symbolism of the Eden Garden in Biblical Hebrew Literature",
+      "authored_by": [
+        "Terje Stordalen"
+      ],
+      "publish_date": "2000",
+      "follow_url": "https://www.peeters-leuven.be/",
+      "description": "Terje Stordalen's 2000 Peeters monograph — the comprehensive scholarly treatment of the Eden garden's symbolism and its reception across the Hebrew Bible, including the Tree of Life motif and its relation to the broader ancient Near Eastern sacred-tree tradition. A principal mainstream reference for the literary-historical reading the corpus engages and reframes.",
+      "medium": "nonfiction-book",
+      "topics": [
+        "Eden",
+        "Tree of Life",
+        "Hebrew Bible",
+        "Sacred Tree"
+      ],
+      "cited_by": [
+        {
+          "section": "wiki",
+          "title": "Tree of Life",
+          "path": "/wiki/tree-of-life/"
+        }
+      ],
+      "cite_count": 1
+    },
+    {
       "id": "echoes-of-eden",
       "title": "Echoes of Eden: What secrets of human potential were buried with our ancestors' memories of ET contact?",
       "authored_by": [
@@ -2106,6 +2142,32 @@
           "section": "wiki",
           "title": "Cyberparadism",
           "path": "/wiki/cyberparadism/"
+        }
+      ],
+      "cite_count": 1
+    },
+    {
+      "id": "ending-aging-de-grey",
+      "title": "Ending Aging: The Rejuvenation Breakthroughs That Could Reverse Human Aging in Our Lifetime",
+      "authored_by": [
+        "Aubrey de Grey",
+        "Michael Rae"
+      ],
+      "publish_date": "2007",
+      "follow_url": "https://www.sens.org/",
+      "description": "Aubrey de Grey and Michael Rae's 2007 St. Martin's Press work articulating the SENS (Strategies for Engineered Negligible Senescence) framework — the principal early systematic engineering proposal for comprehensive rejuvenation. The corpus engages it as part of the longevity-research trajectory demonstrating that radical lifespan extension is not biologically impossible.",
+      "medium": "nonfiction-book",
+      "topics": [
+        "Longevity",
+        "Rejuvenation",
+        "SENS",
+        "Aging"
+      ],
+      "cited_by": [
+        {
+          "section": "wiki",
+          "title": "Tree of Life",
+          "path": "/wiki/tree-of-life/"
         }
       ],
       "cite_count": 1
@@ -2431,6 +2493,11 @@
         },
         {
           "section": "wiki",
+          "title": "Tree of Life",
+          "path": "/wiki/tree-of-life/"
+        },
+        {
+          "section": "wiki",
           "title": "Wheel of Heaven",
           "path": "/wiki/wheel-of-heaven/"
         },
@@ -2445,7 +2512,7 @@
           "path": "/wiki/yahweh/"
         }
       ],
-      "cite_count": 15
+      "cite_count": 16
     },
     {
       "id": "ezekiel",
@@ -2711,9 +2778,14 @@
           "section": "wiki",
           "title": "Serpent",
           "path": "/wiki/serpent/"
+        },
+        {
+          "section": "wiki",
+          "title": "Tree of Life",
+          "path": "/wiki/tree-of-life/"
         }
       ],
-      "cite_count": 5
+      "cite_count": 6
     },
     {
       "id": "allen-genesis-in-egypt",
@@ -2806,9 +2878,14 @@
           "section": "wiki",
           "title": "Hebrew Bible",
           "path": "/wiki/hebrew-bible/"
+        },
+        {
+          "section": "wiki",
+          "title": "Tree of Life",
+          "path": "/wiki/tree-of-life/"
         }
       ],
-      "cite_count": 4
+      "cite_count": 5
     },
     {
       "id": "genome-editing-of-human-embryos-broadening-the-ethical-debate",
@@ -2928,9 +3005,14 @@
           "section": "wiki",
           "title": "Serpent",
           "path": "/wiki/serpent/"
+        },
+        {
+          "section": "wiki",
+          "title": "Tree of Life",
+          "path": "/wiki/tree-of-life/"
         }
       ],
-      "cite_count": 1
+      "cite_count": 2
     },
     {
       "id": "gospel-of-john",
@@ -3241,9 +3323,14 @@
           "section": "wiki",
           "title": "Satan",
           "path": "/wiki/satan/"
+        },
+        {
+          "section": "wiki",
+          "title": "Tree of Life",
+          "path": "/wiki/tree-of-life/"
         }
       ],
-      "cite_count": 3
+      "cite_count": 4
     },
     {
       "id": "histories-book-ii",
@@ -3363,6 +3450,32 @@
           "section": "wiki",
           "title": "Ancient Builders",
           "path": "/wiki/ancient-builders/"
+        }
+      ],
+      "cite_count": 1
+    },
+    {
+      "id": "takahashi-yamanaka-2006",
+      "title": "Induction of Pluripotent Stem Cells from Mouse Embryonic and Adult Fibroblast Cultures by Defined Factors",
+      "authored_by": [
+        "Kazutoshi Takahashi",
+        "Shinya Yamanaka"
+      ],
+      "publish_date": "2006",
+      "follow_url": "https://www.cell.com/cell/fulltext/S0092-8674(06)00976-7",
+      "description": "Kazutoshi Takahashi and Shinya Yamanaka's landmark 2006 *Cell* paper (126:4) demonstrating that four transcription factors can reprogram adult cells to a pluripotent state — the discovery (Nobel Prize 2012) that founded the induced-pluripotent-stem-cell field and underlies the contemporary cellular-reprogramming longevity trajectory the corpus engages.",
+      "medium": "academic-paper",
+      "topics": [
+        "Cellular Reprogramming",
+        "Stem Cells",
+        "Yamanaka Factors",
+        "Longevity"
+      ],
+      "cited_by": [
+        {
+          "section": "wiki",
+          "title": "Tree of Life",
+          "path": "/wiki/tree-of-life/"
         }
       ],
       "cite_count": 1
@@ -3719,6 +3832,31 @@
           "section": "wiki",
           "title": "Cyberparadism",
           "path": "/wiki/cyberparadism/"
+        }
+      ],
+      "cite_count": 1
+    },
+    {
+      "id": "idel-kabbalah-new-perspectives",
+      "title": "Kabbalah: New Perspectives",
+      "authored_by": [
+        "Moshe Idel"
+      ],
+      "publish_date": "1988",
+      "follow_url": "https://yalebooks.yale.edu/",
+      "description": "Moshe Idel's 1988 Yale University Press study — the principal modern scholarly reassessment of Kabbalah after Scholem, emphasising the experiential and theurgic dimensions of the tradition. A standard reference for the Kabbalistic Tree of Life the corpus engages comparatively.",
+      "medium": "nonfiction-book",
+      "topics": [
+        "Kabbalah",
+        "Sefirot",
+        "Jewish Mysticism",
+        "Tree of Life"
+      ],
+      "cited_by": [
+        {
+          "section": "wiki",
+          "title": "Tree of Life",
+          "path": "/wiki/tree-of-life/"
         }
       ],
       "cite_count": 1
@@ -4241,6 +4379,32 @@
       "cite_count": 0
     },
     {
+      "id": "sinclair-lifespan",
+      "title": "Lifespan: Why We Age — and Why We Don't Have To",
+      "authored_by": [
+        "David A. Sinclair",
+        "Matthew D. LaPlante"
+      ],
+      "publish_date": "2019",
+      "follow_url": "https://lifespanbook.com/",
+      "description": "David A. Sinclair and Matthew D. LaPlante's 2019 Atria Books work — the principal accessible synthesis of the contemporary cellular-reprogramming and longevity-research trajectory, by the Harvard Medical School geneticist whose lab demonstrated partial reprogramming reversing markers of aging in mouse models. The corpus reads the contemporary research as developing in directions consistent with the framework's Tree of Life biotechnology claims.",
+      "medium": "nonfiction-book",
+      "topics": [
+        "Longevity",
+        "Cellular Reprogramming",
+        "Aging",
+        "Tree of Life"
+      ],
+      "cited_by": [
+        {
+          "section": "wiki",
+          "title": "Tree of Life",
+          "path": "/wiki/tree-of-life/"
+        }
+      ],
+      "cite_count": 1
+    },
+    {
       "id": "russell-lucifer-middle-ages",
       "title": "Lucifer: The Devil in the Middle Ages",
       "authored_by": [
@@ -4368,9 +4532,14 @@
           "section": "wiki",
           "title": "Serpent",
           "path": "/wiki/serpent/"
+        },
+        {
+          "section": "wiki",
+          "title": "Tree of Life",
+          "path": "/wiki/tree-of-life/"
         }
       ],
-      "cite_count": 1
+      "cite_count": 2
     },
     {
       "id": "mathematics-and-the-unexpected",
@@ -4803,9 +4972,14 @@
           "section": "wiki",
           "title": "Adam and Eve",
           "path": "/wiki/adam-and-eve/"
+        },
+        {
+          "section": "wiki",
+          "title": "Tree of Life",
+          "path": "/wiki/tree-of-life/"
         }
       ],
-      "cite_count": 1
+      "cite_count": 2
     },
     {
       "id": "numbers",
@@ -5110,9 +5284,14 @@
           "section": "wiki",
           "title": "Adam and Eve",
           "path": "/wiki/adam-and-eve/"
+        },
+        {
+          "section": "wiki",
+          "title": "Tree of Life",
+          "path": "/wiki/tree-of-life/"
         }
       ],
-      "cite_count": 1
+      "cite_count": 2
     },
     {
       "id": "prehistoric-avebury",
@@ -5286,31 +5465,6 @@
         }
       ],
       "cite_count": 1
-    },
-    {
-      "id": "prose-edda",
-      "title": "Prose Edda",
-      "authored_by": [
-        "Snorri Sturluson"
-      ],
-      "publish_date": "c. 1220",
-      "follow_url": "",
-      "description": "13th-century Icelandic compendium; source for the Ymir cosmogony and the Aesir council.",
-      "medium": "religious-text",
-      "topics": [],
-      "cited_by": [
-        {
-          "section": "timeline",
-          "title": "Preamble",
-          "path": "/timeline/preamble/"
-        },
-        {
-          "section": "wiki",
-          "title": "Golden Age",
-          "path": "/wiki/golden-age/"
-        }
-      ],
-      "cite_count": 2
     },
     {
       "id": "providence-in-early-modern-england",
@@ -5823,6 +5977,31 @@
       "cite_count": 3
     },
     {
+      "id": "sefer-yetzirah",
+      "title": "Sefer Yetzirah: The Book of Creation",
+      "authored_by": [
+        "Aryeh Kaplan (trans.)"
+      ],
+      "publish_date": "1997",
+      "follow_url": "https://www.redwheelweiser.com/",
+      "description": "The foundational text of Jewish esoteric cosmology (composed between the 3rd and 6th centuries CE), establishing the framework of the ten sefirot and the twenty-two Hebrew letters that the later Kabbalistic Tree of Life develops. Aryeh Kaplan's 1997 translation (Weiser) is the standard English edition. The corpus engages it as foundational material for the Kabbalistic sefirot tradition.",
+      "medium": "religious-text",
+      "topics": [
+        "Kabbalah",
+        "Sefirot",
+        "Sefer Yetzirah",
+        "Jewish Mysticism"
+      ],
+      "cited_by": [
+        {
+          "section": "wiki",
+          "title": "Tree of Life",
+          "path": "/wiki/tree-of-life/"
+        }
+      ],
+      "cite_count": 1
+    },
+    {
       "id": "serpent-in-the-sky",
       "title": "Serpent in the Sky: The High Wisdom of Ancient Egypt",
       "authored_by": [
@@ -5843,6 +6022,31 @@
           "section": "wiki",
           "title": "Ancient Builders",
           "path": "/wiki/ancient-builders/"
+        }
+      ],
+      "cite_count": 1
+    },
+    {
+      "id": "shan-hai-jing",
+      "title": "Shan Hai Jing (Classic of Mountains and Seas)",
+      "authored_by": [
+        "Anne Birrell (trans.)"
+      ],
+      "publish_date": "1999",
+      "follow_url": "https://www.penguin.co.uk/",
+      "description": "The ancient Chinese compendium of mythical geography and cosmology (Anne Birrell's Penguin translation), describing the Fusang sun-tree and the broader Chinese sacred-tree material the corpus reads comparatively against the Tree of Life.",
+      "medium": "religious-text",
+      "topics": [
+        "Chinese Mythology",
+        "Fusang",
+        "Cosmic Tree",
+        "Shan Hai Jing"
+      ],
+      "cited_by": [
+        {
+          "section": "wiki",
+          "title": "Tree of Life",
+          "path": "/wiki/tree-of-life/"
         }
       ],
       "cite_count": 1
@@ -6408,6 +6612,56 @@
       "cite_count": 0
     },
     {
+      "id": "giovino-assyrian-sacred-tree",
+      "title": "The Assyrian Sacred Tree: A History of Interpretations",
+      "authored_by": [
+        "Mariana Giovino"
+      ],
+      "publish_date": "2007",
+      "follow_url": "https://www.vandenhoeck-ruprecht-verlage.com/",
+      "description": "Mariana Giovino's 2007 study (Orbis Biblicus et Orientalis 230) — the comprehensive treatment of the Neo-Assyrian sacred-tree iconography and its scholarly reception. The standard reference for the Mesopotamian sacred-tree imagery the corpus reads as a cross-cultural parallel to the Hebrew Tree of Life.",
+      "medium": "nonfiction-book",
+      "topics": [
+        "Sacred Tree",
+        "Assyria",
+        "Iconography",
+        "Tree of Life"
+      ],
+      "cited_by": [
+        {
+          "section": "wiki",
+          "title": "Tree of Life",
+          "path": "/wiki/tree-of-life/"
+        }
+      ],
+      "cite_count": 1
+    },
+    {
+      "id": "parpola-assyrian-tree-of-life",
+      "title": "The Assyrian Tree of Life: Tracing the Origins of Jewish Monotheism and Greek Philosophy",
+      "authored_by": [
+        "Simo Parpola"
+      ],
+      "publish_date": "1993",
+      "follow_url": "https://www.journals.uchicago.edu/toc/jnes/current",
+      "description": "Simo Parpola's 1993 article in the *Journal of Near Eastern Studies* (52:3) proposing that the Neo-Assyrian sacred-tree iconography preserves a structured cosmological-philosophical system with parallels to the later Kabbalistic Sephirot. A controversial but influential reading the corpus registers in the cross-cultural sacred-tree discussion.",
+      "medium": "academic-paper",
+      "topics": [
+        "Sacred Tree",
+        "Assyria",
+        "Sephirot",
+        "Kabbalah"
+      ],
+      "cited_by": [
+        {
+          "section": "wiki",
+          "title": "Tree of Life",
+          "path": "/wiki/tree-of-life/"
+        }
+      ],
+      "cite_count": 1
+    },
+    {
       "id": "vidal-naquet-atlantis-story",
       "title": "The Atlantis Story: A Short History of Plato's Myth",
       "authored_by": [
@@ -6436,6 +6690,46 @@
         }
       ],
       "cite_count": 2
+    },
+    {
+      "id": "bhagavad-gita",
+      "title": "The Bhagavad Gita",
+      "authored_by": [
+        "Eknath Easwaran (trans.)"
+      ],
+      "publish_date": "2007",
+      "follow_url": "https://www.bmcm.org/",
+      "description": "The principal Hindu philosophical-religious poem (Eknath Easwaran's translation), including the cosmic Ashvattha (sacred fig) tree of chapter 15 with roots in heaven and branches in earth. A primary source for the Hindu cosmic-tree tradition the corpus reads comparatively.",
+      "medium": "religious-text",
+      "topics": [
+        "Hindu Scripture",
+        "Ashvattha",
+        "Cosmic Tree",
+        "Bhagavad Gita"
+      ],
+      "cited_by": [
+        {
+          "section": "timeline",
+          "title": "The Wheel Keeps Turning",
+          "path": "/timeline/the-wheel-keeps-turning/"
+        },
+        {
+          "section": "wiki",
+          "title": "Golden Age",
+          "path": "/wiki/golden-age/"
+        },
+        {
+          "section": "wiki",
+          "title": "Tree of Life",
+          "path": "/wiki/tree-of-life/"
+        },
+        {
+          "section": "wiki",
+          "title": "World Age",
+          "path": "/wiki/world-age/"
+        }
+      ],
+      "cite_count": 4
     },
     {
       "id": "the-bible-is-not-a-sacred-book",
@@ -6769,6 +7063,11 @@
         },
         {
           "section": "wiki",
+          "title": "Tree of Life",
+          "path": "/wiki/tree-of-life/"
+        },
+        {
+          "section": "wiki",
           "title": "Wheel of Heaven",
           "path": "/wiki/wheel-of-heaven/"
         },
@@ -6783,7 +7082,7 @@
           "path": "/wiki/yahweh/"
         }
       ],
-      "cite_count": 25
+      "cite_count": 26
     },
     {
       "id": "the-chaldean-account-of-genesis",
@@ -6876,9 +7175,14 @@
           "section": "wiki",
           "title": "Lucifer",
           "path": "/wiki/lucifer/"
+        },
+        {
+          "section": "wiki",
+          "title": "Tree of Life",
+          "path": "/wiki/tree-of-life/"
         }
       ],
-      "cite_count": 2
+      "cite_count": 3
     },
     {
       "id": "the-collection-of-divine-messages-of-cai-dai",
@@ -7333,9 +7637,39 @@
           "section": "wiki",
           "title": "Serpent",
           "path": "/wiki/serpent/"
+        },
+        {
+          "section": "wiki",
+          "title": "Tree of Life",
+          "path": "/wiki/tree-of-life/"
         }
       ],
-      "cite_count": 3
+      "cite_count": 4
+    },
+    {
+      "id": "wallace-eden-narrative",
+      "title": "The Eden Narrative",
+      "authored_by": [
+        "Howard N. Wallace"
+      ],
+      "publish_date": "1985",
+      "follow_url": "https://www.eisenbrauns.org/",
+      "description": "Howard N. Wallace's 1985 Harvard Semitic Monographs study of the Genesis 2–3 Eden narrative in its ancient Near Eastern context, including the two trees and the sacred-tree background. A standard scholarly reference for the mainstream reading of the Tree of Life material.",
+      "medium": "nonfiction-book",
+      "topics": [
+        "Eden",
+        "Tree of Life",
+        "Genesis",
+        "Ancient Near East"
+      ],
+      "cited_by": [
+        {
+          "section": "wiki",
+          "title": "Tree of Life",
+          "path": "/wiki/tree-of-life/"
+        }
+      ],
+      "cite_count": 1
     },
     {
       "id": "the-electronic-text-corpus-of-sumerian-literature",
@@ -7444,6 +7778,31 @@
           "section": "wiki",
           "title": "Genesis",
           "path": "/wiki/genesis/"
+        }
+      ],
+      "cite_count": 1
+    },
+    {
+      "id": "matt-essential-kabbalah",
+      "title": "The Essential Kabbalah: The Heart of Jewish Mysticism",
+      "authored_by": [
+        "Daniel C. Matt"
+      ],
+      "publish_date": "1996",
+      "follow_url": "https://www.harpercollins.com/",
+      "description": "Daniel Matt's 1996 HarperOne anthology of Kabbalistic texts in translation — the accessible standard introduction to the Kabbalistic tradition including the Tree of Life sefirot diagram. Matt is also the translator of the Pritzker Zohar.",
+      "medium": "nonfiction-book",
+      "topics": [
+        "Kabbalah",
+        "Sefirot",
+        "Tree of Life",
+        "Jewish Mysticism"
+      ],
+      "cited_by": [
+        {
+          "section": "wiki",
+          "title": "Tree of Life",
+          "path": "/wiki/tree-of-life/"
         }
       ],
       "cite_count": 1
@@ -7673,6 +8032,35 @@
         }
       ],
       "cite_count": 2
+    },
+    {
+      "id": "hallmarks-of-aging",
+      "title": "The Hallmarks of Aging",
+      "authored_by": [
+        "Carlos López-Otín",
+        "Maria A. Blasco",
+        "Linda Partridge",
+        "Manuel Serrano",
+        "Guido Kroemer"
+      ],
+      "publish_date": "2013",
+      "follow_url": "https://www.cell.com/cell/fulltext/S0092-8674(13)00645-4",
+      "description": "Carlos López-Otín and colleagues' 2013 *Cell* review (153:6) — the foundational synthesis identifying the principal molecular and cellular contributors to aging (telomere attrition, cellular senescence, mitochondrial dysfunction, stem-cell exhaustion, and others). The standard scientific reference frame for the aging-intervention research the corpus engages around the Tree of Life.",
+      "medium": "academic-paper",
+      "topics": [
+        "Aging",
+        "Longevity",
+        "Cell Biology",
+        "Senescence"
+      ],
+      "cited_by": [
+        {
+          "section": "wiki",
+          "title": "Tree of Life",
+          "path": "/wiki/tree-of-life/"
+        }
+      ],
+      "cite_count": 1
     },
     {
       "id": "rochberg-heavenly-writing",
@@ -8018,6 +8406,11 @@
         },
         {
           "section": "wiki",
+          "title": "Tree of Life",
+          "path": "/wiki/tree-of-life/"
+        },
+        {
+          "section": "wiki",
           "title": "Wheel of Heaven",
           "path": "/wiki/wheel-of-heaven/"
         },
@@ -8027,7 +8420,7 @@
           "path": "/wiki/yahweh/"
         }
       ],
-      "cite_count": 14
+      "cite_count": 15
     },
     {
       "id": "natufian-culture-in-the-levant",
@@ -8202,6 +8595,31 @@
       "cite_count": 0
     },
     {
+      "id": "poetic-edda",
+      "title": "The Poetic Edda",
+      "authored_by": [
+        "Carolyne Larrington (trans.)"
+      ],
+      "publish_date": "2014",
+      "follow_url": "https://global.oup.com/academic/",
+      "description": "The principal collection of Old Norse mythological and heroic poems (Carolyne Larrington's revised 2014 Oxford translation), including the *Völuspá* and *Grímnismál* that describe Yggdrasil, the Norse cosmic tree. The standard primary source for the Yggdrasil tradition the corpus reads comparatively against the Tree of Life.",
+      "medium": "religious-text",
+      "topics": [
+        "Norse Mythology",
+        "Yggdrasil",
+        "Cosmic Tree",
+        "Poetic Edda"
+      ],
+      "cited_by": [
+        {
+          "section": "wiki",
+          "title": "Tree of Life",
+          "path": "/wiki/tree-of-life/"
+        }
+      ],
+      "cite_count": 1
+    },
+    {
       "id": "bodman-poetics-iblis",
       "title": "The Poetics of Iblīs: Narrative Theology in the Qurʾān",
       "authored_by": [
@@ -8242,6 +8660,41 @@
       ],
       "cited_by": [],
       "cite_count": 0
+    },
+    {
+      "id": "prose-edda",
+      "title": "The Prose Edda",
+      "authored_by": [
+        "Snorri Sturluson"
+      ],
+      "publish_date": "1220",
+      "follow_url": "https://www.penguinrandomhouse.com/",
+      "description": "Snorri Sturluson's 13th-century systematic account of Norse mythology (Jesse Byock's Penguin translation), including the *Gylfaginning* treatment of Yggdrasil. The principal secondary primary source for the Norse cosmic-tree tradition.",
+      "medium": "religious-text",
+      "topics": [
+        "Norse Mythology",
+        "Yggdrasil",
+        "Snorri Sturluson",
+        "Cosmic Tree"
+      ],
+      "cited_by": [
+        {
+          "section": "timeline",
+          "title": "Preamble",
+          "path": "/timeline/preamble/"
+        },
+        {
+          "section": "wiki",
+          "title": "Golden Age",
+          "path": "/wiki/golden-age/"
+        },
+        {
+          "section": "wiki",
+          "title": "Tree of Life",
+          "path": "/wiki/tree-of-life/"
+        }
+      ],
+      "cite_count": 3
     },
     {
       "id": "sturluson-prose-edda",
@@ -8563,6 +9016,31 @@
       "cite_count": 2
     },
     {
+      "id": "bonaventure-lignum-vitae",
+      "title": "The Tree of Life (Lignum Vitae)",
+      "authored_by": [
+        "Bonaventure"
+      ],
+      "publish_date": "1260",
+      "follow_url": "https://www.franciscantradition.org/",
+      "description": "Bonaventure's c. 1260 meditative treatise structuring Christian contemplation around the Tree-of-Life motif, with the cross of Christ as the renewed Tree of Life. The principal medieval theological treatment of the Tree of Life the corpus engages as a developed Christian theological elaboration.",
+      "medium": "article",
+      "topics": [
+        "Tree of Life",
+        "Bonaventure",
+        "Medieval Theology",
+        "Christology"
+      ],
+      "cited_by": [
+        {
+          "section": "wiki",
+          "title": "Tree of Life",
+          "path": "/wiki/tree-of-life/"
+        }
+      ],
+      "cite_count": 1
+    },
+    {
       "id": "the-unseen-realm",
       "title": "The Unseen Realm: Recovering the Supernatural Worldview of the Bible",
       "authored_by": [
@@ -8650,9 +9128,14 @@
           "section": "wiki",
           "title": "Serpent",
           "path": "/wiki/serpent/"
+        },
+        {
+          "section": "wiki",
+          "title": "Tree of Life",
+          "path": "/wiki/tree-of-life/"
         }
       ],
-      "cite_count": 2
+      "cite_count": 3
     },
     {
       "id": "the-zohar-pritzker",
@@ -8845,6 +9328,11 @@
         },
         {
           "section": "wiki",
+          "title": "Tree of Life",
+          "path": "/wiki/tree-of-life/"
+        },
+        {
+          "section": "wiki",
           "title": "Wheel of Heaven",
           "path": "/wiki/wheel-of-heaven/"
         },
@@ -8854,7 +9342,7 @@
           "path": "/wiki/yahweh/"
         }
       ],
-      "cite_count": 13
+      "cite_count": 14
     },
     {
       "id": "tomorrowland-film",
