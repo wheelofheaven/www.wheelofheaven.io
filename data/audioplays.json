@@ -6,7 +6,15 @@
   "books": [
     {
       "slug": "the-book-which-tells-the-truth",
-      "languages": ["en"]
+      "languages": [
+        "en"
+      ]
+    },
+    {
+      "slug": "extraterrestrials-took-me-to-their-planet",
+      "languages": [
+        "en"
+      ]
     }
   ]
 }
