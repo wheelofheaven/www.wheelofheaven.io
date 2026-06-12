@@ -1,7 +1,7 @@
 {
   "_meta": {
-    "generated_at": "2026-06-08T12:19:24+00:00",
-    "count": 273
+    "generated_at": "2026-06-12T12:46:57+00:00",
+    "count": 279
   },
   "paths": {
     "AGENTS": [
@@ -476,6 +476,9 @@
     "library/baal-cycle-woh": [
       "en"
     ],
+    "library/book-of-abraham": [
+      "en"
+    ],
     "library/book-of-enoch": [
       "de",
       "en",
@@ -502,6 +505,9 @@
       "ru",
       "zh",
       "zh-Hant"
+    ],
+    "library/book-of-moses": [
+      "en"
     ],
     "library/chaldean-account-of-genesis": [
       "de",
@@ -565,6 +571,9 @@
       "ru",
       "zh",
       "zh-Hant"
+    ],
+    "library/doctrine-and-covenants-selections": [
+      "en"
     ],
     "library/ecclesiastes": [
       "de",
@@ -925,6 +934,9 @@
       "ru",
       "zh",
       "zh-Hant"
+    ],
+    "library/joseph-smith-history": [
+      "en"
     ],
     "library/joshua": [
       "de",
@@ -1295,6 +1307,9 @@
       "zh",
       "zh-Hant"
     ],
+    "library/song-of-the-hoe-woh": [
+      "en"
+    ],
     "library/the-book-which-tells-the-truth": [
       "de",
       "en",
@@ -1334,11 +1349,24 @@
     "library/zephaniah": [
       "en"
     ],
+    "listen": [
+      "de",
+      "en",
+      "es",
+      "fr",
+      "he",
+      "ja",
+      "ko",
+      "ru",
+      "zh",
+      "zh-Hant"
+    ],
     "map": [
       "de",
       "en",
       "es",
       "fr",
+      "he",
       "ja",
       "ko",
       "ru",
