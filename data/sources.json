@@ -1,16 +1,16 @@
 {
-  "generated_at": "2026-06-11T19:35:09+00:00",
+  "generated_at": "2026-06-12T05:40:51+00:00",
   "generator": "scripts/build_sources.py",
   "schema_version": 1,
-  "total": 360,
-  "total_cites": 576,
+  "total": 380,
+  "total_cites": 602,
   "media_counts": {
     "religious-text": 91,
-    "academic-paper": 66,
-    "nonfiction-book": 138,
+    "academic-paper": 67,
+    "nonfiction-book": 156,
     "article": 17,
     "documentary": 17,
-    "wiki": 12,
+    "wiki": 13,
     "fiction-book": 15,
     "website": 1,
     "unknown": 2,
@@ -1549,6 +1549,31 @@
       "cite_count": 0
     },
     {
+      "id": "kant-critique-pure-reason",
+      "title": "Critique of Pure Reason",
+      "authored_by": [
+        "Immanuel Kant"
+      ],
+      "publish_date": "1781",
+      "follow_url": "https://www.gutenberg.org/ebooks/4280",
+      "description": "Immanuel Kant's 1781 critical philosophy, whose antinomies of pure reason treat the question of cosmic infinity (whether the world has a beginning in time and limits in space) as a structural problem for reason. The corpus engages Kant's treatment of the infinity question as a principal philosophical reference point for the Cosmic Chain's 'no first creator' position.",
+      "medium": "nonfiction-book",
+      "topics": [
+        "Philosophy",
+        "Cosmic Infinity",
+        "Kant",
+        "Antinomies"
+      ],
+      "cited_by": [
+        {
+          "section": "wiki",
+          "title": "Cosmic Chain",
+          "path": "/wiki/cosmic-chain/"
+        }
+      ],
+      "cite_count": 1
+    },
+    {
       "id": "crop-circles-signs-of-contact",
       "title": "Crop Circles: Signs of Contact",
       "authored_by": [
@@ -1673,6 +1698,31 @@
         }
       ],
       "cite_count": 2
+    },
+    {
+      "id": "penrose-cycles-of-time",
+      "title": "Cycles of Time: An Extraordinary New View of the Universe",
+      "authored_by": [
+        "Roger Penrose"
+      ],
+      "publish_date": "2011",
+      "follow_url": "https://www.penguinrandomhouse.com/",
+      "description": "Roger Penrose's 2011 Knopf articulation of conformal cyclic cosmology — the proposal that the universe undergoes endless successive aeons. A principal contemporary cyclic-cosmology framework the corpus reads alongside the Cosmic Chain.",
+      "medium": "nonfiction-book",
+      "topics": [
+        "Cosmology",
+        "Cyclic Universe",
+        "Penrose",
+        "Conformal Cyclic Cosmology"
+      ],
+      "cited_by": [
+        {
+          "section": "wiki",
+          "title": "Cosmic Chain",
+          "path": "/wiki/cosmic-chain/"
+        }
+      ],
+      "cite_count": 1
     },
     {
       "id": "daniel",
@@ -1874,6 +1924,32 @@
       ],
       "cited_by": [],
       "cite_count": 0
+    },
+    {
+      "id": "crick-orgel-directed-panspermia",
+      "title": "Directed Panspermia",
+      "authored_by": [
+        "Francis Crick",
+        "Leslie Orgel"
+      ],
+      "publish_date": "1973",
+      "follow_url": "https://www.sciencedirect.com/journal/icarus",
+      "description": "Francis Crick and Leslie Orgel's 1973 *Icarus* (19:3) paper proposing that life on Earth was deliberately seeded by an extraterrestrial intelligent civilization. Crick (Nobel-laureate co-discoverer of DNA structure) and Orgel advanced it as a serious scientific hypothesis addressing the universality of the genetic code and other features. The principal contemporary scientific framework overlapping with the Cosmic Chain's directed-creation premise.",
+      "medium": "academic-paper",
+      "topics": [
+        "Panspermia",
+        "Directed Panspermia",
+        "Origin of Life",
+        "Crick"
+      ],
+      "cited_by": [
+        {
+          "section": "wiki",
+          "title": "Cosmic Chain",
+          "path": "/wiki/cosmic-chain/"
+        }
+      ],
+      "cite_count": 1
     },
     {
       "id": "meyers-discovering-eve",
@@ -2173,6 +2249,32 @@
       "cite_count": 1
     },
     {
+      "id": "steinhardt-turok-endless-universe",
+      "title": "Endless Universe: Beyond the Big Bang",
+      "authored_by": [
+        "Paul J. Steinhardt",
+        "Neil Turok"
+      ],
+      "publish_date": "2007",
+      "follow_url": "https://www.penguinrandomhouse.com/",
+      "description": "Paul Steinhardt and Neil Turok's 2007 Doubleday articulation of the ekpyrotic / cyclic cosmology — a contemporary model proposing successive Big Bang events rather than a single unique origin. The corpus reads it as a cosmological-level parallel to the Cosmic Chain's recursive structure.",
+      "medium": "nonfiction-book",
+      "topics": [
+        "Cosmology",
+        "Cyclic Universe",
+        "Ekpyrotic",
+        "Big Bang"
+      ],
+      "cited_by": [
+        {
+          "section": "wiki",
+          "title": "Cosmic Chain",
+          "path": "/wiki/cosmic-chain/"
+        }
+      ],
+      "cite_count": 1
+    },
+    {
       "id": "enlil-and-ninlil-the-begetting-of-nanna",
       "title": "Enlil and Ninlil: The begetting of Nanna",
       "authored_by": [
@@ -2448,6 +2550,11 @@
         },
         {
           "section": "wiki",
+          "title": "Cosmic Chain",
+          "path": "/wiki/cosmic-chain/"
+        },
+        {
+          "section": "wiki",
           "title": "Council of the Eternals",
           "path": "/wiki/council-of-eternals/"
         },
@@ -2512,7 +2619,7 @@
           "path": "/wiki/yahweh/"
         }
       ],
-      "cite_count": 16
+      "cite_count": 17
     },
     {
       "id": "ezekiel",
@@ -2908,6 +3015,31 @@
       "cite_count": 1
     },
     {
+      "id": "yates-giordano-bruno-hermetic",
+      "title": "Giordano Bruno and the Hermetic Tradition",
+      "authored_by": [
+        "Frances A. Yates"
+      ],
+      "publish_date": "1964",
+      "follow_url": "https://press.uchicago.edu/",
+      "description": "Frances A. Yates's 1964 University of Chicago Press study situating Bruno's infinite-cosmos doctrine within the Renaissance Hermetic tradition — the standard scholarly treatment of the esoteric-cosmological context the corpus engages around the Cosmic Chain's 'as above, so below' material.",
+      "medium": "nonfiction-book",
+      "topics": [
+        "Bruno",
+        "Hermeticism",
+        "Renaissance",
+        "Cosmology"
+      ],
+      "cited_by": [
+        {
+          "section": "wiki",
+          "title": "Cosmic Chain",
+          "path": "/wiki/cosmic-chain/"
+        }
+      ],
+      "cite_count": 1
+    },
+    {
       "id": "giza-and-the-pyramids",
       "title": "Giza and the Pyramids: The Definitive History",
       "authored_by": [
@@ -3117,6 +3249,31 @@
         }
       ],
       "cite_count": 3
+    },
+    {
+      "id": "hannah-greek-roman-calendars",
+      "title": "Greek and Roman Calendars: Constructions of Time in the Classical World",
+      "authored_by": [
+        "Robert Hannah"
+      ],
+      "publish_date": "2005",
+      "follow_url": "https://www.bloomsbury.com/",
+      "description": "Robert Hannah's 2005 Duckworth study of classical time-reckoning, including the Great Year and cosmic-cycle concepts. The corpus engages it for the classical cyclic-time frameworks that bear on the Cosmic Chain and the precessional-age material.",
+      "medium": "nonfiction-book",
+      "topics": [
+        "Great Year",
+        "Cyclic Time",
+        "Classical Antiquity",
+        "Calendars"
+      ],
+      "cited_by": [
+        {
+          "section": "wiki",
+          "title": "Cosmic Chain",
+          "path": "/wiki/cosmic-chain/"
+        }
+      ],
+      "cite_count": 1
     },
     {
       "id": "gobekli-tepe-schmidt",
@@ -3476,6 +3633,31 @@
           "section": "wiki",
           "title": "Tree of Life",
           "path": "/wiki/tree-of-life/"
+        }
+      ],
+      "cite_count": 1
+    },
+    {
+      "id": "linde-inflation-quantum-cosmology",
+      "title": "Inflation and Quantum Cosmology",
+      "authored_by": [
+        "Andrei Linde"
+      ],
+      "publish_date": "1990",
+      "follow_url": "https://www.elsevier.com/",
+      "description": "Andrei Linde's 1990 Academic Press treatment of cosmic inflation and eternal inflation — the principal technical development of the eternal-inflation multiverse framework the corpus reads as overlapping with the Cosmic Chain's recursive structure.",
+      "medium": "nonfiction-book",
+      "topics": [
+        "Cosmology",
+        "Inflation",
+        "Multiverse",
+        "Linde"
+      ],
+      "cited_by": [
+        {
+          "section": "wiki",
+          "title": "Cosmic Chain",
+          "path": "/wiki/cosmic-chain/"
         }
       ],
       "cite_count": 1
@@ -4379,6 +4561,57 @@
       "cite_count": 0
     },
     {
+      "id": "crick-life-itself",
+      "title": "Life Itself: Its Origin and Nature",
+      "authored_by": [
+        "Francis Crick"
+      ],
+      "publish_date": "1981",
+      "follow_url": "https://www.simonandschuster.com/",
+      "description": "Francis Crick's 1981 Simon and Schuster development of the directed-panspermia hypothesis and the broader origin-of-life problem. The corpus engages it as Crick's extended argument for cosmic seeding of terrestrial life.",
+      "medium": "nonfiction-book",
+      "topics": [
+        "Panspermia",
+        "Origin of Life",
+        "Crick",
+        "DNA"
+      ],
+      "cited_by": [
+        {
+          "section": "wiki",
+          "title": "Cosmic Chain",
+          "path": "/wiki/cosmic-chain/"
+        }
+      ],
+      "cite_count": 1
+    },
+    {
+      "id": "hoyle-wickramasinghe-lifecloud",
+      "title": "Lifecloud: The Origin of Life in the Universe",
+      "authored_by": [
+        "Fred Hoyle",
+        "Chandra Wickramasinghe"
+      ],
+      "publish_date": "1978",
+      "follow_url": "https://www.harpercollins.com/",
+      "description": "Fred Hoyle and Chandra Wickramasinghe's 1978 Harper and Row articulation of cometary panspermia — the proposal that life's chemical precursors and life itself arrive from cosmic sources. The corpus engages it in the panspermia discussion around the Cosmic Chain.",
+      "medium": "nonfiction-book",
+      "topics": [
+        "Panspermia",
+        "Origin of Life",
+        "Hoyle",
+        "Comets"
+      ],
+      "cited_by": [
+        {
+          "section": "wiki",
+          "title": "Cosmic Chain",
+          "path": "/wiki/cosmic-chain/"
+        }
+      ],
+      "cite_count": 1
+    },
+    {
       "id": "sinclair-lifespan",
       "title": "Lifespan: Why We Age — and Why We Don't Have To",
       "authored_by": [
@@ -4512,6 +4745,31 @@
       "cite_count": 1
     },
     {
+      "id": "williams-mahayana-buddhism",
+      "title": "Mahāyāna Buddhism: The Doctrinal Foundations",
+      "authored_by": [
+        "Paul Williams"
+      ],
+      "publish_date": "2008",
+      "follow_url": "https://www.routledge.com/",
+      "description": "Paul Williams's standard 2008 Routledge survey of Mahāyāna Buddhist doctrine, including the beginningless cycle of saṃsāra and the cosmology of innumerable world-systems and kalpas. The corpus engages it for the Buddhist beginningless-cycle framework that parallels the Cosmic Chain's 'no first creator' position.",
+      "medium": "nonfiction-book",
+      "topics": [
+        "Buddhism",
+        "Saṃsāra",
+        "Cyclic Cosmology",
+        "Kalpa"
+      ],
+      "cited_by": [
+        {
+          "section": "wiki",
+          "title": "Cosmic Chain",
+          "path": "/wiki/cosmic-chain/"
+        }
+      ],
+      "cite_count": 1
+    },
+    {
       "id": "major-trends-jewish-mysticism",
       "title": "Major Trends in Jewish Mysticism",
       "authored_by": [
@@ -4540,6 +4798,31 @@
         }
       ],
       "cite_count": 2
+    },
+    {
+      "id": "vilenkin-many-worlds-in-one",
+      "title": "Many Worlds in One: The Search for Other Universes",
+      "authored_by": [
+        "Alexander Vilenkin"
+      ],
+      "publish_date": "2006",
+      "follow_url": "https://us.macmillan.com/",
+      "description": "Alexander Vilenkin's 2006 Hill and Wang work on eternal inflation and the multiverse, including the quantum-cosmology origin-of-the-universe proposal. A standard accessible treatment of the multiverse cosmology the corpus reads alongside the Cosmic Chain.",
+      "medium": "nonfiction-book",
+      "topics": [
+        "Cosmology",
+        "Multiverse",
+        "Eternal Inflation",
+        "Vilenkin"
+      ],
+      "cited_by": [
+        {
+          "section": "wiki",
+          "title": "Cosmic Chain",
+          "path": "/wiki/cosmic-chain/"
+        }
+      ],
+      "cite_count": 1
     },
     {
       "id": "mathematics-and-the-unexpected",
@@ -5056,6 +5339,31 @@
       "cite_count": 1
     },
     {
+      "id": "bruno-infinite-universe",
+      "title": "On the Infinite Universe and Worlds (De l'infinito universo et mondi)",
+      "authored_by": [
+        "Giordano Bruno"
+      ],
+      "publish_date": "1584",
+      "follow_url": "https://www.gutenberg.org/",
+      "description": "Giordano Bruno's 1584 dialogue arguing for an infinite universe containing infinite inhabited worlds — the foundational early-modern statement of cosmic infinity and the plurality of worlds. Bruno was burned by the Roman Inquisition in 1600 partly for these cosmological-theological doctrines. The corpus engages it as the principal philosophical antecedent of the Cosmic Chain's infinite-cosmos premise.",
+      "medium": "nonfiction-book",
+      "topics": [
+        "Cosmic Infinity",
+        "Plurality of Worlds",
+        "Bruno",
+        "Cosmology"
+      ],
+      "cited_by": [
+        {
+          "section": "wiki",
+          "title": "Cosmic Chain",
+          "path": "/wiki/cosmic-chain/"
+        }
+      ],
+      "cite_count": 1
+    },
+    {
       "id": "fuller-spaceship-earth",
       "title": "Operating Manual for Spaceship Earth",
       "authored_by": [
@@ -5169,6 +5477,31 @@
           "section": "timeline",
           "title": "Age of Virgo",
           "path": "/timeline/age-of-virgo/"
+        }
+      ],
+      "cite_count": 1
+    },
+    {
+      "id": "tegmark-mathematical-universe",
+      "title": "Our Mathematical Universe: My Quest for the Ultimate Nature of Reality",
+      "authored_by": [
+        "Max Tegmark"
+      ],
+      "publish_date": "2014",
+      "follow_url": "https://www.penguinrandomhouse.com/",
+      "description": "Max Tegmark's 2014 Knopf work articulating the four-level multiverse hierarchy and the mathematical-universe hypothesis — a principal contemporary multiverse framework the corpus engages comparatively with the Cosmic Chain.",
+      "medium": "nonfiction-book",
+      "topics": [
+        "Cosmology",
+        "Multiverse",
+        "Tegmark",
+        "Reality"
+      ],
+      "cited_by": [
+        {
+          "section": "wiki",
+          "title": "Cosmic Chain",
+          "path": "/wiki/cosmic-chain/"
         }
       ],
       "cite_count": 1
@@ -5631,6 +5964,31 @@
           "section": "timeline",
           "title": "Age of Taurus",
           "path": "/timeline/age-of-taurus/"
+        }
+      ],
+      "cite_count": 1
+    },
+    {
+      "id": "carrasco-religions-mesoamerica",
+      "title": "Religions of Mesoamerica",
+      "authored_by": [
+        "Davíd Carrasco"
+      ],
+      "publish_date": "2014",
+      "follow_url": "https://www.waveland.com/",
+      "description": "Davíd Carrasco's standard survey of Mesoamerican religion (2nd ed., Waveland Press), including the Aztec doctrine of successive world-ages or 'suns' destroyed and recreated. The corpus engages it for the Mesoamerican cyclic-cosmology parallel to the Cosmic Chain.",
+      "medium": "nonfiction-book",
+      "topics": [
+        "Mesoamerica",
+        "Aztec",
+        "Cyclic Cosmology",
+        "World Ages"
+      ],
+      "cited_by": [
+        {
+          "section": "wiki",
+          "title": "Cosmic Chain",
+          "path": "/wiki/cosmic-chain/"
         }
       ],
       "cite_count": 1
@@ -6493,11 +6851,16 @@
         },
         {
           "section": "wiki",
+          "title": "Cosmic Chain",
+          "path": "/wiki/cosmic-chain/"
+        },
+        {
+          "section": "wiki",
           "title": "Wheel of Heaven",
           "path": "/wiki/wheel-of-heaven/"
         }
       ],
-      "cite_count": 2
+      "cite_count": 3
     },
     {
       "id": "alphabet-of-ben-sira",
@@ -6973,6 +7336,11 @@
         },
         {
           "section": "wiki",
+          "title": "Cosmic Chain",
+          "path": "/wiki/cosmic-chain/"
+        },
+        {
+          "section": "wiki",
           "title": "Council of the Eternals",
           "path": "/wiki/council-of-eternals/"
         },
@@ -7082,7 +7450,7 @@
           "path": "/wiki/yahweh/"
         }
       ],
-      "cite_count": 26
+      "cite_count": 27
     },
     {
       "id": "the-chaldean-account-of-genesis",
@@ -7630,6 +7998,11 @@
         },
         {
           "section": "wiki",
+          "title": "Cosmic Chain",
+          "path": "/wiki/cosmic-chain/"
+        },
+        {
+          "section": "wiki",
           "title": "Lucifer",
           "path": "/wiki/lucifer/"
         },
@@ -7644,7 +8017,7 @@
           "path": "/wiki/tree-of-life/"
         }
       ],
-      "cite_count": 4
+      "cite_count": 5
     },
     {
       "id": "wallace-eden-narrative",
@@ -8129,6 +8502,32 @@
       "cite_count": 1
     },
     {
+      "id": "long-sedley-hellenistic-philosophers",
+      "title": "The Hellenistic Philosophers",
+      "authored_by": [
+        "A. A. Long",
+        "D. N. Sedley"
+      ],
+      "publish_date": "1987",
+      "follow_url": "https://www.cambridge.org/",
+      "description": "A. A. Long and D. N. Sedley's 1987 Cambridge University Press two-volume sourcebook of Hellenistic philosophy, including the Stoic doctrine of eternal cosmic cycles (*ekpyrosis* and palingenesis). The standard reference for the Stoic cyclic-cosmology the corpus engages comparatively with the Cosmic Chain.",
+      "medium": "nonfiction-book",
+      "topics": [
+        "Stoicism",
+        "Eternal Cycles",
+        "Hellenistic Philosophy",
+        "Ekpyrosis"
+      ],
+      "cited_by": [
+        {
+          "section": "wiki",
+          "title": "Cosmic Chain",
+          "path": "/wiki/cosmic-chain/"
+        }
+      ],
+      "cite_count": 1
+    },
+    {
       "id": "doniger-hindus",
       "title": "The Hindus: An Alternative History",
       "authored_by": [
@@ -8161,6 +8560,31 @@
       ],
       "cited_by": [],
       "cite_count": 0
+    },
+    {
+      "id": "dundas-the-jains",
+      "title": "The Jains",
+      "authored_by": [
+        "Paul Dundas"
+      ],
+      "publish_date": "2002",
+      "follow_url": "https://www.routledge.com/",
+      "description": "Paul Dundas's standard 2002 Routledge survey of Jainism, including the Jain doctrine of beginningless and endless cosmic time (the cycles of *utsarpiṇī* and *avasarpiṇī*). The corpus engages it for the Jain beginningless-cycle cosmology that parallels the Cosmic Chain.",
+      "medium": "nonfiction-book",
+      "topics": [
+        "Jainism",
+        "Cyclic Time",
+        "Cosmology",
+        "Beginningless Time"
+      ],
+      "cited_by": [
+        {
+          "section": "wiki",
+          "title": "Cosmic Chain",
+          "path": "/wiki/cosmic-chain/"
+        }
+      ],
+      "cite_count": 1
     },
     {
       "id": "the-kabbalah-law-and-mysticism-in-the-jewish-tradition",
@@ -8356,6 +8780,11 @@
         },
         {
           "section": "wiki",
+          "title": "Cosmic Chain",
+          "path": "/wiki/cosmic-chain/"
+        },
+        {
+          "section": "wiki",
           "title": "Council of the Eternals",
           "path": "/wiki/council-of-eternals/"
         },
@@ -8420,7 +8849,7 @@
           "path": "/wiki/yahweh/"
         }
       ],
-      "cite_count": 15
+      "cite_count": 16
     },
     {
       "id": "natufian-culture-in-the-levant",
@@ -8444,6 +8873,32 @@
           "section": "wiki",
           "title": "Antediluvian",
           "path": "/wiki/antediluvian/"
+        }
+      ],
+      "cite_count": 1
+    },
+    {
+      "id": "hawking-penrose-nature-space-time",
+      "title": "The Nature of Space and Time",
+      "authored_by": [
+        "Stephen Hawking",
+        "Roger Penrose"
+      ],
+      "publish_date": "1996",
+      "follow_url": "https://press.princeton.edu/",
+      "description": "Stephen Hawking and Roger Penrose's 1996 Princeton University Press exchange on the structure of spacetime, singularities, and cosmic origins — a standard reference for the contemporary cosmological treatment of cosmic-origin questions the corpus engages around the Cosmic Chain.",
+      "medium": "nonfiction-book",
+      "topics": [
+        "Cosmology",
+        "Spacetime",
+        "Hawking",
+        "Penrose"
+      ],
+      "cited_by": [
+        {
+          "section": "wiki",
+          "title": "Cosmic Chain",
+          "path": "/wiki/cosmic-chain/"
         }
       ],
       "cite_count": 1
@@ -8660,6 +9115,32 @@
       ],
       "cited_by": [],
       "cite_count": 0
+    },
+    {
+      "id": "buswell-lopez-princeton-buddhism",
+      "title": "The Princeton Dictionary of Buddhism",
+      "authored_by": [
+        "Robert E. Buswell Jr.",
+        "Donald S. Lopez Jr."
+      ],
+      "publish_date": "2014",
+      "follow_url": "https://press.princeton.edu/",
+      "description": "Robert Buswell and Donald Lopez's 2014 Princeton University Press reference — the standard scholarly dictionary of Buddhism, covering the kalpa cosmology and beginningless-time doctrines the corpus engages comparatively with the Cosmic Chain.",
+      "medium": "wiki",
+      "topics": [
+        "Buddhism",
+        "Kalpa",
+        "Cosmology",
+        "Reference"
+      ],
+      "cited_by": [
+        {
+          "section": "wiki",
+          "title": "Cosmic Chain",
+          "path": "/wiki/cosmic-chain/"
+        }
+      ],
+      "cite_count": 1
     },
     {
       "id": "prose-edda",
@@ -9288,6 +9769,11 @@
         },
         {
           "section": "wiki",
+          "title": "Cosmic Chain",
+          "path": "/wiki/cosmic-chain/"
+        },
+        {
+          "section": "wiki",
           "title": "Council of the Eternals",
           "path": "/wiki/council-of-eternals/"
         },
@@ -9342,7 +9828,32 @@
           "path": "/wiki/yahweh/"
         }
       ],
-      "cite_count": 14
+      "cite_count": 15
+    },
+    {
+      "id": "nietzsche-zarathustra",
+      "title": "Thus Spoke Zarathustra",
+      "authored_by": [
+        "Friedrich Nietzsche"
+      ],
+      "publish_date": "1885",
+      "follow_url": "https://www.gutenberg.org/ebooks/1998",
+      "description": "Friedrich Nietzsche's 1883–1885 philosophical work, the principal articulation of the doctrine of eternal recurrence (*ewige Wiederkunft*) — the cyclic-cosmological idea the corpus reads as a Western philosophical parallel to the Cosmic Chain's recurrent structure.",
+      "medium": "nonfiction-book",
+      "topics": [
+        "Eternal Recurrence",
+        "Nietzsche",
+        "Cyclic Cosmology",
+        "Philosophy"
+      ],
+      "cited_by": [
+        {
+          "section": "wiki",
+          "title": "Cosmic Chain",
+          "path": "/wiki/cosmic-chain/"
+        }
+      ],
+      "cite_count": 1
     },
     {
       "id": "tomorrowland-film",
@@ -9579,6 +10090,31 @@
       ],
       "cited_by": [],
       "cite_count": 0
+    },
+    {
+      "id": "arrhenius-worlds-in-the-making",
+      "title": "Worlds in the Making: The Evolution of the Universe",
+      "authored_by": [
+        "Svante Arrhenius"
+      ],
+      "publish_date": "1908",
+      "follow_url": "https://archive.org/details/worldsinmakingev00arrh",
+      "description": "Svante Arrhenius's 1908 work proposing classical panspermia — the transmission of microbial life across cosmic distances on dust and meteoric material. The foundational early-20th-century panspermia statement the corpus engages historically.",
+      "medium": "nonfiction-book",
+      "topics": [
+        "Panspermia",
+        "Cosmology",
+        "Arrhenius",
+        "Origin of Life"
+      ],
+      "cited_by": [
+        {
+          "section": "wiki",
+          "title": "Cosmic Chain",
+          "path": "/wiki/cosmic-chain/"
+        }
+      ],
+      "cite_count": 1
     },
     {
       "id": "zechariah",
