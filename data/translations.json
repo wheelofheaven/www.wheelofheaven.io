@@ -1,7 +1,7 @@
 {
   "_meta": {
-    "generated_at": "2026-06-12T12:46:57+00:00",
-    "count": 279
+    "generated_at": "2026-06-12T15:21:52+00:00",
+    "count": 674
   },
   "paths": {
     "AGENTS": [
@@ -1481,6 +1481,1110 @@
       "zh",
       "zh-Hant"
     ],
+    "sources/1-chronicles": [
+      "en"
+    ],
+    "sources/1-enoch-the-book-of-the-watchers": [
+      "en"
+    ],
+    "sources/1-kings": [
+      "en"
+    ],
+    "sources/1-samuel": [
+      "en"
+    ],
+    "sources/2-chronicles": [
+      "en"
+    ],
+    "sources/2-kings": [
+      "en"
+    ],
+    "sources/2-samuel": [
+      "en"
+    ],
+    "sources/a-concise-dictionary-of-the-words-in-the-hebrew-bible-strong-s": [
+      "en"
+    ],
+    "sources/a-gentlemans-joyous-esotericism": [
+      "en"
+    ],
+    "sources/a-hebrew-and-english-lexicon-of-the-old-testament": [
+      "en"
+    ],
+    "sources/a-history-of-god": [
+      "en"
+    ],
+    "sources/a-programmable-dual-rna-guided-dna-endonuclease-in-adaptive-bacterial-immunity": [
+      "en"
+    ],
+    "sources/acts-of-the-apostles": [
+      "en"
+    ],
+    "sources/aesthetics-wiki-cyberparadism": [
+      "en"
+    ],
+    "sources/aliens-adored": [
+      "en"
+    ],
+    "sources/allen-genesis-in-egypt": [
+      "en"
+    ],
+    "sources/alphabet-of-ben-sira": [
+      "en"
+    ],
+    "sources/alter-art-biblical-narrative": [
+      "en"
+    ],
+    "sources/alter-hebrew-bible": [
+      "en"
+    ],
+    "sources/alternative-history-s-mainstream-history": [
+      "en"
+    ],
+    "sources/america-before": [
+      "en"
+    ],
+    "sources/an-adversary-in-heaven": [
+      "en"
+    ],
+    "sources/an-exceptionally-well-preserved-theropod-dinosaur-from-the-yixian-formation-of-c": [
+      "en"
+    ],
+    "sources/ancient-apocalypse": [
+      "en"
+    ],
+    "sources/annales-veteris-testamenti": [
+      "en"
+    ],
+    "sources/arrhenius-worlds-in-the-making": [
+      "en"
+    ],
+    "sources/astronomical-algorithms": [
+      "en"
+    ],
+    "sources/atlantis-antediluvian-world": [
+      "en"
+    ],
+    "sources/atra-hasis-lambert-millard": [
+      "en"
+    ],
+    "sources/atrahasis": [
+      "en"
+    ],
+    "sources/avebury-biography-of-a-landscape": [
+      "en"
+    ],
+    "sources/aveni-skywatchers": [
+      "en"
+    ],
+    "sources/avesta": [
+      "en"
+    ],
+    "sources/awn-satan-iblis": [
+      "en"
+    ],
+    "sources/bahaipedia": [
+      "en"
+    ],
+    "sources/banks-culture-series": [
+      "en"
+    ],
+    "sources/barton-cylinder": [
+      "en"
+    ],
+    "sources/before-the-muses": [
+      "en"
+    ],
+    "sources/benyus-biomimicry": [
+      "en"
+    ],
+    "sources/bhagavad-gita": [
+      "en"
+    ],
+    "sources/biglino-bibbia-non-parla": [
+      "en"
+    ],
+    "sources/biglino-il-libro": [
+      "en"
+    ],
+    "sources/birrell-chinese-mythology": [
+      "en"
+    ],
+    "sources/black-green-mesopotamia": [
+      "en"
+    ],
+    "sources/bodman-poetics-iblis": [
+      "en"
+    ],
+    "sources/bonaventure-lignum-vitae": [
+      "en"
+    ],
+    "sources/book-of-abraham": [
+      "en"
+    ],
+    "sources/book-of-enoch": [
+      "en"
+    ],
+    "sources/book-of-mormon": [
+      "en"
+    ],
+    "sources/boyce-zoroastrians": [
+      "en"
+    ],
+    "sources/broca-s-brain-reflections-on-the-romance-of-science": [
+      "en"
+    ],
+    "sources/bruno-infinite-universe": [
+      "en"
+    ],
+    "sources/bunch-tall-el-hammam": [
+      "en"
+    ],
+    "sources/buswell-lopez-princeton-buddhism": [
+      "en"
+    ],
+    "sources/cain-a-mystery": [
+      "en"
+    ],
+    "sources/campion-history-astrology": [
+      "en"
+    ],
+    "sources/canaanite-myth-and-hebrew-epic": [
+      "en"
+    ],
+    "sources/carrasco-quetzalcoatl": [
+      "en"
+    ],
+    "sources/carrasco-religions-mesoamerica": [
+      "en"
+    ],
+    "sources/cassuto-genesis": [
+      "en"
+    ],
+    "sources/cataclysm-allan-delair": [
+      "en"
+    ],
+    "sources/chaos-making-a-new-science": [
+      "en"
+    ],
+    "sources/chariots-of-the-gods": [
+      "en"
+    ],
+    "sources/charles-apocrypha-pseudepigrapha": [
+      "en"
+    ],
+    "sources/charlesworth-good-evil-serpent": [
+      "en"
+    ],
+    "sources/chronicle-of-akakor": [
+      "en"
+    ],
+    "sources/circular-evidence": [
+      "en"
+    ],
+    "sources/city-of-god": [
+      "en"
+    ],
+    "sources/clines-job-wbc": [
+      "en"
+    ],
+    "sources/cook-muslim-apocalyptic": [
+      "en"
+    ],
+    "sources/cosmic-serpent-narby": [
+      "en"
+    ],
+    "sources/creation-of-a-bacterial-cell-controlled-by-a-chemically-synthesized-genome": [
+      "en"
+    ],
+    "sources/creators-the-past": [
+      "en"
+    ],
+    "sources/crick-life-itself": [
+      "en"
+    ],
+    "sources/crick-orgel-directed-panspermia": [
+      "en"
+    ],
+    "sources/crop-circles-signs-of-contact": [
+      "en"
+    ],
+    "sources/cross-canaanite-myth": [
+      "en"
+    ],
+    "sources/cyberparadism-manifesto": [
+      "en"
+    ],
+    "sources/daniel": [
+      "en"
+    ],
+    "sources/day-adversary-heaven": [
+      "en"
+    ],
+    "sources/de-principiis": [
+      "en"
+    ],
+    "sources/deadly-voyager": [
+      "en"
+    ],
+    "sources/debate-between-sheep-and-grain": [
+      "en"
+    ],
+    "sources/debate-between-winter-and-summer": [
+      "en"
+    ],
+    "sources/design-and-synthesis-of-a-minimal-bacterial-genome": [
+      "en"
+    ],
+    "sources/deterministic-nonperiodic-flow": [
+      "en"
+    ],
+    "sources/deuteronomy": [
+      "en"
+    ],
+    "sources/dhorme-bible": [
+      "en"
+    ],
+    "sources/did-god-have-a-wife": [
+      "en"
+    ],
+    "sources/dietrich-gobekli-antiquity-2012": [
+      "en"
+    ],
+    "sources/divine-signposts": [
+      "en"
+    ],
+    "sources/doctrine-and-covenants": [
+      "en"
+    ],
+    "sources/dogon-restudied-a-field-evaluation-of-the-work-of-marcel-griaule": [
+      "en"
+    ],
+    "sources/doniger-hindu-myths": [
+      "en"
+    ],
+    "sources/doniger-hindus": [
+      "en"
+    ],
+    "sources/doniger-the-hindus": [
+      "en"
+    ],
+    "sources/dundas-the-jains": [
+      "en"
+    ],
+    "sources/early-islamic-qiblas": [
+      "en"
+    ],
+    "sources/echoes-of-eden": [
+      "en"
+    ],
+    "sources/edgar-cayce-on-atlantis": [
+      "en"
+    ],
+    "sources/edouard-dhorme-biography": [
+      "en"
+    ],
+    "sources/elizondo-imminent": [
+      "en"
+    ],
+    "sources/elysium-film": [
+      "en"
+    ],
+    "sources/ending-aging-de-grey": [
+      "en"
+    ],
+    "sources/enlil-and-ninlil-the-begetting-of-nanna": [
+      "en"
+    ],
+    "sources/enuma-elish": [
+      "en"
+    ],
+    "sources/epic-of-gilgamesh": [
+      "en"
+    ],
+    "sources/escaping-from-eden": [
+      "en"
+    ],
+    "sources/exodus": [
+      "en"
+    ],
+    "sources/extraterrestrials-took-me-to-their-planet": [
+      "en"
+    ],
+    "sources/ezekiel": [
+      "en"
+    ],
+    "sources/fda-approves-first-gene-therapies-to-treat-patients-with-sickle-cell-disease": [
+      "en"
+    ],
+    "sources/fingerprints-of-the-gods": [
+      "en"
+    ],
+    "sources/finkelstein-bible-unearthed": [
+      "en"
+    ],
+    "sources/firestone-pnas-2007": [
+      "en"
+    ],
+    "sources/firestone-younger-dryas": [
+      "en"
+    ],
+    "sources/forsyth-the-old-enemy": [
+      "en"
+    ],
+    "sources/foster-before-muses": [
+      "en"
+    ],
+    "sources/foundational-text-on-complex-topics": [
+      "en"
+    ],
+    "sources/friedman-bible-sources-revealed": [
+      "en"
+    ],
+    "sources/friedman-who-wrote-bible": [
+      "en"
+    ],
+    "sources/fuller-spaceship-earth": [
+      "en"
+    ],
+    "sources/genesis": [
+      "en"
+    ],
+    "sources/genome-editing-of-human-embryos-broadening-the-ethical-debate": [
+      "en"
+    ],
+    "sources/george-epic-of-gilgamesh": [
+      "en"
+    ],
+    "sources/george-gilgamesh": [
+      "en"
+    ],
+    "sources/gibson-neuromancer": [
+      "en"
+    ],
+    "sources/giovino-assyrian-sacred-tree": [
+      "en"
+    ],
+    "sources/giza-and-the-pyramids": [
+      "en"
+    ],
+    "sources/giza-power-plant": [
+      "en"
+    ],
+    "sources/glimpses-of-other-realities": [
+      "en"
+    ],
+    "sources/gnostic-scriptures": [
+      "en"
+    ],
+    "sources/gobekli-tepe-schmidt": [
+      "en"
+    ],
+    "sources/goldberg-fight-for-jerusalem": [
+      "en"
+    ],
+    "sources/gospel-of-john": [
+      "en"
+    ],
+    "sources/gospel-of-luke-acts-of-the-apostles": [
+      "en"
+    ],
+    "sources/gospel-of-mark": [
+      "en"
+    ],
+    "sources/gospel-of-matthew": [
+      "en"
+    ],
+    "sources/grusch-congressional-testimony": [
+      "en"
+    ],
+    "sources/habel-job": [
+      "en"
+    ],
+    "sources/hallmarks-of-aging": [
+      "en"
+    ],
+    "sources/halloran-sumerian-lexicon": [
+      "en"
+    ],
+    "sources/halperin-faces-of-the-chariot": [
+      "en"
+    ],
+    "sources/hamlets-mill": [
+      "en"
+    ],
+    "sources/hannah-greek-roman-calendars": [
+      "en"
+    ],
+    "sources/hard-to-be-a-god": [
+      "en"
+    ],
+    "sources/haselhoff-physiologia-plantarum-2001": [
+      "en"
+    ],
+    "sources/hawking-penrose-nature-space-time": [
+      "en"
+    ],
+    "sources/heidel-gilgamesh-ot": [
+      "en"
+    ],
+    "sources/hengeworld": [
+      "en"
+    ],
+    "sources/hermetica": [
+      "en"
+    ],
+    "sources/histories-book-ii": [
+      "en"
+    ],
+    "sources/hoyle-wickramasinghe-lifecloud": [
+      "en"
+    ],
+    "sources/idel-kabbalah-new-perspectives": [
+      "en"
+    ],
+    "sources/inanna-queen-of-heaven": [
+      "en"
+    ],
+    "sources/inca-architecture-ollantaytambo": [
+      "en"
+    ],
+    "sources/intelligent-design-message-from-the-designers": [
+      "en"
+    ],
+    "sources/internet-sacred-text-archive": [
+      "en"
+    ],
+    "sources/investigating-the-sirius-mystery": [
+      "en"
+    ],
+    "sources/is-genesis-history": [
+      "en"
+    ],
+    "sources/isaiah": [
+      "en"
+    ],
+    "sources/jeremiah": [
+      "en"
+    ],
+    "sources/job": [
+      "en"
+    ],
+    "sources/joel": [
+      "en"
+    ],
+    "sources/joshua": [
+      "en"
+    ],
+    "sources/journal-de-merer-tallet": [
+      "en"
+    ],
+    "sources/jurassic-park": [
+      "en"
+    ],
+    "sources/jurassic-world": [
+      "en"
+    ],
+    "sources/kant-critique-pure-reason": [
+      "en"
+    ],
+    "sources/kelly-satan-biography": [
+      "en"
+    ],
+    "sources/kitab-i-aqdas": [
+      "en"
+    ],
+    "sources/kojiki": [
+      "en"
+    ],
+    "sources/kosmographia": [
+      "en"
+    ],
+    "sources/kramer-enki-myths": [
+      "en"
+    ],
+    "sources/krupp-echoes-ancient-skies": [
+      "en"
+    ],
+    "sources/kugel-how-to-read-bible": [
+      "en"
+    ],
+    "sources/la-bible-of-la-pleiade": [
+      "en"
+    ],
+    "sources/lateran-treaty": [
+      "en"
+    ],
+    "sources/le-guin-dispossessed": [
+      "en"
+    ],
+    "sources/le-livre-qui-dit-la-v-rit": [
+      "en"
+    ],
+    "sources/le-renard-p-le": [
+      "en"
+    ],
+    "sources/les-extra-terrestres-m-ont-emmen-sur-leur-plan-te": [
+      "en"
+    ],
+    "sources/lets-welcome-the-extraterrestrials": [
+      "en"
+    ],
+    "sources/levengood-physiologia-plantarum-1994": [
+      "en"
+    ],
+    "sources/leviticus": [
+      "en"
+    ],
+    "sources/linde-inflation-quantum-cosmology": [
+      "en"
+    ],
+    "sources/lindow-norse-mythology": [
+      "en"
+    ],
+    "sources/loeb-extraterrestrial": [
+      "en"
+    ],
+    "sources/loeb-interstellar": [
+      "en"
+    ],
+    "sources/long-sedley-hellenistic-philosophers": [
+      "en"
+    ],
+    "sources/lost-continent-of-mu": [
+      "en"
+    ],
+    "sources/magicians-of-the-gods": [
+      "en"
+    ],
+    "sources/mahabharata": [
+      "en"
+    ],
+    "sources/maimonides-mishneh-torah": [
+      "en"
+    ],
+    "sources/major-trends-jewish-mysticism": [
+      "en"
+    ],
+    "sources/marriage-of-heaven-and-hell": [
+      "en"
+    ],
+    "sources/mathematics-and-the-unexpected": [
+      "en"
+    ],
+    "sources/matt-essential-kabbalah": [
+      "en"
+    ],
+    "sources/mazzaroth-dot-com": [
+      "en"
+    ],
+    "sources/mazzaroth-rolleston": [
+      "en"
+    ],
+    "sources/mcginn-antichrist": [
+      "en"
+    ],
+    "sources/mesopotamian-chronicles": [
+      "en"
+    ],
+    "sources/metamorphoses": [
+      "en"
+    ],
+    "sources/meyers-discovering-eve": [
+      "en"
+    ],
+    "sources/miracles-and-the-pulp-press": [
+      "en"
+    ],
+    "sources/misunderstandings-about-the-tunguska-event-shock-wave-physics-and-airbursts-have": [
+      "en"
+    ],
+    "sources/mitochondrial-dna-and-human-evolution": [
+      "en"
+    ],
+    "sources/miyazaki-castle-in-the-sky": [
+      "en"
+    ],
+    "sources/miyazaki-nausicaa": [
+      "en"
+    ],
+    "sources/miyazaki-princess-mononoke": [
+      "en"
+    ],
+    "sources/modern-perspectives-on-topic-analysis": [
+      "en"
+    ],
+    "sources/mores-utopia": [
+      "en"
+    ],
+    "sources/multispecies-cities-anthology": [
+      "en"
+    ],
+    "sources/myth-of-the-eternal-return": [
+      "en"
+    ],
+    "sources/nag-hammadi-library": [
+      "en"
+    ],
+    "sources/nash-sarsen-megaliths-2020": [
+      "en"
+    ],
+    "sources/natufian-culture-in-the-levant": [
+      "en"
+    ],
+    "sources/neugebauer-history-astronomy": [
+      "en"
+    ],
+    "sources/newsom-job-moral": [
+      "en"
+    ],
+    "sources/nicene-creed": [
+      "en"
+    ],
+    "sources/nickell-levengood-skeptical-inquirer-1996": [
+      "en"
+    ],
+    "sources/nickelsburg-enoch-1": [
+      "en"
+    ],
+    "sources/nietzsche-zarathustra": [
+      "en"
+    ],
+    "sources/no-mineralogic-or-geochemical-evidence-of-impact-at-tall-el-hammam-a-middle-bron": [
+      "en"
+    ],
+    "sources/numbers": [
+      "en"
+    ],
+    "sources/oblivion-film": [
+      "en"
+    ],
+    "sources/oppenheimer-eden-east": [
+      "en"
+    ],
+    "sources/order-out-of-chaos-man-s-new-dialogue-with-nature": [
+      "en"
+    ],
+    "sources/origins-of-the-worlds-mythologies": [
+      "en"
+    ],
+    "sources/osteology-of-deinonychus-antirrhopus-an-unusual-theropod-from-the-lower-cretaceo": [
+      "en"
+    ],
+    "sources/otto-hangende-dach": [
+      "en"
+    ],
+    "sources/pagels-adam-eve-serpent": [
+      "en"
+    ],
+    "sources/pagels-gnostic-gospels": [
+      "en"
+    ],
+    "sources/pagels-origin-of-satan": [
+      "en"
+    ],
+    "sources/pagels-origin-satan": [
+      "en"
+    ],
+    "sources/paradise-lost": [
+      "en"
+    ],
+    "sources/parpola-assyrian-tree-of-life": [
+      "en"
+    ],
+    "sources/parzival": [
+      "en"
+    ],
+    "sources/passport-to-the-cosmos": [
+      "en"
+    ],
+    "sources/penrose-cycles-of-time": [
+      "en"
+    ],
+    "sources/pillar-of-enoch-dot-com": [
+      "en"
+    ],
+    "sources/plaskow-standing-again-sinai": [
+      "en"
+    ],
+    "sources/poetic-edda": [
+      "en"
+    ],
+    "sources/pope-job": [
+      "en"
+    ],
+    "sources/popol-vuh": [
+      "en"
+    ],
+    "sources/prehistoric-avebury": [
+      "en"
+    ],
+    "sources/principles-of-geology": [
+      "en"
+    ],
+    "sources/pringle-crop-circles": [
+      "en"
+    ],
+    "sources/pritchard-anet": [
+      "en"
+    ],
+    "sources/prolegomena-zur-geschichte-israels": [
+      "en"
+    ],
+    "sources/prometheus-bound": [
+      "en"
+    ],
+    "sources/prometheus-unbound": [
+      "en"
+    ],
+    "sources/prose-edda": [
+      "en"
+    ],
+    "sources/providence-in-early-modern-england": [
+      "en"
+    ],
+    "sources/psalms": [
+      "en"
+    ],
+    "sources/pseudodoxia-epidemica": [
+      "en"
+    ],
+    "sources/ptolemy-almagest": [
+      "en"
+    ],
+    "sources/qur-anic-geography": [
+      "en"
+    ],
+    "sources/rael-dot-org": [
+      "en"
+    ],
+    "sources/ramayana": [
+      "en"
+    ],
+    "sources/real-life-x-files-nickell": [
+      "en"
+    ],
+    "sources/redating-the-great-sphinx-of-giza": [
+      "en"
+    ],
+    "sources/reed-fallen-angels": [
+      "en"
+    ],
+    "sources/reliquiae-diluvianae": [
+      "en"
+    ],
+    "sources/retracted-article-a-tunguska-sized-airburst-destroyed-tall-el-hammam-a-middle-br": [
+      "en"
+    ],
+    "sources/retraction-note-a-tunguska-sized-airburst-destroyed-tall-el-hammam-a-middle-bron": [
+      "en"
+    ],
+    "sources/revelation": [
+      "en"
+    ],
+    "sources/rnkjv": [
+      "en"
+    ],
+    "sources/rochberg-heavenly-writing": [
+      "en"
+    ],
+    "sources/rohl-legend-genesis": [
+      "en"
+    ],
+    "sources/round-in-circles-schnabel": [
+      "en"
+    ],
+    "sources/russell-devil-antiquity": [
+      "en"
+    ],
+    "sources/russell-lucifer-middle-ages": [
+      "en"
+    ],
+    "sources/russell-mephistopheles-modern": [
+      "en"
+    ],
+    "sources/russell-satan-early-christian": [
+      "en"
+    ],
+    "sources/ryan-pitman-noahs-flood": [
+      "en"
+    ],
+    "sources/sachedina-islamic-messianism": [
+      "en"
+    ],
+    "sources/sandt-zangenberg-matthew-james-didache": [
+      "en"
+    ],
+    "sources/sarna-genesis-jps": [
+      "en"
+    ],
+    "sources/satan-a-biography": [
+      "en"
+    ],
+    "sources/schele-freidel-forest-of-kings": [
+      "en"
+    ],
+    "sources/science-after-babel": [
+      "en"
+    ],
+    "sources/sefaria": [
+      "en"
+    ],
+    "sources/sefer-yetzirah": [
+      "en"
+    ],
+    "sources/sendy-cahiers-moise": [
+      "en"
+    ],
+    "sources/sendy-ces-dieux": [
+      "en"
+    ],
+    "sources/sendy-ere-du-verseau": [
+      "en"
+    ],
+    "sources/sendy-lune-cle-bible": [
+      "en"
+    ],
+    "sources/serpent-in-the-sky": [
+      "en"
+    ],
+    "sources/shan-hai-jing": [
+      "en"
+    ],
+    "sources/shiur-qomah": [
+      "en"
+    ],
+    "sources/signature-in-the-cell": [
+      "en"
+    ],
+    "sources/sinclair-lifespan": [
+      "en"
+    ],
+    "sources/sitchin-12th-planet": [
+      "en"
+    ],
+    "sources/skinner-genesis-icc": [
+      "en"
+    ],
+    "sources/smith-early-history-god": [
+      "en"
+    ],
+    "sources/soft-tissue-vessels-and-cellular-preservation-in-tyrannosaurus-rex": [
+      "en"
+    ],
+    "sources/solarpunk-anthology-2018": [
+      "en"
+    ],
+    "sources/soleri-arcology": [
+      "en"
+    ],
+    "sources/space-a-gogo-dot-com": [
+      "en"
+    ],
+    "sources/star-trek-tng": [
+      "en"
+    ],
+    "sources/statues-that-walked": [
+      "en"
+    ],
+    "sources/steinhardt-turok-endless-universe": [
+      "en"
+    ],
+    "sources/stephenson-diamond-age": [
+      "en"
+    ],
+    "sources/stonehenge-parker-pearson": [
+      "en"
+    ],
+    "sources/stordalen-echoes-of-eden": [
+      "en"
+    ],
+    "sources/sturluson-prose-edda": [
+      "en"
+    ],
+    "sources/summa-theologiae": [
+      "en"
+    ],
+    "sources/sunvault-anthology": [
+      "en"
+    ],
+    "sources/takahashi-yamanaka-2006": [
+      "en"
+    ],
+    "sources/tanakh": [
+      "en"
+    ],
+    "sources/tedlock-popol-vuh": [
+      "en"
+    ],
+    "sources/tegmark-mathematical-universe": [
+      "en"
+    ],
+    "sources/telluris-theoria-sacra": [
+      "en"
+    ],
+    "sources/temporary-temples": [
+      "en"
+    ],
+    "sources/terranigma": [
+      "en"
+    ],
+    "sources/tester-western-astrology": [
+      "en"
+    ],
+    "sources/the-12th-planet": [
+      "en"
+    ],
+    "sources/the-apportionment-of-human-diversity": [
+      "en"
+    ],
+    "sources/the-assembly-of-the-gods": [
+      "en"
+    ],
+    "sources/the-bible-is-not-a-sacred-book": [
+      "en"
+    ],
+    "sources/the-book-of-mormon": [
+      "en"
+    ],
+    "sources/the-book-which-tells-the-truth": [
+      "en"
+    ],
+    "sources/the-chaldean-account-of-genesis": [
+      "en"
+    ],
+    "sources/the-church-of-jesus-latter-day-saints-scriptures": [
+      "en"
+    ],
+    "sources/the-circles-effect-meaden": [
+      "en"
+    ],
+    "sources/the-collection-of-divine-messages-of-cai-dai": [
+      "en"
+    ],
+    "sources/the-coming-of-the-gods": [
+      "en"
+    ],
+    "sources/the-complete-pyramids": [
+      "en"
+    ],
+    "sources/the-deepening-complexity-crop-circles": [
+      "en"
+    ],
+    "sources/the-devil-perceptions-of-evil": [
+      "en"
+    ],
+    "sources/the-devils-delusion": [
+      "en"
+    ],
+    "sources/the-early-history-of-god": [
+      "en"
+    ],
+    "sources/the-eden-conspiracy": [
+      "en"
+    ],
+    "sources/the-electronic-text-corpus-of-sumerian-literature": [
+      "en"
+    ],
+    "sources/the-engagement": [
+      "en"
+    ],
+    "sources/the-eridu-genesis": [
+      "en"
+    ],
+    "sources/the-field-guide-crop-circle-making": [
+      "en"
+    ],
+    "sources/the-fractal-geometry-of-nature": [
+      "en"
+    ],
+    "sources/the-gods-have-landed": [
+      "en"
+    ],
+    "sources/the-gospels-in-the-stars": [
+      "en"
+    ],
+    "sources/the-hebrew-and-aramaic-lexicon-of-the-old-testament": [
+      "en"
+    ],
+    "sources/the-human-history-mistake": [
+      "en"
+    ],
+    "sources/the-kabbalah-law-and-mysticism-in-the-jewish-tradition": [
+      "en"
+    ],
+    "sources/the-kumulipo-a-hawaiian-creation-chant": [
+      "en"
+    ],
+    "sources/the-moon-outpost-of-the-gods": [
+      "en"
+    ],
+    "sources/the-naked-bible": [
+      "en"
+    ],
+    "sources/the-origin-of-satan": [
+      "en"
+    ],
+    "sources/the-possibility-of-an-island": [
+      "en"
+    ],
+    "sources/the-qur-an": [
+      "en"
+    ],
+    "sources/the-revelation-of-the-pyramid": [
+      "en"
+    ],
+    "sources/the-ricks-must-be-crazy": [
+      "en"
+    ],
+    "sources/the-sacred-city": [
+      "en"
+    ],
+    "sources/the-satanic-bible": [
+      "en"
+    ],
+    "sources/the-scars-of-eden": [
+      "en"
+    ],
+    "sources/the-sky-people": [
+      "en"
+    ],
+    "sources/the-spaceships-of-ezekiel": [
+      "en"
+    ],
+    "sources/the-stairway-to-heaven": [
+      "en"
+    ],
+    "sources/the-techno-optimist-manifesto": [
+      "en"
+    ],
+    "sources/the-unseen-realm": [
+      "en"
+    ],
+    "sources/the-wars-of-gods-and-men": [
+      "en"
+    ],
+    "sources/the-zohar-pritzker": [
+      "en"
+    ],
+    "sources/theogony-and-works-and-days": [
+      "en"
+    ],
+    "sources/theogony-works-and-days": [
+      "en"
+    ],
+    "sources/theory-of-the-earth": [
+      "en"
+    ],
+    "sources/those-gods-who-made-heaven-and-earth": [
+      "en"
+    ],
+    "sources/tomorrowland-film": [
+      "en"
+    ],
+    "sources/tov-textual-criticism": [
+      "en"
+    ],
     "sources/tradition": [
       "en"
     ],
@@ -1494,6 +2598,87 @@
       "en"
     ],
     "sources/tradition/second-temple": [
+      "en"
+    ],
+    "sources/trible-rhetoric-sexuality": [
+      "en"
+    ],
+    "sources/ufo-religions": [
+      "en"
+    ],
+    "sources/underworld-hancock": [
+      "en"
+    ],
+    "sources/vanderkam-dss-today": [
+      "en"
+    ],
+    "sources/vedas": [
+      "en"
+    ],
+    "sources/vermes-dead-sea-scrolls": [
+      "en"
+    ],
+    "sources/vidal-naquet-atlantis-story": [
+      "en"
+    ],
+    "sources/vienna-convention-diplomatic-relations": [
+      "en"
+    ],
+    "sources/vilenkin-many-worlds-in-one": [
+      "en"
+    ],
+    "sources/voices-of-the-rocks": [
+      "en"
+    ],
+    "sources/voices-of-the-rocks-a-scientist-looks-at-catastrophes-and-ancient-civilizations": [
+      "en"
+    ],
+    "sources/von-rad-genesis": [
+      "en"
+    ],
+    "sources/wall-e": [
+      "en"
+    ],
+    "sources/wallace-eden-narrative": [
+      "en"
+    ],
+    "sources/wallis-eden-conspiracy": [
+      "en"
+    ],
+    "sources/wellhausen-prolegomena": [
+      "en"
+    ],
+    "sources/westermann-genesis-1-11": [
+      "en"
+    ],
+    "sources/who-wrote-the-bible": [
+      "en"
+    ],
+    "sources/wiener-cybernetics": [
+      "en"
+    ],
+    "sources/williams-mahayana": [
+      "en"
+    ],
+    "sources/williams-mahayana-buddhism": [
+      "en"
+    ],
+    "sources/wonders-in-the-sky": [
+      "en"
+    ],
+    "sources/wright-resurrection-son-of-god": [
+      "en"
+    ],
+    "sources/yates-giordano-bruno-hermetic": [
+      "en"
+    ],
+    "sources/zechariah": [
+      "en"
+    ],
+    "sources/zephaniah": [
+      "en"
+    ],
+    "sources/zohar-pritzker": [
       "en"
     ],
     "timeline": [

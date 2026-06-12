@@ -44,6 +44,7 @@ OUTPUT_PATH = PROJECT_ROOT / "data" / "sources.json"
 CITED_BY_OUTPUT_PATH = PROJECT_ROOT / "data" / "sources" / "cited-by.json"
 CONTENT_ROOT = PROJECT_ROOT / "content"
 SOURCE_PAGES_DIR = CONTENT_ROOT / "sources" / "_generated"
+SOURCE_PAGE_LOCALES = ("en", "de", "es", "fr", "he", "ja", "ko", "ru", "zh", "zh-Hant")
 SCAN_SECTIONS = ("wiki", "articles", "timeline", "library", "sources")
 
 # Legacy data-bibliography source_type → new V1 `medium` value. The new
@@ -84,6 +85,12 @@ def normalize_url(url: str | None) -> str | None:
 
 def toml_quote(value: str) -> str:
     return json.dumps(value, ensure_ascii=False)
+
+
+def source_page_path(source_id: str, locale: str) -> str:
+    if locale == "en":
+        return f"/sources/{source_id}/"
+    return f"/{locale}/sources/{source_id}/"
 
 
 def _empty_record(record_id: str) -> dict:
@@ -334,25 +341,21 @@ def write_output(seeds: dict[str, dict], cites_recorded: int) -> None:
         encoding="utf-8",
     )
 
-    SOURCE_PAGES_DIR.mkdir(parents=True, exist_ok=True)
-    for source in sources:
-        page_path = SOURCE_PAGES_DIR / f"{source['id']}.md"
-        page_path.write_text(render_source_page_stub(source), encoding="utf-8")
+    write_source_pages(sources)
 
     print(
         f"wrote {OUTPUT_PATH.relative_to(PROJECT_ROOT)}: {len(sources)} sources, {cites_recorded} inline cites"
     )
     print(f"wrote {CITED_BY_OUTPUT_PATH.relative_to(PROJECT_ROOT)}")
-    print(f"wrote {SOURCE_PAGES_DIR.relative_to(PROJECT_ROOT)}/*.md")
+    print(f"wrote source page shells for {len(sources)} source(s) across {len(SOURCE_PAGE_LOCALES)} locale(s)")
 
 
-def render_source_page_stub(source: dict) -> str:
+def render_source_page_stub(source: dict, locale: str) -> str:
     """Render a tiny page stub that points Zola at the source detail template."""
-    source_path = f"/sources/{source['id']}/"
     lines = [
         "+++",
         f'title = {toml_quote(source["title"])}',
-        f"path = {toml_quote(source_path)}",
+        f"path = {toml_quote(source_page_path(source['id'], locale))}",
         'template = "source-page.html"',
     ]
     if source.get("description"):
@@ -368,6 +371,15 @@ def render_source_page_stub(source: dict) -> str:
         ]
     )
     return "\n".join(lines)
+
+
+def write_source_pages(sources: list[dict]) -> None:
+    for locale in SOURCE_PAGE_LOCALES:
+        locale_dir = CONTENT_ROOT / locale / "sources" / "_generated" if locale != "en" else SOURCE_PAGES_DIR
+        locale_dir.mkdir(parents=True, exist_ok=True)
+        for source in sources:
+            page_path = locale_dir / f"{source['id']}.md"
+            page_path.write_text(render_source_page_stub(source, locale), encoding="utf-8")
 
 
 def main() -> None:

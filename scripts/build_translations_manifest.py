@@ -50,6 +50,7 @@ OUTPUT_PATH = PROJECT_ROOT / "data" / "translations.json"
 # lives at content/ (no prefix); the rest live at content/<code>/.
 LOCALES = ("de", "es", "fr", "he", "ja", "ko", "ru", "zh", "zh-Hant")
 DEFAULT_LOCALE = "en"
+GENERATED_SOURCE_DIRS = ("sources/_generated",)
 
 
 def canonical_path(md_file: Path) -> tuple[str, str]:
@@ -72,6 +73,9 @@ def canonical_path(md_file: Path) -> tuple[str, str]:
     if not parts:
         # content/<locale>/_index.md case lands here after popping the locale.
         return "_root", locale
+
+    if len(parts) >= 2 and parts[-2] == "_generated":
+        parts.pop(-2)
 
     last = parts[-1]
     if last in ("_index.md", "index.md"):
@@ -101,10 +105,22 @@ def tracked_md_files() -> list[Path]:
     return [CONTENT_ROOT / line for line in result.stdout.splitlines() if line]
 
 
+def generated_source_stub_files() -> list[Path]:
+    paths: list[Path] = []
+    for rel_dir in GENERATED_SOURCE_DIRS:
+        for md_file in sorted((CONTENT_ROOT / rel_dir).rglob("*.md")):
+            paths.append(md_file)
+        for locale in LOCALES:
+            locale_dir = CONTENT_ROOT / locale / rel_dir
+            if locale_dir.is_dir():
+                paths.extend(sorted(locale_dir.rglob("*.md")))
+    return paths
+
+
 def build_manifest() -> dict:
     paths: dict[str, set[str]] = {}
 
-    for md_file in sorted(tracked_md_files()):
+    for md_file in sorted({*tracked_md_files(), *generated_source_stub_files()}):
         # Skip anything starting with "." just in case ls-files surfaces one.
         if any(part.startswith(".") for part in md_file.parts):
             continue
