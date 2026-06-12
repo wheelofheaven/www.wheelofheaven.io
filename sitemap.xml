@@ -742,6 +742,12 @@
         <priority>0.5</priority></url>
 
     <url>
+        <loc>https://www.wheelofheaven.world/de/news/pursue-release-03-multi-agency-and-international/</loc>
+        
+        <changefreq>weekly</changefreq>
+        <priority>0.5</priority></url>
+
+    <url>
         <loc>https://www.wheelofheaven.world/de/offline/</loc>
         
         <changefreq>weekly</changefreq>
@@ -4571,6 +4577,12 @@
 
     <url>
         <loc>https://www.wheelofheaven.world/es/news/pursue-release-02-spheres-and-transmedium/</loc>
+        
+        <changefreq>weekly</changefreq>
+        <priority>0.5</priority></url>
+
+    <url>
+        <loc>https://www.wheelofheaven.world/es/news/pursue-release-03-multi-agency-and-international/</loc>
         
         <changefreq>weekly</changefreq>
         <priority>0.5</priority></url>
@@ -8422,6 +8434,12 @@
         <priority>0.5</priority></url>
 
     <url>
+        <loc>https://www.wheelofheaven.world/fr/news/pursue-release-03-multi-agency-and-international/</loc>
+        
+        <changefreq>weekly</changefreq>
+        <priority>0.5</priority></url>
+
+    <url>
         <loc>https://www.wheelofheaven.world/fr/offline/</loc>
         
         <changefreq>weekly</changefreq>
@@ -12245,6 +12263,12 @@
 
     <url>
         <loc>https://www.wheelofheaven.world/he/news/pursue-release-02-spheres-and-transmedium/</loc>
+        
+        <changefreq>weekly</changefreq>
+        <priority>0.5</priority></url>
+
+    <url>
+        <loc>https://www.wheelofheaven.world/he/news/pursue-release-03-multi-agency-and-international/</loc>
         
         <changefreq>weekly</changefreq>
         <priority>0.5</priority></url>
@@ -16078,6 +16102,12 @@
         <priority>0.5</priority></url>
 
     <url>
+        <loc>https://www.wheelofheaven.world/ja/news/pursue-release-03-multi-agency-and-international/</loc>
+        
+        <changefreq>weekly</changefreq>
+        <priority>0.5</priority></url>
+
+    <url>
         <loc>https://www.wheelofheaven.world/ja/offline/</loc>
         
         <changefreq>weekly</changefreq>
@@ -19901,6 +19931,12 @@
 
     <url>
         <loc>https://www.wheelofheaven.world/ko/news/pursue-release-02-spheres-and-transmedium/</loc>
+        
+        <changefreq>weekly</changefreq>
+        <priority>0.5</priority></url>
+
+    <url>
+        <loc>https://www.wheelofheaven.world/ko/news/pursue-release-03-multi-agency-and-international/</loc>
         
         <changefreq>weekly</changefreq>
         <priority>0.5</priority></url>
@@ -23830,6 +23866,12 @@
         <priority>0.5</priority></url>
 
     <url>
+        <loc>https://www.wheelofheaven.world/news/pursue-release-03-multi-agency-and-international/</loc>
+        
+        <changefreq>weekly</changefreq>
+        <priority>0.5</priority></url>
+
+    <url>
         <loc>https://www.wheelofheaven.world/offline/</loc>
         
         <changefreq>weekly</changefreq>
@@ -24515,6 +24557,12 @@
 
     <url>
         <loc>https://www.wheelofheaven.world/ru/news/pursue-release-02-spheres-and-transmedium/</loc>
+        
+        <changefreq>weekly</changefreq>
+        <priority>0.5</priority></url>
+
+    <url>
+        <loc>https://www.wheelofheaven.world/ru/news/pursue-release-03-multi-agency-and-international/</loc>
         
         <changefreq>weekly</changefreq>
         <priority>0.5</priority></url>
@@ -31534,6 +31582,12 @@
         <priority>0.5</priority></url>
 
     <url>
+        <loc>https://www.wheelofheaven.world/zh-Hant/news/pursue-release-03-multi-agency-and-international/</loc>
+        
+        <changefreq>weekly</changefreq>
+        <priority>0.5</priority></url>
+
+    <url>
         <loc>https://www.wheelofheaven.world/zh-Hant/offline/</loc>
         
         <changefreq>weekly</changefreq>
@@ -35357,6 +35411,12 @@
 
     <url>
         <loc>https://www.wheelofheaven.world/zh/news/pursue-release-02-spheres-and-transmedium/</loc>
+        
+        <changefreq>weekly</changefreq>
+        <priority>0.5</priority></url>
+
+    <url>
+        <loc>https://www.wheelofheaven.world/zh/news/pursue-release-03-multi-agency-and-international/</loc>
         
         <changefreq>weekly</changefreq>
         <priority>0.5</priority></url>
