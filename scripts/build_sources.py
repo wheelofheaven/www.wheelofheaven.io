@@ -23,6 +23,8 @@ Inline scan:
 Output:
   - data/sources.json — single flat file consumed by
     sources-section.html via Zola's load_data.
+  - data/sources/cited-by.json — reverse index for source detail pages.
+  - content/sources/_generated/*.md — tiny page stubs for /sources/{id}/.
 
 Run: `python scripts/build_sources.py` (or `mise run sources`).
 """
@@ -39,7 +41,9 @@ from pathlib import Path
 PROJECT_ROOT = Path(__file__).resolve().parent.parent
 LEGACY_SEED_DIR = PROJECT_ROOT / "data" / "sources" / "sources"
 OUTPUT_PATH = PROJECT_ROOT / "data" / "sources.json"
+CITED_BY_OUTPUT_PATH = PROJECT_ROOT / "data" / "sources" / "cited-by.json"
 CONTENT_ROOT = PROJECT_ROOT / "content"
+SOURCE_PAGES_DIR = CONTENT_ROOT / "sources" / "_generated"
 SCAN_SECTIONS = ("wiki", "articles", "timeline", "library", "sources")
 
 # Legacy data-bibliography source_type → new V1 `medium` value. The new
@@ -76,6 +80,10 @@ def normalize_url(url: str | None) -> str | None:
     if not url:
         return None
     return url.strip().rstrip("/").lower()
+
+
+def toml_quote(value: str) -> str:
+    return json.dumps(value, ensure_ascii=False)
 
 
 def _empty_record(record_id: str) -> dict:
@@ -290,7 +298,7 @@ def scan_pages(seeds: dict[str, dict]) -> int:
 
 
 def write_output(seeds: dict[str, dict], cites_recorded: int) -> None:
-    sources = sorted(seeds.values(), key=lambda s: s["title"].casefold())
+    sources = sorted(seeds.values(), key=lambda s: (s["title"].casefold(), s["id"]))
 
     media_counts: dict[str, int] = {}
     for s in sources:
@@ -306,7 +314,60 @@ def write_output(seeds: dict[str, dict], cites_recorded: int) -> None:
         "sources": sources,
     }
     OUTPUT_PATH.write_text(json.dumps(payload, ensure_ascii=False, indent=2) + "\n", encoding="utf-8")
-    print(f"wrote {OUTPUT_PATH.relative_to(PROJECT_ROOT)}: {len(sources)} sources, {cites_recorded} inline cites")
+
+    cited_by_payload = {
+        "generated_at": payload["generated_at"],
+        "generator": payload["generator"],
+        "schema_version": payload["schema_version"],
+        "sources": [
+            {
+                "id": s["id"],
+                "cited_by": s["cited_by"],
+                "cite_count": s["cite_count"],
+            }
+            for s in sources
+        ],
+    }
+    CITED_BY_OUTPUT_PATH.parent.mkdir(parents=True, exist_ok=True)
+    CITED_BY_OUTPUT_PATH.write_text(
+        json.dumps(cited_by_payload, ensure_ascii=False, indent=2) + "\n",
+        encoding="utf-8",
+    )
+
+    SOURCE_PAGES_DIR.mkdir(parents=True, exist_ok=True)
+    for source in sources:
+        page_path = SOURCE_PAGES_DIR / f"{source['id']}.md"
+        page_path.write_text(render_source_page_stub(source), encoding="utf-8")
+
+    print(
+        f"wrote {OUTPUT_PATH.relative_to(PROJECT_ROOT)}: {len(sources)} sources, {cites_recorded} inline cites"
+    )
+    print(f"wrote {CITED_BY_OUTPUT_PATH.relative_to(PROJECT_ROOT)}")
+    print(f"wrote {SOURCE_PAGES_DIR.relative_to(PROJECT_ROOT)}/*.md")
+
+
+def render_source_page_stub(source: dict) -> str:
+    """Render a tiny page stub that points Zola at the source detail template."""
+    source_path = f"/sources/{source['id']}/"
+    lines = [
+        "+++",
+        f'title = {toml_quote(source["title"])}',
+        f"path = {toml_quote(source_path)}",
+        'template = "source-page.html"',
+    ]
+    if source.get("description"):
+        lines.append(f'description = {toml_quote(source["description"])}')
+    lines.extend(
+        [
+            "",
+            "[extra]",
+            f'source_id = {toml_quote(source["id"])}',
+            'translation_status = "en_only"',
+            "+++",
+            "",
+        ]
+    )
+    return "\n".join(lines)
 
 
 def main() -> None:

@@ -1,0 +1,5418 @@
+{
+  "generated_at": "2026-06-12T15:02:44+00:00",
+  "generator": "scripts/build_sources.py",
+  "schema_version": 1,
+  "sources": [
+    {
+      "id": "1-chronicles",
+      "cited_by": [],
+      "cite_count": 0
+    },
+    {
+      "id": "1-enoch-the-book-of-the-watchers",
+      "cited_by": [
+        {
+          "section": "timeline",
+          "title": "Preamble",
+          "path": "/timeline/preamble/"
+        },
+        {
+          "section": "wiki",
+          "title": "Council of the Eternals",
+          "path": "/wiki/council-of-eternals/"
+        },
+        {
+          "section": "wiki",
+          "title": "Satan",
+          "path": "/wiki/satan/"
+        }
+      ],
+      "cite_count": 3
+    },
+    {
+      "id": "nickelsburg-enoch-1",
+      "cited_by": [
+        {
+          "section": "wiki",
+          "title": "Satan",
+          "path": "/wiki/satan/"
+        }
+      ],
+      "cite_count": 1
+    },
+    {
+      "id": "1-kings",
+      "cited_by": [],
+      "cite_count": 0
+    },
+    {
+      "id": "1-samuel",
+      "cited_by": [],
+      "cite_count": 0
+    },
+    {
+      "id": "2-chronicles",
+      "cited_by": [],
+      "cite_count": 0
+    },
+    {
+      "id": "2-kings",
+      "cited_by": [],
+      "cite_count": 0
+    },
+    {
+      "id": "2-samuel",
+      "cited_by": [],
+      "cite_count": 0
+    },
+    {
+      "id": "cassuto-genesis",
+      "cited_by": [
+        {
+          "section": "wiki",
+          "title": "Eden",
+          "path": "/wiki/eden/"
+        },
+        {
+          "section": "wiki",
+          "title": "Hebrew Bible",
+          "path": "/wiki/hebrew-bible/"
+        }
+      ],
+      "cite_count": 2
+    },
+    {
+      "id": "a-concise-dictionary-of-the-words-in-the-hebrew-bible-strong-s",
+      "cited_by": [
+        {
+          "section": "timeline",
+          "title": "Age of Virgo",
+          "path": "/timeline/age-of-virgo/"
+        }
+      ],
+      "cite_count": 1
+    },
+    {
+      "id": "skinner-genesis-icc",
+      "cited_by": [
+        {
+          "section": "wiki",
+          "title": "Adam and Eve",
+          "path": "/wiki/adam-and-eve/"
+        },
+        {
+          "section": "wiki",
+          "title": "Serpent",
+          "path": "/wiki/serpent/"
+        }
+      ],
+      "cite_count": 2
+    },
+    {
+      "id": "schele-freidel-forest-of-kings",
+      "cited_by": [
+        {
+          "section": "wiki",
+          "title": "Tree of Life",
+          "path": "/wiki/tree-of-life/"
+        }
+      ],
+      "cite_count": 1
+    },
+    {
+      "id": "a-gentlemans-joyous-esotericism",
+      "cited_by": [
+        {
+          "section": "wiki",
+          "title": "Council of the Eternals",
+          "path": "/wiki/council-of-eternals/"
+        },
+        {
+          "section": "wiki",
+          "title": "Elohim",
+          "path": "/wiki/elohim/"
+        },
+        {
+          "section": "wiki",
+          "title": "Genesis",
+          "path": "/wiki/genesis/"
+        }
+      ],
+      "cite_count": 3
+    },
+    {
+      "id": "a-hebrew-and-english-lexicon-of-the-old-testament",
+      "cited_by": [
+        {
+          "section": "timeline",
+          "title": "Age of Virgo",
+          "path": "/timeline/age-of-virgo/"
+        },
+        {
+          "section": "wiki",
+          "title": "Yahweh",
+          "path": "/wiki/yahweh/"
+        }
+      ],
+      "cite_count": 2
+    },
+    {
+      "id": "neugebauer-history-astronomy",
+      "cited_by": [],
+      "cite_count": 0
+    },
+    {
+      "id": "a-history-of-god",
+      "cited_by": [],
+      "cite_count": 0
+    },
+    {
+      "id": "tester-western-astrology",
+      "cited_by": [],
+      "cite_count": 0
+    },
+    {
+      "id": "campion-history-astrology",
+      "cited_by": [],
+      "cite_count": 0
+    },
+    {
+      "id": "a-programmable-dual-rna-guided-dna-endonuclease-in-adaptive-bacterial-immunity",
+      "cited_by": [
+        {
+          "section": "timeline",
+          "title": "Age of Leo",
+          "path": "/timeline/age-of-leo/"
+        }
+      ],
+      "cite_count": 1
+    },
+    {
+      "id": "bunch-tall-el-hammam",
+      "cited_by": [
+        {
+          "section": "wiki",
+          "title": "Great Flood",
+          "path": "/wiki/great-flood/"
+        }
+      ],
+      "cite_count": 1
+    },
+    {
+      "id": "acts-of-the-apostles",
+      "cited_by": [
+        {
+          "section": "timeline",
+          "title": "Age of Aquarius",
+          "path": "/timeline/age-of-aquarius/"
+        },
+        {
+          "section": "wiki",
+          "title": "Jesus",
+          "path": "/wiki/jesus/"
+        }
+      ],
+      "cite_count": 2
+    },
+    {
+      "id": "pagels-adam-eve-serpent",
+      "cited_by": [
+        {
+          "section": "wiki",
+          "title": "Adam and Eve",
+          "path": "/wiki/adam-and-eve/"
+        },
+        {
+          "section": "wiki",
+          "title": "Serpent",
+          "path": "/wiki/serpent/"
+        }
+      ],
+      "cite_count": 2
+    },
+    {
+      "id": "aliens-adored",
+      "cited_by": [],
+      "cite_count": 0
+    },
+    {
+      "id": "ptolemy-almagest",
+      "cited_by": [],
+      "cite_count": 0
+    },
+    {
+      "id": "alternative-history-s-mainstream-history",
+      "cited_by": [],
+      "cite_count": 0
+    },
+    {
+      "id": "america-before",
+      "cited_by": [
+        {
+          "section": "wiki",
+          "title": "Ancient Builders",
+          "path": "/wiki/ancient-builders/"
+        },
+        {
+          "section": "wiki",
+          "title": "Antediluvian",
+          "path": "/wiki/antediluvian/"
+        }
+      ],
+      "cite_count": 2
+    },
+    {
+      "id": "day-adversary-heaven",
+      "cited_by": [
+        {
+          "section": "wiki",
+          "title": "Satan",
+          "path": "/wiki/satan/"
+        }
+      ],
+      "cite_count": 1
+    },
+    {
+      "id": "an-adversary-in-heaven",
+      "cited_by": [],
+      "cite_count": 0
+    },
+    {
+      "id": "an-exceptionally-well-preserved-theropod-dinosaur-from-the-yixian-formation-of-c",
+      "cited_by": [
+        {
+          "section": "timeline",
+          "title": "Age of Virgo",
+          "path": "/timeline/age-of-virgo/"
+        }
+      ],
+      "cite_count": 1
+    },
+    {
+      "id": "levengood-physiologia-plantarum-1994",
+      "cited_by": [
+        {
+          "section": "wiki",
+          "title": "Crop Circles",
+          "path": "/wiki/crop-circles/"
+        }
+      ],
+      "cite_count": 1
+    },
+    {
+      "id": "ancient-apocalypse",
+      "cited_by": [
+        {
+          "section": "wiki",
+          "title": "Ancient Astronaut Hypothesis",
+          "path": "/wiki/ancient-astronaut-hypothesis/"
+        }
+      ],
+      "cite_count": 1
+    },
+    {
+      "id": "pritchard-anet",
+      "cited_by": [
+        {
+          "section": "wiki",
+          "title": "Hebrew Bible",
+          "path": "/wiki/hebrew-bible/"
+        }
+      ],
+      "cite_count": 1
+    },
+    {
+      "id": "annales-veteris-testamenti",
+      "cited_by": [
+        {
+          "section": "wiki",
+          "title": "Antediluvian",
+          "path": "/wiki/antediluvian/"
+        }
+      ],
+      "cite_count": 1
+    },
+    {
+      "id": "mcginn-antichrist",
+      "cited_by": [
+        {
+          "section": "wiki",
+          "title": "Satan",
+          "path": "/wiki/satan/"
+        }
+      ],
+      "cite_count": 1
+    },
+    {
+      "id": "soleri-arcology",
+      "cited_by": [
+        {
+          "section": "wiki",
+          "title": "Cyberparadism",
+          "path": "/wiki/cyberparadism/"
+        }
+      ],
+      "cite_count": 1
+    },
+    {
+      "id": "astronomical-algorithms",
+      "cited_by": [
+        {
+          "section": "timeline",
+          "title": "Age of Libra",
+          "path": "/timeline/age-of-libra/"
+        },
+        {
+          "section": "wiki",
+          "title": "Precession",
+          "path": "/wiki/precession/"
+        }
+      ],
+      "cite_count": 2
+    },
+    {
+      "id": "atlantis-antediluvian-world",
+      "cited_by": [
+        {
+          "section": "wiki",
+          "title": "Ancient Builders",
+          "path": "/wiki/ancient-builders/"
+        }
+      ],
+      "cite_count": 1
+    },
+    {
+      "id": "atra-hasis-lambert-millard",
+      "cited_by": [
+        {
+          "section": "wiki",
+          "title": "Adam and Eve",
+          "path": "/wiki/adam-and-eve/"
+        },
+        {
+          "section": "wiki",
+          "title": "Antediluvian",
+          "path": "/wiki/antediluvian/"
+        },
+        {
+          "section": "wiki",
+          "title": "Eden",
+          "path": "/wiki/eden/"
+        },
+        {
+          "section": "wiki",
+          "title": "Great Flood",
+          "path": "/wiki/great-flood/"
+        },
+        {
+          "section": "wiki",
+          "title": "Hebrew Bible",
+          "path": "/wiki/hebrew-bible/"
+        },
+        {
+          "section": "wiki",
+          "title": "Tree of Life",
+          "path": "/wiki/tree-of-life/"
+        }
+      ],
+      "cite_count": 6
+    },
+    {
+      "id": "atrahasis",
+      "cited_by": [
+        {
+          "section": "timeline",
+          "title": "Preamble",
+          "path": "/timeline/preamble/"
+        },
+        {
+          "section": "wiki",
+          "title": "Council of the Eternals",
+          "path": "/wiki/council-of-eternals/"
+        },
+        {
+          "section": "wiki",
+          "title": "Genesis",
+          "path": "/wiki/genesis/"
+        }
+      ],
+      "cite_count": 3
+    },
+    {
+      "id": "avebury-biography-of-a-landscape",
+      "cited_by": [
+        {
+          "section": "wiki",
+          "title": "Crop Circles",
+          "path": "/wiki/crop-circles/"
+        }
+      ],
+      "cite_count": 1
+    },
+    {
+      "id": "avesta",
+      "cited_by": [
+        {
+          "section": "wiki",
+          "title": "Golden Age",
+          "path": "/wiki/golden-age/"
+        },
+        {
+          "section": "wiki",
+          "title": "Satan",
+          "path": "/wiki/satan/"
+        },
+        {
+          "section": "wiki",
+          "title": "World Age",
+          "path": "/wiki/world-age/"
+        }
+      ],
+      "cite_count": 3
+    },
+    {
+      "id": "bahaipedia",
+      "cited_by": [],
+      "cite_count": 0
+    },
+    {
+      "id": "barton-cylinder",
+      "cited_by": [],
+      "cite_count": 0
+    },
+    {
+      "id": "before-the-muses",
+      "cited_by": [
+        {
+          "section": "wiki",
+          "title": "Adam and Eve",
+          "path": "/wiki/adam-and-eve/"
+        },
+        {
+          "section": "wiki",
+          "title": "Antediluvian",
+          "path": "/wiki/antediluvian/"
+        }
+      ],
+      "cite_count": 2
+    },
+    {
+      "id": "foster-before-muses",
+      "cited_by": [
+        {
+          "section": "wiki",
+          "title": "Great Flood",
+          "path": "/wiki/great-flood/"
+        }
+      ],
+      "cite_count": 1
+    },
+    {
+      "id": "benyus-biomimicry",
+      "cited_by": [
+        {
+          "section": "wiki",
+          "title": "Cyberparadism",
+          "path": "/wiki/cyberparadism/"
+        }
+      ],
+      "cite_count": 1
+    },
+    {
+      "id": "book-of-abraham",
+      "cited_by": [],
+      "cite_count": 0
+    },
+    {
+      "id": "book-of-enoch",
+      "cited_by": [
+        {
+          "section": "wiki",
+          "title": "Reference corpus of the Raëlian canon",
+          "path": "/wiki/reference-corpus-of-the-raelian-canon/"
+        },
+        {
+          "section": "wiki",
+          "title": "Satan",
+          "path": "/wiki/satan/"
+        },
+        {
+          "section": "wiki",
+          "title": "Serpent",
+          "path": "/wiki/serpent/"
+        },
+        {
+          "section": "wiki",
+          "title": "Tree of Life",
+          "path": "/wiki/tree-of-life/"
+        }
+      ],
+      "cite_count": 4
+    },
+    {
+      "id": "book-of-mormon",
+      "cited_by": [],
+      "cite_count": 0
+    },
+    {
+      "id": "broca-s-brain-reflections-on-the-romance-of-science",
+      "cited_by": [
+        {
+          "section": "timeline",
+          "title": "Preamble",
+          "path": "/timeline/preamble/"
+        }
+      ],
+      "cite_count": 1
+    },
+    {
+      "id": "cain-a-mystery",
+      "cited_by": [
+        {
+          "section": "wiki",
+          "title": "Lucifer",
+          "path": "/wiki/lucifer/"
+        }
+      ],
+      "cite_count": 1
+    },
+    {
+      "id": "canaanite-myth-and-hebrew-epic",
+      "cited_by": [
+        {
+          "section": "wiki",
+          "title": "Elohim",
+          "path": "/wiki/elohim/"
+        }
+      ],
+      "cite_count": 1
+    },
+    {
+      "id": "cross-canaanite-myth",
+      "cited_by": [
+        {
+          "section": "wiki",
+          "title": "Hebrew Bible",
+          "path": "/wiki/hebrew-bible/"
+        }
+      ],
+      "cite_count": 1
+    },
+    {
+      "id": "miyazaki-castle-in-the-sky",
+      "cited_by": [
+        {
+          "section": "wiki",
+          "title": "Cyberparadism",
+          "path": "/wiki/cyberparadism/"
+        }
+      ],
+      "cite_count": 1
+    },
+    {
+      "id": "cataclysm-allan-delair",
+      "cited_by": [
+        {
+          "section": "wiki",
+          "title": "Antediluvian",
+          "path": "/wiki/antediluvian/"
+        }
+      ],
+      "cite_count": 1
+    },
+    {
+      "id": "sendy-ces-dieux",
+      "cited_by": [
+        {
+          "section": "wiki",
+          "title": "Eden",
+          "path": "/wiki/eden/"
+        },
+        {
+          "section": "wiki",
+          "title": "Great Flood",
+          "path": "/wiki/great-flood/"
+        },
+        {
+          "section": "wiki",
+          "title": "Hebrew Bible",
+          "path": "/wiki/hebrew-bible/"
+        },
+        {
+          "section": "wiki",
+          "title": "Satan",
+          "path": "/wiki/satan/"
+        }
+      ],
+      "cite_count": 4
+    },
+    {
+      "id": "chaos-making-a-new-science",
+      "cited_by": [
+        {
+          "section": "timeline",
+          "title": "Preamble",
+          "path": "/timeline/preamble/"
+        }
+      ],
+      "cite_count": 1
+    },
+    {
+      "id": "chariots-of-the-gods",
+      "cited_by": [
+        {
+          "section": "wiki",
+          "title": "Ancient Builders",
+          "path": "/wiki/ancient-builders/"
+        }
+      ],
+      "cite_count": 1
+    },
+    {
+      "id": "birrell-chinese-mythology",
+      "cited_by": [
+        {
+          "section": "wiki",
+          "title": "Adam and Eve",
+          "path": "/wiki/adam-and-eve/"
+        },
+        {
+          "section": "wiki",
+          "title": "Tree of Life",
+          "path": "/wiki/tree-of-life/"
+        }
+      ],
+      "cite_count": 2
+    },
+    {
+      "id": "chronicle-of-akakor",
+      "cited_by": [
+        {
+          "section": "wiki",
+          "title": "Reference corpus of the Raëlian canon",
+          "path": "/wiki/reference-corpus-of-the-raelian-canon/"
+        }
+      ],
+      "cite_count": 1
+    },
+    {
+      "id": "circular-evidence",
+      "cited_by": [
+        {
+          "section": "wiki",
+          "title": "Crop Circles",
+          "path": "/wiki/crop-circles/"
+        }
+      ],
+      "cite_count": 1
+    },
+    {
+      "id": "creation-of-a-bacterial-cell-controlled-by-a-chemically-synthesized-genome",
+      "cited_by": [
+        {
+          "section": "timeline",
+          "title": "Age of Aquarius",
+          "path": "/timeline/age-of-aquarius/"
+        }
+      ],
+      "cite_count": 1
+    },
+    {
+      "id": "creators-the-past",
+      "cited_by": [],
+      "cite_count": 0
+    },
+    {
+      "id": "kant-critique-pure-reason",
+      "cited_by": [
+        {
+          "section": "wiki",
+          "title": "Cosmic Chain",
+          "path": "/wiki/cosmic-chain/"
+        }
+      ],
+      "cite_count": 1
+    },
+    {
+      "id": "crop-circles-signs-of-contact",
+      "cited_by": [
+        {
+          "section": "wiki",
+          "title": "Crop Circles",
+          "path": "/wiki/crop-circles/"
+        }
+      ],
+      "cite_count": 1
+    },
+    {
+      "id": "pringle-crop-circles",
+      "cited_by": [
+        {
+          "section": "wiki",
+          "title": "Crop Circles",
+          "path": "/wiki/crop-circles/"
+        }
+      ],
+      "cite_count": 1
+    },
+    {
+      "id": "wiener-cybernetics",
+      "cited_by": [
+        {
+          "section": "wiki",
+          "title": "Cyberparadism",
+          "path": "/wiki/cyberparadism/"
+        }
+      ],
+      "cite_count": 1
+    },
+    {
+      "id": "aesthetics-wiki-cyberparadism",
+      "cited_by": [
+        {
+          "section": "wiki",
+          "title": "Cyberparadism",
+          "path": "/wiki/cyberparadism/"
+        }
+      ],
+      "cite_count": 1
+    },
+    {
+      "id": "cyberparadism-manifesto",
+      "cited_by": [
+        {
+          "section": "wiki",
+          "title": "Cyberparadism",
+          "path": "/wiki/cyberparadism/"
+        },
+        {
+          "section": "wiki",
+          "title": "Golden Age",
+          "path": "/wiki/golden-age/"
+        }
+      ],
+      "cite_count": 2
+    },
+    {
+      "id": "penrose-cycles-of-time",
+      "cited_by": [
+        {
+          "section": "wiki",
+          "title": "Cosmic Chain",
+          "path": "/wiki/cosmic-chain/"
+        }
+      ],
+      "cite_count": 1
+    },
+    {
+      "id": "daniel",
+      "cited_by": [
+        {
+          "section": "timeline",
+          "title": "Age of Aquarius",
+          "path": "/timeline/age-of-aquarius/"
+        },
+        {
+          "section": "timeline",
+          "title": "Age of Aries",
+          "path": "/timeline/age-of-aries/"
+        },
+        {
+          "section": "wiki",
+          "title": "Jesus",
+          "path": "/wiki/jesus/"
+        }
+      ],
+      "cite_count": 3
+    },
+    {
+      "id": "otto-hangende-dach",
+      "cited_by": [
+        {
+          "section": "wiki",
+          "title": "Cyberparadism",
+          "path": "/wiki/cyberparadism/"
+        }
+      ],
+      "cite_count": 1
+    },
+    {
+      "id": "deadly-voyager",
+      "cited_by": [
+        {
+          "section": "wiki",
+          "title": "Ancient Builders",
+          "path": "/wiki/ancient-builders/"
+        }
+      ],
+      "cite_count": 1
+    },
+    {
+      "id": "debate-between-sheep-and-grain",
+      "cited_by": [],
+      "cite_count": 0
+    },
+    {
+      "id": "debate-between-winter-and-summer",
+      "cited_by": [],
+      "cite_count": 0
+    },
+    {
+      "id": "design-and-synthesis-of-a-minimal-bacterial-genome",
+      "cited_by": [
+        {
+          "section": "timeline",
+          "title": "Age of Aquarius",
+          "path": "/timeline/age-of-aquarius/"
+        }
+      ],
+      "cite_count": 1
+    },
+    {
+      "id": "deterministic-nonperiodic-flow",
+      "cited_by": [
+        {
+          "section": "timeline",
+          "title": "Preamble",
+          "path": "/timeline/preamble/"
+        }
+      ],
+      "cite_count": 1
+    },
+    {
+      "id": "deuteronomy",
+      "cited_by": [
+        {
+          "section": "wiki",
+          "title": "Moses",
+          "path": "/wiki/moses/"
+        }
+      ],
+      "cite_count": 1
+    },
+    {
+      "id": "did-god-have-a-wife",
+      "cited_by": [],
+      "cite_count": 0
+    },
+    {
+      "id": "crick-orgel-directed-panspermia",
+      "cited_by": [
+        {
+          "section": "wiki",
+          "title": "Cosmic Chain",
+          "path": "/wiki/cosmic-chain/"
+        }
+      ],
+      "cite_count": 1
+    },
+    {
+      "id": "meyers-discovering-eve",
+      "cited_by": [
+        {
+          "section": "wiki",
+          "title": "Adam and Eve",
+          "path": "/wiki/adam-and-eve/"
+        }
+      ],
+      "cite_count": 1
+    },
+    {
+      "id": "divine-signposts",
+      "cited_by": [],
+      "cite_count": 0
+    },
+    {
+      "id": "doctrine-and-covenants",
+      "cited_by": [
+        {
+          "section": "wiki",
+          "title": "Adam and Eve",
+          "path": "/wiki/adam-and-eve/"
+        }
+      ],
+      "cite_count": 1
+    },
+    {
+      "id": "dogon-restudied-a-field-evaluation-of-the-work-of-marcel-griaule",
+      "cited_by": [
+        {
+          "section": "timeline",
+          "title": "Preamble",
+          "path": "/timeline/preamble/"
+        }
+      ],
+      "cite_count": 1
+    },
+    {
+      "id": "early-islamic-qiblas",
+      "cited_by": [
+        {
+          "section": "timeline",
+          "title": "Age of Pisces",
+          "path": "/timeline/age-of-pisces/"
+        },
+        {
+          "section": "timeline",
+          "title": "The Wheel Keeps Turning",
+          "path": "/timeline/the-wheel-keeps-turning/"
+        }
+      ],
+      "cite_count": 2
+    },
+    {
+      "id": "stordalen-echoes-of-eden",
+      "cited_by": [
+        {
+          "section": "wiki",
+          "title": "Tree of Life",
+          "path": "/wiki/tree-of-life/"
+        }
+      ],
+      "cite_count": 1
+    },
+    {
+      "id": "echoes-of-eden",
+      "cited_by": [
+        {
+          "section": "wiki",
+          "title": "Ancient Astronaut Hypothesis",
+          "path": "/wiki/ancient-astronaut-hypothesis/"
+        },
+        {
+          "section": "wiki",
+          "title": "Council of the Eternals",
+          "path": "/wiki/council-of-eternals/"
+        },
+        {
+          "section": "wiki",
+          "title": "Eden",
+          "path": "/wiki/eden/"
+        },
+        {
+          "section": "wiki",
+          "title": "Genesis",
+          "path": "/wiki/genesis/"
+        }
+      ],
+      "cite_count": 4
+    },
+    {
+      "id": "krupp-echoes-ancient-skies",
+      "cited_by": [],
+      "cite_count": 0
+    },
+    {
+      "id": "oppenheimer-eden-east",
+      "cited_by": [
+        {
+          "section": "wiki",
+          "title": "Eden",
+          "path": "/wiki/eden/"
+        }
+      ],
+      "cite_count": 1
+    },
+    {
+      "id": "edgar-cayce-on-atlantis",
+      "cited_by": [
+        {
+          "section": "wiki",
+          "title": "Ancient Builders",
+          "path": "/wiki/ancient-builders/"
+        }
+      ],
+      "cite_count": 1
+    },
+    {
+      "id": "elysium-film",
+      "cited_by": [
+        {
+          "section": "wiki",
+          "title": "Cyberparadism",
+          "path": "/wiki/cyberparadism/"
+        }
+      ],
+      "cite_count": 1
+    },
+    {
+      "id": "ending-aging-de-grey",
+      "cited_by": [
+        {
+          "section": "wiki",
+          "title": "Tree of Life",
+          "path": "/wiki/tree-of-life/"
+        }
+      ],
+      "cite_count": 1
+    },
+    {
+      "id": "steinhardt-turok-endless-universe",
+      "cited_by": [
+        {
+          "section": "wiki",
+          "title": "Cosmic Chain",
+          "path": "/wiki/cosmic-chain/"
+        }
+      ],
+      "cite_count": 1
+    },
+    {
+      "id": "enlil-and-ninlil-the-begetting-of-nanna",
+      "cited_by": [],
+      "cite_count": 0
+    },
+    {
+      "id": "enuma-elish",
+      "cited_by": [
+        {
+          "section": "timeline",
+          "title": "Preamble",
+          "path": "/timeline/preamble/"
+        },
+        {
+          "section": "wiki",
+          "title": "Council of the Eternals",
+          "path": "/wiki/council-of-eternals/"
+        },
+        {
+          "section": "wiki",
+          "title": "Genesis",
+          "path": "/wiki/genesis/"
+        }
+      ],
+      "cite_count": 3
+    },
+    {
+      "id": "epic-of-gilgamesh",
+      "cited_by": [
+        {
+          "section": "wiki",
+          "title": "Genesis",
+          "path": "/wiki/genesis/"
+        },
+        {
+          "section": "wiki",
+          "title": "Reference corpus of the Raëlian canon",
+          "path": "/wiki/reference-corpus-of-the-raelian-canon/"
+        }
+      ],
+      "cite_count": 2
+    },
+    {
+      "id": "escaping-from-eden",
+      "cited_by": [
+        {
+          "section": "wiki",
+          "title": "Ancient Astronaut Hypothesis",
+          "path": "/wiki/ancient-astronaut-hypothesis/"
+        },
+        {
+          "section": "wiki",
+          "title": "Council of the Eternals",
+          "path": "/wiki/council-of-eternals/"
+        },
+        {
+          "section": "wiki",
+          "title": "Eden",
+          "path": "/wiki/eden/"
+        },
+        {
+          "section": "wiki",
+          "title": "Elohim",
+          "path": "/wiki/elohim/"
+        },
+        {
+          "section": "wiki",
+          "title": "Genesis",
+          "path": "/wiki/genesis/"
+        },
+        {
+          "section": "wiki",
+          "title": "Hebrew Bible",
+          "path": "/wiki/hebrew-bible/"
+        },
+        {
+          "section": "wiki",
+          "title": "Jesus",
+          "path": "/wiki/jesus/"
+        },
+        {
+          "section": "wiki",
+          "title": "Raëlism",
+          "path": "/wiki/raelism/"
+        },
+        {
+          "section": "wiki",
+          "title": "Wheel of Heaven",
+          "path": "/wiki/wheel-of-heaven/"
+        },
+        {
+          "section": "wiki",
+          "title": "Yahweh",
+          "path": "/wiki/yahweh/"
+        }
+      ],
+      "cite_count": 10
+    },
+    {
+      "id": "firestone-pnas-2007",
+      "cited_by": [
+        {
+          "section": "wiki",
+          "title": "Ancient Builders",
+          "path": "/wiki/ancient-builders/"
+        },
+        {
+          "section": "wiki",
+          "title": "Antediluvian",
+          "path": "/wiki/antediluvian/"
+        }
+      ],
+      "cite_count": 2
+    },
+    {
+      "id": "firestone-younger-dryas",
+      "cited_by": [
+        {
+          "section": "wiki",
+          "title": "Great Flood",
+          "path": "/wiki/great-flood/"
+        }
+      ],
+      "cite_count": 1
+    },
+    {
+      "id": "exodus",
+      "cited_by": [
+        {
+          "section": "timeline",
+          "title": "Age of Aries",
+          "path": "/timeline/age-of-aries/"
+        },
+        {
+          "section": "wiki",
+          "title": "Moses",
+          "path": "/wiki/moses/"
+        },
+        {
+          "section": "wiki",
+          "title": "Yahweh",
+          "path": "/wiki/yahweh/"
+        }
+      ],
+      "cite_count": 3
+    },
+    {
+      "id": "loeb-extraterrestrial",
+      "cited_by": [
+        {
+          "section": "wiki",
+          "title": "Embassy",
+          "path": "/wiki/embassy/"
+        }
+      ],
+      "cite_count": 1
+    },
+    {
+      "id": "extraterrestrials-took-me-to-their-planet",
+      "cited_by": [
+        {
+          "section": "wiki",
+          "title": "Adam and Eve",
+          "path": "/wiki/adam-and-eve/"
+        },
+        {
+          "section": "wiki",
+          "title": "Ancient Astronaut Hypothesis",
+          "path": "/wiki/ancient-astronaut-hypothesis/"
+        },
+        {
+          "section": "wiki",
+          "title": "Ancient Builders",
+          "path": "/wiki/ancient-builders/"
+        },
+        {
+          "section": "wiki",
+          "title": "Cosmic Chain",
+          "path": "/wiki/cosmic-chain/"
+        },
+        {
+          "section": "wiki",
+          "title": "Council of the Eternals",
+          "path": "/wiki/council-of-eternals/"
+        },
+        {
+          "section": "wiki",
+          "title": "Elohim",
+          "path": "/wiki/elohim/"
+        },
+        {
+          "section": "wiki",
+          "title": "Embassy",
+          "path": "/wiki/embassy/"
+        },
+        {
+          "section": "wiki",
+          "title": "Golden Age",
+          "path": "/wiki/golden-age/"
+        },
+        {
+          "section": "wiki",
+          "title": "Jesus",
+          "path": "/wiki/jesus/"
+        },
+        {
+          "section": "wiki",
+          "title": "Moses",
+          "path": "/wiki/moses/"
+        },
+        {
+          "section": "wiki",
+          "title": "Raël",
+          "path": "/wiki/rael/"
+        },
+        {
+          "section": "wiki",
+          "title": "Raëlism",
+          "path": "/wiki/raelism/"
+        },
+        {
+          "section": "wiki",
+          "title": "Reference corpus of the Raëlian canon",
+          "path": "/wiki/reference-corpus-of-the-raelian-canon/"
+        },
+        {
+          "section": "wiki",
+          "title": "Satan",
+          "path": "/wiki/satan/"
+        },
+        {
+          "section": "wiki",
+          "title": "Tree of Life",
+          "path": "/wiki/tree-of-life/"
+        },
+        {
+          "section": "wiki",
+          "title": "Wheel of Heaven",
+          "path": "/wiki/wheel-of-heaven/"
+        },
+        {
+          "section": "wiki",
+          "title": "World Age",
+          "path": "/wiki/world-age/"
+        },
+        {
+          "section": "wiki",
+          "title": "Yahweh",
+          "path": "/wiki/yahweh/"
+        }
+      ],
+      "cite_count": 18
+    },
+    {
+      "id": "ezekiel",
+      "cited_by": [
+        {
+          "section": "timeline",
+          "title": "Age of Aquarius",
+          "path": "/timeline/age-of-aquarius/"
+        },
+        {
+          "section": "timeline",
+          "title": "Age of Aries",
+          "path": "/timeline/age-of-aries/"
+        },
+        {
+          "section": "wiki",
+          "title": "Wheel of Heaven",
+          "path": "/wiki/wheel-of-heaven/"
+        },
+        {
+          "section": "wiki",
+          "title": "Yahweh",
+          "path": "/wiki/yahweh/"
+        }
+      ],
+      "cite_count": 4
+    },
+    {
+      "id": "reed-fallen-angels",
+      "cited_by": [
+        {
+          "section": "wiki",
+          "title": "Satan",
+          "path": "/wiki/satan/"
+        }
+      ],
+      "cite_count": 1
+    },
+    {
+      "id": "fda-approves-first-gene-therapies-to-treat-patients-with-sickle-cell-disease",
+      "cited_by": [
+        {
+          "section": "timeline",
+          "title": "Age of Leo",
+          "path": "/timeline/age-of-leo/"
+        }
+      ],
+      "cite_count": 1
+    },
+    {
+      "id": "fingerprints-of-the-gods",
+      "cited_by": [
+        {
+          "section": "wiki",
+          "title": "Ancient Astronaut Hypothesis",
+          "path": "/wiki/ancient-astronaut-hypothesis/"
+        },
+        {
+          "section": "wiki",
+          "title": "Ancient Builders",
+          "path": "/wiki/ancient-builders/"
+        },
+        {
+          "section": "wiki",
+          "title": "Antediluvian",
+          "path": "/wiki/antediluvian/"
+        },
+        {
+          "section": "wiki",
+          "title": "World Age",
+          "path": "/wiki/world-age/"
+        }
+      ],
+      "cite_count": 4
+    },
+    {
+      "id": "foundational-text-on-complex-topics",
+      "cited_by": [
+        {
+          "section": "articles",
+          "title": "Example Explainer: Understanding Complex Topics",
+          "path": "/articles/example-explainer/"
+        }
+      ],
+      "cite_count": 1
+    },
+    {
+      "id": "genesis",
+      "cited_by": [
+        {
+          "section": "timeline",
+          "title": "Age of Leo",
+          "path": "/timeline/age-of-leo/"
+        },
+        {
+          "section": "timeline",
+          "title": "Age of Libra",
+          "path": "/timeline/age-of-libra/"
+        },
+        {
+          "section": "timeline",
+          "title": "Age of Taurus",
+          "path": "/timeline/age-of-taurus/"
+        },
+        {
+          "section": "timeline",
+          "title": "Age of Virgo",
+          "path": "/timeline/age-of-virgo/"
+        },
+        {
+          "section": "timeline",
+          "title": "The Wheel Keeps Turning",
+          "path": "/timeline/the-wheel-keeps-turning/"
+        },
+        {
+          "section": "wiki",
+          "title": "Elohim",
+          "path": "/wiki/elohim/"
+        },
+        {
+          "section": "wiki",
+          "title": "Genesis",
+          "path": "/wiki/genesis/"
+        },
+        {
+          "section": "wiki",
+          "title": "Great Flood",
+          "path": "/wiki/great-flood/"
+        },
+        {
+          "section": "wiki",
+          "title": "Hebrew Bible",
+          "path": "/wiki/hebrew-bible/"
+        },
+        {
+          "section": "wiki",
+          "title": "Raëlism",
+          "path": "/wiki/raelism/"
+        },
+        {
+          "section": "wiki",
+          "title": "Satan",
+          "path": "/wiki/satan/"
+        },
+        {
+          "section": "wiki",
+          "title": "Wheel of Heaven",
+          "path": "/wiki/wheel-of-heaven/"
+        },
+        {
+          "section": "wiki",
+          "title": "Yahweh",
+          "path": "/wiki/yahweh/"
+        }
+      ],
+      "cite_count": 13
+    },
+    {
+      "id": "westermann-genesis-1-11",
+      "cited_by": [
+        {
+          "section": "wiki",
+          "title": "Adam and Eve",
+          "path": "/wiki/adam-and-eve/"
+        },
+        {
+          "section": "wiki",
+          "title": "Eden",
+          "path": "/wiki/eden/"
+        },
+        {
+          "section": "wiki",
+          "title": "Great Flood",
+          "path": "/wiki/great-flood/"
+        },
+        {
+          "section": "wiki",
+          "title": "Hebrew Bible",
+          "path": "/wiki/hebrew-bible/"
+        },
+        {
+          "section": "wiki",
+          "title": "Serpent",
+          "path": "/wiki/serpent/"
+        },
+        {
+          "section": "wiki",
+          "title": "Tree of Life",
+          "path": "/wiki/tree-of-life/"
+        }
+      ],
+      "cite_count": 6
+    },
+    {
+      "id": "allen-genesis-in-egypt",
+      "cited_by": [
+        {
+          "section": "wiki",
+          "title": "Adam and Eve",
+          "path": "/wiki/adam-and-eve/"
+        }
+      ],
+      "cite_count": 1
+    },
+    {
+      "id": "von-rad-genesis",
+      "cited_by": [
+        {
+          "section": "wiki",
+          "title": "Adam and Eve",
+          "path": "/wiki/adam-and-eve/"
+        },
+        {
+          "section": "wiki",
+          "title": "Serpent",
+          "path": "/wiki/serpent/"
+        }
+      ],
+      "cite_count": 2
+    },
+    {
+      "id": "sarna-genesis-jps",
+      "cited_by": [
+        {
+          "section": "wiki",
+          "title": "Adam and Eve",
+          "path": "/wiki/adam-and-eve/"
+        },
+        {
+          "section": "wiki",
+          "title": "Eden",
+          "path": "/wiki/eden/"
+        },
+        {
+          "section": "wiki",
+          "title": "Great Flood",
+          "path": "/wiki/great-flood/"
+        },
+        {
+          "section": "wiki",
+          "title": "Hebrew Bible",
+          "path": "/wiki/hebrew-bible/"
+        },
+        {
+          "section": "wiki",
+          "title": "Tree of Life",
+          "path": "/wiki/tree-of-life/"
+        }
+      ],
+      "cite_count": 5
+    },
+    {
+      "id": "genome-editing-of-human-embryos-broadening-the-ethical-debate",
+      "cited_by": [
+        {
+          "section": "timeline",
+          "title": "Age of Leo",
+          "path": "/timeline/age-of-leo/"
+        }
+      ],
+      "cite_count": 1
+    },
+    {
+      "id": "yates-giordano-bruno-hermetic",
+      "cited_by": [
+        {
+          "section": "wiki",
+          "title": "Cosmic Chain",
+          "path": "/wiki/cosmic-chain/"
+        }
+      ],
+      "cite_count": 1
+    },
+    {
+      "id": "giza-and-the-pyramids",
+      "cited_by": [
+        {
+          "section": "wiki",
+          "title": "Ancient Builders",
+          "path": "/wiki/ancient-builders/"
+        }
+      ],
+      "cite_count": 1
+    },
+    {
+      "id": "glimpses-of-other-realities",
+      "cited_by": [
+        {
+          "section": "wiki",
+          "title": "Crop Circles",
+          "path": "/wiki/crop-circles/"
+        }
+      ],
+      "cite_count": 1
+    },
+    {
+      "id": "trible-rhetoric-sexuality",
+      "cited_by": [
+        {
+          "section": "wiki",
+          "title": "Adam and Eve",
+          "path": "/wiki/adam-and-eve/"
+        }
+      ],
+      "cite_count": 1
+    },
+    {
+      "id": "black-green-mesopotamia",
+      "cited_by": [
+        {
+          "section": "wiki",
+          "title": "Serpent",
+          "path": "/wiki/serpent/"
+        },
+        {
+          "section": "wiki",
+          "title": "Tree of Life",
+          "path": "/wiki/tree-of-life/"
+        }
+      ],
+      "cite_count": 2
+    },
+    {
+      "id": "gospel-of-john",
+      "cited_by": [
+        {
+          "section": "timeline",
+          "title": "Age of Aquarius",
+          "path": "/timeline/age-of-aquarius/"
+        },
+        {
+          "section": "timeline",
+          "title": "Age of Pisces",
+          "path": "/timeline/age-of-pisces/"
+        },
+        {
+          "section": "wiki",
+          "title": "Jesus",
+          "path": "/wiki/jesus/"
+        }
+      ],
+      "cite_count": 3
+    },
+    {
+      "id": "gospel-of-luke-acts-of-the-apostles",
+      "cited_by": [
+        {
+          "section": "timeline",
+          "title": "Age of Pisces",
+          "path": "/timeline/age-of-pisces/"
+        },
+        {
+          "section": "wiki",
+          "title": "Jesus",
+          "path": "/wiki/jesus/"
+        }
+      ],
+      "cite_count": 2
+    },
+    {
+      "id": "gospel-of-mark",
+      "cited_by": [],
+      "cite_count": 0
+    },
+    {
+      "id": "gospel-of-matthew",
+      "cited_by": [
+        {
+          "section": "timeline",
+          "title": "Age of Aquarius",
+          "path": "/timeline/age-of-aquarius/"
+        },
+        {
+          "section": "timeline",
+          "title": "Age of Pisces",
+          "path": "/timeline/age-of-pisces/"
+        },
+        {
+          "section": "wiki",
+          "title": "Jesus",
+          "path": "/wiki/jesus/"
+        }
+      ],
+      "cite_count": 3
+    },
+    {
+      "id": "hannah-greek-roman-calendars",
+      "cited_by": [
+        {
+          "section": "wiki",
+          "title": "Cosmic Chain",
+          "path": "/wiki/cosmic-chain/"
+        }
+      ],
+      "cite_count": 1
+    },
+    {
+      "id": "gobekli-tepe-schmidt",
+      "cited_by": [
+        {
+          "section": "wiki",
+          "title": "Ancient Builders",
+          "path": "/wiki/ancient-builders/"
+        },
+        {
+          "section": "wiki",
+          "title": "Antediluvian",
+          "path": "/wiki/antediluvian/"
+        }
+      ],
+      "cite_count": 2
+    },
+    {
+      "id": "hamlets-mill",
+      "cited_by": [
+        {
+          "section": "timeline",
+          "title": "Age of Aquarius",
+          "path": "/timeline/age-of-aquarius/"
+        },
+        {
+          "section": "timeline",
+          "title": "Age of Libra",
+          "path": "/timeline/age-of-libra/"
+        },
+        {
+          "section": "timeline",
+          "title": "Age of Pisces",
+          "path": "/timeline/age-of-pisces/"
+        },
+        {
+          "section": "timeline",
+          "title": "Preamble",
+          "path": "/timeline/preamble/"
+        },
+        {
+          "section": "timeline",
+          "title": "The Wheel Keeps Turning",
+          "path": "/timeline/the-wheel-keeps-turning/"
+        },
+        {
+          "section": "wiki",
+          "title": "Ancient Astronaut Hypothesis",
+          "path": "/wiki/ancient-astronaut-hypothesis/"
+        },
+        {
+          "section": "wiki",
+          "title": "Great Year",
+          "path": "/wiki/great-year/"
+        },
+        {
+          "section": "wiki",
+          "title": "Jesus",
+          "path": "/wiki/jesus/"
+        },
+        {
+          "section": "wiki",
+          "title": "Precession",
+          "path": "/wiki/precession/"
+        },
+        {
+          "section": "wiki",
+          "title": "Wheel of Heaven",
+          "path": "/wiki/wheel-of-heaven/"
+        },
+        {
+          "section": "wiki",
+          "title": "World Age",
+          "path": "/wiki/world-age/"
+        },
+        {
+          "section": "wiki",
+          "title": "Zodiac",
+          "path": "/wiki/zodiac/"
+        }
+      ],
+      "cite_count": 12
+    },
+    {
+      "id": "hard-to-be-a-god",
+      "cited_by": [],
+      "cite_count": 0
+    },
+    {
+      "id": "hengeworld",
+      "cited_by": [
+        {
+          "section": "wiki",
+          "title": "Ancient Builders",
+          "path": "/wiki/ancient-builders/"
+        }
+      ],
+      "cite_count": 1
+    },
+    {
+      "id": "hermetica",
+      "cited_by": [],
+      "cite_count": 0
+    },
+    {
+      "id": "doniger-hindu-myths",
+      "cited_by": [
+        {
+          "section": "wiki",
+          "title": "Adam and Eve",
+          "path": "/wiki/adam-and-eve/"
+        },
+        {
+          "section": "wiki",
+          "title": "Great Flood",
+          "path": "/wiki/great-flood/"
+        },
+        {
+          "section": "wiki",
+          "title": "Satan",
+          "path": "/wiki/satan/"
+        },
+        {
+          "section": "wiki",
+          "title": "Tree of Life",
+          "path": "/wiki/tree-of-life/"
+        }
+      ],
+      "cite_count": 4
+    },
+    {
+      "id": "histories-book-ii",
+      "cited_by": [
+        {
+          "section": "timeline",
+          "title": "Age of Taurus",
+          "path": "/timeline/age-of-taurus/"
+        }
+      ],
+      "cite_count": 1
+    },
+    {
+      "id": "kugel-how-to-read-bible",
+      "cited_by": [
+        {
+          "section": "wiki",
+          "title": "Hebrew Bible",
+          "path": "/wiki/hebrew-bible/"
+        }
+      ],
+      "cite_count": 1
+    },
+    {
+      "id": "biglino-il-libro",
+      "cited_by": [
+        {
+          "section": "wiki",
+          "title": "Eden",
+          "path": "/wiki/eden/"
+        },
+        {
+          "section": "wiki",
+          "title": "Hebrew Bible",
+          "path": "/wiki/hebrew-bible/"
+        }
+      ],
+      "cite_count": 2
+    },
+    {
+      "id": "elizondo-imminent",
+      "cited_by": [
+        {
+          "section": "wiki",
+          "title": "Embassy",
+          "path": "/wiki/embassy/"
+        }
+      ],
+      "cite_count": 1
+    },
+    {
+      "id": "inanna-queen-of-heaven",
+      "cited_by": [
+        {
+          "section": "wiki",
+          "title": "Lucifer",
+          "path": "/wiki/lucifer/"
+        }
+      ],
+      "cite_count": 1
+    },
+    {
+      "id": "inca-architecture-ollantaytambo",
+      "cited_by": [
+        {
+          "section": "wiki",
+          "title": "Ancient Builders",
+          "path": "/wiki/ancient-builders/"
+        }
+      ],
+      "cite_count": 1
+    },
+    {
+      "id": "takahashi-yamanaka-2006",
+      "cited_by": [
+        {
+          "section": "wiki",
+          "title": "Tree of Life",
+          "path": "/wiki/tree-of-life/"
+        }
+      ],
+      "cite_count": 1
+    },
+    {
+      "id": "linde-inflation-quantum-cosmology",
+      "cited_by": [
+        {
+          "section": "wiki",
+          "title": "Cosmic Chain",
+          "path": "/wiki/cosmic-chain/"
+        }
+      ],
+      "cite_count": 1
+    },
+    {
+      "id": "intelligent-design-message-from-the-designers",
+      "cited_by": [
+        {
+          "section": "timeline",
+          "title": "Age of Aquarius",
+          "path": "/timeline/age-of-aquarius/"
+        },
+        {
+          "section": "timeline",
+          "title": "The Wheel Keeps Turning",
+          "path": "/timeline/the-wheel-keeps-turning/"
+        },
+        {
+          "section": "wiki",
+          "title": "Ancient Astronaut Hypothesis",
+          "path": "/wiki/ancient-astronaut-hypothesis/"
+        },
+        {
+          "section": "wiki",
+          "title": "Eden",
+          "path": "/wiki/eden/"
+        },
+        {
+          "section": "wiki",
+          "title": "Golden Age",
+          "path": "/wiki/golden-age/"
+        },
+        {
+          "section": "wiki",
+          "title": "Great Flood",
+          "path": "/wiki/great-flood/"
+        },
+        {
+          "section": "wiki",
+          "title": "Hebrew Bible",
+          "path": "/wiki/hebrew-bible/"
+        },
+        {
+          "section": "wiki",
+          "title": "Jesus",
+          "path": "/wiki/jesus/"
+        },
+        {
+          "section": "wiki",
+          "title": "Raël",
+          "path": "/wiki/rael/"
+        },
+        {
+          "section": "wiki",
+          "title": "Raëlism",
+          "path": "/wiki/raelism/"
+        },
+        {
+          "section": "wiki",
+          "title": "Reference corpus of the Raëlian canon",
+          "path": "/wiki/reference-corpus-of-the-raelian-canon/"
+        },
+        {
+          "section": "wiki",
+          "title": "Satan",
+          "path": "/wiki/satan/"
+        },
+        {
+          "section": "wiki",
+          "title": "Wheel of Heaven",
+          "path": "/wiki/wheel-of-heaven/"
+        },
+        {
+          "section": "wiki",
+          "title": "World Age",
+          "path": "/wiki/world-age/"
+        }
+      ],
+      "cite_count": 14
+    },
+    {
+      "id": "internet-sacred-text-archive",
+      "cited_by": [],
+      "cite_count": 0
+    },
+    {
+      "id": "loeb-interstellar",
+      "cited_by": [
+        {
+          "section": "wiki",
+          "title": "Embassy",
+          "path": "/wiki/embassy/"
+        }
+      ],
+      "cite_count": 1
+    },
+    {
+      "id": "investigating-the-sirius-mystery",
+      "cited_by": [
+        {
+          "section": "timeline",
+          "title": "Preamble",
+          "path": "/timeline/preamble/"
+        }
+      ],
+      "cite_count": 1
+    },
+    {
+      "id": "is-genesis-history",
+      "cited_by": [],
+      "cite_count": 0
+    },
+    {
+      "id": "isaiah",
+      "cited_by": [
+        {
+          "section": "timeline",
+          "title": "Age of Aquarius",
+          "path": "/timeline/age-of-aquarius/"
+        },
+        {
+          "section": "wiki",
+          "title": "Golden Age",
+          "path": "/wiki/golden-age/"
+        },
+        {
+          "section": "wiki",
+          "title": "Jesus",
+          "path": "/wiki/jesus/"
+        },
+        {
+          "section": "wiki",
+          "title": "Yahweh",
+          "path": "/wiki/yahweh/"
+        }
+      ],
+      "cite_count": 4
+    },
+    {
+      "id": "sachedina-islamic-messianism",
+      "cited_by": [
+        {
+          "section": "wiki",
+          "title": "Embassy",
+          "path": "/wiki/embassy/"
+        }
+      ],
+      "cite_count": 1
+    },
+    {
+      "id": "jeremiah",
+      "cited_by": [],
+      "cite_count": 0
+    },
+    {
+      "id": "job",
+      "cited_by": [],
+      "cite_count": 0
+    },
+    {
+      "id": "pope-job",
+      "cited_by": [
+        {
+          "section": "wiki",
+          "title": "Satan",
+          "path": "/wiki/satan/"
+        }
+      ],
+      "cite_count": 1
+    },
+    {
+      "id": "clines-job-wbc",
+      "cited_by": [
+        {
+          "section": "wiki",
+          "title": "Satan",
+          "path": "/wiki/satan/"
+        }
+      ],
+      "cite_count": 1
+    },
+    {
+      "id": "joel",
+      "cited_by": [
+        {
+          "section": "timeline",
+          "title": "Age of Aquarius",
+          "path": "/timeline/age-of-aquarius/"
+        }
+      ],
+      "cite_count": 1
+    },
+    {
+      "id": "joshua",
+      "cited_by": [
+        {
+          "section": "timeline",
+          "title": "Age of Aries",
+          "path": "/timeline/age-of-aries/"
+        }
+      ],
+      "cite_count": 1
+    },
+    {
+      "id": "jurassic-park",
+      "cited_by": [
+        {
+          "section": "timeline",
+          "title": "Preamble",
+          "path": "/timeline/preamble/"
+        }
+      ],
+      "cite_count": 1
+    },
+    {
+      "id": "jurassic-world",
+      "cited_by": [
+        {
+          "section": "wiki",
+          "title": "Cyberparadism",
+          "path": "/wiki/cyberparadism/"
+        }
+      ],
+      "cite_count": 1
+    },
+    {
+      "id": "idel-kabbalah-new-perspectives",
+      "cited_by": [
+        {
+          "section": "wiki",
+          "title": "Tree of Life",
+          "path": "/wiki/tree-of-life/"
+        }
+      ],
+      "cite_count": 1
+    },
+    {
+      "id": "kitab-i-aqdas",
+      "cited_by": [],
+      "cite_count": 0
+    },
+    {
+      "id": "kojiki",
+      "cited_by": [
+        {
+          "section": "wiki",
+          "title": "Reference corpus of the Raëlian canon",
+          "path": "/wiki/reference-corpus-of-the-raelian-canon/"
+        }
+      ],
+      "cite_count": 1
+    },
+    {
+      "id": "kosmographia",
+      "cited_by": [],
+      "cite_count": 0
+    },
+    {
+      "id": "sendy-ere-du-verseau",
+      "cited_by": [
+        {
+          "section": "wiki",
+          "title": "Hebrew Bible",
+          "path": "/wiki/hebrew-bible/"
+        }
+      ],
+      "cite_count": 1
+    },
+    {
+      "id": "biglino-bibbia-non-parla",
+      "cited_by": [
+        {
+          "section": "wiki",
+          "title": "Eden",
+          "path": "/wiki/eden/"
+        },
+        {
+          "section": "wiki",
+          "title": "Hebrew Bible",
+          "path": "/wiki/hebrew-bible/"
+        }
+      ],
+      "cite_count": 2
+    },
+    {
+      "id": "dhorme-bible",
+      "cited_by": [
+        {
+          "section": "wiki",
+          "title": "Reference corpus of the Raëlian canon",
+          "path": "/wiki/reference-corpus-of-the-raelian-canon/"
+        }
+      ],
+      "cite_count": 1
+    },
+    {
+      "id": "sendy-lune-cle-bible",
+      "cited_by": [
+        {
+          "section": "wiki",
+          "title": "Great Flood",
+          "path": "/wiki/great-flood/"
+        }
+      ],
+      "cite_count": 1
+    },
+    {
+      "id": "lateran-treaty",
+      "cited_by": [
+        {
+          "section": "wiki",
+          "title": "Embassy",
+          "path": "/wiki/embassy/"
+        }
+      ],
+      "cite_count": 1
+    },
+    {
+      "id": "le-livre-qui-dit-la-v-rit",
+      "cited_by": [
+        {
+          "section": "timeline",
+          "title": "Age of Aquarius",
+          "path": "/timeline/age-of-aquarius/"
+        },
+        {
+          "section": "timeline",
+          "title": "Age of Aries",
+          "path": "/timeline/age-of-aries/"
+        },
+        {
+          "section": "timeline",
+          "title": "Age of Leo",
+          "path": "/timeline/age-of-leo/"
+        },
+        {
+          "section": "timeline",
+          "title": "Age of Libra",
+          "path": "/timeline/age-of-libra/"
+        },
+        {
+          "section": "timeline",
+          "title": "Age of Pisces",
+          "path": "/timeline/age-of-pisces/"
+        },
+        {
+          "section": "timeline",
+          "title": "Age of Taurus",
+          "path": "/timeline/age-of-taurus/"
+        },
+        {
+          "section": "timeline",
+          "title": "Age of Virgo",
+          "path": "/timeline/age-of-virgo/"
+        },
+        {
+          "section": "timeline",
+          "title": "Preamble",
+          "path": "/timeline/preamble/"
+        },
+        {
+          "section": "timeline",
+          "title": "The Wheel Keeps Turning",
+          "path": "/timeline/the-wheel-keeps-turning/"
+        }
+      ],
+      "cite_count": 9
+    },
+    {
+      "id": "le-renard-p-le",
+      "cited_by": [
+        {
+          "section": "timeline",
+          "title": "Preamble",
+          "path": "/timeline/preamble/"
+        }
+      ],
+      "cite_count": 1
+    },
+    {
+      "id": "rohl-legend-genesis",
+      "cited_by": [
+        {
+          "section": "wiki",
+          "title": "Eden",
+          "path": "/wiki/eden/"
+        }
+      ],
+      "cite_count": 1
+    },
+    {
+      "id": "sendy-cahiers-moise",
+      "cited_by": [
+        {
+          "section": "wiki",
+          "title": "Eden",
+          "path": "/wiki/eden/"
+        },
+        {
+          "section": "wiki",
+          "title": "Hebrew Bible",
+          "path": "/wiki/hebrew-bible/"
+        }
+      ],
+      "cite_count": 2
+    },
+    {
+      "id": "les-extra-terrestres-m-ont-emmen-sur-leur-plan-te",
+      "cited_by": [
+        {
+          "section": "timeline",
+          "title": "Age of Aquarius",
+          "path": "/timeline/age-of-aquarius/"
+        },
+        {
+          "section": "timeline",
+          "title": "Age of Aries",
+          "path": "/timeline/age-of-aries/"
+        },
+        {
+          "section": "timeline",
+          "title": "Age of Leo",
+          "path": "/timeline/age-of-leo/"
+        },
+        {
+          "section": "timeline",
+          "title": "Age of Libra",
+          "path": "/timeline/age-of-libra/"
+        },
+        {
+          "section": "timeline",
+          "title": "Age of Pisces",
+          "path": "/timeline/age-of-pisces/"
+        },
+        {
+          "section": "timeline",
+          "title": "Age of Taurus",
+          "path": "/timeline/age-of-taurus/"
+        },
+        {
+          "section": "timeline",
+          "title": "Age of Virgo",
+          "path": "/timeline/age-of-virgo/"
+        },
+        {
+          "section": "timeline",
+          "title": "Preamble",
+          "path": "/timeline/preamble/"
+        },
+        {
+          "section": "timeline",
+          "title": "The Wheel Keeps Turning",
+          "path": "/timeline/the-wheel-keeps-turning/"
+        },
+        {
+          "section": "wiki",
+          "title": "Cyberparadism",
+          "path": "/wiki/cyberparadism/"
+        }
+      ],
+      "cite_count": 10
+    },
+    {
+      "id": "journal-de-merer-tallet",
+      "cited_by": [
+        {
+          "section": "wiki",
+          "title": "Ancient Builders",
+          "path": "/wiki/ancient-builders/"
+        }
+      ],
+      "cite_count": 1
+    },
+    {
+      "id": "lets-welcome-the-extraterrestrials",
+      "cited_by": [
+        {
+          "section": "wiki",
+          "title": "Ancient Astronaut Hypothesis",
+          "path": "/wiki/ancient-astronaut-hypothesis/"
+        },
+        {
+          "section": "wiki",
+          "title": "Ancient Builders",
+          "path": "/wiki/ancient-builders/"
+        },
+        {
+          "section": "wiki",
+          "title": "Eden",
+          "path": "/wiki/eden/"
+        },
+        {
+          "section": "wiki",
+          "title": "Elohim",
+          "path": "/wiki/elohim/"
+        },
+        {
+          "section": "wiki",
+          "title": "Golden Age",
+          "path": "/wiki/golden-age/"
+        },
+        {
+          "section": "wiki",
+          "title": "Hebrew Bible",
+          "path": "/wiki/hebrew-bible/"
+        },
+        {
+          "section": "wiki",
+          "title": "Jesus",
+          "path": "/wiki/jesus/"
+        },
+        {
+          "section": "wiki",
+          "title": "Raël",
+          "path": "/wiki/rael/"
+        },
+        {
+          "section": "wiki",
+          "title": "Raëlism",
+          "path": "/wiki/raelism/"
+        },
+        {
+          "section": "wiki",
+          "title": "Reference corpus of the Raëlian canon",
+          "path": "/wiki/reference-corpus-of-the-raelian-canon/"
+        },
+        {
+          "section": "wiki",
+          "title": "Satan",
+          "path": "/wiki/satan/"
+        },
+        {
+          "section": "wiki",
+          "title": "Wheel of Heaven",
+          "path": "/wiki/wheel-of-heaven/"
+        },
+        {
+          "section": "wiki",
+          "title": "Yahweh",
+          "path": "/wiki/yahweh/"
+        }
+      ],
+      "cite_count": 13
+    },
+    {
+      "id": "nickell-levengood-skeptical-inquirer-1996",
+      "cited_by": [
+        {
+          "section": "wiki",
+          "title": "Crop Circles",
+          "path": "/wiki/crop-circles/"
+        }
+      ],
+      "cite_count": 1
+    },
+    {
+      "id": "leviticus",
+      "cited_by": [],
+      "cite_count": 0
+    },
+    {
+      "id": "crick-life-itself",
+      "cited_by": [
+        {
+          "section": "wiki",
+          "title": "Cosmic Chain",
+          "path": "/wiki/cosmic-chain/"
+        }
+      ],
+      "cite_count": 1
+    },
+    {
+      "id": "hoyle-wickramasinghe-lifecloud",
+      "cited_by": [
+        {
+          "section": "wiki",
+          "title": "Cosmic Chain",
+          "path": "/wiki/cosmic-chain/"
+        }
+      ],
+      "cite_count": 1
+    },
+    {
+      "id": "sinclair-lifespan",
+      "cited_by": [
+        {
+          "section": "wiki",
+          "title": "Tree of Life",
+          "path": "/wiki/tree-of-life/"
+        }
+      ],
+      "cite_count": 1
+    },
+    {
+      "id": "russell-lucifer-middle-ages",
+      "cited_by": [
+        {
+          "section": "wiki",
+          "title": "Lucifer",
+          "path": "/wiki/lucifer/"
+        },
+        {
+          "section": "wiki",
+          "title": "Satan",
+          "path": "/wiki/satan/"
+        }
+      ],
+      "cite_count": 2
+    },
+    {
+      "id": "magicians-of-the-gods",
+      "cited_by": [
+        {
+          "section": "wiki",
+          "title": "Ancient Builders",
+          "path": "/wiki/ancient-builders/"
+        },
+        {
+          "section": "wiki",
+          "title": "Antediluvian",
+          "path": "/wiki/antediluvian/"
+        }
+      ],
+      "cite_count": 2
+    },
+    {
+      "id": "mahabharata",
+      "cited_by": [
+        {
+          "section": "wiki",
+          "title": "Reference corpus of the Raëlian canon",
+          "path": "/wiki/reference-corpus-of-the-raelian-canon/"
+        }
+      ],
+      "cite_count": 1
+    },
+    {
+      "id": "williams-mahayana",
+      "cited_by": [
+        {
+          "section": "wiki",
+          "title": "Satan",
+          "path": "/wiki/satan/"
+        }
+      ],
+      "cite_count": 1
+    },
+    {
+      "id": "williams-mahayana-buddhism",
+      "cited_by": [
+        {
+          "section": "wiki",
+          "title": "Cosmic Chain",
+          "path": "/wiki/cosmic-chain/"
+        }
+      ],
+      "cite_count": 1
+    },
+    {
+      "id": "major-trends-jewish-mysticism",
+      "cited_by": [
+        {
+          "section": "wiki",
+          "title": "Serpent",
+          "path": "/wiki/serpent/"
+        },
+        {
+          "section": "wiki",
+          "title": "Tree of Life",
+          "path": "/wiki/tree-of-life/"
+        }
+      ],
+      "cite_count": 2
+    },
+    {
+      "id": "vilenkin-many-worlds-in-one",
+      "cited_by": [
+        {
+          "section": "wiki",
+          "title": "Cosmic Chain",
+          "path": "/wiki/cosmic-chain/"
+        }
+      ],
+      "cite_count": 1
+    },
+    {
+      "id": "mathematics-and-the-unexpected",
+      "cited_by": [
+        {
+          "section": "timeline",
+          "title": "Preamble",
+          "path": "/timeline/preamble/"
+        }
+      ],
+      "cite_count": 1
+    },
+    {
+      "id": "sandt-zangenberg-matthew-james-didache",
+      "cited_by": [
+        {
+          "section": "wiki",
+          "title": "Embassy",
+          "path": "/wiki/embassy/"
+        }
+      ],
+      "cite_count": 1
+    },
+    {
+      "id": "mazzaroth-dot-com",
+      "cited_by": [
+        {
+          "section": "wiki",
+          "title": "Precession",
+          "path": "/wiki/precession/"
+        }
+      ],
+      "cite_count": 1
+    },
+    {
+      "id": "mazzaroth-rolleston",
+      "cited_by": [
+        {
+          "section": "wiki",
+          "title": "Precession",
+          "path": "/wiki/precession/"
+        },
+        {
+          "section": "wiki",
+          "title": "Zodiac",
+          "path": "/wiki/zodiac/"
+        }
+      ],
+      "cite_count": 2
+    },
+    {
+      "id": "russell-mephistopheles-modern",
+      "cited_by": [
+        {
+          "section": "wiki",
+          "title": "Satan",
+          "path": "/wiki/satan/"
+        }
+      ],
+      "cite_count": 1
+    },
+    {
+      "id": "mesopotamian-chronicles",
+      "cited_by": [
+        {
+          "section": "wiki",
+          "title": "Antediluvian",
+          "path": "/wiki/antediluvian/"
+        }
+      ],
+      "cite_count": 1
+    },
+    {
+      "id": "metamorphoses",
+      "cited_by": [
+        {
+          "section": "wiki",
+          "title": "Lucifer",
+          "path": "/wiki/lucifer/"
+        }
+      ],
+      "cite_count": 1
+    },
+    {
+      "id": "miracles-and-the-pulp-press",
+      "cited_by": [
+        {
+          "section": "wiki",
+          "title": "Crop Circles",
+          "path": "/wiki/crop-circles/"
+        }
+      ],
+      "cite_count": 1
+    },
+    {
+      "id": "maimonides-mishneh-torah",
+      "cited_by": [
+        {
+          "section": "wiki",
+          "title": "Embassy",
+          "path": "/wiki/embassy/"
+        }
+      ],
+      "cite_count": 1
+    },
+    {
+      "id": "misunderstandings-about-the-tunguska-event-shock-wave-physics-and-airbursts-have",
+      "cited_by": [
+        {
+          "section": "timeline",
+          "title": "Age of Taurus",
+          "path": "/timeline/age-of-taurus/"
+        }
+      ],
+      "cite_count": 1
+    },
+    {
+      "id": "mitochondrial-dna-and-human-evolution",
+      "cited_by": [
+        {
+          "section": "timeline",
+          "title": "Age of Leo",
+          "path": "/timeline/age-of-leo/"
+        }
+      ],
+      "cite_count": 1
+    },
+    {
+      "id": "modern-perspectives-on-topic-analysis",
+      "cited_by": [
+        {
+          "section": "articles",
+          "title": "Example Explainer: Understanding Complex Topics",
+          "path": "/articles/example-explainer/"
+        }
+      ],
+      "cite_count": 1
+    },
+    {
+      "id": "multispecies-cities-anthology",
+      "cited_by": [
+        {
+          "section": "wiki",
+          "title": "Cyberparadism",
+          "path": "/wiki/cyberparadism/"
+        }
+      ],
+      "cite_count": 1
+    },
+    {
+      "id": "kramer-enki-myths",
+      "cited_by": [
+        {
+          "section": "wiki",
+          "title": "Eden",
+          "path": "/wiki/eden/"
+        },
+        {
+          "section": "wiki",
+          "title": "Great Flood",
+          "path": "/wiki/great-flood/"
+        }
+      ],
+      "cite_count": 2
+    },
+    {
+      "id": "miyazaki-nausicaa",
+      "cited_by": [
+        {
+          "section": "wiki",
+          "title": "Cyberparadism",
+          "path": "/wiki/cyberparadism/"
+        }
+      ],
+      "cite_count": 1
+    },
+    {
+      "id": "gibson-neuromancer",
+      "cited_by": [
+        {
+          "section": "wiki",
+          "title": "Cyberparadism",
+          "path": "/wiki/cyberparadism/"
+        }
+      ],
+      "cite_count": 1
+    },
+    {
+      "id": "nicene-creed",
+      "cited_by": [
+        {
+          "section": "timeline",
+          "title": "Age of Pisces",
+          "path": "/timeline/age-of-pisces/"
+        },
+        {
+          "section": "wiki",
+          "title": "Jesus",
+          "path": "/wiki/jesus/"
+        }
+      ],
+      "cite_count": 2
+    },
+    {
+      "id": "no-mineralogic-or-geochemical-evidence-of-impact-at-tall-el-hammam-a-middle-bron",
+      "cited_by": [
+        {
+          "section": "timeline",
+          "title": "Age of Taurus",
+          "path": "/timeline/age-of-taurus/"
+        }
+      ],
+      "cite_count": 1
+    },
+    {
+      "id": "ryan-pitman-noahs-flood",
+      "cited_by": [
+        {
+          "section": "wiki",
+          "title": "Great Flood",
+          "path": "/wiki/great-flood/"
+        }
+      ],
+      "cite_count": 1
+    },
+    {
+      "id": "lindow-norse-mythology",
+      "cited_by": [
+        {
+          "section": "wiki",
+          "title": "Adam and Eve",
+          "path": "/wiki/adam-and-eve/"
+        },
+        {
+          "section": "wiki",
+          "title": "Tree of Life",
+          "path": "/wiki/tree-of-life/"
+        }
+      ],
+      "cite_count": 2
+    },
+    {
+      "id": "numbers",
+      "cited_by": [
+        {
+          "section": "timeline",
+          "title": "Age of Aries",
+          "path": "/timeline/age-of-aries/"
+        },
+        {
+          "section": "wiki",
+          "title": "Moses",
+          "path": "/wiki/moses/"
+        }
+      ],
+      "cite_count": 2
+    },
+    {
+      "id": "oblivion-film",
+      "cited_by": [
+        {
+          "section": "wiki",
+          "title": "Cyberparadism",
+          "path": "/wiki/cyberparadism/"
+        }
+      ],
+      "cite_count": 1
+    },
+    {
+      "id": "de-principiis",
+      "cited_by": [
+        {
+          "section": "wiki",
+          "title": "Lucifer",
+          "path": "/wiki/lucifer/"
+        }
+      ],
+      "cite_count": 1
+    },
+    {
+      "id": "bruno-infinite-universe",
+      "cited_by": [
+        {
+          "section": "wiki",
+          "title": "Cosmic Chain",
+          "path": "/wiki/cosmic-chain/"
+        }
+      ],
+      "cite_count": 1
+    },
+    {
+      "id": "fuller-spaceship-earth",
+      "cited_by": [
+        {
+          "section": "wiki",
+          "title": "Cyberparadism",
+          "path": "/wiki/cyberparadism/"
+        }
+      ],
+      "cite_count": 1
+    },
+    {
+      "id": "haselhoff-physiologia-plantarum-2001",
+      "cited_by": [
+        {
+          "section": "wiki",
+          "title": "Crop Circles",
+          "path": "/wiki/crop-circles/"
+        }
+      ],
+      "cite_count": 1
+    },
+    {
+      "id": "order-out-of-chaos-man-s-new-dialogue-with-nature",
+      "cited_by": [
+        {
+          "section": "timeline",
+          "title": "Preamble",
+          "path": "/timeline/preamble/"
+        }
+      ],
+      "cite_count": 1
+    },
+    {
+      "id": "nash-sarsen-megaliths-2020",
+      "cited_by": [
+        {
+          "section": "wiki",
+          "title": "Ancient Builders",
+          "path": "/wiki/ancient-builders/"
+        }
+      ],
+      "cite_count": 1
+    },
+    {
+      "id": "osteology-of-deinonychus-antirrhopus-an-unusual-theropod-from-the-lower-cretaceo",
+      "cited_by": [
+        {
+          "section": "timeline",
+          "title": "Age of Virgo",
+          "path": "/timeline/age-of-virgo/"
+        }
+      ],
+      "cite_count": 1
+    },
+    {
+      "id": "tegmark-mathematical-universe",
+      "cited_by": [
+        {
+          "section": "wiki",
+          "title": "Cosmic Chain",
+          "path": "/wiki/cosmic-chain/"
+        }
+      ],
+      "cite_count": 1
+    },
+    {
+      "id": "paradise-lost",
+      "cited_by": [
+        {
+          "section": "wiki",
+          "title": "Lucifer",
+          "path": "/wiki/lucifer/"
+        }
+      ],
+      "cite_count": 1
+    },
+    {
+      "id": "parzival",
+      "cited_by": [],
+      "cite_count": 0
+    },
+    {
+      "id": "passport-to-the-cosmos",
+      "cited_by": [],
+      "cite_count": 0
+    },
+    {
+      "id": "popol-vuh",
+      "cited_by": [
+        {
+          "section": "timeline",
+          "title": "Preamble",
+          "path": "/timeline/preamble/"
+        },
+        {
+          "section": "wiki",
+          "title": "Reference corpus of the Raëlian canon",
+          "path": "/wiki/reference-corpus-of-the-raelian-canon/"
+        },
+        {
+          "section": "wiki",
+          "title": "World Age",
+          "path": "/wiki/world-age/"
+        }
+      ],
+      "cite_count": 3
+    },
+    {
+      "id": "tedlock-popol-vuh",
+      "cited_by": [
+        {
+          "section": "wiki",
+          "title": "Adam and Eve",
+          "path": "/wiki/adam-and-eve/"
+        },
+        {
+          "section": "wiki",
+          "title": "Tree of Life",
+          "path": "/wiki/tree-of-life/"
+        }
+      ],
+      "cite_count": 2
+    },
+    {
+      "id": "prehistoric-avebury",
+      "cited_by": [
+        {
+          "section": "wiki",
+          "title": "Crop Circles",
+          "path": "/wiki/crop-circles/"
+        }
+      ],
+      "cite_count": 1
+    },
+    {
+      "id": "miyazaki-princess-mononoke",
+      "cited_by": [
+        {
+          "section": "wiki",
+          "title": "Cyberparadism",
+          "path": "/wiki/cyberparadism/"
+        }
+      ],
+      "cite_count": 1
+    },
+    {
+      "id": "principles-of-geology",
+      "cited_by": [
+        {
+          "section": "wiki",
+          "title": "Antediluvian",
+          "path": "/wiki/antediluvian/"
+        }
+      ],
+      "cite_count": 1
+    },
+    {
+      "id": "wellhausen-prolegomena",
+      "cited_by": [
+        {
+          "section": "wiki",
+          "title": "Hebrew Bible",
+          "path": "/wiki/hebrew-bible/"
+        }
+      ],
+      "cite_count": 1
+    },
+    {
+      "id": "prolegomena-zur-geschichte-israels",
+      "cited_by": [
+        {
+          "section": "wiki",
+          "title": "Wheel of Heaven",
+          "path": "/wiki/wheel-of-heaven/"
+        }
+      ],
+      "cite_count": 1
+    },
+    {
+      "id": "prometheus-bound",
+      "cited_by": [
+        {
+          "section": "wiki",
+          "title": "Lucifer",
+          "path": "/wiki/lucifer/"
+        }
+      ],
+      "cite_count": 1
+    },
+    {
+      "id": "prometheus-unbound",
+      "cited_by": [
+        {
+          "section": "wiki",
+          "title": "Lucifer",
+          "path": "/wiki/lucifer/"
+        }
+      ],
+      "cite_count": 1
+    },
+    {
+      "id": "providence-in-early-modern-england",
+      "cited_by": [
+        {
+          "section": "wiki",
+          "title": "Crop Circles",
+          "path": "/wiki/crop-circles/"
+        }
+      ],
+      "cite_count": 1
+    },
+    {
+      "id": "psalms",
+      "cited_by": [],
+      "cite_count": 0
+    },
+    {
+      "id": "pseudodoxia-epidemica",
+      "cited_by": [
+        {
+          "section": "wiki",
+          "title": "Antediluvian",
+          "path": "/wiki/antediluvian/"
+        }
+      ],
+      "cite_count": 1
+    },
+    {
+      "id": "carrasco-quetzalcoatl",
+      "cited_by": [
+        {
+          "section": "wiki",
+          "title": "Embassy",
+          "path": "/wiki/embassy/"
+        }
+      ],
+      "cite_count": 1
+    },
+    {
+      "id": "qur-anic-geography",
+      "cited_by": [
+        {
+          "section": "timeline",
+          "title": "Age of Pisces",
+          "path": "/timeline/age-of-pisces/"
+        },
+        {
+          "section": "timeline",
+          "title": "The Wheel Keeps Turning",
+          "path": "/timeline/the-wheel-keeps-turning/"
+        }
+      ],
+      "cite_count": 2
+    },
+    {
+      "id": "rael-dot-org",
+      "cited_by": [
+        {
+          "section": "wiki",
+          "title": "Raël",
+          "path": "/wiki/rael/"
+        },
+        {
+          "section": "wiki",
+          "title": "Raëlism",
+          "path": "/wiki/raelism/"
+        }
+      ],
+      "cite_count": 2
+    },
+    {
+      "id": "real-life-x-files-nickell",
+      "cited_by": [
+        {
+          "section": "wiki",
+          "title": "Crop Circles",
+          "path": "/wiki/crop-circles/"
+        }
+      ],
+      "cite_count": 1
+    },
+    {
+      "id": "redating-the-great-sphinx-of-giza",
+      "cited_by": [
+        {
+          "section": "timeline",
+          "title": "Age of Taurus",
+          "path": "/timeline/age-of-taurus/"
+        }
+      ],
+      "cite_count": 1
+    },
+    {
+      "id": "carrasco-religions-mesoamerica",
+      "cited_by": [
+        {
+          "section": "wiki",
+          "title": "Cosmic Chain",
+          "path": "/wiki/cosmic-chain/"
+        }
+      ],
+      "cite_count": 1
+    },
+    {
+      "id": "reliquiae-diluvianae",
+      "cited_by": [
+        {
+          "section": "wiki",
+          "title": "Antediluvian",
+          "path": "/wiki/antediluvian/"
+        }
+      ],
+      "cite_count": 1
+    },
+    {
+      "id": "rnkjv",
+      "cited_by": [
+        {
+          "section": "wiki",
+          "title": "Reference corpus of the Raëlian canon",
+          "path": "/wiki/reference-corpus-of-the-raelian-canon/"
+        }
+      ],
+      "cite_count": 1
+    },
+    {
+      "id": "retracted-article-a-tunguska-sized-airburst-destroyed-tall-el-hammam-a-middle-br",
+      "cited_by": [
+        {
+          "section": "timeline",
+          "title": "Age of Taurus",
+          "path": "/timeline/age-of-taurus/"
+        }
+      ],
+      "cite_count": 1
+    },
+    {
+      "id": "retraction-note-a-tunguska-sized-airburst-destroyed-tall-el-hammam-a-middle-bron",
+      "cited_by": [
+        {
+          "section": "timeline",
+          "title": "Age of Taurus",
+          "path": "/timeline/age-of-taurus/"
+        }
+      ],
+      "cite_count": 1
+    },
+    {
+      "id": "revelation",
+      "cited_by": [
+        {
+          "section": "timeline",
+          "title": "Age of Aquarius",
+          "path": "/timeline/age-of-aquarius/"
+        },
+        {
+          "section": "wiki",
+          "title": "Golden Age",
+          "path": "/wiki/golden-age/"
+        },
+        {
+          "section": "wiki",
+          "title": "Yahweh",
+          "path": "/wiki/yahweh/"
+        }
+      ],
+      "cite_count": 3
+    },
+    {
+      "id": "the-ricks-must-be-crazy",
+      "cited_by": [],
+      "cite_count": 0
+    },
+    {
+      "id": "round-in-circles-schnabel",
+      "cited_by": [
+        {
+          "section": "wiki",
+          "title": "Crop Circles",
+          "path": "/wiki/crop-circles/"
+        }
+      ],
+      "cite_count": 1
+    },
+    {
+      "id": "ramayana",
+      "cited_by": [
+        {
+          "section": "wiki",
+          "title": "Reference corpus of the Raëlian canon",
+          "path": "/wiki/reference-corpus-of-the-raelian-canon/"
+        }
+      ],
+      "cite_count": 1
+    },
+    {
+      "id": "awn-satan-iblis",
+      "cited_by": [
+        {
+          "section": "wiki",
+          "title": "Satan",
+          "path": "/wiki/satan/"
+        }
+      ],
+      "cite_count": 1
+    },
+    {
+      "id": "kelly-satan-biography",
+      "cited_by": [
+        {
+          "section": "wiki",
+          "title": "Lucifer",
+          "path": "/wiki/lucifer/"
+        },
+        {
+          "section": "wiki",
+          "title": "Satan",
+          "path": "/wiki/satan/"
+        },
+        {
+          "section": "wiki",
+          "title": "Serpent",
+          "path": "/wiki/serpent/"
+        }
+      ],
+      "cite_count": 3
+    },
+    {
+      "id": "satan-a-biography",
+      "cited_by": [],
+      "cite_count": 0
+    },
+    {
+      "id": "russell-satan-early-christian",
+      "cited_by": [
+        {
+          "section": "wiki",
+          "title": "Satan",
+          "path": "/wiki/satan/"
+        }
+      ],
+      "cite_count": 1
+    },
+    {
+      "id": "science-after-babel",
+      "cited_by": [],
+      "cite_count": 0
+    },
+    {
+      "id": "sefaria",
+      "cited_by": [
+        {
+          "section": "wiki",
+          "title": "Genesis",
+          "path": "/wiki/genesis/"
+        },
+        {
+          "section": "wiki",
+          "title": "Hebrew Bible",
+          "path": "/wiki/hebrew-bible/"
+        },
+        {
+          "section": "wiki",
+          "title": "Jesus",
+          "path": "/wiki/jesus/"
+        }
+      ],
+      "cite_count": 3
+    },
+    {
+      "id": "sefer-yetzirah",
+      "cited_by": [
+        {
+          "section": "wiki",
+          "title": "Tree of Life",
+          "path": "/wiki/tree-of-life/"
+        }
+      ],
+      "cite_count": 1
+    },
+    {
+      "id": "serpent-in-the-sky",
+      "cited_by": [
+        {
+          "section": "wiki",
+          "title": "Ancient Builders",
+          "path": "/wiki/ancient-builders/"
+        }
+      ],
+      "cite_count": 1
+    },
+    {
+      "id": "shan-hai-jing",
+      "cited_by": [
+        {
+          "section": "wiki",
+          "title": "Tree of Life",
+          "path": "/wiki/tree-of-life/"
+        }
+      ],
+      "cite_count": 1
+    },
+    {
+      "id": "shiur-qomah",
+      "cited_by": [
+        {
+          "section": "wiki",
+          "title": "Reference corpus of the Raëlian canon",
+          "path": "/wiki/reference-corpus-of-the-raelian-canon/"
+        }
+      ],
+      "cite_count": 1
+    },
+    {
+      "id": "signature-in-the-cell",
+      "cited_by": [],
+      "cite_count": 0
+    },
+    {
+      "id": "aveni-skywatchers",
+      "cited_by": [],
+      "cite_count": 0
+    },
+    {
+      "id": "soft-tissue-vessels-and-cellular-preservation-in-tyrannosaurus-rex",
+      "cited_by": [
+        {
+          "section": "timeline",
+          "title": "Age of Virgo",
+          "path": "/timeline/age-of-virgo/"
+        }
+      ],
+      "cite_count": 1
+    },
+    {
+      "id": "solarpunk-anthology-2018",
+      "cited_by": [
+        {
+          "section": "wiki",
+          "title": "Cyberparadism",
+          "path": "/wiki/cyberparadism/"
+        }
+      ],
+      "cite_count": 1
+    },
+    {
+      "id": "space-a-gogo-dot-com",
+      "cited_by": [],
+      "cite_count": 0
+    },
+    {
+      "id": "plaskow-standing-again-sinai",
+      "cited_by": [
+        {
+          "section": "wiki",
+          "title": "Adam and Eve",
+          "path": "/wiki/adam-and-eve/"
+        }
+      ],
+      "cite_count": 1
+    },
+    {
+      "id": "star-trek-tng",
+      "cited_by": [
+        {
+          "section": "wiki",
+          "title": "Cyberparadism",
+          "path": "/wiki/cyberparadism/"
+        }
+      ],
+      "cite_count": 1
+    },
+    {
+      "id": "stonehenge-parker-pearson",
+      "cited_by": [
+        {
+          "section": "wiki",
+          "title": "Ancient Builders",
+          "path": "/wiki/ancient-builders/"
+        }
+      ],
+      "cite_count": 1
+    },
+    {
+      "id": "cook-muslim-apocalyptic",
+      "cited_by": [
+        {
+          "section": "wiki",
+          "title": "Embassy",
+          "path": "/wiki/embassy/"
+        }
+      ],
+      "cite_count": 1
+    },
+    {
+      "id": "halloran-sumerian-lexicon",
+      "cited_by": [
+        {
+          "section": "wiki",
+          "title": "Eden",
+          "path": "/wiki/eden/"
+        }
+      ],
+      "cite_count": 1
+    },
+    {
+      "id": "summa-theologiae",
+      "cited_by": [
+        {
+          "section": "wiki",
+          "title": "Lucifer",
+          "path": "/wiki/lucifer/"
+        }
+      ],
+      "cite_count": 1
+    },
+    {
+      "id": "sunvault-anthology",
+      "cited_by": [
+        {
+          "section": "wiki",
+          "title": "Cyberparadism",
+          "path": "/wiki/cyberparadism/"
+        }
+      ],
+      "cite_count": 1
+    },
+    {
+      "id": "tanakh",
+      "cited_by": [
+        {
+          "section": "wiki",
+          "title": "Council of the Eternals",
+          "path": "/wiki/council-of-eternals/"
+        },
+        {
+          "section": "wiki",
+          "title": "Hebrew Bible",
+          "path": "/wiki/hebrew-bible/"
+        }
+      ],
+      "cite_count": 2
+    },
+    {
+      "id": "telluris-theoria-sacra",
+      "cited_by": [
+        {
+          "section": "wiki",
+          "title": "Antediluvian",
+          "path": "/wiki/antediluvian/"
+        }
+      ],
+      "cite_count": 1
+    },
+    {
+      "id": "temporary-temples",
+      "cited_by": [],
+      "cite_count": 0
+    },
+    {
+      "id": "terranigma",
+      "cited_by": [],
+      "cite_count": 0
+    },
+    {
+      "id": "grusch-congressional-testimony",
+      "cited_by": [
+        {
+          "section": "wiki",
+          "title": "Embassy",
+          "path": "/wiki/embassy/"
+        }
+      ],
+      "cite_count": 1
+    },
+    {
+      "id": "tov-textual-criticism",
+      "cited_by": [
+        {
+          "section": "wiki",
+          "title": "Hebrew Bible",
+          "path": "/wiki/hebrew-bible/"
+        }
+      ],
+      "cite_count": 1
+    },
+    {
+      "id": "sitchin-12th-planet",
+      "cited_by": [
+        {
+          "section": "wiki",
+          "title": "Eden",
+          "path": "/wiki/eden/"
+        },
+        {
+          "section": "wiki",
+          "title": "Great Flood",
+          "path": "/wiki/great-flood/"
+        },
+        {
+          "section": "wiki",
+          "title": "Hebrew Bible",
+          "path": "/wiki/hebrew-bible/"
+        }
+      ],
+      "cite_count": 3
+    },
+    {
+      "id": "the-12th-planet",
+      "cited_by": [
+        {
+          "section": "wiki",
+          "title": "Ancient Builders",
+          "path": "/wiki/ancient-builders/"
+        },
+        {
+          "section": "wiki",
+          "title": "Cosmic Chain",
+          "path": "/wiki/cosmic-chain/"
+        },
+        {
+          "section": "wiki",
+          "title": "Wheel of Heaven",
+          "path": "/wiki/wheel-of-heaven/"
+        }
+      ],
+      "cite_count": 3
+    },
+    {
+      "id": "alphabet-of-ben-sira",
+      "cited_by": [
+        {
+          "section": "wiki",
+          "title": "Adam and Eve",
+          "path": "/wiki/adam-and-eve/"
+        }
+      ],
+      "cite_count": 1
+    },
+    {
+      "id": "charles-apocrypha-pseudepigrapha",
+      "cited_by": [
+        {
+          "section": "wiki",
+          "title": "Serpent",
+          "path": "/wiki/serpent/"
+        }
+      ],
+      "cite_count": 1
+    },
+    {
+      "id": "the-apportionment-of-human-diversity",
+      "cited_by": [
+        {
+          "section": "timeline",
+          "title": "Age of Leo",
+          "path": "/timeline/age-of-leo/"
+        }
+      ],
+      "cite_count": 1
+    },
+    {
+      "id": "alter-art-biblical-narrative",
+      "cited_by": [
+        {
+          "section": "wiki",
+          "title": "Hebrew Bible",
+          "path": "/wiki/hebrew-bible/"
+        }
+      ],
+      "cite_count": 1
+    },
+    {
+      "id": "the-assembly-of-the-gods",
+      "cited_by": [],
+      "cite_count": 0
+    },
+    {
+      "id": "giovino-assyrian-sacred-tree",
+      "cited_by": [
+        {
+          "section": "wiki",
+          "title": "Tree of Life",
+          "path": "/wiki/tree-of-life/"
+        }
+      ],
+      "cite_count": 1
+    },
+    {
+      "id": "parpola-assyrian-tree-of-life",
+      "cited_by": [
+        {
+          "section": "wiki",
+          "title": "Tree of Life",
+          "path": "/wiki/tree-of-life/"
+        }
+      ],
+      "cite_count": 1
+    },
+    {
+      "id": "vidal-naquet-atlantis-story",
+      "cited_by": [
+        {
+          "section": "wiki",
+          "title": "Ancient Builders",
+          "path": "/wiki/ancient-builders/"
+        },
+        {
+          "section": "wiki",
+          "title": "Antediluvian",
+          "path": "/wiki/antediluvian/"
+        }
+      ],
+      "cite_count": 2
+    },
+    {
+      "id": "bhagavad-gita",
+      "cited_by": [
+        {
+          "section": "timeline",
+          "title": "The Wheel Keeps Turning",
+          "path": "/timeline/the-wheel-keeps-turning/"
+        },
+        {
+          "section": "wiki",
+          "title": "Golden Age",
+          "path": "/wiki/golden-age/"
+        },
+        {
+          "section": "wiki",
+          "title": "Tree of Life",
+          "path": "/wiki/tree-of-life/"
+        },
+        {
+          "section": "wiki",
+          "title": "World Age",
+          "path": "/wiki/world-age/"
+        }
+      ],
+      "cite_count": 4
+    },
+    {
+      "id": "the-bible-is-not-a-sacred-book",
+      "cited_by": [
+        {
+          "section": "wiki",
+          "title": "Ancient Astronaut Hypothesis",
+          "path": "/wiki/ancient-astronaut-hypothesis/"
+        },
+        {
+          "section": "wiki",
+          "title": "Council of the Eternals",
+          "path": "/wiki/council-of-eternals/"
+        },
+        {
+          "section": "wiki",
+          "title": "Elohim",
+          "path": "/wiki/elohim/"
+        },
+        {
+          "section": "wiki",
+          "title": "Genesis",
+          "path": "/wiki/genesis/"
+        },
+        {
+          "section": "wiki",
+          "title": "Jesus",
+          "path": "/wiki/jesus/"
+        },
+        {
+          "section": "wiki",
+          "title": "Precession",
+          "path": "/wiki/precession/"
+        },
+        {
+          "section": "wiki",
+          "title": "Raëlism",
+          "path": "/wiki/raelism/"
+        },
+        {
+          "section": "wiki",
+          "title": "Satan",
+          "path": "/wiki/satan/"
+        },
+        {
+          "section": "wiki",
+          "title": "Yahweh",
+          "path": "/wiki/yahweh/"
+        }
+      ],
+      "cite_count": 9
+    },
+    {
+      "id": "la-bible-of-la-pleiade",
+      "cited_by": [],
+      "cite_count": 0
+    },
+    {
+      "id": "finkelstein-bible-unearthed",
+      "cited_by": [
+        {
+          "section": "wiki",
+          "title": "Hebrew Bible",
+          "path": "/wiki/hebrew-bible/"
+        }
+      ],
+      "cite_count": 1
+    },
+    {
+      "id": "friedman-bible-sources-revealed",
+      "cited_by": [
+        {
+          "section": "wiki",
+          "title": "Hebrew Bible",
+          "path": "/wiki/hebrew-bible/"
+        }
+      ],
+      "cite_count": 1
+    },
+    {
+      "id": "habel-job",
+      "cited_by": [
+        {
+          "section": "wiki",
+          "title": "Satan",
+          "path": "/wiki/satan/"
+        }
+      ],
+      "cite_count": 1
+    },
+    {
+      "id": "newsom-job-moral",
+      "cited_by": [
+        {
+          "section": "wiki",
+          "title": "Satan",
+          "path": "/wiki/satan/"
+        }
+      ],
+      "cite_count": 1
+    },
+    {
+      "id": "the-book-of-mormon",
+      "cited_by": [
+        {
+          "section": "timeline",
+          "title": "Age of Pisces",
+          "path": "/timeline/age-of-pisces/"
+        }
+      ],
+      "cite_count": 1
+    },
+    {
+      "id": "the-book-which-tells-the-truth",
+      "cited_by": [
+        {
+          "section": "wiki",
+          "title": "Adam and Eve",
+          "path": "/wiki/adam-and-eve/"
+        },
+        {
+          "section": "wiki",
+          "title": "Ancient Astronaut Hypothesis",
+          "path": "/wiki/ancient-astronaut-hypothesis/"
+        },
+        {
+          "section": "wiki",
+          "title": "Ancient Builders",
+          "path": "/wiki/ancient-builders/"
+        },
+        {
+          "section": "wiki",
+          "title": "Antediluvian",
+          "path": "/wiki/antediluvian/"
+        },
+        {
+          "section": "wiki",
+          "title": "Cosmic Chain",
+          "path": "/wiki/cosmic-chain/"
+        },
+        {
+          "section": "wiki",
+          "title": "Council of the Eternals",
+          "path": "/wiki/council-of-eternals/"
+        },
+        {
+          "section": "wiki",
+          "title": "Crop Circles",
+          "path": "/wiki/crop-circles/"
+        },
+        {
+          "section": "wiki",
+          "title": "Eden",
+          "path": "/wiki/eden/"
+        },
+        {
+          "section": "wiki",
+          "title": "Elohim",
+          "path": "/wiki/elohim/"
+        },
+        {
+          "section": "wiki",
+          "title": "Embassy",
+          "path": "/wiki/embassy/"
+        },
+        {
+          "section": "wiki",
+          "title": "Genesis",
+          "path": "/wiki/genesis/"
+        },
+        {
+          "section": "wiki",
+          "title": "Golden Age",
+          "path": "/wiki/golden-age/"
+        },
+        {
+          "section": "wiki",
+          "title": "Great Flood",
+          "path": "/wiki/great-flood/"
+        },
+        {
+          "section": "wiki",
+          "title": "Great Year",
+          "path": "/wiki/great-year/"
+        },
+        {
+          "section": "wiki",
+          "title": "Hebrew Bible",
+          "path": "/wiki/hebrew-bible/"
+        },
+        {
+          "section": "wiki",
+          "title": "Jesus",
+          "path": "/wiki/jesus/"
+        },
+        {
+          "section": "wiki",
+          "title": "Lucifer",
+          "path": "/wiki/lucifer/"
+        },
+        {
+          "section": "wiki",
+          "title": "Moses",
+          "path": "/wiki/moses/"
+        },
+        {
+          "section": "wiki",
+          "title": "Precession",
+          "path": "/wiki/precession/"
+        },
+        {
+          "section": "wiki",
+          "title": "Raël",
+          "path": "/wiki/rael/"
+        },
+        {
+          "section": "wiki",
+          "title": "Raëlism",
+          "path": "/wiki/raelism/"
+        },
+        {
+          "section": "wiki",
+          "title": "Reference corpus of the Raëlian canon",
+          "path": "/wiki/reference-corpus-of-the-raelian-canon/"
+        },
+        {
+          "section": "wiki",
+          "title": "Satan",
+          "path": "/wiki/satan/"
+        },
+        {
+          "section": "wiki",
+          "title": "Serpent",
+          "path": "/wiki/serpent/"
+        },
+        {
+          "section": "wiki",
+          "title": "Tree of Life",
+          "path": "/wiki/tree-of-life/"
+        },
+        {
+          "section": "wiki",
+          "title": "Wheel of Heaven",
+          "path": "/wiki/wheel-of-heaven/"
+        },
+        {
+          "section": "wiki",
+          "title": "World Age",
+          "path": "/wiki/world-age/"
+        },
+        {
+          "section": "wiki",
+          "title": "Yahweh",
+          "path": "/wiki/yahweh/"
+        }
+      ],
+      "cite_count": 28
+    },
+    {
+      "id": "the-chaldean-account-of-genesis",
+      "cited_by": [
+        {
+          "section": "wiki",
+          "title": "Genesis",
+          "path": "/wiki/genesis/"
+        }
+      ],
+      "cite_count": 1
+    },
+    {
+      "id": "the-church-of-jesus-latter-day-saints-scriptures",
+      "cited_by": [],
+      "cite_count": 0
+    },
+    {
+      "id": "the-circles-effect-meaden",
+      "cited_by": [
+        {
+          "section": "wiki",
+          "title": "Crop Circles",
+          "path": "/wiki/crop-circles/"
+        }
+      ],
+      "cite_count": 1
+    },
+    {
+      "id": "city-of-god",
+      "cited_by": [
+        {
+          "section": "wiki",
+          "title": "Adam and Eve",
+          "path": "/wiki/adam-and-eve/"
+        },
+        {
+          "section": "wiki",
+          "title": "Lucifer",
+          "path": "/wiki/lucifer/"
+        },
+        {
+          "section": "wiki",
+          "title": "Tree of Life",
+          "path": "/wiki/tree-of-life/"
+        }
+      ],
+      "cite_count": 3
+    },
+    {
+      "id": "the-collection-of-divine-messages-of-cai-dai",
+      "cited_by": [],
+      "cite_count": 0
+    },
+    {
+      "id": "the-coming-of-the-gods",
+      "cited_by": [
+        {
+          "section": "wiki",
+          "title": "Ancient Astronaut Hypothesis",
+          "path": "/wiki/ancient-astronaut-hypothesis/"
+        },
+        {
+          "section": "wiki",
+          "title": "Elohim",
+          "path": "/wiki/elohim/"
+        },
+        {
+          "section": "wiki",
+          "title": "Genesis",
+          "path": "/wiki/genesis/"
+        },
+        {
+          "section": "wiki",
+          "title": "Wheel of Heaven",
+          "path": "/wiki/wheel-of-heaven/"
+        },
+        {
+          "section": "wiki",
+          "title": "World Age",
+          "path": "/wiki/world-age/"
+        },
+        {
+          "section": "wiki",
+          "title": "Zodiac",
+          "path": "/wiki/zodiac/"
+        }
+      ],
+      "cite_count": 6
+    },
+    {
+      "id": "vermes-dead-sea-scrolls",
+      "cited_by": [
+        {
+          "section": "wiki",
+          "title": "Hebrew Bible",
+          "path": "/wiki/hebrew-bible/"
+        },
+        {
+          "section": "wiki",
+          "title": "Satan",
+          "path": "/wiki/satan/"
+        }
+      ],
+      "cite_count": 2
+    },
+    {
+      "id": "the-complete-pyramids",
+      "cited_by": [
+        {
+          "section": "wiki",
+          "title": "Ancient Builders",
+          "path": "/wiki/ancient-builders/"
+        }
+      ],
+      "cite_count": 1
+    },
+    {
+      "id": "cosmic-serpent-narby",
+      "cited_by": [
+        {
+          "section": "wiki",
+          "title": "Serpent",
+          "path": "/wiki/serpent/"
+        }
+      ],
+      "cite_count": 1
+    },
+    {
+      "id": "banks-culture-series",
+      "cited_by": [
+        {
+          "section": "wiki",
+          "title": "Cyberparadism",
+          "path": "/wiki/cyberparadism/"
+        }
+      ],
+      "cite_count": 1
+    },
+    {
+      "id": "vanderkam-dss-today",
+      "cited_by": [
+        {
+          "section": "wiki",
+          "title": "Hebrew Bible",
+          "path": "/wiki/hebrew-bible/"
+        },
+        {
+          "section": "wiki",
+          "title": "Satan",
+          "path": "/wiki/satan/"
+        }
+      ],
+      "cite_count": 2
+    },
+    {
+      "id": "the-deepening-complexity-crop-circles",
+      "cited_by": [
+        {
+          "section": "wiki",
+          "title": "Crop Circles",
+          "path": "/wiki/crop-circles/"
+        }
+      ],
+      "cite_count": 1
+    },
+    {
+      "id": "the-devils-delusion",
+      "cited_by": [],
+      "cite_count": 0
+    },
+    {
+      "id": "russell-devil-antiquity",
+      "cited_by": [
+        {
+          "section": "wiki",
+          "title": "Satan",
+          "path": "/wiki/satan/"
+        }
+      ],
+      "cite_count": 1
+    },
+    {
+      "id": "the-devil-perceptions-of-evil",
+      "cited_by": [],
+      "cite_count": 0
+    },
+    {
+      "id": "stephenson-diamond-age",
+      "cited_by": [
+        {
+          "section": "wiki",
+          "title": "Cyberparadism",
+          "path": "/wiki/cyberparadism/"
+        }
+      ],
+      "cite_count": 1
+    },
+    {
+      "id": "le-guin-dispossessed",
+      "cited_by": [
+        {
+          "section": "wiki",
+          "title": "Cyberparadism",
+          "path": "/wiki/cyberparadism/"
+        }
+      ],
+      "cite_count": 1
+    },
+    {
+      "id": "smith-early-history-god",
+      "cited_by": [
+        {
+          "section": "wiki",
+          "title": "Hebrew Bible",
+          "path": "/wiki/hebrew-bible/"
+        }
+      ],
+      "cite_count": 1
+    },
+    {
+      "id": "the-early-history-of-god",
+      "cited_by": [
+        {
+          "section": "wiki",
+          "title": "Elohim",
+          "path": "/wiki/elohim/"
+        }
+      ],
+      "cite_count": 1
+    },
+    {
+      "id": "the-eden-conspiracy",
+      "cited_by": [
+        {
+          "section": "wiki",
+          "title": "Adam and Eve",
+          "path": "/wiki/adam-and-eve/"
+        },
+        {
+          "section": "wiki",
+          "title": "Cosmic Chain",
+          "path": "/wiki/cosmic-chain/"
+        },
+        {
+          "section": "wiki",
+          "title": "Embassy",
+          "path": "/wiki/embassy/"
+        },
+        {
+          "section": "wiki",
+          "title": "Lucifer",
+          "path": "/wiki/lucifer/"
+        },
+        {
+          "section": "wiki",
+          "title": "Serpent",
+          "path": "/wiki/serpent/"
+        },
+        {
+          "section": "wiki",
+          "title": "Tree of Life",
+          "path": "/wiki/tree-of-life/"
+        }
+      ],
+      "cite_count": 6
+    },
+    {
+      "id": "wallis-eden-conspiracy",
+      "cited_by": [
+        {
+          "section": "wiki",
+          "title": "Eden",
+          "path": "/wiki/eden/"
+        },
+        {
+          "section": "wiki",
+          "title": "Great Flood",
+          "path": "/wiki/great-flood/"
+        },
+        {
+          "section": "wiki",
+          "title": "Hebrew Bible",
+          "path": "/wiki/hebrew-bible/"
+        },
+        {
+          "section": "wiki",
+          "title": "Satan",
+          "path": "/wiki/satan/"
+        }
+      ],
+      "cite_count": 4
+    },
+    {
+      "id": "wallace-eden-narrative",
+      "cited_by": [
+        {
+          "section": "wiki",
+          "title": "Tree of Life",
+          "path": "/wiki/tree-of-life/"
+        }
+      ],
+      "cite_count": 1
+    },
+    {
+      "id": "the-electronic-text-corpus-of-sumerian-literature",
+      "cited_by": [],
+      "cite_count": 0
+    },
+    {
+      "id": "the-engagement",
+      "cited_by": [],
+      "cite_count": 0
+    },
+    {
+      "id": "george-epic-of-gilgamesh",
+      "cited_by": [
+        {
+          "section": "wiki",
+          "title": "Adam and Eve",
+          "path": "/wiki/adam-and-eve/"
+        }
+      ],
+      "cite_count": 1
+    },
+    {
+      "id": "george-gilgamesh",
+      "cited_by": [
+        {
+          "section": "wiki",
+          "title": "Great Flood",
+          "path": "/wiki/great-flood/"
+        }
+      ],
+      "cite_count": 1
+    },
+    {
+      "id": "the-eridu-genesis",
+      "cited_by": [
+        {
+          "section": "wiki",
+          "title": "Genesis",
+          "path": "/wiki/genesis/"
+        }
+      ],
+      "cite_count": 1
+    },
+    {
+      "id": "matt-essential-kabbalah",
+      "cited_by": [
+        {
+          "section": "wiki",
+          "title": "Tree of Life",
+          "path": "/wiki/tree-of-life/"
+        }
+      ],
+      "cite_count": 1
+    },
+    {
+      "id": "halperin-faces-of-the-chariot",
+      "cited_by": [
+        {
+          "section": "wiki",
+          "title": "Embassy",
+          "path": "/wiki/embassy/"
+        }
+      ],
+      "cite_count": 1
+    },
+    {
+      "id": "the-field-guide-crop-circle-making",
+      "cited_by": [
+        {
+          "section": "wiki",
+          "title": "Crop Circles",
+          "path": "/wiki/crop-circles/"
+        }
+      ],
+      "cite_count": 1
+    },
+    {
+      "id": "goldberg-fight-for-jerusalem",
+      "cited_by": [
+        {
+          "section": "wiki",
+          "title": "Embassy",
+          "path": "/wiki/embassy/"
+        }
+      ],
+      "cite_count": 1
+    },
+    {
+      "id": "the-fractal-geometry-of-nature",
+      "cited_by": [
+        {
+          "section": "timeline",
+          "title": "Preamble",
+          "path": "/timeline/preamble/"
+        },
+        {
+          "section": "timeline",
+          "title": "The Wheel Keeps Turning",
+          "path": "/timeline/the-wheel-keeps-turning/"
+        }
+      ],
+      "cite_count": 2
+    },
+    {
+      "id": "heidel-gilgamesh-ot",
+      "cited_by": [
+        {
+          "section": "wiki",
+          "title": "Great Flood",
+          "path": "/wiki/great-flood/"
+        }
+      ],
+      "cite_count": 1
+    },
+    {
+      "id": "giza-power-plant",
+      "cited_by": [
+        {
+          "section": "wiki",
+          "title": "Ancient Builders",
+          "path": "/wiki/ancient-builders/"
+        }
+      ],
+      "cite_count": 1
+    },
+    {
+      "id": "pagels-gnostic-gospels",
+      "cited_by": [
+        {
+          "section": "wiki",
+          "title": "Serpent",
+          "path": "/wiki/serpent/"
+        }
+      ],
+      "cite_count": 1
+    },
+    {
+      "id": "gnostic-scriptures",
+      "cited_by": [
+        {
+          "section": "wiki",
+          "title": "Serpent",
+          "path": "/wiki/serpent/"
+        }
+      ],
+      "cite_count": 1
+    },
+    {
+      "id": "the-gods-have-landed",
+      "cited_by": [],
+      "cite_count": 0
+    },
+    {
+      "id": "charlesworth-good-evil-serpent",
+      "cited_by": [
+        {
+          "section": "wiki",
+          "title": "Serpent",
+          "path": "/wiki/serpent/"
+        }
+      ],
+      "cite_count": 1
+    },
+    {
+      "id": "the-gospels-in-the-stars",
+      "cited_by": [
+        {
+          "section": "wiki",
+          "title": "Precession",
+          "path": "/wiki/precession/"
+        },
+        {
+          "section": "wiki",
+          "title": "Zodiac",
+          "path": "/wiki/zodiac/"
+        }
+      ],
+      "cite_count": 2
+    },
+    {
+      "id": "hallmarks-of-aging",
+      "cited_by": [
+        {
+          "section": "wiki",
+          "title": "Tree of Life",
+          "path": "/wiki/tree-of-life/"
+        }
+      ],
+      "cite_count": 1
+    },
+    {
+      "id": "rochberg-heavenly-writing",
+      "cited_by": [],
+      "cite_count": 0
+    },
+    {
+      "id": "the-hebrew-and-aramaic-lexicon-of-the-old-testament",
+      "cited_by": [
+        {
+          "section": "timeline",
+          "title": "Age of Virgo",
+          "path": "/timeline/age-of-virgo/"
+        },
+        {
+          "section": "wiki",
+          "title": "Yahweh",
+          "path": "/wiki/yahweh/"
+        }
+      ],
+      "cite_count": 2
+    },
+    {
+      "id": "alter-hebrew-bible",
+      "cited_by": [
+        {
+          "section": "wiki",
+          "title": "Hebrew Bible",
+          "path": "/wiki/hebrew-bible/"
+        }
+      ],
+      "cite_count": 1
+    },
+    {
+      "id": "long-sedley-hellenistic-philosophers",
+      "cited_by": [
+        {
+          "section": "wiki",
+          "title": "Cosmic Chain",
+          "path": "/wiki/cosmic-chain/"
+        }
+      ],
+      "cite_count": 1
+    },
+    {
+      "id": "doniger-hindus",
+      "cited_by": [],
+      "cite_count": 0
+    },
+    {
+      "id": "doniger-the-hindus",
+      "cited_by": [
+        {
+          "section": "wiki",
+          "title": "Embassy",
+          "path": "/wiki/embassy/"
+        }
+      ],
+      "cite_count": 1
+    },
+    {
+      "id": "the-human-history-mistake",
+      "cited_by": [],
+      "cite_count": 0
+    },
+    {
+      "id": "dundas-the-jains",
+      "cited_by": [
+        {
+          "section": "wiki",
+          "title": "Cosmic Chain",
+          "path": "/wiki/cosmic-chain/"
+        }
+      ],
+      "cite_count": 1
+    },
+    {
+      "id": "the-kabbalah-law-and-mysticism-in-the-jewish-tradition",
+      "cited_by": [],
+      "cite_count": 0
+    },
+    {
+      "id": "the-kumulipo-a-hawaiian-creation-chant",
+      "cited_by": [
+        {
+          "section": "timeline",
+          "title": "Preamble",
+          "path": "/timeline/preamble/"
+        }
+      ],
+      "cite_count": 1
+    },
+    {
+      "id": "lost-continent-of-mu",
+      "cited_by": [
+        {
+          "section": "wiki",
+          "title": "Ancient Builders",
+          "path": "/wiki/ancient-builders/"
+        }
+      ],
+      "cite_count": 1
+    },
+    {
+      "id": "marriage-of-heaven-and-hell",
+      "cited_by": [
+        {
+          "section": "wiki",
+          "title": "Lucifer",
+          "path": "/wiki/lucifer/"
+        }
+      ],
+      "cite_count": 1
+    },
+    {
+      "id": "the-moon-outpost-of-the-gods",
+      "cited_by": [],
+      "cite_count": 0
+    },
+    {
+      "id": "myth-of-the-eternal-return",
+      "cited_by": [
+        {
+          "section": "wiki",
+          "title": "Antediluvian",
+          "path": "/wiki/antediluvian/"
+        }
+      ],
+      "cite_count": 1
+    },
+    {
+      "id": "nag-hammadi-library",
+      "cited_by": [
+        {
+          "section": "wiki",
+          "title": "Serpent",
+          "path": "/wiki/serpent/"
+        }
+      ],
+      "cite_count": 1
+    },
+    {
+      "id": "the-naked-bible",
+      "cited_by": [
+        {
+          "section": "wiki",
+          "title": "Adam and Eve",
+          "path": "/wiki/adam-and-eve/"
+        },
+        {
+          "section": "wiki",
+          "title": "Ancient Astronaut Hypothesis",
+          "path": "/wiki/ancient-astronaut-hypothesis/"
+        },
+        {
+          "section": "wiki",
+          "title": "Cosmic Chain",
+          "path": "/wiki/cosmic-chain/"
+        },
+        {
+          "section": "wiki",
+          "title": "Council of the Eternals",
+          "path": "/wiki/council-of-eternals/"
+        },
+        {
+          "section": "wiki",
+          "title": "Eden",
+          "path": "/wiki/eden/"
+        },
+        {
+          "section": "wiki",
+          "title": "Elohim",
+          "path": "/wiki/elohim/"
+        },
+        {
+          "section": "wiki",
+          "title": "Embassy",
+          "path": "/wiki/embassy/"
+        },
+        {
+          "section": "wiki",
+          "title": "Genesis",
+          "path": "/wiki/genesis/"
+        },
+        {
+          "section": "wiki",
+          "title": "Great Flood",
+          "path": "/wiki/great-flood/"
+        },
+        {
+          "section": "wiki",
+          "title": "Hebrew Bible",
+          "path": "/wiki/hebrew-bible/"
+        },
+        {
+          "section": "wiki",
+          "title": "Jesus",
+          "path": "/wiki/jesus/"
+        },
+        {
+          "section": "wiki",
+          "title": "Lucifer",
+          "path": "/wiki/lucifer/"
+        },
+        {
+          "section": "wiki",
+          "title": "Satan",
+          "path": "/wiki/satan/"
+        },
+        {
+          "section": "wiki",
+          "title": "Serpent",
+          "path": "/wiki/serpent/"
+        },
+        {
+          "section": "wiki",
+          "title": "Tree of Life",
+          "path": "/wiki/tree-of-life/"
+        },
+        {
+          "section": "wiki",
+          "title": "Wheel of Heaven",
+          "path": "/wiki/wheel-of-heaven/"
+        },
+        {
+          "section": "wiki",
+          "title": "Yahweh",
+          "path": "/wiki/yahweh/"
+        }
+      ],
+      "cite_count": 17
+    },
+    {
+      "id": "natufian-culture-in-the-levant",
+      "cited_by": [
+        {
+          "section": "wiki",
+          "title": "Antediluvian",
+          "path": "/wiki/antediluvian/"
+        }
+      ],
+      "cite_count": 1
+    },
+    {
+      "id": "hawking-penrose-nature-space-time",
+      "cited_by": [
+        {
+          "section": "wiki",
+          "title": "Cosmic Chain",
+          "path": "/wiki/cosmic-chain/"
+        }
+      ],
+      "cite_count": 1
+    },
+    {
+      "id": "forsyth-the-old-enemy",
+      "cited_by": [
+        {
+          "section": "wiki",
+          "title": "Lucifer",
+          "path": "/wiki/lucifer/"
+        },
+        {
+          "section": "wiki",
+          "title": "Serpent",
+          "path": "/wiki/serpent/"
+        }
+      ],
+      "cite_count": 2
+    },
+    {
+      "id": "pagels-origin-of-satan",
+      "cited_by": [
+        {
+          "section": "wiki",
+          "title": "Lucifer",
+          "path": "/wiki/lucifer/"
+        },
+        {
+          "section": "wiki",
+          "title": "Serpent",
+          "path": "/wiki/serpent/"
+        }
+      ],
+      "cite_count": 2
+    },
+    {
+      "id": "pagels-origin-satan",
+      "cited_by": [
+        {
+          "section": "wiki",
+          "title": "Satan",
+          "path": "/wiki/satan/"
+        }
+      ],
+      "cite_count": 1
+    },
+    {
+      "id": "the-origin-of-satan",
+      "cited_by": [],
+      "cite_count": 0
+    },
+    {
+      "id": "origins-of-the-worlds-mythologies",
+      "cited_by": [
+        {
+          "section": "wiki",
+          "title": "Antediluvian",
+          "path": "/wiki/antediluvian/"
+        }
+      ],
+      "cite_count": 1
+    },
+    {
+      "id": "pillar-of-enoch-dot-com",
+      "cited_by": [],
+      "cite_count": 0
+    },
+    {
+      "id": "poetic-edda",
+      "cited_by": [
+        {
+          "section": "wiki",
+          "title": "Tree of Life",
+          "path": "/wiki/tree-of-life/"
+        }
+      ],
+      "cite_count": 1
+    },
+    {
+      "id": "bodman-poetics-iblis",
+      "cited_by": [
+        {
+          "section": "wiki",
+          "title": "Satan",
+          "path": "/wiki/satan/"
+        }
+      ],
+      "cite_count": 1
+    },
+    {
+      "id": "the-possibility-of-an-island",
+      "cited_by": [],
+      "cite_count": 0
+    },
+    {
+      "id": "buswell-lopez-princeton-buddhism",
+      "cited_by": [
+        {
+          "section": "wiki",
+          "title": "Cosmic Chain",
+          "path": "/wiki/cosmic-chain/"
+        }
+      ],
+      "cite_count": 1
+    },
+    {
+      "id": "prose-edda",
+      "cited_by": [
+        {
+          "section": "timeline",
+          "title": "Preamble",
+          "path": "/timeline/preamble/"
+        },
+        {
+          "section": "wiki",
+          "title": "Golden Age",
+          "path": "/wiki/golden-age/"
+        },
+        {
+          "section": "wiki",
+          "title": "Tree of Life",
+          "path": "/wiki/tree-of-life/"
+        }
+      ],
+      "cite_count": 3
+    },
+    {
+      "id": "sturluson-prose-edda",
+      "cited_by": [
+        {
+          "section": "wiki",
+          "title": "Satan",
+          "path": "/wiki/satan/"
+        }
+      ],
+      "cite_count": 1
+    },
+    {
+      "id": "the-qur-an",
+      "cited_by": [
+        {
+          "section": "timeline",
+          "title": "Age of Pisces",
+          "path": "/timeline/age-of-pisces/"
+        },
+        {
+          "section": "wiki",
+          "title": "Golden Age",
+          "path": "/wiki/golden-age/"
+        },
+        {
+          "section": "wiki",
+          "title": "Jesus",
+          "path": "/wiki/jesus/"
+        },
+        {
+          "section": "wiki",
+          "title": "Reference corpus of the Raëlian canon",
+          "path": "/wiki/reference-corpus-of-the-raelian-canon/"
+        },
+        {
+          "section": "wiki",
+          "title": "Satan",
+          "path": "/wiki/satan/"
+        }
+      ],
+      "cite_count": 5
+    },
+    {
+      "id": "wright-resurrection-son-of-god",
+      "cited_by": [
+        {
+          "section": "wiki",
+          "title": "Embassy",
+          "path": "/wiki/embassy/"
+        }
+      ],
+      "cite_count": 1
+    },
+    {
+      "id": "the-revelation-of-the-pyramid",
+      "cited_by": [],
+      "cite_count": 0
+    },
+    {
+      "id": "dietrich-gobekli-antiquity-2012",
+      "cited_by": [
+        {
+          "section": "wiki",
+          "title": "Ancient Builders",
+          "path": "/wiki/ancient-builders/"
+        }
+      ],
+      "cite_count": 1
+    },
+    {
+      "id": "the-sacred-city",
+      "cited_by": [],
+      "cite_count": 0
+    },
+    {
+      "id": "the-satanic-bible",
+      "cited_by": [
+        {
+          "section": "wiki",
+          "title": "Lucifer",
+          "path": "/wiki/lucifer/"
+        }
+      ],
+      "cite_count": 1
+    },
+    {
+      "id": "the-scars-of-eden",
+      "cited_by": [
+        {
+          "section": "wiki",
+          "title": "Ancient Astronaut Hypothesis",
+          "path": "/wiki/ancient-astronaut-hypothesis/"
+        },
+        {
+          "section": "wiki",
+          "title": "Council of the Eternals",
+          "path": "/wiki/council-of-eternals/"
+        },
+        {
+          "section": "wiki",
+          "title": "Eden",
+          "path": "/wiki/eden/"
+        },
+        {
+          "section": "wiki",
+          "title": "Genesis",
+          "path": "/wiki/genesis/"
+        }
+      ],
+      "cite_count": 4
+    },
+    {
+      "id": "the-sky-people",
+      "cited_by": [],
+      "cite_count": 0
+    },
+    {
+      "id": "the-spaceships-of-ezekiel",
+      "cited_by": [
+        {
+          "section": "timeline",
+          "title": "Age of Aries",
+          "path": "/timeline/age-of-aries/"
+        },
+        {
+          "section": "wiki",
+          "title": "Yahweh",
+          "path": "/wiki/yahweh/"
+        }
+      ],
+      "cite_count": 2
+    },
+    {
+      "id": "the-stairway-to-heaven",
+      "cited_by": [],
+      "cite_count": 0
+    },
+    {
+      "id": "statues-that-walked",
+      "cited_by": [
+        {
+          "section": "wiki",
+          "title": "Ancient Builders",
+          "path": "/wiki/ancient-builders/"
+        }
+      ],
+      "cite_count": 1
+    },
+    {
+      "id": "the-techno-optimist-manifesto",
+      "cited_by": [
+        {
+          "section": "wiki",
+          "title": "Cyberparadism",
+          "path": "/wiki/cyberparadism/"
+        },
+        {
+          "section": "wiki",
+          "title": "Golden Age",
+          "path": "/wiki/golden-age/"
+        }
+      ],
+      "cite_count": 2
+    },
+    {
+      "id": "bonaventure-lignum-vitae",
+      "cited_by": [
+        {
+          "section": "wiki",
+          "title": "Tree of Life",
+          "path": "/wiki/tree-of-life/"
+        }
+      ],
+      "cite_count": 1
+    },
+    {
+      "id": "the-unseen-realm",
+      "cited_by": [],
+      "cite_count": 0
+    },
+    {
+      "id": "vedas",
+      "cited_by": [
+        {
+          "section": "wiki",
+          "title": "Reference corpus of the Raëlian canon",
+          "path": "/wiki/reference-corpus-of-the-raelian-canon/"
+        }
+      ],
+      "cite_count": 1
+    },
+    {
+      "id": "the-wars-of-gods-and-men",
+      "cited_by": [],
+      "cite_count": 0
+    },
+    {
+      "id": "zohar-pritzker",
+      "cited_by": [
+        {
+          "section": "wiki",
+          "title": "Adam and Eve",
+          "path": "/wiki/adam-and-eve/"
+        },
+        {
+          "section": "wiki",
+          "title": "Serpent",
+          "path": "/wiki/serpent/"
+        },
+        {
+          "section": "wiki",
+          "title": "Tree of Life",
+          "path": "/wiki/tree-of-life/"
+        }
+      ],
+      "cite_count": 3
+    },
+    {
+      "id": "the-zohar-pritzker",
+      "cited_by": [
+        {
+          "section": "wiki",
+          "title": "Wheel of Heaven",
+          "path": "/wiki/wheel-of-heaven/"
+        }
+      ],
+      "cite_count": 1
+    },
+    {
+      "id": "theogony-and-works-and-days",
+      "cited_by": [
+        {
+          "section": "wiki",
+          "title": "Council of the Eternals",
+          "path": "/wiki/council-of-eternals/"
+        },
+        {
+          "section": "wiki",
+          "title": "Golden Age",
+          "path": "/wiki/golden-age/"
+        },
+        {
+          "section": "wiki",
+          "title": "Great Year",
+          "path": "/wiki/great-year/"
+        },
+        {
+          "section": "wiki",
+          "title": "World Age",
+          "path": "/wiki/world-age/"
+        }
+      ],
+      "cite_count": 4
+    },
+    {
+      "id": "theogony-works-and-days",
+      "cited_by": [
+        {
+          "section": "timeline",
+          "title": "Preamble",
+          "path": "/timeline/preamble/"
+        },
+        {
+          "section": "wiki",
+          "title": "Lucifer",
+          "path": "/wiki/lucifer/"
+        }
+      ],
+      "cite_count": 2
+    },
+    {
+      "id": "theory-of-the-earth",
+      "cited_by": [
+        {
+          "section": "wiki",
+          "title": "Antediluvian",
+          "path": "/wiki/antediluvian/"
+        }
+      ],
+      "cite_count": 1
+    },
+    {
+      "id": "those-gods-who-made-heaven-and-earth",
+      "cited_by": [
+        {
+          "section": "wiki",
+          "title": "Adam and Eve",
+          "path": "/wiki/adam-and-eve/"
+        },
+        {
+          "section": "wiki",
+          "title": "Ancient Astronaut Hypothesis",
+          "path": "/wiki/ancient-astronaut-hypothesis/"
+        },
+        {
+          "section": "wiki",
+          "title": "Antediluvian",
+          "path": "/wiki/antediluvian/"
+        },
+        {
+          "section": "wiki",
+          "title": "Cosmic Chain",
+          "path": "/wiki/cosmic-chain/"
+        },
+        {
+          "section": "wiki",
+          "title": "Council of the Eternals",
+          "path": "/wiki/council-of-eternals/"
+        },
+        {
+          "section": "wiki",
+          "title": "Elohim",
+          "path": "/wiki/elohim/"
+        },
+        {
+          "section": "wiki",
+          "title": "Embassy",
+          "path": "/wiki/embassy/"
+        },
+        {
+          "section": "wiki",
+          "title": "Genesis",
+          "path": "/wiki/genesis/"
+        },
+        {
+          "section": "wiki",
+          "title": "Hebrew Bible",
+          "path": "/wiki/hebrew-bible/"
+        },
+        {
+          "section": "wiki",
+          "title": "Jesus",
+          "path": "/wiki/jesus/"
+        },
+        {
+          "section": "wiki",
+          "title": "Lucifer",
+          "path": "/wiki/lucifer/"
+        },
+        {
+          "section": "wiki",
+          "title": "Raëlism",
+          "path": "/wiki/raelism/"
+        },
+        {
+          "section": "wiki",
+          "title": "Serpent",
+          "path": "/wiki/serpent/"
+        },
+        {
+          "section": "wiki",
+          "title": "Tree of Life",
+          "path": "/wiki/tree-of-life/"
+        },
+        {
+          "section": "wiki",
+          "title": "Wheel of Heaven",
+          "path": "/wiki/wheel-of-heaven/"
+        },
+        {
+          "section": "wiki",
+          "title": "Yahweh",
+          "path": "/wiki/yahweh/"
+        }
+      ],
+      "cite_count": 16
+    },
+    {
+      "id": "nietzsche-zarathustra",
+      "cited_by": [
+        {
+          "section": "wiki",
+          "title": "Cosmic Chain",
+          "path": "/wiki/cosmic-chain/"
+        }
+      ],
+      "cite_count": 1
+    },
+    {
+      "id": "tomorrowland-film",
+      "cited_by": [
+        {
+          "section": "wiki",
+          "title": "Cyberparadism",
+          "path": "/wiki/cyberparadism/"
+        }
+      ],
+      "cite_count": 1
+    },
+    {
+      "id": "ufo-religions",
+      "cited_by": [],
+      "cite_count": 0
+    },
+    {
+      "id": "underworld-hancock",
+      "cited_by": [
+        {
+          "section": "wiki",
+          "title": "Ancient Builders",
+          "path": "/wiki/ancient-builders/"
+        }
+      ],
+      "cite_count": 1
+    },
+    {
+      "id": "mores-utopia",
+      "cited_by": [
+        {
+          "section": "wiki",
+          "title": "Cyberparadism",
+          "path": "/wiki/cyberparadism/"
+        }
+      ],
+      "cite_count": 1
+    },
+    {
+      "id": "vienna-convention-diplomatic-relations",
+      "cited_by": [
+        {
+          "section": "wiki",
+          "title": "Embassy",
+          "path": "/wiki/embassy/"
+        }
+      ],
+      "cite_count": 1
+    },
+    {
+      "id": "voices-of-the-rocks",
+      "cited_by": [
+        {
+          "section": "timeline",
+          "title": "Age of Taurus",
+          "path": "/timeline/age-of-taurus/"
+        },
+        {
+          "section": "wiki",
+          "title": "Ancient Builders",
+          "path": "/wiki/ancient-builders/"
+        },
+        {
+          "section": "wiki",
+          "title": "Antediluvian",
+          "path": "/wiki/antediluvian/"
+        }
+      ],
+      "cite_count": 3
+    },
+    {
+      "id": "voices-of-the-rocks-a-scientist-looks-at-catastrophes-and-ancient-civilizations",
+      "cited_by": [],
+      "cite_count": 0
+    },
+    {
+      "id": "wall-e",
+      "cited_by": [
+        {
+          "section": "wiki",
+          "title": "Cyberparadism",
+          "path": "/wiki/cyberparadism/"
+        }
+      ],
+      "cite_count": 1
+    },
+    {
+      "id": "friedman-who-wrote-bible",
+      "cited_by": [
+        {
+          "section": "wiki",
+          "title": "Hebrew Bible",
+          "path": "/wiki/hebrew-bible/"
+        }
+      ],
+      "cite_count": 1
+    },
+    {
+      "id": "who-wrote-the-bible",
+      "cited_by": [
+        {
+          "section": "wiki",
+          "title": "Wheel of Heaven",
+          "path": "/wiki/wheel-of-heaven/"
+        }
+      ],
+      "cite_count": 1
+    },
+    {
+      "id": "wonders-in-the-sky",
+      "cited_by": [],
+      "cite_count": 0
+    },
+    {
+      "id": "arrhenius-worlds-in-the-making",
+      "cited_by": [
+        {
+          "section": "wiki",
+          "title": "Cosmic Chain",
+          "path": "/wiki/cosmic-chain/"
+        }
+      ],
+      "cite_count": 1
+    },
+    {
+      "id": "zechariah",
+      "cited_by": [],
+      "cite_count": 0
+    },
+    {
+      "id": "zephaniah",
+      "cited_by": [
+        {
+          "section": "timeline",
+          "title": "Age of Aquarius",
+          "path": "/timeline/age-of-aquarius/"
+        }
+      ],
+      "cite_count": 1
+    },
+    {
+      "id": "boyce-zoroastrians",
+      "cited_by": [
+        {
+          "section": "wiki",
+          "title": "Eden",
+          "path": "/wiki/eden/"
+        },
+        {
+          "section": "wiki",
+          "title": "Embassy",
+          "path": "/wiki/embassy/"
+        },
+        {
+          "section": "wiki",
+          "title": "Great Flood",
+          "path": "/wiki/great-flood/"
+        },
+        {
+          "section": "wiki",
+          "title": "Satan",
+          "path": "/wiki/satan/"
+        }
+      ],
+      "cite_count": 4
+    },
+    {
+      "id": "edouard-dhorme-biography",
+      "cited_by": [],
+      "cite_count": 0
+    }
+  ]
+}

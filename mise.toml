@@ -16,7 +16,7 @@ description = "Bundle JS files with esbuild"
 run = "cd themes/bifrost && npm install --silent && npm run bundle"
 
 [tasks.sources]
-description = "Rebuild data/sources.json from seed records + inline page references"
+description = "Rebuild source manifests and generated source detail pages"
 run = "python3 scripts/build_sources.py"
 
 [tasks.translations]
@@ -33,7 +33,7 @@ run = "python3 -m scripts.broadcast --dry-run"
 
 [tasks.build]
 description = "Compile site statically with Zola"
-depends = ["bundle", "translations"]
+depends = ["bundle", "sources", "translations"]
 run = "zola build"
 
 [tasks.purgecss]
@@ -56,7 +56,8 @@ zola serve --port $port --interface 0.0.0.0 --base-url http://127.0.0.1
 raw = true
 
 [tasks.check]
-description = "Run diagnostics without writing files"
+description = "Rebuild source artifacts and run diagnostics"
+depends = ["sources"]
 run = "python3 scripts/validate_source_references.py && zola check"
 
 [tasks.clean]

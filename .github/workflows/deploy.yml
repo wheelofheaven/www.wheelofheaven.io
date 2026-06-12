@@ -32,6 +32,9 @@ jobs:
         working-directory: themes/bifrost
         run: npm run bundle
 
+      - name: build sources manifest
+        run: python3 scripts/build_sources.py
+
       - name: build translations manifest
         run: python3 scripts/build_translations_manifest.py
 

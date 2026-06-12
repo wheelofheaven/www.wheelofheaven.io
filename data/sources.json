@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-06-12T05:52:32+00:00",
+  "generated_at": "2026-06-12T15:02:44+00:00",
   "generator": "scripts/build_sources.py",
   "schema_version": 1,
   "total": 395,
@@ -1045,29 +1045,6 @@
       "cite_count": 0
     },
     {
-      "id": "foster-before-muses",
-      "title": "Before the Muses: An Anthology of Akkadian Literature",
-      "authored_by": [
-        "Benjamin R. Foster"
-      ],
-      "publish_date": "2005",
-      "follow_url": "https://www.cdlpress.com/",
-      "description": "Foster's principal accessible anthology of Akkadian literature; the principal English-language reference for the Mesopotamian flood-narrative corpus.",
-      "medium": "religious-text",
-      "topics": [
-        "Great Flood",
-        "Mesopotamian"
-      ],
-      "cited_by": [
-        {
-          "section": "wiki",
-          "title": "Great Flood",
-          "path": "/wiki/great-flood/"
-        }
-      ],
-      "cite_count": 1
-    },
-    {
       "id": "before-the-muses",
       "title": "Before the Muses: An Anthology of Akkadian Literature",
       "authored_by": [
@@ -1096,6 +1073,29 @@
         }
       ],
       "cite_count": 2
+    },
+    {
+      "id": "foster-before-muses",
+      "title": "Before the Muses: An Anthology of Akkadian Literature",
+      "authored_by": [
+        "Benjamin R. Foster"
+      ],
+      "publish_date": "2005",
+      "follow_url": "https://www.cdlpress.com/",
+      "description": "Foster's principal accessible anthology of Akkadian literature; the principal English-language reference for the Mesopotamian flood-narrative corpus.",
+      "medium": "religious-text",
+      "topics": [
+        "Great Flood",
+        "Mesopotamian"
+      ],
+      "cited_by": [
+        {
+          "section": "wiki",
+          "title": "Great Flood",
+          "path": "/wiki/great-flood/"
+        }
+      ],
+      "cite_count": 1
     },
     {
       "id": "benyus-biomimicry",
@@ -8198,45 +8198,6 @@
       "cite_count": 1
     },
     {
-      "id": "wallis-eden-conspiracy",
-      "title": "The Eden Conspiracy",
-      "authored_by": [
-        "Paul Anthony Wallis"
-      ],
-      "publish_date": "2024",
-      "follow_url": "https://www.collectiveinkbooks.com/6th-books",
-      "description": "Wallis's articulation of the Eden narrative as engineered-civilizational origin event, with substantial cross-cultural comparative material.",
-      "medium": "nonfiction-book",
-      "topics": [
-        "Eden",
-        "Elohim",
-        "Ancient Astronaut Theory"
-      ],
-      "cited_by": [
-        {
-          "section": "wiki",
-          "title": "Eden",
-          "path": "/wiki/eden/"
-        },
-        {
-          "section": "wiki",
-          "title": "Great Flood",
-          "path": "/wiki/great-flood/"
-        },
-        {
-          "section": "wiki",
-          "title": "Hebrew Bible",
-          "path": "/wiki/hebrew-bible/"
-        },
-        {
-          "section": "wiki",
-          "title": "Satan",
-          "path": "/wiki/satan/"
-        }
-      ],
-      "cite_count": 4
-    },
-    {
       "id": "the-eden-conspiracy",
       "title": "The Eden Conspiracy",
       "authored_by": [
@@ -8285,6 +8246,45 @@
         }
       ],
       "cite_count": 6
+    },
+    {
+      "id": "wallis-eden-conspiracy",
+      "title": "The Eden Conspiracy",
+      "authored_by": [
+        "Paul Anthony Wallis"
+      ],
+      "publish_date": "2024",
+      "follow_url": "https://www.collectiveinkbooks.com/6th-books",
+      "description": "Wallis's articulation of the Eden narrative as engineered-civilizational origin event, with substantial cross-cultural comparative material.",
+      "medium": "nonfiction-book",
+      "topics": [
+        "Eden",
+        "Elohim",
+        "Ancient Astronaut Theory"
+      ],
+      "cited_by": [
+        {
+          "section": "wiki",
+          "title": "Eden",
+          "path": "/wiki/eden/"
+        },
+        {
+          "section": "wiki",
+          "title": "Great Flood",
+          "path": "/wiki/great-flood/"
+        },
+        {
+          "section": "wiki",
+          "title": "Hebrew Bible",
+          "path": "/wiki/hebrew-bible/"
+        },
+        {
+          "section": "wiki",
+          "title": "Satan",
+          "path": "/wiki/satan/"
+        }
+      ],
+      "cite_count": 4
     },
     {
       "id": "wallace-eden-narrative",
@@ -9281,6 +9281,36 @@
       "cite_count": 2
     },
     {
+      "id": "pagels-origin-of-satan",
+      "title": "The Origin of Satan",
+      "authored_by": [
+        "Elaine Pagels"
+      ],
+      "publish_date": "1995",
+      "follow_url": "https://www.penguinrandomhouse.com/books/167764/the-origin-of-satan-by-elaine-pagels/",
+      "description": "Elaine Pagels's 1995 Random House study of how the Satan figure developed in early Christianity and the social-political contexts that shaped it. Pagels argues the cosmic Satan was constructed to demonize religious opponents. Standard scholarly treatment supporting the corpus's reading of the Devil as a post-biblical synthesis.",
+      "medium": "nonfiction-book",
+      "topics": [
+        "Satan",
+        "Early Christianity",
+        "Devil",
+        "Hebrew Bible"
+      ],
+      "cited_by": [
+        {
+          "section": "wiki",
+          "title": "Lucifer",
+          "path": "/wiki/lucifer/"
+        },
+        {
+          "section": "wiki",
+          "title": "Serpent",
+          "path": "/wiki/serpent/"
+        }
+      ],
+      "cite_count": 2
+    },
+    {
       "id": "pagels-origin-satan",
       "title": "The Origin of Satan",
       "authored_by": [
@@ -9320,36 +9350,6 @@
       ],
       "cited_by": [],
       "cite_count": 0
-    },
-    {
-      "id": "pagels-origin-of-satan",
-      "title": "The Origin of Satan",
-      "authored_by": [
-        "Elaine Pagels"
-      ],
-      "publish_date": "1995",
-      "follow_url": "https://www.penguinrandomhouse.com/books/167764/the-origin-of-satan-by-elaine-pagels/",
-      "description": "Elaine Pagels's 1995 Random House study of how the Satan figure developed in early Christianity and the social-political contexts that shaped it. Pagels argues the cosmic Satan was constructed to demonize religious opponents. Standard scholarly treatment supporting the corpus's reading of the Devil as a post-biblical synthesis.",
-      "medium": "nonfiction-book",
-      "topics": [
-        "Satan",
-        "Early Christianity",
-        "Devil",
-        "Hebrew Bible"
-      ],
-      "cited_by": [
-        {
-          "section": "wiki",
-          "title": "Lucifer",
-          "path": "/wiki/lucifer/"
-        },
-        {
-          "section": "wiki",
-          "title": "Serpent",
-          "path": "/wiki/serpent/"
-        }
-      ],
-      "cite_count": 2
     },
     {
       "id": "origins-of-the-worlds-mythologies",
@@ -10028,11 +10028,6 @@
       "topics": [],
       "cited_by": [
         {
-          "section": "timeline",
-          "title": "Preamble",
-          "path": "/timeline/preamble/"
-        },
-        {
           "section": "wiki",
           "title": "Council of the Eternals",
           "path": "/wiki/council-of-eternals/"
@@ -10053,7 +10048,7 @@
           "path": "/wiki/world-age/"
         }
       ],
-      "cite_count": 5
+      "cite_count": 4
     },
     {
       "id": "theogony-works-and-days",
@@ -10073,12 +10068,17 @@
       ],
       "cited_by": [
         {
+          "section": "timeline",
+          "title": "Preamble",
+          "path": "/timeline/preamble/"
+        },
+        {
           "section": "wiki",
           "title": "Lucifer",
           "path": "/wiki/lucifer/"
         }
       ],
-      "cite_count": 1
+      "cite_count": 2
     },
     {
       "id": "theory-of-the-earth",
@@ -10349,26 +10349,6 @@
       "cite_count": 1
     },
     {
-      "id": "voices-of-the-rocks-a-scientist-looks-at-catastrophes-and-ancient-civilizations",
-      "title": "Voices of the Rocks: A Scientist Looks at Catastrophes and Ancient Civilizations",
-      "authored_by": [
-        "Robert M. Schoch"
-      ],
-      "publish_date": "1999",
-      "follow_url": "",
-      "description": "Book-length presentation of Schoch's Sphinx water-erosion dating argument cited in §VII.",
-      "medium": "nonfiction-book",
-      "topics": [],
-      "cited_by": [
-        {
-          "section": "timeline",
-          "title": "Age of Taurus",
-          "path": "/timeline/age-of-taurus/"
-        }
-      ],
-      "cite_count": 1
-    },
-    {
       "id": "voices-of-the-rocks",
       "title": "Voices of the Rocks: A Scientist Looks at Catastrophes and Ancient Civilizations",
       "authored_by": [
@@ -10386,6 +10366,11 @@
       ],
       "cited_by": [
         {
+          "section": "timeline",
+          "title": "Age of Taurus",
+          "path": "/timeline/age-of-taurus/"
+        },
+        {
           "section": "wiki",
           "title": "Ancient Builders",
           "path": "/wiki/ancient-builders/"
@@ -10396,7 +10381,21 @@
           "path": "/wiki/antediluvian/"
         }
       ],
-      "cite_count": 2
+      "cite_count": 3
+    },
+    {
+      "id": "voices-of-the-rocks-a-scientist-looks-at-catastrophes-and-ancient-civilizations",
+      "title": "Voices of the Rocks: A Scientist Looks at Catastrophes and Ancient Civilizations",
+      "authored_by": [
+        "Robert M. Schoch"
+      ],
+      "publish_date": "1999",
+      "follow_url": "",
+      "description": "Book-length presentation of Schoch's Sphinx water-erosion dating argument cited in §VII.",
+      "medium": "nonfiction-book",
+      "topics": [],
+      "cited_by": [],
+      "cite_count": 0
     },
     {
       "id": "wall-e",
