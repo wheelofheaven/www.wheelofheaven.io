@@ -1,14 +1,14 @@
 {
-  "generated_at": "2026-06-12T05:40:51+00:00",
+  "generated_at": "2026-06-12T05:52:32+00:00",
   "generator": "scripts/build_sources.py",
   "schema_version": 1,
-  "total": 380,
-  "total_cites": 602,
+  "total": 395,
+  "total_cites": 623,
   "media_counts": {
     "religious-text": 91,
-    "academic-paper": 67,
-    "nonfiction-book": 156,
-    "article": 17,
+    "academic-paper": 66,
+    "nonfiction-book": 168,
+    "article": 21,
     "documentary": 17,
     "wiki": 13,
     "fiction-book": 15,
@@ -2512,6 +2512,31 @@
       "cite_count": 3
     },
     {
+      "id": "loeb-extraterrestrial",
+      "title": "Extraterrestrial: The First Sign of Intelligent Life Beyond Earth",
+      "authored_by": [
+        "Avi Loeb"
+      ],
+      "publish_date": "2021",
+      "follow_url": "https://www.hmhbooks.com/",
+      "description": "Avi Loeb's 2021 Houghton Mifflin Harcourt argument that the interstellar object ʻOumuamua may have been an artifact of extraterrestrial technology — by the Harvard astrophysicist who founded the Galileo Project. The corpus engages it as a contemporary scientific entry into the extraterrestrial-contact question framing the embassy.",
+      "medium": "nonfiction-book",
+      "topics": [
+        "Extraterrestrial Life",
+        "Oumuamua",
+        "SETI",
+        "Astrophysics"
+      ],
+      "cited_by": [
+        {
+          "section": "wiki",
+          "title": "Embassy",
+          "path": "/wiki/embassy/"
+        }
+      ],
+      "cite_count": 1
+    },
+    {
       "id": "extraterrestrials-took-me-to-their-planet",
       "title": "Extraterrestrials Took Me To Their Planet",
       "authored_by": [
@@ -2562,6 +2587,11 @@
           "section": "wiki",
           "title": "Elohim",
           "path": "/wiki/elohim/"
+        },
+        {
+          "section": "wiki",
+          "title": "Embassy",
+          "path": "/wiki/embassy/"
         },
         {
           "section": "wiki",
@@ -2619,7 +2649,7 @@
           "path": "/wiki/yahweh/"
         }
       ],
-      "cite_count": 17
+      "cite_count": 18
     },
     {
       "id": "ezekiel",
@@ -3561,6 +3591,31 @@
       "cite_count": 2
     },
     {
+      "id": "elizondo-imminent",
+      "title": "Imminent: Inside the Pentagon's Hunt for UFOs",
+      "authored_by": [
+        "Luis Elizondo"
+      ],
+      "publish_date": "2024",
+      "follow_url": "https://www.harpercollins.com/",
+      "description": "Luis Elizondo's 2024 William Morrow account by the former head of the Pentagon's Advanced Aerospace Threat Identification Program (AATIP). A principal text of the contemporary UAP-disclosure movement the corpus engages as the present-day cultural context for the embassy's projected open contact.",
+      "medium": "nonfiction-book",
+      "topics": [
+        "UAP",
+        "UFO Disclosure",
+        "Pentagon",
+        "Extraterrestrial Contact"
+      ],
+      "cited_by": [
+        {
+          "section": "wiki",
+          "title": "Embassy",
+          "path": "/wiki/embassy/"
+        }
+      ],
+      "cite_count": 1
+    },
+    {
       "id": "inanna-queen-of-heaven",
       "title": "Inanna: Queen of Heaven and Earth",
       "authored_by": [
@@ -3769,6 +3824,31 @@
       "cite_count": 0
     },
     {
+      "id": "loeb-interstellar",
+      "title": "Interstellar: The Search for Extraterrestrial Life and Our Future Beyond Earth",
+      "authored_by": [
+        "Avi Loeb"
+      ],
+      "publish_date": "2023",
+      "follow_url": "https://www.harpercollins.com/",
+      "description": "Avi Loeb's 2023 Mariner work extending the search-for-extraterrestrial-artifacts argument, including the Galileo Project's observational program. The corpus engages it alongside *Extraterrestrial* as contemporary scientific context for the embassy.",
+      "medium": "nonfiction-book",
+      "topics": [
+        "Extraterrestrial Life",
+        "Galileo Project",
+        "SETI",
+        "Astrophysics"
+      ],
+      "cited_by": [
+        {
+          "section": "wiki",
+          "title": "Embassy",
+          "path": "/wiki/embassy/"
+        }
+      ],
+      "cite_count": 1
+    },
+    {
       "id": "investigating-the-sirius-mystery",
       "title": "Investigating the Sirius Mystery",
       "authored_by": [
@@ -3845,6 +3925,31 @@
         }
       ],
       "cite_count": 4
+    },
+    {
+      "id": "sachedina-islamic-messianism",
+      "title": "Islamic Messianism: The Idea of Mahdi in Twelver Shi'ism",
+      "authored_by": [
+        "Abdulaziz Abdulhussein Sachedina"
+      ],
+      "publish_date": "1981",
+      "follow_url": "https://www.sunypress.edu/",
+      "description": "Abdulaziz Sachedina's 1981 SUNY Press study of the Mahdi expectation in Twelver Shi'ism — the standard scholarly treatment of the Islamic messianic-return tradition the corpus engages comparatively with the embassy's projected arrival.",
+      "medium": "nonfiction-book",
+      "topics": [
+        "Mahdi",
+        "Shi'ism",
+        "Islamic Messianism",
+        "Eschatology"
+      ],
+      "cited_by": [
+        {
+          "section": "wiki",
+          "title": "Embassy",
+          "path": "/wiki/embassy/"
+        }
+      ],
+      "cite_count": 1
     },
     {
       "id": "jeremiah",
@@ -4200,6 +4305,32 @@
           "section": "wiki",
           "title": "Great Flood",
           "path": "/wiki/great-flood/"
+        }
+      ],
+      "cite_count": 1
+    },
+    {
+      "id": "lateran-treaty",
+      "title": "Lateran Treaty",
+      "authored_by": [
+        "Holy See",
+        "Kingdom of Italy"
+      ],
+      "publish_date": "1929",
+      "follow_url": "https://www.vaticanstate.va/",
+      "description": "The 1929 treaty between the Holy See and Italy establishing Vatican City State as a sovereign extraterritorial entity within Rome — the principal contemporary precedent for a religious entity holding sovereign territory. The corpus engages it as the closest legal analogue to the embassy's requested status.",
+      "medium": "article",
+      "topics": [
+        "Vatican City",
+        "Sovereignty",
+        "Extraterritoriality",
+        "Lateran Treaty"
+      ],
+      "cited_by": [
+        {
+          "section": "wiki",
+          "title": "Embassy",
+          "path": "/wiki/embassy/"
         }
       ],
       "cite_count": 1
@@ -4845,6 +4976,32 @@
       "cite_count": 1
     },
     {
+      "id": "sandt-zangenberg-matthew-james-didache",
+      "title": "Matthew, James, and Didache: Three Related Documents in Their Jewish and Christian Settings",
+      "authored_by": [
+        "Huub van de Sandt",
+        "Jürgen K. Zangenberg"
+      ],
+      "publish_date": "2008",
+      "follow_url": "https://www.sbl-site.org/",
+      "description": "Huub van de Sandt and Jürgen Zangenberg's 2008 Society of Biblical Literature volume on the Jewish-Christian milieu of the early Jesus movement — scholarly context for the corpus's reading of the prophetic-return material around the embassy.",
+      "medium": "nonfiction-book",
+      "topics": [
+        "Early Christianity",
+        "Didache",
+        "Jewish Christianity",
+        "Eschatology"
+      ],
+      "cited_by": [
+        {
+          "section": "wiki",
+          "title": "Embassy",
+          "path": "/wiki/embassy/"
+        }
+      ],
+      "cite_count": 1
+    },
+    {
       "id": "mazzaroth-dot-com",
       "title": "Mazzaroth | The Alpha and the Omega",
       "authored_by": [
@@ -4998,6 +5155,31 @@
           "section": "wiki",
           "title": "Crop Circles",
           "path": "/wiki/crop-circles/"
+        }
+      ],
+      "cite_count": 1
+    },
+    {
+      "id": "maimonides-mishneh-torah",
+      "title": "Mishneh Torah, Hilchot Melachim",
+      "authored_by": [
+        "Moses Maimonides"
+      ],
+      "publish_date": "1180",
+      "follow_url": "https://www.sefaria.org/Mishneh_Torah%2C_Kings_and_Wars",
+      "description": "Maimonides' 12th-century legal code; *Hilchot Melachim* 11:1 sets out the principal Maimonidean position on the messianic age and the rebuilding of the Temple. The standard classical Jewish-legal reference for the Third Temple expectation the corpus engages around the embassy's identification with the Third Temple.",
+      "medium": "article",
+      "topics": [
+        "Third Temple",
+        "Maimonides",
+        "Jewish Law",
+        "Messianism"
+      ],
+      "cited_by": [
+        {
+          "section": "wiki",
+          "title": "Embassy",
+          "path": "/wiki/embassy/"
         }
       ],
       "cite_count": 1
@@ -5868,6 +6050,31 @@
       "cite_count": 1
     },
     {
+      "id": "carrasco-quetzalcoatl",
+      "title": "Quetzalcoatl and the Irony of Empire: Myths and Prophecies in the Aztec Tradition",
+      "authored_by": [
+        "Davíd Carrasco"
+      ],
+      "publish_date": "1982",
+      "follow_url": "https://press.uchicago.edu/",
+      "description": "Davíd Carrasco's 1982 University of Chicago Press study of the Quetzalcoatl return-prophecy in Aztec tradition — the standard scholarly treatment of the returning-culture-hero expectation the corpus engages comparatively with the embassy's projected arrival.",
+      "medium": "nonfiction-book",
+      "topics": [
+        "Quetzalcoatl",
+        "Aztec",
+        "Returning Culture-Hero",
+        "Comparative Eschatology"
+      ],
+      "cited_by": [
+        {
+          "section": "wiki",
+          "title": "Embassy",
+          "path": "/wiki/embassy/"
+        }
+      ],
+      "cite_count": 1
+    },
+    {
       "id": "qur-anic-geography",
       "title": "Qur'anic Geography",
       "authored_by": [
@@ -6608,6 +6815,31 @@
       "cite_count": 1
     },
     {
+      "id": "cook-muslim-apocalyptic",
+      "title": "Studies in Muslim Apocalyptic",
+      "authored_by": [
+        "David Cook"
+      ],
+      "publish_date": "2002",
+      "follow_url": "https://www.darwinpress.com/",
+      "description": "David Cook's 2002 Darwin Press study of the Muslim apocalyptic tradition — the standard scholarly treatment of Islamic end-times expectation the corpus engages comparatively with the embassy's projected arrival.",
+      "medium": "nonfiction-book",
+      "topics": [
+        "Islamic Apocalyptic",
+        "Mahdi",
+        "Eschatology",
+        "Islam"
+      ],
+      "cited_by": [
+        {
+          "section": "wiki",
+          "title": "Embassy",
+          "path": "/wiki/embassy/"
+        }
+      ],
+      "cite_count": 1
+    },
+    {
       "id": "halloran-sumerian-lexicon",
       "title": "Sumerian Lexicon",
       "authored_by": [
@@ -6770,6 +7002,31 @@
       ],
       "cited_by": [],
       "cite_count": 0
+    },
+    {
+      "id": "grusch-congressional-testimony",
+      "title": "Testimony to the U.S. House Oversight Committee (July 26, 2023)",
+      "authored_by": [
+        "David Grusch"
+      ],
+      "publish_date": "2023",
+      "follow_url": "https://oversight.house.gov/",
+      "description": "David Grusch's sworn 2023 congressional testimony alleging a U.S. government program to recover and reverse-engineer craft of non-human origin — a watershed moment in the contemporary UAP-disclosure discourse the corpus registers as present-day context for the embassy's projected open contact.",
+      "medium": "article",
+      "topics": [
+        "UAP",
+        "UFO Disclosure",
+        "Congressional Testimony",
+        "Extraterrestrial Contact"
+      ],
+      "cited_by": [
+        {
+          "section": "wiki",
+          "title": "Embassy",
+          "path": "/wiki/embassy/"
+        }
+      ],
+      "cite_count": 1
     },
     {
       "id": "tov-textual-criticism",
@@ -7361,6 +7618,11 @@
         },
         {
           "section": "wiki",
+          "title": "Embassy",
+          "path": "/wiki/embassy/"
+        },
+        {
+          "section": "wiki",
           "title": "Genesis",
           "path": "/wiki/genesis/"
         },
@@ -7450,7 +7712,7 @@
           "path": "/wiki/yahweh/"
         }
       ],
-      "cite_count": 27
+      "cite_count": 28
     },
     {
       "id": "the-chaldean-account-of-genesis",
@@ -8003,6 +8265,11 @@
         },
         {
           "section": "wiki",
+          "title": "Embassy",
+          "path": "/wiki/embassy/"
+        },
+        {
+          "section": "wiki",
           "title": "Lucifer",
           "path": "/wiki/lucifer/"
         },
@@ -8017,7 +8284,7 @@
           "path": "/wiki/tree-of-life/"
         }
       ],
-      "cite_count": 5
+      "cite_count": 6
     },
     {
       "id": "wallace-eden-narrative",
@@ -8181,6 +8448,31 @@
       "cite_count": 1
     },
     {
+      "id": "halperin-faces-of-the-chariot",
+      "title": "The Faces of the Chariot: Early Jewish Responses to Ezekiel's Vision",
+      "authored_by": [
+        "David J. Halperin"
+      ],
+      "publish_date": "1988",
+      "follow_url": "https://www.mohrsiebeck.com/",
+      "description": "David Halperin's 1988 Mohr Siebeck study of the reception of Ezekiel's chariot and temple visions in early Jewish mysticism — the standard scholarly treatment of the Ezekiel 40–48 temple material the corpus reads in connection with the embassy.",
+      "medium": "nonfiction-book",
+      "topics": [
+        "Ezekiel",
+        "Merkavah",
+        "Third Temple",
+        "Jewish Mysticism"
+      ],
+      "cited_by": [
+        {
+          "section": "wiki",
+          "title": "Embassy",
+          "path": "/wiki/embassy/"
+        }
+      ],
+      "cite_count": 1
+    },
+    {
       "id": "the-field-guide-crop-circle-making",
       "title": "The Field Guide: The Art, History and Philosophy of Crop Circle Making",
       "authored_by": [
@@ -8202,6 +8494,31 @@
           "section": "wiki",
           "title": "Crop Circles",
           "path": "/wiki/crop-circles/"
+        }
+      ],
+      "cite_count": 1
+    },
+    {
+      "id": "goldberg-fight-for-jerusalem",
+      "title": "The Fight for Jerusalem: Radical Islam, the West, and the Future of the Holy City",
+      "authored_by": [
+        "Hillel Goldberg"
+      ],
+      "publish_date": "2007",
+      "follow_url": "https://www.regnery.com/",
+      "description": "Hillel Goldberg's 2007 Regnery treatment of the contemporary political contest over Jerusalem and the Temple Mount — political-historical context for the corpus's discussion of the embassy's original Jerusalem location preference and the obstacles to it.",
+      "medium": "nonfiction-book",
+      "topics": [
+        "Jerusalem",
+        "Temple Mount",
+        "Third Temple",
+        "Contemporary Politics"
+      ],
+      "cited_by": [
+        {
+          "section": "wiki",
+          "title": "Embassy",
+          "path": "/wiki/embassy/"
         }
       ],
       "cite_count": 1
@@ -8545,6 +8862,31 @@
       "cite_count": 0
     },
     {
+      "id": "doniger-the-hindus",
+      "title": "The Hindus: An Alternative History",
+      "authored_by": [
+        "Wendy Doniger"
+      ],
+      "publish_date": "2009",
+      "follow_url": "https://www.penguin.co.uk/",
+      "description": "Wendy Doniger's 2009 Penguin survey of Hindu history and tradition, including the Kalki avatar (the future-coming tenth avatar of Vishnu) the corpus engages comparatively with the embassy's projected arrival.",
+      "medium": "nonfiction-book",
+      "topics": [
+        "Hinduism",
+        "Kalki",
+        "Avatar",
+        "Comparative Eschatology"
+      ],
+      "cited_by": [
+        {
+          "section": "wiki",
+          "title": "Embassy",
+          "path": "/wiki/embassy/"
+        }
+      ],
+      "cite_count": 1
+    },
+    {
       "id": "the-human-history-mistake",
       "title": "The Human History Mistake: The Neanderthals and other Inventions of the Evolution and Earth Sciences",
       "authored_by": [
@@ -8800,6 +9142,11 @@
         },
         {
           "section": "wiki",
+          "title": "Embassy",
+          "path": "/wiki/embassy/"
+        },
+        {
+          "section": "wiki",
           "title": "Genesis",
           "path": "/wiki/genesis/"
         },
@@ -8849,7 +9196,7 @@
           "path": "/wiki/yahweh/"
         }
       ],
-      "cite_count": 16
+      "cite_count": 17
     },
     {
       "id": "natufian-culture-in-the-levant",
@@ -9239,6 +9586,31 @@
         }
       ],
       "cite_count": 5
+    },
+    {
+      "id": "wright-resurrection-son-of-god",
+      "title": "The Resurrection of the Son of God",
+      "authored_by": [
+        "N. T. Wright"
+      ],
+      "publish_date": "2003",
+      "follow_url": "https://www.fortresspress.com/",
+      "description": "N. T. Wright's 2003 Fortress Press study (Christian Origins and the Question of God 3) — the standard scholarly treatment of early Christian resurrection belief and the Parousia expectation the corpus engages around the alliance's projected return.",
+      "medium": "nonfiction-book",
+      "topics": [
+        "Resurrection",
+        "Parousia",
+        "Early Christianity",
+        "Eschatology"
+      ],
+      "cited_by": [
+        {
+          "section": "wiki",
+          "title": "Embassy",
+          "path": "/wiki/embassy/"
+        }
+      ],
+      "cite_count": 1
     },
     {
       "id": "the-revelation-of-the-pyramid",
@@ -9784,6 +10156,11 @@
         },
         {
           "section": "wiki",
+          "title": "Embassy",
+          "path": "/wiki/embassy/"
+        },
+        {
+          "section": "wiki",
           "title": "Genesis",
           "path": "/wiki/genesis/"
         },
@@ -9828,7 +10205,7 @@
           "path": "/wiki/yahweh/"
         }
       ],
-      "cite_count": 15
+      "cite_count": 16
     },
     {
       "id": "nietzsche-zarathustra",
@@ -9942,6 +10319,31 @@
           "section": "wiki",
           "title": "Cyberparadism",
           "path": "/wiki/cyberparadism/"
+        }
+      ],
+      "cite_count": 1
+    },
+    {
+      "id": "vienna-convention-diplomatic-relations",
+      "title": "Vienna Convention on Diplomatic Relations",
+      "authored_by": [
+        "United Nations"
+      ],
+      "publish_date": "1961",
+      "follow_url": "https://legal.un.org/ilc/texts/instruments/english/conventions/9_1_1961.pdf",
+      "description": "The 1961 international treaty (entered into force 1964) codifying the framework for diplomatic missions, extraterritorial status, and diplomatic immunities and privileges. The principal contemporary legal framework the corpus engages for the embassy's extraterritorial-status requirement.",
+      "medium": "article",
+      "topics": [
+        "Diplomatic Law",
+        "Extraterritoriality",
+        "Embassy",
+        "International Law"
+      ],
+      "cited_by": [
+        {
+          "section": "wiki",
+          "title": "Embassy",
+          "path": "/wiki/embassy/"
         }
       ],
       "cite_count": 1
@@ -10161,19 +10563,26 @@
       "authored_by": [
         "Mary Boyce"
       ],
-      "publish_date": "1979",
+      "publish_date": "2001",
       "follow_url": "https://www.routledge.com/",
-      "description": "Boyce's principal accessible treatment of Zoroastrian religion; the Angra Mainyu / Ahura Mazda cosmic-dualistic framework that substantially influenced Second Temple Jewish development of the satan figure.",
-      "medium": "academic-paper",
+      "description": "Mary Boyce's standard 2001 Routledge survey of Zoroastrianism, including the Saoshyant future-saviour and the *frashokereti* renewal-of-the-world doctrine the corpus engages comparatively with the embassy's projected arrival.",
+      "medium": "nonfiction-book",
       "topics": [
-        "Comparative Religion",
-        "Satan"
+        "Zoroastrianism",
+        "Saoshyant",
+        "Frashokereti",
+        "Comparative Eschatology"
       ],
       "cited_by": [
         {
           "section": "wiki",
           "title": "Eden",
           "path": "/wiki/eden/"
+        },
+        {
+          "section": "wiki",
+          "title": "Embassy",
+          "path": "/wiki/embassy/"
         },
         {
           "section": "wiki",
@@ -10186,7 +10595,7 @@
           "path": "/wiki/satan/"
         }
       ],
-      "cite_count": 3
+      "cite_count": 4
     },
     {
       "id": "edouard-dhorme-biography",
