@@ -78,6 +78,18 @@
           "posted_at": "2026-05-23T03:42:17Z"
         }
       }
+    },
+    "news/pursue-release-03-multi-agency-and-international": {
+      "title": "PURSUE Release 03: Multi-Agency Files, the Cheyenne Object, and the First International Case",
+      "permalink": "https://www.wheelofheaven.world/news/pursue-release-03-multi-agency-and-international/",
+      "first_eligible_at": "2026-06-12T20:10:22Z",
+      "channels": {
+        "telegram": {
+          "post_id": "@wheelofheaven/17",
+          "url": "https://t.me/wheelofheaven/17",
+          "posted_at": "2026-06-12T20:10:22Z"
+        }
+      }
     }
   }
 }
