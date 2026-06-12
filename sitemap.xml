@@ -5104,6 +5104,12 @@
         <priority>0.5</priority></url>
 
     <url>
+        <loc>https://www.wheelofheaven.world/he/map/</loc>
+        
+        <changefreq>weekly</changefreq>
+        <priority>0.5</priority></url>
+
+    <url>
         <loc>https://www.wheelofheaven.world/he/news/</loc>
         
         <changefreq>weekly</changefreq>
