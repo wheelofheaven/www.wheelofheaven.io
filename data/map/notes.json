@@ -85,8 +85,8 @@
   },
   {
     "id": "giant-experiment",
-    "x": 460,
-    "y": 1500,
+    "x": 250,
+    "y": 1700,
     "size": "sm",
     "anchor": "middle",
     "area": "wheel"
@@ -252,8 +252,8 @@
   },
   {
     "id": "secret-societies",
-    "x": 887,
-    "y": 2055,
+    "x": 905,
+    "y": 2018,
     "size": "md",
     "anchor": "middle",
     "area": "earth",

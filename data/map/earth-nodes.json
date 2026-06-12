@@ -101,6 +101,18 @@
         "anchor": "middle",
         "summary": "Temple expectation in the later prophetic arc.",
         "emphasis": "strong"
+      },
+      {
+        "id": "number-of-man",
+        "href": "wiki/number-of-man/",
+        "x": 950,
+        "y": 1512,
+        "ages": [
+          "age-of-aquarius"
+        ],
+        "anchor": "middle",
+        "emphasis": "quiet",
+        "summary": "The 666 generations reading."
       }
     ]
   },
@@ -111,8 +123,8 @@
       {
         "id": "raelism",
         "href": "wiki/raelism/",
-        "x": 714,
-        "y": 1575,
+        "x": 640,
+        "y": 1592,
         "ages": [
           "age-of-aquarius"
         ],
@@ -122,8 +134,8 @@
       {
         "id": "rael",
         "href": "wiki/rael/",
-        "x": 640,
-        "y": 1552,
+        "x": 812,
+        "y": 1630,
         "ages": [
           "age-of-aquarius"
         ],
@@ -135,7 +147,7 @@
         "id": "book-which-tells-truth",
         "href": "library/the-book-which-tells-the-truth/",
         "x": 654,
-        "y": 1608,
+        "y": 1624,
         "ages": [
           "age-of-aquarius"
         ],
@@ -338,6 +350,193 @@
         "anchor": "middle",
         "emphasis": "quiet",
         "summary": "The updated ethical code in the Aquarian canon."
+      },
+      {
+        "id": "ettmttp",
+        "href": "library/extraterrestrials-took-me-to-their-planet/",
+        "x": 520,
+        "y": 1672,
+        "ages": [
+          "age-of-aquarius"
+        ],
+        "anchor": "middle",
+        "emphasis": "quiet",
+        "summary": "Part of the Raëlian source trilogy."
+      },
+      {
+        "id": "lets-welcome",
+        "href": "library/lets-welcome-the-extraterrestrials/",
+        "x": 548,
+        "y": 1712,
+        "ages": [
+          "age-of-aquarius"
+        ],
+        "anchor": "middle",
+        "emphasis": "quiet",
+        "summary": "Part of the Raëlian source trilogy."
+      },
+      {
+        "id": "my-plural-creators",
+        "href": "wiki/list-of-mythemes-and-mythological-motifs/",
+        "x": 560,
+        "y": 2050,
+        "ages": [
+          "age-of-pisces"
+        ],
+        "anchor": "middle",
+        "emphasis": "quiet",
+        "summary": "Catalogued in the list of mythemes and mythological motifs."
+      },
+      {
+        "id": "my-sky-descent",
+        "href": "wiki/list-of-mythemes-and-mythological-motifs/",
+        "x": 560,
+        "y": 2085,
+        "ages": [
+          "age-of-pisces"
+        ],
+        "anchor": "middle",
+        "emphasis": "quiet",
+        "summary": "Catalogued in the list of mythemes and mythological motifs."
+      },
+      {
+        "id": "my-creator-departs",
+        "href": "wiki/list-of-mythemes-and-mythological-motifs/",
+        "x": 560,
+        "y": 2120,
+        "ages": [
+          "age-of-pisces"
+        ],
+        "anchor": "middle",
+        "emphasis": "quiet",
+        "summary": "Catalogued in the list of mythemes and mythological motifs."
+      },
+      {
+        "id": "my-chaos",
+        "href": "wiki/list-of-mythemes-and-mythological-motifs/",
+        "x": 945,
+        "y": 2078,
+        "ages": [
+          "age-of-pisces"
+        ],
+        "anchor": "middle",
+        "emphasis": "quiet",
+        "summary": "Catalogued in the list of mythemes and mythological motifs."
+      },
+      {
+        "id": "my-separation",
+        "href": "wiki/list-of-mythemes-and-mythological-motifs/",
+        "x": 945,
+        "y": 2044,
+        "ages": [
+          "age-of-pisces"
+        ],
+        "anchor": "middle",
+        "emphasis": "quiet",
+        "summary": "Catalogued in the list of mythemes and mythological motifs."
+      },
+      {
+        "id": "my-cosmic-egg",
+        "href": "wiki/list-of-mythemes-and-mythological-motifs/",
+        "x": 945,
+        "y": 2112,
+        "ages": [
+          "age-of-pisces"
+        ],
+        "anchor": "middle",
+        "emphasis": "quiet",
+        "summary": "Catalogued in the list of mythemes and mythological motifs."
+      },
+      {
+        "id": "four-levels",
+        "href": "wiki/four-levels/",
+        "x": 560,
+        "y": 1748,
+        "ages": [
+          "age-of-aries",
+          "age-of-pisces"
+        ],
+        "anchor": "middle",
+        "emphasis": "quiet",
+        "summary": "Part of the reading method behind the corpus."
+      },
+      {
+        "id": "doubled-signature",
+        "href": "wiki/doubled-signature/",
+        "x": 965,
+        "y": 1714,
+        "ages": [
+          "age-of-aries",
+          "age-of-pisces"
+        ],
+        "anchor": "middle",
+        "emphasis": "quiet",
+        "summary": "Part of the reading method behind the corpus."
+      },
+      {
+        "id": "sendys-conditions",
+        "href": "wiki/sendys-conditions-of-coherence/",
+        "x": 955,
+        "y": 1748,
+        "ages": [
+          "age-of-aries",
+          "age-of-pisces"
+        ],
+        "anchor": "middle",
+        "emphasis": "quiet",
+        "summary": "Part of the reading method behind the corpus."
+      },
+      {
+        "id": "etym-readings",
+        "href": "wiki/list-of-etymological-readings/",
+        "x": 640,
+        "y": 1814,
+        "ages": [
+          "age-of-aries",
+          "age-of-pisces"
+        ],
+        "anchor": "middle",
+        "emphasis": "quiet",
+        "summary": "Part of the reading method behind the corpus."
+      },
+      {
+        "id": "exeg-readings",
+        "href": "wiki/list-of-exegetic-readings/",
+        "x": 930,
+        "y": 1782,
+        "ages": [
+          "age-of-aries",
+          "age-of-pisces"
+        ],
+        "anchor": "middle",
+        "emphasis": "quiet",
+        "summary": "Part of the reading method behind the corpus."
+      },
+      {
+        "id": "hebrew",
+        "href": "wiki/hebrew/",
+        "x": 794,
+        "y": 1912,
+        "ages": [
+          "age-of-aries",
+          "age-of-pisces"
+        ],
+        "anchor": "middle",
+        "emphasis": "quiet",
+        "summary": "Part of the reading method behind the corpus."
+      },
+      {
+        "id": "reference-corpus",
+        "href": "wiki/reference-corpus-of-the-raelian-canon/",
+        "x": 888,
+        "y": 1562,
+        "ages": [
+          "age-of-aries",
+          "age-of-pisces"
+        ],
+        "anchor": "middle",
+        "emphasis": "quiet",
+        "summary": "Part of the reading method behind the corpus."
       }
     ]
   },
@@ -471,6 +670,226 @@
         "anchor": "middle",
         "emphasis": "quiet",
         "summary": "Institutional secrecy around exobiology claims."
+      }
+    ]
+  },
+  {
+    "id": "megaliths",
+    "color": "teal",
+    "nodes": [
+      {
+        "id": "gobekli-tepe",
+        "href": "wiki/list-of-megalithic-sites/",
+        "x": 1170,
+        "y": 1950,
+        "ages": [
+          "age-of-leo",
+          "age-of-cancer"
+        ],
+        "anchor": "middle",
+        "emphasis": "quiet",
+        "summary": "Catalogued in the list of megalithic sites."
+      },
+      {
+        "id": "karahan-tepe",
+        "href": "wiki/list-of-megalithic-sites/",
+        "x": 1255,
+        "y": 1978,
+        "ages": [
+          "age-of-leo",
+          "age-of-cancer"
+        ],
+        "anchor": "middle",
+        "emphasis": "quiet",
+        "summary": "Catalogued in the list of megalithic sites."
+      },
+      {
+        "id": "giza",
+        "href": "wiki/list-of-megalithic-sites/",
+        "x": 1085,
+        "y": 2040,
+        "ages": [
+          "age-of-cancer",
+          "age-of-taurus"
+        ],
+        "anchor": "middle",
+        "emphasis": "quiet",
+        "summary": "Catalogued in the list of megalithic sites."
+      },
+      {
+        "id": "nabta-playa",
+        "href": "wiki/list-of-megalithic-sites/",
+        "x": 1148,
+        "y": 2052,
+        "ages": [
+          "age-of-cancer",
+          "age-of-gemini"
+        ],
+        "anchor": "middle",
+        "emphasis": "quiet",
+        "summary": "Catalogued in the list of megalithic sites."
+      },
+      {
+        "id": "baalbek",
+        "href": "wiki/list-of-megalithic-sites/",
+        "x": 1118,
+        "y": 1988,
+        "ages": [
+          "age-of-taurus"
+        ],
+        "anchor": "middle",
+        "emphasis": "quiet",
+        "summary": "Catalogued in the list of megalithic sites."
+      },
+      {
+        "id": "yonaguni",
+        "href": "wiki/list-of-megalithic-sites/",
+        "x": 1335,
+        "y": 2012,
+        "ages": [
+          "age-of-gemini"
+        ],
+        "anchor": "middle",
+        "emphasis": "quiet",
+        "summary": "Catalogued in the list of megalithic sites."
+      },
+      {
+        "id": "nan-madol",
+        "href": "wiki/list-of-megalithic-sites/",
+        "x": 1298,
+        "y": 2062,
+        "ages": [
+          "age-of-gemini"
+        ],
+        "anchor": "middle",
+        "emphasis": "quiet",
+        "summary": "Catalogued in the list of megalithic sites."
+      },
+      {
+        "id": "easter-island",
+        "href": "wiki/list-of-megalithic-sites/",
+        "x": 1228,
+        "y": 2098,
+        "ages": [
+          "age-of-aries"
+        ],
+        "anchor": "middle",
+        "emphasis": "quiet",
+        "summary": "Catalogued in the list of megalithic sites."
+      },
+      {
+        "id": "stonehenge",
+        "href": "wiki/list-of-megalithic-sites/",
+        "x": 395,
+        "y": 1902,
+        "ages": [
+          "age-of-gemini",
+          "age-of-taurus"
+        ],
+        "anchor": "middle",
+        "emphasis": "quiet",
+        "summary": "Catalogued in the list of megalithic sites."
+      },
+      {
+        "id": "newgrange",
+        "href": "wiki/list-of-megalithic-sites/",
+        "x": 462,
+        "y": 1942,
+        "ages": [
+          "age-of-taurus"
+        ],
+        "anchor": "middle",
+        "emphasis": "quiet",
+        "summary": "Catalogued in the list of megalithic sites."
+      },
+      {
+        "id": "carnac",
+        "href": "wiki/list-of-megalithic-sites/",
+        "x": 352,
+        "y": 1952,
+        "ages": [
+          "age-of-gemini",
+          "age-of-taurus"
+        ],
+        "anchor": "middle",
+        "emphasis": "quiet",
+        "summary": "Catalogued in the list of megalithic sites."
+      },
+      {
+        "id": "cahokia",
+        "href": "wiki/list-of-megalithic-sites/",
+        "x": 350,
+        "y": 1990,
+        "ages": [
+          "age-of-pisces"
+        ],
+        "anchor": "middle",
+        "emphasis": "quiet",
+        "summary": "Catalogued in the list of megalithic sites."
+      },
+      {
+        "id": "teotihuacan",
+        "href": "wiki/list-of-megalithic-sites/",
+        "x": 375,
+        "y": 2032,
+        "ages": [
+          "age-of-aries"
+        ],
+        "anchor": "middle",
+        "emphasis": "quiet",
+        "summary": "Catalogued in the list of megalithic sites."
+      },
+      {
+        "id": "sacsayhuaman",
+        "href": "wiki/list-of-megalithic-sites/",
+        "x": 385,
+        "y": 2078,
+        "ages": [
+          "age-of-pisces"
+        ],
+        "anchor": "middle",
+        "emphasis": "quiet",
+        "summary": "Catalogued in the list of megalithic sites."
+      },
+      {
+        "id": "puma-punku",
+        "href": "wiki/list-of-megalithic-sites/",
+        "x": 380,
+        "y": 2112,
+        "ages": [
+          "age-of-aries",
+          "age-of-pisces"
+        ],
+        "anchor": "middle",
+        "emphasis": "quiet",
+        "summary": "Catalogued in the list of megalithic sites."
+      },
+      {
+        "id": "adams-calendar",
+        "href": "wiki/list-of-megalithic-sites/",
+        "x": 445,
+        "y": 2008,
+        "ages": [
+          "age-of-leo"
+        ],
+        "anchor": "middle",
+        "emphasis": "quiet",
+        "summary": "Catalogued in the list of megalithic sites."
+      },
+      {
+        "id": "megaliths-caption",
+        "href": "wiki/list-of-megalithic-sites/",
+        "x": 1300,
+        "y": 2126,
+        "ages": [
+          "age-of-leo",
+          "age-of-cancer",
+          "age-of-gemini",
+          "age-of-taurus"
+        ],
+        "anchor": "middle",
+        "emphasis": "caps",
+        "summary": "The catalogue of megalithic sites read through the framework."
       }
     ]
   }
