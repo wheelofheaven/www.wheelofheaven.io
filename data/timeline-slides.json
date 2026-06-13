@@ -1,0 +1,212 @@
+{
+  "preamble": [
+    {
+      "src": "images/essentials/wheel-of-heaven-background.avif",
+      "alt": "Symbolic wheel motif introducing the recurring pattern of the chronology"
+    },
+    {
+      "src": "images/ages/above-the-clouds-structure.avif",
+      "alt": "Ancient structure above the clouds suggesting a cross-cultural heavenly pattern"
+    },
+    {
+      "src": "images/ages/blue-planet-surface.avif",
+      "alt": "Primordial blue planetary surface before the age sequence begins"
+    }
+  ],
+  "in-the-beginning": [
+    {
+      "src": "images/ages/orbital-outpost.avif",
+      "alt": "Orbital outpost above a young world"
+    },
+    {
+      "src": "images/ages/spacecraft-in-orbit.avif",
+      "alt": "Spacecraft observing Earth from orbit"
+    },
+    {
+      "src": "images/ages/blue-planet-surface.avif",
+      "alt": "Blue planet surface under an early atmosphere"
+    }
+  ],
+  "age-of-capricorn": [
+    {
+      "src": "images/ages/genetic-research-lab.avif",
+      "alt": "Synthetic life research laboratory"
+    },
+    {
+      "src": "images/ages/spacecraft-in-orbit.avif",
+      "alt": "Exploratory spacecraft in orbit"
+    },
+    {
+      "src": "images/ages/blue-planet-surface.avif",
+      "alt": "Newly discovered Earth surface"
+    }
+  ],
+  "age-of-sagittarius": [
+    {
+      "src": "images/ages/spacecraft-in-orbit.avif",
+      "alt": "Orbital atmospheric survey"
+    },
+    {
+      "src": "images/ages/above-the-clouds-structure.avif",
+      "alt": "Scientific station above the cloud layer"
+    },
+    {
+      "src": "images/ages/blue-planet-surface.avif",
+      "alt": "Earth beneath a young atmosphere"
+    }
+  ],
+  "age-of-scorpio": [
+    {
+      "src": "images/ages/fauna-and-flora.avif",
+      "alt": "Early plant and fungal life spreading across terrain"
+    },
+    {
+      "src": "images/ages/genetic-research-lab.avif",
+      "alt": "Life engineering laboratory"
+    },
+    {
+      "src": "images/ages/blue-planet-surface.avif",
+      "alt": "Terraforming landscape under a blue atmosphere"
+    }
+  ],
+  "age-of-libra": [
+    {
+      "src": "images/ages/dinosaurs-on-plain.avif",
+      "alt": "Dinosaurs moving across an open plain"
+    },
+    {
+      "src": "images/ages/saurian-experiments.avif",
+      "alt": "Saurian lifeforms in an engineered habitat"
+    },
+    {
+      "src": "images/ages/fauna-and-flora.avif",
+      "alt": "Balanced flora and fauna during planetary adaptation"
+    }
+  ],
+  "age-of-virgo": [
+    {
+      "src": "images/ages/elephant-biome.avif",
+      "alt": "Large land animals in a cultivated biome"
+    },
+    {
+      "src": "images/ages/fauna-and-flora.avif",
+      "alt": "Flora and fauna arranged in ecological balance"
+    },
+    {
+      "src": "images/ages/dinosaurs-on-plain.avif",
+      "alt": "Land animals sharing a broad plain"
+    }
+  ],
+  "age-of-leo": [
+    {
+      "src": "images/ages/genetic-research-lab.avif",
+      "alt": "Human engineering and biological research"
+    },
+    {
+      "src": "images/ages/above-the-clouds-structure.avif",
+      "alt": "Elohim structure overlooking the early human world"
+    },
+    {
+      "src": "images/ages/fauna-and-flora.avif",
+      "alt": "Early humans entering a designed living world"
+    }
+  ],
+  "age-of-cancer": [
+    {
+      "src": "images/ages/above-the-clouds-structure.avif",
+      "alt": "Heavenly teachers above a young civilization"
+    },
+    {
+      "src": "images/ages/genetic-research-lab.avif",
+      "alt": "Hybrid lineage research"
+    },
+    {
+      "src": "images/ages/orbital-outpost.avif",
+      "alt": "Orbital exile and watch over Earth"
+    }
+  ],
+  "age-of-gemini": [
+    {
+      "src": "images/ages/spacecraft-in-orbit.avif",
+      "alt": "Ark-like spacecraft preserving life in orbit"
+    },
+    {
+      "src": "images/ages/orbital-outpost.avif",
+      "alt": "Orbital refuge above Earth"
+    },
+    {
+      "src": "images/ages/modern-urban-landscape.avif",
+      "alt": "Rising technological city and tower imagery"
+    }
+  ],
+  "age-of-taurus": [
+    {
+      "src": "images/ages/modern-urban-landscape.avif",
+      "alt": "Ancient urban center before destruction"
+    },
+    {
+      "src": "images/ages/above-the-clouds-structure.avif",
+      "alt": "Judgment from the heavenly realm"
+    },
+    {
+      "src": "images/ages/blue-planet-surface.avif",
+      "alt": "Earth after a civilizational turning point"
+    }
+  ],
+  "age-of-aries": [
+    {
+      "src": "images/ages/above-the-clouds-structure.avif",
+      "alt": "Revelation from a luminous heavenly structure"
+    },
+    {
+      "src": "images/ages/blue-planet-surface.avif",
+      "alt": "Desert-like planetary surface beneath open sky"
+    },
+    {
+      "src": "images/ages/spacecraft-in-orbit.avif",
+      "alt": "Guiding presence above Earth"
+    }
+  ],
+  "age-of-pisces": [
+    {
+      "src": "images/ages/fauna-and-flora.avif",
+      "alt": "Fertile world of multiplying life"
+    },
+    {
+      "src": "images/ages/modern-urban-landscape.avif",
+      "alt": "Expanding civilization across the land"
+    },
+    {
+      "src": "images/ages/blue-planet-surface.avif",
+      "alt": "Humanity spreading across the blue planet"
+    }
+  ],
+  "age-of-aquarius": [
+    {
+      "src": "images/ages/modern-urban-landscape.avif",
+      "alt": "Modern technological city"
+    },
+    {
+      "src": "images/ages/genetic-research-lab.avif",
+      "alt": "Modern revelation through science and genetics"
+    },
+    {
+      "src": "images/ages/orbital-outpost.avif",
+      "alt": "Future contact and return from orbit"
+    }
+  ],
+  "wheel": [
+    {
+      "src": "images/essentials/wheel-of-heaven-background.avif",
+      "alt": "Wheel of Heaven symbol closing the cycle"
+    },
+    {
+      "src": "images/ages/orbital-outpost.avif",
+      "alt": "Orbiting vantage point over the repeating chronology"
+    },
+    {
+      "src": "images/ages/blue-planet-surface.avif",
+      "alt": "Earth held within the recurring cosmic pattern"
+    }
+  ]
+}
