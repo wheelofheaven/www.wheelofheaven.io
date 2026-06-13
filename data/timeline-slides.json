@@ -1,212 +1,212 @@
 {
   "preamble": [
     {
-      "src": "images/essentials/wheel-of-heaven-background.avif",
-      "alt": "Symbolic wheel motif introducing the recurring pattern of the chronology"
+      "src": "timeline/preamble-recurring-shape",
+      "alt": "Silver-blue night over Earth with a distant luminous council terrace above the clouds and tiny figures silhouetted in orbital light."
     },
     {
-      "src": "images/ages/above-the-clouds-structure.avif",
-      "alt": "Ancient structure above the clouds suggesting a cross-cultural heavenly pattern"
+      "src": "timeline/preamble-cross-cultural-pattern",
+      "alt": "Moonlit archive landscape with tablets, scrolls, cave paintings, carvings, desert stelae, and mountain ritual sites across one horizon."
     },
     {
-      "src": "images/ages/blue-planet-surface.avif",
-      "alt": "Primordial blue planetary surface before the age sequence begins"
+      "src": "timeline/preamble-chaos-polarity",
+      "alt": "Stormy silver research island with containment buildings, jungle edge, fractal cloud patterns, and two tiny figures facing the facility."
     }
   ],
   "in-the-beginning": [
     {
-      "src": "images/ages/orbital-outpost.avif",
-      "alt": "Orbital outpost above a young world"
+      "src": "timeline/in-the-beginning-home-civilization",
+      "alt": "Golden-blue home world with advanced civic terraces, water, mountain architecture, orbital paths, and a distant council complex."
     },
     {
-      "src": "images/ages/spacecraft-in-orbit.avif",
-      "alt": "Spacecraft observing Earth from orbit"
+      "src": "timeline/in-the-beginning-synthesis-work",
+      "alt": "Golden-silver research valley with transparent laboratories, soft bioluminescent tanks, and institutional buildings under deep blue sky."
     },
     {
-      "src": "images/ages/blue-planet-surface.avif",
-      "alt": "Blue planet surface under an early atmosphere"
+      "src": "timeline/in-the-beginning-council-vote",
+      "alt": "Golden-black civic terrace above darkened laboratory districts, sealed research domes, and small council silhouettes in a luminous chamber."
     }
   ],
   "age-of-capricorn": [
     {
-      "src": "images/ages/genetic-research-lab.avif",
-      "alt": "Synthetic life research laboratory"
+      "src": "timeline/age-of-capricorn-threshold",
+      "alt": "Dark water-covered primordial Earth under a low violet-gray cloud ceiling with a tiny distant survey light."
     },
     {
-      "src": "images/ages/spacecraft-in-orbit.avif",
-      "alt": "Exploratory spacecraft in orbit"
+      "src": "timeline/age-of-capricorn-homeworld",
+      "alt": "Broad mauve landscape of a mature scientific civilization with coastal research complexes beneath a pale sun."
     },
     {
-      "src": "images/ages/blue-planet-surface.avif",
-      "alt": "Newly discovered Earth surface"
+      "src": "timeline/age-of-capricorn-survey",
+      "alt": "High atmospheric view of a mist-shrouded ocean planet with tiny survey craft and faint instrument arcs."
     }
   ],
   "age-of-sagittarius": [
     {
-      "src": "images/ages/spacecraft-in-orbit.avif",
-      "alt": "Orbital atmospheric survey"
+      "src": "timeline/age-of-sagittarius-firmament",
+      "alt": "Wide blue ocean world with a cleared band of atmosphere separating sea mist from high cloud."
     },
     {
-      "src": "images/ages/above-the-clouds-structure.avif",
-      "alt": "Scientific station above the cloud layer"
+      "src": "timeline/age-of-sagittarius-continent-raising",
+      "alt": "New landmass rising from a dark ocean under a blue-gray sky with distant controlled energy glows."
     },
     {
-      "src": "images/ages/blue-planet-surface.avif",
-      "alt": "Earth beneath a young atmosphere"
+      "src": "timeline/age-of-sagittarius-first-sunlight",
+      "alt": "First sunlight over a newly raised continental coast and surrounding ocean after the mist has lifted."
     }
   ],
   "age-of-scorpio": [
     {
-      "src": "images/ages/fauna-and-flora.avif",
-      "alt": "Early plant and fungal life spreading across terrain"
+      "src": "timeline/age-of-scorpio-first-cell",
+      "alt": "Open red-lit biological laboratory beside dark water and new soil where shallow bioreactors glow softly."
     },
     {
-      "src": "images/ages/genetic-research-lab.avif",
-      "alt": "Life engineering laboratory"
+      "src": "timeline/age-of-scorpio-teams",
+      "alt": "Wide red-dawn landscape with distant laboratory domes and early green test plots spread across dark wet ground."
     },
     {
-      "src": "images/ages/blue-planet-surface.avif",
-      "alt": "Terraforming landscape under a blue atmosphere"
+      "src": "timeline/age-of-scorpio-green-world",
+      "alt": "Wide young continent covered in abundant green vegetation beneath a red-gold sky with no animals present."
     }
   ],
   "age-of-libra": [
     {
-      "src": "images/ages/dinosaurs-on-plain.avif",
-      "alt": "Dinosaurs moving across an open plain"
+      "src": "timeline/age-of-libra-calibrated-sky",
+      "alt": "Green-tinged night plain beneath a precise sky of moon and stars with a faint observatory light on the horizon."
     },
     {
-      "src": "images/ages/saurian-experiments.avif",
-      "alt": "Saurian lifeforms in an engineered habitat"
+      "src": "timeline/age-of-libra-observatories",
+      "alt": "Green-blue twilight landscape with small observatory stations spread across ridges, plains, and distant highlands."
     },
     {
-      "src": "images/ages/fauna-and-flora.avif",
-      "alt": "Balanced flora and fauna during planetary adaptation"
+      "src": "timeline/age-of-libra-sky-ground",
+      "alt": "Expansive green living plain beneath a precise moonlit sky with quiet observatory silhouettes on the horizon."
     }
   ],
   "age-of-virgo": [
     {
-      "src": "images/ages/elephant-biome.avif",
-      "alt": "Large land animals in a cultivated biome"
+      "src": "timeline/age-of-virgo-moving-world",
+      "alt": "Wide brown-green coastline where fish break the water, birds cross the amber sky, and distant reptilian forms move inland."
     },
     {
-      "src": "images/ages/fauna-and-flora.avif",
-      "alt": "Flora and fauna arranged in ecological balance"
+      "src": "timeline/age-of-virgo-birds",
+      "alt": "Amber sky over brown cliffs and wet green forest terraces with many small colorful birds in flight."
     },
     {
-      "src": "images/ages/dinosaurs-on-plain.avif",
-      "alt": "Land animals sharing a broad plain"
+      "src": "timeline/age-of-virgo-garden-of-forms",
+      "alt": "Panoramic coastline with fish below the waterline, birds in the sky, and distant dinosaur forms across the land."
     }
   ],
   "age-of-leo": [
     {
-      "src": "images/ages/genetic-research-lab.avif",
-      "alt": "Human engineering and biological research"
+      "src": "timeline/age-of-leo-land-animals",
+      "alt": "Golden prehistoric plain with herbivore herds, distant carnivore silhouettes, dry green vegetation, and low warm sunlight."
     },
     {
-      "src": "images/ages/above-the-clouds-structure.avif",
-      "alt": "Elohim structure overlooking the early human world"
+      "src": "timeline/age-of-leo-human-threshold",
+      "alt": "Golden highland research terrace with reflective stone, distant work chambers, trees, and tiny anonymous human-like silhouettes."
     },
     {
-      "src": "images/ages/fauna-and-flora.avif",
-      "alt": "Early humans entering a designed living world"
+      "src": "timeline/age-of-leo-eden",
+      "alt": "Golden garden valley with water channels, flowering trees, warm limestone terraces, and distant integrated research architecture."
     }
   ],
   "age-of-cancer": [
     {
-      "src": "images/ages/above-the-clouds-structure.avif",
-      "alt": "Heavenly teachers above a young civilization"
+      "src": "timeline/age-of-cancer-awakening",
+      "alt": "Teal garden laboratory at twilight with tiny human figures facing a luminous teaching archive among water channels and trees."
     },
     {
-      "src": "images/ages/genetic-research-lab.avif",
-      "alt": "Hybrid lineage research"
+      "src": "timeline/age-of-cancer-expulsion",
+      "alt": "Wet teal dawn outside a sealed garden gate with small human figures walking away and distant exiled creators near the perimeter."
     },
     {
-      "src": "images/ages/orbital-outpost.avif",
-      "alt": "Orbital exile and watch over Earth"
+      "src": "timeline/age-of-cancer-preflood-world",
+      "alt": "Elevated panorama of a teal pre-flood supercontinent with connected cities, river routes, monumental sites, storm clouds, and sky lights."
     }
   ],
   "age-of-gemini": [
     {
-      "src": "images/ages/spacecraft-in-orbit.avif",
-      "alt": "Ark-like spacecraft preserving life in orbit"
+      "src": "timeline/age-of-gemini-flood-decision",
+      "alt": "Cold blue home-world council landscape with cliffside architecture, storm clouds, tiny silhouettes, and starward communication beams."
     },
     {
-      "src": "images/ages/orbital-outpost.avif",
-      "alt": "Orbital refuge above Earth"
+      "src": "timeline/age-of-gemini-ark-preparation",
+      "alt": "Storm-blue construction basin with a sealed orbital vessel, water channels, scaffolding, tiny workers, and preservation lights."
     },
     {
-      "src": "images/ages/modern-urban-landscape.avif",
-      "alt": "Rising technological city and tower imagery"
+      "src": "timeline/age-of-gemini-orbital-ark",
+      "alt": "Silver preservation vessel in deep blue orbit above an Earth covered by storm systems and cold atmospheric haze."
     }
   ],
   "age-of-taurus": [
     {
-      "src": "images/ages/modern-urban-landscape.avif",
-      "alt": "Ancient urban center before destruction"
+      "src": "timeline/age-of-taurus-pardon",
+      "alt": "Copper dawn on an advanced home-world civic landscape where a tiny returning delegation approaches broad terraces above clouds."
     },
     {
-      "src": "images/ages/above-the-clouds-structure.avif",
-      "alt": "Judgment from the heavenly realm"
+      "src": "timeline/age-of-taurus-cities-plain",
+      "alt": "Prosperous copper-lit plain with walled cities, canals, orchards, mountains, and guarded lights near a broad basin."
     },
     {
-      "src": "images/ages/blue-planet-surface.avif",
-      "alt": "Earth after a civilizational turning point"
+      "src": "timeline/age-of-taurus-dead-sea-strike",
+      "alt": "Distant orange salt-basin transformation with a fading horizon flash, mineral haze, broken water channels, and white salt flats."
     }
   ],
   "age-of-aries": [
     {
-      "src": "images/ages/above-the-clouds-structure.avif",
-      "alt": "Revelation from a luminous heavenly structure"
+      "src": "timeline/age-of-aries-burning-bush",
+      "alt": "Rose-pink desert dusk with a tiny shepherd near scrub as a compact luminous craft settles among Sinai ridges."
     },
     {
-      "src": "images/ages/blue-planet-surface.avif",
-      "alt": "Desert-like planetary surface beneath open sky"
+      "src": "timeline/age-of-aries-wilderness-column",
+      "alt": "Rose-copper desert migration with a tiny column of people following a vertical cloud of light across the wilderness."
     },
     {
-      "src": "images/ages/spacecraft-in-orbit.avif",
-      "alt": "Guiding presence above Earth"
+      "src": "timeline/age-of-aries-sinai-law",
+      "alt": "Indigo and rose mountain valley with a tiny camp below Sinai while copper-white light and smoke gather on the summit."
     }
   ],
   "age-of-pisces": [
     {
-      "src": "images/ages/fauna-and-flora.avif",
-      "alt": "Fertile world of multiplying life"
+      "src": "timeline/age-of-pisces-annunciation",
+      "alt": "Turquoise Galilean night with a small lit village house under a restrained pearl-white light above the hills."
     },
     {
-      "src": "images/ages/modern-urban-landscape.avif",
-      "alt": "Expanding civilization across the land"
+      "src": "timeline/age-of-pisces-galilee-mission",
+      "alt": "Turquoise dawn over Galilee with small boats, shore fields, distant listeners, and a faint luminous disturbance on the water."
     },
     {
-      "src": "images/ages/blue-planet-surface.avif",
-      "alt": "Humanity spreading across the blue planet"
+      "src": "timeline/age-of-pisces-scientific-threshold",
+      "alt": "Turquoise-to-indigo panorama of observatories, manuscripts, laboratories, cave openings, city lights, and a pale rocket-like trail."
     }
   ],
   "age-of-aquarius": [
     {
-      "src": "images/ages/modern-urban-landscape.avif",
-      "alt": "Modern technological city"
+      "src": "timeline/age-of-aquarius-nuclear-threshold",
+      "alt": "Cyan desert night with observatory domes, distant test towers, a small white horizon flash, and a starry stream shaped like water pouring across the sky."
     },
     {
-      "src": "images/ages/genetic-research-lab.avif",
-      "alt": "Modern revelation through science and genetics"
+      "src": "timeline/age-of-aquarius-rael-contact",
+      "alt": "Cold cyan volcanic crater in Auvergne with frost, mist, a small metallic craft, and two tiny figures at the crater floor."
     },
     {
-      "src": "images/ages/orbital-outpost.avif",
-      "alt": "Future contact and return from orbit"
+      "src": "timeline/age-of-aquarius-embassy",
+      "alt": "Cyan-white dawn over a low embassy complex with circular boundary, water channels, gardens, and a landing platform near a broad coast."
     }
   ],
   "wheel": [
     {
-      "src": "images/essentials/wheel-of-heaven-background.avif",
-      "alt": "Wheel of Heaven symbol closing the cycle"
+      "src": "timeline/wheel-keeps-turning-infinity",
+      "alt": "Lavender-indigo cosmic landscape where a hand silhouette, galaxy, atom-like structure, and tiny planetary systems echo across scales."
     },
     {
-      "src": "images/ages/orbital-outpost.avif",
-      "alt": "Orbiting vantage point over the repeating chronology"
+      "src": "timeline/wheel-keeps-turning-lens-synthesis",
+      "alt": "Lavender-silver observatory archive with scrolls, firelight, columns, river lamps, manuscripts, and scientific instruments around a circular path."
     },
     {
-      "src": "images/ages/blue-planet-surface.avif",
-      "alt": "Earth held within the recurring cosmic pattern"
+      "src": "timeline/wheel-keeps-turning-future-cycle",
+      "alt": "Lavender-gold future horizon with Earth behind, interstellar craft departing, a young planet below, and faint arcs in the sky."
     }
   ]
 }

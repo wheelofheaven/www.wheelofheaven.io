@@ -1,7 +1,8 @@
 # Timeline Illustration Images
 
-This directory contains landscape-oriented illustration images used by the
-`/timeline/` landing page hero slideshows.
+This directory contains older local illustration images. The current
+`/timeline/` landing page uses the CDN-backed chapter figures referenced from
+`content/timeline/*.md`.
 
 ## Image Requirements
 
@@ -14,14 +15,14 @@ This directory contains landscape-oriented illustration images used by the
 
 The landing page does not infer filenames from age names. Section-to-image
 mapping lives in `data/timeline-slides.json`, where each section has three
-ordered slide records:
+ordered slide records pointing to figure IDs under CDN `/images/`:
 
 ```json
 {
   "age-of-aquarius": [
     {
-      "src": "images/ages/modern-urban-landscape.avif",
-      "alt": "Modern technological city"
+      "src": "timeline/age-of-aquarius-rael-contact",
+      "alt": "Cold cyan volcanic crater in Auvergne with frost, mist, a small metallic craft, and two tiny figures at the crater floor."
     }
   ]
 }
@@ -29,4 +30,4 @@ ordered slide records:
 
 Use stable section slugs such as `preamble`, `in-the-beginning`,
 `age-of-capricorn`, and `wheel`. Each section renders its three-image set as a
-full-viewport background slideshow with a smooth flip/fade cycle.
+full-viewport background slideshow with a smooth crossfade cycle.
