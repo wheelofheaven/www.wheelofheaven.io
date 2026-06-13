@@ -11,6 +11,10 @@
     {
       "src": "timeline/preamble-chaos-polarity",
       "alt": "Stormy silver research island with containment buildings, jungle edge, fractal cloud patterns, and two tiny figures facing the facility."
+    },
+    {
+      "src": "timeline/preamble-open-door",
+      "alt": "Silver dawn threshold with an open monumental doorway leading toward a cosmic horizon marked by faint wheel-like lights."
     }
   ],
   "in-the-beginning": [
@@ -25,6 +29,10 @@
     {
       "src": "timeline/in-the-beginning-council-vote",
       "alt": "Golden-black civic terrace above darkened laboratory districts, sealed research domes, and small council silhouettes in a luminous chamber."
+    },
+    {
+      "src": "timeline/in-the-beginning-arrival",
+      "alt": "Golden dawn over a barren volcanic Earth coast with dark ocean, empty rock, survey craft, and temporary base lights."
     }
   ],
   "age-of-capricorn": [
@@ -35,6 +43,10 @@
     {
       "src": "timeline/age-of-capricorn-homeworld",
       "alt": "Broad mauve landscape of a mature scientific civilization with coastal research complexes beneath a pale sun."
+    },
+    {
+      "src": "timeline/age-of-capricorn-voyage",
+      "alt": "Small expedition vessels crossing a dark mauve star field toward a distant pale destination star."
     },
     {
       "src": "timeline/age-of-capricorn-survey",
@@ -51,6 +63,10 @@
       "alt": "New landmass rising from a dark ocean under a blue-gray sky with distant controlled energy glows."
     },
     {
+      "src": "timeline/age-of-sagittarius-survey",
+      "alt": "High atmospheric view of a blue ocean world with faint survey traces and distant orbital platforms."
+    },
+    {
       "src": "timeline/age-of-sagittarius-first-sunlight",
       "alt": "First sunlight over a newly raised continental coast and surrounding ocean after the mist has lifted."
     }
@@ -63,6 +79,10 @@
     {
       "src": "timeline/age-of-scorpio-teams",
       "alt": "Wide red-dawn landscape with distant laboratory domes and early green test plots spread across dark wet ground."
+    },
+    {
+      "src": "timeline/age-of-scorpio-artists",
+      "alt": "Experimental botanical terraces in warm red evening light with unfamiliar plant forms near a quiet research pavilion."
     },
     {
       "src": "timeline/age-of-scorpio-green-world",
@@ -79,6 +99,10 @@
       "alt": "Green-blue twilight landscape with small observatory stations spread across ridges, plains, and distant highlands."
     },
     {
+      "src": "timeline/age-of-libra-biology-time",
+      "alt": "Moonlit research terraces with plants at different growth stages under controlled light and open sky."
+    },
+    {
       "src": "timeline/age-of-libra-sky-ground",
       "alt": "Expansive green living plain beneath a precise moonlit sky with quiet observatory silhouettes on the horizon."
     }
@@ -89,8 +113,16 @@
       "alt": "Wide brown-green coastline where fish break the water, birds cross the amber sky, and distant reptilian forms move inland."
     },
     {
+      "src": "timeline/age-of-virgo-oceanic-labs",
+      "alt": "Brown rocky coastline with floating marine laboratory platforms, kelp beds, and fish schools in clear teal water."
+    },
+    {
       "src": "timeline/age-of-virgo-birds",
       "alt": "Amber sky over brown cliffs and wet green forest terraces with many small colorful birds in flight."
+    },
+    {
+      "src": "timeline/age-of-virgo-dragons",
+      "alt": "Vast umber plain with distant dinosaur-like silhouettes moving through haze near a small research outpost."
     },
     {
       "src": "timeline/age-of-virgo-garden-of-forms",
@@ -107,8 +139,16 @@
       "alt": "Golden highland research terrace with reflective stone, distant work chambers, trees, and tiny anonymous human-like silhouettes."
     },
     {
+      "src": "timeline/age-of-leo-seven-teams",
+      "alt": "High golden view across a broad ancient continent with several distant research sites glowing among rivers, forests, plains, and mountains."
+    },
+    {
       "src": "timeline/age-of-leo-eden",
       "alt": "Golden garden valley with water channels, flowering trees, warm limestone terraces, and distant integrated research architecture."
+    },
+    {
+      "src": "timeline/age-of-leo-sphinx",
+      "alt": "Newly carved Sphinx-like monument on a wet green plateau facing a golden sunrise over water and palms."
     }
   ],
   "age-of-cancer": [
@@ -119,6 +159,14 @@
     {
       "src": "timeline/age-of-cancer-expulsion",
       "alt": "Wet teal dawn outside a sealed garden gate with small human figures walking away and distant exiled creators near the perimeter."
+    },
+    {
+      "src": "timeline/age-of-cancer-long-generations",
+      "alt": "Teal river-plain settlement with stone terraces, fields, workshops, herds, and a distant elder overlooking generations below."
+    },
+    {
+      "src": "timeline/age-of-cancer-watchers",
+      "alt": "Nighttime pre-flood city with observatory terraces, workshops, water-lit streets, and distant teacher figures among human groups."
     },
     {
       "src": "timeline/age-of-cancer-preflood-world",
@@ -137,6 +185,18 @@
     {
       "src": "timeline/age-of-gemini-orbital-ark",
       "alt": "Silver preservation vessel in deep blue orbit above an Earth covered by storm systems and cold atmospheric haze."
+    },
+    {
+      "src": "timeline/age-of-gemini-cataclysm",
+      "alt": "Distant blue-black cataclysm with fractured land, storm towers, new seas, white foam, lightning, and horizon glow."
+    },
+    {
+      "src": "timeline/age-of-gemini-covenant",
+      "alt": "Wet post-flood highland with receding waters, tiny gathered figures, a simple landing site, and a pale rainbow in clearing cloud."
+    },
+    {
+      "src": "timeline/age-of-gemini-war-in-heaven",
+      "alt": "Dark mountain and sea landscape under a deep blue sky with distant orbital lights, contrails, and faint flashes above the clouds."
     }
   ],
   "age-of-taurus": [
@@ -145,12 +205,20 @@
       "alt": "Copper dawn on an advanced home-world civic landscape where a tiny returning delegation approaches broad terraces above clouds."
     },
     {
+      "src": "timeline/age-of-taurus-bull-civilizations",
+      "alt": "Orange Bronze Age panorama with river cities, fields, boats, trade caravans, distant monuments, and small bull-age details."
+    },
+    {
       "src": "timeline/age-of-taurus-cities-plain",
       "alt": "Prosperous copper-lit plain with walled cities, canals, orchards, mountains, and guarded lights near a broad basin."
     },
     {
       "src": "timeline/age-of-taurus-dead-sea-strike",
       "alt": "Distant orange salt-basin transformation with a fading horizon flash, mineral haze, broken water channels, and white salt flats."
+    },
+    {
+      "src": "timeline/age-of-taurus-abraham-test",
+      "alt": "Warm orange mountain ridge with a simple altar, two tiny figures, scrub, a nearby ram-like shape, and a faint descending light."
     }
   ],
   "age-of-aries": [
@@ -165,6 +233,14 @@
     {
       "src": "timeline/age-of-aries-sinai-law",
       "alt": "Indigo and rose mountain valley with a tiny camp below Sinai while copper-white light and smoke gather on the summit."
+    },
+    {
+      "src": "timeline/age-of-aries-ark-conquest",
+      "alt": "Rose-gold desert camp with a compact tabernacle enclosure, distant river and city, and a faint contained glow at its center."
+    },
+    {
+      "src": "timeline/age-of-aries-axial-preparation",
+      "alt": "Rose-indigo twilight panorama linking distant ancient cultural landscapes under stars as late Aries prepares for Pisces."
     }
   ],
   "age-of-pisces": [
@@ -175,6 +251,14 @@
     {
       "src": "timeline/age-of-pisces-galilee-mission",
       "alt": "Turquoise dawn over Galilee with small boats, shore fields, distant listeners, and a faint luminous disturbance on the water."
+    },
+    {
+      "src": "timeline/age-of-pisces-doubled-signature",
+      "alt": "Turquoise coastal terrace with fish glints in shallow water, drying nets, and a tiny white-veiled figure at twilight."
+    },
+    {
+      "src": "timeline/age-of-pisces-islamic-intervention",
+      "alt": "Turquoise desert night over a sandstone canyon city, caravan lights, early courtyards, and stars reflected in water channels."
     },
     {
       "src": "timeline/age-of-pisces-scientific-threshold",
@@ -191,8 +275,16 @@
       "alt": "Cold cyan volcanic crater in Auvergne with frost, mist, a small metallic craft, and two tiny figures at the crater floor."
     },
     {
+      "src": "timeline/age-of-aquarius-world-government-seed",
+      "alt": "Cyan dawn over a circular global assembly beside water, with tiny delegations crossing bridges toward a shared center."
+    },
+    {
       "src": "timeline/age-of-aquarius-embassy",
       "alt": "Cyan-white dawn over a low embassy complex with circular boundary, water channels, gardens, and a landing platform near a broad coast."
+    },
+    {
+      "src": "timeline/age-of-aquarius-two-futures",
+      "alt": "Wide Aquarian threshold landscape divided between dark industrial clouds and a cyan-gold garden city with water and a path toward stars."
     }
   ],
   "wheel": [
@@ -203,6 +295,10 @@
     {
       "src": "timeline/wheel-keeps-turning-lens-synthesis",
       "alt": "Lavender-silver observatory archive with scrolls, firelight, columns, river lamps, manuscripts, and scientific instruments around a circular path."
+    },
+    {
+      "src": "timeline/wheel-keeps-turning-four-levels",
+      "alt": "Lavender twilight landscape with a small figure near water, a distant city, luminous cloud terrace, and starfield beyond."
     },
     {
       "src": "timeline/wheel-keeps-turning-future-cycle",

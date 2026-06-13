@@ -14,8 +14,9 @@ This directory contains older local illustration images. The current
 ## Slide Mapping
 
 The landing page does not infer filenames from age names. Section-to-image
-mapping lives in `data/timeline-slides.json`, where each section has three
-ordered slide records pointing to figure IDs under CDN `/images/`:
+mapping lives in `data/timeline-slides.json`, where each section has ordered
+slide records pointing to the same figure IDs used by `content/timeline/*.md`
+and served under CDN `/images/`:
 
 ```json
 {
@@ -29,5 +30,5 @@ ordered slide records pointing to figure IDs under CDN `/images/`:
 ```
 
 Use stable section slugs such as `preamble`, `in-the-beginning`,
-`age-of-capricorn`, and `wheel`. Each section renders its three-image set as a
-full-viewport background slideshow with a smooth crossfade cycle.
+`age-of-capricorn`, and `wheel`. Each section renders its chapter figure set as
+a full-viewport background sequence with a smooth opacity dissolve.
