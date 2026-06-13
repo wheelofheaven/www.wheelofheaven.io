@@ -30226,6 +30226,12 @@
         <priority>0.7</priority></url>
 
     <url>
+        <loc>https://www.wheelofheaven.world/timeline/chronology/</loc>
+        
+        <changefreq>monthly</changefreq>
+        <priority>0.7</priority></url>
+
+    <url>
         <loc>https://www.wheelofheaven.world/timeline/in-the-beginning/</loc>
         
         <changefreq>monthly</changefreq>
