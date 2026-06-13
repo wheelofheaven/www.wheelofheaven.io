@@ -25,8 +25,9 @@
 // progress bar.
 
 (function () {
-    const trigger = document.getElementById('listenTrigger');
-    if (!trigger) return;
+    const triggers = Array.from(document.querySelectorAll('.listen-trigger'));
+    if (!triggers.length) return;
+    const trigger = triggers[0];
 
     const player = document.getElementById('audioPlayer');
     const playPauseBtn = document.getElementById('audioPlayPause');
@@ -51,7 +52,7 @@
     const hasWebSpeech = 'speechSynthesis' in window;
 
     if (!hasWebSpeech && !window.WebAssembly) {
-        trigger.style.display = 'none';
+        triggers.forEach((t) => { t.style.display = 'none'; });
         return;
     }
 
@@ -997,6 +998,32 @@
                 if (!manifestRef) return;
                 playChapter(n);
             },
+            // Seeks playback to the paragraph identified by `c{ch}p{n}`.
+            // If the paragraph is in the currently-loaded chapter, sets
+            // audio.currentTime directly; otherwise loads the right chapter
+            // via playChapter() first and then seeks inside it. Returns true
+            // when a seek was attempted, false if there's no engine context
+            // or the id doesn't resolve. Used by the click-to-seek
+            // paragraph handler wired below.
+            async seekToParagraph(id) {
+                if (!manifestRef || !id) return false;
+                const m = id.match(/^c(\d+)p(\d+)$/);
+                if (!m) return false;
+                const targetChap = parseInt(m[1], 10);
+                const targetPara = parseInt(m[2], 10);
+                if (targetChap !== currentChapter) {
+                    const ok = await playChapter(targetChap);
+                    if (!ok || stopped) return false;
+                }
+                if (!audioEl || !timing) return false;
+                const p = timing.paragraphs.find((p) => p.n === targetPara);
+                if (!p) return false;
+                audioEl.currentTime = p.start;
+                if (audioEl.paused) {
+                    try { await audioEl.play(); } catch (_e) {}
+                }
+                return true;
+            },
             // v4.3 — expose the manifest + current chapter so the controller
             // can populate the chapter-jump menu and mark the active row.
             getManifest() { return manifestRef; },
@@ -1350,9 +1377,11 @@
 
     setEngineLabel();
 
-    trigger.addEventListener('click', () => {
-        if (!isPlaying && !isPaused) speak();
-        else showPlayer();
+    triggers.forEach((t) => {
+        t.addEventListener('click', () => {
+            if (!isPlaying && !isPaused) speak();
+            else showPlayer();
+        });
     });
     playPauseBtn.addEventListener('click', togglePlayPause);
     closeBtn.addEventListener('click', stop);
@@ -1427,4 +1456,44 @@
     }
 
     window.addEventListener('beforeunload', stop);
+
+    // --- Library-book: eager audio probe + click-to-seek --------------------
+    //
+    // On book pages we hide the listen UI by default and reveal it only when
+    // the manifest probe confirms a prerecorded audio play exists for this
+    // book + language (CSS rule keyed on `body.woh-audio-available`). We
+    // also wire a delegated click handler that seeks the player to the
+    // paragraph the reader taps while playback is in flight.
+    const libraryBookRoot = document.querySelector('.library-book');
+    if (libraryBookRoot) {
+        (async () => {
+            const units = getReadingUnits();
+            if (!units.length) return;
+            const data = await tryPrerecorded(units);
+            if (!data) return;
+            document.body.classList.add('woh-audio-available');
+            // Unhide any trigger explicitly carrying `hidden` (the featured
+            // title-area button). Sidebar / FAB triggers reveal via CSS.
+            triggers.forEach((t) => {
+                if (t.hasAttribute('hidden')) t.removeAttribute('hidden');
+            });
+            document.dispatchEvent(new CustomEvent('woh:listen-available'));
+        })();
+
+        // Click-to-seek — when the player is open and the prerecorded engine
+        // is driving playback, tapping a paragraph jumps audio to its start.
+        // Plain selectParagraph keeps working underneath; we don't stop the
+        // event so the verse still gets its selected-state highlight.
+        document.addEventListener('click', (e) => {
+            // Don't hijack clicks on the inline commentary button, share, or
+            // anything inside an open commentary popover.
+            if (e.target.closest('button, .library-book__commentary-popover')) return;
+            const para = e.target.closest('.library-book__paragraph');
+            if (!para || !para.id) return;
+            if (!isPlaying && !isPaused) return;
+            if (!currentEngine || currentEngine.name !== 'prerecorded') return;
+            if (typeof currentEngine.seekToParagraph !== 'function') return;
+            currentEngine.seekToParagraph(para.id);
+        });
+    }
 })();

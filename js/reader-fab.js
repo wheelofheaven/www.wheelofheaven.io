@@ -126,10 +126,23 @@
         }
 
         // ── Listen (defers to #listenTrigger from listen-button.js) ─
+        // On library-book pages the listen UI is gated on a successful
+        // prerecorded-audio probe (see listen-button.js). Wait for the
+        // `woh:listen-available` event before unhiding the FAB entry,
+        // and skip it entirely if the probe never confirms. On other
+        // pages the trigger is always available, so reveal immediately.
         const listenBtn = panel.querySelector('[data-action="listen"]');
         const listenTrigger = document.getElementById("listenTrigger");
         if (listenBtn && listenTrigger) {
-            listenBtn.hidden = false;
+            const isLibraryBook = !!document.querySelector(".library-book");
+            const revealListen = function () { listenBtn.hidden = false; };
+            if (!isLibraryBook) {
+                revealListen();
+            } else if (document.body.classList.contains("woh-audio-available")) {
+                revealListen();
+            } else {
+                document.addEventListener("woh:listen-available", revealListen, { once: true });
+            }
             listenBtn.addEventListener("click", function () {
                 setExpanded(false);
                 listenTrigger.click();
