@@ -1480,6 +1480,28 @@
             document.dispatchEvent(new CustomEvent('woh:listen-available'));
         })();
 
+        // Public entry point for the per-paragraph "play from here" button in
+        // the actions pill (templates/macros/library.html). If the prerecorded
+        // engine is already running, just seek; otherwise start playback and
+        // then seek once the engine is live. Resolves to true when a seek was
+        // attempted.
+        window.WohListen = {
+            available() { return document.body.classList.contains('woh-audio-available'); },
+            async playFromParagraph(id) {
+                if (!id) return false;
+                if ((isPlaying || isPaused) && currentEngine && currentEngine.name === 'prerecorded'
+                    && typeof currentEngine.seekToParagraph === 'function') {
+                    return currentEngine.seekToParagraph(id);
+                }
+                await speak();
+                if (currentEngine && currentEngine.name === 'prerecorded'
+                    && typeof currentEngine.seekToParagraph === 'function') {
+                    return currentEngine.seekToParagraph(id);
+                }
+                return false;
+            },
+        };
+
         // Click-to-seek — when the player is open and the prerecorded engine
         // is driving playback, tapping a paragraph jumps audio to its start.
         // Plain selectParagraph keeps working underneath; we don't stop the
