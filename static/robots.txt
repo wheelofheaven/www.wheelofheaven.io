@@ -46,6 +46,3 @@ Allow: /
 
 # Sitemap (Zola generates a single sitemap with all language URLs)
 Sitemap: https://www.wheelofheaven.world/sitemap.xml
-
-# Crawl-delay for courtesy (optional, not all bots respect this)
-Crawl-delay: 1
