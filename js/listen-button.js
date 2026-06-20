@@ -748,7 +748,11 @@
             const chapEntry = manifestRef.chapters.find((c) => c.n === chapterN);
             if (!chapEntry) return false;
             try {
-                const r = await fetch(`${ASSETS_BASE}/${chapEntry.timing_url}`, { cache: 'force-cache' });
+                // Revalidate: timing sidecars keep stable, unhashed names and
+                // are regenerated on every render. force-cache would pin a
+                // stale sidecar against re-rendered audio (the ¶-seek drift
+                // bug). no-cache => conditional GET, cheap 304 when unchanged.
+                const r = await fetch(`${ASSETS_BASE}/${chapEntry.timing_url}`, { cache: 'no-cache' });
                 if (!r.ok) return false;
                 timing = await r.json();
             } catch (e) { return false; }
