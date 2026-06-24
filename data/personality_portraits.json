@@ -1,0 +1,87 @@
+{
+  "version": 1,
+  "portraits": {
+    "rael": {
+      "name": "Rael",
+      "displayName": "Rael / Claude Vorilhon",
+      "shortName": "Rael",
+      "role": "Aquarian-age prophet",
+      "wiki": "/wiki/rael/",
+      "image": "https://assets.wheelofheaven.world/images/wiki/rael-claude-vorilhon-v3.webp",
+      "imageAvif": "https://assets.wheelofheaven.world/images/wiki/rael-claude-vorilhon-v3.avif",
+      "thumb": "https://assets.wheelofheaven.world/images/wiki/rael-claude-vorilhon-v3_thumb.webp",
+      "thumbAvif": "https://assets.wheelofheaven.world/images/wiki/rael-claude-vorilhon-v3_thumb.avif",
+      "alt": "AI-generated editorial portrait of Rael as a 1970s Claude Vorilhon-style contactee with long hair and lightly tinted glasses."
+    },
+    "yahweh": {
+      "name": "Yahweh",
+      "displayName": "Yahweh",
+      "shortName": "Yahweh",
+      "role": "Eloha; president of the Council of the Eternals",
+      "wiki": "/wiki/yahweh/",
+      "image": "https://assets.wheelofheaven.world/images/wiki/yahweh-eloha-v2.webp",
+      "imageAvif": "https://assets.wheelofheaven.world/images/wiki/yahweh-eloha-v2.avif",
+      "thumb": "https://assets.wheelofheaven.world/images/wiki/yahweh-eloha-v2_thumb.webp",
+      "thumbAvif": "https://assets.wheelofheaven.world/images/wiki/yahweh-eloha-v2_thumb.avif",
+      "alt": "AI-generated editorial portrait of Yahweh as an elder Eloha with almond-shaped eyes, long pale hair, and a calm green-lit presence."
+    },
+    "lucifer": {
+      "name": "Lucifer",
+      "displayName": "Lucifer / The Light-Bringer",
+      "shortName": "Lucifer",
+      "role": "Eloha faction leader",
+      "wiki": "/wiki/lucifer/",
+      "image": "https://assets.wheelofheaven.world/images/wiki/lucifer-light-bringer-v3.webp",
+      "imageAvif": "https://assets.wheelofheaven.world/images/wiki/lucifer-light-bringer-v3.avif",
+      "thumb": "https://assets.wheelofheaven.world/images/wiki/lucifer-light-bringer-v3_thumb.webp",
+      "thumbAvif": "https://assets.wheelofheaven.world/images/wiki/lucifer-light-bringer-v3_thumb.avif",
+      "alt": "AI-generated editorial portrait of Lucifer as the Light-Bringer, an Eloha faction leader with long hair and a green-gold luminosity."
+    },
+    "satan": {
+      "name": "Satan",
+      "displayName": "Satan / The Adversary",
+      "shortName": "Satan",
+      "role": "Eloha opposition figure",
+      "wiki": "/wiki/satan/",
+      "image": "https://assets.wheelofheaven.world/images/wiki/satan-adversary-v2.webp",
+      "imageAvif": "https://assets.wheelofheaven.world/images/wiki/satan-adversary-v2.avif",
+      "thumb": "https://assets.wheelofheaven.world/images/wiki/satan-adversary-v2_thumb.webp",
+      "thumbAvif": "https://assets.wheelofheaven.world/images/wiki/satan-adversary-v2_thumb.avif",
+      "alt": "AI-generated editorial portrait of Satan as the Adversary, an Eloha opposition figure with long dark hair and austere green-lit features."
+    },
+    "elohim": {
+      "name": "Elohim",
+      "displayName": "The Elohim",
+      "shortName": "Elohim",
+      "role": "Creator civilization",
+      "wiki": "/wiki/elohim/",
+      "image": "https://assets.wheelofheaven.world/images/wiki/elohim-collective-v2.webp",
+      "imageAvif": "https://assets.wheelofheaven.world/images/wiki/elohim-collective-v2.avif",
+      "thumb": "https://assets.wheelofheaven.world/images/wiki/elohim-collective-v2_thumb.webp",
+      "thumbAvif": "https://assets.wheelofheaven.world/images/wiki/elohim-collective-v2_thumb.avif",
+      "alt": "AI-generated editorial group portrait of the Elohim as long-haired human-like creators in a green-lit council setting."
+    },
+    "prophetic-lineage": {
+      "name": "Prophetic lineage",
+      "displayName": "The Prophetic Lineage",
+      "shortName": "Prophets",
+      "role": "Prophets across traditions",
+      "wiki": "/wiki/prophet/",
+      "image": "https://assets.wheelofheaven.world/images/wiki/prophetic-lineage.webp",
+      "imageAvif": "https://assets.wheelofheaven.world/images/wiki/prophetic-lineage.avif",
+      "thumb": "https://assets.wheelofheaven.world/images/wiki/prophetic-lineage_thumb.webp",
+      "thumbAvif": "https://assets.wheelofheaven.world/images/wiki/prophetic-lineage_thumb.avif",
+      "alt": "AI-generated editorial group portrait of the prophetic lineage, with figures from multiple eras arranged around a luminous axis."
+    }
+  },
+  "speakerAliases": {
+    "Rael": "rael",
+    "Raël": "rael",
+    "Claude": "rael",
+    "Claude Vorilhon": "rael",
+    "Yahweh": "yahweh",
+    "Elohim": "elohim",
+    "Lucifer": "lucifer",
+    "Satan": "satan"
+  }
+}
