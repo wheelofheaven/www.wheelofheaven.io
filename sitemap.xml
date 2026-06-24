@@ -2249,7 +2249,8 @@
         <loc>https://www.wheelofheaven.world/de/wiki/elohim/</loc>
         
         <changefreq>monthly</changefreq>
-        <priority>0.7</priority></url>
+        <priority>0.7</priority><image:image>
+            <image:loc>https://assets.wheelofheaven.world/images/wiki/elohim-collective-v2.webp</image:loc><image:caption>AI-generated editorial group portrait of the Elohim as long-haired human-like creators in a green-lit council setting.</image:caption></image:image></url>
 
 
 
@@ -2473,7 +2474,8 @@
         <loc>https://www.wheelofheaven.world/de/wiki/list-of-prophets-and-religions/</loc>
         
         <changefreq>monthly</changefreq>
-        <priority>0.7</priority></url>
+        <priority>0.7</priority><image:image>
+            <image:loc>https://assets.wheelofheaven.world/images/wiki/prophetic-lineage.webp</image:loc><image:caption>AI-generated editorial group portrait of the prophetic lineage, with figures from multiple eras arranged around a luminous axis.</image:caption></image:image></url>
 
 
 
@@ -2489,7 +2491,8 @@
         <loc>https://www.wheelofheaven.world/de/wiki/lucifer/</loc>
         
         <changefreq>monthly</changefreq>
-        <priority>0.7</priority></url>
+        <priority>0.7</priority><image:image>
+            <image:loc>https://assets.wheelofheaven.world/images/wiki/lucifer-light-bringer-v3.webp</image:loc><image:caption>AI-generated editorial portrait of Lucifer as the Light-Bringer, an Eloha faction leader with long hair and a green-gold luminosity.</image:caption></image:image></url>
 
 
 
@@ -2641,7 +2644,8 @@
         <loc>https://www.wheelofheaven.world/de/wiki/prophet/</loc>
         
         <changefreq>monthly</changefreq>
-        <priority>0.7</priority></url>
+        <priority>0.7</priority><image:image>
+            <image:loc>https://assets.wheelofheaven.world/images/wiki/prophetic-lineage.webp</image:loc><image:caption>AI-generated editorial group portrait of the prophetic lineage, with figures from multiple eras arranged around a luminous axis.</image:caption></image:image></url>
 
 
 
@@ -2649,7 +2653,8 @@
         <loc>https://www.wheelofheaven.world/de/wiki/rael/</loc>
         
         <changefreq>monthly</changefreq>
-        <priority>0.7</priority></url>
+        <priority>0.7</priority><image:image>
+            <image:loc>https://assets.wheelofheaven.world/images/wiki/rael-claude-vorilhon-v3.webp</image:loc><image:caption>AI-generated editorial portrait of Rael as a 1970s Claude Vorilhon-style contactee with long hair and lightly tinted glasses.</image:caption></image:image></url>
 
 
 
@@ -2705,7 +2710,8 @@
         <loc>https://www.wheelofheaven.world/de/wiki/satan/</loc>
         
         <changefreq>monthly</changefreq>
-        <priority>0.7</priority></url>
+        <priority>0.7</priority><image:image>
+            <image:loc>https://assets.wheelofheaven.world/images/wiki/satan-adversary-v2.webp</image:loc><image:caption>AI-generated editorial portrait of Satan as the Adversary, an Eloha opposition figure with long dark hair and austere green-lit features.</image:caption></image:image></url>
 
 
 
@@ -2881,7 +2887,8 @@
         <loc>https://www.wheelofheaven.world/de/wiki/yahweh/</loc>
         
         <changefreq>monthly</changefreq>
-        <priority>0.7</priority></url>
+        <priority>0.7</priority><image:image>
+            <image:loc>https://assets.wheelofheaven.world/images/wiki/yahweh-eloha-v2.webp</image:loc><image:caption>AI-generated editorial portrait of Yahweh as an elder Eloha with almond-shaped eyes, long pale hair, and a calm green-lit presence.</image:caption></image:image></url>
 
 
 
@@ -5041,7 +5048,8 @@
         <loc>https://www.wheelofheaven.world/es/wiki/elohim/</loc>
         
         <changefreq>monthly</changefreq>
-        <priority>0.7</priority></url>
+        <priority>0.7</priority><image:image>
+            <image:loc>https://assets.wheelofheaven.world/images/wiki/elohim-collective-v2.webp</image:loc><image:caption>AI-generated editorial group portrait of the Elohim as long-haired human-like creators in a green-lit council setting.</image:caption></image:image></url>
 
 
 
@@ -5265,7 +5273,8 @@
         <loc>https://www.wheelofheaven.world/es/wiki/list-of-prophets-and-religions/</loc>
         
         <changefreq>monthly</changefreq>
-        <priority>0.7</priority></url>
+        <priority>0.7</priority><image:image>
+            <image:loc>https://assets.wheelofheaven.world/images/wiki/prophetic-lineage.webp</image:loc><image:caption>AI-generated editorial group portrait of the prophetic lineage, with figures from multiple eras arranged around a luminous axis.</image:caption></image:image></url>
 
 
 
@@ -5281,7 +5290,8 @@
         <loc>https://www.wheelofheaven.world/es/wiki/lucifer/</loc>
         
         <changefreq>monthly</changefreq>
-        <priority>0.7</priority></url>
+        <priority>0.7</priority><image:image>
+            <image:loc>https://assets.wheelofheaven.world/images/wiki/lucifer-light-bringer-v3.webp</image:loc><image:caption>AI-generated editorial portrait of Lucifer as the Light-Bringer, an Eloha faction leader with long hair and a green-gold luminosity.</image:caption></image:image></url>
 
 
 
@@ -5433,7 +5443,8 @@
         <loc>https://www.wheelofheaven.world/es/wiki/prophet/</loc>
         
         <changefreq>monthly</changefreq>
-        <priority>0.7</priority></url>
+        <priority>0.7</priority><image:image>
+            <image:loc>https://assets.wheelofheaven.world/images/wiki/prophetic-lineage.webp</image:loc><image:caption>AI-generated editorial group portrait of the prophetic lineage, with figures from multiple eras arranged around a luminous axis.</image:caption></image:image></url>
 
 
 
@@ -5441,7 +5452,8 @@
         <loc>https://www.wheelofheaven.world/es/wiki/rael/</loc>
         
         <changefreq>monthly</changefreq>
-        <priority>0.7</priority></url>
+        <priority>0.7</priority><image:image>
+            <image:loc>https://assets.wheelofheaven.world/images/wiki/rael-claude-vorilhon-v3.webp</image:loc><image:caption>AI-generated editorial portrait of Rael as a 1970s Claude Vorilhon-style contactee with long hair and lightly tinted glasses.</image:caption></image:image></url>
 
 
 
@@ -5497,7 +5509,8 @@
         <loc>https://www.wheelofheaven.world/es/wiki/satan/</loc>
         
         <changefreq>monthly</changefreq>
-        <priority>0.7</priority></url>
+        <priority>0.7</priority><image:image>
+            <image:loc>https://assets.wheelofheaven.world/images/wiki/satan-adversary-v2.webp</image:loc><image:caption>AI-generated editorial portrait of Satan as the Adversary, an Eloha opposition figure with long dark hair and austere green-lit features.</image:caption></image:image></url>
 
 
 
@@ -5673,7 +5686,8 @@
         <loc>https://www.wheelofheaven.world/es/wiki/yahweh/</loc>
         
         <changefreq>monthly</changefreq>
-        <priority>0.7</priority></url>
+        <priority>0.7</priority><image:image>
+            <image:loc>https://assets.wheelofheaven.world/images/wiki/yahweh-eloha-v2.webp</image:loc><image:caption>AI-generated editorial portrait of Yahweh as an elder Eloha with almond-shaped eyes, long pale hair, and a calm green-lit presence.</image:caption></image:image></url>
 
 
 
@@ -7849,7 +7863,8 @@
         <loc>https://www.wheelofheaven.world/fr/wiki/elohim/</loc>
         
         <changefreq>monthly</changefreq>
-        <priority>0.7</priority></url>
+        <priority>0.7</priority><image:image>
+            <image:loc>https://assets.wheelofheaven.world/images/wiki/elohim-collective-v2.webp</image:loc><image:caption>AI-generated editorial group portrait of the Elohim as long-haired human-like creators in a green-lit council setting.</image:caption></image:image></url>
 
 
 
@@ -8073,7 +8088,8 @@
         <loc>https://www.wheelofheaven.world/fr/wiki/list-of-prophets-and-religions/</loc>
         
         <changefreq>monthly</changefreq>
-        <priority>0.7</priority></url>
+        <priority>0.7</priority><image:image>
+            <image:loc>https://assets.wheelofheaven.world/images/wiki/prophetic-lineage.webp</image:loc><image:caption>AI-generated editorial group portrait of the prophetic lineage, with figures from multiple eras arranged around a luminous axis.</image:caption></image:image></url>
 
 
 
@@ -8089,7 +8105,8 @@
         <loc>https://www.wheelofheaven.world/fr/wiki/lucifer/</loc>
         
         <changefreq>monthly</changefreq>
-        <priority>0.7</priority></url>
+        <priority>0.7</priority><image:image>
+            <image:loc>https://assets.wheelofheaven.world/images/wiki/lucifer-light-bringer-v3.webp</image:loc><image:caption>AI-generated editorial portrait of Lucifer as the Light-Bringer, an Eloha faction leader with long hair and a green-gold luminosity.</image:caption></image:image></url>
 
 
 
@@ -8241,7 +8258,8 @@
         <loc>https://www.wheelofheaven.world/fr/wiki/prophet/</loc>
         
         <changefreq>monthly</changefreq>
-        <priority>0.7</priority></url>
+        <priority>0.7</priority><image:image>
+            <image:loc>https://assets.wheelofheaven.world/images/wiki/prophetic-lineage.webp</image:loc><image:caption>AI-generated editorial group portrait of the prophetic lineage, with figures from multiple eras arranged around a luminous axis.</image:caption></image:image></url>
 
 
 
@@ -8249,7 +8267,8 @@
         <loc>https://www.wheelofheaven.world/fr/wiki/rael/</loc>
         
         <changefreq>monthly</changefreq>
-        <priority>0.7</priority></url>
+        <priority>0.7</priority><image:image>
+            <image:loc>https://assets.wheelofheaven.world/images/wiki/rael-claude-vorilhon-v3.webp</image:loc><image:caption>AI-generated editorial portrait of Rael as a 1970s Claude Vorilhon-style contactee with long hair and lightly tinted glasses.</image:caption></image:image></url>
 
 
 
@@ -8305,7 +8324,8 @@
         <loc>https://www.wheelofheaven.world/fr/wiki/satan/</loc>
         
         <changefreq>monthly</changefreq>
-        <priority>0.7</priority></url>
+        <priority>0.7</priority><image:image>
+            <image:loc>https://assets.wheelofheaven.world/images/wiki/satan-adversary-v2.webp</image:loc><image:caption>AI-generated editorial portrait of Satan as the Adversary, an Eloha opposition figure with long dark hair and austere green-lit features.</image:caption></image:image></url>
 
 
 
@@ -8481,7 +8501,8 @@
         <loc>https://www.wheelofheaven.world/fr/wiki/yahweh/</loc>
         
         <changefreq>monthly</changefreq>
-        <priority>0.7</priority></url>
+        <priority>0.7</priority><image:image>
+            <image:loc>https://assets.wheelofheaven.world/images/wiki/yahweh-eloha-v2.webp</image:loc><image:caption>AI-generated editorial portrait of Yahweh as an elder Eloha with almond-shaped eyes, long pale hair, and a calm green-lit presence.</image:caption></image:image></url>
 
 
 
@@ -10633,7 +10654,8 @@
         <loc>https://www.wheelofheaven.world/he/wiki/elohim/</loc>
         
         <changefreq>monthly</changefreq>
-        <priority>0.7</priority></url>
+        <priority>0.7</priority><image:image>
+            <image:loc>https://assets.wheelofheaven.world/images/wiki/elohim-collective-v2.webp</image:loc><image:caption>AI-generated editorial group portrait of the Elohim as long-haired human-like creators in a green-lit council setting.</image:caption></image:image></url>
 
 
 
@@ -10857,7 +10879,8 @@
         <loc>https://www.wheelofheaven.world/he/wiki/list-of-prophets-and-religions/</loc>
         
         <changefreq>monthly</changefreq>
-        <priority>0.7</priority></url>
+        <priority>0.7</priority><image:image>
+            <image:loc>https://assets.wheelofheaven.world/images/wiki/prophetic-lineage.webp</image:loc><image:caption>AI-generated editorial group portrait of the prophetic lineage, with figures from multiple eras arranged around a luminous axis.</image:caption></image:image></url>
 
 
 
@@ -10873,7 +10896,8 @@
         <loc>https://www.wheelofheaven.world/he/wiki/lucifer/</loc>
         
         <changefreq>monthly</changefreq>
-        <priority>0.7</priority></url>
+        <priority>0.7</priority><image:image>
+            <image:loc>https://assets.wheelofheaven.world/images/wiki/lucifer-light-bringer-v3.webp</image:loc><image:caption>AI-generated editorial portrait of Lucifer as the Light-Bringer, an Eloha faction leader with long hair and a green-gold luminosity.</image:caption></image:image></url>
 
 
 
@@ -11025,7 +11049,8 @@
         <loc>https://www.wheelofheaven.world/he/wiki/prophet/</loc>
         
         <changefreq>monthly</changefreq>
-        <priority>0.7</priority></url>
+        <priority>0.7</priority><image:image>
+            <image:loc>https://assets.wheelofheaven.world/images/wiki/prophetic-lineage.webp</image:loc><image:caption>AI-generated editorial group portrait of the prophetic lineage, with figures from multiple eras arranged around a luminous axis.</image:caption></image:image></url>
 
 
 
@@ -11033,7 +11058,8 @@
         <loc>https://www.wheelofheaven.world/he/wiki/rael/</loc>
         
         <changefreq>monthly</changefreq>
-        <priority>0.7</priority></url>
+        <priority>0.7</priority><image:image>
+            <image:loc>https://assets.wheelofheaven.world/images/wiki/rael-claude-vorilhon-v3.webp</image:loc><image:caption>AI-generated editorial portrait of Rael as a 1970s Claude Vorilhon-style contactee with long hair and lightly tinted glasses.</image:caption></image:image></url>
 
 
 
@@ -11089,7 +11115,8 @@
         <loc>https://www.wheelofheaven.world/he/wiki/satan/</loc>
         
         <changefreq>monthly</changefreq>
-        <priority>0.7</priority></url>
+        <priority>0.7</priority><image:image>
+            <image:loc>https://assets.wheelofheaven.world/images/wiki/satan-adversary-v2.webp</image:loc><image:caption>AI-generated editorial portrait of Satan as the Adversary, an Eloha opposition figure with long dark hair and austere green-lit features.</image:caption></image:image></url>
 
 
 
@@ -11265,7 +11292,8 @@
         <loc>https://www.wheelofheaven.world/he/wiki/yahweh/</loc>
         
         <changefreq>monthly</changefreq>
-        <priority>0.7</priority></url>
+        <priority>0.7</priority><image:image>
+            <image:loc>https://assets.wheelofheaven.world/images/wiki/yahweh-eloha-v2.webp</image:loc><image:caption>AI-generated editorial portrait of Yahweh as an elder Eloha with almond-shaped eyes, long pale hair, and a calm green-lit presence.</image:caption></image:image></url>
 
 
 
@@ -13417,7 +13445,8 @@
         <loc>https://www.wheelofheaven.world/ja/wiki/elohim/</loc>
         
         <changefreq>monthly</changefreq>
-        <priority>0.7</priority></url>
+        <priority>0.7</priority><image:image>
+            <image:loc>https://assets.wheelofheaven.world/images/wiki/elohim-collective-v2.webp</image:loc><image:caption>AI-generated editorial group portrait of the Elohim as long-haired human-like creators in a green-lit council setting.</image:caption></image:image></url>
 
 
 
@@ -13641,7 +13670,8 @@
         <loc>https://www.wheelofheaven.world/ja/wiki/list-of-prophets-and-religions/</loc>
         
         <changefreq>monthly</changefreq>
-        <priority>0.7</priority></url>
+        <priority>0.7</priority><image:image>
+            <image:loc>https://assets.wheelofheaven.world/images/wiki/prophetic-lineage.webp</image:loc><image:caption>AI-generated editorial group portrait of the prophetic lineage, with figures from multiple eras arranged around a luminous axis.</image:caption></image:image></url>
 
 
 
@@ -13657,7 +13687,8 @@
         <loc>https://www.wheelofheaven.world/ja/wiki/lucifer/</loc>
         
         <changefreq>monthly</changefreq>
-        <priority>0.7</priority></url>
+        <priority>0.7</priority><image:image>
+            <image:loc>https://assets.wheelofheaven.world/images/wiki/lucifer-light-bringer-v3.webp</image:loc><image:caption>AI-generated editorial portrait of Lucifer as the Light-Bringer, an Eloha faction leader with long hair and a green-gold luminosity.</image:caption></image:image></url>
 
 
 
@@ -13809,7 +13840,8 @@
         <loc>https://www.wheelofheaven.world/ja/wiki/prophet/</loc>
         
         <changefreq>monthly</changefreq>
-        <priority>0.7</priority></url>
+        <priority>0.7</priority><image:image>
+            <image:loc>https://assets.wheelofheaven.world/images/wiki/prophetic-lineage.webp</image:loc><image:caption>AI-generated editorial group portrait of the prophetic lineage, with figures from multiple eras arranged around a luminous axis.</image:caption></image:image></url>
 
 
 
@@ -13817,7 +13849,8 @@
         <loc>https://www.wheelofheaven.world/ja/wiki/rael/</loc>
         
         <changefreq>monthly</changefreq>
-        <priority>0.7</priority></url>
+        <priority>0.7</priority><image:image>
+            <image:loc>https://assets.wheelofheaven.world/images/wiki/rael-claude-vorilhon-v3.webp</image:loc><image:caption>AI-generated editorial portrait of Rael as a 1970s Claude Vorilhon-style contactee with long hair and lightly tinted glasses.</image:caption></image:image></url>
 
 
 
@@ -13873,7 +13906,8 @@
         <loc>https://www.wheelofheaven.world/ja/wiki/satan/</loc>
         
         <changefreq>monthly</changefreq>
-        <priority>0.7</priority></url>
+        <priority>0.7</priority><image:image>
+            <image:loc>https://assets.wheelofheaven.world/images/wiki/satan-adversary-v2.webp</image:loc><image:caption>AI-generated editorial portrait of Satan as the Adversary, an Eloha opposition figure with long dark hair and austere green-lit features.</image:caption></image:image></url>
 
 
 
@@ -14049,7 +14083,8 @@
         <loc>https://www.wheelofheaven.world/ja/wiki/yahweh/</loc>
         
         <changefreq>monthly</changefreq>
-        <priority>0.7</priority></url>
+        <priority>0.7</priority><image:image>
+            <image:loc>https://assets.wheelofheaven.world/images/wiki/yahweh-eloha-v2.webp</image:loc><image:caption>AI-generated editorial portrait of Yahweh as an elder Eloha with almond-shaped eyes, long pale hair, and a calm green-lit presence.</image:caption></image:image></url>
 
 
 
@@ -16201,7 +16236,8 @@
         <loc>https://www.wheelofheaven.world/ko/wiki/elohim/</loc>
         
         <changefreq>monthly</changefreq>
-        <priority>0.7</priority></url>
+        <priority>0.7</priority><image:image>
+            <image:loc>https://assets.wheelofheaven.world/images/wiki/elohim-collective-v2.webp</image:loc><image:caption>AI-generated editorial group portrait of the Elohim as long-haired human-like creators in a green-lit council setting.</image:caption></image:image></url>
 
 
 
@@ -16425,7 +16461,8 @@
         <loc>https://www.wheelofheaven.world/ko/wiki/list-of-prophets-and-religions/</loc>
         
         <changefreq>monthly</changefreq>
-        <priority>0.7</priority></url>
+        <priority>0.7</priority><image:image>
+            <image:loc>https://assets.wheelofheaven.world/images/wiki/prophetic-lineage.webp</image:loc><image:caption>AI-generated editorial group portrait of the prophetic lineage, with figures from multiple eras arranged around a luminous axis.</image:caption></image:image></url>
 
 
 
@@ -16441,7 +16478,8 @@
         <loc>https://www.wheelofheaven.world/ko/wiki/lucifer/</loc>
         
         <changefreq>monthly</changefreq>
-        <priority>0.7</priority></url>
+        <priority>0.7</priority><image:image>
+            <image:loc>https://assets.wheelofheaven.world/images/wiki/lucifer-light-bringer-v3.webp</image:loc><image:caption>AI-generated editorial portrait of Lucifer as the Light-Bringer, an Eloha faction leader with long hair and a green-gold luminosity.</image:caption></image:image></url>
 
 
 
@@ -16593,7 +16631,8 @@
         <loc>https://www.wheelofheaven.world/ko/wiki/prophet/</loc>
         
         <changefreq>monthly</changefreq>
-        <priority>0.7</priority></url>
+        <priority>0.7</priority><image:image>
+            <image:loc>https://assets.wheelofheaven.world/images/wiki/prophetic-lineage.webp</image:loc><image:caption>AI-generated editorial group portrait of the prophetic lineage, with figures from multiple eras arranged around a luminous axis.</image:caption></image:image></url>
 
 
 
@@ -16601,7 +16640,8 @@
         <loc>https://www.wheelofheaven.world/ko/wiki/rael/</loc>
         
         <changefreq>monthly</changefreq>
-        <priority>0.7</priority></url>
+        <priority>0.7</priority><image:image>
+            <image:loc>https://assets.wheelofheaven.world/images/wiki/rael-claude-vorilhon-v3.webp</image:loc><image:caption>AI-generated editorial portrait of Rael as a 1970s Claude Vorilhon-style contactee with long hair and lightly tinted glasses.</image:caption></image:image></url>
 
 
 
@@ -16657,7 +16697,8 @@
         <loc>https://www.wheelofheaven.world/ko/wiki/satan/</loc>
         
         <changefreq>monthly</changefreq>
-        <priority>0.7</priority></url>
+        <priority>0.7</priority><image:image>
+            <image:loc>https://assets.wheelofheaven.world/images/wiki/satan-adversary-v2.webp</image:loc><image:caption>AI-generated editorial portrait of Satan as the Adversary, an Eloha opposition figure with long dark hair and austere green-lit features.</image:caption></image:image></url>
 
 
 
@@ -16833,7 +16874,8 @@
         <loc>https://www.wheelofheaven.world/ko/wiki/yahweh/</loc>
         
         <changefreq>monthly</changefreq>
-        <priority>0.7</priority></url>
+        <priority>0.7</priority><image:image>
+            <image:loc>https://assets.wheelofheaven.world/images/wiki/yahweh-eloha-v2.webp</image:loc><image:caption>AI-generated editorial portrait of Yahweh as an elder Eloha with almond-shaped eyes, long pale hair, and a calm green-lit presence.</image:caption></image:image></url>
 
 
 
@@ -20049,7 +20091,8 @@
         <loc>https://www.wheelofheaven.world/ru/wiki/elohim/</loc>
         
         <changefreq>monthly</changefreq>
-        <priority>0.7</priority></url>
+        <priority>0.7</priority><image:image>
+            <image:loc>https://assets.wheelofheaven.world/images/wiki/elohim-collective-v2.webp</image:loc><image:caption>AI-generated editorial group portrait of the Elohim as long-haired human-like creators in a green-lit council setting.</image:caption></image:image></url>
 
 
 
@@ -20273,7 +20316,8 @@
         <loc>https://www.wheelofheaven.world/ru/wiki/list-of-prophets-and-religions/</loc>
         
         <changefreq>monthly</changefreq>
-        <priority>0.7</priority></url>
+        <priority>0.7</priority><image:image>
+            <image:loc>https://assets.wheelofheaven.world/images/wiki/prophetic-lineage.webp</image:loc><image:caption>AI-generated editorial group portrait of the prophetic lineage, with figures from multiple eras arranged around a luminous axis.</image:caption></image:image></url>
 
 
 
@@ -20289,7 +20333,8 @@
         <loc>https://www.wheelofheaven.world/ru/wiki/lucifer/</loc>
         
         <changefreq>monthly</changefreq>
-        <priority>0.7</priority></url>
+        <priority>0.7</priority><image:image>
+            <image:loc>https://assets.wheelofheaven.world/images/wiki/lucifer-light-bringer-v3.webp</image:loc><image:caption>AI-generated editorial portrait of Lucifer as the Light-Bringer, an Eloha faction leader with long hair and a green-gold luminosity.</image:caption></image:image></url>
 
 
 
@@ -20441,7 +20486,8 @@
         <loc>https://www.wheelofheaven.world/ru/wiki/prophet/</loc>
         
         <changefreq>monthly</changefreq>
-        <priority>0.7</priority></url>
+        <priority>0.7</priority><image:image>
+            <image:loc>https://assets.wheelofheaven.world/images/wiki/prophetic-lineage.webp</image:loc><image:caption>AI-generated editorial group portrait of the prophetic lineage, with figures from multiple eras arranged around a luminous axis.</image:caption></image:image></url>
 
 
 
@@ -20449,7 +20495,8 @@
         <loc>https://www.wheelofheaven.world/ru/wiki/rael/</loc>
         
         <changefreq>monthly</changefreq>
-        <priority>0.7</priority></url>
+        <priority>0.7</priority><image:image>
+            <image:loc>https://assets.wheelofheaven.world/images/wiki/rael-claude-vorilhon-v3.webp</image:loc><image:caption>AI-generated editorial portrait of Rael as a 1970s Claude Vorilhon-style contactee with long hair and lightly tinted glasses.</image:caption></image:image></url>
 
 
 
@@ -20505,7 +20552,8 @@
         <loc>https://www.wheelofheaven.world/ru/wiki/satan/</loc>
         
         <changefreq>monthly</changefreq>
-        <priority>0.7</priority></url>
+        <priority>0.7</priority><image:image>
+            <image:loc>https://assets.wheelofheaven.world/images/wiki/satan-adversary-v2.webp</image:loc><image:caption>AI-generated editorial portrait of Satan as the Adversary, an Eloha opposition figure with long dark hair and austere green-lit features.</image:caption></image:image></url>
 
 
 
@@ -20681,7 +20729,8 @@
         <loc>https://www.wheelofheaven.world/ru/wiki/yahweh/</loc>
         
         <changefreq>monthly</changefreq>
-        <priority>0.7</priority></url>
+        <priority>0.7</priority><image:image>
+            <image:loc>https://assets.wheelofheaven.world/images/wiki/yahweh-eloha-v2.webp</image:loc><image:caption>AI-generated editorial portrait of Yahweh as an elder Eloha with almond-shaped eyes, long pale hair, and a calm green-lit presence.</image:caption></image:image></url>
 
 
 
@@ -21969,7 +22018,8 @@
         <loc>https://www.wheelofheaven.world/wiki/elohim/</loc>
         
         <changefreq>monthly</changefreq>
-        <priority>0.7</priority></url>
+        <priority>0.7</priority><image:image>
+            <image:loc>https://assets.wheelofheaven.world/images/wiki/elohim-collective-v2.webp</image:loc><image:caption>AI-generated editorial group portrait of the Elohim as long-haired human-like creators in a green-lit council setting.</image:caption></image:image></url>
 
 
 
@@ -22193,7 +22243,8 @@
         <loc>https://www.wheelofheaven.world/wiki/list-of-prophets-and-religions/</loc>
         
         <changefreq>monthly</changefreq>
-        <priority>0.7</priority></url>
+        <priority>0.7</priority><image:image>
+            <image:loc>https://assets.wheelofheaven.world/images/wiki/prophetic-lineage.webp</image:loc><image:caption>AI-generated editorial group portrait of the prophetic lineage, with figures from multiple eras arranged around a luminous axis.</image:caption></image:image></url>
 
 
 
@@ -22209,7 +22260,8 @@
         <loc>https://www.wheelofheaven.world/wiki/lucifer/</loc>
         
         <changefreq>monthly</changefreq>
-        <priority>0.7</priority></url>
+        <priority>0.7</priority><image:image>
+            <image:loc>https://assets.wheelofheaven.world/images/wiki/lucifer-light-bringer-v3.webp</image:loc><image:caption>AI-generated editorial portrait of Lucifer as the Light-Bringer, an Eloha faction leader with long hair and a green-gold luminosity.</image:caption></image:image></url>
 
 
 
@@ -22361,7 +22413,8 @@
         <loc>https://www.wheelofheaven.world/wiki/prophet/</loc>
         
         <changefreq>monthly</changefreq>
-        <priority>0.7</priority></url>
+        <priority>0.7</priority><image:image>
+            <image:loc>https://assets.wheelofheaven.world/images/wiki/prophetic-lineage.webp</image:loc><image:caption>AI-generated editorial group portrait of the prophetic lineage, with figures from multiple eras arranged around a luminous axis.</image:caption></image:image></url>
 
 
 
@@ -22369,7 +22422,8 @@
         <loc>https://www.wheelofheaven.world/wiki/rael/</loc>
         
         <changefreq>monthly</changefreq>
-        <priority>0.7</priority></url>
+        <priority>0.7</priority><image:image>
+            <image:loc>https://assets.wheelofheaven.world/images/wiki/rael-claude-vorilhon-v3.webp</image:loc><image:caption>AI-generated editorial portrait of Rael as a 1970s Claude Vorilhon-style contactee with long hair and lightly tinted glasses.</image:caption></image:image></url>
 
 
 
@@ -22425,7 +22479,8 @@
         <loc>https://www.wheelofheaven.world/wiki/satan/</loc>
         
         <changefreq>monthly</changefreq>
-        <priority>0.7</priority></url>
+        <priority>0.7</priority><image:image>
+            <image:loc>https://assets.wheelofheaven.world/images/wiki/satan-adversary-v2.webp</image:loc><image:caption>AI-generated editorial portrait of Satan as the Adversary, an Eloha opposition figure with long dark hair and austere green-lit features.</image:caption></image:image></url>
 
 
 
@@ -22601,7 +22656,8 @@
         <loc>https://www.wheelofheaven.world/wiki/yahweh/</loc>
         
         <changefreq>monthly</changefreq>
-        <priority>0.7</priority></url>
+        <priority>0.7</priority><image:image>
+            <image:loc>https://assets.wheelofheaven.world/images/wiki/yahweh-eloha-v2.webp</image:loc><image:caption>AI-generated editorial portrait of Yahweh as an elder Eloha with almond-shaped eyes, long pale hair, and a calm green-lit presence.</image:caption></image:image></url>
 
 
 
@@ -24753,7 +24809,8 @@
         <loc>https://www.wheelofheaven.world/zh-Hant/wiki/elohim/</loc>
         
         <changefreq>monthly</changefreq>
-        <priority>0.7</priority></url>
+        <priority>0.7</priority><image:image>
+            <image:loc>https://assets.wheelofheaven.world/images/wiki/elohim-collective-v2.webp</image:loc><image:caption>AI-generated editorial group portrait of the Elohim as long-haired human-like creators in a green-lit council setting.</image:caption></image:image></url>
 
 
 
@@ -24977,7 +25034,8 @@
         <loc>https://www.wheelofheaven.world/zh-Hant/wiki/list-of-prophets-and-religions/</loc>
         
         <changefreq>monthly</changefreq>
-        <priority>0.7</priority></url>
+        <priority>0.7</priority><image:image>
+            <image:loc>https://assets.wheelofheaven.world/images/wiki/prophetic-lineage.webp</image:loc><image:caption>AI-generated editorial group portrait of the prophetic lineage, with figures from multiple eras arranged around a luminous axis.</image:caption></image:image></url>
 
 
 
@@ -24993,7 +25051,8 @@
         <loc>https://www.wheelofheaven.world/zh-Hant/wiki/lucifer/</loc>
         
         <changefreq>monthly</changefreq>
-        <priority>0.7</priority></url>
+        <priority>0.7</priority><image:image>
+            <image:loc>https://assets.wheelofheaven.world/images/wiki/lucifer-light-bringer-v3.webp</image:loc><image:caption>AI-generated editorial portrait of Lucifer as the Light-Bringer, an Eloha faction leader with long hair and a green-gold luminosity.</image:caption></image:image></url>
 
 
 
@@ -25145,7 +25204,8 @@
         <loc>https://www.wheelofheaven.world/zh-Hant/wiki/prophet/</loc>
         
         <changefreq>monthly</changefreq>
-        <priority>0.7</priority></url>
+        <priority>0.7</priority><image:image>
+            <image:loc>https://assets.wheelofheaven.world/images/wiki/prophetic-lineage.webp</image:loc><image:caption>AI-generated editorial group portrait of the prophetic lineage, with figures from multiple eras arranged around a luminous axis.</image:caption></image:image></url>
 
 
 
@@ -25153,7 +25213,8 @@
         <loc>https://www.wheelofheaven.world/zh-Hant/wiki/rael/</loc>
         
         <changefreq>monthly</changefreq>
-        <priority>0.7</priority></url>
+        <priority>0.7</priority><image:image>
+            <image:loc>https://assets.wheelofheaven.world/images/wiki/rael-claude-vorilhon-v3.webp</image:loc><image:caption>AI-generated editorial portrait of Rael as a 1970s Claude Vorilhon-style contactee with long hair and lightly tinted glasses.</image:caption></image:image></url>
 
 
 
@@ -25209,7 +25270,8 @@
         <loc>https://www.wheelofheaven.world/zh-Hant/wiki/satan/</loc>
         
         <changefreq>monthly</changefreq>
-        <priority>0.7</priority></url>
+        <priority>0.7</priority><image:image>
+            <image:loc>https://assets.wheelofheaven.world/images/wiki/satan-adversary-v2.webp</image:loc><image:caption>AI-generated editorial portrait of Satan as the Adversary, an Eloha opposition figure with long dark hair and austere green-lit features.</image:caption></image:image></url>
 
 
 
@@ -25385,7 +25447,8 @@
         <loc>https://www.wheelofheaven.world/zh-Hant/wiki/yahweh/</loc>
         
         <changefreq>monthly</changefreq>
-        <priority>0.7</priority></url>
+        <priority>0.7</priority><image:image>
+            <image:loc>https://assets.wheelofheaven.world/images/wiki/yahweh-eloha-v2.webp</image:loc><image:caption>AI-generated editorial portrait of Yahweh as an elder Eloha with almond-shaped eyes, long pale hair, and a calm green-lit presence.</image:caption></image:image></url>
 
 
 
@@ -27537,7 +27600,8 @@
         <loc>https://www.wheelofheaven.world/zh/wiki/elohim/</loc>
         
         <changefreq>monthly</changefreq>
-        <priority>0.7</priority></url>
+        <priority>0.7</priority><image:image>
+            <image:loc>https://assets.wheelofheaven.world/images/wiki/elohim-collective-v2.webp</image:loc><image:caption>AI-generated editorial group portrait of the Elohim as long-haired human-like creators in a green-lit council setting.</image:caption></image:image></url>
 
 
 
@@ -27761,7 +27825,8 @@
         <loc>https://www.wheelofheaven.world/zh/wiki/list-of-prophets-and-religions/</loc>
         
         <changefreq>monthly</changefreq>
-        <priority>0.7</priority></url>
+        <priority>0.7</priority><image:image>
+            <image:loc>https://assets.wheelofheaven.world/images/wiki/prophetic-lineage.webp</image:loc><image:caption>AI-generated editorial group portrait of the prophetic lineage, with figures from multiple eras arranged around a luminous axis.</image:caption></image:image></url>
 
 
 
@@ -27777,7 +27842,8 @@
         <loc>https://www.wheelofheaven.world/zh/wiki/lucifer/</loc>
         
         <changefreq>monthly</changefreq>
-        <priority>0.7</priority></url>
+        <priority>0.7</priority><image:image>
+            <image:loc>https://assets.wheelofheaven.world/images/wiki/lucifer-light-bringer-v3.webp</image:loc><image:caption>AI-generated editorial portrait of Lucifer as the Light-Bringer, an Eloha faction leader with long hair and a green-gold luminosity.</image:caption></image:image></url>
 
 
 
@@ -27929,7 +27995,8 @@
         <loc>https://www.wheelofheaven.world/zh/wiki/prophet/</loc>
         
         <changefreq>monthly</changefreq>
-        <priority>0.7</priority></url>
+        <priority>0.7</priority><image:image>
+            <image:loc>https://assets.wheelofheaven.world/images/wiki/prophetic-lineage.webp</image:loc><image:caption>AI-generated editorial group portrait of the prophetic lineage, with figures from multiple eras arranged around a luminous axis.</image:caption></image:image></url>
 
 
 
@@ -27937,7 +28004,8 @@
         <loc>https://www.wheelofheaven.world/zh/wiki/rael/</loc>
         
         <changefreq>monthly</changefreq>
-        <priority>0.7</priority></url>
+        <priority>0.7</priority><image:image>
+            <image:loc>https://assets.wheelofheaven.world/images/wiki/rael-claude-vorilhon-v3.webp</image:loc><image:caption>AI-generated editorial portrait of Rael as a 1970s Claude Vorilhon-style contactee with long hair and lightly tinted glasses.</image:caption></image:image></url>
 
 
 
@@ -27993,7 +28061,8 @@
         <loc>https://www.wheelofheaven.world/zh/wiki/satan/</loc>
         
         <changefreq>monthly</changefreq>
-        <priority>0.7</priority></url>
+        <priority>0.7</priority><image:image>
+            <image:loc>https://assets.wheelofheaven.world/images/wiki/satan-adversary-v2.webp</image:loc><image:caption>AI-generated editorial portrait of Satan as the Adversary, an Eloha opposition figure with long dark hair and austere green-lit features.</image:caption></image:image></url>
 
 
 
@@ -28169,7 +28238,8 @@
         <loc>https://www.wheelofheaven.world/zh/wiki/yahweh/</loc>
         
         <changefreq>monthly</changefreq>
-        <priority>0.7</priority></url>
+        <priority>0.7</priority><image:image>
+            <image:loc>https://assets.wheelofheaven.world/images/wiki/yahweh-eloha-v2.webp</image:loc><image:caption>AI-generated editorial portrait of Yahweh as an elder Eloha with almond-shaped eyes, long pale hair, and a calm green-lit presence.</image:caption></image:image></url>
 
 
 
