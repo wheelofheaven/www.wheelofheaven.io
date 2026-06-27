@@ -43,8 +43,6 @@
     const chapterMenu = document.getElementById('audioChapterMenu');
     const titleBookRow = document.querySelector('.audio-player__title-row--book');
     const titleChapterRow = document.querySelector('.audio-player__title-row--chapter');
-    const engineToggle = document.getElementById('audioEngineToggle');
-    const engineLabel = document.getElementById('audioEngineLabel');
     const loadingEl = document.getElementById('audioLoading');
     const loadingLabel = document.getElementById('audioLoadingLabel');
 
@@ -271,21 +269,6 @@
         if (!loadingEl) return;
         loadingEl.classList.remove('audio-player__loading--visible');
         player.classList.remove('audio-player--loading');
-    }
-
-    function setEngineLabel() {
-        if (engineLabel) {
-            engineLabel.textContent = engineName === 'studio' ? 'Studio voice' : 'System voice';
-        }
-        if (engineToggle) {
-            engineToggle.setAttribute(
-                'aria-label',
-                engineName === 'studio'
-                    ? 'Switch to system voice'
-                    : 'Switch to studio voice'
-            );
-            engineToggle.classList.toggle('audio-player__engine--studio', engineName === 'studio');
-        }
     }
 
     // --- Shared chunker ------------------------------------------------------
@@ -1127,12 +1110,17 @@
         const captionEl = document.getElementById('cinematicCaption');
         const speakerEl = document.getElementById('cinematicSpeaker');
         const textEl = document.getElementById('cinematicText');
+        const barFill = document.getElementById('cinematicProgressFill');
+        const barHandle = document.getElementById('cinematicProgressHandle');
+        const barCur = document.getElementById('cinematicTimeCurrent');
+        const barTotal = document.getElementById('cinematicTimeTotal');
         const layers = root ? Array.from(root.querySelectorAll('.cinematic__bg')) : [];
         if (!root || !captionEl || !textEl || layers.length < 2) {
             // Page has no cinematic overlay (non-library, or partial absent).
             const noop = () => {};
             return { enabled: false, isOpen: () => false, open: noop, close: noop,
-                     toggle: noop, onChapter: async () => {}, onTime: noop, setPlaying: noop };
+                     toggle: noop, onChapter: async () => {}, onProgress: noop,
+                     setProgress: noop, setPlaying: noop };
         }
 
         let open = false;
@@ -1143,6 +1131,7 @@
         let activeLayer = layers[0];
         let currentSceneKey = null;
         let currentCaptionIdx = -1;
+        let chromeTimer = null;     // inactivity timer that hides the play bar
 
         function bookContext() {
             const el = document.querySelector('[data-book-slug]');
@@ -1205,7 +1194,10 @@
             if (key === currentSceneKey) return;
             currentSceneKey = key;
             const incoming = activeLayer === layers[0] ? layers[1] : layers[0];
-            setLayerImage(incoming, scene ? scene.image : null);
+            // Default segments have image=null in the timeline; fall back to a
+            // book-wide `default` still so the whole book has a backdrop, with
+            // the gradient as the final fallback if that image isn't published.
+            setLayerImage(incoming, (scene && scene.image) || 'default');
             incoming.classList.add('is-active');
             activeLayer.classList.remove('is-active');
             activeLayer = incoming;
@@ -1235,6 +1227,32 @@
             captionEl.classList.add('is-visible');
         }
 
+        // Reveal the play bar + exit on activity; auto-hide after a beat while
+        // playing (kept visible when paused, where CSS reveals on
+        // :not(.cinematic--playing)).
+        function showChrome() {
+            root.classList.add('cinematic--active');
+            if (chromeTimer) clearTimeout(chromeTimer);
+            chromeTimer = setTimeout(() => {
+                if (root.classList.contains('cinematic--playing')) {
+                    root.classList.remove('cinematic--active');
+                }
+            }, 2800);
+        }
+        root.addEventListener('pointermove', showChrome);
+        root.addEventListener('pointerdown', showChrome);
+        root.addEventListener('touchstart', showChrome, { passive: true });
+
+        function setProgress(ratio, cur, total) {
+            const pct = Math.max(0, Math.min(ratio || 0, 1)) * 100;
+            if (barFill) barFill.style.width = `${pct}%`;
+            if (barHandle) barHandle.style.left = `${pct}%`;
+            if (barCur && typeof cur === 'number') barCur.textContent = formatTime(cur);
+            if (barTotal && typeof total === 'number' && total && !Number.isNaN(total)) {
+                barTotal.textContent = formatTime(total);
+            }
+        }
+
         return {
             enabled: true,
             isOpen() { return open; },
@@ -1245,11 +1263,13 @@
                 root.setAttribute('aria-hidden', 'false');
                 root.removeAttribute('inert');
                 document.body.classList.add('has-cinematic');
+                showChrome();
             },
             close() {
                 if (!open) return;
                 open = false;
-                root.classList.remove('cinematic--open');
+                if (chromeTimer) clearTimeout(chromeTimer);
+                root.classList.remove('cinematic--open', 'cinematic--active');
                 root.setAttribute('aria-hidden', 'true');
                 root.setAttribute('inert', '');
                 document.body.classList.remove('has-cinematic');
@@ -1257,16 +1277,23 @@
             toggle() { this.isOpen() ? this.close() : this.open(); },
             // Called from onChapterChange — fetch that chapter's timeline.
             async onChapter(n) { await loadChapter(n); },
-            // Called from onProgress with the chapter-local current second.
-            onTime(seconds) {
-                if (!open || typeof seconds !== 'number') return;
-                renderScene(seconds);
-                renderCaption(seconds);
+            // Called from the engine's onProgress with the chapter-local clock.
+            onProgress(ratio, cur, total) {
+                if (!open) return;
+                if (typeof cur === 'number') {
+                    renderScene(cur);
+                    renderCaption(cur);
+                }
+                setProgress(ratio, cur, total);
             },
+            // Exposed so the seek handler can paint the bar instantly on drag.
+            setProgress,
             setPlaying(playing) {
                 root.classList.toggle('cinematic--playing', !!playing);
                 const btn = document.getElementById('cinematicPlayPause');
                 if (btn) btn.setAttribute('aria-label', playing ? labelPause : labelPlay);
+                if (playing) showChrome();
+                else if (chromeTimer) clearTimeout(chromeTimer);
             },
         };
     }
@@ -1332,8 +1359,8 @@
             if (typeof totalSeconds === 'number' && totalSeconds && !Number.isNaN(totalSeconds)) {
                 timeTotal.textContent = formatTime(totalSeconds);
             }
-            // v5 — drive the cinematic scene/caption off the same real clock.
-            cinematic.onTime(currentSeconds);
+            // v5 — drive the cinematic scene/caption/seek-bar off the same clock.
+            cinematic.onProgress(ratio, currentSeconds, totalSeconds);
         },
         onPause: () => {
             isPaused = true;
@@ -1531,28 +1558,7 @@
         timeCurrent.textContent = '0:00';
     }
 
-    function toggleEngine() {
-        const wasPlaying = isPlaying || isPaused;
-        if (wasPlaying) {
-            if (currentEngine) currentEngine.stop();
-            isPlaying = false;
-            isPaused = false;
-            updatePlayState(false);
-        }
-        engineName = engineName === 'studio' ? 'system' : 'studio';
-        if (engineName === 'studio' && !window.WebAssembly) engineName = 'system';
-        localStorage.setItem(STORAGE_KEY, engineName);
-        currentEngine = null;
-        // Explicit toggle is a fresh intent — let studio be retried even if it
-        // failed earlier this session.
-        studioFailedThisSession = false;
-        setEngineLabel();
-        if (wasPlaying) speak();
-    }
-
     // --- Wire up -------------------------------------------------------------
-
-    setEngineLabel();
 
     triggers.forEach((t) => {
         t.addEventListener('click', () => {
@@ -1562,7 +1568,6 @@
     });
     playPauseBtn.addEventListener('click', togglePlayPause);
     closeBtn.addEventListener('click', stop);
-    if (engineToggle) engineToggle.addEventListener('click', toggleEngine);
 
     // v4.1 — drag-to-seek on the progress bar. Click anywhere on the
     // progress strip (or drag the handle) and the engine seeks to the
@@ -1649,6 +1654,37 @@
         }
         if (cinematicPlayPause) {
             cinematicPlayPause.addEventListener('click', togglePlayPause);
+        }
+        // Drag-to-seek on the cinematic play bar (prerecorded engine only).
+        const cinematicProgress = document.getElementById('cinematicProgress');
+        if (cinematicProgress) {
+            let dragging = false;
+            const ratioAt = (clientX) => {
+                const r = cinematicProgress.getBoundingClientRect();
+                return Math.max(0, Math.min(1, (clientX - r.left) / r.width));
+            };
+            const seekAt = (clientX) => {
+                if (!currentEngine || typeof currentEngine.seek !== 'function') return;
+                const ratio = ratioAt(clientX);
+                currentEngine.seek(ratio);
+                cinematic.setProgress(ratio);   // instant visual feedback
+            };
+            cinematicProgress.addEventListener('pointerdown', (e) => {
+                e.preventDefault();
+                dragging = true;
+                cinematicProgress.setPointerCapture(e.pointerId);
+                seekAt(e.clientX);
+            });
+            cinematicProgress.addEventListener('pointermove', (e) => {
+                if (dragging) seekAt(e.clientX);
+            });
+            const endCinematicDrag = (e) => {
+                if (!dragging) return;
+                dragging = false;
+                try { cinematicProgress.releasePointerCapture(e.pointerId); } catch (_) {}
+            };
+            cinematicProgress.addEventListener('pointerup', endCinematicDrag);
+            cinematicProgress.addEventListener('pointercancel', endCinematicDrag);
         }
         document.addEventListener('keydown', (e) => {
             if (!cinematic.isOpen()) return;
