@@ -1222,7 +1222,11 @@
                 return;
             }
             textEl.textContent = cap.text;
-            const showSpeaker = !!cap.speaker && cap.kind !== 'body' && cap.kind !== 'intro';
+            // Show the speaker label on a speaker change (not the intro), so
+            // each new voice's run is announced once (NARRATOR / RAËL / YAHWEH).
+            const prevCap = idx > 0 ? data.captions[idx - 1] : null;
+            const showSpeaker = !!cap.speaker && cap.kind !== 'intro'
+                && (!prevCap || prevCap.speaker !== cap.speaker);
             speakerEl.textContent = showSpeaker ? cap.speaker : '';
             speakerEl.hidden = !showSpeaker;
             // Re-trigger the fade-in transition for the new line.
