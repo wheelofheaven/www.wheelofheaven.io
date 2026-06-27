@@ -1160,28 +1160,32 @@
         }
 
         function setLayerImage(layer, image) {
-            layer.classList.remove('cinematic__bg--fallback', 'cinematic__bg--kenburns');
-            if (!image) {
-                layer.style.backgroundImage = '';
-                layer.classList.add('cinematic__bg--fallback');
-                return;
-            }
-            const url = `${CINEMATIC_IMG_BASE}/${slug}/${image}.jpg`;
-            // Probe first so a missing still degrades to the gradient instead
-            // of flashing a broken image. (Scene art is Phase 1b.)
-            const probe = new Image();
-            probe.onload = () => {
-                layer.style.backgroundImage = `url("${url}")`;
-                // Restart the Ken Burns drift for the new still.
-                layer.classList.remove('cinematic__bg--kenburns');
-                void layer.offsetWidth;
-                layer.classList.add('cinematic__bg--kenburns');
+            layer.classList.remove('cinematic__bg--kenburns');
+            // Probe each candidate so a missing still never flashes a broken
+            // image. A named scene whose art isn't published yet falls back to
+            // the book-wide `default` backdrop; if that's missing too, the
+            // gradient. Lets the timeline go live while scene art is still
+            // being generated (Phase 1b).
+            const apply = (img, allowDefaultFallback) => {
+                const url = `${CINEMATIC_IMG_BASE}/${slug}/${img}.jpg`;
+                const probe = new Image();
+                probe.onload = () => {
+                    layer.classList.remove('cinematic__bg--fallback');
+                    layer.style.backgroundImage = `url("${url}")`;
+                    // Restart the Ken Burns drift for the new still.
+                    layer.classList.remove('cinematic__bg--kenburns');
+                    void layer.offsetWidth;
+                    layer.classList.add('cinematic__bg--kenburns');
+                };
+                probe.onerror = () => {
+                    if (allowDefaultFallback) { apply('default', false); return; }
+                    layer.style.backgroundImage = '';
+                    layer.classList.add('cinematic__bg--fallback');
+                };
+                probe.src = url;
             };
-            probe.onerror = () => {
-                layer.style.backgroundImage = '';
-                layer.classList.add('cinematic__bg--fallback');
-            };
-            probe.src = url;
+            const img = image || 'default';
+            apply(img, img !== 'default');
         }
 
         function renderScene(t) {
