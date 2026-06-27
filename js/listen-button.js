@@ -1222,7 +1222,7 @@
                 return;
             }
             textEl.textContent = cap.text;
-            const showSpeaker = !!cap.speaker && cap.kind !== 'body';
+            const showSpeaker = !!cap.speaker && cap.kind !== 'body' && cap.kind !== 'intro';
             speakerEl.textContent = showSpeaker ? cap.speaker : '';
             speakerEl.hidden = !showSpeaker;
             // Re-trigger the fade-in transition for the new line.
