@@ -1108,6 +1108,171 @@
         return new Blob([buffer], { type: 'audio/wav' });
     }
 
+    // --- v5: Cinematic view --------------------------------------------------
+    //
+    // A fullscreen presentation mode for prerecorded audio plays: scene images
+    // as a crossfading slideshow behind the current sentence, rendered as a
+    // caption — so the page reads like a video. It is a pure *consumer* of the
+    // prerecorded engine's existing callbacks (onChapterChange → which chapter,
+    // onProgress → current second) plus a per-chapter `c{n}.cinematic.json`
+    // sidecar built by data-cinematics/audiobook/build_timeline.py. No
+    // playback path changes. When a scene image isn't published yet it falls
+    // back to a gradient backdrop, so the whole mode works before any art
+    // exists. Visual spec mirrors data-cinematics/audiobook/style/<book>.json.
+
+    const CINEMATIC_IMG_BASE = `${ASSETS_BASE}/images/cinematic`;
+
+    function createCinematicView() {
+        const root = document.getElementById('cinematicView');
+        const captionEl = document.getElementById('cinematicCaption');
+        const speakerEl = document.getElementById('cinematicSpeaker');
+        const textEl = document.getElementById('cinematicText');
+        const layers = root ? Array.from(root.querySelectorAll('.cinematic__bg')) : [];
+        if (!root || !captionEl || !textEl || layers.length < 2) {
+            // Page has no cinematic overlay (non-library, or partial absent).
+            const noop = () => {};
+            return { enabled: false, isOpen: () => false, open: noop, close: noop,
+                     toggle: noop, onChapter: async () => {}, onTime: noop, setPlaying: noop };
+        }
+
+        let open = false;
+        let data = null;            // cinematic.json for the loaded chapter
+        let slug = null;
+        let lang = null;
+        let fetchToken = 0;         // guards against out-of-order chapter loads
+        let activeLayer = layers[0];
+        let currentSceneKey = null;
+        let currentCaptionIdx = -1;
+
+        function bookContext() {
+            const el = document.querySelector('[data-book-slug]');
+            return {
+                slug: el ? el.dataset.bookSlug : null,
+                lang: audioLangCode(detectPageLang()),
+            };
+        }
+
+        async function loadChapter(n) {
+            const ctx = bookContext();
+            if (!ctx.slug) { data = null; return; }
+            slug = ctx.slug;
+            lang = ctx.lang;
+            currentSceneKey = null;
+            currentCaptionIdx = -1;
+            const token = ++fetchToken;
+            try {
+                const url = `${ASSETS_BASE}/audio/${lang}/${slug}/c${n}.cinematic.json`;
+                const r = await fetch(url, { cache: 'no-cache' });
+                if (token !== fetchToken) return;   // superseded by a newer load
+                data = r.ok ? await r.json() : null;
+            } catch (e) {
+                if (token === fetchToken) data = null;
+            }
+        }
+
+        function setLayerImage(layer, image) {
+            layer.classList.remove('cinematic__bg--fallback', 'cinematic__bg--kenburns');
+            if (!image) {
+                layer.style.backgroundImage = '';
+                layer.classList.add('cinematic__bg--fallback');
+                return;
+            }
+            const url = `${CINEMATIC_IMG_BASE}/${slug}/${image}.jpg`;
+            // Probe first so a missing still degrades to the gradient instead
+            // of flashing a broken image. (Scene art is Phase 1b.)
+            const probe = new Image();
+            probe.onload = () => {
+                layer.style.backgroundImage = `url("${url}")`;
+                // Restart the Ken Burns drift for the new still.
+                layer.classList.remove('cinematic__bg--kenburns');
+                void layer.offsetWidth;
+                layer.classList.add('cinematic__bg--kenburns');
+            };
+            probe.onerror = () => {
+                layer.style.backgroundImage = '';
+                layer.classList.add('cinematic__bg--fallback');
+            };
+            probe.src = url;
+        }
+
+        function renderScene(t) {
+            if (!data || !data.scenes) return;
+            let scene = null;
+            for (const s of data.scenes) {
+                if (t >= s.start && t < s.end) { scene = s; break; }
+            }
+            const key = scene ? scene.scene : 'default';
+            if (key === currentSceneKey) return;
+            currentSceneKey = key;
+            const incoming = activeLayer === layers[0] ? layers[1] : layers[0];
+            setLayerImage(incoming, scene ? scene.image : null);
+            incoming.classList.add('is-active');
+            activeLayer.classList.remove('is-active');
+            activeLayer = incoming;
+        }
+
+        function renderCaption(t) {
+            if (!data || !data.captions) return;
+            let idx = -1;
+            for (let i = 0; i < data.captions.length; i++) {
+                const cap = data.captions[i];
+                if (t >= cap.start && t < cap.end) { idx = i; break; }
+            }
+            if (idx === currentCaptionIdx) return;
+            currentCaptionIdx = idx;
+            const cap = idx >= 0 ? data.captions[idx] : null;
+            if (!cap) {
+                captionEl.classList.remove('is-visible');
+                return;
+            }
+            textEl.textContent = cap.text;
+            const showSpeaker = !!cap.speaker && cap.kind !== 'body';
+            speakerEl.textContent = showSpeaker ? cap.speaker : '';
+            speakerEl.hidden = !showSpeaker;
+            // Re-trigger the fade-in transition for the new line.
+            captionEl.classList.remove('is-visible');
+            void captionEl.offsetWidth;
+            captionEl.classList.add('is-visible');
+        }
+
+        return {
+            enabled: true,
+            isOpen() { return open; },
+            open() {
+                if (open) return;
+                open = true;
+                root.classList.add('cinematic--open');
+                root.setAttribute('aria-hidden', 'false');
+                root.removeAttribute('inert');
+                document.body.classList.add('has-cinematic');
+            },
+            close() {
+                if (!open) return;
+                open = false;
+                root.classList.remove('cinematic--open');
+                root.setAttribute('aria-hidden', 'true');
+                root.setAttribute('inert', '');
+                document.body.classList.remove('has-cinematic');
+            },
+            toggle() { this.isOpen() ? this.close() : this.open(); },
+            // Called from onChapterChange — fetch that chapter's timeline.
+            async onChapter(n) { await loadChapter(n); },
+            // Called from onProgress with the chapter-local current second.
+            onTime(seconds) {
+                if (!open || typeof seconds !== 'number') return;
+                renderScene(seconds);
+                renderCaption(seconds);
+            },
+            setPlaying(playing) {
+                root.classList.toggle('cinematic--playing', !!playing);
+                const btn = document.getElementById('cinematicPlayPause');
+                if (btn) btn.setAttribute('aria-label', playing ? labelPause : labelPlay);
+            },
+        };
+    }
+
+    const cinematic = createCinematicView();
+
     // --- Playback control ----------------------------------------------------
 
     function onUnitStart(i) {
@@ -1144,6 +1309,7 @@
             isPaused = false;
             updatePlayState(true);
             startTitleCycle();
+            cinematic.setPlaying(true);
         },
         onUnitStart,
         // v4.1 — onProgress is emitted by engines that have a real
@@ -1166,14 +1332,18 @@
             if (typeof totalSeconds === 'number' && totalSeconds && !Number.isNaN(totalSeconds)) {
                 timeTotal.textContent = formatTime(totalSeconds);
             }
+            // v5 — drive the cinematic scene/caption off the same real clock.
+            cinematic.onTime(currentSeconds);
         },
         onPause: () => {
             isPaused = true;
             updatePlayState(false);
+            cinematic.setPlaying(false);
         },
         onResume: () => {
             isPaused = false;
             updatePlayState(true);
+            cinematic.setPlaying(true);
         },
         // v4.3 — prerecorded engine emits this when chapter changes (initial
         // load, auto-advance, or user jump). Update the chapter-title row +
@@ -1181,6 +1351,8 @@
         onChapterChange: ({ n, title }) => {
             if (chapterTextEl) chapterTextEl.textContent = title;
             renderChapterMenu();
+            // v5 — load the cinematic timeline for the new chapter.
+            cinematic.onChapter(n);
         },
         onEnd: () => {
             isPlaying = false;
@@ -1189,6 +1361,7 @@
             clearHighlight();
             updatePlayState(false);
             stopTitleCycle();
+            cinematic.setPlaying(false);
         },
     };
 
@@ -1451,6 +1624,39 @@
             if (e.key === 'Escape' && chapterMenu.classList.contains('is-open')) {
                 closeChapterMenu();
                 titleButton.focus();
+            }
+        });
+    }
+
+    // v5 — cinematic view wiring. The toggle opens the fullscreen scene +
+    // caption presentation; if nothing is playing yet it also starts playback
+    // (the prerecorded engine's onChapterChange then loads the timeline). The
+    // overlay's own play/pause reuses the main control path; exit / Escape
+    // close it; Space toggles playback while it's open.
+    if (cinematic.enabled) {
+        const cinematicToggle = document.getElementById('audioCinematicToggle');
+        const cinematicExit = document.getElementById('cinematicExit');
+        const cinematicPlayPause = document.getElementById('cinematicPlayPause');
+        if (cinematicToggle) {
+            cinematicToggle.addEventListener('click', () => {
+                showPlayer();
+                cinematic.open();
+                if (!isPlaying && !isPaused) speak();
+            });
+        }
+        if (cinematicExit) {
+            cinematicExit.addEventListener('click', () => cinematic.close());
+        }
+        if (cinematicPlayPause) {
+            cinematicPlayPause.addEventListener('click', togglePlayPause);
+        }
+        document.addEventListener('keydown', (e) => {
+            if (!cinematic.isOpen()) return;
+            if (e.key === 'Escape') {
+                cinematic.close();
+            } else if (e.key === ' ' || e.code === 'Space') {
+                e.preventDefault();
+                togglePlayPause();
             }
         });
     }
