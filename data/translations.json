@@ -1,7 +1,7 @@
 {
   "_meta": {
-    "generated_at": "2026-07-01T04:42:37+00:00",
-    "count": 723
+    "generated_at": "2026-07-01T06:59:25+00:00",
+    "count": 727
   },
   "paths": {
     "AGENTS": [
@@ -48,6 +48,18 @@
     ],
     "articles/made-from-the-ground-to-bear-the-labor": [
       "en"
+    ],
+    "articles/the-first-mosques-faced-petra-not-mecca": [
+      "de",
+      "en",
+      "es",
+      "fr",
+      "he",
+      "ja",
+      "ko",
+      "ru",
+      "zh",
+      "zh-Hant"
     ],
     "articles/the-flood-was-a-reset-not-a-punishment": [
       "de",
@@ -7538,6 +7550,18 @@
       "zh",
       "zh-Hant"
     ],
+    "wiki/hanafiyya": [
+      "de",
+      "en",
+      "es",
+      "fr",
+      "he",
+      "ja",
+      "ko",
+      "ru",
+      "zh",
+      "zh-Hant"
+    ],
     "wiki/hebrew": [
       "de",
       "en",
@@ -7814,6 +7838,18 @@
       "zh",
       "zh-Hant"
     ],
+    "wiki/nabataeans": [
+      "de",
+      "en",
+      "es",
+      "fr",
+      "he",
+      "ja",
+      "ko",
+      "ru",
+      "zh",
+      "zh-Hant"
+    ],
     "wiki/neo-euhemerism": [
       "de",
       "en",
@@ -7923,6 +7959,18 @@
       "zh-Hant"
     ],
     "wiki/paradism": [
+      "de",
+      "en",
+      "es",
+      "fr",
+      "he",
+      "ja",
+      "ko",
+      "ru",
+      "zh",
+      "zh-Hant"
+    ],
+    "wiki/petra": [
       "de",
       "en",
       "es",
