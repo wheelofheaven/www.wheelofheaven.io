@@ -138,6 +138,18 @@
           "posted_at": "2026-06-12T20:10:22Z"
         }
       }
+    },
+    "news/synthetic-cell-eats-and-divides": {
+      "title": "A Synthetic Cell That Eats and Divides",
+      "permalink": "https://www.wheelofheaven.world/news/synthetic-cell-eats-and-divides/",
+      "first_eligible_at": "2026-07-01T20:15:48Z",
+      "channels": {
+        "telegram": {
+          "post_id": "@wheelofheaven/24",
+          "url": "https://t.me/wheelofheaven/24",
+          "posted_at": "2026-07-01T20:15:48Z"
+        }
+      }
     }
   }
 }
