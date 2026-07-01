@@ -1,20 +1,21 @@
 # Auto-post newly published content (Newsroom Dispatches, Articles) to
-# the project's social channels. Fires only after a successful Pages
-# deploy so post URLs are live before they unfurl.
+# the project's social channels. Cloudflare Pages builds `main` on push
+# (~1-2 min) and does not emit a GitHub deployment event we can gate on,
+# so this fires on push to main and waits for the CF Pages deploy to go
+# live before posting, so post URLs unfurl correctly. (For a hard
+# guarantee, wire a CF Pages deploy notification -> repository_dispatch
+# and trigger on that instead of the timed wait below.)
 #
 # Full architecture:
 # https://docs.wheelofheaven.world/contributing/dev/social-broadcast/
 #
 # State lives in data/socials/posted.json. The job commits any changes
-# back to main with [skip ci] so this doesn't feedback-loop with the
-# deploy workflow.
+# back to main with [skip ci] so this doesn't feedback-loop with itself.
 
 name: Broadcast new content
 
 on:
-  workflow_run:
-    workflows: ["Build and deploy GH Pages"]
-    types: [completed]
+  push:
     branches: [main]
   workflow_dispatch:
     inputs:
@@ -34,11 +35,13 @@ permissions:
 jobs:
   broadcast:
     runs-on: ubuntu-latest
-    # On workflow_run, only fire when the upstream deploy succeeded.
-    # On workflow_dispatch, always run.
+    # Run on push to main and on manual dispatch. The broadcaster is
+    # self-gating: it only posts content not already in posted.json, so a
+    # push with nothing new is a no-op. The bot's own state commit carries
+    # [skip ci], so it never re-triggers this workflow.
     if: >
       github.event_name == 'workflow_dispatch' ||
-      github.event.workflow_run.conclusion == 'success'
+      github.event_name == 'push'
     env:
       TELEGRAM_BOT_TOKEN: ${{ secrets.TELEGRAM_BOT_TOKEN }}
       TELEGRAM_CHAT_ID:   ${{ secrets.TELEGRAM_CHAT_ID }}
@@ -62,6 +65,20 @@ jobs:
         uses: actions/setup-python@v6
         with:
           python-version: "3.12"
+
+      # CF Pages builds `main` on push and there is no deployment event to
+      # gate on, so give the deploy time to go live before we post — else a
+      # brand-new URL could unfurl 404 on social. Skipped on manual dispatch
+      # (content is already live by then).
+      - name: wait for Cloudflare Pages deploy to go live
+        if: github.event_name == 'push'
+        run: |
+          sleep 120
+          for i in $(seq 1 30); do
+            code=$(curl -s -o /dev/null -w '%{http_code}' https://www.wheelofheaven.world/ || true)
+            if [ "$code" = "200" ]; then echo "site reachable (HTTP $code)"; break; fi
+            echo "waiting for site (HTTP $code)..."; sleep 10
+          done
 
       - name: run broadcaster
         run: |
