@@ -1,19 +1,19 @@
 {
-  "generated_at": "2026-06-12T15:21:52+00:00",
+  "generated_at": "2026-07-01T04:42:37+00:00",
   "generator": "scripts/build_sources.py",
   "schema_version": 1,
-  "total": 395,
-  "total_cites": 623,
+  "total": 429,
+  "total_cites": 670,
   "media_counts": {
-    "religious-text": 91,
-    "academic-paper": 66,
-    "nonfiction-book": 168,
+    "religious-text": 94,
+    "academic-paper": 71,
+    "nonfiction-book": 172,
     "article": 21,
+    "unknown": 24,
     "documentary": 17,
     "wiki": 13,
     "fiction-book": 15,
     "website": 1,
-    "unknown": 2,
     "lecture": 1
   },
   "sources": [
@@ -425,6 +425,26 @@
       "cite_count": 0
     },
     {
+      "id": "a-new-look-at-the-babylonian-background-of-genesis-jts-16",
+      "title": "A New Look at the Babylonian Background of Genesis (JTS 16)",
+      "authored_by": [
+        "W. G. Lambert"
+      ],
+      "publish_date": "1965",
+      "follow_url": "",
+      "description": "",
+      "medium": "",
+      "topics": [],
+      "cited_by": [
+        {
+          "section": "articles",
+          "title": "Made from the Ground to Bear the Labor",
+          "path": "/articles/made-from-the-ground-to-bear-the-labor/"
+        }
+      ],
+      "cite_count": 1
+    },
+    {
       "id": "a-programmable-dual-rna-guided-dna-endonuclease-in-adaptive-bacterial-immunity",
       "title": "A Programmable Dual-RNA–Guided DNA Endonuclease in Adaptive Bacterial Immunity",
       "authored_by": [
@@ -524,6 +544,30 @@
         }
       ],
       "cite_count": 2
+    },
+    {
+      "id": "akhbar-makka",
+      "title": "Akhbār Makka ('Chronicles of Mecca')",
+      "authored_by": [
+        "al-Azraqī (d. c. 837)"
+      ],
+      "publish_date": "9th c. CE",
+      "follow_url": "",
+      "description": "Early Meccan history; source for the irregular four-sided measurements of the Ka'ba as rebuilt in Muhammad's lifetime, central to the Ka'ba-identification strand of the Petra hypothesis.",
+      "medium": "religious-text",
+      "topics": [
+        "Ka'ba",
+        "Mecca",
+        "Islamic Origins"
+      ],
+      "cited_by": [
+        {
+          "section": "articles",
+          "title": "The First Mosques Faced Petra, Not Mecca",
+          "path": "/articles/the-first-mosques-faced-petra-not-mecca/"
+        }
+      ],
+      "cite_count": 1
     },
     {
       "id": "aliens-adored",
@@ -723,6 +767,26 @@
       "cite_count": 1
     },
     {
+      "id": "ancient-mesopotamian-materials-and-industries",
+      "title": "Ancient Mesopotamian Materials and Industries",
+      "authored_by": [
+        "P. R. S. Moorey"
+      ],
+      "publish_date": "1994",
+      "follow_url": "",
+      "description": "",
+      "medium": "",
+      "topics": [],
+      "cited_by": [
+        {
+          "section": "articles",
+          "title": "Made from the Ground to Bear the Labor",
+          "path": "/articles/made-from-the-ground-to-bear-the-labor/"
+        }
+      ],
+      "cite_count": 1
+    },
+    {
       "id": "pritchard-anet",
       "title": "Ancient Near Eastern Texts Relating to the Old Testament",
       "authored_by": [
@@ -867,6 +931,31 @@
       "cite_count": 1
     },
     {
+      "id": "atra-as-s-the-babylonian-story-of-the-flood",
+      "title": "Atra-ḫasīs: The Babylonian Story of the Flood",
+      "authored_by": [
+        "W. G. Lambert & A. R. Millard"
+      ],
+      "publish_date": "1969",
+      "follow_url": "",
+      "description": "",
+      "medium": "",
+      "topics": [],
+      "cited_by": [
+        {
+          "section": "articles",
+          "title": "Made from the Ground to Bear the Labor",
+          "path": "/articles/made-from-the-ground-to-bear-the-labor/"
+        },
+        {
+          "section": "articles",
+          "title": "The Flood Was a Reset, Not a Punishment",
+          "path": "/articles/the-flood-was-a-reset-not-a-punishment/"
+        }
+      ],
+      "cite_count": 2
+    },
+    {
       "id": "atra-hasis-lambert-millard",
       "title": "Atra-ḫasīs: The Babylonian Story of the Flood",
       "authored_by": [
@@ -930,6 +1019,16 @@
       "topics": [],
       "cited_by": [
         {
+          "section": "articles",
+          "title": "Made from the Ground to Bear the Labor",
+          "path": "/articles/made-from-the-ground-to-bear-the-labor/"
+        },
+        {
+          "section": "articles",
+          "title": "The Flood Was a Reset, Not a Punishment",
+          "path": "/articles/the-flood-was-a-reset-not-a-punishment/"
+        },
+        {
           "section": "timeline",
           "title": "Preamble",
           "path": "/timeline/preamble/"
@@ -945,7 +1044,7 @@
           "path": "/wiki/genesis/"
         }
       ],
-      "cite_count": 3
+      "cite_count": 5
     },
     {
       "id": "avebury-biography-of-a-landscape",
@@ -1006,6 +1105,26 @@
         }
       ],
       "cite_count": 3
+    },
+    {
+      "id": "babylonian-creation-myths",
+      "title": "Babylonian Creation Myths",
+      "authored_by": [
+        "W. G. Lambert"
+      ],
+      "publish_date": "2013",
+      "follow_url": "",
+      "description": "",
+      "medium": "",
+      "topics": [],
+      "cited_by": [
+        {
+          "section": "articles",
+          "title": "Made from the Ground to Bear the Labor",
+          "path": "/articles/made-from-the-ground-to-bear-the-labor/"
+        }
+      ],
+      "cite_count": 1
     },
     {
       "id": "bahaipedia",
@@ -1156,6 +1275,11 @@
       ],
       "cited_by": [
         {
+          "section": "articles",
+          "title": "The Flood Was a Reset, Not a Punishment",
+          "path": "/articles/the-flood-was-a-reset-not-a-punishment/"
+        },
+        {
           "section": "wiki",
           "title": "Reference corpus of the Raëlian canon",
           "path": "/wiki/reference-corpus-of-the-raelian-canon/"
@@ -1176,7 +1300,7 @@
           "path": "/wiki/tree-of-life/"
         }
       ],
-      "cite_count": 4
+      "cite_count": 5
     },
     {
       "id": "book-of-mormon",
@@ -1504,6 +1628,26 @@
       "cite_count": 1
     },
     {
+      "id": "creation-accounts-in-the-ancient-near-east-cbqms-26",
+      "title": "Creation Accounts in the Ancient Near East (CBQMS 26)",
+      "authored_by": [
+        "Richard J. Clifford"
+      ],
+      "publish_date": "1994",
+      "follow_url": "",
+      "description": "",
+      "medium": "",
+      "topics": [],
+      "cited_by": [
+        {
+          "section": "articles",
+          "title": "Made from the Ground to Bear the Labor",
+          "path": "/articles/made-from-the-ground-to-bear-the-labor/"
+        }
+      ],
+      "cite_count": 1
+    },
+    {
       "id": "creation-of-a-bacterial-cell-controlled-by-a-chemically-synthesized-genome",
       "title": "Creation of a bacterial cell controlled by a chemically synthesized genome",
       "authored_by": [
@@ -1519,6 +1663,26 @@
           "section": "timeline",
           "title": "Age of Aquarius",
           "path": "/timeline/age-of-aquarius/"
+        }
+      ],
+      "cite_count": 1
+    },
+    {
+      "id": "creation-of-a-bacterial-cell-controlled-by-a-chemically-synthesized-genome-scien",
+      "title": "Creation of a Bacterial Cell Controlled by a Chemically Synthesized Genome (Science 329)",
+      "authored_by": [
+        "D. G. Gibson et al., J. Craig Venter Institute"
+      ],
+      "publish_date": "2010",
+      "follow_url": "",
+      "description": "",
+      "medium": "",
+      "topics": [],
+      "cited_by": [
+        {
+          "section": "articles",
+          "title": "Made from the Ground to Bear the Labor",
+          "path": "/articles/made-from-the-ground-to-bear-the-labor/"
         }
       ],
       "cite_count": 1
@@ -2046,11 +2210,21 @@
         "Dan Gibson"
       ],
       "publish_date": "2017",
-      "follow_url": "",
+      "follow_url": "https://nabataea.net",
       "description": "Gibson's catalogue and statistical analysis of early-mosque qibla orientations across the first two centuries of Islam.",
       "medium": "nonfiction-book",
-      "topics": [],
+      "topics": [
+        "Qibla",
+        "Petra",
+        "Islamic Origins",
+        "Archaeology"
+      ],
       "cited_by": [
+        {
+          "section": "articles",
+          "title": "The First Mosques Faced Petra, Not Mecca",
+          "path": "/articles/the-first-mosques-faced-petra-not-mecca/"
+        },
         {
           "section": "timeline",
           "title": "Age of Pisces",
@@ -2062,7 +2236,7 @@
           "path": "/timeline/the-wheel-keeps-turning/"
         }
       ],
-      "cite_count": 2
+      "cite_count": 3
     },
     {
       "id": "stordalen-echoes-of-eden",
@@ -2294,6 +2468,26 @@
       "cite_count": 0
     },
     {
+      "id": "enoch-and-the-growth-of-an-apocalyptic-tradition-cbqms-16",
+      "title": "Enoch and the Growth of an Apocalyptic Tradition (CBQMS 16)",
+      "authored_by": [
+        "James C. VanderKam"
+      ],
+      "publish_date": "1984",
+      "follow_url": "",
+      "description": "",
+      "medium": "",
+      "topics": [],
+      "cited_by": [
+        {
+          "section": "articles",
+          "title": "The Flood Was a Reset, Not a Punishment",
+          "path": "/articles/the-flood-was-a-reset-not-a-punishment/"
+        }
+      ],
+      "cite_count": 1
+    },
+    {
       "id": "enuma-elish",
       "title": "Enuma Elish",
       "authored_by": [
@@ -2339,6 +2533,16 @@
       ],
       "cited_by": [
         {
+          "section": "articles",
+          "title": "Made from the Ground to Bear the Labor",
+          "path": "/articles/made-from-the-ground-to-bear-the-labor/"
+        },
+        {
+          "section": "articles",
+          "title": "The Flood Was a Reset, Not a Punishment",
+          "path": "/articles/the-flood-was-a-reset-not-a-punishment/"
+        },
+        {
           "section": "wiki",
           "title": "Genesis",
           "path": "/wiki/genesis/"
@@ -2349,7 +2553,7 @@
           "path": "/wiki/reference-corpus-of-the-raelian-canon/"
         }
       ],
-      "cite_count": 2
+      "cite_count": 4
     },
     {
       "id": "escaping-from-eden",
@@ -2687,6 +2891,26 @@
       "cite_count": 4
     },
     {
+      "id": "ezekiel-1-20-anchor-bible-22",
+      "title": "Ezekiel 1–20 (Anchor Bible 22)",
+      "authored_by": [
+        "Moshe Greenberg"
+      ],
+      "publish_date": "1983",
+      "follow_url": "",
+      "description": "",
+      "medium": "",
+      "topics": [],
+      "cited_by": [
+        {
+          "section": "articles",
+          "title": "The Flood Was a Reset, Not a Punishment",
+          "path": "/articles/the-flood-was-a-reset-not-a-punishment/"
+        }
+      ],
+      "cite_count": 1
+    },
+    {
       "id": "reed-fallen-angels",
       "title": "Fallen Angels and the History of Judaism and Christianity: The Reception of Enochic Literature",
       "authored_by": [
@@ -2785,11 +3009,55 @@
       "description": "The seminal work that established the framework we discuss in this explainer.",
       "medium": "",
       "topics": [],
+      "cited_by": [],
+      "cite_count": 0
+    },
+    {
+      "id": "frauds-myths-and-mysteries-science-and-pseudoscience-in-archaeology",
+      "title": "Frauds, Myths, and Mysteries: Science and Pseudoscience in Archaeology",
+      "authored_by": [
+        "Kenneth L. Feder"
+      ],
+      "publish_date": "2020",
+      "follow_url": "",
+      "description": "",
+      "medium": "",
+      "topics": [],
       "cited_by": [
         {
           "section": "articles",
-          "title": "Example Explainer: Understanding Complex Topics",
-          "path": "/articles/example-explainer/"
+          "title": "Made from the Ground to Bear the Labor",
+          "path": "/articles/made-from-the-ground-to-bear-the-labor/"
+        },
+        {
+          "section": "articles",
+          "title": "The Flood Was a Reset, Not a Punishment",
+          "path": "/articles/the-flood-was-a-reset-not-a-punishment/"
+        }
+      ],
+      "cite_count": 2
+    },
+    {
+      "id": "from-petra-back-to-makka",
+      "title": "From Petra back to Makka — From 'Pibla' back to Qibla",
+      "authored_by": [
+        "David A. King"
+      ],
+      "publish_date": "2019",
+      "follow_url": "",
+      "description": "The principal scholarly rejection of Gibson's hypothesis. King grants the early mosques do not face the Hijazi Mecca geographically, but explains their orientations by folk-astronomical 'sacred geography' (alignment to stars, winds, and cardinal directions toward the Kaʿba) rather than aiming at Petra.",
+      "medium": "academic-paper",
+      "topics": [
+        "Qibla",
+        "Islamic Astronomy",
+        "Petra",
+        "Critical"
+      ],
+      "cited_by": [
+        {
+          "section": "articles",
+          "title": "The First Mosques Faced Petra, Not Mecca",
+          "path": "/articles/the-first-mosques-faced-petra-not-mecca/"
         }
       ],
       "cite_count": 1
@@ -2806,6 +3074,16 @@
       "medium": "religious-text",
       "topics": [],
       "cited_by": [
+        {
+          "section": "articles",
+          "title": "Made from the Ground to Bear the Labor",
+          "path": "/articles/made-from-the-ground-to-bear-the-labor/"
+        },
+        {
+          "section": "articles",
+          "title": "The Flood Was a Reset, Not a Punishment",
+          "path": "/articles/the-flood-was-a-reset-not-a-punishment/"
+        },
         {
           "section": "timeline",
           "title": "Age of Leo",
@@ -2872,7 +3150,32 @@
           "path": "/wiki/yahweh/"
         }
       ],
-      "cite_count": 13
+      "cite_count": 15
+    },
+    {
+      "id": "genesis-1-11-a-continental-commentary",
+      "title": "Genesis 1–11: A Continental Commentary",
+      "authored_by": [
+        "Claus Westermann"
+      ],
+      "publish_date": "1994",
+      "follow_url": "",
+      "description": "",
+      "medium": "",
+      "topics": [],
+      "cited_by": [
+        {
+          "section": "articles",
+          "title": "Made from the Ground to Bear the Labor",
+          "path": "/articles/made-from-the-ground-to-bear-the-labor/"
+        },
+        {
+          "section": "articles",
+          "title": "The Flood Was a Reset, Not a Punishment",
+          "path": "/articles/the-flood-was-a-reset-not-a-punishment/"
+        }
+      ],
+      "cite_count": 2
     },
     {
       "id": "westermann-genesis-1-11",
@@ -2923,6 +3226,26 @@
         }
       ],
       "cite_count": 6
+    },
+    {
+      "id": "genesis-1-15-word-biblical-commentary",
+      "title": "Genesis 1–15 (Word Biblical Commentary)",
+      "authored_by": [
+        "Gordon J. Wenham"
+      ],
+      "publish_date": "1987",
+      "follow_url": "",
+      "description": "",
+      "medium": "",
+      "topics": [],
+      "cited_by": [
+        {
+          "section": "articles",
+          "title": "The Flood Was a Reset, Not a Punishment",
+          "path": "/articles/the-flood-was-a-reset-not-a-punishment/"
+        }
+      ],
+      "cite_count": 1
     },
     {
       "id": "allen-genesis-in-egypt",
@@ -3281,6 +3604,31 @@
       "cite_count": 3
     },
     {
+      "id": "graeco-arabica-southern-levant",
+      "title": "Graeco-Arabica I: The Southern Levant",
+      "authored_by": [
+        "Ahmad al-Jallad"
+      ],
+      "publish_date": "2017",
+      "follow_url": "https://doi.org/10.1163/9789004343047_006",
+      "description": "Epigraphic study of pre-Islamic Arabic in the southern Levant; the foundation for the argument that the Nabataeans' Aramaic script 'casts a clear Arabic shadow' behind Qur'anic Arabic.",
+      "medium": "academic-paper",
+      "topics": [
+        "Nabataeans",
+        "Arabic",
+        "Epigraphy",
+        "Linguistics"
+      ],
+      "cited_by": [
+        {
+          "section": "articles",
+          "title": "The First Mosques Faced Petra, Not Mecca",
+          "path": "/articles/the-first-mosques-faced-petra-not-mecca/"
+        }
+      ],
+      "cite_count": 1
+    },
+    {
       "id": "hannah-greek-roman-calendars",
       "title": "Greek and Roman Calendars: Constructions of Time in the Classical World",
       "authored_by": [
@@ -3334,6 +3682,31 @@
         }
       ],
       "cite_count": 2
+    },
+    {
+      "id": "hagarism-the-making-of-the-islamic-world",
+      "title": "Hagarism: The Making of the Islamic World",
+      "authored_by": [
+        "Patricia Crone",
+        "Michael Cook"
+      ],
+      "publish_date": "1977",
+      "follow_url": "",
+      "description": "The maximalist source-critical revisionism of Islamic origins, reading the archaeological and documentary record against the later Islamic literary sources. Distinguished from — and more general than — Gibson's specific Petra argument.",
+      "medium": "nonfiction-book",
+      "topics": [
+        "Islamic Origins",
+        "Revisionism",
+        "Historiography"
+      ],
+      "cited_by": [
+        {
+          "section": "articles",
+          "title": "The First Mosques Faced Petra, Not Mecca",
+          "path": "/articles/the-first-mosques-faced-petra-not-mecca/"
+        }
+      ],
+      "cite_count": 1
     },
     {
       "id": "hamlets-mill",
@@ -3535,6 +3908,32 @@
           "section": "timeline",
           "title": "Age of Taurus",
           "path": "/timeline/age-of-taurus/"
+        }
+      ],
+      "cite_count": 1
+    },
+    {
+      "id": "qibla-accuracy-schumm-goldstein",
+      "title": "How Accurately Could Early (622–900 CE) Muslims Determine the Direction of Prayers (Qibla)?",
+      "authored_by": [
+        "Walter R. Schumm",
+        "Zvi Goldstein"
+      ],
+      "publish_date": "2021",
+      "follow_url": "",
+      "description": "Peer-reviewed statistical analysis of Gibson's early-mosque qibla data, concluding that under Gibson's assumptions the orientations are consistent with intentional aiming at Petra, with error growing with distance from the target.",
+      "medium": "academic-paper",
+      "topics": [
+        "Qibla",
+        "Petra",
+        "Islamic Origins",
+        "Statistics"
+      ],
+      "cited_by": [
+        {
+          "section": "articles",
+          "title": "The First Mosques Faced Petra, Not Mecca",
+          "path": "/articles/the-first-mosques-faced-petra-not-mecca/"
         }
       ],
       "cite_count": 1
@@ -4558,6 +4957,36 @@
       "cite_count": 1
     },
     {
+      "id": "let-the-stones-speak",
+      "title": "Let the Stones Speak: Archaeology Challenges Islam",
+      "authored_by": [
+        "Dan Gibson",
+        "Walter R. Schumm",
+        "Zvi Goldstein",
+        "Chad Doell"
+      ],
+      "publish_date": "2023",
+      "follow_url": "https://nabataea.net",
+      "description": "Gibson's principal statement of the Petra-as-original-Mecca hypothesis: the early-mosque qibla survey, the absence of Mecca from Ptolemy, the irregular Ka'ba measurements, the Nabataean-Aramaic substrate of Qur'anic Arabic, and the name-migration reconstruction. Includes statistical work by Schumm and Goldstein and historical chapters by Doell. Distributed as a free PDF.",
+      "medium": "nonfiction-book",
+      "topics": [
+        "Islamic Origins",
+        "Petra",
+        "Nabataeans",
+        "Qibla",
+        "Hanafiyya",
+        "Archaeology"
+      ],
+      "cited_by": [
+        {
+          "section": "articles",
+          "title": "The First Mosques Faced Petra, Not Mecca",
+          "path": "/articles/the-first-mosques-faced-petra-not-mecca/"
+        }
+      ],
+      "cite_count": 1
+    },
+    {
       "id": "lets-welcome-the-extraterrestrials",
       "title": "Let's Welcome The Extraterrestrials",
       "authored_by": [
@@ -5062,6 +5491,30 @@
       "cite_count": 2
     },
     {
+      "id": "mecca-and-macoraba",
+      "title": "Mecca and Macoraba (Al-ʿUṣūr al-Wusṭā 26)",
+      "authored_by": [
+        "Ian D. Morris"
+      ],
+      "publish_date": "2018",
+      "follow_url": "",
+      "description": "Survey of the documentary history behind the Macoraba–Mecca identification; concludes there is no secure evidence for Mecca's antiquity in the pre-Islamic record and that the Macoraba equation rests on assumption rather than evidence.",
+      "medium": "academic-paper",
+      "topics": [
+        "Mecca",
+        "Ptolemy",
+        "Islamic Origins"
+      ],
+      "cited_by": [
+        {
+          "section": "articles",
+          "title": "The First Mosques Faced Petra, Not Mecca",
+          "path": "/articles/the-first-mosques-faced-petra-not-mecca/"
+        }
+      ],
+      "cite_count": 1
+    },
+    {
       "id": "russell-mephistopheles-modern",
       "title": "Mephistopheles: The Devil in the Modern World",
       "authored_by": [
@@ -5235,11 +5688,29 @@
       "description": "Recent developments that have shaped current understanding.",
       "medium": "",
       "topics": [],
+      "cited_by": [],
+      "cite_count": 0
+    },
+    {
+      "id": "muhammad-and-the-believers",
+      "title": "Muhammad and the Believers: At the Origins of Islam",
+      "authored_by": [
+        "Fred M. Donner"
+      ],
+      "publish_date": "2010",
+      "follow_url": "",
+      "description": "Reconstructs an early, ecumenical 'community of believers' and Islam's gradual self-definition — convergent with the Hanafiyya-name argument without relocating Islam's geography, and a reminder that the name argument and the map argument can be separated.",
+      "medium": "nonfiction-book",
+      "topics": [
+        "Islamic Origins",
+        "Hanafiyya",
+        "Historiography"
+      ],
       "cited_by": [
         {
           "section": "articles",
-          "title": "Example Explainer: Understanding Complex Topics",
-          "path": "/articles/example-explainer/"
+          "title": "The First Mosques Faced Petra, Not Mecca",
+          "path": "/articles/the-first-mosques-faced-petra-not-mecca/"
         }
       ],
       "cite_count": 1
@@ -5541,6 +6012,31 @@
           "section": "wiki",
           "title": "Cosmic Chain",
           "path": "/wiki/cosmic-chain/"
+        }
+      ],
+      "cite_count": 1
+    },
+    {
+      "id": "on-the-origin-of-quranic-arabic",
+      "title": "On the Origin of Qur'anic Arabic",
+      "authored_by": [
+        "Mark Durie"
+      ],
+      "publish_date": "2018",
+      "follow_url": "https://www.academia.edu/37743814",
+      "description": "Argues, on al-Jallad's epigraphic data, that Qur'anic Arabic developed directly from Nabataean Arabic — resolving the failure to find a matching Hijazi dialect and the rarity of the al- article in pre-Islamic inscriptions.",
+      "medium": "academic-paper",
+      "topics": [
+        "Qur'anic Arabic",
+        "Nabataeans",
+        "Aramaic",
+        "Linguistics"
+      ],
+      "cited_by": [
+        {
+          "section": "articles",
+          "title": "The First Mosques Faced Petra, Not Mecca",
+          "path": "/articles/the-first-mosques-faced-petra-not-mecca/"
         }
       ],
       "cite_count": 1
@@ -6081,11 +6577,21 @@
         "Dan Gibson"
       ],
       "publish_date": "2011",
-      "follow_url": "",
+      "follow_url": "https://nabataea.net",
       "description": "Gibson's archaeological re-examination of the early-Islamic qibla orientations, central to §V's argument about Petra rather than Mecca as the original Islamic centre.",
       "medium": "nonfiction-book",
-      "topics": [],
+      "topics": [
+        "Islamic Origins",
+        "Petra",
+        "Qur'an",
+        "Geography"
+      ],
       "cited_by": [
+        {
+          "section": "articles",
+          "title": "The First Mosques Faced Petra, Not Mecca",
+          "path": "/articles/the-first-mosques-faced-petra-not-mecca/"
+        },
         {
           "section": "timeline",
           "title": "Age of Pisces",
@@ -6097,7 +6603,7 @@
           "path": "/timeline/the-wheel-keeps-turning/"
         }
       ],
-      "cite_count": 2
+      "cite_count": 3
     },
     {
       "id": "rael-dot-org",
@@ -6130,6 +6636,26 @@
         }
       ],
       "cite_count": 2
+    },
+    {
+      "id": "reading-sumerian-poetry",
+      "title": "Reading Sumerian Poetry",
+      "authored_by": [
+        "Jeremy Black"
+      ],
+      "publish_date": "1998",
+      "follow_url": "",
+      "description": "",
+      "medium": "",
+      "topics": [],
+      "cited_by": [
+        {
+          "section": "articles",
+          "title": "Made from the Ground to Bear the Labor",
+          "path": "/articles/made-from-the-ground-to-bear-the-labor/"
+        }
+      ],
+      "cite_count": 1
     },
     {
       "id": "real-life-x-files-nickell",
@@ -7312,6 +7838,46 @@
       "cite_count": 2
     },
     {
+      "id": "the-atrahasis-epic-and-its-significance-for-our-understanding-of-genesis-1-9-ba-",
+      "title": "The Atrahasis Epic and Its Significance for Our Understanding of Genesis 1–9 (BA 40)",
+      "authored_by": [
+        "Tikva Frymer-Kensky"
+      ],
+      "publish_date": "1977",
+      "follow_url": "",
+      "description": "",
+      "medium": "",
+      "topics": [],
+      "cited_by": [
+        {
+          "section": "articles",
+          "title": "The Flood Was a Reset, Not a Punishment",
+          "path": "/articles/the-flood-was-a-reset-not-a-punishment/"
+        }
+      ],
+      "cite_count": 1
+    },
+    {
+      "id": "the-babylonian-gilgamesh-epic-introduction-critical-edition-and-cuneiform-texts",
+      "title": "The Babylonian Gilgamesh Epic: Introduction, Critical Edition and Cuneiform Texts",
+      "authored_by": [
+        "A. R. George"
+      ],
+      "publish_date": "2003",
+      "follow_url": "",
+      "description": "",
+      "medium": "",
+      "topics": [],
+      "cited_by": [
+        {
+          "section": "articles",
+          "title": "The Flood Was a Reset, Not a Punishment",
+          "path": "/articles/the-flood-was-a-reset-not-a-punishment/"
+        }
+      ],
+      "cite_count": 1
+    },
+    {
       "id": "bhagavad-gita",
       "title": "The Bhagavad Gita",
       "authored_by": [
@@ -7572,6 +8138,21 @@
       ],
       "cited_by": [
         {
+          "section": "articles",
+          "title": "Made from the Ground to Bear the Labor",
+          "path": "/articles/made-from-the-ground-to-bear-the-labor/"
+        },
+        {
+          "section": "articles",
+          "title": "The First Mosques Faced Petra, Not Mecca",
+          "path": "/articles/the-first-mosques-faced-petra-not-mecca/"
+        },
+        {
+          "section": "articles",
+          "title": "The Flood Was a Reset, Not a Punishment",
+          "path": "/articles/the-flood-was-a-reset-not-a-punishment/"
+        },
+        {
           "section": "wiki",
           "title": "Adam and Eve",
           "path": "/wiki/adam-and-eve/"
@@ -7712,7 +8293,7 @@
           "path": "/wiki/yahweh/"
         }
       ],
-      "cite_count": 28
+      "cite_count": 31
     },
     {
       "id": "the-chaldean-account-of-genesis",
@@ -8423,6 +9004,26 @@
       "cite_count": 1
     },
     {
+      "id": "the-eridu-genesis-journal-of-biblical-literature-100",
+      "title": "The Eridu Genesis (Journal of Biblical Literature 100)",
+      "authored_by": [
+        "Thorkild Jacobsen"
+      ],
+      "publish_date": "1981",
+      "follow_url": "",
+      "description": "",
+      "medium": "",
+      "topics": [],
+      "cited_by": [
+        {
+          "section": "articles",
+          "title": "The Flood Was a Reset, Not a Punishment",
+          "path": "/articles/the-flood-was-a-reset-not-a-punishment/"
+        }
+      ],
+      "cite_count": 1
+    },
+    {
       "id": "matt-essential-kabbalah",
       "title": "The Essential Kabbalah: The Heart of Jewish Mysticism",
       "authored_by": [
@@ -8443,6 +9044,26 @@
           "section": "wiki",
           "title": "Tree of Life",
           "path": "/wiki/tree-of-life/"
+        }
+      ],
+      "cite_count": 1
+    },
+    {
+      "id": "the-evolution-of-the-gilgamesh-epic",
+      "title": "The Evolution of the Gilgamesh Epic",
+      "authored_by": [
+        "Jeffrey H. Tigay"
+      ],
+      "publish_date": "1982",
+      "follow_url": "",
+      "description": "",
+      "medium": "",
+      "topics": [],
+      "cited_by": [
+        {
+          "section": "articles",
+          "title": "The Flood Was a Reset, Not a Punishment",
+          "path": "/articles/the-flood-was-a-reset-not-a-punishment/"
         }
       ],
       "cite_count": 1
@@ -8524,6 +9145,26 @@
       "cite_count": 1
     },
     {
+      "id": "the-flood-story-the-eridu-genesis",
+      "title": "The Flood Story (the 'Eridu Genesis')",
+      "authored_by": [
+        "ETCSL composite text c.1.7.4; M. Civil, in Lambert & Millard, *Atra-ḫasīs*"
+      ],
+      "publish_date": "1969",
+      "follow_url": "",
+      "description": "",
+      "medium": "",
+      "topics": [],
+      "cited_by": [
+        {
+          "section": "articles",
+          "title": "The Flood Was a Reset, Not a Punishment",
+          "path": "/articles/the-flood-was-a-reset-not-a-punishment/"
+        }
+      ],
+      "cite_count": 1
+    },
+    {
       "id": "the-fractal-geometry-of-nature",
       "title": "The Fractal Geometry of Nature",
       "authored_by": [
@@ -8568,6 +9209,26 @@
           "section": "wiki",
           "title": "Great Flood",
           "path": "/wiki/great-flood/"
+        }
+      ],
+      "cite_count": 1
+    },
+    {
+      "id": "the-gilgamesh-epic-and-old-testament-parallels",
+      "title": "The Gilgamesh Epic and Old Testament Parallels",
+      "authored_by": [
+        "Alexander Heidel"
+      ],
+      "publish_date": "1949",
+      "follow_url": "",
+      "description": "",
+      "medium": "",
+      "topics": [],
+      "cited_by": [
+        {
+          "section": "articles",
+          "title": "The Flood Was a Reset, Not a Punishment",
+          "path": "/articles/the-flood-was-a-reset-not-a-punishment/"
         }
       ],
       "cite_count": 1
@@ -8887,6 +9548,45 @@
       "cite_count": 1
     },
     {
+      "id": "the-history-of-al-tabari",
+      "title": "The History of al-Ṭabarī (Tārīkh al-Rusul wa-l-Mulūk), vols. XXI–XXIII",
+      "authored_by": [
+        "al-Ṭabarī",
+        "trans. SUNY Press"
+      ],
+      "publish_date": "c. 915 CE (trans. 1989–1990)",
+      "follow_url": "",
+      "description": "The major early Islamic chronicle. The Marwanid civil-war volumes supply the account of Ibn al-Zubayr's siege, the governor al-Ḥajjāj, and the rebuilding of the Ka'ba that the name-migration reconstruction draws on.",
+      "medium": "religious-text",
+      "topics": [
+        "Islamic History",
+        "Umayyads",
+        "Ka'ba"
+      ],
+      "cited_by": [
+        {
+          "section": "articles",
+          "title": "The First Mosques Faced Petra, Not Mecca",
+          "path": "/articles/the-first-mosques-faced-petra-not-mecca/"
+        }
+      ],
+      "cite_count": 1
+    },
+    {
+      "id": "the-history-of-al-abar-vols-xxi-xxiii-the-marwanid-civil-war",
+      "title": "The History of al-Ṭabarī, vols. XXI–XXIII (the Marwanid civil war)",
+      "authored_by": [
+        "trans. SUNY Press"
+      ],
+      "publish_date": "1989–1990",
+      "follow_url": "",
+      "description": "",
+      "medium": "",
+      "topics": [],
+      "cited_by": [],
+      "cite_count": 0
+    },
+    {
       "id": "the-human-history-mistake",
       "title": "The Human History Mistake: The Neanderthals and other Inventions of the Evolution and Earth Sciences",
       "authored_by": [
@@ -8966,6 +9666,52 @@
           "section": "timeline",
           "title": "Preamble",
           "path": "/timeline/preamble/"
+        }
+      ],
+      "cite_count": 1
+    },
+    {
+      "id": "the-life-of-muhammad-ibn-ishaq",
+      "title": "The Life of Muhammad: A Translation of Ibn Isḥāq's Sīrat Rasūl Allāh",
+      "authored_by": [
+        "Ibn Isḥāq",
+        "trans. A. Guillaume"
+      ],
+      "publish_date": "1955 (Sīra c. 760 CE)",
+      "follow_url": "",
+      "description": "The earliest biography of Muhammad, surviving in Ibn Hishām's recension. Source for the pre-Islamic four seekers of the Hanafiyya and the religion-of-Abraham material.",
+      "medium": "religious-text",
+      "topics": [
+        "Sira",
+        "Muhammad",
+        "Hanafiyya",
+        "Islamic Origins"
+      ],
+      "cited_by": [
+        {
+          "section": "articles",
+          "title": "The First Mosques Faced Petra, Not Mecca",
+          "path": "/articles/the-first-mosques-faced-petra-not-mecca/"
+        }
+      ],
+      "cite_count": 1
+    },
+    {
+      "id": "the-literature-of-ancient-sumer",
+      "title": "The Literature of Ancient Sumer",
+      "authored_by": [
+        "J. Black, G. Cunningham, E. Robson & G. Zólyomi"
+      ],
+      "publish_date": "2004",
+      "follow_url": "",
+      "description": "",
+      "medium": "",
+      "topics": [],
+      "cited_by": [
+        {
+          "section": "articles",
+          "title": "Made from the Ground to Bear the Labor",
+          "path": "/articles/made-from-the-ground-to-bear-the-labor/"
         }
       ],
       "cite_count": 1
@@ -9560,6 +10306,11 @@
       "topics": [],
       "cited_by": [
         {
+          "section": "articles",
+          "title": "The First Mosques Faced Petra, Not Mecca",
+          "path": "/articles/the-first-mosques-faced-petra-not-mecca/"
+        },
+        {
           "section": "timeline",
           "title": "Age of Pisces",
           "path": "/timeline/age-of-pisces/"
@@ -9585,7 +10336,7 @@
           "path": "/wiki/satan/"
         }
       ],
-      "cite_count": 5
+      "cite_count": 6
     },
     {
       "id": "wright-resurrection-son-of-god",
@@ -9634,6 +10385,26 @@
       ],
       "cited_by": [],
       "cite_count": 0
+    },
+    {
+      "id": "the-rocks-don-t-lie-a-geologist-investigates-noah-s-flood",
+      "title": "The Rocks Don't Lie: A Geologist Investigates Noah's Flood",
+      "authored_by": [
+        "David R. Montgomery"
+      ],
+      "publish_date": "2012",
+      "follow_url": "",
+      "description": "",
+      "medium": "",
+      "topics": [],
+      "cited_by": [
+        {
+          "section": "articles",
+          "title": "The Flood Was a Reset, Not a Punishment",
+          "path": "/articles/the-flood-was-a-reset-not-a-punishment/"
+        }
+      ],
+      "cite_count": 1
     },
     {
       "id": "dietrich-gobekli-antiquity-2012",
@@ -9840,6 +10611,31 @@
       "cite_count": 1
     },
     {
+      "id": "the-syro-aramaic-reading-of-the-koran",
+      "title": "The Syro-Aramaic Reading of the Koran",
+      "authored_by": [
+        "Christoph Luxenberg"
+      ],
+      "publish_date": "2007 (German 2000)",
+      "follow_url": "",
+      "description": "Argues that obscure Qur'anic passages clarify when read against a Syriac-Aramaic substrate beneath the unpointed consonantal text. Sharply contested in mainstream Qur'anic studies; included as the most speculative strand of the Aramaic-substrate argument.",
+      "medium": "nonfiction-book",
+      "topics": [
+        "Qur'an",
+        "Aramaic",
+        "Linguistics",
+        "Critical"
+      ],
+      "cited_by": [
+        {
+          "section": "articles",
+          "title": "The First Mosques Faced Petra, Not Mecca",
+          "path": "/articles/the-first-mosques-faced-petra-not-mecca/"
+        }
+      ],
+      "cite_count": 1
+    },
+    {
       "id": "the-techno-optimist-manifesto",
       "title": "The Techno-Optimist Manifesto",
       "authored_by": [
@@ -9867,6 +10663,26 @@
         }
       ],
       "cite_count": 2
+    },
+    {
+      "id": "the-treasures-of-darkness-a-history-of-mesopotamian-religion",
+      "title": "The Treasures of Darkness: A History of Mesopotamian Religion",
+      "authored_by": [
+        "Thorkild Jacobsen"
+      ],
+      "publish_date": "1976",
+      "follow_url": "",
+      "description": "",
+      "medium": "",
+      "topics": [],
+      "cited_by": [
+        {
+          "section": "articles",
+          "title": "Made from the Ground to Bear the Labor",
+          "path": "/articles/made-from-the-ground-to-bear-the-labor/"
+        }
+      ],
+      "cite_count": 1
     },
     {
       "id": "bonaventure-lignum-vitae",
