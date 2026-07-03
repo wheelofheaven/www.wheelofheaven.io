@@ -7,7 +7,8 @@
     "color": "yellow",
     "link": "/timeline/in-the-beginning",
     "event": "The creators' origin story: a breakthrough in synthetic biology turns politically explosive on the home world. After catastrophe and a vote against the work, the exiles depart to seed life on a distant planet — Earth.",
-    "earth_texture": "https://assets.wheelofheaven.world/images/earth/earth-ocean-mist.webp"
+    "earth_texture": "https://assets.wheelofheaven.world/images/earth/earth-ocean-mist.webp",
+    "vignette": "https://assets.wheelofheaven.world/images/timeline/chronology-00-in-the-beginning.webp"
   },
   {
     "name": "Age of Capricorn",
@@ -17,7 +18,8 @@
     "color": "mauve",
     "link": "/timeline/age-of-capricorn",
     "event": "The scientists arrive at a formless, water-covered Earth, survey it from orbit, confirm the local star is suitable, and select the sites for a multi-millennial program of creation. Genesis Day One.",
-    "earth_texture": "https://assets.wheelofheaven.world/images/earth/earth-ocean-mist.webp"
+    "earth_texture": "https://assets.wheelofheaven.world/images/earth/earth-ocean-mist.webp",
+    "vignette": "https://assets.wheelofheaven.world/images/timeline/chronology-01-age-of-capricorn.webp"
   },
   {
     "name": "Age of Sagittarius",
@@ -27,7 +29,8 @@
     "color": "blue",
     "link": "/timeline/age-of-sagittarius",
     "event": "The cosmology's largest engineering operation: the atmospheric waters are parted from the ocean, the sky is cleared to sunlight, and the first dry land is raised from the seabed. Genesis Day Two.",
-    "earth_texture": "https://assets.wheelofheaven.world/images/earth/earth-ocean-blue.webp"
+    "earth_texture": "https://assets.wheelofheaven.world/images/earth/earth-ocean-blue.webp",
+    "vignette": "https://assets.wheelofheaven.world/images/timeline/chronology-02-age-of-sagittarius.webp"
   },
   {
     "name": "Age of Scorpio",
@@ -37,7 +40,8 @@
     "color": "cyan",
     "link": "/timeline/age-of-scorpio",
     "event": "The first life appears — plant cells synthesized from raw chemistry by teams of scientists and artists, greening the land and beginning to reshape the atmosphere through photosynthesis. Genesis Day Three.",
-    "earth_texture": "https://assets.wheelofheaven.world/images/earth/earth-pangeae-arid.webp"
+    "earth_texture": "https://assets.wheelofheaven.world/images/earth/earth-pangeae-arid.webp",
+    "vignette": "https://assets.wheelofheaven.world/images/timeline/chronology-03-age-of-scorpio.webp"
   },
   {
     "name": "Age of Libra",
@@ -47,7 +51,8 @@
     "color": "teal",
     "link": "/timeline/age-of-libra",
     "event": "The creators calibrate the project to the sky — measuring time, mapping the constellations, and turning the pre-existing sun, moon, and stars into calendrical and navigational instruments. Genesis Day Four.",
-    "earth_texture": "https://assets.wheelofheaven.world/images/earth/earth-pangeae-green.webp"
+    "earth_texture": "https://assets.wheelofheaven.world/images/earth/earth-pangeae-green.webp",
+    "vignette": "https://assets.wheelofheaven.world/images/timeline/chronology-04-age-of-libra.webp"
   },
   {
     "name": "Age of Virgo",
@@ -57,7 +62,8 @@
     "color": "mint",
     "link": "/timeline/age-of-virgo",
     "event": "Animal life begins: a full food web in the ocean, birds in the sky, and the great tanninim — the dragons of Genesis that modern science calls dinosaurs. Genesis Day Five.",
-    "earth_texture": "https://assets.wheelofheaven.world/images/earth/earth-pangeae-green.webp"
+    "earth_texture": "https://assets.wheelofheaven.world/images/earth/earth-pangeae-green.webp",
+    "vignette": "https://assets.wheelofheaven.world/images/timeline/chronology-05-age-of-virgo.webp"
   },
   {
     "name": "Age of Leo",
@@ -67,7 +73,8 @@
     "color": "green",
     "link": "/timeline/age-of-leo",
     "event": "The program culminates. Land animals complete the food web, then seven factional teams produce human beings in their makers' image, and the most gifted team founds the Garden of Eden. Genesis Day Six.",
-    "earth_texture": "https://assets.wheelofheaven.world/images/earth/earth-pangeae-green.webp"
+    "earth_texture": "https://assets.wheelofheaven.world/images/earth/earth-pangeae-green.webp",
+    "vignette": "https://assets.wheelofheaven.world/images/timeline/chronology-06-age-of-leo.webp"
   },
   {
     "name": "Age of Cancer",
@@ -77,7 +84,8 @@
     "color": "yellow",
     "link": "/timeline/age-of-cancer",
     "event": "The Day of Rest and its fallout: the expulsion from Eden, the exile of the disclosing faction, the creators mating with human women, the Nephilim, and a pre-flood civilization that alarms the home world. Genesis Day Seven.",
-    "earth_texture": "https://assets.wheelofheaven.world/images/earth/earth-pangeae-green.webp"
+    "earth_texture": "https://assets.wheelofheaven.world/images/earth/earth-pangeae-green.webp",
+    "vignette": "https://assets.wheelofheaven.world/images/timeline/chronology-07-age-of-cancer.webp"
   },
   {
     "name": "Age of Gemini",
@@ -87,7 +95,8 @@
     "color": "pink",
     "link": "/timeline/age-of-gemini",
     "event": "The flood destroys the pre-flood world and shatters the supercontinent. An ark preserves life in orbit, the Noahic covenant binds creators and survivors, Babel rises and scatters, and war breaks out in heaven.",
-    "earth_texture": "https://assets.wheelofheaven.world/images/earth/earth-ocean-blue.webp"
+    "earth_texture": "https://assets.wheelofheaven.world/images/earth/earth-ocean-blue.webp",
+    "vignette": "https://assets.wheelofheaven.world/images/timeline/chronology-08-age-of-gemini.webp"
   },
   {
     "name": "Age of Taurus",
@@ -97,7 +106,8 @@
     "color": "soft-pink",
     "link": "/timeline/age-of-taurus",
     "event": "Consolidation: the exiled creators are pardoned, post-flood civilizations rise, a vengeance movement at Sodom and Gomorrah is destroyed in a strike that leaves the Dead Sea, and Abraham is tested and confirmed as patriarch.",
-    "earth_texture": "https://assets.wheelofheaven.world/images/earth/earth-ocean-blue.webp"
+    "earth_texture": "https://assets.wheelofheaven.world/images/earth/earth-ocean-blue.webp",
+    "vignette": "https://assets.wheelofheaven.world/images/timeline/chronology-09-age-of-taurus.webp"
   },
   {
     "name": "Age of Aries",
@@ -107,7 +117,8 @@
     "color": "lavender",
     "link": "/timeline/age-of-aries",
     "event": "Moses receives the Law at Sinai, Israel takes Canaan, and the prophetic tradition carries the alliance forward — while the Hebrews' incomplete mission prompts the Council to cultivate Persia and Greece for the Axial Age.",
-    "earth_texture": "https://assets.wheelofheaven.world/images/earth/earth-ocean-blue.webp"
+    "earth_texture": "https://assets.wheelofheaven.world/images/earth/earth-ocean-blue.webp",
+    "vignette": "https://assets.wheelofheaven.world/images/timeline/chronology-10-age-of-aries.webp"
   },
   {
     "name": "Age of Pisces",
@@ -117,7 +128,8 @@
     "color": "mauve",
     "link": "/timeline/age-of-pisces",
     "event": "The age of the fish and the virgin: Jesus as an alliance project, the apostolic mission spreading the message, Islam as a second intervention, and the scientific revolution carrying humanity toward the Aquarian threshold.",
-    "earth_texture": "https://assets.wheelofheaven.world/images/earth/earth-ocean-blue.webp"
+    "earth_texture": "https://assets.wheelofheaven.world/images/earth/earth-ocean-blue.webp",
+    "vignette": "https://assets.wheelofheaven.world/images/timeline/chronology-11-age-of-pisces.webp"
   },
   {
     "name": "Age of Aquarius",
@@ -127,6 +139,7 @@
     "color": "blue",
     "link": "/timeline/age-of-aquarius",
     "event": "The current age of revelation: the 1945 threshold, the 1973 contact and the last prophet, the embassy project, a nuclear holocaust narrowly avoided, and the Golden Age in which humanity meets its creators, the Elohim.",
-    "earth_texture": "https://assets.wheelofheaven.world/images/earth/earth-ocean-blue.webp"
+    "earth_texture": "https://assets.wheelofheaven.world/images/earth/earth-ocean-blue.webp",
+    "vignette": "https://assets.wheelofheaven.world/images/timeline/chronology-12-age-of-aquarius.webp"
   }
 ]
