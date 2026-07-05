@@ -86,6 +86,28 @@ def fm_value(fm: str, key: str):
     return m.group(1) if m else None
 
 
+# Inline `{{ figure(src="...", alt="...", caption="...") }}` shortcodes carry
+# their own alt/caption. When a render is embedded in the body rather than set
+# as the frontmatter hero image, pull its metadata from the matching call so
+# the gallery grid/lightbox aren't left with empty alt/caption.
+FIGURE_RE = re.compile(r"\{\{\s*figure\((?P<args>.*?)\)\s*\}\}", re.S)
+
+
+def _arg(args: str, key: str):
+    m = re.search(rf'{key}\s*=\s*"((?:[^"\\]|\\.)*)"', args)
+    return m.group(1) if m else None
+
+
+def figure_alt_caption(text: str, name: str):
+    """alt/caption from the first figure shortcode whose src matches `name`."""
+    for m in FIGURE_RE.finditer(text):
+        args = m.group("args")
+        src = _arg(args, "src") or ""
+        if name in src:
+            return _arg(args, "alt"), _arg(args, "caption")
+    return None, None
+
+
 def main() -> int:
     if not ASSETS.exists():
         print(f"ERROR: assets images dir not found at {ASSETS}", file=sys.stderr)
@@ -131,6 +153,10 @@ def main() -> int:
                     if alt is None and name in pg["fm"]:
                         alt = fm_value(pg["fm"], "image_alt")
                         caption = fm_value(pg["fm"], "image_caption")
+                    if alt is None:
+                        fa, fc = figure_alt_caption(pg["text"], name)
+                        if fa is not None:
+                            alt, caption = fa, fc
 
             # Gallery shows only renders that are actually used on a page.
             if not used_on:
