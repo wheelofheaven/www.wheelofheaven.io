@@ -1,7 +1,7 @@
 {
   "_meta": {
-    "generated_at": "2026-07-01T06:59:25+00:00",
-    "count": 727
+    "generated_at": "2026-07-05T11:00:06+00:00",
+    "count": 808
   },
   "paths": {
     "AGENTS": [
@@ -49,6 +49,21 @@
     "articles/made-from-the-ground-to-bear-the-labor": [
       "en"
     ],
+    "articles/the-archdeacon-and-the-dragon": [
+      "en"
+    ],
+    "articles/the-book-closest-to-the-truth": [
+      "de",
+      "en",
+      "es",
+      "fr",
+      "he",
+      "ja",
+      "ko",
+      "ru",
+      "zh",
+      "zh-Hant"
+    ],
     "articles/the-first-mosques-faced-petra-not-mecca": [
       "de",
       "en",
@@ -62,6 +77,18 @@
       "zh-Hant"
     ],
     "articles/the-flood-was-a-reset-not-a-punishment": [
+      "de",
+      "en",
+      "es",
+      "fr",
+      "he",
+      "ja",
+      "ko",
+      "ru",
+      "zh",
+      "zh-Hant"
+    ],
+    "articles/the-infinite-in-both-directions": [
       "de",
       "en",
       "es",
@@ -178,6 +205,9 @@
       "ru",
       "zh",
       "zh-Hant"
+    ],
+    "gallery": [
+      "en"
     ],
     "library": [
       "de",
@@ -496,6 +526,9 @@
       "ru",
       "zh",
       "zh-Hant"
+    ],
+    "library/atrahasis-woh": [
+      "en"
     ],
     "library/baal-cycle-woh": [
       "en"
@@ -832,6 +865,9 @@
       "ru",
       "zh",
       "zh-Hant"
+    ],
+    "library/hidden-words-woh": [
+      "en"
     ],
     "library/hosea": [
       "de",
@@ -1190,6 +1226,9 @@
       "zh",
       "zh-Hant"
     ],
+    "library/oomoto-shinyu-woh": [
+      "en"
+    ],
     "library/papyrus-of-ani": [
       "de",
       "en",
@@ -1334,6 +1373,9 @@
     "library/song-of-the-hoe-woh": [
       "en"
     ],
+    "library/thanh-ngon-hiep-tuyen-woh": [
+      "en"
+    ],
     "library/the-book-which-tells-the-truth": [
       "de",
       "en",
@@ -1397,6 +1439,18 @@
       "zh",
       "zh-Hant"
     ],
+    "method": [
+      "de",
+      "en",
+      "es",
+      "fr",
+      "he",
+      "ja",
+      "ko",
+      "ru",
+      "zh",
+      "zh-Hant"
+    ],
     "news": [
       "de",
       "en",
@@ -1449,6 +1503,18 @@
       "zh-Hant"
     ],
     "news/pursue-release-03-multi-agency-and-international": [
+      "de",
+      "en",
+      "es",
+      "fr",
+      "he",
+      "ja",
+      "ko",
+      "ru",
+      "zh",
+      "zh-Hant"
+    ],
+    "news/synthetic-cell-eats-and-divides": [
       "de",
       "en",
       "es",
@@ -1580,6 +1646,18 @@
       "zh",
       "zh-Hant"
     ],
+    "sources/2-enoch-slavonic-apocalypse-of-enoch-chs-13-39-i-saw-the-extent-of-the-lord-with": [
+      "de",
+      "en",
+      "es",
+      "fr",
+      "he",
+      "ja",
+      "ko",
+      "ru",
+      "zh",
+      "zh-Hant"
+    ],
     "sources/2-kings": [
       "de",
       "en",
@@ -1604,7 +1682,55 @@
       "zh",
       "zh-Hant"
     ],
+    "sources/3-enoch-or-the-hebrew-book-of-enoch": [
+      "de",
+      "en",
+      "es",
+      "fr",
+      "he",
+      "ja",
+      "ko",
+      "ru",
+      "zh",
+      "zh-Hant"
+    ],
+    "sources/3-enoch-or-the-hebrew-book-of-enoch-the-editio-princeps-odeberg-s-early-dating-s": [
+      "de",
+      "en",
+      "es",
+      "fr",
+      "he",
+      "ja",
+      "ko",
+      "ru",
+      "zh",
+      "zh-Hant"
+    ],
+    "sources/3-hebrew-apocalypse-of-enoch-in-the-old-testament-pseudepigrapha-vol-1-the-stand": [
+      "de",
+      "en",
+      "es",
+      "fr",
+      "he",
+      "ja",
+      "ko",
+      "ru",
+      "zh",
+      "zh-Hant"
+    ],
     "sources/a-concise-dictionary-of-the-words-in-the-hebrew-bible-strong-s": [
+      "de",
+      "en",
+      "es",
+      "fr",
+      "he",
+      "ja",
+      "ko",
+      "ru",
+      "zh",
+      "zh-Hant"
+    ],
+    "sources/a-general-model-for-the-origin-of-allometric-scaling-laws-in-biology-science-276": [
       "de",
       "en",
       "es",
@@ -1689,6 +1815,18 @@
       "zh-Hant"
     ],
     "sources/aesthetics-wiki-cyberparadism": [
+      "de",
+      "en",
+      "es",
+      "fr",
+      "he",
+      "ja",
+      "ko",
+      "ru",
+      "zh",
+      "zh-Hant"
+    ],
+    "sources/against-heresies-adversus-haereses-i-14-marcus-the-valentinian-and-the-letter-na": [
       "de",
       "en",
       "es",
@@ -1868,6 +2006,30 @@
       "zh",
       "zh-Hant"
     ],
+    "sources/apocalyptic-and-merkavah-mysticism": [
+      "de",
+      "en",
+      "es",
+      "fr",
+      "he",
+      "ja",
+      "ko",
+      "ru",
+      "zh",
+      "zh-Hant"
+    ],
+    "sources/apparent-weight-of-photons-physical-review-letters-4-337-341-the-pound-rebka-gra": [
+      "de",
+      "en",
+      "es",
+      "fr",
+      "he",
+      "ja",
+      "ko",
+      "ru",
+      "zh",
+      "zh-Hant"
+    ],
     "sources/arrhenius-worlds-in-the-making": [
       "de",
       "en",
@@ -1881,6 +2043,18 @@
       "zh-Hant"
     ],
     "sources/astronomical-algorithms": [
+      "de",
+      "en",
+      "es",
+      "fr",
+      "he",
+      "ja",
+      "ko",
+      "ru",
+      "zh",
+      "zh-Hant"
+    ],
+    "sources/asymptotic-safety-in-quantum-einstein-gravity-arxiv-hep-th-0511260-scale-depende": [
       "de",
       "en",
       "es",
@@ -2036,6 +2210,18 @@
       "zh",
       "zh-Hant"
     ],
+    "sources/basic-properties-of-galaxy-clustering-in-the-light-of-recent-results-from-the-sl": [
+      "de",
+      "en",
+      "es",
+      "fr",
+      "he",
+      "ja",
+      "ko",
+      "ru",
+      "zh",
+      "zh-Hant"
+    ],
     "sources/before-the-muses": [
       "de",
       "en",
@@ -2049,6 +2235,30 @@
       "zh-Hant"
     ],
     "sources/benyus-biomimicry": [
+      "de",
+      "en",
+      "es",
+      "fr",
+      "he",
+      "ja",
+      "ko",
+      "ru",
+      "zh",
+      "zh-Hant"
+    ],
+    "sources/bet-ha-midrasch-sammlung-kleiner-midraschim-the-public-domain-transmission-of-th": [
+      "de",
+      "en",
+      "es",
+      "fr",
+      "he",
+      "ja",
+      "ko",
+      "ru",
+      "zh",
+      "zh-Hant"
+    ],
+    "sources/beyond-judaism-metatron-and-the-divine-polymorphy-of-ancient-judaism-journal-for": [
       "de",
       "en",
       "es",
@@ -2121,6 +2331,18 @@
       "zh-Hant"
     ],
     "sources/bodman-poetics-iblis": [
+      "de",
+      "en",
+      "es",
+      "fr",
+      "he",
+      "ja",
+      "ko",
+      "ru",
+      "zh",
+      "zh-Hant"
+    ],
+    "sources/body-size-and-metabolism-hilgardia-6-315-353-the-3-4-power-metabolic-law": [
       "de",
       "en",
       "es",
@@ -2420,6 +2642,18 @@
       "zh",
       "zh-Hant"
     ],
+    "sources/commentary-on-the-song-of-songs-prologue-the-four-texts-reserved-for-the-very-en": [
+      "de",
+      "en",
+      "es",
+      "fr",
+      "he",
+      "ja",
+      "ko",
+      "ru",
+      "zh",
+      "zh-Hant"
+    ],
     "sources/cook-muslim-apocalyptic": [
       "de",
       "en",
@@ -2432,7 +2666,31 @@
       "zh",
       "zh-Hant"
     ],
+    "sources/cosmic-homogeneity-demonstrated-with-luminous-red-galaxies-apj-624-54-58-the-tra": [
+      "de",
+      "en",
+      "es",
+      "fr",
+      "he",
+      "ja",
+      "ko",
+      "ru",
+      "zh",
+      "zh-Hant"
+    ],
     "sources/cosmic-serpent-narby": [
+      "de",
+      "en",
+      "es",
+      "fr",
+      "he",
+      "ja",
+      "ko",
+      "ru",
+      "zh",
+      "zh-Hant"
+    ],
+    "sources/creation-accounts-in-the-ancient-near-east": [
       "de",
       "en",
       "es",
@@ -2672,7 +2930,31 @@
       "zh",
       "zh-Hant"
     ],
+    "sources/dialogue-with-trypho-ch-114-god-s-shape-and-organs-reported-as-normative-jewish-": [
+      "de",
+      "en",
+      "es",
+      "fr",
+      "he",
+      "ja",
+      "ko",
+      "ru",
+      "zh",
+      "zh-Hant"
+    ],
     "sources/did-god-have-a-wife": [
+      "de",
+      "en",
+      "es",
+      "fr",
+      "he",
+      "ja",
+      "ko",
+      "ru",
+      "zh",
+      "zh-Hant"
+    ],
+    "sources/die-feldgleichungen-der-gravitation-the-field-equations-of-general-relativity": [
       "de",
       "en",
       "es",
@@ -2936,6 +3218,30 @@
       "zh",
       "zh-Hant"
     ],
+    "sources/eternal-inflation-and-its-implications-j-phys-a-40-6811-6826": [
+      "de",
+      "en",
+      "es",
+      "fr",
+      "he",
+      "ja",
+      "ko",
+      "ru",
+      "zh",
+      "zh-Hant"
+    ],
+    "sources/eternally-existing-self-reproducing-chaotic-inflationary-universe-physica-script": [
+      "de",
+      "en",
+      "es",
+      "fr",
+      "he",
+      "ja",
+      "ko",
+      "ru",
+      "zh",
+      "zh-Hant"
+    ],
     "sources/exodus": [
       "de",
       "en",
@@ -2985,6 +3291,18 @@
       "zh-Hant"
     ],
     "sources/fda-approves-first-gene-therapies-to-treat-patients-with-sickle-cell-disease": [
+      "de",
+      "en",
+      "es",
+      "fr",
+      "he",
+      "ja",
+      "ko",
+      "ru",
+      "zh",
+      "zh-Hant"
+    ],
+    "sources/felt-time-the-psychology-of-how-we-perceive-time": [
       "de",
       "en",
       "es",
@@ -3080,6 +3398,30 @@
       "zh",
       "zh-Hant"
     ],
+    "sources/fractal-cosmology-chaos-solitons-fractals-41-2103-2105": [
+      "de",
+      "en",
+      "es",
+      "fr",
+      "he",
+      "ja",
+      "ko",
+      "ru",
+      "zh",
+      "zh-Hant"
+    ],
+    "sources/fractal-cosmology-wheel-of-heaven-wiki-the-spatial-dimension-of-infinity-self-si": [
+      "de",
+      "en",
+      "es",
+      "fr",
+      "he",
+      "ja",
+      "ko",
+      "ru",
+      "zh",
+      "zh-Hant"
+    ],
     "sources/frauds-myths-and-mysteries-science-and-pseudoscience-in-archaeology": [
       "de",
       "en",
@@ -3105,6 +3447,18 @@
       "zh-Hant"
     ],
     "sources/friedman-who-wrote-bible": [
+      "de",
+      "en",
+      "es",
+      "fr",
+      "he",
+      "ja",
+      "ko",
+      "ru",
+      "zh",
+      "zh-Hant"
+    ],
+    "sources/from-martyr-to-mystic-rabbinic-martyrology-and-the-making-of-merkavah-mysticism": [
       "de",
       "en",
       "es",
@@ -3536,6 +3890,18 @@
       "zh",
       "zh-Hant"
     ],
+    "sources/hekhalot-studien-tsaj-19-ch-5-shi-ur-qoma-rezensionen-und-urtext": [
+      "de",
+      "en",
+      "es",
+      "fr",
+      "he",
+      "ja",
+      "ko",
+      "ru",
+      "zh",
+      "zh-Hant"
+    ],
     "sources/hengeworld": [
       "de",
       "en",
@@ -3561,6 +3927,18 @@
       "zh-Hant"
     ],
     "sources/histories-book-ii": [
+      "de",
+      "en",
+      "es",
+      "fr",
+      "he",
+      "ja",
+      "ko",
+      "ru",
+      "zh",
+      "zh-Hant"
+    ],
+    "sources/histories-v-52-54-the-parasang-reckoned-at-thirty-stades-5-5-6-km": [
       "de",
       "en",
       "es",
@@ -3621,6 +3999,18 @@
       "zh-Hant"
     ],
     "sources/inca-architecture-ollantaytambo": [
+      "de",
+      "en",
+      "es",
+      "fr",
+      "he",
+      "ja",
+      "ko",
+      "ru",
+      "zh",
+      "zh-Hant"
+    ],
+    "sources/infinity-wheel-of-heaven-wiki-the-three-mutually-reinforcing-dimensions-spatial-": [
       "de",
       "en",
       "es",
@@ -3704,6 +4094,18 @@
       "zh",
       "zh-Hant"
     ],
+    "sources/jewish-gnosticism-merkabah-mysticism-and-talmudic-tradition-with-saul-lieberman-": [
+      "de",
+      "en",
+      "es",
+      "fr",
+      "he",
+      "ja",
+      "ko",
+      "ru",
+      "zh",
+      "zh-Hant"
+    ],
     "sources/job": [
       "de",
       "en",
@@ -3776,6 +4178,18 @@
       "zh",
       "zh-Hant"
     ],
+    "sources/kabbalah-the-article-length-synthesis-ve-rav-koa-amount-in-gematria-to-236-the-b": [
+      "de",
+      "en",
+      "es",
+      "fr",
+      "he",
+      "ja",
+      "ko",
+      "ru",
+      "zh",
+      "zh-Hant"
+    ],
     "sources/kant-critique-pure-reason": [
       "de",
       "en",
@@ -3789,6 +4203,30 @@
       "zh-Hant"
     ],
     "sources/kelly-satan-biography": [
+      "de",
+      "en",
+      "es",
+      "fr",
+      "he",
+      "ja",
+      "ko",
+      "ru",
+      "zh",
+      "zh-Hant"
+    ],
+    "sources/kit-b-al-anw-r-the-report-that-the-creator-s-stature-comprises-236-000-parasangs": [
+      "de",
+      "en",
+      "es",
+      "fr",
+      "he",
+      "ja",
+      "ko",
+      "ru",
+      "zh",
+      "zh-Hant"
+    ],
+    "sources/kit-b-al-anw-r-wa-l-mar-qib-the-karaite-report-that-the-creator-s-stature-compri": [
       "de",
       "en",
       "es",
@@ -3884,6 +4322,66 @@
       "zh",
       "zh-Hant"
     ],
+    "sources/la-kabbale-juive-histoire-et-doctrine": [
+      "de",
+      "en",
+      "es",
+      "fr",
+      "he",
+      "ja",
+      "ko",
+      "ru",
+      "zh",
+      "zh-Hant"
+    ],
+    "sources/la-kabbale-juive-histoire-et-doctrine-defends-the-schiour-qoma-as-allegory-but-p": [
+      "de",
+      "en",
+      "es",
+      "fr",
+      "he",
+      "ja",
+      "ko",
+      "ru",
+      "zh",
+      "zh-Hant"
+    ],
+    "sources/la-kabbale-que-sais-je-no-1105-2nd-rev-ed-1967": [
+      "de",
+      "en",
+      "es",
+      "fr",
+      "he",
+      "ja",
+      "ko",
+      "ru",
+      "zh",
+      "zh-Hant"
+    ],
+    "sources/la-kabbale-que-sais-je-no-1105-2nd-rev-ed-1967-the-pocket-book-carrying-ra-l-s-e": [
+      "de",
+      "en",
+      "es",
+      "fr",
+      "he",
+      "ja",
+      "ko",
+      "ru",
+      "zh",
+      "zh-Hant"
+    ],
+    "sources/la-kabbale-ses-origines-sa-psychologie-mystique-sa-m-taphysique-grasset-s-rouya-": [
+      "de",
+      "en",
+      "es",
+      "fr",
+      "he",
+      "ja",
+      "ko",
+      "ru",
+      "zh",
+      "zh-Hant"
+    ],
     "sources/lateran-treaty": [
       "de",
       "en",
@@ -3897,6 +4395,18 @@
       "zh-Hant"
     ],
     "sources/le-guin-dispossessed": [
+      "de",
+      "en",
+      "es",
+      "fr",
+      "he",
+      "ja",
+      "ko",
+      "ru",
+      "zh",
+      "zh-Hant"
+    ],
+    "sources/le-livre-des-secrets-trahis-a-full-la-kabbale-chapter-checked-in-full-no-parasan": [
       "de",
       "en",
       "es",
@@ -3933,6 +4443,18 @@
       "zh-Hant"
     ],
     "sources/les-extra-terrestres-m-ont-emmen-sur-leur-plan-te": [
+      "de",
+      "en",
+      "es",
+      "fr",
+      "he",
+      "ja",
+      "ko",
+      "ru",
+      "zh",
+      "zh-Hant"
+    ],
+    "sources/let-s-welcome-the-extra-terrestrials-who-created-the-creator-of-the-creators-the": [
       "de",
       "en",
       "es",
@@ -4136,6 +4658,18 @@
       "zh",
       "zh-Hant"
     ],
+    "sources/mass-effect-wheel-of-heaven-wiki-the-law-of-masstime-the-two-equivalent-formulat": [
+      "de",
+      "en",
+      "es",
+      "fr",
+      "he",
+      "ja",
+      "ko",
+      "ru",
+      "zh",
+      "zh-Hant"
+    ],
     "sources/mathematics-and-the-unexpected": [
       "de",
       "en",
@@ -4220,7 +4754,31 @@
       "zh",
       "zh-Hant"
     ],
+    "sources/merkavah-shelemah-the-printed-collection-of-the-shi-ur-qomah-fragments-cited-thr": [
+      "de",
+      "en",
+      "es",
+      "fr",
+      "he",
+      "ja",
+      "ko",
+      "ru",
+      "zh",
+      "zh-Hant"
+    ],
     "sources/mesopotamian-chronicles": [
+      "de",
+      "en",
+      "es",
+      "fr",
+      "he",
+      "ja",
+      "ko",
+      "ru",
+      "zh",
+      "zh-Hant"
+    ],
+    "sources/metabolic-rate-and-body-size-are-linked-with-perception-of-temporal-information-": [
       "de",
       "en",
       "es",
@@ -4257,6 +4815,18 @@
       "zh-Hant"
     ],
     "sources/miracles-and-the-pulp-press": [
+      "de",
+      "en",
+      "es",
+      "fr",
+      "he",
+      "ja",
+      "ko",
+      "ru",
+      "zh",
+      "zh-Hant"
+    ],
+    "sources/mishnah-hagigah-2-1-the-ban-on-expounding-the-work-of-the-chariot-babylonian-tal": [
       "de",
       "en",
       "es",
@@ -4544,6 +5114,30 @@
       "zh",
       "zh-Hant"
     ],
+    "sources/on-the-mystical-shape-of-the-godhead-basic-concepts-in-the-kabbalah": [
+      "de",
+      "en",
+      "es",
+      "fr",
+      "he",
+      "ja",
+      "ko",
+      "ru",
+      "zh",
+      "zh-Hant"
+    ],
+    "sources/on-the-mystical-shape-of-the-godhead-basic-concepts-in-the-kabbalah-ch-1-shi-ur-": [
+      "de",
+      "en",
+      "es",
+      "fr",
+      "he",
+      "ja",
+      "ko",
+      "ru",
+      "zh",
+      "zh-Hant"
+    ],
     "sources/on-the-origin-of-qur-anic-arabic-draft": [
       "de",
       "en",
@@ -4580,6 +5174,18 @@
       "zh",
       "zh-Hant"
     ],
+    "sources/optical-clocks-and-relativity-science-329-1630-1633-gravitational-time-dilation-": [
+      "de",
+      "en",
+      "es",
+      "fr",
+      "he",
+      "ja",
+      "ko",
+      "ru",
+      "zh",
+      "zh-Hant"
+    ],
     "sources/order-out-of-chaos-man-s-new-dialogue-with-nature": [
       "de",
       "en",
@@ -4605,6 +5211,18 @@
       "zh-Hant"
     ],
     "sources/osteology-of-deinonychus-antirrhopus-an-unusual-theropod-from-the-lower-cretaceo": [
+      "de",
+      "en",
+      "es",
+      "fr",
+      "he",
+      "ja",
+      "ko",
+      "ru",
+      "zh",
+      "zh-Hant"
+    ],
+    "sources/otiot-de-rabbi-akiva-the-recension-giving-the-body-of-the-shekhinah-is-2-360-000": [
       "de",
       "en",
       "es",
@@ -4736,7 +5354,31 @@
       "zh",
       "zh-Hant"
     ],
+    "sources/pens-es-the-two-infinities-a-nothing-in-regard-to-the-infinite-an-all-in-regard-": [
+      "de",
+      "en",
+      "es",
+      "fr",
+      "he",
+      "ja",
+      "ko",
+      "ru",
+      "zh",
+      "zh-Hant"
+    ],
     "sources/pillar-of-enoch-dot-com": [
+      "de",
+      "en",
+      "es",
+      "fr",
+      "he",
+      "ja",
+      "ko",
+      "ru",
+      "zh",
+      "zh-Hant"
+    ],
+    "sources/pirkei-avot-1-1-moses-received-kibbel-the-torah-at-sinai-the-chain-of-tradition-": [
       "de",
       "en",
       "es",
@@ -5012,6 +5654,18 @@
       "zh",
       "zh-Hant"
     ],
+    "sources/reconstructing-the-universe-phys-rev-d-72-064014-causal-dynamical-triangulations": [
+      "de",
+      "en",
+      "es",
+      "fr",
+      "he",
+      "ja",
+      "ko",
+      "ru",
+      "zh",
+      "zh-Hant"
+    ],
     "sources/redating-the-great-sphinx-of-giza": [
       "de",
       "en",
@@ -5037,6 +5691,18 @@
       "zh-Hant"
     ],
     "sources/reliquiae-diluvianae": [
+      "de",
+      "en",
+      "es",
+      "fr",
+      "he",
+      "ja",
+      "ko",
+      "ru",
+      "zh",
+      "zh-Hant"
+    ],
+    "sources/responsum-on-the-shi-ur-qomah-in-otzar-ha-geonim-hagigah-ed-b-m-lewin-our-creato": [
       "de",
       "en",
       "es",
@@ -5240,6 +5906,18 @@
       "zh",
       "zh-Hant"
     ],
+    "sources/scale-the-universal-laws-of-growth-innovation-sustainability-and-the-pace-of-lif": [
+      "de",
+      "en",
+      "es",
+      "fr",
+      "he",
+      "ja",
+      "ko",
+      "ru",
+      "zh",
+      "zh-Hant"
+    ],
     "sources/schele-freidel-forest-of-kings": [
       "de",
       "en",
@@ -5265,6 +5943,30 @@
       "zh-Hant"
     ],
     "sources/sefaria": [
+      "de",
+      "en",
+      "es",
+      "fr",
+      "he",
+      "ja",
+      "ko",
+      "ru",
+      "zh",
+      "zh-Hant"
+    ],
+    "sources/sefer-raziel-ha-mal-akh-the-grimoire-legendarily-given-by-the-angel-raziel-to-ad": [
+      "de",
+      "en",
+      "es",
+      "fr",
+      "he",
+      "ja",
+      "ko",
+      "ru",
+      "zh",
+      "zh-Hant"
+    ],
+    "sources/sefer-shi-ur-qomah-warsaw-y-goldman-1883-and-pardes-rimmonim-the-safed-rehabilit": [
       "de",
       "en",
       "es",
@@ -5349,6 +6051,42 @@
       "zh-Hant"
     ],
     "sources/shan-hai-jing": [
+      "de",
+      "en",
+      "es",
+      "fr",
+      "he",
+      "ja",
+      "ko",
+      "ru",
+      "zh",
+      "zh-Hant"
+    ],
+    "sources/shi-ur-komah-in-encyclopaedia-judaica": [
+      "de",
+      "en",
+      "es",
+      "fr",
+      "he",
+      "ja",
+      "ko",
+      "ru",
+      "zh",
+      "zh-Hant"
+    ],
+    "sources/shi-ur-omah-in-the-jewish-encyclopedia-vol-xi": [
+      "de",
+      "en",
+      "es",
+      "fr",
+      "he",
+      "ja",
+      "ko",
+      "ru",
+      "zh",
+      "zh-Hant"
+    ],
+    "sources/shi-ur-omah-in-the-jewish-encyclopedia-vol-xi-the-1906-english-article-gives-the": [
       "de",
       "en",
       "es",
@@ -5457,6 +6195,18 @@
       "zh-Hant"
     ],
     "sources/soleri-arcology": [
+      "de",
+      "en",
+      "es",
+      "fr",
+      "he",
+      "ja",
+      "ko",
+      "ru",
+      "zh",
+      "zh-Hant"
+    ],
+    "sources/song-of-songs-5-10-16-the-description-of-the-beloved-s-body-quoted-inside-the-sh": [
       "de",
       "en",
       "es",
@@ -5577,6 +6327,18 @@
       "zh-Hant"
     ],
     "sources/sunvault-anthology": [
+      "de",
+      "en",
+      "es",
+      "fr",
+      "he",
+      "ja",
+      "ko",
+      "ru",
+      "zh",
+      "zh-Hant"
+    ],
+    "sources/synopse-zur-hekhalot-literatur-tsaj-2-the-parallel-column-edition-of-the-major-m": [
       "de",
       "en",
       "es",
@@ -6008,6 +6770,18 @@
       "zh",
       "zh-Hant"
     ],
+    "sources/the-fractal-structure-of-the-universe-correlations-of-galaxies-and-clusters-phys": [
+      "de",
+      "en",
+      "es",
+      "fr",
+      "he",
+      "ja",
+      "ko",
+      "ru",
+      "zh",
+      "zh-Hant"
+    ],
     "sources/the-gilgamesh-epic-and-old-testament-parallels": [
       "de",
       "en",
@@ -6045,6 +6819,18 @@
       "zh-Hant"
     ],
     "sources/the-hebrew-and-aramaic-lexicon-of-the-old-testament": [
+      "de",
+      "en",
+      "es",
+      "fr",
+      "he",
+      "ja",
+      "ko",
+      "ru",
+      "zh",
+      "zh-Hant"
+    ],
+    "sources/the-hidden-and-manifest-god-some-major-themes-in-early-jewish-mysticism": [
       "de",
       "en",
       "es",
@@ -6176,6 +6962,18 @@
       "zh",
       "zh-Hant"
     ],
+    "sources/the-nature-of-space-and-time-the-hawking-penrose-exchange-on-singularities-and-c": [
+      "de",
+      "en",
+      "es",
+      "fr",
+      "he",
+      "ja",
+      "ko",
+      "ru",
+      "zh",
+      "zh-Hant"
+    ],
     "sources/the-origin-of-satan": [
       "de",
       "en",
@@ -6296,6 +7094,42 @@
       "zh",
       "zh-Hant"
     ],
+    "sources/the-shi-ur-qomah-liturgy-and-theurgy-in-pre-kabbalistic-jewish-mysticism": [
+      "de",
+      "en",
+      "es",
+      "fr",
+      "he",
+      "ja",
+      "ko",
+      "ru",
+      "zh",
+      "zh-Hant"
+    ],
+    "sources/the-shi-ur-qomah-texts-and-recensions-tsaj-9": [
+      "de",
+      "en",
+      "es",
+      "fr",
+      "he",
+      "ja",
+      "ko",
+      "ru",
+      "zh",
+      "zh-Hant"
+    ],
+    "sources/the-shi-ur-qomah-texts-and-recensions-tsaj-9-the-critical-edition": [
+      "de",
+      "en",
+      "es",
+      "fr",
+      "he",
+      "ja",
+      "ko",
+      "ru",
+      "zh",
+      "zh-Hant"
+    ],
     "sources/the-sky-people": [
       "de",
       "en",
@@ -6356,6 +7190,18 @@
       "zh",
       "zh-Hant"
     ],
+    "sources/the-three-dimensional-power-spectrum-of-galaxies-from-the-sloan-digital-sky-surv": [
+      "de",
+      "en",
+      "es",
+      "fr",
+      "he",
+      "ja",
+      "ko",
+      "ru",
+      "zh",
+      "zh-Hant"
+    ],
     "sources/the-treasures-of-darkness-a-history-of-mesopotamian-religion": [
       "de",
       "en",
@@ -6381,6 +7227,30 @@
       "zh-Hant"
     ],
     "sources/the-wars-of-gods-and-men": [
+      "de",
+      "en",
+      "es",
+      "fr",
+      "he",
+      "ja",
+      "ko",
+      "ru",
+      "zh",
+      "zh-Hant"
+    ],
+    "sources/the-wigglez-dark-energy-survey-the-transition-to-large-scale-cosmic-homogeneity-": [
+      "de",
+      "en",
+      "es",
+      "fr",
+      "he",
+      "ja",
+      "ko",
+      "ru",
+      "zh",
+      "zh-Hant"
+    ],
+    "sources/the-wild-fractal-nature-of-spacetime-smooth-quantum-gravity-and-cosmology-world-": [
       "de",
       "en",
       "es",
@@ -6612,6 +7482,18 @@
       "zh-Hant"
     ],
     "sources/voices-of-the-rocks-a-scientist-looks-at-catastrophes-and-ancient-civilizations": [
+      "de",
+      "en",
+      "es",
+      "fr",
+      "he",
+      "ja",
+      "ko",
+      "ru",
+      "zh",
+      "zh-Hant"
+    ],
+    "sources/von-neumann-algebra-automorphisms-and-time-thermodynamics-relation-class-quantum": [
       "de",
       "en",
       "es",
@@ -7586,6 +8468,18 @@
       "zh",
       "zh-Hant"
     ],
+    "wiki/hekhalot-literature": [
+      "de",
+      "en",
+      "es",
+      "fr",
+      "he",
+      "ja",
+      "ko",
+      "ru",
+      "zh",
+      "zh-Hant"
+    ],
     "wiki/humanitarianism": [
       "de",
       "en",
@@ -7970,6 +8864,9 @@
       "zh",
       "zh-Hant"
     ],
+    "wiki/paul-wallis": [
+      "en"
+    ],
     "wiki/petra": [
       "de",
       "en",
@@ -8139,6 +9036,18 @@
       "zh-Hant"
     ],
     "wiki/serpentine-rebellion": [
+      "de",
+      "en",
+      "es",
+      "fr",
+      "he",
+      "ja",
+      "ko",
+      "ru",
+      "zh",
+      "zh-Hant"
+    ],
+    "wiki/shiur-qomah": [
       "de",
       "en",
       "es",
