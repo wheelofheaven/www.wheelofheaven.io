@@ -1,8 +1,172 @@
 {
-  "generated_at": "2026-07-01T04:42:37+00:00",
+  "generated_at": "2026-07-06T13:19:02+00:00",
   "generator": "scripts/build_sources.py",
   "schema_version": 1,
   "sources": [
+    {
+      "id": "3-hebrew-apocalypse-of-enoch-in-the-old-testament-pseudepigrapha-vol-1-the-stand",
+      "cited_by": [
+        {
+          "section": "articles",
+          "title": "The Book Closest to the Truth",
+          "path": "/articles/the-book-closest-to-the-truth/"
+        }
+      ],
+      "cite_count": 1
+    },
+    {
+      "id": "beyond-judaism-metatron-and-the-divine-polymorphy-of-ancient-judaism-journal-for",
+      "cited_by": [
+        {
+          "section": "articles",
+          "title": "The Book Closest to the Truth",
+          "path": "/articles/the-book-closest-to-the-truth/"
+        }
+      ],
+      "cite_count": 1
+    },
+    {
+      "id": "bible-lessons-with-ra-l-on-religious-appropriation-in-et-inspired-religions-nova",
+      "cited_by": [
+        {
+          "section": "articles",
+          "title": "The Religion of Religions",
+          "path": "/articles/the-religion-of-religions/"
+        }
+      ],
+      "cite_count": 1
+    },
+    {
+      "id": "clues-roots-of-an-evidential-paradigm-in-myths-emblems-clues-morelli-s-earlobes-",
+      "cited_by": [
+        {
+          "section": "articles",
+          "title": "The Forty Chairs",
+          "path": "/articles/the-forty-chairs/"
+        }
+      ],
+      "cite_count": 1
+    },
+    {
+      "id": "extraterrestrial-exegesis-the-ra-lian-movement-as-a-biblical-religion-nova-relig",
+      "cited_by": [
+        {
+          "section": "articles",
+          "title": "The Religion of Religions",
+          "path": "/articles/the-religion-of-religions/"
+        }
+      ],
+      "cite_count": 1
+    },
+    {
+      "id": "is-god-a-space-alien-the-cosmology-of-the-ra-lian-church-culture-and-cosmos-4-1-",
+      "cited_by": [
+        {
+          "section": "articles",
+          "title": "The Religion of Religions",
+          "path": "/articles/the-religion-of-religions/"
+        }
+      ],
+      "cite_count": 1
+    },
+    {
+      "id": "new-religious-movements-and-science-rael-s-progressive-patronizing-parasitism-zy",
+      "cited_by": [
+        {
+          "section": "articles",
+          "title": "The Religion of Religions",
+          "path": "/articles/the-religion-of-religions/"
+        }
+      ],
+      "cite_count": 1
+    },
+    {
+      "id": "presumed-immanent-the-ra-lians-ufo-religions-and-the-postmodern-condition-nova-r",
+      "cited_by": [
+        {
+          "section": "articles",
+          "title": "The Religion of Religions",
+          "path": "/articles/the-religion-of-religions/"
+        }
+      ],
+      "cite_count": 1
+    },
+    {
+      "id": "rael-community-announces-human-cloning-and-companion-zenit-interviews-cesnur-the",
+      "cited_by": [
+        {
+          "section": "articles",
+          "title": "The Religion of Religions",
+          "path": "/articles/the-religion-of-religions/"
+        }
+      ],
+      "cite_count": 1
+    },
+    {
+      "id": "ra-lism-an-unconventional-religious-pathway-into-transhumanism-ilahiyat-studies-",
+      "cited_by": [
+        {
+          "section": "articles",
+          "title": "The Religion of Religions",
+          "path": "/articles/the-religion-of-religions/"
+        }
+      ],
+      "cite_count": 1
+    },
+    {
+      "id": "shi-ur-komah-in-encyclopaedia-judaica",
+      "cited_by": [
+        {
+          "section": "articles",
+          "title": "The Book Closest to the Truth",
+          "path": "/articles/the-book-closest-to-the-truth/"
+        }
+      ],
+      "cite_count": 1
+    },
+    {
+      "id": "shi-ur-omah-in-the-jewish-encyclopedia-vol-xi",
+      "cited_by": [],
+      "cite_count": 0
+    },
+    {
+      "id": "shi-ur-omah-in-the-jewish-encyclopedia-vol-xi-the-1906-english-article-gives-the",
+      "cited_by": [
+        {
+          "section": "articles",
+          "title": "The Book Closest to the Truth",
+          "path": "/articles/the-book-closest-to-the-truth/"
+        }
+      ],
+      "cite_count": 1
+    },
+    {
+      "id": "the-international-ra-lian-movement-in-the-cambridge-companion-to-new-religious-m",
+      "cited_by": [
+        {
+          "section": "articles",
+          "title": "The Religion of Religions",
+          "path": "/articles/the-religion-of-religions/"
+        }
+      ],
+      "cite_count": 1
+    },
+    {
+      "id": "why-religious-movements-succeed-or-fail-a-revised-general-model-journal-of-conte",
+      "cited_by": [
+        {
+          "section": "articles",
+          "title": "The Forty Chairs",
+          "path": "/articles/the-forty-chairs/"
+        },
+        {
+          "section": "articles",
+          "title": "The Religion of Religions",
+          "path": "/articles/the-religion-of-religions/"
+        }
+      ],
+      "cite_count": 2
+    },
     {
       "id": "1-chronicles",
       "cited_by": [],
@@ -11,6 +175,16 @@
     {
       "id": "1-enoch-the-book-of-the-watchers",
       "cited_by": [
+        {
+          "section": "articles",
+          "title": "The Filing Cabinet of the Gods",
+          "path": "/articles/the-filing-cabinet-of-the-gods/"
+        },
+        {
+          "section": "articles",
+          "title": "Unsealed in Year One",
+          "path": "/articles/unsealed-in-year-one/"
+        },
         {
           "section": "timeline",
           "title": "Preamble",
@@ -23,22 +197,47 @@
         },
         {
           "section": "wiki",
+          "title": "Nephilim",
+          "path": "/wiki/nephilim/"
+        },
+        {
+          "section": "wiki",
           "title": "Satan",
           "path": "/wiki/satan/"
+        },
+        {
+          "section": "wiki",
+          "title": "Watchers",
+          "path": "/wiki/watchers/"
         }
       ],
-      "cite_count": 3
+      "cite_count": 7
     },
     {
       "id": "nickelsburg-enoch-1",
       "cited_by": [
         {
+          "section": "articles",
+          "title": "Unsealed in Year One",
+          "path": "/articles/unsealed-in-year-one/"
+        },
+        {
+          "section": "wiki",
+          "title": "Nephilim",
+          "path": "/wiki/nephilim/"
+        },
+        {
           "section": "wiki",
           "title": "Satan",
           "path": "/wiki/satan/"
+        },
+        {
+          "section": "wiki",
+          "title": "Watchers",
+          "path": "/wiki/watchers/"
         }
       ],
-      "cite_count": 1
+      "cite_count": 4
     },
     {
       "id": "1-kings",
@@ -56,14 +255,52 @@
       "cite_count": 0
     },
     {
+      "id": "2-enoch-slavonic-apocalypse-of-enoch-chs-13-39-i-saw-the-extent-of-the-lord-with",
+      "cited_by": [
+        {
+          "section": "articles",
+          "title": "The Book Closest to the Truth",
+          "path": "/articles/the-book-closest-to-the-truth/"
+        }
+      ],
+      "cite_count": 1
+    },
+    {
       "id": "2-kings",
-      "cited_by": [],
-      "cite_count": 0
+      "cited_by": [
+        {
+          "section": "articles",
+          "title": "The Archdeacon and the Dragon",
+          "path": "/articles/the-archdeacon-and-the-dragon/"
+        },
+        {
+          "section": "articles",
+          "title": "The Mill That Grinds the Ages",
+          "path": "/articles/the-mill-that-grinds-the-ages/"
+        }
+      ],
+      "cite_count": 2
     },
     {
       "id": "2-samuel",
       "cited_by": [],
       "cite_count": 0
+    },
+    {
+      "id": "3-enoch-or-the-hebrew-book-of-enoch",
+      "cited_by": [],
+      "cite_count": 0
+    },
+    {
+      "id": "3-enoch-or-the-hebrew-book-of-enoch-the-editio-princeps-odeberg-s-early-dating-s",
+      "cited_by": [
+        {
+          "section": "articles",
+          "title": "The Book Closest to the Truth",
+          "path": "/articles/the-book-closest-to-the-truth/"
+        }
+      ],
+      "cite_count": 1
     },
     {
       "id": "cassuto-genesis",
@@ -80,6 +317,17 @@
         }
       ],
       "cite_count": 2
+    },
+    {
+      "id": "a-comprehensive-etymological-dictionary-of-the-hebrew-language-for-readers-of-en",
+      "cited_by": [
+        {
+          "section": "articles",
+          "title": "The Mill That Grinds the Ages",
+          "path": "/articles/the-mill-that-grinds-the-ages/"
+        }
+      ],
+      "cite_count": 1
     },
     {
       "id": "a-concise-dictionary-of-the-words-in-the-hebrew-bible-strong-s",
@@ -120,6 +368,28 @@
       "cite_count": 1
     },
     {
+      "id": "a-general-model-for-the-origin-of-allometric-scaling-laws-in-biology-science-276",
+      "cited_by": [
+        {
+          "section": "articles",
+          "title": "The Infinite in Both Directions",
+          "path": "/articles/the-infinite-in-both-directions/"
+        }
+      ],
+      "cite_count": 1
+    },
+    {
+      "id": "a-gentleman-s-joyous-esotericism-jean-sendy-above-and-beyond-the-ancient-aliens-",
+      "cited_by": [
+        {
+          "section": "articles",
+          "title": "The Man Who Bet the Bible on the Moon",
+          "path": "/articles/the-man-who-bet-the-bible-on-the-moon/"
+        }
+      ],
+      "cite_count": 1
+    },
+    {
       "id": "a-gentlemans-joyous-esotericism",
       "cited_by": [
         {
@@ -136,9 +406,14 @@
           "section": "wiki",
           "title": "Genesis",
           "path": "/wiki/genesis/"
+        },
+        {
+          "section": "wiki",
+          "title": "Jean Sendy",
+          "path": "/wiki/jean-sendy/"
         }
       ],
-      "cite_count": 3
+      "cite_count": 4
     },
     {
       "id": "a-hebrew-and-english-lexicon-of-the-old-testament",
@@ -177,15 +452,20 @@
       "cite_count": 0
     },
     {
-      "id": "a-new-look-at-the-babylonian-background-of-genesis-jts-16",
+      "id": "a-marginal-jew-rethinking-the-historical-jesus-volume-one-the-classic-statement-",
       "cited_by": [
         {
           "section": "articles",
-          "title": "Made from the Ground to Bear the Labor",
-          "path": "/articles/made-from-the-ground-to-bear-the-labor/"
+          "title": "The Forty Chairs",
+          "path": "/articles/the-forty-chairs/"
         }
       ],
       "cite_count": 1
+    },
+    {
+      "id": "a-new-look-at-the-babylonian-background-of-genesis-jts-16",
+      "cited_by": [],
+      "cite_count": 0
     },
     {
       "id": "a-programmable-dual-rna-guided-dna-endonuclease-in-adaptive-bacterial-immunity",
@@ -194,6 +474,28 @@
           "section": "timeline",
           "title": "Age of Leo",
           "path": "/timeline/age-of-leo/"
+        }
+      ],
+      "cite_count": 1
+    },
+    {
+      "id": "a-prophet-from-amongst-you-the-life-of-yigael-yadin-soldier-scholar-and-mythmake",
+      "cited_by": [
+        {
+          "section": "articles",
+          "title": "The Scrolls That Woke in Year One",
+          "path": "/articles/the-scrolls-that-woke-in-year-one/"
+        }
+      ],
+      "cite_count": 1
+    },
+    {
+      "id": "a-study-of-history-abridgement-of-vols-i-vi-by-d-c-somervell-challenge-and-respo",
+      "cited_by": [
+        {
+          "section": "articles",
+          "title": "The Shape of Humanity",
+          "path": "/articles/the-shape-of-humanity/"
         }
       ],
       "cite_count": 1
@@ -242,6 +544,33 @@
       "cite_count": 2
     },
     {
+      "id": "against-heresies-adversus-haereses-i-14-marcus-the-valentinian-and-the-letter-na",
+      "cited_by": [
+        {
+          "section": "articles",
+          "title": "The Book Closest to the Truth",
+          "path": "/articles/the-book-closest-to-the-truth/"
+        }
+      ],
+      "cite_count": 1
+    },
+    {
+      "id": "aion-researches-into-the-phenomenology-of-the-self-cw-9ii-the-pisces-aeon-as-syn",
+      "cited_by": [
+        {
+          "section": "articles",
+          "title": "The Mill That Grinds the Ages",
+          "path": "/articles/the-mill-that-grinds-the-ages/"
+        }
+      ],
+      "cite_count": 1
+    },
+    {
+      "id": "akhb-r-makka-chronicles-of-mecca",
+      "cited_by": [],
+      "cite_count": 0
+    },
+    {
       "id": "akhbar-makka",
       "cited_by": [
         {
@@ -254,13 +583,51 @@
     },
     {
       "id": "aliens-adored",
+      "cited_by": [
+        {
+          "section": "articles",
+          "title": "The Forty Chairs",
+          "path": "/articles/the-forty-chairs/"
+        },
+        {
+          "section": "articles",
+          "title": "The Religion of Religions",
+          "path": "/articles/the-religion-of-religions/"
+        }
+      ],
+      "cite_count": 2
+    },
+    {
+      "id": "aliens-adored-ra-l-s-ufo-religion",
       "cited_by": [],
       "cite_count": 0
     },
     {
+      "id": "aliens-adored-ra-l-s-ufo-religion-the-standard-academic-study-of-ra-lism-notes-s",
+      "cited_by": [
+        {
+          "section": "articles",
+          "title": "The Man Who Bet the Bible on the Moon",
+          "path": "/articles/the-man-who-bet-the-bible-on-the-moon/"
+        }
+      ],
+      "cite_count": 1
+    },
+    {
       "id": "ptolemy-almagest",
-      "cited_by": [],
-      "cite_count": 0
+      "cited_by": [
+        {
+          "section": "articles",
+          "title": "The Mill That Grinds the Ages",
+          "path": "/articles/the-mill-that-grinds-the-ages/"
+        },
+        {
+          "section": "wiki",
+          "title": "Hamlet's Mill",
+          "path": "/wiki/hamlets-mill/"
+        }
+      ],
+      "cite_count": 2
     },
     {
       "id": "alternative-history-s-mainstream-history",
@@ -300,6 +667,17 @@
       "cite_count": 0
     },
     {
+      "id": "an-enquiry-concerning-human-understanding-section-x-of-miracles-the-maxim-on-tes",
+      "cited_by": [
+        {
+          "section": "articles",
+          "title": "The Forty Chairs",
+          "path": "/articles/the-forty-chairs/"
+        }
+      ],
+      "cite_count": 1
+    },
+    {
       "id": "an-exceptionally-well-preserved-theropod-dinosaur-from-the-yixian-formation-of-c",
       "cited_by": [
         {
@@ -334,14 +712,8 @@
     },
     {
       "id": "ancient-mesopotamian-materials-and-industries",
-      "cited_by": [
-        {
-          "section": "articles",
-          "title": "Made from the Ground to Bear the Labor",
-          "path": "/articles/made-from-the-ground-to-bear-the-labor/"
-        }
-      ],
-      "cite_count": 1
+      "cited_by": [],
+      "cite_count": 0
     },
     {
       "id": "pritchard-anet",
@@ -350,6 +722,22 @@
           "section": "wiki",
           "title": "Hebrew Bible",
           "path": "/wiki/hebrew-bible/"
+        },
+        {
+          "section": "wiki",
+          "title": "Sumerian King List",
+          "path": "/wiki/sumerian-king-list/"
+        }
+      ],
+      "cite_count": 2
+    },
+    {
+      "id": "animadversions-of-a-synthetic-chemist-inference-international-review-of-science-",
+      "cited_by": [
+        {
+          "section": "articles",
+          "title": "The Signature and the Designers",
+          "path": "/articles/the-signature-and-the-designers/"
         }
       ],
       "cite_count": 1
@@ -377,6 +765,33 @@
       "cite_count": 1
     },
     {
+      "id": "apocalyptic-and-merkavah-mysticism",
+      "cited_by": [
+        {
+          "section": "articles",
+          "title": "The Book Closest to the Truth",
+          "path": "/articles/the-book-closest-to-the-truth/"
+        },
+        {
+          "section": "articles",
+          "title": "Unsealed in Year One",
+          "path": "/articles/unsealed-in-year-one/"
+        }
+      ],
+      "cite_count": 2
+    },
+    {
+      "id": "apparent-weight-of-photons-physical-review-letters-4-337-341-the-pound-rebka-gra",
+      "cited_by": [
+        {
+          "section": "articles",
+          "title": "The Infinite in Both Directions",
+          "path": "/articles/the-infinite-in-both-directions/"
+        }
+      ],
+      "cite_count": 1
+    },
+    {
       "id": "soleri-arcology",
       "cited_by": [
         {
@@ -391,9 +806,19 @@
       "id": "astronomical-algorithms",
       "cited_by": [
         {
+          "section": "articles",
+          "title": "The Mill That Grinds the Ages",
+          "path": "/articles/the-mill-that-grinds-the-ages/"
+        },
+        {
           "section": "timeline",
           "title": "Age of Libra",
           "path": "/timeline/age-of-libra/"
+        },
+        {
+          "section": "wiki",
+          "title": "Hamlet's Mill",
+          "path": "/wiki/hamlets-mill/"
         },
         {
           "section": "wiki",
@@ -401,7 +826,18 @@
           "path": "/wiki/precession/"
         }
       ],
-      "cite_count": 2
+      "cite_count": 4
+    },
+    {
+      "id": "asymptotic-safety-in-quantum-einstein-gravity-arxiv-hep-th-0511260-scale-depende",
+      "cited_by": [
+        {
+          "section": "articles",
+          "title": "The Infinite in Both Directions",
+          "path": "/articles/the-infinite-in-both-directions/"
+        }
+      ],
+      "cite_count": 1
     },
     {
       "id": "atlantis-antediluvian-world",
@@ -419,8 +855,8 @@
       "cited_by": [
         {
           "section": "articles",
-          "title": "Made from the Ground to Bear the Labor",
-          "path": "/articles/made-from-the-ground-to-bear-the-labor/"
+          "title": "The Filing Cabinet of the Gods",
+          "path": "/articles/the-filing-cabinet-of-the-gods/"
         },
         {
           "section": "articles",
@@ -460,11 +896,16 @@
         },
         {
           "section": "wiki",
+          "title": "Sumerian King List",
+          "path": "/wiki/sumerian-king-list/"
+        },
+        {
+          "section": "wiki",
           "title": "Tree of Life",
           "path": "/wiki/tree-of-life/"
         }
       ],
-      "cite_count": 6
+      "cite_count": 7
     },
     {
       "id": "atrahasis",
@@ -476,8 +917,18 @@
         },
         {
           "section": "articles",
+          "title": "The Archdeacon and the Dragon",
+          "path": "/articles/the-archdeacon-and-the-dragon/"
+        },
+        {
+          "section": "articles",
           "title": "The Flood Was a Reset, Not a Punishment",
           "path": "/articles/the-flood-was-a-reset-not-a-punishment/"
+        },
+        {
+          "section": "articles",
+          "title": "The Translator's Wager",
+          "path": "/articles/the-translators-wager/"
         },
         {
           "section": "timeline",
@@ -495,7 +946,7 @@
           "path": "/wiki/genesis/"
         }
       ],
-      "cite_count": 5
+      "cite_count": 7
     },
     {
       "id": "avebury-biography-of-a-landscape",
@@ -536,9 +987,14 @@
           "section": "articles",
           "title": "Made from the Ground to Bear the Labor",
           "path": "/articles/made-from-the-ground-to-bear-the-labor/"
+        },
+        {
+          "section": "articles",
+          "title": "The Filing Cabinet of the Gods",
+          "path": "/articles/the-filing-cabinet-of-the-gods/"
         }
       ],
-      "cite_count": 1
+      "cite_count": 2
     },
     {
       "id": "bahaipedia",
@@ -546,9 +1002,42 @@
       "cite_count": 0
     },
     {
+      "id": "bare-faced-messiah-the-true-story-of-l-ron-hubbard-the-biographical-record-again",
+      "cited_by": [
+        {
+          "section": "articles",
+          "title": "The Forty Chairs",
+          "path": "/articles/the-forty-chairs/"
+        }
+      ],
+      "cite_count": 1
+    },
+    {
       "id": "barton-cylinder",
       "cited_by": [],
       "cite_count": 0
+    },
+    {
+      "id": "basic-properties-of-galaxy-clustering-in-the-light-of-recent-results-from-the-sl",
+      "cited_by": [
+        {
+          "section": "articles",
+          "title": "The Infinite in Both Directions",
+          "path": "/articles/the-infinite-in-both-directions/"
+        }
+      ],
+      "cite_count": 1
+    },
+    {
+      "id": "bedtime-story-the-new-york-review-of-books-february-12-1970-the-anthropologist-s",
+      "cited_by": [
+        {
+          "section": "articles",
+          "title": "The Mill That Grinds the Ages",
+          "path": "/articles/the-mill-that-grinds-the-ages/"
+        }
+      ],
+      "cite_count": 1
     },
     {
       "id": "before-the-muses",
@@ -562,9 +1051,14 @@
           "section": "wiki",
           "title": "Antediluvian",
           "path": "/wiki/antediluvian/"
+        },
+        {
+          "section": "wiki",
+          "title": "Nephilim",
+          "path": "/wiki/nephilim/"
         }
       ],
-      "cite_count": 2
+      "cite_count": 3
     },
     {
       "id": "foster-before-muses",
@@ -573,6 +1067,33 @@
           "section": "wiki",
           "title": "Great Flood",
           "path": "/wiki/great-flood/"
+        }
+      ],
+      "cite_count": 1
+    },
+    {
+      "id": "berossos-and-manetho-introduced-and-translated-native-traditions-in-ancient-meso",
+      "cited_by": [
+        {
+          "section": "articles",
+          "title": "The Filing Cabinet of the Gods",
+          "path": "/articles/the-filing-cabinet-of-the-gods/"
+        },
+        {
+          "section": "wiki",
+          "title": "Sumerian King List",
+          "path": "/wiki/sumerian-king-list/"
+        }
+      ],
+      "cite_count": 2
+    },
+    {
+      "id": "bet-ha-midrasch-sammlung-kleiner-midraschim-the-public-domain-transmission-of-th",
+      "cited_by": [
+        {
+          "section": "articles",
+          "title": "The Book Closest to the Truth",
+          "path": "/articles/the-book-closest-to-the-truth/"
         }
       ],
       "cite_count": 1
@@ -589,6 +1110,17 @@
       "cite_count": 1
     },
     {
+      "id": "body-size-and-metabolism-hilgardia-6-315-353-the-3-4-power-metabolic-law",
+      "cited_by": [
+        {
+          "section": "articles",
+          "title": "The Infinite in Both Directions",
+          "path": "/articles/the-infinite-in-both-directions/"
+        }
+      ],
+      "cite_count": 1
+    },
+    {
       "id": "book-of-abraham",
       "cited_by": [],
       "cite_count": 0
@@ -598,8 +1130,28 @@
       "cited_by": [
         {
           "section": "articles",
+          "title": "The Archdeacon and the Dragon",
+          "path": "/articles/the-archdeacon-and-the-dragon/"
+        },
+        {
+          "section": "articles",
           "title": "The Flood Was a Reset, Not a Punishment",
           "path": "/articles/the-flood-was-a-reset-not-a-punishment/"
+        },
+        {
+          "section": "articles",
+          "title": "The Scrolls That Woke in Year One",
+          "path": "/articles/the-scrolls-that-woke-in-year-one/"
+        },
+        {
+          "section": "articles",
+          "title": "The Translator's Wager",
+          "path": "/articles/the-translators-wager/"
+        },
+        {
+          "section": "articles",
+          "title": "Unsealed in Year One",
+          "path": "/articles/unsealed-in-year-one/"
         },
         {
           "section": "wiki",
@@ -620,14 +1172,30 @@
           "section": "wiki",
           "title": "Tree of Life",
           "path": "/wiki/tree-of-life/"
+        },
+        {
+          "section": "wiki",
+          "title": "Watchers",
+          "path": "/wiki/watchers/"
         }
       ],
-      "cite_count": 5
+      "cite_count": 10
     },
     {
       "id": "book-of-mormon",
-      "cited_by": [],
-      "cite_count": 0
+      "cited_by": [
+        {
+          "section": "articles",
+          "title": "The Forty Chairs",
+          "path": "/articles/the-forty-chairs/"
+        },
+        {
+          "section": "articles",
+          "title": "The Religion of Religions",
+          "path": "/articles/the-religion-of-religions/"
+        }
+      ],
+      "cite_count": 2
     },
     {
       "id": "broca-s-brain-reflections-on-the-romance-of-science",
@@ -655,12 +1223,17 @@
       "id": "canaanite-myth-and-hebrew-epic",
       "cited_by": [
         {
+          "section": "articles",
+          "title": "The Filing Cabinet of the Gods",
+          "path": "/articles/the-filing-cabinet-of-the-gods/"
+        },
+        {
           "section": "wiki",
           "title": "Elohim",
           "path": "/wiki/elohim/"
         }
       ],
-      "cite_count": 1
+      "cite_count": 2
     },
     {
       "id": "cross-canaanite-myth",
@@ -699,6 +1272,16 @@
       "id": "sendy-ces-dieux",
       "cited_by": [
         {
+          "section": "articles",
+          "title": "The Book Closest to the Truth",
+          "path": "/articles/the-book-closest-to-the-truth/"
+        },
+        {
+          "section": "articles",
+          "title": "The Man Who Bet the Bible on the Moon",
+          "path": "/articles/the-man-who-bet-the-bible-on-the-moon/"
+        },
+        {
           "section": "wiki",
           "title": "Eden",
           "path": "/wiki/eden/"
@@ -715,33 +1298,73 @@
         },
         {
           "section": "wiki",
+          "title": "Jean Sendy",
+          "path": "/wiki/jean-sendy/"
+        },
+        {
+          "section": "wiki",
           "title": "Satan",
           "path": "/wiki/satan/"
         }
       ],
-      "cite_count": 4
+      "cite_count": 7
     },
     {
       "id": "chaos-making-a-new-science",
       "cited_by": [
+        {
+          "section": "articles",
+          "title": "The Infinite in Both Directions",
+          "path": "/articles/the-infinite-in-both-directions/"
+        },
         {
           "section": "timeline",
           "title": "Preamble",
           "path": "/timeline/preamble/"
         }
       ],
-      "cite_count": 1
+      "cite_count": 2
     },
     {
       "id": "chariots-of-the-gods",
       "cited_by": [
         {
+          "section": "articles",
+          "title": "The Archdeacon and the Dragon",
+          "path": "/articles/the-archdeacon-and-the-dragon/"
+        },
+        {
+          "section": "articles",
+          "title": "The Man Who Bet the Bible on the Moon",
+          "path": "/articles/the-man-who-bet-the-bible-on-the-moon/"
+        },
+        {
+          "section": "articles",
+          "title": "The Translator's Wager",
+          "path": "/articles/the-translators-wager/"
+        },
+        {
           "section": "wiki",
           "title": "Ancient Builders",
           "path": "/wiki/ancient-builders/"
+        },
+        {
+          "section": "wiki",
+          "title": "Ezekiel",
+          "path": "/wiki/ezekiel/"
+        },
+        {
+          "section": "wiki",
+          "title": "Jean Sendy",
+          "path": "/wiki/jean-sendy/"
+        },
+        {
+          "section": "wiki",
+          "title": "Paul Wallis",
+          "path": "/wiki/paul-wallis/"
         }
       ],
-      "cite_count": 1
+      "cite_count": 7
     },
     {
       "id": "birrell-chinese-mythology",
@@ -782,7 +1405,51 @@
       "cite_count": 1
     },
     {
-      "id": "creation-accounts-in-the-ancient-near-east-cbqms-26",
+      "id": "commentary-on-the-song-of-songs-prologue-the-four-texts-reserved-for-the-very-en",
+      "cited_by": [
+        {
+          "section": "articles",
+          "title": "The Book Closest to the Truth",
+          "path": "/articles/the-book-closest-to-the-truth/"
+        }
+      ],
+      "cite_count": 1
+    },
+    {
+      "id": "cosmic-chain-wheel-of-heaven-wiki-the-indefinitely-extended-sequence-of-created-",
+      "cited_by": [
+        {
+          "section": "articles",
+          "title": "The Shape of Humanity",
+          "path": "/articles/the-shape-of-humanity/"
+        }
+      ],
+      "cite_count": 1
+    },
+    {
+      "id": "cosmic-competition-wheel-of-heaven-wiki-the-multiple-humanities-framework-earth-",
+      "cited_by": [
+        {
+          "section": "articles",
+          "title": "The Shape of Humanity",
+          "path": "/articles/the-shape-of-humanity/"
+        }
+      ],
+      "cite_count": 1
+    },
+    {
+      "id": "cosmic-homogeneity-demonstrated-with-luminous-red-galaxies-apj-624-54-58-the-tra",
+      "cited_by": [
+        {
+          "section": "articles",
+          "title": "The Infinite in Both Directions",
+          "path": "/articles/the-infinite-in-both-directions/"
+        }
+      ],
+      "cite_count": 1
+    },
+    {
+      "id": "creation-accounts-in-the-ancient-near-east",
       "cited_by": [
         {
           "section": "articles",
@@ -791,6 +1458,11 @@
         }
       ],
       "cite_count": 1
+    },
+    {
+      "id": "creation-accounts-in-the-ancient-near-east-cbqms-26",
+      "cited_by": [],
+      "cite_count": 0
     },
     {
       "id": "creation-of-a-bacterial-cell-controlled-by-a-chemically-synthesized-genome",
@@ -815,6 +1487,17 @@
       "cite_count": 1
     },
     {
+      "id": "creationism-s-trojan-horse-the-wedge-of-intelligent-design-the-political-religio",
+      "cited_by": [
+        {
+          "section": "articles",
+          "title": "The Signature and the Designers",
+          "path": "/articles/the-signature-and-the-designers/"
+        }
+      ],
+      "cite_count": 1
+    },
+    {
       "id": "creators-the-past",
       "cited_by": [],
       "cite_count": 0
@@ -823,12 +1506,17 @@
       "id": "kant-critique-pure-reason",
       "cited_by": [
         {
+          "section": "articles",
+          "title": "The Infinite in Both Directions",
+          "path": "/articles/the-infinite-in-both-directions/"
+        },
+        {
           "section": "wiki",
           "title": "Cosmic Chain",
           "path": "/wiki/cosmic-chain/"
         }
       ],
-      "cite_count": 1
+      "cite_count": 2
     },
     {
       "id": "crop-circles-signs-of-contact",
@@ -905,6 +1593,16 @@
       "id": "daniel",
       "cited_by": [
         {
+          "section": "articles",
+          "title": "The Archdeacon and the Dragon",
+          "path": "/articles/the-archdeacon-and-the-dragon/"
+        },
+        {
+          "section": "articles",
+          "title": "Unsealed in Year One",
+          "path": "/articles/unsealed-in-year-one/"
+        },
+        {
           "section": "timeline",
           "title": "Age of Aquarius",
           "path": "/timeline/age-of-aquarius/"
@@ -920,7 +1618,40 @@
           "path": "/wiki/jesus/"
         }
       ],
-      "cite_count": 3
+      "cite_count": 5
+    },
+    {
+      "id": "darwin-on-trial-the-legal-philosophical-launch-of-the-modern-movement-darwinism-",
+      "cited_by": [
+        {
+          "section": "articles",
+          "title": "The Signature and the Designers",
+          "path": "/articles/the-signature-and-the-designers/"
+        }
+      ],
+      "cite_count": 1
+    },
+    {
+      "id": "darwin-s-black-box-the-biochemical-challenge-to-evolution-irreducible-complexity",
+      "cited_by": [
+        {
+          "section": "articles",
+          "title": "The Signature and the Designers",
+          "path": "/articles/the-signature-and-the-designers/"
+        }
+      ],
+      "cite_count": 1
+    },
+    {
+      "id": "darwin-s-doubt-the-explosive-origin-of-animal-life-and-the-case-for-intelligent-",
+      "cited_by": [
+        {
+          "section": "articles",
+          "title": "The Signature and the Designers",
+          "path": "/articles/the-signature-and-the-designers/"
+        }
+      ],
+      "cite_count": 1
     },
     {
       "id": "otto-hangende-dach",
@@ -929,6 +1660,17 @@
           "section": "wiki",
           "title": "Cyberparadism",
           "path": "/wiki/cyberparadism/"
+        }
+      ],
+      "cite_count": 1
+    },
+    {
+      "id": "dating-ancient-manuscripts-using-radiocarbon-and-ai-based-writing-style-analysis",
+      "cited_by": [
+        {
+          "section": "articles",
+          "title": "Unsealed in Year One",
+          "path": "/articles/unsealed-in-year-one/"
         }
       ],
       "cite_count": 1
@@ -955,37 +1697,163 @@
       "cite_count": 0
     },
     {
+      "id": "decoding-g-bekli-tepe-with-archaeoastronomy-what-does-the-fox-say-mediterranean-",
+      "cited_by": [
+        {
+          "section": "articles",
+          "title": "The Mill That Grinds the Ages",
+          "path": "/articles/the-mill-that-grinds-the-ages/"
+        },
+        {
+          "section": "wiki",
+          "title": "Hamlet's Mill",
+          "path": "/wiki/hamlets-mill/"
+        }
+      ],
+      "cite_count": 2
+    },
+    {
+      "id": "des-hommes-des-dieux-et-des-extraterrestres-ethnologie-d-une-croyance-moderne-th",
+      "cited_by": [
+        {
+          "section": "articles",
+          "title": "The Man Who Bet the Bible on the Moon",
+          "path": "/articles/the-man-who-bet-the-bible-on-the-moon/"
+        },
+        {
+          "section": "wiki",
+          "title": "Jean Sendy",
+          "path": "/wiki/jean-sendy/"
+        }
+      ],
+      "cite_count": 2
+    },
+    {
       "id": "design-and-synthesis-of-a-minimal-bacterial-genome",
       "cited_by": [
+        {
+          "section": "articles",
+          "title": "The Signature and the Designers",
+          "path": "/articles/the-signature-and-the-designers/"
+        },
         {
           "section": "timeline",
           "title": "Age of Aquarius",
           "path": "/timeline/age-of-aquarius/"
         }
       ],
-      "cite_count": 1
+      "cite_count": 2
     },
     {
       "id": "deterministic-nonperiodic-flow",
       "cited_by": [
+        {
+          "section": "articles",
+          "title": "The Infinite in Both Directions",
+          "path": "/articles/the-infinite-in-both-directions/"
+        },
         {
           "section": "timeline",
           "title": "Preamble",
           "path": "/timeline/preamble/"
         }
       ],
-      "cite_count": 1
+      "cite_count": 2
     },
     {
       "id": "deuteronomy",
       "cited_by": [
+        {
+          "section": "articles",
+          "title": "The Archdeacon and the Dragon",
+          "path": "/articles/the-archdeacon-and-the-dragon/"
+        },
+        {
+          "section": "articles",
+          "title": "The Scrolls That Woke in Year One",
+          "path": "/articles/the-scrolls-that-woke-in-year-one/"
+        },
+        {
+          "section": "articles",
+          "title": "The Translator's Wager",
+          "path": "/articles/the-translators-wager/"
+        },
+        {
+          "section": "articles",
+          "title": "Unsealed in Year One",
+          "path": "/articles/unsealed-in-year-one/"
+        },
         {
           "section": "wiki",
           "title": "Moses",
           "path": "/wiki/moses/"
         }
       ],
+      "cite_count": 5
+    },
+    {
+      "id": "deuteronomy-32-8-and-the-sons-of-god-bibliotheca-sacra-158-the-4qdeutj-evidence-",
+      "cited_by": [
+        {
+          "section": "articles",
+          "title": "Unsealed in Year One",
+          "path": "/articles/unsealed-in-year-one/"
+        }
+      ],
       "cite_count": 1
+    },
+    {
+      "id": "dialogue-with-trypho-ch-114-god-s-shape-and-organs-reported-as-normative-jewish-",
+      "cited_by": [
+        {
+          "section": "articles",
+          "title": "The Book Closest to the Truth",
+          "path": "/articles/the-book-closest-to-the-truth/"
+        }
+      ],
+      "cite_count": 1
+    },
+    {
+      "id": "dialogues-concerning-natural-religion-the-foundational-critique-the-inferred-des",
+      "cited_by": [
+        {
+          "section": "articles",
+          "title": "The Signature and the Designers",
+          "path": "/articles/the-signature-and-the-designers/"
+        }
+      ],
+      "cite_count": 1
+    },
+    {
+      "id": "dictionary-of-deities-and-demons-in-the-bible-2nd-ed-the-standard-reference-entr",
+      "cited_by": [
+        {
+          "section": "articles",
+          "title": "The Archdeacon and the Dragon",
+          "path": "/articles/the-archdeacon-and-the-dragon/"
+        },
+        {
+          "section": "articles",
+          "title": "The Filing Cabinet of the Gods",
+          "path": "/articles/the-filing-cabinet-of-the-gods/"
+        },
+        {
+          "section": "articles",
+          "title": "The Translator's Wager",
+          "path": "/articles/the-translators-wager/"
+        },
+        {
+          "section": "wiki",
+          "title": "Nephilim",
+          "path": "/wiki/nephilim/"
+        },
+        {
+          "section": "wiki",
+          "title": "Watchers",
+          "path": "/wiki/watchers/"
+        }
+      ],
+      "cite_count": 5
     },
     {
       "id": "did-god-have-a-wife",
@@ -993,15 +1861,31 @@
       "cite_count": 0
     },
     {
+      "id": "die-feldgleichungen-der-gravitation-the-field-equations-of-general-relativity",
+      "cited_by": [
+        {
+          "section": "articles",
+          "title": "The Infinite in Both Directions",
+          "path": "/articles/the-infinite-in-both-directions/"
+        }
+      ],
+      "cite_count": 1
+    },
+    {
       "id": "crick-orgel-directed-panspermia",
       "cited_by": [
+        {
+          "section": "articles",
+          "title": "The Signature and the Designers",
+          "path": "/articles/the-signature-and-the-designers/"
+        },
         {
           "section": "wiki",
           "title": "Cosmic Chain",
           "path": "/wiki/cosmic-chain/"
         }
       ],
-      "cite_count": 1
+      "cite_count": 2
     },
     {
       "id": "meyers-discovering-eve",
@@ -1016,8 +1900,14 @@
     },
     {
       "id": "divine-signposts",
-      "cited_by": [],
-      "cite_count": 0
+      "cited_by": [
+        {
+          "section": "articles",
+          "title": "The Religion of Religions",
+          "path": "/articles/the-religion-of-religions/"
+        }
+      ],
+      "cite_count": 1
     },
     {
       "id": "doctrine-and-covenants",
@@ -1042,12 +1932,33 @@
       "cite_count": 1
     },
     {
+      "id": "dying-and-rising-gods-in-the-encyclopedia-of-religion-ed-eliade-the-classic-demo",
+      "cited_by": [
+        {
+          "section": "articles",
+          "title": "The Filing Cabinet of the Gods",
+          "path": "/articles/the-filing-cabinet-of-the-gods/"
+        }
+      ],
+      "cite_count": 1
+    },
+    {
       "id": "early-islamic-qiblas",
       "cited_by": [
         {
           "section": "articles",
           "title": "The First Mosques Faced Petra, Not Mecca",
           "path": "/articles/the-first-mosques-faced-petra-not-mecca/"
+        },
+        {
+          "section": "articles",
+          "title": "The Scrolls That Woke in Year One",
+          "path": "/articles/the-scrolls-that-woke-in-year-one/"
+        },
+        {
+          "section": "articles",
+          "title": "Unsealed in Year One",
+          "path": "/articles/unsealed-in-year-one/"
         },
         {
           "section": "timeline",
@@ -1060,7 +1971,12 @@
           "path": "/timeline/the-wheel-keeps-turning/"
         }
       ],
-      "cite_count": 3
+      "cite_count": 5
+    },
+    {
+      "id": "early-islamic-qiblas-a-survey-of-mosques-built-between-1-ah-and-263-ah",
+      "cited_by": [],
+      "cite_count": 0
     },
     {
       "id": "stordalen-echoes-of-eden",
@@ -1076,6 +1992,11 @@
     {
       "id": "echoes-of-eden",
       "cited_by": [
+        {
+          "section": "articles",
+          "title": "The Archdeacon and the Dragon",
+          "path": "/articles/the-archdeacon-and-the-dragon/"
+        },
         {
           "section": "wiki",
           "title": "Ancient Astronaut Hypothesis",
@@ -1095,9 +2016,14 @@
           "section": "wiki",
           "title": "Genesis",
           "path": "/wiki/genesis/"
+        },
+        {
+          "section": "wiki",
+          "title": "Paul Wallis",
+          "path": "/wiki/paul-wallis/"
         }
       ],
-      "cite_count": 4
+      "cite_count": 6
     },
     {
       "id": "krupp-echoes-ancient-skies",
@@ -1171,13 +2097,38 @@
           "section": "articles",
           "title": "The Flood Was a Reset, Not a Punishment",
           "path": "/articles/the-flood-was-a-reset-not-a-punishment/"
+        },
+        {
+          "section": "wiki",
+          "title": "Nephilim",
+          "path": "/wiki/nephilim/"
+        },
+        {
+          "section": "wiki",
+          "title": "Watchers",
+          "path": "/wiki/watchers/"
         }
       ],
-      "cite_count": 1
+      "cite_count": 3
     },
     {
       "id": "enuma-elish",
       "cited_by": [
+        {
+          "section": "articles",
+          "title": "The Archdeacon and the Dragon",
+          "path": "/articles/the-archdeacon-and-the-dragon/"
+        },
+        {
+          "section": "articles",
+          "title": "The Filing Cabinet of the Gods",
+          "path": "/articles/the-filing-cabinet-of-the-gods/"
+        },
+        {
+          "section": "articles",
+          "title": "The Translator's Wager",
+          "path": "/articles/the-translators-wager/"
+        },
         {
           "section": "timeline",
           "title": "Preamble",
@@ -1194,7 +2145,7 @@
           "path": "/wiki/genesis/"
         }
       ],
-      "cite_count": 3
+      "cite_count": 6
     },
     {
       "id": "epic-of-gilgamesh",
@@ -1203,6 +2154,11 @@
           "section": "articles",
           "title": "Made from the Ground to Bear the Labor",
           "path": "/articles/made-from-the-ground-to-bear-the-labor/"
+        },
+        {
+          "section": "articles",
+          "title": "The Filing Cabinet of the Gods",
+          "path": "/articles/the-filing-cabinet-of-the-gods/"
         },
         {
           "section": "articles",
@@ -1220,11 +2176,26 @@
           "path": "/wiki/reference-corpus-of-the-raelian-canon/"
         }
       ],
-      "cite_count": 4
+      "cite_count": 5
     },
     {
       "id": "escaping-from-eden",
       "cited_by": [
+        {
+          "section": "articles",
+          "title": "The Archdeacon and the Dragon",
+          "path": "/articles/the-archdeacon-and-the-dragon/"
+        },
+        {
+          "section": "articles",
+          "title": "The Man Who Bet the Bible on the Moon",
+          "path": "/articles/the-man-who-bet-the-bible-on-the-moon/"
+        },
+        {
+          "section": "articles",
+          "title": "The Translator's Wager",
+          "path": "/articles/the-translators-wager/"
+        },
         {
           "section": "wiki",
           "title": "Ancient Astronaut Hypothesis",
@@ -1247,6 +2218,11 @@
         },
         {
           "section": "wiki",
+          "title": "Ezekiel",
+          "path": "/wiki/ezekiel/"
+        },
+        {
+          "section": "wiki",
           "title": "Genesis",
           "path": "/wiki/genesis/"
         },
@@ -1257,8 +2233,23 @@
         },
         {
           "section": "wiki",
+          "title": "Jean Sendy",
+          "path": "/wiki/jean-sendy/"
+        },
+        {
+          "section": "wiki",
           "title": "Jesus",
           "path": "/wiki/jesus/"
+        },
+        {
+          "section": "wiki",
+          "title": "Mauro Biglino",
+          "path": "/wiki/mauro-biglino/"
+        },
+        {
+          "section": "wiki",
+          "title": "Paul Wallis",
+          "path": "/wiki/paul-wallis/"
         },
         {
           "section": "wiki",
@@ -1276,7 +2267,40 @@
           "path": "/wiki/yahweh/"
         }
       ],
-      "cite_count": 10
+      "cite_count": 17
+    },
+    {
+      "id": "esoteric-astrology-the-25-000-year-great-astrological-world-cycle-the-piscean-to",
+      "cited_by": [
+        {
+          "section": "articles",
+          "title": "The Mill That Grinds the Ages",
+          "path": "/articles/the-mill-that-grinds-the-ages/"
+        }
+      ],
+      "cite_count": 1
+    },
+    {
+      "id": "eternal-inflation-and-its-implications-j-phys-a-40-6811-6826",
+      "cited_by": [
+        {
+          "section": "articles",
+          "title": "The Infinite in Both Directions",
+          "path": "/articles/the-infinite-in-both-directions/"
+        }
+      ],
+      "cite_count": 1
+    },
+    {
+      "id": "eternally-existing-self-reproducing-chaotic-inflationary-universe-physica-script",
+      "cited_by": [
+        {
+          "section": "articles",
+          "title": "The Infinite in Both Directions",
+          "path": "/articles/the-infinite-in-both-directions/"
+        }
+      ],
+      "cite_count": 1
     },
     {
       "id": "firestone-pnas-2007",
@@ -1306,8 +2330,34 @@
       "cite_count": 1
     },
     {
+      "id": "evolution-of-the-no-sphere-teilhard-studies-no-42-the-no-sphere-as-the-thinking-",
+      "cited_by": [
+        {
+          "section": "articles",
+          "title": "The Shape of Humanity",
+          "path": "/articles/the-shape-of-humanity/"
+        }
+      ],
+      "cite_count": 1
+    },
+    {
       "id": "exodus",
       "cited_by": [
+        {
+          "section": "articles",
+          "title": "The Archdeacon and the Dragon",
+          "path": "/articles/the-archdeacon-and-the-dragon/"
+        },
+        {
+          "section": "articles",
+          "title": "The Man Who Bet the Bible on the Moon",
+          "path": "/articles/the-man-who-bet-the-bible-on-the-moon/"
+        },
+        {
+          "section": "articles",
+          "title": "The Translator's Wager",
+          "path": "/articles/the-translators-wager/"
+        },
         {
           "section": "timeline",
           "title": "Age of Aries",
@@ -1324,7 +2374,7 @@
           "path": "/wiki/yahweh/"
         }
       ],
-      "cite_count": 3
+      "cite_count": 6
     },
     {
       "id": "loeb-extraterrestrial",
@@ -1340,6 +2390,56 @@
     {
       "id": "extraterrestrials-took-me-to-their-planet",
       "cited_by": [
+        {
+          "section": "articles",
+          "title": "The Archdeacon and the Dragon",
+          "path": "/articles/the-archdeacon-and-the-dragon/"
+        },
+        {
+          "section": "articles",
+          "title": "The Forty Chairs",
+          "path": "/articles/the-forty-chairs/"
+        },
+        {
+          "section": "articles",
+          "title": "The Infinite in Both Directions",
+          "path": "/articles/the-infinite-in-both-directions/"
+        },
+        {
+          "section": "articles",
+          "title": "The Man Who Bet the Bible on the Moon",
+          "path": "/articles/the-man-who-bet-the-bible-on-the-moon/"
+        },
+        {
+          "section": "articles",
+          "title": "The Mill That Grinds the Ages",
+          "path": "/articles/the-mill-that-grinds-the-ages/"
+        },
+        {
+          "section": "articles",
+          "title": "The Religion of Religions",
+          "path": "/articles/the-religion-of-religions/"
+        },
+        {
+          "section": "articles",
+          "title": "The Scrolls That Woke in Year One",
+          "path": "/articles/the-scrolls-that-woke-in-year-one/"
+        },
+        {
+          "section": "articles",
+          "title": "The Shape of Humanity",
+          "path": "/articles/the-shape-of-humanity/"
+        },
+        {
+          "section": "articles",
+          "title": "The Signature and the Designers",
+          "path": "/articles/the-signature-and-the-designers/"
+        },
+        {
+          "section": "articles",
+          "title": "The Translator's Wager",
+          "path": "/articles/the-translators-wager/"
+        },
         {
           "section": "wiki",
           "title": "Adam and Eve",
@@ -1387,6 +2487,11 @@
         },
         {
           "section": "wiki",
+          "title": "Message from the Designers",
+          "path": "/wiki/message-from-the-designers/"
+        },
+        {
+          "section": "wiki",
           "title": "Moses",
           "path": "/wiki/moses/"
         },
@@ -1431,11 +2536,31 @@
           "path": "/wiki/yahweh/"
         }
       ],
-      "cite_count": 18
+      "cite_count": 29
     },
     {
       "id": "ezekiel",
       "cited_by": [
+        {
+          "section": "articles",
+          "title": "The Archdeacon and the Dragon",
+          "path": "/articles/the-archdeacon-and-the-dragon/"
+        },
+        {
+          "section": "articles",
+          "title": "The Book Closest to the Truth",
+          "path": "/articles/the-book-closest-to-the-truth/"
+        },
+        {
+          "section": "articles",
+          "title": "The Translator's Wager",
+          "path": "/articles/the-translators-wager/"
+        },
+        {
+          "section": "articles",
+          "title": "Unsealed in Year One",
+          "path": "/articles/unsealed-in-year-one/"
+        },
         {
           "section": "timeline",
           "title": "Age of Aquarius",
@@ -1448,6 +2573,11 @@
         },
         {
           "section": "wiki",
+          "title": "Ezekiel",
+          "path": "/wiki/ezekiel/"
+        },
+        {
+          "section": "wiki",
           "title": "Wheel of Heaven",
           "path": "/wiki/wheel-of-heaven/"
         },
@@ -1457,7 +2587,7 @@
           "path": "/wiki/yahweh/"
         }
       ],
-      "cite_count": 4
+      "cite_count": 9
     },
     {
       "id": "ezekiel-1-20-anchor-bible-22",
@@ -1466,20 +2596,35 @@
           "section": "articles",
           "title": "The Flood Was a Reset, Not a Punishment",
           "path": "/articles/the-flood-was-a-reset-not-a-punishment/"
+        },
+        {
+          "section": "wiki",
+          "title": "Ezekiel",
+          "path": "/wiki/ezekiel/"
         }
       ],
-      "cite_count": 1
+      "cite_count": 2
     },
     {
       "id": "reed-fallen-angels",
       "cited_by": [
+        {
+          "section": "articles",
+          "title": "Unsealed in Year One",
+          "path": "/articles/unsealed-in-year-one/"
+        },
+        {
+          "section": "wiki",
+          "title": "Nephilim",
+          "path": "/wiki/nephilim/"
+        },
         {
           "section": "wiki",
           "title": "Satan",
           "path": "/wiki/satan/"
         }
       ],
-      "cite_count": 1
+      "cite_count": 3
     },
     {
       "id": "fda-approves-first-gene-therapies-to-treat-patients-with-sickle-cell-disease",
@@ -1493,8 +2638,35 @@
       "cite_count": 1
     },
     {
+      "id": "felt-time-the-psychology-of-how-we-perceive-time",
+      "cited_by": [
+        {
+          "section": "articles",
+          "title": "The Infinite in Both Directions",
+          "path": "/articles/the-infinite-in-both-directions/"
+        }
+      ],
+      "cite_count": 1
+    },
+    {
+      "id": "finding-darwin-s-god-a-scientist-s-search-for-common-ground-between-god-and-evol",
+      "cited_by": [
+        {
+          "section": "articles",
+          "title": "The Signature and the Designers",
+          "path": "/articles/the-signature-and-the-designers/"
+        }
+      ],
+      "cite_count": 1
+    },
+    {
       "id": "fingerprints-of-the-gods",
       "cited_by": [
+        {
+          "section": "articles",
+          "title": "The Mill That Grinds the Ages",
+          "path": "/articles/the-mill-that-grinds-the-ages/"
+        },
         {
           "section": "wiki",
           "title": "Ancient Astronaut Hypothesis",
@@ -1512,16 +2684,43 @@
         },
         {
           "section": "wiki",
+          "title": "Hamlet's Mill",
+          "path": "/wiki/hamlets-mill/"
+        },
+        {
+          "section": "wiki",
           "title": "World Age",
           "path": "/wiki/world-age/"
         }
       ],
-      "cite_count": 4
+      "cite_count": 6
     },
     {
       "id": "foundational-text-on-complex-topics",
       "cited_by": [],
       "cite_count": 0
+    },
+    {
+      "id": "fractal-cosmology-chaos-solitons-fractals-41-2103-2105",
+      "cited_by": [
+        {
+          "section": "articles",
+          "title": "The Infinite in Both Directions",
+          "path": "/articles/the-infinite-in-both-directions/"
+        }
+      ],
+      "cite_count": 1
+    },
+    {
+      "id": "fractal-cosmology-wheel-of-heaven-wiki-the-spatial-dimension-of-infinity-self-si",
+      "cited_by": [
+        {
+          "section": "articles",
+          "title": "The Infinite in Both Directions",
+          "path": "/articles/the-infinite-in-both-directions/"
+        }
+      ],
+      "cite_count": 1
     },
     {
       "id": "frauds-myths-and-mysteries-science-and-pseudoscience-in-archaeology",
@@ -1533,11 +2732,27 @@
         },
         {
           "section": "articles",
+          "title": "The Filing Cabinet of the Gods",
+          "path": "/articles/the-filing-cabinet-of-the-gods/"
+        },
+        {
+          "section": "articles",
           "title": "The Flood Was a Reset, Not a Punishment",
           "path": "/articles/the-flood-was-a-reset-not-a-punishment/"
         }
       ],
-      "cite_count": 2
+      "cite_count": 3
+    },
+    {
+      "id": "from-martyr-to-mystic-rabbinic-martyrology-and-the-making-of-merkavah-mysticism",
+      "cited_by": [
+        {
+          "section": "articles",
+          "title": "The Book Closest to the Truth",
+          "path": "/articles/the-book-closest-to-the-truth/"
+        }
+      ],
+      "cite_count": 1
     },
     {
       "id": "from-petra-back-to-makka",
@@ -1551,6 +2766,11 @@
       "cite_count": 1
     },
     {
+      "id": "from-petra-back-to-makka-from-pibla-back-to-qibla",
+      "cited_by": [],
+      "cite_count": 0
+    },
+    {
       "id": "genesis",
       "cited_by": [
         {
@@ -1560,8 +2780,43 @@
         },
         {
           "section": "articles",
+          "title": "The Archdeacon and the Dragon",
+          "path": "/articles/the-archdeacon-and-the-dragon/"
+        },
+        {
+          "section": "articles",
+          "title": "The Book Closest to the Truth",
+          "path": "/articles/the-book-closest-to-the-truth/"
+        },
+        {
+          "section": "articles",
           "title": "The Flood Was a Reset, Not a Punishment",
           "path": "/articles/the-flood-was-a-reset-not-a-punishment/"
+        },
+        {
+          "section": "articles",
+          "title": "The Man Who Bet the Bible on the Moon",
+          "path": "/articles/the-man-who-bet-the-bible-on-the-moon/"
+        },
+        {
+          "section": "articles",
+          "title": "The Mill That Grinds the Ages",
+          "path": "/articles/the-mill-that-grinds-the-ages/"
+        },
+        {
+          "section": "articles",
+          "title": "The Scrolls That Woke in Year One",
+          "path": "/articles/the-scrolls-that-woke-in-year-one/"
+        },
+        {
+          "section": "articles",
+          "title": "The Translator's Wager",
+          "path": "/articles/the-translators-wager/"
+        },
+        {
+          "section": "articles",
+          "title": "Unsealed in Year One",
+          "path": "/articles/unsealed-in-year-one/"
         },
         {
           "section": "timeline",
@@ -1629,27 +2884,32 @@
           "path": "/wiki/yahweh/"
         }
       ],
-      "cite_count": 15
+      "cite_count": 22
     },
     {
       "id": "genesis-1-11-a-continental-commentary",
       "cited_by": [
         {
           "section": "articles",
-          "title": "Made from the Ground to Bear the Labor",
-          "path": "/articles/made-from-the-ground-to-bear-the-labor/"
-        },
-        {
-          "section": "articles",
           "title": "The Flood Was a Reset, Not a Punishment",
           "path": "/articles/the-flood-was-a-reset-not-a-punishment/"
         }
       ],
-      "cite_count": 2
+      "cite_count": 1
     },
     {
       "id": "westermann-genesis-1-11",
       "cited_by": [
+        {
+          "section": "articles",
+          "title": "The Archdeacon and the Dragon",
+          "path": "/articles/the-archdeacon-and-the-dragon/"
+        },
+        {
+          "section": "articles",
+          "title": "The Filing Cabinet of the Gods",
+          "path": "/articles/the-filing-cabinet-of-the-gods/"
+        },
         {
           "section": "wiki",
           "title": "Adam and Eve",
@@ -1672,8 +2932,18 @@
         },
         {
           "section": "wiki",
+          "title": "Nephilim",
+          "path": "/wiki/nephilim/"
+        },
+        {
+          "section": "wiki",
           "title": "Serpent",
           "path": "/wiki/serpent/"
+        },
+        {
+          "section": "wiki",
+          "title": "Sumerian King List",
+          "path": "/wiki/sumerian-king-list/"
         },
         {
           "section": "wiki",
@@ -1681,7 +2951,7 @@
           "path": "/wiki/tree-of-life/"
         }
       ],
-      "cite_count": 6
+      "cite_count": 10
     },
     {
       "id": "genesis-1-15-word-biblical-commentary",
@@ -1808,6 +3078,33 @@
       "cite_count": 1
     },
     {
+      "id": "god-s-conflict-with-the-dragon-and-the-sea-echoes-of-a-canaanite-myth-in-the-old",
+      "cited_by": [
+        {
+          "section": "articles",
+          "title": "The Filing Cabinet of the Gods",
+          "path": "/articles/the-filing-cabinet-of-the-gods/"
+        }
+      ],
+      "cite_count": 1
+    },
+    {
+      "id": "gods-of-the-bible-a-new-interpretation-of-the-bible-reveals-the-oldest-secret-in",
+      "cited_by": [
+        {
+          "section": "articles",
+          "title": "The Translator's Wager",
+          "path": "/articles/the-translators-wager/"
+        },
+        {
+          "section": "wiki",
+          "title": "Mauro Biglino",
+          "path": "/wiki/mauro-biglino/"
+        }
+      ],
+      "cite_count": 2
+    },
+    {
       "id": "black-green-mesopotamia",
       "cited_by": [
         {
@@ -1822,6 +3119,17 @@
         }
       ],
       "cite_count": 2
+    },
+    {
+      "id": "golden-age-wheel-of-heaven-wiki-the-operational-form-of-life-available-if-the-aq",
+      "cited_by": [
+        {
+          "section": "articles",
+          "title": "The Shape of Humanity",
+          "path": "/articles/the-shape-of-humanity/"
+        }
+      ],
+      "cite_count": 1
     },
     {
       "id": "gospel-of-john",
@@ -1898,12 +3206,28 @@
       "cite_count": 1
     },
     {
+      "id": "graeco-arabica-i-the-southern-levant-in-arabic-in-context",
+      "cited_by": [],
+      "cite_count": 0
+    },
+    {
       "id": "hannah-greek-roman-calendars",
       "cited_by": [
         {
           "section": "wiki",
           "title": "Cosmic Chain",
           "path": "/wiki/cosmic-chain/"
+        }
+      ],
+      "cite_count": 1
+    },
+    {
+      "id": "guns-germs-and-steel-the-fates-of-human-societies-chapter-2-a-natural-experiment",
+      "cited_by": [
+        {
+          "section": "articles",
+          "title": "The Shape of Humanity",
+          "path": "/articles/the-shape-of-humanity/"
         }
       ],
       "cite_count": 1
@@ -1925,6 +3249,17 @@
       "cite_count": 2
     },
     {
+      "id": "hadith-muhammad-s-legacy-in-the-medieval-and-modern-world-the-isn-d-sciences-ilm",
+      "cited_by": [
+        {
+          "section": "articles",
+          "title": "The Forty Chairs",
+          "path": "/articles/the-forty-chairs/"
+        }
+      ],
+      "cite_count": 1
+    },
+    {
       "id": "hagarism-the-making-of-the-islamic-world",
       "cited_by": [
         {
@@ -1938,6 +3273,26 @@
     {
       "id": "hamlets-mill",
       "cited_by": [
+        {
+          "section": "articles",
+          "title": "The Filing Cabinet of the Gods",
+          "path": "/articles/the-filing-cabinet-of-the-gods/"
+        },
+        {
+          "section": "articles",
+          "title": "The Infinite in Both Directions",
+          "path": "/articles/the-infinite-in-both-directions/"
+        },
+        {
+          "section": "articles",
+          "title": "The Man Who Bet the Bible on the Moon",
+          "path": "/articles/the-man-who-bet-the-bible-on-the-moon/"
+        },
+        {
+          "section": "articles",
+          "title": "The Mill That Grinds the Ages",
+          "path": "/articles/the-mill-that-grinds-the-ages/"
+        },
         {
           "section": "timeline",
           "title": "Age of Aquarius",
@@ -1975,6 +3330,16 @@
         },
         {
           "section": "wiki",
+          "title": "Hamlet's Mill",
+          "path": "/wiki/hamlets-mill/"
+        },
+        {
+          "section": "wiki",
+          "title": "Jean Sendy",
+          "path": "/wiki/jean-sendy/"
+        },
+        {
+          "section": "wiki",
           "title": "Jesus",
           "path": "/wiki/jesus/"
         },
@@ -1999,12 +3364,45 @@
           "path": "/wiki/zodiac/"
         }
       ],
-      "cite_count": 12
+      "cite_count": 18
+    },
+    {
+      "id": "handbook-of-ufo-religions-brill-handbooks-on-contemporary-religion-20-ch-22-r-gi",
+      "cited_by": [
+        {
+          "section": "articles",
+          "title": "The Religion of Religions",
+          "path": "/articles/the-religion-of-religions/"
+        }
+      ],
+      "cite_count": 1
     },
     {
       "id": "hard-to-be-a-god",
       "cited_by": [],
       "cite_count": 0
+    },
+    {
+      "id": "heaven-on-earth-helios-and-the-zodiac-cycle-in-ancient-palestinian-synagogues-du",
+      "cited_by": [
+        {
+          "section": "articles",
+          "title": "The Mill That Grinds the Ages",
+          "path": "/articles/the-mill-that-grinds-the-ages/"
+        }
+      ],
+      "cite_count": 1
+    },
+    {
+      "id": "hekhalot-studien-tsaj-19-ch-5-shi-ur-qoma-rezensionen-und-urtext",
+      "cited_by": [
+        {
+          "section": "articles",
+          "title": "The Book Closest to the Truth",
+          "path": "/articles/the-book-closest-to-the-truth/"
+        }
+      ],
+      "cite_count": 1
     },
     {
       "id": "hengeworld",
@@ -2019,8 +3417,14 @@
     },
     {
       "id": "hermetica",
-      "cited_by": [],
-      "cite_count": 0
+      "cited_by": [
+        {
+          "section": "articles",
+          "title": "The Infinite in Both Directions",
+          "path": "/articles/the-infinite-in-both-directions/"
+        }
+      ],
+      "cite_count": 1
     },
     {
       "id": "doniger-hindu-myths",
@@ -2049,6 +3453,17 @@
       "cite_count": 4
     },
     {
+      "id": "histories-v-52-54-the-parasang-reckoned-at-thirty-stades-5-5-6-km",
+      "cited_by": [
+        {
+          "section": "articles",
+          "title": "The Book Closest to the Truth",
+          "path": "/articles/the-book-closest-to-the-truth/"
+        }
+      ],
+      "cite_count": 1
+    },
+    {
       "id": "histories-book-ii",
       "cited_by": [
         {
@@ -2060,12 +3475,28 @@
       "cite_count": 1
     },
     {
+      "id": "how-accurately-could-early-622-900-c-e-muslims-determine-the-direction-of-prayer",
+      "cited_by": [],
+      "cite_count": 0
+    },
+    {
       "id": "qibla-accuracy-schumm-goldstein",
       "cited_by": [
         {
           "section": "articles",
           "title": "The First Mosques Faced Petra, Not Mecca",
           "path": "/articles/the-first-mosques-faced-petra-not-mecca/"
+        }
+      ],
+      "cite_count": 1
+    },
+    {
+      "id": "how-to-kill-a-dragon-aspects-of-indo-european-poetics-the-reconstructed-formula-",
+      "cited_by": [
+        {
+          "section": "articles",
+          "title": "The Filing Cabinet of the Gods",
+          "path": "/articles/the-filing-cabinet-of-the-gods/"
         }
       ],
       "cite_count": 1
@@ -2082,8 +3513,34 @@
       "cite_count": 1
     },
     {
+      "id": "il-dio-alieno-della-bibbia-the-ruach-chapter-the-cargo-cult-reading-of-the-name-",
+      "cited_by": [
+        {
+          "section": "articles",
+          "title": "The Translator's Wager",
+          "path": "/articles/the-translators-wager/"
+        },
+        {
+          "section": "wiki",
+          "title": "Mauro Biglino",
+          "path": "/wiki/mauro-biglino/"
+        }
+      ],
+      "cite_count": 2
+    },
+    {
       "id": "biglino-il-libro",
       "cited_by": [
+        {
+          "section": "articles",
+          "title": "The Archdeacon and the Dragon",
+          "path": "/articles/the-archdeacon-and-the-dragon/"
+        },
+        {
+          "section": "articles",
+          "title": "The Translator's Wager",
+          "path": "/articles/the-translators-wager/"
+        },
         {
           "section": "wiki",
           "title": "Eden",
@@ -2093,9 +3550,19 @@
           "section": "wiki",
           "title": "Hebrew Bible",
           "path": "/wiki/hebrew-bible/"
+        },
+        {
+          "section": "wiki",
+          "title": "Mauro Biglino",
+          "path": "/wiki/mauro-biglino/"
+        },
+        {
+          "section": "wiki",
+          "title": "Paul Wallis",
+          "path": "/wiki/paul-wallis/"
         }
       ],
-      "cite_count": 2
+      "cite_count": 6
     },
     {
       "id": "elizondo-imminent",
@@ -2142,6 +3609,17 @@
       "cite_count": 1
     },
     {
+      "id": "infinity-wheel-of-heaven-wiki-the-three-mutually-reinforcing-dimensions-spatial-",
+      "cited_by": [
+        {
+          "section": "articles",
+          "title": "The Infinite in Both Directions",
+          "path": "/articles/the-infinite-in-both-directions/"
+        }
+      ],
+      "cite_count": 1
+    },
+    {
       "id": "linde-inflation-quantum-cosmology",
       "cited_by": [
         {
@@ -2155,6 +3633,61 @@
     {
       "id": "intelligent-design-message-from-the-designers",
       "cited_by": [
+        {
+          "section": "articles",
+          "title": "The Archdeacon and the Dragon",
+          "path": "/articles/the-archdeacon-and-the-dragon/"
+        },
+        {
+          "section": "articles",
+          "title": "The Filing Cabinet of the Gods",
+          "path": "/articles/the-filing-cabinet-of-the-gods/"
+        },
+        {
+          "section": "articles",
+          "title": "The Infinite in Both Directions",
+          "path": "/articles/the-infinite-in-both-directions/"
+        },
+        {
+          "section": "articles",
+          "title": "The Man Who Bet the Bible on the Moon",
+          "path": "/articles/the-man-who-bet-the-bible-on-the-moon/"
+        },
+        {
+          "section": "articles",
+          "title": "The Mill That Grinds the Ages",
+          "path": "/articles/the-mill-that-grinds-the-ages/"
+        },
+        {
+          "section": "articles",
+          "title": "The Religion of Religions",
+          "path": "/articles/the-religion-of-religions/"
+        },
+        {
+          "section": "articles",
+          "title": "The Scrolls That Woke in Year One",
+          "path": "/articles/the-scrolls-that-woke-in-year-one/"
+        },
+        {
+          "section": "articles",
+          "title": "The Shape of Humanity",
+          "path": "/articles/the-shape-of-humanity/"
+        },
+        {
+          "section": "articles",
+          "title": "The Signature and the Designers",
+          "path": "/articles/the-signature-and-the-designers/"
+        },
+        {
+          "section": "articles",
+          "title": "The Translator's Wager",
+          "path": "/articles/the-translators-wager/"
+        },
+        {
+          "section": "articles",
+          "title": "Unsealed in Year One",
+          "path": "/articles/unsealed-in-year-one/"
+        },
         {
           "section": "timeline",
           "title": "Age of Aquarius",
@@ -2174,6 +3707,11 @@
           "section": "wiki",
           "title": "Eden",
           "path": "/wiki/eden/"
+        },
+        {
+          "section": "wiki",
+          "title": "Ezekiel",
+          "path": "/wiki/ezekiel/"
         },
         {
           "section": "wiki",
@@ -2197,6 +3735,11 @@
         },
         {
           "section": "wiki",
+          "title": "Message from the Designers",
+          "path": "/wiki/message-from-the-designers/"
+        },
+        {
+          "section": "wiki",
           "title": "Raël",
           "path": "/wiki/rael/"
         },
@@ -2217,6 +3760,11 @@
         },
         {
           "section": "wiki",
+          "title": "Sumerian King List",
+          "path": "/wiki/sumerian-king-list/"
+        },
+        {
+          "section": "wiki",
           "title": "Wheel of Heaven",
           "path": "/wiki/wheel-of-heaven/"
         },
@@ -2226,7 +3774,23 @@
           "path": "/wiki/world-age/"
         }
       ],
-      "cite_count": 14
+      "cite_count": 28
+    },
+    {
+      "id": "intelligent-life-in-the-universe-the-sagan-shklovsky-survey-that-gave-sendy-his-",
+      "cited_by": [
+        {
+          "section": "articles",
+          "title": "The Man Who Bet the Bible on the Moon",
+          "path": "/articles/the-man-who-bet-the-bible-on-the-moon/"
+        },
+        {
+          "section": "wiki",
+          "title": "Jean Sendy",
+          "path": "/wiki/jean-sendy/"
+        }
+      ],
+      "cite_count": 2
     },
     {
       "id": "internet-sacred-text-archive",
@@ -2261,8 +3825,44 @@
       "cite_count": 0
     },
     {
+      "id": "is-genesis-history-the-young-earth-documentary-defending-genesis-as-literal-natu",
+      "cited_by": [
+        {
+          "section": "articles",
+          "title": "The Signature and the Designers",
+          "path": "/articles/the-signature-and-the-designers/"
+        }
+      ],
+      "cite_count": 1
+    },
+    {
       "id": "isaiah",
       "cited_by": [
+        {
+          "section": "articles",
+          "title": "The Archdeacon and the Dragon",
+          "path": "/articles/the-archdeacon-and-the-dragon/"
+        },
+        {
+          "section": "articles",
+          "title": "The Man Who Bet the Bible on the Moon",
+          "path": "/articles/the-man-who-bet-the-bible-on-the-moon/"
+        },
+        {
+          "section": "articles",
+          "title": "The Scrolls That Woke in Year One",
+          "path": "/articles/the-scrolls-that-woke-in-year-one/"
+        },
+        {
+          "section": "articles",
+          "title": "The Translator's Wager",
+          "path": "/articles/the-translators-wager/"
+        },
+        {
+          "section": "articles",
+          "title": "Unsealed in Year One",
+          "path": "/articles/unsealed-in-year-one/"
+        },
         {
           "section": "timeline",
           "title": "Age of Aquarius",
@@ -2284,7 +3884,7 @@
           "path": "/wiki/yahweh/"
         }
       ],
-      "cite_count": 4
+      "cite_count": 9
     },
     {
       "id": "sachedina-islamic-messianism",
@@ -2303,9 +3903,53 @@
       "cite_count": 0
     },
     {
+      "id": "jesus-criteria-and-the-demise-of-authenticity-the-collection-that-ended-the-crit",
+      "cited_by": [
+        {
+          "section": "articles",
+          "title": "The Forty Chairs",
+          "path": "/articles/the-forty-chairs/"
+        }
+      ],
+      "cite_count": 1
+    },
+    {
+      "id": "jewish-gnosticism-merkabah-mysticism-and-talmudic-tradition-with-saul-lieberman-",
+      "cited_by": [
+        {
+          "section": "articles",
+          "title": "The Book Closest to the Truth",
+          "path": "/articles/the-book-closest-to-the-truth/"
+        }
+      ],
+      "cite_count": 1
+    },
+    {
+      "id": "jewish-war-2-119-161-and-antiquities-18-18-22-the-fullest-ancient-accounts-of-th",
+      "cited_by": [
+        {
+          "section": "articles",
+          "title": "The Scrolls That Woke in Year One",
+          "path": "/articles/the-scrolls-that-woke-in-year-one/"
+        }
+      ],
+      "cite_count": 1
+    },
+    {
       "id": "job",
-      "cited_by": [],
-      "cite_count": 0
+      "cited_by": [
+        {
+          "section": "articles",
+          "title": "The Man Who Bet the Bible on the Moon",
+          "path": "/articles/the-man-who-bet-the-bible-on-the-moon/"
+        },
+        {
+          "section": "articles",
+          "title": "The Mill That Grinds the Ages",
+          "path": "/articles/the-mill-that-grinds-the-ages/"
+        }
+      ],
+      "cite_count": 2
     },
     {
       "id": "pope-job",
@@ -2341,26 +3985,63 @@
       "cite_count": 1
     },
     {
+      "id": "john-qumran-and-the-dead-sea-scrolls-sixty-years-of-discovery-and-debate-the-qum",
+      "cited_by": [
+        {
+          "section": "articles",
+          "title": "Unsealed in Year One",
+          "path": "/articles/unsealed-in-year-one/"
+        }
+      ],
+      "cite_count": 1
+    },
+    {
+      "id": "joseph-smith-rough-stone-rolling-the-standard-scholarly-biography-the-treasure-s",
+      "cited_by": [
+        {
+          "section": "articles",
+          "title": "The Forty Chairs",
+          "path": "/articles/the-forty-chairs/"
+        }
+      ],
+      "cite_count": 1
+    },
+    {
       "id": "joshua",
       "cited_by": [
+        {
+          "section": "articles",
+          "title": "The Archdeacon and the Dragon",
+          "path": "/articles/the-archdeacon-and-the-dragon/"
+        },
+        {
+          "section": "articles",
+          "title": "The Translator's Wager",
+          "path": "/articles/the-translators-wager/"
+        },
         {
           "section": "timeline",
           "title": "Age of Aries",
           "path": "/timeline/age-of-aries/"
         }
       ],
-      "cite_count": 1
+      "cite_count": 3
     },
     {
       "id": "jurassic-park",
       "cited_by": [
+        {
+          "section": "articles",
+          "title": "The Infinite in Both Directions",
+          "path": "/articles/the-infinite-in-both-directions/"
+        },
         {
           "section": "timeline",
           "title": "Preamble",
           "path": "/timeline/preamble/"
         }
       ],
-      "cite_count": 1
+      "cite_count": 2
     },
     {
       "id": "jurassic-world",
@@ -2374,20 +4055,90 @@
       "cite_count": 1
     },
     {
+      "id": "kabbalah-the-article-length-synthesis-ve-rav-koa-amount-in-gematria-to-236-the-b",
+      "cited_by": [
+        {
+          "section": "articles",
+          "title": "The Book Closest to the Truth",
+          "path": "/articles/the-book-closest-to-the-truth/"
+        }
+      ],
+      "cite_count": 1
+    },
+    {
       "id": "idel-kabbalah-new-perspectives",
       "cited_by": [
+        {
+          "section": "articles",
+          "title": "The Book Closest to the Truth",
+          "path": "/articles/the-book-closest-to-the-truth/"
+        },
         {
           "section": "wiki",
           "title": "Tree of Life",
           "path": "/wiki/tree-of-life/"
         }
       ],
+      "cite_count": 2
+    },
+    {
+      "id": "kalevala-runos-10-and-38-43-the-forging-of-the-sampo-with-its-many-colored-cover",
+      "cited_by": [
+        {
+          "section": "articles",
+          "title": "The Mill That Grinds the Ages",
+          "path": "/articles/the-mill-that-grinds-the-ages/"
+        },
+        {
+          "section": "wiki",
+          "title": "Hamlet's Mill",
+          "path": "/wiki/hamlets-mill/"
+        }
+      ],
+      "cite_count": 2
+    },
+    {
+      "id": "kitzmiller-v-dover-area-school-district-400-f-supp-2d-707-m-d-pa-2005-judge-john",
+      "cited_by": [
+        {
+          "section": "articles",
+          "title": "The Signature and the Designers",
+          "path": "/articles/the-signature-and-the-designers/"
+        }
+      ],
       "cite_count": 1
     },
     {
       "id": "kitab-i-aqdas",
+      "cited_by": [
+        {
+          "section": "articles",
+          "title": "The Forty Chairs",
+          "path": "/articles/the-forty-chairs/"
+        },
+        {
+          "section": "articles",
+          "title": "The Religion of Religions",
+          "path": "/articles/the-religion-of-religions/"
+        }
+      ],
+      "cite_count": 2
+    },
+    {
+      "id": "kit-b-al-anw-r-the-report-that-the-creator-s-stature-comprises-236-000-parasangs",
       "cited_by": [],
       "cite_count": 0
+    },
+    {
+      "id": "kit-b-al-anw-r-wa-l-mar-qib-the-karaite-report-that-the-creator-s-stature-compri",
+      "cited_by": [
+        {
+          "section": "articles",
+          "title": "The Book Closest to the Truth",
+          "path": "/articles/the-book-closest-to-the-truth/"
+        }
+      ],
+      "cite_count": 1
     },
     {
       "id": "kojiki",
@@ -2409,16 +4160,57 @@
       "id": "sendy-ere-du-verseau",
       "cited_by": [
         {
+          "section": "articles",
+          "title": "The Man Who Bet the Bible on the Moon",
+          "path": "/articles/the-man-who-bet-the-bible-on-the-moon/"
+        },
+        {
+          "section": "articles",
+          "title": "The Mill That Grinds the Ages",
+          "path": "/articles/the-mill-that-grinds-the-ages/"
+        },
+        {
+          "section": "wiki",
+          "title": "Hamlet's Mill",
+          "path": "/wiki/hamlets-mill/"
+        },
+        {
           "section": "wiki",
           "title": "Hebrew Bible",
           "path": "/wiki/hebrew-bible/"
+        },
+        {
+          "section": "wiki",
+          "title": "Jean Sendy",
+          "path": "/wiki/jean-sendy/"
         }
       ],
-      "cite_count": 1
+      "cite_count": 5
+    },
+    {
+      "id": "la-bibbia-non-l-ha-mai-detto-the-collaboration-with-a-philosopher-of-law-tselem-",
+      "cited_by": [
+        {
+          "section": "articles",
+          "title": "The Translator's Wager",
+          "path": "/articles/the-translators-wager/"
+        },
+        {
+          "section": "wiki",
+          "title": "Mauro Biglino",
+          "path": "/wiki/mauro-biglino/"
+        }
+      ],
+      "cite_count": 2
     },
     {
       "id": "biglino-bibbia-non-parla",
       "cited_by": [
+        {
+          "section": "articles",
+          "title": "The Translator's Wager",
+          "path": "/articles/the-translators-wager/"
+        },
         {
           "section": "wiki",
           "title": "Eden",
@@ -2428,6 +4220,27 @@
           "section": "wiki",
           "title": "Hebrew Bible",
           "path": "/wiki/hebrew-bible/"
+        },
+        {
+          "section": "wiki",
+          "title": "Mauro Biglino",
+          "path": "/wiki/mauro-biglino/"
+        }
+      ],
+      "cite_count": 4
+    },
+    {
+      "id": "la-bibbia-non-un-libro-sacro-il-grande-inganno-the-redaction-history-of-the-colo",
+      "cited_by": [
+        {
+          "section": "articles",
+          "title": "The Translator's Wager",
+          "path": "/articles/the-translators-wager/"
+        },
+        {
+          "section": "wiki",
+          "title": "Mauro Biglino",
+          "path": "/wiki/mauro-biglino/"
         }
       ],
       "cite_count": 2
@@ -2437,8 +4250,94 @@
       "cited_by": [
         {
           "section": "wiki",
+          "title": "Ezekiel",
+          "path": "/wiki/ezekiel/"
+        },
+        {
+          "section": "wiki",
+          "title": "Message from the Designers",
+          "path": "/wiki/message-from-the-designers/"
+        },
+        {
+          "section": "wiki",
           "title": "Reference corpus of the Raëlian canon",
           "path": "/wiki/reference-corpus-of-the-raelian-canon/"
+        }
+      ],
+      "cite_count": 3
+    },
+    {
+      "id": "la-cabale",
+      "cited_by": [
+        {
+          "section": "wiki",
+          "title": "Jean Sendy",
+          "path": "/wiki/jean-sendy/"
+        }
+      ],
+      "cite_count": 1
+    },
+    {
+      "id": "la-cabale-payot-the-chief-rabbi-of-geneva-s-exposition-of-the-kabbalah-that-send",
+      "cited_by": [
+        {
+          "section": "articles",
+          "title": "The Man Who Bet the Bible on the Moon",
+          "path": "/articles/the-man-who-bet-the-bible-on-the-moon/"
+        }
+      ],
+      "cite_count": 1
+    },
+    {
+      "id": "la-g-niocratie-english-geniocracy-government-of-the-people-for-the-people-by-the",
+      "cited_by": [
+        {
+          "section": "articles",
+          "title": "The Religion of Religions",
+          "path": "/articles/the-religion-of-religions/"
+        }
+      ],
+      "cite_count": 1
+    },
+    {
+      "id": "la-kabbale-que-sais-je-no-1105-2nd-rev-ed-1967",
+      "cited_by": [],
+      "cite_count": 0
+    },
+    {
+      "id": "la-kabbale-que-sais-je-no-1105-2nd-rev-ed-1967-the-pocket-book-carrying-ra-l-s-e",
+      "cited_by": [
+        {
+          "section": "articles",
+          "title": "The Book Closest to the Truth",
+          "path": "/articles/the-book-closest-to-the-truth/"
+        }
+      ],
+      "cite_count": 1
+    },
+    {
+      "id": "la-kabbale-juive-histoire-et-doctrine",
+      "cited_by": [],
+      "cite_count": 0
+    },
+    {
+      "id": "la-kabbale-juive-histoire-et-doctrine-defends-the-schiour-qoma-as-allegory-but-p",
+      "cited_by": [
+        {
+          "section": "articles",
+          "title": "The Book Closest to the Truth",
+          "path": "/articles/the-book-closest-to-the-truth/"
+        }
+      ],
+      "cite_count": 1
+    },
+    {
+      "id": "la-kabbale-ses-origines-sa-psychologie-mystique-sa-m-taphysique-grasset-s-rouya-",
+      "cited_by": [
+        {
+          "section": "articles",
+          "title": "The Book Closest to the Truth",
+          "path": "/articles/the-book-closest-to-the-truth/"
         }
       ],
       "cite_count": 1
@@ -2447,12 +4346,42 @@
       "id": "sendy-lune-cle-bible",
       "cited_by": [
         {
+          "section": "articles",
+          "title": "The Archdeacon and the Dragon",
+          "path": "/articles/the-archdeacon-and-the-dragon/"
+        },
+        {
+          "section": "articles",
+          "title": "The Book Closest to the Truth",
+          "path": "/articles/the-book-closest-to-the-truth/"
+        },
+        {
+          "section": "articles",
+          "title": "The Man Who Bet the Bible on the Moon",
+          "path": "/articles/the-man-who-bet-the-bible-on-the-moon/"
+        },
+        {
+          "section": "articles",
+          "title": "The Translator's Wager",
+          "path": "/articles/the-translators-wager/"
+        },
+        {
+          "section": "wiki",
+          "title": "Ezekiel",
+          "path": "/wiki/ezekiel/"
+        },
+        {
           "section": "wiki",
           "title": "Great Flood",
           "path": "/wiki/great-flood/"
+        },
+        {
+          "section": "wiki",
+          "title": "Jean Sendy",
+          "path": "/wiki/jean-sendy/"
         }
       ],
-      "cite_count": 1
+      "cite_count": 7
     },
     {
       "id": "lateran-treaty",
@@ -2461,6 +4390,17 @@
           "section": "wiki",
           "title": "Embassy",
           "path": "/wiki/embassy/"
+        }
+      ],
+      "cite_count": 1
+    },
+    {
+      "id": "le-livre-des-secrets-trahis-a-full-la-kabbale-chapter-checked-in-full-no-parasan",
+      "cited_by": [
+        {
+          "section": "articles",
+          "title": "The Book Closest to the Truth",
+          "path": "/articles/the-book-closest-to-the-truth/"
         }
       ],
       "cite_count": 1
@@ -2517,6 +4457,17 @@
       "cite_count": 9
     },
     {
+      "id": "le-racisme-religieux-financ-par-le-gouvernement-socialiste-the-anticult-polemic-",
+      "cited_by": [
+        {
+          "section": "articles",
+          "title": "The Religion of Religions",
+          "path": "/articles/the-religion-of-religions/"
+        }
+      ],
+      "cite_count": 1
+    },
+    {
       "id": "le-renard-p-le",
       "cited_by": [
         {
@@ -2542,14 +4493,71 @@
       "id": "sendy-cahiers-moise",
       "cited_by": [
         {
+          "section": "articles",
+          "title": "The Book Closest to the Truth",
+          "path": "/articles/the-book-closest-to-the-truth/"
+        },
+        {
+          "section": "articles",
+          "title": "The Man Who Bet the Bible on the Moon",
+          "path": "/articles/the-man-who-bet-the-bible-on-the-moon/"
+        },
+        {
+          "section": "articles",
+          "title": "The Mill That Grinds the Ages",
+          "path": "/articles/the-mill-that-grinds-the-ages/"
+        },
+        {
           "section": "wiki",
           "title": "Eden",
           "path": "/wiki/eden/"
         },
         {
           "section": "wiki",
+          "title": "Hamlet's Mill",
+          "path": "/wiki/hamlets-mill/"
+        },
+        {
+          "section": "wiki",
           "title": "Hebrew Bible",
           "path": "/wiki/hebrew-bible/"
+        },
+        {
+          "section": "wiki",
+          "title": "Jean Sendy",
+          "path": "/wiki/jean-sendy/"
+        }
+      ],
+      "cite_count": 7
+    },
+    {
+      "id": "les-dieux-nous-sont-n-s-i-l-ge-ingrat-the-1966-sequel-sendy-s-postulate-on-joyou",
+      "cited_by": [
+        {
+          "section": "articles",
+          "title": "The Man Who Bet the Bible on the Moon",
+          "path": "/articles/the-man-who-bet-the-bible-on-the-moon/"
+        },
+        {
+          "section": "wiki",
+          "title": "Jean Sendy",
+          "path": "/wiki/jean-sendy/"
+        }
+      ],
+      "cite_count": 2
+    },
+    {
+      "id": "les-dieux-nous-sont-n-s-ou-les-tribulations-d-un-honn-te-homme-ph-nom-nes-spatia",
+      "cited_by": [
+        {
+          "section": "articles",
+          "title": "The Man Who Bet the Bible on the Moon",
+          "path": "/articles/the-man-who-bet-the-bible-on-the-moon/"
+        },
+        {
+          "section": "wiki",
+          "title": "Jean Sendy",
+          "path": "/wiki/jean-sendy/"
         }
       ],
       "cite_count": 2
@@ -2622,6 +4630,39 @@
       "cite_count": 1
     },
     {
+      "id": "les-sectes-en-france-rapport-fait-au-nom-de-la-commission-d-enqu-te-sur-les-sect",
+      "cited_by": [
+        {
+          "section": "articles",
+          "title": "The Religion of Religions",
+          "path": "/articles/the-religion-of-religions/"
+        }
+      ],
+      "cite_count": 1
+    },
+    {
+      "id": "les-temps-messianiques-ouverture-sur-le-cosmos",
+      "cited_by": [
+        {
+          "section": "wiki",
+          "title": "Jean Sendy",
+          "path": "/wiki/jean-sendy/"
+        }
+      ],
+      "cite_count": 1
+    },
+    {
+      "id": "les-temps-messianiques-ouverture-sur-le-cosmos-the-last-book-the-four-converging",
+      "cited_by": [
+        {
+          "section": "articles",
+          "title": "The Man Who Bet the Bible on the Moon",
+          "path": "/articles/the-man-who-bet-the-bible-on-the-moon/"
+        }
+      ],
+      "cite_count": 1
+    },
+    {
       "id": "let-the-stones-speak",
       "cited_by": [
         {
@@ -2633,8 +4674,44 @@
       "cite_count": 1
     },
     {
+      "id": "let-the-stones-speak-archaeology-challenges-islam",
+      "cited_by": [],
+      "cite_count": 0
+    },
+    {
+      "id": "let-s-welcome-the-extra-terrestrials-who-created-the-creator-of-the-creators-the",
+      "cited_by": [
+        {
+          "section": "articles",
+          "title": "The Infinite in Both Directions",
+          "path": "/articles/the-infinite-in-both-directions/"
+        }
+      ],
+      "cite_count": 1
+    },
+    {
       "id": "lets-welcome-the-extraterrestrials",
       "cited_by": [
+        {
+          "section": "articles",
+          "title": "The Forty Chairs",
+          "path": "/articles/the-forty-chairs/"
+        },
+        {
+          "section": "articles",
+          "title": "The Religion of Religions",
+          "path": "/articles/the-religion-of-religions/"
+        },
+        {
+          "section": "articles",
+          "title": "The Shape of Humanity",
+          "path": "/articles/the-shape-of-humanity/"
+        },
+        {
+          "section": "articles",
+          "title": "The Signature and the Designers",
+          "path": "/articles/the-signature-and-the-designers/"
+        },
         {
           "section": "wiki",
           "title": "Ancient Astronaut Hypothesis",
@@ -2672,6 +4749,11 @@
         },
         {
           "section": "wiki",
+          "title": "Message from the Designers",
+          "path": "/wiki/message-from-the-designers/"
+        },
+        {
+          "section": "wiki",
           "title": "Raël",
           "path": "/wiki/rael/"
         },
@@ -2701,7 +4783,7 @@
           "path": "/wiki/yahweh/"
         }
       ],
-      "cite_count": 13
+      "cite_count": 18
     },
     {
       "id": "nickell-levengood-skeptical-inquirer-1996",
@@ -2726,6 +4808,17 @@
           "section": "wiki",
           "title": "Cosmic Chain",
           "path": "/wiki/cosmic-chain/"
+        }
+      ],
+      "cite_count": 1
+    },
+    {
+      "id": "life-itself-its-origin-and-nature-the-book-length-development-of-directed-panspe",
+      "cited_by": [
+        {
+          "section": "articles",
+          "title": "The Signature and the Designers",
+          "path": "/articles/the-signature-and-the-designers/"
         }
       ],
       "cite_count": 1
@@ -2772,6 +4865,11 @@
       "id": "magicians-of-the-gods",
       "cited_by": [
         {
+          "section": "articles",
+          "title": "The Mill That Grinds the Ages",
+          "path": "/articles/the-mill-that-grinds-the-ages/"
+        },
+        {
           "section": "wiki",
           "title": "Ancient Builders",
           "path": "/wiki/ancient-builders/"
@@ -2780,20 +4878,30 @@
           "section": "wiki",
           "title": "Antediluvian",
           "path": "/wiki/antediluvian/"
+        },
+        {
+          "section": "wiki",
+          "title": "Hamlet's Mill",
+          "path": "/wiki/hamlets-mill/"
         }
       ],
-      "cite_count": 2
+      "cite_count": 4
     },
     {
       "id": "mahabharata",
       "cited_by": [
+        {
+          "section": "articles",
+          "title": "The Shape of Humanity",
+          "path": "/articles/the-shape-of-humanity/"
+        },
         {
           "section": "wiki",
           "title": "Reference corpus of the Raëlian canon",
           "path": "/wiki/reference-corpus-of-the-raelian-canon/"
         }
       ],
-      "cite_count": 1
+      "cite_count": 2
     },
     {
       "id": "williams-mahayana",
@@ -2821,6 +4929,16 @@
       "id": "major-trends-jewish-mysticism",
       "cited_by": [
         {
+          "section": "articles",
+          "title": "The Book Closest to the Truth",
+          "path": "/articles/the-book-closest-to-the-truth/"
+        },
+        {
+          "section": "wiki",
+          "title": "Ezekiel",
+          "path": "/wiki/ezekiel/"
+        },
+        {
           "section": "wiki",
           "title": "Serpent",
           "path": "/wiki/serpent/"
@@ -2831,7 +4949,7 @@
           "path": "/wiki/tree-of-life/"
         }
       ],
-      "cite_count": 2
+      "cite_count": 4
     },
     {
       "id": "vilenkin-many-worlds-in-one",
@@ -2845,15 +4963,42 @@
       "cite_count": 1
     },
     {
+      "id": "mass-effect-wheel-of-heaven-wiki-the-law-of-masstime-the-scale-dependence-of-bio",
+      "cited_by": [
+        {
+          "section": "articles",
+          "title": "The Shape of Humanity",
+          "path": "/articles/the-shape-of-humanity/"
+        }
+      ],
+      "cite_count": 1
+    },
+    {
+      "id": "mass-effect-wheel-of-heaven-wiki-the-law-of-masstime-the-two-equivalent-formulat",
+      "cited_by": [
+        {
+          "section": "articles",
+          "title": "The Infinite in Both Directions",
+          "path": "/articles/the-infinite-in-both-directions/"
+        }
+      ],
+      "cite_count": 1
+    },
+    {
       "id": "mathematics-and-the-unexpected",
       "cited_by": [
+        {
+          "section": "articles",
+          "title": "The Infinite in Both Directions",
+          "path": "/articles/the-infinite-in-both-directions/"
+        },
         {
           "section": "timeline",
           "title": "Preamble",
           "path": "/timeline/preamble/"
         }
       ],
-      "cite_count": 1
+      "cite_count": 2
     },
     {
       "id": "sandt-zangenberg-matthew-james-didache",
@@ -2870,16 +5015,26 @@
       "id": "mazzaroth-dot-com",
       "cited_by": [
         {
+          "section": "articles",
+          "title": "The Mill That Grinds the Ages",
+          "path": "/articles/the-mill-that-grinds-the-ages/"
+        },
+        {
           "section": "wiki",
           "title": "Precession",
           "path": "/wiki/precession/"
         }
       ],
-      "cite_count": 1
+      "cite_count": 2
     },
     {
       "id": "mazzaroth-rolleston",
       "cited_by": [
+        {
+          "section": "articles",
+          "title": "The Mill That Grinds the Ages",
+          "path": "/articles/the-mill-that-grinds-the-ages/"
+        },
         {
           "section": "wiki",
           "title": "Precession",
@@ -2891,7 +5046,7 @@
           "path": "/wiki/zodiac/"
         }
       ],
-      "cite_count": 2
+      "cite_count": 3
     },
     {
       "id": "mecca-and-macoraba",
@@ -2905,6 +5060,11 @@
       "cite_count": 1
     },
     {
+      "id": "mecca-and-macoraba-al-u-r-al-wus-26",
+      "cited_by": [],
+      "cite_count": 0
+    },
+    {
       "id": "russell-mephistopheles-modern",
       "cited_by": [
         {
@@ -2916,12 +5076,39 @@
       "cite_count": 1
     },
     {
+      "id": "merkavah-shelemah-the-printed-collection-of-the-shi-ur-qomah-fragments-cited-thr",
+      "cited_by": [
+        {
+          "section": "articles",
+          "title": "The Book Closest to the Truth",
+          "path": "/articles/the-book-closest-to-the-truth/"
+        }
+      ],
+      "cite_count": 1
+    },
+    {
       "id": "mesopotamian-chronicles",
       "cited_by": [
         {
           "section": "wiki",
           "title": "Antediluvian",
           "path": "/wiki/antediluvian/"
+        },
+        {
+          "section": "wiki",
+          "title": "Sumerian King List",
+          "path": "/wiki/sumerian-king-list/"
+        }
+      ],
+      "cite_count": 2
+    },
+    {
+      "id": "metabolic-rate-and-body-size-are-linked-with-perception-of-temporal-information-",
+      "cited_by": [
+        {
+          "section": "articles",
+          "title": "The Infinite in Both Directions",
+          "path": "/articles/the-infinite-in-both-directions/"
         }
       ],
       "cite_count": 1
@@ -2949,15 +5136,31 @@
       "cite_count": 1
     },
     {
+      "id": "mishnah-hagigah-2-1-the-ban-on-expounding-the-work-of-the-chariot-babylonian-tal",
+      "cited_by": [
+        {
+          "section": "articles",
+          "title": "The Book Closest to the Truth",
+          "path": "/articles/the-book-closest-to-the-truth/"
+        }
+      ],
+      "cite_count": 1
+    },
+    {
       "id": "maimonides-mishneh-torah",
       "cited_by": [
+        {
+          "section": "articles",
+          "title": "The Book Closest to the Truth",
+          "path": "/articles/the-book-closest-to-the-truth/"
+        },
         {
           "section": "wiki",
           "title": "Embassy",
           "path": "/wiki/embassy/"
         }
       ],
-      "cite_count": 1
+      "cite_count": 2
     },
     {
       "id": "misunderstandings-about-the-tunguska-event-shock-wave-physics-and-airbursts-have",
@@ -2987,6 +5190,71 @@
       "cite_count": 0
     },
     {
+      "id": "more-than-a-vulture-a-response-to-sweatman-and-tsikritsis-mediterranean-archaeol",
+      "cited_by": [
+        {
+          "section": "articles",
+          "title": "The Mill That Grinds the Ages",
+          "path": "/articles/the-mill-that-grinds-the-ages/"
+        },
+        {
+          "section": "wiki",
+          "title": "Hamlet's Mill",
+          "path": "/wiki/hamlets-mill/"
+        }
+      ],
+      "cite_count": 2
+    },
+    {
+      "id": "mormonism-the-story-of-a-new-religious-tradition",
+      "cited_by": [
+        {
+          "section": "articles",
+          "title": "The Forty Chairs",
+          "path": "/articles/the-forty-chairs/"
+        },
+        {
+          "section": "articles",
+          "title": "The Religion of Religions",
+          "path": "/articles/the-religion-of-religions/"
+        }
+      ],
+      "cite_count": 2
+    },
+    {
+      "id": "morphology-of-the-folktale-the-thirty-one-functions-the-sequential-rival-to-both",
+      "cited_by": [
+        {
+          "section": "articles",
+          "title": "The Filing Cabinet of the Gods",
+          "path": "/articles/the-filing-cabinet-of-the-gods/"
+        }
+      ],
+      "cite_count": 1
+    },
+    {
+      "id": "motif-index-of-folk-literature-a-classification-of-narrative-elements-in-folktal",
+      "cited_by": [
+        {
+          "section": "articles",
+          "title": "The Filing Cabinet of the Gods",
+          "path": "/articles/the-filing-cabinet-of-the-gods/"
+        }
+      ],
+      "cite_count": 1
+    },
+    {
+      "id": "mouvement-ra-lien-suisse-v-switzerland-application-no-16354-06-grand-chamber-the",
+      "cited_by": [
+        {
+          "section": "articles",
+          "title": "The Religion of Religions",
+          "path": "/articles/the-religion-of-religions/"
+        }
+      ],
+      "cite_count": 1
+    },
+    {
       "id": "muhammad-and-the-believers",
       "cited_by": [
         {
@@ -2996,6 +5264,11 @@
         }
       ],
       "cite_count": 1
+    },
+    {
+      "id": "muhammad-and-the-believers-at-the-origins-of-islam",
+      "cited_by": [],
+      "cite_count": 0
     },
     {
       "id": "multispecies-cities-anthology",
@@ -3009,8 +5282,29 @@
       "cite_count": 1
     },
     {
+      "id": "myth-and-science-hamlet-s-mill-journal-for-the-history-of-astronomy-3-pp-206-211",
+      "cited_by": [
+        {
+          "section": "articles",
+          "title": "The Mill That Grinds the Ages",
+          "path": "/articles/the-mill-that-grinds-the-ages/"
+        },
+        {
+          "section": "wiki",
+          "title": "Hamlet's Mill",
+          "path": "/wiki/hamlets-mill/"
+        }
+      ],
+      "cite_count": 2
+    },
+    {
       "id": "kramer-enki-myths",
       "cited_by": [
+        {
+          "section": "articles",
+          "title": "The Filing Cabinet of the Gods",
+          "path": "/articles/the-filing-cabinet-of-the-gods/"
+        },
         {
           "section": "wiki",
           "title": "Eden",
@@ -3020,6 +5314,44 @@
           "section": "wiki",
           "title": "Great Flood",
           "path": "/wiki/great-flood/"
+        }
+      ],
+      "cite_count": 3
+    },
+    {
+      "id": "natural-history-5-73-the-essenes-west-of-the-dead-sea-without-women-having-for-c",
+      "cited_by": [
+        {
+          "section": "articles",
+          "title": "The Scrolls That Woke in Year One",
+          "path": "/articles/the-scrolls-that-woke-in-year-one/"
+        }
+      ],
+      "cite_count": 1
+    },
+    {
+      "id": "natural-theology-or-evidences-of-the-existence-and-attributes-of-the-deity-the-w",
+      "cited_by": [
+        {
+          "section": "articles",
+          "title": "The Signature and the Designers",
+          "path": "/articles/the-signature-and-the-designers/"
+        }
+      ],
+      "cite_count": 1
+    },
+    {
+      "id": "naturales-quaestiones-3-29-1-berossus-s-doctrine-the-world-burns-when-the-planet",
+      "cited_by": [
+        {
+          "section": "articles",
+          "title": "The Mill That Grinds the Ages",
+          "path": "/articles/the-mill-that-grinds-the-ages/"
+        },
+        {
+          "section": "wiki",
+          "title": "Sumerian King List",
+          "path": "/wiki/sumerian-king-list/"
         }
       ],
       "cite_count": 2
@@ -3085,6 +5417,17 @@
       "cite_count": 1
     },
     {
+      "id": "non-c-creazione-nella-bibbia-la-genesi-ci-racconta-un-altra-storia",
+      "cited_by": [
+        {
+          "section": "wiki",
+          "title": "Mauro Biglino",
+          "path": "/wiki/mauro-biglino/"
+        }
+      ],
+      "cite_count": 1
+    },
+    {
       "id": "lindow-norse-mythology",
       "cited_by": [
         {
@@ -3101,8 +5444,40 @@
       "cite_count": 2
     },
     {
+      "id": "nous-autres-gens-du-moyen-ge",
+      "cited_by": [
+        {
+          "section": "wiki",
+          "title": "Jean Sendy",
+          "path": "/wiki/jean-sendy/"
+        }
+      ],
+      "cite_count": 1
+    },
+    {
+      "id": "nous-autres-gens-du-moyen-ge-the-historiographical-thesis-concessionaires-versus",
+      "cited_by": [
+        {
+          "section": "articles",
+          "title": "The Man Who Bet the Bible on the Moon",
+          "path": "/articles/the-man-who-bet-the-bible-on-the-moon/"
+        }
+      ],
+      "cite_count": 1
+    },
+    {
       "id": "numbers",
       "cited_by": [
+        {
+          "section": "articles",
+          "title": "The Archdeacon and the Dragon",
+          "path": "/articles/the-archdeacon-and-the-dragon/"
+        },
+        {
+          "section": "articles",
+          "title": "The Translator's Wager",
+          "path": "/articles/the-translators-wager/"
+        },
         {
           "section": "timeline",
           "title": "Age of Aries",
@@ -3114,7 +5489,7 @@
           "path": "/wiki/moses/"
         }
       ],
-      "cite_count": 2
+      "cite_count": 4
     },
     {
       "id": "oblivion-film",
@@ -3123,6 +5498,17 @@
           "section": "wiki",
           "title": "Cyberparadism",
           "path": "/wiki/cyberparadism/"
+        }
+      ],
+      "cite_count": 1
+    },
+    {
+      "id": "ofudesaki-the-tip-of-the-writing-brush-1-711-verses-in-nakayama-miki-s-own-hand-",
+      "cited_by": [
+        {
+          "section": "articles",
+          "title": "The Forty Chairs",
+          "path": "/articles/the-forty-chairs/"
         }
       ],
       "cite_count": 1
@@ -3142,9 +5528,52 @@
       "id": "bruno-infinite-universe",
       "cited_by": [
         {
+          "section": "articles",
+          "title": "The Infinite in Both Directions",
+          "path": "/articles/the-infinite-in-both-directions/"
+        },
+        {
           "section": "wiki",
           "title": "Cosmic Chain",
           "path": "/wiki/cosmic-chain/"
+        }
+      ],
+      "cite_count": 2
+    },
+    {
+      "id": "on-the-jerusalem-origin-of-the-dead-sea-scrolls-the-fullest-short-statement-of-t",
+      "cited_by": [
+        {
+          "section": "articles",
+          "title": "The Scrolls That Woke in Year One",
+          "path": "/articles/the-scrolls-that-woke-in-year-one/"
+        }
+      ],
+      "cite_count": 1
+    },
+    {
+      "id": "on-the-jerusalem-origin-of-the-dead-sea-scrolls-the-principal-statement-of-the-n",
+      "cited_by": [
+        {
+          "section": "articles",
+          "title": "Unsealed in Year One",
+          "path": "/articles/unsealed-in-year-one/"
+        }
+      ],
+      "cite_count": 1
+    },
+    {
+      "id": "on-the-mystical-shape-of-the-godhead-basic-concepts-in-the-kabbalah",
+      "cited_by": [],
+      "cite_count": 0
+    },
+    {
+      "id": "on-the-mystical-shape-of-the-godhead-basic-concepts-in-the-kabbalah-ch-1-shi-ur-",
+      "cited_by": [
+        {
+          "section": "articles",
+          "title": "The Book Closest to the Truth",
+          "path": "/articles/the-book-closest-to-the-truth/"
         }
       ],
       "cite_count": 1
@@ -3156,6 +5585,54 @@
           "section": "articles",
           "title": "The First Mosques Faced Petra, Not Mecca",
           "path": "/articles/the-first-mosques-faced-petra-not-mecca/"
+        }
+      ],
+      "cite_count": 1
+    },
+    {
+      "id": "on-the-origin-of-qur-anic-arabic-draft",
+      "cited_by": [],
+      "cite_count": 0
+    },
+    {
+      "id": "on-the-origin-of-watchers-a-comparative-study-of-the-antediluvian-wisdom-in-meso",
+      "cited_by": [
+        {
+          "section": "articles",
+          "title": "The Filing Cabinet of the Gods",
+          "path": "/articles/the-filing-cabinet-of-the-gods/"
+        },
+        {
+          "section": "wiki",
+          "title": "Sumerian King List",
+          "path": "/wiki/sumerian-king-list/"
+        },
+        {
+          "section": "wiki",
+          "title": "Watchers",
+          "path": "/wiki/watchers/"
+        }
+      ],
+      "cite_count": 3
+    },
+    {
+      "id": "oomoto-shin-yu-wheel-of-heaven-translation-1-the-1892-opening-oracle-produced-in",
+      "cited_by": [
+        {
+          "section": "articles",
+          "title": "The Forty Chairs",
+          "path": "/articles/the-forty-chairs/"
+        }
+      ],
+      "cite_count": 1
+    },
+    {
+      "id": "oomoto-shin-yu-wheel-of-heaven-translation-1-the-1892-opening-oracle-53-ayabe-as",
+      "cited_by": [
+        {
+          "section": "articles",
+          "title": "The Religion of Religions",
+          "path": "/articles/the-religion-of-religions/"
         }
       ],
       "cite_count": 1
@@ -3178,6 +5655,17 @@
           "section": "wiki",
           "title": "Crop Circles",
           "path": "/wiki/crop-circles/"
+        }
+      ],
+      "cite_count": 1
+    },
+    {
+      "id": "optical-clocks-and-relativity-science-329-1630-1633-gravitational-time-dilation-",
+      "cited_by": [
+        {
+          "section": "articles",
+          "title": "The Infinite in Both Directions",
+          "path": "/articles/the-infinite-in-both-directions/"
         }
       ],
       "cite_count": 1
@@ -3216,6 +5704,28 @@
       "cite_count": 1
     },
     {
+      "id": "otiot-de-rabbi-akiva-the-recension-giving-the-body-of-the-shekhinah-is-2-360-000",
+      "cited_by": [
+        {
+          "section": "articles",
+          "title": "The Book Closest to the Truth",
+          "path": "/articles/the-book-closest-to-the-truth/"
+        }
+      ],
+      "cite_count": 1
+    },
+    {
+      "id": "our-knowledge-of-the-past-a-philosophy-of-historiography-bayesian-historiography",
+      "cited_by": [
+        {
+          "section": "articles",
+          "title": "The Forty Chairs",
+          "path": "/articles/the-forty-chairs/"
+        }
+      ],
+      "cite_count": 1
+    },
+    {
       "id": "tegmark-mathematical-universe",
       "cited_by": [
         {
@@ -3248,8 +5758,45 @@
       "cite_count": 0
     },
     {
+      "id": "pens-es-the-two-infinities-a-nothing-in-regard-to-the-infinite-an-all-in-regard-",
+      "cited_by": [
+        {
+          "section": "articles",
+          "title": "The Infinite in Both Directions",
+          "path": "/articles/the-infinite-in-both-directions/"
+        }
+      ],
+      "cite_count": 1
+    },
+    {
+      "id": "pirkei-avot-1-1-moses-received-kibbel-the-torah-at-sinai-the-chain-of-tradition-",
+      "cited_by": [
+        {
+          "section": "articles",
+          "title": "The Book Closest to the Truth",
+          "path": "/articles/the-book-closest-to-the-truth/"
+        }
+      ],
+      "cite_count": 1
+    },
+    {
       "id": "popol-vuh",
       "cited_by": [
+        {
+          "section": "articles",
+          "title": "The Archdeacon and the Dragon",
+          "path": "/articles/the-archdeacon-and-the-dragon/"
+        },
+        {
+          "section": "articles",
+          "title": "The Filing Cabinet of the Gods",
+          "path": "/articles/the-filing-cabinet-of-the-gods/"
+        },
+        {
+          "section": "articles",
+          "title": "The Shape of Humanity",
+          "path": "/articles/the-shape-of-humanity/"
+        },
         {
           "section": "timeline",
           "title": "Preamble",
@@ -3266,7 +5813,7 @@
           "path": "/wiki/world-age/"
         }
       ],
-      "cite_count": 3
+      "cite_count": 6
     },
     {
       "id": "tedlock-popol-vuh",
@@ -3362,6 +5909,17 @@
       "cite_count": 1
     },
     {
+      "id": "prophet-motive-deguchi-onisabur-oomoto-and-the-rise-of-new-religions-in-imperial",
+      "cited_by": [
+        {
+          "section": "articles",
+          "title": "The Religion of Religions",
+          "path": "/articles/the-religion-of-religions/"
+        }
+      ],
+      "cite_count": 1
+    },
+    {
       "id": "providence-in-early-modern-england",
       "cited_by": [
         {
@@ -3374,8 +5932,34 @@
     },
     {
       "id": "psalms",
-      "cited_by": [],
-      "cite_count": 0
+      "cited_by": [
+        {
+          "section": "articles",
+          "title": "The Archdeacon and the Dragon",
+          "path": "/articles/the-archdeacon-and-the-dragon/"
+        },
+        {
+          "section": "articles",
+          "title": "The Book Closest to the Truth",
+          "path": "/articles/the-book-closest-to-the-truth/"
+        },
+        {
+          "section": "articles",
+          "title": "The Scrolls That Woke in Year One",
+          "path": "/articles/the-scrolls-that-woke-in-year-one/"
+        },
+        {
+          "section": "articles",
+          "title": "The Translator's Wager",
+          "path": "/articles/the-translators-wager/"
+        },
+        {
+          "section": "articles",
+          "title": "Unsealed in Year One",
+          "path": "/articles/unsealed-in-year-one/"
+        }
+      ],
+      "cite_count": 5
     },
     {
       "id": "pseudodoxia-epidemica",
@@ -3408,6 +5992,11 @@
           "path": "/articles/the-first-mosques-faced-petra-not-mecca/"
         },
         {
+          "section": "articles",
+          "title": "The Scrolls That Woke in Year One",
+          "path": "/articles/the-scrolls-that-woke-in-year-one/"
+        },
+        {
           "section": "timeline",
           "title": "Age of Pisces",
           "path": "/timeline/age-of-pisces/"
@@ -3418,11 +6007,16 @@
           "path": "/timeline/the-wheel-keeps-turning/"
         }
       ],
-      "cite_count": 3
+      "cite_count": 4
     },
     {
       "id": "rael-dot-org",
       "cited_by": [
+        {
+          "section": "wiki",
+          "title": "Message from the Designers",
+          "path": "/wiki/message-from-the-designers/"
+        },
         {
           "section": "wiki",
           "title": "Raël",
@@ -3434,18 +6028,34 @@
           "path": "/wiki/raelism/"
         }
       ],
-      "cite_count": 2
+      "cite_count": 3
     },
     {
-      "id": "reading-sumerian-poetry",
+      "id": "ra-l-voleur-d-mes",
       "cited_by": [
         {
-          "section": "articles",
-          "title": "Made from the Ground to Bear the Labor",
-          "path": "/articles/made-from-the-ground-to-bear-the-labor/"
+          "section": "wiki",
+          "title": "Jean Sendy",
+          "path": "/wiki/jean-sendy/"
         }
       ],
       "cite_count": 1
+    },
+    {
+      "id": "ra-l-voleur-d-mes-the-book-length-statement-of-the-plagiarism-case-l-re-du-verse",
+      "cited_by": [
+        {
+          "section": "articles",
+          "title": "The Man Who Bet the Bible on the Moon",
+          "path": "/articles/the-man-who-bet-the-bible-on-the-moon/"
+        }
+      ],
+      "cite_count": 1
+    },
+    {
+      "id": "reading-sumerian-poetry",
+      "cited_by": [],
+      "cite_count": 0
     },
     {
       "id": "real-life-x-files-nickell",
@@ -3459,12 +6069,34 @@
       "cite_count": 1
     },
     {
+      "id": "reconstructing-the-universe-phys-rev-d-72-064014-causal-dynamical-triangulations",
+      "cited_by": [
+        {
+          "section": "articles",
+          "title": "The Infinite in Both Directions",
+          "path": "/articles/the-infinite-in-both-directions/"
+        }
+      ],
+      "cite_count": 1
+    },
+    {
       "id": "redating-the-great-sphinx-of-giza",
       "cited_by": [
         {
           "section": "timeline",
           "title": "Age of Taurus",
           "path": "/timeline/age-of-taurus/"
+        }
+      ],
+      "cite_count": 1
+    },
+    {
+      "id": "religion-explained-the-evolutionary-origins-of-religious-thought-minimally-count",
+      "cited_by": [
+        {
+          "section": "articles",
+          "title": "The Filing Cabinet of the Gods",
+          "path": "/articles/the-filing-cabinet-of-the-gods/"
         }
       ],
       "cite_count": 1
@@ -3492,15 +6124,31 @@
       "cite_count": 1
     },
     {
+      "id": "responsum-on-the-shi-ur-qomah-in-otzar-ha-geonim-hagigah-ed-b-m-lewin-our-creato",
+      "cited_by": [
+        {
+          "section": "articles",
+          "title": "The Book Closest to the Truth",
+          "path": "/articles/the-book-closest-to-the-truth/"
+        }
+      ],
+      "cite_count": 1
+    },
+    {
       "id": "rnkjv",
       "cited_by": [
+        {
+          "section": "wiki",
+          "title": "Message from the Designers",
+          "path": "/wiki/message-from-the-designers/"
+        },
         {
           "section": "wiki",
           "title": "Reference corpus of the Raëlian canon",
           "path": "/wiki/reference-corpus-of-the-raelian-canon/"
         }
       ],
-      "cite_count": 1
+      "cite_count": 2
     },
     {
       "id": "retracted-article-a-tunguska-sized-airburst-destroyed-tall-el-hammam-a-middle-br",
@@ -3525,6 +6173,17 @@
       "cite_count": 1
     },
     {
+      "id": "return-of-the-god-hypothesis-three-scientific-discoveries-that-reveal-the-mind-b",
+      "cited_by": [
+        {
+          "section": "articles",
+          "title": "The Signature and the Designers",
+          "path": "/articles/the-signature-and-the-designers/"
+        }
+      ],
+      "cite_count": 1
+    },
+    {
       "id": "revelation",
       "cited_by": [
         {
@@ -3544,6 +6203,54 @@
         }
       ],
       "cite_count": 3
+    },
+    {
+      "id": "review-of-hamlet-s-mill-folklore-85-4-pp-282-283-the-folklorist-s-objection-to-s",
+      "cited_by": [
+        {
+          "section": "articles",
+          "title": "The Mill That Grinds the Ages",
+          "path": "/articles/the-mill-that-grinds-the-ages/"
+        },
+        {
+          "section": "wiki",
+          "title": "Hamlet's Mill",
+          "path": "/wiki/hamlets-mill/"
+        }
+      ],
+      "cite_count": 2
+    },
+    {
+      "id": "review-of-hamlet-s-mill-scientific-american-1969-it-has-the-ring-of-noble-metal-",
+      "cited_by": [
+        {
+          "section": "articles",
+          "title": "The Mill That Grinds the Ages",
+          "path": "/articles/the-mill-that-grinds-the-ages/"
+        },
+        {
+          "section": "wiki",
+          "title": "Hamlet's Mill",
+          "path": "/wiki/hamlets-mill/"
+        }
+      ],
+      "cite_count": 2
+    },
+    {
+      "id": "review-of-hamlet-s-mill-the-american-historical-review-75-7-pp-2009-2010-this-is",
+      "cited_by": [
+        {
+          "section": "articles",
+          "title": "The Mill That Grinds the Ages",
+          "path": "/articles/the-mill-that-grinds-the-ages/"
+        },
+        {
+          "section": "wiki",
+          "title": "Hamlet's Mill",
+          "path": "/wiki/hamlets-mill/"
+        }
+      ],
+      "cite_count": 2
     },
     {
       "id": "the-ricks-must-be-crazy",
@@ -3587,6 +6294,11 @@
       "id": "kelly-satan-biography",
       "cited_by": [
         {
+          "section": "articles",
+          "title": "The Archdeacon and the Dragon",
+          "path": "/articles/the-archdeacon-and-the-dragon/"
+        },
+        {
           "section": "wiki",
           "title": "Lucifer",
           "path": "/wiki/lucifer/"
@@ -3602,7 +6314,7 @@
           "path": "/wiki/serpent/"
         }
       ],
-      "cite_count": 3
+      "cite_count": 4
     },
     {
       "id": "satan-a-biography",
@@ -3621,13 +6333,89 @@
       "cite_count": 1
     },
     {
+      "id": "sa-s-ra-wheel-of-heaven-wiki-the-civilizational-rereading-of-the-cycle-rise-to-s",
+      "cited_by": [
+        {
+          "section": "articles",
+          "title": "The Shape of Humanity",
+          "path": "/articles/the-shape-of-humanity/"
+        }
+      ],
+      "cite_count": 1
+    },
+    {
+      "id": "scale-the-universal-laws-of-growth-innovation-sustainability-and-the-pace-of-lif",
+      "cited_by": [
+        {
+          "section": "articles",
+          "title": "The Infinite in Both Directions",
+          "path": "/articles/the-infinite-in-both-directions/"
+        },
+        {
+          "section": "articles",
+          "title": "The Shape of Humanity",
+          "path": "/articles/the-shape-of-humanity/"
+        }
+      ],
+      "cite_count": 2
+    },
+    {
+      "id": "sch-pfung-und-chaos-in-urzeit-und-endzeit-the-1895-book-that-first-read-the-old-",
+      "cited_by": [
+        {
+          "section": "articles",
+          "title": "The Filing Cabinet of the Gods",
+          "path": "/articles/the-filing-cabinet-of-the-gods/"
+        }
+      ],
+      "cite_count": 1
+    },
+    {
       "id": "science-after-babel",
       "cited_by": [],
       "cite_count": 0
     },
     {
+      "id": "science-replacing-supernatural-the-ra-lian-movement-and-their-reinterpretation-o",
+      "cited_by": [
+        {
+          "section": "articles",
+          "title": "The Religion of Religions",
+          "path": "/articles/the-religion-of-religions/"
+        }
+      ],
+      "cite_count": 1
+    },
+    {
+      "id": "scientific-creationism-the-classic-attempt-to-present-young-earth-creationism-as",
+      "cited_by": [
+        {
+          "section": "articles",
+          "title": "The Signature and the Designers",
+          "path": "/articles/the-signature-and-the-designers/"
+        }
+      ],
+      "cite_count": 1
+    },
+    {
+      "id": "scientific-creationism-a-study-of-the-ra-lian-church-in-christopher-partridge-ed",
+      "cited_by": [
+        {
+          "section": "articles",
+          "title": "The Signature and the Designers",
+          "path": "/articles/the-signature-and-the-designers/"
+        }
+      ],
+      "cite_count": 1
+    },
+    {
       "id": "sefaria",
       "cited_by": [
+        {
+          "section": "articles",
+          "title": "The Book Closest to the Truth",
+          "path": "/articles/the-book-closest-to-the-truth/"
+        },
         {
           "section": "wiki",
           "title": "Genesis",
@@ -3644,18 +6432,50 @@
           "path": "/wiki/jesus/"
         }
       ],
-      "cite_count": 3
+      "cite_count": 4
+    },
+    {
+      "id": "sefer-raziel-ha-mal-akh-the-grimoire-legendarily-given-by-the-angel-raziel-to-ad",
+      "cited_by": [
+        {
+          "section": "articles",
+          "title": "The Book Closest to the Truth",
+          "path": "/articles/the-book-closest-to-the-truth/"
+        }
+      ],
+      "cite_count": 1
+    },
+    {
+      "id": "sefer-shi-ur-qomah-warsaw-y-goldman-1883-and-pardes-rimmonim-the-safed-rehabilit",
+      "cited_by": [
+        {
+          "section": "articles",
+          "title": "The Book Closest to the Truth",
+          "path": "/articles/the-book-closest-to-the-truth/"
+        }
+      ],
+      "cite_count": 1
     },
     {
       "id": "sefer-yetzirah",
       "cited_by": [
+        {
+          "section": "articles",
+          "title": "The Book Closest to the Truth",
+          "path": "/articles/the-book-closest-to-the-truth/"
+        },
+        {
+          "section": "articles",
+          "title": "The Mill That Grinds the Ages",
+          "path": "/articles/the-mill-that-grinds-the-ages/"
+        },
         {
           "section": "wiki",
           "title": "Tree of Life",
           "path": "/wiki/tree-of-life/"
         }
       ],
-      "cite_count": 1
+      "cite_count": 3
     },
     {
       "id": "serpent-in-the-sky",
@@ -3664,6 +6484,17 @@
           "section": "wiki",
           "title": "Ancient Builders",
           "path": "/wiki/ancient-builders/"
+        }
+      ],
+      "cite_count": 1
+    },
+    {
+      "id": "serpent-in-the-sky-the-high-wisdom-of-ancient-egypt-the-schwaller-de-lubicz-thes",
+      "cited_by": [
+        {
+          "section": "articles",
+          "title": "The Mill That Grinds the Ages",
+          "path": "/articles/the-mill-that-grinds-the-ages/"
         }
       ],
       "cite_count": 1
@@ -3683,22 +6514,44 @@
       "id": "shiur-qomah",
       "cited_by": [
         {
+          "section": "articles",
+          "title": "The Book Closest to the Truth",
+          "path": "/articles/the-book-closest-to-the-truth/"
+        },
+        {
           "section": "wiki",
           "title": "Reference corpus of the Raëlian canon",
           "path": "/wiki/reference-corpus-of-the-raelian-canon/"
         }
       ],
-      "cite_count": 1
+      "cite_count": 2
     },
     {
       "id": "signature-in-the-cell",
-      "cited_by": [],
-      "cite_count": 0
+      "cited_by": [
+        {
+          "section": "articles",
+          "title": "The Signature and the Designers",
+          "path": "/articles/the-signature-and-the-designers/"
+        }
+      ],
+      "cite_count": 1
     },
     {
       "id": "aveni-skywatchers",
       "cited_by": [],
       "cite_count": 0
+    },
+    {
+      "id": "slaying-the-dragon-mythmaking-in-the-biblical-tradition-mythopoeic-speculation-t",
+      "cited_by": [
+        {
+          "section": "articles",
+          "title": "The Filing Cabinet of the Gods",
+          "path": "/articles/the-filing-cabinet-of-the-gods/"
+        }
+      ],
+      "cite_count": 1
     },
     {
       "id": "soft-tissue-vessels-and-cellular-preservation-in-tyrannosaurus-rex",
@@ -3718,6 +6571,17 @@
           "section": "wiki",
           "title": "Cyberparadism",
           "path": "/wiki/cyberparadism/"
+        }
+      ],
+      "cite_count": 1
+    },
+    {
+      "id": "song-of-songs-5-10-16-the-description-of-the-beloved-s-body-quoted-inside-the-sh",
+      "cited_by": [
+        {
+          "section": "articles",
+          "title": "The Book Closest to the Truth",
+          "path": "/articles/the-book-closest-to-the-truth/"
         }
       ],
       "cite_count": 1
@@ -3778,9 +6642,14 @@
           "section": "wiki",
           "title": "Eden",
           "path": "/wiki/eden/"
+        },
+        {
+          "section": "wiki",
+          "title": "Sumerian King List",
+          "path": "/wiki/sumerian-king-list/"
         }
       ],
-      "cite_count": 1
+      "cite_count": 2
     },
     {
       "id": "summa-theologiae",
@@ -3800,6 +6669,17 @@
           "section": "wiki",
           "title": "Cyberparadism",
           "path": "/wiki/cyberparadism/"
+        }
+      ],
+      "cite_count": 1
+    },
+    {
+      "id": "synopse-zur-hekhalot-literatur-tsaj-2-the-parallel-column-edition-of-the-major-m",
+      "cited_by": [
+        {
+          "section": "articles",
+          "title": "The Book Closest to the Truth",
+          "path": "/articles/the-book-closest-to-the-truth/"
         }
       ],
       "cite_count": 1
@@ -3867,6 +6747,21 @@
       "id": "sitchin-12th-planet",
       "cited_by": [
         {
+          "section": "articles",
+          "title": "The Archdeacon and the Dragon",
+          "path": "/articles/the-archdeacon-and-the-dragon/"
+        },
+        {
+          "section": "articles",
+          "title": "The Man Who Bet the Bible on the Moon",
+          "path": "/articles/the-man-who-bet-the-bible-on-the-moon/"
+        },
+        {
+          "section": "articles",
+          "title": "The Translator's Wager",
+          "path": "/articles/the-translators-wager/"
+        },
+        {
           "section": "wiki",
           "title": "Eden",
           "path": "/wiki/eden/"
@@ -3880,9 +6775,14 @@
           "section": "wiki",
           "title": "Hebrew Bible",
           "path": "/wiki/hebrew-bible/"
+        },
+        {
+          "section": "wiki",
+          "title": "Sumerian King List",
+          "path": "/wiki/sumerian-king-list/"
         }
       ],
-      "cite_count": 3
+      "cite_count": 7
     },
     {
       "id": "the-12th-planet",
@@ -3934,6 +6834,17 @@
           "section": "timeline",
           "title": "Age of Leo",
           "path": "/timeline/age-of-leo/"
+        }
+      ],
+      "cite_count": 1
+    },
+    {
+      "id": "the-archaeology-of-qumran-and-the-dead-sea-scrolls-the-standard-post-de-vaux-acc",
+      "cited_by": [
+        {
+          "section": "articles",
+          "title": "The Scrolls That Woke in Year One",
+          "path": "/articles/the-scrolls-that-woke-in-year-one/"
         }
       ],
       "cite_count": 1
@@ -4070,6 +6981,11 @@
         },
         {
           "section": "wiki",
+          "title": "Mauro Biglino",
+          "path": "/wiki/mauro-biglino/"
+        },
+        {
+          "section": "wiki",
           "title": "Precession",
           "path": "/wiki/precession/"
         },
@@ -4089,7 +7005,7 @@
           "path": "/wiki/yahweh/"
         }
       ],
-      "cite_count": 9
+      "cite_count": 10
     },
     {
       "id": "la-bible-of-la-pleiade",
@@ -4114,6 +7030,28 @@
           "section": "wiki",
           "title": "Hebrew Bible",
           "path": "/wiki/hebrew-bible/"
+        }
+      ],
+      "cite_count": 1
+    },
+    {
+      "id": "the-biosphere-the-living-envelope-of-the-earth-as-a-geological-force-the-groundw",
+      "cited_by": [
+        {
+          "section": "articles",
+          "title": "The Shape of Humanity",
+          "path": "/articles/the-shape-of-humanity/"
+        }
+      ],
+      "cite_count": 1
+    },
+    {
+      "id": "the-blind-watchmaker-why-the-evidence-of-evolution-reveals-a-universe-without-de",
+      "cited_by": [
+        {
+          "section": "articles",
+          "title": "The Signature and the Designers",
+          "path": "/articles/the-signature-and-the-designers/"
         }
       ],
       "cite_count": 1
@@ -4161,6 +7099,21 @@
         },
         {
           "section": "articles",
+          "title": "The Archdeacon and the Dragon",
+          "path": "/articles/the-archdeacon-and-the-dragon/"
+        },
+        {
+          "section": "articles",
+          "title": "The Book Closest to the Truth",
+          "path": "/articles/the-book-closest-to-the-truth/"
+        },
+        {
+          "section": "articles",
+          "title": "The Filing Cabinet of the Gods",
+          "path": "/articles/the-filing-cabinet-of-the-gods/"
+        },
+        {
+          "section": "articles",
           "title": "The First Mosques Faced Petra, Not Mecca",
           "path": "/articles/the-first-mosques-faced-petra-not-mecca/"
         },
@@ -4168,6 +7121,56 @@
           "section": "articles",
           "title": "The Flood Was a Reset, Not a Punishment",
           "path": "/articles/the-flood-was-a-reset-not-a-punishment/"
+        },
+        {
+          "section": "articles",
+          "title": "The Forty Chairs",
+          "path": "/articles/the-forty-chairs/"
+        },
+        {
+          "section": "articles",
+          "title": "The Infinite in Both Directions",
+          "path": "/articles/the-infinite-in-both-directions/"
+        },
+        {
+          "section": "articles",
+          "title": "The Man Who Bet the Bible on the Moon",
+          "path": "/articles/the-man-who-bet-the-bible-on-the-moon/"
+        },
+        {
+          "section": "articles",
+          "title": "The Mill That Grinds the Ages",
+          "path": "/articles/the-mill-that-grinds-the-ages/"
+        },
+        {
+          "section": "articles",
+          "title": "The Religion of Religions",
+          "path": "/articles/the-religion-of-religions/"
+        },
+        {
+          "section": "articles",
+          "title": "The Scrolls That Woke in Year One",
+          "path": "/articles/the-scrolls-that-woke-in-year-one/"
+        },
+        {
+          "section": "articles",
+          "title": "The Shape of Humanity",
+          "path": "/articles/the-shape-of-humanity/"
+        },
+        {
+          "section": "articles",
+          "title": "The Signature and the Designers",
+          "path": "/articles/the-signature-and-the-designers/"
+        },
+        {
+          "section": "articles",
+          "title": "The Translator's Wager",
+          "path": "/articles/the-translators-wager/"
+        },
+        {
+          "section": "articles",
+          "title": "Unsealed in Year One",
+          "path": "/articles/unsealed-in-year-one/"
         },
         {
           "section": "wiki",
@@ -4221,6 +7224,11 @@
         },
         {
           "section": "wiki",
+          "title": "Ezekiel",
+          "path": "/wiki/ezekiel/"
+        },
+        {
+          "section": "wiki",
           "title": "Genesis",
           "path": "/wiki/genesis/"
         },
@@ -4241,8 +7249,18 @@
         },
         {
           "section": "wiki",
+          "title": "Hamlet's Mill",
+          "path": "/wiki/hamlets-mill/"
+        },
+        {
+          "section": "wiki",
           "title": "Hebrew Bible",
           "path": "/wiki/hebrew-bible/"
+        },
+        {
+          "section": "wiki",
+          "title": "Jean Sendy",
+          "path": "/wiki/jean-sendy/"
         },
         {
           "section": "wiki",
@@ -4256,8 +7274,18 @@
         },
         {
           "section": "wiki",
+          "title": "Message from the Designers",
+          "path": "/wiki/message-from-the-designers/"
+        },
+        {
+          "section": "wiki",
           "title": "Moses",
           "path": "/wiki/moses/"
+        },
+        {
+          "section": "wiki",
+          "title": "Nephilim",
+          "path": "/wiki/nephilim/"
         },
         {
           "section": "wiki",
@@ -4291,8 +7319,18 @@
         },
         {
           "section": "wiki",
+          "title": "Sumerian King List",
+          "path": "/wiki/sumerian-king-list/"
+        },
+        {
+          "section": "wiki",
           "title": "Tree of Life",
           "path": "/wiki/tree-of-life/"
+        },
+        {
+          "section": "wiki",
+          "title": "Watchers",
+          "path": "/wiki/watchers/"
         },
         {
           "section": "wiki",
@@ -4310,7 +7348,34 @@
           "path": "/wiki/yahweh/"
         }
       ],
-      "cite_count": 31
+      "cite_count": 51
+    },
+    {
+      "id": "the-books-of-enoch-aramaic-fragments-of-qumr-n-cave-4-the-edition-that-proved-1-",
+      "cited_by": [
+        {
+          "section": "articles",
+          "title": "The Scrolls That Woke in Year One",
+          "path": "/articles/the-scrolls-that-woke-in-year-one/"
+        },
+        {
+          "section": "wiki",
+          "title": "Watchers",
+          "path": "/wiki/watchers/"
+        }
+      ],
+      "cite_count": 2
+    },
+    {
+      "id": "the-canon-of-the-new-testament-its-origin-development-and-significance-marcion-t",
+      "cited_by": [
+        {
+          "section": "articles",
+          "title": "The Forty Chairs",
+          "path": "/articles/the-forty-chairs/"
+        }
+      ],
+      "cite_count": 1
     },
     {
       "id": "the-chaldean-account-of-genesis",
@@ -4327,6 +7392,17 @@
       "id": "the-church-of-jesus-latter-day-saints-scriptures",
       "cited_by": [],
       "cite_count": 0
+    },
+    {
+      "id": "the-church-of-scientology-a-history-of-a-new-religion-the-documented-transition-",
+      "cited_by": [
+        {
+          "section": "articles",
+          "title": "The Forty Chairs",
+          "path": "/articles/the-forty-chairs/"
+        }
+      ],
+      "cite_count": 1
     },
     {
       "id": "the-circles-effect-meaden",
@@ -4354,16 +7430,43 @@
         },
         {
           "section": "wiki",
+          "title": "Nephilim",
+          "path": "/wiki/nephilim/"
+        },
+        {
+          "section": "wiki",
           "title": "Tree of Life",
           "path": "/wiki/tree-of-life/"
         }
       ],
-      "cite_count": 3
+      "cite_count": 4
+    },
+    {
+      "id": "the-collapse-of-complex-societies-new-studies-in-archaeology-collapse-as-declini",
+      "cited_by": [
+        {
+          "section": "articles",
+          "title": "The Shape of Humanity",
+          "path": "/articles/the-shape-of-humanity/"
+        }
+      ],
+      "cite_count": 1
     },
     {
       "id": "the-collection-of-divine-messages-of-cai-dai",
-      "cited_by": [],
-      "cite_count": 0
+      "cited_by": [
+        {
+          "section": "articles",
+          "title": "The Forty Chairs",
+          "path": "/articles/the-forty-chairs/"
+        },
+        {
+          "section": "articles",
+          "title": "The Religion of Religions",
+          "path": "/articles/the-religion-of-religions/"
+        }
+      ],
+      "cite_count": 2
     },
     {
       "id": "the-coming-of-the-gods",
@@ -4405,6 +7508,16 @@
       "id": "vermes-dead-sea-scrolls",
       "cited_by": [
         {
+          "section": "articles",
+          "title": "The Scrolls That Woke in Year One",
+          "path": "/articles/the-scrolls-that-woke-in-year-one/"
+        },
+        {
+          "section": "articles",
+          "title": "Unsealed in Year One",
+          "path": "/articles/unsealed-in-year-one/"
+        },
+        {
           "section": "wiki",
           "title": "Hebrew Bible",
           "path": "/wiki/hebrew-bible/"
@@ -4415,7 +7528,7 @@
           "path": "/wiki/satan/"
         }
       ],
-      "cite_count": 2
+      "cite_count": 4
     },
     {
       "id": "the-complete-pyramids",
@@ -4440,6 +7553,17 @@
       "cite_count": 1
     },
     {
+      "id": "the-creator-and-the-cosmos-how-the-latest-scientific-discoveries-reveal-god-the-",
+      "cited_by": [
+        {
+          "section": "articles",
+          "title": "The Signature and the Designers",
+          "path": "/articles/the-signature-and-the-designers/"
+        }
+      ],
+      "cite_count": 1
+    },
+    {
       "id": "banks-culture-series",
       "cited_by": [
         {
@@ -4451,8 +7575,46 @@
       "cite_count": 1
     },
     {
+      "id": "the-dead-sea-scrolls-and-contemporary-culture-stdj-93-the-israel-museum-s-own-si",
+      "cited_by": [
+        {
+          "section": "articles",
+          "title": "Unsealed in Year One",
+          "path": "/articles/unsealed-in-year-one/"
+        }
+      ],
+      "cite_count": 1
+    },
+    {
+      "id": "the-dead-sea-scrolls-deception-the-vatican-conspiracy-bestseller-engagingly-writ",
+      "cited_by": [
+        {
+          "section": "articles",
+          "title": "The Scrolls That Woke in Year One",
+          "path": "/articles/the-scrolls-that-woke-in-year-one/"
+        }
+      ],
+      "cite_count": 1
+    },
+    {
+      "id": "the-dead-sea-scrolls-deception-the-vatican-conspiracy-thesis-this-article-reject",
+      "cited_by": [
+        {
+          "section": "articles",
+          "title": "Unsealed in Year One",
+          "path": "/articles/unsealed-in-year-one/"
+        }
+      ],
+      "cite_count": 1
+    },
+    {
       "id": "vanderkam-dss-today",
       "cited_by": [
+        {
+          "section": "articles",
+          "title": "Unsealed in Year One",
+          "path": "/articles/unsealed-in-year-one/"
+        },
         {
           "section": "wiki",
           "title": "Hebrew Bible",
@@ -4462,9 +7624,96 @@
           "section": "wiki",
           "title": "Satan",
           "path": "/wiki/satan/"
+        },
+        {
+          "section": "wiki",
+          "title": "Watchers",
+          "path": "/wiki/watchers/"
+        }
+      ],
+      "cite_count": 4
+    },
+    {
+      "id": "the-dead-sea-scrolls-a-biography-lives-of-great-religious-books-the-discovery-pu",
+      "cited_by": [
+        {
+          "section": "articles",
+          "title": "Unsealed in Year One",
+          "path": "/articles/unsealed-in-year-one/"
+        }
+      ],
+      "cite_count": 1
+    },
+    {
+      "id": "the-dead-sea-scrolls-a-biography-lives-of-great-religious-books-the-principal-se",
+      "cited_by": [
+        {
+          "section": "articles",
+          "title": "The Scrolls That Woke in Year One",
+          "path": "/articles/the-scrolls-that-woke-in-year-one/"
+        }
+      ],
+      "cite_count": 1
+    },
+    {
+      "id": "the-dead-sea-scrolls-a-very-short-introduction-2nd-ed",
+      "cited_by": [
+        {
+          "section": "articles",
+          "title": "The Scrolls That Woke in Year One",
+          "path": "/articles/the-scrolls-that-woke-in-year-one/"
+        }
+      ],
+      "cite_count": 1
+    },
+    {
+      "id": "the-dead-sea-scrolls-a-very-short-introduction-2nd-ed-the-corpus-numbers-tov-s-t",
+      "cited_by": [
+        {
+          "section": "articles",
+          "title": "Unsealed in Year One",
+          "path": "/articles/unsealed-in-year-one/"
+        }
+      ],
+      "cite_count": 1
+    },
+    {
+      "id": "the-death-and-rebirth-of-the-seneca-the-handsome-lake-revelation-of-15-june-1799",
+      "cited_by": [
+        {
+          "section": "articles",
+          "title": "The Forty Chairs",
+          "path": "/articles/the-forty-chairs/"
+        }
+      ],
+      "cite_count": 1
+    },
+    {
+      "id": "the-death-of-gods-in-ancient-egypt-the-osiris-myth-as-record-of-precessional-los",
+      "cited_by": [
+        {
+          "section": "articles",
+          "title": "The Mill That Grinds the Ages",
+          "path": "/articles/the-mill-that-grinds-the-ages/"
+        },
+        {
+          "section": "wiki",
+          "title": "Hamlet's Mill",
+          "path": "/wiki/hamlets-mill/"
         }
       ],
       "cite_count": 2
+    },
+    {
+      "id": "the-decline-of-the-west-vol-1-the-morphology-of-world-history-cultures-as-living",
+      "cited_by": [
+        {
+          "section": "articles",
+          "title": "The Shape of Humanity",
+          "path": "/articles/the-shape-of-humanity/"
+        }
+      ],
+      "cite_count": 1
     },
     {
       "id": "the-deepening-complexity-crop-circles",
@@ -4478,9 +7727,42 @@
       "cite_count": 1
     },
     {
+      "id": "the-deniable-darwin-other-essays-the-useful-islands-argument-the-dixie-cup-illus",
+      "cited_by": [
+        {
+          "section": "articles",
+          "title": "The Signature and the Designers",
+          "path": "/articles/the-signature-and-the-designers/"
+        }
+      ],
+      "cite_count": 1
+    },
+    {
+      "id": "the-design-inference-eliminating-chance-through-small-probabilities-2nd-ed-speci",
+      "cited_by": [
+        {
+          "section": "articles",
+          "title": "The Signature and the Designers",
+          "path": "/articles/the-signature-and-the-designers/"
+        }
+      ],
+      "cite_count": 1
+    },
+    {
       "id": "the-devils-delusion",
-      "cited_by": [],
-      "cite_count": 0
+      "cited_by": [
+        {
+          "section": "articles",
+          "title": "The Infinite in Both Directions",
+          "path": "/articles/the-infinite-in-both-directions/"
+        },
+        {
+          "section": "articles",
+          "title": "The Signature and the Designers",
+          "path": "/articles/the-signature-and-the-designers/"
+        }
+      ],
+      "cite_count": 2
     },
     {
       "id": "russell-devil-antiquity",
@@ -4521,15 +7803,46 @@
       "cite_count": 1
     },
     {
+      "id": "the-divine-eye-and-the-diaspora-vietnamese-syncretism-becomes-transpacific-caoda",
+      "cited_by": [
+        {
+          "section": "articles",
+          "title": "The Religion of Religions",
+          "path": "/articles/the-religion-of-religions/"
+        }
+      ],
+      "cite_count": 1
+    },
+    {
       "id": "smith-early-history-god",
       "cited_by": [
+        {
+          "section": "articles",
+          "title": "The Archdeacon and the Dragon",
+          "path": "/articles/the-archdeacon-and-the-dragon/"
+        },
+        {
+          "section": "articles",
+          "title": "The Filing Cabinet of the Gods",
+          "path": "/articles/the-filing-cabinet-of-the-gods/"
+        },
+        {
+          "section": "articles",
+          "title": "The Translator's Wager",
+          "path": "/articles/the-translators-wager/"
+        },
         {
           "section": "wiki",
           "title": "Hebrew Bible",
           "path": "/wiki/hebrew-bible/"
+        },
+        {
+          "section": "wiki",
+          "title": "Paul Wallis",
+          "path": "/wiki/paul-wallis/"
         }
       ],
-      "cite_count": 1
+      "cite_count": 5
     },
     {
       "id": "the-early-history-of-god",
@@ -4545,6 +7858,16 @@
     {
       "id": "the-eden-conspiracy",
       "cited_by": [
+        {
+          "section": "articles",
+          "title": "The Archdeacon and the Dragon",
+          "path": "/articles/the-archdeacon-and-the-dragon/"
+        },
+        {
+          "section": "articles",
+          "title": "The Translator's Wager",
+          "path": "/articles/the-translators-wager/"
+        },
         {
           "section": "wiki",
           "title": "Adam and Eve",
@@ -4567,6 +7890,11 @@
         },
         {
           "section": "wiki",
+          "title": "Paul Wallis",
+          "path": "/wiki/paul-wallis/"
+        },
+        {
+          "section": "wiki",
           "title": "Serpent",
           "path": "/wiki/serpent/"
         },
@@ -4576,7 +7904,7 @@
           "path": "/wiki/tree-of-life/"
         }
       ],
-      "cite_count": 6
+      "cite_count": 9
     },
     {
       "id": "wallis-eden-conspiracy",
@@ -4605,6 +7933,28 @@
       "cite_count": 4
     },
     {
+      "id": "the-eden-enigma",
+      "cited_by": [
+        {
+          "section": "wiki",
+          "title": "Paul Wallis",
+          "path": "/wiki/paul-wallis/"
+        }
+      ],
+      "cite_count": 1
+    },
+    {
+      "id": "the-eden-enigma-the-urartian-dingir-the-hand-pollination-reading-the-engagement-",
+      "cited_by": [
+        {
+          "section": "articles",
+          "title": "The Archdeacon and the Dragon",
+          "path": "/articles/the-archdeacon-and-the-dragon/"
+        }
+      ],
+      "cite_count": 1
+    },
+    {
       "id": "wallace-eden-narrative",
       "cited_by": [
         {
@@ -4617,8 +7967,14 @@
     },
     {
       "id": "the-electronic-text-corpus-of-sumerian-literature",
-      "cited_by": [],
-      "cite_count": 0
+      "cited_by": [
+        {
+          "section": "wiki",
+          "title": "Sumerian King List",
+          "path": "/wiki/sumerian-king-list/"
+        }
+      ],
+      "cite_count": 1
     },
     {
       "id": "the-engagement",
@@ -4643,6 +7999,22 @@
           "section": "wiki",
           "title": "Great Flood",
           "path": "/wiki/great-flood/"
+        },
+        {
+          "section": "wiki",
+          "title": "Sumerian King List",
+          "path": "/wiki/sumerian-king-list/"
+        }
+      ],
+      "cite_count": 2
+    },
+    {
+      "id": "the-epoch-of-the-constellations-on-the-farnese-atlas-and-their-origin-in-hipparc",
+      "cited_by": [
+        {
+          "section": "articles",
+          "title": "The Mill That Grinds the Ages",
+          "path": "/articles/the-mill-that-grinds-the-ages/"
         }
       ],
       "cite_count": 1
@@ -4654,9 +8026,14 @@
           "section": "wiki",
           "title": "Genesis",
           "path": "/wiki/genesis/"
+        },
+        {
+          "section": "wiki",
+          "title": "Sumerian King List",
+          "path": "/wiki/sumerian-king-list/"
         }
       ],
-      "cite_count": 1
+      "cite_count": 2
     },
     {
       "id": "the-eridu-genesis-journal-of-biblical-literature-100",
@@ -4665,9 +8042,14 @@
           "section": "articles",
           "title": "The Flood Was a Reset, Not a Punishment",
           "path": "/articles/the-flood-was-a-reset-not-a-punishment/"
+        },
+        {
+          "section": "wiki",
+          "title": "Sumerian King List",
+          "path": "/wiki/sumerian-king-list/"
         }
       ],
-      "cite_count": 1
+      "cite_count": 2
     },
     {
       "id": "matt-essential-kabbalah",
@@ -4695,12 +8077,22 @@
       "id": "halperin-faces-of-the-chariot",
       "cited_by": [
         {
+          "section": "articles",
+          "title": "The Book Closest to the Truth",
+          "path": "/articles/the-book-closest-to-the-truth/"
+        },
+        {
           "section": "wiki",
           "title": "Embassy",
           "path": "/wiki/embassy/"
+        },
+        {
+          "section": "wiki",
+          "title": "Ezekiel",
+          "path": "/wiki/ezekiel/"
         }
       ],
-      "cite_count": 1
+      "cite_count": 3
     },
     {
       "id": "the-field-guide-crop-circle-making",
@@ -4729,8 +8121,24 @@
       "cited_by": [
         {
           "section": "articles",
+          "title": "The Filing Cabinet of the Gods",
+          "path": "/articles/the-filing-cabinet-of-the-gods/"
+        },
+        {
+          "section": "articles",
           "title": "The Flood Was a Reset, Not a Punishment",
           "path": "/articles/the-flood-was-a-reset-not-a-punishment/"
+        }
+      ],
+      "cite_count": 2
+    },
+    {
+      "id": "the-folktale-the-working-definition-of-the-motif-the-smallest-element-in-a-tale-",
+      "cited_by": [
+        {
+          "section": "articles",
+          "title": "The Filing Cabinet of the Gods",
+          "path": "/articles/the-filing-cabinet-of-the-gods/"
         }
       ],
       "cite_count": 1
@@ -4738,6 +8146,11 @@
     {
       "id": "the-fractal-geometry-of-nature",
       "cited_by": [
+        {
+          "section": "articles",
+          "title": "The Infinite in Both Directions",
+          "path": "/articles/the-infinite-in-both-directions/"
+        },
         {
           "section": "timeline",
           "title": "Preamble",
@@ -4749,7 +8162,29 @@
           "path": "/timeline/the-wheel-keeps-turning/"
         }
       ],
-      "cite_count": 2
+      "cite_count": 3
+    },
+    {
+      "id": "the-fractal-structure-of-the-universe-correlations-of-galaxies-and-clusters-phys",
+      "cited_by": [
+        {
+          "section": "articles",
+          "title": "The Infinite in Both Directions",
+          "path": "/articles/the-infinite-in-both-directions/"
+        }
+      ],
+      "cite_count": 1
+    },
+    {
+      "id": "the-genesis-flood-the-biblical-record-and-its-scientific-implications-the-founda",
+      "cited_by": [
+        {
+          "section": "articles",
+          "title": "The Signature and the Designers",
+          "path": "/articles/the-signature-and-the-designers/"
+        }
+      ],
+      "cite_count": 1
     },
     {
       "id": "heidel-gilgamesh-ot",
@@ -4808,23 +8243,50 @@
     },
     {
       "id": "the-gods-have-landed",
-      "cited_by": [],
-      "cite_count": 0
+      "cited_by": [
+        {
+          "section": "articles",
+          "title": "The Religion of Religions",
+          "path": "/articles/the-religion-of-religions/"
+        }
+      ],
+      "cite_count": 1
+    },
+    {
+      "id": "the-gods-of-the-egyptians-vol-2-the-akhekh-entry-a-fabulous-winged-griffin-like-",
+      "cited_by": [
+        {
+          "section": "articles",
+          "title": "The Archdeacon and the Dragon",
+          "path": "/articles/the-archdeacon-and-the-dragon/"
+        }
+      ],
+      "cite_count": 1
     },
     {
       "id": "charlesworth-good-evil-serpent",
       "cited_by": [
+        {
+          "section": "articles",
+          "title": "The Archdeacon and the Dragon",
+          "path": "/articles/the-archdeacon-and-the-dragon/"
+        },
         {
           "section": "wiki",
           "title": "Serpent",
           "path": "/wiki/serpent/"
         }
       ],
-      "cite_count": 1
+      "cite_count": 2
     },
     {
       "id": "the-gospels-in-the-stars",
       "cited_by": [
+        {
+          "section": "articles",
+          "title": "The Mill That Grinds the Ages",
+          "path": "/articles/the-mill-that-grinds-the-ages/"
+        },
         {
           "section": "wiki",
           "title": "Precession",
@@ -4836,7 +8298,28 @@
           "path": "/wiki/zodiac/"
         }
       ],
-      "cite_count": 2
+      "cite_count": 3
+    },
+    {
+      "id": "the-great-year-astrology-millenarianism-and-history-in-the-western-tradition-the",
+      "cited_by": [
+        {
+          "section": "articles",
+          "title": "The Mill That Grinds the Ages",
+          "path": "/articles/the-mill-that-grinds-the-ages/"
+        },
+        {
+          "section": "wiki",
+          "title": "Hamlet's Mill",
+          "path": "/wiki/hamlets-mill/"
+        },
+        {
+          "section": "wiki",
+          "title": "Sumerian King List",
+          "path": "/wiki/sumerian-king-list/"
+        }
+      ],
+      "cite_count": 3
     },
     {
       "id": "hallmarks-of-aging",
@@ -4882,12 +8365,45 @@
       "cite_count": 1
     },
     {
+      "id": "the-hebrew-bible-a-translation-with-commentary-the-mainstream-literary-translati",
+      "cited_by": [
+        {
+          "section": "articles",
+          "title": "The Translator's Wager",
+          "path": "/articles/the-translators-wager/"
+        }
+      ],
+      "cite_count": 1
+    },
+    {
       "id": "long-sedley-hellenistic-philosophers",
       "cited_by": [
         {
           "section": "wiki",
           "title": "Cosmic Chain",
           "path": "/wiki/cosmic-chain/"
+        }
+      ],
+      "cite_count": 1
+    },
+    {
+      "id": "the-hidden-and-manifest-god-some-major-themes-in-early-jewish-mysticism",
+      "cited_by": [
+        {
+          "section": "articles",
+          "title": "The Book Closest to the Truth",
+          "path": "/articles/the-book-closest-to-the-truth/"
+        }
+      ],
+      "cite_count": 1
+    },
+    {
+      "id": "the-hidden-words-kalim-t-i-makn-nih-wheel-of-heaven-translation-arabic-1-revelat",
+      "cited_by": [
+        {
+          "section": "articles",
+          "title": "The Religion of Religions",
+          "path": "/articles/the-religion-of-religions/"
         }
       ],
       "cite_count": 1
@@ -4930,6 +8446,28 @@
       "cite_count": 0
     },
     {
+      "id": "the-invasion-of-eden-did-our-ancestors-warn-us-about-et-invasions",
+      "cited_by": [
+        {
+          "section": "wiki",
+          "title": "Paul Wallis",
+          "path": "/wiki/paul-wallis/"
+        }
+      ],
+      "cite_count": 1
+    },
+    {
+      "id": "the-invasion-of-eden-did-our-ancestors-warn-us-about-et-invasions-the-sky-armies",
+      "cited_by": [
+        {
+          "section": "articles",
+          "title": "The Archdeacon and the Dragon",
+          "path": "/articles/the-archdeacon-and-the-dragon/"
+        }
+      ],
+      "cite_count": 1
+    },
+    {
       "id": "dundas-the-jains",
       "cited_by": [
         {
@@ -4941,9 +8479,26 @@
       "cite_count": 1
     },
     {
+      "id": "the-jubilee-from-leviticus-to-qumran-vtsup-115-the-jubilee-as-eschatological-cou",
+      "cited_by": [
+        {
+          "section": "articles",
+          "title": "Unsealed in Year One",
+          "path": "/articles/unsealed-in-year-one/"
+        }
+      ],
+      "cite_count": 1
+    },
+    {
       "id": "the-kabbalah-law-and-mysticism-in-the-jewish-tradition",
-      "cited_by": [],
-      "cite_count": 0
+      "cited_by": [
+        {
+          "section": "articles",
+          "title": "The Book Closest to the Truth",
+          "path": "/articles/the-book-closest-to-the-truth/"
+        }
+      ],
+      "cite_count": 1
     },
     {
       "id": "the-kumulipo-a-hawaiian-creation-chant",
@@ -4955,6 +8510,22 @@
         }
       ],
       "cite_count": 1
+    },
+    {
+      "id": "the-language-of-god-a-scientist-presents-evidence-for-belief-theistic-evolution-",
+      "cited_by": [
+        {
+          "section": "articles",
+          "title": "The Signature and the Designers",
+          "path": "/articles/the-signature-and-the-designers/"
+        }
+      ],
+      "cite_count": 1
+    },
+    {
+      "id": "the-life-of-muhammad-a-translation-of-ibn-is-q-s-s-rat-ras-l-all-h",
+      "cited_by": [],
+      "cite_count": 0
     },
     {
       "id": "the-life-of-muhammad-ibn-ishaq",
@@ -4974,9 +8545,14 @@
           "section": "articles",
           "title": "Made from the Ground to Bear the Labor",
           "path": "/articles/made-from-the-ground-to-bear-the-labor/"
+        },
+        {
+          "section": "wiki",
+          "title": "Sumerian King List",
+          "path": "/wiki/sumerian-king-list/"
         }
       ],
-      "cite_count": 1
+      "cite_count": 2
     },
     {
       "id": "lost-continent-of-mu",
@@ -4985,6 +8561,28 @@
           "section": "wiki",
           "title": "Ancient Builders",
           "path": "/wiki/ancient-builders/"
+        }
+      ],
+      "cite_count": 1
+    },
+    {
+      "id": "the-maitreya-extracts-from-his-teachings-the-buddhist-framing-performed-rather-t",
+      "cited_by": [
+        {
+          "section": "articles",
+          "title": "The Religion of Religions",
+          "path": "/articles/the-religion-of-religions/"
+        }
+      ],
+      "cite_count": 1
+    },
+    {
+      "id": "the-mandaeans-ancient-texts-and-modern-people-the-last-gnostics-the-ginza-rabba-",
+      "cited_by": [
+        {
+          "section": "articles",
+          "title": "The Forty Chairs",
+          "path": "/articles/the-forty-chairs/"
         }
       ],
       "cite_count": 1
@@ -5001,17 +8599,83 @@
       "cite_count": 1
     },
     {
+      "id": "the-meaning-of-the-dead-sea-scrolls-a-measured-survey-of-the-controversies-pp-38",
+      "cited_by": [
+        {
+          "section": "articles",
+          "title": "The Scrolls That Woke in Year One",
+          "path": "/articles/the-scrolls-that-woke-in-year-one/"
+        }
+      ],
+      "cite_count": 1
+    },
+    {
+      "id": "the-message-of-the-scrolls-sukenik-s-purchases-and-the-diary-framing-of-the-part",
+      "cited_by": [
+        {
+          "section": "articles",
+          "title": "The Scrolls That Woke in Year One",
+          "path": "/articles/the-scrolls-that-woke-in-year-one/"
+        }
+      ],
+      "cite_count": 1
+    },
+    {
+      "id": "the-message-of-the-stars-the-theosophical-rosicrucian-formalization-of-the-relig",
+      "cited_by": [
+        {
+          "section": "articles",
+          "title": "The Mill That Grinds the Ages",
+          "path": "/articles/the-mill-that-grinds-the-ages/"
+        }
+      ],
+      "cite_count": 1
+    },
+    {
       "id": "the-moon-outpost-of-the-gods",
-      "cited_by": [],
-      "cite_count": 0
+      "cited_by": [
+        {
+          "section": "wiki",
+          "title": "Jean Sendy",
+          "path": "/wiki/jean-sendy/"
+        }
+      ],
+      "cite_count": 1
+    },
+    {
+      "id": "the-mystery-of-life-s-origin-the-continuing-controversy-expanded-ed-the-classic-",
+      "cited_by": [
+        {
+          "section": "articles",
+          "title": "The Signature and the Designers",
+          "path": "/articles/the-signature-and-the-designers/"
+        }
+      ],
+      "cite_count": 1
     },
     {
       "id": "myth-of-the-eternal-return",
       "cited_by": [
         {
+          "section": "articles",
+          "title": "The Filing Cabinet of the Gods",
+          "path": "/articles/the-filing-cabinet-of-the-gods/"
+        },
+        {
           "section": "wiki",
           "title": "Antediluvian",
           "path": "/wiki/antediluvian/"
+        }
+      ],
+      "cite_count": 2
+    },
+    {
+      "id": "the-myth-of-the-machine-vol-1-technics-and-human-development-the-ambivalence-of-",
+      "cited_by": [
+        {
+          "section": "articles",
+          "title": "The Shape of Humanity",
+          "path": "/articles/the-shape-of-humanity/"
         }
       ],
       "cite_count": 1
@@ -5020,16 +8684,36 @@
       "id": "nag-hammadi-library",
       "cited_by": [
         {
+          "section": "articles",
+          "title": "The Scrolls That Woke in Year One",
+          "path": "/articles/the-scrolls-that-woke-in-year-one/"
+        },
+        {
           "section": "wiki",
           "title": "Serpent",
           "path": "/wiki/serpent/"
         }
       ],
-      "cite_count": 1
+      "cite_count": 2
     },
     {
       "id": "the-naked-bible",
       "cited_by": [
+        {
+          "section": "articles",
+          "title": "The Archdeacon and the Dragon",
+          "path": "/articles/the-archdeacon-and-the-dragon/"
+        },
+        {
+          "section": "articles",
+          "title": "The Man Who Bet the Bible on the Moon",
+          "path": "/articles/the-man-who-bet-the-bible-on-the-moon/"
+        },
+        {
+          "section": "articles",
+          "title": "The Translator's Wager",
+          "path": "/articles/the-translators-wager/"
+        },
         {
           "section": "wiki",
           "title": "Adam and Eve",
@@ -5067,6 +8751,11 @@
         },
         {
           "section": "wiki",
+          "title": "Ezekiel",
+          "path": "/wiki/ezekiel/"
+        },
+        {
+          "section": "wiki",
           "title": "Genesis",
           "path": "/wiki/genesis/"
         },
@@ -5082,6 +8771,11 @@
         },
         {
           "section": "wiki",
+          "title": "Jean Sendy",
+          "path": "/wiki/jean-sendy/"
+        },
+        {
+          "section": "wiki",
           "title": "Jesus",
           "path": "/wiki/jesus/"
         },
@@ -5089,6 +8783,16 @@
           "section": "wiki",
           "title": "Lucifer",
           "path": "/wiki/lucifer/"
+        },
+        {
+          "section": "wiki",
+          "title": "Mauro Biglino",
+          "path": "/wiki/mauro-biglino/"
+        },
+        {
+          "section": "wiki",
+          "title": "Paul Wallis",
+          "path": "/wiki/paul-wallis/"
         },
         {
           "section": "wiki",
@@ -5116,7 +8820,7 @@
           "path": "/wiki/yahweh/"
         }
       ],
-      "cite_count": 17
+      "cite_count": 24
     },
     {
       "id": "natufian-culture-in-the-levant",
@@ -5141,6 +8845,28 @@
       "cite_count": 1
     },
     {
+      "id": "the-nature-of-space-and-time-the-hawking-penrose-exchange-on-singularities-and-c",
+      "cited_by": [
+        {
+          "section": "articles",
+          "title": "The Infinite in Both Directions",
+          "path": "/articles/the-infinite-in-both-directions/"
+        }
+      ],
+      "cite_count": 1
+    },
+    {
+      "id": "the-new-heretics-of-france-minority-religions-la-r-publique-and-the-government-s",
+      "cited_by": [
+        {
+          "section": "articles",
+          "title": "The Religion of Religions",
+          "path": "/articles/the-religion-of-religions/"
+        }
+      ],
+      "cite_count": 1
+    },
+    {
       "id": "forsyth-the-old-enemy",
       "cited_by": [
         {
@@ -5155,6 +8881,17 @@
         }
       ],
       "cite_count": 2
+    },
+    {
+      "id": "the-open-society-and-its-enemies-the-critique-of-historicism-the-doctrine-that-h",
+      "cited_by": [
+        {
+          "section": "articles",
+          "title": "The Shape of Humanity",
+          "path": "/articles/the-shape-of-humanity/"
+        }
+      ],
+      "cite_count": 1
     },
     {
       "id": "pagels-origin-of-satan",
@@ -5189,12 +8926,60 @@
       "cite_count": 0
     },
     {
+      "id": "the-origins-of-the-mithraic-mysteries-cosmology-and-salvation-in-the-ancient-wor",
+      "cited_by": [
+        {
+          "section": "articles",
+          "title": "The Mill That Grinds the Ages",
+          "path": "/articles/the-mill-that-grinds-the-ages/"
+        },
+        {
+          "section": "wiki",
+          "title": "Hamlet's Mill",
+          "path": "/wiki/hamlets-mill/"
+        }
+      ],
+      "cite_count": 2
+    },
+    {
       "id": "origins-of-the-worlds-mythologies",
       "cited_by": [
+        {
+          "section": "articles",
+          "title": "The Filing Cabinet of the Gods",
+          "path": "/articles/the-filing-cabinet-of-the-gods/"
+        },
         {
           "section": "wiki",
           "title": "Antediluvian",
           "path": "/wiki/antediluvian/"
+        }
+      ],
+      "cite_count": 2
+    },
+    {
+      "id": "the-orion-mystery-precession-as-a-sort-of-star-clock-for-our-planet-the-shaft-da",
+      "cited_by": [
+        {
+          "section": "articles",
+          "title": "The Mill That Grinds the Ages",
+          "path": "/articles/the-mill-that-grinds-the-ages/"
+        },
+        {
+          "section": "wiki",
+          "title": "Hamlet's Mill",
+          "path": "/wiki/hamlets-mill/"
+        }
+      ],
+      "cite_count": 2
+    },
+    {
+      "id": "the-phenomenon-of-man-the-noosphere-complexity-consciousness-the-convergence-of-",
+      "cited_by": [
+        {
+          "section": "articles",
+          "title": "The Shape of Humanity",
+          "path": "/articles/the-shape-of-humanity/"
         }
       ],
       "cite_count": 1
@@ -5208,12 +8993,22 @@
       "id": "poetic-edda",
       "cited_by": [
         {
+          "section": "articles",
+          "title": "The Mill That Grinds the Ages",
+          "path": "/articles/the-mill-that-grinds-the-ages/"
+        },
+        {
+          "section": "wiki",
+          "title": "Hamlet's Mill",
+          "path": "/wiki/hamlets-mill/"
+        },
+        {
           "section": "wiki",
           "title": "Tree of Life",
           "path": "/wiki/tree-of-life/"
         }
       ],
-      "cite_count": 1
+      "cite_count": 3
     },
     {
       "id": "bodman-poetics-iblis",
@@ -5243,8 +9038,24 @@
       "cite_count": 1
     },
     {
+      "id": "the-privileged-planet-how-our-place-in-the-cosmos-is-designed-for-discovery-the-",
+      "cited_by": [
+        {
+          "section": "articles",
+          "title": "The Signature and the Designers",
+          "path": "/articles/the-signature-and-the-designers/"
+        }
+      ],
+      "cite_count": 1
+    },
+    {
       "id": "prose-edda",
       "cited_by": [
+        {
+          "section": "articles",
+          "title": "The Mill That Grinds the Ages",
+          "path": "/articles/the-mill-that-grinds-the-ages/"
+        },
         {
           "section": "timeline",
           "title": "Preamble",
@@ -5257,11 +9068,16 @@
         },
         {
           "section": "wiki",
+          "title": "Hamlet's Mill",
+          "path": "/wiki/hamlets-mill/"
+        },
+        {
+          "section": "wiki",
           "title": "Tree of Life",
           "path": "/wiki/tree-of-life/"
         }
       ],
-      "cite_count": 3
+      "cite_count": 5
     },
     {
       "id": "sturluson-prose-edda",
@@ -5281,6 +9097,11 @@
           "section": "articles",
           "title": "The First Mosques Faced Petra, Not Mecca",
           "path": "/articles/the-first-mosques-faced-petra-not-mecca/"
+        },
+        {
+          "section": "articles",
+          "title": "The Religion of Religions",
+          "path": "/articles/the-religion-of-religions/"
         },
         {
           "section": "timeline",
@@ -5308,7 +9129,12 @@
           "path": "/wiki/satan/"
         }
       ],
-      "cite_count": 6
+      "cite_count": 7
+    },
+    {
+      "id": "the-qur-an-3-67-2-135-142-145-6-92-14-4-16-123",
+      "cited_by": [],
+      "cite_count": 0
     },
     {
       "id": "wright-resurrection-son-of-god",
@@ -5368,6 +9194,11 @@
       "id": "the-scars-of-eden",
       "cited_by": [
         {
+          "section": "articles",
+          "title": "The Archdeacon and the Dragon",
+          "path": "/articles/the-archdeacon-and-the-dragon/"
+        },
+        {
           "section": "wiki",
           "title": "Ancient Astronaut Hypothesis",
           "path": "/wiki/ancient-astronaut-hypothesis/"
@@ -5386,14 +9217,68 @@
           "section": "wiki",
           "title": "Genesis",
           "path": "/wiki/genesis/"
+        },
+        {
+          "section": "wiki",
+          "title": "Paul Wallis",
+          "path": "/wiki/paul-wallis/"
         }
       ],
-      "cite_count": 4
+      "cite_count": 6
+    },
+    {
+      "id": "the-secret-doctrine-vol-ii-the-swastika-as-the-continual-motion-and-revolution-o",
+      "cited_by": [
+        {
+          "section": "articles",
+          "title": "The Mill That Grinds the Ages",
+          "path": "/articles/the-mill-that-grinds-the-ages/"
+        }
+      ],
+      "cite_count": 1
+    },
+    {
+      "id": "the-shi-ur-qomah-liturgy-and-theurgy-in-pre-kabbalistic-jewish-mysticism",
+      "cited_by": [
+        {
+          "section": "articles",
+          "title": "The Book Closest to the Truth",
+          "path": "/articles/the-book-closest-to-the-truth/"
+        }
+      ],
+      "cite_count": 1
+    },
+    {
+      "id": "the-shi-ur-qomah-texts-and-recensions-tsaj-9",
+      "cited_by": [],
+      "cite_count": 0
+    },
+    {
+      "id": "the-shi-ur-qomah-texts-and-recensions-tsaj-9-the-critical-edition",
+      "cited_by": [
+        {
+          "section": "articles",
+          "title": "The Book Closest to the Truth",
+          "path": "/articles/the-book-closest-to-the-truth/"
+        }
+      ],
+      "cite_count": 1
     },
     {
       "id": "the-sky-people",
       "cited_by": [],
       "cite_count": 0
+    },
+    {
+      "id": "the-space-gods-revealed-a-close-look-at-the-theories-of-erich-von-d-niken-the-st",
+      "cited_by": [
+        {
+          "section": "articles",
+          "title": "The Archdeacon and the Dragon",
+          "path": "/articles/the-archdeacon-and-the-dragon/"
+        }
+      ],
+      "cite_count": 1
     },
     {
       "id": "the-spaceships-of-ezekiel",
@@ -5405,11 +9290,16 @@
         },
         {
           "section": "wiki",
+          "title": "Ezekiel",
+          "path": "/wiki/ezekiel/"
+        },
+        {
+          "section": "wiki",
           "title": "Yahweh",
           "path": "/wiki/yahweh/"
         }
       ],
-      "cite_count": 2
+      "cite_count": 3
     },
     {
       "id": "the-stairway-to-heaven",
@@ -5423,6 +9313,17 @@
           "section": "wiki",
           "title": "Ancient Builders",
           "path": "/wiki/ancient-builders/"
+        }
+      ],
+      "cite_count": 1
+    },
+    {
+      "id": "the-structural-study-of-myth-journal-of-american-folklore-68-the-mytheme-the-riv",
+      "cited_by": [
+        {
+          "section": "articles",
+          "title": "The Filing Cabinet of the Gods",
+          "path": "/articles/the-filing-cabinet-of-the-gods/"
         }
       ],
       "cite_count": 1
@@ -5455,12 +9356,23 @@
       "cite_count": 2
     },
     {
-      "id": "the-treasures-of-darkness-a-history-of-mesopotamian-religion",
+      "id": "the-three-dimensional-power-spectrum-of-galaxies-from-the-sloan-digital-sky-surv",
       "cited_by": [
         {
           "section": "articles",
-          "title": "Made from the Ground to Bear the Labor",
-          "path": "/articles/made-from-the-ground-to-bear-the-labor/"
+          "title": "The Infinite in Both Directions",
+          "path": "/articles/the-infinite-in-both-directions/"
+        }
+      ],
+      "cite_count": 1
+    },
+    {
+      "id": "the-treasures-of-darkness-a-history-of-mesopotamian-religion",
+      "cited_by": [
+        {
+          "section": "wiki",
+          "title": "Sumerian King List",
+          "path": "/wiki/sumerian-king-list/"
         }
       ],
       "cite_count": 1
@@ -5477,25 +9389,112 @@
       "cite_count": 1
     },
     {
+      "id": "the-types-of-international-folktales-a-classification-and-bibliography-the-atu-t",
+      "cited_by": [
+        {
+          "section": "articles",
+          "title": "The Filing Cabinet of the Gods",
+          "path": "/articles/the-filing-cabinet-of-the-gods/"
+        }
+      ],
+      "cite_count": 1
+    },
+    {
       "id": "the-unseen-realm",
-      "cited_by": [],
-      "cite_count": 0
+      "cited_by": [
+        {
+          "section": "articles",
+          "title": "The Filing Cabinet of the Gods",
+          "path": "/articles/the-filing-cabinet-of-the-gods/"
+        },
+        {
+          "section": "wiki",
+          "title": "Nephilim",
+          "path": "/wiki/nephilim/"
+        }
+      ],
+      "cite_count": 2
+    },
+    {
+      "id": "the-unseen-realm-recovering-the-supernatural-worldview-of-the-bible",
+      "cited_by": [
+        {
+          "section": "wiki",
+          "title": "Paul Wallis",
+          "path": "/wiki/paul-wallis/"
+        }
+      ],
+      "cite_count": 1
+    },
+    {
+      "id": "the-unseen-realm-recovering-the-supernatural-worldview-of-the-bible-the-divine-c",
+      "cited_by": [
+        {
+          "section": "articles",
+          "title": "The Archdeacon and the Dragon",
+          "path": "/articles/the-archdeacon-and-the-dragon/"
+        },
+        {
+          "section": "articles",
+          "title": "The Translator's Wager",
+          "path": "/articles/the-translators-wager/"
+        }
+      ],
+      "cite_count": 2
     },
     {
       "id": "vedas",
       "cited_by": [
+        {
+          "section": "articles",
+          "title": "The Filing Cabinet of the Gods",
+          "path": "/articles/the-filing-cabinet-of-the-gods/"
+        },
         {
           "section": "wiki",
           "title": "Reference corpus of the Raëlian canon",
           "path": "/wiki/reference-corpus-of-the-raelian-canon/"
         }
       ],
-      "cite_count": 1
+      "cite_count": 2
     },
     {
       "id": "the-wars-of-gods-and-men",
       "cited_by": [],
       "cite_count": 0
+    },
+    {
+      "id": "the-wigglez-dark-energy-survey-the-transition-to-large-scale-cosmic-homogeneity-",
+      "cited_by": [
+        {
+          "section": "articles",
+          "title": "The Infinite in Both Directions",
+          "path": "/articles/the-infinite-in-both-directions/"
+        }
+      ],
+      "cite_count": 1
+    },
+    {
+      "id": "the-wild-fractal-nature-of-spacetime-smooth-quantum-gravity-and-cosmology-world-",
+      "cited_by": [
+        {
+          "section": "articles",
+          "title": "The Infinite in Both Directions",
+          "path": "/articles/the-infinite-in-both-directions/"
+        }
+      ],
+      "cite_count": 1
+    },
+    {
+      "id": "the-zodiac-in-ancient-jewish-art-representation-and-significance-basor-228-pp-61",
+      "cited_by": [
+        {
+          "section": "articles",
+          "title": "The Mill That Grinds the Ages",
+          "path": "/articles/the-mill-that-grinds-the-ages/"
+        }
+      ],
+      "cite_count": 1
     },
     {
       "id": "zohar-pritzker",
@@ -5522,16 +9521,26 @@
       "id": "the-zohar-pritzker",
       "cited_by": [
         {
+          "section": "articles",
+          "title": "The Book Closest to the Truth",
+          "path": "/articles/the-book-closest-to-the-truth/"
+        },
+        {
           "section": "wiki",
           "title": "Wheel of Heaven",
           "path": "/wiki/wheel-of-heaven/"
         }
       ],
-      "cite_count": 1
+      "cite_count": 2
     },
     {
       "id": "theogony-and-works-and-days",
       "cited_by": [
+        {
+          "section": "articles",
+          "title": "The Filing Cabinet of the Gods",
+          "path": "/articles/the-filing-cabinet-of-the-gods/"
+        },
         {
           "section": "wiki",
           "title": "Council of the Eternals",
@@ -5549,11 +9558,16 @@
         },
         {
           "section": "wiki",
+          "title": "Nephilim",
+          "path": "/wiki/nephilim/"
+        },
+        {
+          "section": "wiki",
           "title": "World Age",
           "path": "/wiki/world-age/"
         }
       ],
-      "cite_count": 4
+      "cite_count": 6
     },
     {
       "id": "theogony-works-and-days",
@@ -5572,6 +9586,17 @@
       "cite_count": 2
     },
     {
+      "id": "theogony-and-works-and-days-the-myth-of-the-five-ages-gold-silver-bronze-heroes-",
+      "cited_by": [
+        {
+          "section": "articles",
+          "title": "The Shape of Humanity",
+          "path": "/articles/the-shape-of-humanity/"
+        }
+      ],
+      "cite_count": 1
+    },
+    {
       "id": "theory-of-the-earth",
       "cited_by": [
         {
@@ -5585,6 +9610,16 @@
     {
       "id": "those-gods-who-made-heaven-and-earth",
       "cited_by": [
+        {
+          "section": "articles",
+          "title": "The Archdeacon and the Dragon",
+          "path": "/articles/the-archdeacon-and-the-dragon/"
+        },
+        {
+          "section": "articles",
+          "title": "The Translator's Wager",
+          "path": "/articles/the-translators-wager/"
+        },
         {
           "section": "wiki",
           "title": "Adam and Eve",
@@ -5622,6 +9657,11 @@
         },
         {
           "section": "wiki",
+          "title": "Ezekiel",
+          "path": "/wiki/ezekiel/"
+        },
+        {
+          "section": "wiki",
           "title": "Genesis",
           "path": "/wiki/genesis/"
         },
@@ -5639,6 +9679,21 @@
           "section": "wiki",
           "title": "Lucifer",
           "path": "/wiki/lucifer/"
+        },
+        {
+          "section": "wiki",
+          "title": "Mauro Biglino",
+          "path": "/wiki/mauro-biglino/"
+        },
+        {
+          "section": "wiki",
+          "title": "Nephilim",
+          "path": "/wiki/nephilim/"
+        },
+        {
+          "section": "wiki",
+          "title": "Paul Wallis",
+          "path": "/wiki/paul-wallis/"
         },
         {
           "section": "wiki",
@@ -5666,7 +9721,7 @@
           "path": "/wiki/yahweh/"
         }
       ],
-      "cite_count": 16
+      "cite_count": 22
     },
     {
       "id": "nietzsche-zarathustra",
@@ -5675,6 +9730,17 @@
           "section": "wiki",
           "title": "Cosmic Chain",
           "path": "/wiki/cosmic-chain/"
+        }
+      ],
+      "cite_count": 1
+    },
+    {
+      "id": "timaeus-39d-the-perfect-year-completed-when-all-the-eight-circuits-with-their-re",
+      "cited_by": [
+        {
+          "section": "articles",
+          "title": "The Mill That Grinds the Ages",
+          "path": "/articles/the-mill-that-grinds-the-ages/"
         }
       ],
       "cite_count": 1
@@ -5691,9 +9757,36 @@
       "cite_count": 1
     },
     {
+      "id": "tra-paleoastronautica-secolarizzazione-individualizzazione-religiosa-e-quasi-rel",
+      "cited_by": [
+        {
+          "section": "articles",
+          "title": "The Translator's Wager",
+          "path": "/articles/the-translators-wager/"
+        },
+        {
+          "section": "wiki",
+          "title": "Mauro Biglino",
+          "path": "/wiki/mauro-biglino/"
+        }
+      ],
+      "cite_count": 2
+    },
+    {
       "id": "ufo-religions",
-      "cited_by": [],
-      "cite_count": 0
+      "cited_by": [
+        {
+          "section": "articles",
+          "title": "The Forty Chairs",
+          "path": "/articles/the-forty-chairs/"
+        },
+        {
+          "section": "articles",
+          "title": "The Religion of Religions",
+          "path": "/articles/the-religion-of-religions/"
+        }
+      ],
+      "cite_count": 2
     },
     {
       "id": "underworld-hancock",
@@ -5713,6 +9806,17 @@
           "section": "wiki",
           "title": "Cyberparadism",
           "path": "/wiki/cyberparadism/"
+        }
+      ],
+      "cite_count": 1
+    },
+    {
+      "id": "veritas-a-harvard-professor-a-con-man-and-the-gospel-of-jesus-s-wife-the-provena",
+      "cited_by": [
+        {
+          "section": "articles",
+          "title": "The Forty Chairs",
+          "path": "/articles/the-forty-chairs/"
         }
       ],
       "cite_count": 1
@@ -5755,6 +9859,17 @@
       "cite_count": 0
     },
     {
+      "id": "von-neumann-algebra-automorphisms-and-time-thermodynamics-relation-class-quantum",
+      "cited_by": [
+        {
+          "section": "articles",
+          "title": "The Infinite in Both Directions",
+          "path": "/articles/the-infinite-in-both-directions/"
+        }
+      ],
+      "cite_count": 1
+    },
+    {
       "id": "wall-e",
       "cited_by": [
         {
@@ -5788,9 +9903,42 @@
       "cite_count": 1
     },
     {
+      "id": "who-wrote-the-dead-sea-scrolls-the-search-for-the-secret-of-qumran",
+      "cited_by": [
+        {
+          "section": "articles",
+          "title": "The Scrolls That Woke in Year One",
+          "path": "/articles/the-scrolls-that-woke-in-year-one/"
+        }
+      ],
+      "cite_count": 1
+    },
+    {
+      "id": "why-the-verb-bara-does-not-mean-to-create-in-genesis-1-1-2-4a-journal-for-the-st",
+      "cited_by": [
+        {
+          "section": "articles",
+          "title": "The Translator's Wager",
+          "path": "/articles/the-translators-wager/"
+        },
+        {
+          "section": "wiki",
+          "title": "Mauro Biglino",
+          "path": "/wiki/mauro-biglino/"
+        }
+      ],
+      "cite_count": 2
+    },
+    {
       "id": "wonders-in-the-sky",
-      "cited_by": [],
-      "cite_count": 0
+      "cited_by": [
+        {
+          "section": "wiki",
+          "title": "Ezekiel",
+          "path": "/wiki/ezekiel/"
+        }
+      ],
+      "cite_count": 1
     },
     {
       "id": "arrhenius-worlds-in-the-making",
@@ -5804,6 +9952,28 @@
       "cite_count": 1
     },
     {
+      "id": "yahweh-and-the-gods-and-goddesses-of-canaan-jsotsup-265",
+      "cited_by": [
+        {
+          "section": "articles",
+          "title": "The Archdeacon and the Dragon",
+          "path": "/articles/the-archdeacon-and-the-dragon/"
+        }
+      ],
+      "cite_count": 1
+    },
+    {
+      "id": "yes-to-human-cloning-eternal-life-thanks-to-science-the-three-stage-eternal-life",
+      "cited_by": [
+        {
+          "section": "articles",
+          "title": "The Religion of Religions",
+          "path": "/articles/the-religion-of-religions/"
+        }
+      ],
+      "cite_count": 1
+    },
+    {
       "id": "zechariah",
       "cited_by": [],
       "cite_count": 0
@@ -5812,12 +9982,17 @@
       "id": "zephaniah",
       "cited_by": [
         {
+          "section": "articles",
+          "title": "Unsealed in Year One",
+          "path": "/articles/unsealed-in-year-one/"
+        },
+        {
           "section": "timeline",
           "title": "Age of Aquarius",
           "path": "/timeline/age-of-aquarius/"
         }
       ],
-      "cite_count": 1
+      "cite_count": 2
     },
     {
       "id": "boyce-zoroastrians",
