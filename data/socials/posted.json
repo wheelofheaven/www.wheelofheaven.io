@@ -35,6 +35,18 @@
         }
       }
     },
+    "articles/the-archdeacon-and-the-dragon": {
+      "title": "The Archdeacon and the Dragon",
+      "permalink": "https://www.wheelofheaven.world/articles/the-archdeacon-and-the-dragon/",
+      "first_eligible_at": "2026-07-06T19:16:06Z",
+      "channels": {
+        "telegram": {
+          "post_id": "@wheelofheaven/28",
+          "url": "https://t.me/wheelofheaven/28",
+          "posted_at": "2026-07-06T19:16:06Z"
+        }
+      }
+    },
     "articles/the-book-closest-to-the-truth": {
       "title": "The Book Closest to the Truth",
       "permalink": "https://www.wheelofheaven.world/articles/the-book-closest-to-the-truth/",
