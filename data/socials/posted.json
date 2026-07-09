@@ -95,6 +95,18 @@
         }
       }
     },
+    "articles/the-translators-wager": {
+      "title": "The Translator's Wager",
+      "permalink": "https://www.wheelofheaven.world/articles/the-translators-wager/",
+      "first_eligible_at": "2026-07-09T11:01:32Z",
+      "channels": {
+        "telegram": {
+          "post_id": "@wheelofheaven/29",
+          "url": "https://t.me/wheelofheaven/29",
+          "posted_at": "2026-07-09T11:01:32Z"
+        }
+      }
+    },
     "news/library-first-audio-plays": {
       "title": "Library: The First Audio Plays Are Live",
       "permalink": "https://www.wheelofheaven.world/news/library-first-audio-plays/",
