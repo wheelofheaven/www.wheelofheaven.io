@@ -29,50 +29,72 @@
 /zh-Hant/wiki/timeline/age-of-cancer/  /zh-Hant/timeline/                 301
 
 # =============================================================================
-# ENGLISH - Main intro section
+# CRITICAL MIGRATIONS — kept at TOP so the ~270-rule cap can never clip them.
+# (Previously stranded at the bottom of the file and 404'ing in production.)
 # =============================================================================
 
-/intro/                              /read/                              301
-/intro/at-a-glance/                  /read/                              301
-/intro/at-a-glance/*                 /read/                              301
+# /resources/ → /sources/ (bibliography backbone migration, 2026-05).
+# The /resources/ markdown stubs were retired in favor of structured-data
+# records served from data-bibliography under /sources/.
+/resources/                          /sources/                            301
+/resources/*                         /sources/:splat                      301
+/de/resources/                       /de/sources/                         301
+/de/resources/*                      /de/sources/:splat                   301
+/es/resources/                       /es/sources/                         301
+/es/resources/*                      /es/sources/:splat                   301
+/fr/resources/                       /fr/sources/                         301
+/fr/resources/*                      /fr/sources/:splat                   301
+/ja/resources/                       /ja/sources/                         301
+/ja/resources/*                      /ja/sources/:splat                   301
+/ko/resources/                       /ko/sources/                         301
+/ko/resources/*                      /ko/sources/:splat                   301
+/ru/resources/                       /ru/sources/                         301
+/ru/resources/*                      /ru/sources/:splat                   301
+/zh/resources/                       /zh/sources/                         301
+/zh/resources/*                      /zh/sources/:splat                   301
+/zh-Hant/resources/                  /zh-Hant/sources/                    301
+/zh-Hant/resources/*                 /zh-Hant/sources/:splat              301
 
-# At-a-glance subsections
-/intro/wheel-of-heaven/              /read/                              301
+# Old /categories/ and /medium/ taxonomies (merged into wiki)
+/categories/                         /wiki/                               301
+/categories/*                        /wiki/                               301
+/medium/                             /wiki/                               301
+/medium/*                            /wiki/                               301
+
+# =============================================================================
+# ENGLISH - Main intro section
+# =============================================================================
+# Condensed 2026-07: was 33 flat rules, now 19 via splats, to stay under
+# Cloudflare Pages's ~270-rule cap. Order matters — Cloudflare applies the
+# FIRST matching rule, so specific static targets come first, then splats,
+# then the /intro/* → /read/ catch-all LAST.
+
+# Specific intro subpages → their canonical destinations
 /intro/the-setting/                  /timeline/preamble/                  301
+/intro/preamble/                     /timeline/preamble/                  301
 /intro/the-foundation/               /wiki/elohim/                        301
 /intro/the-hypothesis/               /wiki/elohim/                        301
-
-# Timeline section
-/intro/timeline/                     /timeline/                           301
-/intro/timeline/*                    /timeline/                           301
-/intro/preamble/                     /timeline/preamble/                  301
-/intro/age-of-aquarius/              /timeline/age-of-aquarius/           301
-/intro/age-of-pisces/                /timeline/age-of-pisces/             301
-/intro/age-of-aries/                 /timeline/age-of-aries/              301
-/intro/age-of-taurus/                /timeline/age-of-taurus/             301
-/intro/age-of-gemini/                /timeline/age-of-gemini/             301
-/intro/age-of-cancer/                /timeline/age-of-cancer/             301
-/intro/age-of-leo/                   /timeline/age-of-leo/                301
-/intro/age-of-virgo/                 /timeline/age-of-virgo/              301
-/intro/age-of-libra/                 /timeline/age-of-libra/              301
-/intro/age-of-scorpio/               /timeline/age-of-scorpio/            301
-/intro/age-of-sagittarius/           /timeline/age-of-sagittarius/        301
-/intro/age-of-capricorn/             /timeline/age-of-capricorn/          301
-
-# Take-aways subsections
-/intro/take-aways/                   /wiki/elohim/                        301
-/intro/take-aways/*                  /wiki/                               301
 /intro/extraterrestrial-civilization/ /wiki/elohim/                       301
+/intro/take-aways/                   /wiki/elohim/                        301
 /intro/intelligent-design/           /wiki/intelligent-design/            301
 /intro/religious-syncretism/         /wiki/comparative-mythology/         301
 /intro/the-great-awakening/          /wiki/world-age/                     301
+/intro/community/                    /about/                              301
 
-# See-more subsections
-/intro/see-more/                     /wiki/                               301
+# Age pages: /intro/age-of-<zodiac>/ → /timeline/age-of-<zodiac>/
+/intro/age-of-*                      /timeline/age-of-:splat              301
+
+# Timeline + take-aways/see-more/faq roll-ups (before the /read/ catch-all)
+/intro/timeline/*                    /timeline/                           301
+/intro/timeline/                     /timeline/                           301
+/intro/take-aways/*                  /wiki/                               301
 /intro/see-more/*                    /wiki/                               301
 /intro/faq/                          /wiki/                               301
 /intro/knowledge-base/               /wiki/                               301
-/intro/community/                    /about/                              301
+
+# Everything else under /intro/ → /read/
+/intro/*                             /read/                               301
+/intro/                              /read/                               301
 
 # =============================================================================
 # EXPLAINERS - Renamed to Articles
@@ -366,46 +388,7 @@
 /zh-Hant/essentials/*                                      /zh-Hant/read/                          301
 
 # =============================================================================
-# /resources/ → /sources/ (bibliography backbone migration, 2026-05)
+# NOTE: /resources/→/sources/, /categories/, and /medium/ migrations moved
+# to the CRITICAL MIGRATIONS block near the TOP of this file (2026-07) so the
+# Cloudflare Pages ~270-rule cap can never clip them again.
 # =============================================================================
-# The /resources/ markdown stubs were retired in favor of structured-data
-# records served from data-bibliography under /sources/. Zola also emits
-# per-page aliases on each /sources/{id}.md stub, so individual records
-# are covered both at build time and via these patterns.
-
-/resources/                          /sources/                            301
-/resources/*                         /sources/:splat                      301
-
-# Per-language
-/de/resources/                       /de/sources/                         301
-/de/resources/*                      /de/sources/:splat                   301
-/es/resources/                       /es/sources/                         301
-/es/resources/*                      /es/sources/:splat                   301
-/fr/resources/                       /fr/sources/                         301
-/fr/resources/*                      /fr/sources/:splat                   301
-/ja/resources/                       /ja/sources/                         301
-/ja/resources/*                      /ja/sources/:splat                   301
-/ko/resources/                       /ko/sources/                         301
-/ko/resources/*                      /ko/sources/:splat                   301
-/ru/resources/                       /ru/sources/                         301
-/ru/resources/*                      /ru/sources/:splat                   301
-/zh/resources/                       /zh/sources/                         301
-/zh/resources/*                      /zh/sources/:splat                   301
-/zh-Hant/resources/                  /zh-Hant/sources/                    301
-/zh-Hant/resources/*                 /zh-Hant/sources/:splat              301
-
-# =============================================================================
-# ENGLISH - Catch-all patterns (must be LAST)
-# =============================================================================
-
-# Contact page is now its own page at /contact/
-
-# Note: /articles/ is now a live section (renamed from /explainers/)
-
-# Old categories taxonomy (merged into wiki)
-/categories/                         /wiki/                               301
-/categories/*                        /wiki/                               301
-
-# Old medium taxonomy (merged into wiki)
-/medium/                             /wiki/                               301
-/medium/*                            /wiki/                               301
