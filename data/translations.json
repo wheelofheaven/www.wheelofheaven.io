@@ -1,7 +1,7 @@
 {
   "_meta": {
-    "generated_at": "2026-07-06T13:19:02+00:00",
-    "count": 965
+    "generated_at": "2026-07-10T05:59:14+00:00",
+    "count": 1036
   },
   "paths": {
     "AGENTS": [
@@ -49,8 +49,20 @@
     "articles/made-from-the-ground-to-bear-the-labor": [
       "en"
     ],
-    "articles/the-archdeacon-and-the-dragon": [
+    "articles/six-mornings-six-years": [
       "en"
+    ],
+    "articles/the-archdeacon-and-the-dragon": [
+      "de",
+      "en",
+      "es",
+      "fr",
+      "he",
+      "ja",
+      "ko",
+      "ru",
+      "zh",
+      "zh-Hant"
     ],
     "articles/the-book-closest-to-the-truth": [
       "de",
@@ -63,6 +75,9 @@
       "ru",
       "zh",
       "zh-Hant"
+    ],
+    "articles/the-filing-cabinet-of-the-gods": [
+      "en"
     ],
     "articles/the-first-mosques-faced-petra-not-mecca": [
       "de",
@@ -88,6 +103,9 @@
       "zh",
       "zh-Hant"
     ],
+    "articles/the-forty-chairs": [
+      "en"
+    ],
     "articles/the-infinite-in-both-directions": [
       "de",
       "en",
@@ -100,6 +118,9 @@
       "zh",
       "zh-Hant"
     ],
+    "articles/the-jubilee-and-the-machine": [
+      "en"
+    ],
     "articles/the-man-who-bet-the-bible-on-the-moon": [
       "en"
     ],
@@ -109,14 +130,29 @@
     "articles/the-religion-of-religions": [
       "en"
     ],
+    "articles/the-reporter-at-the-razors-edge": [
+      "en"
+    ],
     "articles/the-scrolls-that-woke-in-year-one": [
       "en"
     ],
     "articles/the-shape-of-humanity": [
       "en"
     ],
-    "articles/the-translators-wager": [
+    "articles/the-signature-and-the-designers": [
       "en"
+    ],
+    "articles/the-translators-wager": [
+      "de",
+      "en",
+      "es",
+      "fr",
+      "he",
+      "ja",
+      "ko",
+      "ru",
+      "zh",
+      "zh-Hant"
     ],
     "articles/unsealed-in-year-one": [
       "en"
@@ -1823,6 +1859,18 @@
       "zh",
       "zh-Hant"
     ],
+    "sources/a-marginal-jew-rethinking-the-historical-jesus-volume-one-the-classic-statement-": [
+      "de",
+      "en",
+      "es",
+      "fr",
+      "he",
+      "ja",
+      "ko",
+      "ru",
+      "zh",
+      "zh-Hant"
+    ],
     "sources/a-new-look-at-the-babylonian-background-of-genesis-jts-16": [
       "de",
       "en",
@@ -1896,6 +1944,18 @@
       "zh-Hant"
     ],
     "sources/against-heresies-adversus-haereses-i-14-marcus-the-valentinian-and-the-letter-na": [
+      "de",
+      "en",
+      "es",
+      "fr",
+      "he",
+      "ja",
+      "ko",
+      "ru",
+      "zh",
+      "zh-Hant"
+    ],
+    "sources/agrarian-justice-the-ground-rent-funded-universal-endowment": [
       "de",
       "en",
       "es",
@@ -2063,6 +2123,30 @@
       "zh",
       "zh-Hant"
     ],
+    "sources/an-american-life-the-six-minutes-lament-quoted-in-nuclear-war-a-scenario": [
+      "de",
+      "en",
+      "es",
+      "fr",
+      "he",
+      "ja",
+      "ko",
+      "ru",
+      "zh",
+      "zh-Hant"
+    ],
+    "sources/an-enquiry-concerning-human-understanding-section-x-of-miracles-the-maxim-on-tes": [
+      "de",
+      "en",
+      "es",
+      "fr",
+      "he",
+      "ja",
+      "ko",
+      "ru",
+      "zh",
+      "zh-Hant"
+    ],
     "sources/an-exceptionally-well-preserved-theropod-dinosaur-from-the-yixian-formation-of-c": [
       "de",
       "en",
@@ -2136,6 +2220,18 @@
       "zh-Hant"
     ],
     "sources/apparent-weight-of-photons-physical-review-letters-4-337-341-the-pound-rebka-gra": [
+      "de",
+      "en",
+      "es",
+      "fr",
+      "he",
+      "ja",
+      "ko",
+      "ru",
+      "zh",
+      "zh-Hant"
+    ],
+    "sources/area-51-an-uncensored-history-of-america-s-top-secret-military-base": [
       "de",
       "en",
       "es",
@@ -2304,6 +2400,18 @@
       "zh-Hant"
     ],
     "sources/banks-culture-series": [
+      "de",
+      "en",
+      "es",
+      "fr",
+      "he",
+      "ja",
+      "ko",
+      "ru",
+      "zh",
+      "zh-Hant"
+    ],
+    "sources/bare-faced-messiah-the-true-story-of-l-ron-hubbard-the-biographical-record-again": [
       "de",
       "en",
       "es",
@@ -2639,7 +2747,31 @@
       "zh",
       "zh-Hant"
     ],
+    "sources/can-we-stop-a-nuclear-apocalypse-the-new-york-times-the-review-faulting-nuclear-": [
+      "de",
+      "en",
+      "es",
+      "fr",
+      "he",
+      "ja",
+      "ko",
+      "ru",
+      "zh",
+      "zh-Hant"
+    ],
     "sources/canaanite-myth-and-hebrew-epic": [
+      "de",
+      "en",
+      "es",
+      "fr",
+      "he",
+      "ja",
+      "ko",
+      "ru",
+      "zh",
+      "zh-Hant"
+    ],
+    "sources/capital-in-the-twenty-first-century-the-r-g-mechanism-of-inherited-concentration": [
       "de",
       "en",
       "es",
@@ -2759,6 +2891,18 @@
       "zh",
       "zh-Hant"
     ],
+    "sources/cia-s-role-in-the-study-of-ufos-1947-90-studies-in-intelligence-the-agency-s-own": [
+      "de",
+      "en",
+      "es",
+      "fr",
+      "he",
+      "ja",
+      "ko",
+      "ru",
+      "zh",
+      "zh-Hant"
+    ],
     "sources/circular-evidence": [
       "de",
       "en",
@@ -2784,6 +2928,30 @@
       "zh-Hant"
     ],
     "sources/clines-job-wbc": [
+      "de",
+      "en",
+      "es",
+      "fr",
+      "he",
+      "ja",
+      "ko",
+      "ru",
+      "zh",
+      "zh-Hant"
+    ],
+    "sources/clues-roots-of-an-evidential-paradigm-in-myths-emblems-clues-morelli-s-earlobes-": [
+      "de",
+      "en",
+      "es",
+      "fr",
+      "he",
+      "ja",
+      "ko",
+      "ru",
+      "zh",
+      "zh-Hant"
+    ],
+    "sources/coase-s-penguin-or-linux-and-the-nature-of-the-firm-yale-law-journal-112-the-pap": [
       "de",
       "en",
       "es",
@@ -3131,6 +3299,18 @@
       "zh",
       "zh-Hant"
     ],
+    "sources/der-judenstaat-the-preface-pages-that-measure-the-project-against-hertzka-s-frei": [
+      "de",
+      "en",
+      "es",
+      "fr",
+      "he",
+      "ja",
+      "ko",
+      "ru",
+      "zh",
+      "zh-Hant"
+    ],
     "sources/des-hommes-des-dieux-et-des-extraterrestres-ethnologie-d-une-croyance-moderne-th": [
       "de",
       "en",
@@ -3252,6 +3432,18 @@
       "zh-Hant"
     ],
     "sources/die-feldgleichungen-der-gravitation-the-field-equations-of-general-relativity": [
+      "de",
+      "en",
+      "es",
+      "fr",
+      "he",
+      "ja",
+      "ko",
+      "ru",
+      "zh",
+      "zh-Hant"
+    ],
+    "sources/die-nat-rliche-wirtschaftsordnung-durch-freiland-und-freigeld-9th-ed-ed-karl-wal": [
       "de",
       "en",
       "es",
@@ -3396,6 +3588,18 @@
       "zh-Hant"
     ],
     "sources/echoes-of-eden": [
+      "de",
+      "en",
+      "es",
+      "fr",
+      "he",
+      "ja",
+      "ko",
+      "ru",
+      "zh",
+      "zh-Hant"
+    ],
+    "sources/economy-and-society-part-i-ch-iii-and-part-ii-ch-xiv-xv-the-routinization-of-cha": [
       "de",
       "en",
       "es",
@@ -3791,6 +3995,18 @@
       "zh",
       "zh-Hant"
     ],
+    "sources/freiland-ein-sociales-zukunftsbild-4th-ed-e-pierson-dresden-and-leipzig-four-pri": [
+      "de",
+      "en",
+      "es",
+      "fr",
+      "he",
+      "ja",
+      "ko",
+      "ru",
+      "zh",
+      "zh-Hant"
+    ],
     "sources/friedman-bible-sources-revealed": [
       "de",
       "en",
@@ -3995,6 +4211,18 @@
       "zh",
       "zh-Hant"
     ],
+    "sources/global-food-insecurity-and-famine-from-reduced-crop-marine-fishery-and-livestock": [
+      "de",
+      "en",
+      "es",
+      "fr",
+      "he",
+      "ja",
+      "ko",
+      "ru",
+      "zh",
+      "zh-Hant"
+    ],
     "sources/gnostic-scriptures": [
       "de",
       "en",
@@ -4151,6 +4379,18 @@
       "zh",
       "zh-Hant"
     ],
+    "sources/guerilla-open-access-manifesto": [
+      "de",
+      "en",
+      "es",
+      "fr",
+      "he",
+      "ja",
+      "ko",
+      "ru",
+      "zh",
+      "zh-Hant"
+    ],
     "sources/guns-germs-and-steel-the-fates-of-human-societies-chapter-2-a-natural-experiment": [
       "de",
       "en",
@@ -4164,6 +4404,18 @@
       "zh-Hant"
     ],
     "sources/habel-job": [
+      "de",
+      "en",
+      "es",
+      "fr",
+      "he",
+      "ja",
+      "ko",
+      "ru",
+      "zh",
+      "zh-Hant"
+    ],
+    "sources/hadith-muhammad-s-legacy-in-the-medieval-and-modern-world-the-isn-d-sciences-ilm": [
       "de",
       "en",
       "es",
@@ -4583,6 +4835,18 @@
       "zh",
       "zh-Hant"
     ],
+    "sources/jesus-criteria-and-the-demise-of-authenticity-the-collection-that-ended-the-crit": [
+      "de",
+      "en",
+      "es",
+      "fr",
+      "he",
+      "ja",
+      "ko",
+      "ru",
+      "zh",
+      "zh-Hant"
+    ],
     "sources/jewish-gnosticism-merkabah-mysticism-and-talmudic-tradition-with-saul-lieberman-": [
       "de",
       "en",
@@ -4632,6 +4896,18 @@
       "zh-Hant"
     ],
     "sources/john-qumran-and-the-dead-sea-scrolls-sixty-years-of-discovery-and-debate-the-qum": [
+      "de",
+      "en",
+      "es",
+      "fr",
+      "he",
+      "ja",
+      "ko",
+      "ru",
+      "zh",
+      "zh-Hant"
+    ],
+    "sources/joseph-smith-rough-stone-rolling-the-standard-scholarly-biography-the-treasure-s": [
       "de",
       "en",
       "es",
@@ -4716,6 +4992,18 @@
       "zh-Hant"
     ],
     "sources/kant-critique-pure-reason": [
+      "de",
+      "en",
+      "es",
+      "fr",
+      "he",
+      "ja",
+      "ko",
+      "ru",
+      "zh",
+      "zh-Hant"
+    ],
+    "sources/katha-upanishad-1-3-14-the-razor-s-edge-as-carried-into-english-by-w-somerset-ma": [
       "de",
       "en",
       "es",
@@ -5051,6 +5339,18 @@
       "zh",
       "zh-Hant"
     ],
+    "sources/left-libertarianism-and-its-critics-the-contemporary-debate-vallentyne-s-introdu": [
+      "de",
+      "en",
+      "es",
+      "fr",
+      "he",
+      "ja",
+      "ko",
+      "ru",
+      "zh",
+      "zh-Hant"
+    ],
     "sources/les-dieux-nous-sont-n-s-i-l-ge-ingrat-the-1966-sequel-sendy-s-postulate-on-joyou": [
       "de",
       "en",
@@ -5195,6 +5495,18 @@
       "zh",
       "zh-Hant"
     ],
+    "sources/leviticus-25-8-23-the-sabbath-of-years-the-jubilee-and-the-land-tenure-principle": [
+      "de",
+      "en",
+      "es",
+      "fr",
+      "he",
+      "ja",
+      "ko",
+      "ru",
+      "zh",
+      "zh-Hant"
+    ],
     "sources/life-itself-its-origin-and-nature-the-book-length-development-of-directed-panspe": [
       "de",
       "en",
@@ -5327,6 +5639,30 @@
       "zh",
       "zh-Hant"
     ],
+    "sources/marc-andreessen-s-techno-optimist-manifesto-is-just-old-school-reactionary-eliti": [
+      "de",
+      "en",
+      "es",
+      "fr",
+      "he",
+      "ja",
+      "ko",
+      "ru",
+      "zh",
+      "zh-Hant"
+    ],
+    "sources/mark-the-evangelist-studies-on-the-redaction-history-of-the-gospel-the-founding-": [
+      "de",
+      "en",
+      "es",
+      "fr",
+      "he",
+      "ja",
+      "ko",
+      "ru",
+      "zh",
+      "zh-Hant"
+    ],
     "sources/marriage-of-heaven-and-hell": [
       "de",
       "en",
@@ -5436,6 +5772,18 @@
       "zh-Hant"
     ],
     "sources/mecca-and-macoraba-al-u-r-al-wus-26": [
+      "de",
+      "en",
+      "es",
+      "fr",
+      "he",
+      "ja",
+      "ko",
+      "ru",
+      "zh",
+      "zh-Hant"
+    ],
+    "sources/mengele-the-complete-story-the-documented-postwar-trail-argentina-paraguay-brazi": [
       "de",
       "en",
       "es",
@@ -5939,6 +6287,42 @@
       "zh",
       "zh-Hant"
     ],
+    "sources/nuclear-war-a-scenario": [
+      "de",
+      "en",
+      "es",
+      "fr",
+      "he",
+      "ja",
+      "ko",
+      "ru",
+      "zh",
+      "zh-Hant"
+    ],
+    "sources/nuclear-winter-global-consequences-of-multiple-nuclear-explosions-the-ttaps-pape": [
+      "de",
+      "en",
+      "es",
+      "fr",
+      "he",
+      "ja",
+      "ko",
+      "ru",
+      "zh",
+      "zh-Hant"
+    ],
+    "sources/nuclear-winter-reappraised-foreign-affairs-64-the-nuclear-autumn-critique-the-st": [
+      "de",
+      "en",
+      "es",
+      "fr",
+      "he",
+      "ja",
+      "ko",
+      "ru",
+      "zh",
+      "zh-Hant"
+    ],
     "sources/numbers": [
       "de",
       "en",
@@ -5952,6 +6336,18 @@
       "zh-Hant"
     ],
     "sources/oblivion-film": [
+      "de",
+      "en",
+      "es",
+      "fr",
+      "he",
+      "ja",
+      "ko",
+      "ru",
+      "zh",
+      "zh-Hant"
+    ],
+    "sources/ofudesaki-the-tip-of-the-writing-brush-1-711-verses-in-nakayama-miki-s-own-hand-": [
       "de",
       "en",
       "es",
@@ -6059,6 +6455,30 @@
       "zh",
       "zh-Hant"
     ],
+    "sources/oomoto-shin-yu-wheel-of-heaven-translation-1-the-1892-opening-oracle-produced-in": [
+      "de",
+      "en",
+      "es",
+      "fr",
+      "he",
+      "ja",
+      "ko",
+      "ru",
+      "zh",
+      "zh-Hant"
+    ],
+    "sources/operation-paperclip-the-secret-intelligence-program-that-brought-nazi-scientists": [
+      "de",
+      "en",
+      "es",
+      "fr",
+      "he",
+      "ja",
+      "ko",
+      "ru",
+      "zh",
+      "zh-Hant"
+    ],
     "sources/oppenheimer-eden-east": [
       "de",
       "en",
@@ -6132,6 +6552,18 @@
       "zh-Hant"
     ],
     "sources/otto-hangende-dach": [
+      "de",
+      "en",
+      "es",
+      "fr",
+      "he",
+      "ja",
+      "ko",
+      "ru",
+      "zh",
+      "zh-Hant"
+    ],
+    "sources/our-knowledge-of-the-past-a-philosophy-of-historiography-bayesian-historiography": [
       "de",
       "en",
       "es",
@@ -6239,6 +6671,18 @@
       "zh",
       "zh-Hant"
     ],
+    "sources/paths-in-utopia-the-closing-chapter-an-experiment-that-did-not-fail-on-the-kibbu": [
+      "de",
+      "en",
+      "es",
+      "fr",
+      "he",
+      "ja",
+      "ko",
+      "ru",
+      "zh",
+      "zh-Hant"
+    ],
     "sources/penrose-cycles-of-time": [
       "de",
       "en",
@@ -6252,6 +6696,18 @@
       "zh-Hant"
     ],
     "sources/pens-es-the-two-infinities-a-nothing-in-regard-to-the-infinite-an-all-in-regard-": [
+      "de",
+      "en",
+      "es",
+      "fr",
+      "he",
+      "ja",
+      "ko",
+      "ru",
+      "zh",
+      "zh-Hant"
+    ],
+    "sources/phenomena-the-secret-history-of-the-u-s-government-s-investigations-into-extrase": [
       "de",
       "en",
       "es",
@@ -6384,6 +6840,18 @@
       "zh-Hant"
     ],
     "sources/pritchard-anet": [
+      "de",
+      "en",
+      "es",
+      "fr",
+      "he",
+      "ja",
+      "ko",
+      "ru",
+      "zh",
+      "zh-Hant"
+    ],
+    "sources/progress-and-poverty-an-inquiry-into-the-cause-of-industrial-depressions-and-of-": [
       "de",
       "en",
       "es",
@@ -6611,6 +7079,18 @@
       "zh",
       "zh-Hant"
     ],
+    "sources/real-freedom-for-all-what-if-anything-can-justify-capitalism": [
+      "de",
+      "en",
+      "es",
+      "fr",
+      "he",
+      "ja",
+      "ko",
+      "ru",
+      "zh",
+      "zh-Hant"
+    ],
     "sources/real-life-x-files-nickell": [
       "de",
       "en",
@@ -6768,6 +7248,18 @@
       "zh-Hant"
     ],
     "sources/review-of-hamlet-s-mill-the-american-historical-review-75-7-pp-2009-2010-this-is": [
+      "de",
+      "en",
+      "es",
+      "fr",
+      "he",
+      "ja",
+      "ko",
+      "ru",
+      "zh",
+      "zh-Hant"
+    ],
+    "sources/review-of-nuclear-war-a-scenario-the-daily-telegraph-the-case-that-the-book-s-pr": [
       "de",
       "en",
       "es",
@@ -7212,6 +7704,18 @@
       "zh-Hant"
     ],
     "sources/signature-in-the-cell": [
+      "de",
+      "en",
+      "es",
+      "fr",
+      "he",
+      "ja",
+      "ko",
+      "ru",
+      "zh",
+      "zh-Hant"
+    ],
+    "sources/silvio-gesell-an-introduction-to-gesellian-economics-great-money-reformers-no-i-": [
       "de",
       "en",
       "es",
@@ -7703,6 +8207,18 @@
       "zh",
       "zh-Hant"
     ],
+    "sources/the-canon-of-the-new-testament-its-origin-development-and-significance-marcion-t": [
+      "de",
+      "en",
+      "es",
+      "fr",
+      "he",
+      "ja",
+      "ko",
+      "ru",
+      "zh",
+      "zh-Hant"
+    ],
     "sources/the-chaldean-account-of-genesis": [
       "de",
       "en",
@@ -7716,6 +8232,18 @@
       "zh-Hant"
     ],
     "sources/the-church-of-jesus-latter-day-saints-scriptures": [
+      "de",
+      "en",
+      "es",
+      "fr",
+      "he",
+      "ja",
+      "ko",
+      "ru",
+      "zh",
+      "zh-Hant"
+    ],
+    "sources/the-church-of-scientology-a-history-of-a-new-religion-the-documented-transition-": [
       "de",
       "en",
       "es",
@@ -7788,6 +8316,18 @@
       "zh-Hant"
     ],
     "sources/the-creator-and-the-cosmos-how-the-latest-scientific-discoveries-reveal-god-the-": [
+      "de",
+      "en",
+      "es",
+      "fr",
+      "he",
+      "ja",
+      "ko",
+      "ru",
+      "zh",
+      "zh-Hant"
+    ],
+    "sources/the-dead-hand-the-untold-story-of-the-cold-war-arms-race-and-its-dangerous-legac": [
       "de",
       "en",
       "es",
@@ -7872,6 +8412,18 @@
       "zh-Hant"
     ],
     "sources/the-dead-sea-scrolls-deception-the-vatican-conspiracy-thesis-this-article-reject": [
+      "de",
+      "en",
+      "es",
+      "fr",
+      "he",
+      "ja",
+      "ko",
+      "ru",
+      "zh",
+      "zh-Hant"
+    ],
+    "sources/the-death-and-rebirth-of-the-seneca-the-handsome-lake-revelation-of-15-june-1799": [
       "de",
       "en",
       "es",
@@ -7968,6 +8520,18 @@
       "zh-Hant"
     ],
     "sources/the-divine-eye-and-the-diaspora-vietnamese-syncretism-becomes-transpacific-caoda": [
+      "de",
+      "en",
+      "es",
+      "fr",
+      "he",
+      "ja",
+      "ko",
+      "ru",
+      "zh",
+      "zh-Hant"
+    ],
+    "sources/the-doomsday-machine-confessions-of-a-nuclear-war-planner-the-insider-account-of": [
       "de",
       "en",
       "es",
@@ -8135,6 +8699,18 @@
       "zh",
       "zh-Hant"
     ],
+    "sources/the-foundations-of-buddhism-the-world-systems-cosmology-thousandfold-and-million": [
+      "de",
+      "en",
+      "es",
+      "fr",
+      "he",
+      "ja",
+      "ko",
+      "ru",
+      "zh",
+      "zh-Hant"
+    ],
     "sources/the-fractal-geometry-of-nature": [
       "de",
       "en",
@@ -8148,6 +8724,18 @@
       "zh-Hant"
     ],
     "sources/the-fractal-structure-of-the-universe-correlations-of-galaxies-and-clusters-phys": [
+      "de",
+      "en",
+      "es",
+      "fr",
+      "he",
+      "ja",
+      "ko",
+      "ru",
+      "zh",
+      "zh-Hant"
+    ],
+    "sources/the-general-theory-of-employment-interest-and-money-ch-23-vi-the-rehabilitation-": [
       "de",
       "en",
       "es",
@@ -8351,6 +8939,18 @@
       "zh",
       "zh-Hant"
     ],
+    "sources/the-joseph-smith-papers-revelations-and-translations-manuscript-revelation-books": [
+      "de",
+      "en",
+      "es",
+      "fr",
+      "he",
+      "ja",
+      "ko",
+      "ru",
+      "zh",
+      "zh-Hant"
+    ],
     "sources/the-jubilee-from-leviticus-to-qumran-vtsup-115-the-jubilee-as-eschatological-cou": [
       "de",
       "en",
@@ -8364,6 +8964,18 @@
       "zh-Hant"
     ],
     "sources/the-kabbalah-law-and-mysticism-in-the-jewish-tradition": [
+      "de",
+      "en",
+      "es",
+      "fr",
+      "he",
+      "ja",
+      "ko",
+      "ru",
+      "zh",
+      "zh-Hant"
+    ],
+    "sources/the-kibbutz-movement-a-history": [
       "de",
       "en",
       "es",
@@ -8436,6 +9048,18 @@
       "zh-Hant"
     ],
     "sources/the-maitreya-extracts-from-his-teachings-the-buddhist-framing-performed-rather-t": [
+      "de",
+      "en",
+      "es",
+      "fr",
+      "he",
+      "ja",
+      "ko",
+      "ru",
+      "zh",
+      "zh-Hant"
+    ],
+    "sources/the-mandaeans-ancient-texts-and-modern-people-the-last-gnostics-the-ginza-rabba-": [
       "de",
       "en",
       "es",
@@ -8579,6 +9203,18 @@
       "zh",
       "zh-Hant"
     ],
+    "sources/the-origins-of-left-libertarianism-an-anthology-of-historical-writings-john-cunl": [
+      "de",
+      "en",
+      "es",
+      "fr",
+      "he",
+      "ja",
+      "ko",
+      "ru",
+      "zh",
+      "zh-Hant"
+    ],
     "sources/the-origins-of-the-mithraic-mysteries-cosmology-and-salvation-in-the-ancient-wor": [
       "de",
       "en",
@@ -8592,6 +9228,18 @@
       "zh-Hant"
     ],
     "sources/the-orion-mystery-precession-as-a-sort-of-star-clock-for-our-planet-the-shaft-da": [
+      "de",
+      "en",
+      "es",
+      "fr",
+      "he",
+      "ja",
+      "ko",
+      "ru",
+      "zh",
+      "zh-Hant"
+    ],
+    "sources/the-pentagon-s-brain-an-uncensored-history-of-darpa-pulitzer-prize-finalist-hist": [
       "de",
       "en",
       "es",
@@ -8652,6 +9300,18 @@
       "zh-Hant"
     ],
     "sources/the-qur-an-3-67-2-135-142-145-6-92-14-4-16-123": [
+      "de",
+      "en",
+      "es",
+      "fr",
+      "he",
+      "ja",
+      "ko",
+      "ru",
+      "zh",
+      "zh-Hant"
+    ],
+    "sources/the-reactionary-futurism-of-marc-andreessen-the-new-york-times-the-reactionary-f": [
       "de",
       "en",
       "es",
@@ -8867,6 +9527,18 @@
       "zh",
       "zh-Hant"
     ],
+    "sources/the-text-of-the-new-testament-its-transmission-corruption-and-restoration-the-wo": [
+      "de",
+      "en",
+      "es",
+      "fr",
+      "he",
+      "ja",
+      "ko",
+      "ru",
+      "zh",
+      "zh-Hant"
+    ],
     "sources/the-three-dimensional-power-spectrum-of-galaxies-from-the-sloan-digital-sky-surv": [
       "de",
       "en",
@@ -8928,6 +9600,18 @@
       "zh-Hant"
     ],
     "sources/the-unseen-realm-recovering-the-supernatural-worldview-of-the-bible-the-divine-c": [
+      "de",
+      "en",
+      "es",
+      "fr",
+      "he",
+      "ja",
+      "ko",
+      "ru",
+      "zh",
+      "zh-Hant"
+    ],
+    "sources/the-venus-project-the-redesign-of-a-culture-global-cyber-visions-venus-florida": [
       "de",
       "en",
       "es",
@@ -9182,6 +9866,18 @@
       "zh",
       "zh-Hant"
     ],
+    "sources/veritas-a-harvard-professor-a-con-man-and-the-gospel-of-jesus-s-wife-the-provena": [
+      "de",
+      "en",
+      "es",
+      "fr",
+      "he",
+      "ja",
+      "ko",
+      "ru",
+      "zh",
+      "zh-Hant"
+    ],
     "sources/vermes-dead-sea-scrolls": [
       "de",
       "en",
@@ -9243,6 +9939,18 @@
       "zh-Hant"
     ],
     "sources/voices-of-the-rocks-a-scientist-looks-at-catastrophes-and-ancient-civilizations": [
+      "de",
+      "en",
+      "es",
+      "fr",
+      "he",
+      "ja",
+      "ko",
+      "ru",
+      "zh",
+      "zh-Hant"
+    ],
+    "sources/von-braun-dreamer-of-space-engineer-of-war-the-standard-scholarly-biography-the-": [
       "de",
       "en",
       "es",
@@ -9387,6 +10095,18 @@
       "zh-Hant"
     ],
     "sources/wiener-cybernetics": [
+      "de",
+      "en",
+      "es",
+      "fr",
+      "he",
+      "ja",
+      "ko",
+      "ru",
+      "zh",
+      "zh-Hant"
+    ],
+    "sources/wikinomics-how-mass-collaboration-changes-everything-expanded-edition": [
       "de",
       "en",
       "es",
@@ -10121,6 +10841,9 @@
       "zh",
       "zh-Hant"
     ],
+    "wiki/ezekiel": [
+      "en"
+    ],
     "wiki/forerunners": [
       "de",
       "en",
@@ -10253,6 +10976,9 @@
       "zh",
       "zh-Hant"
     ],
+    "wiki/hamlets-mill": [
+      "en"
+    ],
     "wiki/hanafiyya": [
       "de",
       "en",
@@ -10336,6 +11062,9 @@
       "ru",
       "zh",
       "zh-Hant"
+    ],
+    "wiki/jean-sendy": [
+      "en"
     ],
     "wiki/jesus": [
       "de",
@@ -10493,6 +11222,9 @@
       "zh",
       "zh-Hant"
     ],
+    "wiki/mauro-biglino": [
+      "en"
+    ],
     "wiki/menorah": [
       "de",
       "en",
@@ -10504,6 +11236,9 @@
       "ru",
       "zh",
       "zh-Hant"
+    ],
+    "wiki/message-from-the-designers": [
+      "en"
     ],
     "wiki/military-cover-up-of-exobiology": [
       "de",
@@ -10576,6 +11311,9 @@
       "ru",
       "zh",
       "zh-Hant"
+    ],
+    "wiki/nephilim": [
+      "en"
     ],
     "wiki/new-commandments": [
       "de",
@@ -10904,6 +11642,9 @@
       "zh",
       "zh-Hant"
     ],
+    "wiki/sumerian-king-list": [
+      "en"
+    ],
     "wiki/swastika": [
       "de",
       "en",
@@ -11071,6 +11812,9 @@
       "ru",
       "zh",
       "zh-Hant"
+    ],
+    "wiki/watchers": [
+      "en"
     ],
     "wiki/wheel-of-heaven": [
       "de",

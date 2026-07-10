@@ -1,11 +1,11 @@
 {
-  "generated_at": "2026-07-06T13:19:02+00:00",
+  "generated_at": "2026-07-10T05:59:14+00:00",
   "generator": "scripts/build_sources.py",
   "schema_version": 1,
-  "total": 673,
-  "total_cites": 1213,
+  "total": 715,
+  "total_cites": 1297,
   "media_counts": {
-    "unknown": 254,
+    "unknown": 296,
     "article": 22,
     "religious-text": 95,
     "academic-paper": 75,
@@ -151,11 +151,16 @@
       "cited_by": [
         {
           "section": "articles",
+          "title": "Six Mornings, Six Years",
+          "path": "/articles/six-mornings-six-years/"
+        },
+        {
+          "section": "articles",
           "title": "The Religion of Religions",
           "path": "/articles/the-religion-of-religions/"
         }
       ],
-      "cite_count": 1
+      "cite_count": 2
     },
     {
       "id": "presumed-immanent-the-ra-lians-ufo-religions-and-the-postmodern-condition-nova-r",
@@ -767,6 +772,11 @@
       ],
       "cited_by": [
         {
+          "section": "articles",
+          "title": "Six Mornings, Six Years",
+          "path": "/articles/six-mornings-six-years/"
+        },
+        {
           "section": "wiki",
           "title": "Council of the Eternals",
           "path": "/wiki/council-of-eternals/"
@@ -787,7 +797,7 @@
           "path": "/wiki/jean-sendy/"
         }
       ],
-      "cite_count": 4
+      "cite_count": 5
     },
     {
       "id": "a-hebrew-and-english-lexicon-of-the-old-testament",
@@ -1082,6 +1092,26 @@
       "cite_count": 1
     },
     {
+      "id": "agrarian-justice-the-ground-rent-funded-universal-endowment",
+      "title": "Agrarian Justice (the ground-rent-funded universal endowment)",
+      "authored_by": [
+        "Thomas Paine"
+      ],
+      "publish_date": "1796",
+      "follow_url": "",
+      "description": "",
+      "medium": "",
+      "topics": [],
+      "cited_by": [
+        {
+          "section": "articles",
+          "title": "The Jubilee and the Machine",
+          "path": "/articles/the-jubilee-and-the-machine/"
+        }
+      ],
+      "cite_count": 1
+    },
+    {
       "id": "aion-researches-into-the-phenomenology-of-the-self-cw-9ii-the-pisces-aeon-as-syn",
       "title": "Aion: Researches into the Phenomenology of the Self, CW 9ii (the Pisces aeon as 'synchronistic concomitant' of the Christian era; Christ 'born as the first fish of the Pisces era... doomed to die as the last ram of the declining Aries era'; the computed Aquarius datings of 1997 and 2154)",
       "authored_by": [
@@ -1157,6 +1187,11 @@
       "cited_by": [
         {
           "section": "articles",
+          "title": "Six Mornings, Six Years",
+          "path": "/articles/six-mornings-six-years/"
+        },
+        {
+          "section": "articles",
           "title": "The Forty Chairs",
           "path": "/articles/the-forty-chairs/"
         },
@@ -1166,7 +1201,7 @@
           "path": "/articles/the-religion-of-religions/"
         }
       ],
-      "cite_count": 2
+      "cite_count": 3
     },
     {
       "id": "aliens-adored-ra-l-s-ufo-religion",
@@ -1317,6 +1352,26 @@
       ],
       "cited_by": [],
       "cite_count": 0
+    },
+    {
+      "id": "an-american-life-the-six-minutes-lament-quoted-in-nuclear-war-a-scenario",
+      "title": "An American Life (the six-minutes lament quoted in Nuclear War: A Scenario)",
+      "authored_by": [
+        "Ronald Reagan"
+      ],
+      "publish_date": "1990",
+      "follow_url": "",
+      "description": "",
+      "medium": "",
+      "topics": [],
+      "cited_by": [
+        {
+          "section": "articles",
+          "title": "The Reporter at the Razor's Edge",
+          "path": "/articles/the-reporter-at-the-razors-edge/"
+        }
+      ],
+      "cite_count": 1
     },
     {
       "id": "an-enquiry-concerning-human-understanding-section-x-of-miracles-the-maxim-on-tes",
@@ -1591,6 +1646,26 @@
       "cite_count": 1
     },
     {
+      "id": "area-51-an-uncensored-history-of-america-s-top-secret-military-base",
+      "title": "Area 51: An Uncensored History of America's Top Secret Military Base",
+      "authored_by": [
+        "Annie Jacobsen"
+      ],
+      "publish_date": "2011",
+      "follow_url": "",
+      "description": "",
+      "medium": "",
+      "topics": [],
+      "cited_by": [
+        {
+          "section": "articles",
+          "title": "The Reporter at the Razor's Edge",
+          "path": "/articles/the-reporter-at-the-razors-edge/"
+        }
+      ],
+      "cite_count": 1
+    },
+    {
       "id": "astronomical-algorithms",
       "title": "Astronomical Algorithms",
       "authored_by": [
@@ -1714,6 +1789,11 @@
       ],
       "cited_by": [
         {
+          "section": "articles",
+          "title": "Made from the Ground to Bear the Labor",
+          "path": "/articles/made-from-the-ground-to-bear-the-labor/"
+        },
+        {
           "section": "wiki",
           "title": "Adam and Eve",
           "path": "/wiki/adam-and-eve/"
@@ -1749,7 +1829,7 @@
           "path": "/wiki/tree-of-life/"
         }
       ],
-      "cite_count": 7
+      "cite_count": 8
     },
     {
       "id": "atrahasis",
@@ -1780,6 +1860,11 @@
         },
         {
           "section": "articles",
+          "title": "The Reporter at the Razor's Edge",
+          "path": "/articles/the-reporter-at-the-razors-edge/"
+        },
+        {
+          "section": "articles",
           "title": "The Translator's Wager",
           "path": "/articles/the-translators-wager/"
         },
@@ -1799,7 +1884,7 @@
           "path": "/wiki/genesis/"
         }
       ],
-      "cite_count": 7
+      "cite_count": 8
     },
     {
       "id": "avebury-biography-of-a-landscape",
@@ -2293,6 +2378,26 @@
       "cite_count": 1
     },
     {
+      "id": "can-we-stop-a-nuclear-apocalypse-the-new-york-times-the-review-faulting-nuclear-",
+      "title": "Can We Stop a Nuclear Apocalypse?, The New York Times (the review faulting Nuclear War: A Scenario for offering no program)",
+      "authored_by": [
+        "Barry Gewen"
+      ],
+      "publish_date": "2024",
+      "follow_url": "",
+      "description": "",
+      "medium": "",
+      "topics": [],
+      "cited_by": [
+        {
+          "section": "articles",
+          "title": "The Reporter at the Razor's Edge",
+          "path": "/articles/the-reporter-at-the-razors-edge/"
+        }
+      ],
+      "cite_count": 1
+    },
+    {
       "id": "canaanite-myth-and-hebrew-epic",
       "title": "Canaanite Myth and Hebrew Epic: Essays in the History of the Religion of Israel",
       "authored_by": [
@@ -2343,6 +2448,26 @@
           "section": "wiki",
           "title": "Hebrew Bible",
           "path": "/wiki/hebrew-bible/"
+        }
+      ],
+      "cite_count": 1
+    },
+    {
+      "id": "capital-in-the-twenty-first-century-the-r-g-mechanism-of-inherited-concentration",
+      "title": "Capital in the Twenty-First Century (the r > g mechanism of inherited concentration)",
+      "authored_by": [
+        "Thomas Piketty"
+      ],
+      "publish_date": "2013",
+      "follow_url": "",
+      "description": "",
+      "medium": "",
+      "topics": [],
+      "cited_by": [
+        {
+          "section": "articles",
+          "title": "The Jubilee and the Machine",
+          "path": "/articles/the-jubilee-and-the-machine/"
         }
       ],
       "cite_count": 1
@@ -2548,6 +2673,11 @@
       ],
       "cited_by": [
         {
+          "section": "articles",
+          "title": "Made from the Ground to Bear the Labor",
+          "path": "/articles/made-from-the-ground-to-bear-the-labor/"
+        },
+        {
           "section": "wiki",
           "title": "Adam and Eve",
           "path": "/wiki/adam-and-eve/"
@@ -2558,7 +2688,7 @@
           "path": "/wiki/tree-of-life/"
         }
       ],
-      "cite_count": 2
+      "cite_count": 3
     },
     {
       "id": "chronicle-of-akakor",
@@ -2584,6 +2714,26 @@
       "cite_count": 1
     },
     {
+      "id": "cia-s-role-in-the-study-of-ufos-1947-90-studies-in-intelligence-the-agency-s-own",
+      "title": "CIA's Role in the Study of UFOs, 1947–90, Studies in Intelligence (the agency's own admission that U-2 and OXCART flights accounted for a large share of UFO reports, and that concealment fed the conspiracy)",
+      "authored_by": [
+        "Gerald K. Haines"
+      ],
+      "publish_date": "1997",
+      "follow_url": "",
+      "description": "",
+      "medium": "",
+      "topics": [],
+      "cited_by": [
+        {
+          "section": "articles",
+          "title": "The Reporter at the Razor's Edge",
+          "path": "/articles/the-reporter-at-the-razors-edge/"
+        }
+      ],
+      "cite_count": 1
+    },
+    {
       "id": "circular-evidence",
       "title": "Circular Evidence: A Detailed Investigation of the Flattened Swirled Crops Phenomenon",
       "authored_by": [
@@ -2604,6 +2754,26 @@
           "section": "wiki",
           "title": "Crop Circles",
           "path": "/wiki/crop-circles/"
+        }
+      ],
+      "cite_count": 1
+    },
+    {
+      "id": "coase-s-penguin-or-linux-and-the-nature-of-the-firm-yale-law-journal-112-the-pap",
+      "title": "Coase's Penguin, or, Linux and the Nature of the Firm, Yale Law Journal 112 (the paper that named peer production)",
+      "authored_by": [
+        "Yochai Benkler"
+      ],
+      "publish_date": "2002",
+      "follow_url": "",
+      "description": "",
+      "medium": "",
+      "topics": [],
+      "cited_by": [
+        {
+          "section": "articles",
+          "title": "The Jubilee and the Machine",
+          "path": "/articles/the-jubilee-and-the-machine/"
         }
       ],
       "cite_count": 1
@@ -2951,6 +3121,11 @@
       ],
       "cited_by": [
         {
+          "section": "articles",
+          "title": "The Jubilee and the Machine",
+          "path": "/articles/the-jubilee-and-the-machine/"
+        },
+        {
           "section": "wiki",
           "title": "Cyberparadism",
           "path": "/wiki/cyberparadism/"
@@ -2961,7 +3136,7 @@
           "path": "/wiki/golden-age/"
         }
       ],
-      "cite_count": 2
+      "cite_count": 3
     },
     {
       "id": "penrose-cycles-of-time",
@@ -3218,6 +3393,26 @@
         }
       ],
       "cite_count": 2
+    },
+    {
+      "id": "der-judenstaat-the-preface-pages-that-measure-the-project-against-hertzka-s-frei",
+      "title": "Der Judenstaat (the preface pages that measure the project against Hertzka's Freiland)",
+      "authored_by": [
+        "Theodor Herzl"
+      ],
+      "publish_date": "1896",
+      "follow_url": "",
+      "description": "",
+      "medium": "",
+      "topics": [],
+      "cited_by": [
+        {
+          "section": "articles",
+          "title": "The Jubilee and the Machine",
+          "path": "/articles/the-jubilee-and-the-machine/"
+        }
+      ],
+      "cite_count": 1
     },
     {
       "id": "des-hommes-des-dieux-et-des-extraterrestres-ethnologie-d-une-croyance-moderne-th",
@@ -3480,6 +3675,26 @@
       "cite_count": 1
     },
     {
+      "id": "die-nat-rliche-wirtschaftsordnung-durch-freiland-und-freigeld-9th-ed-ed-karl-wal",
+      "title": "Die natürliche Wirtschaftsordnung durch Freiland und Freigeld (9th ed., ed. Karl Walker, 1949; first complete edition 1916)",
+      "authored_by": [
+        "Silvio Gesell"
+      ],
+      "publish_date": "1916",
+      "follow_url": "",
+      "description": "",
+      "medium": "",
+      "topics": [],
+      "cited_by": [
+        {
+          "section": "articles",
+          "title": "The Jubilee and the Machine",
+          "path": "/articles/the-jubilee-and-the-machine/"
+        }
+      ],
+      "cite_count": 1
+    },
+    {
       "id": "crick-orgel-directed-panspermia",
       "title": "Directed Panspermia",
       "authored_by": [
@@ -3648,6 +3863,11 @@
         },
         {
           "section": "articles",
+          "title": "The Forty Chairs",
+          "path": "/articles/the-forty-chairs/"
+        },
+        {
+          "section": "articles",
           "title": "The Scrolls That Woke in Year One",
           "path": "/articles/the-scrolls-that-woke-in-year-one/"
         },
@@ -3667,7 +3887,7 @@
           "path": "/timeline/the-wheel-keeps-turning/"
         }
       ],
-      "cite_count": 5
+      "cite_count": 6
     },
     {
       "id": "early-islamic-qiblas-a-survey-of-mosques-built-between-1-ah-and-263-ah",
@@ -3776,6 +3996,31 @@
       ],
       "cited_by": [],
       "cite_count": 0
+    },
+    {
+      "id": "economy-and-society-part-i-ch-iii-and-part-ii-ch-xiv-xv-the-routinization-of-cha",
+      "title": "Economy and Society, Part I ch. III and Part II ch. XIV–XV — the routinization of charisma: the founder's circle becomes an organization, the message becomes an endowment",
+      "authored_by": [
+        "Max Weber"
+      ],
+      "publish_date": "1922",
+      "follow_url": "",
+      "description": "",
+      "medium": "",
+      "topics": [],
+      "cited_by": [
+        {
+          "section": "articles",
+          "title": "Six Mornings, Six Years",
+          "path": "/articles/six-mornings-six-years/"
+        },
+        {
+          "section": "articles",
+          "title": "The Forty Chairs",
+          "path": "/articles/the-forty-chairs/"
+        }
+      ],
+      "cite_count": 2
     },
     {
       "id": "oppenheimer-eden-east",
@@ -4379,6 +4624,11 @@
       "cited_by": [
         {
           "section": "articles",
+          "title": "Six Mornings, Six Years",
+          "path": "/articles/six-mornings-six-years/"
+        },
+        {
+          "section": "articles",
           "title": "The Archdeacon and the Dragon",
           "path": "/articles/the-archdeacon-and-the-dragon/"
         },
@@ -4394,6 +4644,11 @@
         },
         {
           "section": "articles",
+          "title": "The Jubilee and the Machine",
+          "path": "/articles/the-jubilee-and-the-machine/"
+        },
+        {
+          "section": "articles",
           "title": "The Man Who Bet the Bible on the Moon",
           "path": "/articles/the-man-who-bet-the-bible-on-the-moon/"
         },
@@ -4406,6 +4661,11 @@
           "section": "articles",
           "title": "The Religion of Religions",
           "path": "/articles/the-religion-of-religions/"
+        },
+        {
+          "section": "articles",
+          "title": "The Reporter at the Razor's Edge",
+          "path": "/articles/the-reporter-at-the-razors-edge/"
         },
         {
           "section": "articles",
@@ -4523,7 +4783,7 @@
           "path": "/wiki/yahweh/"
         }
       ],
-      "cite_count": 29
+      "cite_count": 32
     },
     {
       "id": "ezekiel",
@@ -4843,6 +5103,26 @@
       "cite_count": 3
     },
     {
+      "id": "freiland-ein-sociales-zukunftsbild-4th-ed-e-pierson-dresden-and-leipzig-four-pri",
+      "title": "Freiland: Ein sociales Zukunftsbild (4th ed., E. Pierson, Dresden and Leipzig; four printings in its first year)",
+      "authored_by": [
+        "Theodor Hertzka"
+      ],
+      "publish_date": "1890",
+      "follow_url": "",
+      "description": "",
+      "medium": "",
+      "topics": [],
+      "cited_by": [
+        {
+          "section": "articles",
+          "title": "The Jubilee and the Machine",
+          "path": "/articles/the-jubilee-and-the-machine/"
+        }
+      ],
+      "cite_count": 1
+    },
+    {
       "id": "from-martyr-to-mystic-rabbinic-martyrology-and-the-making-of-merkavah-mysticism",
       "title": "From Martyr to Mystic: Rabbinic Martyrology and the Making of Merkavah Mysticism",
       "authored_by": [
@@ -4943,6 +5223,11 @@
         },
         {
           "section": "articles",
+          "title": "The Reporter at the Razor's Edge",
+          "path": "/articles/the-reporter-at-the-razors-edge/"
+        },
+        {
+          "section": "articles",
           "title": "The Scrolls That Woke in Year One",
           "path": "/articles/the-scrolls-that-woke-in-year-one/"
         },
@@ -5022,7 +5307,7 @@
           "path": "/wiki/yahweh/"
         }
       ],
-      "cite_count": 22
+      "cite_count": 23
     },
     {
       "id": "genesis-1-11-a-continental-commentary",
@@ -5061,6 +5346,11 @@
         "Eden"
       ],
       "cited_by": [
+        {
+          "section": "articles",
+          "title": "Made from the Ground to Bear the Labor",
+          "path": "/articles/made-from-the-ground-to-bear-the-labor/"
+        },
         {
           "section": "articles",
           "title": "The Archdeacon and the Dragon",
@@ -5112,7 +5402,7 @@
           "path": "/wiki/tree-of-life/"
         }
       ],
-      "cite_count": 10
+      "cite_count": 11
     },
     {
       "id": "genesis-1-15-word-biblical-commentary",
@@ -5152,12 +5442,17 @@
       ],
       "cited_by": [
         {
+          "section": "articles",
+          "title": "Made from the Ground to Bear the Labor",
+          "path": "/articles/made-from-the-ground-to-bear-the-labor/"
+        },
+        {
           "section": "wiki",
           "title": "Adam and Eve",
           "path": "/wiki/adam-and-eve/"
         }
       ],
-      "cite_count": 1
+      "cite_count": 2
     },
     {
       "id": "von-rad-genesis",
@@ -5326,6 +5621,26 @@
           "section": "wiki",
           "title": "Crop Circles",
           "path": "/wiki/crop-circles/"
+        }
+      ],
+      "cite_count": 1
+    },
+    {
+      "id": "global-food-insecurity-and-famine-from-reduced-crop-marine-fishery-and-livestock",
+      "title": "Global food insecurity and famine from reduced crop, marine fishery and livestock production due to climate disruption from nuclear war soot injection, Nature Food 3 (the ~5 billion famine-dead estimate Jacobsen's Part V rests on)",
+      "authored_by": [
+        "Lili Xia, Alan Robock, Kim Scherrer et al."
+      ],
+      "publish_date": "2022",
+      "follow_url": "",
+      "description": "",
+      "medium": "",
+      "topics": [],
+      "cited_by": [
+        {
+          "section": "articles",
+          "title": "The Reporter at the Razor's Edge",
+          "path": "/articles/the-reporter-at-the-razors-edge/"
         }
       ],
       "cite_count": 1
@@ -5620,6 +5935,26 @@
       "cite_count": 1
     },
     {
+      "id": "guerilla-open-access-manifesto",
+      "title": "Guerilla Open Access Manifesto",
+      "authored_by": [
+        "Aaron Swartz"
+      ],
+      "publish_date": "2008",
+      "follow_url": "",
+      "description": "",
+      "medium": "",
+      "topics": [],
+      "cited_by": [
+        {
+          "section": "articles",
+          "title": "The Jubilee and the Machine",
+          "path": "/articles/the-jubilee-and-the-machine/"
+        }
+      ],
+      "cite_count": 1
+    },
+    {
       "id": "guns-germs-and-steel-the-fates-of-human-societies-chapter-2-a-natural-experiment",
       "title": "Guns, Germs, and Steel: The Fates of Human Societies (chapter 2, 'A Natural Experiment of History,' the Chatham Islands; the Epilogue, 'The Future of Human History as a Science')",
       "authored_by": [
@@ -5840,11 +6175,16 @@
       "cited_by": [
         {
           "section": "articles",
+          "title": "Six Mornings, Six Years",
+          "path": "/articles/six-mornings-six-years/"
+        },
+        {
+          "section": "articles",
           "title": "The Religion of Religions",
           "path": "/articles/the-religion-of-religions/"
         }
       ],
-      "cite_count": 1
+      "cite_count": 2
     },
     {
       "id": "hard-to-be-a-god",
@@ -5972,6 +6312,11 @@
       ],
       "cited_by": [
         {
+          "section": "articles",
+          "title": "Made from the Ground to Bear the Labor",
+          "path": "/articles/made-from-the-ground-to-bear-the-labor/"
+        },
+        {
           "section": "wiki",
           "title": "Adam and Eve",
           "path": "/wiki/adam-and-eve/"
@@ -5992,7 +6337,7 @@
           "path": "/wiki/tree-of-life/"
         }
       ],
-      "cite_count": 4
+      "cite_count": 5
     },
     {
       "id": "histories-v-52-54-the-parasang-reckoned-at-thirty-stades-5-5-6-km",
@@ -6351,6 +6696,16 @@
       "cited_by": [
         {
           "section": "articles",
+          "title": "Made from the Ground to Bear the Labor",
+          "path": "/articles/made-from-the-ground-to-bear-the-labor/"
+        },
+        {
+          "section": "articles",
+          "title": "Six Mornings, Six Years",
+          "path": "/articles/six-mornings-six-years/"
+        },
+        {
+          "section": "articles",
           "title": "The Archdeacon and the Dragon",
           "path": "/articles/the-archdeacon-and-the-dragon/"
         },
@@ -6366,6 +6721,11 @@
         },
         {
           "section": "articles",
+          "title": "The Jubilee and the Machine",
+          "path": "/articles/the-jubilee-and-the-machine/"
+        },
+        {
+          "section": "articles",
           "title": "The Man Who Bet the Bible on the Moon",
           "path": "/articles/the-man-who-bet-the-bible-on-the-moon/"
         },
@@ -6378,6 +6738,11 @@
           "section": "articles",
           "title": "The Religion of Religions",
           "path": "/articles/the-religion-of-religions/"
+        },
+        {
+          "section": "articles",
+          "title": "The Reporter at the Razor's Edge",
+          "path": "/articles/the-reporter-at-the-razors-edge/"
         },
         {
           "section": "articles",
@@ -6490,7 +6855,7 @@
           "path": "/wiki/world-age/"
         }
       ],
-      "cite_count": 28
+      "cite_count": 32
     },
     {
       "id": "intelligent-life-in-the-universe-the-sagan-shklovsky-survey-that-gave-sendy-his-",
@@ -7085,6 +7450,26 @@
       "cite_count": 2
     },
     {
+      "id": "katha-upanishad-1-3-14-the-razor-s-edge-as-carried-into-english-by-w-somerset-ma",
+      "title": "Katha Upanishad 1.3.14 — the razor's edge — as carried into English by W. Somerset Maugham's epigraph to The Razor's Edge (1944), the verse Jacobsen reaches for at the scenario's 28-minute mark",
+      "authored_by": [
+        "trad."
+      ],
+      "publish_date": "c. 5th century BCE",
+      "follow_url": "",
+      "description": "",
+      "medium": "",
+      "topics": [],
+      "cited_by": [
+        {
+          "section": "articles",
+          "title": "The Reporter at the Razor's Edge",
+          "path": "/articles/the-reporter-at-the-razors-edge/"
+        }
+      ],
+      "cite_count": 1
+    },
+    {
       "id": "kitzmiller-v-dover-area-school-district-400-f-supp-2d-707-m-d-pa-2005-judge-john",
       "title": "Kitzmiller v. Dover Area School District, 400 F. Supp. 2d 707 (M.D. Pa. 2005), Judge John E. Jones III — the ruling that ID is not science; the 'cdesign proponentsists' textual artifact",
       "authored_by": [
@@ -7360,6 +7745,11 @@
       ],
       "cited_by": [
         {
+          "section": "articles",
+          "title": "Six Mornings, Six Years",
+          "path": "/articles/six-mornings-six-years/"
+        },
+        {
           "section": "wiki",
           "title": "Ezekiel",
           "path": "/wiki/ezekiel/"
@@ -7375,7 +7765,7 @@
           "path": "/wiki/reference-corpus-of-the-raelian-canon/"
         }
       ],
-      "cite_count": 3
+      "cite_count": 4
     },
     {
       "id": "la-cabale",
@@ -7431,11 +7821,16 @@
       "cited_by": [
         {
           "section": "articles",
+          "title": "The Jubilee and the Machine",
+          "path": "/articles/the-jubilee-and-the-machine/"
+        },
+        {
+          "section": "articles",
           "title": "The Religion of Religions",
           "path": "/articles/the-religion-of-religions/"
         }
       ],
-      "cite_count": 1
+      "cite_count": 2
     },
     {
       "id": "la-kabbale-que-sais-je-no-1105-2nd-rev-ed-1967",
@@ -7720,6 +8115,26 @@
           "section": "timeline",
           "title": "Preamble",
           "path": "/timeline/preamble/"
+        }
+      ],
+      "cite_count": 1
+    },
+    {
+      "id": "left-libertarianism-and-its-critics-the-contemporary-debate-vallentyne-s-introdu",
+      "title": "Left-Libertarianism and Its Critics: The Contemporary Debate (Vallentyne's introduction defines the school)",
+      "authored_by": [
+        "Peter Vallentyne & Hillel Steiner (eds.)"
+      ],
+      "publish_date": "2000",
+      "follow_url": "",
+      "description": "",
+      "medium": "",
+      "topics": [],
+      "cited_by": [
+        {
+          "section": "articles",
+          "title": "The Jubilee and the Machine",
+          "path": "/articles/the-jubilee-and-the-machine/"
         }
       ],
       "cite_count": 1
@@ -8027,9 +8442,14 @@
           "section": "articles",
           "title": "The First Mosques Faced Petra, Not Mecca",
           "path": "/articles/the-first-mosques-faced-petra-not-mecca/"
+        },
+        {
+          "section": "articles",
+          "title": "The Forty Chairs",
+          "path": "/articles/the-forty-chairs/"
         }
       ],
-      "cite_count": 1
+      "cite_count": 2
     },
     {
       "id": "let-the-stones-speak-archaeology-challenges-islam",
@@ -8089,13 +8509,28 @@
       "cited_by": [
         {
           "section": "articles",
+          "title": "Six Mornings, Six Years",
+          "path": "/articles/six-mornings-six-years/"
+        },
+        {
+          "section": "articles",
           "title": "The Forty Chairs",
           "path": "/articles/the-forty-chairs/"
         },
         {
           "section": "articles",
+          "title": "The Jubilee and the Machine",
+          "path": "/articles/the-jubilee-and-the-machine/"
+        },
+        {
+          "section": "articles",
           "title": "The Religion of Religions",
           "path": "/articles/the-religion-of-religions/"
+        },
+        {
+          "section": "articles",
+          "title": "The Reporter at the Razor's Edge",
+          "path": "/articles/the-reporter-at-the-razors-edge/"
         },
         {
           "section": "articles",
@@ -8178,7 +8613,7 @@
           "path": "/wiki/yahweh/"
         }
       ],
-      "cite_count": 18
+      "cite_count": 21
     },
     {
       "id": "nickell-levengood-skeptical-inquirer-1996",
@@ -8223,6 +8658,26 @@
       ],
       "cited_by": [],
       "cite_count": 0
+    },
+    {
+      "id": "leviticus-25-8-23-the-sabbath-of-years-the-jubilee-and-the-land-tenure-principle",
+      "title": "Leviticus 25:8–23 — the sabbath of years, the Jubilee, and the land-tenure principle ('The land shall not be sold for ever: for the land is mine; for ye are strangers and sojourners with me'), the passage the canon cites as its own precedent",
+      "authored_by": [
+        "trad."
+      ],
+      "publish_date": "c. 6th–5th century BCE (priestly redaction)",
+      "follow_url": "",
+      "description": "",
+      "medium": "",
+      "topics": [],
+      "cited_by": [
+        {
+          "section": "articles",
+          "title": "The Jubilee and the Machine",
+          "path": "/articles/the-jubilee-and-the-machine/"
+        }
+      ],
+      "cite_count": 1
     },
     {
       "id": "crick-life-itself",
@@ -8534,6 +8989,46 @@
       "cite_count": 1
     },
     {
+      "id": "marc-andreessen-s-techno-optimist-manifesto-is-just-old-school-reactionary-eliti",
+      "title": "Marc Andreessen's 'Techno-Optimist Manifesto' Is Just Old-School Reactionary Elitism, Jacobin (the aristocratic-radicalism reading)",
+      "authored_by": [
+        "Jacobin"
+      ],
+      "publish_date": "2024",
+      "follow_url": "",
+      "description": "",
+      "medium": "",
+      "topics": [],
+      "cited_by": [
+        {
+          "section": "articles",
+          "title": "The Jubilee and the Machine",
+          "path": "/articles/the-jubilee-and-the-machine/"
+        }
+      ],
+      "cite_count": 1
+    },
+    {
+      "id": "mark-the-evangelist-studies-on-the-redaction-history-of-the-gospel-the-founding-",
+      "title": "Mark the Evangelist: Studies on the Redaction History of the Gospel — the founding document of redaction criticism, the discipline this article runs on a canon young enough to answer back",
+      "authored_by": [
+        "Willi Marxsen"
+      ],
+      "publish_date": "1969",
+      "follow_url": "",
+      "description": "",
+      "medium": "",
+      "topics": [],
+      "cited_by": [
+        {
+          "section": "articles",
+          "title": "Six Mornings, Six Years",
+          "path": "/articles/six-mornings-six-years/"
+        }
+      ],
+      "cite_count": 1
+    },
+    {
       "id": "mass-effect-wheel-of-heaven-wiki-the-law-of-masstime-the-scale-dependence-of-bio",
       "title": "Mass Effect — Wheel of Heaven wiki (the Law of Masstime; the scale-dependence of biological time invoked in 'The Infinite in Both Directions')",
       "authored_by": [
@@ -8733,6 +9228,26 @@
       "cite_count": 0
     },
     {
+      "id": "mengele-the-complete-story-the-documented-postwar-trail-argentina-paraguay-brazi",
+      "title": "Mengele: The Complete Story (the documented postwar trail — Argentina, Paraguay, Brazil — that the Area 51 engineer's story cannot accommodate)",
+      "authored_by": [
+        "Gerald L. Posner & John Ware"
+      ],
+      "publish_date": "1986",
+      "follow_url": "",
+      "description": "",
+      "medium": "",
+      "topics": [],
+      "cited_by": [
+        {
+          "section": "articles",
+          "title": "The Reporter at the Razor's Edge",
+          "path": "/articles/the-reporter-at-the-razors-edge/"
+        }
+      ],
+      "cite_count": 1
+    },
+    {
       "id": "russell-mephistopheles-modern",
       "title": "Mephistopheles: The Devil in the Modern World",
       "authored_by": [
@@ -8843,12 +9358,17 @@
       ],
       "cited_by": [
         {
+          "section": "articles",
+          "title": "Made from the Ground to Bear the Labor",
+          "path": "/articles/made-from-the-ground-to-bear-the-labor/"
+        },
+        {
           "section": "wiki",
           "title": "Lucifer",
           "path": "/wiki/lucifer/"
         }
       ],
-      "cite_count": 1
+      "cite_count": 2
     },
     {
       "id": "miracles-and-the-pulp-press",
@@ -9109,9 +9629,14 @@
           "section": "articles",
           "title": "The First Mosques Faced Petra, Not Mecca",
           "path": "/articles/the-first-mosques-faced-petra-not-mecca/"
+        },
+        {
+          "section": "articles",
+          "title": "The Forty Chairs",
+          "path": "/articles/the-forty-chairs/"
         }
       ],
-      "cite_count": 1
+      "cite_count": 2
     },
     {
       "id": "muhammad-and-the-believers-at-the-origins-of-islam",
@@ -9196,6 +9721,11 @@
       "cited_by": [
         {
           "section": "articles",
+          "title": "Made from the Ground to Bear the Labor",
+          "path": "/articles/made-from-the-ground-to-bear-the-labor/"
+        },
+        {
+          "section": "articles",
           "title": "The Filing Cabinet of the Gods",
           "path": "/articles/the-filing-cabinet-of-the-gods/"
         },
@@ -9210,7 +9740,7 @@
           "path": "/wiki/great-flood/"
         }
       ],
-      "cite_count": 3
+      "cite_count": 4
     },
     {
       "id": "natural-history-5-73-the-essenes-west-of-the-dead-sea-without-women-having-for-c",
@@ -9480,6 +10010,66 @@
           "section": "articles",
           "title": "The Man Who Bet the Bible on the Moon",
           "path": "/articles/the-man-who-bet-the-bible-on-the-moon/"
+        }
+      ],
+      "cite_count": 1
+    },
+    {
+      "id": "nuclear-war-a-scenario",
+      "title": "Nuclear War: A Scenario",
+      "authored_by": [
+        "Annie Jacobsen"
+      ],
+      "publish_date": "2024",
+      "follow_url": "",
+      "description": "",
+      "medium": "",
+      "topics": [],
+      "cited_by": [
+        {
+          "section": "articles",
+          "title": "The Reporter at the Razor's Edge",
+          "path": "/articles/the-reporter-at-the-razors-edge/"
+        }
+      ],
+      "cite_count": 1
+    },
+    {
+      "id": "nuclear-winter-reappraised-foreign-affairs-64-the-nuclear-autumn-critique-the-st",
+      "title": "Nuclear Winter Reappraised, Foreign Affairs 64 (the 'nuclear autumn' critique — the standard sceptical audit of the early modeling)",
+      "authored_by": [
+        "Starley L. Thompson & Stephen H. Schneider"
+      ],
+      "publish_date": "1986",
+      "follow_url": "",
+      "description": "",
+      "medium": "",
+      "topics": [],
+      "cited_by": [
+        {
+          "section": "articles",
+          "title": "The Reporter at the Razor's Edge",
+          "path": "/articles/the-reporter-at-the-razors-edge/"
+        }
+      ],
+      "cite_count": 1
+    },
+    {
+      "id": "nuclear-winter-global-consequences-of-multiple-nuclear-explosions-the-ttaps-pape",
+      "title": "Nuclear Winter: Global Consequences of Multiple Nuclear Explosions (the TTAPS paper), Science 222",
+      "authored_by": [
+        "R. P. Turco, O. B. Toon, T. P. Ackerman, J. B. Pollack & Carl Sagan"
+      ],
+      "publish_date": "1983",
+      "follow_url": "",
+      "description": "",
+      "medium": "",
+      "topics": [],
+      "cited_by": [
+        {
+          "section": "articles",
+          "title": "The Reporter at the Razor's Edge",
+          "path": "/articles/the-reporter-at-the-razors-edge/"
         }
       ],
       "cite_count": 1
@@ -9826,6 +10416,26 @@
       "cite_count": 1
     },
     {
+      "id": "operation-paperclip-the-secret-intelligence-program-that-brought-nazi-scientists",
+      "title": "Operation Paperclip: The Secret Intelligence Program that Brought Nazi Scientists to America",
+      "authored_by": [
+        "Annie Jacobsen"
+      ],
+      "publish_date": "2014",
+      "follow_url": "",
+      "description": "",
+      "medium": "",
+      "topics": [],
+      "cited_by": [
+        {
+          "section": "articles",
+          "title": "The Reporter at the Razor's Edge",
+          "path": "/articles/the-reporter-at-the-razors-edge/"
+        }
+      ],
+      "cite_count": 1
+    },
+    {
       "id": "haselhoff-physiologia-plantarum-2001",
       "title": "Opinions and Comments on Levengood WC, Talbott NP (1999) Dispersion of Energies in Worldwide Crop Formations",
       "authored_by": [
@@ -10065,6 +10675,26 @@
       "cite_count": 0
     },
     {
+      "id": "paths-in-utopia-the-closing-chapter-an-experiment-that-did-not-fail-on-the-kibbu",
+      "title": "Paths in Utopia (the closing chapter, 'An Experiment That Did Not Fail', on the kibbutz)",
+      "authored_by": [
+        "Martin Buber"
+      ],
+      "publish_date": "1946",
+      "follow_url": "",
+      "description": "",
+      "medium": "",
+      "topics": [],
+      "cited_by": [
+        {
+          "section": "articles",
+          "title": "The Jubilee and the Machine",
+          "path": "/articles/the-jubilee-and-the-machine/"
+        }
+      ],
+      "cite_count": 1
+    },
+    {
       "id": "pens-es-the-two-infinities-a-nothing-in-regard-to-the-infinite-an-all-in-regard-",
       "title": "Pensées (the two infinities: 'a nothing in regard to the infinite, an all in regard to nothing')",
       "authored_by": [
@@ -10080,6 +10710,26 @@
           "section": "articles",
           "title": "The Infinite in Both Directions",
           "path": "/articles/the-infinite-in-both-directions/"
+        }
+      ],
+      "cite_count": 1
+    },
+    {
+      "id": "phenomena-the-secret-history-of-the-u-s-government-s-investigations-into-extrase",
+      "title": "Phenomena: The Secret History of the U.S. Government's Investigations into Extrasensory Perception and Psychokinesis",
+      "authored_by": [
+        "Annie Jacobsen"
+      ],
+      "publish_date": "2017",
+      "follow_url": "",
+      "description": "",
+      "medium": "",
+      "topics": [],
+      "cited_by": [
+        {
+          "section": "articles",
+          "title": "The Reporter at the Razor's Edge",
+          "path": "/articles/the-reporter-at-the-razors-edge/"
         }
       ],
       "cite_count": 1
@@ -10118,6 +10768,11 @@
       "cited_by": [
         {
           "section": "articles",
+          "title": "Made from the Ground to Bear the Labor",
+          "path": "/articles/made-from-the-ground-to-bear-the-labor/"
+        },
+        {
+          "section": "articles",
           "title": "The Archdeacon and the Dragon",
           "path": "/articles/the-archdeacon-and-the-dragon/"
         },
@@ -10147,7 +10802,7 @@
           "path": "/wiki/world-age/"
         }
       ],
-      "cite_count": 6
+      "cite_count": 7
     },
     {
       "id": "tedlock-popol-vuh",
@@ -10167,6 +10822,11 @@
       ],
       "cited_by": [
         {
+          "section": "articles",
+          "title": "Made from the Ground to Bear the Labor",
+          "path": "/articles/made-from-the-ground-to-bear-the-labor/"
+        },
+        {
           "section": "wiki",
           "title": "Adam and Eve",
           "path": "/wiki/adam-and-eve/"
@@ -10177,7 +10837,7 @@
           "path": "/wiki/tree-of-life/"
         }
       ],
-      "cite_count": 2
+      "cite_count": 3
     },
     {
       "id": "prehistoric-avebury",
@@ -10249,6 +10909,26 @@
           "section": "wiki",
           "title": "Antediluvian",
           "path": "/wiki/antediluvian/"
+        }
+      ],
+      "cite_count": 1
+    },
+    {
+      "id": "progress-and-poverty-an-inquiry-into-the-cause-of-industrial-depressions-and-of-",
+      "title": "Progress and Poverty: An Inquiry into the Cause of Industrial Depressions and of Increase of Want with Increase of Wealth",
+      "authored_by": [
+        "Henry George"
+      ],
+      "publish_date": "1879",
+      "follow_url": "",
+      "description": "",
+      "medium": "",
+      "topics": [],
+      "cited_by": [
+        {
+          "section": "articles",
+          "title": "The Jubilee and the Machine",
+          "path": "/articles/the-jubilee-and-the-machine/"
         }
       ],
       "cite_count": 1
@@ -10623,6 +11303,26 @@
       "cite_count": 0
     },
     {
+      "id": "real-freedom-for-all-what-if-anything-can-justify-capitalism",
+      "title": "Real Freedom for All: What (If Anything) Can Justify Capitalism?",
+      "authored_by": [
+        "Philippe Van Parijs"
+      ],
+      "publish_date": "1995",
+      "follow_url": "",
+      "description": "",
+      "medium": "",
+      "topics": [],
+      "cited_by": [
+        {
+          "section": "articles",
+          "title": "The Jubilee and the Machine",
+          "path": "/articles/the-jubilee-and-the-machine/"
+        }
+      ],
+      "cite_count": 1
+    },
+    {
       "id": "real-life-x-files-nickell",
       "title": "Real-Life X-Files: Investigating the Paranormal",
       "authored_by": [
@@ -10793,6 +11493,11 @@
       ],
       "cited_by": [
         {
+          "section": "articles",
+          "title": "Six Mornings, Six Years",
+          "path": "/articles/six-mornings-six-years/"
+        },
+        {
           "section": "wiki",
           "title": "Message from the Designers",
           "path": "/wiki/message-from-the-designers/"
@@ -10803,7 +11508,7 @@
           "path": "/wiki/reference-corpus-of-the-raelian-canon/"
         }
       ],
-      "cite_count": 2
+      "cite_count": 3
     },
     {
       "id": "retracted-article-a-tunguska-sized-airburst-destroyed-tall-el-hammam-a-middle-br",
@@ -10878,6 +11583,11 @@
       "topics": [],
       "cited_by": [
         {
+          "section": "articles",
+          "title": "The Reporter at the Razor's Edge",
+          "path": "/articles/the-reporter-at-the-razors-edge/"
+        },
+        {
           "section": "timeline",
           "title": "Age of Aquarius",
           "path": "/timeline/age-of-aquarius/"
@@ -10893,7 +11603,7 @@
           "path": "/wiki/yahweh/"
         }
       ],
-      "cite_count": 3
+      "cite_count": 4
     },
     {
       "id": "review-of-hamlet-s-mill-folklore-85-4-pp-282-283-the-folklorist-s-objection-to-s",
@@ -10969,6 +11679,26 @@
         }
       ],
       "cite_count": 2
+    },
+    {
+      "id": "review-of-nuclear-war-a-scenario-the-daily-telegraph-the-case-that-the-book-s-pr",
+      "title": "Review of Nuclear War: A Scenario, The Daily Telegraph (the case that the book's prose is pulp-thriller apocalyptic — the register critique)",
+      "authored_by": [
+        "Steven Poole"
+      ],
+      "publish_date": "2024",
+      "follow_url": "",
+      "description": "",
+      "medium": "",
+      "topics": [],
+      "cited_by": [
+        {
+          "section": "articles",
+          "title": "The Reporter at the Razor's Edge",
+          "path": "/articles/the-reporter-at-the-razors-edge/"
+        }
+      ],
+      "cite_count": 1
     },
     {
       "id": "the-ricks-must-be-crazy",
@@ -11519,6 +12249,26 @@
           "section": "articles",
           "title": "The Signature and the Designers",
           "path": "/articles/the-signature-and-the-designers/"
+        }
+      ],
+      "cite_count": 1
+    },
+    {
+      "id": "silvio-gesell-an-introduction-to-gesellian-economics-great-money-reformers-no-i-",
+      "title": "Silvio Gesell: An Introduction to Gesellian Economics (Great Money Reformers No. I, Holborn Publishing, London — the wartime pamphlet carrying the Wörgl file and the Keynes and Fisher verdicts)",
+      "authored_by": [
+        "Leonard Wise"
+      ],
+      "publish_date": "c. 1943",
+      "follow_url": "",
+      "description": "",
+      "medium": "",
+      "topics": [],
+      "cited_by": [
+        {
+          "section": "articles",
+          "title": "The Jubilee and the Machine",
+          "path": "/articles/the-jubilee-and-the-machine/"
         }
       ],
       "cite_count": 1
@@ -12297,11 +13047,16 @@
       "cited_by": [
         {
           "section": "articles",
+          "title": "Made from the Ground to Bear the Labor",
+          "path": "/articles/made-from-the-ground-to-bear-the-labor/"
+        },
+        {
+          "section": "articles",
           "title": "The Flood Was a Reset, Not a Punishment",
           "path": "/articles/the-flood-was-a-reset-not-a-punishment/"
         }
       ],
-      "cite_count": 1
+      "cite_count": 2
     },
     {
       "id": "the-babylonian-gilgamesh-epic-introduction-critical-edition-and-cuneiform-texts",
@@ -12635,6 +13390,11 @@
         },
         {
           "section": "articles",
+          "title": "Six Mornings, Six Years",
+          "path": "/articles/six-mornings-six-years/"
+        },
+        {
+          "section": "articles",
           "title": "The Archdeacon and the Dragon",
           "path": "/articles/the-archdeacon-and-the-dragon/"
         },
@@ -12670,6 +13430,11 @@
         },
         {
           "section": "articles",
+          "title": "The Jubilee and the Machine",
+          "path": "/articles/the-jubilee-and-the-machine/"
+        },
+        {
+          "section": "articles",
           "title": "The Man Who Bet the Bible on the Moon",
           "path": "/articles/the-man-who-bet-the-bible-on-the-moon/"
         },
@@ -12682,6 +13447,11 @@
           "section": "articles",
           "title": "The Religion of Religions",
           "path": "/articles/the-religion-of-religions/"
+        },
+        {
+          "section": "articles",
+          "title": "The Reporter at the Razor's Edge",
+          "path": "/articles/the-reporter-at-the-razors-edge/"
         },
         {
           "section": "articles",
@@ -12884,7 +13654,7 @@
           "path": "/wiki/yahweh/"
         }
       ],
-      "cite_count": 51
+      "cite_count": 54
     },
     {
       "id": "the-books-of-enoch-aramaic-fragments-of-qumr-n-cave-4-the-edition-that-proved-1-",
@@ -13285,6 +14055,26 @@
           "section": "wiki",
           "title": "Cyberparadism",
           "path": "/wiki/cyberparadism/"
+        }
+      ],
+      "cite_count": 1
+    },
+    {
+      "id": "the-dead-hand-the-untold-story-of-the-cold-war-arms-race-and-its-dangerous-legac",
+      "title": "The Dead Hand: The Untold Story of the Cold War Arms Race and Its Dangerous Legacy (the Perimeter system Jacobsen's scenario invokes)",
+      "authored_by": [
+        "David E. Hoffman"
+      ],
+      "publish_date": "2009",
+      "follow_url": "",
+      "description": "",
+      "medium": "",
+      "topics": [],
+      "cited_by": [
+        {
+          "section": "articles",
+          "title": "The Reporter at the Razor's Edge",
+          "path": "/articles/the-reporter-at-the-razors-edge/"
         }
       ],
       "cite_count": 1
@@ -13733,6 +14523,26 @@
           "section": "articles",
           "title": "The Religion of Religions",
           "path": "/articles/the-religion-of-religions/"
+        }
+      ],
+      "cite_count": 1
+    },
+    {
+      "id": "the-doomsday-machine-confessions-of-a-nuclear-war-planner-the-insider-account-of",
+      "title": "The Doomsday Machine: Confessions of a Nuclear War Planner (the insider account of the SIOP era against which Jacobsen's Part I checks out)",
+      "authored_by": [
+        "Daniel Ellsberg"
+      ],
+      "publish_date": "2017",
+      "follow_url": "",
+      "description": "",
+      "medium": "",
+      "topics": [],
+      "cited_by": [
+        {
+          "section": "articles",
+          "title": "The Reporter at the Razor's Edge",
+          "path": "/articles/the-reporter-at-the-razors-edge/"
         }
       ],
       "cite_count": 1
@@ -14324,6 +15134,26 @@
       "cite_count": 1
     },
     {
+      "id": "the-foundations-of-buddhism-the-world-systems-cosmology-thousandfold-and-million",
+      "title": "The Foundations of Buddhism — the world-systems cosmology (thousandfold and millionfold chiliocosms) and the early tradition's memory of the founder's deflected divinization",
+      "authored_by": [
+        "Rupert Gethin"
+      ],
+      "publish_date": "1998",
+      "follow_url": "",
+      "description": "",
+      "medium": "",
+      "topics": [],
+      "cited_by": [
+        {
+          "section": "articles",
+          "title": "The Forty Chairs",
+          "path": "/articles/the-forty-chairs/"
+        }
+      ],
+      "cite_count": 1
+    },
+    {
       "id": "the-fractal-geometry-of-nature",
       "title": "The Fractal Geometry of Nature",
       "authored_by": [
@@ -14369,6 +15199,26 @@
           "section": "articles",
           "title": "The Infinite in Both Directions",
           "path": "/articles/the-infinite-in-both-directions/"
+        }
+      ],
+      "cite_count": 1
+    },
+    {
+      "id": "the-general-theory-of-employment-interest-and-money-ch-23-vi-the-rehabilitation-",
+      "title": "The General Theory of Employment, Interest and Money, ch. 23 §VI (the rehabilitation of Gesell — and the liquidity-preference objection to him)",
+      "authored_by": [
+        "John Maynard Keynes"
+      ],
+      "publish_date": "1936",
+      "follow_url": "",
+      "description": "",
+      "medium": "",
+      "topics": [],
+      "cited_by": [
+        {
+          "section": "articles",
+          "title": "The Jubilee and the Machine",
+          "path": "/articles/the-jubilee-and-the-machine/"
         }
       ],
       "cite_count": 1
@@ -14999,6 +15849,26 @@
       "cite_count": 1
     },
     {
+      "id": "the-joseph-smith-papers-revelations-and-translations-manuscript-revelation-books",
+      "title": "The Joseph Smith Papers: Revelations and Translations, Manuscript Revelation Books — the documented revision of Smith's revelations between the 1833 Book of Commandments and the 1835 Doctrine and Covenants; the nearest comparative case of a serial revelation editing itself in print",
+      "authored_by": [
+        "Robin Scott Jensen, Robert J. Woodford & Steven C. Harper (eds.)"
+      ],
+      "publish_date": "2009",
+      "follow_url": "",
+      "description": "",
+      "medium": "",
+      "topics": [],
+      "cited_by": [
+        {
+          "section": "articles",
+          "title": "Six Mornings, Six Years",
+          "path": "/articles/six-mornings-six-years/"
+        }
+      ],
+      "cite_count": 1
+    },
+    {
       "id": "the-jubilee-from-leviticus-to-qumran-vtsup-115-the-jubilee-as-eschatological-cou",
       "title": "The Jubilee from Leviticus to Qumran (VTSup 115 — the jubilee as eschatological countdown; the full treatment of 11QMelchizedek and the 364-day calendar's 'realist and absolute' sacred time)",
       "authored_by": [
@@ -15042,6 +15912,26 @@
           "section": "articles",
           "title": "The Book Closest to the Truth",
           "path": "/articles/the-book-closest-to-the-truth/"
+        }
+      ],
+      "cite_count": 1
+    },
+    {
+      "id": "the-kibbutz-movement-a-history",
+      "title": "The Kibbutz Movement: A History",
+      "authored_by": [
+        "Henry Near"
+      ],
+      "publish_date": "1992–1997",
+      "follow_url": "",
+      "description": "",
+      "medium": "",
+      "topics": [],
+      "cited_by": [
+        {
+          "section": "articles",
+          "title": "The Jubilee and the Machine",
+          "path": "/articles/the-jubilee-and-the-machine/"
         }
       ],
       "cite_count": 1
@@ -15123,9 +16013,14 @@
           "section": "articles",
           "title": "The First Mosques Faced Petra, Not Mecca",
           "path": "/articles/the-first-mosques-faced-petra-not-mecca/"
+        },
+        {
+          "section": "articles",
+          "title": "The Forty Chairs",
+          "path": "/articles/the-forty-chairs/"
         }
       ],
-      "cite_count": 1
+      "cite_count": 2
     },
     {
       "id": "the-literature-of-ancient-sumer",
@@ -15785,6 +16680,26 @@
       "cite_count": 0
     },
     {
+      "id": "the-origins-of-left-libertarianism-an-anthology-of-historical-writings-john-cunl",
+      "title": "The Origins of Left-Libertarianism: An Anthology of Historical Writings (John Cunliffe's introduction traces the lineage from Grotius to Rignano)",
+      "authored_by": [
+        "Peter Vallentyne & Hillel Steiner (eds.)"
+      ],
+      "publish_date": "2000",
+      "follow_url": "",
+      "description": "",
+      "medium": "",
+      "topics": [],
+      "cited_by": [
+        {
+          "section": "articles",
+          "title": "The Jubilee and the Machine",
+          "path": "/articles/the-jubilee-and-the-machine/"
+        }
+      ],
+      "cite_count": 1
+    },
+    {
       "id": "the-origins-of-the-mithraic-mysteries-cosmology-and-salvation-in-the-ancient-wor",
       "title": "The Origins of the Mithraic Mysteries: Cosmology and Salvation in the Ancient World (the tauroctony as star map; Mithras as the power that ends the Age of Taurus; Hipparchus's discovery as the cult's trigger; the note filing Hamlet's Mill under revived Pan-Babylonianism)",
       "authored_by": [
@@ -15863,6 +16778,26 @@
         }
       ],
       "cite_count": 2
+    },
+    {
+      "id": "the-pentagon-s-brain-an-uncensored-history-of-darpa-pulitzer-prize-finalist-hist",
+      "title": "The Pentagon's Brain: An Uncensored History of DARPA (Pulitzer Prize finalist, History, 2016)",
+      "authored_by": [
+        "Annie Jacobsen"
+      ],
+      "publish_date": "2015",
+      "follow_url": "",
+      "description": "",
+      "medium": "",
+      "topics": [],
+      "cited_by": [
+        {
+          "section": "articles",
+          "title": "The Reporter at the Razor's Edge",
+          "path": "/articles/the-reporter-at-the-razors-edge/"
+        }
+      ],
+      "cite_count": 1
     },
     {
       "id": "the-phenomenon-of-man-the-noosphere-complexity-consciousness-the-convergence-of-",
@@ -16114,6 +17049,11 @@
         },
         {
           "section": "articles",
+          "title": "The Forty Chairs",
+          "path": "/articles/the-forty-chairs/"
+        },
+        {
+          "section": "articles",
           "title": "The Religion of Religions",
           "path": "/articles/the-religion-of-religions/"
         },
@@ -16143,7 +17083,7 @@
           "path": "/wiki/satan/"
         }
       ],
-      "cite_count": 7
+      "cite_count": 8
     },
     {
       "id": "the-qur-an-3-67-2-135-142-145-6-92-14-4-16-123",
@@ -16156,6 +17096,26 @@
       "topics": [],
       "cited_by": [],
       "cite_count": 0
+    },
+    {
+      "id": "the-reactionary-futurism-of-marc-andreessen-the-new-york-times-the-reactionary-f",
+      "title": "The Reactionary Futurism of Marc Andreessen, The New York Times (the 'reactionary futurism' reading)",
+      "authored_by": [
+        "Ezra Klein"
+      ],
+      "publish_date": "2023",
+      "follow_url": "",
+      "description": "",
+      "medium": "",
+      "topics": [],
+      "cited_by": [
+        {
+          "section": "articles",
+          "title": "The Jubilee and the Machine",
+          "path": "/articles/the-jubilee-and-the-machine/"
+        }
+      ],
+      "cite_count": 1
     },
     {
       "id": "wright-resurrection-son-of-god",
@@ -16600,6 +17560,11 @@
       ],
       "cited_by": [
         {
+          "section": "articles",
+          "title": "The Jubilee and the Machine",
+          "path": "/articles/the-jubilee-and-the-machine/"
+        },
+        {
           "section": "wiki",
           "title": "Cyberparadism",
           "path": "/wiki/cyberparadism/"
@@ -16610,7 +17575,27 @@
           "path": "/wiki/golden-age/"
         }
       ],
-      "cite_count": 2
+      "cite_count": 3
+    },
+    {
+      "id": "the-text-of-the-new-testament-its-transmission-corruption-and-restoration-the-wo",
+      "title": "The Text of the New Testament: Its Transmission, Corruption, and Restoration — the working vocabulary of this article: harmonization, conflation, fossilized correction, scribal repair",
+      "authored_by": [
+        "Bruce M. Metzger & Bart D. Ehrman"
+      ],
+      "publish_date": "2005",
+      "follow_url": "",
+      "description": "",
+      "medium": "",
+      "topics": [],
+      "cited_by": [
+        {
+          "section": "articles",
+          "title": "Six Mornings, Six Years",
+          "path": "/articles/six-mornings-six-years/"
+        }
+      ],
+      "cite_count": 1
     },
     {
       "id": "the-three-dimensional-power-spectrum-of-galaxies-from-the-sloan-digital-sky-surv",
@@ -16802,6 +17787,26 @@
       "cite_count": 2
     },
     {
+      "id": "the-venus-project-the-redesign-of-a-culture-global-cyber-visions-venus-florida",
+      "title": "The Venus Project: The Redesign of a Culture (Global Cyber-Visions, Venus, Florida)",
+      "authored_by": [
+        "Jacque Fresco"
+      ],
+      "publish_date": "1995",
+      "follow_url": "",
+      "description": "",
+      "medium": "",
+      "topics": [],
+      "cited_by": [
+        {
+          "section": "articles",
+          "title": "The Jubilee and the Machine",
+          "path": "/articles/the-jubilee-and-the-machine/"
+        }
+      ],
+      "cite_count": 1
+    },
+    {
       "id": "the-wars-of-gods-and-men",
       "title": "The Wars of Gods and Men",
       "authored_by": [
@@ -16959,6 +17964,11 @@
       "cited_by": [
         {
           "section": "articles",
+          "title": "Made from the Ground to Bear the Labor",
+          "path": "/articles/made-from-the-ground-to-bear-the-labor/"
+        },
+        {
+          "section": "articles",
           "title": "The Filing Cabinet of the Gods",
           "path": "/articles/the-filing-cabinet-of-the-gods/"
         },
@@ -16988,7 +17998,7 @@
           "path": "/wiki/world-age/"
         }
       ],
-      "cite_count": 6
+      "cite_count": 7
     },
     {
       "id": "theogony-works-and-days",
@@ -17464,6 +18474,26 @@
       "cite_count": 0
     },
     {
+      "id": "von-braun-dreamer-of-space-engineer-of-war-the-standard-scholarly-biography-the-",
+      "title": "Von Braun: Dreamer of Space, Engineer of War (the standard scholarly biography — the control case for Operation Paperclip's rocket thread)",
+      "authored_by": [
+        "Michael J. Neufeld"
+      ],
+      "publish_date": "2007",
+      "follow_url": "",
+      "description": "",
+      "medium": "",
+      "topics": [],
+      "cited_by": [
+        {
+          "section": "articles",
+          "title": "The Reporter at the Razor's Edge",
+          "path": "/articles/the-reporter-at-the-razors-edge/"
+        }
+      ],
+      "cite_count": 1
+    },
+    {
       "id": "von-neumann-algebra-automorphisms-and-time-thermodynamics-relation-class-quantum",
       "title": "Von Neumann Algebra Automorphisms and Time–Thermodynamics Relation (Class. Quantum Grav. 11: 2899–2918 — time as emergent from a thermodynamic state)",
       "authored_by": [
@@ -17601,6 +18631,26 @@
         }
       ],
       "cite_count": 2
+    },
+    {
+      "id": "wikinomics-how-mass-collaboration-changes-everything-expanded-edition",
+      "title": "Wikinomics: How Mass Collaboration Changes Everything (expanded edition)",
+      "authored_by": [
+        "Don Tapscott & Anthony D. Williams"
+      ],
+      "publish_date": "2008",
+      "follow_url": "",
+      "description": "",
+      "medium": "",
+      "topics": [],
+      "cited_by": [
+        {
+          "section": "articles",
+          "title": "The Jubilee and the Machine",
+          "path": "/articles/the-jubilee-and-the-machine/"
+        }
+      ],
+      "cite_count": 1
     },
     {
       "id": "wonders-in-the-sky",
