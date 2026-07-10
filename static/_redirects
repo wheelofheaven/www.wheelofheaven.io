@@ -149,7 +149,9 @@
 /:lang/medium/                       /:lang/wiki/                         301
 /:lang/explainers/*                  /:lang/articles/:splat               301
 /:lang/explainers/                   /:lang/articles/                     301
-/:lang/contact/                      /contact/                            301
+# NOTE: no /:lang/contact/ → /contact/ rule. Localized contact pages exist
+# (content/<lang>/contact.md) and are in the sitemap; redirecting them to the
+# English /contact/ made them unreachable ("Page with redirect" in GSC).
 
 # =============================================================================
 # ESSENTIALS RETIREMENT - 2026-05
