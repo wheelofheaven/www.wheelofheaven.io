@@ -187,6 +187,18 @@
         }
       }
     },
+    "news/pursue-release-04-the-nuclear-nexus": {
+      "title": "PURSUE Release 04: The Nuclear Nexus, Green Fireballs, and the Energy Department's Files",
+      "permalink": "https://www.wheelofheaven.world/news/pursue-release-04-the-nuclear-nexus/",
+      "first_eligible_at": "2026-07-11T12:34:08Z",
+      "channels": {
+        "telegram": {
+          "post_id": "@wheelofheaven/30",
+          "url": "https://t.me/wheelofheaven/30",
+          "posted_at": "2026-07-11T12:34:08Z"
+        }
+      }
+    },
     "news/synthetic-cell-eats-and-divides": {
       "title": "A Synthetic Cell That Eats and Divides",
       "permalink": "https://www.wheelofheaven.world/news/synthetic-cell-eats-and-divides/",
