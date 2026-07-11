@@ -33,6 +33,17 @@ author_type = "Organization"
 twitter_username = "wheelofheaven"
 logo = "brand/logo.png"
 cdn_url = "https://assets.wheelofheaven.world"
+
+# Translation-dilution policy — strategy-distribution-2026 (Decision 15 / H1.4).
+# While the young domain earns crawl trust, machine-translated locales are
+# emitted as noindex,follow and dropped from the sitemap so they stop flooding
+# crawl budget (they are ~75% of GSC "not indexed"); the English core stays
+# fully indexable. Reversible per locale: set noindex_translations = false to
+# re-open everything, or add a language code to index_languages to re-open one
+# locale once the English core is ranking.
+noindex_translations = true
+index_languages = ["en"]
+
 # analytics_domain = "analytics.domain.com"
 social_links = ["https://x.com/wheelofheaven", "https://github.com/wheelofheaven", "https://t.me/wheelofheaven"]
 
