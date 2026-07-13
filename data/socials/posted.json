@@ -95,6 +95,18 @@
         }
       }
     },
+    "articles/the-scrolls-that-woke-in-year-one": {
+      "title": "The Scrolls That Woke in Year One",
+      "permalink": "https://www.wheelofheaven.world/articles/the-scrolls-that-woke-in-year-one/",
+      "first_eligible_at": "2026-07-13T18:12:36Z",
+      "channels": {
+        "telegram": {
+          "post_id": "@wheelofheaven/31",
+          "url": "https://t.me/wheelofheaven/31",
+          "posted_at": "2026-07-13T18:12:36Z"
+        }
+      }
+    },
     "articles/the-translators-wager": {
       "title": "The Translator's Wager",
       "permalink": "https://www.wheelofheaven.world/articles/the-translators-wager/",
