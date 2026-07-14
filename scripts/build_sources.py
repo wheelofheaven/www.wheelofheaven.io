@@ -382,10 +382,102 @@ def write_source_pages(sources: list[dict]) -> None:
             page_path.write_text(render_source_page_stub(source, locale), encoding="utf-8")
 
 
+# ---------------------------------------------------------------------------
+# Canonical merges — collapse duplicate auto-harvested records.
+#
+# scan_pages() mints a record id by slugifying an inline reference's `title`
+# (see slugify). When two articles cite the SAME work with different
+# descriptive `title=` blurbs, the one work slugifies to two different ids
+# and surfaces as two catalogue records. This table collapses such known
+# duplicates into a single clean canonical record at build time — so the fix
+# is self-healing on every regeneration and needs no content edits.
+#
+# To dedupe a new pair: map each auto-slug to a canonical id in
+# CANONICAL_MERGES, and give the canonical id display metadata in
+# CANONICAL_RECORDS.
+# ---------------------------------------------------------------------------
+CANONICAL_MERGES = {
+    "the-dead-sea-scrolls-a-biography-lives-of-great-religious-books-the-discovery-pu": "collins-dead-sea-scrolls-biography",
+    "the-dead-sea-scrolls-a-biography-lives-of-great-religious-books-the-principal-se": "collins-dead-sea-scrolls-biography",
+    "the-dead-sea-scrolls-deception-the-vatican-conspiracy-bestseller-engagingly-writ": "baigent-leigh-dead-sea-scrolls-deception",
+    "the-dead-sea-scrolls-deception-the-vatican-conspiracy-thesis-this-article-reject": "baigent-leigh-dead-sea-scrolls-deception",
+    "on-the-jerusalem-origin-of-the-dead-sea-scrolls-the-fullest-short-statement-of-t": "golb-jerusalem-origin-dead-sea-scrolls",
+    "on-the-jerusalem-origin-of-the-dead-sea-scrolls-the-principal-statement-of-the-n": "golb-jerusalem-origin-dead-sea-scrolls",
+}
+
+CANONICAL_RECORDS = {
+    "collins-dead-sea-scrolls-biography": {
+        "title": "The Dead Sea Scrolls: A Biography (Lives of Great Religious Books)",
+        "authored_by": ["John J. Collins"],
+        "publish_date": "2013",
+        "follow_url": "",
+        "medium": "nonfiction-book",
+        "description": "John J. Collins's short “biography” of the Dead Sea Scrolls in the Princeton Lives of Great Religious Books series: the discovery narrative, the forty-year publication scandal, the Essene debate, and the canon-and-text questions.",
+        "topics": ["dead-sea-scrolls", "qumran", "second-temple-judaism"],
+    },
+    "baigent-leigh-dead-sea-scrolls-deception": {
+        "title": "The Dead Sea Scrolls Deception",
+        "authored_by": ["Michael Baigent & Richard Leigh"],
+        "publish_date": "1991",
+        "follow_url": "",
+        "medium": "nonfiction-book",
+        "description": "The 1991 bestseller advancing the Vatican-suppression conspiracy thesis about the scrolls' delayed publication — cited across the corpus as the cautionary control on sensational readings.",
+        "topics": ["dead-sea-scrolls", "conspiracy-literature"],
+    },
+    "golb-jerusalem-origin-dead-sea-scrolls": {
+        "title": "On the Jerusalem Origin of the Dead Sea Scrolls",
+        "authored_by": ["Norman Golb"],
+        "publish_date": "2009",
+        "follow_url": "http://oi.uchicago.edu/pdf/jerusalem_origin_dss.pdf",
+        "medium": "academic-paper",
+        "description": "Norman Golb's statement of the Jerusalem (non-Qumranic) provenance hypothesis: that the scrolls are salvaged libraries of Jerusalem hidden in the desert before the Roman siege, rather than a single sectarian library at Qumran.",
+        "topics": ["dead-sea-scrolls", "qumran", "provenance-debate"],
+    },
+}
+
+
+def canonicalize(seeds: dict[str, dict]) -> int:
+    """Collapse duplicate auto-harvested records (see CANONICAL_MERGES).
+
+    Runs after scan_pages: redirects each alias record's backlinks to a
+    single canonical record (created from CANONICAL_RECORDS if absent),
+    then drops the alias record. Returns the count of aliases merged."""
+    merged = 0
+    for alias_id, canonical_id in CANONICAL_MERGES.items():
+        alias = seeds.get(alias_id)
+        if alias is None:
+            continue
+        canonical = seeds.get(canonical_id)
+        if canonical is None:
+            canonical = {**_empty_record(canonical_id), **CANONICAL_RECORDS.get(canonical_id, {})}
+            canonical["id"] = canonical_id
+            seeds[canonical_id] = canonical
+        seen = {c["path"] for c in canonical["cited_by"]}
+        for cite in alias["cited_by"]:
+            if cite["path"] not in seen:
+                canonical["cited_by"].append(cite)
+                seen.add(cite["path"])
+        del seeds[alias_id]
+        merged += 1
+    # Re-sort + recompute cite_count for every canonical target.
+    for canonical_id in set(CANONICAL_MERGES.values()):
+        target = seeds.get(canonical_id)
+        if target is not None:
+            target["cited_by"].sort(key=lambda c: (c["section"], c["path"]))
+            target["cite_count"] = len(target["cited_by"])
+    return merged
+
+
 def main() -> None:
     seeds, source = load_seed()
     print(f"seeded {len(seeds)} record(s) from {source}")
     cites = scan_pages(seeds)
+    merged = canonicalize(seeds)
+    if merged:
+        print(
+            f"canonicalized {merged} duplicate record(s) into "
+            f"{len(set(CANONICAL_MERGES.values()))} canonical record(s)"
+        )
     write_output(seeds, cites)
 
 
