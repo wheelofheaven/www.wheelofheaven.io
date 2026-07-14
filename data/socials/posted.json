@@ -95,6 +95,18 @@
         }
       }
     },
+    "articles/the-religion-of-religions": {
+      "title": "The Religion of Religions",
+      "permalink": "https://www.wheelofheaven.world/articles/the-religion-of-religions/",
+      "first_eligible_at": "2026-07-14T20:08:41Z",
+      "channels": {
+        "telegram": {
+          "post_id": "@wheelofheaven/33",
+          "url": "https://t.me/wheelofheaven/33",
+          "posted_at": "2026-07-14T20:08:41Z"
+        }
+      }
+    },
     "articles/the-scrolls-that-woke-in-year-one": {
       "title": "The Scrolls That Woke in Year One",
       "permalink": "https://www.wheelofheaven.world/articles/the-scrolls-that-woke-in-year-one/",
