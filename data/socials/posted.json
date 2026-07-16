@@ -95,6 +95,18 @@
         }
       }
     },
+    "articles/the-man-who-bet-the-bible-on-the-moon": {
+      "title": "The Man Who Bet the Bible on the Moon",
+      "permalink": "https://www.wheelofheaven.world/articles/the-man-who-bet-the-bible-on-the-moon/",
+      "first_eligible_at": "2026-07-16T15:05:59Z",
+      "channels": {
+        "telegram": {
+          "post_id": "@wheelofheaven/35",
+          "url": "https://t.me/wheelofheaven/35",
+          "posted_at": "2026-07-16T15:05:59Z"
+        }
+      }
+    },
     "articles/the-religion-of-religions": {
       "title": "The Religion of Religions",
       "permalink": "https://www.wheelofheaven.world/articles/the-religion-of-religions/",
