@@ -1,6 +1,18 @@
 {
   "version": 1,
   "entries": {
+    "articles/anunnaki-and-the-elohim": {
+      "title": "Are the Anunnaki the Elohim?",
+      "permalink": "https://www.wheelofheaven.world/articles/anunnaki-and-the-elohim/",
+      "first_eligible_at": "2026-07-18T08:25:25Z",
+      "channels": {
+        "telegram": {
+          "post_id": "@wheelofheaven/40",
+          "url": "https://t.me/wheelofheaven/40",
+          "posted_at": "2026-07-18T08:25:25Z"
+        }
+      }
+    },
     "articles/example-explainer": {
       "title": "Example Explainer: Understanding Complex Topics",
       "permalink": "https://www.wheelofheaven.world/articles/example-explainer/",
@@ -20,6 +32,18 @@
           "post_id": "manual_skip",
           "url": null,
           "posted_at": "2026-05-23T03:42:17Z"
+        }
+      }
+    },
+    "articles/lucifer-and-satan": {
+      "title": "Are Lucifer and Satan the Same?",
+      "permalink": "https://www.wheelofheaven.world/articles/lucifer-and-satan/",
+      "first_eligible_at": "2026-07-18T08:25:25Z",
+      "channels": {
+        "telegram": {
+          "post_id": "@wheelofheaven/41",
+          "url": "https://t.me/wheelofheaven/41",
+          "posted_at": "2026-07-18T08:25:25Z"
         }
       }
     },
@@ -164,6 +188,18 @@
           "post_id": "@wheelofheaven/37",
           "url": "https://t.me/wheelofheaven/37",
           "posted_at": "2026-07-17T07:56:56Z"
+        }
+      }
+    },
+    "articles/watchers-and-the-nephilim": {
+      "title": "Are the Watchers and the Nephilim the Same?",
+      "permalink": "https://www.wheelofheaven.world/articles/watchers-and-the-nephilim/",
+      "first_eligible_at": "2026-07-18T08:25:26Z",
+      "channels": {
+        "telegram": {
+          "post_id": "@wheelofheaven/42",
+          "url": "https://t.me/wheelofheaven/42",
+          "posted_at": "2026-07-18T08:25:26Z"
         }
       }
     },
