@@ -107,6 +107,18 @@
         }
       }
     },
+    "articles/the-mill-that-grinds-the-ages": {
+      "title": "The Mill That Grinds the Ages",
+      "permalink": "https://www.wheelofheaven.world/articles/the-mill-that-grinds-the-ages/",
+      "first_eligible_at": "2026-07-18T06:54:08Z",
+      "channels": {
+        "telegram": {
+          "post_id": "@wheelofheaven/39",
+          "url": "https://t.me/wheelofheaven/39",
+          "posted_at": "2026-07-18T06:54:08Z"
+        }
+      }
+    },
     "articles/the-religion-of-religions": {
       "title": "The Religion of Religions",
       "permalink": "https://www.wheelofheaven.world/articles/the-religion-of-religions/",
