@@ -185,15 +185,18 @@ public surfaces from it, and wire wiki citations through stable IDs.
    - `library-book.html` sidebar: "Bibliography record: → /sources/{id}/"
    - `sources-page.html`: "Read the text: → /library/{slug}/"
 
-### Phase 6 — Reverse-cite ("Cited by")
+### Phase 6 — Reverse-cite ("Cited by") ✓ DONE
 
-1. Build-time pass (script in `scripts/`) iterates wiki/article frontmatter,
-   builds a `cited_by` map keyed by source id, writes it to
-   `data/sources/cited-by.json`
-2. `sources-page.html` reads `cited-by.json` for the current id and renders a
-   "Cited by:" section listing the wiki/article entries
-3. **Output:** the bibliography becomes a navigation hub — each source page
-   lists every place in the project that draws on it
+1. Build-time pass (`scripts/build_sources.py`) iterates wiki/article/timeline/
+   library frontmatter, builds a `cited_by` map keyed by source id, and writes
+   it to both `data/sources.json` (per-record) and `data/sources/cited-by.json`
+2. `source-page.html` reads `cited-by.json` for the current id and renders a
+   "Cited by" section. Finished 2026-07-18: the detail page got its full
+   `.source-page` SCSS block (it had shipped unstyled), the Cited-by index was
+   promoted to the main column as a responsive grid, a `--meta-only` fallback
+   centres undescribed/uncited stubs, and descriptions render through markdown.
+3. **Output:** the bibliography is a navigation hub — each source page lists
+   every place in the project that draws on it (644/725 sources, 1,355 cites).
 
 ### Phase 7 — Cleanup & docs
 
