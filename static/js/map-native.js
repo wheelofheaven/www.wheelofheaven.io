@@ -14,6 +14,11 @@
     const earthConnectorLayer = document.getElementById("map-earth-connectors");
     const earthOffsetY = Number(root.dataset.earthOffsetY || 0);
     const svgNamespace = "http://www.w3.org/2000/svg";
+    const canvas = root.querySelector(".map-canvas");
+
+    // True while a background drag-pan is in progress; hover highlighting
+    // pauses so the map doesn't flicker under the moving pointer.
+    let isDragging = false;
 
     function clearEarthNavigation() {
         earthNodeItems.forEach((item) => item.classList.remove("is-selected"));
@@ -92,6 +97,7 @@
 
     interactiveItems.forEach((item) => {
         item.addEventListener("mouseenter", () => {
+            if (isDragging) return;
             if (item.dataset.earthNodeId) setActiveEarthNode(item);
             else if (item.dataset.nodeId) setActiveNode(item);
             else if (item.dataset.mapAge) setActiveAge(item.dataset.mapAge);
@@ -172,6 +178,7 @@
         zoomIndex = nextIndex;
         root.style.setProperty("--map-zoom", zoomLevels[zoomIndex]);
         updateZoomButtons();
+        root.dispatchEvent(new CustomEvent("map:zoom", { detail: { level: zoomLevels[zoomIndex] } }));
 
         requestAnimationFrame(() => {
             stage.scrollLeft = centerX * stage.scrollWidth - stage.clientWidth / 2;
@@ -208,6 +215,141 @@
         posterBtn.addEventListener("click", () => {
             setPosterMode(!root.classList.contains("is-poster"));
         });
+    }
+
+    const graphBtn = document.getElementById("map-graph-toggle");
+    const graphContainer = document.getElementById("map-graph");
+    if (graphBtn && graphContainer) {
+        const GRAPH_KEY = "mapGraphMode";
+        graphBtn.hidden = false;
+
+        function setGraphMode(on) {
+            root.classList.toggle("is-graph", on);
+            graphContainer.hidden = !on;
+            graphBtn.setAttribute("aria-pressed", on ? "true" : "false");
+            try {
+                localStorage.setItem(GRAPH_KEY, on ? "1" : "0");
+            } catch (e) {
+                /* storage unavailable */
+            }
+            try {
+                const url = new URL(window.location.href);
+                if (on) url.searchParams.set("view", "graph");
+                else url.searchParams.delete("view");
+                history.replaceState(null, "", url);
+            } catch (e) {
+                /* URL API unavailable */
+            }
+            root.dispatchEvent(new CustomEvent("map:modechange", { detail: { graph: on } }));
+            scheduleStageCenter();
+        }
+
+        let savedGraph = false;
+        try {
+            savedGraph = localStorage.getItem(GRAPH_KEY) === "1";
+        } catch (e) {
+            /* storage unavailable */
+        }
+        try {
+            const view = new URLSearchParams(window.location.search).get("view");
+            if (view === "graph") savedGraph = true;
+            else if (view) savedGraph = false;
+        } catch (e) {
+            /* URL API unavailable */
+        }
+        if (savedGraph) setGraphMode(true);
+
+        graphBtn.addEventListener("click", () => {
+            setGraphMode(!root.classList.contains("is-graph"));
+        });
+    }
+
+    // --- drag-to-pan (story map) ---------------------------------------
+    // Grab the background and drag to move the map, mirroring the graph
+    // view. Pans the same #map-stage scroll the zoom buttons use. A small
+    // threshold separates a pan from a click so the map's links still
+    // navigate, and hover highlighting (setActiveAge/Node, guarded above
+    // by isDragging) pauses mid-drag. Touch keeps native momentum scroll.
+    if (stage && canvas) {
+        const PAN_THRESHOLD = 4;
+        let panning = false;
+        let panMoved = false;
+        let suppressClick = false;
+        let panPointerId = null;
+        let panStartX = 0;
+        let panStartY = 0;
+        let panScrollLeft = 0;
+        let panScrollTop = 0;
+
+        canvas.addEventListener("dragstart", (event) => event.preventDefault());
+
+        canvas.addEventListener("pointerdown", (event) => {
+            if (event.button !== 0 || event.pointerType === "touch") return;
+            panning = true;
+            panMoved = false;
+            panPointerId = event.pointerId;
+            panStartX = event.clientX;
+            panStartY = event.clientY;
+            panScrollLeft = stage.scrollLeft;
+            panScrollTop = stage.scrollTop;
+        });
+
+        canvas.addEventListener("pointermove", (event) => {
+            if (!panning || event.pointerId !== panPointerId) return;
+            const dx = event.clientX - panStartX;
+            const dy = event.clientY - panStartY;
+            if (!panMoved) {
+                if (Math.abs(dx) < PAN_THRESHOLD && Math.abs(dy) < PAN_THRESHOLD) return;
+                panMoved = true;
+                isDragging = true;
+                canvas.classList.add("is-grabbing");
+                try {
+                    canvas.setPointerCapture(panPointerId);
+                } catch (e) {
+                    /* capture unavailable */
+                }
+            }
+            stage.scrollLeft = panScrollLeft - dx;
+            stage.scrollTop = panScrollTop - dy;
+            event.preventDefault();
+        });
+
+        function endStoryPan(event) {
+            if (!panning || (event && event.pointerId !== panPointerId)) return;
+            panning = false;
+            canvas.classList.remove("is-grabbing");
+            try {
+                canvas.releasePointerCapture(panPointerId);
+            } catch (e) {
+                /* capture unavailable */
+            }
+            if (panMoved) {
+                // Swallow the click the browser fires after a drag so a
+                // pan that ends on a link doesn't also follow it. Cleared
+                // next tick, after that synthetic click.
+                suppressClick = true;
+                window.setTimeout(() => {
+                    suppressClick = false;
+                }, 0);
+            }
+            panMoved = false;
+            panPointerId = null;
+            // Release the hover guard after the trailing mouseenter.
+            window.setTimeout(() => {
+                isDragging = false;
+            }, 0);
+        }
+
+        canvas.addEventListener("pointerup", endStoryPan);
+        canvas.addEventListener("pointercancel", endStoryPan);
+
+        canvas.addEventListener("click", (event) => {
+            if (suppressClick) {
+                event.preventDefault();
+                event.stopPropagation();
+                suppressClick = false;
+            }
+        }, true);
     }
 
     function scheduleStageCenter() {
