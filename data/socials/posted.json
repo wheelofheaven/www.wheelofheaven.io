@@ -179,6 +179,18 @@
         }
       }
     },
+    "articles/the-shape-of-humanity": {
+      "title": "The Shape of Humanity",
+      "permalink": "https://www.wheelofheaven.world/articles/the-shape-of-humanity/",
+      "first_eligible_at": "2026-07-23T07:48:13Z",
+      "channels": {
+        "telegram": {
+          "post_id": "@wheelofheaven/44",
+          "url": "https://t.me/wheelofheaven/44",
+          "posted_at": "2026-07-23T07:48:13Z"
+        }
+      }
+    },
     "articles/the-translators-wager": {
       "title": "The Translator's Wager",
       "permalink": "https://www.wheelofheaven.world/articles/the-translators-wager/",
