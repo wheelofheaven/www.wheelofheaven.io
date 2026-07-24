@@ -1,8 +1,26 @@
 # Wiki Decontamination — Triage Plan
 
-**Status:** in progress (2 of 16 English entries done)
+**Status:** English phase COMPLETE — all 41 corrupted English entries
+decontaminated and deployed (2026-07). Scope grew from the initial 16
+("substantive substantial" marker) to 41 once density (not just the doubled
+phrase) was used as the signal: noah + abraham + Tier A (16) + Tier B (14) +
+Tier C (9). English wiki verified 0 marker / 0 high-density. Remaining:
+**Phase 4 — translations** (16 entries × 9 languages ≈ 144 files still carry
+the marker; re-fan from the now-clean English).
 **Owner:** editorial
 **Created under:** 2026-07 incident review
+
+## Deploy record (content main → www main)
+- noah `ca5a056`, abraham `61ab8c2` (individual, with monotheism re-link)
+- Tier A (16): content `254e06e` → www `0c268081bdd`
+- Tier B (14): content `30ae858` → www `96dfb4be6ea`
+- Tier C (9): content `0cd1042` → www `c6af3c96064`
+
+## Known follow-ups (not part of the slop campaign)
+- Site-wide dead link: `council-of-the-eternals` should be `council-of-eternals`
+  (wrong slug in ~15+ entries' frontmatter see_also — pre-existing). Quick sed.
+- A handful of entries reference not-yet-created pages (forward references:
+  john-the-baptist, bab, bahaullah, joseph-smith) — non-breaking.
 
 ## 1. The problem
 
