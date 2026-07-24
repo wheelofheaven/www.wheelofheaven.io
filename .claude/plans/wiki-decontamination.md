@@ -1,20 +1,40 @@
 # Wiki Decontamination — Triage Plan
 
-**Status:** English phase COMPLETE — all 41 corrupted English entries
-decontaminated and deployed (2026-07). Scope grew from the initial 16
-("substantive substantial" marker) to 41 once density (not just the doubled
-phrase) was used as the signal: noah + abraham + Tier A (16) + Tier B (14) +
-Tier C (9). English wiki verified 0 marker / 0 high-density. Remaining:
-**Phase 4 — translations** (16 entries × 9 languages ≈ 144 files still carry
-the marker; re-fan from the now-clean English).
+**Status:** 48 English entries decontaminated + deployed. Two more phases
+remain (below). Scope grew across passes as the detection signal was
+sharpened — see "Detection lesson."
 **Owner:** editorial
 **Created under:** 2026-07 incident review
+
+## Detection lesson (important)
+The reliable slop signal is the **`-ive` family: `substantive` + `substantively`**,
+counted per entry (not per-1000-words). Earlier metrics under-counted:
+1. `"substantive substantial"` (doubled phrase) → only caught 16 entries.
+2. density of `substantial|substantive` per 1000 words → caught 41, but
+   `substantial` is common legit English, so it both over-counted (flagged
+   clean entries like great-flood/kabbalah) AND under-counted long entries
+   with lighter `-ive` slop (missed great-return, world-age, etc.).
+3. lone `substantive`+`substantively` count → the clean signal. Anything ≥~8
+   is slopped; the tail (5–8) needs a per-file eyeball.
+
+## Remaining work
+- **Phase 5 — light-band entries (20):** lone `-ive` count 8–23, deferred by
+  editorial call (do the 7 heavy first). De-slop-and-preserve (mostly real
+  content): `sendys-conditions-of-coherence`, `lucifer`, `precession`,
+  `council-of-eternals`, `satan`, `cosmic-pluralism`, `cosmic-chain`,
+  `tree-of-life`, `great-month`, `the-alliance`, `infinity`, `great-flood`,
+  `raelism`, `embassy`, `biglino-method`, `mytheme`, `doubled-signature`,
+  `list-of-megalithic-sites`, `adamites`, `serpent`.
+- **Phase 4 — translations:** the corrupted entries × 9 languages still carry
+  slop (≈144 files with the doubled marker; more on the `-ive` signal).
+  Re-fan from the now-clean English via woh-fanout.
 
 ## Deploy record (content main → www main)
 - noah `ca5a056`, abraham `61ab8c2` (individual, with monotheism re-link)
 - Tier A (16): content `254e06e` → www `0c268081bdd`
 - Tier B (14): content `30ae858` → www `96dfb4be6ea`
 - Tier C (9): content `0cd1042` → www `c6af3c96064`
+- Tier D (7 heavy residual `-ive`): content `483cb2e` → www `a078014d80f`
 
 ## Known follow-ups (not part of the slop campaign)
 - Site-wide dead link: `council-of-the-eternals` should be `council-of-eternals`
