@@ -715,7 +715,7 @@ landingCodaAbout = "About"
 
 [languages.de]
 generate_feeds = true
-build_search_index = true
+build_search_index = false
 
 [languages.de.translations]
 tagline = "Zwölf Zeitalter, eine Arbeitshypothese."
@@ -1344,7 +1344,7 @@ footerContact_url = "/contact/"
 
 [languages.fr]
 generate_feeds = true
-build_search_index = true
+build_search_index = false
 
 [languages.fr.translations]
 tagline = "Douze âges, une hypothèse de travail."
@@ -1974,7 +1974,7 @@ footerContact_url = "/contact/"
 
 [languages.es]
 generate_feeds = true
-build_search_index = true
+build_search_index = false
 
 [languages.es.translations]
 tagline = "Doce eras, una hipótesis de trabajo."
@@ -2603,7 +2603,7 @@ footerContact_url = "/contact/"
 
 [languages.ru]
 generate_feeds = true
-build_search_index = true
+build_search_index = false
 
 [languages.ru.translations]
 tagline = "Двенадцать эпох, одна рабочая гипотеза."
@@ -3233,7 +3233,7 @@ footerContact_url = "/contact/"
 
 [languages.ja]
 generate_feeds = true
-build_search_index = true
+build_search_index = false
 
 [languages.ja.translations]
 tagline = "十二の時代、ひとつの作業仮説。"
@@ -3862,7 +3862,7 @@ footerContact_url = "/contact/"
 
 [languages.zh]
 generate_feeds = true
-build_search_index = true
+build_search_index = false
 
 [languages.zh.translations]
 tagline = "十二个时代，一个工作假设。"
@@ -4492,7 +4492,7 @@ footerContact_url = "/contact/"
 
 [languages.zh-Hant]
 generate_feeds = true
-build_search_index = true
+build_search_index = false
 
 [languages.zh-Hant.translations]
 tagline = "十二個時代，一個工作假設。"
@@ -5100,7 +5100,7 @@ footerContact_url = "/contact/"
 
 [languages.ko]
 generate_feeds = true
-build_search_index = true
+build_search_index = false
 
 [languages.ko.translations]
 tagline = "열두 시대, 하나의 작업 가설."
@@ -5706,7 +5706,7 @@ footerContact_url = "/contact/"
 
 [languages.he]
 generate_feeds = true
-build_search_index = true
+build_search_index = false
 
 [languages.he.translations]
 tagline = "שנים-עשר עידנים, השערת עבודה אחת."
