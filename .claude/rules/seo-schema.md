@@ -19,13 +19,16 @@ Place in `templates/partials/schema/{type}.html`:
 
 ```tera
 <!-- Schema.org {Type} - Description -->
+{# base_url concatenations must be hoisted into {% set %}: Tera rejects a
+   grouped `(a ~ b) | filter`, so build the string first, then pipe it. #}
+{% set organization_id = config.extra.organization_id | default(value=config.base_url ~ '/#organization') %}
 <script type="application/ld+json">
 {
   "@context": "https://schema.org",
   "@type": "TypeName",
   "@id": "{{ current_url | safe }}",
-  "name": "{{ page.title | escape }}",
-  "description": "{{ page.description | default(value='') | escape }}",
+  "name": {{ page.title | json_encode | safe }},
+  "description": {{ page.description | default(value='') | json_encode | safe }},
   "url": "{{ current_url | safe }}",
   {% if page.date %}
   "datePublished": "{{ page.date | date(format='%Y-%m-%dT%H:%M:%S') }}+00:00",
@@ -35,9 +38,10 @@ Place in `templates/partials/schema/{type}.html`:
   {% endif %}
   "inLanguage": "{{ detected_lang | default(value='en') }}",
   "isAccessibleForFree": true,
+  "license": "https://creativecommons.org/publicdomain/zero/1.0/",
   "publisher": {
     "@type": "Organization",
-    "@id": "{{ config.extra.organization_id | default(value=config.base_url ~ '/#organization') }}"
+    "@id": {{ organization_id | json_encode | safe }}
   }
 }
 </script>
@@ -47,10 +51,28 @@ Place in `templates/partials/schema/{type}.html`:
 
 1. **Always include `@context` and `@type`**
 2. **Use `@id` for entity identification**
-3. **Escape all user content:** `| escape`
-4. **Handle null values:** `| default(value='')`
-5. **Use ISO 8601 dates:** `date(format='%Y-%m-%dT%H:%M:%S')`
-6. **Reference organization:** Link to `#organization` ID
+3. **JSON-encode every interpolated string value — never `| escape`.** Tera
+   auto-escapes `.html` templates as HTML, and HTML entities are invalid inside
+   a `<script type="application/ld+json">` block: `| escape` turns `/` into
+   `&#x2F;` and `'` into `&#x27;`, corrupting every URL and apostrophe for
+   structured-data consumers. Use `| json_encode | safe` instead — `json_encode`
+   emits a proper JSON string *with its own quotes*, and `| safe` stops the HTML
+   escaper re-mangling it. Write `"name": {{ page.title | json_encode | safe }}`
+   with **no** hand-written quotes. (`current_url` is the one exception: it is
+   already `| safe`, so `"@id": "{{ current_url | safe }}"` stays as-is.)
+4. **No grouped concatenation before a filter.** Tera rejects
+   `{{ (config.base_url ~ '/#website') | json_encode }}`. Hoist the
+   concatenation into a `{% set %}` first, then pipe the variable:
+   `{% set website_id = config.base_url ~ '/#website' %}` →
+   `{{ website_id | json_encode | safe }}`. (`~` *inside* a function/filter
+   argument — `default(value=config.base_url ~ '/x')`, `get_url(path='a/' ~ slug)`
+   — is fine; only top-level grouping parens fail to parse.)
+5. **Handle null values:** `| default(value='')`
+6. **Use ISO 8601 dates:** `date(format='%Y-%m-%dT%H:%M:%S')`
+7. **Reference organization:** Link to `#organization` ID
+8. **License is CC0-1.0:** every schema `license` field uses
+   `https://creativecommons.org/publicdomain/zero/1.0/`, matching the repo
+   LICENSE and the `ai.license` meta tag. Never CC BY-SA.
 
 ## Meta Tags (in seo.html)
 
