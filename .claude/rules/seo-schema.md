@@ -5,12 +5,12 @@
 | Section | Schema Type | Template |
 |---------|-------------|----------|
 | Wiki | `DefinedTerm` | `partials/schema/defined-term.html` |
-| Explainers | `ScholarlyArticle` | `partials/schema/scholarly-article.html` |
+| Articles | `ScholarlyArticle` | `partials/schema/scholarly-article.html` |
 | Timeline | `Event` | `partials/schema/event.html` |
 | Library | `Book` | `partials/schema/book.html` |
-| Essentials | `HowTo` | `partials/schema/how-to.html` |
-| Resources | `Article` | (main seo.html) |
 | Newsroom | `NewsArticle` | `partials/schema/news-article.html` |
+| Datasets | `Dataset` | `partials/schema/dataset.html` |
+| Sources | `Article` | (main seo.html) |
 | Homepage | `WebSite` | `partials/schema/website.html` |
 
 ## Creating New Schema Templates
