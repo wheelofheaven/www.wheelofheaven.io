@@ -1,177 +1,8 @@
 {
-  "generated_at": "2026-07-10T05:59:14+00:00",
+  "generated_at": "2026-08-01T11:54:06+00:00",
   "generator": "scripts/build_sources.py",
   "schema_version": 1,
   "sources": [
-    {
-      "id": "3-hebrew-apocalypse-of-enoch-in-the-old-testament-pseudepigrapha-vol-1-the-stand",
-      "cited_by": [
-        {
-          "section": "articles",
-          "title": "The Book Closest to the Truth",
-          "path": "/articles/the-book-closest-to-the-truth/"
-        }
-      ],
-      "cite_count": 1
-    },
-    {
-      "id": "beyond-judaism-metatron-and-the-divine-polymorphy-of-ancient-judaism-journal-for",
-      "cited_by": [
-        {
-          "section": "articles",
-          "title": "The Book Closest to the Truth",
-          "path": "/articles/the-book-closest-to-the-truth/"
-        }
-      ],
-      "cite_count": 1
-    },
-    {
-      "id": "bible-lessons-with-ra-l-on-religious-appropriation-in-et-inspired-religions-nova",
-      "cited_by": [
-        {
-          "section": "articles",
-          "title": "The Religion of Religions",
-          "path": "/articles/the-religion-of-religions/"
-        }
-      ],
-      "cite_count": 1
-    },
-    {
-      "id": "clues-roots-of-an-evidential-paradigm-in-myths-emblems-clues-morelli-s-earlobes-",
-      "cited_by": [
-        {
-          "section": "articles",
-          "title": "The Forty Chairs",
-          "path": "/articles/the-forty-chairs/"
-        }
-      ],
-      "cite_count": 1
-    },
-    {
-      "id": "extraterrestrial-exegesis-the-ra-lian-movement-as-a-biblical-religion-nova-relig",
-      "cited_by": [
-        {
-          "section": "articles",
-          "title": "The Religion of Religions",
-          "path": "/articles/the-religion-of-religions/"
-        }
-      ],
-      "cite_count": 1
-    },
-    {
-      "id": "is-god-a-space-alien-the-cosmology-of-the-ra-lian-church-culture-and-cosmos-4-1-",
-      "cited_by": [
-        {
-          "section": "articles",
-          "title": "The Religion of Religions",
-          "path": "/articles/the-religion-of-religions/"
-        }
-      ],
-      "cite_count": 1
-    },
-    {
-      "id": "new-religious-movements-and-science-rael-s-progressive-patronizing-parasitism-zy",
-      "cited_by": [
-        {
-          "section": "articles",
-          "title": "Six Mornings, Six Years",
-          "path": "/articles/six-mornings-six-years/"
-        },
-        {
-          "section": "articles",
-          "title": "The Religion of Religions",
-          "path": "/articles/the-religion-of-religions/"
-        }
-      ],
-      "cite_count": 2
-    },
-    {
-      "id": "presumed-immanent-the-ra-lians-ufo-religions-and-the-postmodern-condition-nova-r",
-      "cited_by": [
-        {
-          "section": "articles",
-          "title": "The Religion of Religions",
-          "path": "/articles/the-religion-of-religions/"
-        }
-      ],
-      "cite_count": 1
-    },
-    {
-      "id": "rael-community-announces-human-cloning-and-companion-zenit-interviews-cesnur-the",
-      "cited_by": [
-        {
-          "section": "articles",
-          "title": "The Religion of Religions",
-          "path": "/articles/the-religion-of-religions/"
-        }
-      ],
-      "cite_count": 1
-    },
-    {
-      "id": "ra-lism-an-unconventional-religious-pathway-into-transhumanism-ilahiyat-studies-",
-      "cited_by": [
-        {
-          "section": "articles",
-          "title": "The Religion of Religions",
-          "path": "/articles/the-religion-of-religions/"
-        }
-      ],
-      "cite_count": 1
-    },
-    {
-      "id": "shi-ur-komah-in-encyclopaedia-judaica",
-      "cited_by": [
-        {
-          "section": "articles",
-          "title": "The Book Closest to the Truth",
-          "path": "/articles/the-book-closest-to-the-truth/"
-        }
-      ],
-      "cite_count": 1
-    },
-    {
-      "id": "shi-ur-omah-in-the-jewish-encyclopedia-vol-xi",
-      "cited_by": [],
-      "cite_count": 0
-    },
-    {
-      "id": "shi-ur-omah-in-the-jewish-encyclopedia-vol-xi-the-1906-english-article-gives-the",
-      "cited_by": [
-        {
-          "section": "articles",
-          "title": "The Book Closest to the Truth",
-          "path": "/articles/the-book-closest-to-the-truth/"
-        }
-      ],
-      "cite_count": 1
-    },
-    {
-      "id": "the-international-ra-lian-movement-in-the-cambridge-companion-to-new-religious-m",
-      "cited_by": [
-        {
-          "section": "articles",
-          "title": "The Religion of Religions",
-          "path": "/articles/the-religion-of-religions/"
-        }
-      ],
-      "cite_count": 1
-    },
-    {
-      "id": "why-religious-movements-succeed-or-fail-a-revised-general-model-journal-of-conte",
-      "cited_by": [
-        {
-          "section": "articles",
-          "title": "The Forty Chairs",
-          "path": "/articles/the-forty-chairs/"
-        },
-        {
-          "section": "articles",
-          "title": "The Religion of Religions",
-          "path": "/articles/the-religion-of-religions/"
-        }
-      ],
-      "cite_count": 2
-    },
     {
       "id": "1-chronicles",
       "cited_by": [],
@@ -191,14 +22,29 @@
           "path": "/articles/unsealed-in-year-one/"
         },
         {
+          "section": "articles",
+          "title": "Are the Watchers and the Nephilim the Same?",
+          "path": "/articles/watchers-and-the-nephilim/"
+        },
+        {
           "section": "timeline",
           "title": "Preamble",
           "path": "/timeline/preamble/"
         },
         {
           "section": "wiki",
+          "title": "Book of Enoch",
+          "path": "/wiki/book-of-enoch/"
+        },
+        {
+          "section": "wiki",
           "title": "Council of the Eternals",
           "path": "/wiki/council-of-eternals/"
+        },
+        {
+          "section": "wiki",
+          "title": "Dead Sea Scrolls",
+          "path": "/wiki/dead-sea-scrolls/"
         },
         {
           "section": "wiki",
@@ -216,7 +62,7 @@
           "path": "/wiki/watchers/"
         }
       ],
-      "cite_count": 7
+      "cite_count": 10
     },
     {
       "id": "nickelsburg-enoch-1",
@@ -227,6 +73,16 @@
           "path": "/articles/unsealed-in-year-one/"
         },
         {
+          "section": "articles",
+          "title": "Are the Watchers and the Nephilim the Same?",
+          "path": "/articles/watchers-and-the-nephilim/"
+        },
+        {
+          "section": "wiki",
+          "title": "Book of Enoch",
+          "path": "/wiki/book-of-enoch/"
+        },
+        {
           "section": "wiki",
           "title": "Nephilim",
           "path": "/wiki/nephilim/"
@@ -242,7 +98,7 @@
           "path": "/wiki/watchers/"
         }
       ],
-      "cite_count": 4
+      "cite_count": 6
     },
     {
       "id": "1-kings",
@@ -282,9 +138,14 @@
           "section": "articles",
           "title": "The Mill That Grinds the Ages",
           "path": "/articles/the-mill-that-grinds-the-ages/"
+        },
+        {
+          "section": "wiki",
+          "title": "Mazzaroth",
+          "path": "/wiki/mazzaroth/"
         }
       ],
-      "cite_count": 2
+      "cite_count": 3
     },
     {
       "id": "2-samuel",
@@ -303,6 +164,17 @@
           "section": "articles",
           "title": "The Book Closest to the Truth",
           "path": "/articles/the-book-closest-to-the-truth/"
+        }
+      ],
+      "cite_count": 1
+    },
+    {
+      "id": "gather-a-robust-defense-of-cdm-the-jwst-crisis-as-resolvable-within-the-standard",
+      "cited_by": [
+        {
+          "section": "articles",
+          "title": "As Foolish to Search for the Beginning",
+          "path": "/articles/as-foolish-to-search-for-the-beginning/"
         }
       ],
       "cite_count": 1
@@ -330,9 +202,14 @@
           "section": "articles",
           "title": "The Mill That Grinds the Ages",
           "path": "/articles/the-mill-that-grinds-the-ages/"
+        },
+        {
+          "section": "wiki",
+          "title": "Mazzaroth",
+          "path": "/wiki/mazzaroth/"
         }
       ],
-      "cite_count": 1
+      "cite_count": 2
     },
     {
       "id": "a-concise-dictionary-of-the-words-in-the-hebrew-bible-strong-s",
@@ -384,17 +261,6 @@
       "cite_count": 1
     },
     {
-      "id": "a-gentleman-s-joyous-esotericism-jean-sendy-above-and-beyond-the-ancient-aliens-",
-      "cited_by": [
-        {
-          "section": "articles",
-          "title": "The Man Who Bet the Bible on the Moon",
-          "path": "/articles/the-man-who-bet-the-bible-on-the-moon/"
-        }
-      ],
-      "cite_count": 1
-    },
-    {
       "id": "a-gentlemans-joyous-esotericism",
       "cited_by": [
         {
@@ -424,6 +290,17 @@
         }
       ],
       "cite_count": 5
+    },
+    {
+      "id": "a-gentleman-s-joyous-esotericism-jean-sendy-above-and-beyond-the-ancient-aliens-",
+      "cited_by": [
+        {
+          "section": "articles",
+          "title": "The Man Who Bet the Bible on the Moon",
+          "path": "/articles/the-man-who-bet-the-bible-on-the-moon/"
+        }
+      ],
+      "cite_count": 1
     },
     {
       "id": "a-hebrew-and-english-lexicon-of-the-old-testament",
@@ -458,8 +335,14 @@
     },
     {
       "id": "campion-history-astrology",
-      "cited_by": [],
-      "cite_count": 0
+      "cited_by": [
+        {
+          "section": "wiki",
+          "title": "Carl Jung",
+          "path": "/wiki/carl-jung/"
+        }
+      ],
+      "cite_count": 1
     },
     {
       "id": "a-marginal-jew-rethinking-the-historical-jesus-volume-one-the-classic-statement-",
@@ -582,9 +465,14 @@
           "section": "articles",
           "title": "The Mill That Grinds the Ages",
           "path": "/articles/the-mill-that-grinds-the-ages/"
+        },
+        {
+          "section": "wiki",
+          "title": "Carl Jung",
+          "path": "/wiki/carl-jung/"
         }
       ],
-      "cite_count": 1
+      "cite_count": 2
     },
     {
       "id": "akhb-r-makka-chronicles-of-mecca",
@@ -607,6 +495,11 @@
       "cited_by": [
         {
           "section": "articles",
+          "title": "Monotheism Is the Wrong Question",
+          "path": "/articles/monotheism-is-the-wrong-question/"
+        },
+        {
+          "section": "articles",
           "title": "Six Mornings, Six Years",
           "path": "/articles/six-mornings-six-years/"
         },
@@ -621,7 +514,7 @@
           "path": "/articles/the-religion-of-religions/"
         }
       ],
-      "cite_count": 3
+      "cite_count": 4
     },
     {
       "id": "aliens-adored-ra-l-s-ufo-religion",
@@ -651,9 +544,14 @@
           "section": "wiki",
           "title": "Hamlet's Mill",
           "path": "/wiki/hamlets-mill/"
+        },
+        {
+          "section": "wiki",
+          "title": "Tauroctony",
+          "path": "/wiki/tauroctony/"
         }
       ],
-      "cite_count": 2
+      "cite_count": 3
     },
     {
       "id": "alternative-history-s-mainstream-history",
@@ -672,20 +570,30 @@
           "section": "wiki",
           "title": "Antediluvian",
           "path": "/wiki/antediluvian/"
+        },
+        {
+          "section": "wiki",
+          "title": "Graham Hancock",
+          "path": "/wiki/graham-hancock/"
         }
       ],
-      "cite_count": 2
+      "cite_count": 3
     },
     {
       "id": "day-adversary-heaven",
       "cited_by": [
+        {
+          "section": "articles",
+          "title": "Are Lucifer and Satan the Same?",
+          "path": "/articles/lucifer-and-satan/"
+        },
         {
           "section": "wiki",
           "title": "Satan",
           "path": "/wiki/satan/"
         }
       ],
-      "cite_count": 1
+      "cite_count": 2
     },
     {
       "id": "an-adversary-in-heaven",
@@ -743,9 +651,14 @@
           "section": "wiki",
           "title": "Ancient Astronaut Hypothesis",
           "path": "/wiki/ancient-astronaut-hypothesis/"
+        },
+        {
+          "section": "wiki",
+          "title": "Graham Hancock",
+          "path": "/wiki/graham-hancock/"
         }
       ],
-      "cite_count": 1
+      "cite_count": 2
     },
     {
       "id": "ancient-mesopotamian-materials-and-industries",
@@ -786,6 +699,17 @@
           "section": "wiki",
           "title": "Antediluvian",
           "path": "/wiki/antediluvian/"
+        }
+      ],
+      "cite_count": 1
+    },
+    {
+      "id": "answer-to-job-jung-s-companion-meditation-on-the-judeo-christian-god-image-and-i",
+      "cited_by": [
+        {
+          "section": "wiki",
+          "title": "Carl Jung",
+          "path": "/wiki/carl-jung/"
         }
       ],
       "cite_count": 1
@@ -840,6 +764,17 @@
       "cite_count": 1
     },
     {
+      "id": "are-the-watchers-and-the-nephilim-the-same",
+      "cited_by": [
+        {
+          "section": "wiki",
+          "title": "Book of Enoch",
+          "path": "/wiki/book-of-enoch/"
+        }
+      ],
+      "cite_count": 1
+    },
+    {
       "id": "area-51-an-uncensored-history-of-america-s-top-secret-military-base",
       "cited_by": [
         {
@@ -877,12 +812,34 @@
       "cite_count": 4
     },
     {
+      "id": "asymmetry-in-galaxy-spin-directions-in-jwst-fields-verify-shamir-2025-mnras-the-",
+      "cited_by": [
+        {
+          "section": "articles",
+          "title": "As Foolish to Search for the Beginning",
+          "path": "/articles/as-foolish-to-search-for-the-beginning/"
+        }
+      ],
+      "cite_count": 1
+    },
+    {
       "id": "asymptotic-safety-in-quantum-einstein-gravity-arxiv-hep-th-0511260-scale-depende",
       "cited_by": [
         {
           "section": "articles",
           "title": "The Infinite in Both Directions",
           "path": "/articles/the-infinite-in-both-directions/"
+        }
+      ],
+      "cite_count": 1
+    },
+    {
+      "id": "atharva-veda-10-7-the-hymn-to-skambha-the-cosmic-pillar-that-supports-and-contai",
+      "cited_by": [
+        {
+          "section": "wiki",
+          "title": "Sampo",
+          "path": "/wiki/sampo/"
         }
       ],
       "cite_count": 1
@@ -919,6 +876,11 @@
       "cited_by": [
         {
           "section": "articles",
+          "title": "Are the Anunnaki the Elohim?",
+          "path": "/articles/anunnaki-and-the-elohim/"
+        },
+        {
+          "section": "articles",
           "title": "Made from the Ground to Bear the Labor",
           "path": "/articles/made-from-the-ground-to-bear-the-labor/"
         },
@@ -931,6 +893,11 @@
           "section": "wiki",
           "title": "Antediluvian",
           "path": "/wiki/antediluvian/"
+        },
+        {
+          "section": "wiki",
+          "title": "Anunnaki",
+          "path": "/wiki/anunnaki/"
         },
         {
           "section": "wiki",
@@ -958,7 +925,7 @@
           "path": "/wiki/tree-of-life/"
         }
       ],
-      "cite_count": 8
+      "cite_count": 10
     },
     {
       "id": "atrahasis",
@@ -1101,6 +1068,11 @@
       "id": "before-the-muses",
       "cited_by": [
         {
+          "section": "articles",
+          "title": "Are the Watchers and the Nephilim the Same?",
+          "path": "/articles/watchers-and-the-nephilim/"
+        },
+        {
           "section": "wiki",
           "title": "Adam and Eve",
           "path": "/wiki/adam-and-eve/"
@@ -1116,7 +1088,7 @@
           "path": "/wiki/nephilim/"
         }
       ],
-      "cite_count": 3
+      "cite_count": 4
     },
     {
       "id": "foster-before-muses",
@@ -1152,6 +1124,17 @@
           "section": "articles",
           "title": "The Book Closest to the Truth",
           "path": "/articles/the-book-closest-to-the-truth/"
+        }
+      ],
+      "cite_count": 1
+    },
+    {
+      "id": "biblia-hebraica-stuttgartensia",
+      "cited_by": [
+        {
+          "section": "wiki",
+          "title": "Masoretic Text",
+          "path": "/wiki/masoretic-text/"
         }
       ],
       "cite_count": 1
@@ -1212,6 +1195,16 @@
           "path": "/articles/unsealed-in-year-one/"
         },
         {
+          "section": "articles",
+          "title": "Are the Watchers and the Nephilim the Same?",
+          "path": "/articles/watchers-and-the-nephilim/"
+        },
+        {
+          "section": "wiki",
+          "title": "Book of Enoch",
+          "path": "/wiki/book-of-enoch/"
+        },
+        {
           "section": "wiki",
           "title": "Reference corpus of the Raëlian canon",
           "path": "/wiki/reference-corpus-of-the-raelian-canon/"
@@ -1237,7 +1230,7 @@
           "path": "/wiki/watchers/"
         }
       ],
-      "cite_count": 10
+      "cite_count": 12
     },
     {
       "id": "book-of-mormon",
@@ -1251,6 +1244,22 @@
           "section": "articles",
           "title": "The Religion of Religions",
           "path": "/articles/the-religion-of-religions/"
+        }
+      ],
+      "cite_count": 2
+    },
+    {
+      "id": "born-in-heaven-made-on-earth-the-making-of-the-cult-image-in-the-ancient-near-ea",
+      "cited_by": [
+        {
+          "section": "articles",
+          "title": "Monotheism Is the Wrong Question",
+          "path": "/articles/monotheism-is-the-wrong-question/"
+        },
+        {
+          "section": "wiki",
+          "title": "Idolatry",
+          "path": "/wiki/idolatry/"
         }
       ],
       "cite_count": 2
@@ -1293,6 +1302,11 @@
       "cited_by": [
         {
           "section": "articles",
+          "title": "Are Lucifer and Satan the Same?",
+          "path": "/articles/lucifer-and-satan/"
+        },
+        {
+          "section": "articles",
           "title": "The Filing Cabinet of the Gods",
           "path": "/articles/the-filing-cabinet-of-the-gods/"
         },
@@ -1302,7 +1316,7 @@
           "path": "/wiki/elohim/"
         }
       ],
-      "cite_count": 2
+      "cite_count": 3
     },
     {
       "id": "cross-canaanite-myth",
@@ -1430,6 +1444,11 @@
         },
         {
           "section": "wiki",
+          "title": "Erich von Däniken",
+          "path": "/wiki/erich-von-daniken/"
+        },
+        {
+          "section": "wiki",
           "title": "Ezekiel",
           "path": "/wiki/ezekiel/"
         },
@@ -1444,7 +1463,7 @@
           "path": "/wiki/paul-wallis/"
         }
       ],
-      "cite_count": 7
+      "cite_count": 8
     },
     {
       "id": "birrell-chinese-mythology",
@@ -1523,6 +1542,28 @@
       "cite_count": 1
     },
     {
+      "id": "conformal-cyclic-cosmology-aeons-without-a-first-cycles-of-time",
+      "cited_by": [
+        {
+          "section": "articles",
+          "title": "As Foolish to Search for the Beginning",
+          "path": "/articles/as-foolish-to-search-for-the-beginning/"
+        }
+      ],
+      "cite_count": 1
+    },
+    {
+      "id": "cosmic-chain-wheel-of-heaven-wiki-civilizations-seeding-civilizations-without-a-",
+      "cited_by": [
+        {
+          "section": "articles",
+          "title": "As Foolish to Search for the Beginning",
+          "path": "/articles/as-foolish-to-search-for-the-beginning/"
+        }
+      ],
+      "cite_count": 1
+    },
+    {
       "id": "cosmic-chain-wheel-of-heaven-wiki-the-indefinitely-extended-sequence-of-created-",
       "cited_by": [
         {
@@ -1551,6 +1592,17 @@
           "section": "articles",
           "title": "The Infinite in Both Directions",
           "path": "/articles/the-infinite-in-both-directions/"
+        }
+      ],
+      "cite_count": 1
+    },
+    {
+      "id": "cosmological-natural-selection-the-life-of-the-cosmos-black-holes-as-universe-pr",
+      "cited_by": [
+        {
+          "section": "articles",
+          "title": "As Foolish to Search for the Beginning",
+          "path": "/articles/as-foolish-to-search-for-the-beginning/"
         }
       ],
       "cite_count": 1
@@ -1648,6 +1700,17 @@
       "cite_count": 1
     },
     {
+      "id": "crown-of-aleppo-the-mystery-of-the-oldest-hebrew-bible-codex",
+      "cited_by": [
+        {
+          "section": "wiki",
+          "title": "Masoretic Text",
+          "path": "/wiki/masoretic-text/"
+        }
+      ],
+      "cite_count": 1
+    },
+    {
       "id": "wiener-cybernetics",
       "cited_by": [
         {
@@ -1715,6 +1778,11 @@
           "path": "/articles/unsealed-in-year-one/"
         },
         {
+          "section": "articles",
+          "title": "Are the Watchers and the Nephilim the Same?",
+          "path": "/articles/watchers-and-the-nephilim/"
+        },
+        {
           "section": "timeline",
           "title": "Age of Aquarius",
           "path": "/timeline/age-of-aquarius/"
@@ -1730,7 +1798,7 @@
           "path": "/wiki/jesus/"
         }
       ],
-      "cite_count": 5
+      "cite_count": 6
     },
     {
       "id": "darwin-on-trial-the-legal-philosophical-launch-of-the-modern-movement-darwinism-",
@@ -1788,6 +1856,17 @@
       "cite_count": 1
     },
     {
+      "id": "de-iside-et-osiride-13-plutarch-s-account-which-gives-seth-exactly-seventy-two-c",
+      "cited_by": [
+        {
+          "section": "wiki",
+          "title": "Jane Sellers",
+          "path": "/wiki/jane-sellers/"
+        }
+      ],
+      "cite_count": 1
+    },
+    {
       "id": "deadly-voyager",
       "cited_by": [
         {
@@ -1818,11 +1897,16 @@
         },
         {
           "section": "wiki",
+          "title": "Göbekli Tepe",
+          "path": "/wiki/gobekli-tepe/"
+        },
+        {
+          "section": "wiki",
           "title": "Hamlet's Mill",
           "path": "/wiki/hamlets-mill/"
         }
       ],
-      "cite_count": 2
+      "cite_count": 3
     },
     {
       "id": "der-judenstaat-the-preface-pages-that-measure-the-project-against-hertzka-s-frei",
@@ -1888,6 +1972,11 @@
       "cited_by": [
         {
           "section": "articles",
+          "title": "Monotheism Is the Wrong Question",
+          "path": "/articles/monotheism-is-the-wrong-question/"
+        },
+        {
+          "section": "articles",
           "title": "The Archdeacon and the Dragon",
           "path": "/articles/the-archdeacon-and-the-dragon/"
         },
@@ -1908,11 +1997,26 @@
         },
         {
           "section": "wiki",
+          "title": "Dead Sea Scrolls",
+          "path": "/wiki/dead-sea-scrolls/"
+        },
+        {
+          "section": "wiki",
+          "title": "Idolatry",
+          "path": "/wiki/idolatry/"
+        },
+        {
+          "section": "wiki",
+          "title": "Monotheism",
+          "path": "/wiki/monotheism/"
+        },
+        {
+          "section": "wiki",
           "title": "Moses",
           "path": "/wiki/moses/"
         }
       ],
-      "cite_count": 5
+      "cite_count": 9
     },
     {
       "id": "deuteronomy-32-8-and-the-sons-of-god-bibliotheca-sacra-158-the-4qdeutj-evidence-",
@@ -1921,6 +2025,32 @@
           "section": "articles",
           "title": "Unsealed in Year One",
           "path": "/articles/unsealed-in-year-one/"
+        },
+        {
+          "section": "wiki",
+          "title": "Dead Sea Scrolls",
+          "path": "/wiki/dead-sea-scrolls/"
+        },
+        {
+          "section": "wiki",
+          "title": "Masoretic Text",
+          "path": "/wiki/masoretic-text/"
+        },
+        {
+          "section": "wiki",
+          "title": "Septuagint",
+          "path": "/wiki/septuagint/"
+        }
+      ],
+      "cite_count": 4
+    },
+    {
+      "id": "deuteronomy-and-the-meaning-of-monotheism",
+      "cited_by": [
+        {
+          "section": "articles",
+          "title": "Monotheism Is the Wrong Question",
+          "path": "/articles/monotheism-is-the-wrong-question/"
         }
       ],
       "cite_count": 1
@@ -1966,6 +2096,11 @@
           "path": "/articles/the-translators-wager/"
         },
         {
+          "section": "articles",
+          "title": "Are the Watchers and the Nephilim the Same?",
+          "path": "/articles/watchers-and-the-nephilim/"
+        },
+        {
           "section": "wiki",
           "title": "Nephilim",
           "path": "/wiki/nephilim/"
@@ -1976,7 +2111,7 @@
           "path": "/wiki/watchers/"
         }
       ],
-      "cite_count": 5
+      "cite_count": 6
     },
     {
       "id": "did-god-have-a-wife",
@@ -2044,6 +2179,22 @@
       "cite_count": 1
     },
     {
+      "id": "divine-unicity-tawhid",
+      "cited_by": [
+        {
+          "section": "articles",
+          "title": "Monotheism Is the Wrong Question",
+          "path": "/articles/monotheism-is-the-wrong-question/"
+        },
+        {
+          "section": "wiki",
+          "title": "Monotheism",
+          "path": "/wiki/monotheism/"
+        }
+      ],
+      "cite_count": 2
+    },
+    {
       "id": "doctrine-and-covenants",
       "cited_by": [
         {
@@ -2072,6 +2223,17 @@
           "section": "articles",
           "title": "The Filing Cabinet of the Gods",
           "path": "/articles/the-filing-cabinet-of-the-gods/"
+        }
+      ],
+      "cite_count": 1
+    },
+    {
+      "id": "dynamics-of-monotheism-in-late-antiquity",
+      "cited_by": [
+        {
+          "section": "articles",
+          "title": "Monotheism Is the Wrong Question",
+          "path": "/articles/monotheism-is-the-wrong-question/"
         }
       ],
       "cite_count": 1
@@ -2116,6 +2278,17 @@
       "id": "early-islamic-qiblas-a-survey-of-mosques-built-between-1-ah-and-263-ah",
       "cited_by": [],
       "cite_count": 0
+    },
+    {
+      "id": "ecclesiastical-history-book-6-chapter-38",
+      "cited_by": [
+        {
+          "section": "articles",
+          "title": "Monotheism Is the Wrong Question",
+          "path": "/articles/monotheism-is-the-wrong-question/"
+        }
+      ],
+      "cite_count": 1
     },
     {
       "id": "stordalen-echoes-of-eden",
@@ -2166,8 +2339,19 @@
     },
     {
       "id": "krupp-echoes-ancient-skies",
-      "cited_by": [],
-      "cite_count": 0
+      "cited_by": [
+        {
+          "section": "wiki",
+          "title": "Jane Sellers",
+          "path": "/wiki/jane-sellers/"
+        },
+        {
+          "section": "wiki",
+          "title": "Orion Correlation",
+          "path": "/wiki/orion-correlation/"
+        }
+      ],
+      "cite_count": 2
     },
     {
       "id": "economy-and-society-part-i-ch-iii-and-part-ii-ch-xiv-xv-the-routinization-of-cha",
@@ -2254,6 +2438,16 @@
           "path": "/articles/the-flood-was-a-reset-not-a-punishment/"
         },
         {
+          "section": "articles",
+          "title": "Are the Watchers and the Nephilim the Same?",
+          "path": "/articles/watchers-and-the-nephilim/"
+        },
+        {
+          "section": "wiki",
+          "title": "Book of Enoch",
+          "path": "/wiki/book-of-enoch/"
+        },
+        {
           "section": "wiki",
           "title": "Nephilim",
           "path": "/wiki/nephilim/"
@@ -2264,11 +2458,16 @@
           "path": "/wiki/watchers/"
         }
       ],
-      "cite_count": 3
+      "cite_count": 5
     },
     {
       "id": "enuma-elish",
       "cited_by": [
+        {
+          "section": "articles",
+          "title": "Are the Anunnaki the Elohim?",
+          "path": "/articles/anunnaki-and-the-elohim/"
+        },
         {
           "section": "articles",
           "title": "The Archdeacon and the Dragon",
@@ -2291,6 +2490,11 @@
         },
         {
           "section": "wiki",
+          "title": "Anunnaki",
+          "path": "/wiki/anunnaki/"
+        },
+        {
+          "section": "wiki",
           "title": "Council of the Eternals",
           "path": "/wiki/council-of-eternals/"
         },
@@ -2300,11 +2504,16 @@
           "path": "/wiki/genesis/"
         }
       ],
-      "cite_count": 6
+      "cite_count": 8
     },
     {
       "id": "epic-of-gilgamesh",
       "cited_by": [
+        {
+          "section": "articles",
+          "title": "Are the Anunnaki the Elohim?",
+          "path": "/articles/anunnaki-and-the-elohim/"
+        },
         {
           "section": "articles",
           "title": "Made from the Ground to Bear the Labor",
@@ -2322,6 +2531,11 @@
         },
         {
           "section": "wiki",
+          "title": "Anunnaki",
+          "path": "/wiki/anunnaki/"
+        },
+        {
+          "section": "wiki",
           "title": "Genesis",
           "path": "/wiki/genesis/"
         },
@@ -2331,7 +2545,18 @@
           "path": "/wiki/reference-corpus-of-the-raelian-canon/"
         }
       ],
-      "cite_count": 5
+      "cite_count": 7
+    },
+    {
+      "id": "erich-von-d-niken",
+      "cited_by": [
+        {
+          "section": "wiki",
+          "title": "Erich von Däniken",
+          "path": "/wiki/erich-von-daniken/"
+        }
+      ],
+      "cite_count": 1
     },
     {
       "id": "escaping-from-eden",
@@ -2478,11 +2703,16 @@
       "cited_by": [
         {
           "section": "wiki",
+          "title": "Graham Hancock",
+          "path": "/wiki/graham-hancock/"
+        },
+        {
+          "section": "wiki",
           "title": "Great Flood",
           "path": "/wiki/great-flood/"
         }
       ],
-      "cite_count": 1
+      "cite_count": 2
     },
     {
       "id": "evolution-of-the-no-sphere-teilhard-studies-no-42-the-no-sphere-as-the-thinking-",
@@ -2498,6 +2728,11 @@
     {
       "id": "exodus",
       "cited_by": [
+        {
+          "section": "articles",
+          "title": "Monotheism Is the Wrong Question",
+          "path": "/articles/monotheism-is-the-wrong-question/"
+        },
         {
           "section": "articles",
           "title": "The Archdeacon and the Dragon",
@@ -2520,6 +2755,16 @@
         },
         {
           "section": "wiki",
+          "title": "Idolatry",
+          "path": "/wiki/idolatry/"
+        },
+        {
+          "section": "wiki",
+          "title": "Monotheism",
+          "path": "/wiki/monotheism/"
+        },
+        {
+          "section": "wiki",
           "title": "Moses",
           "path": "/wiki/moses/"
         },
@@ -2529,7 +2774,7 @@
           "path": "/wiki/yahweh/"
         }
       ],
-      "cite_count": 6
+      "cite_count": 9
     },
     {
       "id": "loeb-extraterrestrial",
@@ -2545,6 +2790,21 @@
     {
       "id": "extraterrestrials-took-me-to-their-planet",
       "cited_by": [
+        {
+          "section": "articles",
+          "title": "Are the Anunnaki the Elohim?",
+          "path": "/articles/anunnaki-and-the-elohim/"
+        },
+        {
+          "section": "articles",
+          "title": "As Foolish to Search for the Beginning",
+          "path": "/articles/as-foolish-to-search-for-the-beginning/"
+        },
+        {
+          "section": "articles",
+          "title": "Are Lucifer and Satan the Same?",
+          "path": "/articles/lucifer-and-satan/"
+        },
         {
           "section": "articles",
           "title": "Six Mornings, Six Years",
@@ -2627,6 +2887,11 @@
         },
         {
           "section": "wiki",
+          "title": "Anunnaki",
+          "path": "/wiki/anunnaki/"
+        },
+        {
+          "section": "wiki",
           "title": "Cosmic Chain",
           "path": "/wiki/cosmic-chain/"
         },
@@ -2706,7 +2971,7 @@
           "path": "/wiki/yahweh/"
         }
       ],
-      "cite_count": 32
+      "cite_count": 36
     },
     {
       "id": "ezekiel",
@@ -2784,6 +3049,16 @@
           "path": "/articles/unsealed-in-year-one/"
         },
         {
+          "section": "articles",
+          "title": "Are the Watchers and the Nephilim the Same?",
+          "path": "/articles/watchers-and-the-nephilim/"
+        },
+        {
+          "section": "wiki",
+          "title": "Book of Enoch",
+          "path": "/wiki/book-of-enoch/"
+        },
+        {
           "section": "wiki",
           "title": "Nephilim",
           "path": "/wiki/nephilim/"
@@ -2794,7 +3069,7 @@
           "path": "/wiki/satan/"
         }
       ],
-      "cite_count": 3
+      "cite_count": 5
     },
     {
       "id": "fda-approves-first-gene-therapies-to-treat-patients-with-sickle-cell-disease",
@@ -2854,8 +3129,33 @@
         },
         {
           "section": "wiki",
+          "title": "Göbekli Tepe",
+          "path": "/wiki/gobekli-tepe/"
+        },
+        {
+          "section": "wiki",
+          "title": "Graham Hancock",
+          "path": "/wiki/graham-hancock/"
+        },
+        {
+          "section": "wiki",
+          "title": "Great Sphinx",
+          "path": "/wiki/great-sphinx/"
+        },
+        {
+          "section": "wiki",
           "title": "Hamlet's Mill",
           "path": "/wiki/hamlets-mill/"
+        },
+        {
+          "section": "wiki",
+          "title": "Jane Sellers",
+          "path": "/wiki/jane-sellers/"
+        },
+        {
+          "section": "wiki",
+          "title": "Orion Correlation",
+          "path": "/wiki/orion-correlation/"
         },
         {
           "section": "wiki",
@@ -2863,7 +3163,7 @@
           "path": "/wiki/world-age/"
         }
       ],
-      "cite_count": 6
+      "cite_count": 11
     },
     {
       "id": "foundational-text-on-complex-topics",
@@ -2909,9 +3209,14 @@
           "section": "articles",
           "title": "The Flood Was a Reset, Not a Punishment",
           "path": "/articles/the-flood-was-a-reset-not-a-punishment/"
+        },
+        {
+          "section": "wiki",
+          "title": "Erich von Däniken",
+          "path": "/wiki/erich-von-daniken/"
         }
       ],
-      "cite_count": 3
+      "cite_count": 4
     },
     {
       "id": "freiland-ein-sociales-zukunftsbild-4th-ed-e-pierson-dresden-and-leipzig-four-pri",
@@ -2952,8 +3257,29 @@
       "cite_count": 0
     },
     {
+      "id": "from-rapprochement-to-rupture-the-prophet-s-religious-pragmatism-and-the-making-",
+      "cited_by": [
+        {
+          "section": "articles",
+          "title": "Monotheism Is the Wrong Question",
+          "path": "/articles/monotheism-is-the-wrong-question/"
+        }
+      ],
+      "cite_count": 1
+    },
+    {
       "id": "genesis",
       "cited_by": [
+        {
+          "section": "articles",
+          "title": "Are the Anunnaki the Elohim?",
+          "path": "/articles/anunnaki-and-the-elohim/"
+        },
+        {
+          "section": "articles",
+          "title": "Are Lucifer and Satan the Same?",
+          "path": "/articles/lucifer-and-satan/"
+        },
         {
           "section": "articles",
           "title": "Made from the Ground to Bear the Labor",
@@ -3005,6 +3331,11 @@
           "path": "/articles/unsealed-in-year-one/"
         },
         {
+          "section": "articles",
+          "title": "Are the Watchers and the Nephilim the Same?",
+          "path": "/articles/watchers-and-the-nephilim/"
+        },
+        {
           "section": "timeline",
           "title": "Age of Leo",
           "path": "/timeline/age-of-leo/"
@@ -3031,6 +3362,16 @@
         },
         {
           "section": "wiki",
+          "title": "Anunnaki",
+          "path": "/wiki/anunnaki/"
+        },
+        {
+          "section": "wiki",
+          "title": "Dead Sea Scrolls",
+          "path": "/wiki/dead-sea-scrolls/"
+        },
+        {
+          "section": "wiki",
           "title": "Elohim",
           "path": "/wiki/elohim/"
         },
@@ -3048,6 +3389,11 @@
           "section": "wiki",
           "title": "Hebrew Bible",
           "path": "/wiki/hebrew-bible/"
+        },
+        {
+          "section": "wiki",
+          "title": "Mazzaroth",
+          "path": "/wiki/mazzaroth/"
         },
         {
           "section": "wiki",
@@ -3070,7 +3416,7 @@
           "path": "/wiki/yahweh/"
         }
       ],
-      "cite_count": 23
+      "cite_count": 29
     },
     {
       "id": "genesis-1-11-a-continental-commentary",
@@ -3100,6 +3446,11 @@
           "section": "articles",
           "title": "The Filing Cabinet of the Gods",
           "path": "/articles/the-filing-cabinet-of-the-gods/"
+        },
+        {
+          "section": "articles",
+          "title": "Are the Watchers and the Nephilim the Same?",
+          "path": "/articles/watchers-and-the-nephilim/"
         },
         {
           "section": "wiki",
@@ -3142,7 +3493,7 @@
           "path": "/wiki/tree-of-life/"
         }
       ],
-      "cite_count": 11
+      "cite_count": 12
     },
     {
       "id": "genesis-1-15-word-biblical-commentary",
@@ -3285,12 +3636,12 @@
       "cite_count": 1
     },
     {
-      "id": "god-s-conflict-with-the-dragon-and-the-sea-echoes-of-a-canaanite-myth-in-the-old",
+      "id": "gods-from-outer-space-us-return-to-the-stars-uk-german-zur-ck-zu-den-sternen",
       "cited_by": [
         {
-          "section": "articles",
-          "title": "The Filing Cabinet of the Gods",
-          "path": "/articles/the-filing-cabinet-of-the-gods/"
+          "section": "wiki",
+          "title": "Erich von Däniken",
+          "path": "/wiki/erich-von-daniken/"
         }
       ],
       "cite_count": 1
@@ -3315,6 +3666,16 @@
       "id": "black-green-mesopotamia",
       "cited_by": [
         {
+          "section": "articles",
+          "title": "Are the Anunnaki the Elohim?",
+          "path": "/articles/anunnaki-and-the-elohim/"
+        },
+        {
+          "section": "wiki",
+          "title": "Anunnaki",
+          "path": "/wiki/anunnaki/"
+        },
+        {
           "section": "wiki",
           "title": "Serpent",
           "path": "/wiki/serpent/"
@@ -3325,7 +3686,18 @@
           "path": "/wiki/tree-of-life/"
         }
       ],
-      "cite_count": 2
+      "cite_count": 4
+    },
+    {
+      "id": "god-s-conflict-with-the-dragon-and-the-sea-echoes-of-a-canaanite-myth-in-the-old",
+      "cited_by": [
+        {
+          "section": "articles",
+          "title": "The Filing Cabinet of the Gods",
+          "path": "/articles/the-filing-cabinet-of-the-gods/"
+        }
+      ],
+      "cite_count": 1
     },
     {
       "id": "golden-age-wheel-of-heaven-wiki-the-operational-form-of-life-available-if-the-aq",
@@ -3418,6 +3790,17 @@
       "cite_count": 0
     },
     {
+      "id": "great-sphinx-of-giza-the-mainstream-egyptological-account-the-sphinx-as-part-of-",
+      "cited_by": [
+        {
+          "section": "wiki",
+          "title": "Great Sphinx",
+          "path": "/wiki/great-sphinx/"
+        }
+      ],
+      "cite_count": 1
+    },
+    {
       "id": "hannah-greek-roman-calendars",
       "cited_by": [
         {
@@ -3462,9 +3845,14 @@
           "section": "wiki",
           "title": "Antediluvian",
           "path": "/wiki/antediluvian/"
+        },
+        {
+          "section": "wiki",
+          "title": "Göbekli Tepe",
+          "path": "/wiki/gobekli-tepe/"
         }
       ],
-      "cite_count": 2
+      "cite_count": 3
     },
     {
       "id": "hadith-muhammad-s-legacy-in-the-medieval-and-modern-world-the-isn-d-sciences-ilm",
@@ -3543,6 +3931,26 @@
         },
         {
           "section": "wiki",
+          "title": "Carl Jung",
+          "path": "/wiki/carl-jung/"
+        },
+        {
+          "section": "wiki",
+          "title": "Göbekli Tepe",
+          "path": "/wiki/gobekli-tepe/"
+        },
+        {
+          "section": "wiki",
+          "title": "Graham Hancock",
+          "path": "/wiki/graham-hancock/"
+        },
+        {
+          "section": "wiki",
+          "title": "Great Sphinx",
+          "path": "/wiki/great-sphinx/"
+        },
+        {
+          "section": "wiki",
           "title": "Great Year",
           "path": "/wiki/great-year/"
         },
@@ -3550,6 +3958,11 @@
           "section": "wiki",
           "title": "Hamlet's Mill",
           "path": "/wiki/hamlets-mill/"
+        },
+        {
+          "section": "wiki",
+          "title": "Jane Sellers",
+          "path": "/wiki/jane-sellers/"
         },
         {
           "section": "wiki",
@@ -3563,8 +3976,28 @@
         },
         {
           "section": "wiki",
+          "title": "John Anthony West",
+          "path": "/wiki/john-anthony-west/"
+        },
+        {
+          "section": "wiki",
+          "title": "Orion Correlation",
+          "path": "/wiki/orion-correlation/"
+        },
+        {
+          "section": "wiki",
           "title": "Precession",
           "path": "/wiki/precession/"
+        },
+        {
+          "section": "wiki",
+          "title": "Sampo",
+          "path": "/wiki/sampo/"
+        },
+        {
+          "section": "wiki",
+          "title": "Tauroctony",
+          "path": "/wiki/tauroctony/"
         },
         {
           "section": "wiki",
@@ -3582,7 +4015,7 @@
           "path": "/wiki/zodiac/"
         }
       ],
-      "cite_count": 18
+      "cite_count": 27
     },
     {
       "id": "handbook-of-ufo-religions-brill-handbooks-on-contemporary-religion-20-ch-22-r-gi",
@@ -3612,9 +4045,14 @@
           "section": "articles",
           "title": "The Mill That Grinds the Ages",
           "path": "/articles/the-mill-that-grinds-the-ages/"
+        },
+        {
+          "section": "wiki",
+          "title": "Mazzaroth",
+          "path": "/wiki/mazzaroth/"
         }
       ],
-      "cite_count": 1
+      "cite_count": 2
     },
     {
       "id": "hekhalot-studien-tsaj-19-ch-5-shi-ur-qoma-rezensionen-und-urtext",
@@ -3654,6 +4092,11 @@
       "cited_by": [
         {
           "section": "articles",
+          "title": "Are the Anunnaki the Elohim?",
+          "path": "/articles/anunnaki-and-the-elohim/"
+        },
+        {
+          "section": "articles",
           "title": "Made from the Ground to Bear the Labor",
           "path": "/articles/made-from-the-ground-to-bear-the-labor/"
         },
@@ -3661,6 +4104,11 @@
           "section": "wiki",
           "title": "Adam and Eve",
           "path": "/wiki/adam-and-eve/"
+        },
+        {
+          "section": "wiki",
+          "title": "Anunnaki",
+          "path": "/wiki/anunnaki/"
         },
         {
           "section": "wiki",
@@ -3678,7 +4126,7 @@
           "path": "/wiki/tree-of-life/"
         }
       ],
-      "cite_count": 5
+      "cite_count": 7
     },
     {
       "id": "histories-v-52-54-the-parasang-reckoned-at-thirty-stades-5-5-6-km",
@@ -3687,6 +4135,17 @@
           "section": "articles",
           "title": "The Book Closest to the Truth",
           "path": "/articles/the-book-closest-to-the-truth/"
+        }
+      ],
+      "cite_count": 1
+    },
+    {
+      "id": "histories-book-2-the-fifth-century-bce-report-that-the-giza-monuments-were-of-gr",
+      "cited_by": [
+        {
+          "section": "wiki",
+          "title": "Great Sphinx",
+          "path": "/wiki/great-sphinx/"
         }
       ],
       "cite_count": 1
@@ -3781,6 +4240,11 @@
         },
         {
           "section": "wiki",
+          "title": "Masoretic Text",
+          "path": "/wiki/masoretic-text/"
+        },
+        {
+          "section": "wiki",
           "title": "Mauro Biglino",
           "path": "/wiki/mauro-biglino/"
         },
@@ -3790,7 +4254,7 @@
           "path": "/wiki/paul-wallis/"
         }
       ],
-      "cite_count": 6
+      "cite_count": 7
     },
     {
       "id": "elizondo-imminent",
@@ -3837,6 +4301,17 @@
       "cite_count": 1
     },
     {
+      "id": "infinity-wheel-of-heaven-wiki-the-three-dimensions-temporal-infinity-no-beginnin",
+      "cited_by": [
+        {
+          "section": "articles",
+          "title": "As Foolish to Search for the Beginning",
+          "path": "/articles/as-foolish-to-search-for-the-beginning/"
+        }
+      ],
+      "cite_count": 1
+    },
+    {
       "id": "infinity-wheel-of-heaven-wiki-the-three-mutually-reinforcing-dimensions-spatial-",
       "cited_by": [
         {
@@ -3861,6 +4336,16 @@
     {
       "id": "intelligent-design-message-from-the-designers",
       "cited_by": [
+        {
+          "section": "articles",
+          "title": "Are the Anunnaki the Elohim?",
+          "path": "/articles/anunnaki-and-the-elohim/"
+        },
+        {
+          "section": "articles",
+          "title": "Are Lucifer and Satan the Same?",
+          "path": "/articles/lucifer-and-satan/"
+        },
         {
           "section": "articles",
           "title": "Made from the Ground to Bear the Labor",
@@ -3937,6 +4422,11 @@
           "path": "/articles/unsealed-in-year-one/"
         },
         {
+          "section": "articles",
+          "title": "Are the Watchers and the Nephilim the Same?",
+          "path": "/articles/watchers-and-the-nephilim/"
+        },
+        {
           "section": "timeline",
           "title": "Age of Aquarius",
           "path": "/timeline/age-of-aquarius/"
@@ -3953,8 +4443,18 @@
         },
         {
           "section": "wiki",
+          "title": "Anunnaki",
+          "path": "/wiki/anunnaki/"
+        },
+        {
+          "section": "wiki",
           "title": "Eden",
           "path": "/wiki/eden/"
+        },
+        {
+          "section": "wiki",
+          "title": "Erich von Däniken",
+          "path": "/wiki/erich-von-daniken/"
         },
         {
           "section": "wiki",
@@ -4020,9 +4520,14 @@
           "section": "wiki",
           "title": "World Age",
           "path": "/wiki/world-age/"
+        },
+        {
+          "section": "wiki",
+          "title": "Zecharia Sitchin",
+          "path": "/wiki/zecharia-sitchin/"
         }
       ],
-      "cite_count": 32
+      "cite_count": 38
     },
     {
       "id": "intelligent-life-in-the-universe-the-sagan-shklovsky-survey-that-gave-sendy-his-",
@@ -4057,12 +4562,45 @@
       "cite_count": 1
     },
     {
+      "id": "introduction-to-the-tiberian-masorah",
+      "cited_by": [
+        {
+          "section": "wiki",
+          "title": "Masoretic Text",
+          "path": "/wiki/masoretic-text/"
+        }
+      ],
+      "cite_count": 1
+    },
+    {
+      "id": "invented-knowledge-false-history-fake-science-and-pseudo-religions",
+      "cited_by": [
+        {
+          "section": "wiki",
+          "title": "Zecharia Sitchin",
+          "path": "/wiki/zecharia-sitchin/"
+        }
+      ],
+      "cite_count": 1
+    },
+    {
       "id": "investigating-the-sirius-mystery",
       "cited_by": [
         {
           "section": "timeline",
           "title": "Preamble",
           "path": "/timeline/preamble/"
+        }
+      ],
+      "cite_count": 1
+    },
+    {
+      "id": "invitation-to-the-septuagint",
+      "cited_by": [
+        {
+          "section": "wiki",
+          "title": "Septuagint",
+          "path": "/wiki/septuagint/"
         }
       ],
       "cite_count": 1
@@ -4084,8 +4622,45 @@
       "cite_count": 1
     },
     {
+      "id": "is-god-a-space-alien-the-cosmology-of-the-ra-lian-church",
+      "cited_by": [
+        {
+          "section": "articles",
+          "title": "Monotheism Is the Wrong Question",
+          "path": "/articles/monotheism-is-the-wrong-question/"
+        }
+      ],
+      "cite_count": 1
+    },
+    {
+      "id": "is-isaiah-40-55-really-monotheistic",
+      "cited_by": [
+        {
+          "section": "articles",
+          "title": "Monotheism Is the Wrong Question",
+          "path": "/articles/monotheism-is-the-wrong-question/"
+        },
+        {
+          "section": "wiki",
+          "title": "Monotheism",
+          "path": "/wiki/monotheism/"
+        }
+      ],
+      "cite_count": 2
+    },
+    {
       "id": "isaiah",
       "cited_by": [
+        {
+          "section": "articles",
+          "title": "Are Lucifer and Satan the Same?",
+          "path": "/articles/lucifer-and-satan/"
+        },
+        {
+          "section": "articles",
+          "title": "Monotheism Is the Wrong Question",
+          "path": "/articles/monotheism-is-the-wrong-question/"
+        },
         {
           "section": "articles",
           "title": "The Archdeacon and the Dragon",
@@ -4123,8 +4698,18 @@
         },
         {
           "section": "wiki",
+          "title": "Idolatry",
+          "path": "/wiki/idolatry/"
+        },
+        {
+          "section": "wiki",
           "title": "Jesus",
           "path": "/wiki/jesus/"
+        },
+        {
+          "section": "wiki",
+          "title": "Monotheism",
+          "path": "/wiki/monotheism/"
         },
         {
           "section": "wiki",
@@ -4132,7 +4717,7 @@
           "path": "/wiki/yahweh/"
         }
       ],
-      "cite_count": 9
+      "cite_count": 13
     },
     {
       "id": "sachedina-islamic-messianism",
@@ -4188,6 +4773,11 @@
       "cited_by": [
         {
           "section": "articles",
+          "title": "Are Lucifer and Satan the Same?",
+          "path": "/articles/lucifer-and-satan/"
+        },
+        {
+          "section": "articles",
           "title": "The Man Who Bet the Bible on the Moon",
           "path": "/articles/the-man-who-bet-the-bible-on-the-moon/"
         },
@@ -4195,9 +4785,14 @@
           "section": "articles",
           "title": "The Mill That Grinds the Ages",
           "path": "/articles/the-mill-that-grinds-the-ages/"
+        },
+        {
+          "section": "wiki",
+          "title": "Mazzaroth",
+          "path": "/wiki/mazzaroth/"
         }
       ],
-      "cite_count": 2
+      "cite_count": 4
     },
     {
       "id": "pope-job",
@@ -4341,9 +4936,14 @@
           "section": "wiki",
           "title": "Hamlet's Mill",
           "path": "/wiki/hamlets-mill/"
+        },
+        {
+          "section": "wiki",
+          "title": "Sampo",
+          "path": "/wiki/sampo/"
         }
       ],
-      "cite_count": 2
+      "cite_count": 3
     },
     {
       "id": "katha-upanishad-1-3-14-the-razor-s-edge-as-carried-into-english-by-w-somerset-ma",
@@ -4414,37 +5014,6 @@
       "id": "kosmographia",
       "cited_by": [],
       "cite_count": 0
-    },
-    {
-      "id": "sendy-ere-du-verseau",
-      "cited_by": [
-        {
-          "section": "articles",
-          "title": "The Man Who Bet the Bible on the Moon",
-          "path": "/articles/the-man-who-bet-the-bible-on-the-moon/"
-        },
-        {
-          "section": "articles",
-          "title": "The Mill That Grinds the Ages",
-          "path": "/articles/the-mill-that-grinds-the-ages/"
-        },
-        {
-          "section": "wiki",
-          "title": "Hamlet's Mill",
-          "path": "/wiki/hamlets-mill/"
-        },
-        {
-          "section": "wiki",
-          "title": "Hebrew Bible",
-          "path": "/wiki/hebrew-bible/"
-        },
-        {
-          "section": "wiki",
-          "title": "Jean Sendy",
-          "path": "/wiki/jean-sendy/"
-        }
-      ],
-      "cite_count": 5
     },
     {
       "id": "la-bibbia-non-l-ha-mai-detto-the-collaboration-with-a-philosopher-of-law-tselem-",
@@ -4653,6 +5222,17 @@
       "cite_count": 7
     },
     {
+      "id": "late-antique-allah-ancestral-arabian-religion-and-the-monotheistic-zeitgeist",
+      "cited_by": [
+        {
+          "section": "articles",
+          "title": "Monotheism Is the Wrong Question",
+          "path": "/articles/monotheism-is-the-wrong-question/"
+        }
+      ],
+      "cite_count": 1
+    },
+    {
       "id": "lateran-treaty",
       "cited_by": [
         {
@@ -4743,6 +5323,17 @@
           "section": "timeline",
           "title": "Preamble",
           "path": "/timeline/preamble/"
+        }
+      ],
+      "cite_count": 1
+    },
+    {
+      "id": "le-temple-de-l-homme-the-temple-of-man-schwaller-de-lubicz-s-study-of-the-luxor-",
+      "cited_by": [
+        {
+          "section": "wiki",
+          "title": "John Anthony West",
+          "path": "/wiki/john-anthony-west/"
         }
       ],
       "cite_count": 1
@@ -4947,6 +5538,11 @@
       "cited_by": [
         {
           "section": "articles",
+          "title": "Monotheism Is the Wrong Question",
+          "path": "/articles/monotheism-is-the-wrong-question/"
+        },
+        {
+          "section": "articles",
           "title": "The First Mosques Faced Petra, Not Mecca",
           "path": "/articles/the-first-mosques-faced-petra-not-mecca/"
         },
@@ -4956,12 +5552,23 @@
           "path": "/articles/the-forty-chairs/"
         }
       ],
-      "cite_count": 2
+      "cite_count": 3
     },
     {
       "id": "let-the-stones-speak-archaeology-challenges-islam",
       "cited_by": [],
       "cite_count": 0
+    },
+    {
+      "id": "letter-of-aristeas",
+      "cited_by": [
+        {
+          "section": "wiki",
+          "title": "Septuagint",
+          "path": "/wiki/septuagint/"
+        }
+      ],
+      "cite_count": 1
     },
     {
       "id": "let-s-welcome-the-extra-terrestrials-who-created-the-creator-of-the-creators-the",
@@ -4970,6 +5577,17 @@
           "section": "articles",
           "title": "The Infinite in Both Directions",
           "path": "/articles/the-infinite-in-both-directions/"
+        }
+      ],
+      "cite_count": 1
+    },
+    {
+      "id": "let-s-welcome-the-extra-terrestrials-who-created-the-creator-of-the-creators-it-",
+      "cited_by": [
+        {
+          "section": "articles",
+          "title": "As Foolish to Search for the Beginning",
+          "path": "/articles/as-foolish-to-search-for-the-beginning/"
         }
       ],
       "cite_count": 1
@@ -5160,6 +5778,11 @@
       "id": "russell-lucifer-middle-ages",
       "cited_by": [
         {
+          "section": "articles",
+          "title": "Are Lucifer and Satan the Same?",
+          "path": "/articles/lucifer-and-satan/"
+        },
+        {
           "section": "wiki",
           "title": "Lucifer",
           "path": "/wiki/lucifer/"
@@ -5170,7 +5793,38 @@
           "path": "/wiki/satan/"
         }
       ],
-      "cite_count": 2
+      "cite_count": 3
+    },
+    {
+      "id": "sendy-ere-du-verseau",
+      "cited_by": [
+        {
+          "section": "articles",
+          "title": "The Man Who Bet the Bible on the Moon",
+          "path": "/articles/the-man-who-bet-the-bible-on-the-moon/"
+        },
+        {
+          "section": "articles",
+          "title": "The Mill That Grinds the Ages",
+          "path": "/articles/the-mill-that-grinds-the-ages/"
+        },
+        {
+          "section": "wiki",
+          "title": "Hamlet's Mill",
+          "path": "/wiki/hamlets-mill/"
+        },
+        {
+          "section": "wiki",
+          "title": "Hebrew Bible",
+          "path": "/wiki/hebrew-bible/"
+        },
+        {
+          "section": "wiki",
+          "title": "Jean Sendy",
+          "path": "/wiki/jean-sendy/"
+        }
+      ],
+      "cite_count": 5
     },
     {
       "id": "magicians-of-the-gods",
@@ -5192,11 +5846,26 @@
         },
         {
           "section": "wiki",
+          "title": "Göbekli Tepe",
+          "path": "/wiki/gobekli-tepe/"
+        },
+        {
+          "section": "wiki",
+          "title": "Graham Hancock",
+          "path": "/wiki/graham-hancock/"
+        },
+        {
+          "section": "wiki",
+          "title": "Great Sphinx",
+          "path": "/wiki/great-sphinx/"
+        },
+        {
+          "section": "wiki",
           "title": "Hamlet's Mill",
           "path": "/wiki/hamlets-mill/"
         }
       ],
-      "cite_count": 4
+      "cite_count": 7
     },
     {
       "id": "mahabharata",
@@ -5232,6 +5901,17 @@
           "section": "wiki",
           "title": "Cosmic Chain",
           "path": "/wiki/cosmic-chain/"
+        }
+      ],
+      "cite_count": 1
+    },
+    {
+      "id": "mainstream-egyptological-rejection-of-the-symbolist-school-and-the-sphinx-water-",
+      "cited_by": [
+        {
+          "section": "wiki",
+          "title": "John Anthony West",
+          "path": "/wiki/john-anthony-west/"
         }
       ],
       "cite_count": 1
@@ -5370,6 +6050,11 @@
         },
         {
           "section": "wiki",
+          "title": "Mazzaroth",
+          "path": "/wiki/mazzaroth/"
+        },
+        {
+          "section": "wiki",
           "title": "Precession",
           "path": "/wiki/precession/"
         },
@@ -5379,7 +6064,7 @@
           "path": "/wiki/zodiac/"
         }
       ],
-      "cite_count": 3
+      "cite_count": 4
     },
     {
       "id": "mecca-and-macoraba",
@@ -5539,6 +6224,33 @@
       "cite_count": 0
     },
     {
+      "id": "mom-z14-a-luminous-galaxy-at-z-14-4-280-myr-after-the-big-bang-arxiv-2505-11263-",
+      "cited_by": [
+        {
+          "section": "articles",
+          "title": "As Foolish to Search for the Beginning",
+          "path": "/articles/as-foolish-to-search-for-the-beginning/"
+        }
+      ],
+      "cite_count": 1
+    },
+    {
+      "id": "monotheism",
+      "cited_by": [
+        {
+          "section": "articles",
+          "title": "Monotheism Is the Wrong Question",
+          "path": "/articles/monotheism-is-the-wrong-question/"
+        },
+        {
+          "section": "wiki",
+          "title": "Monotheism",
+          "path": "/wiki/monotheism/"
+        }
+      ],
+      "cite_count": 2
+    },
+    {
       "id": "more-than-a-vulture-a-response-to-sweatman-and-tsikritsis-mediterranean-archaeol",
       "cited_by": [
         {
@@ -5548,11 +6260,16 @@
         },
         {
           "section": "wiki",
+          "title": "Göbekli Tepe",
+          "path": "/wiki/gobekli-tepe/"
+        },
+        {
+          "section": "wiki",
           "title": "Hamlet's Mill",
           "path": "/wiki/hamlets-mill/"
         }
       ],
-      "cite_count": 2
+      "cite_count": 3
     },
     {
       "id": "mormonism-the-story-of-a-new-religious-tradition",
@@ -5608,6 +6325,11 @@
       "cited_by": [
         {
           "section": "articles",
+          "title": "Monotheism Is the Wrong Question",
+          "path": "/articles/monotheism-is-the-wrong-question/"
+        },
+        {
+          "section": "articles",
           "title": "The First Mosques Faced Petra, Not Mecca",
           "path": "/articles/the-first-mosques-faced-petra-not-mecca/"
         },
@@ -5617,7 +6339,7 @@
           "path": "/articles/the-forty-chairs/"
         }
       ],
-      "cite_count": 2
+      "cite_count": 3
     },
     {
       "id": "muhammad-and-the-believers-at-the-origins-of-islam",
@@ -5656,6 +6378,11 @@
       "cited_by": [
         {
           "section": "articles",
+          "title": "Are the Anunnaki the Elohim?",
+          "path": "/articles/anunnaki-and-the-elohim/"
+        },
+        {
+          "section": "articles",
           "title": "Made from the Ground to Bear the Labor",
           "path": "/articles/made-from-the-ground-to-bear-the-labor/"
         },
@@ -5663,6 +6390,11 @@
           "section": "articles",
           "title": "The Filing Cabinet of the Gods",
           "path": "/articles/the-filing-cabinet-of-the-gods/"
+        },
+        {
+          "section": "wiki",
+          "title": "Anunnaki",
+          "path": "/wiki/anunnaki/"
         },
         {
           "section": "wiki",
@@ -5675,7 +6407,7 @@
           "path": "/wiki/great-flood/"
         }
       ],
-      "cite_count": 4
+      "cite_count": 6
     },
     {
       "id": "natural-history-5-73-the-essenes-west-of-the-dead-sea-without-women-having-for-c",
@@ -5733,6 +6465,17 @@
           "section": "wiki",
           "title": "Cyberparadism",
           "path": "/wiki/cyberparadism/"
+        }
+      ],
+      "cite_count": 1
+    },
+    {
+      "id": "new-religious-movements-and-science-rael-s-progressive-patronizing-parasitism",
+      "cited_by": [
+        {
+          "section": "articles",
+          "title": "Monotheism Is the Wrong Question",
+          "path": "/articles/monotheism-is-the-wrong-question/"
         }
       ],
       "cite_count": 1
@@ -5917,6 +6660,17 @@
       "cite_count": 1
     },
     {
+      "id": "on-the-cave-of-the-nymphs-de-antro-nympharum-the-neoplatonist-report-that-the-mi",
+      "cited_by": [
+        {
+          "section": "wiki",
+          "title": "Tauroctony",
+          "path": "/wiki/tauroctony/"
+        }
+      ],
+      "cite_count": 1
+    },
+    {
       "id": "bruno-infinite-universe",
       "cited_by": [
         {
@@ -5933,26 +6687,20 @@
       "cite_count": 2
     },
     {
-      "id": "on-the-jerusalem-origin-of-the-dead-sea-scrolls-the-fullest-short-statement-of-t",
+      "id": "golb-jerusalem-origin-dead-sea-scrolls",
       "cited_by": [
         {
           "section": "articles",
           "title": "The Scrolls That Woke in Year One",
           "path": "/articles/the-scrolls-that-woke-in-year-one/"
-        }
-      ],
-      "cite_count": 1
-    },
-    {
-      "id": "on-the-jerusalem-origin-of-the-dead-sea-scrolls-the-principal-statement-of-the-n",
-      "cited_by": [
+        },
         {
           "section": "articles",
           "title": "Unsealed in Year One",
           "path": "/articles/unsealed-in-year-one/"
         }
       ],
-      "cite_count": 1
+      "cite_count": 2
     },
     {
       "id": "on-the-mystical-shape-of-the-godhead-basic-concepts-in-the-kabbalah",
@@ -5995,6 +6743,11 @@
           "path": "/articles/the-filing-cabinet-of-the-gods/"
         },
         {
+          "section": "articles",
+          "title": "Are the Watchers and the Nephilim the Same?",
+          "path": "/articles/watchers-and-the-nephilim/"
+        },
+        {
           "section": "wiki",
           "title": "Sumerian King List",
           "path": "/wiki/sumerian-king-list/"
@@ -6005,7 +6758,23 @@
           "path": "/wiki/watchers/"
         }
       ],
-      "cite_count": 3
+      "cite_count": 4
+    },
+    {
+      "id": "one-god-pagan-monotheism-in-the-roman-empire",
+      "cited_by": [
+        {
+          "section": "articles",
+          "title": "Monotheism Is the Wrong Question",
+          "path": "/articles/monotheism-is-the-wrong-question/"
+        },
+        {
+          "section": "wiki",
+          "title": "Monotheism",
+          "path": "/wiki/monotheism/"
+        }
+      ],
+      "cite_count": 2
     },
     {
       "id": "oomoto-shin-yu-wheel-of-heaven-translation-1-the-1892-opening-oracle-produced-in",
@@ -6143,12 +6912,17 @@
       "id": "paradise-lost",
       "cited_by": [
         {
+          "section": "articles",
+          "title": "Are Lucifer and Satan the Same?",
+          "path": "/articles/lucifer-and-satan/"
+        },
+        {
           "section": "wiki",
           "title": "Lucifer",
           "path": "/wiki/lucifer/"
         }
       ],
-      "cite_count": 1
+      "cite_count": 2
     },
     {
       "id": "parzival",
@@ -6192,6 +6966,22 @@
         }
       ],
       "cite_count": 1
+    },
+    {
+      "id": "philo-herod-paul-and-the-many-gods-of-ancient-jewish-monotheism",
+      "cited_by": [
+        {
+          "section": "articles",
+          "title": "Monotheism Is the Wrong Question",
+          "path": "/articles/monotheism-is-the-wrong-question/"
+        },
+        {
+          "section": "wiki",
+          "title": "Monotheism",
+          "path": "/wiki/monotheism/"
+        }
+      ],
+      "cite_count": 2
     },
     {
       "id": "pirkei-avot-1-1-moses-received-kibbel-the-torah-at-sinai-the-chain-of-tradition-",
@@ -6336,12 +7126,17 @@
       "id": "prometheus-bound",
       "cited_by": [
         {
+          "section": "articles",
+          "title": "Are Lucifer and Satan the Same?",
+          "path": "/articles/lucifer-and-satan/"
+        },
+        {
           "section": "wiki",
           "title": "Lucifer",
           "path": "/wiki/lucifer/"
         }
       ],
-      "cite_count": 1
+      "cite_count": 2
     },
     {
       "id": "prometheus-unbound",
@@ -6381,6 +7176,11 @@
       "cited_by": [
         {
           "section": "articles",
+          "title": "Monotheism Is the Wrong Question",
+          "path": "/articles/monotheism-is-the-wrong-question/"
+        },
+        {
+          "section": "articles",
           "title": "The Archdeacon and the Dragon",
           "path": "/articles/the-archdeacon-and-the-dragon/"
         },
@@ -6403,9 +7203,19 @@
           "section": "articles",
           "title": "Unsealed in Year One",
           "path": "/articles/unsealed-in-year-one/"
+        },
+        {
+          "section": "wiki",
+          "title": "Dead Sea Scrolls",
+          "path": "/wiki/dead-sea-scrolls/"
+        },
+        {
+          "section": "wiki",
+          "title": "Monotheism",
+          "path": "/wiki/monotheism/"
         }
       ],
-      "cite_count": 5
+      "cite_count": 8
     },
     {
       "id": "pseudodoxia-epidemica",
@@ -6419,12 +7229,45 @@
       "cite_count": 1
     },
     {
+      "id": "pyramid-texts-the-old-kingdom-spells-identifying-the-dead-king-with-osiris-and-h",
+      "cited_by": [
+        {
+          "section": "wiki",
+          "title": "Orion Correlation",
+          "path": "/wiki/orion-correlation/"
+        }
+      ],
+      "cite_count": 1
+    },
+    {
       "id": "carrasco-quetzalcoatl",
       "cited_by": [
         {
           "section": "wiki",
           "title": "Embassy",
           "path": "/wiki/embassy/"
+        }
+      ],
+      "cite_count": 1
+    },
+    {
+      "id": "qumran-cave-11-ii-11q2-18-11q20-31-discoveries-in-the-judaean-desert-xxiii-the-c",
+      "cited_by": [
+        {
+          "section": "wiki",
+          "title": "Dead Sea Scrolls",
+          "path": "/wiki/dead-sea-scrolls/"
+        }
+      ],
+      "cite_count": 1
+    },
+    {
+      "id": "qumran-cave-4-ix-deuteronomy-joshua-judges-kings-discoveries-in-the-judaean-dese",
+      "cited_by": [
+        {
+          "section": "wiki",
+          "title": "Dead Sea Scrolls",
+          "path": "/wiki/dead-sea-scrolls/"
         }
       ],
       "cite_count": 1
@@ -6543,9 +7386,19 @@
           "section": "timeline",
           "title": "Age of Taurus",
           "path": "/timeline/age-of-taurus/"
+        },
+        {
+          "section": "wiki",
+          "title": "Great Sphinx",
+          "path": "/wiki/great-sphinx/"
+        },
+        {
+          "section": "wiki",
+          "title": "John Anthony West",
+          "path": "/wiki/john-anthony-west/"
         }
       ],
-      "cite_count": 1
+      "cite_count": 3
     },
     {
       "id": "religion-explained-the-evolutionary-origins-of-religious-thought-minimally-count",
@@ -6758,19 +7611,13 @@
       "cite_count": 1
     },
     {
-      "id": "awn-satan-iblis",
-      "cited_by": [
-        {
-          "section": "wiki",
-          "title": "Satan",
-          "path": "/wiki/satan/"
-        }
-      ],
-      "cite_count": 1
-    },
-    {
       "id": "kelly-satan-biography",
       "cited_by": [
+        {
+          "section": "articles",
+          "title": "Are Lucifer and Satan the Same?",
+          "path": "/articles/lucifer-and-satan/"
+        },
         {
           "section": "articles",
           "title": "The Archdeacon and the Dragon",
@@ -6792,7 +7639,7 @@
           "path": "/wiki/serpent/"
         }
       ],
-      "cite_count": 4
+      "cite_count": 5
     },
     {
       "id": "satan-a-biography",
@@ -6801,6 +7648,17 @@
     },
     {
       "id": "russell-satan-early-christian",
+      "cited_by": [
+        {
+          "section": "wiki",
+          "title": "Satan",
+          "path": "/wiki/satan/"
+        }
+      ],
+      "cite_count": 1
+    },
+    {
+      "id": "awn-satan-iblis",
       "cited_by": [
         {
           "section": "wiki",
@@ -6949,11 +7807,27 @@
         },
         {
           "section": "wiki",
+          "title": "Mazzaroth",
+          "path": "/wiki/mazzaroth/"
+        },
+        {
+          "section": "wiki",
           "title": "Tree of Life",
           "path": "/wiki/tree-of-life/"
         }
       ],
-      "cite_count": 3
+      "cite_count": 4
+    },
+    {
+      "id": "septuaginta-editio-altera-the-standard-critical-edition",
+      "cited_by": [
+        {
+          "section": "wiki",
+          "title": "Septuagint",
+          "path": "/wiki/septuagint/"
+        }
+      ],
+      "cite_count": 1
     },
     {
       "id": "serpent-in-the-sky",
@@ -6973,9 +7847,14 @@
           "section": "articles",
           "title": "The Mill That Grinds the Ages",
           "path": "/articles/the-mill-that-grinds-the-ages/"
+        },
+        {
+          "section": "wiki",
+          "title": "John Anthony West",
+          "path": "/wiki/john-anthony-west/"
         }
       ],
-      "cite_count": 1
+      "cite_count": 2
     },
     {
       "id": "shan-hai-jing",
@@ -7038,6 +7917,17 @@
           "section": "articles",
           "title": "The Filing Cabinet of the Gods",
           "path": "/articles/the-filing-cabinet-of-the-gods/"
+        }
+      ],
+      "cite_count": 1
+    },
+    {
+      "id": "society-for-american-archaeology-open-letter-to-netflix-regarding-ancient-apocal",
+      "cited_by": [
+        {
+          "section": "wiki",
+          "title": "Graham Hancock",
+          "path": "/wiki/graham-hancock/"
         }
       ],
       "cite_count": 1
@@ -7128,6 +8018,16 @@
       "id": "halloran-sumerian-lexicon",
       "cited_by": [
         {
+          "section": "articles",
+          "title": "Are the Anunnaki the Elohim?",
+          "path": "/articles/anunnaki-and-the-elohim/"
+        },
+        {
+          "section": "wiki",
+          "title": "Anunnaki",
+          "path": "/wiki/anunnaki/"
+        },
+        {
           "section": "wiki",
           "title": "Eden",
           "path": "/wiki/eden/"
@@ -7138,7 +8038,7 @@
           "path": "/wiki/sumerian-king-list/"
         }
       ],
-      "cite_count": 2
+      "cite_count": 4
     },
     {
       "id": "summa-theologiae",
@@ -7158,6 +8058,17 @@
           "section": "wiki",
           "title": "Cyberparadism",
           "path": "/wiki/cyberparadism/"
+        }
+      ],
+      "cite_count": 1
+    },
+    {
+      "id": "synchronicity-an-acausal-connecting-principle-cw-8-the-meaningful-coincidence-co",
+      "cited_by": [
+        {
+          "section": "wiki",
+          "title": "Carl Jung",
+          "path": "/wiki/carl-jung/"
         }
       ],
       "cite_count": 1
@@ -7225,16 +8136,41 @@
       "id": "tov-textual-criticism",
       "cited_by": [
         {
+          "section": "articles",
+          "title": "Monotheism Is the Wrong Question",
+          "path": "/articles/monotheism-is-the-wrong-question/"
+        },
+        {
+          "section": "wiki",
+          "title": "Dead Sea Scrolls",
+          "path": "/wiki/dead-sea-scrolls/"
+        },
+        {
           "section": "wiki",
           "title": "Hebrew Bible",
           "path": "/wiki/hebrew-bible/"
+        },
+        {
+          "section": "wiki",
+          "title": "Masoretic Text",
+          "path": "/wiki/masoretic-text/"
+        },
+        {
+          "section": "wiki",
+          "title": "Septuagint",
+          "path": "/wiki/septuagint/"
         }
       ],
-      "cite_count": 1
+      "cite_count": 5
     },
     {
       "id": "sitchin-12th-planet",
       "cited_by": [
+        {
+          "section": "articles",
+          "title": "Are the Anunnaki the Elohim?",
+          "path": "/articles/anunnaki-and-the-elohim/"
+        },
         {
           "section": "articles",
           "title": "The Archdeacon and the Dragon",
@@ -7249,6 +8185,11 @@
           "section": "articles",
           "title": "The Translator's Wager",
           "path": "/articles/the-translators-wager/"
+        },
+        {
+          "section": "wiki",
+          "title": "Anunnaki",
+          "path": "/wiki/anunnaki/"
         },
         {
           "section": "wiki",
@@ -7269,9 +8210,14 @@
           "section": "wiki",
           "title": "Sumerian King List",
           "path": "/wiki/sumerian-king-list/"
+        },
+        {
+          "section": "wiki",
+          "title": "Zecharia Sitchin",
+          "path": "/wiki/zecharia-sitchin/"
         }
       ],
-      "cite_count": 7
+      "cite_count": 10
     },
     {
       "id": "the-12th-planet",
@@ -7290,9 +8236,25 @@
           "section": "wiki",
           "title": "Wheel of Heaven",
           "path": "/wiki/wheel-of-heaven/"
+        },
+        {
+          "section": "wiki",
+          "title": "Zecharia Sitchin",
+          "path": "/wiki/zecharia-sitchin/"
         }
       ],
-      "cite_count": 3
+      "cite_count": 4
+    },
+    {
+      "id": "the-acts-of-the-apostles",
+      "cited_by": [
+        {
+          "section": "articles",
+          "title": "Monotheism Is the Wrong Question",
+          "path": "/articles/monotheism-is-the-wrong-question/"
+        }
+      ],
+      "cite_count": 1
     },
     {
       "id": "alphabet-of-ben-sira",
@@ -7551,6 +8513,28 @@
       "cite_count": 1
     },
     {
+      "id": "the-bodies-of-god-and-the-world-of-ancient-israel",
+      "cited_by": [
+        {
+          "section": "articles",
+          "title": "Monotheism Is the Wrong Question",
+          "path": "/articles/monotheism-is-the-wrong-question/"
+        }
+      ],
+      "cite_count": 1
+    },
+    {
+      "id": "the-book-of-enoch",
+      "cited_by": [
+        {
+          "section": "wiki",
+          "title": "Book of Enoch",
+          "path": "/wiki/book-of-enoch/"
+        }
+      ],
+      "cite_count": 1
+    },
+    {
       "id": "habel-job",
       "cited_by": [
         {
@@ -7588,8 +8572,28 @@
       "cited_by": [
         {
           "section": "articles",
+          "title": "Are the Anunnaki the Elohim?",
+          "path": "/articles/anunnaki-and-the-elohim/"
+        },
+        {
+          "section": "articles",
+          "title": "As Foolish to Search for the Beginning",
+          "path": "/articles/as-foolish-to-search-for-the-beginning/"
+        },
+        {
+          "section": "articles",
+          "title": "Are Lucifer and Satan the Same?",
+          "path": "/articles/lucifer-and-satan/"
+        },
+        {
+          "section": "articles",
           "title": "Made from the Ground to Bear the Labor",
           "path": "/articles/made-from-the-ground-to-bear-the-labor/"
+        },
+        {
+          "section": "articles",
+          "title": "Monotheism Is the Wrong Question",
+          "path": "/articles/monotheism-is-the-wrong-question/"
         },
         {
           "section": "articles",
@@ -7682,6 +8686,11 @@
           "path": "/articles/unsealed-in-year-one/"
         },
         {
+          "section": "articles",
+          "title": "Are the Watchers and the Nephilim the Same?",
+          "path": "/articles/watchers-and-the-nephilim/"
+        },
+        {
           "section": "wiki",
           "title": "Adam and Eve",
           "path": "/wiki/adam-and-eve/"
@@ -7703,6 +8712,21 @@
         },
         {
           "section": "wiki",
+          "title": "Anunnaki",
+          "path": "/wiki/anunnaki/"
+        },
+        {
+          "section": "wiki",
+          "title": "Book of Enoch",
+          "path": "/wiki/book-of-enoch/"
+        },
+        {
+          "section": "wiki",
+          "title": "Carl Jung",
+          "path": "/wiki/carl-jung/"
+        },
+        {
+          "section": "wiki",
           "title": "Cosmic Chain",
           "path": "/wiki/cosmic-chain/"
         },
@@ -7715,6 +8739,11 @@
           "section": "wiki",
           "title": "Crop Circles",
           "path": "/wiki/crop-circles/"
+        },
+        {
+          "section": "wiki",
+          "title": "Dead Sea Scrolls",
+          "path": "/wiki/dead-sea-scrolls/"
         },
         {
           "section": "wiki",
@@ -7743,13 +8772,28 @@
         },
         {
           "section": "wiki",
+          "title": "Göbekli Tepe",
+          "path": "/wiki/gobekli-tepe/"
+        },
+        {
+          "section": "wiki",
           "title": "Golden Age",
           "path": "/wiki/golden-age/"
         },
         {
           "section": "wiki",
+          "title": "Graham Hancock",
+          "path": "/wiki/graham-hancock/"
+        },
+        {
+          "section": "wiki",
           "title": "Great Flood",
           "path": "/wiki/great-flood/"
+        },
+        {
+          "section": "wiki",
+          "title": "Great Sphinx",
+          "path": "/wiki/great-sphinx/"
         },
         {
           "section": "wiki",
@@ -7768,6 +8812,16 @@
         },
         {
           "section": "wiki",
+          "title": "Idolatry",
+          "path": "/wiki/idolatry/"
+        },
+        {
+          "section": "wiki",
+          "title": "Jane Sellers",
+          "path": "/wiki/jane-sellers/"
+        },
+        {
+          "section": "wiki",
           "title": "Jean Sendy",
           "path": "/wiki/jean-sendy/"
         },
@@ -7778,13 +8832,28 @@
         },
         {
           "section": "wiki",
+          "title": "John Anthony West",
+          "path": "/wiki/john-anthony-west/"
+        },
+        {
+          "section": "wiki",
           "title": "Lucifer",
           "path": "/wiki/lucifer/"
         },
         {
           "section": "wiki",
+          "title": "Mazzaroth",
+          "path": "/wiki/mazzaroth/"
+        },
+        {
+          "section": "wiki",
           "title": "Message from the Designers",
           "path": "/wiki/message-from-the-designers/"
+        },
+        {
+          "section": "wiki",
+          "title": "Monotheism",
+          "path": "/wiki/monotheism/"
         },
         {
           "section": "wiki",
@@ -7795,6 +8864,11 @@
           "section": "wiki",
           "title": "Nephilim",
           "path": "/wiki/nephilim/"
+        },
+        {
+          "section": "wiki",
+          "title": "Orion Correlation",
+          "path": "/wiki/orion-correlation/"
         },
         {
           "section": "wiki",
@@ -7818,8 +8892,18 @@
         },
         {
           "section": "wiki",
+          "title": "Sampo",
+          "path": "/wiki/sampo/"
+        },
+        {
+          "section": "wiki",
           "title": "Satan",
           "path": "/wiki/satan/"
+        },
+        {
+          "section": "wiki",
+          "title": "Septuagint",
+          "path": "/wiki/septuagint/"
         },
         {
           "section": "wiki",
@@ -7830,6 +8914,11 @@
           "section": "wiki",
           "title": "Sumerian King List",
           "path": "/wiki/sumerian-king-list/"
+        },
+        {
+          "section": "wiki",
+          "title": "Tauroctony",
+          "path": "/wiki/tauroctony/"
         },
         {
           "section": "wiki",
@@ -7855,9 +8944,14 @@
           "section": "wiki",
           "title": "Yahweh",
           "path": "/wiki/yahweh/"
+        },
+        {
+          "section": "wiki",
+          "title": "Zecharia Sitchin",
+          "path": "/wiki/zecharia-sitchin/"
         }
       ],
-      "cite_count": 54
+      "cite_count": 76
     },
     {
       "id": "the-books-of-enoch-aramaic-fragments-of-qumr-n-cave-4-the-edition-that-proved-1-",
@@ -7869,11 +8963,16 @@
         },
         {
           "section": "wiki",
+          "title": "Book of Enoch",
+          "path": "/wiki/book-of-enoch/"
+        },
+        {
+          "section": "wiki",
           "title": "Watchers",
           "path": "/wiki/watchers/"
         }
       ],
-      "cite_count": 2
+      "cite_count": 3
     },
     {
       "id": "the-canon-of-the-new-testament-its-origin-development-and-significance-marcion-t",
@@ -8028,6 +9127,11 @@
         },
         {
           "section": "wiki",
+          "title": "Dead Sea Scrolls",
+          "path": "/wiki/dead-sea-scrolls/"
+        },
+        {
+          "section": "wiki",
           "title": "Hebrew Bible",
           "path": "/wiki/hebrew-bible/"
         },
@@ -8037,7 +9141,7 @@
           "path": "/wiki/satan/"
         }
       ],
-      "cite_count": 4
+      "cite_count": 5
     },
     {
       "id": "the-complete-pyramids",
@@ -8084,6 +9188,17 @@
       "cite_count": 1
     },
     {
+      "id": "the-cyclic-ekpyrotic-universe",
+      "cited_by": [
+        {
+          "section": "articles",
+          "title": "As Foolish to Search for the Beginning",
+          "path": "/articles/as-foolish-to-search-for-the-beginning/"
+        }
+      ],
+      "cite_count": 1
+    },
+    {
       "id": "the-dead-hand-the-untold-story-of-the-cold-war-arms-race-and-its-dangerous-legac",
       "cited_by": [
         {
@@ -8106,26 +9221,20 @@
       "cite_count": 1
     },
     {
-      "id": "the-dead-sea-scrolls-deception-the-vatican-conspiracy-bestseller-engagingly-writ",
+      "id": "baigent-leigh-dead-sea-scrolls-deception",
       "cited_by": [
         {
           "section": "articles",
           "title": "The Scrolls That Woke in Year One",
           "path": "/articles/the-scrolls-that-woke-in-year-one/"
-        }
-      ],
-      "cite_count": 1
-    },
-    {
-      "id": "the-dead-sea-scrolls-deception-the-vatican-conspiracy-thesis-this-article-reject",
-      "cited_by": [
+        },
         {
           "section": "articles",
           "title": "Unsealed in Year One",
           "path": "/articles/unsealed-in-year-one/"
         }
       ],
-      "cite_count": 1
+      "cite_count": 2
     },
     {
       "id": "vanderkam-dss-today",
@@ -8154,26 +9263,20 @@
       "cite_count": 4
     },
     {
-      "id": "the-dead-sea-scrolls-a-biography-lives-of-great-religious-books-the-discovery-pu",
+      "id": "collins-dead-sea-scrolls-biography",
       "cited_by": [
+        {
+          "section": "articles",
+          "title": "The Scrolls That Woke in Year One",
+          "path": "/articles/the-scrolls-that-woke-in-year-one/"
+        },
         {
           "section": "articles",
           "title": "Unsealed in Year One",
           "path": "/articles/unsealed-in-year-one/"
         }
       ],
-      "cite_count": 1
-    },
-    {
-      "id": "the-dead-sea-scrolls-a-biography-lives-of-great-religious-books-the-principal-se",
-      "cited_by": [
-        {
-          "section": "articles",
-          "title": "The Scrolls That Woke in Year One",
-          "path": "/articles/the-scrolls-that-woke-in-year-one/"
-        }
-      ],
-      "cite_count": 1
+      "cite_count": 2
     },
     {
       "id": "the-dead-sea-scrolls-a-very-short-introduction-2nd-ed",
@@ -8220,9 +9323,14 @@
           "section": "wiki",
           "title": "Hamlet's Mill",
           "path": "/wiki/hamlets-mill/"
+        },
+        {
+          "section": "wiki",
+          "title": "Jane Sellers",
+          "path": "/wiki/jane-sellers/"
         }
       ],
-      "cite_count": 2
+      "cite_count": 3
     },
     {
       "id": "the-decline-of-the-west-vol-1-the-morphology-of-world-history-cultures-as-living",
@@ -8269,22 +9377,6 @@
       "cite_count": 1
     },
     {
-      "id": "the-devils-delusion",
-      "cited_by": [
-        {
-          "section": "articles",
-          "title": "The Infinite in Both Directions",
-          "path": "/articles/the-infinite-in-both-directions/"
-        },
-        {
-          "section": "articles",
-          "title": "The Signature and the Designers",
-          "path": "/articles/the-signature-and-the-designers/"
-        }
-      ],
-      "cite_count": 2
-    },
-    {
       "id": "russell-devil-antiquity",
       "cited_by": [
         {
@@ -8299,6 +9391,22 @@
       "id": "the-devil-perceptions-of-evil",
       "cited_by": [],
       "cite_count": 0
+    },
+    {
+      "id": "the-devils-delusion",
+      "cited_by": [
+        {
+          "section": "articles",
+          "title": "The Infinite in Both Directions",
+          "path": "/articles/the-infinite-in-both-directions/"
+        },
+        {
+          "section": "articles",
+          "title": "The Signature and the Designers",
+          "path": "/articles/the-signature-and-the-designers/"
+        }
+      ],
+      "cite_count": 2
     },
     {
       "id": "stephenson-diamond-age",
@@ -8345,6 +9453,17 @@
       "cite_count": 1
     },
     {
+      "id": "the-early-development-of-the-quranic-hanif",
+      "cited_by": [
+        {
+          "section": "articles",
+          "title": "Monotheism Is the Wrong Question",
+          "path": "/articles/monotheism-is-the-wrong-question/"
+        }
+      ],
+      "cite_count": 1
+    },
+    {
       "id": "smith-early-history-god",
       "cited_by": [
         {
@@ -8379,15 +9498,20 @@
       "id": "the-early-history-of-god",
       "cited_by": [
         {
+          "section": "articles",
+          "title": "Monotheism Is the Wrong Question",
+          "path": "/articles/monotheism-is-the-wrong-question/"
+        },
+        {
           "section": "wiki",
           "title": "Elohim",
           "path": "/wiki/elohim/"
         }
       ],
-      "cite_count": 1
+      "cite_count": 2
     },
     {
-      "id": "the-eden-conspiracy",
+      "id": "wallis-eden-conspiracy",
       "cited_by": [
         {
           "section": "articles",
@@ -8411,39 +9535,13 @@
         },
         {
           "section": "wiki",
-          "title": "Embassy",
-          "path": "/wiki/embassy/"
-        },
-        {
-          "section": "wiki",
-          "title": "Lucifer",
-          "path": "/wiki/lucifer/"
-        },
-        {
-          "section": "wiki",
-          "title": "Paul Wallis",
-          "path": "/wiki/paul-wallis/"
-        },
-        {
-          "section": "wiki",
-          "title": "Serpent",
-          "path": "/wiki/serpent/"
-        },
-        {
-          "section": "wiki",
-          "title": "Tree of Life",
-          "path": "/wiki/tree-of-life/"
-        }
-      ],
-      "cite_count": 9
-    },
-    {
-      "id": "wallis-eden-conspiracy",
-      "cited_by": [
-        {
-          "section": "wiki",
           "title": "Eden",
           "path": "/wiki/eden/"
+        },
+        {
+          "section": "wiki",
+          "title": "Embassy",
+          "path": "/wiki/embassy/"
         },
         {
           "section": "wiki",
@@ -8457,11 +9555,31 @@
         },
         {
           "section": "wiki",
+          "title": "Lucifer",
+          "path": "/wiki/lucifer/"
+        },
+        {
+          "section": "wiki",
+          "title": "Paul Wallis",
+          "path": "/wiki/paul-wallis/"
+        },
+        {
+          "section": "wiki",
           "title": "Satan",
           "path": "/wiki/satan/"
+        },
+        {
+          "section": "wiki",
+          "title": "Serpent",
+          "path": "/wiki/serpent/"
+        },
+        {
+          "section": "wiki",
+          "title": "Tree of Life",
+          "path": "/wiki/tree-of-life/"
         }
       ],
-      "cite_count": 4
+      "cite_count": 13
     },
     {
       "id": "the-eden-enigma",
@@ -8554,6 +9672,16 @@
       "id": "the-eridu-genesis",
       "cited_by": [
         {
+          "section": "articles",
+          "title": "Are the Anunnaki the Elohim?",
+          "path": "/articles/anunnaki-and-the-elohim/"
+        },
+        {
+          "section": "wiki",
+          "title": "Anunnaki",
+          "path": "/wiki/anunnaki/"
+        },
+        {
           "section": "wiki",
           "title": "Genesis",
           "path": "/wiki/genesis/"
@@ -8564,7 +9692,7 @@
           "path": "/wiki/sumerian-king-list/"
         }
       ],
-      "cite_count": 2
+      "cite_count": 4
     },
     {
       "id": "the-eridu-genesis-journal-of-biblical-literature-100",
@@ -8643,6 +9771,17 @@
           "section": "wiki",
           "title": "Embassy",
           "path": "/wiki/embassy/"
+        }
+      ],
+      "cite_count": 1
+    },
+    {
+      "id": "the-first-epistle-of-paul-to-the-corinthians",
+      "cited_by": [
+        {
+          "section": "articles",
+          "title": "Monotheism Is the Wrong Question",
+          "path": "/articles/monotheism-is-the-wrong-question/"
         }
       ],
       "cite_count": 1
@@ -8842,6 +9981,11 @@
         },
         {
           "section": "wiki",
+          "title": "Mazzaroth",
+          "path": "/wiki/mazzaroth/"
+        },
+        {
+          "section": "wiki",
           "title": "Precession",
           "path": "/wiki/precession/"
         },
@@ -8851,7 +9995,7 @@
           "path": "/wiki/zodiac/"
         }
       ],
-      "cite_count": 3
+      "cite_count": 4
     },
     {
       "id": "the-great-year-astrology-millenarianism-and-history-in-the-western-tradition-the",
@@ -8860,6 +10004,11 @@
           "section": "articles",
           "title": "The Mill That Grinds the Ages",
           "path": "/articles/the-mill-that-grinds-the-ages/"
+        },
+        {
+          "section": "wiki",
+          "title": "Carl Jung",
+          "path": "/wiki/carl-jung/"
         },
         {
           "section": "wiki",
@@ -8872,7 +10021,7 @@
           "path": "/wiki/sumerian-king-list/"
         }
       ],
-      "cite_count": 3
+      "cite_count": 4
     },
     {
       "id": "hallmarks-of-aging",
@@ -8999,6 +10148,49 @@
       "cite_count": 0
     },
     {
+      "id": "the-idea-of-idolatry-and-the-emergence-of-islam-from-polemic-to-history",
+      "cited_by": [
+        {
+          "section": "articles",
+          "title": "Monotheism Is the Wrong Question",
+          "path": "/articles/monotheism-is-the-wrong-question/"
+        },
+        {
+          "section": "wiki",
+          "title": "Idolatry",
+          "path": "/wiki/idolatry/"
+        }
+      ],
+      "cite_count": 2
+    },
+    {
+      "id": "the-induction-of-the-cult-image-in-ancient-mesopotamia-the-mesopotamian-mis-pi-r",
+      "cited_by": [
+        {
+          "section": "articles",
+          "title": "Monotheism Is the Wrong Question",
+          "path": "/articles/monotheism-is-the-wrong-question/"
+        },
+        {
+          "section": "wiki",
+          "title": "Idolatry",
+          "path": "/wiki/idolatry/"
+        }
+      ],
+      "cite_count": 2
+    },
+    {
+      "id": "the-infinite-in-both-directions-wheel-of-heaven-explainer-the-spatial-hierarchic",
+      "cited_by": [
+        {
+          "section": "articles",
+          "title": "As Foolish to Search for the Beginning",
+          "path": "/articles/as-foolish-to-search-for-the-beginning/"
+        }
+      ],
+      "cite_count": 1
+    },
+    {
       "id": "the-invasion-of-eden-did-our-ancestors-warn-us-about-et-invasions",
       "cited_by": [
         {
@@ -9107,6 +10299,11 @@
       "cited_by": [
         {
           "section": "articles",
+          "title": "Monotheism Is the Wrong Question",
+          "path": "/articles/monotheism-is-the-wrong-question/"
+        },
+        {
+          "section": "articles",
           "title": "The First Mosques Faced Petra, Not Mecca",
           "path": "/articles/the-first-mosques-faced-petra-not-mecca/"
         },
@@ -9116,7 +10313,7 @@
           "path": "/articles/the-forty-chairs/"
         }
       ],
-      "cite_count": 2
+      "cite_count": 3
     },
     {
       "id": "the-literature-of-ancient-sumer",
@@ -9190,6 +10387,17 @@
       "cite_count": 1
     },
     {
+      "id": "the-meaning-of-the-dead-sea-scrolls-their-significance-for-understanding-the-bib",
+      "cited_by": [
+        {
+          "section": "wiki",
+          "title": "Dead Sea Scrolls",
+          "path": "/wiki/dead-sea-scrolls/"
+        }
+      ],
+      "cite_count": 1
+    },
+    {
       "id": "the-message-of-the-scrolls-sukenik-s-purchases-and-the-diary-framing-of-the-part",
       "cited_by": [
         {
@@ -9199,6 +10407,27 @@
         }
       ],
       "cite_count": 1
+    },
+    {
+      "id": "hancock-bauval-message-of-the-sphinx",
+      "cited_by": [
+        {
+          "section": "wiki",
+          "title": "Graham Hancock",
+          "path": "/wiki/graham-hancock/"
+        },
+        {
+          "section": "wiki",
+          "title": "Great Sphinx",
+          "path": "/wiki/great-sphinx/"
+        },
+        {
+          "section": "wiki",
+          "title": "Orion Correlation",
+          "path": "/wiki/orion-correlation/"
+        }
+      ],
+      "cite_count": 3
     },
     {
       "id": "the-message-of-the-stars-the-theosophical-rosicrucian-formalization-of-the-relig",
@@ -9223,12 +10452,34 @@
       "cite_count": 1
     },
     {
+      "id": "the-mysteries-of-mithra-the-classic-iranian-origin-thesis-ulansey-s-astronomical",
+      "cited_by": [
+        {
+          "section": "wiki",
+          "title": "Tauroctony",
+          "path": "/wiki/tauroctony/"
+        }
+      ],
+      "cite_count": 1
+    },
+    {
       "id": "the-mystery-of-life-s-origin-the-continuing-controversy-expanded-ed-the-classic-",
       "cited_by": [
         {
           "section": "articles",
           "title": "The Signature and the Designers",
           "path": "/articles/the-signature-and-the-designers/"
+        }
+      ],
+      "cite_count": 1
+    },
+    {
+      "id": "the-myth-of-a-sumerian-12th-planet-nibiru-according-to-the-cuneiform-sources",
+      "cited_by": [
+        {
+          "section": "wiki",
+          "title": "Zecharia Sitchin",
+          "path": "/wiki/zecharia-sitchin/"
         }
       ],
       "cite_count": 1
@@ -9450,6 +10701,11 @@
       "id": "forsyth-the-old-enemy",
       "cited_by": [
         {
+          "section": "articles",
+          "title": "Are Lucifer and Satan the Same?",
+          "path": "/articles/lucifer-and-satan/"
+        },
+        {
           "section": "wiki",
           "title": "Lucifer",
           "path": "/wiki/lucifer/"
@@ -9460,7 +10716,7 @@
           "path": "/wiki/serpent/"
         }
       ],
-      "cite_count": 2
+      "cite_count": 3
     },
     {
       "id": "the-open-society-and-its-enemies-the-critique-of-historicism-the-doctrine-that-h",
@@ -9477,6 +10733,11 @@
       "id": "pagels-origin-of-satan",
       "cited_by": [
         {
+          "section": "articles",
+          "title": "Are Lucifer and Satan the Same?",
+          "path": "/articles/lucifer-and-satan/"
+        },
+        {
           "section": "wiki",
           "title": "Lucifer",
           "path": "/wiki/lucifer/"
@@ -9487,7 +10748,7 @@
           "path": "/wiki/serpent/"
         }
       ],
-      "cite_count": 2
+      "cite_count": 3
     },
     {
       "id": "pagels-origin-satan",
@@ -9504,6 +10765,22 @@
       "id": "the-origin-of-satan",
       "cited_by": [],
       "cite_count": 0
+    },
+    {
+      "id": "the-origins-of-biblical-monotheism-israel-s-polytheistic-background-and-the-ugar",
+      "cited_by": [
+        {
+          "section": "articles",
+          "title": "Monotheism Is the Wrong Question",
+          "path": "/articles/monotheism-is-the-wrong-question/"
+        },
+        {
+          "section": "wiki",
+          "title": "Monotheism",
+          "path": "/wiki/monotheism/"
+        }
+      ],
+      "cite_count": 2
     },
     {
       "id": "the-origins-of-left-libertarianism-an-anthology-of-historical-writings-john-cunl",
@@ -9528,9 +10805,14 @@
           "section": "wiki",
           "title": "Hamlet's Mill",
           "path": "/wiki/hamlets-mill/"
+        },
+        {
+          "section": "wiki",
+          "title": "Tauroctony",
+          "path": "/wiki/tauroctony/"
         }
       ],
-      "cite_count": 2
+      "cite_count": 3
     },
     {
       "id": "origins-of-the-worlds-mythologies",
@@ -9558,11 +10840,21 @@
         },
         {
           "section": "wiki",
+          "title": "Great Sphinx",
+          "path": "/wiki/great-sphinx/"
+        },
+        {
+          "section": "wiki",
           "title": "Hamlet's Mill",
           "path": "/wiki/hamlets-mill/"
+        },
+        {
+          "section": "wiki",
+          "title": "Orion Correlation",
+          "path": "/wiki/orion-correlation/"
         }
       ],
-      "cite_count": 2
+      "cite_count": 4
     },
     {
       "id": "the-pentagon-s-brain-an-uncensored-history-of-darpa-pulitzer-prize-finalist-hist",
@@ -9629,6 +10921,22 @@
       "cite_count": 0
     },
     {
+      "id": "the-price-of-monotheism",
+      "cited_by": [
+        {
+          "section": "articles",
+          "title": "Monotheism Is the Wrong Question",
+          "path": "/articles/monotheism-is-the-wrong-question/"
+        },
+        {
+          "section": "wiki",
+          "title": "Idolatry",
+          "path": "/wiki/idolatry/"
+        }
+      ],
+      "cite_count": 2
+    },
+    {
       "id": "buswell-lopez-princeton-buddhism",
       "cited_by": [
         {
@@ -9675,11 +10983,16 @@
         },
         {
           "section": "wiki",
+          "title": "Sampo",
+          "path": "/wiki/sampo/"
+        },
+        {
+          "section": "wiki",
           "title": "Tree of Life",
           "path": "/wiki/tree-of-life/"
         }
       ],
-      "cite_count": 5
+      "cite_count": 6
     },
     {
       "id": "sturluson-prose-edda",
@@ -9695,6 +11008,11 @@
     {
       "id": "the-qur-an",
       "cited_by": [
+        {
+          "section": "articles",
+          "title": "Monotheism Is the Wrong Question",
+          "path": "/articles/monotheism-is-the-wrong-question/"
+        },
         {
           "section": "articles",
           "title": "The First Mosques Faced Petra, Not Mecca",
@@ -9722,8 +11040,18 @@
         },
         {
           "section": "wiki",
+          "title": "Idolatry",
+          "path": "/wiki/idolatry/"
+        },
+        {
+          "section": "wiki",
           "title": "Jesus",
           "path": "/wiki/jesus/"
+        },
+        {
+          "section": "wiki",
+          "title": "Monotheism",
+          "path": "/wiki/monotheism/"
         },
         {
           "section": "wiki",
@@ -9736,7 +11064,7 @@
           "path": "/wiki/satan/"
         }
       ],
-      "cite_count": 8
+      "cite_count": 11
     },
     {
       "id": "the-qur-an-3-67-2-135-142-145-6-92-14-4-16-123",
@@ -9750,6 +11078,17 @@
           "section": "articles",
           "title": "The Jubilee and the Machine",
           "path": "/articles/the-jubilee-and-the-machine/"
+        }
+      ],
+      "cite_count": 1
+    },
+    {
+      "id": "the-religion-of-the-mithras-cult-in-the-roman-empire-mysteries-of-the-unconquere",
+      "cited_by": [
+        {
+          "section": "wiki",
+          "title": "Tauroctony",
+          "path": "/wiki/tauroctony/"
         }
       ],
       "cite_count": 1
@@ -9788,9 +11127,14 @@
           "section": "wiki",
           "title": "Ancient Builders",
           "path": "/wiki/ancient-builders/"
+        },
+        {
+          "section": "wiki",
+          "title": "Göbekli Tepe",
+          "path": "/wiki/gobekli-tepe/"
         }
       ],
-      "cite_count": 1
+      "cite_count": 2
     },
     {
       "id": "the-sacred-city",
@@ -9845,12 +11189,34 @@
       "cite_count": 6
     },
     {
+      "id": "the-scrolls-that-woke-in-year-one",
+      "cited_by": [
+        {
+          "section": "wiki",
+          "title": "Dead Sea Scrolls",
+          "path": "/wiki/dead-sea-scrolls/"
+        }
+      ],
+      "cite_count": 1
+    },
+    {
       "id": "the-secret-doctrine-vol-ii-the-swastika-as-the-continual-motion-and-revolution-o",
       "cited_by": [
         {
           "section": "articles",
           "title": "The Mill That Grinds the Ages",
           "path": "/articles/the-mill-that-grinds-the-ages/"
+        }
+      ],
+      "cite_count": 1
+    },
+    {
+      "id": "the-septuagint-lxx-introduction",
+      "cited_by": [
+        {
+          "section": "wiki",
+          "title": "Septuagint",
+          "path": "/wiki/septuagint/"
         }
       ],
       "cite_count": 1
@@ -9867,12 +11233,7 @@
       "cite_count": 1
     },
     {
-      "id": "the-shi-ur-qomah-texts-and-recensions-tsaj-9",
-      "cited_by": [],
-      "cite_count": 0
-    },
-    {
-      "id": "the-shi-ur-qomah-texts-and-recensions-tsaj-9-the-critical-edition",
+      "id": "cohen-shiur-qomah-texts-recensions",
       "cited_by": [
         {
           "section": "articles",
@@ -9894,9 +11255,14 @@
           "section": "articles",
           "title": "The Archdeacon and the Dragon",
           "path": "/articles/the-archdeacon-and-the-dragon/"
+        },
+        {
+          "section": "wiki",
+          "title": "Erich von Däniken",
+          "path": "/wiki/erich-von-daniken/"
         }
       ],
-      "cite_count": 1
+      "cite_count": 2
     },
     {
       "id": "the-spaceships-of-ezekiel",
@@ -10001,15 +11367,36 @@
       "cite_count": 1
     },
     {
+      "id": "the-translator-s-wager",
+      "cited_by": [
+        {
+          "section": "wiki",
+          "title": "Masoretic Text",
+          "path": "/wiki/masoretic-text/"
+        }
+      ],
+      "cite_count": 1
+    },
+    {
       "id": "the-treasures-of-darkness-a-history-of-mesopotamian-religion",
       "cited_by": [
+        {
+          "section": "articles",
+          "title": "Are the Anunnaki the Elohim?",
+          "path": "/articles/anunnaki-and-the-elohim/"
+        },
+        {
+          "section": "wiki",
+          "title": "Anunnaki",
+          "path": "/wiki/anunnaki/"
+        },
         {
           "section": "wiki",
           "title": "Sumerian King List",
           "path": "/wiki/sumerian-king-list/"
         }
       ],
-      "cite_count": 1
+      "cite_count": 3
     },
     {
       "id": "bonaventure-lignum-vitae",
@@ -10029,6 +11416,17 @@
           "section": "articles",
           "title": "The Filing Cabinet of the Gods",
           "path": "/articles/the-filing-cabinet-of-the-gods/"
+        }
+      ],
+      "cite_count": 1
+    },
+    {
+      "id": "the-unresolved-debate-over-the-sampo-s-identity-in-finnish-folkloristics-world-p",
+      "cited_by": [
+        {
+          "section": "wiki",
+          "title": "Sampo",
+          "path": "/wiki/sampo/"
         }
       ],
       "cite_count": 1
@@ -10137,9 +11535,14 @@
           "section": "articles",
           "title": "The Mill That Grinds the Ages",
           "path": "/articles/the-mill-that-grinds-the-ages/"
+        },
+        {
+          "section": "wiki",
+          "title": "Mazzaroth",
+          "path": "/wiki/mazzaroth/"
         }
       ],
-      "cite_count": 1
+      "cite_count": 2
     },
     {
       "id": "zohar-pritzker",
@@ -10192,6 +11595,16 @@
           "path": "/articles/the-filing-cabinet-of-the-gods/"
         },
         {
+          "section": "articles",
+          "title": "The Shape of Humanity",
+          "path": "/articles/the-shape-of-humanity/"
+        },
+        {
+          "section": "articles",
+          "title": "Are the Watchers and the Nephilim the Same?",
+          "path": "/articles/watchers-and-the-nephilim/"
+        },
+        {
           "section": "wiki",
           "title": "Council of the Eternals",
           "path": "/wiki/council-of-eternals/"
@@ -10217,7 +11630,7 @@
           "path": "/wiki/world-age/"
         }
       ],
-      "cite_count": 7
+      "cite_count": 9
     },
     {
       "id": "theogony-works-and-days",
@@ -10237,14 +11650,8 @@
     },
     {
       "id": "theogony-and-works-and-days-the-myth-of-the-five-ages-gold-silver-bronze-heroes-",
-      "cited_by": [
-        {
-          "section": "articles",
-          "title": "The Shape of Humanity",
-          "path": "/articles/the-shape-of-humanity/"
-        }
-      ],
-      "cite_count": 1
+      "cited_by": [],
+      "cite_count": 0
     },
     {
       "id": "theory-of-the-earth",
@@ -10269,6 +11676,11 @@
           "section": "articles",
           "title": "The Translator's Wager",
           "path": "/articles/the-translators-wager/"
+        },
+        {
+          "section": "articles",
+          "title": "Are the Watchers and the Nephilim the Same?",
+          "path": "/articles/watchers-and-the-nephilim/"
         },
         {
           "section": "wiki",
@@ -10371,7 +11783,18 @@
           "path": "/wiki/yahweh/"
         }
       ],
-      "cite_count": 22
+      "cite_count": 23
+    },
+    {
+      "id": "through-whom-messianic-and-demonic-mediation-in-1-corinthians-8-10",
+      "cited_by": [
+        {
+          "section": "articles",
+          "title": "Monotheism Is the Wrong Question",
+          "path": "/articles/monotheism-is-the-wrong-question/"
+        }
+      ],
+      "cite_count": 1
     },
     {
       "id": "nietzsche-zarathustra",
@@ -10391,6 +11814,17 @@
           "section": "articles",
           "title": "The Mill That Grinds the Ages",
           "path": "/articles/the-mill-that-grinds-the-ages/"
+        }
+      ],
+      "cite_count": 1
+    },
+    {
+      "id": "timaeus-and-critias-the-egyptian-priest-s-date-for-the-sinking-of-atlantis-9-000",
+      "cited_by": [
+        {
+          "section": "wiki",
+          "title": "Göbekli Tepe",
+          "path": "/wiki/gobekli-tepe/"
         }
       ],
       "cite_count": 1
@@ -10445,6 +11879,33 @@
           "section": "wiki",
           "title": "Ancient Builders",
           "path": "/wiki/ancient-builders/"
+        },
+        {
+          "section": "wiki",
+          "title": "Graham Hancock",
+          "path": "/wiki/graham-hancock/"
+        }
+      ],
+      "cite_count": 2
+    },
+    {
+      "id": "universe-in-a-black-hole-einstein-cartan-torsion-big-bounce-verify-pop-awski-phy",
+      "cited_by": [
+        {
+          "section": "articles",
+          "title": "As Foolish to Search for the Beginning",
+          "path": "/articles/as-foolish-to-search-for-the-beginning/"
+        }
+      ],
+      "cite_count": 1
+    },
+    {
+      "id": "unsealed-in-year-one",
+      "cited_by": [
+        {
+          "section": "wiki",
+          "title": "Dead Sea Scrolls",
+          "path": "/wiki/dead-sea-scrolls/"
         }
       ],
       "cite_count": 1
@@ -10624,6 +12085,17 @@
       "cite_count": 1
     },
     {
+      "id": "xlssc-122-strong-lensing-mass-of-a-mature-galaxy-cluster-at-z-2-cosmic-noon-aas-",
+      "cited_by": [
+        {
+          "section": "articles",
+          "title": "As Foolish to Search for the Beginning",
+          "path": "/articles/as-foolish-to-search-for-the-beginning/"
+        }
+      ],
+      "cite_count": 1
+    },
+    {
       "id": "yahweh-and-the-gods-and-goddesses-of-canaan-jsotsup-265",
       "cited_by": [
         {
@@ -10641,6 +12113,17 @@
           "section": "articles",
           "title": "The Religion of Religions",
           "path": "/articles/the-religion-of-religions/"
+        }
+      ],
+      "cite_count": 1
+    },
+    {
+      "id": "zecharia-sitchin-encyclopedic-biographical-entry",
+      "cited_by": [
+        {
+          "section": "wiki",
+          "title": "Zecharia Sitchin",
+          "path": "/wiki/zecharia-sitchin/"
         }
       ],
       "cite_count": 1
@@ -10696,6 +12179,181 @@
       "id": "edouard-dhorme-biography",
       "cited_by": [],
       "cite_count": 0
+    },
+    {
+      "id": "3-hebrew-apocalypse-of-enoch-in-the-old-testament-pseudepigrapha-vol-1-the-stand",
+      "cited_by": [
+        {
+          "section": "articles",
+          "title": "The Book Closest to the Truth",
+          "path": "/articles/the-book-closest-to-the-truth/"
+        }
+      ],
+      "cite_count": 1
+    },
+    {
+      "id": "beyond-judaism-metatron-and-the-divine-polymorphy-of-ancient-judaism-journal-for",
+      "cited_by": [
+        {
+          "section": "articles",
+          "title": "The Book Closest to the Truth",
+          "path": "/articles/the-book-closest-to-the-truth/"
+        }
+      ],
+      "cite_count": 1
+    },
+    {
+      "id": "bible-lessons-with-ra-l-on-religious-appropriation-in-et-inspired-religions-nova",
+      "cited_by": [
+        {
+          "section": "articles",
+          "title": "The Religion of Religions",
+          "path": "/articles/the-religion-of-religions/"
+        }
+      ],
+      "cite_count": 1
+    },
+    {
+      "id": "clues-roots-of-an-evidential-paradigm-in-myths-emblems-clues-morelli-s-earlobes-",
+      "cited_by": [
+        {
+          "section": "articles",
+          "title": "The Forty Chairs",
+          "path": "/articles/the-forty-chairs/"
+        }
+      ],
+      "cite_count": 1
+    },
+    {
+      "id": "extraterrestrial-exegesis-the-ra-lian-movement-as-a-biblical-religion-nova-relig",
+      "cited_by": [
+        {
+          "section": "articles",
+          "title": "The Religion of Religions",
+          "path": "/articles/the-religion-of-religions/"
+        }
+      ],
+      "cite_count": 1
+    },
+    {
+      "id": "impossible-early-galaxies-too-massive-too-early-candidates-in-jwst-ceers-verify-",
+      "cited_by": [
+        {
+          "section": "articles",
+          "title": "As Foolish to Search for the Beginning",
+          "path": "/articles/as-foolish-to-search-for-the-beginning/"
+        }
+      ],
+      "cite_count": 1
+    },
+    {
+      "id": "is-god-a-space-alien-the-cosmology-of-the-ra-lian-church-culture-and-cosmos-4-1-",
+      "cited_by": [
+        {
+          "section": "articles",
+          "title": "The Religion of Religions",
+          "path": "/articles/the-religion-of-religions/"
+        }
+      ],
+      "cite_count": 1
+    },
+    {
+      "id": "new-religious-movements-and-science-rael-s-progressive-patronizing-parasitism-zy",
+      "cited_by": [
+        {
+          "section": "articles",
+          "title": "Six Mornings, Six Years",
+          "path": "/articles/six-mornings-six-years/"
+        },
+        {
+          "section": "articles",
+          "title": "The Religion of Religions",
+          "path": "/articles/the-religion-of-religions/"
+        }
+      ],
+      "cite_count": 2
+    },
+    {
+      "id": "presumed-immanent-the-ra-lians-ufo-religions-and-the-postmodern-condition-nova-r",
+      "cited_by": [
+        {
+          "section": "articles",
+          "title": "The Religion of Religions",
+          "path": "/articles/the-religion-of-religions/"
+        }
+      ],
+      "cite_count": 1
+    },
+    {
+      "id": "rael-community-announces-human-cloning-and-companion-zenit-interviews-cesnur-the",
+      "cited_by": [
+        {
+          "section": "articles",
+          "title": "The Religion of Religions",
+          "path": "/articles/the-religion-of-religions/"
+        }
+      ],
+      "cite_count": 1
+    },
+    {
+      "id": "ra-lism-an-unconventional-religious-pathway-into-transhumanism-ilahiyat-studies-",
+      "cited_by": [
+        {
+          "section": "articles",
+          "title": "The Religion of Religions",
+          "path": "/articles/the-religion-of-religions/"
+        }
+      ],
+      "cite_count": 1
+    },
+    {
+      "id": "shi-ur-komah-in-encyclopaedia-judaica",
+      "cited_by": [
+        {
+          "section": "articles",
+          "title": "The Book Closest to the Truth",
+          "path": "/articles/the-book-closest-to-the-truth/"
+        }
+      ],
+      "cite_count": 1
+    },
+    {
+      "id": "bacher-blau-shiur-komah-jewish-encyclopedia",
+      "cited_by": [
+        {
+          "section": "articles",
+          "title": "The Book Closest to the Truth",
+          "path": "/articles/the-book-closest-to-the-truth/"
+        }
+      ],
+      "cite_count": 1
+    },
+    {
+      "id": "the-international-ra-lian-movement-in-the-cambridge-companion-to-new-religious-m",
+      "cited_by": [
+        {
+          "section": "articles",
+          "title": "The Religion of Religions",
+          "path": "/articles/the-religion-of-religions/"
+        }
+      ],
+      "cite_count": 1
+    },
+    {
+      "id": "why-religious-movements-succeed-or-fail-a-revised-general-model-journal-of-conte",
+      "cited_by": [
+        {
+          "section": "articles",
+          "title": "The Forty Chairs",
+          "path": "/articles/the-forty-chairs/"
+        },
+        {
+          "section": "articles",
+          "title": "The Religion of Religions",
+          "path": "/articles/the-religion-of-religions/"
+        }
+      ],
+      "cite_count": 2
     }
   ]
 }

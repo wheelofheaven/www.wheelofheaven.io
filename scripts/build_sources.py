@@ -83,6 +83,25 @@ def normalize_url(url: str | None) -> str | None:
     return url.strip().rstrip("/").lower()
 
 
+def normalize_title_quotes(title: str) -> str:
+    """Curl straight quotes in harvested titles to typographic ones.
+
+    Inline reference titles wrap quoted article titles in straight
+    quotes ('Beyond Judaism: ...,' JSJ 41), which render as a
+    wrong-direction ’ at the start of every /sources/ card. Order
+    matters: apostrophes between word characters first (Shi'ur →
+    Shi’ur), then openers after a boundary, then every remaining
+    straight quote is a closer. Idempotent — typographic input is
+    untouched. slugify() collapses both forms identically, so minted
+    ids are unaffected."""
+    title = re.sub(r"(?<=\w)'(?=\w)", "’", title)
+    title = re.sub(r"(^|[\s(\[{—–-])'", "\\1‘", title)
+    title = title.replace("'", "’")
+    title = re.sub(r'(^|[\s(\[{—–-])"', "\\1“", title)
+    title = title.replace('"', "”")
+    return title
+
+
 def toml_quote(value: str) -> str:
     return json.dumps(value, ensure_ascii=False)
 
@@ -149,6 +168,7 @@ def load_seed() -> tuple[dict[str, dict], str]:
             base = {**_empty_record(record_id), **entry}
             base["cited_by"] = []
             base["cite_count"] = 0
+            base["title"] = normalize_title_quotes(base.get("title") or record_id)
             seeds[record_id] = base
         return seeds, f"prior {OUTPUT_PATH.relative_to(PROJECT_ROOT)}"
 
@@ -236,6 +256,7 @@ def scan_pages(seeds: dict[str, dict]) -> int:
                     continue
                 ref_id = (ref.get("id") or "").strip()
                 if ref_id:
+                    ref_id = CANONICAL_MERGES.get(ref_id, ref_id)
                     if ref_id not in seeds:
                         rel_path = md_path.relative_to(PROJECT_ROOT)
                         raise ValueError(f"{rel_path}: unknown source id in extra.references: {ref_id}")
@@ -265,7 +286,7 @@ def scan_pages(seeds: dict[str, dict]) -> int:
                     if target_id not in seeds:
                         seeds[target_id] = {
                             "id": target_id,
-                            "title": title,
+                            "title": normalize_title_quotes(title),
                             "authored_by": [ref["author"]] if ref.get("author") else [],
                             "publish_date": str(ref.get("date") or ""),
                             "follow_url": url or "",
@@ -403,6 +424,12 @@ CANONICAL_MERGES = {
     "the-dead-sea-scrolls-deception-the-vatican-conspiracy-thesis-this-article-reject": "baigent-leigh-dead-sea-scrolls-deception",
     "on-the-jerusalem-origin-of-the-dead-sea-scrolls-the-fullest-short-statement-of-t": "golb-jerusalem-origin-dead-sea-scrolls",
     "on-the-jerusalem-origin-of-the-dead-sea-scrolls-the-principal-statement-of-the-n": "golb-jerusalem-origin-dead-sea-scrolls",
+    "shi-ur-omah-in-the-jewish-encyclopedia-vol-xi": "bacher-blau-shiur-komah-jewish-encyclopedia",
+    "shi-ur-omah-in-the-jewish-encyclopedia-vol-xi-the-1906-english-article-gives-the": "bacher-blau-shiur-komah-jewish-encyclopedia",
+    "the-shi-ur-qomah-texts-and-recensions-tsaj-9": "cohen-shiur-qomah-texts-recensions",
+    "the-shi-ur-qomah-texts-and-recensions-tsaj-9-the-critical-edition": "cohen-shiur-qomah-texts-recensions",
+    "the-eden-conspiracy": "wallis-eden-conspiracy",
+    "the-message-of-the-sphinx-keeper-of-genesis-with-robert-bauval-the-giza-orion-co": "hancock-bauval-message-of-the-sphinx",
 }
 
 CANONICAL_RECORDS = {
@@ -423,6 +450,33 @@ CANONICAL_RECORDS = {
         "medium": "nonfiction-book",
         "description": "The 1991 bestseller advancing the Vatican-suppression conspiracy thesis about the scrolls' delayed publication — cited across the corpus as the cautionary control on sensational readings.",
         "topics": ["dead-sea-scrolls", "conspiracy-literature"],
+    },
+    "hancock-bauval-message-of-the-sphinx": {
+        "title": "The Message of the Sphinx: A Quest for the Hidden Legacy of Mankind",
+        "authored_by": ["Graham Hancock & Robert Bauval"],
+        "publish_date": "1996",
+        "follow_url": "",
+        "medium": "nonfiction-book",
+        "description": "Hancock and Bauval’s Giza–Orion correlation argument (published in the UK as Keeper of Genesis): the Sphinx and pyramid layout read as a sky-map of the c. 10,500 BCE ‘First Time’.",
+        "topics": ["giza", "orion-correlation", "archaeoastronomy"],
+    },
+    "bacher-blau-shiur-komah-jewish-encyclopedia": {
+        "title": "‘Shi’ur Ḳomah,’ in The Jewish Encyclopedia, vol. XI",
+        "authored_by": ["Wilhelm Bacher & Ludwig Blau"],
+        "publish_date": "1906",
+        "follow_url": "",
+        "medium": "article",
+        "description": "The 1906 English encyclopedia article on the Shi’ur Ḳomah; gives the soles at 30 million parasangs and records the ‘237 myriad’ variant.",
+        "topics": ["shiur-qomah", "jewish-mysticism"],
+    },
+    "cohen-shiur-qomah-texts-recensions": {
+        "title": "The Shi’ur Qomah: Texts and Recensions (TSAJ 9)",
+        "authored_by": ["Martin Samuel Cohen"],
+        "publish_date": "1985",
+        "follow_url": "",
+        "medium": "nonfiction-book",
+        "description": "Martin Samuel Cohen’s critical edition of the Shi’ur Qomah text corpus (Tübingen: Mohr Siebeck, Texts and Studies in Ancient Judaism 9).",
+        "topics": ["shiur-qomah", "jewish-mysticism"],
     },
     "golb-jerusalem-origin-dead-sea-scrolls": {
         "title": "On the Jerusalem Origin of the Dead Sea Scrolls",
@@ -471,6 +525,12 @@ def canonicalize(seeds: dict[str, dict]) -> int:
 def main() -> None:
     seeds, source = load_seed()
     print(f"seeded {len(seeds)} record(s) from {source}")
+    # Materialize canonical records up front so structured refs that
+    # resolve through CANONICAL_MERGES always land on an existing record
+    # (scan_pages raises on unknown ids).
+    for canonical_id, meta in CANONICAL_RECORDS.items():
+        if canonical_id not in seeds:
+            seeds[canonical_id] = {**_empty_record(canonical_id), **meta, "id": canonical_id}
     cites = scan_pages(seeds)
     merged = canonicalize(seeds)
     if merged:
