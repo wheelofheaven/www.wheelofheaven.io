@@ -47,6 +47,18 @@
         }
       }
     },
+    "articles/macrobiology": {
+      "title": "Macrobiology",
+      "permalink": "https://www.wheelofheaven.world/articles/macrobiology/",
+      "first_eligible_at": "2026-08-02T10:04:24Z",
+      "channels": {
+        "telegram": {
+          "post_id": "@wheelofheaven/45",
+          "url": "https://t.me/wheelofheaven/45",
+          "posted_at": "2026-08-02T10:04:24Z"
+        }
+      }
+    },
     "articles/made-from-the-ground-to-bear-the-labor": {
       "title": "Made from the Ground to Bear the Labor",
       "permalink": "https://www.wheelofheaven.world/articles/made-from-the-ground-to-bear-the-labor/",
