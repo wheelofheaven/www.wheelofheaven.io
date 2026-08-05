@@ -89,6 +89,7 @@ Every page on this site has a deterministic JSON twin on [api.wheelofheaven.worl
 - [API root](https://api.wheelofheaven.world/): root manifest.
 - [v1 manifest](https://api.wheelofheaven.world/v1/): every endpoint with cross-links.
 - [API llms.txt](https://api.wheelofheaven.world/llms.txt): AI-oriented manifest for the API surface.
+- [MCP server](https://mcp.wheelofheaven.world/mcp): AI agents can connect directly via Model Context Protocol (Streamable HTTP, no auth) — 9 read-only tools over the corpus with claim-type epistemic labels and an explicit fact/interpretation split. [Source](https://github.com/wheelofheaven/mcp.wheelofheaven.world).
 
 For AI agents, these endpoints are curated narrative summaries suitable for direct system-prompt ingestion:
 - [Project context](https://api.wheelofheaven.world/v1/context/)
