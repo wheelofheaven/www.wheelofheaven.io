@@ -21,10 +21,15 @@ counted per entry (not per-1000-words). Earlier metrics under-counted:
 - **Phase 5 — light-band entries (20):** lone `-ive` count 8–23, deferred by
   editorial call (do the 7 heavy first). De-slop-and-preserve (mostly real
   content): `sendys-conditions-of-coherence`, `lucifer`, `precession`,
-  `council-of-eternals`, `satan`, `cosmic-pluralism`, `cosmic-chain`,
+  ~~`council-of-eternals`~~, `satan`, `cosmic-pluralism`, `cosmic-chain`,
   `tree-of-life`, `great-month`, `the-alliance`, `infinity`, `great-flood`,
   `raelism`, `embassy`, `biglino-method`, `mytheme`, `doubled-signature`,
   `list-of-megalithic-sites`, `adamites`, `serpent`.
+  **Stale-list caveat (2026-08-06):** `council-of-eternals` was audited for
+  the benchmark pilot and is ALREADY CLEAN — fully rewritten under the
+  2026-07 editorial pass (0 `-ive` markers, structured source-ID refs,
+  claim-typed). This list predates that pass; **verify each entry's
+  `editorial_pass` before scheduling work** — others here may be done too.
 - **Phase 4 — translations:** the corrupted entries × 9 languages still carry
   slop (≈144 files with the doubled marker; more on the `-ive` signal).
   Re-fan from the now-clean English via woh-fanout.
@@ -37,8 +42,12 @@ counted per entry (not per-1000-words). Earlier metrics under-counted:
 - Tier D (7 heavy residual `-ive`): content `483cb2e` → www `a078014d80f`
 
 ## Known follow-ups (not part of the slop campaign)
-- Site-wide dead link: `council-of-the-eternals` should be `council-of-eternals`
-  (wrong slug in ~15+ entries' frontmatter see_also — pre-existing). Quick sed.
+- ~~Site-wide dead link: `council-of-the-eternals` should be `council-of-eternals`~~
+  **RESOLVED the other way (verified 2026-08-06):** the entry's canonical
+  slug is now `council-of-the-eternals` (set in frontmatter, file still
+  named `council-of-eternals.md`) with an alias from the short form — the
+  69 EN files referencing the long slug are live links, not dead ones.
+  Nothing to sed.
 - A handful of entries reference not-yet-created pages (forward references:
   john-the-baptist, bab, bahaullah, joseph-smith) — non-breaking.
 
