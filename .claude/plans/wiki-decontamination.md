@@ -91,7 +91,13 @@ mytheme locales: agent-synced English metadata_only stub bodies
 
 - **Phase 4 — translations:** the corrupted entries × 9 languages still carry
   slop (≈144 files with the doubled marker; more on the `-ive` signal).
-  Re-fan from the now-clean English via woh-fanout.
+  Two lanes, by `translation_status`:
+  1. **`metadata_only` stubs** (bodies are verbatim English): mechanical
+     body-splice from the repaired English under the translated
+     frontmatter — proven on mytheme ×9 (`7384d07`, byte-identity of the
+     pre-repair body verified before splicing). Scriptable corpus-wide.
+  2. **Genuinely translated entries**: re-fan via woh-fanout
+     (translator → reviewer), not ad-hoc edits.
 
 ## Deploy record (content main → www main)
 - noah `ca5a056`, abraham `61ab8c2` (individual, with monotheism re-link)
