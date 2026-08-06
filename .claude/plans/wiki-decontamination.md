@@ -82,10 +82,12 @@ list-of-close-encounters, hebrew, apocalypse, terraforming,
 list-of-exegetic-readings, life-engineering, elohim) carried the same
 landscape-template filler in lighter concentration; the 1–2 trace band
 was fixed where filler, kept where load-bearing. **The corpus floor is
-now 7 documented-legitimate occurrences in 6 files** — method-vs-
+now 8 documented-legitimate occurrences in 7 files** — method-vs-
 substance contrasts (watchers, pangaea, ezekiel,
-list-of-prophets-and-religions) and grammatical uses (infinity ×2,
-mytheme). Any `-ive` occurrence beyond these seven is suspect.
+list-of-prophets-and-religions), grammatical uses (infinity ×2,
+mytheme), and one frontmatter field label (crop-circles:
+`substantive_residual_questions` infobox key, missed by the 6-file
+count). Any `-ive` occurrence beyond these eight is suspect.
 mytheme locales: agent-synced English metadata_only stub bodies
 (`7384d07`) — content-safe, no translations existed.
 
