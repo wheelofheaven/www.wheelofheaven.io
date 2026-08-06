@@ -25,11 +25,21 @@ counted per entry (not per-1000-words). Earlier metrics under-counted:
   `tree-of-life`, `great-month`, `the-alliance`, `infinity`, `great-flood`,
   `raelism`, `embassy`, `biglino-method`, `mytheme`, `doubled-signature`,
   `list-of-megalithic-sites`, `adamites`, `serpent`.
-  **Stale-list caveat (2026-08-06):** `council-of-eternals` was audited for
-  the benchmark pilot and is ALREADY CLEAN — fully rewritten under the
-  2026-07 editorial pass (0 `-ive` markers, structured source-ID refs,
-  claim-typed). This list predates that pass; **verify each entry's
-  `editorial_pass` before scheduling work** — others here may be done too.
+  **Full Phase-5 audit (2026-08-06)** — every entry measured for
+  `editorial_pass` + lone `-ive` count. The list was badly stale: the
+  2026-07 pass had already rewritten over half of it.
+  - **CLEAN (11, no work needed):** council-of-eternals, lucifer,
+    precession, satan, cosmic-chain, the-alliance, embassy,
+    doubled-signature (all 2026-07, 0 `-ive`); infinity + raelism
+    (2026-07, 1–2 `-ive` — eyeballed, legitimate grammatical uses).
+  - **DIRTY (9, true remaining Phase-5 worklist, by `-ive` count):**
+    sendys-conditions-of-coherence (22), cosmic-pluralism (17),
+    tree-of-life (15), great-month (15), great-flood (14),
+    biglino-method (12), mytheme (10), list-of-megalithic-sites (9),
+    adamites (9) — all still on the 2026-05 pass, 5.9k–12.9k words.
+    Note great-flood: clean of the *doubled* marker (per §4) but firmly
+    in the light `-ive` band; the §4 "leave them" note applies to the
+    doubled-marker campaign only.
 - **Phase 4 — translations:** the corrupted entries × 9 languages still carry
   slop (≈144 files with the doubled marker; more on the `-ive` signal).
   Re-fan from the now-clean English via woh-fanout.
