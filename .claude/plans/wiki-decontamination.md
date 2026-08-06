@@ -47,6 +47,33 @@ counted per entry (not per-1000-words). Earlier metrics under-counted:
     interval).
 
 ### Flagged during the 2026-08 repair (needs editorial/source review, NOT fixed)
+
+**Status 2026-08-06 — review batch applied (content `4fde255`, mytheme
+earlier in `c3ed980`).** Mechanical + source-verified items FIXED:
+great-flood see_also slashes; serpent footnote-3 "immediately" qualifier
++ infobox Isa 27:1 separated from the Eden line; sendys sequence
+position ("fourth"→last, list reordered chronologically), Dyson
+attribution corrected to "Interstellar Transport" (*Physics Today*,
+1968; no 1964 SciAm article exists on this), Pali-vindication claims
+rehedged (×2), stale 4,000+ exoplanet count; great-month Diogenes
+360×→365× (report via Aëtius, not Censorinus), Gen 25:26 citation
+dropped (Isaac was 60 — contradicted the 20–25-yr claim), fabricated
+"72-day decan" and "Bardo 72" bullets cut (attested Bardo count is
+42+58=100); biglino 17 *books* not 17 *years* (San Paolo "more than a
+decade," ended c. 2010; the 1990–2007 range was invented), *La Bibbia
+nuda* 2021 as first print (this ledger's own "2018" note was itself
+wrong), San Paolo transliteration claim attributed to Biglino's
+account; cosmic-pluralism πολυκοσμία/μονοκοσμία reworded as modern
+coinages (not attested ancient vocabulary), *Burned Alive* → Reaktion
+Books 2018, exoplanet count → 6,000+.
+**STILL OPEN (editorial/canon rulings):** great-month "c. 1950" lattice
+vs timeline's 1945; adamites 25,000-years vs Age-of-Leo window; serpent
+Eden-disclosure dates vs Leo/Cancer arithmetic; tree-of-life Phase II
+window vs Genesis's 1,656-year span + Enoch infobox-vs-body reading;
+cosmic-pluralism claim_type `direct`→`framework`?; tree-of-life quote 5
+attribution (wording absent from in-house library corpus — check the
+*Message from the Designers* print text; cf. ETTMTTP ch. 2's
+eternity/cell-conservation passage).
 - great-month: Age of Aquarius "c. 1950" lattice vs timeline's 1945 start
   (entry-internal 2,160-lattice is self-consistent — reconciliation is an
   editorial decision); Diogenes-of-Babylon 360× vs attested 365×; Bardo
