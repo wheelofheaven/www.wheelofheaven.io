@@ -32,14 +32,47 @@ counted per entry (not per-1000-words). Earlier metrics under-counted:
     precession, satan, cosmic-chain, the-alliance, embassy,
     doubled-signature (all 2026-07, 0 `-ive`); infinity + raelism
     (2026-07, 1–2 `-ive` — eyeballed, legitimate grammatical uses).
-  - **DIRTY (9, true remaining Phase-5 worklist, by `-ive` count):**
-    sendys-conditions-of-coherence (22), cosmic-pluralism (17),
-    tree-of-life (15), great-month (15), great-flood (14),
-    biglino-method (12), mytheme (10), list-of-megalithic-sites (9),
-    adamites (9) — all still on the 2026-05 pass, 5.9k–12.9k words.
-    Note great-flood: clean of the *doubled* marker (per §4) but firmly
-    in the light `-ive` band; the §4 "leave them" note applies to the
-    doubled-marker campaign only.
+  - **DIRTY (10 — count corrected 2026-08-06; serpent (8) was omitted
+    from the first write-up): ALL TEN REPAIRED + DEPLOYED 2026-08-06**
+    (content ff05729..28fa296, one commit per entry; www e3a4a98e9d3).
+    De-slop-and-preserve via parallel agents + human verification:
+    markers 131 → 1 (the survivor is a genuine Lévi-Straussian technical
+    use in mytheme); every entry's description split into
+    summary/tldr/keywords (150–160-char descriptions); citation/shortcode
+    token counts verified identical; editorial_pass → 2026-08.
+    **Phase 5 is COMPLETE.** Unambiguous factual fixes applied in passing
+    (mahayuga arithmetic, Younger-Dryas dates, A1010 gloss, broken
+    ancient-builders link, IAS naming, stale "(when written)" pointers,
+    Eloha→Elohim teams, Greek/Latin roots, flood-millennia count, Caral
+    interval).
+
+### Flagged during the 2026-08 repair (needs editorial/source review, NOT fixed)
+- great-month: Age of Aquarius "c. 1950" lattice vs timeline's 1945 start
+  (entry-internal 2,160-lattice is self-consistent — reconciliation is an
+  editorial decision); Diogenes-of-Babylon 360× vs attested 365×; Bardo
+  "72 manifestations" count; Egyptian 72-day decan claim; Gen 25:26 as
+  support for a 20–25-year generation.
+- adamites: synthesis "25,000 years ago" vs Age-of-Leo window (~10ky gap).
+- serpent: Eden-disclosure dates vs Leo/Cancer boundary arithmetic;
+  infobox lists Isaiah 27:1 while body separates Leviathan's lineage;
+  footnote 3 drops the "immediately" qualifier the body uses.
+- tree-of-life: Phase II window vs Genesis's internal 1,656-year span;
+  Enoch as grant-recipient (infobox) vs early extraction (body);
+  unattributed 150–200-year lifespan claim; one block quote lacking
+  book/chapter attribution.
+- sendys-conditions: "fourth in sequence" vs six-item list; *The Coming
+  of the Gods* = which French original; Dyson "1964 Scientific American"
+  attribution; Pali-canon "vindication" claims stated in corpus voice
+  (hedging review).
+- biglino-method: 17-year vs 17-books conflation; "first appears in print
+  2022" vs 2018 Italian original; unsourced San Paolo transliteration
+  claim.
+- cosmic-pluralism: πολυκοσμία/μονοκοσμία attestation dubious; *Burned
+  Alive* publisher mismatch; exoplanet count staleness; claim_type
+  arguably `framework` not `direct`.
+- mytheme: Propp "initial situation" counted inside the 31 functions;
+  J.Z. Smith encyclopedia article italicized as a book.
+- great-flood: two library see_also paths lack leading slashes (cosmetic).
 - **Phase 4 — translations:** the corrupted entries × 9 languages still carry
   slop (≈144 files with the doubled marker; more on the `-ive` signal).
   Re-fan from the now-clean English via woh-fanout.
