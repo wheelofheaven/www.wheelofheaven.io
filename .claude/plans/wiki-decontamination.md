@@ -73,6 +73,22 @@ counted per entry (not per-1000-words). Earlier metrics under-counted:
 - mytheme: Propp "initial situation" counted inside the 31 functions;
   J.Z. Smith encyclopedia article italicized as a book.
 - great-flood: two library see_also paths lack leading slashes (cosmetic).
+### Corpus-wide tail sweep (2026-08-06, after Phase 5)
+A full-corpus recount immediately after Phase 5 showed the campaign's
+tier lists had never covered the sub-8 tail: 38 files still carried
+markers. Swept same day (content `40b94e2`): the 3–7 band (13 files —
+prophet, dragons, pantropy, jesus, theomachy, cosmic-competition,
+list-of-close-encounters, hebrew, apocalypse, terraforming,
+list-of-exegetic-readings, life-engineering, elohim) carried the same
+landscape-template filler in lighter concentration; the 1–2 trace band
+was fixed where filler, kept where load-bearing. **The corpus floor is
+now 7 documented-legitimate occurrences in 6 files** — method-vs-
+substance contrasts (watchers, pangaea, ezekiel,
+list-of-prophets-and-religions) and grammatical uses (infinity ×2,
+mytheme). Any `-ive` occurrence beyond these seven is suspect.
+mytheme locales: agent-synced English metadata_only stub bodies
+(`7384d07`) — content-safe, no translations existed.
+
 - **Phase 4 — translations:** the corrupted entries × 9 languages still carry
   slop (≈144 files with the doubled marker; more on the `-ive` signal).
   Re-fan from the now-clean English via woh-fanout.
