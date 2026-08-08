@@ -66,14 +66,32 @@ wrong), San Paolo transliteration claim attributed to Biglino's
 account; cosmic-pluralism πολυκοσμία/μονοκοσμία reworded as modern
 coinages (not attested ancient vocabulary), *Burned Alive* → Reaktion
 Books 2018, exoplanet count → 6,000+.
-**STILL OPEN (editorial/canon rulings):** great-month "c. 1950" lattice
-vs timeline's 1945; adamites 25,000-years vs Age-of-Leo window; serpent
-Eden-disclosure dates vs Leo/Cancer arithmetic; tree-of-life Phase II
-window vs Genesis's 1,656-year span + Enoch infobox-vs-body reading;
-cosmic-pluralism claim_type `direct`→`framework`?; tree-of-life quote 5
-attribution (wording absent from in-house library corpus — check the
-*Message from the Designers* print text; cf. ETTMTTP ch. 2's
-eternity/cell-conservation passage).
+**ALL FLAGGED ITEMS NOW RESOLVED (2026-08, founder-ruled point-by-point):**
+- great-month "c. 1950" vs 1945 → (c) NO edit; 1945 is the revelation-based
+  Aquarius-entering claim, 1950 the lattice calculation, both stand; past-age
+  dates kept as calculated.
+- adamites 25,000-years vs Age-of-Leo + serpent Eden-disclosure dates →
+  resolved by the **Model-C Eden chronology** decision (see
+  [`model-c-chronology.md`](model-c-chronology.md)); adamites synthesis
+  re-anchored to 11,375 BCE / opening of Leo, serpent disclosure to 8,850 BCE
+  (Leo/Cancer boundary), and the whole two-stage model propagated across 14
+  entries (content `c016084`, `2d858ce`, `77a4866`).
+- tree-of-life Phase II window vs Genesis 1,656 → resolved by Model C
+  (post-Eden grant now Age of Cancer 8,850–6,690, fits the 1,656-yr span).
+- tree-of-life **Enoch** infobox-vs-body → (a) Enoch removed from the
+  patriarchal-grant list, relocated to the extraction/Eternals category
+  (matches the body's Gen 5:24 reading). `77a4866`.
+- cosmic-pluralism claim_type `direct`→`framework`? → (b) KEEP `direct`
+  (entry read as primarily a mainstream-doctrine survey). No edit.
+- tree-of-life **quote 5** attribution → (a) attributed to *Extra-Terrestrials
+  Took Me to Their Planet* (1975), Planet of the Eternals account (founder
+  confirmed ETTMTTP is the source). `77a4866`.
+
+Two NEW chronology residuals surfaced during Model-C propagation and are
+deferred (see [`model-c-chronology.md`](model-c-chronology.md) "Flagged, NOT
+fixed"): the Younger-Dryas placement in timeline age-of-cancer/age-of-gemini,
+and the "~25,000 years ago for synthesis" phrasing in pantropy/precession/
+great-year (inside the founder's "leave the 25,000 framing" boundary).
 - great-month: Age of Aquarius "c. 1950" lattice vs timeline's 1945 start
   (entry-internal 2,160-lattice is self-consistent — reconciliation is an
   editorial decision); Diogenes-of-Babylon 360× vs attested 365×; Bardo
