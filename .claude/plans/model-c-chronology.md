@@ -69,16 +69,40 @@ elohim, antediluvian, genesis, apocalypse, pantropy, tree-of-life, and the
 title/created/footnote/body; the 11,375 BCE / 666-gen figure re-assigned to
 the species). `timeline/age-of-leo` already correct — untouched.
 
-## Flagged, NOT fixed (need a separate decision)
+## Synthesis-date correction (DONE, content `fa4e4ac`)
+
+Founder reopened the boundary: **9 corpus-voice claims dating the human
+synthesis to ~25,000 yr ago** were corrected to **~13,000 yr ago (c. 11,375
+BCE)** across `pantropy` (×3 body), `precession`, `great-year` (body + the
+arrival/synthesis split in line 106 and the description), `intelligent-design`,
+`cosmic-pluralism` (×3). LEFT intact (bounded 25,000 usages): "created all life
+~25,000 yr" doctrinal summaries (`raelism`), Yahweh's-age (`council-of-eternals`,
+`elohim-home-planet`), tech-lead (`great-return`), and the arrival ≈ one-Great-
+Year framing (`great-year` reference note). Rule: entries stating the CORPUS's
+chronological reading of the human synthesis say ~13,000 yr; entries reporting
+Raëlian doctrine or Yahweh's-age/tech-lead keep 25,000.
+
+## Translation propagation (i18n)
+
+- **DONE (content `9d7dfd5`):** 10 `metadata_only` entries (English-bodied
+  shells) synced to current English across all 9 locales — body-splice + the 4
+  frontmatter date-field swaps (adamites period/summary, tree-of-knowledge
+  biblical_dating, biglino developer, cosmic-pluralism exoplanet count). 90
+  files. Scripts in session scratchpad (`splice_metadata_locales.py`,
+  `fm_swaps_locales.py`).
+- **PENDING (needs real re-translation, NOT mechanical):** 11 genuinely
+  translated entries carry the old chronology in the target languages —
+  `serpent`, `eden`, `lucifer`, `yahweh`, `elohim`, `antediluvian`,
+  `tree-of-life`, `adam-and-eve`, `great-flood`, `precession`, `great-year`.
+  These need the Model-C date/label changes (and the adam-and-eve two-stage
+  reframe) rendered per-language via woh-fanout. Noindexed → low urgency.
+  `watchers` is English-only (no locale).
+
+## Still flagged, NOT fixed
 
 - **Younger Dryas placement** in `timeline/age-of-cancer` (lines ~362/366/396)
   and `timeline/age-of-gemini` (~460): the YD (12,900–11,700 BP ≈
   10,950–9,750 BCE) is called "late Leo / early Cancer transition." On the
   canonical ruler that window is **early-to-mid Age of Leo**. The entries are
   on the shifted ruler; fixing means rewording the YD framing in both age
-  chapters — tangential to the Eden propagation, deferred.
-- **"~25,000 years ago for the human-synthesis event"** in `pantropy` (~189),
-  `precession` (~214), and `great-year` (~106): now inconsistent with the
-  Model-C synthesis date (11,375 BCE ≈ 13,000 yr ago), but sits inside the
-  "leave the 25,000 framing" boundary. Revisit only if the founder reopens
-  the 25,000 question.
+  chapters. Deferred (founder chose #2 + #3, not this).
