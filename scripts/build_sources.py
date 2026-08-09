@@ -240,6 +240,13 @@ def scan_pages(seeds: dict[str, dict]) -> int:
             fm = parse_frontmatter(md_path)
             if not fm:
                 continue
+            # Skip draft pages. Their inline references are provisional and
+            # must not mint source records or cited_by backlinks: a draft's
+            # page 404s live, so every backlink to it is dead. (Audit
+            # 2026-08-01: draft articles leaked a placeholder "[GATHER]"
+            # source record plus ~205 dead /sources/ cited-by links.)
+            if fm.get("draft") is True:
+                continue
             extra = fm.get("extra") or {}
             refs = extra.get("references") or []
             if not isinstance(refs, list):
@@ -395,9 +402,16 @@ def render_source_page_stub(source: dict, locale: str) -> str:
 
 
 def write_source_pages(sources: list[dict]) -> None:
+    current_ids = {source["id"] for source in sources}
     for locale in SOURCE_PAGE_LOCALES:
         locale_dir = CONTENT_ROOT / locale / "sources" / "_generated" if locale != "en" else SOURCE_PAGES_DIR
         locale_dir.mkdir(parents=True, exist_ok=True)
+        # Prune stale stubs so a record dropped from the seed doesn't linger
+        # as an orphan page. The dir holds only generated stubs (id.md), so
+        # removing any whose id is no longer current is safe.
+        for stale in locale_dir.glob("*.md"):
+            if stale.stem not in current_ids:
+                stale.unlink()
         for source in sources:
             page_path = locale_dir / f"{source['id']}.md"
             page_path.write_text(render_source_page_stub(source, locale), encoding="utf-8")
