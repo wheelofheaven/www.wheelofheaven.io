@@ -2,7 +2,7 @@
 
 > Wheel of Heaven is a long reading of the ancient world's creation traditions through a single working hypothesis: that the beings the Hebrew Bible calls *Elohim* — a plural noun, masked by translation as the singular "God" — were a small advanced human civilization from elsewhere who came here, prepared the planet, designed life on Earth, and left a record in the religious texts. The reading runs across twelve ages of the precessional cycle, from the project's beginning approximately twenty-two thousand years ago to the present age and into the long future the next Great Year is opening. The site is an open-source, multilingual, free public knowledge project authored by Zara Zinsfuss, built to be checked.
 
-The project is a working hypothesis, not a creed. The reading is offered to be tried, evaluated, and tested against alternatives. Every page on the site labels its main claim as **direct** (what a source asserts), **inferred** (what scholarship reasonably concludes), or **speculative** (what the project proposes as interpretive synthesis). Where the evidence shifts, the reading shifts.
+The project is a working hypothesis, not a creed. The reading is offered to be tried, evaluated, and tested against alternatives. Every page on the site labels its main claim as **direct** (what a source asserts), **framework** (a foundational premise of the Wheel of Heaven canon), **inferred** (what scholarship reasonably concludes), or **speculative** (what the project proposes as interpretive synthesis). Where the evidence shifts, the reading shifts.
 
 The corpus takes the Raëlian source material — primarily *The Book Which Tells the Truth* (Claude Vorilhon / Raël, 1974) and the subsequent volumes — as its primary interpretive lens. Around that lens it assembles biblical, Mesopotamian, Vedic, Mesoamerican, and other comparative material, organized along the precession of the equinoxes (the slow ~25,920-year wobble of Earth's axis), divided into twelve precessional ages of approximately 2,160 years each. The project is influenced by the work of Jean Sendy on biblical reinterpretation and by Giorgio de Santillana and Hertha von Dechend's *Hamlet's Mill* (1969) on the precessional framework in ancient mythology.
 
@@ -20,7 +20,7 @@ The corpus takes the Raëlian source material — primarily *The Book Which Tell
 - [Wiki](https://www.wheelofheaven.world/wiki/): Reference entries on terms, figures, concepts, and places. Use for definitional queries.
 - [Library](https://www.wheelofheaven.world/library/): Primary source texts the corpus reads from — Raëlian, biblical, Mesopotamian, and others — with commentary and context.
 - [Articles](https://www.wheelofheaven.world/articles/): Long-form essays and explainers on specific topics that don't fit the timeline structure.
-- [Resources](https://www.wheelofheaven.world/resources/): Curated external scholarship, books, films, and references the project draws on or engages with.
+- [Sources](https://www.wheelofheaven.world/sources/): Curated external scholarship, books, films, and references the project draws on or engages with.
 - [About](https://www.wheelofheaven.world/about/): The project's purpose, authorship, and methodological commitments.
 
 ## The twelve precessional ages
