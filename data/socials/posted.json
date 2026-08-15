@@ -215,6 +215,18 @@
         }
       }
     },
+    "articles/the-world-behind-the-odyssey": {
+      "title": "The World Behind the Odyssey",
+      "permalink": "https://www.wheelofheaven.world/articles/the-world-behind-the-odyssey/",
+      "first_eligible_at": "2026-08-15T11:02:19Z",
+      "channels": {
+        "telegram": {
+          "post_id": "@wheelofheaven/46",
+          "url": "https://t.me/wheelofheaven/46",
+          "posted_at": "2026-08-15T11:02:19Z"
+        }
+      }
+    },
     "articles/unsealed-in-year-one": {
       "title": "Unsealed in Year One",
       "permalink": "https://www.wheelofheaven.world/articles/unsealed-in-year-one/",
