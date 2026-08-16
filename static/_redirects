@@ -192,3 +192,8 @@
 # to the CRITICAL MIGRATIONS block near the TOP of this file (2026-07) so the
 # Cloudflare Pages ~270-rule cap can never clip them again.
 # =============================================================================
+
+# Agent discovery: some scanners probe /auth.md at the root rather than under
+# /.well-known/. Rewrite (200, not a redirect) so there is still one source of
+# truth. See https://docs.wheelofheaven.world/ai-ingestion/agent-discovery/
+/auth.md                             /.well-known/auth.md                 200

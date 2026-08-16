@@ -51,8 +51,13 @@
   Content-Type: application/linkset+json
   Cache-Control: public, max-age=3600
 
-# Authentication policy (there is none)
+# Authentication policy (there is none). Also served at /auth.md via a 200
+# rewrite in _redirects — headers match the request path, so both need the rule.
 /.well-known/auth.md
+  Content-Type: text/markdown; charset=utf-8
+  Cache-Control: public, max-age=3600
+
+/auth.md
   Content-Type: text/markdown; charset=utf-8
   Cache-Control: public, max-age=3600
 
