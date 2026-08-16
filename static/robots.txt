@@ -9,8 +9,9 @@
 # redundant against the wildcard group below, and if Cloudflare's managed
 # robots.txt block is ever re-enabled they collide with its Disallow rules
 # for the same agents — producing a file whose meaning depends on which
-# crawler is reading it. Crawler access is controlled in exactly one place:
-# the Cloudflare dashboard (AI Crawl Control). See
+# crawler is reading it. Crawler access is controlled in the Cloudflare
+# dashboard, across three separate controls — and only "Managed robots.txt"
+# (AI Crawl Control -> Robots.txt tab) generates this file. See
 # https://docs.wheelofheaven.world/ai-ingestion/agent-discovery/
 
 User-agent: *
