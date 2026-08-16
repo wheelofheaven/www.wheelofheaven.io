@@ -1,6 +1,7 @@
 # Continue Reading — cross-site resume surface
 
-Status: phase 0 + 1 implemented (2026-08-16), phases 2–4 open.
+Status: phases 0–4 implemented (2026-08-16). Verified against a full
+`zola build` plus a headless-Chrome pass over the real templates.
 
 ## Problem
 
@@ -82,17 +83,41 @@ through a `woh:reading-list-changed` document event and the
   - Progress records now also carry `bookTitle` and `lang` so the aggregator
     has titles without depending on history.
 - **Phase 1 — aggregator, panel, badges** (done)
-- **Phase 2 — site-wide long-form progress** (open): persist
-  `{url, title, section, percent, anchor, updatedAt}` for articles, timeline
-  chapters and wiki entries past ~5% scroll, drop past ~90%. The global
-  `reading-progress.html` hairline already computes exactly this number and
-  already detects exactly these page types.
-- **Phase 3 — landing + `/read/` hub** (open): a single client-rendered
-  "Continue: <title> · Ch. N →" chip in the landing hero (reserved slot,
-  styled in critical CSS, populated after idle so the LCP protection in
-  `index.html` is not compromised), and the full module on `/read/`.
-- **Phase 4 — audio resume** (open): `woh_listen_progress` mirroring the
-  library progress shape, so audiobook sessions become open items too.
+- **Phase 2 — site-wide long-form progress** (done): `page-progress.js`
+  persists `{path, title, section, percent, anchor, lang, updatedAt}` to
+  `woh_page_progress` for `/wiki/`, `/articles/`, `/timeline/` and `/news/`
+  leaf pages past 5%, and deletes the record past 90%. Keyed by the
+  locale-stripped path, so the same entry read in two languages is one item.
+  - It runs **no scroll loop of its own**: `reading-progress.html` emits
+    `woh:reading-progress` with the position it already computes.
+  - That partial had to be fixed first. base.html includes it at the top of
+    `<body>`, so its content-selector queries ran before `<main>` was parsed,
+    always missed, and hid the hairline on **every page of the site**. It now
+    waits for `DOMContentLoaded`.
+  - The event carries `contentPercent` (progress through the article element)
+    alongside the document-scroll `percent` the bar draws. The footer is tall
+    enough that a fully-read short entry never nears 100% of the document,
+    which would pin finished pages in the panel forever.
+  - Section index pages are excluded — only leaf entries are things you are
+    part-way through. `/sources/` and `/datasets/` are excluded too: they are
+    consulted, not read start-to-finish.
+- **Phase 3 — landing + `/read/` hub** (done): `[data-continue-chip]` in
+  landing §1 and `[data-continue-module]` at the top of `/read/`. Both are
+  empty in the HTML and `display: none` until JS finds something, so a
+  first-time reader's layout is unchanged; the chip additionally waits for
+  `requestIdleCallback` so it never competes with the hero LCP.
+  - Desktop also gained its own panel toggle, `.navbar__reading-btn`, beside
+    the search button. The badge could not go on the Read split-button: that
+    element sets `overflow: hidden` and would clip a corner badge, and it is
+    a `backdrop-filter` glass surface. The new button reuses
+    `[data-toggle-reading-list]`, so reading-list.js needed no new wiring —
+    and the panel is now one click away on desktop instead of two.
+- **Phase 4 — audio resume** (done): `listen-button.js` writes
+  `woh_listen_progress` off the central `onProgress` (prerecorded engine, real
+  seconds) and `onUnitStart` (studio/system engines, unit boundaries),
+  throttled to one write per 5 s, flushed on pause / `pagehide` /
+  `visibilitychange`, and cleared at 97% or on `onEnd`. Rendered as a separate
+  "Continue listening" group.
 
 ## Constraints (learned from the codebase)
 
@@ -110,3 +135,33 @@ through a `woh:reading-list-changed` document event and the
 5. New UI strings need keys in all 10 `[translations]` tables in
    `config.toml`, and RTL (`he`) needs the badge corner flipped in
    `sass/layout/_rtl.scss`.
+6. **core.bundle.js is deferred, so `document.readyState` is already past
+   `loading` when it executes.** Every module in it therefore takes the
+   `else { init(); }` branch and initializes *synchronously, in bundle
+   order*, during its own evaluation — a later module's globals do not
+   exist yet. This bit phase 1: reading-list.js decided the panel's empty
+   state from `window.ContinueReading?.getOpenItemCount()`, which was
+   `undefined` at that moment, so "Nothing open yet" rendered on top of a
+   populated panel. Fixed by exposing `ReadingList.refreshPanel` and having
+   continue-reading.js call it once initialized. Any future cross-module
+   read at init time needs the same treatment — optional chaining hides
+   this failure instead of surfacing it.
+7. Relative times use `Intl.RelativeTimeFormat` against
+   `document.documentElement.lang` rather than translated strings — four
+   more keys across ten locale tables buys nothing Intl doesn't already do
+   correctly.
+
+## Verification
+
+`scripts/` has no test runner for browser JS, so this shipped behind a
+headless-Chrome pass driven over CDP against `zola serve` (the driver
+scripts are scratch, not committed). What it covered: the hairline is no
+longer `display: none`; scrolling writes `woh_page_progress` with a real
+title/section/percent/anchor; the badge counts the item from another page;
+the current page is excluded from its own count; the panel, landing chip and
+`/read/` module all render; reaching the end of a page clears the record;
+the empty state is panel-wide; the desktop toggle opens the panel; the
+listening group renders and its items dismiss; the mobile viewport shows the
+burger badge and hides the desktop toggle; RTL pins the badge to the
+left corner (verified positionally — `getComputedStyle` resolves
+`right: auto` to a used value, so asserting on the string fails).
