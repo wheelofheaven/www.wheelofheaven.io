@@ -42,6 +42,7 @@ PROJECT_ROOT = Path(__file__).resolve().parent.parent
 LEGACY_SEED_DIR = PROJECT_ROOT / "data" / "sources" / "sources"
 OUTPUT_PATH = PROJECT_ROOT / "data" / "sources.json"
 CITED_BY_OUTPUT_PATH = PROJECT_ROOT / "data" / "sources" / "cited-by.json"
+LICENSING_PATH = PROJECT_ROOT / "data" / "sources" / "licensing.json"
 CONTENT_ROOT = PROJECT_ROOT / "content"
 SOURCE_PAGES_DIR = CONTENT_ROOT / "sources" / "_generated"
 SOURCE_PAGE_LOCALES = ("en", "de", "es", "fr", "he", "ja", "ko", "ru", "zh", "zh-Hant")
@@ -334,6 +335,16 @@ def scan_pages(seeds: dict[str, dict]) -> int:
 
 def write_output(seeds: dict[str, dict], cites_recorded: int) -> None:
     sources = sorted(seeds.values(), key=lambda s: (s["title"].casefold(), s["id"]))
+
+    # licensing_status: the curated sidecar (data/sources/licensing.json) is
+    # the single authority — seed-carried values are overwritten, and sources
+    # without a determination are explicitly `unverified` rather than silent.
+    statuses: dict[str, str] = {}
+    if LICENSING_PATH.is_file():
+        with LICENSING_PATH.open(encoding="utf-8") as f:
+            statuses = json.load(f).get("statuses") or {}
+    for s in sources:
+        s["licensing_status"] = statuses.get(s["id"], "unverified")
 
     media_counts: dict[str, int] = {}
     for s in sources:
