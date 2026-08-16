@@ -107,6 +107,18 @@
         }
       }
     },
+    "articles/the-east-face-of-homer": {
+      "title": "The East Face of Homer",
+      "permalink": "https://www.wheelofheaven.world/articles/the-east-face-of-homer/",
+      "first_eligible_at": "2026-08-16T07:21:39Z",
+      "channels": {
+        "telegram": {
+          "post_id": "@wheelofheaven/47",
+          "url": "https://t.me/wheelofheaven/47",
+          "posted_at": "2026-08-16T07:21:39Z"
+        }
+      }
+    },
     "articles/the-first-mosques-faced-petra-not-mecca": {
       "title": "The First Mosques Faced Petra, Not Mecca",
       "permalink": "https://www.wheelofheaven.world/articles/the-first-mosques-faced-petra-not-mecca/",
