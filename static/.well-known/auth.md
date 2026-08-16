@@ -1,4 +1,6 @@
-# Authentication
+# Auth.md
+
+## Authentication
 
 **There is no authentication on any Wheel of Heaven surface.** Nothing is
 gated, metered, or rate-limited. There are no accounts, no API keys, no
