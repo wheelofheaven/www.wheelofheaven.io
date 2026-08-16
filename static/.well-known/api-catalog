@@ -1,0 +1,91 @@
+{
+  "linkset": [
+    {
+      "anchor": "https://api.wheelofheaven.world/",
+      "service-desc": [
+        {
+          "href": "https://api.wheelofheaven.world/v1/",
+          "type": "application/json",
+          "title": "v1 manifest — every endpoint, grouped by section"
+        },
+        {
+          "href": "https://api.wheelofheaven.world/v1/schema/",
+          "type": "application/json",
+          "title": "JSON Schemas for every response kind"
+        }
+      ],
+      "service-doc": [
+        {
+          "href": "https://docs.wheelofheaven.world/reference/api/",
+          "type": "text/html",
+          "title": "API reference — envelope, endpoints, enums, multilingual mirror"
+        },
+        {
+          "href": "https://docs.wheelofheaven.world/ai-ingestion/api-for-ai/",
+          "type": "text/html",
+          "title": "Using the API from agent code"
+        }
+      ],
+      "service-meta": [
+        {
+          "href": "https://www.wheelofheaven.world/.well-known/auth.md",
+          "type": "text/markdown",
+          "title": "Authentication policy (there is none)"
+        }
+      ],
+      "author": [
+        {
+          "href": "https://www.wheelofheaven.world/about/",
+          "title": "Wheel of Heaven"
+        }
+      ],
+      "license": [
+        {
+          "href": "https://creativecommons.org/publicdomain/zero/1.0/",
+          "title": "CC0-1.0"
+        }
+      ]
+    },
+    {
+      "anchor": "https://mcp.wheelofheaven.world/mcp",
+      "service-desc": [
+        {
+          "href": "https://www.wheelofheaven.world/.well-known/mcp/server-card.json",
+          "type": "application/json",
+          "title": "MCP server card"
+        },
+        {
+          "href": "https://www.wheelofheaven.world/.well-known/agent-skills/index.json",
+          "type": "application/json",
+          "title": "Skills index — the nine read-only tools"
+        }
+      ],
+      "service-doc": [
+        {
+          "href": "https://docs.wheelofheaven.world/reference/mcp/",
+          "type": "text/html",
+          "title": "MCP server reference — tools, transports, client setup"
+        }
+      ],
+      "service-meta": [
+        {
+          "href": "https://www.wheelofheaven.world/.well-known/auth.md",
+          "type": "text/markdown",
+          "title": "Authentication policy (there is none)"
+        }
+      ],
+      "author": [
+        {
+          "href": "https://www.wheelofheaven.world/about/",
+          "title": "Wheel of Heaven"
+        }
+      ],
+      "license": [
+        {
+          "href": "https://creativecommons.org/publicdomain/zero/1.0/",
+          "title": "CC0-1.0"
+        }
+      ]
+    }
+  ]
+}

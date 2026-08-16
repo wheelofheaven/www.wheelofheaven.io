@@ -1,0 +1,73 @@
+{
+  "name": "Wheel of Heaven",
+  "description": "Read-only skills over the Wheel of Heaven corpus — comparative mythology, digitized primary source texts, and the project's interpretive framework. Every skill is a tool on the public MCP server; every result is CC0 and citable by its canonical URL.",
+  "homepage": "https://www.wheelofheaven.world/",
+  "documentation": "https://docs.wheelofheaven.world/reference/mcp/",
+  "license": "CC0-1.0",
+  "auth": {
+    "required": false,
+    "policy": "https://www.wheelofheaven.world/.well-known/auth.md"
+  },
+  "provider": {
+    "type": "mcp",
+    "endpoint": "https://mcp.wheelofheaven.world/mcp",
+    "transport": "streamable-http",
+    "serverCard": "https://www.wheelofheaven.world/.well-known/mcp/server-card.json"
+  },
+  "skills": [
+    {
+      "name": "search_corpus",
+      "title": "Search the corpus",
+      "description": "Full-text search over encyclopedia entries, the precessional-ages timeline, ~120 digitized library source texts, research articles, and newsroom dispatches. Returns ranked matches with slugs and citable URLs.",
+      "readOnly": true
+    },
+    {
+      "name": "get_entry",
+      "title": "Fetch an entry",
+      "description": "Fetch one encyclopedia entry, timeline chapter, article, or dispatch as markdown, with its epistemic metadata: claim_type, editorial_pass, references, typed related-content edges, and canonical citation URL.",
+      "readOnly": true
+    },
+    {
+      "name": "get_passage",
+      "title": "Fetch a primary-source passage",
+      "description": "Fetch a chapter of a digitized primary source text (Genesis, Atrahasis, Gilgamesh, Enuma Elish, Enoch, the Raëlian books, and ~120 more) as numbered paragraphs with stable reference IDs. Returns the text itself, not interpretation.",
+      "readOnly": true
+    },
+    {
+      "name": "get_source",
+      "title": "Look up the bibliography",
+      "description": "Look up the source program by ID or query. Every record carries its source_family, stance (supportive/neutral/critical/mixed), and relation_to_wheel — the bibliography deliberately includes critical and skeptical sources.",
+      "readOnly": true
+    },
+    {
+      "name": "compare_traditions",
+      "title": "Compare traditions",
+      "description": "Return rows from a comparative-mythology dataset: flood-myths, divine-council-index, theomachy-crossrefs, world-ages, or prophets-and-religions. Source-grounded comparison tables linked to the digitized texts, with no interpretation applied.",
+      "readOnly": true
+    },
+    {
+      "name": "query_graph",
+      "title": "Query the content graph",
+      "description": "Query the typed content graph: the 1-hop ego network of any corpus node with typed edges (see_also, in_body, cites_source, same_tradition, same_age, comparison_of) in both directions.",
+      "readOnly": true
+    },
+    {
+      "name": "get_interpretation",
+      "title": "Get the framework reading",
+      "description": "Return the project's own interpretive reading of a topic — explicitly its Raëlian-canon-centred position, NOT mainstream consensus. Use the fact-layer skills (get_passage, compare_traditions) for source-grounded data without this framing.",
+      "readOnly": true
+    },
+    {
+      "name": "get_method",
+      "title": "Get the editorial method",
+      "description": "Return the editorial methodology: the claim_type taxonomy (direct/framework/inferred/speculative), the six-source rule, editorial passes, and translation policy. Call this to understand how to weigh everything else the server returns.",
+      "readOnly": true
+    },
+    {
+      "name": "get_glossary_term",
+      "title": "Look up a glossary term",
+      "description": "Look up a core term (Elohim, Yahweh, precession, World Ages, …) in the project glossary, returning its definition and renderings across all 9 site languages.",
+      "readOnly": true
+    }
+  ]
+}

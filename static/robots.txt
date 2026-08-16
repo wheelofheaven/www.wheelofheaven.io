@@ -1,47 +1,20 @@
 # Wheel of Heaven - robots.txt
-# Post-AI optimized for search engines and AI crawlers
+#
+# Policy: the entire corpus is CC0-1.0 (public domain). There is no
+# rights-based reason to restrict any crawler, and the project's whole
+# distribution strategy depends on being ingested, retrieved, and cited.
+# So: one open group for everyone, and no per-agent exceptions.
+#
+# Do NOT re-add per-agent "User-agent: <bot> / Allow: /" stanzas. They are
+# redundant against the wildcard group below, and if Cloudflare's managed
+# robots.txt block is ever re-enabled they collide with its Disallow rules
+# for the same agents — producing a file whose meaning depends on which
+# crawler is reading it. Crawler access is controlled in exactly one place:
+# the Cloudflare dashboard (AI Crawl Control). See
+# https://docs.wheelofheaven.world/ai-ingestion/agent-discovery/
 
 User-agent: *
-Allow: /
-
-# AI Crawlers - Explicitly Allowed
-User-agent: GPTBot
-Allow: /
-
-User-agent: ChatGPT-User
-Allow: /
-
-User-agent: Claude-Web
-Allow: /
-
-User-agent: ClaudeBot
-Allow: /
-
-User-agent: anthropic-ai
-Allow: /
-
-User-agent: Google-Extended
-Allow: /
-
-User-agent: Googlebot
-Allow: /
-
-User-agent: PerplexityBot
-Allow: /
-
-User-agent: Amazonbot
-Allow: /
-
-User-agent: YouBot
-Allow: /
-
-User-agent: CCBot
-Allow: /
-
-User-agent: Meta-ExternalAgent
-Allow: /
-
-User-agent: cohere-ai
+Content-Signal: search=yes,ai-input=yes,ai-train=yes
 Allow: /
 
 # Sitemap (Zola generates a single sitemap with all language URLs)

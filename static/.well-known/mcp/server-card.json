@@ -1,0 +1,27 @@
+{
+  "$schema": "https://static.modelcontextprotocol.io/schemas/2025-12-11/server.schema.json",
+  "name": "world.wheelofheaven.mcp/corpus",
+  "description": "Read-only Wheel of Heaven corpus: myth search, primary texts, datasets, typed graph. CC0.",
+  "repository": {
+    "url": "https://github.com/wheelofheaven/mcp.wheelofheaven.world",
+    "source": "github"
+  },
+  "version": "0.1.1",
+  "websiteUrl": "https://www.wheelofheaven.world/",
+  "remotes": [
+    {
+      "type": "streamable-http",
+      "url": "https://mcp.wheelofheaven.world/mcp"
+    }
+  ],
+  "packages": [
+    {
+      "registryType": "npm",
+      "identifier": "@wheelofheaven/mcp",
+      "version": "0.1.0",
+      "transport": {
+        "type": "stdio"
+      }
+    }
+  ]
+}
