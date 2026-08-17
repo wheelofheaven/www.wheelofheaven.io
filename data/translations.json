@@ -1,7 +1,7 @@
 {
   "_meta": {
-    "generated_at": "2026-07-10T05:59:14+00:00",
-    "count": 1036
+    "generated_at": "2026-08-17T17:56:59+00:00",
+    "count": 1165
   },
   "paths": {
     "AGENTS": [
@@ -46,8 +46,29 @@
       "zh",
       "zh-Hant"
     ],
+    "articles/anunnaki-and-the-elohim": [
+      "en"
+    ],
+    "articles/as-foolish-to-search-for-the-beginning": [
+      "en"
+    ],
+    "articles/lucifer-and-satan": [
+      "en"
+    ],
     "articles/made-from-the-ground-to-bear-the-labor": [
       "en"
+    ],
+    "articles/monotheism-is-the-wrong-question": [
+      "de",
+      "en",
+      "es",
+      "fr",
+      "he",
+      "ja",
+      "ko",
+      "ru",
+      "zh",
+      "zh-Hant"
     ],
     "articles/six-mornings-six-years": [
       "en"
@@ -65,6 +86,18 @@
       "zh-Hant"
     ],
     "articles/the-book-closest-to-the-truth": [
+      "de",
+      "en",
+      "es",
+      "fr",
+      "he",
+      "ja",
+      "ko",
+      "ru",
+      "zh",
+      "zh-Hant"
+    ],
+    "articles/the-east-face-of-homer": [
       "de",
       "en",
       "es",
@@ -122,22 +155,67 @@
       "en"
     ],
     "articles/the-man-who-bet-the-bible-on-the-moon": [
-      "en"
+      "de",
+      "en",
+      "es",
+      "fr",
+      "he",
+      "ja",
+      "ko",
+      "ru",
+      "zh",
+      "zh-Hant"
     ],
     "articles/the-mill-that-grinds-the-ages": [
-      "en"
+      "de",
+      "en",
+      "es",
+      "fr",
+      "he",
+      "ja",
+      "ko",
+      "ru",
+      "zh",
+      "zh-Hant"
     ],
     "articles/the-religion-of-religions": [
-      "en"
+      "de",
+      "en",
+      "es",
+      "fr",
+      "he",
+      "ja",
+      "ko",
+      "ru",
+      "zh",
+      "zh-Hant"
     ],
     "articles/the-reporter-at-the-razors-edge": [
       "en"
     ],
     "articles/the-scrolls-that-woke-in-year-one": [
-      "en"
+      "de",
+      "en",
+      "es",
+      "fr",
+      "he",
+      "ja",
+      "ko",
+      "ru",
+      "zh",
+      "zh-Hant"
     ],
     "articles/the-shape-of-humanity": [
-      "en"
+      "de",
+      "en",
+      "es",
+      "fr",
+      "he",
+      "ja",
+      "ko",
+      "ru",
+      "zh",
+      "zh-Hant"
     ],
     "articles/the-signature-and-the-designers": [
       "en"
@@ -154,7 +232,31 @@
       "zh",
       "zh-Hant"
     ],
+    "articles/the-world-behind-the-odyssey": [
+      "de",
+      "en",
+      "es",
+      "fr",
+      "he",
+      "ja",
+      "ko",
+      "ru",
+      "zh",
+      "zh-Hant"
+    ],
     "articles/unsealed-in-year-one": [
+      "de",
+      "en",
+      "es",
+      "fr",
+      "he",
+      "ja",
+      "ko",
+      "ru",
+      "zh",
+      "zh-Hant"
+    ],
+    "articles/watchers-and-the-nephilim": [
       "en"
     ],
     "author": [
@@ -238,6 +340,39 @@
       "ru",
       "zh",
       "zh-Hant"
+    ],
+    "datasets": [
+      "en"
+    ],
+    "datasets/aarne-1910-tale-types": [
+      "en"
+    ],
+    "datasets/antediluvian-chronologies": [
+      "en"
+    ],
+    "datasets/content-graph": [
+      "en"
+    ],
+    "datasets/divine-council-index": [
+      "en"
+    ],
+    "datasets/flood-myths": [
+      "en"
+    ],
+    "datasets/grimm-khm-index": [
+      "en"
+    ],
+    "datasets/myth-index": [
+      "en"
+    ],
+    "datasets/prophets-and-religions": [
+      "en"
+    ],
+    "datasets/theomachy-crossrefs": [
+      "en"
+    ],
+    "datasets/world-ages": [
+      "en"
     ],
     "faq": [
       "de",
@@ -1430,6 +1565,9 @@
     "library/song-of-the-hoe-woh": [
       "en"
     ],
+    "library/sumerian-king-list-woh": [
+      "en"
+    ],
     "library/thanh-ngon-hiep-tuyen-woh": [
       "en"
     ],
@@ -1444,6 +1582,9 @@
       "ru",
       "zh",
       "zh-Hant"
+    ],
+    "library/theogony-woh": [
+      "en"
     ],
     "library/titus": [
       "de",
@@ -1571,6 +1712,18 @@
       "zh",
       "zh-Hant"
     ],
+    "news/pursue-release-04-the-nuclear-nexus": [
+      "de",
+      "en",
+      "es",
+      "fr",
+      "he",
+      "ja",
+      "ko",
+      "ru",
+      "zh",
+      "zh-Hant"
+    ],
     "news/synthetic-cell-eats-and-divides": [
       "de",
       "en",
@@ -1680,6 +1833,18 @@
       "zh-Hant"
     ],
     "sources/1-samuel": [
+      "de",
+      "en",
+      "es",
+      "fr",
+      "he",
+      "ja",
+      "ko",
+      "ru",
+      "zh",
+      "zh-Hant"
+    ],
+    "sources/1177-b-c-the-year-civilization-collapsed": [
       "de",
       "en",
       "es",
@@ -2207,6 +2372,18 @@
       "zh",
       "zh-Hant"
     ],
+    "sources/answer-to-job-jung-s-companion-meditation-on-the-judeo-christian-god-image-and-i": [
+      "de",
+      "en",
+      "es",
+      "fr",
+      "he",
+      "ja",
+      "ko",
+      "ru",
+      "zh",
+      "zh-Hant"
+    ],
     "sources/apocalyptic-and-merkavah-mysticism": [
       "de",
       "en",
@@ -2220,6 +2397,18 @@
       "zh-Hant"
     ],
     "sources/apparent-weight-of-photons-physical-review-letters-4-337-341-the-pound-rebka-gra": [
+      "de",
+      "en",
+      "es",
+      "fr",
+      "he",
+      "ja",
+      "ko",
+      "ru",
+      "zh",
+      "zh-Hant"
+    ],
+    "sources/are-the-watchers-and-the-nephilim-the-same": [
       "de",
       "en",
       "es",
@@ -2268,6 +2457,18 @@
       "zh-Hant"
     ],
     "sources/asymptotic-safety-in-quantum-einstein-gravity-arxiv-hep-th-0511260-scale-depende": [
+      "de",
+      "en",
+      "es",
+      "fr",
+      "he",
+      "ja",
+      "ko",
+      "ru",
+      "zh",
+      "zh-Hant"
+    ],
+    "sources/atharva-veda-10-7-the-hymn-to-skambha-the-cosmic-pillar-that-supports-and-contai": [
       "de",
       "en",
       "es",
@@ -2387,7 +2588,31 @@
       "zh",
       "zh-Hant"
     ],
+    "sources/bacher-blau-shiur-komah-jewish-encyclopedia": [
+      "de",
+      "en",
+      "es",
+      "fr",
+      "he",
+      "ja",
+      "ko",
+      "ru",
+      "zh",
+      "zh-Hant"
+    ],
     "sources/bahaipedia": [
+      "de",
+      "en",
+      "es",
+      "fr",
+      "he",
+      "ja",
+      "ko",
+      "ru",
+      "zh",
+      "zh-Hant"
+    ],
+    "sources/baigent-leigh-dead-sea-scrolls-deception": [
       "de",
       "en",
       "es",
@@ -2543,6 +2768,18 @@
       "zh",
       "zh-Hant"
     ],
+    "sources/biblia-hebraica-stuttgartensia": [
+      "de",
+      "en",
+      "es",
+      "fr",
+      "he",
+      "ja",
+      "ko",
+      "ru",
+      "zh",
+      "zh-Hant"
+    ],
     "sources/biglino-bibbia-non-parla": [
       "de",
       "en",
@@ -2652,6 +2889,18 @@
       "zh-Hant"
     ],
     "sources/book-of-mormon": [
+      "de",
+      "en",
+      "es",
+      "fr",
+      "he",
+      "ja",
+      "ko",
+      "ru",
+      "zh",
+      "zh-Hant"
+    ],
+    "sources/born-in-heaven-made-on-earth-the-making-of-the-cult-image-in-the-ancient-near-ea": [
       "de",
       "en",
       "es",
@@ -2963,6 +3212,30 @@
       "zh",
       "zh-Hant"
     ],
+    "sources/cohen-shiur-qomah-texts-recensions": [
+      "de",
+      "en",
+      "es",
+      "fr",
+      "he",
+      "ja",
+      "ko",
+      "ru",
+      "zh",
+      "zh-Hant"
+    ],
+    "sources/collins-dead-sea-scrolls-biography": [
+      "de",
+      "en",
+      "es",
+      "fr",
+      "he",
+      "ja",
+      "ko",
+      "ru",
+      "zh",
+      "zh-Hant"
+    ],
     "sources/commentary-on-the-song-of-songs-prologue-the-four-texts-reserved-for-the-very-en": [
       "de",
       "en",
@@ -2975,7 +3248,31 @@
       "zh",
       "zh-Hant"
     ],
+    "sources/conformal-cyclic-cosmology-aeons-without-a-first-cycles-of-time": [
+      "de",
+      "en",
+      "es",
+      "fr",
+      "he",
+      "ja",
+      "ko",
+      "ru",
+      "zh",
+      "zh-Hant"
+    ],
     "sources/cook-muslim-apocalyptic": [
+      "de",
+      "en",
+      "es",
+      "fr",
+      "he",
+      "ja",
+      "ko",
+      "ru",
+      "zh",
+      "zh-Hant"
+    ],
+    "sources/cosmic-chain-wheel-of-heaven-wiki-civilizations-seeding-civilizations-without-a-": [
       "de",
       "en",
       "es",
@@ -3024,6 +3321,18 @@
       "zh-Hant"
     ],
     "sources/cosmic-serpent-narby": [
+      "de",
+      "en",
+      "es",
+      "fr",
+      "he",
+      "ja",
+      "ko",
+      "ru",
+      "zh",
+      "zh-Hant"
+    ],
+    "sources/cosmological-natural-selection-the-life-of-the-cosmos-black-holes-as-universe-pr": [
       "de",
       "en",
       "es",
@@ -3155,6 +3464,30 @@
       "zh",
       "zh-Hant"
     ],
+    "sources/crown-of-aleppo-the-mystery-of-the-oldest-hebrew-bible-codex": [
+      "de",
+      "en",
+      "es",
+      "fr",
+      "he",
+      "ja",
+      "ko",
+      "ru",
+      "zh",
+      "zh-Hant"
+    ],
+    "sources/cultural-memory-and-early-civilization-writing-remembrance-and-political-imagina": [
+      "de",
+      "en",
+      "es",
+      "fr",
+      "he",
+      "ja",
+      "ko",
+      "ru",
+      "zh",
+      "zh-Hant"
+    ],
     "sources/cyberparadism-manifesto": [
       "de",
       "en",
@@ -3228,6 +3561,18 @@
       "zh-Hant"
     ],
     "sources/day-adversary-heaven": [
+      "de",
+      "en",
+      "es",
+      "fr",
+      "he",
+      "ja",
+      "ko",
+      "ru",
+      "zh",
+      "zh-Hant"
+    ],
+    "sources/de-iside-et-osiride-13-plutarch-s-account-which-gives-seth-exactly-seventy-two-c": [
       "de",
       "en",
       "es",
@@ -3371,6 +3716,18 @@
       "zh",
       "zh-Hant"
     ],
+    "sources/deuteronomy-and-the-meaning-of-monotheism": [
+      "de",
+      "en",
+      "es",
+      "fr",
+      "he",
+      "ja",
+      "ko",
+      "ru",
+      "zh",
+      "zh-Hant"
+    ],
     "sources/dhorme-bible": [
       "de",
       "en",
@@ -3479,7 +3836,31 @@
       "zh",
       "zh-Hant"
     ],
+    "sources/divine-unicity-tawhid": [
+      "de",
+      "en",
+      "es",
+      "fr",
+      "he",
+      "ja",
+      "ko",
+      "ru",
+      "zh",
+      "zh-Hant"
+    ],
     "sources/doctrine-and-covenants": [
+      "de",
+      "en",
+      "es",
+      "fr",
+      "he",
+      "ja",
+      "ko",
+      "ru",
+      "zh",
+      "zh-Hant"
+    ],
+    "sources/documents-in-mycenaean-greek": [
       "de",
       "en",
       "es",
@@ -3563,6 +3944,18 @@
       "zh",
       "zh-Hant"
     ],
+    "sources/dynamics-of-monotheism-in-late-antiquity": [
+      "de",
+      "en",
+      "es",
+      "fr",
+      "he",
+      "ja",
+      "ko",
+      "ru",
+      "zh",
+      "zh-Hant"
+    ],
     "sources/early-islamic-qiblas": [
       "de",
       "en",
@@ -3576,6 +3969,18 @@
       "zh-Hant"
     ],
     "sources/early-islamic-qiblas-a-survey-of-mosques-built-between-1-ah-and-263-ah": [
+      "de",
+      "en",
+      "es",
+      "fr",
+      "he",
+      "ja",
+      "ko",
+      "ru",
+      "zh",
+      "zh-Hant"
+    ],
+    "sources/ecclesiastical-history-book-6-chapter-38": [
       "de",
       "en",
       "es",
@@ -3719,6 +4124,18 @@
       "zh",
       "zh-Hant"
     ],
+    "sources/erich-von-d-niken": [
+      "de",
+      "en",
+      "es",
+      "fr",
+      "he",
+      "ja",
+      "ko",
+      "ru",
+      "zh",
+      "zh-Hant"
+    ],
     "sources/escaping-from-eden": [
       "de",
       "en",
@@ -3780,6 +4197,18 @@
       "zh-Hant"
     ],
     "sources/exodus": [
+      "de",
+      "en",
+      "es",
+      "fr",
+      "he",
+      "ja",
+      "ko",
+      "ru",
+      "zh",
+      "zh-Hant"
+    ],
+    "sources/explaining-the-end-of-the-odyssey-zeus-law-xenia-and-the-guest-host-relationship": [
       "de",
       "en",
       "es",
@@ -4031,6 +4460,18 @@
       "zh",
       "zh-Hant"
     ],
+    "sources/from-hittite-to-homer-the-anatolian-background-of-ancient-greek-epic": [
+      "de",
+      "en",
+      "es",
+      "fr",
+      "he",
+      "ja",
+      "ko",
+      "ru",
+      "zh",
+      "zh-Hant"
+    ],
     "sources/from-martyr-to-mystic-rabbinic-martyrology-and-the-making-of-merkavah-mysticism": [
       "de",
       "en",
@@ -4056,6 +4497,18 @@
       "zh-Hant"
     ],
     "sources/from-petra-back-to-makka-from-pibla-back-to-qibla": [
+      "de",
+      "en",
+      "es",
+      "fr",
+      "he",
+      "ja",
+      "ko",
+      "ru",
+      "zh",
+      "zh-Hant"
+    ],
+    "sources/from-rapprochement-to-rupture-the-prophet-s-religious-pragmatism-and-the-making-": [
       "de",
       "en",
       "es",
@@ -4259,7 +4712,31 @@
       "zh",
       "zh-Hant"
     ],
+    "sources/gods-from-outer-space-us-return-to-the-stars-uk-german-zur-ck-zu-den-sternen": [
+      "de",
+      "en",
+      "es",
+      "fr",
+      "he",
+      "ja",
+      "ko",
+      "ru",
+      "zh",
+      "zh-Hant"
+    ],
     "sources/gods-of-the-bible-a-new-interpretation-of-the-bible-reveals-the-oldest-secret-in": [
+      "de",
+      "en",
+      "es",
+      "fr",
+      "he",
+      "ja",
+      "ko",
+      "ru",
+      "zh",
+      "zh-Hant"
+    ],
+    "sources/golb-jerusalem-origin-dead-sea-scrolls": [
       "de",
       "en",
       "es",
@@ -4356,6 +4833,30 @@
       "zh-Hant"
     ],
     "sources/graeco-arabica-southern-levant": [
+      "de",
+      "en",
+      "es",
+      "fr",
+      "he",
+      "ja",
+      "ko",
+      "ru",
+      "zh",
+      "zh-Hant"
+    ],
+    "sources/great-sphinx-of-giza-the-mainstream-egyptological-account-the-sphinx-as-part-of-": [
+      "de",
+      "en",
+      "es",
+      "fr",
+      "he",
+      "ja",
+      "ko",
+      "ru",
+      "zh",
+      "zh-Hant"
+    ],
+    "sources/greek-religion": [
       "de",
       "en",
       "es",
@@ -4487,6 +4988,18 @@
       "zh",
       "zh-Hant"
     ],
+    "sources/hancock-bauval-message-of-the-sphinx": [
+      "de",
+      "en",
+      "es",
+      "fr",
+      "he",
+      "ja",
+      "ko",
+      "ru",
+      "zh",
+      "zh-Hant"
+    ],
     "sources/handbook-of-ufo-religions-brill-handbooks-on-contemporary-religion-20-ch-22-r-gi": [
       "de",
       "en",
@@ -4607,6 +5120,30 @@
       "zh",
       "zh-Hant"
     ],
+    "sources/histories-2-53": [
+      "de",
+      "en",
+      "es",
+      "fr",
+      "he",
+      "ja",
+      "ko",
+      "ru",
+      "zh",
+      "zh-Hant"
+    ],
+    "sources/histories-book-2-the-fifth-century-bce-report-that-the-giza-monuments-were-of-gr": [
+      "de",
+      "en",
+      "es",
+      "fr",
+      "he",
+      "ja",
+      "ko",
+      "ru",
+      "zh",
+      "zh-Hant"
+    ],
     "sources/histories-book-ii": [
       "de",
       "en",
@@ -4620,6 +5157,42 @@
       "zh-Hant"
     ],
     "sources/histories-v-52-54-the-parasang-reckoned-at-thirty-stades-5-5-6-km": [
+      "de",
+      "en",
+      "es",
+      "fr",
+      "he",
+      "ja",
+      "ko",
+      "ru",
+      "zh",
+      "zh-Hant"
+    ],
+    "sources/hittite-myths": [
+      "de",
+      "en",
+      "es",
+      "fr",
+      "he",
+      "ja",
+      "ko",
+      "ru",
+      "zh",
+      "zh-Hant"
+    ],
+    "sources/homer-s-odyssey-and-the-near-east": [
+      "de",
+      "en",
+      "es",
+      "fr",
+      "he",
+      "ja",
+      "ko",
+      "ru",
+      "zh",
+      "zh-Hant"
+    ],
+    "sources/homeric-questions": [
       "de",
       "en",
       "es",
@@ -4691,6 +5264,18 @@
       "zh",
       "zh-Hant"
     ],
+    "sources/iliad-greek-text": [
+      "de",
+      "en",
+      "es",
+      "fr",
+      "he",
+      "ja",
+      "ko",
+      "ru",
+      "zh",
+      "zh-Hant"
+    ],
     "sources/inanna-queen-of-heaven": [
       "de",
       "en",
@@ -4704,6 +5289,30 @@
       "zh-Hant"
     ],
     "sources/inca-architecture-ollantaytambo": [
+      "de",
+      "en",
+      "es",
+      "fr",
+      "he",
+      "ja",
+      "ko",
+      "ru",
+      "zh",
+      "zh-Hant"
+    ],
+    "sources/indo-european-poetry-and-myth": [
+      "de",
+      "en",
+      "es",
+      "fr",
+      "he",
+      "ja",
+      "ko",
+      "ru",
+      "zh",
+      "zh-Hant"
+    ],
+    "sources/infinity-wheel-of-heaven-wiki-the-three-dimensions-temporal-infinity-no-beginnin": [
       "de",
       "en",
       "es",
@@ -4763,7 +5372,43 @@
       "zh",
       "zh-Hant"
     ],
+    "sources/introduction-to-the-tiberian-masorah": [
+      "de",
+      "en",
+      "es",
+      "fr",
+      "he",
+      "ja",
+      "ko",
+      "ru",
+      "zh",
+      "zh-Hant"
+    ],
+    "sources/invented-knowledge-false-history-fake-science-and-pseudo-religions": [
+      "de",
+      "en",
+      "es",
+      "fr",
+      "he",
+      "ja",
+      "ko",
+      "ru",
+      "zh",
+      "zh-Hant"
+    ],
     "sources/investigating-the-sirius-mystery": [
+      "de",
+      "en",
+      "es",
+      "fr",
+      "he",
+      "ja",
+      "ko",
+      "ru",
+      "zh",
+      "zh-Hant"
+    ],
+    "sources/invitation-to-the-septuagint": [
       "de",
       "en",
       "es",
@@ -4799,7 +5444,31 @@
       "zh",
       "zh-Hant"
     ],
+    "sources/is-god-a-space-alien-the-cosmology-of-the-ra-lian-church": [
+      "de",
+      "en",
+      "es",
+      "fr",
+      "he",
+      "ja",
+      "ko",
+      "ru",
+      "zh",
+      "zh-Hant"
+    ],
     "sources/is-god-a-space-alien-the-cosmology-of-the-ra-lian-church-culture-and-cosmos-4-1-": [
+      "de",
+      "en",
+      "es",
+      "fr",
+      "he",
+      "ja",
+      "ko",
+      "ru",
+      "zh",
+      "zh-Hant"
+    ],
+    "sources/is-isaiah-40-55-really-monotheistic": [
       "de",
       "en",
       "es",
@@ -5267,6 +5936,18 @@
       "zh",
       "zh-Hant"
     ],
+    "sources/late-antique-allah-ancestral-arabian-religion-and-the-monotheistic-zeitgeist": [
+      "de",
+      "en",
+      "es",
+      "fr",
+      "he",
+      "ja",
+      "ko",
+      "ru",
+      "zh",
+      "zh-Hant"
+    ],
     "sources/lateran-treaty": [
       "de",
       "en",
@@ -5328,6 +6009,18 @@
       "zh-Hant"
     ],
     "sources/le-renard-p-le": [
+      "de",
+      "en",
+      "es",
+      "fr",
+      "he",
+      "ja",
+      "ko",
+      "ru",
+      "zh",
+      "zh-Hant"
+    ],
+    "sources/le-temple-de-l-homme-the-temple-of-man-schwaller-de-lubicz-s-study-of-the-luxor-": [
       "de",
       "en",
       "es",
@@ -5423,6 +6116,18 @@
       "zh",
       "zh-Hant"
     ],
+    "sources/let-s-welcome-the-extra-terrestrials-who-created-the-creator-of-the-creators-it-": [
+      "de",
+      "en",
+      "es",
+      "fr",
+      "he",
+      "ja",
+      "ko",
+      "ru",
+      "zh",
+      "zh-Hant"
+    ],
     "sources/let-s-welcome-the-extra-terrestrials-who-created-the-creator-of-the-creators-the": [
       "de",
       "en",
@@ -5460,6 +6165,18 @@
       "zh-Hant"
     ],
     "sources/lets-welcome-the-extraterrestrials": [
+      "de",
+      "en",
+      "es",
+      "fr",
+      "he",
+      "ja",
+      "ko",
+      "ru",
+      "zh",
+      "zh-Hant"
+    ],
+    "sources/letter-of-aristeas": [
       "de",
       "en",
       "es",
@@ -5627,6 +6344,18 @@
       "zh",
       "zh-Hant"
     ],
+    "sources/mainstream-egyptological-rejection-of-the-symbolist-school-and-the-sphinx-water-": [
+      "de",
+      "en",
+      "es",
+      "fr",
+      "he",
+      "ja",
+      "ko",
+      "ru",
+      "zh",
+      "zh-Hant"
+    ],
     "sources/major-trends-jewish-mysticism": [
       "de",
       "en",
@@ -5772,6 +6501,18 @@
       "zh-Hant"
     ],
     "sources/mecca-and-macoraba-al-u-r-al-wus-26": [
+      "de",
+      "en",
+      "es",
+      "fr",
+      "he",
+      "ja",
+      "ko",
+      "ru",
+      "zh",
+      "zh-Hant"
+    ],
+    "sources/memory-in-oral-traditions-the-cognitive-psychology-of-epic-ballads-and-counting-": [
       "de",
       "en",
       "es",
@@ -5940,6 +6681,18 @@
       "zh-Hant"
     ],
     "sources/modern-perspectives-on-topic-analysis": [
+      "de",
+      "en",
+      "es",
+      "fr",
+      "he",
+      "ja",
+      "ko",
+      "ru",
+      "zh",
+      "zh-Hant"
+    ],
+    "sources/monotheism": [
       "de",
       "en",
       "es",
@@ -6167,6 +6920,18 @@
       "zh",
       "zh-Hant"
     ],
+    "sources/new-religious-movements-and-science-rael-s-progressive-patronizing-parasitism": [
+      "de",
+      "en",
+      "es",
+      "fr",
+      "he",
+      "ja",
+      "ko",
+      "ru",
+      "zh",
+      "zh-Hant"
+    ],
     "sources/new-religious-movements-and-science-rael-s-progressive-patronizing-parasitism-zy": [
       "de",
       "en",
@@ -6347,6 +7112,18 @@
       "zh",
       "zh-Hant"
     ],
+    "sources/odyssey-greek-text": [
+      "de",
+      "en",
+      "es",
+      "fr",
+      "he",
+      "ja",
+      "ko",
+      "ru",
+      "zh",
+      "zh-Hant"
+    ],
     "sources/ofudesaki-the-tip-of-the-writing-brush-1-711-verses-in-nakayama-miki-s-own-hand-": [
       "de",
       "en",
@@ -6359,19 +7136,7 @@
       "zh",
       "zh-Hant"
     ],
-    "sources/on-the-jerusalem-origin-of-the-dead-sea-scrolls-the-fullest-short-statement-of-t": [
-      "de",
-      "en",
-      "es",
-      "fr",
-      "he",
-      "ja",
-      "ko",
-      "ru",
-      "zh",
-      "zh-Hant"
-    ],
-    "sources/on-the-jerusalem-origin-of-the-dead-sea-scrolls-the-principal-statement-of-the-n": [
+    "sources/on-the-cave-of-the-nymphs-de-antro-nympharum-the-neoplatonist-report-that-the-mi": [
       "de",
       "en",
       "es",
@@ -6443,6 +7208,18 @@
       "zh",
       "zh-Hant"
     ],
+    "sources/one-god-pagan-monotheism-in-the-roman-empire": [
+      "de",
+      "en",
+      "es",
+      "fr",
+      "he",
+      "ja",
+      "ko",
+      "ru",
+      "zh",
+      "zh-Hant"
+    ],
     "sources/oomoto-shin-yu-wheel-of-heaven-translation-1-the-1892-opening-oracle-53-ayabe-as": [
       "de",
       "en",
@@ -6492,6 +7269,18 @@
       "zh-Hant"
     ],
     "sources/optical-clocks-and-relativity-science-329-1630-1633-gravitational-time-dilation-": [
+      "de",
+      "en",
+      "es",
+      "fr",
+      "he",
+      "ja",
+      "ko",
+      "ru",
+      "zh",
+      "zh-Hant"
+    ],
+    "sources/oral-tradition-as-history": [
       "de",
       "en",
       "es",
@@ -6708,6 +7497,18 @@
       "zh-Hant"
     ],
     "sources/phenomena-the-secret-history-of-the-u-s-government-s-investigations-into-extrase": [
+      "de",
+      "en",
+      "es",
+      "fr",
+      "he",
+      "ja",
+      "ko",
+      "ru",
+      "zh",
+      "zh-Hant"
+    ],
+    "sources/philo-herod-paul-and-the-many-gods-of-ancient-jewish-monotheism": [
       "de",
       "en",
       "es",
@@ -6971,7 +7772,43 @@
       "zh",
       "zh-Hant"
     ],
+    "sources/pyramid-texts-the-old-kingdom-spells-identifying-the-dead-king-with-osiris-and-h": [
+      "de",
+      "en",
+      "es",
+      "fr",
+      "he",
+      "ja",
+      "ko",
+      "ru",
+      "zh",
+      "zh-Hant"
+    ],
     "sources/qibla-accuracy-schumm-goldstein": [
+      "de",
+      "en",
+      "es",
+      "fr",
+      "he",
+      "ja",
+      "ko",
+      "ru",
+      "zh",
+      "zh-Hant"
+    ],
+    "sources/qumran-cave-11-ii-11q2-18-11q20-31-discoveries-in-the-judaean-desert-xxiii-the-c": [
+      "de",
+      "en",
+      "es",
+      "fr",
+      "he",
+      "ja",
+      "ko",
+      "ru",
+      "zh",
+      "zh-Hant"
+    ],
+    "sources/qumran-cave-4-ix-deuteronomy-joshua-judges-kings-discoveries-in-the-judaean-dese": [
       "de",
       "en",
       "es",
@@ -7619,6 +8456,18 @@
       "zh",
       "zh-Hant"
     ],
+    "sources/septuaginta-editio-altera-the-standard-critical-edition": [
+      "de",
+      "en",
+      "es",
+      "fr",
+      "he",
+      "ja",
+      "ko",
+      "ru",
+      "zh",
+      "zh-Hant"
+    ],
     "sources/serpent-in-the-sky": [
       "de",
       "en",
@@ -7656,30 +8505,6 @@
       "zh-Hant"
     ],
     "sources/shi-ur-komah-in-encyclopaedia-judaica": [
-      "de",
-      "en",
-      "es",
-      "fr",
-      "he",
-      "ja",
-      "ko",
-      "ru",
-      "zh",
-      "zh-Hant"
-    ],
-    "sources/shi-ur-omah-in-the-jewish-encyclopedia-vol-xi": [
-      "de",
-      "en",
-      "es",
-      "fr",
-      "he",
-      "ja",
-      "ko",
-      "ru",
-      "zh",
-      "zh-Hant"
-    ],
-    "sources/shi-ur-omah-in-the-jewish-encyclopedia-vol-xi-the-1906-english-article-gives-the": [
       "de",
       "en",
       "es",
@@ -7776,6 +8601,18 @@
       "zh-Hant"
     ],
     "sources/smith-early-history-god": [
+      "de",
+      "en",
+      "es",
+      "fr",
+      "he",
+      "ja",
+      "ko",
+      "ru",
+      "zh",
+      "zh-Hant"
+    ],
+    "sources/society-for-american-archaeology-open-letter-to-netflix-regarding-ancient-apocal": [
       "de",
       "en",
       "es",
@@ -7955,6 +8792,18 @@
       "zh",
       "zh-Hant"
     ],
+    "sources/synchronicity-an-acausal-connecting-principle-cw-8-the-meaningful-coincidence-co": [
+      "de",
+      "en",
+      "es",
+      "fr",
+      "he",
+      "ja",
+      "ko",
+      "ru",
+      "zh",
+      "zh-Hant"
+    ],
     "sources/synopse-zur-hekhalot-literatur-tsaj-2-the-parallel-column-edition-of-the-major-m": [
       "de",
       "en",
@@ -8075,6 +8924,18 @@
       "zh",
       "zh-Hant"
     ],
+    "sources/the-acts-of-the-apostles": [
+      "de",
+      "en",
+      "es",
+      "fr",
+      "he",
+      "ja",
+      "ko",
+      "ru",
+      "zh",
+      "zh-Hant"
+    ],
     "sources/the-apportionment-of-human-diversity": [
       "de",
       "en",
@@ -8160,6 +9021,30 @@
       "zh-Hant"
     ],
     "sources/the-blind-watchmaker-why-the-evidence-of-evolution-reveals-a-universe-without-de": [
+      "de",
+      "en",
+      "es",
+      "fr",
+      "he",
+      "ja",
+      "ko",
+      "ru",
+      "zh",
+      "zh-Hant"
+    ],
+    "sources/the-bodies-of-god-and-the-world-of-ancient-israel": [
+      "de",
+      "en",
+      "es",
+      "fr",
+      "he",
+      "ja",
+      "ko",
+      "ru",
+      "zh",
+      "zh-Hant"
+    ],
+    "sources/the-book-of-enoch": [
       "de",
       "en",
       "es",
@@ -8327,31 +9212,19 @@
       "zh",
       "zh-Hant"
     ],
+    "sources/the-cyclic-ekpyrotic-universe": [
+      "de",
+      "en",
+      "es",
+      "fr",
+      "he",
+      "ja",
+      "ko",
+      "ru",
+      "zh",
+      "zh-Hant"
+    ],
     "sources/the-dead-hand-the-untold-story-of-the-cold-war-arms-race-and-its-dangerous-legac": [
-      "de",
-      "en",
-      "es",
-      "fr",
-      "he",
-      "ja",
-      "ko",
-      "ru",
-      "zh",
-      "zh-Hant"
-    ],
-    "sources/the-dead-sea-scrolls-a-biography-lives-of-great-religious-books-the-discovery-pu": [
-      "de",
-      "en",
-      "es",
-      "fr",
-      "he",
-      "ja",
-      "ko",
-      "ru",
-      "zh",
-      "zh-Hant"
-    ],
-    "sources/the-dead-sea-scrolls-a-biography-lives-of-great-religious-books-the-principal-se": [
       "de",
       "en",
       "es",
@@ -8388,30 +9261,6 @@
       "zh-Hant"
     ],
     "sources/the-dead-sea-scrolls-and-contemporary-culture-stdj-93-the-israel-museum-s-own-si": [
-      "de",
-      "en",
-      "es",
-      "fr",
-      "he",
-      "ja",
-      "ko",
-      "ru",
-      "zh",
-      "zh-Hant"
-    ],
-    "sources/the-dead-sea-scrolls-deception-the-vatican-conspiracy-bestseller-engagingly-writ": [
-      "de",
-      "en",
-      "es",
-      "fr",
-      "he",
-      "ja",
-      "ko",
-      "ru",
-      "zh",
-      "zh-Hant"
-    ],
-    "sources/the-dead-sea-scrolls-deception-the-vatican-conspiracy-thesis-this-article-reject": [
       "de",
       "en",
       "es",
@@ -8543,6 +9392,18 @@
       "zh",
       "zh-Hant"
     ],
+    "sources/the-early-development-of-the-quranic-hanif": [
+      "de",
+      "en",
+      "es",
+      "fr",
+      "he",
+      "ja",
+      "ko",
+      "ru",
+      "zh",
+      "zh-Hant"
+    ],
     "sources/the-early-history-of-god": [
       "de",
       "en",
@@ -8555,7 +9416,7 @@
       "zh",
       "zh-Hant"
     ],
-    "sources/the-eden-conspiracy": [
+    "sources/the-east-face-of-helicon-west-asiatic-elements-in-greek-poetry-and-myth": [
       "de",
       "en",
       "es",
@@ -8664,6 +9525,18 @@
       "zh-Hant"
     ],
     "sources/the-field-guide-crop-circle-making": [
+      "de",
+      "en",
+      "es",
+      "fr",
+      "he",
+      "ja",
+      "ko",
+      "ru",
+      "zh",
+      "zh-Hant"
+    ],
+    "sources/the-first-epistle-of-paul-to-the-corinthians": [
       "de",
       "en",
       "es",
@@ -8891,7 +9764,55 @@
       "zh",
       "zh-Hant"
     ],
+    "sources/the-hittite-version-of-the-hurrian-kumarbi-myths-oriental-forerunners-of-hesiod": [
+      "de",
+      "en",
+      "es",
+      "fr",
+      "he",
+      "ja",
+      "ko",
+      "ru",
+      "zh",
+      "zh-Hant"
+    ],
     "sources/the-human-history-mistake": [
+      "de",
+      "en",
+      "es",
+      "fr",
+      "he",
+      "ja",
+      "ko",
+      "ru",
+      "zh",
+      "zh-Hant"
+    ],
+    "sources/the-idea-of-idolatry-and-the-emergence-of-islam-from-polemic-to-history": [
+      "de",
+      "en",
+      "es",
+      "fr",
+      "he",
+      "ja",
+      "ko",
+      "ru",
+      "zh",
+      "zh-Hant"
+    ],
+    "sources/the-induction-of-the-cult-image-in-ancient-mesopotamia-the-mesopotamian-mis-pi-r": [
+      "de",
+      "en",
+      "es",
+      "fr",
+      "he",
+      "ja",
+      "ko",
+      "ru",
+      "zh",
+      "zh-Hant"
+    ],
+    "sources/the-infinite-in-both-directions-wheel-of-heaven-explainer-the-spatial-hierarchic": [
       "de",
       "en",
       "es",
@@ -9059,6 +9980,30 @@
       "zh",
       "zh-Hant"
     ],
+    "sources/the-making-of-homeric-verse-the-collected-papers-of-milman-parry": [
+      "de",
+      "en",
+      "es",
+      "fr",
+      "he",
+      "ja",
+      "ko",
+      "ru",
+      "zh",
+      "zh-Hant"
+    ],
+    "sources/the-making-of-the-odyssey": [
+      "de",
+      "en",
+      "es",
+      "fr",
+      "he",
+      "ja",
+      "ko",
+      "ru",
+      "zh",
+      "zh-Hant"
+    ],
     "sources/the-mandaeans-ancient-texts-and-modern-people-the-last-gnostics-the-ginza-rabba-": [
       "de",
       "en",
@@ -9072,6 +10017,18 @@
       "zh-Hant"
     ],
     "sources/the-meaning-of-the-dead-sea-scrolls-a-measured-survey-of-the-controversies-pp-38": [
+      "de",
+      "en",
+      "es",
+      "fr",
+      "he",
+      "ja",
+      "ko",
+      "ru",
+      "zh",
+      "zh-Hant"
+    ],
+    "sources/the-meaning-of-the-dead-sea-scrolls-their-significance-for-understanding-the-bib": [
       "de",
       "en",
       "es",
@@ -9119,7 +10076,31 @@
       "zh",
       "zh-Hant"
     ],
+    "sources/the-mysteries-of-mithra-the-classic-iranian-origin-thesis-ulansey-s-astronomical": [
+      "de",
+      "en",
+      "es",
+      "fr",
+      "he",
+      "ja",
+      "ko",
+      "ru",
+      "zh",
+      "zh-Hant"
+    ],
     "sources/the-mystery-of-life-s-origin-the-continuing-controversy-expanded-ed-the-classic-": [
+      "de",
+      "en",
+      "es",
+      "fr",
+      "he",
+      "ja",
+      "ko",
+      "ru",
+      "zh",
+      "zh-Hant"
+    ],
+    "sources/the-myth-of-a-sumerian-12th-planet-nibiru-according-to-the-cuneiform-sources": [
       "de",
       "en",
       "es",
@@ -9179,6 +10160,18 @@
       "zh",
       "zh-Hant"
     ],
+    "sources/the-odyssey-review-christopher-nolan-s-vast-thrilling-aloof-epic": [
+      "de",
+      "en",
+      "es",
+      "fr",
+      "he",
+      "ja",
+      "ko",
+      "ru",
+      "zh",
+      "zh-Hant"
+    ],
     "sources/the-open-society-and-its-enemies-the-critique-of-historicism-the-doctrine-that-h": [
       "de",
       "en",
@@ -9191,7 +10184,31 @@
       "zh",
       "zh-Hant"
     ],
+    "sources/the-orientalizing-revolution-near-eastern-influence-on-greek-culture-in-the-earl": [
+      "de",
+      "en",
+      "es",
+      "fr",
+      "he",
+      "ja",
+      "ko",
+      "ru",
+      "zh",
+      "zh-Hant"
+    ],
     "sources/the-origin-of-satan": [
+      "de",
+      "en",
+      "es",
+      "fr",
+      "he",
+      "ja",
+      "ko",
+      "ru",
+      "zh",
+      "zh-Hant"
+    ],
+    "sources/the-origins-of-biblical-monotheism-israel-s-polytheistic-background-and-the-ugar": [
       "de",
       "en",
       "es",
@@ -9275,6 +10292,18 @@
       "zh",
       "zh-Hant"
     ],
+    "sources/the-price-of-monotheism": [
+      "de",
+      "en",
+      "es",
+      "fr",
+      "he",
+      "ja",
+      "ko",
+      "ru",
+      "zh",
+      "zh-Hant"
+    ],
     "sources/the-privileged-planet-how-our-place-in-the-cosmos-is-designed-for-discovery-the-": [
       "de",
       "en",
@@ -9312,6 +10341,18 @@
       "zh-Hant"
     ],
     "sources/the-reactionary-futurism-of-marc-andreessen-the-new-york-times-the-reactionary-f": [
+      "de",
+      "en",
+      "es",
+      "fr",
+      "he",
+      "ja",
+      "ko",
+      "ru",
+      "zh",
+      "zh-Hant"
+    ],
+    "sources/the-religion-of-the-mithras-cult-in-the-roman-empire-mysteries-of-the-unconquere": [
       "de",
       "en",
       "es",
@@ -9395,7 +10436,31 @@
       "zh",
       "zh-Hant"
     ],
+    "sources/the-scrolls-that-woke-in-year-one": [
+      "de",
+      "en",
+      "es",
+      "fr",
+      "he",
+      "ja",
+      "ko",
+      "ru",
+      "zh",
+      "zh-Hant"
+    ],
     "sources/the-secret-doctrine-vol-ii-the-swastika-as-the-continual-motion-and-revolution-o": [
+      "de",
+      "en",
+      "es",
+      "fr",
+      "he",
+      "ja",
+      "ko",
+      "ru",
+      "zh",
+      "zh-Hant"
+    ],
+    "sources/the-septuagint-lxx-introduction": [
       "de",
       "en",
       "es",
@@ -9419,19 +10484,7 @@
       "zh",
       "zh-Hant"
     ],
-    "sources/the-shi-ur-qomah-texts-and-recensions-tsaj-9": [
-      "de",
-      "en",
-      "es",
-      "fr",
-      "he",
-      "ja",
-      "ko",
-      "ru",
-      "zh",
-      "zh-Hant"
-    ],
-    "sources/the-shi-ur-qomah-texts-and-recensions-tsaj-9-the-critical-edition": [
+    "sources/the-singer-of-tales": [
       "de",
       "en",
       "es",
@@ -9551,6 +10604,18 @@
       "zh",
       "zh-Hant"
     ],
+    "sources/the-translator-s-wager": [
+      "de",
+      "en",
+      "es",
+      "fr",
+      "he",
+      "ja",
+      "ko",
+      "ru",
+      "zh",
+      "zh-Hant"
+    ],
     "sources/the-treasures-of-darkness-a-history-of-mesopotamian-religion": [
       "de",
       "en",
@@ -9564,6 +10629,30 @@
       "zh-Hant"
     ],
     "sources/the-types-of-international-folktales-a-classification-and-bibliography-the-atu-t": [
+      "de",
+      "en",
+      "es",
+      "fr",
+      "he",
+      "ja",
+      "ko",
+      "ru",
+      "zh",
+      "zh-Hant"
+    ],
+    "sources/the-ugaritic-baal-cycle-volume-i": [
+      "de",
+      "en",
+      "es",
+      "fr",
+      "he",
+      "ja",
+      "ko",
+      "ru",
+      "zh",
+      "zh-Hant"
+    ],
+    "sources/the-unresolved-debate-over-the-sampo-s-identity-in-finnish-folkloristics-world-p": [
       "de",
       "en",
       "es",
@@ -9659,6 +10748,30 @@
       "zh",
       "zh-Hant"
     ],
+    "sources/the-world-of-odysseus": [
+      "de",
+      "en",
+      "es",
+      "fr",
+      "he",
+      "ja",
+      "ko",
+      "ru",
+      "zh",
+      "zh-Hant"
+    ],
+    "sources/the-wrath-of-athena-gods-and-men-in-the-odyssey": [
+      "de",
+      "en",
+      "es",
+      "fr",
+      "he",
+      "ja",
+      "ko",
+      "ru",
+      "zh",
+      "zh-Hant"
+    ],
     "sources/the-zodiac-in-ancient-jewish-art-representation-and-significance-basor-228-pp-61": [
       "de",
       "en",
@@ -9743,7 +10856,31 @@
       "zh",
       "zh-Hant"
     ],
+    "sources/through-whom-messianic-and-demonic-mediation-in-1-corinthians-8-10": [
+      "de",
+      "en",
+      "es",
+      "fr",
+      "he",
+      "ja",
+      "ko",
+      "ru",
+      "zh",
+      "zh-Hant"
+    ],
     "sources/timaeus-39d-the-perfect-year-completed-when-all-the-eight-circuits-with-their-re": [
+      "de",
+      "en",
+      "es",
+      "fr",
+      "he",
+      "ja",
+      "ko",
+      "ru",
+      "zh",
+      "zh-Hant"
+    ],
+    "sources/timaeus-and-critias-the-egyptian-priest-s-date-for-the-sinking-of-atlantis-9-000": [
       "de",
       "en",
       "es",
@@ -9806,7 +10943,31 @@
     "sources/tradition/second-temple": [
       "en"
     ],
+    "sources/travelling-heroes-greeks-and-their-myths-in-the-epic-age-of-homer": [
+      "de",
+      "en",
+      "es",
+      "fr",
+      "he",
+      "ja",
+      "ko",
+      "ru",
+      "zh",
+      "zh-Hant"
+    ],
     "sources/trible-rhetoric-sexuality": [
+      "de",
+      "en",
+      "es",
+      "fr",
+      "he",
+      "ja",
+      "ko",
+      "ru",
+      "zh",
+      "zh-Hant"
+    ],
+    "sources/troy-and-homer-towards-a-solution-of-an-old-mystery": [
       "de",
       "en",
       "es",
@@ -9831,6 +10992,30 @@
       "zh-Hant"
     ],
     "sources/underworld-hancock": [
+      "de",
+      "en",
+      "es",
+      "fr",
+      "he",
+      "ja",
+      "ko",
+      "ru",
+      "zh",
+      "zh-Hant"
+    ],
+    "sources/universe-in-a-black-hole-einstein-cartan-torsion-big-bounce-verify-pop-awski-phy": [
+      "de",
+      "en",
+      "es",
+      "fr",
+      "he",
+      "ja",
+      "ko",
+      "ru",
+      "zh",
+      "zh-Hant"
+    ],
+    "sources/unsealed-in-year-one": [
       "de",
       "en",
       "es",
@@ -10202,6 +11387,18 @@
       "zh",
       "zh-Hant"
     ],
+    "sources/zecharia-sitchin-encyclopedic-biographical-entry": [
+      "de",
+      "en",
+      "es",
+      "fr",
+      "he",
+      "ja",
+      "ko",
+      "ru",
+      "zh",
+      "zh-Hant"
+    ],
     "sources/zechariah": [
       "de",
       "en",
@@ -10529,6 +11726,9 @@
       "zh",
       "zh-Hant"
     ],
+    "wiki/anunnaki": [
+      "en"
+    ],
     "wiki/apocalypse": [
       "de",
       "en",
@@ -10552,6 +11752,9 @@
       "ru",
       "zh",
       "zh-Hant"
+    ],
+    "wiki/ark-of-the-covenant": [
+      "en"
     ],
     "wiki/astrobiology": [
       "de",
@@ -10600,6 +11803,12 @@
       "ru",
       "zh",
       "zh-Hant"
+    ],
+    "wiki/book-of-enoch": [
+      "en"
+    ],
+    "wiki/carl-jung": [
+      "en"
     ],
     "wiki/chronology": [
       "de",
@@ -10721,6 +11930,9 @@
       "zh",
       "zh-Hant"
     ],
+    "wiki/dead-sea-scrolls": [
+      "en"
+    ],
     "wiki/dhorme-bible-translation": [
       "de",
       "en",
@@ -10841,6 +12053,9 @@
       "zh",
       "zh-Hant"
     ],
+    "wiki/erich-von-daniken": [
+      "en"
+    ],
     "wiki/ezekiel": [
       "en"
     ],
@@ -10916,6 +12131,9 @@
       "zh",
       "zh-Hant"
     ],
+    "wiki/gobekli-tepe": [
+      "en"
+    ],
     "wiki/golden-age": [
       "de",
       "en",
@@ -10927,6 +12145,9 @@
       "ru",
       "zh",
       "zh-Hant"
+    ],
+    "wiki/graham-hancock": [
+      "en"
     ],
     "wiki/great-flood": [
       "de",
@@ -10963,6 +12184,9 @@
       "ru",
       "zh",
       "zh-Hant"
+    ],
+    "wiki/great-sphinx": [
+      "en"
     ],
     "wiki/great-year": [
       "de",
@@ -11039,6 +12263,9 @@
       "zh",
       "zh-Hant"
     ],
+    "wiki/idolatry": [
+      "en"
+    ],
     "wiki/infinity": [
       "de",
       "en",
@@ -11063,6 +12290,9 @@
       "zh",
       "zh-Hant"
     ],
+    "wiki/jane-sellers": [
+      "en"
+    ],
     "wiki/jean-sendy": [
       "en"
     ],
@@ -11077,6 +12307,9 @@
       "ru",
       "zh",
       "zh-Hant"
+    ],
+    "wiki/john-anthony-west": [
+      "en"
     ],
     "wiki/kabbalah": [
       "de",
@@ -11210,6 +12443,12 @@
       "zh",
       "zh-Hant"
     ],
+    "wiki/macrobiology": [
+      "en"
+    ],
+    "wiki/masoretic-text": [
+      "en"
+    ],
     "wiki/mass-effect": [
       "de",
       "en",
@@ -11223,6 +12462,9 @@
       "zh-Hant"
     ],
     "wiki/mauro-biglino": [
+      "en"
+    ],
+    "wiki/mazzaroth": [
       "en"
     ],
     "wiki/menorah": [
@@ -11251,6 +12493,9 @@
       "ru",
       "zh",
       "zh-Hant"
+    ],
+    "wiki/monotheism": [
+      "en"
     ],
     "wiki/moses": [
       "de",
@@ -11386,6 +12631,9 @@
       "ru",
       "zh",
       "zh-Hant"
+    ],
+    "wiki/orion-correlation": [
+      "en"
     ],
     "wiki/pangaea": [
       "de",
@@ -11546,6 +12794,9 @@
       "zh",
       "zh-Hant"
     ],
+    "wiki/sampo": [
+      "en"
+    ],
     "wiki/samsara": [
       "de",
       "en",
@@ -11581,6 +12832,9 @@
       "ru",
       "zh",
       "zh-Hant"
+    ],
+    "wiki/septuagint": [
+      "en"
     ],
     "wiki/serpent": [
       "de",
@@ -11680,6 +12934,9 @@
       "ru",
       "zh",
       "zh-Hant"
+    ],
+    "wiki/tauroctony": [
+      "en"
     ],
     "wiki/terraforming": [
       "de",
@@ -11851,6 +13108,9 @@
       "ru",
       "zh",
       "zh-Hant"
+    ],
+    "wiki/zecharia-sitchin": [
+      "en"
     ],
     "wiki/zodiac": [
       "de",

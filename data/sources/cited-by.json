@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-08-09T10:30:21+00:00",
+  "generated_at": "2026-08-17T18:03:45+00:00",
   "generator": "scripts/build_sources.py",
   "schema_version": 1,
   "sources": [
@@ -104,6 +104,22 @@
       "id": "1-samuel",
       "cited_by": [],
       "cite_count": 0
+    },
+    {
+      "id": "1177-b-c-the-year-civilization-collapsed",
+      "cited_by": [
+        {
+          "section": "articles",
+          "title": "The East Face of Homer",
+          "path": "/articles/the-east-face-of-homer/"
+        },
+        {
+          "section": "articles",
+          "title": "The World Behind the Odyssey",
+          "path": "/articles/the-world-behind-the-odyssey/"
+        }
+      ],
+      "cite_count": 2
     },
     {
       "id": "2-chronicles",
@@ -467,11 +483,21 @@
         },
         {
           "section": "articles",
+          "title": "The East Face of Homer",
+          "path": "/articles/the-east-face-of-homer/"
+        },
+        {
+          "section": "articles",
           "title": "The Religion of Religions",
           "path": "/articles/the-religion-of-religions/"
+        },
+        {
+          "section": "articles",
+          "title": "The World Behind the Odyssey",
+          "path": "/articles/the-world-behind-the-odyssey/"
         }
       ],
-      "cite_count": 2
+      "cite_count": 4
     },
     {
       "id": "aliens-adored-ra-l-s-ufo-religion",
@@ -1516,6 +1542,17 @@
       "cite_count": 1
     },
     {
+      "id": "cultural-memory-and-early-civilization-writing-remembrance-and-political-imagina",
+      "cited_by": [
+        {
+          "section": "articles",
+          "title": "The World Behind the Odyssey",
+          "path": "/articles/the-world-behind-the-odyssey/"
+        }
+      ],
+      "cite_count": 1
+    },
+    {
       "id": "wiener-cybernetics",
       "cited_by": [
         {
@@ -1574,6 +1611,11 @@
         },
         {
           "section": "articles",
+          "title": "The East Face of Homer",
+          "path": "/articles/the-east-face-of-homer/"
+        },
+        {
+          "section": "articles",
           "title": "Unsealed in Year One",
           "path": "/articles/unsealed-in-year-one/"
         },
@@ -1598,7 +1640,7 @@
           "path": "/wiki/jesus/"
         }
       ],
-      "cite_count": 6
+      "cite_count": 7
     },
     {
       "id": "darwin-on-trial-the-legal-philosophical-launch-of-the-modern-movement-darwinism-",
@@ -1955,6 +1997,17 @@
       "cite_count": 1
     },
     {
+      "id": "documents-in-mycenaean-greek",
+      "cited_by": [
+        {
+          "section": "articles",
+          "title": "The World Behind the Odyssey",
+          "path": "/articles/the-world-behind-the-odyssey/"
+        }
+      ],
+      "cite_count": 1
+    },
+    {
       "id": "dogon-restudied-a-field-evaluation-of-the-work-of-marcel-griaule",
       "cited_by": [
         {
@@ -2206,6 +2259,11 @@
           "path": "/articles/the-translators-wager/"
         },
         {
+          "section": "articles",
+          "title": "The World Behind the Odyssey",
+          "path": "/articles/the-world-behind-the-odyssey/"
+        },
+        {
           "section": "timeline",
           "title": "Preamble",
           "path": "/timeline/preamble/"
@@ -2226,7 +2284,7 @@
           "path": "/wiki/genesis/"
         }
       ],
-      "cite_count": 7
+      "cite_count": 8
     },
     {
       "id": "epic-of-gilgamesh",
@@ -2235,6 +2293,11 @@
           "section": "articles",
           "title": "Are the Anunnaki the Elohim?",
           "path": "/articles/anunnaki-and-the-elohim/"
+        },
+        {
+          "section": "articles",
+          "title": "The East Face of Homer",
+          "path": "/articles/the-east-face-of-homer/"
         },
         {
           "section": "articles",
@@ -2257,7 +2320,7 @@
           "path": "/wiki/reference-corpus-of-the-raelian-canon/"
         }
       ],
-      "cite_count": 5
+      "cite_count": 6
     },
     {
       "id": "erich-von-d-niken",
@@ -2487,6 +2550,17 @@
         }
       ],
       "cite_count": 9
+    },
+    {
+      "id": "explaining-the-end-of-the-odyssey-zeus-law-xenia-and-the-guest-host-relationship",
+      "cited_by": [
+        {
+          "section": "articles",
+          "title": "The World Behind the Odyssey",
+          "path": "/articles/the-world-behind-the-odyssey/"
+        }
+      ],
+      "cite_count": 1
     },
     {
       "id": "loeb-extraterrestrial",
@@ -2888,6 +2962,22 @@
       "id": "freiland-ein-sociales-zukunftsbild-4th-ed-e-pierson-dresden-and-leipzig-four-pri",
       "cited_by": [],
       "cite_count": 0
+    },
+    {
+      "id": "from-hittite-to-homer-the-anatolian-background-of-ancient-greek-epic",
+      "cited_by": [
+        {
+          "section": "articles",
+          "title": "The East Face of Homer",
+          "path": "/articles/the-east-face-of-homer/"
+        },
+        {
+          "section": "articles",
+          "title": "The World Behind the Odyssey",
+          "path": "/articles/the-world-behind-the-odyssey/"
+        }
+      ],
+      "cite_count": 2
     },
     {
       "id": "from-martyr-to-mystic-rabbinic-martyrology-and-the-making-of-merkavah-mysticism",
@@ -3435,6 +3525,17 @@
       "cite_count": 1
     },
     {
+      "id": "greek-religion",
+      "cited_by": [
+        {
+          "section": "articles",
+          "title": "The World Behind the Odyssey",
+          "path": "/articles/the-world-behind-the-odyssey/"
+        }
+      ],
+      "cite_count": 1
+    },
+    {
       "id": "guerilla-open-access-manifesto",
       "cited_by": [],
       "cite_count": 0
@@ -3725,6 +3826,17 @@
       "cite_count": 6
     },
     {
+      "id": "histories-2-53",
+      "cited_by": [
+        {
+          "section": "articles",
+          "title": "The World Behind the Odyssey",
+          "path": "/articles/the-world-behind-the-odyssey/"
+        }
+      ],
+      "cite_count": 1
+    },
+    {
       "id": "histories-v-52-54-the-parasang-reckoned-at-thirty-stades-5-5-6-km",
       "cited_by": [
         {
@@ -3750,12 +3862,55 @@
       "id": "histories-book-ii",
       "cited_by": [
         {
+          "section": "articles",
+          "title": "The East Face of Homer",
+          "path": "/articles/the-east-face-of-homer/"
+        },
+        {
           "section": "timeline",
           "title": "Age of Taurus",
           "path": "/timeline/age-of-taurus/"
         }
       ],
+      "cite_count": 2
+    },
+    {
+      "id": "hittite-myths",
+      "cited_by": [
+        {
+          "section": "articles",
+          "title": "The World Behind the Odyssey",
+          "path": "/articles/the-world-behind-the-odyssey/"
+        }
+      ],
       "cite_count": 1
+    },
+    {
+      "id": "homeric-questions",
+      "cited_by": [
+        {
+          "section": "articles",
+          "title": "The World Behind the Odyssey",
+          "path": "/articles/the-world-behind-the-odyssey/"
+        }
+      ],
+      "cite_count": 1
+    },
+    {
+      "id": "homer-s-odyssey-and-the-near-east",
+      "cited_by": [
+        {
+          "section": "articles",
+          "title": "The East Face of Homer",
+          "path": "/articles/the-east-face-of-homer/"
+        },
+        {
+          "section": "articles",
+          "title": "The World Behind the Odyssey",
+          "path": "/articles/the-world-behind-the-odyssey/"
+        }
+      ],
+      "cite_count": 2
     },
     {
       "id": "how-accurately-could-early-622-900-c-e-muslims-determine-the-direction-of-prayer",
@@ -3847,6 +4002,17 @@
       "cite_count": 7
     },
     {
+      "id": "iliad-greek-text",
+      "cited_by": [
+        {
+          "section": "articles",
+          "title": "The World Behind the Odyssey",
+          "path": "/articles/the-world-behind-the-odyssey/"
+        }
+      ],
+      "cite_count": 1
+    },
+    {
       "id": "elizondo-imminent",
       "cited_by": [
         {
@@ -3875,6 +4041,17 @@
           "section": "wiki",
           "title": "Ancient Builders",
           "path": "/wiki/ancient-builders/"
+        }
+      ],
+      "cite_count": 1
+    },
+    {
+      "id": "indo-european-poetry-and-myth",
+      "cited_by": [
+        {
+          "section": "articles",
+          "title": "The World Behind the Odyssey",
+          "path": "/articles/the-world-behind-the-odyssey/"
         }
       ],
       "cite_count": 1
@@ -4176,9 +4353,14 @@
           "section": "articles",
           "title": "Monotheism Is the Wrong Question",
           "path": "/articles/monotheism-is-the-wrong-question/"
+        },
+        {
+          "section": "articles",
+          "title": "The East Face of Homer",
+          "path": "/articles/the-east-face-of-homer/"
         }
       ],
-      "cite_count": 1
+      "cite_count": 2
     },
     {
       "id": "is-isaiah-40-55-really-monotheistic",
@@ -5526,6 +5708,17 @@
       "cite_count": 0
     },
     {
+      "id": "memory-in-oral-traditions-the-cognitive-psychology-of-epic-ballads-and-counting-",
+      "cited_by": [
+        {
+          "section": "articles",
+          "title": "The World Behind the Odyssey",
+          "path": "/articles/the-world-behind-the-odyssey/"
+        }
+      ],
+      "cite_count": 1
+    },
+    {
       "id": "mengele-the-complete-story-the-documented-postwar-trail-argentina-paraguay-brazi",
       "cited_by": [],
       "cite_count": 0
@@ -5859,9 +6052,19 @@
           "section": "articles",
           "title": "Monotheism Is the Wrong Question",
           "path": "/articles/monotheism-is-the-wrong-question/"
+        },
+        {
+          "section": "articles",
+          "title": "The East Face of Homer",
+          "path": "/articles/the-east-face-of-homer/"
+        },
+        {
+          "section": "articles",
+          "title": "The World Behind the Odyssey",
+          "path": "/articles/the-world-behind-the-odyssey/"
         }
       ],
-      "cite_count": 1
+      "cite_count": 3
     },
     {
       "id": "nicene-creed",
@@ -6001,6 +6204,22 @@
         }
       ],
       "cite_count": 1
+    },
+    {
+      "id": "odyssey-greek-text",
+      "cited_by": [
+        {
+          "section": "articles",
+          "title": "The East Face of Homer",
+          "path": "/articles/the-east-face-of-homer/"
+        },
+        {
+          "section": "articles",
+          "title": "The World Behind the Odyssey",
+          "path": "/articles/the-world-behind-the-odyssey/"
+        }
+      ],
+      "cite_count": 2
     },
     {
       "id": "ofudesaki-the-tip-of-the-writing-brush-1-711-verses-in-nakayama-miki-s-own-hand-",
@@ -6180,6 +6399,17 @@
           "section": "articles",
           "title": "The Infinite in Both Directions",
           "path": "/articles/the-infinite-in-both-directions/"
+        }
+      ],
+      "cite_count": 1
+    },
+    {
+      "id": "oral-tradition-as-history",
+      "cited_by": [
+        {
+          "section": "articles",
+          "title": "The World Behind the Odyssey",
+          "path": "/articles/the-world-behind-the-odyssey/"
         }
       ],
       "cite_count": 1
@@ -6504,6 +6734,11 @@
         },
         {
           "section": "articles",
+          "title": "The World Behind the Odyssey",
+          "path": "/articles/the-world-behind-the-odyssey/"
+        },
+        {
+          "section": "articles",
           "title": "Unsealed in Year One",
           "path": "/articles/unsealed-in-year-one/"
         },
@@ -6518,7 +6753,7 @@
           "path": "/wiki/monotheism/"
         }
       ],
-      "cite_count": 8
+      "cite_count": 9
     },
     {
       "id": "pseudodoxia-epidemica",
@@ -7819,6 +8054,11 @@
         },
         {
           "section": "articles",
+          "title": "The East Face of Homer",
+          "path": "/articles/the-east-face-of-homer/"
+        },
+        {
+          "section": "articles",
           "title": "The First Mosques Faced Petra, Not Mecca",
           "path": "/articles/the-first-mosques-faced-petra-not-mecca/"
         },
@@ -7861,6 +8101,11 @@
           "section": "articles",
           "title": "The Translator's Wager",
           "path": "/articles/the-translators-wager/"
+        },
+        {
+          "section": "articles",
+          "title": "The World Behind the Odyssey",
+          "path": "/articles/the-world-behind-the-odyssey/"
         },
         {
           "section": "articles",
@@ -8133,7 +8378,7 @@
           "path": "/wiki/zecharia-sitchin/"
         }
       ],
-      "cite_count": 68
+      "cite_count": 70
     },
     {
       "id": "the-books-of-enoch-aramaic-fragments-of-qumr-n-cave-4-the-edition-that-proved-1-",
@@ -8624,6 +8869,22 @@
       "cite_count": 2
     },
     {
+      "id": "the-east-face-of-helicon-west-asiatic-elements-in-greek-poetry-and-myth",
+      "cited_by": [
+        {
+          "section": "articles",
+          "title": "The East Face of Homer",
+          "path": "/articles/the-east-face-of-homer/"
+        },
+        {
+          "section": "articles",
+          "title": "The World Behind the Odyssey",
+          "path": "/articles/the-world-behind-the-odyssey/"
+        }
+      ],
+      "cite_count": 2
+    },
+    {
       "id": "wallis-eden-conspiracy",
       "cited_by": [
         {
@@ -8747,12 +9008,17 @@
       "id": "george-epic-of-gilgamesh",
       "cited_by": [
         {
+          "section": "articles",
+          "title": "The East Face of Homer",
+          "path": "/articles/the-east-face-of-homer/"
+        },
+        {
           "section": "wiki",
           "title": "Adam and Eve",
           "path": "/wiki/adam-and-eve/"
         }
       ],
-      "cite_count": 1
+      "cite_count": 2
     },
     {
       "id": "george-gilgamesh",
@@ -9227,6 +9493,17 @@
       "cite_count": 0
     },
     {
+      "id": "the-hittite-version-of-the-hurrian-kumarbi-myths-oriental-forerunners-of-hesiod",
+      "cited_by": [
+        {
+          "section": "articles",
+          "title": "The World Behind the Odyssey",
+          "path": "/articles/the-world-behind-the-odyssey/"
+        }
+      ],
+      "cite_count": 1
+    },
+    {
       "id": "the-human-history-mistake",
       "cited_by": [],
       "cite_count": 0
@@ -9399,6 +9676,28 @@
           "section": "articles",
           "title": "The Religion of Religions",
           "path": "/articles/the-religion-of-religions/"
+        }
+      ],
+      "cite_count": 1
+    },
+    {
+      "id": "the-making-of-homeric-verse-the-collected-papers-of-milman-parry",
+      "cited_by": [
+        {
+          "section": "articles",
+          "title": "The World Behind the Odyssey",
+          "path": "/articles/the-world-behind-the-odyssey/"
+        }
+      ],
+      "cite_count": 1
+    },
+    {
+      "id": "the-making-of-the-odyssey",
+      "cited_by": [
+        {
+          "section": "articles",
+          "title": "The World Behind the Odyssey",
+          "path": "/articles/the-world-behind-the-odyssey/"
         }
       ],
       "cite_count": 1
@@ -9731,6 +10030,17 @@
       "cite_count": 1
     },
     {
+      "id": "the-odyssey-review-christopher-nolan-s-vast-thrilling-aloof-epic",
+      "cited_by": [
+        {
+          "section": "articles",
+          "title": "The World Behind the Odyssey",
+          "path": "/articles/the-world-behind-the-odyssey/"
+        }
+      ],
+      "cite_count": 1
+    },
+    {
       "id": "forsyth-the-old-enemy",
       "cited_by": [
         {
@@ -9761,6 +10071,22 @@
         }
       ],
       "cite_count": 1
+    },
+    {
+      "id": "the-orientalizing-revolution-near-eastern-influence-on-greek-culture-in-the-earl",
+      "cited_by": [
+        {
+          "section": "articles",
+          "title": "The East Face of Homer",
+          "path": "/articles/the-east-face-of-homer/"
+        },
+        {
+          "section": "articles",
+          "title": "The World Behind the Odyssey",
+          "path": "/articles/the-world-behind-the-odyssey/"
+        }
+      ],
+      "cite_count": 2
     },
     {
       "id": "pagels-origin-of-satan",
@@ -10243,6 +10569,17 @@
       "cite_count": 1
     },
     {
+      "id": "the-singer-of-tales",
+      "cited_by": [
+        {
+          "section": "articles",
+          "title": "The World Behind the Odyssey",
+          "path": "/articles/the-world-behind-the-odyssey/"
+        }
+      ],
+      "cite_count": 1
+    },
+    {
       "id": "the-sky-people",
       "cited_by": [],
       "cite_count": 0
@@ -10302,8 +10639,14 @@
     },
     {
       "id": "the-structural-study-of-myth-journal-of-american-folklore-68-the-mytheme-the-riv",
-      "cited_by": [],
-      "cite_count": 0
+      "cited_by": [
+        {
+          "section": "articles",
+          "title": "The World Behind the Odyssey",
+          "path": "/articles/the-world-behind-the-odyssey/"
+        }
+      ],
+      "cite_count": 1
     },
     {
       "id": "the-syro-aramaic-reading-of-the-koran",
@@ -10395,6 +10738,17 @@
       "id": "the-types-of-international-folktales-a-classification-and-bibliography-the-atu-t",
       "cited_by": [],
       "cite_count": 0
+    },
+    {
+      "id": "the-ugaritic-baal-cycle-volume-i",
+      "cited_by": [
+        {
+          "section": "articles",
+          "title": "The World Behind the Odyssey",
+          "path": "/articles/the-world-behind-the-odyssey/"
+        }
+      ],
+      "cite_count": 1
     },
     {
       "id": "the-unresolved-debate-over-the-sampo-s-identity-in-finnish-folkloristics-world-p",
@@ -10489,6 +10843,28 @@
       "cite_count": 1
     },
     {
+      "id": "the-world-of-odysseus",
+      "cited_by": [
+        {
+          "section": "articles",
+          "title": "The World Behind the Odyssey",
+          "path": "/articles/the-world-behind-the-odyssey/"
+        }
+      ],
+      "cite_count": 1
+    },
+    {
+      "id": "the-wrath-of-athena-gods-and-men-in-the-odyssey",
+      "cited_by": [
+        {
+          "section": "articles",
+          "title": "The World Behind the Odyssey",
+          "path": "/articles/the-world-behind-the-odyssey/"
+        }
+      ],
+      "cite_count": 1
+    },
+    {
       "id": "the-zodiac-in-ancient-jewish-art-representation-and-significance-basor-228-pp-61",
       "cited_by": [
         {
@@ -10551,6 +10927,11 @@
         },
         {
           "section": "articles",
+          "title": "The World Behind the Odyssey",
+          "path": "/articles/the-world-behind-the-odyssey/"
+        },
+        {
+          "section": "articles",
           "title": "Are the Watchers and the Nephilim the Same?",
           "path": "/articles/watchers-and-the-nephilim/"
         },
@@ -10580,7 +10961,7 @@
           "path": "/wiki/world-age/"
         }
       ],
-      "cite_count": 7
+      "cite_count": 8
     },
     {
       "id": "theogony-works-and-days",
@@ -10805,6 +11186,33 @@
         }
       ],
       "cite_count": 2
+    },
+    {
+      "id": "travelling-heroes-greeks-and-their-myths-in-the-epic-age-of-homer",
+      "cited_by": [
+        {
+          "section": "articles",
+          "title": "The East Face of Homer",
+          "path": "/articles/the-east-face-of-homer/"
+        },
+        {
+          "section": "articles",
+          "title": "The World Behind the Odyssey",
+          "path": "/articles/the-world-behind-the-odyssey/"
+        }
+      ],
+      "cite_count": 2
+    },
+    {
+      "id": "troy-and-homer-towards-a-solution-of-an-old-mystery",
+      "cited_by": [
+        {
+          "section": "articles",
+          "title": "The World Behind the Odyssey",
+          "path": "/articles/the-world-behind-the-odyssey/"
+        }
+      ],
+      "cite_count": 1
     },
     {
       "id": "ufo-religions",
@@ -11146,9 +11554,14 @@
           "section": "articles",
           "title": "The Religion of Religions",
           "path": "/articles/the-religion-of-religions/"
+        },
+        {
+          "section": "articles",
+          "title": "The World Behind the Odyssey",
+          "path": "/articles/the-world-behind-the-odyssey/"
         }
       ],
-      "cite_count": 1
+      "cite_count": 2
     },
     {
       "id": "new-religious-movements-and-science-rael-s-progressive-patronizing-parasitism-zy",
