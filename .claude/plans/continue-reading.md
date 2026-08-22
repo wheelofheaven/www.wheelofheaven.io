@@ -56,6 +56,15 @@ locale), so deep links are built with the *current* locale prefix.
   unchanged, still counts saved pages only, because both sit next to
   bookmark-specific labels.
 
+> **Superseded 2026-08-22.** The split was the wrong call: two counts sat
+> next to each other in the chrome and disagreed about what "your reading"
+> adds up to, and on mobile the burger's populated badge was swapped for a
+> blank icon the moment the menu opened. All four placements now read the
+> same open-item total from `[data-continue-badge]`;
+> `.reading-list-toggle__badge` and `updateCounterBadge()` are gone, and the
+> dropdown row's copy was rewritten in all ten locales to name both groups
+> the panel shows.
+
 Cap display at `9+`.
 
 ### One panel, not a new page
