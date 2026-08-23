@@ -1,0 +1,17 @@
+# Security contact for the Wheel of Heaven project — RFC 9116.
+#
+# GENERATED FILE — do not edit by hand. The Expires field is refreshed by
+# .github/workflows/security-txt.yml; edit scripts/build_security_txt.py
+# instead. See https://github.com/wheelofheaven/.github/blob/main/SECURITY.md
+#
+# Private vulnerability reporting on GitHub is preferred: it keeps the
+# report private until a fix ships, and means no address has to sit here
+# in plain text waiting to be harvested. The contact page is the fallback
+# for anyone who cannot use that form.
+
+Contact: https://github.com/wheelofheaven/www.wheelofheaven.world/security/advisories/new
+Contact: https://www.wheelofheaven.world/contact/
+Expires: 2027-08-23T06:19:17Z
+Policy: https://github.com/wheelofheaven/.github/blob/main/SECURITY.md
+Preferred-Languages: en
+Canonical: https://www.wheelofheaven.world/.well-known/security.txt

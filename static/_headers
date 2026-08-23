@@ -46,6 +46,12 @@
 # spelled out. Short max-age: they change rarely but must not go stale for a
 # scanner after an edit.
 
+# RFC 9116 security contact. The spec requires text/plain; charset=utf-8,
+# and Pages would otherwise serve it without the charset.
+/.well-known/security.txt
+  Content-Type: text/plain; charset=utf-8
+  Cache-Control: public, max-age=3600
+
 # RFC 9727 API catalog (linkset)
 /.well-known/api-catalog
   Content-Type: application/linkset+json
@@ -67,12 +73,23 @@
 /.well-known/agent-skills/*
   Cache-Control: public, max-age=3600
 
-# Security headers for all pages
+# Security headers for all pages.
+#
+# Keep comments OUTSIDE the block: every indented line under a path is
+# parsed as `name: value`, so an indented `#` is not obviously safe, and
+# this block carries the CSP and HSTS — not the place to find out.
+#
+# HSTS carries no `preload` token. It used to. But wheelofheaven.world is
+# NOT on the HSTS preload list (hstspreload.org reports it unknown) and
+# cannot be submitted while the apex serves no HSTS header at all — it
+# only 301s to this host, and preload is judged at the apex. Advertising
+# `preload` without being preloaded misleads anyone reading the header.
+# Restore the token as part of actually submitting, not before.
 /*
   Link: </.well-known/api-catalog>; rel="api-catalog"
   X-Content-Type-Options: nosniff
   X-Frame-Options: DENY
   Referrer-Policy: strict-origin-when-cross-origin
-  Strict-Transport-Security: max-age=31536000; includeSubDomains; preload
+  Strict-Transport-Security: max-age=31536000; includeSubDomains
   Permissions-Policy: camera=(), microphone=(), geolocation=(), payment=(), usb=(), magnetometer=(), gyroscope=(), accelerometer=()
   Content-Security-Policy: default-src 'self'; script-src 'self' 'unsafe-inline'; style-src 'self' 'unsafe-inline'; img-src 'self' https://assets.wheelofheaven.world data: blob:; font-src 'self'; connect-src 'self' https://assets.wheelofheaven.world https://mcp.wheelofheaven.world; media-src 'self' https://assets.wheelofheaven.world; object-src 'none'; frame-ancestors 'none'; base-uri 'self'; form-action 'self'

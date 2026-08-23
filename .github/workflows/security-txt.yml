@@ -1,0 +1,52 @@
+# Keep static/.well-known/security.txt from expiring.
+#
+# RFC 9116 makes `Expires` mandatory and wants it under a year out, and a
+# stale security.txt is worse than none — it advertises a reporting
+# channel that may no longer be watched. So the date is refreshed on a
+# schedule rather than by anyone remembering it a year from now.
+#
+# Monthly, not annually: an annual cron that fails once (token expiry, a
+# runner change, Actions disabled on the repo) would go unnoticed until
+# the file had already lapsed. Monthly means eleven chances to notice
+# before that matters, and the commit is a no-op whenever nothing changed.
+#
+# The job commits to main with [skip ci] so it doesn't feed back into the
+# broadcast workflow, matching what broadcast.yml already does.
+
+name: Refresh security.txt
+
+on:
+  schedule:
+    # 04:17 UTC on the 1st. Off the hour on purpose — GitHub's scheduler
+    # is busiest exactly on the hour and delays cron runs accordingly.
+    - cron: "17 4 1 * *"
+  workflow_dispatch:
+
+permissions:
+  contents: write
+
+jobs:
+  refresh:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.12"
+
+      - name: Regenerate security.txt
+        run: python3 scripts/build_security_txt.py
+
+      - name: Commit if the expiry moved
+        run: |
+          set -e
+          if git diff --quiet -- static/.well-known/security.txt; then
+            echo "security.txt unchanged — nothing to commit."
+            exit 0
+          fi
+          git config user.name  "zarazinsfuss"
+          git config user.email "zarazinsfuss@users.noreply.github.com"
+          git add static/.well-known/security.txt
+          git commit -m "chore: roll the security.txt expiry [skip ci]"
+          git push
