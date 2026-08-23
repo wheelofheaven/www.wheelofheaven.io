@@ -1,7 +1,7 @@
 {
   "_meta": {
-    "generated_at": "2026-08-17T17:56:59+00:00",
-    "count": 1165
+    "generated_at": "2026-08-23T08:43:50+00:00",
+    "count": 1166
   },
   "paths": {
     "AGENTS": [
@@ -1713,6 +1713,18 @@
       "zh-Hant"
     ],
     "news/pursue-release-04-the-nuclear-nexus": [
+      "de",
+      "en",
+      "es",
+      "fr",
+      "he",
+      "ja",
+      "ko",
+      "ru",
+      "zh",
+      "zh-Hant"
+    ],
+    "news/pursue-release-05-triangles-and-the-white-house-file": [
       "de",
       "en",
       "es",
