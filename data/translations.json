@@ -1,7 +1,7 @@
 {
   "_meta": {
-    "generated_at": "2026-08-23T13:55:46+00:00",
-    "count": 1167
+    "generated_at": "2026-08-23T16:50:06+00:00",
+    "count": 1168
   },
   "paths": {
     "AGENTS": [
@@ -12118,6 +12118,9 @@
       "ru",
       "zh",
       "zh-Hant"
+    ],
+    "wiki/genesis-toolbox": [
+      "en"
     ],
     "wiki/genetic-engineering": [
       "de",
