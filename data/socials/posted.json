@@ -179,6 +179,18 @@
         }
       }
     },
+    "articles/the-rain-over-helicon": {
+      "title": "The Rain Over Helicon",
+      "permalink": "https://www.wheelofheaven.world/articles/the-rain-over-helicon/",
+      "first_eligible_at": "2026-08-30T10:30:15Z",
+      "channels": {
+        "telegram": {
+          "post_id": "@wheelofheaven/50",
+          "url": "https://t.me/wheelofheaven/50",
+          "posted_at": "2026-08-30T10:30:15Z"
+        }
+      }
+    },
     "articles/the-religion-of-religions": {
       "title": "The Religion of Religions",
       "permalink": "https://www.wheelofheaven.world/articles/the-religion-of-religions/",
