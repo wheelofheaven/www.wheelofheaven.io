@@ -1,9 +1,9 @@
 {
-  "generated_at": "2026-08-17T18:03:45+00:00",
+  "generated_at": "2026-08-30T10:03:54+00:00",
   "generator": "scripts/build_sources.py",
   "schema_version": 1,
   "total": 802,
-  "total_cites": 1403,
+  "total_cites": 1420,
   "media_counts": {
     "religious-text": 95,
     "academic-paper": 76,
@@ -982,6 +982,11 @@
         },
         {
           "section": "articles",
+          "title": "The Rain Over Helicon",
+          "path": "/articles/the-rain-over-helicon/"
+        },
+        {
+          "section": "articles",
           "title": "The Religion of Religions",
           "path": "/articles/the-religion-of-religions/"
         },
@@ -991,7 +996,7 @@
           "path": "/articles/the-world-behind-the-odyssey/"
         }
       ],
-      "cite_count": 4,
+      "cite_count": 5,
       "licensing_status": "unverified"
     },
     {
@@ -4386,6 +4391,11 @@
         },
         {
           "section": "articles",
+          "title": "The Rain Over Helicon",
+          "path": "/articles/the-rain-over-helicon/"
+        },
+        {
+          "section": "articles",
           "title": "The Translator's Wager",
           "path": "/articles/the-translators-wager/"
         },
@@ -4415,7 +4425,7 @@
           "path": "/wiki/genesis/"
         }
       ],
-      "cite_count": 8,
+      "cite_count": 9,
       "licensing_status": "unverified"
     },
     {
@@ -4449,6 +4459,11 @@
           "path": "/articles/the-flood-was-a-reset-not-a-punishment/"
         },
         {
+          "section": "articles",
+          "title": "The Rain Over Helicon",
+          "path": "/articles/the-rain-over-helicon/"
+        },
+        {
           "section": "wiki",
           "title": "Anunnaki",
           "path": "/wiki/anunnaki/"
@@ -4464,7 +4479,7 @@
           "path": "/wiki/reference-corpus-of-the-raelian-canon/"
         }
       ],
-      "cite_count": 6,
+      "cite_count": 7,
       "licensing_status": "public_domain"
     },
     {
@@ -5415,11 +5430,16 @@
         },
         {
           "section": "articles",
+          "title": "The Rain Over Helicon",
+          "path": "/articles/the-rain-over-helicon/"
+        },
+        {
+          "section": "articles",
           "title": "The World Behind the Odyssey",
           "path": "/articles/the-world-behind-the-odyssey/"
         }
       ],
-      "cite_count": 2,
+      "cite_count": 3,
       "licensing_status": "unverified"
     },
     {
@@ -6910,11 +6930,16 @@
       "cited_by": [
         {
           "section": "articles",
+          "title": "The Rain Over Helicon",
+          "path": "/articles/the-rain-over-helicon/"
+        },
+        {
+          "section": "articles",
           "title": "The World Behind the Odyssey",
           "path": "/articles/the-world-behind-the-odyssey/"
         }
       ],
-      "cite_count": 1,
+      "cite_count": 2,
       "licensing_status": "unverified"
     },
     {
@@ -6957,11 +6982,16 @@
         },
         {
           "section": "articles",
+          "title": "The Rain Over Helicon",
+          "path": "/articles/the-rain-over-helicon/"
+        },
+        {
+          "section": "articles",
           "title": "The World Behind the Odyssey",
           "path": "/articles/the-world-behind-the-odyssey/"
         }
       ],
-      "cite_count": 2,
+      "cite_count": 3,
       "licensing_status": "unverified"
     },
     {
@@ -7239,11 +7269,16 @@
       "cited_by": [
         {
           "section": "articles",
+          "title": "The Rain Over Helicon",
+          "path": "/articles/the-rain-over-helicon/"
+        },
+        {
+          "section": "articles",
           "title": "The World Behind the Odyssey",
           "path": "/articles/the-world-behind-the-odyssey/"
         }
       ],
-      "cite_count": 1,
+      "cite_count": 2,
       "licensing_status": "unverified"
     },
     {
@@ -7729,9 +7764,14 @@
           "section": "articles",
           "title": "The East Face of Homer",
           "path": "/articles/the-east-face-of-homer/"
+        },
+        {
+          "section": "articles",
+          "title": "The Rain Over Helicon",
+          "path": "/articles/the-rain-over-helicon/"
         }
       ],
-      "cite_count": 2,
+      "cite_count": 3,
       "licensing_status": "unverified"
     },
     {
@@ -11138,11 +11178,16 @@
         },
         {
           "section": "articles",
+          "title": "The Rain Over Helicon",
+          "path": "/articles/the-rain-over-helicon/"
+        },
+        {
+          "section": "articles",
           "title": "The World Behind the Odyssey",
           "path": "/articles/the-world-behind-the-odyssey/"
         }
       ],
-      "cite_count": 2,
+      "cite_count": 3,
       "licensing_status": "unverified"
     },
     {
@@ -14823,6 +14868,11 @@
         },
         {
           "section": "articles",
+          "title": "The Rain Over Helicon",
+          "path": "/articles/the-rain-over-helicon/"
+        },
+        {
+          "section": "articles",
           "title": "The Religion of Religions",
           "path": "/articles/the-religion-of-religions/"
         },
@@ -15117,7 +15167,7 @@
           "path": "/wiki/zecharia-sitchin/"
         }
       ],
-      "cite_count": 70,
+      "cite_count": 71,
       "licensing_status": "licensed"
     },
     {
@@ -16106,11 +16156,16 @@
         },
         {
           "section": "articles",
+          "title": "The Rain Over Helicon",
+          "path": "/articles/the-rain-over-helicon/"
+        },
+        {
+          "section": "articles",
           "title": "The World Behind the Odyssey",
           "path": "/articles/the-world-behind-the-odyssey/"
         }
       ],
-      "cite_count": 2,
+      "cite_count": 3,
       "licensing_status": "unverified"
     },
     {
@@ -18412,11 +18467,16 @@
         },
         {
           "section": "articles",
+          "title": "The Rain Over Helicon",
+          "path": "/articles/the-rain-over-helicon/"
+        },
+        {
+          "section": "articles",
           "title": "The World Behind the Odyssey",
           "path": "/articles/the-world-behind-the-odyssey/"
         }
       ],
-      "cite_count": 2,
+      "cite_count": 3,
       "licensing_status": "unverified"
     },
     {
@@ -19351,11 +19411,16 @@
       "cited_by": [
         {
           "section": "articles",
+          "title": "The Rain Over Helicon",
+          "path": "/articles/the-rain-over-helicon/"
+        },
+        {
+          "section": "articles",
           "title": "The World Behind the Odyssey",
           "path": "/articles/the-world-behind-the-odyssey/"
         }
       ],
-      "cite_count": 1,
+      "cite_count": 2,
       "licensing_status": "unverified"
     },
     {
@@ -19497,11 +19562,16 @@
       "cited_by": [
         {
           "section": "articles",
+          "title": "The Rain Over Helicon",
+          "path": "/articles/the-rain-over-helicon/"
+        },
+        {
+          "section": "articles",
           "title": "The World Behind the Odyssey",
           "path": "/articles/the-world-behind-the-odyssey/"
         }
       ],
-      "cite_count": 1,
+      "cite_count": 2,
       "licensing_status": "unverified"
     },
     {
@@ -19703,11 +19773,16 @@
       "cited_by": [
         {
           "section": "articles",
+          "title": "The Rain Over Helicon",
+          "path": "/articles/the-rain-over-helicon/"
+        },
+        {
+          "section": "articles",
           "title": "The World Behind the Odyssey",
           "path": "/articles/the-world-behind-the-odyssey/"
         }
       ],
-      "cite_count": 1,
+      "cite_count": 2,
       "licensing_status": "unverified"
     },
     {
@@ -20055,6 +20130,11 @@
       "cited_by": [
         {
           "section": "articles",
+          "title": "The Rain Over Helicon",
+          "path": "/articles/the-rain-over-helicon/"
+        },
+        {
+          "section": "articles",
           "title": "The Shape of Humanity",
           "path": "/articles/the-shape-of-humanity/"
         },
@@ -20094,7 +20174,7 @@
           "path": "/wiki/world-age/"
         }
       ],
-      "cite_count": 8,
+      "cite_count": 9,
       "licensing_status": "unverified"
     },
     {
@@ -20467,11 +20547,16 @@
         },
         {
           "section": "articles",
+          "title": "The Rain Over Helicon",
+          "path": "/articles/the-rain-over-helicon/"
+        },
+        {
+          "section": "articles",
           "title": "The World Behind the Odyssey",
           "path": "/articles/the-world-behind-the-odyssey/"
         }
       ],
-      "cite_count": 2,
+      "cite_count": 3,
       "licensing_status": "unverified"
     },
     {

@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-08-17T18:03:45+00:00",
+  "generated_at": "2026-08-30T10:03:54+00:00",
   "generator": "scripts/build_sources.py",
   "schema_version": 1,
   "sources": [
@@ -488,6 +488,11 @@
         },
         {
           "section": "articles",
+          "title": "The Rain Over Helicon",
+          "path": "/articles/the-rain-over-helicon/"
+        },
+        {
+          "section": "articles",
           "title": "The Religion of Religions",
           "path": "/articles/the-religion-of-religions/"
         },
@@ -497,7 +502,7 @@
           "path": "/articles/the-world-behind-the-odyssey/"
         }
       ],
-      "cite_count": 4
+      "cite_count": 5
     },
     {
       "id": "aliens-adored-ra-l-s-ufo-religion",
@@ -2255,6 +2260,11 @@
         },
         {
           "section": "articles",
+          "title": "The Rain Over Helicon",
+          "path": "/articles/the-rain-over-helicon/"
+        },
+        {
+          "section": "articles",
           "title": "The Translator's Wager",
           "path": "/articles/the-translators-wager/"
         },
@@ -2284,7 +2294,7 @@
           "path": "/wiki/genesis/"
         }
       ],
-      "cite_count": 8
+      "cite_count": 9
     },
     {
       "id": "epic-of-gilgamesh",
@@ -2305,6 +2315,11 @@
           "path": "/articles/the-flood-was-a-reset-not-a-punishment/"
         },
         {
+          "section": "articles",
+          "title": "The Rain Over Helicon",
+          "path": "/articles/the-rain-over-helicon/"
+        },
+        {
           "section": "wiki",
           "title": "Anunnaki",
           "path": "/wiki/anunnaki/"
@@ -2320,7 +2335,7 @@
           "path": "/wiki/reference-corpus-of-the-raelian-canon/"
         }
       ],
-      "cite_count": 6
+      "cite_count": 7
     },
     {
       "id": "erich-von-d-niken",
@@ -2973,11 +2988,16 @@
         },
         {
           "section": "articles",
+          "title": "The Rain Over Helicon",
+          "path": "/articles/the-rain-over-helicon/"
+        },
+        {
+          "section": "articles",
           "title": "The World Behind the Odyssey",
           "path": "/articles/the-world-behind-the-odyssey/"
         }
       ],
-      "cite_count": 2
+      "cite_count": 3
     },
     {
       "id": "from-martyr-to-mystic-rabbinic-martyrology-and-the-making-of-merkavah-mysticism",
@@ -3879,11 +3899,16 @@
       "cited_by": [
         {
           "section": "articles",
+          "title": "The Rain Over Helicon",
+          "path": "/articles/the-rain-over-helicon/"
+        },
+        {
+          "section": "articles",
           "title": "The World Behind the Odyssey",
           "path": "/articles/the-world-behind-the-odyssey/"
         }
       ],
-      "cite_count": 1
+      "cite_count": 2
     },
     {
       "id": "homeric-questions",
@@ -3906,11 +3931,16 @@
         },
         {
           "section": "articles",
+          "title": "The Rain Over Helicon",
+          "path": "/articles/the-rain-over-helicon/"
+        },
+        {
+          "section": "articles",
           "title": "The World Behind the Odyssey",
           "path": "/articles/the-world-behind-the-odyssey/"
         }
       ],
-      "cite_count": 2
+      "cite_count": 3
     },
     {
       "id": "how-accurately-could-early-622-900-c-e-muslims-determine-the-direction-of-prayer",
@@ -4050,11 +4080,16 @@
       "cited_by": [
         {
           "section": "articles",
+          "title": "The Rain Over Helicon",
+          "path": "/articles/the-rain-over-helicon/"
+        },
+        {
+          "section": "articles",
           "title": "The World Behind the Odyssey",
           "path": "/articles/the-world-behind-the-odyssey/"
         }
       ],
-      "cite_count": 1
+      "cite_count": 2
     },
     {
       "id": "takahashi-yamanaka-2006",
@@ -4358,9 +4393,14 @@
           "section": "articles",
           "title": "The East Face of Homer",
           "path": "/articles/the-east-face-of-homer/"
+        },
+        {
+          "section": "articles",
+          "title": "The Rain Over Helicon",
+          "path": "/articles/the-rain-over-helicon/"
         }
       ],
-      "cite_count": 2
+      "cite_count": 3
     },
     {
       "id": "is-isaiah-40-55-really-monotheistic",
@@ -6215,11 +6255,16 @@
         },
         {
           "section": "articles",
+          "title": "The Rain Over Helicon",
+          "path": "/articles/the-rain-over-helicon/"
+        },
+        {
+          "section": "articles",
           "title": "The World Behind the Odyssey",
           "path": "/articles/the-world-behind-the-odyssey/"
         }
       ],
-      "cite_count": 2
+      "cite_count": 3
     },
     {
       "id": "ofudesaki-the-tip-of-the-writing-brush-1-711-verses-in-nakayama-miki-s-own-hand-",
@@ -8084,6 +8129,11 @@
         },
         {
           "section": "articles",
+          "title": "The Rain Over Helicon",
+          "path": "/articles/the-rain-over-helicon/"
+        },
+        {
+          "section": "articles",
           "title": "The Religion of Religions",
           "path": "/articles/the-religion-of-religions/"
         },
@@ -8378,7 +8428,7 @@
           "path": "/wiki/zecharia-sitchin/"
         }
       ],
-      "cite_count": 70
+      "cite_count": 71
     },
     {
       "id": "the-books-of-enoch-aramaic-fragments-of-qumr-n-cave-4-the-edition-that-proved-1-",
@@ -8878,11 +8928,16 @@
         },
         {
           "section": "articles",
+          "title": "The Rain Over Helicon",
+          "path": "/articles/the-rain-over-helicon/"
+        },
+        {
+          "section": "articles",
           "title": "The World Behind the Odyssey",
           "path": "/articles/the-world-behind-the-odyssey/"
         }
       ],
-      "cite_count": 2
+      "cite_count": 3
     },
     {
       "id": "wallis-eden-conspiracy",
@@ -10082,11 +10137,16 @@
         },
         {
           "section": "articles",
+          "title": "The Rain Over Helicon",
+          "path": "/articles/the-rain-over-helicon/"
+        },
+        {
+          "section": "articles",
           "title": "The World Behind the Odyssey",
           "path": "/articles/the-world-behind-the-odyssey/"
         }
       ],
-      "cite_count": 2
+      "cite_count": 3
     },
     {
       "id": "pagels-origin-of-satan",
@@ -10573,11 +10633,16 @@
       "cited_by": [
         {
           "section": "articles",
+          "title": "The Rain Over Helicon",
+          "path": "/articles/the-rain-over-helicon/"
+        },
+        {
+          "section": "articles",
           "title": "The World Behind the Odyssey",
           "path": "/articles/the-world-behind-the-odyssey/"
         }
       ],
-      "cite_count": 1
+      "cite_count": 2
     },
     {
       "id": "the-sky-people",
@@ -10642,11 +10707,16 @@
       "cited_by": [
         {
           "section": "articles",
+          "title": "The Rain Over Helicon",
+          "path": "/articles/the-rain-over-helicon/"
+        },
+        {
+          "section": "articles",
           "title": "The World Behind the Odyssey",
           "path": "/articles/the-world-behind-the-odyssey/"
         }
       ],
-      "cite_count": 1
+      "cite_count": 2
     },
     {
       "id": "the-syro-aramaic-reading-of-the-koran",
@@ -10744,11 +10814,16 @@
       "cited_by": [
         {
           "section": "articles",
+          "title": "The Rain Over Helicon",
+          "path": "/articles/the-rain-over-helicon/"
+        },
+        {
+          "section": "articles",
           "title": "The World Behind the Odyssey",
           "path": "/articles/the-world-behind-the-odyssey/"
         }
       ],
-      "cite_count": 1
+      "cite_count": 2
     },
     {
       "id": "the-unresolved-debate-over-the-sampo-s-identity-in-finnish-folkloristics-world-p",
@@ -10922,6 +10997,11 @@
       "cited_by": [
         {
           "section": "articles",
+          "title": "The Rain Over Helicon",
+          "path": "/articles/the-rain-over-helicon/"
+        },
+        {
+          "section": "articles",
           "title": "The Shape of Humanity",
           "path": "/articles/the-shape-of-humanity/"
         },
@@ -10961,7 +11041,7 @@
           "path": "/wiki/world-age/"
         }
       ],
-      "cite_count": 8
+      "cite_count": 9
     },
     {
       "id": "theogony-works-and-days",
@@ -11197,11 +11277,16 @@
         },
         {
           "section": "articles",
+          "title": "The Rain Over Helicon",
+          "path": "/articles/the-rain-over-helicon/"
+        },
+        {
+          "section": "articles",
           "title": "The World Behind the Odyssey",
           "path": "/articles/the-world-behind-the-odyssey/"
         }
       ],
-      "cite_count": 2
+      "cite_count": 3
     },
     {
       "id": "troy-and-homer-towards-a-solution-of-an-old-mystery",
