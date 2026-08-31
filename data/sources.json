@@ -1,14 +1,14 @@
 {
-  "generated_at": "2026-08-30T10:03:54+00:00",
+  "generated_at": "2026-08-31T08:32:56+00:00",
   "generator": "scripts/build_sources.py",
   "schema_version": 1,
-  "total": 802,
+  "total": 800,
   "total_cites": 1420,
   "media_counts": {
     "religious-text": 95,
     "academic-paper": 76,
-    "unknown": 380,
-    "nonfiction-book": 182,
+    "unknown": 379,
+    "nonfiction-book": 181,
     "article": 22,
     "documentary": 17,
     "wiki": 13,
@@ -982,6 +982,11 @@
         },
         {
           "section": "articles",
+          "title": "The Man Who Bet the Bible on the Moon",
+          "path": "/articles/the-man-who-bet-the-bible-on-the-moon/"
+        },
+        {
+          "section": "articles",
           "title": "The Rain Over Helicon",
           "path": "/articles/the-rain-over-helicon/"
         },
@@ -996,43 +1001,7 @@
           "path": "/articles/the-world-behind-the-odyssey/"
         }
       ],
-      "cite_count": 5,
-      "licensing_status": "unverified"
-    },
-    {
-      "id": "aliens-adored-ra-l-s-ufo-religion",
-      "title": "Aliens Adored: Raël’s UFO Religion",
-      "authored_by": [
-        "Susan J. Palmer"
-      ],
-      "publish_date": "2004",
-      "follow_url": "",
-      "description": "",
-      "medium": "nonfiction-book",
-      "topics": [],
-      "cited_by": [],
-      "cite_count": 0,
-      "licensing_status": "unverified"
-    },
-    {
-      "id": "aliens-adored-ra-l-s-ufo-religion-the-standard-academic-study-of-ra-lism-notes-s",
-      "title": "Aliens Adored: Raël’s UFO Religion (the standard academic study of Raëlism; notes Sendy as possible inspiration, p. 28, while recording that Raël claims direct revelation)",
-      "authored_by": [
-        "Susan J. Palmer"
-      ],
-      "publish_date": "2004",
-      "follow_url": "",
-      "description": "",
-      "medium": "",
-      "topics": [],
-      "cited_by": [
-        {
-          "section": "articles",
-          "title": "The Man Who Bet the Bible on the Moon",
-          "path": "/articles/the-man-who-bet-the-bible-on-the-moon/"
-        }
-      ],
-      "cite_count": 1,
+      "cite_count": 6,
       "licensing_status": "unverified"
     },
     {

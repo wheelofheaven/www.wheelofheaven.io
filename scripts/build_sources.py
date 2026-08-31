@@ -455,6 +455,12 @@ CANONICAL_MERGES = {
     "the-shi-ur-qomah-texts-and-recensions-tsaj-9-the-critical-edition": "cohen-shiur-qomah-texts-recensions",
     "the-eden-conspiracy": "wallis-eden-conspiracy",
     "the-message-of-the-sphinx-keeper-of-genesis-with-robert-bauval-the-giza-orion-co": "hancock-bauval-message-of-the-sphinx",
+    # Palmer's Aliens Adored accumulated two aliases: one bare-title harvest
+    # and one from an annotated title. The citing article now references
+    # `aliens-adored` directly; these entries keep the aliases collapsed if an
+    # older reference form reappears.
+    "aliens-adored-ra-l-s-ufo-religion": "aliens-adored",
+    "aliens-adored-ra-l-s-ufo-religion-the-standard-academic-study-of-ra-lism-notes-s": "aliens-adored",
 }
 
 CANONICAL_RECORDS = {
