@@ -24,7 +24,7 @@ the stagger.
 
 | # | Target | Article | Words | Claim type | Binds | Status |
 |---|---|---|---|---|---|---|
-| 1 | 2026-09-01 | The Signature and the Designers | 7,834 | speculative | 0036, 0030 | in progress |
+| 1 | 2026-09-01 | The Signature and the Designers | 7,834 | speculative | 0036, 0030 | **published** — live in 10 langs, Telegram 51 |
 | 2 | 2026-09-15 | Six Mornings, Six Years | 6,725 | inferred | 0035 | queued |
 | 3 | 2026-09-29 | Made from the Ground to Bear the Labor | 4,796 | inferred | 0034 | queued |
 | 4 | 2026-10-13 | The Filing Cabinet of the Gods | 7,394 | speculative | 0056 | queued |
