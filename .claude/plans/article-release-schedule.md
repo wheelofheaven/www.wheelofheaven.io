@@ -54,6 +54,19 @@ and its own summary opens `SCAFFOLD — broad strokes only, to be written out
 later in 2026.` It is the temporal companion to *The Infinite in Both
 Directions* and needs writing before it needs publishing.
 
+## Set the publication date at release — do not skip this
+
+Every one of these drafts carries a `date` from when it was **written**
+(June–July 2026), and `content/articles/_index.md` is `sort_by = "date"`.
+Publishing without touching it buries the new article partway down the index
+instead of putting it on top — release 1 shipped at `2026-07-06` and landed
+16th of 20, which reads to a visitor as "the article never published".
+
+At each release set `date` to the actual publication date, in the English file
+**and all nine translations** (it is one of the byte-identical structural keys,
+so the fan-out copies whatever the source had). Then regenerate the OG cards:
+they render the date, so a stale one is baked into ten images.
+
 ## Before each release
 
 - Confirm the target article is still `draft = true` and untouched by other
