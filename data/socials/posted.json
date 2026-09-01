@@ -227,6 +227,18 @@
         }
       }
     },
+    "articles/the-signature-and-the-designers": {
+      "title": "The Signature and the Designers",
+      "permalink": "https://www.wheelofheaven.world/articles/the-signature-and-the-designers/",
+      "first_eligible_at": "2026-09-01T07:20:35Z",
+      "channels": {
+        "telegram": {
+          "post_id": "@wheelofheaven/51",
+          "url": "https://t.me/wheelofheaven/51",
+          "posted_at": "2026-09-01T07:20:35Z"
+        }
+      }
+    },
     "articles/the-translators-wager": {
       "title": "The Translator's Wager",
       "permalink": "https://www.wheelofheaven.world/articles/the-translators-wager/",
